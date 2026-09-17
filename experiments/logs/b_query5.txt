@@ -1,5 +1,5 @@
-﻿message:     aiyo forgot bring my laptop, can lend charger Σ╕ÇΣ╕ï?
-normalised:  aiyo forgot bring my laptop can lend charger Σ╕Ç Σ╕ï
+message:     aiyo forgot bring my laptop, can lend charger 一下?
+normalised:  aiyo forgot bring my laptop can lend charger 一 下
 detected:    (none)
 memory:      ['lecture ending soon sia', "yeah I'm starving"]
 
@@ -13,5 +13,5 @@ All candidates:
   [LOCAL     V6        0.252 PILOT-012] Wait ah, I'll reach in a bit.
   [LOCAL     V6        0.162 PILOT-019] Can check my part later? Not urgent.
   [STANDARD  V6        0.600 PILOT-001] Want to grab lunch first and then head to the library?
-  [STANDARD  V6        0.269 PILOT-012] Please wait a moment ΓÇö I'll be there soon.
+  [STANDARD  V6        0.269 PILOT-012] Please wait a moment — I'll be there soon.
   [STANDARD  V6        0.142 PILOT-019] Could you check my part later? It's not urgent.
