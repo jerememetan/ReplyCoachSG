@@ -5,7 +5,7 @@ Fill this before the 29 Sep pre-proposal workshop. One person keeps the same rol
 | Role | Focus | Name | Email | Kaggle / Colab |
 | --- | --- | --- | --- | --- |
 | A | Data and evaluation |  |  |  |
-| B | Retrieval and memory |  |  |  |
+| B | Retrieval and memory | Cody Loo Yee | cody.loo.2026@exchange.smu.edu.sg |  |
 | C | RNN and attention generator | Yangtian Yan | yt.yan.2026@exchange.smu.edu.sg |  |
 | D | Transformer experiment |  |  |  |
 | E | Reranker, integration and demo | Jereme Tan | jereme.tan.2024@computing.smu.edu.sg |  |
