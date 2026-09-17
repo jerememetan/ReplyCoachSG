@@ -67,6 +67,8 @@ class DialogueItem:
     author: str = "unassigned"
     reviewer: str = ""
     second_reviewer: str = ""
+    reviewer_notes: str = ""
+    second_reviewer_notes: str = ""
     notes: str = ""
     privacy_ok: bool = True
     licence: str = "team-authored"
@@ -112,6 +114,8 @@ class DialogueItem:
             author=raw.get("author", "unassigned"),
             reviewer=raw.get("reviewer", ""),
             second_reviewer=raw.get("second_reviewer", ""),
+            reviewer_notes=raw.get("reviewer_notes", ""),
+            second_reviewer_notes=raw.get("second_reviewer_notes", ""),
             notes=raw.get("notes", ""),
             privacy_ok=bool(raw.get("privacy_ok", True)),
             licence=raw.get("licence", "team-authored"),

@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import os
+import tempfile
 from pathlib import Path
 from typing import Iterable
 
@@ -42,13 +44,27 @@ def write_jsonl(path: Path, rows: Iterable[dict]) -> None:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
 
 
+def write_jsonl_atomic(path: Path, rows: Iterable[dict]) -> None:
+    """Write JSONL through a temporary sibling file to avoid partial saves."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    descriptor, temporary_name = tempfile.mkstemp(prefix=f".{path.stem}-", suffix=path.suffix, dir=path.parent)
+    os.close(descriptor)
+    temporary_path = Path(temporary_name)
+    try:
+        write_jsonl(temporary_path, rows)
+        temporary_path.replace(path)
+    finally:
+        if temporary_path.exists():
+            temporary_path.unlink()
+
+
 def load_items(path: Path | None = None) -> list[DialogueItem]:
     path = path or PILOT_PATH
     return [DialogueItem.from_dict(row) for row in read_jsonl(path)]
 
 
 def save_items(path: Path, items: Iterable[DialogueItem]) -> None:
-    write_jsonl(path, [item.to_dict() for item in items])
+    write_jsonl_atomic(path, [item.to_dict() for item in items])
 
 
 def load_candidates(path: Path) -> list[Candidate]:

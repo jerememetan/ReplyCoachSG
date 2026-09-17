@@ -28,3 +28,22 @@ def test_candidate_roundtrip():
     restored = Candidate.from_dict(candidate.to_dict())
     assert restored.candidate_text == candidate.candidate_text
     assert restored.style == "STANDARD"
+
+
+def test_dialogue_item_preserves_two_reviewer_notes():
+    item = DialogueItem.from_dict(
+        {
+            "id": "X",
+            "split": "pilot",
+            "scenario": "lunch",
+            "intent": "propose_meal",
+            "session_memory": [],
+            "message": {"text": "hello"},
+            "replies": {"standard": "Hello.", "local": "Hello."},
+            "reviewer_notes": "First pass",
+            "second_reviewer_notes": "Second pass",
+        }
+    )
+    restored = DialogueItem.from_dict(item.to_dict())
+    assert restored.reviewer_notes == "First pass"
+    assert restored.second_reviewer_notes == "Second pass"
