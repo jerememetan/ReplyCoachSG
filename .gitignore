@@ -20,3 +20,5 @@ Thumbs.db
 .env
 .hf_home/
 .cache/
+# SMU restricted course handout — do not push to GitHub
+Group Project Guidelines*.pdf

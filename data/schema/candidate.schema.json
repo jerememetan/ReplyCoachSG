@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Candidate",
+  "type": "object",
+  "required": ["context", "message", "candidate_text", "style", "source", "score"],
+  "properties": {
+    "context": {"type": "array", "items": {"type": "string"}},
+    "message": {"type": "string"},
+    "candidate_text": {"type": "string", "minLength": 1},
+    "style": {"enum": ["STANDARD", "LOCAL"]},
+    "source": {"enum": ["V0", "V1", "V2", "V3", "V4", "V5", "V6", "fallback", "gold"]},
+    "score": {"type": "number"},
+    "item_id": {"type": ["string", "null"]},
+    "normalised_message": {"type": ["string", "null"]},
+    "meta": {"type": "object"}
+  }
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "replycoach"
+version = "0.1.0"
+description = "Dual-style reply coach for exchange students handling casual peer coordination."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "scikit-learn>=1.3",
+  "torch>=2.1",
+]
+
+[project.optional-dependencies]
+demo = ["streamlit>=1.32"]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+replycoach = "replycoach.demo_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

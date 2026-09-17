@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DialogueItem",
+  "type": "object",
+  "required": ["id", "split", "scenario", "intent", "session_memory", "message", "replies", "privacy_ok"],
+  "properties": {
+    "id": {"type": "string"},
+    "split": {"enum": ["pilot", "dev", "test"]},
+    "scenario": {"type": "string"},
+    "intent": {"type": "string"},
+    "session_memory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["speaker", "text"],
+        "properties": {
+          "speaker": {"enum": ["peer", "user", "other"]},
+          "text": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "message": {
+      "type": "object",
+      "required": ["text"],
+      "properties": {
+        "text": {"type": "string", "minLength": 1},
+        "language_mix": {"type": "array", "items": {"enum": ["en", "singlish", "zh", "pinyin"]}},
+        "local_terms": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "replies": {
+      "type": "object",
+      "required": ["standard", "local"],
+      "properties": {
+        "standard": {"type": "string", "minLength": 1},
+        "local": {"type": "string", "minLength": 1}
+      }
+    },
+    "author": {"type": "string"},
+    "reviewer": {"type": "string"},
+    "second_reviewer": {"type": "string"},
+    "notes": {"type": "string"},
+    "privacy_ok": {"type": "boolean"},
+    "licence": {"type": "string"},
+    "origin": {"type": "string"},
+    "status": {"type": "string"}
+  }
+}
