@@ -20,5 +20,6 @@ Thumbs.db
 .env
 .hf_home/
 .cache/
+docs/superpowers/
 # SMU restricted course handout — do not push to GitHub
 Group Project Guidelines*.pdf
