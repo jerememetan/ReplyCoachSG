@@ -119,6 +119,7 @@ def main() -> None:
             result.standard.candidate_text,
             key="select_standard",
             use_container_width=True,
+            type="primary",
             on_click=select_reply,
             args=(result.standard.candidate_text,),
         )
@@ -128,6 +129,7 @@ def main() -> None:
             result.local.candidate_text,
             key="select_local",
             use_container_width=True,
+            type="primary",
             on_click=select_reply,
             args=(result.local.candidate_text,),
         )
