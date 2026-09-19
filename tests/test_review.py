@@ -54,3 +54,22 @@ def test_pilot_scenarios_are_unique_and_cover_every_existing_item():
 
     assert len(scenarios) == len(set(scenarios))
     assert {item.scenario for item in load_items(PILOT_PATH)} <= set(scenarios)
+
+
+def test_pilot_intents_are_unique_and_describe_incoming_messages():
+    assert len(review.PILOT_INTENTS) == len(set(review.PILOT_INTENTS))
+    assert "invite_or_propose" in review.PILOT_INTENTS
+    assert "ask_status" in review.PILOT_INTENTS
+
+
+def test_intent_selection_index_selects_canonical_values_only():
+    assert review.intent_selection_index("ask_status") == review.PILOT_INTENTS.index("ask_status")
+    assert review.intent_selection_index("apologise_and_eta") is None
+
+
+def test_require_intent_rejects_an_unselected_or_unknown_value():
+    assert review.require_intent("confirm_plan") == "confirm_plan"
+    with pytest.raises(ValueError, match="Choose an intent"):
+        review.require_intent(None)
+    with pytest.raises(ValueError, match="Choose an intent"):
+        review.require_intent("custom_intent")

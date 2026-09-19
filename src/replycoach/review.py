@@ -28,6 +28,19 @@ PILOT_SCENARIOS = (
     "arrived_waiting",
 )
 
+PILOT_INTENTS = (
+    "invite_or_propose",
+    "request_information",
+    "request_help_or_resource",
+    "confirm_plan",
+    "change_or_reschedule",
+    "decline",
+    "inform_or_update",
+    "ask_status",
+    "remind_or_nudge",
+    "apologise_or_explain",
+)
+
 
 class ReviewPermissionError(ValueError):
     """Raised when a person cannot occupy a review slot."""
@@ -74,3 +87,15 @@ def format_turns(turns: list[Turn]) -> str:
 def format_position(item_id: str, index: int, total: int) -> str:
     """Format an item identifier and its one-based review position."""
     return f"{item_id}\n{index + 1} of {total}"
+
+
+def intent_selection_index(intent: str) -> int | None:
+    """Select canonical values while leaving legacy annotations unselected."""
+    return PILOT_INTENTS.index(intent) if intent in PILOT_INTENTS else None
+
+
+def require_intent(intent: str | None) -> str:
+    """Return a selected canonical intent or reject the form value."""
+    if intent not in PILOT_INTENTS:
+        raise ValueError("Choose an intent from the approved list.")
+    return intent

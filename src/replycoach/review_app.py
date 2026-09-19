@@ -8,12 +8,15 @@ import streamlit as st
 
 from replycoach.io import PILOT_PATH, load_items, save_items
 from replycoach.review import (
+    PILOT_INTENTS,
     PILOT_SCENARIOS,
     ReviewPermissionError,
     assign_reviewer,
     format_position,
     format_turns,
+    intent_selection_index,
     parse_turns,
+    require_intent,
 )
 from replycoach.schema import LANGUAGE_TAGS, Message, Replies
 
@@ -77,7 +80,14 @@ def main() -> None:
                 PILOT_SCENARIOS,
                 index=PILOT_SCENARIOS.index(item.scenario),
             )
-            intent = st.text_input("Intent", item.intent)
+            intent = st.selectbox(
+                "Intent",
+                PILOT_INTENTS,
+                index=intent_selection_index(item.intent),
+                placeholder="Choose the incoming message's intent",
+            )
+            if intent is None:
+                st.caption(f"Existing label: `{item.intent}` — choose a canonical intent before saving.")
             conversation = st.text_area(
                 "Recent conversation",
                 format_turns(item.session_memory),
@@ -106,7 +116,7 @@ def main() -> None:
 
     try:
         item.scenario = scenario.strip()
-        item.intent = intent.strip()
+        item.intent = require_intent(intent)
         item.session_memory = parse_turns(conversation)
         item.message = Message(text=message.strip(), language_mix=list(language_mix), local_terms=_split_terms(local_terms))
         item.replies = Replies(standard=standard.strip(), local=local.strip())
