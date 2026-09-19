@@ -7,7 +7,14 @@ from dataclasses import replace
 import streamlit as st
 
 from replycoach.io import PILOT_PATH, load_items, save_items
-from replycoach.review import ReviewPermissionError, assign_reviewer, format_position, format_turns, parse_turns
+from replycoach.review import (
+    PILOT_SCENARIOS,
+    ReviewPermissionError,
+    assign_reviewer,
+    format_position,
+    format_turns,
+    parse_turns,
+)
 from replycoach.schema import LANGUAGE_TAGS, Message, Replies
 
 
@@ -65,7 +72,11 @@ def main() -> None:
     with st.form(f"review-{item.id}"):
         left, right = st.columns(2)
         with left:
-            scenario = st.text_input("Scenario", item.scenario)
+            scenario = st.selectbox(
+                "Scenario",
+                PILOT_SCENARIOS,
+                index=PILOT_SCENARIOS.index(item.scenario),
+            )
             intent = st.text_input("Intent", item.intent)
             conversation = st.text_area(
                 "Recent conversation",

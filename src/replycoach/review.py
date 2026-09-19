@@ -5,6 +5,30 @@ from __future__ import annotations
 from replycoach.schema import DialogueItem, SPEAKERS, Turn
 
 
+PILOT_SCENARIOS = (
+    "lunch_after_lecture",
+    "late_to_meeting",
+    "library_seats",
+    "share_notes",
+    "cafe_study",
+    "weekend_makan",
+    "mrt_meetup",
+    "deadline_tonight",
+    "cannot_make_it",
+    "confirm_time",
+    "dinner_near_campus",
+    "wait_at_gate",
+    "group_chat_nudge",
+    "tutorial_room",
+    "print_before_class",
+    "rec_sports",
+    "rain_change_plans",
+    "supper_jio",
+    "assignment_peer_check",
+    "arrived_waiting",
+)
+
+
 class ReviewPermissionError(ValueError):
     """Raised when a person cannot occupy a review slot."""
 

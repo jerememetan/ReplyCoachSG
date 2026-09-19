@@ -1,5 +1,7 @@
 import pytest
 
+from replycoach import review
+from replycoach.io import PILOT_PATH, load_items
 from replycoach.review import ReviewPermissionError, assign_reviewer, format_position, parse_turns
 from replycoach.schema import DialogueItem, Message, Replies
 
@@ -45,3 +47,10 @@ def test_parse_turns_accepts_known_speakers_and_rejects_unknown_ones():
 
 def test_format_position_uses_a_real_line_break_without_extra_symbols():
     assert format_position("PILOT-001", 0, 20) == "PILOT-001\n1 of 20"
+
+
+def test_pilot_scenarios_are_unique_and_cover_every_existing_item():
+    scenarios = review.PILOT_SCENARIOS
+
+    assert len(scenarios) == len(set(scenarios))
+    assert {item.scenario for item in load_items(PILOT_PATH)} <= set(scenarios)
