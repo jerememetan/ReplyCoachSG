@@ -10,8 +10,10 @@ from replycoach.authoring import (
     AUTHORING_TARGET,
     authoring_path,
     load_author_items,
+    load_team_author_items,
     next_item_id,
     save_author_item,
+    suggest_authoring_combination,
 )
 from replycoach.review import PILOT_INTENTS, format_turns, parse_turns
 from replycoach.schema import LANGUAGE_TAGS, DialogueItem, Message, Replies
@@ -57,8 +59,17 @@ def main() -> None:
     st.subheader(item_id)
     st.caption("New items are unassigned drafts. Role A will assign development and test splits later.")
 
-    scenario_index = AUTHORING_SCENARIOS.index(existing.scenario) if existing and existing.scenario in AUTHORING_SCENARIOS else None
-    intent_index = PILOT_INTENTS.index(existing.intent) if existing and existing.intent in PILOT_INTENTS else None
+    suggestion = None
+    if existing:
+        scenario_index = AUTHORING_SCENARIOS.index(existing.scenario) if existing.scenario in AUTHORING_SCENARIOS else None
+        intent_index = PILOT_INTENTS.index(existing.intent) if existing.intent in PILOT_INTENTS else None
+    else:
+        team_items, coverage_warnings = load_team_author_items(path.parent)
+        for warning in coverage_warnings:
+            st.warning(warning)
+        suggestion = suggest_authoring_combination(team_items, role, item_id, PILOT_INTENTS)
+        scenario_index = AUTHORING_SCENARIOS.index(suggestion.scenario)
+        intent_index = PILOT_INTENTS.index(suggestion.intent)
     conversation_default = format_turns(existing.session_memory) if existing else ""
     message_default = existing.message.text if existing else ""
     language_default = existing.message.language_mix if existing else ["en"]
@@ -83,6 +94,8 @@ def main() -> None:
                 index=intent_index,
                 placeholder="Choose what the peer's message is doing",
             )
+            if suggestion:
+                st.caption(f"Suggested from team coverage · currently used {suggestion.count} times")
             conversation = st.text_area(
                 "Recent conversation",
                 conversation_default,

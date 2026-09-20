@@ -3,6 +3,9 @@
 from __future__ import annotations
 
 import re
+from collections import Counter
+from dataclasses import dataclass
+from itertools import product
 from pathlib import Path
 
 from replycoach.io import DATA_DIR, load_items, save_items
@@ -34,6 +37,13 @@ AUTHORING_SCENARIOS = (
 )
 
 
+@dataclass(frozen=True)
+class CombinationSuggestion:
+    scenario: str
+    intent: str
+    count: int
+
+
 def normalise_role(role: str) -> str:
     cleaned = role.strip().upper()
     if cleaned not in AUTHOR_ROLES:
@@ -56,6 +66,48 @@ def load_author_items(path: Path) -> list[DialogueItem]:
     if len(ids) != len(set(ids)):
         raise ValueError(f"{path} contains duplicate item IDs")
     return items
+
+
+def load_team_author_items(directory: Path | None = None) -> tuple[list[DialogueItem], list[str]]:
+    """Load every valid role file and report unreadable files without changing them."""
+    items: list[DialogueItem] = []
+    warnings: list[str] = []
+    for role in AUTHOR_ROLES:
+        path = authoring_path(role, directory)
+        try:
+            items.extend(load_author_items(path))
+        except ValueError as exc:
+            warnings.append(f"Could not include {path.name}: {exc}")
+    return items, warnings
+
+
+def suggest_authoring_combination(
+    items: list[DialogueItem],
+    role: str,
+    item_id: str,
+    intents: tuple[str, ...],
+) -> CombinationSuggestion:
+    """Choose a deterministic least-used scenario and intent pair."""
+    role = normalise_role(role)
+    match = re.fullmatch(rf"ITEM-{role}-(\d+)", item_id)
+    if not match:
+        raise ValueError(f"item ID must match ITEM-{role}-###")
+    if not intents:
+        raise ValueError("at least one intent is required")
+
+    combinations = list(product(AUTHORING_SCENARIOS, intents))
+    counts = Counter((item.scenario, item.intent) for item in items)
+    minimum = min(counts[combination] for combination in combinations)
+    least_used = [combination for combination in combinations if counts[combination] == minimum]
+
+    item_number = int(match.group(1))
+    role_index = AUTHOR_ROLES.index(role)
+    scenario_index = (item_number - 1) % len(AUTHORING_SCENARIOS)
+    cycle = (item_number - 1) // len(AUTHORING_SCENARIOS)
+    intent_index = (cycle * len(AUTHOR_ROLES) + role_index + scenario_index) % len(intents)
+    preferred = (AUTHORING_SCENARIOS[scenario_index], intents[intent_index])
+    selected = preferred if preferred in least_used else least_used[combinations.index(preferred) % len(least_used)]
+    return CombinationSuggestion(*selected, count=counts[selected])
 
 
 def next_item_id(role: str, items: list[DialogueItem]) -> str:
