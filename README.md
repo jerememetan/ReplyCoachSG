@@ -65,11 +65,11 @@ Fill names in `TEAM.md`. First come, first served, then freeze.
 
 ---
 
-## Next week — Week 5 (the real bottleneck)
+## Next week — Week 7 (the real bottleneck)
 
-Code is ahead of data. Starting Monday, **every member authors 20 development items and 8 held-out test items**, then peer-reviews someone else.
+Code is ahead of data. Each member authors **60 unassigned items**, then peer-reviews one member’s set and second-reviews a different member’s set.
 
-Target by next Friday: **100 development + 40 test**.
+The five role files produce **300 reviewed items**. After review, Role A assigns one fixed, balanced 80:20 split: **240 development + 60 untouched test**.
 
 Use [`data/authoring/worksheet.md`](data/authoring/worksheet.md) and [`docs/annotation_guide.md`](docs/annotation_guide.md).
 
@@ -81,7 +81,7 @@ On the side:
 - **D** — `STANDARD` / `LOCAL` input format; development data only
 - **E** — clearer retrieved-candidate display in the demo
 
-Later quotas (Week 6): each person +30 development and +16 test, then second-review. Final target about **250–300 development** and **120–150 untouched benchmark** items.
+Authors do not choose development or test records. Anything exposed during model development must remain outside the held-out test set.
 
 ---
 

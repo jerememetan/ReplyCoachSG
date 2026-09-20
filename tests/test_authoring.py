@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pytest
 
-from replycoach.authoring import authoring_path, load_author_items, next_item_id, save_author_item
+from replycoach.authoring import AUTHORING_TARGET, authoring_path, load_author_items, next_item_id, save_author_item
 from replycoach.schema import DialogueItem, Message, Replies, Turn
 
 
@@ -19,6 +19,10 @@ def make_item(item_id: str = "ITEM-E-001", standard: str = "Sure, where should w
         privacy_ok=True,
         status="draft_needs_team_review",
     )
+
+
+def test_each_author_targets_sixty_unassigned_items():
+    assert AUTHORING_TARGET == 60
 
 
 def test_authoring_path_accepts_only_known_roles(tmp_path: Path):

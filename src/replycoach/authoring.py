@@ -9,7 +9,7 @@ from replycoach.io import DATA_DIR, load_items, save_items
 from replycoach.schema import DialogueItem
 
 AUTHOR_ROLES = ("A", "B", "C", "D", "E")
-WEEK5_TARGET = 28
+AUTHORING_TARGET = 60
 AUTHORING_SCENARIOS = (
     "meal",
     "running_late",

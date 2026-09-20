@@ -2,17 +2,14 @@
 
 Each member writes their own items. Do not copy the pilot fixtures.
 
-## Week 5 quota per person
+## Final quota per person
 
-- 20 development items (`DEV-<ROLE>-001` … `020`)
-- 8 held-out test items (`TEST-<ROLE>-001` … `008`)
+- 60 original items saved as `unassigned`
 - Peer-review another member’s set
+- Second-review a different member’s set
 
-## Week 6 quota per person
-
-- +30 development
-- +16 test
-- Second-review everything
+The five role files produce 300 reviewed items. Role A later assigns a fixed,
+balanced 80:20 split: 240 development and 60 held-out test items.
 
 ## Scenario menu (reuse freely, do not clone wording)
 
@@ -39,4 +36,4 @@ Each member writes their own items. Do not copy the pilot fixtures.
 
 ## Split rule
 
-Role A assigns official `dev` / `test` after review. If you saw model output on an item, it cannot stay in test.
+Authors never assign splits. Role A assigns official `dev` / `test` values after review using the fixed split. If an item was exposed during model development, it cannot stay in test.

@@ -7,7 +7,7 @@ import streamlit as st
 from replycoach.authoring import (
     AUTHOR_ROLES,
     AUTHORING_SCENARIOS,
-    WEEK5_TARGET,
+    AUTHORING_TARGET,
     authoring_path,
     load_author_items,
     next_item_id,
@@ -44,7 +44,10 @@ def main() -> None:
         return
 
     completed = len(items)
-    st.progress(min(completed / WEEK5_TARGET, 1.0), text=f"{completed} of {WEEK5_TARGET} Week 5 items saved")
+    st.progress(
+        min(completed / AUTHORING_TARGET, 1.0),
+        text=f"{completed} of {AUTHORING_TARGET} items saved",
+    )
     st.caption(f"Saving to `data/authoring/{path.name}` · Split assignment happens after review.")
 
     choices = ["Create a new item", *[item.id for item in items]]

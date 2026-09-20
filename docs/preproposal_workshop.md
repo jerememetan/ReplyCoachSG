@@ -8,7 +8,7 @@ Not graded. Get feedback, then freeze the 3-page proposal.
 2. Demo (30 s): run `python -m replycoach.demo_cli` or Streamlit. Show STANDARD vs LOCAL.
 3. Architecture diagram from `docs/architecture.md`.
 4. Locked decisions (no API, V4 vs V5, restrained local style, team data).
-5. Data plan: 20 pilot now; 250–300 dev; 120–150 test; DailyDialog for RNN only.
+5. Data plan: 20 pilot fixtures now; 300 reviewed team items split into 240 development and 60 test; DailyDialog for RNN only.
 6. Experiment journey V0–V6 and M0–M2.
 7. Evaluation: blind human ratings, three systems.
 8. Risks: tiny data, V5 may lose, slang temptation.

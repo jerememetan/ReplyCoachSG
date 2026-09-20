@@ -24,7 +24,7 @@ V5 is a Kaggle-gated ~300M-parameter experiment. If it is not clearly better tha
 
 ## 4. Data
 
-Public DailyDialog (CC BY-NC-SA 4.0) supplies general dialogue patterns for V3/V4. The dual-style task uses team-authored, double-reviewed items only: about 250–300 development items and 120–150 untouched benchmark items. No LLM-generated labels. All items are privacy-safe.
+Public DailyDialog (CC BY-NC-SA 4.0) supplies general dialogue patterns for V3/V4. The dual-style task uses 300 team-authored, double-reviewed items. After review, a fixed, balanced 80:20 split assigns 240 development items and 60 untouched benchmark items. No LLM-generated labels. All items are privacy-safe.
 
 ## 5. Evaluation
 
