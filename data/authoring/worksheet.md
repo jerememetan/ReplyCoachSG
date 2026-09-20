@@ -11,28 +11,21 @@ Each member writes their own items. Do not copy the pilot fixtures.
 The five role files produce 300 reviewed items. Role A later assigns a fixed,
 balanced 80:20 split: 240 development and 60 held-out test items.
 
-## Scenario menu (reuse freely, do not clone wording)
+## Scenario menu
 
-1. Lunch / dinner / supper
-2. Running late
-3. Library or seats
-4. Notes or slides
-5. Cafe study
-6. Weekend plan
-7. MRT / gate meetup
-8. Deadline tonight
-9. Polite decline
-10. Confirm time/place
-11. Room change
-12. Printing or queue
-13. Rain reschedule
-14. Sports / walk
-15. Group-chat nudge
-16. Arrival “I’m here”
-17. Wait a moment
-18. Split into two groups
-19. Quiet vs talking study
-20. After-class walk to food
+Use one of these nine topic-only scenarios:
+
+1. `meals_and_food`
+2. `study_sessions_and_spaces`
+3. `course_materials`
+4. `assignments_and_group_projects`
+5. `classes_and_tutorials`
+6. `meetups_and_transport`
+7. `social_events_and_outings`
+8. `sports_and_exercise`
+9. `campus_services_and_equipment`
+
+The app also assigns one of nine incoming-message intents. Read the definitions and boundary rules in [`docs/annotation_guide.md`](../../docs/annotation_guide.md) before writing. You may change an automatically suggested combination when it does not produce a natural exchange.
 
 ## Split rule
 

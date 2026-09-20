@@ -10,31 +10,11 @@ from pathlib import Path
 
 from replycoach.io import DATA_DIR, load_items, save_items
 from replycoach.schema import DialogueItem
+from replycoach.taxonomy import INTENTS, SCENARIOS
 
 AUTHOR_ROLES = ("A", "B", "C", "D", "E")
 AUTHORING_TARGET = 60
-AUTHORING_SCENARIOS = (
-    "meal",
-    "running_late",
-    "library_or_seats",
-    "notes_or_slides",
-    "cafe_study",
-    "weekend_plan",
-    "mrt_or_gate_meetup",
-    "deadline_tonight",
-    "polite_decline",
-    "confirm_time_or_place",
-    "room_change",
-    "printing_or_queue",
-    "rain_reschedule",
-    "sports_or_walk",
-    "group_chat_nudge",
-    "arrival",
-    "wait_a_moment",
-    "split_groups",
-    "study_environment",
-    "after_class_food",
-)
+AUTHORING_SCENARIOS = SCENARIOS
 
 
 @dataclass(frozen=True)
@@ -85,17 +65,13 @@ def suggest_authoring_combination(
     items: list[DialogueItem],
     role: str,
     item_id: str,
-    intents: tuple[str, ...],
 ) -> CombinationSuggestion:
     """Choose a deterministic least-used scenario and intent pair."""
     role = normalise_role(role)
     match = re.fullmatch(rf"ITEM-{role}-(\d+)", item_id)
     if not match:
         raise ValueError(f"item ID must match ITEM-{role}-###")
-    if not intents:
-        raise ValueError("at least one intent is required")
-
-    combinations = list(product(AUTHORING_SCENARIOS, intents))
+    combinations = list(product(AUTHORING_SCENARIOS, INTENTS))
     counts = Counter((item.scenario, item.intent) for item in items)
     minimum = min(counts[combination] for combination in combinations)
     least_used = [combination for combination in combinations if counts[combination] == minimum]
@@ -104,8 +80,8 @@ def suggest_authoring_combination(
     role_index = AUTHOR_ROLES.index(role)
     scenario_index = (item_number - 1) % len(AUTHORING_SCENARIOS)
     cycle = (item_number - 1) // len(AUTHORING_SCENARIOS)
-    intent_index = (cycle * len(AUTHOR_ROLES) + role_index + scenario_index) % len(intents)
-    preferred = (AUTHORING_SCENARIOS[scenario_index], intents[intent_index])
+    intent_index = (cycle * len(AUTHOR_ROLES) + role_index + scenario_index) % len(INTENTS)
+    preferred = (AUTHORING_SCENARIOS[scenario_index], INTENTS[intent_index])
     selected = preferred if preferred in least_used else least_used[combinations.index(preferred) % len(least_used)]
     return CombinationSuggestion(*selected, count=counts[selected])
 

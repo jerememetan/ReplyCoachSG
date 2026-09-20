@@ -1,9 +1,9 @@
 import pytest
 
 from replycoach import review
-from replycoach.io import PILOT_PATH, load_items
 from replycoach.review import ReviewPermissionError, assign_reviewer, format_position, parse_turns
 from replycoach.schema import DialogueItem, Message, Replies
+from replycoach.taxonomy import INTENTS, SCENARIOS
 
 
 def make_item() -> DialogueItem:
@@ -49,22 +49,33 @@ def test_format_position_uses_a_real_line_break_without_extra_symbols():
     assert format_position("PILOT-001", 0, 20) == "PILOT-001\n1 of 20"
 
 
-def test_pilot_scenarios_are_unique_and_cover_every_existing_item():
-    scenarios = review.PILOT_SCENARIOS
+def test_review_uses_the_shared_taxonomy():
+    assert review.PILOT_SCENARIOS is SCENARIOS
+    assert review.PILOT_INTENTS is INTENTS
 
-    assert len(scenarios) == len(set(scenarios))
-    assert {item.scenario for item in load_items(PILOT_PATH)} <= set(scenarios)
+
+def test_legacy_pilot_scenario_requires_manual_reselection():
+    assert review.scenario_selection_index("lunch_after_lecture") is None
 
 
 def test_pilot_intents_are_unique_and_describe_incoming_messages():
     assert len(review.PILOT_INTENTS) == len(set(review.PILOT_INTENTS))
     assert "invite_or_propose" in review.PILOT_INTENTS
-    assert "ask_status" in review.PILOT_INTENTS
+    assert "request_information_or_status" in review.PILOT_INTENTS
+    assert "ask_status" not in review.PILOT_INTENTS
 
 
 def test_intent_selection_index_selects_canonical_values_only():
-    assert review.intent_selection_index("ask_status") == review.PILOT_INTENTS.index("ask_status")
+    assert review.intent_selection_index("request_information_or_status") == review.PILOT_INTENTS.index(
+        "request_information_or_status"
+    )
+    assert review.intent_selection_index("ask_status") is None
     assert review.intent_selection_index("apologise_and_eta") is None
+
+
+def test_scenario_selection_index_selects_canonical_values_only():
+    assert review.scenario_selection_index("meals_and_food") == review.PILOT_SCENARIOS.index("meals_and_food")
+    assert review.scenario_selection_index("lunch_after_lecture") is None
 
 
 def test_require_intent_rejects_an_unselected_or_unknown_value():
@@ -73,3 +84,11 @@ def test_require_intent_rejects_an_unselected_or_unknown_value():
         review.require_intent(None)
     with pytest.raises(ValueError, match="Choose an intent"):
         review.require_intent("custom_intent")
+
+
+def test_require_scenario_rejects_an_unselected_or_unknown_value():
+    assert review.require_scenario("meals_and_food") == "meals_and_food"
+    with pytest.raises(ValueError, match="Choose a scenario"):
+        review.require_scenario(None)
+    with pytest.raises(ValueError, match="Choose a scenario"):
+        review.require_scenario("lunch_after_lecture")

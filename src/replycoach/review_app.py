@@ -8,17 +8,23 @@ import streamlit as st
 
 from replycoach.io import PILOT_PATH, load_items, save_items
 from replycoach.review import (
-    PILOT_INTENTS,
-    PILOT_SCENARIOS,
     ReviewPermissionError,
     assign_reviewer,
     format_position,
     format_turns,
-    intent_selection_index,
     parse_turns,
-    require_intent,
 )
 from replycoach.schema import LANGUAGE_TAGS, Message, Replies
+from replycoach.taxonomy import (
+    INTENTS,
+    SCENARIOS,
+    format_intent,
+    format_scenario,
+    intent_selection_index,
+    require_intent,
+    require_scenario,
+    scenario_selection_index,
+)
 
 
 def _split_terms(text: str) -> list[str]:
@@ -77,14 +83,19 @@ def main() -> None:
         with left:
             scenario = st.selectbox(
                 "Scenario",
-                PILOT_SCENARIOS,
-                index=PILOT_SCENARIOS.index(item.scenario),
+                SCENARIOS,
+                index=scenario_selection_index(item.scenario),
+                placeholder="Choose the dominant conversation topic",
+                format_func=format_scenario,
             )
+            if scenario_selection_index(item.scenario) is None:
+                st.caption(f"Existing label: `{item.scenario}` — choose a canonical scenario before saving.")
             intent = st.selectbox(
                 "Intent",
-                PILOT_INTENTS,
+                INTENTS,
                 index=intent_selection_index(item.intent),
                 placeholder="Choose the incoming message's intent",
+                format_func=format_intent,
             )
             if intent is None:
                 st.caption(f"Existing label: `{item.intent}` — choose a canonical intent before saving.")
@@ -115,7 +126,7 @@ def main() -> None:
         return
 
     try:
-        item.scenario = scenario.strip()
+        item.scenario = require_scenario(scenario)
         item.intent = require_intent(intent)
         item.session_memory = parse_turns(conversation)
         item.message = Message(text=message.strip(), language_mix=list(language_mix), local_terms=_split_terms(local_terms))

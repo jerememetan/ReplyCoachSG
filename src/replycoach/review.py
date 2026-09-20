@@ -3,43 +3,17 @@
 from __future__ import annotations
 
 from replycoach.schema import DialogueItem, SPEAKERS, Turn
-
-
-PILOT_SCENARIOS = (
-    "lunch_after_lecture",
-    "late_to_meeting",
-    "library_seats",
-    "share_notes",
-    "cafe_study",
-    "weekend_makan",
-    "mrt_meetup",
-    "deadline_tonight",
-    "cannot_make_it",
-    "confirm_time",
-    "dinner_near_campus",
-    "wait_at_gate",
-    "group_chat_nudge",
-    "tutorial_room",
-    "print_before_class",
-    "rec_sports",
-    "rain_change_plans",
-    "supper_jio",
-    "assignment_peer_check",
-    "arrived_waiting",
+from replycoach.taxonomy import (
+    INTENTS,
+    SCENARIOS,
+    intent_selection_index,
+    require_intent,
+    require_scenario,
+    scenario_selection_index,
 )
 
-PILOT_INTENTS = (
-    "invite_or_propose",
-    "request_information",
-    "request_help_or_resource",
-    "confirm_plan",
-    "change_or_reschedule",
-    "decline",
-    "inform_or_update",
-    "ask_status",
-    "remind_or_nudge",
-    "apologise_or_explain",
-)
+PILOT_SCENARIOS = SCENARIOS
+PILOT_INTENTS = INTENTS
 
 
 class ReviewPermissionError(ValueError):
@@ -87,15 +61,3 @@ def format_turns(turns: list[Turn]) -> str:
 def format_position(item_id: str, index: int, total: int) -> str:
     """Format an item identifier and its one-based review position."""
     return f"{item_id}\n{index + 1} of {total}"
-
-
-def intent_selection_index(intent: str) -> int | None:
-    """Select canonical values while leaving legacy annotations unselected."""
-    return PILOT_INTENTS.index(intent) if intent in PILOT_INTENTS else None
-
-
-def require_intent(intent: str | None) -> str:
-    """Return a selected canonical intent or reject the form value."""
-    if intent not in PILOT_INTENTS:
-        raise ValueError("Choose an intent from the approved list.")
-    return intent

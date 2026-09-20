@@ -13,13 +13,14 @@ from replycoach.authoring import (
     suggest_authoring_combination,
 )
 from replycoach.schema import DialogueItem, Message, Replies, Turn
+from replycoach.taxonomy import INTENTS, SCENARIOS
 
 
 def make_item(item_id: str = "ITEM-E-001", standard: str = "Sure, where should we meet?") -> DialogueItem:
     return DialogueItem(
         id=item_id,
         split="unassigned",
-        scenario="meal",
+        scenario="meals_and_food",
         intent="invite_or_propose",
         session_memory=[Turn(speaker="peer", text="Free after class?")],
         message=Message(text="Want to get dinner?"),
@@ -34,29 +35,32 @@ def test_each_author_targets_sixty_unassigned_items():
     assert AUTHORING_TARGET == 60
 
 
+def test_authoring_uses_the_shared_scenarios():
+    assert AUTHORING_SCENARIOS is SCENARIOS
+
+
 def test_combination_suggestion_is_zero_count_deterministic_and_role_aware():
-    a = suggest_authoring_combination([], "A", "ITEM-A-001", ("confirm_plan", "decline"))
-    b = suggest_authoring_combination([], "B", "ITEM-B-001", ("confirm_plan", "decline"))
+    a = suggest_authoring_combination([], "A", "ITEM-A-001")
+    b = suggest_authoring_combination([], "B", "ITEM-B-001")
 
     assert a.count == 0
-    assert a == suggest_authoring_combination([], "A", "ITEM-A-001", ("confirm_plan", "decline"))
+    assert a == suggest_authoring_combination([], "A", "ITEM-A-001")
     assert (a.scenario, a.intent) != (b.scenario, b.intent)
 
 
 def test_combination_suggestion_prefers_an_unused_pair():
     used = make_item()
 
-    suggestion = suggest_authoring_combination([used], "E", "ITEM-E-002", ("invite_or_propose", "decline"))
+    suggestion = suggest_authoring_combination([used], "E", "ITEM-E-002")
 
     assert suggestion.count == 0
     assert (suggestion.scenario, suggestion.intent) != (used.scenario, used.intent)
 
 
 def test_combination_suggestion_uses_the_least_represented_pairs():
-    intents = ("invite_or_propose", "decline")
     items = []
     for scenario in AUTHORING_SCENARIOS:
-        for intent in intents:
+        for intent in INTENTS:
             item = make_item(f"ITEM-E-{len(items) + 1:03d}")
             item.scenario = scenario
             item.intent = intent
@@ -64,7 +68,7 @@ def test_combination_suggestion_uses_the_least_represented_pairs():
     duplicate = make_item("ITEM-E-999")
     items.append(duplicate)
 
-    suggestion = suggest_authoring_combination(items, "E", "ITEM-E-041", intents)
+    suggestion = suggest_authoring_combination(items, "E", "ITEM-E-091")
 
     assert suggestion.count == 1
     assert (suggestion.scenario, suggestion.intent) != (duplicate.scenario, duplicate.intent)
