@@ -28,6 +28,16 @@ python -m streamlit run src/replycoach/demo_app.py
 pytest -q
 ```
 
+To write original team dataset items without editing JSONL manually:
+
+```powershell
+python -m streamlit run src/replycoach/author_app.py
+```
+
+Choose your name and role in the app. Records are saved as unassigned drafts under
+`data/authoring/items_<ROLE>.jsonl`; reviewers validate them before Role A assigns
+the final development and held-out test splits.
+
 Expected: 20 items load, BM25 returns a lunch pair, V3 trains one CPU batch if PyTorch is installed.
 
 **Hard rules**

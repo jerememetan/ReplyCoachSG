@@ -5,7 +5,7 @@
   "required": ["id", "split", "scenario", "intent", "session_memory", "message", "replies", "privacy_ok"],
   "properties": {
     "id": {"type": "string"},
-    "split": {"enum": ["pilot", "dev", "test"]},
+    "split": {"enum": ["unassigned", "pilot", "dev", "test"]},
     "scenario": {"type": "string"},
     "intent": {"type": "string"},
     "session_memory": {

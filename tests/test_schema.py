@@ -47,3 +47,21 @@ def test_dialogue_item_preserves_two_reviewer_notes():
     restored = DialogueItem.from_dict(item.to_dict())
     assert restored.reviewer_notes == "First pass"
     assert restored.second_reviewer_notes == "Second pass"
+
+
+def test_unassigned_authoring_item_is_a_valid_draft():
+    item = DialogueItem.from_dict(
+        {
+            "id": "ITEM-E-001",
+            "split": "unassigned",
+            "scenario": "meal",
+            "intent": "invite_or_propose",
+            "session_memory": [{"speaker": "peer", "text": "Free after class?"}],
+            "message": {"text": "Want to get dinner?", "language_mix": ["en"], "local_terms": []},
+            "replies": {"standard": "Sure, where should we meet?", "local": "Can, where should we meet?"},
+            "author": "Jereme",
+            "privacy_ok": True,
+        }
+    )
+
+    assert item.split == "unassigned"

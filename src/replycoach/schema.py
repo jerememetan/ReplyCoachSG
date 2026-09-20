@@ -10,7 +10,7 @@ from typing import Any, Iterable, Literal
 
 STYLES = ("STANDARD", "LOCAL")
 SOURCES = ("V0", "V1", "V2", "V3", "V4", "V5", "V6", "fallback", "gold")
-SPLITS = ("pilot", "dev", "test")
+SPLITS = ("unassigned", "pilot", "dev", "test")
 SPEAKERS = ("peer", "user", "other")
 LANGUAGE_TAGS = ("en", "singlish", "zh", "pinyin")
 
