@@ -2,6 +2,7 @@ from replycoach.io import load_items
 from replycoach.pipeline import ReplyCoach
 from replycoach.retrieval.v0 import V0Retriever
 from replycoach.retrieval.v1 import detect_and_normalise
+from replycoach.retrieval.v2 import V2Retriever
 
 
 def test_v0_retrieves_lunch_item():
@@ -34,3 +35,34 @@ def test_pipeline_returns_two_replies():
     assert result.local.style == "LOCAL"
     assert result.standard.candidate_text
     assert result.local.candidate_text
+
+def test_v2_retrieves_lunch_item():
+
+    items = load_items()
+
+    retriever = V2Retriever.from_items(items)
+
+    candidates = retriever.retrieve(
+        "eh later go makan then library",
+        context=["lecture ending soon sia", "yeah I'm starving"],
+        top_k=1,
+    )
+
+    assert candidates
+    assert candidates[0].item_id == "PILOT-001"
+
+
+def test_v2_returns_shared_candidate_format():
+
+    items = load_items()
+
+    retriever = V2Retriever.from_items(items)
+
+    candidates = retriever.retrieve(
+        "eh later go makan then library",
+        top_k=1,
+    )
+
+    assert {c.style for c in candidates} == {"STANDARD", "LOCAL"}
+    assert all(c.source == "V2" for c in candidates)
+    assert all(isinstance(c.score, float) for c in candidates)
