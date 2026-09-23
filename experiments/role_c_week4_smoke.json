@@ -1,0 +1,11 @@
+{
+  "version": "V3",
+  "purpose": "one_batch_smoke",
+  "items": 20,
+  "pairs": 40,
+  "batch_size": 4,
+  "vocab_size": 280,
+  "loss": 5.6428,
+  "checkpoint": "artifacts/rnn_v3_smoke.pt",
+  "device": "cpu"
+}

@@ -52,11 +52,19 @@ class AttentionDecoder(nn.Module):
         self.attn_combine = nn.Linear(hidden_size * 2, hidden_size)
         self.out = nn.Linear(hidden_size, vocab_size)
 
-    def forward(self, token: torch.Tensor, hidden, encoder_outputs: torch.Tensor):
+    def forward(
+        self,
+        token: torch.Tensor,
+        hidden,
+        encoder_outputs: torch.Tensor,
+        source_mask: torch.Tensor | None = None,
+    ):
         embedded = self.embed(token).unsqueeze(1)
         output, hidden = self.rnn(embedded, hidden)
         query = output
         scores = torch.bmm(query, encoder_outputs.transpose(1, 2))
+        if source_mask is not None:
+            scores = scores.masked_fill(~source_mask.unsqueeze(1), float("-inf"))
         weights = torch.softmax(scores, dim=-1)
         context = torch.bmm(weights, encoder_outputs)
         combined = torch.tanh(self.attn_combine(torch.cat([output, context], dim=-1)))
@@ -76,12 +84,16 @@ class Seq2Seq(nn.Module):
 
     def forward(self, src, src_lengths, tgt, teacher_forcing: bool = True):
         encoder_outputs, hidden = self.encoder(src, src_lengths)
+        source_mask = None
+        if self.use_attention:
+            positions = torch.arange(encoder_outputs.size(1), device=src.device)
+            source_mask = positions.unsqueeze(0) < src_lengths.to(src.device).unsqueeze(1)
         bos = tgt[:, 0]
         inputs = bos
         logits_steps = []
         for t in range(1, tgt.size(1)):
             if self.use_attention:
-                step_logits, hidden, _ = self.decoder(inputs, hidden, encoder_outputs)
+                step_logits, hidden, _ = self.decoder(inputs, hidden, encoder_outputs, source_mask)
             else:
                 step_logits, hidden, _ = self.decoder(inputs, hidden)
             logits_steps.append(step_logits)
