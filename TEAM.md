@@ -7,7 +7,7 @@ Fill this before the 29 Sep pre-proposal workshop. One person keeps the same rol
 | A | Data and evaluation | Tristan Ang Boon Yew | by.ang.2026@exchange.smu.edu.sg |  |
 | B | Retrieval and memory | Cody Loo Yee | cody.loo.2026@exchange.smu.edu.sg |  |
 | C | RNN and attention generator | Yangtian Yan | yt.yan.2026@exchange.smu.edu.sg |  |
-| D | Transformer experiment |  |  |  |
+| D | Transformer experiment | Hao Ming |  |  |
 | E | Reranker, integration and demo | Jereme Tan | jereme.tan.2024@computing.smu.edu.sg |  |
 
 Friday rule: each member shows a runnable artefact or a measurable result, not only a progress update.
