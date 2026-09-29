@@ -12,6 +12,7 @@ from replycoach.authoring import (
     save_author_item,
     suggest_authoring_combination,
 )
+from replycoach.io import save_items
 from replycoach.schema import DialogueItem, Message, Replies, Turn
 from replycoach.taxonomy import INTENTS, SCENARIOS
 
@@ -96,6 +97,22 @@ def test_save_author_item_creates_and_updates_atomically(tmp_path: Path):
     assert len(loaded) == 1
     assert loaded[0].replies.standard == "Yes, I can join you."
     assert list(tmp_path.glob(".items_E-*.jsonl")) == []
+
+
+def test_save_author_item_rejects_replacing_a_completed_item(tmp_path: Path):
+    path = authoring_path("E", tmp_path)
+    reviewed = make_item()
+    reviewed.status = "completed"
+    reviewed.reviewer = "Reviewer One"
+    save_items(path, [reviewed])
+
+    with pytest.raises(ValueError, match="reviewed"):
+        save_author_item(path, make_item(standard="Replacement draft"))
+
+    loaded = load_author_items(path)
+    assert loaded[0].status == "completed"
+    assert loaded[0].reviewer == "Reviewer One"
+    assert loaded[0].replies.standard == reviewed.replies.standard
 
 
 def test_load_team_author_items_combines_valid_files_and_warns_for_invalid(tmp_path: Path):
