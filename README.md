@@ -34,9 +34,21 @@ To write original team dataset items without editing JSONL manually:
 python -m streamlit run src/replycoach/author_app.py
 ```
 
-Choose your name and role in the app. Records are saved as unassigned drafts under
-`data/authoring/items_<ROLE>.jsonl`; reviewers validate them before Role A assigns
-the final development and held-out test splits.
+Choose your own name and role in the app. It automatically loads your assigned
+author file, `data/authoring/items_<ROLE>.jsonl`, and saves your records there as
+unassigned drafts.
+
+To review your assigned teammate's items:
+
+```powershell
+python -m streamlit run src/replycoach/team_review_app.py
+```
+
+Choose your own role and name; the app automatically loads your assigned author's
+file. Each item gets one independent peer review. The review cycle is A reviews B,
+B reviews C, C reviews D, D reviews E, and E reviews A. A valid review set marks
+its items `completed`. Role A assigns the fixed, balanced split only after all 300
+items are completed: 240 development and 60 held-out test.
 
 Expected: 20 items load, BM25 returns a lunch pair, V3 trains one CPU batch if PyTorch is installed.
 
@@ -67,9 +79,9 @@ Fill names in `TEAM.md`. First come, first served, then freeze.
 
 ## Next week — Week 7 (the real bottleneck)
 
-Code is ahead of data. Each member authors **60 unassigned items**, then peer-reviews one member’s set and second-reviews a different member’s set.
+Code is ahead of data. Each member authors **60 unassigned items** and independently peer-reviews one teammate’s set: A reviews B, B reviews C, C reviews D, D reviews E, and E reviews A. Each member reviews 60 items.
 
-The five role files produce **300 reviewed items**. After review, Role A assigns one fixed, balanced 80:20 split: **240 development + 60 untouched test**.
+The five role files produce **300 items**. Once every item has a valid review and is marked `completed`, Role A assigns one fixed, balanced 80:20 split: **240 development + 60 untouched test**.
 
 Use [`data/authoring/worksheet.md`](data/authoring/worksheet.md) and [`docs/annotation_guide.md`](docs/annotation_guide.md).
 
