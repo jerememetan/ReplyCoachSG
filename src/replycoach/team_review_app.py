@@ -32,7 +32,7 @@ def load_review_items(path: Path) -> tuple[list[DialogueItem], str | None]:
     """Read an assigned file, reporting malformed rows without changing it."""
     try:
         return load_author_items(path), None
-    except (OSError, UnicodeError, ValueError, KeyError, TypeError) as exc:
+    except (OSError, UnicodeError, ValueError, KeyError, TypeError, AttributeError) as exc:
         return [], f"Could not read assigned file {path.name}: {exc}"
 
 

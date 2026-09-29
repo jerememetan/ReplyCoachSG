@@ -87,7 +87,7 @@ def test_save_review_blocks_different_reviewer_without_changing_file(tmp_path: P
     assert path.read_bytes() == original
 
 
-@pytest.mark.parametrize("row", ['{}\n', '{"id":"ITEM-B-001","message":null,"replies":{}}\n'])
+@pytest.mark.parametrize("row", ['{}\n', '{"id":"ITEM-B-001","message":null,"replies":{}}\n', '[]\n'])
 def test_malformed_assigned_rows_return_read_error_without_changing_file(tmp_path: Path, row: str):
     path = tmp_path / "items_B.jsonl"
     path.write_text(row, encoding="utf-8")
