@@ -1,6 +1,6 @@
 # 8-week plan with current artefacts
 
-Today is 16 Sep 2026. Week 4 Friday is 18 Sep.
+Plan status as of 29 Sep 2026. Week 4 Friday was 18 Sep.
 
 | Week | Dates (2026) | Friday proof | Status in this repo |
 | --- | --- | --- | --- |
@@ -16,6 +16,7 @@ Today is 16 Sep 2026. Week 4 Friday is 18 Sep.
 
 Team-authored volume still to write (do not use the 20 fixtures as gold):
 
-- Each person: 60 unassigned items, one peer-review set, and one second-review set
-- Team total: 300 reviewed items
-- After review: a fixed, balanced 80:20 split of 240 development and 60 untouched test items
+- Each person: 60 unassigned items and one independent peer-review set of 60 items
+- Review cycle: A reviews B, B reviews C, C reviews D, D reviews E, and E reviews A
+- Team total: all 300 items marked `completed` after a valid review
+- After all 300 are completed, Role A assigns the fixed, balanced 80:20 split of 240 development and 60 untouched test items

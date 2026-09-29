@@ -5,11 +5,13 @@ Each member writes their own items. Do not copy the pilot fixtures.
 ## Final quota per person
 
 - 60 original items saved as `unassigned`
-- Peer-review another member’s set
-- Second-review a different member’s set
+- Independently peer-review one teammate’s set (60 items)
 
-The five role files produce 300 reviewed items. Role A later assigns a fixed,
-balanced 80:20 split: 240 development and 60 held-out test items.
+The review cycle is A reviews B, B reviews C, C reviews D, D reviews E, and E
+reviews A. Each item gets one independent peer review. Saving a valid review
+automatically sets that item's `status` to `completed`. After all 300 items are
+completed, Role A assigns a fixed, balanced 80:20 split: 240 development and 60
+held-out test items.
 
 ## Scenario menu
 

@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.pytest-basetemp-*/
 .ipynb_checkpoints/
 .mypy_cache/
 .ruff_cache/
@@ -17,6 +18,7 @@ artifacts/pytest_tmp/
 data/public/*.jsonl
 data/public/*.zip
 experiments/logs/*.jsonl
+data/authoring/*.jsonl.lock
 !experiments/logs/.gitkeep
 .streamlit/
 .DS_Store
