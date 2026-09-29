@@ -104,7 +104,13 @@ def save_author_item(path: Path, item: DialogueItem) -> None:
     items = load_author_items(path)
     for index, existing in enumerate(items):
         if existing.id == item.id:
-            if existing.reviewer or existing.status == "completed":
+            review_metadata = (
+                existing.reviewer,
+                existing.reviewer_notes,
+                existing.second_reviewer,
+                existing.second_reviewer_notes,
+            )
+            if any(review_metadata) or existing.status == "completed":
                 raise ValueError(f"cannot replace reviewed item {item.id}")
             items[index] = item
             break

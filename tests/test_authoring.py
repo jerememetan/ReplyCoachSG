@@ -115,6 +115,28 @@ def test_save_author_item_rejects_replacing_a_completed_item(tmp_path: Path):
     assert loaded[0].replies.standard == reviewed.replies.standard
 
 
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("reviewer_notes", "Existing review note"),
+        ("second_reviewer", "Legacy reviewer"),
+        ("second_reviewer_notes", "Legacy second review note"),
+    ],
+)
+def test_save_author_item_preserves_any_existing_review_metadata(tmp_path: Path, field: str, value: str):
+    path = authoring_path("E", tmp_path)
+    existing = make_item()
+    setattr(existing, field, value)
+    save_items(path, [existing])
+
+    with pytest.raises(ValueError, match="reviewed"):
+        save_author_item(path, make_item(standard="Replacement draft"))
+
+    loaded = load_author_items(path)
+    assert getattr(loaded[0], field) == value
+    assert loaded[0].replies.standard == existing.replies.standard
+
+
 def test_load_team_author_items_combines_valid_files_and_warns_for_invalid(tmp_path: Path):
     save_author_item(authoring_path("A", tmp_path), make_item("ITEM-A-001"))
     save_author_item(authoring_path("E", tmp_path), make_item("ITEM-E-001"))
