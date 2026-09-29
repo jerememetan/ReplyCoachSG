@@ -62,7 +62,7 @@ Expected: 20 items load, BM25 returns a lunch pair, V3 trains one CPU batch if P
 
 ---
 
-## Tomorrow — Week 4 Friday proof
+## Week 4 Friday proof (18 Sep 2026)
 
 Each person shows a **runnable artefact**, not a progress update.
 
@@ -78,7 +78,7 @@ Fill names in `TEAM.md`. First come, first served, then freeze.
 
 ---
 
-## Next week — Week 7 (the real bottleneck)
+## Week 7 — data and review cycle
 
 Code is ahead of data. Each member authors **60 unassigned items** and independently peer-reviews one teammate’s set: A reviews B, B reviews C, C reviews D, D reviews E, and E reviews A. Each member reviews 60 items.
 

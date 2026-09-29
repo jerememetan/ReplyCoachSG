@@ -96,4 +96,4 @@ Reviewer rejects the item if any box fails:
 - [ ] Memory is actually useful for the reply
 - [ ] No LLM-generated wording pasted in
 
-Record the independent reviewer's initials in `reviewer`. The legacy `second_reviewer` field remains compatible but is not required for this cycle. Saving a valid review automatically sets the item's `status` to `completed`. Split labels stay `dev` or `test`; Role A assigns splits, authors do not self-assign test items after seeing model output.
+Record the independent reviewer's initials in `reviewer`. The legacy `second_reviewer` field remains compatible but is not required for this cycle. Saving a valid review automatically sets the item's `status` to `completed`. Items remain `unassigned` during authorship and review. After all items complete review, Role A assigns `dev` or `test`; authors do not self-assign test items after seeing model output.

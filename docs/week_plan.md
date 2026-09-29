@@ -1,6 +1,6 @@
 # 8-week plan with current artefacts
 
-Today is 16 Sep 2026. Week 4 Friday is 18 Sep.
+Plan status as of 29 Sep 2026. Week 4 Friday was 18 Sep.
 
 | Week | Dates (2026) | Friday proof | Status in this repo |
 | --- | --- | --- | --- |
