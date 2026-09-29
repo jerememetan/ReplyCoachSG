@@ -28,6 +28,14 @@ def _split_terms(text: str) -> list[str]:
     return [term.strip() for term in text.split(",") if term.strip()]
 
 
+def load_review_items(path: Path) -> tuple[list[DialogueItem], str | None]:
+    """Read an assigned file, reporting malformed rows without changing it."""
+    try:
+        return load_author_items(path), None
+    except (OSError, UnicodeError, ValueError, KeyError, TypeError) as exc:
+        return [], f"Could not read assigned file {path.name}: {exc}"
+
+
 def save_review(
     path: Path,
     items: list[DialogueItem],
@@ -88,10 +96,9 @@ def main() -> None:
     path = assigned_review_path(role)
     st.info(f"Role {role} reviews Role {target_role} · data/authoring/{path.name}")
 
-    try:
-        items = load_author_items(path)
-    except (OSError, UnicodeError, ValueError) as exc:
-        st.error(f"Could not read assigned file {path.name}: {exc}")
+    items, load_error = load_review_items(path)
+    if load_error:
+        st.error(load_error)
         return
     if not items:
         st.warning(f"Assigned file {path.name} is missing or empty. Ask Role {target_role} to save their drafts first.")
