@@ -46,9 +46,10 @@ python -m streamlit run src/replycoach/team_review_app.py
 
 Choose your own role and name; the app automatically loads your assigned author's
 file. Each item gets one independent peer review. The review cycle is A reviews B,
-B reviews C, C reviews D, D reviews E, and E reviews A. A valid review set marks
-its items `completed`. Role A assigns the fixed, balanced split only after all 300
-items are completed: 240 development and 60 held-out test.
+B reviews C, C reviews D, D reviews E, and E reviews A. Saving a valid review
+automatically sets that item's `status` to `completed`. Role A assigns the fixed,
+balanced split only after all 300 items are completed: 240 development and 60
+held-out test.
 
 Expected: 20 items load, BM25 returns a lunch pair, V3 trains one CPU batch if PyTorch is installed.
 
