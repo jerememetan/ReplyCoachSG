@@ -7,7 +7,7 @@ from pathlib import Path
 
 import streamlit as st
 
-from replycoach.authoring import AUTHOR_ROLES, load_author_items
+from replycoach.authoring import AUTHOR_ROLES, authoring_file_lock, load_author_items
 from replycoach.io import save_items
 from replycoach.review import format_position, format_turns, parse_turns
 from replycoach.schema import LANGUAGE_TAGS, DialogueItem, Message, Replies
@@ -55,32 +55,33 @@ def save_review(
     reviewer_notes: str,
 ) -> DialogueItem:
     """Save against a fresh file only if the displayed item is unchanged."""
-    selected_id = items[index].id
-    latest_items = load_author_items(path)
-    latest_index = next((i for i, row in enumerate(latest_items) if row.id == selected_id), None)
-    if (
-        expected_snapshot.get("id") != selected_id
-        or latest_index is None
-        or latest_items[latest_index].to_dict() != expected_snapshot
-    ):
-        raise ValueError(f"{selected_id} changed since you opened it; reload the item before saving.")
+    with authoring_file_lock(path):
+        selected_id = items[index].id
+        latest_items = load_author_items(path)
+        latest_index = next((i for i, row in enumerate(latest_items) if row.id == selected_id), None)
+        if (
+            expected_snapshot.get("id") != selected_id
+            or latest_index is None
+            or latest_items[latest_index].to_dict() != expected_snapshot
+        ):
+            raise ValueError(f"{selected_id} changed since you opened it; reload the item before saving.")
 
-    item = replace(latest_items[latest_index])
-    item.scenario = require_scenario(scenario)
-    item.intent = require_intent(intent)
-    item.session_memory = parse_turns(conversation)
-    item.message = Message(
-        text=message.strip(),
-        language_mix=list(language_mix),
-        local_terms=_split_terms(local_terms),
-    )
-    item.replies = Replies(standard=standard.strip(), local=local.strip())
-    item.privacy_ok = privacy_ok
-    item.reviewer_notes = reviewer_notes.strip()
-    complete_review(item, reviewer_name)
-    latest_items[latest_index] = item
-    save_items(path, latest_items)
-    return item
+        item = replace(latest_items[latest_index])
+        item.scenario = require_scenario(scenario)
+        item.intent = require_intent(intent)
+        item.session_memory = parse_turns(conversation)
+        item.message = Message(
+            text=message.strip(),
+            language_mix=list(language_mix),
+            local_terms=_split_terms(local_terms),
+        )
+        item.replies = Replies(standard=standard.strip(), local=local.strip())
+        item.privacy_ok = privacy_ok
+        item.reviewer_notes = reviewer_notes.strip()
+        complete_review(item, reviewer_name)
+        latest_items[latest_index] = item
+        save_items(path, latest_items)
+        return item
 
 
 def _navigate(delta: int, count: int) -> None:

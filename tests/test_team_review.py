@@ -88,6 +88,16 @@ def test_complete_review_allows_same_reviewer_to_edit_again():
     assert item.status == "completed"
 
 
+def test_complete_review_rejects_author_as_reviewer_after_normalization():
+    item = make_item()
+
+    with pytest.raises(ValueError, match="own item|self.review|author"):
+        complete_review(item, "  aUtHoR  ")
+
+    assert item.reviewer == ""
+    assert item.status == "draft_needs_team_review"
+
+
 def test_complete_review_blocks_a_different_reviewer():
     item = make_item()
     complete_review(item, "Reviewer One")

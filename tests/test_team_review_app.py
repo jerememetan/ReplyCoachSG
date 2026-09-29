@@ -1,8 +1,9 @@
 from pathlib import Path
+from threading import Event, Thread
 
 import pytest
 
-from replycoach.authoring import load_author_items
+from replycoach.authoring import load_author_items, save_author_item
 from replycoach.io import save_items
 from replycoach.schema import DialogueItem, Message, Replies, Turn
 from replycoach import team_review_app
@@ -148,3 +149,68 @@ def test_save_review_preserves_concurrent_change_to_another_row(tmp_path: Path):
     saved = load_author_items(path)
     assert saved[0].reviewer == "Reviewer A"
     assert saved[1].notes == "Edited by author after reviewer opened first item"
+
+
+def test_review_and_author_saves_serialize_the_entire_update(tmp_path: Path, monkeypatch):
+    path = tmp_path / "items_B.jsonl"
+    draft = make_item("ITEM-B-002")
+    draft.second_reviewer = ""
+    draft.second_reviewer_notes = ""
+    save_items(path, [make_item(), draft])
+    opened_items = load_author_items(path)
+    review_reached_write = Event()
+    release_review_write = Event()
+    author_finished = Event()
+    errors = []
+    original_save_items = team_review_app.save_items
+
+    def delayed_review_write(*args):
+        review_reached_write.set()
+        if not release_review_write.wait(5):
+            raise TimeoutError("review test coordination timed out")
+        original_save_items(*args)
+
+    monkeypatch.setattr(team_review_app, "save_items", delayed_review_write)
+
+    def run_review():
+        try:
+            save_review(
+                path, opened_items, 0, "Reviewer A",
+                expected_snapshot=opened_items[0].to_dict(),
+                scenario="meals_and_food", intent="invite_or_propose",
+                conversation="peer: Free later?", message="Dinner?",
+                language_mix=["en"], local_terms="",
+                standard="Yes, let's go.", local="Can, let's go.",
+                privacy_ok=True, reviewer_notes="Reviewed",
+            )
+        except Exception as exc:
+            errors.append(exc)
+
+    def run_author():
+        try:
+            draft.notes = "Edited while review was saving"
+            save_author_item(path, draft)
+        except Exception as exc:
+            errors.append(exc)
+        finally:
+            author_finished.set()
+
+    review_thread = Thread(target=run_review)
+    author_thread = Thread(target=run_author)
+    review_thread.start()
+    try:
+        assert review_reached_write.wait(5)
+        author_thread.start()
+        assert not author_finished.wait(0.25), "author save must wait for review write"
+    finally:
+        release_review_write.set()
+        review_thread.join(5)
+        if author_thread.ident is not None:
+            author_thread.join(5)
+
+    assert not review_thread.is_alive()
+    assert not author_thread.is_alive()
+    assert errors == []
+    saved = load_author_items(path)
+    assert saved[0].reviewer == "Reviewer A"
+    assert saved[1].notes == "Edited while review was saving"

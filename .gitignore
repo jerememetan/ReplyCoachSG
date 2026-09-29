@@ -17,6 +17,7 @@ artifacts/pytest_tmp/
 data/public/*.jsonl
 data/public/*.zip
 experiments/logs/*.jsonl
+data/authoring/*.jsonl.lock
 !experiments/logs/.gitkeep
 .streamlit/
 .DS_Store

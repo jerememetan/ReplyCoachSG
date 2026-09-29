@@ -9,6 +9,7 @@ description = "Dual-style reply coach for exchange students handling casual peer
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+  "filelock>=3.0",
   "numpy>=1.24",
   "scikit-learn>=1.3",
   "torch>=2.1",

@@ -8,6 +8,8 @@ from dataclasses import dataclass
 from itertools import product
 from pathlib import Path
 
+from filelock import FileLock
+
 from replycoach.io import DATA_DIR, load_items, save_items
 from replycoach.schema import DialogueItem
 from replycoach.taxonomy import INTENTS, SCENARIOS
@@ -35,6 +37,12 @@ def authoring_path(role: str, directory: Path | None = None) -> Path:
     """Return the role's authoring file inside the approved directory."""
     role = normalise_role(role)
     return (directory or DATA_DIR / "authoring") / f"items_{role}.jsonl"
+
+
+def authoring_file_lock(path: Path) -> FileLock:
+    """Use a stable adjacent lock file for author and reviewer updates."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    return FileLock(str(path.with_name(path.name + ".lock")))
 
 
 def load_author_items(path: Path) -> list[DialogueItem]:
@@ -101,19 +109,20 @@ def save_author_item(path: Path, item: DialogueItem) -> None:
     if item.reviewer or item.second_reviewer:
         raise ValueError("authors cannot set reviewer fields")
     item.validate()
-    items = load_author_items(path)
-    for index, existing in enumerate(items):
-        if existing.id == item.id:
-            review_metadata = (
-                existing.reviewer,
-                existing.reviewer_notes,
-                existing.second_reviewer,
-                existing.second_reviewer_notes,
-            )
-            if any(review_metadata) or existing.status == "completed":
-                raise ValueError(f"cannot replace reviewed item {item.id}")
-            items[index] = item
-            break
-    else:
-        items.append(item)
-    save_items(path, items)
+    with authoring_file_lock(path):
+        items = load_author_items(path)
+        for index, existing in enumerate(items):
+            if existing.id == item.id:
+                review_metadata = (
+                    existing.reviewer,
+                    existing.reviewer_notes,
+                    existing.second_reviewer,
+                    existing.second_reviewer_notes,
+                )
+                if any(review_metadata) or existing.status == "completed":
+                    raise ValueError(f"cannot replace reviewed item {item.id}")
+                items[index] = item
+                break
+        else:
+            items.append(item)
+        save_items(path, items)

@@ -26,6 +26,8 @@ def complete_review(item: DialogueItem, name: str) -> None:
     reviewer = name.strip()
     if not reviewer:
         raise ValueError("reviewer name is required")
+    if reviewer.casefold() == item.author.strip().casefold():
+        raise ValueError("authors cannot review their own item")
     if item.split != "unassigned":
         raise ValueError("review items must remain unassigned until review is complete")
     if item.reviewer and item.reviewer != reviewer:
