@@ -42,6 +42,7 @@ def save_review(
     index: int,
     reviewer_name: str,
     *,
+    expected_snapshot: dict,
     scenario: str | None,
     intent: str | None,
     conversation: str,
@@ -53,8 +54,18 @@ def save_review(
     privacy_ok: bool,
     reviewer_notes: str,
 ) -> DialogueItem:
-    """Validate, complete, and atomically persist one assigned review."""
-    item = replace(items[index])
+    """Save against a fresh file only if the displayed item is unchanged."""
+    selected_id = items[index].id
+    latest_items = load_author_items(path)
+    latest_index = next((i for i, row in enumerate(latest_items) if row.id == selected_id), None)
+    if (
+        expected_snapshot.get("id") != selected_id
+        or latest_index is None
+        or latest_items[latest_index].to_dict() != expected_snapshot
+    ):
+        raise ValueError(f"{selected_id} changed since you opened it; reload the item before saving.")
+
+    item = replace(latest_items[latest_index])
     item.scenario = require_scenario(scenario)
     item.intent = require_intent(intent)
     item.session_memory = parse_turns(conversation)
@@ -67,14 +78,20 @@ def save_review(
     item.privacy_ok = privacy_ok
     item.reviewer_notes = reviewer_notes.strip()
     complete_review(item, reviewer_name)
-    updated = list(items)
-    updated[index] = item
-    save_items(path, updated)
+    latest_items[latest_index] = item
+    save_items(path, latest_items)
     return item
 
 
 def _navigate(delta: int, count: int) -> None:
     st.session_state.team_review_index = max(0, min(st.session_state.team_review_index + delta, count - 1))
+    st.session_state.pop("team_review_item_key", None)
+    st.session_state.pop("team_review_snapshot", None)
+
+
+def _reload_current() -> None:
+    st.session_state.pop("team_review_item_key", None)
+    st.session_state.pop("team_review_snapshot", None)
 
 
 def main() -> None:
@@ -91,6 +108,7 @@ def main() -> None:
     if st.session_state.get("team_review_selected_role") != role:
         st.session_state.team_review_index = 0
         st.session_state.team_review_selected_role = role
+        _reload_current()
 
     target_role = target_role_for(role)
     path = assigned_review_path(role)
@@ -107,6 +125,10 @@ def main() -> None:
     st.session_state.team_review_index = min(st.session_state.team_review_index, len(items) - 1)
     index = st.session_state.team_review_index
     item = items[index]
+    item_key = (role, item.id)
+    if st.session_state.get("team_review_item_key") != item_key:
+        st.session_state.team_review_item_key = item_key
+        st.session_state.team_review_snapshot = item.to_dict()
     completed = completed_review_count(items)
     st.progress(completed / len(items), text=f"{completed} of {len(items)} reviews completed")
 
@@ -116,6 +138,7 @@ def main() -> None:
     next_item.button("Next →", disabled=index == len(items) - 1, on_click=_navigate, args=(1, len(items)))
 
     st.info(f"Status: {item.status} · Reviewer: {item.reviewer or 'Unassigned'}")
+    st.button("Reload latest item", on_click=_reload_current)
     reviewer = reviewer_name.strip()
     permission_error = None
     if not reviewer:
@@ -168,14 +191,16 @@ def main() -> None:
     try:
         saved = save_review(
             path, items, index, reviewer_name,
+            expected_snapshot=st.session_state.team_review_snapshot,
             scenario=scenario, intent=intent, conversation=conversation,
             message=message, language_mix=list(language_mix), local_terms=local_terms,
             standard=standard, local=local, privacy_ok=privacy_ok,
             reviewer_notes=reviewer_notes,
         )
-    except (OSError, ValueError) as exc:
+    except (OSError, UnicodeError, ValueError, KeyError, TypeError, AttributeError) as exc:
         st.error(f"Not saved: {exc}")
         return
+    st.session_state.team_review_snapshot = saved.to_dict()
     st.success(f"Saved review for {saved.id}.")
 
 
