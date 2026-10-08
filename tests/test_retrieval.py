@@ -36,11 +36,11 @@ def test_pipeline_returns_two_replies():
     assert result.standard.candidate_text
     assert result.local.candidate_text
 
-def test_v2_retrieves_lunch_item():
+def test_v2_retrieves_lunch_item(tmp_path):
 
     items = load_items()
 
-    retriever = V2Retriever.from_items(items)
+    retriever = V2Retriever.from_items(items, cache_file=tmp_path / "lunch_embeddings.npy")
 
     candidates = retriever.retrieve(
         "eh later go makan then library",
@@ -52,11 +52,11 @@ def test_v2_retrieves_lunch_item():
     assert candidates[0].item_id == "PILOT-001"
 
 
-def test_v2_returns_shared_candidate_format():
+def test_v2_returns_shared_candidate_format(tmp_path):
 
     items = load_items()
 
-    retriever = V2Retriever.from_items(items)
+    retriever = V2Retriever.from_items(items, cache_file=tmp_path / "format_embeddings.npy")
 
     candidates = retriever.retrieve(
         "eh later go makan then library",
