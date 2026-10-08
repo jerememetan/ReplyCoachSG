@@ -57,23 +57,25 @@ def select_reply(reply_text: str) -> None:
 
 
 def render_comparison(comparison: ComparisonResult) -> None:
-    st.caption("Scores are ranking signals, not accuracy percentages, and are not directly comparable between methods.")
+    st.divider()
+    st.header("Suggested replies")
+    st.caption("Click a reply to fill the conversation preview.")
     columns = st.columns(2, gap="large")
     for column, method, label in zip(columns, ("bm25", "minilm"), ("BM25", "MiniLM")):
         with column:
-            st.subheader(label)
+            st.subheader(label, anchor=f"reply-model-{method}")
             st.caption("Word matching" if method == "bm25" else "Embedding similarity · all-MiniLM-L6-v2")
             if method in comparison.errors:
                 st.warning(f"{label} unavailable: {comparison.errors[method]}")
                 continue
             result = comparison.results[method]
             for style_label, candidate in (("Standard English", result.standard), ("Light local", result.local)):
-                st.markdown(f"#### {style_label}")
+                st.markdown(f'<p class="reply-style-label">{style_label}</p>', unsafe_allow_html=True)
                 st.button(
                     candidate.candidate_text,
                     key=f"select_{method}_{candidate.style.lower()}",
                     use_container_width=True,
-                    type="primary",
+                    type="secondary",
                     on_click=select_reply,
                     args=(candidate.candidate_text,),
                 )
@@ -97,6 +99,7 @@ def render_comparison(comparison: ComparisonResult) -> None:
                     use_container_width=True,
                     hide_index=True,
                 )
+    st.caption("Scores are ranking signals, not accuracy percentages, and are not directly comparable between methods.")
     prepared = comparison.prepared
     st.write("**Normalised incoming message:**", prepared.normalised_message)
     st.write("**Selected memory:**", prepared.memory or "(none)")
@@ -127,9 +130,32 @@ def main() -> None:
         .preview-composer.empty { color: #667085; }
         .preview-composer.selected { border-color: #7aa7e8; background: #eff6ff; }
         .empty-chat { color: #667085; font-style: italic; margin: 0; }
+        #reply-model-bm25, #reply-model-minilm { font-size: 1.75rem;
+            border-top: 2px solid #3b82f6; padding-top: 1rem; }
+        .reply-style-label { font-size: 0.82rem; font-weight: 600;
+            letter-spacing: 0.03em; margin: 0.6rem 0 0.2rem; }
+        /* Scope the chat-option treatment to replies, not the compare button. */
+        [class*="st-key-select_"] button { min-height: 88px; padding: 1rem 1.25rem;
+            border: 1.5px solid #3b82f6; border-radius: 1.1rem 1.1rem 0.3rem 1.1rem;
+            background: rgba(59, 130, 246, 0.07); color: inherit; box-shadow: none;
+            justify-content: flex-start; text-align: left;
+            transition: background-color 160ms ease, border-color 160ms ease; }
+        [class*="st-key-select_"] button > div { justify-content: flex-start; }
         [class*="st-key-select_"] button [data-testid="stMarkdownContainer"],
-        [class*="st-key-select_"] button p { white-space: normal; overflow: visible;
-            text-overflow: clip; overflow-wrap: anywhere; }
+        [class*="st-key-select_"] button p { font-size: 22px; font-weight: 600;
+            line-height: 1.45; text-align: left; white-space: normal; overflow: visible;
+            text-overflow: clip; overflow-wrap: anywhere; margin: 0; }
+        [class*="st-key-select_"] button:hover { background: rgba(59, 130, 246, 0.16);
+            border-color: #60a5fa; color: inherit; }
+        [class*="st-key-select_"] button:active { background: rgba(59, 130, 246, 0.24); }
+        [class*="st-key-select_"] button:focus-visible { outline: 3px solid #3b82f6;
+            outline-offset: 3px; border-color: #60a5fa; box-shadow: none; }
+        @media (max-width: 640px) {
+            [class*="st-key-select_"] button { min-height: 76px; padding: 0.85rem 1rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            [class*="st-key-select_"] button { transition: none; }
+        }
         </style>
         """,
         unsafe_allow_html=True,
