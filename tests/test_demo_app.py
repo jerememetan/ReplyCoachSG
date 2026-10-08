@@ -70,6 +70,22 @@ def test_demo_identifies_pilot_drafts_without_loading_model(demo_test, fake_enco
     assert demo_test.button(key="compare").label == "Compare reply suggestions"
 
 
+def test_comparison_introduces_the_reply_selection_section(demo_test):
+    app = compare_in_app(demo_test)
+    assert "Suggested replies" in [heading.value for heading in app.header]
+    assert "Click a reply to fill the conversation preview." in [
+        caption.value for caption in app.caption
+    ]
+
+
+def test_reply_options_use_secondary_buttons_but_compare_stays_primary(demo_test):
+    app = compare_in_app(demo_test)
+    assert app.button(key="compare").proto.type == "primary"
+    assert len(suggestion_keys(app)) == 4
+    for key in suggestion_keys(app):
+        assert app.button(key=key).proto.type == "secondary"
+
+
 @pytest.mark.parametrize("method,style", [("bm25", "standard"), ("bm25", "local"), ("minilm", "standard"), ("minilm", "local")])
 def test_each_method_style_button_fills_display_only_composer(demo_test, method, style):
     app = compare_in_app(demo_test)
