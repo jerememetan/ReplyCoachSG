@@ -1,22 +1,17 @@
+"""V2: local MiniLM embedding retrieval with reusable item embeddings."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
 
 from replycoach.schema import Candidate, DialogueItem, require_items
 
-"""Week 6 stub: static embedding retrieval. Do not import this in Week 4 demos."""
-
-# Planned recipe:
-# 1. Encode message + memory with a local MiniLM (sentence-transformers), no API.
-# 2. Encode each pilot/dev item the same way and cache vectors in artifacts/.
-# 3. Rank by cosine similarity, then emit STANDARD/LOCAL candidates in the shared format.
-# 4. Compare against V0 BM25 on development data only.
-
-"""V2: local MiniLM embedding retrieval with cached item embeddings."""
+if TYPE_CHECKING:
+    from sentence_transformers import SentenceTransformer
 
 MODEL_NAME = "all-MiniLM-L6-v2"
 CACHE_DIR = Path("artifacts")
@@ -46,16 +41,18 @@ class V2Retriever:
     def from_items(
         cls,
         items: list[DialogueItem],
-        cache_file: Path = CACHE_FILE,
+        cache_file: Path | None = CACHE_FILE,
+        model: SentenceTransformer | None = None,
     ) -> "V2Retriever":
         """Create a V2 retriever and cache embeddings for the supplied items."""
         items = require_items(items)
 
-        model = SentenceTransformer(MODEL_NAME)
+        if model is None:
+            from sentence_transformers import SentenceTransformer
+
+            model = SentenceTransformer(MODEL_NAME)
 
         texts = [_item_text(item) for item in items]
-
-        cache_file.parent.mkdir(parents=True, exist_ok=True)
 
         embeddings = model.encode(
             texts,
@@ -64,7 +61,9 @@ class V2Retriever:
             show_progress_bar=False,
         )
 
-        np.save(cache_file, embeddings)
+        if cache_file is not None:
+            cache_file.parent.mkdir(parents=True, exist_ok=True)
+            np.save(cache_file, embeddings)
 
         return cls(
             items=items,

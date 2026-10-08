@@ -1,12 +1,16 @@
-"""Interactive Streamlit demo for Friday Week 4 / later polish."""
+"""Interactive BM25/MiniLM comparison with a display-only chat preview."""
 
 from __future__ import annotations
 
 from html import escape
+from pathlib import Path
 
 import streamlit as st
 
-from replycoach.pipeline import ReplyCoach
+from replycoach import demo_resources
+from replycoach.io import ROOT
+from replycoach.pipeline import ComparisonResult, compare_replies
+from replycoach.reply_bank import load_reply_bank
 
 
 def parse_preview_line(line: str) -> tuple[str, str]:
@@ -52,6 +56,57 @@ def select_reply(reply_text: str) -> None:
     st.session_state.selected_reply = reply_text
 
 
+def render_comparison(comparison: ComparisonResult) -> None:
+    st.divider()
+    st.header("Suggested replies")
+    st.caption("Click a reply to fill the conversation preview.")
+    columns = st.columns(2, gap="large")
+    for column, method, label in zip(columns, ("bm25", "minilm"), ("BM25", "MiniLM")):
+        with column:
+            st.subheader(label, anchor=f"reply-model-{method}")
+            st.caption("Word matching" if method == "bm25" else "Embedding similarity · all-MiniLM-L6-v2")
+            if method in comparison.errors:
+                st.warning(f"{label} unavailable: {comparison.errors[method]}")
+                continue
+            result = comparison.results[method]
+            for style_label, candidate in (("Standard English", result.standard), ("Light local", result.local)):
+                st.markdown(f'<p class="reply-style-label">{style_label}</p>', unsafe_allow_html=True)
+                st.button(
+                    candidate.candidate_text,
+                    key=f"select_{method}_{candidate.style.lower()}",
+                    use_container_width=True,
+                    type="secondary",
+                    on_click=select_reply,
+                    args=(candidate.candidate_text,),
+                )
+                if candidate.source == "fallback":
+                    st.caption("Fallback · no sufficiently ranked saved reply")
+                else:
+                    st.caption(f"Reranker · ranking score {candidate.score:.3f} · example {candidate.item_id}")
+            with st.expander(f"Retrieved candidates · {label}"):
+                st.dataframe(
+                    [
+                        {
+                            "style": candidate.style,
+                            "ranked by": "Reranker",
+                            "ranking score": round(candidate.score, 3),
+                            "retrieval score": round(candidate.meta["v6_input_score"], 3),
+                            "example": candidate.item_id,
+                            "reply": candidate.candidate_text,
+                        }
+                        for candidate in result.candidates
+                    ],
+                    use_container_width=True,
+                    hide_index=True,
+                )
+    st.caption("Scores are ranking signals, not accuracy percentages, and are not directly comparable between methods.")
+    prepared = comparison.prepared
+    st.write("**Normalised incoming message:**", prepared.normalised_message)
+    st.write("**Selected memory:**", prepared.memory or "(none)")
+    if prepared.detected_terms:
+        st.write("**Detected local terms:**", ", ".join(t["surface"] + " → " + t["canonical"] for t in prepared.detected_terms))
+
+
 def main() -> None:
     st.set_page_config(page_title="Reply Coach", layout="wide")
     st.markdown(
@@ -75,6 +130,32 @@ def main() -> None:
         .preview-composer.empty { color: #667085; }
         .preview-composer.selected { border-color: #7aa7e8; background: #eff6ff; }
         .empty-chat { color: #667085; font-style: italic; margin: 0; }
+        #reply-model-bm25, #reply-model-minilm { font-size: 1.75rem;
+            border-top: 2px solid #3b82f6; padding-top: 1rem; }
+        .reply-style-label { font-size: 0.82rem; font-weight: 600;
+            letter-spacing: 0.03em; margin: 0.6rem 0 0.2rem; }
+        /* Scope the chat-option treatment to replies, not the compare button. */
+        [class*="st-key-select_"] button { min-height: 88px; padding: 1rem 1.25rem;
+            border: 1.5px solid #3b82f6; border-radius: 1.1rem 1.1rem 0.3rem 1.1rem;
+            background: rgba(59, 130, 246, 0.07); color: inherit; box-shadow: none;
+            justify-content: flex-start; text-align: left;
+            transition: background-color 160ms ease, border-color 160ms ease; }
+        [class*="st-key-select_"] button > div { justify-content: flex-start; }
+        [class*="st-key-select_"] button [data-testid="stMarkdownContainer"],
+        [class*="st-key-select_"] button p { font-size: 22px; font-weight: 600;
+            line-height: 1.45; text-align: left; white-space: normal; overflow: visible;
+            text-overflow: clip; overflow-wrap: anywhere; margin: 0; }
+        [class*="st-key-select_"] button:hover { background: rgba(59, 130, 246, 0.16);
+            border-color: #60a5fa; color: inherit; }
+        [class*="st-key-select_"] button:active { background: rgba(59, 130, 246, 0.24); }
+        [class*="st-key-select_"] button:focus-visible { outline: 3px solid #3b82f6;
+            outline-offset: 3px; border-color: #60a5fa; box-shadow: none; }
+        @media (max-width: 640px) {
+            [class*="st-key-select_"] button { min-height: 76px; padding: 0.85rem 1rem; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            [class*="st-key-select_"] button { transition: none; }
+        }
         </style>
         """,
         unsafe_allow_html=True,
@@ -82,12 +163,30 @@ def main() -> None:
     st.title("Reply Coach")
     st.caption("Casual peer coordination for exchange students. Standard English + light local/Singlish.")
 
-    if "coach" not in st.session_state:
-        st.session_state.coach = ReplyCoach.from_pilot()
-    if "selected_reply" not in st.session_state:
-        st.session_state.selected_reply = ""
-    if "last_result" not in st.session_state:
-        st.session_state.last_result = None
+    st.session_state.setdefault("selected_reply", "")
+    st.session_state.setdefault("last_comparison", None)
+
+    with st.expander("Reply bank settings"):
+        bank_choice = st.selectbox("Reply bank", ["Pilot examples (drafts)", "Reviewed development file"], key="bank_choice")
+        development_path = ""
+        if bank_choice == "Reviewed development file":
+            development_path = st.text_input(
+                "Development JSONL path", key="development_path",
+                help="Only completed, independently reviewed dev records are allowed. Test and unassigned records are rejected.",
+            )
+        st.caption("MiniLM runs locally. The first comparison may download the public model weights.")
+    bank = None
+    try:
+        if bank_choice == "Reviewed development file":
+            if not development_path.strip():
+                raise ValueError("Enter a reviewed development JSONL path, or select the pilot examples.")
+            path = Path(development_path.strip())
+            bank = load_reply_bank(path if path.is_absolute() else ROOT / path)
+        else:
+            bank = load_reply_bank()
+        st.caption(f"Reply bank: {bank.label} · {len(bank.items)} examples · {bank.path.name}")
+    except (OSError, ValueError) as exc:
+        st.error(f"Cannot load reply bank: {exc}")
 
     left, right = st.columns([1, 1.1], gap="large")
     with left:
@@ -95,63 +194,47 @@ def main() -> None:
             "Recent conversation",
             "Peer: lecture ending soon sia\nYou: yeah I'm starving",
             height=180,
+            key="conversation",
             help="One message per line. Start a line with You: or Peer: to show its sender in the preview.",
         )
-        message = st.text_input("Incoming message", "eh later go makan? can 吃饭 then library")
-        memory_mode = st.selectbox("Memory", ["M2", "M1", "M0"])
-        run = st.button("Suggest two replies", type="primary")
+        message = st.text_input("Incoming message", "eh later go makan? can 吃饭 then library", key="incoming")
+        memory_mode = st.selectbox("Memory", ["M2", "M1", "M0"], key="memory_mode")
+        run = st.button("Compare reply suggestions", type="primary", key="compare", disabled=bank is None or not message.strip())
 
-    if run and message.strip():
-        coach: ReplyCoach = st.session_state.coach
-        coach.memory_mode = memory_mode
+    identity = (bank_choice, development_path, bank.fingerprint if bank else None, session_text, message, memory_mode)
+    if bank is None or st.session_state.get("comparison_identity") != identity:
+        st.session_state.last_comparison = None
+        st.session_state.selected_reply = ""
+    st.session_state.comparison_identity = identity
+
+    if run and bank is not None and message.strip():
         session = [parse_preview_line(line)[1] for line in session_text.splitlines() if line.strip()]
         st.session_state.selected_reply = ""
-        st.session_state.last_result = coach.suggest(message.strip(), session=session)
+        with st.spinner("Comparing BM25 and MiniLM…"):
+            st.session_state.last_comparison = compare_replies(
+                message.strip(), session, memory_mode,
+                lambda: demo_resources.get_bm25(bank.serialized),
+                lambda: demo_resources.get_minilm(bank.serialized),
+                bank_fingerprint=bank.fingerprint,
+            )
 
     with right:
         render_preview(session_text, message, st.session_state.selected_reply)
 
-    result = st.session_state.last_result
-    if result is not None:
-        left, right = st.columns(2)
-        left.subheader("Standard English")
-        left.button(
-            result.standard.candidate_text,
-            key="select_standard",
-            use_container_width=True,
-            type="primary",
-            on_click=select_reply,
-            args=(result.standard.candidate_text,),
-        )
-        left.caption(f"{result.standard.source} · score {result.standard.score:.3f}")
-        right.subheader("Light local")
-        right.button(
-            result.local.candidate_text,
-            key="select_local",
-            use_container_width=True,
-            type="primary",
-            on_click=select_reply,
-            args=(result.local.candidate_text,),
-        )
-        right.caption(f"{result.local.source} · score {result.local.score:.3f}")
-        st.write("**Normalised query:**", result.normalised_message)
-        st.write("**Selected memory:**", result.memory or "(none)")
-        if result.detected_terms:
-            st.write("**Detected local terms:**", ", ".join(t["surface"] + " → " + t["canonical"] for t in result.detected_terms))
-        st.subheader("Retrieved candidates")
-        st.dataframe(
-            [
-                {
-                    "style": c.style,
-                    "source": c.source,
-                    "score": round(c.score, 3),
-                    "item": c.item_id,
-                    "text": c.candidate_text,
-                }
-                for c in result.candidates
-            ],
-            use_container_width=True,
-        )
+    comparison = st.session_state.last_comparison
+    if comparison is not None:
+        render_comparison(comparison)
+        if comparison.errors and st.button("Retry comparison", key="retry_comparison"):
+            # Same identity as the displayed result; changed inputs clear it above.
+            session = [parse_preview_line(line)[1] for line in session_text.splitlines() if line.strip()]
+            with st.spinner("Retrying comparison…"):
+                st.session_state.last_comparison = compare_replies(
+                    message.strip(), session, memory_mode,
+                    lambda: demo_resources.get_bm25(bank.serialized),
+                    lambda: demo_resources.get_minilm(bank.serialized),
+                    bank_fingerprint=bank.fingerprint,
+                )
+            st.rerun()
 
 
 if __name__ == "__main__":

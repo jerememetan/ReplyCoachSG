@@ -19,19 +19,71 @@ This is the SMU CS425 group repo. The pipeline already runs so we are not starti
 4. Run the setup below and confirm it works on your machine.
 5. Help rewrite the 20 pilot items in `data/pilot/pilot_20.jsonl`. Those are drafts so the code can run. They are **not** gold data.
 
+### Setup (Windows / PowerShell)
+
+Use Python 3.10 or newer. Run all commands below from the project root (the folder
+containing this README and `pyproject.toml`). Install dependencies into the
+project's `.venv`, not another application's Python environment.
+
+Run this on first setup, and rerun it after pulling dependency changes. An existing
+environment is reused rather than recreated. The `ensurepip` step also handles
+environments created without pip, such as the existing uv-created environment.
+
 ```powershell
 $env:PYTHONUTF8 = "1"
-python -m pip install -e ".[demo,dev]"
-python scripts/week4_smoke.py
-python -m replycoach.demo_cli "eh later go makan? can 吃饭 then library"
-python -m streamlit run src/replycoach/demo_app.py
-pytest -q
+if (-not (Test-Path -LiteralPath ".venv\Scripts\python.exe")) {
+    python -m venv .venv
+}
+.\.venv\Scripts\python.exe -m ensurepip --upgrade
+.\.venv\Scripts\python.exe -m pip install -e ".[demo,dev]"
 ```
+
+All commands below explicitly use that same environment. Activation is optional;
+you do not need to change PowerShell's execution policy.
+
+### Run checks
+
+```powershell
+.\.venv\Scripts\python.exe scripts/week4_smoke.py
+.\.venv\Scripts\python.exe -m replycoach.demo_cli "eh later go makan? can 吃饭 then library"
+.\.venv\Scripts\python.exe -m pytest -q
+```
+
+### Run the demo
+
+```powershell
+.\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py
+```
+
+Streamlit prints the local URL to open, normally `http://localhost:8501`. Stop the
+server with Ctrl+C before restarting it. If you see
+`MiniLM unavailable: No module named 'sentence_transformers'`, rerun setup above
+and restart using this explicit `.venv` command, not plain `python` or `streamlit`.
+
+The demo's **Compare reply suggestions** button runs BM25 (word matching) and
+MiniLM (embedding similarity) side by side. Each method returns a Standard English
+and a Light local suggestion: four clickable replies that fill the display-only
+chat composer. They select saved replies; they do not generate new text. The CLI
+continues to return one pair from BM25.
+
+The default reply bank is still the **20 pilot drafts**, not DailyDialog or CoSEM.
+Once the official development split is ready, choose **Reviewed development file**
+under **Reply bank settings** and enter its JSONL path (absolute or relative to the
+project root). Every record must be `dev`, `completed`, explicitly privacy-safe,
+and independently reviewed. Test, unassigned, incomplete and duplicate records
+are rejected; selecting a file never edits or splits it.
+
+MiniLM runs locally and may download public model weights on its first comparison.
+The model and bank-specific vectors are reused across reruns. If MiniLM is
+unavailable, BM25 remains visible and the demo offers a retry; it never substitutes
+BM25 under the MiniLM heading. Both methods use the same selected memory,
+normalization, reranker and fallback policy. **Ranking scores are not accuracy
+percentages and are not directly comparable across methods.**
 
 To write original team dataset items without editing JSONL manually:
 
 ```powershell
-python -m streamlit run src/replycoach/author_app.py
+.\.venv\Scripts\python.exe -m streamlit run src/replycoach/author_app.py
 ```
 
 Choose your own name and role in the app. It automatically loads your assigned
@@ -41,7 +93,7 @@ unassigned drafts.
 To review your assigned teammate's items:
 
 ```powershell
-python -m streamlit run src/replycoach/team_review_app.py
+.\.venv\Scripts\python.exe -m streamlit run src/replycoach/team_review_app.py
 ```
 
 Choose your own role and name; the app automatically loads your assigned author's
@@ -70,7 +122,7 @@ Each person shows a **runnable artefact**, not a progress update.
 | --- | --- | --- |
 | A | Data and evaluation | Chair the 20-item rewrite (privacy + style). Save the reviewed JSONL and say how many passed. |
 | B | Retrieval and memory | Run 5 queries. Save top-3 retrieved pairs under `experiments/logs/`. |
-| C | RNN and attention | Run `python -m replycoach.generate.train_v3`. Share `artifacts/rnn_one_batch.json`. |
+| C | RNN and attention | Run `.\.venv\Scripts\python.exe -m replycoach.generate.train_v3`. Share `artifacts/rnn_one_batch.json`. |
 | D | Transformer experiment | Run `notebooks/D_mt5_kaggle_smoke_test.ipynb` on a **Kaggle GPU** (no API). Put `mt5_smoke_report.json` in `experiments/logs/`. |
 | E | Reranker, demo | Run CLI + Streamlit. Screenshot STANDARD + LOCAL. |
 
