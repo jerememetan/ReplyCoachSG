@@ -80,6 +80,47 @@ BM25 under the MiniLM heading. Both methods use the same selected memory,
 normalization, reranker and fallback policy. **Ranking scores are not accuracy
 percentages and are not directly comparable across methods.**
 
+### Role E system modes and teammate handoffs
+
+Under **System settings**, the default remains **Retrieval comparison** (BM25 vs
+MiniLM). You can also select **Retrieval only**, **Generator only**, or **Hybrid**.
+The single-system modes return two clickable replies. Choose BM25/MiniLM for
+retrieval and V4/V5 for generation; resources load only when requested.
+
+The integration is ready, but **trained generators and the official data split
+are still pending**. Missing V4/V5 models name Role C/D and fall back honestly:
+partial hybrid runs are labelled retrieval-only, not successful hybrids. The
+registry never uses the one-batch smoke checkpoint or fake production replies.
+
+Search **`TODO: FOR ROLE`** in the repository (VS Code: Ctrl+Shift+F). Exact A/B/C/D
+handoffs, provider contracts and artifact instructions are in
+[`docs/role_handoffs.md`](docs/role_handoffs.md). The 20-case proof checklist is in
+[`docs/demo_checklist.md`](docs/demo_checklist.md); it is not a completed run.
+
+After Role A publishes disjoint reviewed development files, validate without
+loading any model:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/export_dev_outputs.py --check-only
+```
+
+Retrieval-only diagnostics do not require a generator. Once C/D connects a real
+provider, export all three modes on the same inputs and cached candidate pools:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/export_dev_outputs.py --mode retrieval_only --output experiments/retrieval_dev_run1.jsonl
+.\.venv\Scripts\python.exe scripts/export_dev_outputs.py --generator v4 --mode all --output experiments/three_modes_dev_run1.jsonl
+```
+
+Use `--queries`/`--bank` for other development paths, `--retrieval bm25|minilm`,
+and `--memory M0|M1|M2`. Exports reject held-out/unassigned rows, query-bank overlap,
+incomplete modes and existing outputs; choose a new filename each run. Exact input
+overlap is checked, but Role A must still group semantic near-duplicates. These
+are development diagnostics, **not official blind/held-out evaluation scores**.
+The interactive JSON download also records incomplete states and is not a benchmark.
+
+### Dataset authoring and peer review
+
 To write original team dataset items without editing JSONL manually:
 
 ```powershell
