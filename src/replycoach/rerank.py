@@ -15,6 +15,9 @@ def overlap(query: str, text: str) -> float:
 
 
 def rerank(candidates: list[Candidate], message: str, context: list[str] | None = None) -> list[Candidate]:
+    # ##TODO: FOR ROLE B — validate cross-source score scales with C/D on dev.
+    # A [0, 1] range is not calibration. Keep the baseline until the experiment
+    # supports a change; never tune weights on the locked test set.
     memory = " ".join(context or [])
     query = f"{memory} {message}".strip()
     rescored = []
