@@ -3,22 +3,29 @@ from replycoach.demo_app import build_preview_html, parse_preview_line
 import pytest
 from streamlit.testing.v1 import AppTest
 
-from replycoach import demo_resources, pipeline
+from replycoach import demo_resources, pipeline, systems
+from replycoach.generate import providers
 from replycoach.io import ROOT, load_items, write_jsonl
 
 
 @pytest.fixture
 def demo_test(monkeypatch, fake_encoder):
     cached_minilm = demo_resources.get_minilm
+    cached_generator = getattr(demo_resources, "get_generator", None)
     demo_resources.get_bm25.clear()
     cached_minilm.clear()
     monkeypatch.setattr(demo_resources, "get_minilm_model", lambda: fake_encoder)
     # Keep AppTest suggestions from appending to the team's experiment log.
     monkeypatch.setattr(pipeline, "log_event", lambda *args, **kwargs: None)
+    monkeypatch.setattr(systems, "log_event", lambda *args, **kwargs: None)
+    if cached_generator:
+        cached_generator.clear()
     app = AppTest.from_file(str(ROOT / "src/replycoach/demo_app.py"), default_timeout=20).run()
     yield app
     demo_resources.get_bm25.clear()
     cached_minilm.clear()
+    if cached_generator:
+        cached_generator.clear()
 
 
 def compare_in_app(app):
@@ -170,3 +177,89 @@ def test_input_edits_clear_stale_suggestions(demo_test):
 def test_blank_message_disables_comparison(demo_test):
     demo_test.text_input(key="incoming").input("  ").run()
     assert demo_test.button(key="compare").disabled
+
+
+def test_retrieval_only_mode_has_two_saved_replies_and_no_generation(demo_test, fake_encoder):
+    app = demo_test
+    app.selectbox(key="system_mode").select("Retrieval only").run()
+    compare_in_app(app)
+    assert suggestion_keys(app) == {"select_system_standard", "select_system_local"}
+    assert app.session_state.last_system_result.effective_mode == "retrieval_only"
+    assert app.session_state.last_system_result.generation_count == 0
+    assert not fake_encoder.calls
+
+
+@pytest.mark.parametrize("label,effective", [("Hybrid", "retrieval_only"), ("Generator only", "fallback_only")])
+def test_pending_generator_ui_is_honest_and_keeps_fallback_or_retrieval(demo_test, label, effective):
+    app = demo_test
+    app.selectbox(key="system_mode").select(label).run()
+    compare_in_app(app)
+    output = app.session_state.last_system_result
+    assert output.effective_mode == effective
+    assert output.generation_count == 0
+    assert any("Role C" in warning.value for warning in app.warning)
+    assert any("incomplete" in warning.value.lower() for warning in app.warning)
+    assert "select_system_standard" in suggestion_keys(app)
+
+
+def test_selected_v5_pending_message_names_role_d(demo_test):
+    app = demo_test
+    app.selectbox(key="system_mode").select("Generator only").run()
+    app.selectbox(key="generator_provider").select("V5 (mT5/LoRA)").run()
+    compare_in_app(app)
+    assert any("Role D" in warning.value for warning in app.warning)
+
+
+@pytest.mark.parametrize("style", ["standard", "local"])
+def test_generated_style_button_still_only_fills_preview(demo_test, monkeypatch, stub_generator, style):
+    monkeypatch.setattr(providers, "load_v4", lambda: stub_generator)
+    app = demo_test
+    app.selectbox(key="system_mode").select("Generator only").run()
+    compare_in_app(app)
+    assert not app.warning
+    assert app.session_state.last_system_result.effective_mode == "generator_only"
+    before = app.text_area(key="conversation").value
+    text = app.button(key=f"select_system_{style}").label
+    app.button(key=f"select_system_{style}").click().run()
+    assert app.session_state.selected_reply == text
+    assert app.text_area(key="conversation").value == before
+
+
+def test_mode_changes_clear_existing_comparison_and_selected_reply(demo_test):
+    app = compare_in_app(demo_test)
+    app.button(key="select_bm25_standard").click().run()
+    app.selectbox(key="system_mode").select("Hybrid").run()
+    assert not suggestion_keys(app)
+    assert app.session_state.selected_reply == ""
+    assert app.session_state.last_comparison is None
+
+
+@pytest.mark.parametrize("change", ["provider", "retriever", "memory", "conversation"])
+def test_new_system_settings_and_context_clear_stale_results(demo_test, change):
+    app = demo_test
+    app.selectbox(key="system_mode").select("Hybrid").run()
+    compare_in_app(app)
+    app.button(key="select_system_standard").click().run()
+    if change == "provider":
+        app.selectbox(key="generator_provider").select("V5 (mT5/LoRA)").run()
+    elif change == "retriever":
+        app.selectbox(key="retrieval_method").select("MiniLM").run()
+    elif change == "memory":
+        app.selectbox(key="memory_mode").select("M0").run()
+    else:
+        app.text_area(key="conversation").input("Peer: changed plans\nYou: okay").run()
+    assert not suggestion_keys(app)
+    assert app.session_state.last_system_result is None
+    assert app.session_state.selected_reply == ""
+
+
+def test_new_system_retry_recovers_after_real_provider_becomes_available(demo_test, monkeypatch, stub_generator):
+    app = demo_test
+    app.selectbox(key="system_mode").select("Hybrid").run()
+    compare_in_app(app)
+    assert app.session_state.last_system_result.effective_mode == "retrieval_only"
+    monkeypatch.setattr(providers, "load_v4", lambda: stub_generator)
+    app.button(key="retry_system").click().run()
+    assert not app.exception
+    assert app.session_state.last_system_result.effective_mode == "hybrid"
+    assert not app.warning

@@ -9,8 +9,9 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-artifacts/*.pt
-artifacts/*.bin
+artifacts/**/*.pt
+artifacts/**/*.bin
+artifacts/**/*.safetensors
 artifacts/*.json
 artifacts/*.npy
 !artifacts/.gitkeep

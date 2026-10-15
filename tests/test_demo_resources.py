@@ -92,3 +92,23 @@ def test_failed_model_load_can_be_retried(fake_encoder, monkeypatch):
     assert len(attempts) == 2
     demo_resources.get_minilm_model.clear()
     demo_resources.get_minilm.clear()
+
+
+def test_selected_generator_is_cached_without_reloading_weights(monkeypatch, stub_generator):
+    from replycoach import demo_resources
+    from replycoach.generate import providers
+
+    loads = []
+
+    def load_model():
+        loads.append("v4")
+        return stub_generator
+
+    monkeypatch.setattr(providers, "load_v4", load_model)
+    demo_resources.get_generator.clear()
+    try:
+        assert demo_resources.get_generator("v4") is stub_generator
+        assert demo_resources.get_generator("v4") is stub_generator
+        assert loads == ["v4"]
+    finally:
+        demo_resources.get_generator.clear()

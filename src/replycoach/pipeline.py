@@ -61,18 +61,25 @@ def prepare_input(message: str, session: list[str], memory_mode: str) -> Prepare
     )
 
 
-def rank_result(prepared: PreparedInput, candidates: list[Candidate], method: str) -> CoachResult:
-    """Keep traceable retrieval origins while applying the shared ranking policy."""
-    restored = [
-        replace(
+def rank_result(
+    prepared: PreparedInput, candidates: list[Candidate], method: str,
+    *, retrieval_method: str | None = None,
+) -> CoachResult:
+    """Keep traceable candidate origins while applying the shared ranking policy."""
+    restored = []
+    for candidate in candidates:
+        meta = {**candidate.meta, "candidate_source": candidate.source}
+        if candidate.source in {"V3", "V4", "V5"}:
+            meta["generation_source"] = candidate.source
+        else:
+            meta.update(retrieval_source=candidate.source, retrieval_method=retrieval_method or method)
+        restored.append(replace(
             candidate,
             context=list(prepared.memory),
             message=prepared.message,
             normalised_message=prepared.normalised_message,
-            meta={**candidate.meta, "retrieval_source": candidate.source, "retrieval_method": method},
-        )
-        for candidate in candidates
-    ]
+            meta=meta,
+        ))
     ranked = rerank(restored, prepared.message, prepared.memory)
     chosen = pick_two(ranked)
     return CoachResult(

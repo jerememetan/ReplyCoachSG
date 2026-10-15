@@ -6,6 +6,7 @@ import streamlit as st
 
 from replycoach.retrieval.v0 import V0Retriever
 from replycoach.schema import DialogueItem
+from replycoach.generate.providers import load_generator
 
 
 @st.cache_resource(max_entries=1, show_spinner=False)
@@ -28,3 +29,9 @@ def get_minilm(bank_json: str):
 
     items = [DialogueItem.from_dict(row) for row in json.loads(bank_json)]
     return V2Retriever.from_items(items, model=get_minilm_model(), cache_file=None)
+
+
+@st.cache_resource(max_entries=1, show_spinner=False)
+def get_generator(provider: str):
+    """Load only the selected local generator, after a generation request."""
+    return load_generator(provider)
