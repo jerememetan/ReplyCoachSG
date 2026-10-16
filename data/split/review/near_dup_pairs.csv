@@ -1,0 +1,73 @@
+score,msg_sim,ctx_sim,reply_sim,id_a,id_b,msg_a,msg_b,std_a,std_b,same_author
+0.628,0.705,0.316,0.656,ITEM-B-032,ITEM-B-040,can meet at two instead?,can meet at six thirty instead?,"Sure, two works for me.","Sure, six thirty works for me.",True
+0.618,0.673,0.073,1.0,ITEM-B-026,ITEM-B-054,can change to five?,can we change it to seven?,"Sure, five works for me.","Sure, seven works for me.",True
+0.584,0.581,0.138,1.0,ITEM-B-012,ITEM-B-032,can start at eight instead?,can meet at two instead?,"Sure, eight works for me.","Sure, two works for me.",True
+0.56,0.734,0.392,0.291,ITEM-A-042,ITEM-D-040,want go watch movie together anot?,u want go watch movie,Sure! What movie are y'all watching?,Which movie do you want to watch?,False
+0.5,0.559,0.094,0.693,ITEM-B-005,ITEM-B-032,can we makan at seven instead?,can meet at two instead?,"Sure, seven works better for me","Sure, two works for me.",True
+0.484,0.495,0.17,0.693,ITEM-B-005,ITEM-B-012,can we makan at seven instead?,can start at eight instead?,"Sure, seven works better for me","Sure, eight works for me.",True
+0.464,0.626,0.315,0.054,ITEM-B-010,ITEM-B-037,still meeting at three?,are we still meeting at the gate?,"Yes, three still works for me.","Yes, I'll meet you at the campus gate.",True
+0.461,0.694,0.081,0.144,ITEM-B-032,ITEM-E-044,can meet at two instead?,拜托 can meet 6pm instead?,"Sure, two works for me.","ok, fine 6pm",False
+0.452,0.74,0.004,0.069,ITEM-C-011,ITEM-D-028,can help me chope one seat first?,can help me chope seat?,"yes, i'll save a seat for you",Yes. Which rows would you like to sit at?,False
+0.445,0.777,0.069,0.0,ITEM-D-017,ITEM-D-018,peer: we cfm going lib study?,so tmr confirm gg lib study?,yes.,No I have something on tomorrow. Would you be free the day after?,True
+0.442,0.536,0.094,0.47,ITEM-A-052,ITEM-B-015,Send me the notes leh,can you send me your notes?,"Sure, I will send them now","Sure, I'll send them to you later.",False
+0.438,0.551,0.101,0.401,ITEM-B-015,ITEM-C-014,can you send me your notes?,can send me your notes ltr? i blur at the last part,"Sure, I'll send them to you later.","yes, i'll send you my notes ltr",False
+0.438,0.639,0.0,0.285,ITEM-B-030,ITEM-C-042,want go class together?,wanna go class together tmr?,"Sure, let's meet outside before class.",sure. lets meet before the tutorial,False
+0.432,0.286,0.178,1.0,ITEM-B-010,ITEM-B-052,still meeting at three?,still playing basketball at five?,"Yes, three still works for me.","Yes, five still works for me.",True
+0.429,0.43,0.371,0.348,ITEM-A-055,ITEM-A-056,"I triple check hor, you are coming right?","I triple confirm with you, you are going right?","yes, i confirm that I am going",Yes I am. Confirmed,True
+0.422,0.482,0.506,0.0,ITEM-A-045,ITEM-A-048,"maybe around 30 minutes sia, siao liao","around 20 minutes sia, traffic very jialat","Hurry, the professor might start soon.","No worries, take your time",True
+0.414,0.306,0.063,1.0,ITEM-B-032,ITEM-C-055,can meet at two instead?,can go around 2 instead? i need lunch first,"Sure, two works for me.","sure, 2 works for me",False
+0.392,0.568,0.075,0.154,ITEM-A-016,ITEM-A-052,"can you send me the notes today, paiseh ah.",Send me the notes leh,Sure! Sent it.,"Sure, I will send them now",True
+0.391,0.389,0.063,0.656,ITEM-B-012,ITEM-B-040,can start at eight instead?,can meet at six thirty instead?,"Sure, eight works for me.","Sure, six thirty works for me.",True
+0.388,0.271,0.035,1.0,ITEM-B-012,ITEM-C-055,can start at eight instead?,can go around 2 instead? i need lunch first,"Sure, eight works for me.","sure, 2 works for me",False
+0.379,0.415,0.167,0.546,ITEM-B-015,ITEM-B-021,can you send me your notes?,can you send them now?,"Sure, I'll send them to you later.","Sorry, I can't send them right now, but I'll send them later.",True
+0.378,0.475,0.266,0.1,ITEM-B-040,ITEM-E-044,can meet at six thirty instead?,拜托 can meet 6pm instead?,"Sure, six thirty works for me.","ok, fine 6pm",False
+0.376,0.335,0.345,0.377,ITEM-C-042,ITEM-C-047,wanna go class together tmr?,wanna take mrt back together later,sure. lets meet before the tutorial,sure. lets meet after class,True
+0.373,0.562,0.02,0.144,ITEM-A-016,ITEM-B-015,"can you send me the notes today, paiseh ah.",can you send me your notes?,Sure! Sent it.,"Sure, I'll send them to you later.",False
+0.373,0.154,0.232,1.0,ITEM-B-026,ITEM-B-032,can change to five?,can meet at two instead?,"Sure, five works for me.","Sure, two works for me.",True
+0.371,0.667,0.009,0.01,ITEM-A-011,ITEM-D-028,"Help me chope seat, I want to try that",can help me chope seat?,"Okay, I will take the seat first",Yes. Which rows would you like to sit at?,False
+0.37,0.653,0.022,0.026,ITEM-A-023,ITEM-A-044,"paiseh, i blur like sotong","remember ah, dont blur like sotong","No worries, it has been a long day","Don't worry, I will remember to submit",True
+0.361,0.341,0.287,0.359,ITEM-B-003,ITEM-C-026,we still eating after class?,tmr still makan together after class right?,"Yes, I'm still free. Let's get dinner after class.","yes, i'll meet you after class",False
+0.357,0.375,0.124,0.449,ITEM-B-005,ITEM-B-040,can we makan at seven instead?,can meet at six thirty instead?,"Sure, seven works better for me","Sure, six thirty works for me.",True
+0.356,0.287,0.318,0.594,ITEM-B-010,ITEM-B-032,still meeting at three?,can meet at two instead?,"Yes, three still works for me.","Sure, two works for me.",True
+0.355,0.307,0.558,0.082,ITEM-B-005,ITEM-C-008,can we makan at seven instead?,eh can make it 6:30 instead? i may finish late,"Sure, seven works better for me","yes, 6:30 is fine. just let me know when you're done",False
+0.355,0.281,0.429,0.315,ITEM-B-010,ITEM-B-031,still meeting at three?,"tutorial still at two tomorrow, right?","Yes, three still works for me.","Yes, it's still at two tomorrow.",True
+0.352,0.575,0.0,0.029,ITEM-B-057,ITEM-D-054,can I borrow your charger?,"have ah ofc, but i need borrow your charger sia","Sure, you can borrow mine.",Which charger do you need?,False
+0.348,0.218,0.576,0.422,ITEM-B-010,ITEM-B-040,still meeting at three?,can meet at six thirty instead?,"Yes, three still works for me.","Sure, six thirty works for me.",True
+0.348,0.489,0.177,0.174,ITEM-D-009,ITEM-D-010,neh the gaussian elim qn,u know the guassian elim qn,I have done the question. Allow me to assist.,"I am sorry, I can't provide much help for that question.",True
+0.345,0.549,0.0,0.063,ITEM-B-004,ITEM-D-006,Can help me buy drink?,Help me  buy food,"Sure, could you get me a bottle of water?",What would you like to eat?,False
+0.345,0.415,0.262,0.257,ITEM-B-017,ITEM-B-018,you still sending me the recording later?,can share the recording with me?,"Yes, I'll send it tonight.","Sure, I'll send you the link.",True
+0.344,0.257,0.242,0.561,ITEM-B-047,ITEM-C-055,can go on Friday instead?,can go around 2 instead? i need lunch first,"Sure, Friday works for me.","sure, 2 works for me",False
+0.342,0.293,0.461,0.179,ITEM-B-010,ITEM-C-030,still meeting at three?,we still studying at 2 later right?,"Yes, three still works for me.","yes, i'll be thr at 2",False
+0.34,0.118,0.18,1.0,ITEM-B-012,ITEM-B-054,can start at eight instead?,can we change it to seven?,"Sure, eight works for me.","Sure, seven works for me.",True
+0.339,0.308,0.246,0.391,ITEM-B-031,ITEM-B-059,"tutorial still at two tomorrow, right?",you bringing the charger tomorrow right?,"Yes, it's still at two tomorrow.","Yes, I'll bring it tomorrow.",True
+0.337,0.226,0.177,0.693,ITEM-B-005,ITEM-B-054,can we makan at seven instead?,can we change it to seven?,"Sure, seven works better for me","Sure, seven works for me.",True
+0.337,0.513,0.046,0.064,ITEM-B-043,ITEM-E-010,you want come?,"we going to eat now,  you want come mah?","Sure, I'd be happy to join you.","oh sure thing, lets go",False
+0.335,0.261,0.091,0.693,ITEM-B-005,ITEM-C-055,can we makan at seven instead?,can go around 2 instead? i need lunch first,"Sure, seven works better for me","sure, 2 works for me",False
+0.335,0.273,0.297,0.404,ITEM-B-039,ITEM-C-048,can come find me?,can come out and jio me in? im a bit lost,"Sure, I'll come over and find you.","sure, i'll come outside and meet you",False
+0.335,0.541,0.006,0.028,ITEM-B-050,ITEM-D-049,want to go run later?,want go run tmr,"Sure, what time do you want to go?","Yes, I would be free to run tomorrow",False
+0.334,0.489,0.029,0.139,ITEM-D-053,ITEM-D-060,the printer down lol,have but i think the printer down today sia,"oh no, then how are you going to print the cheatsheet?","oh no, is there any other printers nearby?",True
+0.332,0.133,0.116,1.0,ITEM-B-032,ITEM-B-054,can meet at two instead?,can we change it to seven?,"Sure, two works for me.","Sure, seven works for me.",True
+0.329,0.371,0.32,0.075,ITEM-B-008,ITEM-C-029,want to study at the library later?,want to study together somewhere quiet later?,"Sure, what time should we meet?",sure. we can find a quiet place in the library,False
+0.329,0.574,0.051,0.004,ITEM-B-043,ITEM-B-046,you want come?,want come with us?,"Sure, I'd be happy to join you.","Thanks for inviting me, but I can't make it tonight.",True
+0.328,0.411,0.183,0.131,ITEM-B-004,ITEM-C-025,Can help me buy drink?,can help me buy one iced coffee also?,"Sure, could you get me a bottle of water?","sure, what kind of iced coffee would you like?",False
+0.321,0.116,0.383,0.656,ITEM-B-026,ITEM-B-040,can change to five?,can meet at six thirty instead?,"Sure, five works for me.","Sure, six thirty works for me.",True
+0.319,0.438,0.101,0.115,ITEM-B-005,ITEM-E-060,can we makan at seven instead?,"can we eat at 2 instead,  3pm sibei crowded","Sure, seven works better for me","ok sure, let's eat at 2 instead",False
+0.318,0.333,0.007,0.514,ITEM-B-013,ITEM-C-054,the main library quite crowded today sia,"quite crowded alr leh, but still can enter",Thanks for letting me know. I'll look for another place.,thanks for letting me know. i'll head over soon,False
+0.318,0.372,0.0,0.417,ITEM-C-025,ITEM-D-006,can help me buy one iced coffee also?,Help me  buy food,"sure, what kind of iced coffee would you like?",What would you like to eat?,False
+0.317,0.33,0.257,0.204,ITEM-C-011,ITEM-E-029,can help me chope one seat first?,bro help me chope some seats pls xie xie,"yes, i'll save a seat for you","don't worry, I already found you a seat",False
+0.316,0.137,0.044,1.0,ITEM-B-012,ITEM-B-026,can start at eight instead?,can change to five?,"Sure, eight works for me.","Sure, five works for me.",True
+0.314,0.493,0.021,0.188,ITEM-A-011,ITEM-C-011,"Help me chope seat, I want to try that",can help me chope one seat first?,"Okay, I will take the seat first","yes, i'll save a seat for you",False
+0.31,0.201,0.403,0.34,ITEM-B-015,ITEM-C-036,can you send me your notes?,can send me the photo of that last example,"Sure, I'll send them to you later.","sure, i'll send you a photo of it",False
+0.31,0.355,0.028,0.39,ITEM-D-029,ITEM-D-052,ok then rmb to bid before bidding ends,ok then rmb book the court ya,"Ok, I will bid later.","Ok, I will make sure to book later",True
+0.309,0.296,0.141,0.406,ITEM-B-023,ITEM-C-038,can you check my part later?,can help me check if this part sounds too long?,"Sure, I'll take a look when I'm done with mine.",sure. send it to me and i'll take a look,False
+0.309,0.423,0.061,0.156,ITEM-B-032,ITEM-E-060,can meet at two instead?,"can we eat at 2 instead,  3pm sibei crowded","Sure, two works for me.","ok sure, let's eat at 2 instead",False
+0.306,0.493,0.019,0.002,ITEM-E-032,ITEM-E-045,"sorry ah but that one cannot, someone book liao",sorry ah but i cannot leh,"alright, lets stick to the current arrangements","ok, that's fine",True
+0.305,0.377,0.208,0.078,ITEM-B-032,ITEM-C-051,can meet at two instead?,can meet at the mrt instead? its raining damn heavily here,"Sure, two works for me.",sure. i'll meet you at the mrt instead,False
+0.304,0.46,0.066,0.026,ITEM-B-026,ITEM-E-052,can change to five?,"eh can change to next week instead, 对不起","Sure, five works for me.","no worries, lets meet next week then",False
+0.304,0.288,0.013,0.561,ITEM-B-032,ITEM-B-047,can meet at two instead?,can go on Friday instead?,"Sure, two works for me.","Sure, Friday works for me.",True
+0.304,0.272,0.164,0.417,ITEM-C-024,ITEM-C-027,"i think i cannot alr, damn tired after class","paiseh, i think i'll skip supper tonight. too tired alr",no worries. we can play another day,no worries. get some rest and we can go another time,True
+0.304,0.285,0.019,0.563,ITEM-E-018,ITEM-E-040,can we 一起 study and work on a cheatsheet tgt?,"how ah, want meet together to do work?","Sure thing, let's do it tomorrow night","sure thing, let's do that",True
+0.302,0.38,0.133,0.149,ITEM-A-052,ITEM-C-014,Send me the notes leh,can send me your notes ltr? i blur at the last part,"Sure, I will send them now","yes, i'll send you my notes ltr",False
+0.302,0.375,0.146,0.149,ITEM-B-030,ITEM-B-041,want go class together?,want walk back together?,"Sure, let's meet outside before class.","Sure, let's walk back together.",True
+0.302,0.534,0.029,0.006,ITEM-D-004,ITEM-E-035,i got smth on later,eh mb i cant make it liao i got something on,That's fine.,Are you serious? Why did you inform me only at the very last minute?,False
+0.301,0.091,0.085,1.0,ITEM-B-026,ITEM-C-055,can change to five?,can go around 2 instead? i need lunch first,"Sure, five works for me.","sure, 2 works for me",False

@@ -1,0 +1,11 @@
+{
+  "_comment": "Judgement-call merges added on top of the automatic pair threshold. Edit freely, then rebuild with make_split.py --force (only before freezing). Each list is kept on ONE side of every split.",
+  "groups": [
+    {"ids": ["ITEM-A-016", "ITEM-A-052", "ITEM-B-015", "ITEM-C-014"], "why": "all 'send me your notes' requests"},
+    {"ids": ["ITEM-A-011", "ITEM-C-011", "ITEM-D-028", "ITEM-E-029"], "why": "all 'help me chope seat' requests"},
+    {"ids": ["ITEM-D-009", "ITEM-D-010"], "why": "same gaussian elimination question, same author"},
+    {"ids": ["ITEM-D-037", "ITEM-D-038"], "why": "same 'waiting outside mac' scene"},
+    {"ids": ["ITEM-D-053", "ITEM-D-060"], "why": "same 'printer down' situation"},
+    {"ids": ["ITEM-B-004", "ITEM-C-025", "ITEM-D-006"], "why": "'help me buy a drink/food' requests"}
+  ]
+}
