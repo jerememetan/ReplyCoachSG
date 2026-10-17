@@ -97,3 +97,7 @@ Reviewer rejects the item if any box fails:
 - [ ] No LLM-generated wording pasted in
 
 Record the independent reviewer's initials in `reviewer`. The legacy `second_reviewer` field remains compatible but is not required for this cycle. Saving a valid review automatically sets the item's `status` to `completed`. Items remain `unassigned` during authorship and review. After all items complete review, Role A assigns `dev` or `test`; authors do not self-assign test items after seeing model output.
+
+The planned persona-based AI evaluation rates **system outputs**, not the authored
+dataset. It does not replace this human peer-review cycle or populate `reviewer`,
+`second_reviewer`, gold replies or training labels. See `split_and_rating_protocol.md`.

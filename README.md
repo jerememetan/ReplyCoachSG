@@ -41,6 +41,37 @@ if (-not (Test-Path -LiteralPath ".venv\Scripts\python.exe")) {
 All commands below explicitly use that same environment. Activation is optional;
 you do not need to change PowerShell's execution policy.
 
+### Run persona judging — one command
+
+After the Python setup above, open Ollama with the local model named in `.env`
+already installed (the template uses `qwen2.5-coder:7b`). Then run:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_judging.py
+```
+
+This checks the setup, exports BM25 M0/M2 replies, prepares the same five
+validation conversations for both settings, and runs every persona in
+[`data/evaluation/personas.csv`](data/evaluation/personas.csv). With the initial
+ten personas that means **200 judgments**. No manual export commands or input
+folder are needed. Missing default `.env` is copied from `.env.example` without
+overwriting an existing file; Python packages and Ollama models are not installed
+automatically.
+
+The terminal shows average appropriateness, naturalness, style fit and simulated
+would-send percentage by setting/style. Each invocation creates a fresh ignored
+folder under `experiments/judging/run_...`, prints its location and a ready-to-copy
+resume command. The CSV is at `RUN_FOLDER/packet/ratings/summary.csv`.
+
+Add `--check-only` to preview without file writes or Ollama requests. To continue
+an interrupted judging stage, use `--run-dir RUN_FOLDER --resume`; to inspect
+saved results, use `--run-dir RUN_FOLDER --summary-only`. The wrapper never
+regenerates replies on resume. An interruption before packet preparation requires
+a fresh run. Optional new-run flags: `--items`, `--methods bm25 minilm` and
+`--memories M0 M1 M2`. Adding MiniLM can download its public embedding weights on
+first use. Frozen test data is never used. These are AI ratings, not human survey
+results; inspect pilot reliability before the main evaluation.
+
 ### Run checks
 
 ```powershell
@@ -67,9 +98,10 @@ chat composer. They select saved replies; they do not generate new text. The CLI
 continues to return one pair from BM25.
 
 The default reply bank is still the **20 pilot drafts**, not DailyDialog or CoSEM.
-Once the official development split is ready, choose **Reviewed development file**
-under **Reply bank settings** and enter its JSONL path (absolute or relative to the
-project root). Every record must be `dev`, `completed`, explicitly privacy-safe,
+The reviewed split is now published: **190 train/reply-bank items, 50 validation
+queries and 60 held-out test items**. Choose **Reviewed development file** under
+**Reply bank settings** and enter `data/dev/train.jsonl` (or an absolute path).
+Every record must be `dev`, `completed`, explicitly privacy-safe,
 and independently reviewed. Test, unassigned, incomplete and duplicate records
 are rejected; selecting a file never edits or splits it.
 
@@ -87,8 +119,8 @@ MiniLM). You can also select **Retrieval only**, **Generator only**, or **Hybrid
 The single-system modes return two clickable replies. Choose BM25/MiniLM for
 retrieval and V4/V5 for generation; resources load only when requested.
 
-The integration is ready, but **trained generators and the official data split
-are still pending**. Missing V4/V5 models name Role C/D and fall back honestly:
+The integration and reviewed split are ready, but **trained generators are still
+pending**. Missing V4/V5 models name Role C/D and fall back honestly:
 partial hybrid runs are labelled retrieval-only, not successful hybrids. The
 registry never uses the one-batch smoke checkpoint or fake production replies.
 
@@ -97,8 +129,7 @@ handoffs, provider contracts and artifact instructions are in
 [`docs/role_handoffs.md`](docs/role_handoffs.md). The 20-case proof checklist is in
 [`docs/demo_checklist.md`](docs/demo_checklist.md); it is not a completed run.
 
-After Role A publishes disjoint reviewed development files, validate without
-loading any model:
+Validate the published disjoint development files without loading any model:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/export_dev_outputs.py --check-only
@@ -116,8 +147,82 @@ Use `--queries`/`--bank` for other development paths, `--retrieval bm25|minilm`,
 and `--memory M0|M1|M2`. Exports reject held-out/unassigned rows, query-bank overlap,
 incomplete modes and existing outputs; choose a new filename each run. Exact input
 overlap is checked, but Role A must still group semantic near-duplicates. These
-are development diagnostics, **not official blind/held-out evaluation scores**.
+are development outputs, **not quality ratings or final held-out results**.
 The interactive JSON download also records incomplete states and is not a benchmark.
+
+### Evaluation plan updated 17 October 2026
+
+Following the professor's approval reported by Jereme, the planned evaluation
+replaces human output raters with **10 initial configurable persona-based AI
+reviewers**, not three specialist judges. Each keeps the same persona and rates
+every compared reply from the same conversation set, with system names hidden.
+The three criteria are **appropriateness, naturalness and style fit**, each 1–5,
+with a short explanation and problem/uncertainty flags. Naturalness replaces the
+older proposal's usefulness criterion.
+
+This is **persona-based LLM evaluation**, not a human survey or ten independent
+human participants. Jereme/Role E now owns the judging workflow as well as the
+output handoff; Tristan/Role A retains the frozen data split. The local runner is
+`scripts/judge_replies.py`, using Ollama and the shared rubric. Existing spreadsheet
+scripts remain optional human-review tools. See
+[`docs/split_and_rating_protocol.md`](docs/split_and_rating_protocol.md)
+for the protocol, safeguards and remaining work. Normally use the one-command
+pipeline above; the manual stages below are only for custom exports/debugging.
+
+<details>
+<summary>Advanced: run individual export, packet and judging stages manually</summary>
+
+Your Role E handoff is available through `scripts/prepare_judging_inputs.py`.
+It validates matched development exports and creates **`judge_inputs.jsonl`** plus
+**`PRIVATE_mapping.jsonl`** in a new folder. Keep both files locally; the AI
+judges must receive only the public inputs, never the private mapping or the
+whole folder. The default documented output location `experiments/judging/` is
+ignored by Git. This tool makes no model calls and produces no ratings.
+
+After exporting the BM25 run above, prepare a five-conversation pilot:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/prepare_judging_inputs.py --system BM25_M2 experiments/retrieval_dev_run1.jsonl retrieval_only --check-only
+.\.venv\Scripts\python.exe scripts/prepare_judging_inputs.py --system BM25_M2 experiments/retrieval_dev_run1.jsonl retrieval_only --items 5 --out-dir experiments/judging/validation_pilot_01
+```
+
+Repeat `--system LABEL PATH MODE` for additional systems; paths containing spaces
+can be quoted, including Windows absolute paths. Each selected mode must cover
+all 50 validation queries before a common pilot subset is chosen. Omit `--items`
+for all 50. Use a fresh output folder for every run. The local runner fans each
+anonymous candidate out to the persona panel; this preparation step does not
+create tool-using agents. Full field definitions and joining instructions are in the
+protocol linked above.
+
+Run the local judges on that prepared packet:
+
+```powershell
+if (!(Test-Path -LiteralPath .env)) { Copy-Item .env.example .env }
+.\.venv\Scripts\python.exe scripts/judge_replies.py experiments/judging/validation_pilot_01 --check-only
+.\.venv\Scripts\python.exe scripts/judge_replies.py experiments/judging/validation_pilot_01
+```
+
+Set `OLLAMA_MODEL=qwen2.5-coder:7b` in your ignored `.env`; the model must already
+be installed and Ollama running locally. Edit/add rows in
+[`data/evaluation/personas.csv`](data/evaluation/personas.csv) to change the panel.
+Each persona rates every anonymous reply using the same rubric, including a
+boolean `would_send`. The terminal shows per-model-setting and per-style averages
+for appropriateness, naturalness, style fit, and simulated would-send percentage.
+It saves `ratings/ratings.jsonl`, `run.json` and `summary.csv` inside the packet.
+The five-conversation/two-setting example has 20 replies, hence 200 judgments.
+
+Add `--resume` after an interruption; successful judgments are not repeated.
+Use `--summary-only` to display saved results without model calls. Use a fresh
+`--out-dir` if the model, personas, rubric, script or packet changes. Failures stay
+visible and are not given fabricated scores; incomplete summaries are provisional.
+These numbers are simulated ratings, not proof of actual human preference or
+accuracy. Pilot-check Qwen's judgments before treating them as experiment evidence.
+
+</details>
+
+The exception is evaluation only. Dataset authorship and independent human peer
+review remain unchanged; AI ratings must not become gold replies or training
+labels. ReplyCoach itself continues to run without hosted LLM generation APIs.
 
 ### Dataset authoring and peer review
 
@@ -148,7 +253,8 @@ Expected: 20 items load, BM25 returns a lunch pair, V3 trains one CPU batch if P
 
 **Hard rules**
 
-- No LLM-generated dataset items or labels (no ChatGPT/Cursor gold replies).
+- No LLM-generated dataset items, gold replies or training labels. Evaluation-only
+  AI ratings are permitted under the protocol above; they are not training data.
 - No hosted LLM/API calls in the system.
 - Do not invent Mandarin. Do not force slang.
 - Do not train on or tune with the held-out test set.
@@ -223,12 +329,16 @@ Incoming message + dynamic session memory
 
 **Corpus**
 
-- Dual-style task data = **team-authored** items only (pilot drafts now; official set still to write).
+- Dual-style task data = **team-authored, independently human-reviewed** items;
+  the official 300-item split is published. The demo still defaults to pilot drafts.
 - Public **DailyDialog** (CC BY-NC-SA 4.0) is for generic V3/V4 dialogue pretraining only. It is not downloaded yet and does not replace STANDARD/LOCAL labels.
 - V5 uses local `google/mt5-small` weights on Kaggle, not an API.
 
 `data/pilot/pilot_20.jsonl` is an engineering fixture (`draft_needs_team_review`). Rewrite and peer-review it before treating it as gold.
 
-**CS425 constraints:** train/test on a PC, Colab, or SCIS GPU; no LLM APIs; there must be a new contribution, not a copy of an open-source chatbot.
+**CS425 constraints:** train/run ReplyCoach on a PC, Colab, or SCIS GPU; no hosted
+LLM generation APIs inside ReplyCoach; there must be a new contribution, not a
+copy of an open-source chatbot. The professor-approved exception reported by
+Jereme permits LLMs as offline evaluators only, subject to the protocol above.
 
 More detail: `docs/architecture.md`, `docs/licence_checklist.md`, `docs/week_plan.md`.

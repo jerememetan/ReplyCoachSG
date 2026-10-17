@@ -6,8 +6,22 @@ Role A owns this document. Tick before a dataset enters training or the report.
 
 - No WhatsApp/Telegram exports with real people unless every participant consents and the text is fully rewritten.
 - No student IDs, phone numbers, emails, hostel rooms, or identifiable course-group names.
-- No LLM-generated items or labels.
+- No LLM-generated dataset items, gold replies or training labels.
 - No hosted LLM/API calls inside the system (CS425 rule).
+
+## Evaluation only exception agreed 17 October 2026
+
+Jereme reports professor approval to replace human output raters with persona-based
+AI reviewers. The initial ten personas rate appropriateness, naturalness and
+style fit; this is not permission to generate the authored dataset or call a
+hosted LLM inside ReplyCoach. Preserve independent human peer review of dataset items.
+
+Role E now owns the judging workflow. The initial runner uses an installed local
+Ollama model selected in ignored `.env`, not a hosted API. Before a full evaluation,
+check the judge's reliability, allowed data and runtime. Submit only privacy-checked task conversations and model outputs;
+do not upload personal details, credentials, restricted handouts or repository
+files. Keep ratings as evaluation records, never gold training labels. See
+`split_and_rating_protocol.md` for the current protocol and implementation status.
 
 ## Team-authored data
 

@@ -65,3 +65,16 @@ Every retriever, generator, and the reranker emits:
 ## Fallback
 
 If the best score for a style is below 0.15, emit a safe English line. LOCAL fallback is only slightly warmer English, never fake slang.
+
+## Offline evaluation boundary
+
+The persona-based LLM evaluation is separate from the reply-generation
+pipeline above. An initial panel of ten AI personas rates anonymised saved
+outputs on appropriateness, naturalness and style fit, each 1–5. Personas do not
+generate user-facing replies, modify the authored dataset or supply training labels.
+They need no tools or repository access. E owns `scripts/judge_replies.py`, which
+reads `.env`/CSV, calls local Ollama sequentially and saves ratings and summaries.
+It also reports simulated would-send percentage, not real human approval.
+`scripts/data-split/make_rating_kit.py` and `analyze_ratings.py` remain optional
+human-spreadsheet tools. Main results and judge reliability checks are not complete.
+See `split_and_rating_protocol.md` for the shared protocol.
