@@ -20,6 +20,7 @@ artifacts/pytest_tmp/
 data/public/*.jsonl
 data/public/*.zip
 experiments/logs/*.jsonl
+experiments/judging/
 data/authoring/*.jsonl.lock
 !experiments/logs/.gitkeep
 .streamlit/
