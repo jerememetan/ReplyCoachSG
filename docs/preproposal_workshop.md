@@ -2,6 +2,10 @@
 
 Not graded. Get feedback, then freeze the 3-page proposal.
 
+Historical workshop outline. The original human-rating plan below was superseded
+on 17 October by persona-based LLM evaluation: ten initial configurable AI personas
+scoring appropriateness, naturalness and style fit. See `split_and_rating_protocol.md`.
+
 ## Suggested slide order
 
 1. Problem in one sentence: mixed messages, two sendable replies.

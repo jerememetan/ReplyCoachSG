@@ -11,31 +11,49 @@ Role E wiring is implemented: three candidate-pool modes, shared memory/ranking,
 source-preserving fallbacks, mode controls, retry, demo JSON downloads and guarded
 development exports. The original BM25/MiniLM comparison stays the default.
 
-**Pending:** A's official data split; C/D's trained-model providers; B's empirical
+**Published:** A's 190-item train/reply bank, 50 validation queries and 60 locked
+test items. **Pending:** C/D's trained-model providers; B's empirical
 retrieval/memory/score calibration; the real 20-conversation hybrid proof and
-official blind evaluation. Neither smoke weights nor test doubles are used by the
+persona-based LLM evaluation. Neither smoke weights nor test doubles are used by the
 production provider registry. Missing models are explicitly unavailable.
 
-## TODO: FOR ROLE A — publish the reviewed split
+## TODO: FOR ROLE A — preserve the split and support pilot checks
+
+The reviewed split is published; preserve its manifest and privacy/audit checks.
+Jereme/Role E has taken ownership of the local judging workflow, including the
+runner, persona CSV, rubric, pilot and results analysis. Do not build a duplicate
+runner. A retains data/split stewardship and can independently sanity-check pilot
+judgments. The initial panel has **ten AI personas**, not three specialist perspectives. Each rates
+every compared reply using **appropriateness, naturalness and style fit**, each
+1–5, with an explanation, problem/uncertainty flags and a would-send vote. Keep personas consistent,
+hide system identities and use the same roster/settings for every system.
+
+E's `scripts/judge_replies.py` uses local Ollama; start with five validation
+conversations, check privacy, judge quality and runtime. Keep correlated ratings distinct
+from independent human participants, and summarise results at conversation level.
+See `docs/split_and_rating_protocol.md` for the full protocol. The existing
+spreadsheet scripts are optional human-review tools, not this runner.
+
+### Published split contract
 
 Insertion points: `src/replycoach/evaluation.py` (`DEFAULT_BANK` /
 `DEFAULT_QUERIES`) and the files below. No loader-code change is needed if using
 the default names; other filenames can be passed with CLI arguments.
 
-1. Freeze the fixed 240 development / 60 test split after checking duplicate
-   families, privacy, canonical labels and the existing independent reviews.
-2. Publish `data/dev/train.jsonl` and `data/dev/validation.jsonl`. Both must have
-   `split: "dev"`; their union is the 240-item development set. Agree the internal
-   validation size with B/C/D; do not add a new schema split called "validation".
-3. Publish the 60 locked `split: "test"` items separately, e.g.
+1. Preserve the fixed 240 development / 60 test split and its duplicate-family,
+   privacy, canonical-label and independent-review checks.
+2. Keep the published `data/dev/train.jsonl` and `data/dev/validation.jsonl`. Both have
+   `split: "dev"`; their union is the 240-item development set: 190 train and 50
+   validation. Do not add a new schema split called "validation".
+3. Keep the 60 locked `split: "test"` items separately at
    `data/test/test.jsonl`. Do not pass them to this development exporter.
 4. Every development row must remain `completed`, explicitly privacy-safe and
    independently reviewed. IDs and normalized conversation inputs must not overlap
    between train/reply-bank and validation/query files. Group near-duplicates and
    augmentation families manually; exact-overlap guards are not a semantic detector.
-5. Publish counts by scenario/intent and split, the split seed/procedure, and your
-   blind-rating protocol. The developer export is labelled by system; anonymise
-   and randomise outputs separately before giving them to raters.
+5. Preserve counts by scenario/intent and split and the split seed/procedure.
+   The developer export is labelled by system; anonymise and randomise outputs
+   separately before giving them to AI reviewers. Do not expose ranking scores.
 
 Readiness check (does not load models or write anything):
 
@@ -44,8 +62,24 @@ Readiness check (does not load models or write anything):
 ```
 
 The demo can use the train file as its reviewed development reply bank. Never
-point it at the locked test file. Final held-out evaluation needs A's separate
-frozen protocol/runner; do not remove the development guard to obtain test outputs.
+point it at the locked test file. Final held-out evaluation needs a separate
+guarded output route coordinated by E/A; do not remove the development guard.
+
+## Ready for Role E — evaluation output handoff
+
+`scripts/prepare_judging_inputs.py` now adapts development exports without manual
+JSON editing. It validates item/system/style coverage and fingerprints, selects
+`requested_mode`, reads nested reply text, shuffles anonymous candidates and
+writes `judge_inputs.jsonl` plus `PRIVATE_mapping.jsonl`. Only the public file goes
+to the judges; E retains the private system mapping for analysis. Use a new
+folder under ignored `experiments/judging/`. Exact fields, commands and hash/join
+checks are in section 7 of `docs/split_and_rating_protocol.md`.
+
+**TODO: FOR ROLE E with A:** a separate guarded final-test output route remains
+pending. The development guard is unchanged. Preparing the packet makes no LLM
+calls or ratings. E's separate `scripts/judge_replies.py` runs the persona panel
+and prints averages/send percentages; see section 8 of the protocol. Its local
+judge must pass pilot sanity checks before main evaluation.
 
 ## TODO: FOR ROLE C — connect the trained V4 generator
 

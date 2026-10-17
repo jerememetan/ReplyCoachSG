@@ -2,11 +2,17 @@
 
 Replace the bracketed names, then cut this down to three A4 pages including references. Due 2 Oct 2026, 23:59.
 
+Evaluation updated 17 October 2026 following the professor's approval reported
+by Jereme. This repository draft reflects the current plan; it does not change
+an already submitted proposal. See `docs/split_and_rating_protocol.md`.
+
 ## 1. Motivation and goal
 
 Exchange students in Singapore often receive mixed English–Mandarin/Singlish messages when coordinating everyday plans: lunch, a library seat, running late, a last-minute jio. A reply that is too stiff sounds foreign; a reply that overuses slang sounds fake and can be socially risky. We build a **reply coach**, not an autonomous chatbot. Given a peer message and a short session, it suggests two sendable replies: standard English and light local English.
 
-Hypothesis: a hybrid of normalised retrieval, a small generator, and a reranker will beat retrieval-only and generator-only on blind human ratings of appropriateness, style fit, and usefulness.
+Hypothesis: a hybrid of normalised retrieval, a small generator, and a reranker
+will beat retrieval-only and generator-only on persona-based LLM ratings of
+appropriateness, naturalness and style fit. This is a hypothesis, not a measured result.
 
 ## 2. Scope and non-goals
 
@@ -20,15 +26,35 @@ End-to-end: dynamic memory → V1 local-term normalisation → retrieve vetted p
 
 Memory M2 keeps the newest two turns and adds up to two relevant older turns from the last eight, first with BM25, later with embeddings. Conversations are not stored across sessions.
 
-V5 is a Kaggle-gated ~300M-parameter experiment. If it is not clearly better than V4 on the same development set, we drop it. No LLM APIs.
+V5 is a Kaggle-gated ~300M-parameter experiment. If it is not clearly better than V4 on the same development set, we drop it. No hosted LLM generation APIs inside ReplyCoach; the judging exception is evaluation only.
 
 ## 4. Data
 
-Public DailyDialog (CC BY-NC-SA 4.0) supplies general dialogue patterns for V3/V4. The target for the dual-style task is 300 team-authored items, each independently peer-reviewed and checked for privacy. After all items complete review, a fixed, balanced 80:20 split assigns 240 development items and 60 untouched benchmark items. No LLM-generated labels.
+Public DailyDialog (CC BY-NC-SA 4.0) supplies general dialogue patterns for V3/V4.
+The dual-style task uses 300 team-authored items, each independently human-reviewed
+and checked for privacy. The published fixed split has 190 training/reply-bank
+items and 50 validation items inside development, plus 60 untouched test items.
+No LLM-generated dataset items, gold replies or training labels. Evaluation-only
+AI scores are kept separately and do not replace the dataset's human reviews.
 
 ## 5. Evaluation
 
-Main evidence is blind human evaluation on held-out conversations, comparing retrieval-only, generator-only, and hybrid. Ratings: contextual appropriateness, intended-style fit, usefulness to an exchange student. Automatic overlap metrics are secondary. We also report compute cost and V4 vs V5.
+The planned main evidence is persona-based LLM evaluation comparing retrieval-only,
+generator-only and hybrid. An initial configurable panel of ten AI personas keeps
+consistent personas and rates every compared reply on appropriateness, naturalness
+and style fit (1–5), with a short explanation and problem/uncertainty flags. Judges
+see the conversation, incoming message and requested style, but not system names
+or ranking scores. Naturalness replaces the original usefulness criterion.
+
+Use the same 50 validation conversations for decisions. Freeze the systems, persona
+roster, judge model/settings and rubric before evaluating the 60 held-out items
+once. Report per-system/style scores and persona disagreements. Personas on one
+base model are correlated simulated perspectives, not independent human participants;
+summarise at conversation level rather than treating every persona score as an
+independent sample. Automatic overlap metrics are secondary. Report compute cost
+and V4 vs V5 as well. E's local Ollama runner now exists; main ratings and judge
+quality checks remain pending. A supplementary would-send percentage follows the
+manual form; it is simulated willingness, not measured human preference.
 
 ## 6. Implementation
 

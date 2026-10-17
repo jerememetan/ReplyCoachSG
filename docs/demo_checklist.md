@@ -3,7 +3,10 @@
 This is a coverage checklist, **not a completed experiment or authored gold data**.
 Use 20 manually selected/written development/demo conversations not used by the
 retrieval bank or generator training. Do not inspect the locked 60 test items for
-debugging. All final examples and human ratings come from the team.
+debugging. Diagnostic examples remain team-written. Planned quality ratings come
+from persona-based AI reviewers, with optional manual sanity checks; see
+`split_and_rating_protocol.md`. E's local rating runner exists; completing this
+checklist and validating the judge are separate from implementing that runner.
 
 ## Before marking the hybrid proof complete
 
@@ -17,7 +20,7 @@ debugging. All final examples and human ratings come from the team.
 ## Cases to cover
 
 Record actual incoming text, prior turns, memory/method, selected model, candidate
-origins, STANDARD/LOCAL replies, appropriateness/style observations and fallback
+origins, STANDARD/LOCAL replies, appropriateness/naturalness/style observations and fallback
 reason. Download the demo JSON for traceability; store run outputs outside `data/`.
 
 | Case | Coverage to choose manually | Observation/result |
