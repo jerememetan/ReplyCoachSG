@@ -6,3 +6,21 @@
 4. Download `mt5_smoke_report.json` into `experiments/logs/`.
 5. Fine-tuning later uses development JSONL only. Prefix inputs with `STANDARD` or `LOCAL` via `replycoach.generate.style_control.mt5_input`.
 6. If validation on the same development set does not beat V4, stop. Do not stack V5 on V4.
+
+## V5 stage 1: dialogue training on public pairs
+
+mT5-small has only seen span corruption, so it first learns to reply on public pairs, then fine-tunes on development items.
+
+1. Get Role C's `dailydialog_train_pairs.jsonl` and `dailydialog_validation_pairs.jsonl`, so V4 and V5 see the same DailyDialog.
+2. After Role A adds CoSEM to `docs/licence_checklist.md`, download `corpus_COSEM_v5.zip` into `data/public/` and run:
+
+   ```powershell
+   python scripts/prepare_cosem_pairs.py --input data/public/corpus_COSEM_v5.zip --train-output data/public/cosem_train_pairs.jsonl --validation-output data/public/cosem_validation_pairs.jsonl
+   ```
+
+3. Upload the four files as a private Kaggle dataset and run `notebooks/D_mt5_pretrain_kaggle.ipynb`.
+4. DailyDialog replies are tagged `STANDARD` and CoSEM replies `LOCAL` through `mt5_input`. The fine-tune loads `artifacts/mt5_v5_pretrain/best/`.
+5. Keep full precision. mT5 gives NaN losses under fp16.
+6. V5 validation loss is per subword and V4's is per word, so the two numbers cannot be compared. Compare generated replies on the development set.
+7. On the SCIS GPU cluster, skip the notebook: copy the repo and the four pair files over, build `.venv` on the login node, load `google/mt5-small` once there so it is cached, then from the repo root run `sbatch --partition=... --account=... --qos=... scripts/v5_pretrain.sbatch smoke`, and the same without `smoke` for the full run. `myinfo` prints your partition, account and QOS.
+8. No development or test item is read in this stage. Local install: `pip install -e ".[mt5]"`.

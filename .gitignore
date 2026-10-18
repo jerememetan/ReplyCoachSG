@@ -17,8 +17,11 @@ artifacts/*.json
 artifacts/*.npy
 !artifacts/.gitkeep
 artifacts/pytest_tmp/
+artifacts/mt5_*/
+slurm-*.out
 data/public/*.jsonl
 data/public/*.zip
+data/public/CoSEM*/
 experiments/logs/*.jsonl
 experiments/judging/
 data/authoring/*.jsonl.lock
