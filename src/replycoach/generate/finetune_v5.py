@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import random
 import time
 from pathlib import Path
 
@@ -17,7 +18,9 @@ import torch
 from peft import AutoPeftModelForSeq2SeqLM, LoraConfig, get_peft_model
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-from replycoach.generate.train_v5 import ARTIFACTS, collate, encode_rows, epoch_batches, generate_replies, validation_loss
+from replycoach.generate.train_v5 import (
+    ARTIFACTS, collate, encode_rows, epoch_batches, generate_replies, load_pairs, validation_loss,
+)
 from replycoach.io import DATA_DIR, load_items
 
 STYLES = ("STANDARD", "LOCAL")
@@ -39,6 +42,16 @@ def item_rows(path: Path) -> list[dict]:
         for item in items
         for style, response in (("STANDARD", item.replies.standard), ("LOCAL", item.replies.local))
     ]
+
+
+def shorter_contexts(row: dict) -> list[dict]:
+    """Copies of a row with less context: the last turn only, then none.
+
+    The app's M0/M1/M2 memory modes pass different amounts of context, and a model that also sees the bare
+    message has to answer the message instead of echoing the context. The reply stays the team's own text.
+    """
+    return [{**row, "context": context} for context in (row["context"][-1:], [])
+            if len(context) < len(row["context"])]
 
 
 def load_finetuned(checkpoint: Path, device="cpu"):
@@ -65,10 +78,19 @@ def finetune(
     output_name: str = "mt5_v5_lora",
     output_dir: Path = ARTIFACTS,
     seed: int = 425,
+    context_variants: bool = False,
+    rehearsal_paths: list[Path] = (),
+    rehearsal_count: int = 400,
 ) -> dict:
-    """Fine-tune ``base_model`` (a stage 1 checkpoint). ``lora_rank=0`` trains every weight instead of an adapter."""
-    if epochs < 1 or patience < 1 or batch_size < 1 or lora_rank < 0 or learning_rate <= 0:
-        raise ValueError("epochs, patience and batch size must be positive, rank non-negative, learning rate positive")
+    """Fine-tune ``base_model`` (a stage 1 checkpoint). ``lora_rank=0`` trains every weight instead of an adapter.
+
+    Augmentation touches training only, so every run is scored on the same unchanged validation pairs:
+    ``context_variants`` adds shorter-context copies of each item, and ``rehearsal_paths`` mixes in
+    ``rehearsal_count`` stage 1 public pairs so the model keeps its general reply ability.
+    """
+    if epochs < 1 or patience < 1 or batch_size < 1 or lora_rank < 0 or learning_rate <= 0 or rehearsal_count < 0:
+        raise ValueError("epochs, patience and batch size must be positive, rank and rehearsal count "
+                         "non-negative, learning rate positive")
     if not output_name.replace("_", "").replace("-", "").isalnum():
         raise ValueError("output name may contain only letters, digits, underscores, and hyphens")
     run_dir = output_dir / output_name
@@ -83,6 +105,11 @@ def finetune(
     overlap = {row["item_id"] for row in train_rows} & {row["item_id"] for row in validation_rows}
     if overlap:
         raise ValueError(f"items in both training and validation: {', '.join(sorted(overlap)[:3])}")
+    item_pairs = len(train_rows)
+    variants = [variant for row in train_rows for variant in shorter_contexts(row)] if context_variants else []
+    public = [row for path in rehearsal_paths for row in load_pairs(path)]
+    rehearsal = random.Random(seed).sample(public, min(rehearsal_count, len(public)))
+    train_rows = [*train_rows, *variants, *rehearsal]
 
     tokenizer = AutoTokenizer.from_pretrained(base_model)
     pad_id = tokenizer.pad_token_id
@@ -121,7 +148,9 @@ def finetune(
     report = {
         "version": "V5", "stage": "finetune", "method": "lora" if lora_rank > 0 else "full",
         "base_model": str(base_model), "train_path": str(train_path), "validation_path": str(validation_path),
-        "train_items": len(train_rows) // 2, "train_pairs": len(train_encoded),
+        "train_items": item_pairs // 2, "train_pairs": len(train_encoded),
+        "train_pairs_by_kind": {"items": item_pairs, "context_variants": len(variants), "rehearsal": len(rehearsal)},
+        "rehearsal_paths": [str(path) for path in rehearsal_paths],
         "validation_items": len(validation_rows) // 2, "seed": seed,
         "lora": {"rank": lora_rank, "alpha": lora_alpha, "dropout": lora_dropout, "targets": list(lora_targets)}
                 if lora_rank > 0 else None,
@@ -179,7 +208,7 @@ def finetune(
             report["peak_cuda_gb"] = round(torch.cuda.max_memory_allocated() / (1024 ** 3), 3)
         report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         if stale >= patience:
-            # Validation has stopped improving; more epochs would only memorise the 190 items.
+            # Validation has stopped improving; more epochs would only memorise the training items.
             report["stopped_early"] = True
             break
 
@@ -220,11 +249,17 @@ def main() -> None:
     parser.add_argument("--max-target-tokens", type=int, default=48)
     parser.add_argument("--output-name", default="mt5_v5_lora")
     parser.add_argument("--output-dir", type=Path, default=ARTIFACTS)
+    parser.add_argument("--context-variants", action="store_true", help="Also train each item with less context.")
+    parser.add_argument("--rehearsal-pairs", type=Path, nargs="+", default=[],
+                        help="Stage 1 pair files to mix into training, e.g. data/public/cosem_train_pairs.jsonl")
+    parser.add_argument("--rehearsal-count", type=int, default=400, help="Public pairs to mix in from those files.")
     args = parser.parse_args()
     report = finetune(
         args.base_model, args.train_items, args.validation_items, args.lora_rank, args.lora_alpha,
         args.lora_dropout, tuple(args.lora_targets), args.epochs, args.patience, args.batch_size,
         args.learning_rate, args.max_source_tokens, args.max_target_tokens, args.output_name, args.output_dir,
+        context_variants=args.context_variants, rehearsal_paths=args.rehearsal_pairs,
+        rehearsal_count=args.rehearsal_count,
     )
     print(f"stage 1 validation loss: {report['history'][0]['validation_loss']}; "
           f"best: {report['best_validation_loss']} (epoch {report['best_epoch']})")

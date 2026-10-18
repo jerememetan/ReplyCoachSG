@@ -7,10 +7,10 @@ pytest.importorskip("transformers")
 pytest.importorskip("tokenizers")
 pytest.importorskip("peft")
 
-from test_train_v5 import tiny_model
+from test_train_v5 import COSEM, DAILYDIALOG, tiny_model, write_pairs
 from transformers import AutoTokenizer
 
-from replycoach.generate.finetune_v5 import finetune, item_rows
+from replycoach.generate.finetune_v5 import finetune, item_rows, shorter_contexts
 from replycoach.generate.train_v5 import encode_rows
 
 ITEMS = [
@@ -96,3 +96,32 @@ def test_finetune_refuses_items_in_both_sets(tmp_path: Path):
     validation = write_items(tmp_path / "validation.jsonl", ITEMS[:1])
     with pytest.raises(ValueError, match="both training and validation"):
         finetune("unused", train, validation, output_dir=tmp_path / "artifacts")
+
+
+def test_shorter_contexts_keep_the_reply_and_drop_old_turns():
+    row = {"item_id": "X", "style": "LOCAL", "context": ["a b", "c d"], "message": "m", "response": "r"}
+
+    assert [variant["context"] for variant in shorter_contexts(row)] == [["c d"], []]
+    assert all(variant["response"] == "r" and variant["style"] == "LOCAL" for variant in shorter_contexts(row))
+    assert [variant["context"] for variant in shorter_contexts({**row, "context": ["c d"]})] == [[]]
+    assert shorter_contexts({**row, "context": []}) == []
+
+
+def test_augmentation_changes_training_but_not_validation(tmp_path: Path):
+    base = tiny_model(tmp_path / "tiny", item_texts())
+    train = write_items(tmp_path / "train.jsonl", ITEMS[:3])
+    validation = write_items(tmp_path / "validation.jsonl", ITEMS[3:], prefix="ITEM-V")
+    public = [write_pairs(tmp_path / "dd.jsonl", "dailydialog", DAILYDIALOG),
+              write_pairs(tmp_path / "cosem.jsonl", "cosem", COSEM)]
+    settings = dict(lora_rank=2, lora_alpha=4, epochs=1, batch_size=4, max_source=32, max_target=12,
+                    output_dir=tmp_path / "artifacts")
+
+    plain = finetune(base, train, validation, output_name="plain", **settings)
+    augmented = finetune(base, train, validation, output_name="augmented", context_variants=True,
+                         rehearsal_paths=public, rehearsal_count=5, **settings)
+
+    # Items have 2, 1 and 0 context turns, so their pairs gain 2, 1 and 0 shorter copies per style.
+    assert augmented["train_pairs_by_kind"] == {"items": 6, "context_variants": 6, "rehearsal": 5}
+    assert augmented["train_pairs"] == 17 and augmented["train_items"] == 3
+    assert plain["train_pairs_by_kind"] == {"items": 6, "context_variants": 0, "rehearsal": 0}
+    assert augmented["history"][0] == plain["history"][0]
