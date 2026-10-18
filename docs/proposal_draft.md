@@ -52,8 +52,12 @@ once. Report per-system/style scores and persona disagreements. Personas on one
 base model are correlated simulated perspectives, not independent human participants;
 summarise at conversation level rather than treating every persona score as an
 independent sample. Automatic overlap metrics are secondary. Report compute cost
-and V4 vs V5 as well. E's local Ollama runner now exists; main ratings and judge
-quality checks remain pending. A supplementary would-send percentage follows the
+and V4 vs V5 as well. E's local Gemma4 12B/Ollama runner now exists. All systems use
+the same judge configuration, rubric, persona set and conversations, controlling
+conditions but not eliminating judge bias. Pilot checks found contextual and
+persona/style errors; results are comparative AI judgments supported by manual
+spot-checks, not human-equivalent ratings. Main evaluation remains pending.
+A supplementary would-send percentage follows the
 manual form; it is simulated willingness, not measured human preference.
 
 ## 6. Implementation

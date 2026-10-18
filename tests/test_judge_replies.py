@@ -18,6 +18,13 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@pytest.fixture(autouse=True)
+def isolate_judge_environment(monkeypatch):
+    """Developer model/address preferences must not override judging fixtures."""
+    for key in ("OLLAMA_MODEL", "OLLAMA_BASE_URL"):
+        monkeypatch.delenv(key, raising=False)
+
+
 def runner():
     path = ROOT / "scripts/judge_replies.py"
     assert path.exists(), "The local judging runner has not been implemented"
@@ -123,6 +130,74 @@ def test_schema_personas_and_environment(tmp_path):
             app.local_url(url)
 
 
+def test_gemma_default_is_local_and_ignores_retired_cloud_settings(tmp_path, monkeypatch):
+    app = runner()
+    env = tmp_path / ".env"
+    env.write_text("JUDGE_PROVIDER=gemini\nGEMINI_MODEL=retired\n"
+                   "GEMINI_API_KEY=unused-fixture-secret\n"
+                   "OLLAMA_BASE_URL=http://127.0.0.1:11434\n", encoding="utf-8")
+    values = app.read_env(env)
+    assert values == {"OLLAMA_BASE_URL": "http://127.0.0.1:11434"}
+    monkeypatch.setenv("JUDGE_PROVIDER", "gemini")
+    monkeypatch.setenv("GEMINI_API_KEY", "unused-fixture-secret")
+    assert app.judge_settings(values) == {
+        "model": "gemma4:12b", "base": "http://127.0.0.1:11434",
+    }
+    assert app.read_env(ROOT / ".env.example")["OLLAMA_MODEL"] == "gemma4:12b"
+
+
+def test_local_calibration_uses_first_persona_and_keeps_all_replies(tmp_path):
+    app = runner()
+    with ollama_stub() as (url, state), contextlib.redirect_stdout(io.StringIO()) as output:
+        args = setup_run(tmp_path, url) + ["--calibrate"]
+        assert app.main(args) == 0
+        assert len(state["requests"]) == 4
+        assert app.main(args + ["--resume"]) == 0
+        assert len(state["requests"]) == 4
+    assert "CALIBRATION" in output.getvalue()
+    assert "Incoming peer:" in output.getvalue() and "Explanation:" in output.getvalue()
+    manifest = json.loads((tmp_path / "packet/ratings/run.json").read_text(encoding="utf-8"))
+    assert manifest["provider"] == "ollama" and manifest["calibration"] is True
+    assert len(manifest["personas"]) == 1 and manifest["think"] is False
+
+
+def test_judge_prompt_checks_context_and_scores_style_independently():
+    app = runner()
+    persona = dict(id="P1", description="A concise student who uses Singlish.")
+    candidate = dict(
+        conversation=[dict(speaker="user", text="I should be free")],
+        incoming_message=dict(speaker="peer", text="the court is already booked for seven"),
+        style="STANDARD", reply="Sure, I'll book it once we confirm the time.",
+        candidate_id="PRIVATE_CANDIDATE", system="PRIVATE_SYSTEM",
+    )
+    rubric = app.RUBRIC_PATH.read_text(encoding="utf-8")
+    assert app.RUBRIC_PATH == ROOT / "data/evaluation/judge_rubric.md"
+    with ollama_stub() as (url, state):
+        result, _ = app.judge_one(url, "fixture:7b", persona, candidate, rubric)
+    assert result == rating(2, False)
+    request, = state["requests"]
+    system_prompt = request["messages"][0]["content"]
+    assert "Judge the proposed reply as the user's next message." in system_prompt
+    assert "Check established facts and whether the reply addresses the incoming message." in system_prompt
+    assert "Merely sharing its topic is insufficient." in system_prompt
+    assert "a contextually wrong reply can still be natural and clean Standard English" in system_prompt
+    assert "Judge style against the requested label, not the peer's slang or your persona's habits." in system_prompt
+    assert system_prompt.index("Check established facts") < system_prompt.index(persona["description"])
+    assert persona["description"] in system_prompt and rubric in system_prompt
+    assert system_prompt.index("Appropriateness") < system_prompt.index(persona["description"])
+    assert all(text not in system_prompt for text in (
+        "OPTIONAL HUMAN CHECKS", "Role A", "October 2026", "docs/", "Naturalness replaces",
+    ))
+    assert "STANDARD" in rubric and "LOCAL" in rubric
+    assert "Would-send is a separate decision" in rubric
+    assert json.loads(request["messages"][1]["content"]) == {
+        key: candidate[key] for key in ("conversation", "incoming_message", "style", "reply")
+    }
+    assert "PRIVATE_" not in json.dumps(request["messages"])
+    assert request["format"] == app.SCHEMA and request["options"] == app.OPTIONS
+    assert "untrusted quoted conversation data" in system_prompt
+
+
 def test_http_judging_summary_and_resume_preserve_blinding(tmp_path):
     app = runner()
     with ollama_stub() as (url, state), contextlib.redirect_stdout(io.StringIO()):
@@ -142,6 +217,31 @@ def test_http_judging_summary_and_resume_preserve_blinding(tmp_path):
         assert len(state["requests"]) == 8
         assert app.main(args + ["--summary-only"]) == 0
         (tmp_path / "personas.csv").write_text('id,description\nP1,"Changed."\n', encoding="utf-8")
+        with pytest.raises(ValueError, match="changed"):
+            app.main(args + ["--resume"])
+        assert len(state["requests"]) == 8
+
+
+def test_ollama_settings_are_sent_recorded_and_protected_on_resume(tmp_path, monkeypatch):
+    app = runner()
+    with ollama_stub() as (url, state), contextlib.redirect_stdout(io.StringIO()):
+        args = setup_run(tmp_path, url)
+        assert app.main(args) == 0
+        for request in state["requests"]:
+            assert request.get("think") is False
+            assert request["options"] == {
+                "temperature": 0, "seed": 425, "num_predict": 2048, "num_ctx": 4096,
+            }
+        manifest = json.loads((tmp_path / "packet/ratings/run.json").read_text(encoding="utf-8"))
+        assert manifest["provider"] == "ollama"
+        assert "request_interval_seconds" not in manifest
+        rows = app.read_jsonl(tmp_path / "packet/ratings/ratings.jsonl")
+        assert all("ollama" in row for row in rows)
+        assert manifest["think"] is False
+        assert manifest["options"] == state["requests"][0]["options"]
+        assert app.main(args + ["--resume"]) == 0
+        assert len(state["requests"]) == 8
+        monkeypatch.setattr(app, "OLLAMA_THINK", True)
         with pytest.raises(ValueError, match="changed"):
             app.main(args + ["--resume"])
         assert len(state["requests"]) == 8
@@ -216,6 +316,16 @@ def test_pipeline_dry_run_creates_no_files_or_model_requests(tmp_path):
     result = run_pipeline("--check-only", "--items", 1, "--env-file", env, "--run-dir", out)
     assert result.returncode == 0, result.stderr
     assert "40 judgments" in result.stdout
+    assert not out.exists()
+
+
+def test_pipeline_defaults_to_gemma_without_provider_or_api_key(tmp_path):
+    env = tmp_path / "local.env"
+    env.write_text("OLLAMA_BASE_URL=http://127.0.0.1:1\n", encoding="utf-8")
+    out = tmp_path / "not-created"
+    result = run_pipeline("--check-only", "--env-file", env, "--run-dir", out)
+    assert result.returncode == 0, result.stderr
+    assert "ollama/gemma4:12b" in result.stdout and "200 judgments" in result.stdout
     assert not out.exists()
 
 

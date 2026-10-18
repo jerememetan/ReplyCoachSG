@@ -1,9 +1,12 @@
 # Shared output evaluation form and optional manual sanity check
 
-Updated 17 October 2026. The initial evaluation uses ten persona-based AI
+Updated 18 October 2026. The initial evaluation uses ten persona-based AI
 reviewers, not human survey participants. This form is retained for optional
 manual sanity checks using the same rubric. E's `scripts/judge_replies.py`
-automates the form with local Ollama and `data/evaluation/personas.csv`.
+automates the form with local Gemma4 12B through Ollama and `data/evaluation/personas.csv`.
+All compared systems use the same judge/settings, rubric, personas and conversations.
+These are comparative AI ratings with known biases, not independent human feedback;
+use this form for manual spot-checks and report disagreements.
 See `split_and_rating_protocol.md` and `../scripts/data-split/rating_rubric.md`.
 
 Rate each system output independently. Do not look at system names. Order is

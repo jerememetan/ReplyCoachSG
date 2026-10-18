@@ -73,7 +73,12 @@ pipeline above. An initial panel of ten AI personas rates anonymised saved
 outputs on appropriateness, naturalness and style fit, each 1–5. Personas do not
 generate user-facing replies, modify the authored dataset or supply training labels.
 They need no tools or repository access. E owns `scripts/judge_replies.py`, which
-reads `.env`/CSV, calls local Ollama sequentially and saves ratings and summaries.
+reads `.env`/CSV, calls the standard local Gemma4 12B judge through Ollama sequentially,
+and saves ratings and summaries. No hosted judge, API key, repository access or
+private system mapping is sent to the model. Thinking is disabled, with a 4,096-token
+context and up to 2,048 output tokens. The same model/configuration, rubric,
+personas and conversations are used for every compared system. This controls
+conditions but does not eliminate judge bias; support comparisons with manual spot-checks.
 It also reports simulated would-send percentage, not real human approval.
 `scripts/data-split/make_rating_kit.py` and `analyze_ratings.py` remain optional
 human-spreadsheet tools. Main results and judge reliability checks are not complete.

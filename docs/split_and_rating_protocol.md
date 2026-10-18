@@ -1,6 +1,6 @@
 # Fixed split and persona based LLM evaluation
 
-Updated 17 October 2026. Jereme reports professor approval to replace human output
+Updated 18 October 2026. Jereme reports professor approval to replace human output
 raters with persona-based AI reviewers. The agreed design is a configurable panel
 of **10 initial personas**, each scoring **appropriateness, naturalness and style fit**
 (whole numbers 1–5). Naturalness replaces the original proposal's usefulness
@@ -9,9 +9,11 @@ criterion. This document supersedes older blind-human-rating instructions.
 **Implementation status:** the frozen data files, guarded development exporter and
 Role E's anonymous JSONL packet preparation exist. Jereme/Role E now also owns the
 local persona runner, rubric/persona configuration, pilot checks and analysis.
-`scripts/judge_replies.py` uses an editable CSV and local Ollama. Its initial
-Qwen2.5-Coder judge is provisional until manually checked on the validation pilot;
-the main evaluation and final test have not been completed. Tristan/Role A retains
+`scripts/judge_replies.py` uses an editable CSV and the standard local Gemma4 12B
+judge through Ollama. The team accepts this as a practical comparative evaluator,
+not a validated replacement for independent human feedback. Use identical judge
+settings and manual spot-checks, and report known contextual and persona/style
+biases. The main evaluation and final test have not been completed. Tristan/Role A retains
 data/split stewardship. Packet preparation itself still makes no model calls.
 See sections 7–8 for the input and rating contracts.
 
@@ -284,12 +286,13 @@ automatically private or ignored. No test-split override exists in this command.
 
 ## 8. Minimal local judging command
 
-Use `.env.example` as the setup template; keep `.env` ignored. Only two simple
-`KEY=value` entries are used: `OLLAMA_MODEL=qwen2.5-coder:7b` and
-`OLLAMA_BASE_URL=http://127.0.0.1:11434`. Existing environment variables override
-the file. No new dependencies are needed. The runner accepts loopback HTTP only,
-disables HTTP proxies/redirects, requires an installed local model and never
-downloads a model or selects a cloud model. Uses Ollama's
+Use `.env.example` as the setup template; keep `.env` ignored. Simple `KEY=value`
+entries select `OLLAMA_MODEL=gemma4:12b` and
+`OLLAMA_BASE_URL=http://127.0.0.1:11434`. These are also the defaults. Existing
+environment variables override the file. No new dependencies, provider selector
+or API key are needed. Open Ollama and install with `ollama pull gemma4:12b`.
+This route accepts loopback HTTP only, requires an installed local model and never
+downloads a model or substitutes an Ollama cloud model. Uses Ollama's
 [chat API](https://docs.ollama.com/api/chat) and
 [JSON-schema outputs](https://docs.ollama.com/capabilities/structured-outputs).
 
@@ -310,6 +313,42 @@ Edit `data/evaluation/personas.csv`: columns `id,description`, initially ten uni
 fictional student profiles. All use the same shared rubric and fresh contexts.
 There are no three specialist judges or different scoring scales by persona.
 Twenty candidates with ten profiles means 200 judgments, not 200 model copies.
+
+The standard local configuration explicitly disables thinking, uses a 4,096-token
+context and allows up to 2,048 output tokens, with temperature 0 and seed 425.
+Record the installed Gemma model digest and these exact settings in every run.
+The runtime disables proxies and redirects; no hosted judge or credentials are
+supported. Neither malformed nor truncated responses receive fabricated scores.
+
+All systems must use the same Gemma configuration, rubric, persona set and
+conversations. This makes conditions controlled and consistent, not necessarily
+unbiased. Pilot inspection found overly generous responses to the printer
+operation question, assumptions about sharing notes that were not in the input,
+and occasional persona habits influencing style/appropriateness scores. Keep
+these limitations in the report and manually spot-check a selection from each
+system/style, including both good and bad replies. Do not treat shared-model
+persona agreement as independent validation or claim the ratings equal human
+feedback. Use the three criteria separately rather than hiding weaknesses in a
+single combined score. Other local judge models remain configurable for explicit
+experiments, but do not mix judges/settings within a comparison.
+
+Use `--calibrate` on either judging command to retain all selected conversations
+and both styles but only the first existing persona. The normal five-conversation,
+two-setting packet therefore takes 20 judgments. Output is explicitly diagnostic,
+with readable context, replies, scores and explanations; it is not the main
+evaluation. Keep `--calibrate` on resume (the wrapper prints it). A fresh full-panel
+run is required after calibration; do not combine different persona coverage.
+
+The runner loads the concise, evaluator-only anchors from
+`data/evaluation/judge_rubric.md`; it no longer sends the administrative notes or
+optional human-review instructions in `scripts/data-split/rating_rubric.md` to the
+model. The three criteria and response schema are unchanged. Established facts,
+incoming-message intent and the requested style outrank personal texting habits.
+The exact AI rubric is saved in `run.json` and participates in resume checks.
+After changing a prompt, first diagnose a few contextually good and bad replies
+with one unchanged persona. Keep those checks labelled diagnostic, separate from
+matched system summaries; do not turn them into training labels or tune on test
+items. Then check additional validation cases not used to revise the prompt.
 
 The exact model response schema is enforced in `scripts/judge_replies.py`:
 
@@ -334,8 +373,11 @@ or request errors, then records a failure with no fabricated scores.
 
 Outputs in `PACKET/ratings/` are `run.json` (frozen settings), `ratings.jsonl`
 (append-only persona ratings/errors/attempts/timing) and regenerated `summary.csv`.
-The run binds both packet files, persona CSV, script, rubric, schema, generation
-settings and installed model digest. Changed settings cannot resume an old run.
+The run binds both packet files, persona CSV, script, rubric, schema, provider,
+calibration mode and generation settings, including the installed local model
+digest and explicit thinking flag. Changed settings cannot resume an old run.
+Saved summaries remain readable offline after a script change, but a new judging
+run is required; do not silently rewrite old run settings or ratings.
 Keep all these files ignored and local. An interrupted malformed final JSONL line
 requires inspection/recovery from a backup, not automatic destructive truncation.
 
@@ -348,19 +390,20 @@ Failures are missing, not zero scores or no votes. Incomplete rows are explicitl
 provisional; do not declare a winner when coverage differs. No combined score or
 automatic winner is invented. A complete matched run is still simulated evidence,
 not actual human preference, population statistics or proof that replies are human.
-Qwen2.5-Coder is a provisional local evaluator, not a validated Singlish judge.
+Gemma4 12B is the project's standard local comparative evaluator, not a validated
+Singlish expert or substitute for independent human participants.
 
 ## 9. One-command pipeline (normal entry point)
 
-After the normal Python project setup, with Ollama running and the configured
-local model already installed, use:
+After the normal Python project setup, configure the local judge in `.env`.
+Ollama and the installed Gemma4 12B model must be ready. Then use:
 
 ```powershell
 .\.venv\Scripts\python.exe scripts/run_judging.py
 ```
 
 This thin wrapper uses the same Python executable and existing scripts: validate
-the development split/personas/local judge, export BM25 M0 and M2 on all validation
+the development split/personas/judge configuration, export BM25 M0 and M2 on all validation
 queries, prepare the same five sampled conversations, then judge their 20 replies
 with all ten CSV personas. Default workload: 200 judgments. It does not recreate
 or inspect the locked test split, download judge models, install dependencies or
@@ -378,7 +421,7 @@ use, as in the existing exporter. No generator-only/hybrid results are invented;
 their real providers remain separate pending handoffs.
 
 Use `--check-only` to validate and show the planned count without writes or any
-Ollama requests (installed model availability is checked only for an actual run).
+judge requests (provider readiness is not verified by this preview).
 Use `--run-dir RUN_FOLDER --resume` to continue **only** the saved judging stage,
 without rerunning exports or resampling conversations. The existing judge's
 configuration/hash checks still apply. Use `--run-dir RUN_FOLDER --summary-only`

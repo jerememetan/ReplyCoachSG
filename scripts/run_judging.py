@@ -8,7 +8,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from judge_replies import ROOT, load_personas, local_url, read_env, request_json
+from judge_replies import ROOT, judge_settings, load_personas, prepare_judge, read_env
 
 
 def run(script, *args, capture=False):
@@ -29,8 +29,9 @@ def main():
     parser.add_argument("--personas", type=Path, default=ROOT / "data/evaluation/personas.csv")
     parser.add_argument("--env-file", type=Path, default=ROOT / ".env")
     parser.add_argument("--run-dir", type=Path, help="New run directory; default timestamped experiments/judging/run_...")
+    parser.add_argument("--calibrate", action="store_true", help="Diagnostic run using the first persona only")
     action = parser.add_mutually_exclusive_group()
-    action.add_argument("--check-only", action="store_true", help="Validate/preview; no Ollama requests or files")
+    action.add_argument("--check-only", action="store_true", help="Validate/preview; no judge requests or files")
     action.add_argument("--resume", action="store_true", help="Resume saved judging only; requires --run-dir")
     action.add_argument("--summary-only", action="store_true", help="Display saved results; requires --run-dir")
     args = parser.parse_args()
@@ -44,6 +45,8 @@ def main():
         raise ValueError("Keep judging outputs outside data/")
     display = out.relative_to(ROOT).as_posix() if out.is_relative_to(ROOT) else str(out)
     judge_args = [out / "packet", "--personas", args.personas, "--env-file", args.env_file]
+    if args.calibrate:
+        judge_args.append("--calibrate")
     if args.resume or args.summary_only:
         if not (out / "packet/judge_inputs.jsonl").exists():
             raise ValueError("This run did not reach judging. Preserve it and start a fresh pipeline run")
@@ -52,37 +55,36 @@ def main():
     if out.exists():
         raise FileExistsError(f"Run directory already exists: {display}; use --resume or a new directory")
 
-    print("[1/4] Checking development data, personas and local judge setup...", flush=True)
+    print("[1/4] Checking development data, personas and judge setup...", flush=True)
     personas = load_personas(args.personas)
+    if args.calibrate:
+        personas = personas[:1]
     env_path = args.env_file
     if not env_path.exists():
         if env_path.resolve() != ROOT / ".env":
             raise FileNotFoundError(f"Custom environment file does not exist: {env_path}")
         env_path = ROOT / ".env.example"
-    env = read_env(env_path)
-    base = local_url(os.environ.get("OLLAMA_BASE_URL", env.get("OLLAMA_BASE_URL", "http://127.0.0.1:11434")))
-    model = os.environ.get("OLLAMA_MODEL", env.get("OLLAMA_MODEL", "qwen2.5-coder:7b"))
-    if not model.strip() or model.endswith((":cloud", "-cloud")):
-        raise ValueError("Choose an installed local judge model in .env, not a cloud model")
+    config = judge_settings(read_env(env_path))
     inputs = run("export_dev_outputs.py", "--check-only", capture=True)
     if args.items > inputs["queries"]:
         raise ValueError(f"--items must not exceed the {inputs['queries']} validation conversations")
     count = args.items * len(args.methods) * len(args.memories) * 2 * len(personas)
     print(f"Plan: {args.items} conversations x {len(args.methods) * len(args.memories)} settings x 2 styles "
-          f"x {len(personas)} personas = {count} judgments. Local judge: {model}", flush=True)
+          f"x {len(personas)} personas = {count} judgments. Judge: ollama/{config['model']}", flush=True)
+    if args.calibrate:
+        print("CALIBRATION: diagnostic only, not a validated evaluator or main result.", flush=True)
     if args.check_only:
-        print("Validated. No Ollama requests or files created; installed model readiness has not been checked.")
+        print("Validated. No judge requests or files created; installed local model readiness has not been checked.")
         return 0
-    models = request_json(base, "/api/tags").get("models", [])
-    installed = next((m for m in models if isinstance(m, dict) and m.get("name") in (model, model + ":latest")), None)
-    if not installed or not installed.get("digest") or installed.get("remote_host") or installed.get("remote_model"):
-        raise ValueError(f"Local judge {model!r} is not installed. Open Ollama and install it before retrying")
+    prepare_judge(config)
     if not args.env_file.exists():
         with args.env_file.open("x", encoding="utf-8") as handle:
             handle.write(env_path.read_text(encoding="utf-8"))
     out.mkdir(parents=True, exist_ok=False)
     print(f"Run folder: {display}", flush=True)
     resume = [".\\.venv\\Scripts\\python.exe", "scripts/run_judging.py", "--run-dir", display, "--resume"]
+    if args.calibrate:
+        resume.append("--calibrate")
     if args.personas != ROOT / "data/evaluation/personas.csv":
         resume.extend(["--personas", str(args.personas)])
     if args.env_file != ROOT / ".env":

@@ -16,11 +16,14 @@ AI reviewers. The initial ten personas rate appropriateness, naturalness and
 style fit; this is not permission to generate the authored dataset or call a
 hosted LLM inside ReplyCoach. Preserve independent human peer review of dataset items.
 
-Role E now owns the judging workflow. The initial runner uses an installed local
-Ollama model selected in ignored `.env`, not a hosted API. Before a full evaluation,
-check the judge's reliability, allowed data and runtime. Submit only privacy-checked task conversations and model outputs;
-do not upload personal details, credentials, restricted handouts or repository
-files. Keep ratings as evaluation records, never gold training labels. See
+Role E now owns the judging workflow. The standard judge is installed local
+Gemma4 12B through Ollama, configured in ignored `.env`; there is no hosted
+integration or API key. Keep inputs anonymous and privacy-checked even locally.
+Before a full evaluation, check allowed data and runtime and manually spot-check
+ratings. Keep the same judge/settings for every compared system, record known
+contextual and persona/style biases, and do not claim equivalence to human feedback.
+Do not supply personal details, credentials, restricted handouts or repository
+files to the judge. Keep ratings as evaluation records, never gold training labels. See
 `split_and_rating_protocol.md` for the current protocol and implementation status.
 
 ## Team-authored data
