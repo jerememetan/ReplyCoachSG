@@ -32,3 +32,16 @@ mT5-small has only seen span corruption, so it first learns to reply on public p
 3. Epoch 0 in the report is the stage 1 model alone on the validation items, the number fine-tuning has to beat. Training stops after `--patience` epochs without improvement.
 4. On the cluster, after `pip install -e ".[mt5]"` (adds `peft`): `NAME=mt5_small_lora sbatch --partition=... --account=... --qos=... scripts/v5_finetune.sbatch`. `BASE=artifacts/mt5_base/best` uses the mT5-base stage 1 run; `--lora-rank 0 --learning-rate 1e-4` is the full fine-tune comparison.
 5. `artifacts/<NAME>/best/` holds only the adapter; it names its base checkpoint, so keep the stage 1 `best/` folder in place.
+6. Augmentation (training pairs only; validation stays the same 100 pairs): `--context-variants` adds copies of each item with only the last context turn and with none, matching the app's M0/M1/M2 memory; `--rehearsal-pairs data/public/dailydialog_train_pairs.jsonl data/public/cosem_train_pairs.jsonl --rehearsal-count 400` mixes stage 1 pairs back in.
+
+## V5 stage 0: span corruption on Singlish text (optional, before stage 1)
+
+1. Put `smsCorpus_en_xml_2015.03.09_all.zip` from https://github.com/kite1988/nus-sms-corpus in `data/public/` (cite Chen & Kan, 2013), then:
+
+   ```bash
+   python scripts/prepare_singlish_text.py --nus-sms data/public/smsCorpus_en_xml_2015.03.09_all.zip --cosem data/public/corpus_COSEM_v5.zip --train-output data/public/singlish_train_text.jsonl --validation-output data/public/singlish_validation_text.jsonl
+   ```
+
+   Only Singapore senders are kept; messages with long numbers, emails, links, placeholders or vulgarities are dropped; stage 1's CoSEM validation chats are left out.
+2. `NAME=mt5_base_spans sbatch ... scripts/v5_spans.sbatch` continues mT5's own pre-training task (hide 15% of tokens in spans of about 3, predict them) on that text. Step 0 in the report is the original mT5.
+3. Stage 1 from it: `NAME=mt5_base_after_spans MODEL=artifacts/mt5_base_spans/best sbatch ... scripts/v5_pretrain.sbatch`, then stage 2 with `BASE=artifacts/mt5_base_after_spans/best`. Compare with the run that skipped stage 0.

@@ -14,4 +14,6 @@ python scripts/prepare_cosem_pairs.py --input data/public/corpus_COSEM_v5.zip --
 
 CoSEM is real chat text with automatic scrubbing only. Keep it and its pairs out of Git, and check any line for personal details before quoting it. Cite Gonzales, Hiramoto, Leimgruber & Lim (2023).
 
+For V5 stage 0 only, put `smsCorpus_en_xml_2015.03.09_all.zip` from https://github.com/kite1988/nus-sms-corpus here and run `scripts/prepare_singlish_text.py` (see `docs/kaggle_notes.md`). The NUS SMS Corpus is real SMS text; keep it and its chunks out of Git, check any line for personal details before quoting it, and cite Chen & Kan (2013). Its repository asks users to cite the paper and email the authors; it states no formal licence.
+
 Licence: CC BY-NC-SA 4.0 for both corpora. See `docs/licence_checklist.md`. These pairs train V3/V4 for generic replies. They do **not** replace team-authored STANDARD/LOCAL items.
