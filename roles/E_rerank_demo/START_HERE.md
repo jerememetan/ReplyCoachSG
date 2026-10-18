@@ -2,6 +2,10 @@
 
 ## Current priority updated 18 October 2026
 
+The [judge experiment report](../../docs/judge_pilot_experiments.md) records the
+Qwen/Hermes/Gemini diagnostics, Gemma selection, completed 200-rating pilot,
+known errors and remaining evaluation work.
+
 Start the complete local evaluation pipeline with
 `.\.venv\Scripts\python.exe scripts/run_judging.py` after Python and judge setup.
 The standard judge is local Gemma4 12B through Ollama. Install with
