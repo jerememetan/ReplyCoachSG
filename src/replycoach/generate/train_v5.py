@@ -65,8 +65,11 @@ def load_pairs(path: Path, limit: int | None = None) -> list[dict]:
 
 
 def encode_rows(rows: list[dict], tokenizer, max_source: int, max_target: int, style: str | None = None):
-    """Tokenise rows into (source ids, target ids). ``style`` overrides the tag implied by each row's source."""
-    styles = [style or STYLE_BY_SOURCE[row["source"]] for row in rows]
+    """Tokenise rows into (source ids, target ids).
+
+    The tag is ``style`` if given, else the row's own ``style`` (team items), else the one implied by its source.
+    """
+    styles = [style or row.get("style") or STYLE_BY_SOURCE[row["source"]] for row in rows]
     sources = tokenizer([mt5_input(tag, row["message"], row["context"]) for tag, row in zip(styles, rows)])["input_ids"]
     targets = tokenizer([row["response"] for row in rows], max_length=max_target, truncation=True)["input_ids"]
     for index, row in enumerate(rows):

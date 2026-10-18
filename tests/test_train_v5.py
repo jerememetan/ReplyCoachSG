@@ -31,10 +31,10 @@ def write_pairs(path: Path, source: str, pairs) -> Path:
     return path
 
 
-def tiny_model(path: Path) -> str:
+def tiny_model(path: Path, extra_texts: list[str] = ()) -> str:
     """A word-level tokenizer and a one-layer mT5, so the test needs no download."""
     texts = [text for pairs in (DAILYDIALOG, COSEM) for context, message, response in pairs
-             for text in [*context, message, response]]
+             for text in [*context, message, response]] + list(extra_texts)
     words = {word for text in texts for word in detokenise(text).split()}
     words |= {"STANDARD", "LOCAL", "context:", "message:", "|"}
     vocab = {"<pad>": 0, "</s>": 1, "<unk>": 2}

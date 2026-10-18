@@ -24,3 +24,11 @@ mT5-small has only seen span corruption, so it first learns to reply on public p
 6. V5 validation loss is per subword and V4's is per word, so the two numbers cannot be compared. Compare generated replies on the development set.
 7. On the SCIS GPU cluster, skip the notebook: copy the repo and the four pair files over, build `.venv` on the login node, load `google/mt5-small` once there so it is cached, then from the repo root run `sbatch --partition=... --account=... --qos=... scripts/v5_pretrain.sbatch smoke`, and the same without `smoke` for the full run. `myinfo` prints your partition, account and QOS.
 8. No development or test item is read in this stage. Local install: `pip install -e ".[mt5]"`.
+
+## V5 stage 2: LoRA fine-tune on development items
+
+1. Each item in `data/dev/train.jsonl` gives two pairs, `STANDARD` → `replies.standard` and `LOCAL` → `replies.local`, in the same `mt5_input` format as stage 1. One adapter learns both styles; the tag picks the style.
+2. `data/dev/validation.jsonl` picks the epoch and is the V4 vs V5 comparison set. `data/test/test.jsonl` is never read; the trainer refuses any item whose split is not `dev`.
+3. Epoch 0 in the report is the stage 1 model alone on the validation items, the number fine-tuning has to beat. Training stops after `--patience` epochs without improvement.
+4. On the cluster, after `pip install -e ".[mt5]"` (adds `peft`): `NAME=mt5_small_lora sbatch --partition=... --account=... --qos=... scripts/v5_finetune.sbatch`. `BASE=artifacts/mt5_base/best` uses the mT5-base stage 1 run; `--lora-rank 0 --learning-rate 1e-4` is the full fine-tune comparison.
+5. `artifacts/<NAME>/best/` holds only the adapter; it names its base checkpoint, so keep the stage 1 `best/` folder in place.
