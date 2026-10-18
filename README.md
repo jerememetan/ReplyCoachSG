@@ -43,12 +43,19 @@ you do not need to change PowerShell's execution policy.
 
 ### Run persona judging — one command
 
-After the Python setup above, open Ollama with the local model named in `.env`
-already installed (the template uses `qwen2.5-coder:7b`). Then run:
+After the Python setup above, open Ollama and install the standard local judge,
+**Gemma4 12B**. No API key or hosted judge is used. The ignored `.env` can contain
+`OLLAMA_MODEL=gemma4:12b` and `OLLAMA_BASE_URL=http://127.0.0.1:11434`.
 
 ```powershell
+ollama pull gemma4:12b
 .\.venv\Scripts\python.exe scripts/run_judging.py
 ```
+
+Local Ollama judging explicitly disables thinking and uses a 4,096-token context
+with up to 2,048 output tokens. These settings are saved with each run; changed
+settings require a fresh run, not resuming older ratings. The model's installed
+digest is recorded too. These runtime settings do not establish judge reliability.
 
 This checks the setup, exports BM25 M0/M2 replies, prepares the same five
 validation conversations for both settings, and runs every persona in
@@ -63,7 +70,7 @@ would-send percentage by setting/style. Each invocation creates a fresh ignored
 folder under `experiments/judging/run_...`, prints its location and a ready-to-copy
 resume command. The CSV is at `RUN_FOLDER/packet/ratings/summary.csv`.
 
-Add `--check-only` to preview without file writes or Ollama requests. To continue
+Add `--check-only` to preview without file writes or judge requests. To continue
 an interrupted judging stage, use `--run-dir RUN_FOLDER --resume`; to inspect
 saved results, use `--run-dir RUN_FOLDER --summary-only`. The wrapper never
 regenerates replies on resume. An interruption before packet preparation requires
@@ -71,6 +78,30 @@ a fresh run. Optional new-run flags: `--items`, `--methods bm25 minilm` and
 `--memories M0 M1 M2`. Adding MiniLM can download its public embedding weights on
 first use. Frozen test data is never used. These are AI ratings, not human survey
 results; inspect pilot reliability before the main evaluation.
+
+### Judge checks and interpretation
+
+Start small using the **first existing CSV persona** on the same five validation
+conversations, two BM25 memory settings and two styles: **20 judgments**, not 200.
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_judging.py --calibrate --check-only
+.\.venv\Scripts\python.exe scripts/run_judging.py --calibrate
+```
+
+Calibration prints each conversation, reply, scores and explanation in readable
+form. Inspect whether the judge catches wrong intents/contradictions and correctly
+recognises good replies; valid JSON is not a quality check. Omit `--calibrate` only
+when ready for the full persona panel. Do not treat a one-persona diagnostic as
+the main experiment. The printed resume command preserves calibration mode.
+
+Use the same Gemma model/digest, settings, rubric, personas and conversations for
+every compared system. This controls the comparison conditions; it does not
+eliminate judge bias or make ten personas independent human reviewers. Treat
+scores as comparative AI judgments, supported by manual spot-checks, not actual
+human feedback or calibrated accuracy. The pilot showed overly generous printer
+suggestions and occasional local-style/persona bias; report these limitations.
+Keep judge inputs anonymous even though evaluation stays local.
 
 ### Run checks
 
@@ -162,8 +193,8 @@ older proposal's usefulness criterion.
 
 This is **persona-based LLM evaluation**, not a human survey or ten independent
 human participants. Jereme/Role E now owns the judging workflow as well as the
-output handoff; Tristan/Role A retains the frozen data split. The local runner is
-`scripts/judge_replies.py`, using Ollama and the shared rubric. Existing spreadsheet
+output handoff; Tristan/Role A retains the frozen data split. The runner is
+`scripts/judge_replies.py`, using local Gemma4 12B through Ollama and the common criteria. Existing spreadsheet
 scripts remain optional human-review tools. See
 [`docs/split_and_rating_protocol.md`](docs/split_and_rating_protocol.md)
 for the protocol, safeguards and remaining work. Normally use the one-command
@@ -202,7 +233,7 @@ if (!(Test-Path -LiteralPath .env)) { Copy-Item .env.example .env }
 .\.venv\Scripts\python.exe scripts/judge_replies.py experiments/judging/validation_pilot_01
 ```
 
-Set `OLLAMA_MODEL=qwen2.5-coder:7b` in your ignored `.env`; the model must already
+Set `OLLAMA_MODEL=gemma4:12b` in your ignored `.env`; the model must already
 be installed and Ollama running locally. Edit/add rows in
 [`data/evaluation/personas.csv`](data/evaluation/personas.csv) to change the panel.
 Each persona rates every anonymous reply using the same rubric, including a
@@ -210,6 +241,13 @@ boolean `would_send`. The terminal shows per-model-setting and per-style average
 for appropriateness, naturalness, style fit, and simulated would-send percentage.
 It saves `ratings/ratings.jsonl`, `run.json` and `summary.csv` inside the packet.
 The five-conversation/two-setting example has 20 replies, hence 200 judgments.
+
+The model-facing rubric is [`data/evaluation/judge_rubric.md`](data/evaluation/judge_rubric.md).
+It contains only judging instructions and score anchors, not the administrative
+notes in the optional human-review rubric. Context and requested style take
+priority over persona habits. After a prompt change, first inspect a few good and
+bad replies with one unchanged persona; successful JSON responses alone do not
+validate the judge. Keep diagnostic runs separate from matched system results.
 
 Add `--resume` after an interruption; successful judgments are not repeated.
 Use `--summary-only` to display saved results without model calls. Use a fresh
@@ -255,7 +293,8 @@ Expected: 20 items load, BM25 returns a lunch pair, V3 trains one CPU batch if P
 
 - No LLM-generated dataset items, gold replies or training labels. Evaluation-only
   AI ratings are permitted under the protocol above; they are not training data.
-- No hosted LLM/API calls in the system.
+- No hosted LLM generation or judging APIs. Persona judging uses local Ollama
+  with anonymised, privacy-checked inputs under the protocol above.
 - Do not invent Mandarin. Do not force slang.
 - Do not train on or tune with the held-out test set.
 

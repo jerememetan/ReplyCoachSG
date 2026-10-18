@@ -1,9 +1,18 @@
 # Role E — Reranker, integration, demo
 
-## Current priority updated 17 October 2026
+## Current priority updated 18 October 2026
 
 Start the complete local evaluation pipeline with
-`.\.venv\Scripts\python.exe scripts/run_judging.py` after Python/Ollama setup.
+`.\.venv\Scripts\python.exe scripts/run_judging.py` after Python and judge setup.
+The standard judge is local Gemma4 12B through Ollama. Install with
+`ollama pull gemma4:12b`; ignored `.env` uses `OLLAMA_MODEL=gemma4:12b` and a
+loopback `OLLAMA_BASE_URL`. No API key or hosted judge is used. Thinking is off,
+with 4,096 context tokens and up to 2,048 output tokens.
+Use `--calibrate` first for one existing persona (20 ratings by default), with
+readable per-reply context and explanations, before a full panel. A successful
+run does not establish judge quality. Keep the same judge, settings, rubric,
+personas and conversations across systems, manually spot-check outputs and report
+known context/style biases. These are AI comparisons, not human feedback.
 It exports BM25 M0/M2, prepares five shared conversations and judges them using
 the CSV personas. It prints a fresh output folder and resume command; add
 `--check-only` for a no-write/no-model preview. The individual tools below remain
@@ -15,7 +24,7 @@ plus a separate `PRIVATE_mapping.jsonl`, without manual JSON edits or model call
 Use `--check-only` first and a fresh folder under ignored `experiments/judging/`.
 Jereme/E now also owns the judging workflow. Keep both files local; judges receive
 only public task text. Run `scripts/judge_replies.py PACKET_FOLDER`, using the
-ignored `.env` for the Ollama model and `data/evaluation/personas.csv` for ten
+ignored `.env` for the local judge model/address and `data/evaluation/personas.csv` for ten
 initial profiles. Each scores appropriateness, naturalness and style fit (1–5)
 and a boolean would-send vote. The terminal/CSV summarise by model settings and
 style. Use `--check-only`, `--resume` and `--summary-only` as needed. Pilot-check
