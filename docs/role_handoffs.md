@@ -28,7 +28,11 @@ every compared reply using **appropriateness, naturalness and style fit**, each
 1–5, with an explanation, problem/uncertainty flags and a would-send vote. Keep personas consistent,
 hide system identities and use the same roster/settings for every system.
 
-E's `scripts/judge_replies.py` uses local Ollama; start with five validation
+E's `scripts/judge_replies.py` uses the standard local Gemma4 12B judge through
+Ollama, without an API key or hosted calls. Keep the same judge/digest, settings,
+rubric, personas and conversations across systems. These controls do not remove
+judge bias; report known contextual and persona/style errors and manual spot-checks.
+Use `--calibrate` for a one-persona diagnostic before a full panel; start with five validation
 conversations, check privacy, judge quality and runtime. Keep correlated ratings distinct
 from independent human participants, and summarise results at conversation level.
 See `docs/split_and_rating_protocol.md` for the full protocol. The existing
