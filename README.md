@@ -150,8 +150,11 @@ MiniLM). You can also select **Retrieval only**, **Generator only**, or **Hybrid
 The single-system modes return two clickable replies. Choose BM25/MiniLM for
 retrieval and V4/V5 for generation; resources load only when requested.
 
-The integration and reviewed split are ready, but **trained generators are still
-pending**. Missing V4/V5 models name Role C/D and fall back honestly:
+Role C's **task-trained V4 provider is connected**; its checkpoint must be copied
+privately into `artifacts/rnn_v4_task.pt` or selected with
+`REPLYCOACH_V4_CHECKPOINT`. See [C's handoff](roles/C_rnn_attention/HANDOFF.md)
+for measured results and substantial quality limitations. V5 remains pending.
+Missing V4/V5 models name Role C/D and fall back honestly:
 partial hybrid runs are labelled retrieval-only, not successful hybrids. The
 registry never uses the one-batch smoke checkpoint or fake production replies.
 

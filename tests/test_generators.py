@@ -8,8 +8,10 @@ def providers():
 
 
 @pytest.mark.parametrize("provider,role", [("v4", "C"), ("v5", "D")])
-def test_pending_generator_names_the_owner_without_fake_outputs(provider, role):
+def test_pending_generator_names_the_owner_without_fake_outputs(provider, role, monkeypatch, tmp_path):
     module = providers()
+    if provider == "v4":
+        monkeypatch.setenv("REPLYCOACH_V4_CHECKPOINT", str(tmp_path / "missing.pt"))
     with pytest.raises(module.GeneratorUnavailable, match=f"Role {role}"):
         module.load_generator(provider)
 

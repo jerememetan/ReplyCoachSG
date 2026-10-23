@@ -36,9 +36,12 @@ class Decoder(nn.Module):
         self.out = nn.Linear(hidden_size, vocab_size)
 
     def forward(self, token: torch.Tensor, hidden):
-        embedded = self.embed(token).unsqueeze(1)
+        single_step = token.ndim == 1
+        embedded = self.embed(token)
+        if single_step:
+            embedded = embedded.unsqueeze(1)
         output, hidden = self.rnn(embedded, hidden)
-        logits = self.out(output.squeeze(1))
+        logits = self.out(output.squeeze(1) if single_step else output)
         return logits, hidden, None
 
 
@@ -59,7 +62,10 @@ class AttentionDecoder(nn.Module):
         encoder_outputs: torch.Tensor,
         source_mask: torch.Tensor | None = None,
     ):
-        embedded = self.embed(token).unsqueeze(1)
+        single_step = token.ndim == 1
+        embedded = self.embed(token)
+        if single_step:
+            embedded = embedded.unsqueeze(1)
         output, hidden = self.rnn(embedded, hidden)
         query = output
         scores = torch.bmm(query, encoder_outputs.transpose(1, 2))
@@ -68,7 +74,7 @@ class AttentionDecoder(nn.Module):
         weights = torch.softmax(scores, dim=-1)
         context = torch.bmm(weights, encoder_outputs)
         combined = torch.tanh(self.attn_combine(torch.cat([output, context], dim=-1)))
-        logits = self.out(combined.squeeze(1))
+        logits = self.out(combined.squeeze(1) if single_step else combined)
         return logits, hidden, weights
 
 
@@ -88,6 +94,12 @@ class Seq2Seq(nn.Module):
         if self.use_attention:
             positions = torch.arange(encoder_outputs.size(1), device=src.device)
             source_mask = positions.unsqueeze(0) < src_lengths.to(src.device).unsqueeze(1)
+        if teacher_forcing:
+            # Luong attention does not feed its context back into the LSTM.
+            # All gold-prefix decoder states can therefore be computed together.
+            if self.use_attention:
+                return self.decoder(tgt[:, :-1], hidden, encoder_outputs, source_mask)[0]
+            return self.decoder(tgt[:, :-1], hidden)[0]
         bos = tgt[:, 0]
         inputs = bos
         logits_steps = []
