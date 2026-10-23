@@ -144,7 +144,8 @@ def test_cli_check_only_validates_data_without_loading_a_pending_model(dev_input
     assert json.loads(result.stdout)["queries"] == 1
 
 
-def test_cli_pending_model_does_not_create_output(dev_inputs, tmp_path):
+def test_cli_pending_model_does_not_create_output(dev_inputs, tmp_path, monkeypatch):
+    monkeypatch.setenv("REPLYCOACH_V4_CHECKPOINT", str(tmp_path / "missing_v4.pt"))
     queries, bank = dev_inputs
     output = tmp_path / "pending.jsonl"
     result = run_export_cli("--queries", queries, "--bank", bank, "--output", output)

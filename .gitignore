@@ -17,6 +17,8 @@ artifacts/*.json
 artifacts/*.npy
 !artifacts/.gitkeep
 artifacts/pytest_tmp/
+artifacts/role_c_runs/
+artifacts/colab_import/
 data/public/*.jsonl
 data/public/*.zip
 experiments/logs/*.jsonl

@@ -9,7 +9,9 @@ from replycoach.io import ROOT, load_items, write_jsonl
 
 
 @pytest.fixture
-def demo_test(monkeypatch, fake_encoder):
+def demo_test(monkeypatch, fake_encoder, tmp_path):
+    # Missing-provider tests must not depend on a teammate's installed weights.
+    monkeypatch.setenv("REPLYCOACH_V4_CHECKPOINT", str(tmp_path / "missing_v4.pt"))
     cached_minilm = demo_resources.get_minilm
     cached_generator = getattr(demo_resources, "get_generator", None)
     demo_resources.get_bm25.clear()
