@@ -202,7 +202,8 @@ def test_pending_generator_ui_is_honest_and_keeps_fallback_or_retrieval(demo_tes
     assert "select_system_standard" in suggestion_keys(app)
 
 
-def test_selected_v5_pending_message_names_role_d(demo_test):
+def test_selected_v5_pending_message_names_role_d(demo_test, monkeypatch, tmp_path):
+    monkeypatch.setenv("V5_CHECKPOINT", str(tmp_path / "missing"))
     app = demo_test
     app.selectbox(key="system_mode").select("Generator only").run()
     app.selectbox(key="generator_provider").select("V5 (mT5/LoRA)").run()
