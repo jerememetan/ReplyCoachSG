@@ -336,12 +336,16 @@ def test_preference_pairs_turn_picks_into_better_and_worse_rows(tmp_path: Path):
 
     train = item_rows(write_items(tmp_path / "train.jsonl", ECHO_ITEMS))
 
-    pairs, unused = preference_pairs(write_preferences(tmp_path / "prefs.json", PREFERENCES), train)
+    pairs, unused, from_both_bad = preference_pairs(write_preferences(tmp_path / "prefs.json", PREFERENCES), train)
 
-    assert unused == 2  # the tie and the "both bad"; the unanswered question counts as neither
+    assert unused == 1  # the tie; the unanswered question counts as nothing
+    team_local = next(row["response"] for row in train if row["item_id"] == "ITEM-T-002" and row["style"] == "LOCAL")
     assert [(better["response"], worse["response"]) for better, worse in pairs] == [
         ("No worries, tell me when you reach.", "Okay, I'll take the wrong bus."),
-        ("no worries lah", "ok i take wrong bus also")]
+        ("no worries lah", "ok i take wrong bus also"),
+        # "both bad": the team's own reply beats each of the two, except a copy of itself.
+        (team_local, "ok")]
+    assert team_local == "ok i order later" and from_both_bad == 1
     assert pairs[0][0]["message"] == pairs[0][1]["message"] == "sorry, I took the wrong bus"
     outside = write_preferences(tmp_path / "outside.json", [("ITEM-V-001", "LOCAL", ["a", "b"], "first")])
     with pytest.raises(ValueError, match="outside the training file"):
@@ -379,12 +383,12 @@ def test_dpo_training_reports_its_pairs_and_agreement(tmp_path: Path):
 
     report = finetune(base, train, validation, preferences_path=prefs, dpo_weight=0.5, **settings)
 
-    assert report["preferences"] == {"sheet": str(prefs), "pairs": 2, "unused_answers": 2, "weight": 0.5,
-                                     "beta": 0.1}
+    assert report["preferences"] == {"sheet": str(prefs), "pairs": 3, "from_both_bad": 1, "unused_answers": 1,
+                                     "weight": 0.5, "beta": 0.1}
     assert report["history"][1]["dpo_loss"] > 0 and 0 <= report["history"][1]["dpo_agreement"] <= 1
     assert finetune(base, train, validation, output_name="plain", **settings)["preferences"] is None
-    unanswered = write_preferences(tmp_path / "none.json", PREFERENCES[2:])
-    with pytest.raises(ValueError, match="no answered"):
+    unanswered = write_preferences(tmp_path / "none.json", [PREFERENCES[2], PREFERENCES[4]])
+    with pytest.raises(ValueError, match="no questions answered"):
         finetune(base, train, validation, output_name="empty", preferences_path=unanswered, **settings)
 
 

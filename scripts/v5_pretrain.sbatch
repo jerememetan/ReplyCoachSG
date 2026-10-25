@@ -6,6 +6,7 @@
 #   NAME=mt5_small_dd DATA=dd sbatch ... scripts/v5_pretrain.sbatch
 #   NAME=mt5_base MODEL=google/mt5-base sbatch ... scripts/v5_pretrain.sbatch full --learning-rate 3e-4
 #   NAME=mt5_base_cosem_full COSEM=full sbatch ... scripts/v5_pretrain.sbatch full
+#   NAME=mt5_base_cosem_clean COSEM=clean sbatch ... scripts/v5_pretrain.sbatch full   (after clean_v5 filter)
 # Give every experiment its own NAME: a job resumes whatever checkpoint already sits under that name.
 #SBATCH --job-name=v5-pretrain
 #SBATCH --nodes=1
@@ -34,8 +35,9 @@ esac
 ARGS=(--model "${MODEL:-google/mt5-small}" --train-pairs)
 for source in "${SOURCES[@]}"; do
   file=$source
-  # COSEM=full trains on every usable CoSEM pair instead of the 80,000 sample; validation stays the same.
-  if [ "$source" = cosem ] && [ "${COSEM:-}" = full ]; then file=cosem_full; fi
+  # COSEM=full trains on every usable CoSEM pair instead of the 80,000 sample, COSEM=clean on the pairs
+  # clean_v5 kept from those (data/public/cosem_<COSEM>_train_pairs.jsonl); validation stays the same.
+  if [ "$source" = cosem ] && [ -n "${COSEM:-}" ]; then file=cosem_$COSEM; fi
   ARGS+=("$PAIRS/${file}_train_pairs.jsonl")
 done
 ARGS+=(--validation-pairs)

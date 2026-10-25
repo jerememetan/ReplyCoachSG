@@ -153,11 +153,13 @@ def unlikelihood_loss(model, batch: list[tuple[list[int], list[int], int]], pad_
     return -torch.log((1 - probability).clamp(min=1e-5))[penalise.to(device)].mean()
 
 
-def preference_pairs(sheet_path: Path, train_rows: list[dict]) -> tuple[list[tuple[dict, dict]], int]:
+def preference_pairs(sheet_path: Path, train_rows: list[dict]) -> tuple[list[tuple[dict, dict]], int, int]:
     """(better, worse) rows from a person's picks in a ``compare_v5 make-prefs`` sheet.
 
     Each question answered 1 or 2 gives the item's input twice: with the picked reply, and with the other one.
-    Questions answered "same" or "both bad" give no pair; their count is returned.
+    A question answered "both bad" gives the team's own reply as better than each of the two, so the replies
+    the person rejected outright are pushed down too. Questions answered "same" give no pair.
+    Returns the pairs, the count of "same" answers, and how many pairs came from "both bad".
     """
     sheet = json.loads(Path(sheet_path).read_text(encoding="utf-8"))
     rows = {(row["item_id"], row["style"]): row for row in train_rows}
@@ -166,15 +168,20 @@ def preference_pairs(sheet_path: Path, train_rows: list[dict]) -> tuple[list[tup
                if (question["item_id"], question["style"]) not in rows]
     if outside:
         raise ValueError(f"{sheet_path} has items outside the training file: {', '.join(outside[:3])}")
-    pairs, unused = [], 0
+    pairs, unused, from_both_bad = [], 0, 0
     for question in sheet["questions"]:
+        row = rows[(question["item_id"], question["style"])]
+        if question["answer"] == "both_bad":
+            bad = [reply for reply in question["replies"] if reply.strip() != row["response"].strip()]
+            pairs += [(row, {**row, "response": reply}) for reply in bad]
+            from_both_bad += len(bad)
+            continue
         if question["answer"] not in ("first", "second"):
             unused += question["answer"] is not None
             continue
         better, worse = question["replies"] if question["answer"] == "first" else question["replies"][::-1]
-        row = rows[(question["item_id"], question["style"])]
         pairs.append(({**row, "response": better}, {**row, "response": worse}))
-    return pairs, unused
+    return pairs, unused, from_both_bad
 
 
 def sequence_logprobs(model, encoded: list[tuple[list[int], list[int]]], pad_id: int, device):
@@ -301,9 +308,10 @@ def finetune(
     public = [row for path in rehearsal_paths for row in load_pairs(path)]
     rehearsal = random.Random(seed).sample(public, min(rehearsal_count, len(public)))
     negatives, skipped = echo_negatives(negatives_path, train_rows, negatives_per_row) if negatives_path else ([], 0)
-    preferences, unused_answers = preference_pairs(preferences_path, train_rows) if preferences_path else ([], 0)
+    preferences, unused_answers, from_both_bad = (preference_pairs(preferences_path, train_rows) if preferences_path
+                                                  else ([], 0, 0))
     if preferences_path and not preferences:
-        raise ValueError(f"no answered 1 or 2 questions in {preferences_path}")
+        raise ValueError(f"no questions answered 1, 2 or both bad in {preferences_path}")
     train_rows = [*train_rows, *variants, *inner, *rehearsal]
 
     tokenizer = AutoTokenizer.from_pretrained(base_model)
@@ -372,8 +380,8 @@ def finetune(
             "rows_skipped_reference_echoes": skipped,
         } if negatives_path else None,
         "preferences": {
-            "sheet": str(preferences_path), "pairs": len(preference_encoded), "unused_answers": unused_answers,
-            "weight": dpo_weight, "beta": dpo_beta,
+            "sheet": str(preferences_path), "pairs": len(preference_encoded), "from_both_bad": from_both_bad,
+            "unused_answers": unused_answers, "weight": dpo_weight, "beta": dpo_beta,
         } if preferences_path else None,
         "lora": {"rank": lora_rank, "alpha": lora_alpha, "dropout": lora_dropout, "targets": list(lora_targets)}
                 if lora_rank > 0 else None,
@@ -572,7 +580,7 @@ def main() -> None:
     parser.add_argument("--unlikelihood-weight", type=float, default=1.0)
     parser.add_argument("--negatives-per-row", type=int, default=3, help="Echo replies kept per item and style.")
     parser.add_argument("--preferences", type=Path,
-                        help="A rated compare_v5 make-prefs sheet; its picks train the model by DPO.")
+                        help="A rated compare_v5 make-prefs sheet; its picks and \"both bad\" answers train the model by DPO.")
     parser.add_argument("--dpo-weight", type=float, default=1.0)
     parser.add_argument("--dpo-beta", type=float, default=0.1,
                         help="How far the model may move from stage 1 on the picked pairs; higher moves less.")
