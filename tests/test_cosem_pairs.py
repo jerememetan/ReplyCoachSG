@@ -2,6 +2,8 @@ import importlib.util
 import zipfile
 from pathlib import Path
 
+import pytest
+
 SCRIPT = Path(__file__).resolve().parents[1] / "scripts" / "prepare_cosem_pairs.py"
 spec = importlib.util.spec_from_file_location("prepare_cosem_pairs", SCRIPT)
 cosem = importlib.util.module_from_spec(spec)
@@ -46,13 +48,29 @@ def test_pairs_merge_a_speakers_lines_and_stop_at_numbering_holes():
     rows = cosem.pairs_from_chat("19CF01", messages)
 
     assert rows == [
-        {"context": [], "message": "eh you all free later",
+        {"context": [], "speakers": [], "message": "eh you all free later",
          "response": "why what time", "source": "cosem", "chat": "19CF01"},
-        {"context": ["eh you all free later"], "message": "why what time",
+        {"context": ["eh you all free later"], "speakers": ["user"], "message": "why what time",
          "response": "want to study together at library maybe 3pm", "source": "cosem", "chat": "19CF01"},
-        {"context": [], "message": "anyone seen my charger around here",
+        {"context": [], "speakers": [], "message": "anyone seen my charger around here",
          "response": "no leh never see it", "source": "cosem", "chat": "19CF01"},
     ]
+
+
+def test_pairs_name_each_context_speaker_from_the_responders_side():
+    messages = [
+        (1, "A", "eh who is coming tonight"),
+        (2, "C", "i can come after work"),
+        (3, "B", "same i will be there"),
+        (4, "A", "ok see you all at eight"),
+    ]
+
+    last = cosem.pairs_from_chat("19CF01", messages)[-1]
+
+    # A answers B; C is a third person in the group chat.
+    assert last["context"] == ["eh who is coming tonight", "i can come after work"]
+    assert last["speakers"] == ["user", "other"]
+    assert last["message"] == "same i will be there"
 
 
 def test_pairs_skip_placeholders_short_mandarin_and_vulgar_replies():
@@ -98,3 +116,13 @@ def test_split_holds_out_whole_chats_and_caps_stock_replies():
     assert not {row["chat"] for row in train} & set(validation_chats)
     assert sum(row["response"] == "ok no problem lah" for row in train) == cosem.MAX_RESPONSE_REPEATS
     assert cosem.split_pairs(pairs_by_chat, 600, 60, seed=425)[0] == train
+
+
+def test_held_out_file_is_kept_and_its_pairs_never_trained_on():
+    held_out = [{"message": "see you", "response": "Ok can see you", "chat": "chat01"}]
+    train = [{"message": "See you", "response": "ok can see you", "chat": "chat02"},
+             {"message": "see you", "response": "bye bye lah", "chat": "chat02"}]
+
+    assert cosem.against_held_out(train, ["chat01"], held_out) == train[1:]
+    with pytest.raises(ValueError, match="chats this split trains on"):
+        cosem.against_held_out(train, ["chat03"], held_out)

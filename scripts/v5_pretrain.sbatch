@@ -5,6 +5,7 @@
 # Experiments are set through the environment, and anything after the mode goes straight to train_v5:
 #   NAME=mt5_small_dd DATA=dd sbatch ... scripts/v5_pretrain.sbatch
 #   NAME=mt5_base MODEL=google/mt5-base sbatch ... scripts/v5_pretrain.sbatch full --learning-rate 3e-4
+#   NAME=mt5_base_cosem_full COSEM=full sbatch ... scripts/v5_pretrain.sbatch full
 # Give every experiment its own NAME: a job resumes whatever checkpoint already sits under that name.
 #SBATCH --job-name=v5-pretrain
 #SBATCH --nodes=1
@@ -31,7 +32,12 @@ case "${DATA:-both}" in
   *) echo "DATA must be both or dd" >&2; exit 1 ;;
 esac
 ARGS=(--model "${MODEL:-google/mt5-small}" --train-pairs)
-for source in "${SOURCES[@]}"; do ARGS+=("$PAIRS/${source}_train_pairs.jsonl"); done
+for source in "${SOURCES[@]}"; do
+  file=$source
+  # COSEM=full trains on every usable CoSEM pair instead of the 80,000 sample; validation stays the same.
+  if [ "$source" = cosem ] && [ "${COSEM:-}" = full ]; then file=cosem_full; fi
+  ARGS+=("$PAIRS/${file}_train_pairs.jsonl")
+done
 ARGS+=(--validation-pairs)
 for source in "${SOURCES[@]}"; do ARGS+=("$PAIRS/${source}_validation_pairs.jsonl"); done
 if [ "$MODE" = smoke ]; then

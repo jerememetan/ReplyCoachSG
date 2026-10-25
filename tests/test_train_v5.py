@@ -36,7 +36,7 @@ def tiny_model(path: Path, extra_texts: list[str] = ()) -> str:
     texts = [text for pairs in (DAILYDIALOG, COSEM) for context, message, response in pairs
              for text in [*context, message, response]] + list(extra_texts)
     words = {word for text in texts for word in detokenise(text).split()}
-    words |= {"STANDARD", "LOCAL", "context:", "message:", "|"}
+    words |= {"STANDARD", "LOCAL", "context:", "message:", "|", "Friend:", "You:", "Other:"}
     vocab = {"<pad>": 0, "</s>": 1, "<unk>": 2}
     for word in sorted(words):
         vocab[word] = len(vocab)
@@ -62,6 +62,33 @@ def test_load_pairs_rejects_unknown_source(tmp_path: Path):
     path = write_pairs(tmp_path / "pairs.jsonl", "movie", DAILYDIALOG[:1])
     with pytest.raises(ValueError, match="source must be one of"):
         load_pairs(path)
+
+
+def test_load_pairs_keeps_cosem_speakers_and_checks_them(tmp_path: Path):
+    path = tmp_path / "pairs.jsonl"
+    row = {"context": ["eh where are you", "i reach already"], "speakers": ["other", "peer"],
+           "message": "later go makan?", "response": "can lah meet at canteen", "source": "cosem"}
+    path.write_text(json.dumps(row) + "\n", encoding="utf-8")
+    assert load_pairs(path)[0]["speakers"] == ["other", "peer"]
+    path.write_text(json.dumps({**row, "speakers": ["peer"]}) + "\n", encoding="utf-8")
+    with pytest.raises(ValueError, match="speakers must give"):
+        load_pairs(path)
+
+
+def test_encode_rows_labels_cosem_speakers_and_guesses_dailydialog_turns(tmp_path: Path):
+    from transformers import AutoTokenizer
+
+    tokenizer = AutoTokenizer.from_pretrained(tiny_model(tmp_path / "tiny"))
+    cosem_row = {"source": "cosem", "context": ["eh where are you", "i reach already"], "speakers": ["other", "peer"],
+                 "message": "later go makan?", "response": "can lah meet at canteen"}
+    dailydialog_row = {"source": "dailydialog", "context": ["I am running late."],
+                       "message": "Can you wait for me?", "response": "No problem, take your time."}
+    (cosem_source, _), (dailydialog_source, _) = encode_rows([cosem_row, dailydialog_row], tokenizer, 64, 8,
+                                                             speaker_labels=True)
+    assert tokenizer.decode(cosem_source, skip_special_tokens=True) == (
+        "LOCAL Other: eh where are you | Friend: i reach already | Friend: later go makan? | You:")
+    assert tokenizer.decode(dailydialog_source, skip_special_tokens=True) == (
+        "STANDARD You: I am running late. | Friend: Can you wait for me? | You:")
 
 
 def test_encode_rows_drops_oldest_context_before_the_message(tmp_path: Path):
@@ -102,6 +129,8 @@ def test_pretrain_writes_best_model_and_resumes_mid_run(tmp_path: Path):
     assert (tmp_path / "artifacts" / "tiny_run" / "best" / "config.json").exists()
     saved_report = json.loads((tmp_path / "artifacts" / "tiny_run.json").read_text(encoding="utf-8"))
     assert saved_report["best_step"] == report["best_step"]
+    assert json.loads((tmp_path / "artifacts" / "tiny_run" / "best" / "v5_input.json").read_text()) == {
+        "speaker_labels": False}
 
     state = tmp_path / "artifacts" / "tiny_run" / STATE_FILE
     resumed = train_pretrain(train, validation, epochs=2, resume_from=state, **settings)

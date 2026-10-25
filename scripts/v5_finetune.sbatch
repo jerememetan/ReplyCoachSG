@@ -6,6 +6,8 @@
 #   NAME=mt5_base_lora BASE=artifacts/mt5_base/best sbatch ... scripts/v5_finetune.sbatch
 #   NAME=mt5_small_full sbatch ... scripts/v5_finetune.sbatch --lora-rank 0 --learning-rate 1e-4
 # Every run needs a new NAME; the trainer refuses to overwrite an earlier one.
+# SEEDS runs one fine-tune per seed in this one job (a few minutes each), named <NAME>_s<seed>:
+#   NAME=spk1_ul05 SEEDS="425 1 2" sbatch ... scripts/v5_finetune.sbatch --unlikelihood-weight 0.5 ...
 #SBATCH --job-name=v5-finetune
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=4
@@ -22,5 +24,13 @@ source .venv/bin/activate
 export HF_HUB_OFFLINE=1
 
 nvidia-smi --query-gpu=name,memory.total --format=csv
-srun --gres=gpu:1 python -m replycoach.generate.finetune_v5 \
-  --base-model "${BASE:-artifacts/mt5_v5_pretrain/best}" --output-name "${NAME:?set NAME for this run}" "$@"
+if [ -z "${SEEDS:-}" ]; then
+  srun --gres=gpu:1 python -m replycoach.generate.finetune_v5 \
+    --base-model "${BASE:-artifacts/mt5_v5_pretrain/best}" --output-name "${NAME:?set NAME for this run}" "$@"
+else
+  for SEED in $SEEDS; do
+    srun --gres=gpu:1 python -m replycoach.generate.finetune_v5 \
+      --base-model "${BASE:-artifacts/mt5_v5_pretrain/best}" --output-name "${NAME:?set NAME for this run}_s$SEED" \
+      --seed "$SEED" "$@"
+  done
+fi

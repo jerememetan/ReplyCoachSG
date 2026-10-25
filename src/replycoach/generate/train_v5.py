@@ -25,6 +25,8 @@ from replycoach.io import ROOT
 ARTIFACTS = ROOT / "artifacts"
 STYLE_BY_SOURCE = {"dailydialog": "STANDARD", "cosem": "LOCAL"}
 STATE_FILE = "training_state.pt"
+INPUT_FORMAT = "v5_input.json"  # saved beside each checkpoint, so generation builds the input it was trained on
+SPEAKERS = {"peer", "user", "other"}
 
 
 def detokenise(text: str) -> str:
@@ -52,10 +54,16 @@ def load_pairs(path: Path, limit: int | None = None) -> list[dict]:
                 raise ValueError(f"{path} line {line_no}: message must be non-empty")
             if not isinstance(response, str) or not response.strip():
                 raise ValueError(f"{path} line {line_no}: response must be non-empty")
+            # DailyDialog has no speakers because its two people always take turns, which is what
+            # ``mt5_input`` assumes without them. CoSEM pairs carry them, as group chats do not take turns.
+            speakers = row.get("speakers")
+            if speakers is not None and (len(speakers) != len(context) or not set(speakers) <= SPEAKERS):
+                raise ValueError(f"{path} line {line_no}: speakers must give peer, user or other for each context turn")
             clean = detokenise if source == "dailydialog" else lambda text: " ".join(text.split())
             rows.append({
                 "source": source, "context": [clean(turn) for turn in context],
                 "message": clean(message), "response": clean(response),
+                **({"speakers": speakers} if speakers is not None else {}),
             })
             if limit is not None and len(rows) >= limit:
                 break
@@ -64,20 +72,24 @@ def load_pairs(path: Path, limit: int | None = None) -> list[dict]:
     return rows
 
 
-def encode_rows(rows: list[dict], tokenizer, max_source: int, max_target: int, style: str | None = None):
+def encode_rows(rows: list[dict], tokenizer, max_source: int, max_target: int, style: str | None = None,
+                speaker_labels: bool = False):
     """Tokenise rows into (source ids, target ids).
 
     The tag is ``style`` if given, else the row's own ``style`` (team items), else the one implied by its source.
     """
     styles = [style or row.get("style") or STYLE_BY_SOURCE[row["source"]] for row in rows]
-    sources = tokenizer([mt5_input(tag, row["message"], row["context"]) for tag, row in zip(styles, rows)])["input_ids"]
+    sources = tokenizer([mt5_input(tag, row["message"], row["context"], speaker_labels, row.get("speakers"))
+                         for tag, row in zip(styles, rows)])["input_ids"]
     targets = tokenizer([row["response"] for row in rows], max_length=max_target, truncation=True)["input_ids"]
     for index, row in enumerate(rows):
-        context = list(row["context"])
+        context, speakers = list(row["context"]), row.get("speakers")
         # The message sits at the end of the input, so drop the oldest turns before cutting the tail.
         while len(sources[index]) > max_source and context:
-            context = context[1:]
-            sources[index] = tokenizer(mt5_input(styles[index], row["message"], context))["input_ids"]
+            context, speakers = context[1:], speakers and speakers[1:]
+            sources[index] = tokenizer(
+                mt5_input(styles[index], row["message"], context, speaker_labels, speakers)
+            )["input_ids"]
         if len(sources[index]) > max_source:
             sources[index] = [*sources[index][: max_source - 1], tokenizer.eos_token_id]
     return list(zip(sources, targets))
@@ -113,13 +125,15 @@ def validation_loss(model, encoded: list[tuple[list[int], list[int]]], batch_siz
 
 
 @torch.no_grad()
-def generate_replies(model, tokenizer, rows: list[dict], style: str, max_source: int, max_target: int, device):
+def generate_replies(model, tokenizer, rows: list[dict], style: str, max_source: int, max_target: int, device,
+                     decoding: dict | None = None, speaker_labels: bool = False):
+    """Beam search replies. ``decoding`` overrides ``generate`` settings, e.g. ``encoder_no_repeat_ngram_size``."""
     model.eval()
-    encoded = encode_rows(rows, tokenizer, max_source, max_target, style=style)
+    encoded = encode_rows(rows, tokenizer, max_source, max_target, style=style, speaker_labels=speaker_labels)
     input_ids, attention_mask, _ = collate(encoded, tokenizer.pad_token_id)
     output = model.generate(
         input_ids=input_ids.to(device), attention_mask=attention_mask.to(device),
-        max_new_tokens=max_target, num_beams=4, no_repeat_ngram_size=3,
+        max_new_tokens=max_target, **{"num_beams": 4, "no_repeat_ngram_size": 3, **(decoding or {})},
     )
     return tokenizer.batch_decode(output, skip_special_tokens=True)
 
@@ -149,6 +163,7 @@ def train_pretrain(
     output_dir: Path = ARTIFACTS,
     seed: int = 425,
     resume_from: Path | None = None,
+    speaker_labels: bool = False,
 ) -> dict:
     if epochs < 1 or batch_size < 1 or eval_every < 1 or log_every < 1 or max_source < 8 or max_target < 3:
         raise ValueError("epochs, batch size, intervals, and token limits must be positive and usable")
@@ -171,9 +186,10 @@ def train_pretrain(
 
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     pad_id = tokenizer.pad_token_id
-    train_encoded = encode_rows(train_rows, tokenizer, max_source, max_target)
+    train_encoded = encode_rows(train_rows, tokenizer, max_source, max_target, speaker_labels=speaker_labels)
     validation_encoded = {
-        source: encode_rows([row for row in validation_rows if row["source"] == source], tokenizer, max_source, max_target)
+        source: encode_rows([row for row in validation_rows if row["source"] == source], tokenizer, max_source,
+                            max_target, speaker_labels=speaker_labels)
         for source in train_sources
     }
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -191,9 +207,11 @@ def train_pretrain(
     settings = {
         "model": model_name, "batch_size": batch_size, "seed": seed, "train_pairs": len(train_encoded),
         "max_source_tokens": max_source, "max_target_tokens": max_target,
+        # Only when on, so state files saved before speaker labels existed still resume.
+        **({"speaker_labels": True} if speaker_labels else {}),
     }
     report = {
-        "version": "V5", "stage": "pretrain", **settings,
+        "version": "V5", "stage": "pretrain", **settings, "speaker_labels": speaker_labels,
         "train_paths": [str(path) for path in train_paths],
         "validation_paths": [str(path) for path in validation_paths],
         "train_pairs_by_source": {
@@ -283,6 +301,8 @@ def train_pretrain(
                 report["best_validation_loss"] = round(mean_loss, 4)
                 model.save_pretrained(best_dir)
                 tokenizer.save_pretrained(best_dir)
+                (best_dir / INPUT_FORMAT).write_text(json.dumps({"speaker_labels": speaker_labels}) + "\n",
+                                                     encoding="utf-8")
             save_state(run_dir / STATE_FILE, {
                 "model_state": model.state_dict(), "optimizer_state": optimizer.state_dict(),
                 "settings": settings, "global_step": global_step, "epoch": epoch,
@@ -302,7 +322,8 @@ def train_pretrain(
     for source in train_sources:
         rows = [row for row in validation_rows if row["source"] == source][:3]
         replies = {
-            style: generate_replies(model, tokenizer, rows, style, max_source, max_target, device)
+            style: generate_replies(model, tokenizer, rows, style, max_source, max_target, device,
+                                    speaker_labels=speaker_labels)
             for style in ("STANDARD", "LOCAL")
         }
         for index, row in enumerate(rows):
@@ -332,12 +353,15 @@ def main() -> None:
     parser.add_argument("--output-name", default="mt5_v5_pretrain")
     parser.add_argument("--output-dir", type=Path, default=ARTIFACTS)
     parser.add_argument("--resume-from", type=Path, help=f"Resume to --epochs total epochs from a saved {STATE_FILE}.")
+    parser.add_argument("--speaker-labels", action="store_true",
+                        help="Mark each turn Friend:/You:/Other:, as the fine-tune's --speaker-labels does.")
     args = parser.parse_args()
     report = train_pretrain(
         args.train_pairs, args.validation_pairs, args.model, args.epochs, args.batch_size,
         args.learning_rate, args.warmup_steps, args.max_source_tokens, args.max_target_tokens,
         args.eval_every, train_limit=args.train_limit, validation_limit=args.validation_limit,
         output_name=args.output_name, output_dir=args.output_dir, resume_from=args.resume_from,
+        speaker_labels=args.speaker_labels,
     )
     print(f"best validation loss: {report['best_validation_loss']} (step {report['best_step']})")
 

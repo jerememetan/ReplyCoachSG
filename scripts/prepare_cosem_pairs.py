@@ -130,6 +130,12 @@ def usable_response(text: str | None) -> bool:
     return sum(any(char.isalpha() for char in word) for word in text.split()) >= 2
 
 
+def relative_speaker(code: str, responder: str, author: str) -> str:
+    """A context turn's writer as seen by the responder: ``user`` (the responder), ``peer`` (who wrote the
+    message) or ``other`` (a third person in a group chat), matching ReplyCoach item speakers."""
+    return "user" if code == responder else "peer" if code == author else "other"
+
+
 def pairs_from_chat(chat: str, messages: list[tuple[int, str, str]]) -> list[dict]:
     turns = build_turns(messages)
     rows = []
@@ -141,6 +147,7 @@ def pairs_from_chat(chat: str, messages: list[tuple[int, str, str]]) -> list[dic
         if message is None or not any(char.isalpha() for char in message) or not usable_response(response):
             continue
         context: list[str] = []
+        speakers: list[str] = []
         for earlier in range(index - 2, max(-1, index - 2 - MAX_CONTEXT), -1):
             # Stop at a thread start: the turn before it belongs to another exchange.
             if turns[earlier + 1]["new_thread"]:
@@ -149,7 +156,10 @@ def pairs_from_chat(chat: str, messages: list[tuple[int, str, str]]) -> list[dic
             if text is None:
                 break
             context.insert(0, text)
-        rows.append({"context": context, "message": message, "response": response, "source": "cosem", "chat": chat})
+            speakers.insert(0, relative_speaker(turns[earlier]["speaker"], turns[index]["speaker"],
+                                                turns[index - 1]["speaker"]))
+        rows.append({"context": context, "speakers": speakers, "message": message, "response": response,
+                     "source": "cosem", "chat": chat})
     return rows
 
 
@@ -203,6 +213,19 @@ def split_pairs(
     return train, sample(validation_chats, max_validation, validation_cap), sorted(validation_chats)
 
 
+def against_held_out(train: list[dict], validation_chats: list[str], held_out: list[dict]) -> list[dict]:
+    """Training rows minus those repeating a pair of an existing validation file, which must hold out these chats.
+
+    The validation sample is drawn after the training sample, so a different ``--max-train-pairs`` draws a
+    different one; keeping the old file keeps stage 1 validation losses comparable across runs.
+    """
+    if {row["chat"] for row in held_out} - set(validation_chats):
+        raise ValueError("the held-out file has chats this split trains on; use the same corpus and --seed")
+    seen = {(row["message"].lower(), row["response"].lower()) for row in held_out}
+    # Common exchanges ("ok can" after "see you") recur across chats; train on none of the held-out ones.
+    return [row for row in train if (row["message"].lower(), row["response"].lower()) not in seen]
+
+
 def write_rows(path: Path, rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as handle:
@@ -214,15 +237,19 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True, help="corpus_COSEM_v5.zip or its extracted folder")
     parser.add_argument("--train-output", type=Path, required=True)
-    parser.add_argument("--validation-output", type=Path, required=True)
+    parser.add_argument("--validation-output", type=Path)
+    parser.add_argument("--held-out", type=Path,
+                        help="Keep this existing validation file instead of writing --validation-output.")
     parser.add_argument("--max-train-pairs", type=int, default=80000, help="About the size of DailyDialog train.")
     parser.add_argument("--max-validation-pairs", type=int, default=3000)
     parser.add_argument("--seed", type=int, default=425)
     args = parser.parse_args()
     if args.max_train_pairs < 1 or args.max_validation_pairs < 1:
         parser.error("pair limits must be positive")
-    if args.train_output.resolve() == args.validation_output.resolve():
-        parser.error("training and validation outputs must differ")
+    if (args.validation_output is None) == (args.held_out is None):
+        parser.error("give exactly one of --validation-output and --held-out")
+    if args.train_output.resolve() == (args.validation_output or args.held_out).resolve():
+        parser.error("training and validation files must differ")
 
     chats = parse_chats(read_lines(args.input))
     if not chats:
@@ -233,13 +260,19 @@ def main() -> None:
     train, validation, validation_chats = split_pairs(
         pairs_by_chat, args.max_train_pairs, args.max_validation_pairs, args.seed
     )
+    if args.held_out:
+        validation = [json.loads(line) for line in args.held_out.read_text(encoding="utf-8").splitlines() if line]
+        trimmed = against_held_out(train, validation_chats, validation)
+        print(f"dropped {len(train) - len(trimmed)} training pairs that repeat a held-out pair")
+        train = trimmed
+    else:
+        write_rows(args.validation_output, validation)
     write_rows(args.train_output, train)
-    write_rows(args.validation_output, validation)
     print(f"chats: {len(chats)} parsed, {len(chats) - len(kept)} dropped for lost emoji, {len(pairs_by_chat)} with pairs")
     print(f"candidate pairs: {sum(len(rows) for rows in pairs_by_chat.values())}")
     print(f"validation chats: {', '.join(validation_chats)}")
     print(f"wrote {len(train)} pairs to {args.train_output}")
-    print(f"wrote {len(validation)} pairs to {args.validation_output}")
+    print(f"{'kept' if args.held_out else 'wrote'} {len(validation)} pairs in {args.held_out or args.validation_output}")
 
 
 if __name__ == "__main__":
