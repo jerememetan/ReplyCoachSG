@@ -39,13 +39,18 @@ def load_v4() -> ReplyGenerator:
 
 
 def load_v5() -> ReplyGenerator:
-    # ##TODO: FOR ROLE D — return your trained local mT5/LoRA ReplyGenerator here.
-    # Load the selected base weights, adapter (if used) and matching tokenizer.
-    # No API calls. See docs/role_handoffs.md; do not use raw mT5 smoke output.
-    raise GeneratorUnavailable(
-        "Role D: trained V5 generator is not connected. Complete load_v5() in "
-        "src/replycoach/generate/providers.py; see docs/role_handoffs.md."
-    )
+    # The trained mT5 + LoRA checkpoint in $V5_CHECKPOINT, else the default in generate/v5_provider.py.
+    try:
+        from replycoach.generate.v5_provider import CHECKPOINT_ENV, V5Generator, configured_checkpoint
+    except ImportError as exc:
+        raise GeneratorUnavailable(f"Role D: V5 needs torch, transformers and peft (the mt5 extras): {exc}") from exc
+    checkpoint = configured_checkpoint()
+    if not (checkpoint / "v5_input.json").exists():
+        raise GeneratorUnavailable(
+            f"Role D: no trained V5 checkpoint at {checkpoint}. Copy one into artifacts/ or set {CHECKPOINT_ENV} "
+            "to a stage 2 checkpoint folder, e.g. artifacts/spk1_ul025_s425/best."
+        )
+    return V5Generator(checkpoint)
 
 
 def load_generator(provider: str) -> ReplyGenerator:
