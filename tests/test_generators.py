@@ -11,6 +11,8 @@ def providers():
 def test_pending_generator_names_the_owner_without_fake_outputs(provider, role, monkeypatch, tmp_path):
     monkeypatch.setenv("V5_CHECKPOINT", str(tmp_path / "missing"))  # V5 is unavailable without a checkpoint
     module = providers()
+    if provider == "v4":
+        monkeypatch.setenv("REPLYCOACH_V4_CHECKPOINT", str(tmp_path / "missing.pt"))
     with pytest.raises(module.GeneratorUnavailable, match=f"Role {role}"):
         module.load_generator(provider)
 

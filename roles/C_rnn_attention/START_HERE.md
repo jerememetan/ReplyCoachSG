@@ -1,5 +1,14 @@
 # Role C — RNN and attention generator
 
+## Current status — 20 October 2026
+
+The five-epoch Colab V4 checkpoint was recovered from Drive and verified.
+V3/V4 task fine-tuning, the shared Candidate provider and matched 50-query
+development exports are implemented. See [HANDOFF.md](HANDOFF.md) and
+[EXPERIMENT_REPORT.md](EXPERIMENT_REPORT.md) for actual results, reproduction
+commands and quality limitations. V5 comparison remains pending Role D.
+The week-based instructions below are historical.
+
 ## This week (Week 4)
 
 ```powershell

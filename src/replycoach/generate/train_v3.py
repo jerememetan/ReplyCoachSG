@@ -48,6 +48,7 @@ def run_one_batch(
     hidden_size: int = 128,
     use_attention: bool = False,
     seed: int = 425,
+    output_dir: Path = ARTIFACTS,
 ) -> dict:
     torch.manual_seed(seed)
     items = load_items(data_path)
@@ -67,8 +68,8 @@ def run_one_batch(
     nn.utils.clip_grad_norm_(model.parameters(), 1.0)
     optimizer.step()
 
-    ARTIFACTS.mkdir(parents=True, exist_ok=True)
-    ckpt_path = ARTIFACTS / ("rnn_v4_smoke.pt" if use_attention else "rnn_v3_smoke.pt")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    ckpt_path = output_dir / ("rnn_v4_smoke.pt" if use_attention else "rnn_v3_smoke.pt")
     torch.save(
         {
             "model_state": model.state_dict(),
@@ -90,7 +91,7 @@ def run_one_batch(
         "checkpoint": str(ckpt_path),
         "device": "cpu",
     }
-    report_path = ARTIFACTS / "rnn_one_batch.json"
+    report_path = output_dir / "rnn_one_batch.json"
     report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     return report
 
@@ -189,6 +190,7 @@ def train_dailydialog(
     seed: int = 425,
     use_attention: bool = False,
     resume_from: Path | None = None,
+    output_dir: Path = ARTIFACTS,
 ) -> dict:
     if epochs < 1 or batch_size < 1 or max_vocab < 4 or max_source < 3 or max_target < 3:
         raise ValueError("epochs, batch size, vocabulary, and token limits must be positive and usable")
@@ -215,9 +217,9 @@ def train_dailydialog(
     model = Seq2Seq(len(vocab), use_attention=use_attention).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
     criterion = nn.CrossEntropyLoss(ignore_index=0, reduction="sum")
-    ARTIFACTS.mkdir(parents=True, exist_ok=True)
-    checkpoint = ARTIFACTS / f"{output_name}.pt"
-    report_path = ARTIFACTS / f"{output_name}.json"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    checkpoint = output_dir / f"{output_name}.pt"
+    report_path = output_dir / f"{output_name}.json"
     report = {
         "version": "V4" if use_attention else "V3", "source": "dailydialog", "train_path": str(train_path),
         "validation_path": str(validation_path), "train_pairs": len(train_pairs),
@@ -317,7 +319,14 @@ def main() -> None:
     parser.add_argument("--validation-limit", type=int)
     parser.add_argument("--output-name")
     parser.add_argument("--resume-from", type=Path, help="Resume to --epochs total epochs from a saved checkpoint.")
+    parser.add_argument("--output-dir", type=Path, default=ARTIFACTS)
+    parser.add_argument("--seed", type=int, default=425)
+    parser.add_argument("--threads", type=int, default=None, help="CPU intra-op threads; record when comparing runs.")
     args = parser.parse_args()
+    if args.threads is not None:
+        if args.threads < 1:
+            parser.error("--threads must be positive")
+        torch.set_num_threads(args.threads)
     if args.train_pairs or args.validation_pairs:
         if not args.train_pairs or not args.validation_pairs:
             parser.error("--train-pairs and --validation-pairs must be provided together")
@@ -329,8 +338,10 @@ def main() -> None:
             args.batch_size if args.batch_size is not None else 32, args.learning_rate,
             args.max_vocab, args.max_source_tokens, args.max_target_tokens,
             args.train_limit, args.validation_limit, output_name,
+            seed=args.seed,
             use_attention=args.attention,
             resume_from=args.resume_from,
+            output_dir=args.output_dir,
         )
         print(f"best validation loss: {report['best_validation_loss']} (epoch {report['best_epoch']})")
     else:
@@ -338,6 +349,8 @@ def main() -> None:
             data_path=args.data,
             batch_size=args.batch_size if args.batch_size is not None else 4,
             use_attention=args.attention,
+            seed=args.seed,
+            output_dir=args.output_dir,
         )
         print(json.dumps(report, indent=2))
 
