@@ -97,6 +97,13 @@ def _reload_current() -> None:
 
 def main() -> None:
     st.set_page_config(page_title="Reply Coach — Team Reviewer", layout="wide")
+    task = st.sidebar.radio('Review task', ['Team examples', 'Reranker comparisons'],
+                            index=1 if st.query_params.get('review_task') == 'reranker' else 0,
+                            key='review_task')
+    if task == 'Reranker comparisons':
+        from replycoach.reranker_review_app import render
+        render()
+        return
     st.title("Team data reviewer")
     st.caption("Review your assigned teammate's examples. Saving writes to that teammate's authoring file.")
 
