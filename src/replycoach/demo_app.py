@@ -224,7 +224,9 @@ def main() -> None:
             key="system_mode",
         )
         retrieval_method, generator_provider = "BM25", "V4 (attention-RNN)"
+        shared_selector = "Frozen MiniLM"
         if system_mode == "All models (experimental)":
+            shared_selector = st.selectbox("Shared selector", ["Frozen MiniLM", "Fine-tuned V6"], key="shared_selector")
             st.caption("Compare BM25, MiniLM, V4 and V5, then select one reply per style with a shared ranker.")
             st.caption("First use loads local models; later requests reuse them.")
         elif system_mode != "Retrieval comparison":
@@ -273,7 +275,7 @@ def main() -> None:
                         type="primary", key="compare", disabled=bank is None or not message.strip())
 
     identity = (bank_choice, development_path, bank.fingerprint if bank else None, session_text, message,
-                memory_mode, system_mode, retrieval_method, generator_provider)
+                memory_mode, system_mode, retrieval_method, generator_provider, shared_selector)
     if bank is None or st.session_state.get("comparison_identity") != identity:
         st.session_state.last_comparison = None
         st.session_state.last_system_result = None
@@ -296,7 +298,8 @@ def main() -> None:
                     minilm_factory=lambda: demo_resources.get_minilm(bank.serialized),
                     v4_factory=lambda: demo_resources.get_generator("v4"),
                     v5_factory=lambda: demo_resources.get_generator("v5"),
-                    scorer_factory=demo_resources.get_shared_ranker,
+                    scorer_factory=(lambda: demo_resources.get_shared_ranker('finetuned'))
+                    if shared_selector == 'Fine-tuned V6' else demo_resources.get_shared_ranker,
                     speakers=[{"you": "user", "peer": "peer", "neutral": "unknown"}[role] for role, _ in turns],
                     log=True,
                 )

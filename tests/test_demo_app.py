@@ -353,3 +353,20 @@ def test_all_models_ranker_error_preserves_proposals_and_retry_recovers(demo_tes
     app.button(key='retry_all_models').click().run()
     assert not app.exception and not app.error
     assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
+
+
+def test_finetuned_selector_is_explicit_and_changes_clear_previous_result(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    assert app.selectbox(key='shared_selector').value == 'Frozen MiniLM'
+    compare_in_app(app)
+    scorer_factory = demo_resources.get_shared_ranker
+    calls = []
+    def selected_scorer(selector='pretrained'):
+        calls.append(selector)
+        return scorer_factory()
+    monkeypatch.setattr(demo_resources, 'get_shared_ranker', selected_scorer)
+    app.selectbox(key='shared_selector').select('Fine-tuned V6').run()
+    assert app.session_state.last_all_models_result is None
+    compare_in_app(app)
+    assert not app.exception and calls == ['finetuned']
+    assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}

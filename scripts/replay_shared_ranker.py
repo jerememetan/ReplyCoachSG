@@ -20,6 +20,9 @@ def main():
     parser.add_argument('--bank', type=Path, default=DEFAULT_BANK)
     parser.add_argument('--out-dir', type=Path)
     parser.add_argument('--check-only', action='store_true')
+    selector = parser.add_mutually_exclusive_group()
+    selector.add_argument('--checkpoint', type=Path)
+    selector.add_argument('--style-aware-baseline', action='store_true')
     args = parser.parse_args()
     if not args.check_only and args.out_dir is None:
         parser.error('--out-dir is required unless --check-only is used')
@@ -61,7 +64,10 @@ def main():
                           'proposals': len(public), 'existing_ratings': len(ratings), 'model_calls': 0}))
         return
     started = perf_counter()
-    scorer = CrossEncoderScorer()
+    scorer = CrossEncoderScorer(checkpoint=args.checkpoint, style_aware=args.style_aware_baseline)
+    if args.checkpoint and (scorer.identity['train_fingerprint'] != inputs.bank.fingerprint
+                           or scorer.identity['validation_fingerprint'] != inputs.queries.fingerprint):
+        raise ValueError('V6 checkpoint and current development data fingerprints differ')
     model_load_seconds = perf_counter() - started
     result = replay_selection(public, mapping, ratings, personas, scorer)
     result.update(packet_hashes=hashes, rating_run_id=run_id, model_load_seconds=model_load_seconds,
