@@ -130,3 +130,24 @@ def test_optimizer_consumes_expanded_pairs_and_saves_auditable_provenance(inputs
     assert result['augmentation']['source']['path'] == 'fixture'
     saved = json.loads((out/'best/v6_training.json').read_text())
     assert saved['augmentation'] == result['augmentation']
+
+
+def test_reviewed_alternatives_reach_optimizer_and_cannot_mix_with_augmentation(inputs,tmp_path):
+    from test_reranker_hard_pairs import supplement
+    from replycoach.reranker_bundle import load_training_bundle
+    path=bundle_path(inputs,tmp_path)
+    bundle=load_training_bundle(path)
+    weak=next(p for p in bundle['train'] if not p['label'])
+    sidecar=tmp_path/'reviewed.json'
+    sidecar.write_text(json.dumps(supplement(bundle,weak,1)),encoding='utf-8')
+    out=tmp_path/'reviewed_run'
+    result=api().run_training(path,out,smoke=True,max_steps=2,reviewed_pairs=sidecar,
+                             model_factory=lambda:(TinyModel(),TinyTokenizer()))
+    assert result['optimizer_steps']==2 and result['reviewed_pairs']['weak_negative_labels_corrected']==1
+    rows=[json.loads(line) for line in (out/'training_pairs.jsonl').read_text(encoding='utf-8').splitlines()]
+    human=[p for p in rows if p['provenance']=='human_reviewed_alternative']
+    assert len(human)==1 and human[0]['label']==1
+    assert load_training_bundle(path)==bundle
+    with pytest.raises(ValueError,match='separate|mix'):
+        api().run_training(path,tmp_path/'mixed',smoke=True,reviewed_pairs=sidecar,
+                           augmentation_map=tmp_path/'missing.json')

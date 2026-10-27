@@ -25,6 +25,7 @@ def test_package_is_private_and_contains_only_the_minimal_allowlist(inputs, tmp_
     assert files == {'manifest.json', 'train_pairs.jsonl', 'validation_pairs.jsonl',
                      'reranker_bundle.py', 'reranker_fit.py', 'train_reranker.py',
                      'reranker_augmentation.py', 'abbreviations.json',
+                     'reranker_hard_pairs.py',
                      'dataset-metadata.json', 'package_receipt.json'}
     text = '\n'.join(p.read_text(encoding='utf-8') for p in (out/'dataset').iterdir())
     assert 'DO_NOT_UPLOAD' not in text and 'PRIVATE_AUTHOR' not in text
@@ -53,3 +54,25 @@ def test_packaging_refuses_existing_output_and_invalid_owner(tmp_path):
         m.package_kaggle(tmp_path/'bundle', out, owner='testowner', tag='20261027')
     with pytest.raises(ValueError, match='owner'):
         m.package_kaggle(tmp_path/'bundle', tmp_path/'new', owner='../escape', tag='20261027')
+
+
+def test_reviewed_pair_package_uses_separate_training_path_and_rejects_pending(inputs,tmp_path):
+    from replycoach.reranker_training import build_training_bundle,write_training_bundle
+    from test_reranker_hard_pairs import supplement
+    b=build_training_bundle(inputs)
+    source=tmp_path/'bundle'
+    write_training_bundle(source,b)
+    sidecar=tmp_path/'reviewed.json'
+    payload=supplement(b,next(p for p in b['train'] if not p['label']))
+    sidecar.write_text(json.dumps(payload),encoding='utf-8')
+    out=tmp_path/'reviewed_package'
+    api().package_kaggle(source,out,owner='testowner',tag='20261027-hard',reviewed_pairs=sidecar)
+    assert json.loads((out/'dataset/reviewed_pairs.json').read_text(encoding='utf-8'))==payload
+    notebook=json.loads((out/'notebook/E_reranker_kaggle.ipynb').read_text(encoding='utf-8'))
+    code='\n'.join(''.join(c['source']) for c in notebook['cells'])
+    assert 'USE_REVIEWED_PAIRS = True' in code and '--reviewed-pairs' in code
+    assert 'from replycoach.' not in (out/'dataset/reranker_hard_pairs.py').read_text()
+    sidecar.write_text('{"record_type":"v6_hard_review_batch"}',encoding='utf-8')
+    with pytest.raises(ValueError):
+        api().package_kaggle(source,tmp_path/'pending',owner='testowner',tag='20261027-hard',reviewed_pairs=sidecar)
+    assert not (tmp_path/'pending').exists()

@@ -11,6 +11,7 @@ import torch
 
 from replycoach.reranker_bundle import load_training_bundle, pair_payload
 from replycoach.reranker_augmentation import augment_training_pairs
+from replycoach.reranker_hard_pairs import apply_reviewed_pairs
 
 
 def weights_sha256(model):
@@ -43,7 +44,7 @@ def _batch(model, tokenizer, rows, device):
 def run_training(bundle_path, output, *, epochs=4, batch_size=16, learning_rate=2e-5,
                  seed=425, smoke=False, max_steps=None, model_factory=None,
                  augmentation_map=None, augmentation_copies=3,
-                 augmentation_probability=.35, augmentation_seed=425):
+                 augmentation_probability=.35, augmentation_seed=425, reviewed_pairs=None):
     output, bundle_path = Path(output), Path(bundle_path)
     if output.exists():
         raise FileExistsError(f'output already exists: {output}')
@@ -58,14 +59,20 @@ def run_training(bundle_path, output, *, epochs=4, batch_size=16, learning_rate=
         raise ValueError('invalid fixed-experiment training settings')
     if max_steps is not None and (not smoke or type(max_steps) is not int or max_steps < 1):
         raise ValueError('step limits are positive integers allowed only in smoke runs')
-    train_rows, augmentation = bundle['train'], {'method': 'none'}
+    if reviewed_pairs is not None and augmentation_map is not None:
+        raise ValueError('keep reviewed-pair and abbreviation experiments separate; do not mix these options')
+    train_rows, augmentation, reviewed = bundle['train'], {'method': 'none'}, {'method': 'none'}
+    if reviewed_pairs is not None:
+        supplement = json.loads(Path(reviewed_pairs).read_text(encoding='utf-8'))
+        train_rows, reviewed = apply_reviewed_pairs(bundle, supplement)
     if augmentation_map is not None:
         snapshot = json.loads(Path(augmentation_map).read_text(encoding='utf-8'))
         train_rows, augmentation = augment_training_pairs(bundle, snapshot['mapping'],
                 copies=augmentation_copies, probability=augmentation_probability, seed=augmentation_seed)
         augmentation['source'] = snapshot['source']
     print(json.dumps({'event': 'v6_training_data', 'train_pairs': len(train_rows),
-                      'validation_pairs': len(bundle['validation']), 'augmentation': augmentation}), flush=True)
+                      'validation_pairs': len(bundle['validation']), 'augmentation': augmentation,
+                      'reviewed_pairs': reviewed}), flush=True)
     if not smoke and not torch.cuda.is_available():
         raise ValueError('production V6 training requires a CUDA GPU; use explicit smoke mode for CPU checks')
     device = torch.device('cpu' if smoke else 'cuda')
@@ -80,7 +87,7 @@ def run_training(bundle_path, output, *, epochs=4, batch_size=16, learning_rate=
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate, weight_decay=.01)
     loss_fn = torch.nn.BCEWithLogitsLoss()
     output.mkdir(parents=True, exist_ok=False)
-    if augmentation_map is not None:
+    if augmentation_map is not None or reviewed_pairs is not None:
         (output/'training_pairs.jsonl').write_bytes(pair_payload(train_rows))
     best_path = output/'best'
     best_loss, best_epoch, steps = float('inf'), None, 0
@@ -146,7 +153,7 @@ def run_training(bundle_path, output, *, epochs=4, batch_size=16, learning_rate=
               'weights_changed': initial_hash != best_hash, 'history': history, 'packages': packages,
               'elapsed_seconds': perf_counter()-elapsed,
               'train_pair_count': len(train_rows), 'validation_pair_count': len(bundle['validation']),
-              'augmentation': augmentation}
+              'augmentation': augmentation, 'reviewed_pairs': reviewed}
     (output/'history.json').write_text(json.dumps(history, indent=2, allow_nan=False), encoding='utf-8')
     (best_path/'v6_training.json').write_text(json.dumps(result, indent=2, allow_nan=False), encoding='utf-8')
     print(json.dumps({'event': 'v6_complete', 'optimizer_steps': steps,
