@@ -1,5 +1,6 @@
 import importlib
 import importlib.util
+import json
 from dataclasses import replace
 
 import pytest
@@ -117,3 +118,34 @@ def test_empty_pool_does_not_load_or_call_a_scorer():
     assert not scorer.calls
     with pytest.raises(ValueError, match='incoming'):
         m.rank_proposals(' ', [], {}, scorer)
+
+
+def test_style_aware_selector_scores_each_pool_with_its_requested_style():
+    m = api()
+    scorer = FakeScorer()
+    scorer.identity = {**scorer.identity, 'query_format': 'speaker-conversation-style-v2', 'fine_tuned': True}
+    output = m.rank_proposals('incoming', ['first'],
+                             {'V5': [candidate('standard'), candidate('local', 'LOCAL')]},
+                             scorer, ['peer'])
+    pairs = scorer.calls[0]
+    assert 'Requested reply style: STANDARD' in pairs[0][0]
+    assert 'Requested reply style: LOCAL' in pairs[1][0]
+    assert 'Peer: first' in pairs[0][0]
+    assert output.standard.meta['selector'] == 'finetuned_cross_encoder'
+
+
+@pytest.mark.parametrize('mutation', ['smoke', 'no_updates', 'same_weights', 'wrong_format'])
+def test_unfinished_or_smoke_checkpoints_are_rejected_before_loading_models(tmp_path, mutation):
+    m = api()
+    manifest = {'record_type': 'v6_cross_encoder_training', 'completed': True,
+                'production_checkpoint': True, 'device': 'cuda', 'weights_changed': True,
+                'optimizer_steps': 144, 'base_model': m.MODEL_NAME, 'base_revision': m.MODEL_REVISION,
+                'query_format': 'speaker-conversation-style-v2',
+                'initial_weights_sha256': 'a'*64, 'best_weights_sha256': 'b'*64}
+    if mutation == 'smoke': manifest['production_checkpoint'] = False
+    elif mutation == 'no_updates': manifest['optimizer_steps'] = 0
+    elif mutation == 'same_weights': manifest['best_weights_sha256'] = 'a'*64
+    else: manifest['query_format'] = 'unknown'
+    (tmp_path/'v6_training.json').write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match='completed GPU|provenance'):
+        m.CrossEncoderScorer(checkpoint=tmp_path)
