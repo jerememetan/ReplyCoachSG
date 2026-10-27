@@ -10,6 +10,10 @@ selection over the frozen reranker on development data, but does not establish
 an advantage over V5-only; keep it experimental. The 60-item held-out evaluation
 and independent teammate sanity checks remain separate work.
 
+Final report requirement: include reranker training and refinement, including
+the augmentation experiment and its mixed result. The planned section and
+evidence index are in [final report notes](../../docs/reports/final_report_notes.md).
+
 ## Current priority updated 18 October 2026
 
 The [judge experiment report](../../docs/judge_pilot_experiments.md) records the
