@@ -31,7 +31,14 @@ def get_minilm(bank_json: str):
     return V2Retriever.from_items(items, model=get_minilm_model(), cache_file=None)
 
 
-@st.cache_resource(max_entries=1, show_spinner=False)
+@st.cache_resource(max_entries=2, show_spinner=False)
 def get_generator(provider: str):
-    """Load only the selected local generator, after a generation request."""
+    """Bounded V4/V5 resources, loaded only after a generation request."""
     return load_generator(provider)
+
+
+@st.cache_resource(max_entries=1, show_spinner=False)
+def get_shared_ranker():
+    from replycoach.shared_ranker import CrossEncoderScorer
+
+    return CrossEncoderScorer()

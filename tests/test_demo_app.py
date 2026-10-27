@@ -12,6 +12,7 @@ from replycoach.io import ROOT, load_items, write_jsonl
 def demo_test(monkeypatch, fake_encoder, tmp_path):
     # Missing-provider tests must not depend on a teammate's installed weights.
     monkeypatch.setenv("REPLYCOACH_V4_CHECKPOINT", str(tmp_path / "missing_v4.pt"))
+    monkeypatch.setenv("V5_CHECKPOINT", str(tmp_path / "missing_v5"))
     cached_minilm = demo_resources.get_minilm
     cached_generator = getattr(demo_resources, "get_generator", None)
     demo_resources.get_bm25.clear()
@@ -266,3 +267,89 @@ def test_new_system_retry_recovers_after_real_provider_becomes_available(demo_te
     assert not app.exception
     assert app.session_state.last_system_result.effective_mode == "hybrid"
     assert not app.warning
+
+
+def enable_all_models(app, monkeypatch, stub_generator):
+    from replycoach import all_models
+    from replycoach.shared_ranker import PairScore
+
+    assert 'All models (experimental)' in app.selectbox(key='system_mode').options
+
+    class Scorer:
+        identity = {'model': 'test-only', 'revision': 'fixed'}
+
+        def score_pairs(self, pairs):
+            return [PairScore(sum(map(ord, reply)) / 1000) for _, reply in pairs]
+
+    def generator(provider):
+        if provider == 'v4':
+            return stub_generator
+        from test_all_models import Generator
+        return Generator('V5')
+
+    monkeypatch.setattr(demo_resources, 'get_generator', generator)
+    monkeypatch.setattr(demo_resources, 'get_shared_ranker', lambda: Scorer(), raising=False)
+    monkeypatch.setattr(all_models, 'log_event', lambda *args, **kwargs: None)
+    app.selectbox(key='system_mode').select('All models (experimental)').run()
+    return app
+
+
+def test_all_models_shows_eight_proposals_and_click_only_fills_composer(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    assert app.button(key='compare').label == 'Suggest two replies'
+    compare_in_app(app)
+    assert not app.exception
+    assert any('4/4 models compared' in caption.value for caption in app.caption)
+    assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
+    assert len(app.dataframe[0].value) == 8
+    before = app.text_area(key='conversation').value
+    chosen = app.button(key='select_all_standard').label
+    app.button(key='select_all_standard').click().run()
+    assert app.session_state.selected_reply == chosen
+    assert app.text_area(key='conversation').value == before
+
+
+def test_all_models_input_changes_clear_saved_selection(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    compare_in_app(app)
+    app.button(key='select_all_local').click().run()
+    app.text_input(key='incoming').input('New incoming message').run()
+    assert not suggestion_keys(app)
+    assert app.session_state.selected_reply == ''
+    assert app.session_state.last_all_models_result is None
+
+
+def test_all_models_partial_source_failure_is_visible(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+
+    def generator(provider):
+        if provider == 'v5':
+            raise RuntimeError('V5 checkpoint unavailable')
+        return stub_generator
+
+    monkeypatch.setattr(demo_resources, 'get_generator', generator)
+    compare_in_app(app)
+    assert not app.exception
+    assert any('3/4 models available' in warning.value for warning in app.warning)
+    assert any('V5 checkpoint unavailable' in warning.value for warning in app.warning)
+    assert len(app.dataframe[0].value) == 6
+    assert 'V5' not in set(app.dataframe[0].value['Model'])
+
+
+def test_all_models_ranker_error_preserves_proposals_and_retry_recovers(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    good = demo_resources.get_shared_ranker
+
+    def unavailable():
+        raise RuntimeError('Ranker weights unavailable')
+
+    monkeypatch.setattr(demo_resources, 'get_shared_ranker', unavailable)
+    compare_in_app(app)
+    assert not app.exception
+    assert not suggestion_keys(app)
+    assert len(app.dataframe[0].value) == 8
+    assert any('Ranker weights unavailable' in error.value for error in app.error)
+    monkeypatch.setattr(demo_resources, 'get_shared_ranker', good)
+    app.button(key='retry_all_models').click().run()
+    assert not app.exception and not app.error
+    assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}

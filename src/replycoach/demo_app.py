@@ -9,6 +9,8 @@ from pathlib import Path
 import streamlit as st
 
 from replycoach import demo_resources
+from replycoach.all_models import run_all_models
+from replycoach.demo_all_models import render_all_models
 from replycoach.io import ROOT
 from replycoach.pipeline import CoachResult, ComparisonResult, compare_replies
 from replycoach.reply_bank import load_reply_bank
@@ -214,14 +216,18 @@ def main() -> None:
     st.session_state.setdefault("selected_reply", "")
     st.session_state.setdefault("last_comparison", None)
     st.session_state.setdefault("last_system_result", None)
+    st.session_state.setdefault("last_all_models_result", None)
 
     with st.expander("System settings"):
         system_mode = st.selectbox(
-            "System mode", ["Retrieval comparison", "Retrieval only", "Generator only", "Hybrid"],
+            "System mode", ["Retrieval comparison", "All models (experimental)", "Retrieval only", "Generator only", "Hybrid"],
             key="system_mode",
         )
         retrieval_method, generator_provider = "BM25", "V4 (attention-RNN)"
-        if system_mode != "Retrieval comparison":
+        if system_mode == "All models (experimental)":
+            st.caption("Compare BM25, MiniLM, V4 and V5, then select one reply per style with a shared ranker.")
+            st.caption("First use loads local models; later requests reuse them.")
+        elif system_mode != "Retrieval comparison":
             if system_mode != "Generator only":
                 retrieval_method = st.selectbox("Retrieval method", ["BM25", "MiniLM"], key="retrieval_method")
             if system_mode in {"Generator only", "Hybrid"}:
@@ -271,14 +277,30 @@ def main() -> None:
     if bank is None or st.session_state.get("comparison_identity") != identity:
         st.session_state.last_comparison = None
         st.session_state.last_system_result = None
+        st.session_state.last_all_models_result = None
         st.session_state.selected_reply = ""
     st.session_state.comparison_identity = identity
 
     def execute_request():
-        session = [parse_preview_line(line)[1] for line in session_text.splitlines() if line.strip()]
+        turns = [parse_preview_line(line) for line in session_text.splitlines() if line.strip()]
+        session = [text for _, text in turns]
         st.session_state.selected_reply = ""
-        with st.spinner("Finding reply suggestions…"):
-            if system_mode == "Retrieval comparison":
+        st.session_state.last_all_models_result = None
+        with st.spinner("Comparing four models…" if system_mode == "All models (experimental)" else "Finding reply suggestions…"):
+            if system_mode == "All models (experimental)":
+                st.session_state.last_comparison = None
+                st.session_state.last_system_result = None
+                st.session_state.last_all_models_result = run_all_models(
+                    message.strip(), session, memory_mode,
+                    bm25_factory=lambda: demo_resources.get_bm25(bank.serialized),
+                    minilm_factory=lambda: demo_resources.get_minilm(bank.serialized),
+                    v4_factory=lambda: demo_resources.get_generator("v4"),
+                    v5_factory=lambda: demo_resources.get_generator("v5"),
+                    scorer_factory=demo_resources.get_shared_ranker,
+                    speakers=[{"you": "user", "peer": "peer", "neutral": "unknown"}[role] for role, _ in turns],
+                    log=True,
+                )
+            elif system_mode == "Retrieval comparison":
                 st.session_state.last_system_result = None
                 st.session_state.last_comparison = compare_replies(
                     message.strip(), session, memory_mode,
@@ -314,6 +336,12 @@ def main() -> None:
     if output is not None:
         render_system(output, bank)
         if output.errors and st.button("Retry system", key="retry_system"):
+            execute_request()
+            st.rerun()
+    all_output = st.session_state.last_all_models_result
+    if all_output is not None:
+        render_all_models(all_output, select_reply)
+        if (all_output.source_errors or all_output.ranking_error) and st.button("Retry all models", key="retry_all_models"):
             execute_request()
             st.rerun()
 
