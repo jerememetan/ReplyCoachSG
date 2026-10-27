@@ -14,6 +14,11 @@ Final report requirement: include reranker training and refinement, including
 the augmentation experiment and its mixed result. The planned section and
 evidence index are in [final report notes](../../docs/reports/final_report_notes.md).
 
+The [reviewed difficult-comparison pilot](../../docs/reranker_hard_examples.md)
+is prepared in the existing team reviewer under **Reranker comparisons**. Its
+20 training-only alternatives need actual suitability decisions before the next
+Kaggle experiment; neither the miner scores nor AI evaluation ratings are labels.
+
 ## Current priority updated 18 October 2026
 
 The [judge experiment report](../../docs/judge_pilot_experiments.md) records the

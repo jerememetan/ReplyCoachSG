@@ -57,6 +57,9 @@ against any later experiments before writing the final report.
 - [Reranker choice diagnosis](reranker_diagnosis_20261027.md): all100 decisions
   reproduced, concrete role/time failures, candidate-pool limits, judge concerns
   and the training-gap hypothesis. Include representative errors in discussion.
+- [Reviewed difficult-comparison pilot](../reranker_hard_examples.md): distinguish
+  prepared review/training tooling from completed human labels and GPU evidence.
+  Add measured quality results only after the human review and experiment run.
 - The linked reports identify private Kaggle resources and ignored local raw
   evidence. Do not publish credentials, checkpoints or private raw logs in the
   report/repository merely to document the experiment.

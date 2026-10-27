@@ -358,6 +358,12 @@ automatically sets that item's `status` to `completed`. Role A assigns the fixed
 balanced split only after all 300 items are completed: 240 development and 60
 held-out test.
 
+The same reviewer has a **Reranker comparisons** sidebar mode for the targeted
+20-comparison V6 training-label pilot. Suitable alternatives become additional
+positives; uncertain cases can be skipped. This mode does not edit the original
+team datasets. See [reviewed hard examples](docs/reranker_hard_examples.md) for
+queue preparation, the human-review step and the separate Kaggle training path.
+
 Expected: 20 items load, BM25 returns a lunch pair, V3 trains one CPU batch if PyTorch is installed.
 
 **Hard rules**
