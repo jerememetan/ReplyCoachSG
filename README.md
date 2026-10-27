@@ -396,6 +396,20 @@ Authors do not choose development or test records. Anything exposed during model
 
 ---
 
+## Sharing changes and local artifacts
+
+Commit source, tests, dependency manifests, team-reviewed data and concise
+reports. The [four-model comparison](docs/reports/four_system_comparison_20261026.md),
+[evaluation receipt](docs/four_system_validation_20261026.md) and
+[V4 receiver verification](roles/C_rnn_attention/LOCAL_VERIFICATION.md) record the
+completed work and its limits.
+
+Model weights/tokenizers, received handoff folders, archives, raw judging records,
+runtime logs, generated PDFs under `output/`, and local agent notes are ignored.
+Keep them locally or share checkpoints through the team's private artifact
+channel. `.env.example` is safe to share; real `.env` variants and credential/key
+files stay local. Never force-add an ignored artifact to a source PR.
+
 ## Dates
 
 | When | What |
@@ -421,7 +435,9 @@ Incoming message + dynamic session memory
 **Locked decisions**
 
 - Scope is casual peer coordination only.
-- V4 = V3 RNN + attention. V5 (mT5-small on Kaggle) is compared with V4; we keep only the winner.
+- V4 = V3 RNN + attention. The delivered V5 is mT5-base + LoRA; older mT5-small
+  notebooks are earlier experiments. Compare the delivered systems before
+  selecting the final generator.
 - Memory is dynamic: newest two turns plus up to two relevant older turns from the last eight session messages.
 - Local style is restrained and English-led.
 - Unknown/low-confidence inputs fall back to safe neutral English.
@@ -430,8 +446,11 @@ Incoming message + dynamic session memory
 
 - Dual-style task data = **team-authored, independently human-reviewed** items;
   the official 300-item split is published. The demo still defaults to pilot drafts.
-- Public **DailyDialog** (CC BY-NC-SA 4.0) is for generic V3/V4 dialogue pretraining only. It is not downloaded yet and does not replace STANDARD/LOCAL labels.
-- V5 uses local `google/mt5-small` weights on Kaggle, not an API.
+- Public **DailyDialog** supplies generic conversational pretraining/adaptation;
+  it does not replace team-authored STANDARD/LOCAL labels. See the role reports
+  for the actual corpus stages and their quality limitations.
+- The delivered V5 uses local adapted mT5-base weights and a shared LoRA adapter,
+  with no hosted generation API.
 
 `data/pilot/pilot_20.jsonl` is an engineering fixture (`draft_needs_team_review`). Rewrite and peer-review it before treating it as gold.
 
