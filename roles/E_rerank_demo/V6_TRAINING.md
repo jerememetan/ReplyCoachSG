@@ -4,6 +4,11 @@
 The separate Fine-tuned V6 demo option is experimental: its validation means
 improve over the frozen reranker, while V5-only remains higher on average.
 
+An additional, separate [abbreviation-augmentation experiment](../../docs/reranker_augmentation.md)
+uses the existing short-form mapping to expand training inputs. Its notebook,
+settings, actual expansion counts and results are documented separately so the
+original unaugmented checkpoint and measurements below remain identifiable.
+
 ## Kaggle run and checkpoint
 
 - Private notebook: [ReplyCoach V6 MiniLM fine-tuning](https://www.kaggle.com/code/tanjingminjereme/replycoach-v6-minilm-fine-tuning-20261027), version 1, COMPLETE.

@@ -206,6 +206,8 @@ It improves on the original frozen scorer's validation means, while V5-only
 still has higher means. It remains experimental and does not change the default.
 See the [V6 training handoff](roles/E_rerank_demo/V6_TRAINING.md) for the private
 notebook, reproducible commands, checkpoint-selection losses and evaluation caveats.
+The Kaggle training notebook also supports seeded random short-form augmentation;
+see [augmentation settings and experiment](docs/reranker_augmentation.md).
 
 On this CPU-only PyTorch setup, V5's verified three-item warm generation time was
 4.5-6.4 seconds per pair, with a roughly 51-second first load. These are not
