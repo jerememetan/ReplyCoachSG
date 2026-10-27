@@ -1,11 +1,31 @@
 """Allowlisted, private Kaggle input packaging; never upload the repository."""
 from hashlib import sha256
+import ast
 import json
 from pathlib import Path
 import re
 import shutil
 
 from replycoach.reranker_bundle import load_training_bundle
+
+
+def abbreviation_snapshot():
+    root = Path(__file__).resolve().parents[2]
+    path = root/'scripts/data-split/near_dups.py'
+    raw = path.read_bytes()
+    tree = ast.parse(raw.decode('utf-8'))
+    tables = [ast.literal_eval(node.value) for node in tree.body
+              if isinstance(node, ast.Assign) and any(isinstance(t, ast.Name) and t.id == 'ABBR'
+                                                       for t in node.targets)]
+    if len(tables) != 1:
+        raise ValueError('expected exactly one literal ABBR mapping')
+    safe = {'tmr', 'tmrw', 'alr', 'ltr', 'lib', 'sch', 'cmg', 'cfm', 'rmb',
+            'smth', 'u', 'bmt', 'ard', 'tdy', 'tgt', 'qn', 'ans'}
+    mapping = {}
+    for short, full in sorted(tables[0].items()):
+        if short in safe:
+            mapping.setdefault(full, []).append(short)
+    return mapping, {'path': 'scripts/data-split/near_dups.py', 'sha256': sha256(raw).hexdigest()}
 
 
 def kaggle_notebook():
@@ -19,7 +39,11 @@ def kaggle_notebook():
         'negatives, not human-negative gold. No test items or AI judging labels '
         'are attached. Fixed seed 425, AdamW 2e-5, batch16, maximum four epochs. '
         'Select the best checkpoint by validation pair loss; compare reply '
-        'quality separately after training. Outputs contain model weights.\n')
+        'quality separately after training. Seeded input-only abbreviation augmentation '
+        'adds up to three distinct variants per training conversation; no-op variants '
+        'are skipped. Validation, labels and replies are unchanged. Expanded rows '
+        'inherit labels, including possible false negatives. Outputs contain model '
+        'weights and the expanded training-pair audit file.\n')
     return {'nbformat': 4, 'nbformat_minor': 5,
             'metadata': {'kernelspec': {'display_name': 'Python 3', 'language': 'python', 'name': 'python3'},
                          'language_info': {'name': 'python'}},
@@ -35,12 +59,20 @@ def kaggle_notebook():
                            'bundle = bundles[0]\noutput = Path("/kaggle/working/reranker_v6")\n'
                            'assert not output.exists(), "Use a fresh saved run; do not overwrite an earlier checkpoint"\n'),
                       code('training_env = dict(os.environ, OMP_NUM_THREADS="2", MKL_NUM_THREADS="2", PYTHONUNBUFFERED="1")\n'
+                           '# Set copies to 0 for a control run; use a fresh output directory each time.\n'
+                           'AUGMENTATION_COPIES = 3\nREPLACEMENT_PROBABILITY = 0.35\nAUGMENTATION_SEED = 425\n'
                            'subprocess.check_call([sys.executable, str(bundle/"train_reranker.py"), '
-                           '"--bundle", str(bundle), "--output", str(output)], env=training_env)\n'),
+                           '"--bundle", str(bundle), "--output", str(output), '
+                           '"--augmentation-map", str(bundle/"abbreviations.json"), '
+                           '"--augmentation-copies", str(AUGMENTATION_COPIES), '
+                           '"--augmentation-probability", str(REPLACEMENT_PROBABILITY), '
+                           '"--augmentation-seed", str(AUGMENTATION_SEED)], env=training_env)\n'),
                       code('import shutil\n'
                            'result = json.loads((output/"best/v6_training.json").read_text())\n'
                            'assert result["completed"] and result["production_checkpoint"]\n'
                            'assert result["device"] == "cuda" and result["weights_changed"] and result["optimizer_steps"] > 0\n'
+                           'print(json.dumps({"augmentation": result["augmentation"], '
+                           '"actual_train_pairs": result["train_pair_count"], "validation_pairs": result["validation_pair_count"]}))\n'
                            'archive = shutil.make_archive("/kaggle/working/replycoach_v6_checkpoint", "zip", output)\n'
                            'print(json.dumps({"checkpoint": archive, "best_epoch": result["best_epoch"], '
                            '"validation_pair_loss": result["best_validation_loss"], "optimizer_steps": result["optimizer_steps"]}))\n')]}
@@ -63,6 +95,8 @@ def package_kaggle(bundle, output, *, owner, tag):
         (root/'src/replycoach/reranker_bundle.py', 'reranker_bundle.py', None, None),
         (root/'src/replycoach/reranker_fit.py', 'reranker_fit.py',
          'from replycoach.reranker_bundle import', 'from reranker_bundle import'),
+        (root/'src/replycoach/reranker_augmentation.py', 'reranker_augmentation.py',
+         'from replycoach.reranker_bundle import', 'from reranker_bundle import'),
         (root/'scripts/train_reranker.py', 'train_reranker.py',
          'from replycoach.reranker_fit import', 'from reranker_fit import'),
     ]:
@@ -71,8 +105,14 @@ def package_kaggle(bundle, output, *, owner, tag):
             if text.count(old) != 1:
                 raise ValueError('portable trainer import contract changed')
             text = text.replace(old, new, 1)
+        if name == 'reranker_fit.py':
+            text = text.replace('from replycoach.reranker_augmentation import',
+                                'from reranker_augmentation import')
         compile(text, name, 'exec')
         (dataset/name).write_text(text, encoding='utf-8', newline='\n')
+    mapping, source = abbreviation_snapshot()
+    (dataset/'abbreviations.json').write_text(json.dumps({'mapping': mapping, 'source': source},
+                                                      indent=2, sort_keys=True), encoding='utf-8')
     dataset_id = f'{owner}/replycoach-v6-training-{tag}'
     notebook_id = f'{owner}/replycoach-v6-minilm-fine-tuning-{tag}'
     metadata = {'id': dataset_id, 'title': f'ReplyCoach V6 private training {tag}',

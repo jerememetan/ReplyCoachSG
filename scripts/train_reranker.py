@@ -12,9 +12,17 @@ def main():
     parser.add_argument('--smoke', action='store_true')
     parser.add_argument('--max-steps', type=int)
     parser.add_argument('--batch-size', type=int, default=16)
+    parser.add_argument('--augmentation-map', type=Path,
+                        help='Optional packaged abbreviations.json; omitted preserves baseline training')
+    parser.add_argument('--augmentation-copies', type=int, default=3)
+    parser.add_argument('--augmentation-probability', type=float, default=.35)
+    parser.add_argument('--augmentation-seed', type=int, default=425)
     args = parser.parse_args()
     run_training(args.bundle, args.output, smoke=args.smoke, max_steps=args.max_steps,
-                 batch_size=args.batch_size)
+                 batch_size=args.batch_size, augmentation_map=args.augmentation_map,
+                 augmentation_copies=args.augmentation_copies,
+                 augmentation_probability=args.augmentation_probability,
+                 augmentation_seed=args.augmentation_seed)
 
 
 if __name__ == '__main__':

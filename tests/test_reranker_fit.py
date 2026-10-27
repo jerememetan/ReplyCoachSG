@@ -97,3 +97,36 @@ def test_nonfinite_loss_cannot_publish_a_finished_checkpoint(inputs, tmp_path):
         m.run_training(path, tmp_path/'out', smoke=True,
                        model_factory=lambda: (Invalid(), TinyTokenizer()))
     assert not (tmp_path/'out/best/v6_training.json').exists()
+
+
+def test_optimizer_consumes_expanded_pairs_and_saves_auditable_provenance(inputs, tmp_path):
+    from replycoach.reranker_bundle import load_training_bundle, pair_payload
+    from hashlib import sha256
+    for item in inputs.bank.items:
+        item.message.text = 'Can you confirm tomorrow?'
+    path = bundle_path(inputs, tmp_path)
+    original = load_training_bundle(path)
+    mapping = tmp_path/'abbreviations.json'
+    mapping.write_text(json.dumps({'mapping': {'you': ['u'], 'confirm': ['cfm'], 'tomorrow': ['tmr', 'tmrw']},
+                                   'source': {'path': 'fixture', 'sha256': 'fixture'}}))
+    class RecordingTokenizer(TinyTokenizer):
+        queries = []
+        def __call__(self, queries, replies, **kwargs):
+            self.queries.extend(queries)
+            return super().__call__(queries, replies, **kwargs)
+    tokenizer = RecordingTokenizer()
+    out = tmp_path/'augmented'
+    result = api().run_training(path, out, smoke=True, epochs=1, batch_size=4,
+            learning_rate=.01, augmentation_map=mapping, augmentation_copies=3,
+            model_factory=lambda: (TinyModel(), tokenizer))
+    assert len(original['train']) < result['train_pair_count'] <= 4*len(original['train'])
+    assert result['optimizer_steps'] == (result['train_pair_count']+3)//4
+    assert result['validation_pair_count'] == len(original['validation'])
+    assert load_training_bundle(path) == original
+    expanded = [json.loads(line) for line in (out/'training_pairs.jsonl').read_text().splitlines()]
+    assert len(expanded) == result['train_pair_count']
+    assert result['augmentation']['expanded_pairs_sha256'] == sha256(pair_payload(expanded)).hexdigest()
+    assert any('cfm' in q or 'tmr' in q for q in tokenizer.queries)
+    assert result['augmentation']['source']['path'] == 'fixture'
+    saved = json.loads((out/'best/v6_training.json').read_text())
+    assert saved['augmentation'] == result['augmentation']

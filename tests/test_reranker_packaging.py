@@ -24,6 +24,7 @@ def test_package_is_private_and_contains_only_the_minimal_allowlist(inputs, tmp_
     files = {p.name for p in (out/'dataset').iterdir()}
     assert files == {'manifest.json', 'train_pairs.jsonl', 'validation_pairs.jsonl',
                      'reranker_bundle.py', 'reranker_fit.py', 'train_reranker.py',
+                     'reranker_augmentation.py', 'abbreviations.json',
                      'dataset-metadata.json', 'package_receipt.json'}
     text = '\n'.join(p.read_text(encoding='utf-8') for p in (out/'dataset').iterdir())
     assert 'DO_NOT_UPLOAD' not in text and 'PRIVATE_AUTHOR' not in text
@@ -36,6 +37,12 @@ def test_package_is_private_and_contains_only_the_minimal_allowlist(inputs, tmp_
             assert cell['outputs'] == [] and cell['execution_count'] is None
             compile(''.join(cell['source']), '<notebook>', 'exec')
     assert 'from replycoach.' not in (out/'dataset/reranker_fit.py').read_text()
+    assert 'from replycoach.' not in (out/'dataset/reranker_augmentation.py').read_text()
+    cells = '\n'.join(''.join(c['source']) for c in notebook['cells'])
+    assert 'AUGMENTATION_COPIES = 3' in cells
+    assert '--augmentation-map' in cells and '--augmentation-probability' in cells
+    assert json.loads((out/'dataset/abbreviations.json').read_text())['mapping']['confirm'] == ['cfm']
+    assert result['files_sha256']['abbreviations.json']
 
 
 def test_packaging_refuses_existing_output_and_invalid_owner(tmp_path):
