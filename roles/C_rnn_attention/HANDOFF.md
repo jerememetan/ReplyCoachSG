@@ -4,6 +4,11 @@ V4 is connected through `load_v4()` in `src/replycoach/generate/providers.py`.
 This is a working experimental generator with substantial quality limitations;
 it has not been selected over V5 and is not evidence of a hybrid quality gain.
 
+**Receiver update, 25 October:** the supplied checkpoint is installed locally;
+100 V4 validation generations and all 150 three-mode records were reproduced.
+See [LOCAL_VERIFICATION.md](LOCAL_VERIFICATION.md) for inventory, installed paths,
+actual checks and the distinction from full training reproduction.
+
 ## Artifacts
 
 - Default deployed task checkpoint: `artifacts/rnn_v4_task.pt`.
