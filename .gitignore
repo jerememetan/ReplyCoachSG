@@ -1,3 +1,4 @@
+# Python environments and generated caches
 .venv/
 __pycache__/
 *.py[cod]
@@ -10,30 +11,63 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-artifacts/**/*.pt
-artifacts/**/*.bin
-artifacts/**/*.safetensors
+
+# Private local settings and credentials (share examples only)
+.env
+.env.*
+!.env.example
+!.env.template
+.streamlit/
+.hf_home/
+.cache/
+*.pem
+*.key
+*.p12
+*.pfx
+/credentials*.json
+/client_secret*.json
+
+# Model weights, downloaded archives and received inference bundles
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
 artifacts/*.json
 artifacts/*.npy
+artifacts/*.npz
 !artifacts/.gitkeep
 artifacts/pytest_tmp/
 artifacts/mt5_*/
-slurm-*.out
 artifacts/role_c_runs/
 artifacts/colab_import/
+/artifacts/spk1_ul025_s425/
+/role_c_v4_handoff/
+/ROLE_4 HANDOFF/
+slurm-*.out
+
+# Downloaded corpora and private runtime/evaluation evidence
 data/public/*.jsonl
-data/public/*.zip
 data/public/CoSEM*/
 experiments/logs/*.jsonl
-experiments/judging/
-data/authoring/*.jsonl.lock
 !experiments/logs/.gitkeep
-.streamlit/
+experiments/judging/
+PRIVATE_mapping.jsonl
+data/authoring/*.jsonl.lock
+
+# Generated exports and local agent working notes
+/output/
+docs/superpowers/
+/.agents/tasks/
+
+# Operating-system files and restricted course material
 .DS_Store
 Thumbs.db
-.env
-.hf_home/
-.cache/
-docs/superpowers/
-# SMU restricted course handout — do not push to GitHub
 Group Project Guidelines*.pdf
