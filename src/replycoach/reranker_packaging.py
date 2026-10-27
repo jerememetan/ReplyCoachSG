@@ -94,6 +94,14 @@ def package_kaggle(bundle, output, *, owner, tag, reviewed_pairs=None):
         raise FileExistsError(f'output already exists: {output}')
     if not re.fullmatch(r'[a-z0-9][a-z0-9_-]{2,49}', owner) or not re.fullmatch(r'[0-9]{8}(?:-[a-z0-9]+)?', tag):
         raise ValueError('invalid Kaggle owner or run tag')
+    dataset_title = f'ReplyCoach V6 private training {tag}'
+    notebook_title = f'ReplyCoach V6 MiniLM fine-tuning {tag}'
+    if len(notebook_title) > 50:
+        notebook_title = f'ReplyCoach V6 {tag}'
+    dataset_slug = f'replycoach-v6-training-{tag}'
+    notebook_slug = notebook_title.lower().replace(' ', '-')
+    if any(len(name) > 50 for name in [dataset_title, notebook_title, dataset_slug, notebook_slug]):
+        raise ValueError('Kaggle run tag is too long; resource names must fit within 50 characters')
     loaded = load_training_bundle(bundle)
     if reviewed_pairs is not None:
         apply_reviewed_pairs(loaded, json.loads(Path(reviewed_pairs).read_text(encoding='utf-8')))
@@ -131,9 +139,9 @@ def package_kaggle(bundle, output, *, owner, tag, reviewed_pairs=None):
                                                       indent=2, sort_keys=True), encoding='utf-8')
     if reviewed_pairs is not None:
         shutil.copyfile(reviewed_pairs, dataset/'reviewed_pairs.json')
-    dataset_id = f'{owner}/replycoach-v6-training-{tag}'
-    notebook_id = f'{owner}/replycoach-v6-minilm-fine-tuning-{tag}'
-    metadata = {'id': dataset_id, 'title': f'ReplyCoach V6 private training {tag}',
+    dataset_id = f'{owner}/{dataset_slug}'
+    notebook_id = f'{owner}/{notebook_slug}'
+    metadata = {'id': dataset_id, 'title': dataset_title,
                 'licenses': [{'name': 'other'}]}
     (dataset/'dataset-metadata.json').write_text(json.dumps(metadata, indent=2), encoding='utf-8')
     receipt = {'dataset_id': dataset_id, 'notebook_id': notebook_id, 'private_required': True,
@@ -141,7 +149,7 @@ def package_kaggle(bundle, output, *, owner, tag, reviewed_pairs=None):
     (dataset/'package_receipt.json').write_text(json.dumps(receipt, indent=2), encoding='utf-8')
     (notebook/'E_reranker_kaggle.ipynb').write_text(
         json.dumps(kaggle_notebook(reviewed_pairs=reviewed_pairs is not None), indent=2), encoding='utf-8')
-    kernel = {'id': notebook_id, 'title': f'ReplyCoach V6 MiniLM fine-tuning {tag}',
+    kernel = {'id': notebook_id, 'title': notebook_title,
               'code_file': 'E_reranker_kaggle.ipynb', 'language': 'python', 'kernel_type': 'notebook',
               'is_private': True, 'enable_gpu': True, 'enable_internet': True,
               'dataset_sources': [dataset_id], 'competition_sources': [], 'kernel_sources': []}

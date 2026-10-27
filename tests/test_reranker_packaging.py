@@ -76,3 +76,22 @@ def test_reviewed_pair_package_uses_separate_training_path_and_rejects_pending(i
     with pytest.raises(ValueError):
         api().package_kaggle(source,tmp_path/'pending',owner='testowner',tag='20261027-hard',reviewed_pairs=sidecar)
     assert not (tmp_path/'pending').exists()
+
+
+def test_long_run_tag_uses_a_valid_shorter_notebook_title(inputs,tmp_path):
+    from replycoach.reranker_training import build_training_bundle,write_training_bundle
+    source=tmp_path/'bundle'
+    write_training_bundle(source,build_training_bundle(inputs))
+    out=tmp_path/'reviewed01'
+    result=api().package_kaggle(source,out,owner='testowner',tag='20261027-reviewed01')
+    meta=json.loads((out/'notebook/kernel-metadata.json').read_text(encoding='utf-8'))
+    assert len(meta['title'])<=50
+    assert meta['id']==result['notebook_id']=='testowner/'+meta['title'].lower().replace(' ','-')
+    assert meta['is_private'] is True and meta['enable_gpu'] is True
+
+
+def test_oversized_resource_name_is_rejected_before_writing(inputs,tmp_path):
+    out=tmp_path/'oversized'
+    with pytest.raises(ValueError,match='long|50'):
+        api().package_kaggle(tmp_path/'unused',out,owner='testowner',tag='20261027-'+'x'*80)
+    assert not out.exists()
