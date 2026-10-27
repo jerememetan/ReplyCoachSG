@@ -43,6 +43,7 @@ files to the judge. Keep ratings as evaluation records, never gold training labe
 | Cornell Movie-Dialogs | Optional extra English dialogue | Research use; cite Danescu-Niculescu-Mizil & Lee | Not first choice: too cinematic |
 | google/mt5-small | V5 Kaggle experiment | Apache 2.0 | Allowed locally / on Kaggle |
 | sentence-transformers MiniLM | V2 embeddings | Apache 2.0 | Allowed locally |
+| [cross-encoder/ms-marco-MiniLM-L6-v2](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2) | Experimental shared selection across BM25/MiniLM/V4/V5 proposals | Model card lists Apache 2.0; pinned revision `233902d25c440f23af6f7d6e94d2946bac0bee0a` | Local inference only; search-relevance model, not a validated Singlish evaluator |
 
 DailyDialog homepage: [http://yanran.li/dailydialog](http://yanran.li/dailydialog)
 

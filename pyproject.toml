@@ -19,7 +19,7 @@ dependencies = [
 [project.optional-dependencies]
 demo = ["streamlit>=1.32"]
 dev = ["pytest>=7.0"]
-mt5 = ["transformers>=4.44", "sentencepiece>=0.2", "protobuf>=4.0", "peft>=0.13"]
+mt5 = ["transformers>=4.44", "sentencepiece>=0.2", "protobuf>=4.0", "peft>=0.21.2"]
 
 [project.scripts]
 replycoach = "replycoach.demo_cli:main"

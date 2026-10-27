@@ -1,7 +1,7 @@
-# All-model reply selection: design for review
+# All-model reply selection: approved design
 
-Date: 26 October 2026. Status: proposed design; implementation awaits written-design
-review under the requested brainstorming workflow. No new training is proposed.
+Date: 26 October 2026. Status: written design approved by the user on 26 October;
+implementation verified on 27 October. No new training is proposed.
 
 ## Goal and scope
 
@@ -80,7 +80,8 @@ The shared raw logit is a ranking signal, not a calibrated probability. Preserve
 the old source scores in metadata; never blend them into this source-neutral
 selection. Do not reuse the legacy 0.15 fallback threshold for these new scores.
 The first version selects a valid proposal without claiming semantic confidence.
-If no valid proposal exists, return an explicitly labelled structural fallback.
+If no source proposal exists, show an explicit unavailable state with no selected
+reply rather than inventing a model output.
 
 ## Architecture boundaries
 
@@ -132,6 +133,9 @@ For every conversation/style, use the frozen ranker to choose one of those four
 proposals and join its saved ratings by exact packet candidate identity. The
 ranker never receives those ratings. This is **counterfactual selection analysis
 on a fixed saved candidate pool**, not a new live-model quality evaluation.
+When identical text has multiple saved records, reuse the lowest anonymous
+candidate ID and retain every contributing source. Never choose the record with
+the most favourable rating.
 
 Compare with:
 
@@ -188,5 +192,6 @@ https://www.sbert.net/docs/cross_encoder/pretrained_models.html
 - Data/evaluation boundaries and unchanged default behaviour are explicit.
 - The new input preserves available labels for scoring without silently changing
   the already-evaluated source model formats.
-- Runtime smoke verification is complete; implementation and replay results are
-  not yet claimed.
+- Implementation, replay and runtime verification are recorded in
+  `docs/all_models_ranking_worklog.md`. The negative replay result keeps the mode
+  experimental; it does not become the default.

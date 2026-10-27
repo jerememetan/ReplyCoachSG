@@ -114,7 +114,7 @@ Keep judge inputs anonymous even though evaluation stays local.
 ### Run the demo
 
 ```powershell
-.\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py
+.\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py --server.fileWatcherType none
 ```
 
 Streamlit prints the local URL to open, normally `http://localhost:8501`. Stop the
@@ -153,10 +153,67 @@ retrieval and V4/V5 for generation; resources load only when requested.
 Role C's **task-trained V4 provider is connected**; its checkpoint must be copied
 privately into `artifacts/rnn_v4_task.pt` or selected with
 `REPLYCOACH_V4_CHECKPOINT`. See [C's handoff](roles/C_rnn_attention/HANDOFF.md)
-for measured results and substantial quality limitations. V5 remains pending.
+for measured results and substantial quality limitations. V5's mT5-base + LoRA
+provider and private checkpoint handoff are available; see
+[D's model card](roles/D_transformer/MODEL_CARD.md) and
+[local verification](roles/D_transformer/LOCAL_VERIFICATION.md).
 Missing V4/V5 models name Role C/D and fall back honestly:
 partial hybrid runs are labelled retrieval-only, not successful hybrids. The
 registry never uses the one-batch smoke checkpoint or fake production replies.
+
+### Compare all four models and select replies
+
+Choose **All models (experimental)** under **System settings**, enter the
+conversation and incoming message, then click **Suggest two replies**. The app
+compares eight proposals: Standard and Local from BM25, MiniLM, V4 and V5. One
+shared local cross-encoder selects a final reply per style. The selected replies
+remain clickable, and the full proposal table shows their origins and fallbacks.
+
+For V5 and this mode, install the optional inference dependencies in the same
+virtual environment used to launch Streamlit:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -e ".[demo,mt5]"
+.\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py --server.fileWatcherType none
+```
+
+V4 and V5 require the privately shared checkpoint files; they are not downloaded
+from GitHub. Copy D's adapted base to `artifacts/mt5_base_after_spans_spk/best/`
+and adapter/tokenizer to `artifacts/spk1_ul025_s425/best/` (or use `V5_CHECKPOINT`).
+Select **Reviewed development file** and `data/dev/train.jsonl` to use the
+190-example bank evaluated in the report. First use may download the small
+public ranker weights and load the local generators. Cached requests reuse them.
+
+The ranker is pinned to `cross-encoder/ms-marco-MiniLM-L6-v2` revision
+`233902d25c440f23af6f7d6e94d2946bac0bee0a`. Scores are relevance signals, not
+confidence percentages. A missing source produces a labelled partial comparison;
+a missing ranker shows its error and proposals rather than silently substituting
+the old formula. No live Gemma calls or new training are involved.
+
+The file-watcher option avoids Streamlit probing Transformers' unused optional
+image/audio modules. Restart Streamlit after editing source when using this option.
+
+**Validation result:** the saved-proposal replay improved on the old mixed-score
+heuristic's point estimates but did not improve on always choosing V5. The mode
+therefore remains experimental and the default is unchanged. See
+[the ranking work log](docs/all_models_ranking_worklog.md) for evidence and limits.
+
+On this CPU-only PyTorch setup, V5's verified three-item warm generation time was
+4.5-6.4 seconds per pair, with a roughly 51-second first load. These are not
+guarantees for a full request. To limit CPU contention, optionally set
+`OMP_NUM_THREADS=2` and `MKL_NUM_THREADS=2` in the launching PowerShell session.
+
+Replay the frozen selector against the completed validation packet, without
+generating replies or making new judge calls:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/replay_shared_ranker.py --packet experiments/judging/four_systems_20261026_01/main_packet --check-only
+.\.venv\Scripts\python.exe scripts/replay_shared_ranker.py --packet experiments/judging/four_systems_20261026_01/main_packet --out-dir experiments/judging/new_shared_ranker_replay
+```
+
+The second command requires a fresh output directory and the private completed
+packet/ratings. It rejects changed or incomplete evidence and test data. Existing
+AI ratings are joined only after selection; they never become training labels.
 
 Search **`TODO: FOR ROLE`** in the repository (VS Code: Ctrl+Shift+F). Exact A/B/C/D
 handoffs, provider contracts and artifact instructions are in
