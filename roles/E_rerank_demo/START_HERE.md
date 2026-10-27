@@ -1,5 +1,15 @@
 # Role E — Reranker, integration, demo
 
+## Current priority updated 27 October 2026
+
+The proposal's V6 fine-tuning experiment is complete. See
+[V6 training and validation](V6_TRAINING.md) for the private Kaggle run, installed
+checkpoint, actual losses, frozen-versus-trained comparisons and limits. The
+demo has an explicit Fine-tuned V6 shared-selector option. It improves Standard
+selection over the frozen reranker on development data, but does not establish
+an advantage over V5-only; keep it experimental. The 60-item held-out evaluation
+and independent teammate sanity checks remain separate work.
+
 ## Current priority updated 18 October 2026
 
 The [judge experiment report](../../docs/judge_pilot_experiments.md) records the

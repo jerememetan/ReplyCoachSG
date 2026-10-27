@@ -1,5 +1,9 @@
 # All-model ranking work log
 
+Later follow-up: the separate [fine-tuned V6 experiment](../roles/E_rerank_demo/V6_TRAINING.md)
+completed on 27 October. This log records the original frozen-scorer baseline;
+the trained option and its comparisons are documented in that handoff.
+
 Design and implementation: 26-27 October 2026, Asia/Singapore.
 The user approved `all_models_ranking_design.md` before implementation.
 

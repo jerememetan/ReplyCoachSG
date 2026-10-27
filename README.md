@@ -198,6 +198,15 @@ heuristic's point estimates but did not improve on always choosing V5. The mode
 therefore remains experimental and the default is unchanged. See
 [the ranking work log](docs/all_models_ranking_worklog.md) for evidence and limits.
 
+**Fine-tuned V6 is now available as a separate Shared selector option.** It was
+trained on Kaggle GPU using the 190 reviewed training conversations and
+user-approved weak negatives. Copy its private model/tokenizer and training
+manifest to `artifacts/reranker_v6/best/` (or set `REPLYCOACH_V6_CHECKPOINT`).
+It improves on the original frozen scorer's validation means, while V5-only
+still has higher means. It remains experimental and does not change the default.
+See the [V6 training handoff](roles/E_rerank_demo/V6_TRAINING.md) for the private
+notebook, reproducible commands, checkpoint-selection losses and evaluation caveats.
+
 On this CPU-only PyTorch setup, V5's verified three-item warm generation time was
 4.5-6.4 seconds per pair, with a roughly 51-second first load. These are not
 guarantees for a full request. To limit CPU contention, optionally set

@@ -71,6 +71,8 @@ small local optimizer smoke check before consuming a Kaggle GPU session. Save
 commands, run status and results in the V6 handoff. Commit source/docs/tests in
 small chunks; do not push until requested.
 
-Status: plan recorded; training is not yet running. Kaggle MCP was registered,
-but Codex's OAuth client ID was rejected by Kaggle. Authentication and execution
-must be verified before claiming connection or training success.
+Status, 27 October: private Kaggle GPU run completed with 288 optimizer updates;
+epoch2 was selected and its weights were downloaded and verified locally.
+Authenticated MCP requests now work through the official CLI credential helper.
+The trained selector is available separately and remains experimental. Full
+results, commands and limitations: [V6 training handoff](../roles/E_rerank_demo/V6_TRAINING.md).
