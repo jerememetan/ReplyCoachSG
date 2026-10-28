@@ -1,5 +1,8 @@
 # Qwen3 conversational reranker experiment
 
+The user subsequently approved a separate [maximum-12-epoch follow-up](qwen_reranker_12_epochs.md).
+The original four-epoch results below remain preserved as its comparison baseline.
+
 28 October 2026. The user approved downloading and testing pretrained
 `Qwen/Qwen3-Reranker-0.6B`, then fine-tuning a separate LoRA adapter on the existing
 reviewed-pair bundle and comparing reply selection again. This is an experiment;

@@ -74,6 +74,12 @@ against any later experiments before writing the final report.
   3.946 Local: Standard +0.062 versus raw Qwen, Local -0.098, with intervals
   including zero. Include the mixed result, weak-label limitations, real greeting
   diagnostic, observed runtime, private provenance and preserved checkpoints.
+- [Maximum-12-epoch Qwen follow-up](../qwen_reranker_12_epochs.md): the user
+  requested a longer run because validation loss was still falling at epoch 4.
+  This separate experiment keeps data and other settings fixed, uses patience 2,
+  and is currently training. Include actual completed/best epochs, stop reason
+  and matched reply-quality results after verification; do not assume all 12
+  epochs complete or that a lower pair loss improves reply selection.
 - The linked reports identify private Kaggle resources and ignored local raw
   evidence. Do not publish credentials, checkpoints or private raw logs in the
   report/repository merely to document the experiment.
