@@ -25,6 +25,11 @@ V6 and Frozen MiniLM remain selectable. This is a demonstration choice, not an
 established quality gain. Follow the linked report for losses, intervals and
 limits. Miner scores and AI evaluation ratings are not training labels.
 
+The user subsequently approved a [Qwen pretrained/LoRA experiment](../../docs/qwen_reranker_experiment.md).
+Raw Qwen has completed the saved-proposal replay and fixes the disclosed greeting
+ordering; the private LoRA run is pending. Keep these results separate from the
+demo's reviewed MiniLM selector and refresh the experiment report after training.
+
 ## Current priority updated 18 October 2026
 
 The [judge experiment report](../../docs/judge_pilot_experiments.md) records the

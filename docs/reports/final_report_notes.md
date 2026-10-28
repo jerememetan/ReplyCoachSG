@@ -66,6 +66,11 @@ against any later experiments before writing the final report.
   human evaluation. GPU training completed 292 updates; best epoch 3. The matched
   validation replay gives mixed, unresolved changes and no established overall
   gain. Include this completed refinement experiment and its limitations.
+- [Qwen pretrained and LoRA comparison](../qwen_reranker_experiment.md): include
+  the subsequent architecture/instruction experiment. Raw Qwen has completed
+  the matched replay (Standard 3.578, Local 4.044); gains versus reviewed MiniLM
+  remain unresolved. GPU LoRA training and its matched comparison are pending.
+  Refresh this entry after the experiment; distinguish raw and adapted results.
 - The linked reports identify private Kaggle resources and ignored local raw
   evidence. Do not publish credentials, checkpoints or private raw logs in the
   report/repository merely to document the experiment.

@@ -220,6 +220,10 @@ notebook, reproducible commands, checkpoint-selection losses and evaluation cave
 The Kaggle training notebook also supports seeded random short-form augmentation;
 see [augmentation settings and experiment](docs/reranker_augmentation.md).
 
+A separate [Qwen3 pretrained/LoRA experiment](docs/qwen_reranker_experiment.md)
+tests a multilingual instruction-aware reranker on the same saved proposals.
+Its checkpoints and measurements are kept separate from the demo selectors.
+
 On this CPU-only PyTorch setup, V5's verified three-item warm generation time was
 4.5-6.4 seconds per pair, with a roughly 51-second first load. These are not
 guarantees for a full request. To limit CPU contention, optionally set
