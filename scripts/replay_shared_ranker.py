@@ -23,9 +23,13 @@ def main():
     selector = parser.add_mutually_exclusive_group()
     selector.add_argument('--checkpoint', type=Path)
     selector.add_argument('--style-aware-baseline', action='store_true')
+    selector.add_argument('--qwen-model', type=Path)
+    parser.add_argument('--qwen-adapter', type=Path)
     args = parser.parse_args()
     if not args.check_only and args.out_dir is None:
         parser.error('--out-dir is required unless --check-only is used')
+    if args.qwen_adapter and not args.qwen_model:
+        parser.error('--qwen-adapter requires --qwen-model')
     public, mapping, hashes = load_packet(args.packet)
     inputs = load_evaluation_inputs(args.queries, args.bank)
     query_items = {item.id: item for item in inputs.queries.items}
@@ -64,8 +68,12 @@ def main():
                           'proposals': len(public), 'existing_ratings': len(ratings), 'model_calls': 0}))
         return
     started = perf_counter()
-    scorer = CrossEncoderScorer(checkpoint=args.checkpoint, style_aware=args.style_aware_baseline)
-    if args.checkpoint and (scorer.identity['train_fingerprint'] != inputs.bank.fingerprint
+    if args.qwen_model:
+        from replycoach.qwen_reranker import QwenReranker
+        scorer = QwenReranker(args.qwen_model, adapter=args.qwen_adapter)
+    else:
+        scorer = CrossEncoderScorer(checkpoint=args.checkpoint, style_aware=args.style_aware_baseline)
+    if (args.checkpoint or args.qwen_adapter) and (scorer.identity['train_fingerprint'] != inputs.bank.fingerprint
                            or scorer.identity['validation_fingerprint'] != inputs.queries.fingerprint):
         raise ValueError('V6 checkpoint and current development data fingerprints differ')
     model_load_seconds = perf_counter() - started

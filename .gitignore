@@ -50,6 +50,7 @@ artifacts/role_c_runs/
 artifacts/colab_import/
 /artifacts/spk1_ul025_s425/
 /artifacts/reranker_v6/
+/artifacts/reranker_qwen/
 /role_c_v4_handoff/
 /ROLE_4 HANDOFF/
 slurm-*.out
