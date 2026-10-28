@@ -41,7 +41,10 @@ the improvement over frozen scoring.
 Discuss the Standard improvement over frozen scoring, unresolved Local gain,
 and mixed augmentation changes. Neither augmentation nor hybrid selection has
 established a gain over the best generator. Keep the paired uncertainty
-intervals and the decision to retain the unaugmented checkpoint active.
+intervals and the initial decision to retain the original checkpoint. On
+28 October the user explicitly requested the 20-review checkpoint as the
+All models demo default; distinguish that demonstration choice from evidence
+of better quality. Original V6 and Frozen MiniLM remain selectable.
 
 Limitations must include potentially valid weak negatives, small independent
 sample size, validation reuse for checkpoint selection and development analysis,

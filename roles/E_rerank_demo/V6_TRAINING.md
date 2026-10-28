@@ -102,10 +102,15 @@ limitations. The trained model is not a calibrated confidence estimator.
 ## Use and reproduction
 
 Launch the existing demo and choose **System settings → All models
-(experimental) → Shared selector → Fine-tuned V6**. Select the reviewed bank
-`data/dev/train.jsonl`. The default remains Frozen MiniLM in All models, and the
-overall default remains Retrieval comparison. Missing checkpoint errors are
-visible and do not silently substitute the frozen scorer.
+(experimental)**. Since 28 October 2026, its default is **Fine-tuned V6 (20 reviews)**,
+at the user's request; see the [reviewed-pair experiment](../../docs/reranker_hard_examples.md).
+That separate checkpoint defaults to
+`artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best/`,
+overridable with `REPLYCOACH_V6_REVIEWED_CHECKPOINT`. To reproduce the original
+V6 results in this document, select **Fine-tuned V6 (original)**; Frozen MiniLM
+also remains selectable. Select the reviewed bank `data/dev/train.jsonl`.
+The overall default remains Retrieval comparison. Missing checkpoint errors
+are visible and do not silently substitute the frozen scorer.
 
 ```powershell
 .\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py --server.fileWatcherType none

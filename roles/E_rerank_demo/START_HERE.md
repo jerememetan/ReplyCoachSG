@@ -1,6 +1,6 @@
 # Role E — Reranker, integration, demo
 
-## Current priority updated 27 October 2026
+## Current priority updated 28 October 2026
 
 The proposal's V6 fine-tuning experiment is complete. See
 [V6 training and validation](V6_TRAINING.md) for the private Kaggle run, installed
@@ -19,9 +19,11 @@ is prepared in the existing team reviewer under **Reranker comparisons**. Its
 20 training-only alternatives now have human decisions (13 suitable, 7 unsuitable).
 A separate Kaggle experiment and matched validation replay are complete. The
 additional labels give mixed, unresolved changes (Standard 3.528→3.508,
-Local 3.878→3.930); the original V6 stays active. Follow the linked report for
-losses, intervals and limits. Miner scores and AI evaluation ratings are not
-training labels.
+Local 3.878→3.930). On 28 October the user requested this reviewed checkpoint
+as the All models demo default, labelled **Fine-tuned V6 (20 reviews)**. Original
+V6 and Frozen MiniLM remain selectable. This is a demonstration choice, not an
+established quality gain. Follow the linked report for losses, intervals and
+limits. Miner scores and AI evaluation ratings are not training labels.
 
 ## Current priority updated 18 October 2026
 

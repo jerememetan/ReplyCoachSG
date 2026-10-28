@@ -181,8 +181,9 @@ V4 and V5 require the privately shared checkpoint files; they are not downloaded
 from GitHub. Copy D's adapted base to `artifacts/mt5_base_after_spans_spk/best/`
 and adapter/tokenizer to `artifacts/spk1_ul025_s425/best/` (or use `V5_CHECKPOINT`).
 Select **Reviewed development file** and `data/dev/train.jsonl` to use the
-190-example bank evaluated in the report. First use may download the small
-public ranker weights and load the local generators. Cached requests reuse them.
+190-example bank evaluated in the report. First use loads the local generators
+and the selected ranker. Frozen MiniLM may download its public weights; trained
+V6 checkpoints must be supplied privately. Cached requests reuse them.
 
 The ranker is pinned to `cross-encoder/ms-marco-MiniLM-L6-v2` revision
 `233902d25c440f23af6f7d6e94d2946bac0bee0a`. Scores are relevance signals, not
@@ -195,15 +196,25 @@ image/audio modules. Restart Streamlit after editing source when using this opti
 
 **Validation result:** the saved-proposal replay improved on the old mixed-score
 heuristic's point estimates but did not improve on always choosing V5. The mode
-therefore remains experimental and the default is unchanged. See
+therefore remains experimental; the overall default is Retrieval comparison. See
 [the ranking work log](docs/all_models_ranking_worklog.md) for evidence and limits.
 
-**Fine-tuned V6 is now available as a separate Shared selector option.** It was
+**All models defaults to “Fine-tuned V6 (20 reviews)”**, at the user's request
+on 28 October 2026. This checkpoint adds 13 suitable and 7 unsuitable reviewed
+alternatives to the original training pairs. Keep its private model/tokenizer
+and training manifest at
+`artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best/`,
+or set `REPLYCOACH_V6_REVIEWED_CHECKPOINT` to that checkpoint folder. Missing
+weights produce a visible error; the demo does not silently use another ranker.
+This demonstration choice does not establish a quality improvement over the
+original V6; see the [reviewed-pair results](docs/reranker_hard_examples.md).
+
+**Fine-tuned V6 (original)** and **Frozen MiniLM** remain selectable. Original V6 was
 trained on Kaggle GPU using the 190 reviewed training conversations and
 user-approved weak negatives. Copy its private model/tokenizer and training
 manifest to `artifacts/reranker_v6/best/` (or set `REPLYCOACH_V6_CHECKPOINT`).
 It improves on the original frozen scorer's validation means, while V5-only
-still has higher means. It remains experimental and does not change the default.
+still has higher means. All three selectors remain experimental.
 See the [V6 training handoff](roles/E_rerank_demo/V6_TRAINING.md) for the private
 notebook, reproducible commands, checkpoint-selection losses and evaluation caveats.
 The Kaggle training notebook also supports seeded random short-form augmentation;

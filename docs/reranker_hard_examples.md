@@ -212,9 +212,10 @@ bootstrap intervals (20,000 resamples, seed 425):
 
 The changes are small and intervals include zero. Lower weak-pair loss has not
 established an overall reply-selection improvement. Fixed V5 still has higher
-point estimates for both styles. **Retain the original installed V6**, keeping
-this checkpoint as a separate completed experiment rather than silently
-replacing the demo or selecting a winner from repeated validation runs.
+point estimates for both styles. The evaluation recommendation was to retain
+the original installed V6 and keep this checkpoint as a separate experiment,
+rather than select a winner from repeated validation runs. The user subsequently
+requested the reviewed checkpoint for the demo; see the operational update below.
 
 The new checkpoint changes three Standard and six Local choices. For example,
 ITEM-E-025 Local changes from “ya, tuesday no class” to “okay, thursday is fine.”
@@ -250,5 +251,20 @@ locally in `hard_review/snapshots/`; the uploaded sidecar contains no reviewer
 names or comments.
 
 **Status:** human review, private GPU training, checkpoint verification and
-matched development replay are complete. The original V6 remains active; no
-test-set evaluation or claim of a reliable improvement has been made.
+matched development replay are complete. No test-set evaluation or claim of a
+reliable improvement has been made.
+
+## Demo selection update — 28 October 2026
+
+At the user's explicit request, All models now defaults to **Fine-tuned V6
+(20 reviews)**, using the separately downloaded reviewed checkpoint above.
+Set `REPLYCOACH_V6_REVIEWED_CHECKPOINT` to override its location. **Fine-tuned V6
+(original)** and **Frozen MiniLM** remain selectable. The original checkpoint
+is preserved at `artifacts/reranker_v6/best/`. Missing reviewed weights produce
+a visible error, with no silent substitution. This reversible demo choice
+does not alter the measured comparison or establish a reliable improvement.
+
+Verification: 67 affected demo/resource/ranking tests passed. A live request on
+port 8511 compared all four sources, returned both styles, and displayed the
+reviewed checkpoint revision `6e2664f06cc2c80fa1dcbeee72e24857e4b6178a11dc13e8716c5acafa69c4a4`.
+The ignored local screenshot is `artifacts/reranker_v6/reviewed_demo_default_20261028.png`.
