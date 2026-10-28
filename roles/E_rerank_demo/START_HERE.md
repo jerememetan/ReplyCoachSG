@@ -27,8 +27,10 @@ limits. Miner scores and AI evaluation ratings are not training labels.
 
 The user subsequently approved a [Qwen pretrained/LoRA experiment](../../docs/qwen_reranker_experiment.md).
 Raw Qwen has completed the saved-proposal replay and fixes the disclosed greeting
-ordering; the private LoRA run is pending. Keep these results separate from the
-demo's reviewed MiniLM selector and refresh the experiment report after training.
+ordering; private LoRA training and matched testing are complete. LoRA scores
+3.640 Standard / 3.946 Local versus raw Qwen's 3.578 / 4.044, a mixed and
+unresolved change. Both handle the greeting ordering. See the report for intervals
+and remaining role errors. The demo still uses reviewed MiniLM.
 
 ## Current priority updated 18 October 2026
 

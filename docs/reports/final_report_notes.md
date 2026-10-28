@@ -69,8 +69,11 @@ against any later experiments before writing the final report.
 - [Qwen pretrained and LoRA comparison](../qwen_reranker_experiment.md): include
   the subsequent architecture/instruction experiment. Raw Qwen has completed
   the matched replay (Standard 3.578, Local 4.044); gains versus reviewed MiniLM
-  remain unresolved. GPU LoRA training and its matched comparison are pending.
-  Refresh this entry after the experiment; distinguish raw and adapted results.
+  remain unresolved. GPU LoRA training completed four epochs / 292 updates,
+  retaining epoch 4. Its completed matched replay scores 3.640 Standard and
+  3.946 Local: Standard +0.062 versus raw Qwen, Local -0.098, with intervals
+  including zero. Include the mixed result, weak-label limitations, real greeting
+  diagnostic, observed runtime, private provenance and preserved checkpoints.
 - The linked reports identify private Kaggle resources and ignored local raw
   evidence. Do not publish credentials, checkpoints or private raw logs in the
   report/repository merely to document the experiment.
