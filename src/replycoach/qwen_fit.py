@@ -24,7 +24,7 @@ def parameter_hash(model, *, trainable):
 
 def run_training(bundle_path, output, *, source=MODEL, epochs=4, batch_size=2,
                  accumulation=8, learning_rate=2e-5, smoke=False, max_steps=None,
-                 model_factory=None):
+                 model_factory=None, early_stopping_patience=0):
     from peft import LoraConfig, get_peft_model
     bundle_path, output=Path(bundle_path), Path(output)
     bundle=load_training_bundle(bundle_path)
@@ -32,8 +32,9 @@ def run_training(bundle_path, output, *, source=MODEL, epochs=4, batch_size=2,
     train, review_meta=apply_reviewed_pairs(bundle,reviewed) if reviewed else (bundle['train'], {'method':'none'})
     if output.exists() or bundle_path.resolve() in output.resolve().parents:
         raise ValueError('output must be a fresh directory outside the input bundle')
-    if (type(epochs) is not int or not 1 <= epochs <= 4 or type(batch_size) is not int
+    if (type(epochs) is not int or not 1 <= epochs <= 12 or type(batch_size) is not int
             or batch_size < 1 or type(accumulation) is not int or accumulation < 1
+            or type(early_stopping_patience) is not int or not 0 <= early_stopping_patience <= 12
             or not math.isfinite(learning_rate) or learning_rate <= 0):
         raise ValueError('invalid fixed Qwen training settings')
     if not smoke and (model_factory is not None or max_steps is not None or not torch.cuda.is_available()):
@@ -68,6 +69,7 @@ def run_training(bundle_path, output, *, source=MODEL, epochs=4, batch_size=2,
     (output/'training_pairs.jsonl').write_bytes(pair_payload(train))
     validation=bundle['validation'][:4] if smoke else bundle['validation']
     steps,history,best_loss,best_epoch,best_hash=0,[],float('inf'),0,None
+    stale_epochs,stop_reason=0,'epoch_budget'
     started=perf_counter()
     for epoch in range(1,epochs+1):
         order=list(train)
@@ -112,12 +114,20 @@ def run_training(bundle_path, output, *, source=MODEL, epochs=4, batch_size=2,
                         'optimizer_steps':steps,'elapsed_seconds':perf_counter()-started})
         print(json.dumps({'event':'qwen_epoch',**history[-1]}),flush=True)
         if validation_loss < best_loss:
+            stale_epochs=0
             best_loss,best_epoch=validation_loss,epoch
             best=output/'best'
             model.save_pretrained(best,safe_serialization=True)
             tokenizer.save_pretrained(best)
             best_hash=parameter_hash(model,trainable=True)
+        else:
+            stale_epochs+=1
+        (output/'history.json').write_text(json.dumps(history,indent=2),encoding='utf-8')
         if max_steps and steps >= max_steps:
+            stop_reason='smoke_step_limit'
+            break
+        if early_stopping_patience and stale_epochs >= early_stopping_patience:
+            stop_reason='validation_patience'
             break
     base_unchanged=parameter_hash(model,trainable=False)==frozen_hash
     if not base_unchanged or best_hash==initial_hash or not steps:
@@ -139,6 +149,8 @@ def run_training(bundle_path, output, *, source=MODEL, epochs=4, batch_size=2,
             'initial_adapter_parameters_sha256':initial_hash,'best_adapter_parameters_sha256':best_hash,
             'weights_changed':True,'adapter_sha256':file_sha256(output/'best/adapter_model.safetensors'),
             'elapsed_seconds':perf_counter()-started,
+            'epochs_completed':len(history),'early_stopping_patience':early_stopping_patience,
+            'stopped_early':stop_reason=='validation_patience','stop_reason':stop_reason,
             'packages':{name:version(name) for name in ['torch','transformers','peft','tokenizers','safetensors']}}
     (output/'best/qwen_training.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     return result

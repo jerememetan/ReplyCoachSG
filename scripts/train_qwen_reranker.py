@@ -12,6 +12,9 @@ if __name__ == '__main__':
     parser.add_argument('--source',default=MODEL)
     parser.add_argument('--smoke',action='store_true')
     parser.add_argument('--max-steps',type=int)
+    parser.add_argument('--epochs',type=int,default=4)
+    parser.add_argument('--early-stopping-patience',type=int,default=0)
     args=parser.parse_args()
-    result=run_training(args.bundle,args.output,source=args.source,smoke=args.smoke,max_steps=args.max_steps)
+    result=run_training(args.bundle,args.output,source=args.source,smoke=args.smoke,max_steps=args.max_steps,
+                        epochs=args.epochs,early_stopping_patience=args.early_stopping_patience)
     print(json.dumps({k:result[k] for k in ['completed','production_checkpoint','optimizer_steps','best_epoch','best_validation_loss']}))

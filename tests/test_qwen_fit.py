@@ -53,3 +53,37 @@ def test_invalid_bundle_and_cpu_production_stop_before_loading(inputs,tmp_path,m
     (bundle/'train_pairs.jsonl').write_text('{}')
     with pytest.raises(ValueError,match='hash'):
         m.run_training(bundle,tmp_path/'out')
+
+
+@pytest.mark.parametrize('epoch_losses,expected_epochs,expected_best',[
+    ([.5,.4,.45,.5],4,2),
+    ([.5,.4,.45,.39,.4,.41],6,4),
+])
+def test_twelve_epoch_budget_stops_after_two_nonimproving_checks_and_keeps_best(
+        inputs,tmp_path,monkeypatch,epoch_losses,expected_epochs,expected_best):
+    m=importlib.import_module('replycoach.qwen_fit')
+    bundle=bundle_path(inputs,tmp_path)
+    real_loss=torch.nn.functional.binary_cross_entropy_with_logits
+    losses=iter(loss for value in epoch_losses for loss in [value,value])
+    def controlled_loss(*args,**kwargs):
+        if not torch.is_grad_enabled():
+            return torch.tensor(next(losses))
+        return real_loss(*args,**kwargs)
+    monkeypatch.setattr(torch.nn.functional,'binary_cross_entropy_with_logits',controlled_loss)
+    result=m.run_training(bundle,tmp_path/'early',source='test-only',smoke=True,
+                          epochs=12,early_stopping_patience=2,model_factory=tiny)
+    assert result['epochs']==12 and result['epochs_completed']==expected_epochs
+    assert result['best_epoch']==expected_best
+    assert result['best_validation_loss']==pytest.approx(epoch_losses[expected_best-1])
+    assert result['stopped_early'] and result['stop_reason']=='validation_patience'
+    assert result['early_stopping_patience']==2
+    saved=json.loads((tmp_path/'early/best/qwen_training.json').read_text())
+    assert saved['best_epoch']==expected_best and saved['adapter_sha256']==result['adapter_sha256']
+
+
+def test_twelve_epoch_settings_are_supported_without_changing_smoke_limits(inputs,tmp_path):
+    m=importlib.import_module('replycoach.qwen_fit')
+    result=m.run_training(bundle_path(inputs,tmp_path),tmp_path/'cap',source='test-only',smoke=True,
+                          epochs=12,early_stopping_patience=2,max_steps=1,model_factory=tiny)
+    assert result['epochs']==12 and result['epochs_completed']==1
+    assert result['stop_reason']=='smoke_step_limit' and not result['production_checkpoint']
