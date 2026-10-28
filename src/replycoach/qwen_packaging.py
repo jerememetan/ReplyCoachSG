@@ -45,7 +45,10 @@ def package_qwen(bundle,output,*,owner,tag):
         return {'cell_type':'code','execution_count':None,'metadata':{},'outputs':[],
                 'source':text.splitlines(keepends=True)}
     nb={'nbformat':4,'nbformat_minor':5,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'}},
-        'cells':[cell('import subprocess,sys\nsubprocess.check_call([sys.executable,"-m","pip","install","--quiet",'
+        'cells':[cell('import subprocess,sys\n'
+                      '# Kaggle includes an old optional torchao; unquantized LoRA does not use it.\n'
+                      'subprocess.check_call([sys.executable,"-m","pip","uninstall","-y","torchao"])\n'
+                      'subprocess.check_call([sys.executable,"-m","pip","install","--quiet",'
                       '"transformers==5.19.0","tokenizers==0.23.2","safetensors==0.8.0","peft==0.21.2"])\n'),
                  cell('from pathlib import Path\nimport os,json,torch\n'
                       'assert torch.cuda.is_available(),"GPU required"\n'

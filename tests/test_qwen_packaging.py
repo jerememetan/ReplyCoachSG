@@ -19,6 +19,9 @@ def test_qwen_package_is_private_minimal_and_ports_real_training_code(inputs,tmp
     assert meta['dataset_sources']==[receipt['dataset_id']]
     notebook=json.loads((out/'notebook/Qwen_reranker.ipynb').read_text())
     assert all(not cell.get('outputs') for cell in notebook['cells'])
+    setup=''.join(notebook['cells'][0]['source'])
+    assert '"uninstall","-y","torchao"' in setup
+    assert setup.index('"uninstall"') < setup.index('"install"')
     for path in dataset.glob('*.py'):
         compile(path.read_text(),path.name,'exec')
     assert 'from replycoach.' not in (dataset/'qwen_fit.py').read_text()
