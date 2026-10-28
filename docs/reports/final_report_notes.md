@@ -76,10 +76,13 @@ against any later experiments before writing the final report.
   diagnostic, observed runtime, private provenance and preserved checkpoints.
 - [Maximum-12-epoch Qwen follow-up](../qwen_reranker_12_epochs.md): the user
   requested a longer run because validation loss was still falling at epoch 4.
-  This separate experiment keeps data and other settings fixed, uses patience 2,
-  and is currently training. Include actual completed/best epochs, stop reason
-  and matched reply-quality results after verification; do not assume all 12
-  epochs complete or that a lower pair loss improves reply selection.
+  This separate experiment kept data and other settings fixed and used patience 2.
+  It stopped after six epochs (438 updates), retaining epoch 4 (292 updates),
+  as validation loss rose at epochs 5 and 6. Its completed replay made the same
+  100 choices as the earlier four-epoch adapter: 3.640 Standard / 3.946 Local.
+  Include the training curve and absence of measured selection improvement.
+  Report the requested cap, actual epochs and selected checkpoint separately;
+  epochs 7–12 were not executed, and pair loss is not reply-quality evidence.
 - The linked reports identify private Kaggle resources and ignored local raw
   evidence. Do not publish credentials, checkpoints or private raw logs in the
   report/repository merely to document the experiment.

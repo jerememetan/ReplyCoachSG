@@ -32,6 +32,12 @@ ordering; private LoRA training and matched testing are complete. LoRA scores
 unresolved change. Both handle the greeting ordering. See the report for intervals
 and remaining role errors. The demo still uses reviewed MiniLM.
 
+The subsequent [12-epoch-cap follow-up](../../docs/qwen_reranker_12_epochs.md)
+is also complete. Patience 2 stopped after six epochs and retained epoch 4;
+all 100 saved reply choices match the earlier four-epoch adapter. More training
+under this protocol produced no better validation-selected checkpoint. Preserve
+this result and its limitations in the final report.
+
 ## Current priority updated 18 October 2026
 
 The [judge experiment report](../../docs/judge_pilot_experiments.md) records the
