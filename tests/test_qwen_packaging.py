@@ -26,3 +26,14 @@ def test_qwen_package_is_private_minimal_and_ports_real_training_code(inputs,tmp
         compile(path.read_text(),path.name,'exec')
     assert 'from replycoach.' not in (dataset/'qwen_fit.py').read_text()
     assert 'ratings' not in receipt['files_sha256']
+
+
+def test_extended_notebook_passes_explicit_epoch_and_patience_settings(inputs,tmp_path):
+    from replycoach.qwen_packaging import package_qwen
+    out=tmp_path/'extended'
+    package_qwen(bundle_path(inputs,tmp_path),out,owner='test-owner',tag='20261028-12',
+                 epochs=12,early_stopping_patience=2)
+    notebook=json.loads((out/'notebook/Qwen_reranker.ipynb').read_text())
+    source=''.join(notebook['cells'][1]['source'])
+    assert '"--epochs","12"' in source
+    assert '"--early-stopping-patience","2"' in source

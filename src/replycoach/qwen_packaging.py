@@ -9,12 +9,15 @@ from replycoach.reranker_bundle import load_training_bundle
 from replycoach.reranker_hard_pairs import apply_reviewed_pairs
 
 
-def package_qwen(bundle,output,*,owner,tag):
+def package_qwen(bundle,output,*,owner,tag,epochs=4,early_stopping_patience=0):
     bundle,output=Path(bundle),Path(output)
     if output.exists():
         raise FileExistsError('Qwen package output must be new')
     if not re.fullmatch(r'[a-z0-9][a-z0-9_-]{2,49}',owner) or not re.fullmatch(r'\d{8}-\d{2}',tag):
         raise ValueError('invalid owner or YYYYMMDD-NN run tag')
+    if (type(epochs) is not int or not 1 <= epochs <= 12
+            or type(early_stopping_patience) is not int or not 0 <= early_stopping_patience <= 12):
+        raise ValueError('invalid Qwen epoch or early-stopping settings')
     loaded=load_training_bundle(bundle)
     if (bundle/'reviewed_pairs.json').is_file():
         apply_reviewed_pairs(loaded,json.loads((bundle/'reviewed_pairs.json').read_text()))
@@ -58,7 +61,8 @@ def package_qwen(bundle,output,*,owner,tag):
                       'bundle=matches[0]\n'
                       'env=dict(os.environ,OMP_NUM_THREADS="2",MKL_NUM_THREADS="2",PYTHONUNBUFFERED="1")\n'
                       'subprocess.check_call([sys.executable,str(bundle/"train_qwen_reranker.py"),'
-                      '"--bundle",str(bundle),"--output","/kaggle/working/qwen_lora"],env=env)\n'),
+                      '"--bundle",str(bundle),"--output","/kaggle/working/qwen_lora",'
+                      f'"--epochs","{epochs}","--early-stopping-patience","{early_stopping_patience}"],env=env)\n'),
                  cell('result=json.loads(Path("/kaggle/working/qwen_lora/best/qwen_training.json").read_text())\n'
                       'assert result["completed"] and result["production_checkpoint"] and result["base_unchanged"]\n'
                       'print(json.dumps({k:result[k] for k in ["best_epoch","best_validation_loss","optimizer_steps","adapter_sha256"]}))\n')]}

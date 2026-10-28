@@ -10,6 +10,9 @@ if __name__=='__main__':
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--owner',required=True)
     p.add_argument('--tag',required=True)
+    p.add_argument('--epochs',type=int,default=4)
+    p.add_argument('--early-stopping-patience',type=int,default=0)
     a=p.parse_args()
-    result=package_qwen(a.bundle,a.output,owner=a.owner,tag=a.tag)
+    result=package_qwen(a.bundle,a.output,owner=a.owner,tag=a.tag,
+                        epochs=a.epochs,early_stopping_patience=a.early_stopping_patience)
     print(json.dumps({k:result[k] for k in ['dataset_id','notebook_id','private_required']}))
