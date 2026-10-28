@@ -122,8 +122,133 @@ standalone package also completed two CPU optimizer updates on clearly synthetic
 fixtures, marked nonproduction. Its private evidence is in
 `artifacts/reranker_v6/hard_review/software_smoke/`. No synthetic decisions were
 inserted into the actual 20-item queue. The real UI was checked read-only, with
-all20 pending at that check and export disabled.
+all 20 pending at that check and export disabled.
 
-**Status:** queue and software are prepared; real human decisions are required
-before a reviewed-pair export, GPU training or quality comparison can be
-reported as complete. The current trained V6 checkpoint remains installed.
+## Human review completed
+
+The user completed all 20 comparisons on 27 October 2026: **13 suitable alternatives,
+7 unsuitable alternatives, zero skips**. All references were confirmed. These
+are one reviewer's training labels, not a blind human evaluation or a sample of
+independent survey participants. No model score supplied their labels.
+
+The suitable alternatives become extra positives; they must not be treated as
+hard negatives merely because they came from another conversation. None of
+these 20 duplicates an existing weak pair, so this pilot corrects zero existing
+weak labels. It adds 20 pairs to the original 1,140: **1,160 training pairs = 393
+positives + 767 negatives**, of which 760 negatives remain algorithmic weak labels.
+The underlying 190 training conversations and 300 validation pairs are unchanged.
+
+The completed named review is frozen in a private local snapshot. Its canonical
+SHA-256 is `0fb6a320219b77a28558454eb14c75707d74e5c8491e9f53e8f9d4b528e5f169`.
+Only the stripped 20-pair sidecar is uploaded; name and free-text notes are not
+included. The final training-pair SHA-256 is
+`fd5beba4ce743df33e45cb86295b8045fc966b5314494f3fb40c1c9e9e32c943`.
+
+Separate private experiment:
+
+- [Kaggle notebook](https://www.kaggle.com/code/tanjingminjereme/replycoach-v6-20261027-reviewed01).
+- [Private minimal dataset](https://www.kaggle.com/datasets/tanjingminjereme/replycoach-v6-training-20261027-reviewed01).
+- Both privacy flags and the notebook's T4 request were read back through the
+  authenticated official MCP. This run starts from the same pinned pretrained
+  initialization as the original V6; it does not continue from an evaluated
+  checkpoint. Abbreviation augmentation is disabled.
+
+The initial submission was rejected because its title exceeded Kaggle's 50-
+character limit. The accepted notebook has a shorter title/slug. The immutable
+uploaded dataset receipt retains the original requested notebook ID; the local
+`notebook_metadata_fix.json` records requested and actual IDs. Future packaging
+shortens these titles and rejects oversized resource names before writing.
+
+## Completed reviewed-pair GPU run
+
+The private notebook completed version 1 on Tesla T4. All four epochs ran:
+**292 optimizer updates total**, with **epoch 3 retained** (219 updates at that
+checkpoint). Base initialization hashes match the original V6 exactly. The
+original pair-file hashes also match; only the reviewed sidecar adds 20 pairs.
+The GPU's saved 1,160-row audit file is byte-identical to the local reviewed
+dataset. Abbreviation augmentation is absent from this run's manifest.
+
+| Epoch | Training pair loss | Validation pair loss | Total updates |
+| --- | ---: | ---: | ---: |
+| 1 | 0.66980 | 0.62674 | 73 |
+| 2 | 0.47029 | 0.49443 | 146 |
+| 3 | 0.39857 | **0.45699** | 219 |
+| 4 | 0.33550 | 0.55435 | 292 |
+
+Training, validation and checkpoint saving took 15.98 seconds after model loading;
+notebook queuing, installation and downloads are additional time. The best weak-
+pair validation loss is lower than the original 0.48777 and augmented 0.55064.
+This alone is not evidence of improved reply selection. The best epochs and hence
+the selected checkpoints' update counts differ between runs; this is one small
+exploratory training-data experiment with one seed.
+
+The downloaded checkpoint is kept separately at
+`artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best/`.
+The title-length regression fix passed the full **406-test suite in 147.37
+seconds**. Packaging checks verify private settings and empty notebook outputs.
+
+## Completed matched reply-selection replay
+
+The local scorer loaded the downloaded weights and verified their actual tensor
+hash against the GPU manifest. It then replayed all 400 saved source proposals on
+the same 50 validation conversations. The same 4,000 existing AI-persona ratings
+were joined after selection. Rating, packet and source-export hashes matched;
+**zero new judge calls** were made.
+
+| Selector | Standard appropriateness /5 | Local appropriateness /5 | Standard would-send | Local would-send |
+| --- | ---: | ---: | ---: | ---: |
+| Original V6 | 3.528 | 3.878 | 55.4% | 68.6% |
+| V6 + abbreviation augmentation | 3.442 | 3.926 | 54.6% | 70.6% |
+| **V6 + 20 reviewed alternatives** | **3.508** | **3.930** | **55.4%** | **71.0%** |
+| Fixed V5 | 3.666 | 4.110 | 61.2% | 76.8% |
+
+Paired differences versus original V6, with descriptive 95% conversation-
+bootstrap intervals (20,000 resamples, seed 425):
+
+- Standard appropriateness: **-0.020 [-0.064, 0.012]**.
+- Local appropriateness: **+0.052 [-0.110, 0.240]**.
+- Standard would-send: **0.0 percentage points [-0.6, 0.6]**.
+- Local would-send: **+2.4 percentage points [-2.4, 8.4]**.
+
+The changes are small and intervals include zero. Lower weak-pair loss has not
+established an overall reply-selection improvement. Fixed V5 still has higher
+point estimates for both styles. **Retain the original installed V6**, keeping
+this checkpoint as a separate completed experiment rather than silently
+replacing the demo or selecting a winner from repeated validation runs.
+
+The new checkpoint changes three Standard and six Local choices. For example,
+ITEM-E-025 Local changes from “ya, tuesday no class” to “okay, thursday is fine.”
+when the peer asks about Thursday; AI mean 2.0→5.0. ITEM-C-055 Local now accepts
+the proposed exhibition time instead of changing the activity to eating. There
+are also regressions, such as ITEM-D-037 Local replacing “okay, see you at mac”
+with “ya, reached alr. waiting at the entrance,” which repeats the peer's arrival
+status rather than acknowledging it. Improvements and regressions are retained
+in `reviewed_selection_changes_20261027.json`; neither category is omitted.
+
+### Interpretation and limits
+
+This pilot supplies 20 extra labels, including only seven newly confirmed
+negatives, while 760 original negatives remain weakly labelled. The 13 suitable
+alternatives demonstrate why high-scoring non-reference replies cannot all be
+assumed wrong. This is valuable label-quality evidence, not proof that the entire
+bank has been repaired or that the model architecture is the sole bottleneck.
+
+Binary suitability supervision also permits several valid answers without
+directly teaching their relative appropriateness scores. The current judge has
+known questionable ratings; these comparisons are diagnostic. One reviewer's
+training-label decisions are not a blind human evaluation. The validation set
+also selects checkpoints using weak-pair loss, and repeated development
+experiments, one seed, small sample size and different selected-update counts
+limit causal/statistical claims. No held-out test results are reported here.
+
+Raw evidence under `artifacts/reranker_v6/` includes
+`replay_reviewed_20261027_01/result.json`, `reviewed_comparison_20261027.json`,
+`reviewed_selection_changes_20261027.json` and the private reviewed-run folder.
+The latter preserves the package receipt, metadata correction, privacy readbacks,
+GPU history, replay log and 406-test output. The named completed review is frozen
+locally in `hard_review/snapshots/`; the uploaded sidecar contains no reviewer
+names or comments.
+
+**Status:** human review, private GPU training, checkpoint verification and
+matched development replay are complete. The original V6 remains active; no
+test-set evaluation or claim of a reliable improvement has been made.

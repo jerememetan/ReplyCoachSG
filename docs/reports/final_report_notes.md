@@ -21,7 +21,7 @@ the improvement over frozen scoring.
   provenance checks. The original run made 288 updates and retained epoch2.
 - Describe refinement using a conservative snapshot of the existing ABBR
   mapping: seeded whole-word replacements in conversation inputs only, up to
-  three additional distinct variants, probability0.35, seed425. Preserve replies,
+  three additional distinct variants, probability0.35, seed 425. Preserve replies,
   roles, style instructions and the original validation split. The resulting
   2,556 pairs represent the same 190 underlying conversations, not 2,556
   independently reviewed examples. The augmented run made 640 updates and
@@ -35,6 +35,7 @@ the improvement over frozen scoring.
 | Frozen, style-aware input control | 2.970 | 3.810 |
 | Fine-tuned V6 without augmentation | 3.528 | 3.878 |
 | Fine-tuned V6 with augmentation | 3.442 | 3.926 |
+| V6 with 20 additionally reviewed alternatives | 3.508 | 3.930 |
 | Fixed V5 | 3.666 | 4.110 |
 
 Discuss the Standard improvement over frozen scoring, unresolved Local gain,
@@ -58,8 +59,10 @@ against any later experiments before writing the final report.
   reproduced, concrete role/time failures, candidate-pool limits, judge concerns
   and the training-gap hypothesis. Include representative errors in discussion.
 - [Reviewed difficult-comparison pilot](../reranker_hard_examples.md): distinguish
-  prepared review/training tooling from completed human labels and GPU evidence.
-  Add measured quality results only after the human review and experiment run.
+  the 20 completed training-label reviews (13 suitable, 7 unsuitable) from blind
+  human evaluation. GPU training completed 292 updates; best epoch 3. The matched
+  validation replay gives mixed, unresolved changes and no established overall
+  gain. Include this completed refinement experiment and its limitations.
 - The linked reports identify private Kaggle resources and ignored local raw
   evidence. Do not publish credentials, checkpoints or private raw logs in the
   report/repository merely to document the experiment.

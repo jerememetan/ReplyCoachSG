@@ -16,8 +16,12 @@ evidence index are in [final report notes](../../docs/reports/final_report_notes
 
 The [reviewed difficult-comparison pilot](../../docs/reranker_hard_examples.md)
 is prepared in the existing team reviewer under **Reranker comparisons**. Its
-20 training-only alternatives need actual suitability decisions before the next
-Kaggle experiment; neither the miner scores nor AI evaluation ratings are labels.
+20 training-only alternatives now have human decisions (13 suitable, 7 unsuitable).
+A separate Kaggle experiment and matched validation replay are complete. The
+additional labels give mixed, unresolved changes (Standard 3.528→3.508,
+Local 3.878→3.930); the original V6 stays active. Follow the linked report for
+losses, intervals and limits. Miner scores and AI evaluation ratings are not
+training labels.
 
 ## Current priority updated 18 October 2026
 
