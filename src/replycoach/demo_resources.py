@@ -39,7 +39,7 @@ def get_generator(provider: str):
     return load_generator(provider)
 
 
-@st.cache_resource(max_entries=2, show_spinner=False)
+@st.cache_resource(max_entries=3, show_spinner=False)
 def get_shared_ranker(selector='pretrained'):
     from replycoach.shared_ranker import CrossEncoderScorer
     from replycoach.io import ROOT
@@ -47,5 +47,11 @@ def get_shared_ranker(selector='pretrained'):
         return CrossEncoderScorer()
     if selector == 'finetuned':
         checkpoint = Path(os.environ.get('REPLYCOACH_V6_CHECKPOINT', str(ROOT/'artifacts/reranker_v6/best')))
+        return CrossEncoderScorer(checkpoint=checkpoint)
+    if selector == 'reviewed':
+        checkpoint = Path(os.environ.get(
+            'REPLYCOACH_V6_REVIEWED_CHECKPOINT',
+            str(ROOT/'artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best'),
+        ))
         return CrossEncoderScorer(checkpoint=checkpoint)
     raise ValueError('unknown shared selector')

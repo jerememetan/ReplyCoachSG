@@ -20,6 +20,11 @@ MODE_LABELS = {
     "retrieval_only": "Retrieval only", "generator_only": "Generator only",
     "hybrid": "Hybrid", "fallback_only": "Fallback only",
 }
+SHARED_SELECTORS = {
+    "Fine-tuned V6 (20 reviews)": "reviewed",
+    "Fine-tuned V6 (original)": "finetuned",
+    "Frozen MiniLM": "pretrained",
+}
 
 
 def parse_preview_line(line: str) -> tuple[str, str]:
@@ -226,7 +231,7 @@ def main() -> None:
         retrieval_method, generator_provider = "BM25", "V4 (attention-RNN)"
         shared_selector = "Frozen MiniLM"
         if system_mode == "All models (experimental)":
-            shared_selector = st.selectbox("Shared selector", ["Frozen MiniLM", "Fine-tuned V6"], key="shared_selector")
+            shared_selector = st.selectbox("Shared selector", list(SHARED_SELECTORS), key="shared_selector_checkpoint")
             st.caption("Compare BM25, MiniLM, V4 and V5, then select one reply per style with a shared ranker.")
             st.caption("First use loads local models; later requests reuse them.")
         elif system_mode != "Retrieval comparison":
@@ -298,8 +303,7 @@ def main() -> None:
                     minilm_factory=lambda: demo_resources.get_minilm(bank.serialized),
                     v4_factory=lambda: demo_resources.get_generator("v4"),
                     v5_factory=lambda: demo_resources.get_generator("v5"),
-                    scorer_factory=(lambda: demo_resources.get_shared_ranker('finetuned'))
-                    if shared_selector == 'Fine-tuned V6' else demo_resources.get_shared_ranker,
+                    scorer_factory=lambda: demo_resources.get_shared_ranker(SHARED_SELECTORS[shared_selector]),
                     speakers=[{"you": "user", "peer": "peer", "neutral": "unknown"}[role] for role, _ in turns],
                     log=True,
                 )

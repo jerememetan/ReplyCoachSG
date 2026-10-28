@@ -112,3 +112,52 @@ def test_selected_generator_is_cached_without_reloading_weights(monkeypatch, stu
         assert loads == ["v4"]
     finally:
         demo_resources.get_generator.clear()
+
+
+def test_reviewed_ranker_uses_separate_checkpoint_and_cache(monkeypatch, tmp_path):
+    from replycoach import demo_resources, shared_ranker
+    from replycoach.io import ROOT
+
+    loaded = []
+
+    def load_scorer(**kwargs):
+        loaded.append(kwargs.get('checkpoint'))
+        return object()
+
+    monkeypatch.delenv('REPLYCOACH_V6_REVIEWED_CHECKPOINT', raising=False)
+    monkeypatch.setenv('REPLYCOACH_V6_CHECKPOINT', str(tmp_path / 'original'))
+    monkeypatch.setattr(shared_ranker, 'CrossEncoderScorer', load_scorer)
+    demo_resources.get_shared_ranker.clear()
+    try:
+        reviewed = demo_resources.get_shared_ranker('reviewed')
+        assert demo_resources.get_shared_ranker('reviewed') is reviewed
+        original = demo_resources.get_shared_ranker('finetuned')
+        frozen = demo_resources.get_shared_ranker('pretrained')
+        assert reviewed is not original and reviewed is not frozen
+        assert loaded == [
+            ROOT / 'artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best',
+            tmp_path / 'original', None,
+        ]
+    finally:
+        demo_resources.get_shared_ranker.clear()
+
+
+def test_reviewed_checkpoint_override_failure_is_visible_without_fallback(monkeypatch, tmp_path):
+    from replycoach import demo_resources, shared_ranker
+
+    missing = tmp_path / 'missing_reviewed'
+    calls = []
+
+    def load_scorer(**kwargs):
+        calls.append(kwargs.get('checkpoint'))
+        raise FileNotFoundError('reviewed checkpoint missing')
+
+    monkeypatch.setenv('REPLYCOACH_V6_REVIEWED_CHECKPOINT', str(missing))
+    monkeypatch.setattr(shared_ranker, 'CrossEncoderScorer', load_scorer)
+    demo_resources.get_shared_ranker.clear()
+    try:
+        with pytest.raises(FileNotFoundError, match='reviewed checkpoint missing'):
+            demo_resources.get_shared_ranker('reviewed')
+        assert calls == [missing]
+    finally:
+        demo_resources.get_shared_ranker.clear()
