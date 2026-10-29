@@ -72,3 +72,32 @@ def package_qwen(bundle,output,*,owner,tag,epochs=4,early_stopping_patience=0):
         'language':'python','kernel_type':'notebook','is_private':True,'enable_gpu':True,
         'enable_internet':True,'dataset_sources':[dataset_id],'competition_sources':[],'kernel_sources':[]},indent=2))
     return receipt
+
+
+def package_dailydialog_qwen(bundle,output,*,owner,tag):
+    """Extend the proven minimal upload package with a standalone two-stage notebook."""
+    receipt=package_qwen(bundle,output,owner=owner,tag=tag)
+    output=Path(output)
+    dataset=output/'dataset'
+    root=Path(__file__).resolve().parents[2]
+    modules=['qwen_reranker','qwen_fit','reranker_bundle','reranker_hard_pairs','dailydialog_reranker']
+    for source in [root/'src/replycoach/dailydialog_reranker.py',root/'scripts/train_dailydialog_qwen.py']:
+        text=source.read_text(encoding='utf-8')
+        for module in modules:
+            text=text.replace(f'from replycoach.{module} import',f'from {module} import')
+        compile(text,source.name,'exec')
+        (dataset/source.name).write_text(text,encoding='utf-8',newline='\n')
+    notebook_path=output/'notebook/Qwen_reranker.ipynb'
+    shutil.copyfile(root/'notebooks/E_qwen_dailydialog_kaggle.ipynb',notebook_path)
+    receipt['experiment']='dailydialog_then_reviewed_qwen'
+    receipt['gradient_policy']='finite_only_amp_retry_v1'
+    receipt['notebook_id']=f'{owner}/replycoach-dailydialog-qwen-{tag}'
+    receipt['files_sha256']={p.name:sha256(p.read_bytes()).hexdigest() for p in dataset.iterdir()
+                             if p.is_file() and p.name not in {'package_receipt.json','dataset-metadata.json'}}
+    (dataset/'package_receipt.json').write_text(json.dumps(receipt,indent=2),encoding='utf-8')
+    meta_path=output/'notebook/kernel-metadata.json'
+    meta=json.loads(meta_path.read_text(encoding='utf-8'))
+    meta['id']=receipt['notebook_id']
+    meta['title']=f'ReplyCoach DailyDialog Qwen {tag}'
+    meta_path.write_text(json.dumps(meta,indent=2),encoding='utf-8')
+    return receipt

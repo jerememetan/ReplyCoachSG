@@ -37,3 +37,32 @@ def test_extended_notebook_passes_explicit_epoch_and_patience_settings(inputs,tm
     source=''.join(notebook['cells'][1]['source'])
     assert '"--epochs","12"' in source
     assert '"--early-stopping-patience","2"' in source
+
+
+def test_dailydialog_package_has_two_stage_notebook_and_updated_receipt(inputs,tmp_path):
+    from replycoach import qwen_packaging as m
+    assert hasattr(m,'package_dailydialog_qwen'), 'Two-stage Kaggle packaging is not implemented'
+    from hashlib import sha256
+    out=tmp_path/'two_stage'
+    receipt=m.package_dailydialog_qwen(bundle_path(inputs,tmp_path),out,owner='test-owner',tag='20261028-20')
+    dataset=out/'dataset'
+    # Kaggle consumes this upload-control file instead of mounting it in /kaggle/input.
+    assert 'dataset-metadata.json' not in receipt['files_sha256']
+    assert receipt['gradient_policy']=='finite_only_amp_retry_v1'
+    meta=json.loads((out/'notebook/kernel-metadata.json').read_text())
+    assert meta['id']==receipt['notebook_id']=='test-owner/replycoach-dailydialog-qwen-20261028-20'
+    assert (dataset/'dailydialog_reranker.py').is_file()
+    assert (dataset/'train_dailydialog_qwen.py').is_file()
+    for name,digest in receipt['files_sha256'].items():
+        assert sha256((dataset/name).read_bytes()).hexdigest()==digest
+    notebook=json.loads((out/'notebook/Qwen_reranker.ipynb').read_text())
+    source='\n'.join(''.join(c['source']) for c in notebook['cells'])
+    assert 'train_dailydialog_qwen.py' in source
+    assert '/kaggle/working' in source
+    assert 'make_archive' in source
+    for p in dataset.glob('*.py'):
+        code=p.read_text(encoding='utf-8')
+        # Qwen's inference-only score_pairs lazily imports the app's PairScore;
+        # standalone training uses score_batch and must need no other repo code.
+        assert 'from replycoach.' not in code.replace('from replycoach.shared_ranker import PairScore','')
+        compile(code,p.name,'exec')
