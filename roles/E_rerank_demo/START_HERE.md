@@ -1,6 +1,30 @@
 # Role E — Reranker, integration, demo
 
-## Current priority updated 28 October 2026
+## Current priority updated 29 October 2026
+
+User direction on 29 October: the planned final demo **V6 reranker** is Qwen3-Reranker-0.6B
+with DailyDialog adaptation followed by reviewed-data LoRA refinement. The selected
+adapter is `artifacts/reranker_qwen/dd_result_20261029/stage2_reviewed/best`.
+Earlier MiniLM-based V6 checkpoints remain comparison baselines. This is a demo
+selection decision, not evidence of superiority over V5. All models now defaults
+to **V6 (Qwen + DailyDialog)**. The older MiniLM checkpoints remain selectable
+under explicit MiniLM labels. See the README for private checkpoint locations
+and environment overrides. Restart Streamlit after updating the source.
+
+The user-run [DailyDialog → reviewed-data Qwen experiment](../../docs/dailydialog_reranker_training.md)
+completed GPU training and local artifact verification on 29 October. DailyDialog
+ran two epochs and retained epoch 1; reviewed refinement ran four epochs and
+retained epoch 2 (validation pair loss 0.341845 versus 0.349055 reviewed-only).
+The overflow correction recovered once at update 311. Adapter/base hashes,
+finite tensors, stage continuation and unchanged project data were verified.
+The [matched reply-selection comparison](../../docs/reports/dailydialog_reranker_comparison_20261029.md)
+is complete: new Qwen scores 3.634 Standard / 3.988 Local against previous Qwen's
+3.640 / 3.946 and V5-only's 3.666 / 4.110. Appropriateness intervals include zero;
+no useful overall gain is established and no demo promotion is made. The five
+repeated-speaker conversations retain all ten previous choices. Report the
+concrete improvements, regressions and AI-judge role error. Results are separate from existing checkpoints and
+keep the 60 project test items untouched. Include the failed attempt, correction,
+completed training and mixed comparison in the final report.
 
 The proposal's V6 fine-tuning experiment is complete. See
 [V6 training and validation](V6_TRAINING.md) for the private Kaggle run, installed
@@ -30,7 +54,8 @@ Raw Qwen has completed the saved-proposal replay and fixes the disclosed greetin
 ordering; private LoRA training and matched testing are complete. LoRA scores
 3.640 Standard / 3.946 Local versus raw Qwen's 3.578 / 4.044, a mixed and
 unresolved change. Both handle the greeting ordering. See the report for intervals
-and remaining role errors. The demo still uses reviewed MiniLM.
+and remaining role errors. Reviewed MiniLM was the demo default before the
+29 October Qwen + DailyDialog integration above.
 
 The subsequent [12-epoch-cap follow-up](../../docs/qwen_reranker_12_epochs.md)
 is also complete. Patience 2 stopped after six epochs and retained epoch 4;

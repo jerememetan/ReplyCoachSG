@@ -173,7 +173,7 @@ For V5 and this mode, install the optional inference dependencies in the same
 virtual environment used to launch Streamlit:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -e ".[demo,mt5]"
+.\.venv\Scripts\python.exe -m pip install -e ".[demo,mt5,qwen]"
 .\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py --server.fileWatcherType none
 ```
 
@@ -185,8 +185,9 @@ Select **Reviewed development file** and `data/dev/train.jsonl` to use the
 and the selected ranker. Frozen MiniLM may download its public weights; trained
 V6 checkpoints must be supplied privately. Cached requests reuse them.
 
-The ranker is pinned to `cross-encoder/ms-marco-MiniLM-L6-v2` revision
-`233902d25c440f23af6f7d6e94d2946bac0bee0a`. Scores are relevance signals, not
+The default V6 ranker is pinned to `Qwen/Qwen3-Reranker-0.6B` revision
+`e61197ed45024b0ed8a2d74b80b4d909f1255473`, with the verified DailyDialog →
+reviewed-data LoRA adapter. Scores are relevance signals, not
 confidence percentages. A missing source produces a labelled partial comparison;
 a missing ranker shows its error and proposals rather than silently substituting
 the old formula. No live Gemma calls or new training are involved.
@@ -199,22 +200,42 @@ heuristic's point estimates but did not improve on always choosing V5. The mode
 therefore remains experimental; the overall default is Retrieval comparison. See
 [the ranking work log](docs/all_models_ranking_worklog.md) for evidence and limits.
 
-**All models defaults to “Fine-tuned V6 (20 reviews)”**, at the user's request
-on 28 October 2026. This checkpoint adds 13 suitable and 7 unsuitable reviewed
-alternatives to the original training pairs. Keep its private model/tokenizer
-and training manifest at
+**All models defaults to “V6 (Qwen + DailyDialog)”**, at the user's request
+on 29 October 2026. It selects Standard and Local replies from the four source
+models; it does not generate additional replies. Supply the private local base
+and tokenizer at `artifacts/reranker_qwen/pretrained/`, and the final adapter,
+configuration and training manifest at
+`artifacts/reranker_qwen/dd_result_20261029/stage2_reviewed/best/`.
+Alternative locations can be set before launching Streamlit:
+
+```powershell
+$env:REPLYCOACH_QWEN_BASE = "C:\path\to\qwen-base"
+$env:REPLYCOACH_QWEN_DD_ADAPTER = "C:\path\to\stage2_reviewed\best"
+```
+
+The adapter's provenance and base/adapter hashes are verified on loading. Missing
+or invalid files produce a visible error while preserving source proposals; the
+app does not silently use a different ranker. First CPU use loads about 1.2 GB of
+base weights and can take longer. Requests then reuse the cached scorer. Shared
+ranking details and the JSON download identify the adapter and its yes-minus-no
+scores. This demo choice does not establish superiority over V5: see the
+[matched comparison](docs/reports/dailydialog_reranker_comparison_20261029.md).
+
+**Fine-tuned MiniLM (20 reviews)** remains selectable. This earlier V6 checkpoint
+adds 13 suitable and 7 unsuitable reviewed alternatives to the original training
+pairs. Keep its private model/tokenizer and training manifest at
 `artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best/`,
 or set `REPLYCOACH_V6_REVIEWED_CHECKPOINT` to that checkpoint folder. Missing
 weights produce a visible error; the demo does not silently use another ranker.
 This demonstration choice does not establish a quality improvement over the
 original V6; see the [reviewed-pair results](docs/reranker_hard_examples.md).
 
-**Fine-tuned V6 (original)** and **Frozen MiniLM** remain selectable. Original V6 was
+**Fine-tuned MiniLM (original)** and **Frozen MiniLM** remain selectable. Original V6 was
 trained on Kaggle GPU using the 190 reviewed training conversations and
 user-approved weak negatives. Copy its private model/tokenizer and training
 manifest to `artifacts/reranker_v6/best/` (or set `REPLYCOACH_V6_CHECKPOINT`).
 It improves on the original frozen scorer's validation means, while V5-only
-still has higher means. All three selectors remain experimental.
+still has higher means. All four selectors remain experimental.
 See the [V6 training handoff](roles/E_rerank_demo/V6_TRAINING.md) for the private
 notebook, reproducible commands, checkpoint-selection losses and evaluation caveats.
 The Kaggle training notebook also supports seeded random short-form augmentation;
@@ -222,7 +243,8 @@ see [augmentation settings and experiment](docs/reranker_augmentation.md).
 
 A separate [Qwen3 pretrained/LoRA experiment](docs/qwen_reranker_experiment.md)
 tests a multilingual instruction-aware reranker on the same saved proposals.
-Its checkpoints and measurements are kept separate from the demo selectors.
+Its earlier raw and reviewed-only checkpoints remain separate experiments; the
+DailyDialog-refined adapter above is the selected V6 demo checkpoint.
 
 On this CPU-only PyTorch setup, V5's verified three-item warm generation time was
 4.5-6.4 seconds per pair, with a roughly 51-second first load. These are not
