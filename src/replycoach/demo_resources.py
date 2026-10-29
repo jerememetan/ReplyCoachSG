@@ -39,10 +39,22 @@ def get_generator(provider: str):
     return load_generator(provider)
 
 
-@st.cache_resource(max_entries=3, show_spinner=False)
+@st.cache_resource(max_entries=4, show_spinner=False)
 def get_shared_ranker(selector='pretrained'):
     from replycoach.shared_ranker import CrossEncoderScorer
     from replycoach.io import ROOT
+    if selector == 'qwen_dailydialog':
+        from replycoach.qwen_reranker import QwenReranker
+
+        base = Path(os.environ.get('REPLYCOACH_QWEN_BASE', str(ROOT/'artifacts/reranker_qwen/pretrained')))
+        adapter = Path(os.environ.get(
+            'REPLYCOACH_QWEN_DD_ADAPTER',
+            str(ROOT/'artifacts/reranker_qwen/dd_result_20261029/stage2_reviewed/best'),
+        ))
+        for path, variable in [(base, 'REPLYCOACH_QWEN_BASE'), (adapter, 'REPLYCOACH_QWEN_DD_ADAPTER')]:
+            if not path.is_dir():
+                raise FileNotFoundError(f'Qwen checkpoint folder missing: {path}. Supply the private files or set {variable}.')
+        return QwenReranker(base, adapter=adapter)
     if selector == 'pretrained':
         return CrossEncoderScorer()
     if selector == 'finetuned':

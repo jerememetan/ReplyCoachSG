@@ -134,6 +134,20 @@ def test_style_aware_selector_scores_each_pool_with_its_requested_style():
     assert output.standard.meta['selector'] == 'finetuned_cross_encoder'
 
 
+def test_qwen_score_kind_and_checkpoint_identity_survive_shared_selection():
+    scorer = FakeScorer()
+    scorer.identity = {'model': 'Qwen/Qwen3-Reranker-0.6B', 'fine_tuned': True,
+                       'query_format': 'speaker-conversation-style-v2',
+                       'score_kind': 'yes_minus_no_logit', 'adapter_sha256': 'a'*64}
+    output = api().rank_proposals('incoming', ['first', 'second'],
+                                 {'V5': [candidate('answer')]}, scorer, ['peer', 'peer'])
+    assert output.standard.source == 'V6'
+    assert output.standard.meta['score_kind'] == 'yes_minus_no_logit'
+    assert output.standard.meta['ranker']['adapter_sha256'] == 'a'*64
+    assert 'Peer: first\nPeer: second' in scorer.calls[0][0][0]
+    assert 'Requested reply style: STANDARD' in scorer.calls[0][0][0]
+
+
 @pytest.mark.parametrize('mutation', ['smoke', 'no_updates', 'same_weights', 'wrong_format'])
 def test_unfinished_or_smoke_checkpoints_are_rejected_before_loading_models(tmp_path, mutation):
     m = api()

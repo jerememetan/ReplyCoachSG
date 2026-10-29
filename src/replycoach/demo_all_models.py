@@ -6,7 +6,7 @@ import streamlit as st
 from replycoach.all_models import AllModelsResult
 
 
-def render_all_models(output: AllModelsResult, select_reply) -> None:
+def render_all_models(output: AllModelsResult, select_reply, *, selector_label: str) -> None:
     st.divider()
     st.header('Selected replies')
     count = len(output.available_sources)
@@ -38,7 +38,7 @@ def render_all_models(output: AllModelsResult, select_reply) -> None:
                 st.caption('Proposed by ' + ', '.join(candidate.meta['contributing_models']))
                 if candidate.meta['fallback_models']:
                     st.caption('Includes a safety fallback from ' + ', '.join(candidate.meta['fallback_models']))
-        st.caption('Selected by a shared relevance scorer. Ranking signals are not confidence percentages.')
+        st.caption(f'Selected by {selector_label}. Ranking signals are not confidence percentages.')
     st.subheader('Model proposals')
     rows = []
     for model, candidates in output.proposals.items():
@@ -61,6 +61,8 @@ def render_all_models(output: AllModelsResult, select_reply) -> None:
             if output.ranking.candidates:
                 identity = output.ranking.candidates[0].meta['ranker']
                 st.caption(f"{identity.get('model')} · revision {identity.get('revision')}")
+                if identity.get('adapter_sha256'):
+                    st.caption(f"Adapter SHA-256: {identity['adapter_sha256']}")
             st.write('Source time (seconds):', {k: round(v, 2) for k,v in output.source_seconds.items()})
             st.caption(f'Shared ranking: {output.ranking_seconds:.2f} seconds; initial model loading may be included.')
     st.download_button('Download all-model result (JSON)',

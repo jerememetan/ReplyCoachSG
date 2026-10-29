@@ -21,8 +21,9 @@ MODE_LABELS = {
     "hybrid": "Hybrid", "fallback_only": "Fallback only",
 }
 SHARED_SELECTORS = {
-    "Fine-tuned V6 (20 reviews)": "reviewed",
-    "Fine-tuned V6 (original)": "finetuned",
+    "V6 (Qwen + DailyDialog)": "qwen_dailydialog",
+    "Fine-tuned MiniLM (20 reviews)": "reviewed",
+    "Fine-tuned MiniLM (original)": "finetuned",
     "Frozen MiniLM": "pretrained",
 }
 
@@ -231,9 +232,11 @@ def main() -> None:
         retrieval_method, generator_provider = "BM25", "V4 (attention-RNN)"
         shared_selector = "Frozen MiniLM"
         if system_mode == "All models (experimental)":
-            shared_selector = st.selectbox("Shared selector", list(SHARED_SELECTORS), key="shared_selector_checkpoint")
+            shared_selector = st.selectbox("Shared selector", list(SHARED_SELECTORS), key="shared_selector_checkpoint_v2")
             st.caption("Compare BM25, MiniLM, V4 and V5, then select one reply per style with a shared ranker.")
             st.caption("First use loads local models; later requests reuse them.")
+            if SHARED_SELECTORS[shared_selector] == "qwen_dailydialog":
+                st.caption("V6 uses Qwen adapted on DailyDialog, then refined on reviewed examples. CPU ranking can take longer, especially on first use.")
         elif system_mode != "Retrieval comparison":
             if system_mode != "Generator only":
                 retrieval_method = st.selectbox("Retrieval method", ["BM25", "MiniLM"], key="retrieval_method")
@@ -347,7 +350,7 @@ def main() -> None:
             st.rerun()
     all_output = st.session_state.last_all_models_result
     if all_output is not None:
-        render_all_models(all_output, select_reply)
+        render_all_models(all_output, select_reply, selector_label=shared_selector)
         if (all_output.source_errors or all_output.ranking_error) and st.button("Retry all models", key="retry_all_models"):
             execute_request()
             st.rerun()

@@ -355,9 +355,9 @@ def test_all_models_ranker_error_preserves_proposals_and_retry_recovers(demo_tes
     assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
 
 
-def test_reviewed_ranker_is_default_and_switching_selectors_clears_results(demo_test, monkeypatch, stub_generator):
+def test_qwen_ranker_is_default_and_switching_selectors_clears_results(demo_test, monkeypatch, stub_generator):
     app = enable_all_models(demo_test, monkeypatch, stub_generator)
-    assert app.selectbox(key='shared_selector_checkpoint').value == 'Fine-tuned V6 (20 reviews)'
+    assert app.selectbox(key='shared_selector_checkpoint_v2').value == 'V6 (Qwen + DailyDialog)'
     scorer_factory = demo_resources.get_shared_ranker
     calls = []
     def selected_scorer(selector='pretrained'):
@@ -365,11 +365,13 @@ def test_reviewed_ranker_is_default_and_switching_selectors_clears_results(demo_
         return scorer_factory(selector)
     monkeypatch.setattr(demo_resources, 'get_shared_ranker', selected_scorer)
     compare_in_app(app)
-    assert calls == ['reviewed']
-    for label, selector in [('Frozen MiniLM', 'pretrained'), ('Fine-tuned V6 (original)', 'finetuned'),
-                            ('Fine-tuned V6 (20 reviews)', 'reviewed')]:
+    assert calls == ['qwen_dailydialog']
+    assert any('Selected by V6 (Qwen + DailyDialog)' in c.value for c in app.caption)
+    for label, selector in [('Frozen MiniLM', 'pretrained'), ('Fine-tuned MiniLM (original)', 'finetuned'),
+                            ('Fine-tuned MiniLM (20 reviews)', 'reviewed'),
+                            ('V6 (Qwen + DailyDialog)', 'qwen_dailydialog')]:
         app.button(key='select_all_standard').click().run()
-        app.selectbox(key='shared_selector_checkpoint').select(label).run()
+        app.selectbox(key='shared_selector_checkpoint_v2').select(label).run()
         assert app.session_state.last_all_models_result is None
         assert app.session_state.selected_reply == ''
         compare_in_app(app)
@@ -377,7 +379,8 @@ def test_reviewed_ranker_is_default_and_switching_selectors_clears_results(demo_
         assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
 
 
-def test_legacy_frozen_session_does_not_override_reviewed_default(demo_test, monkeypatch, stub_generator):
+def test_legacy_minilm_session_does_not_override_qwen_default(demo_test, monkeypatch, stub_generator):
     demo_test.session_state['shared_selector'] = 'Frozen MiniLM'
+    demo_test.session_state['shared_selector_checkpoint'] = 'Fine-tuned V6 (20 reviews)'
     app = enable_all_models(demo_test, monkeypatch, stub_generator)
-    assert app.selectbox(key='shared_selector_checkpoint').value == 'Fine-tuned V6 (20 reviews)'
+    assert app.selectbox(key='shared_selector_checkpoint_v2').value == 'V6 (Qwen + DailyDialog)'

@@ -161,3 +161,61 @@ def test_reviewed_checkpoint_override_failure_is_visible_without_fallback(monkey
         assert calls == [missing]
     finally:
         demo_resources.get_shared_ranker.clear()
+
+
+def test_qwen_demo_loads_verified_local_adapter_and_caches_it(monkeypatch, tmp_path):
+    from replycoach import demo_resources, qwen_reranker, io
+
+    monkeypatch.setattr(io, 'ROOT', tmp_path)
+    base = tmp_path / 'artifacts/reranker_qwen/pretrained'
+    adapter = tmp_path / 'artifacts/reranker_qwen/dd_result_20261029/stage2_reviewed/best'
+    base.mkdir(parents=True)
+    adapter.mkdir(parents=True)
+
+    calls = []
+    def load_qwen(source, **kwargs):
+        calls.append((source, kwargs))
+        return object()
+
+    monkeypatch.delenv('REPLYCOACH_QWEN_BASE', raising=False)
+    monkeypatch.delenv('REPLYCOACH_QWEN_DD_ADAPTER', raising=False)
+    monkeypatch.setattr(qwen_reranker, 'QwenReranker', load_qwen)
+    demo_resources.get_shared_ranker.clear()
+    try:
+        result = demo_resources.get_shared_ranker('qwen_dailydialog')
+        assert demo_resources.get_shared_ranker('qwen_dailydialog') is result
+        assert calls == [(base, {'adapter': adapter})]
+    finally:
+        demo_resources.get_shared_ranker.clear()
+
+
+@pytest.mark.parametrize('missing', ['base', 'adapter', None])
+def test_qwen_demo_honors_paths_and_never_falls_back(monkeypatch, tmp_path, missing):
+    from replycoach import demo_resources, qwen_reranker, shared_ranker
+
+    base, adapter = tmp_path / 'base', tmp_path / 'adapter'
+    for name, path in [('base', base), ('adapter', adapter)]:
+        if name != missing:
+            path.mkdir()
+    monkeypatch.setenv('REPLYCOACH_QWEN_BASE', str(base))
+    monkeypatch.setenv('REPLYCOACH_QWEN_DD_ADAPTER', str(adapter))
+    calls = []
+    def fail_qwen(source, **kwargs):
+        calls.append((source, kwargs))
+        raise ValueError('Qwen adapter provenance or weights do not match')
+    def fail_minilm(**kwargs):
+        pytest.fail('Qwen failure must not silently select MiniLM')
+    monkeypatch.setattr(qwen_reranker, 'QwenReranker', fail_qwen)
+    monkeypatch.setattr(shared_ranker, 'CrossEncoderScorer', fail_minilm)
+    demo_resources.get_shared_ranker.clear()
+    try:
+        if missing:
+            with pytest.raises(FileNotFoundError, match='REPLYCOACH_QWEN'):
+                demo_resources.get_shared_ranker('qwen_dailydialog')
+            assert not calls
+        else:
+            with pytest.raises(ValueError, match='provenance'):
+                demo_resources.get_shared_ranker('qwen_dailydialog')
+            assert calls == [(base, {'adapter': adapter})]
+    finally:
+        demo_resources.get_shared_ranker.clear()

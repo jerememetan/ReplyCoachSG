@@ -152,7 +152,8 @@ def rank_proposals(message: str, memory: list[str], proposals: dict[str, list[Ca
         chosen = min((c for _, c in entries), key=lambda c: c.candidate_text)
         meta = {'selector': 'finetuned_cross_encoder' if scorer.identity.get('fine_tuned') else 'shared_cross_encoder',
                 'ranker': dict(scorer.identity),
-                'shared_rank_score': float(value.score), 'score_kind': 'cross_encoder_logit',
+                'shared_rank_score': float(value.score),
+                'score_kind': scorer.identity.get('score_kind', 'cross_encoder_logit'),
                 'truncated': bool(value.truncated), 'contributing_models': models,
                 'fallback_models': sorted({o['model'] for o in originals if o['origin'] == 'fallback'}),
                 'original_proposals': originals}
