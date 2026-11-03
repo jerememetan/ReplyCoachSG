@@ -166,8 +166,19 @@ registry never uses the one-batch smoke checkpoint or fake production replies.
 Choose **All models (experimental)** under **System settings**, enter the
 conversation and incoming message, then click **Suggest two replies**. The app
 compares eight proposals: Standard and Local from BM25, MiniLM, V4 and V5. One
-shared local cross-encoder selects a final reply per style. The selected replies
-remain clickable, and the full proposal table shows their origins and fallbacks.
+shared local cross-encoder selects an initial reply per style. **V7 then refines
+the Local winner:** lightweight lexicon substitutions produce exactly three
+randomized, distinct variations, and the same ranker selects from those three
+plus the original. Standard English stays unchanged. The selected replies remain
+clickable, and the full proposal table shows their origins and fallbacks.
+
+V7 runs automatically in this mode, with no new settings. Expand **V7 local
+candidates** to see all four final candidates, the selection, and separate
+lexicon/reranking times. The JSON download retains the original proposals and
+initial ranking and adds a `v7` trace; its top-level `local` is the final displayed
+reply. A V7 failure is visible, keeps the original Local reply, and can be retried.
+Other demo modes and the baseline `run_all_models` comparison keep their existing
+behavior. See [V7 behavior and measured overhead](docs/v7_local_refinement.md).
 
 For V5 and this mode, install the optional inference dependencies in the same
 virtual environment used to launch Streamlit:
@@ -202,7 +213,8 @@ therefore remains experimental; the overall default is Retrieval comparison. See
 
 **All models defaults to “V6 (Qwen + DailyDialog)”**, at the user's request
 on 29 October 2026. It selects Standard and Local replies from the four source
-models; it does not generate additional replies. Supply the private local base
+models; the scorer itself does not generate replies. V7 reuses it for the final
+four-candidate Local selection without changing its criteria. Supply the private local base
 and tokenizer at `artifacts/reranker_qwen/pretrained/`, and the final adapter,
 configuration and training manifest at
 `artifacts/reranker_qwen/dd_result_20261029/stage2_reviewed/best/`.

@@ -70,6 +70,11 @@ against any later experiments before writing the final report.
 
 ## Evidence to use when writing
 
+- [Frozen 60-item final evaluation](../final_test_evaluation.md): authorized on
+  2 November, all 60 comparisons exported, and judging resumed on 3 November from
+  310/4,800 successful ratings. Keep this separate from validation and wait for
+  the completed result receipt before adding held-out quality tables.
+
 - [DailyDialog → reviewed-data Qwen adaptation](../dailydialog_reranker_training.md):
   user-run GPU training completed and results imported/verified on 29 October.
   Adaptation ran two epochs, selecting epoch 1 (loss 0.249795 on its own external
