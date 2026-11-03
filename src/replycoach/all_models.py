@@ -1,10 +1,11 @@
 """Compare eight existing source proposals with one source-neutral scorer."""
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, replace
 from time import perf_counter
 from typing import Callable
 
+from replycoach.lexicon_refinement import LocalRefinement, refine_local_reply
 from replycoach.logging_utils import log_event
 from replycoach.pipeline import PreparedInput, prepare_input, rank_result
 from replycoach.schema import Candidate
@@ -41,6 +42,13 @@ class AllModelsResult:
     source_seconds: dict[str, float]
     ranking_seconds: float
     memory_speakers: list[str]
+    local_refinement: LocalRefinement | None = None
+
+    @property
+    def final_local(self) -> Candidate | None:
+        if self.local_refinement is not None:
+            return self.local_refinement.selected
+        return self.ranking.local if self.ranking else None
 
     @property
     def available_sources(self) -> list[str]:
@@ -50,7 +58,8 @@ class AllModelsResult:
     def complete(self) -> bool:
         return (len(self.proposals) == 4 and not self.source_errors
                 and self.ranking is not None and self.ranking.standard is not None
-                and self.ranking.local is not None and self.ranking_error is None)
+                and self.ranking.local is not None and self.ranking_error is None
+                and (self.local_refinement is None or self.local_refinement.complete))
 
     def to_dict(self) -> dict:
         return {'record_type': 'all_models_comparison', 'complete': self.complete,
@@ -62,7 +71,8 @@ class AllModelsResult:
                 'proposals': {name: [c.to_dict() for c in candidates] for name, candidates in self.proposals.items()},
                 'ranked_candidates': [c.to_dict() for c in self.ranking.candidates] if self.ranking else [],
                 'standard': self.ranking.standard.to_dict() if self.ranking and self.ranking.standard else None,
-                'local': self.ranking.local.to_dict() if self.ranking and self.ranking.local else None}
+                'local': self.final_local.to_dict() if self.final_local else None,
+                'v7': self.local_refinement.to_dict() if self.local_refinement is not None else None}
 
 
 def run_all_models(message: str, session: list[str], memory_mode: str = 'M2', *,
@@ -98,6 +108,30 @@ def run_all_models(message: str, session: list[str], memory_mode: str = 'M2', *,
         ranking_seconds = perf_counter() - started
     output = AllModelsResult(prepared, proposals, ranking, errors, ranking_error,
                              times, ranking_seconds, memory_speakers)
+    if log:
+        log_event('all_models_suggestions', output.to_dict())
+    return output
+
+
+def run_v7_all_models(message: str, session: list[str], memory_mode: str = 'M2', *,
+                      scorer_factory: Callable[[], PairScorer] | None = None,
+                      log: bool = False, **source_options) -> AllModelsResult:
+    """Run the unchanged comparison, then refine LOCAL using that same scorer."""
+    scorer = None
+
+    def shared_scorer():
+        nonlocal scorer
+        if scorer is None:
+            if scorer_factory is None:
+                raise ValueError('shared ranker is not configured')
+            scorer = scorer_factory()
+        return scorer
+
+    output = run_all_models(message, session, memory_mode, scorer_factory=shared_scorer,
+                            log=False, **source_options)
+    if output.ranking is not None and output.ranking.local is not None:
+        output = replace(output, local_refinement=refine_local_reply(
+            output.ranking.local, scorer, output.memory_speakers))
     if log:
         log_event('all_models_suggestions', output.to_dict())
     return output

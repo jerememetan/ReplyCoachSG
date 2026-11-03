@@ -384,3 +384,68 @@ def test_legacy_minilm_session_does_not_override_qwen_default(demo_test, monkeyp
     demo_test.session_state['shared_selector_checkpoint'] = 'Fine-tuned V6 (20 reviews)'
     app = enable_all_models(demo_test, monkeypatch, stub_generator)
     assert app.selectbox(key='shared_selector_checkpoint_v2').value == 'V6 (Qwen + DailyDialog)'
+
+
+def test_v7_shows_four_local_candidates_and_clicking_does_not_repeat_inference(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    from replycoach.shared_ranker import PairScore
+
+    calls = []
+
+    class Scorer:
+        identity = {'model': 'test-only', 'revision': 'fixed'}
+
+        def score_pairs(self, pairs):
+            calls.append(pairs)
+            return [PairScore(10 if reply.endswith('sia.') else 0) for _, reply in pairs]
+
+    monkeypatch.setattr(demo_resources, 'get_shared_ranker', lambda selector: Scorer())
+    settings = [(widget.key, widget.options) for widget in app.selectbox]
+    compare_in_app(app)
+    output = app.session_state.last_all_models_result
+    assert output.local_refinement is not None, 'The demo must enable V7 automatically'
+    assert output.local_refinement.complete
+    assert [len(pairs) for pairs in calls] == [len(output.ranking.candidates), 4]
+    assert settings == [(widget.key, widget.options) for widget in app.selectbox]
+    assert not list(app.slider)
+    assert any(expander.label == 'V7 local candidates' for expander in app.expander)
+    rows = app.dataframe[-1].value
+    assert len(rows) == 4 and set(rows['Candidate']) == {'Original', 'Variation 1', 'Variation 2', 'Variation 3'}
+    assert rows['Selected'].sum() == 1
+    chosen = output.final_local.candidate_text
+    assert app.button(key='select_all_local').label == chosen
+    before = app.text_area(key='conversation').value
+    app.button(key='select_all_local').click().run()
+    assert app.session_state.selected_reply == chosen
+    assert app.text_area(key='conversation').value == before
+    assert len(calls) == 2
+    assert app.session_state.last_all_models_result.local_refinement.variations == output.local_refinement.variations
+    assert not app.exception
+
+
+def test_v7_second_pass_failure_is_visible_and_retry_restores_refinement(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    from replycoach.shared_ranker import PairScore
+
+    calls = []
+
+    class Scorer:
+        identity = {'model': 'test-only', 'revision': 'fixed'}
+
+        def score_pairs(self, pairs):
+            calls.append(pairs)
+            if len(calls) == 2:
+                raise RuntimeError('V7 scorer stopped')
+            return [PairScore(1) for _ in pairs]
+
+    monkeypatch.setattr(demo_resources, 'get_shared_ranker', lambda selector: Scorer())
+    compare_in_app(app)
+    output = app.session_state.last_all_models_result
+    assert output.local_refinement is not None, 'The demo must attempt the V7 second pass'
+    assert output.local_refinement.error == 'V7 scorer stopped'
+    assert app.button(key='select_all_local').label == output.ranking.local.candidate_text
+    assert any('V7 scorer stopped' in warning.value for warning in app.warning)
+    app.button(key='retry_all_models').click().run()
+    assert not app.exception
+    assert app.session_state.last_all_models_result.local_refinement.complete
+    assert not list(app.warning)

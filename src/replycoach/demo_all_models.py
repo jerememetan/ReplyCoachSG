@@ -20,6 +20,9 @@ def render_all_models(output: AllModelsResult, select_reply, *, selector_label: 
         st.warning(f'{source} unavailable: {error}')
     if output.ranking_error:
         st.error(f'Shared ranking unavailable: {output.ranking_error}')
+    refinement = output.local_refinement
+    if refinement and refinement.error:
+        st.warning(f'V7 local refinement unavailable: {refinement.error}. Showing the original local reply.')
     if not output.proposals:
         st.error('No model proposals are available. Check the model setup and retry.')
         return
@@ -27,7 +30,7 @@ def render_all_models(output: AllModelsResult, select_reply, *, selector_label: 
         st.caption('Click a reply to fill the conversation preview.')
         for column, label, style, candidate in zip(
             st.columns(2, gap='large'), ['Standard English', 'Light local'], ['standard', 'local'],
-            [output.ranking.standard, output.ranking.local],
+            [output.ranking.standard, output.final_local],
         ):
             if candidate is None:
                 continue
@@ -38,6 +41,9 @@ def render_all_models(output: AllModelsResult, select_reply, *, selector_label: 
                 st.caption('Proposed by ' + ', '.join(candidate.meta['contributing_models']))
                 if candidate.meta['fallback_models']:
                     st.caption('Includes a safety fallback from ' + ', '.join(candidate.meta['fallback_models']))
+                if style == 'local' and refinement and refinement.complete:
+                    st.caption('V7 kept the original reply.' if candidate.meta['v7']['is_original']
+                               else 'V7 selected a lexicon variation.')
         st.caption(f'Selected by {selector_label}. Ranking signals are not confidence percentages.')
     st.subheader('Model proposals')
     rows = []
@@ -49,7 +55,7 @@ def render_all_models(output: AllModelsResult, select_reply, *, selector_label: 
             fallback = candidate.meta.get('candidate_source', candidate.source) == 'fallback'
             rows.append({'Model': model, 'Style': candidate.style.title(), 'Reply': candidate.candidate_text,
                          'Origin': 'Safety fallback' if fallback else 'Retrieved' if model in {'BM25','MiniLM'} else 'Generated',
-                         'Selected': selected})
+                         'Selected initially': selected})
     st.dataframe(rows, use_container_width=True, hide_index=True)
     if output.ranking:
         with st.expander('Shared ranking details'):
@@ -65,6 +71,23 @@ def render_all_models(output: AllModelsResult, select_reply, *, selector_label: 
                     st.caption(f"Adapter SHA-256: {identity['adapter_sha256']}")
             st.write('Source time (seconds):', {k: round(v, 2) for k,v in output.source_seconds.items()})
             st.caption(f'Shared ranking: {output.ranking_seconds:.2f} seconds; initial model loading may be included.')
+    if refinement:
+        with st.expander('V7 local candidates'):
+            if refinement.complete:
+                st.caption('Original local winner + 3 distinct lexicon variations, scored by the same selected ranker.')
+            else:
+                st.caption('V7 did not complete. The original local winner is retained.')
+            texts = [refinement.original.candidate_text, *refinement.variations]
+            scored = {c.meta['v7']['variant_index']: c for c in refinement.ranking.candidates} if refinement.ranking else {}
+            st.dataframe([
+                {'Candidate': 'Original' if index == 0 else f'Variation {index}', 'Reply': text,
+                 'Ranking score': round(scored[index].score, 4) if index in scored else None,
+                 'Selected': text == refinement.selected.candidate_text}
+                for index, text in enumerate(texts)
+            ], use_container_width=True, hide_index=True)
+            st.caption(f'Lexicon variations: {refinement.generation_seconds * 1000:.2f} ms; '
+                       f'V7 reranking: {refinement.ranking_seconds:.2f} seconds. '
+                       'No additional generator or Gemma calls.')
     st.download_button('Download all-model result (JSON)',
                        json.dumps(output.to_dict(), ensure_ascii=False, indent=2, allow_nan=False),
                        file_name='replycoach_all_models.json', mime='application/json', key='download_all_models')

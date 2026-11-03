@@ -9,7 +9,7 @@ from pathlib import Path
 import streamlit as st
 
 from replycoach import demo_resources
-from replycoach.all_models import run_all_models
+from replycoach.all_models import run_v7_all_models
 from replycoach.demo_all_models import render_all_models
 from replycoach.io import ROOT
 from replycoach.pipeline import CoachResult, ComparisonResult, compare_replies
@@ -234,6 +234,7 @@ def main() -> None:
         if system_mode == "All models (experimental)":
             shared_selector = st.selectbox("Shared selector", list(SHARED_SELECTORS), key="shared_selector_checkpoint_v2")
             st.caption("Compare BM25, MiniLM, V4 and V5, then select one reply per style with a shared ranker.")
+            st.caption("V7 refines the local winner: the same ranker chooses from the original and three lexicon variations.")
             st.caption("First use loads local models; later requests reuse them.")
             if SHARED_SELECTORS[shared_selector] == "qwen_dailydialog":
                 st.caption("V6 uses Qwen adapted on DailyDialog, then refined on reviewed examples. CPU ranking can take longer, especially on first use.")
@@ -296,11 +297,11 @@ def main() -> None:
         session = [text for _, text in turns]
         st.session_state.selected_reply = ""
         st.session_state.last_all_models_result = None
-        with st.spinner("Comparing four models…" if system_mode == "All models (experimental)" else "Finding reply suggestions…"):
+        with st.spinner("Comparing four models and refining the local reply…" if system_mode == "All models (experimental)" else "Finding reply suggestions…"):
             if system_mode == "All models (experimental)":
                 st.session_state.last_comparison = None
                 st.session_state.last_system_result = None
-                st.session_state.last_all_models_result = run_all_models(
+                st.session_state.last_all_models_result = run_v7_all_models(
                     message.strip(), session, memory_mode,
                     bm25_factory=lambda: demo_resources.get_bm25(bank.serialized),
                     minilm_factory=lambda: demo_resources.get_minilm(bank.serialized),
@@ -351,7 +352,8 @@ def main() -> None:
     all_output = st.session_state.last_all_models_result
     if all_output is not None:
         render_all_models(all_output, select_reply, selector_label=shared_selector)
-        if (all_output.source_errors or all_output.ranking_error) and st.button("Retry all models", key="retry_all_models"):
+        if (all_output.source_errors or all_output.ranking_error
+                or (all_output.local_refinement and all_output.local_refinement.error)) and st.button("Retry all models", key="retry_all_models"):
             execute_request()
             st.rerun()
 
