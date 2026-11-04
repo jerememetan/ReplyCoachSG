@@ -71,9 +71,15 @@ against any later experiments before writing the final report.
 ## Evidence to use when writing
 
 - [Frozen 60-item final evaluation](../final_test_evaluation.md): authorized on
-  2 November, all 60 comparisons exported, and judging resumed on 3 November from
-  310/4,800 successful ratings. Keep this separate from validation and wait for
-  the completed result receipt before adding held-out quality tables.
+  2 November and **completed at 21:41 SGT on 3 November**: 60 test conversations,
+  480 source proposals, 4,800 successful unique AI-persona ratings and zero
+  remaining errors. Independently recomputed all reported means and checked
+  coverage and the 120 V6-to-source selection mappings. Appropriateness means
+  (Standard / Local): BM25 2.700 / 3.542; MiniLM 2.942 / 3.635; V4 2.255 / 2.537;
+  V5 3.615 / 3.672; V6 Qwen + DailyDialog 3.657 / 3.748. V6 leads the point
+  estimates by only +0.042 / +0.077 versus V5; paired uncertainty analysis is
+  pending, so do not claim a reliable improvement. These are held-out AI-judge
+  results, separate from validation and human evaluation. V7 was not evaluated.
 
 - [DailyDialog → reviewed-data Qwen adaptation](../dailydialog_reranker_training.md):
   user-run GPU training completed and results imported/verified on 29 October.

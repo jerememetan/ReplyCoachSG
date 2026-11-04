@@ -4,6 +4,44 @@ The user authorized the held-out run on 2 November 2026. This is separate from
 the completed 50-conversation validation evaluation. Do not use its outputs or
 ratings for checkpoint choice, training labels, prompt adjustment or tuning.
 
+## Completed findings — 3 November 2026
+
+The run completed at **21:41 SGT on 3 November**. All **4,800 unique source
+candidate/persona judgments succeeded**, with zero remaining errors. The final
+`result.json` records `completed: true`, 60 test conversations and 4,800 source
+ratings. All ten system/style summary groups contain 600 ratings (60 conversations
+× ten personas). V6's 120 selections reuse source ratings rather than adding new
+judge calls. Coverage, selection mappings and all four summary metrics were
+independently recomputed from the saved journal and checked against the receipt.
+
+| System | Standard appropriateness /5 | Local appropriateness /5 | Standard would-send | Local would-send |
+| --- | ---: | ---: | ---: | ---: |
+| BM25 | 2.700 | 3.542 | 32.5% | 57.3% |
+| MiniLM | 2.942 | 3.635 | 40.2% | 60.5% |
+| V4 | 2.255 | 2.537 | 18.5% | 26.7% |
+| V5 | 3.615 | 3.672 | 59.3% | 60.0% |
+| V6 (Qwen + DailyDialog) | 3.657 | 3.748 | 60.0% | 61.7% |
+
+**Interpretation:** V6 has the highest observed appropriateness means in both
+styles. Its advantage over V5 is small: **+0.042 Standard and +0.077 Local**.
+Paired uncertainty analysis is still pending; these point estimates do not
+establish a statistically reliable improvement. Would-send percentages are
+simulated AI-persona votes, not measured human acceptance. Ratings from the ten
+personas are correlated; they do not turn 60 conversations into 600 independent
+test conversations per style. The judge's previously documented semantic errors
+and style ceiling remain limitations.
+
+This evaluates the frozen **V6 selection pipeline**, not the later V7 local
+refinement. Keep these held-out results separate from the earlier 50-conversation
+validation comparisons. Do not use these findings to tune the evaluated models.
+
+Private evidence in `experiments/judging/final_test_20261102_01/`:
+`freeze.json`, `outputs.jsonl`, `v6_selections.json`, `result.json`,
+`packet/judge_inputs.jsonl`, `packet/PRIVATE_mapping.jsonl`, and
+`packet/ratings/{run.json,ratings.jsonl,summary.csv}`. Full naturalness and
+style-fit means are preserved in `result.json`. Raw test text, replies, weights
+and persona journals remain outside Git; only this aggregate summary is published.
+
 ## Fixed design
 
 - 60 test conversations; only the 190 training items form the retrieval bank.
@@ -19,7 +57,7 @@ ratings for checkpoint choice, training labels, prompt adjustment or tuning.
   `experiments/judging/final_test_20261102_01/freeze.json`. Resume refuses changed
   frozen inputs or configuration. Existing development-data guards remain intact.
 
-## Confirmed progress on 3 November
+## Historical restart on 3 November
 
 The later V7 demo refinement is **not part of this frozen evaluation**. The
 original source/data hashes remain in `freeze.json`; the current V7 checkout
