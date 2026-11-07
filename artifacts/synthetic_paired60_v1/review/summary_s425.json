@@ -1,0 +1,29 @@
+{
+  "seed": 425,
+  "counts": {
+    "synthetic": 16,
+    "control": 19,
+    "both_bad": 10,
+    "tie": 25,
+    "identical": 30
+  },
+  "by_style": {
+    "LOCAL": {
+      "synthetic": 7,
+      "both_bad": 4,
+      "tie": 12,
+      "control": 9,
+      "identical": 18
+    },
+    "STANDARD": {
+      "control": 10,
+      "both_bad": 6,
+      "tie": 13,
+      "synthetic": 9,
+      "identical": 12
+    }
+  },
+  "packet_sha256": "044183efbca8c67d127d94f7d9509de4b178472dbe72028ffa164b950a7f029b",
+  "ratings_sha256": "f2035c021a5a229265013fb9007820d0531772e58d7dce0cc869415932083ed4",
+  "limitation": "Assistant inspection, not human gold. Seeds reuse the same conversations; do not count pooled cells as independent conversations."
+}

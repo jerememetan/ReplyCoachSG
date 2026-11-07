@@ -1,0 +1,718 @@
+{
+  "summary": {
+    "samples": 48,
+    "scenario_groups": 12,
+    "unique_prompt_drafts": 48,
+    "expected_counts": {
+      "acceptable": 14,
+      "unacceptable": 23,
+      "uncertain": 11
+    },
+    "positive_acceptance": 0.6428571428571429,
+    "negative_rejection": 1.0,
+    "balanced_agreement": 0.8214285714285714,
+    "false_positive_ids": [],
+    "definite_abstentions": 1,
+    "mixed_reward_groups": 9,
+    "raw_failures": 1,
+    "scoped_pilot_gate_pass": false,
+    "scope": "Assistant judgments on48 correlated samples from12 fresh instances, not human accuracy or broad scorer readiness",
+    "groups": {
+      "ONPOLICY-005": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-011": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "acceptable",
+          "acceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-003": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "uncertain",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-001": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "acceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-002": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          1,
+          null
+        ],
+        "expected": [
+          "unacceptable",
+          "uncertain",
+          "uncertain",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-008": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "acceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-012": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-009": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "acceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-007": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-010": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "unacceptable",
+          "uncertain",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-004": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "expected": [
+          "unacceptable",
+          "uncertain",
+          "acceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-006": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "acceptable",
+          "acceptable",
+          "unacceptable"
+        ]
+      }
+    }
+  },
+  "disagreements": [
+    {
+      "item_id": "ONPOLICY-003",
+      "category": "time",
+      "context": [
+        "My appointment is at 16:00 and cannot be moved."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can you come for a meeting from 15:30 to 16:30?",
+      "id": "ONPOLICY-003-S1",
+      "draft": "I cannot join, can you reach in a few minutes?",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Explicit refusal is valid, but can you reach in a few minutes is an unexplained follow-up; borderline coherence.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The user's appointment at 16:00 is fixed and cannot be moved, making a meeting from 15:30 to 16:30 impossible. The draft suggests a meeting in 'a few minutes' which does not resolve the conflict or provide a valid alternative.",
+        "issues": [
+          "explicit_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 2871489023,
+        "prompt_eval_count": 518,
+        "eval_count": 83,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-003",
+      "category": "time",
+      "context": [
+        "My appointment is at 16:00 and cannot be moved."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can you come for a meeting from 15:30 to 16:30?",
+      "id": "ONPOLICY-003-S4",
+      "draft": "Sorry, I cannot come for the evening. Could we meet after that?",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Could propose a later meeting, but misstates the request as evening and after that has an unclear referent.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The user's appointment is at 16:00 and cannot be moved, making the 15:30-16:30 slot impossible. However, the draft says 'evening' which is vague, and more importantly, the user's constraint is a specific time block. The draft is acceptable as a counterproposal, but the logic of 'cannot come for the evening' is slightly imprecise given the 16:00 constraint.",
+        "issues": [
+          "unclear"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 4045720329,
+        "prompt_eval_count": 521,
+        "eval_count": 115,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-002",
+      "category": "time",
+      "context": [
+        "I need to be home by 21:00 tonight."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Shall we start our two-hour movie at 20:00?",
+      "id": "ONPOLICY-002-S4",
+      "draft": "That works for me. Let's meet at the hotel at 5:00.",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "That works agrees to20:00 while5:00 could be a compatible earlier counterproposal; ambiguous commitment rather than definite violation.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The proposed start time of 20:00 for a two-hour movie means it ends at 22:00, which violates the user's constraint to be home by 21:00.",
+        "issues": [
+          "explicit_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 2516434439,
+        "prompt_eval_count": 519,
+        "eval_count": 68,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-002",
+      "category": "time",
+      "context": [
+        "I need to be home by 21:00 tonight."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Shall we start our two-hour movie at 20:00?",
+      "id": "ONPOLICY-002-S3",
+      "draft": "Sorry, I cannot make it at the late.",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Appears to refuse a late event but malformed at the late leaves intent unclear.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "acceptable",
+        "reason": "The user correctly identifies that a 20:00 start for a two-hour movie would end at 22:00, which violates their constraint of being home by 21:00.",
+        "issues": [
+          "none"
+        ],
+        "reward": 1
+      },
+      "runtime": {
+        "total_duration": 2152152731,
+        "prompt_eval_count": 510,
+        "eval_count": 62,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-006",
+      "category": "availability",
+      "context": [
+        "I can attend the morning session, but I cannot attend the afternoon one."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Please join the afternoon session with us.",
+      "id": "ONPOLICY-006-S2",
+      "draft": "I cannot attend it during the afternoon, but I cannot attend the afternoon session.",
+      "ended_with_eos": true,
+      "expected_verdict": "acceptable",
+      "assessment_reason": "Repetitive but correctly refuses afternoon session; no role or constraint error.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The draft contains an internal contradiction and is logically incoherent.",
+        "issues": [
+          "internal_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 1916843075,
+        "prompt_eval_count": 509,
+        "eval_count": 33,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-006",
+      "category": "availability",
+      "context": [
+        "I can attend the morning session, but I cannot attend the afternoon one."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Please join the afternoon session with us.",
+      "id": "ONPOLICY-006-S1",
+      "draft": "I cannot, I cannot go anywhere else.",
+      "ended_with_eos": true,
+      "expected_verdict": "acceptable",
+      "assessment_reason": "Explicitly declines the afternoon invitation. Additional inability claim does not contradict morning attendance.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The draft contradicts the user's initial statement that they can attend the morning session, and the phrase 'cannot go anywhere else' is an internal contradiction to the possibility of attending the morning session.",
+        "issues": [
+          "internal_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 3107562199,
+        "prompt_eval_count": 502,
+        "eval_count": 61,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-004",
+      "category": "time",
+      "context": [
+        "I can stay until 11:15, then I must leave."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you stay until noon?",
+      "id": "ONPOLICY-004-S4",
+      "draft": "I cannot stay until six. Could we meet at the gate on Sunday?",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Sunday proposal may be valid but six is unrelated to the noon request; ambiguous partial answer.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The user explicitly stated they must leave at 11:15, making a request for noon impossible. Additionally, the draft introduces a new time (six) and a new day (Sunday) without context.",
+        "issues": [
+          "explicit_contradiction",
+          "non_answer"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 2564960578,
+        "prompt_eval_count": 507,
+        "eval_count": 70,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-008",
+      "category": "availability",
+      "context": [
+        "I am not free this weekend. I am free next Tuesday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Shall we have lunch this Sunday?",
+      "id": "ONPOLICY-008-S4",
+      "draft": "I cannot make it for lunch today.",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Declines lunch today instead of Sunday; context does not establish today is Sunday.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The user explicitly stated they are not free this weekend, and the draft fails to address the proposed Sunday lunch or the user's stated availability for next Tuesday.",
+        "issues": [
+          "non_answer"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 3085586589,
+        "prompt_eval_count": 498,
+        "eval_count": 53,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-005",
+      "category": "availability",
+      "context": [
+        "I am unavailable on Wednesday. Thursday evening is free."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we meet on Wednesday evening?",
+      "id": "ONPOLICY-005-S1",
+      "draft": "Let's meet at the same time as Wednesday evening.",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Same time as Wednesday evening could mean Wednesday itself or another day at the same clock time; cannot award a definite positive.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The user explicitly stated they are unavailable on Wednesday.",
+        "issues": [
+          "explicit_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 1215011461,
+        "prompt_eval_count": 500,
+        "eval_count": 32,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-004",
+      "category": "time",
+      "context": [
+        "I can stay until 11:15, then I must leave."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you stay until noon?",
+      "id": "ONPOLICY-004-S1",
+      "draft": "Yes, tomorrow evening works for me.",
+      "ended_with_eos": true,
+      "expected_verdict": "acceptable",
+      "assessment_reason": "Tomorrow evening is a plausible counterproposal, distinct from extending todays stay until noon.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The draft accepts a request to stay until noon despite the user explicitly stating they must leave at 11:15.",
+        "issues": [
+          "explicit_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 2597916386,
+        "prompt_eval_count": 500,
+        "eval_count": 47,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-011",
+      "category": "ownership",
+      "context": [
+        "I have your library card in my wallet."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Do you still have my library card?",
+      "id": "ONPOLICY-011-S3",
+      "draft": "I have it, but I have to show you your library card in my wallet.",
+      "ended_with_eos": true,
+      "expected_verdict": "acceptable",
+      "assessment_reason": "Confirms possession and offers to show peer their card; awkward but preserves roles and facts.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The draft contains an internal contradiction and illogical phrasing regarding the action of showing the card.",
+        "issues": [
+          "internal_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 1454618722,
+        "prompt_eval_count": 504,
+        "eval_count": 39,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-010",
+      "category": "ownership",
+      "context": [
+        "I borrowed your power bank for my trip."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you bring my power bank back tomorrow?",
+      "id": "ONPOLICY-010-S3",
+      "draft": "I can't do it tomorrow. Could you use my laptop?",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Explicit refusal is valid but laptop offer may be an irrelevant substitute for returning borrowed power bank.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "acceptable",
+        "reason": "The user correctly refuses the request for tomorrow and offers an alternative, which is a valid counterproposal.",
+        "issues": [
+          "none"
+        ],
+        "reward": 1
+      },
+      "runtime": {
+        "total_duration": 1519802319,
+        "prompt_eval_count": 502,
+        "eval_count": 38,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-004",
+      "category": "time",
+      "context": [
+        "I can stay until 11:15, then I must leave."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you stay until noon?",
+      "id": "ONPOLICY-004-S3",
+      "draft": "I cannot stay until eleven.",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Declines staying until eleven rather than noon and appears inconsistent with can stay until11:15; uncertain intent.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "acceptable",
+        "reason": "The user is correctly refusing the request to stay until noon based on their stated constraint of leaving at 11:15.",
+        "issues": [
+          "none"
+        ],
+        "reward": 1
+      },
+      "runtime": {
+        "total_duration": 1843918422,
+        "prompt_eval_count": 498,
+        "eval_count": 44,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-011",
+      "category": "ownership",
+      "context": [
+        "I have your library card in my wallet."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Do you still have my library card?",
+      "id": "ONPOLICY-011-S2",
+      "draft": "I have it now, but I have it last night.",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Affirms possession but last-night clause is malformed and contrast unclear; do not conflate tense error with definite role reversal.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The draft contains an internal contradiction regarding the current state of possession.",
+        "issues": [
+          "internal_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 2274388483,
+        "prompt_eval_count": 499,
+        "eval_count": 35,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-001",
+      "category": "time",
+      "context": [
+        "I cannot meet before 18:45 tonight."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Would 17:30 work for dinner?",
+      "id": "ONPOLICY-001-S4",
+      "draft": "Let's meet at the mrt at the place.",
+      "ended_with_eos": true,
+      "expected_verdict": "uncertain",
+      "assessment_reason": "Vague meeting proposal without resolving the conflicting requested time; no definite commitment to an hour.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The proposed time (implied by the draft's acceptance of the meeting) violates the user's explicit constraint of not meeting before 18:45.",
+        "issues": [
+          "explicit_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 2535653167,
+        "prompt_eval_count": 504,
+        "eval_count": 56,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "item_id": "ONPOLICY-002",
+      "category": "time",
+      "context": [
+        "I need to be home by 21:00 tonight."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Shall we start our two-hour movie at 20:00?",
+      "id": "ONPOLICY-002-S2",
+      "draft": "I cannot make it tonight. Could we meet at the two-hour movie tomorrow then?",
+      "ended_with_eos": true,
+      "expected_verdict": "acceptable",
+      "assessment_reason": "Declines tonight and offers tomorrow, a valid alternative.",
+      "label_provenance": "Contextual assistant assessment frozen before any sampled scorer outcomes; not human gold",
+      "rating": {
+        "verdict": "uncertain",
+        "reason": "Inconsistent verdict/issues",
+        "issues": [
+          "unclear"
+        ],
+        "reward": null
+      },
+      "runtime": {},
+      "raw_failure": {
+        "parsed": {
+          "verdict": "unacceptable",
+          "reason": "The user's draft implies they cannot make it at all, but the constraint is only a time limit (home by 21:00). A 20:00 start for a 2-hour movie ends at 22:00, which violates the 21:00 constraint. However, the draft's refusal is logically consistent with the constraint, but the prompt asks to judge the reply against the peer's proposal. The peer's proposal (20:00) violates the user's constraint (home by 21:00). The draft correctly identifies the conflict.",
+          "issues": [
+            "none"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "seed": 425,
+  "arms": [
+    "control",
+    "synthetic"
+  ],
+  "randomization_seed": 3932662303305274110,
+  "packet_sha256": "044183efbca8c67d127d94f7d9509de4b178472dbe72028ffa164b950a7f029b",
+  "source_sha256": {
+    "control_s425.json": "7b551e7d0e5ced7f3b2ffc920ece9e3780e6d398e493c77cb6e274c5389fce64",
+    "synthetic_s425.json": "cf03dfbc8c64407ae207f216d75cab4960e8e17e07a9ce8af2e45a880de7ed79"
+  },
+  "mapping": {
+    "1": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "2": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "3": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "4": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "5": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "6": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "7": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "8": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "9": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "10": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "11": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "12": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "13": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "14": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "15": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "16": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "17": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "18": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "19": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "20": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "21": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "22": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "23": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "24": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "25": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "26": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "27": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "28": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "29": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "30": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "31": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "32": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "33": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "34": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "35": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "36": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "37": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "38": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "39": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "40": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "41": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "42": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "43": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "44": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "45": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "46": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "47": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "48": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "49": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "50": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "51": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "52": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "53": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "54": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "55": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "56": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "57": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "58": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "59": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "60": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "61": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "62": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "63": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "64": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "65": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "66": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "67": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "68": {
+      "A": "control",
+      "B": "synthetic"
+    },
+    "69": {
+      "A": "synthetic",
+      "B": "control"
+    },
+    "70": {
+      "A": "synthetic",
+      "B": "control"
+    }
+  }
+}

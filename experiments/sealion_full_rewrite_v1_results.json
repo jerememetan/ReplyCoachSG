@@ -1,0 +1,90 @@
+{
+  "experiment": "sealion_full_rewrite_v1",
+  "job_id": 356662,
+  "state": "COMPLETED",
+  "exit_code": 0,
+  "elapsed": "00:13:18",
+  "retrieved_at_utc": "2026-11-07T12:28:54.979529+00:00",
+  "report_sha256": "36cf1b7fe2b0763aa9eb3835300e7dbb7a4e2e856bbcca2a4ade6b7e42413f6f",
+  "training_pairs": 745,
+  "validation_pairs": 42,
+  "best_epoch": 1,
+  "epochs_trained": 3,
+  "initial_reference_local_ce": 2.4553475043990396,
+  "selected_reference_local_ce": 2.355029870885791,
+  "relative_reference_ce_change_percent": -4.08567965770702,
+  "history": [
+    {
+      "epoch": 1,
+      "optimizer_updates": 94,
+      "train_example_mean_ce": 0.8231159051642722,
+      "validation": {
+        "groups": {
+          "LOCAL_REWRITE": {
+            "token_ce": 2.355029870885791,
+            "reply_tokens": 330,
+            "examples": 42
+          }
+        },
+        "selection_score": 2.355029870885791
+      }
+    },
+    {
+      "epoch": 2,
+      "optimizer_updates": 188,
+      "train_example_mean_ce": 0.537089113163568,
+      "validation": {
+        "groups": {
+          "LOCAL_REWRITE": {
+            "token_ce": 2.5484679025230985,
+            "reply_tokens": 330,
+            "examples": 42
+          }
+        },
+        "selection_score": 2.5484679025230985
+      }
+    },
+    {
+      "epoch": 3,
+      "optimizer_updates": 282,
+      "train_example_mean_ce": 0.35157097279025407,
+      "validation": {
+        "groups": {
+          "LOCAL_REWRITE": {
+            "token_ce": 2.6399593434550543,
+            "reply_tokens": 330,
+            "examples": 42
+          }
+        },
+        "selection_score": 2.6399593434550543
+      }
+    }
+  ],
+  "verified_outputs": 132,
+  "verified_routes": {
+    "actual_english": 82,
+    "diagnostic_english": 32,
+    "controlled_challenge": 18
+  },
+  "anchor_identity_verified": true,
+  "english_adapter_identity_verified_before_after": true,
+  "generation_flags": [],
+  "assistant_review": {
+    "scope": "All32 reused focused actual-English rewrite cases, all32 diagnostic-anchor rewrites, all18 controlled challenges, plus10 reused validation actual-anchor cases randomly selectedseed1121. Not blind human gold or representative pass rate.",
+    "improvements_vs_direct": [
+      "Actual headphone request now retains MY headphones instead of YOUR; Monday cable return keeps return-to-me direction.",
+      "Actual budget refusal remains refusal with cheaper alternative; diet refusal retains vegetable rice; Saturday-unavailable/Friday-available retained.",
+      "Actual before-nine return now before-nine instead of direct ten-tonight; coffee choice preserved; wrist refusal remains refusal.",
+      "Several ordinary replies naturally conversational e.g no worries,nexttimebah andCan,whattimeah."
+    ],
+    "remaining_failures": [
+      "Exacttimes:06:35 ->sixthirty,08:10 ->eightfifteen,14:25returndeadline ->four; correctEnglishdiagnostic8:10 ->eight and6:35 ->six.",
+      "Controlled give-me-back-my-goggles/raincoat requests still alterownership/direction in several cases; object-return statements in opposite direction fare better.",
+      "Actual not-started-proofreading becomes only-started-reading; English wants-stay-library becomes find-another-place; supportive study-hard acknowledgement turns into study-hard advice.",
+      "Some originals already have badEnglish, e.g impossible7:40meeting accepted; faithful rewrite preserves that contextual error.",
+      "Some casual outputs loseinformation e.g planned-to-go-with-you ->aiyo,aiyo."
+    ],
+    "conclusion": "English-first rendering fixes several direct-English/LOCAL contradictions on reviewed cases. Not an established reliable overall upgrade; exact numbers, ownership and anchor faithfulness still need work. No default promotion."
+  },
+  "default_changed": false
+}

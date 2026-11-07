@@ -1,0 +1,28 @@
+{
+  "seed": 425,
+  "counts": {
+    "chat": 54,
+    "tie": 42,
+    "control_long": 2,
+    "both_bad": 2,
+    "identical": 0
+  },
+  "by_style": {
+    "STANDARD": {
+      "chat": 30,
+      "tie": 18,
+      "control_long": 1,
+      "both_bad": 1
+    },
+    "LOCAL": {
+      "chat": 24,
+      "tie": 24,
+      "control_long": 1,
+      "both_bad": 1
+    }
+  },
+  "packet_sha256": "ec6c51bc20e528a4e0f32e9d892683be991fb8c300650578205fb7d9899acece",
+  "ratings_sha256": "99e22ed2c12ad6c1a073fe655641692ab8ca050b3af1e6b0637f88327e5b83b5",
+  "reviewer_limitations": "Exploratory assistant inspection of one seed on reused development conversations, not independent human gold. Arm IDs hidden during rating, but outputs often reveal model identity through fluency. Assistant knows prior outputs and authored synthetic corrections. Comparisons differ in model size/family/pretraining/quantization/decoding. Selectable-draft policy permits plausible new facts and valid refusals.",
+  "limitation": "Assistant inspection, not human gold. Seeds reuse the same conversations; do not count pooled cells as independent conversations."
+}

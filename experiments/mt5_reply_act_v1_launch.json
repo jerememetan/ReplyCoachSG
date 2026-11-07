@@ -1,0 +1,24 @@
+{
+  "experiment": "mt5_reply_act_v1",
+  "job_id": 355552,
+  "submission": "accepted",
+  "last_verified_state": "FAILED",
+  "remote_directory": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v1",
+  "account": "personal cs701 studentqos",
+  "training": true,
+  "default_changed": false,
+  "local_tests_passed": 11,
+  "preflight": "Cluster tokenizer verified 190 train / 50 validation examples without source/target truncation",
+  "remote_versions": {
+    "torch": "2.14.1+cu130",
+    "transformers": "5.19.0"
+  },
+  "initial_submission": "Rejected before job creation: QOSMaxMemoryPerJob at 48G. Accepted after reducing requested host memory to 32G.",
+  "recipe": "experiments/mt5_reply_act_v1_recipe.json",
+  "report_expected": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v1/artifacts/results.json",
+  "completion_waited": false,
+  "exit_code": "1:0",
+  "training_completed": true,
+  "recovery_job_id": 355560,
+  "failure": "Blank STANDARD in oracle validation route rejected by LOCAL_REWRITE; all three training arms and STANDARD generations had completed."
+}

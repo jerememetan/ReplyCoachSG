@@ -1,0 +1,52 @@
+[
+  {
+    "item_id": "ITEM-E-007",
+    "english": "okay, see you tomorrow",
+    "singlish": "okies, c u later"
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "english": "Oh no, I can't go now. Could someone else go in my place?",
+    "singlish": "aiyo, aiyo"
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "english": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+    "singlish": "You can tell me what you miss in the morning. I'll send you an update after class."
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "english": "no worries, ten more minutes won't make a difference",
+    "singlish": "no worries, ten more mins won't make a difference"
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "english": "I'm not sure, let's check before we go.",
+    "singlish": "not sure yet leh, check before we go first"
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "english": "Yes, there is still space.",
+    "singlish": "Still got space, I come over after class."
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "english": "Ok, I will bid before bidding ends.",
+    "singlish": "okok, i bid before the bidding ends"
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "english": "sure, let's do a make up class on thursday instead",
+    "singlish": "okies, thursday then we do a make up class instead"
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "english": "I'll take a look and let you know if it's too long.",
+    "singlish": "Can, I check if it's too long first."
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "english": "not yet, im still working on it",
+    "singlish": "havent finish leh, still working on it"
+  }
+]

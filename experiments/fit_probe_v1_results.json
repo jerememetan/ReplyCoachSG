@@ -1,0 +1,297 @@
+{
+  "status": "complete",
+  "runs": {
+    "lora_lr1e4": {
+      "method": "lora",
+      "learning_rate": 0.0001,
+      "optimizer_steps": 400,
+      "trainable_parameters": 1769472,
+      "total_parameters": 584170752,
+      "history": [
+        {
+          "optimizer_steps": 0,
+          "teacher_forced_train_loss": 1.999970253235028,
+          "training_exact_matches": 0,
+          "seconds": 4.003869276959449
+        },
+        {
+          "optimizer_steps": 100,
+          "teacher_forced_train_loss": 1.6950410067299266,
+          "training_exact_matches": 0,
+          "seconds": 20.59392090002075
+        },
+        {
+          "optimizer_steps": 400,
+          "teacher_forced_train_loss": 0.3131137856822691,
+          "training_exact_matches": 13,
+          "seconds": 63.76621249783784
+        }
+      ],
+      "paraphrase_exact_matches": 1,
+      "paraphrase_reference_loss": 1.3058591295539597,
+      "peak_cuda_gb": 2.7123332023620605,
+      "epochs_started": 67,
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/fit_probe_v1/artifacts/lora_lr1e4/final",
+      "report_sha256": "1eb19987001fd9b50094dda1efdf29e70d273683c78f3cd41c928bd8165fa798",
+      "training_adequacy": {
+        "cases": 24,
+        "pass": 17,
+        "exact_target_annotations": 13,
+        "fail": 4,
+        "uncertain": 3
+      },
+      "paraphrase_adequacy": {
+        "cases": 24,
+        "pass": 11,
+        "exact_target_annotations": 1,
+        "fail": 11,
+        "uncertain": 2
+      }
+    },
+    "lora_lr3e4": {
+      "method": "lora",
+      "learning_rate": 0.0003,
+      "optimizer_steps": 400,
+      "trainable_parameters": 1769472,
+      "total_parameters": 584170752,
+      "history": [
+        {
+          "optimizer_steps": 0,
+          "teacher_forced_train_loss": 1.999970253235028,
+          "training_exact_matches": 0,
+          "seconds": 3.094467395916581
+        },
+        {
+          "optimizer_steps": 100,
+          "teacher_forced_train_loss": 0.850607716374927,
+          "training_exact_matches": 2,
+          "seconds": 19.303022594656795
+        },
+        {
+          "optimizer_steps": 400,
+          "teacher_forced_train_loss": 0.054275590995395626,
+          "training_exact_matches": 20,
+          "seconds": 62.53460312774405
+        }
+      ],
+      "paraphrase_exact_matches": 3,
+      "paraphrase_reference_loss": 1.4808500446839097,
+      "peak_cuda_gb": 2.7135539054870605,
+      "epochs_started": 67,
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/fit_probe_v1/artifacts/lora_lr3e4/final",
+      "report_sha256": "458260ca96426313688721cb8c12001a5d7a4989a4fea498a8f171736f305032",
+      "training_adequacy": {
+        "cases": 24,
+        "pass": 21,
+        "exact_target_annotations": 20,
+        "fail": 3
+      },
+      "paraphrase_adequacy": {
+        "cases": 24,
+        "pass": 15,
+        "exact_target_annotations": 3,
+        "fail": 8,
+        "uncertain": 1
+      }
+    },
+    "full_lr1e4": {
+      "method": "full",
+      "learning_rate": 0.0001,
+      "optimizer_steps": 400,
+      "trainable_parameters": 582401280,
+      "total_parameters": 582401280,
+      "history": [
+        {
+          "optimizer_steps": 0,
+          "teacher_forced_train_loss": 1.999970253235028,
+          "training_exact_matches": 0,
+          "seconds": 3.4099743040278554
+        },
+        {
+          "optimizer_steps": 100,
+          "teacher_forced_train_loss": 0.011093629786405528,
+          "training_exact_matches": 24,
+          "seconds": 22.81333689391613
+        },
+        {
+          "optimizer_steps": 400,
+          "teacher_forced_train_loss": 0.0001299543571714125,
+          "training_exact_matches": 24,
+          "seconds": 75.03416842967272
+        }
+      ],
+      "paraphrase_exact_matches": 6,
+      "paraphrase_reference_loss": 0.8553433496459031,
+      "peak_cuda_gb": 10.135307312011719,
+      "epochs_started": 67,
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_fit_probe_v1/artifacts/full_lr1e4/final",
+      "report_sha256": "289f8779f87dae972913e464f17fd06b3572bd2ee3b5b62f4276d23cafbb2a24",
+      "training_adequacy": {
+        "cases": 24,
+        "pass": 24,
+        "exact_target_annotations": 24
+      },
+      "paraphrase_adequacy": {
+        "cases": 24,
+        "pass": 18,
+        "exact_target_annotations": 6,
+        "fail": 4,
+        "uncertain": 2
+      }
+    },
+    "full_lr3e4": {
+      "method": "full",
+      "learning_rate": 0.0003,
+      "optimizer_steps": 400,
+      "trainable_parameters": 582401280,
+      "total_parameters": 582401280,
+      "history": [
+        {
+          "optimizer_steps": 0,
+          "teacher_forced_train_loss": 1.999970253235028,
+          "training_exact_matches": 0,
+          "seconds": 2.4592505488544703
+        },
+        {
+          "optimizer_steps": 100,
+          "teacher_forced_train_loss": 0.000351908074191198,
+          "training_exact_matches": 24,
+          "seconds": 21.77248869696632
+        },
+        {
+          "optimizer_steps": 400,
+          "teacher_forced_train_loss": 0.001322366959435767,
+          "training_exact_matches": 24,
+          "seconds": 74.12664541881531
+        }
+      ],
+      "paraphrase_exact_matches": 7,
+      "paraphrase_reference_loss": 0.4291773939758171,
+      "peak_cuda_gb": 10.131370544433594,
+      "epochs_started": 67,
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_fit_probe_v1/artifacts/full_lr3e4/final",
+      "report_sha256": "8719c6f52cf369eb6644dc0e93a6b83052318b06d5cda0d98d3a46d2764c2df9",
+      "training_adequacy": {
+        "cases": 24,
+        "pass": 24,
+        "exact_target_annotations": 24
+      },
+      "paraphrase_adequacy": {
+        "cases": 24,
+        "pass": 18,
+        "exact_target_annotations": 7,
+        "fail": 4,
+        "uncertain": 2
+      }
+    }
+  },
+  "baseline": {
+    "train": {
+      "cases": 24,
+      "pass": 15,
+      "exact_target_annotations": 0,
+      "fail": 6,
+      "uncertain": 3
+    },
+    "paraphrase": {
+      "cases": 24,
+      "pass": 11,
+      "exact_target_annotations": 0,
+      "uncertain": 7,
+      "fail": 6
+    }
+  },
+  "quality_review": {
+    "counts": {
+      "train": {
+        "full_lr3e4": {
+          "cases": 24,
+          "pass": 24,
+          "exact_target_annotations": 24
+        },
+        "full_lr1e4": {
+          "cases": 24,
+          "pass": 24,
+          "exact_target_annotations": 24
+        },
+        "lora_lr3e4": {
+          "cases": 24,
+          "pass": 21,
+          "exact_target_annotations": 20,
+          "fail": 3
+        },
+        "lora_lr1e4": {
+          "cases": 24,
+          "pass": 17,
+          "exact_target_annotations": 13,
+          "fail": 4,
+          "uncertain": 3
+        },
+        "base": {
+          "cases": 24,
+          "pass": 15,
+          "exact_target_annotations": 0,
+          "fail": 6,
+          "uncertain": 3
+        }
+      },
+      "paraphrase": {
+        "lora_lr1e4": {
+          "cases": 24,
+          "pass": 11,
+          "exact_target_annotations": 1,
+          "fail": 11,
+          "uncertain": 2
+        },
+        "lora_lr3e4": {
+          "cases": 24,
+          "pass": 15,
+          "exact_target_annotations": 3,
+          "fail": 8,
+          "uncertain": 1
+        },
+        "full_lr3e4": {
+          "cases": 24,
+          "pass": 18,
+          "exact_target_annotations": 7,
+          "fail": 4,
+          "uncertain": 2
+        },
+        "full_lr1e4": {
+          "cases": 24,
+          "pass": 18,
+          "exact_target_annotations": 6,
+          "fail": 4,
+          "uncertain": 2
+        },
+        "base": {
+          "cases": 24,
+          "pass": 11,
+          "exact_target_annotations": 0,
+          "uncertain": 7,
+          "fail": 6
+        }
+      }
+    },
+    "training_fit_gate": 22,
+    "training_gate_pass": {
+      "full_lr3e4": true,
+      "full_lr1e4": true,
+      "lora_lr3e4": false,
+      "lora_lr1e4": false
+    },
+    "packet_sha256": "98eba7d10776c28a270ef77bf43ca9b245858356629b7b7b3e7bbb187cb1bf80",
+    "ratings_sha256": "f8f24916b46d53362e5666bed6b1c6b83df0111b77d709fcd0989021043d84fe",
+    "limitation": "STANDARD-only fit diagnostic. Automatic exact-target adherence plus assistant inspection of alternatives.24 underlying scenarios, not48 independent scenarios. No human-accuracy or production-quality claim."
+  },
+  "decision": "Model can learn these STANDARD targets: both full runs exactly fit24/24 by100 updates and retain24/24 at400; both reach18/24 paraphrase adequacy. LoRA improves to21/24 training and15/24 paraphrases at3e-4 but falls short of22/24 training gate under tested settings. Restricted adaptation/optimization is a candidate bottleneck, alongside remaining wording transfer errors. This does not prove LoRA cannot eventually fit, establish the larger-task cause or justify production replacement.",
+  "limitations": [
+    "Single seed,24 chosen scenarios,14 assistant-checked targets and10 user-approved; not human gold for all cases.",
+    "Paraphrases share underlying scenarios/entities; this measures wording transfer, not broad unseen-scenario reasoning.",
+    "Two fixed learning rates and400 updates do not establish optimal LoRA or full-finetuning hyperparameters.",
+    "Both arms are STANDARD-only; this does not isolate STANDARD/LOCAL interference or establish retained LOCAL style.",
+    "Exact reference match measures target adherence; adequacy includes valid alternatives and uncertain judgments.",
+    "Reference matches98/240 auto-annotated;142 alternatives inspected by the assistant; not240 independent human labels.",
+    "No original held-out test reads or production default change."
+  ]
+}

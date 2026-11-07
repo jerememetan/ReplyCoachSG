@@ -1,0 +1,976 @@
+{
+  "runs": {
+    "sft_s425": {
+      "seed": 425,
+      "arm": "sft",
+      "best_epoch": 8,
+      "best_validation_loss": 2.499,
+      "best_validation_loss_standard": 2.1615,
+      "best_validation_loss_local": 2.8365,
+      "epochs_completed": 8,
+      "stopped_early": false,
+      "peak_cuda_gb": 5.614,
+      "training_seconds": 37.4,
+      "history": [
+        {
+          "epoch": 0,
+          "validation_loss": 3.0005,
+          "validation_loss_standard": 2.5988,
+          "validation_loss_local": 3.4023
+        },
+        {
+          "epoch": 1,
+          "train_loss": 3.0709,
+          "validation_loss": 2.9142,
+          "validation_loss_standard": 2.5185,
+          "validation_loss_local": 3.3099,
+          "seconds": 4.8
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.9147,
+          "validation_loss": 2.7176,
+          "validation_loss_standard": 2.3642,
+          "validation_loss_local": 3.071,
+          "seconds": 9.4
+        },
+        {
+          "epoch": 3,
+          "train_loss": 2.7203,
+          "validation_loss": 2.6255,
+          "validation_loss_standard": 2.2847,
+          "validation_loss_local": 2.9663,
+          "seconds": 14.2
+        },
+        {
+          "epoch": 4,
+          "train_loss": 2.627,
+          "validation_loss": 2.576,
+          "validation_loss_standard": 2.2362,
+          "validation_loss_local": 2.9157,
+          "seconds": 18.8
+        },
+        {
+          "epoch": 5,
+          "train_loss": 2.5197,
+          "validation_loss": 2.544,
+          "validation_loss_standard": 2.2115,
+          "validation_loss_local": 2.8766,
+          "seconds": 23.5
+        },
+        {
+          "epoch": 6,
+          "train_loss": 2.4693,
+          "validation_loss": 2.5208,
+          "validation_loss_standard": 2.1806,
+          "validation_loss_local": 2.8611,
+          "seconds": 28.1
+        },
+        {
+          "epoch": 7,
+          "train_loss": 2.3783,
+          "validation_loss": 2.508,
+          "validation_loss_standard": 2.1622,
+          "validation_loss_local": 2.8538,
+          "seconds": 32.7
+        },
+        {
+          "epoch": 8,
+          "train_loss": 2.3409,
+          "validation_loss": 2.499,
+          "validation_loss_standard": 2.1615,
+          "validation_loss_local": 2.8365,
+          "seconds": 37.4
+        }
+      ],
+      "diagnostics": {
+        "standard": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 48,
+          "exact_message_echo": 0,
+          "exact_context_turn_copy": 0,
+          "mean_words": 6.36,
+          "most_common": [
+            [
+              "okay i ll take it",
+              2
+            ],
+            [
+              "okay i ll wait for you",
+              2
+            ],
+            [
+              "yes 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "no worries i ll book somewhere else",
+              1
+            ]
+          ]
+        },
+        "local": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 49,
+          "exact_message_echo": 1,
+          "exact_context_turn_copy": 1,
+          "mean_words": 5.92,
+          "most_common": [
+            [
+              "okay let me know when you reach",
+              2
+            ],
+            [
+              "okay i will try to do it later",
+              1
+            ],
+            [
+              "yep 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "okay we can book somewhere else",
+              1
+            ]
+          ]
+        },
+        "same_text_both_styles": 8
+      }
+    },
+    "dpo_s425": {
+      "seed": 425,
+      "arm": "dpo",
+      "best_epoch": 8,
+      "best_validation_loss": 2.4893,
+      "best_validation_loss_standard": 2.162,
+      "best_validation_loss_local": 2.8166,
+      "epochs_completed": 8,
+      "stopped_early": false,
+      "peak_cuda_gb": 9.83,
+      "training_seconds": 78.7,
+      "history": [
+        {
+          "epoch": 0,
+          "validation_loss": 3.0005,
+          "validation_loss_standard": 2.5988,
+          "validation_loss_local": 3.4023
+        },
+        {
+          "epoch": 1,
+          "train_loss": 3.0815,
+          "validation_loss": 2.9107,
+          "validation_loss_standard": 2.5134,
+          "validation_loss_local": 3.3079,
+          "dpo_loss": 0.6984,
+          "dpo_agreement": 0.507,
+          "seconds": 9.9
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.9027,
+          "validation_loss": 2.7106,
+          "validation_loss_standard": 2.3615,
+          "validation_loss_local": 3.0597,
+          "dpo_loss": 0.6969,
+          "dpo_agreement": 0.523,
+          "seconds": 19.6
+        },
+        {
+          "epoch": 3,
+          "train_loss": 2.7162,
+          "validation_loss": 2.6177,
+          "validation_loss_standard": 2.283,
+          "validation_loss_local": 2.9523,
+          "dpo_loss": 0.6696,
+          "dpo_agreement": 0.564,
+          "seconds": 29.4
+        },
+        {
+          "epoch": 4,
+          "train_loss": 2.6043,
+          "validation_loss": 2.5707,
+          "validation_loss_standard": 2.234,
+          "validation_loss_local": 2.9074,
+          "dpo_loss": 0.6176,
+          "dpo_agreement": 0.641,
+          "seconds": 39.1
+        },
+        {
+          "epoch": 5,
+          "train_loss": 2.53,
+          "validation_loss": 2.5379,
+          "validation_loss_standard": 2.2067,
+          "validation_loss_local": 2.8691,
+          "dpo_loss": 0.6066,
+          "dpo_agreement": 0.646,
+          "seconds": 49.0
+        },
+        {
+          "epoch": 6,
+          "train_loss": 2.4595,
+          "validation_loss": 2.5212,
+          "validation_loss_standard": 2.184,
+          "validation_loss_local": 2.8584,
+          "dpo_loss": 0.5883,
+          "dpo_agreement": 0.671,
+          "seconds": 58.9
+        },
+        {
+          "epoch": 7,
+          "train_loss": 2.3668,
+          "validation_loss": 2.5025,
+          "validation_loss_standard": 2.17,
+          "validation_loss_local": 2.8349,
+          "dpo_loss": 0.5673,
+          "dpo_agreement": 0.686,
+          "seconds": 68.8
+        },
+        {
+          "epoch": 8,
+          "train_loss": 2.317,
+          "validation_loss": 2.4893,
+          "validation_loss_standard": 2.162,
+          "validation_loss_local": 2.8166,
+          "dpo_loss": 0.5513,
+          "dpo_agreement": 0.714,
+          "seconds": 78.7
+        }
+      ],
+      "diagnostics": {
+        "standard": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 48,
+          "exact_message_echo": 0,
+          "exact_context_turn_copy": 0,
+          "mean_words": 6.48,
+          "most_common": [
+            [
+              "okay i ll take it",
+              2
+            ],
+            [
+              "sure i ll meet you there",
+              2
+            ],
+            [
+              "yes 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "no worries i ll book somewhere else",
+              1
+            ]
+          ]
+        },
+        "local": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 47,
+          "exact_message_echo": 1,
+          "exact_context_turn_copy": 0,
+          "mean_words": 5.82,
+          "most_common": [
+            [
+              "okay i ll be there",
+              2
+            ],
+            [
+              "okay i ll join later",
+              2
+            ],
+            [
+              "ya i finished it alr",
+              2
+            ],
+            [
+              "okay i will try to do it later",
+              1
+            ],
+            [
+              "yep 7pm is fine",
+              1
+            ]
+          ]
+        },
+        "same_text_both_styles": 7
+      }
+    },
+    "sft_s1": {
+      "seed": 1,
+      "arm": "sft",
+      "best_epoch": 8,
+      "best_validation_loss": 2.5075,
+      "best_validation_loss_standard": 2.1734,
+      "best_validation_loss_local": 2.8417,
+      "epochs_completed": 8,
+      "stopped_early": false,
+      "peak_cuda_gb": 5.679,
+      "training_seconds": 36.9,
+      "history": [
+        {
+          "epoch": 0,
+          "validation_loss": 3.0005,
+          "validation_loss_standard": 2.5988,
+          "validation_loss_local": 3.4023
+        },
+        {
+          "epoch": 1,
+          "train_loss": 3.0806,
+          "validation_loss": 2.9121,
+          "validation_loss_standard": 2.512,
+          "validation_loss_local": 3.3123,
+          "seconds": 4.7
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.8986,
+          "validation_loss": 2.7142,
+          "validation_loss_standard": 2.3638,
+          "validation_loss_local": 3.0646,
+          "seconds": 9.3
+        },
+        {
+          "epoch": 3,
+          "train_loss": 2.7419,
+          "validation_loss": 2.6222,
+          "validation_loss_standard": 2.2829,
+          "validation_loss_local": 2.9615,
+          "seconds": 13.9
+        },
+        {
+          "epoch": 4,
+          "train_loss": 2.6111,
+          "validation_loss": 2.5723,
+          "validation_loss_standard": 2.2341,
+          "validation_loss_local": 2.9105,
+          "seconds": 18.5
+        },
+        {
+          "epoch": 5,
+          "train_loss": 2.5391,
+          "validation_loss": 2.5441,
+          "validation_loss_standard": 2.2112,
+          "validation_loss_local": 2.877,
+          "seconds": 23.1
+        },
+        {
+          "epoch": 6,
+          "train_loss": 2.4472,
+          "validation_loss": 2.5231,
+          "validation_loss_standard": 2.1886,
+          "validation_loss_local": 2.8575,
+          "seconds": 27.7
+        },
+        {
+          "epoch": 7,
+          "train_loss": 2.3845,
+          "validation_loss": 2.5144,
+          "validation_loss_standard": 2.1805,
+          "validation_loss_local": 2.8483,
+          "seconds": 32.3
+        },
+        {
+          "epoch": 8,
+          "train_loss": 2.3157,
+          "validation_loss": 2.5075,
+          "validation_loss_standard": 2.1734,
+          "validation_loss_local": 2.8417,
+          "seconds": 36.9
+        }
+      ],
+      "diagnostics": {
+        "standard": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 49,
+          "exact_message_echo": 0,
+          "exact_context_turn_copy": 0,
+          "mean_words": 6.74,
+          "most_common": [
+            [
+              "okay i ll take it",
+              2
+            ],
+            [
+              "yes 7pm is fine",
+              1
+            ],
+            [
+              "okay i ll print it for you",
+              1
+            ],
+            [
+              "yes we can book a place near the hotel",
+              1
+            ],
+            [
+              "yes it opens today",
+              1
+            ]
+          ]
+        },
+        "local": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 50,
+          "exact_message_echo": 1,
+          "exact_context_turn_copy": 1,
+          "mean_words": 6.02,
+          "most_common": [
+            [
+              "okay i shall try to help u",
+              1
+            ],
+            [
+              "yep 7pm is fine",
+              1
+            ],
+            [
+              "okay i will print it later",
+              1
+            ],
+            [
+              "okay we can book somewhere else",
+              1
+            ],
+            [
+              "eh i might be able to meet you at koufu",
+              1
+            ]
+          ]
+        },
+        "same_text_both_styles": 1
+      }
+    },
+    "dpo_s1": {
+      "seed": 1,
+      "arm": "dpo",
+      "best_epoch": 8,
+      "best_validation_loss": 2.4981,
+      "best_validation_loss_standard": 2.1588,
+      "best_validation_loss_local": 2.8373,
+      "epochs_completed": 8,
+      "stopped_early": false,
+      "peak_cuda_gb": 9.932,
+      "training_seconds": 79.0,
+      "history": [
+        {
+          "epoch": 0,
+          "validation_loss": 3.0005,
+          "validation_loss_standard": 2.5988,
+          "validation_loss_local": 3.4023
+        },
+        {
+          "epoch": 1,
+          "train_loss": 3.0649,
+          "validation_loss": 2.9158,
+          "validation_loss_standard": 2.5196,
+          "validation_loss_local": 3.312,
+          "dpo_loss": 0.6988,
+          "dpo_agreement": 0.511,
+          "seconds": 10.0
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.9041,
+          "validation_loss": 2.7161,
+          "validation_loss_standard": 2.3613,
+          "validation_loss_local": 3.071,
+          "dpo_loss": 0.6991,
+          "dpo_agreement": 0.52,
+          "seconds": 19.8
+        },
+        {
+          "epoch": 3,
+          "train_loss": 2.7519,
+          "validation_loss": 2.6201,
+          "validation_loss_standard": 2.2793,
+          "validation_loss_local": 2.9608,
+          "dpo_loss": 0.6634,
+          "dpo_agreement": 0.586,
+          "seconds": 29.7
+        },
+        {
+          "epoch": 4,
+          "train_loss": 2.6141,
+          "validation_loss": 2.5686,
+          "validation_loss_standard": 2.2292,
+          "validation_loss_local": 2.908,
+          "dpo_loss": 0.6211,
+          "dpo_agreement": 0.655,
+          "seconds": 39.5
+        },
+        {
+          "epoch": 5,
+          "train_loss": 2.5207,
+          "validation_loss": 2.5383,
+          "validation_loss_standard": 2.2052,
+          "validation_loss_local": 2.8714,
+          "dpo_loss": 0.6148,
+          "dpo_agreement": 0.641,
+          "seconds": 49.4
+        },
+        {
+          "epoch": 6,
+          "train_loss": 2.4496,
+          "validation_loss": 2.517,
+          "validation_loss_standard": 2.1843,
+          "validation_loss_local": 2.8497,
+          "dpo_loss": 0.5918,
+          "dpo_agreement": 0.671,
+          "seconds": 59.3
+        },
+        {
+          "epoch": 7,
+          "train_loss": 2.3963,
+          "validation_loss": 2.5038,
+          "validation_loss_standard": 2.17,
+          "validation_loss_local": 2.8376,
+          "dpo_loss": 0.5858,
+          "dpo_agreement": 0.693,
+          "seconds": 69.1
+        },
+        {
+          "epoch": 8,
+          "train_loss": 2.311,
+          "validation_loss": 2.4981,
+          "validation_loss_standard": 2.1588,
+          "validation_loss_local": 2.8373,
+          "dpo_loss": 0.5372,
+          "dpo_agreement": 0.73,
+          "seconds": 79.0
+        }
+      ],
+      "diagnostics": {
+        "standard": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 50,
+          "exact_message_echo": 0,
+          "exact_context_turn_copy": 0,
+          "mean_words": 6.6,
+          "most_common": [
+            [
+              "okay i ll take it",
+              1
+            ],
+            [
+              "yes 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "no worries i ll book somewhere else",
+              1
+            ],
+            [
+              "yes the chicken rice stall is open today",
+              1
+            ]
+          ]
+        },
+        "local": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 50,
+          "exact_message_echo": 1,
+          "exact_context_turn_copy": 1,
+          "mean_words": 5.94,
+          "most_common": [
+            [
+              "okay i ll take it",
+              1
+            ],
+            [
+              "yep 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "okay we can book somewhere else",
+              1
+            ],
+            [
+              "yep it opens today",
+              1
+            ]
+          ]
+        },
+        "same_text_both_styles": 9
+      }
+    },
+    "sft_s2": {
+      "seed": 2,
+      "arm": "sft",
+      "best_epoch": 7,
+      "best_validation_loss": 2.5139,
+      "best_validation_loss_standard": 2.1808,
+      "best_validation_loss_local": 2.847,
+      "epochs_completed": 8,
+      "stopped_early": false,
+      "peak_cuda_gb": 5.679,
+      "training_seconds": 36.8,
+      "history": [
+        {
+          "epoch": 0,
+          "validation_loss": 3.0005,
+          "validation_loss_standard": 2.5988,
+          "validation_loss_local": 3.4023
+        },
+        {
+          "epoch": 1,
+          "train_loss": 3.0717,
+          "validation_loss": 2.9145,
+          "validation_loss_standard": 2.5193,
+          "validation_loss_local": 3.3096,
+          "seconds": 4.7
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.8963,
+          "validation_loss": 2.7097,
+          "validation_loss_standard": 2.3658,
+          "validation_loss_local": 3.0536,
+          "seconds": 9.3
+        },
+        {
+          "epoch": 3,
+          "train_loss": 2.7235,
+          "validation_loss": 2.6188,
+          "validation_loss_standard": 2.2833,
+          "validation_loss_local": 2.9544,
+          "seconds": 13.9
+        },
+        {
+          "epoch": 4,
+          "train_loss": 2.6129,
+          "validation_loss": 2.5748,
+          "validation_loss_standard": 2.2459,
+          "validation_loss_local": 2.9037,
+          "seconds": 18.5
+        },
+        {
+          "epoch": 5,
+          "train_loss": 2.5338,
+          "validation_loss": 2.5423,
+          "validation_loss_standard": 2.215,
+          "validation_loss_local": 2.8696,
+          "seconds": 23.1
+        },
+        {
+          "epoch": 6,
+          "train_loss": 2.4555,
+          "validation_loss": 2.5286,
+          "validation_loss_standard": 2.2,
+          "validation_loss_local": 2.8572,
+          "seconds": 27.7
+        },
+        {
+          "epoch": 7,
+          "train_loss": 2.3844,
+          "validation_loss": 2.5139,
+          "validation_loss_standard": 2.1808,
+          "validation_loss_local": 2.847,
+          "seconds": 32.2
+        },
+        {
+          "epoch": 8,
+          "train_loss": 2.3329,
+          "validation_loss": 2.514,
+          "validation_loss_standard": 2.181,
+          "validation_loss_local": 2.8469,
+          "seconds": 36.8
+        }
+      ],
+      "diagnostics": {
+        "standard": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 48,
+          "exact_message_echo": 0,
+          "exact_context_turn_copy": 0,
+          "mean_words": 6.76,
+          "most_common": [
+            [
+              "okay i ll take it",
+              2
+            ],
+            [
+              "okay i ll wait for you",
+              2
+            ],
+            [
+              "yes 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "yes we can book somewhere else",
+              1
+            ]
+          ]
+        },
+        "local": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 49,
+          "exact_message_echo": 1,
+          "exact_context_turn_copy": 1,
+          "mean_words": 6.34,
+          "most_common": [
+            [
+              "okay i ll send you later",
+              2
+            ],
+            [
+              "okay i will take another one",
+              1
+            ],
+            [
+              "yep 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "okay we can book somewhere else",
+              1
+            ]
+          ]
+        },
+        "same_text_both_styles": 7
+      }
+    },
+    "dpo_s2": {
+      "seed": 2,
+      "arm": "dpo",
+      "best_epoch": 8,
+      "best_validation_loss": 2.498,
+      "best_validation_loss_standard": 2.1687,
+      "best_validation_loss_local": 2.8272,
+      "epochs_completed": 8,
+      "stopped_early": false,
+      "peak_cuda_gb": 9.942,
+      "training_seconds": 78.6,
+      "history": [
+        {
+          "epoch": 0,
+          "validation_loss": 3.0005,
+          "validation_loss_standard": 2.5988,
+          "validation_loss_local": 3.4023
+        },
+        {
+          "epoch": 1,
+          "train_loss": 3.0672,
+          "validation_loss": 2.9122,
+          "validation_loss_standard": 2.5209,
+          "validation_loss_local": 3.3035,
+          "dpo_loss": 0.6981,
+          "dpo_agreement": 0.502,
+          "seconds": 10.0
+        },
+        {
+          "epoch": 2,
+          "train_loss": 2.9066,
+          "validation_loss": 2.7049,
+          "validation_loss_standard": 2.3616,
+          "validation_loss_local": 3.0482,
+          "dpo_loss": 0.694,
+          "dpo_agreement": 0.516,
+          "seconds": 19.7
+        },
+        {
+          "epoch": 3,
+          "train_loss": 2.7218,
+          "validation_loss": 2.6201,
+          "validation_loss_standard": 2.2802,
+          "validation_loss_local": 2.96,
+          "dpo_loss": 0.6584,
+          "dpo_agreement": 0.596,
+          "seconds": 29.6
+        },
+        {
+          "epoch": 4,
+          "train_loss": 2.6057,
+          "validation_loss": 2.5737,
+          "validation_loss_standard": 2.2407,
+          "validation_loss_local": 2.9067,
+          "dpo_loss": 0.6287,
+          "dpo_agreement": 0.666,
+          "seconds": 39.4
+        },
+        {
+          "epoch": 5,
+          "train_loss": 2.5249,
+          "validation_loss": 2.5463,
+          "validation_loss_standard": 2.2199,
+          "validation_loss_local": 2.8726,
+          "dpo_loss": 0.5931,
+          "dpo_agreement": 0.666,
+          "seconds": 49.3
+        },
+        {
+          "epoch": 6,
+          "train_loss": 2.4531,
+          "validation_loss": 2.5281,
+          "validation_loss_standard": 2.1976,
+          "validation_loss_local": 2.8585,
+          "dpo_loss": 0.5841,
+          "dpo_agreement": 0.68,
+          "seconds": 59.0
+        },
+        {
+          "epoch": 7,
+          "train_loss": 2.3862,
+          "validation_loss": 2.5088,
+          "validation_loss_standard": 2.1781,
+          "validation_loss_local": 2.8394,
+          "dpo_loss": 0.5782,
+          "dpo_agreement": 0.654,
+          "seconds": 68.9
+        },
+        {
+          "epoch": 8,
+          "train_loss": 2.3194,
+          "validation_loss": 2.498,
+          "validation_loss_standard": 2.1687,
+          "validation_loss_local": 2.8272,
+          "dpo_loss": 0.5511,
+          "dpo_agreement": 0.707,
+          "seconds": 78.6
+        }
+      ],
+      "diagnostics": {
+        "standard": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 48,
+          "exact_message_echo": 0,
+          "exact_context_turn_copy": 0,
+          "mean_words": 6.44,
+          "most_common": [
+            [
+              "okay i ll take it",
+              2
+            ],
+            [
+              "sure i ll meet you there",
+              2
+            ],
+            [
+              "yes 7pm is fine",
+              1
+            ],
+            [
+              "okay i ll see you later",
+              1
+            ],
+            [
+              "yes we need to book somewhere else",
+              1
+            ]
+          ]
+        },
+        "local": {
+          "outputs": 50,
+          "blank": 0,
+          "unique_normalized": 47,
+          "exact_message_echo": 1,
+          "exact_context_turn_copy": 0,
+          "mean_words": 5.6,
+          "most_common": [
+            [
+              "okay i ll be there",
+              3
+            ],
+            [
+              "okay i ll take it",
+              2
+            ],
+            [
+              "yep 7pm is fine",
+              1
+            ],
+            [
+              "okay let me know how to use the printer",
+              1
+            ],
+            [
+              "okay we can book somewhere else",
+              1
+            ]
+          ]
+        },
+        "same_text_both_styles": 8
+      }
+    }
+  },
+  "paired_loss_deltas_dpo_minus_sft": {
+    "all": {
+      "by_seed": {
+        "425": -0.009700000000000042,
+        "1": -0.009399999999999853,
+        "2": -0.015899999999999803
+      },
+      "mean": -0.011666666666666567
+    },
+    "standard": {
+      "by_seed": {
+        "425": 0.0004999999999997229,
+        "1": -0.014600000000000168,
+        "2": -0.012100000000000222
+      },
+      "mean": -0.008733333333333556
+    },
+    "local": {
+      "by_seed": {
+        "425": -0.019899999999999807,
+        "1": -0.0043999999999999595,
+        "2": -0.01980000000000004
+      },
+      "mean": -0.014699999999999935
+    }
+  },
+  "arms": {
+    "sft": {
+      "mean_best_validation_loss": 2.5068,
+      "seed_sd": 0.007474623736349489
+    },
+    "dpo": {
+      "mean_best_validation_loss": 2.4951333333333334,
+      "seed_sd": 0.005052062285179541
+    }
+  },
+  "limits": [
+    "validation loss selected checkpoints, so it is not independent final quality evidence",
+    "three seeds and 50 reused validation conversations do not establish general reliability",
+    "copy/repetition metrics are diagnostics, not semantic accuracy",
+    "DPO training agreement measures relative movement on training pairs, not held-out reply quality"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "control": {
+      "conversations": 190,
+      "paired_rows": 380,
+      "context_rows": 180,
+      "total_rows": 560
+    },
+    "expanded": {
+      "conversations": 790,
+      "paired_rows": 1580,
+      "context_rows": 646,
+      "total_rows": 2226
+    }
+  },
+  "actual_max_source": 161,
+  "actual_max_target": 32,
+  "max_source_tokens": 192,
+  "max_target_tokens": 48,
+  "optimizer_steps": 1120,
+  "epochs_expanded": 8,
+  "approval_counts": {
+    "individual": 10,
+    "blanket_authorized": 590
+  }
+}

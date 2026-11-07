@@ -1,0 +1,26 @@
+{
+  "jobs": [
+    {
+      "job_id": 355353,
+      "mode": "full_context",
+      "state": "COMPLETED"
+    },
+    {
+      "job_id": 355354,
+      "mode": "anchor_only",
+      "state": "COMPLETED"
+    },
+    {
+      "job_id": 355355,
+      "mode": "exemplar",
+      "state": "COMPLETED"
+    }
+  ],
+  "group_directory": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/native_rewrite_v2",
+  "personal_directory": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_native_rewrite_v2",
+  "normalization_job": 355328,
+  "anchor_generation_job": 355335,
+  "training_results_pending": false,
+  "completion_waited": false,
+  "results_summary": "experiments/native_rewrite_v2_summary.json"
+}

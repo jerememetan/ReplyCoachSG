@@ -1,0 +1,106 @@
+{
+  "status": "ready",
+  "created_at_utc": "2026-11-07T18:55:16.549173+00:00",
+  "models": {
+    "mt5": {
+      "status": "ready",
+      "archive": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1.tar",
+      "bytes": 2353233920,
+      "sha256": "a4651363d7ef607ccdf33514b6af3837124f4e027d5ef0157b1a298f6aaee49f",
+      "bundle": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1",
+      "manifest_sha256": "4d31e79604d8818e430c7cf288ae9c0b738ca18db18e309fbcef6e929c7c6165",
+      "verification_job": 357669,
+      "exact_example_pairs": 10,
+      "local_archive": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/model_handoff_v1/replycoach_mt5_A_v1.tar",
+      "transfer_sha256_verified": true,
+      "archive_layout_verified": true,
+      "verification": {
+        "status": "passed",
+        "job_id": 357669,
+        "exact_example_pairs": 10,
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "original_source_access_denied": true,
+        "network_denied": true,
+        "report": "verification.json",
+        "documentation_updated_after_replay": true,
+        "inference_files_unchanged": true
+      },
+      "previous_documentation_revisions": [
+        {
+          "sha256": "0e53df7c9d81f8f853c0b4c00d7f120d903ef4b7a6a912c4af4787e88f56856d",
+          "manifest_sha256": "d8868fd585f4245238f2ca07f8b23594d95c656b1ee5879ba5ed7096d041048b",
+          "bytes": 2353213440
+        }
+      ],
+      "model_cards_revision": "model-cards-v1",
+      "documentation_only_update": true,
+      "unchanged_files_checked": 24,
+      "weight_files_unchanged": 2,
+      "model_cards": {
+        "summary": "roles/D_transformer/mt5_reference_A_MODEL_CARD.md",
+        "hugging_face": "roles/D_transformer/mt5_reference_A_README.md"
+      },
+      "cluster_archive_matches_local": true,
+      "cluster_manifest_verify_only_passed": true
+    },
+    "sealion": {
+      "status": "ready",
+      "archive": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1.tar",
+      "bytes": 6445742080,
+      "sha256": "5c74430e9fb6953955258b4aab9f9db2d4c141b43b60b821b2c9930523bee70d",
+      "bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+      "manifest_sha256": "1cb24b55984b73c20166331d4d872895d00d9d4854b2a2b7c8f5245453db7f1a",
+      "verification_job": 357670,
+      "exact_example_pairs": 10,
+      "local_archive": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/model_handoff_v1/replycoach_sealion_repair25_v1.tar",
+      "transfer_sha256_verified": true,
+      "archive_layout_verified": true,
+      "verification": {
+        "status": "passed",
+        "job_id": 357670,
+        "exact_example_pairs": 10,
+        "gpu": "NVIDIA L40S",
+        "original_source_access_denied": true,
+        "network_denied": true,
+        "report": "verification.json",
+        "documentation_updated_after_replay": true,
+        "inference_files_unchanged": true
+      },
+      "previous_documentation_revisions": [
+        {
+          "sha256": "4aa6d83ec387eee36856a05f7bbfb61933b90f1bcd1ad5cc69b5c6bf0a846827",
+          "manifest_sha256": "47323c3fd6fa346b734c2421be7d84625c1a2bca2862e107627c47357ebe98a2",
+          "bytes": 6445711360
+        }
+      ],
+      "model_cards_revision": "model-cards-v1",
+      "documentation_only_update": true,
+      "unchanged_files_checked": 79,
+      "weight_files_unchanged": 3,
+      "model_cards": {
+        "summary": "roles/D_transformer/sealion_repair25_MODEL_CARD.md",
+        "hugging_face": "roles/D_transformer/sealion_repair25_README.md"
+      },
+      "cluster_archive_matches_local": true,
+      "cluster_manifest_verify_only_passed": true
+    }
+  },
+  "selection": "mT5 A historicalfinal784; SEA fullEnglish356177 + repair357651selected25 renderer.",
+  "full_base_in_each_export": true,
+  "weights_modified": false,
+  "quality_promotion": false,
+  "recipient_delivery": "Archives ready locally and on cluster; no external message or account upload sent.",
+  "friend_runtime": "Portable packages; verified Linux/CUDA runtime. Optional hardware question unanswered; CPU full-model replay not verified.",
+  "completed_at_utc": "2026-11-07T19:04:22.632642+00:00",
+  "guide": "artifacts/model_handoff_v1/README.md",
+  "checksums": "artifacts/model_handoff_v1/SHA256SUMS",
+  "exact_replayed_pairs_total": 20,
+  "model_cards_revision": "model-cards-v1",
+  "documentation_only_update": true,
+  "model_cards_completed_at_utc": "2026-11-07T19:38:26.353857+00:00",
+  "model_cards_template": [
+    "roles/D_transformer/MODEL_CARD.md",
+    "roles/D_transformer/spk1_ul025_s425_README.md"
+  ],
+  "model_cards_status": "complete"
+}

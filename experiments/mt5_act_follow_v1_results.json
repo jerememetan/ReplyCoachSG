@@ -1,0 +1,86 @@
+{
+  "job_id": 355573,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:14:02",
+  "status": "complete",
+  "failed_stages": [],
+  "metrics": {
+    "direct_control": {
+      "best_epoch": 6,
+      "original_supplied_ce": 2.099251616309429,
+      "paired_supplied_ce": 1.498091342752097,
+      "selection_score": 1.798671479530763,
+      "classifier_micro_f1": 0.42696627974510193,
+      "effective_residual_scale": 0.0,
+      "supplied_goal_pairs_with_different_strings": 0,
+      "warning": "Different strings and lower privileged CE are not semantic success rates."
+    },
+    "gated_paired": {
+      "best_epoch": 6,
+      "original_supplied_ce": 2.117490200955292,
+      "paired_supplied_ce": 1.4005631550413664,
+      "selection_score": 1.7590266779983292,
+      "classifier_micro_f1": 0.4134078323841095,
+      "effective_residual_scale": -0.037669356912374496,
+      "supplied_goal_pairs_with_different_strings": 11,
+      "warning": "Different strings and lower privileged CE are not semantic success rates."
+    },
+    "text_goal_paired": {
+      "best_epoch": 6,
+      "original_supplied_ce": 2.083857628292051,
+      "paired_supplied_ce": 1.5218978328783004,
+      "selection_score": 1.8028777305851755,
+      "classifier_micro_f1": 0.42352941632270813,
+      "effective_residual_scale": 0.0,
+      "supplied_goal_pairs_with_different_strings": 7,
+      "warning": "Different strings and lower privileged CE are not semantic success rates."
+    }
+  },
+  "review_scope": "Exploratory assistant inspection of 16 fresh development conversation groups; no independent human scores or overall accuracy established. These cases are now inspected development material.",
+  "findings": [
+    {
+      "finding": "Gated paired training demonstrates limited supplied-act controllability on some fresh examples.",
+      "examples": [
+        "ACTFOLLOW-evaluation-001",
+        "ACTFOLLOW-evaluation-012"
+      ]
+    },
+    {
+      "finding": "No reliable automatic pipeline improvement established: predicted accept still leads to accepting 7:50 despite volunteering until8:20, agreeing to heavy lifting with injured shoulder, and accepting overbudget breakfast.",
+      "examples": [
+        "ACTFOLLOW-evaluation-003",
+        "ACTFOLLOW-evaluation-007",
+        "ACTFOLLOW-evaluation-006"
+      ]
+    },
+    {
+      "finding": "Even supplied decline/counterproposal acts fail on duration conflict, overbudget meal and online-only availability.",
+      "examples": [
+        "ACTFOLLOW-evaluation-005",
+        "ACTFOLLOW-evaluation-006",
+        "ACTFOLLOW-evaluation-008"
+      ]
+    },
+    {
+      "finding": "The explicit text-goal arm largely ignores requested alternatives and sometimes regresses factual state; no demonstrated advantage over gated or direct arms.",
+      "examples": [
+        "ACTFOLLOW-evaluation-001",
+        "ACTFOLLOW-evaluation-011",
+        "ACTFOLLOW-evaluation-014"
+      ]
+    },
+    {
+      "finding": "LOCAL can reverse correct STANDARD refusals and remove uncertainty. Assess generator and rewriter separately.",
+      "examples": [
+        "ACTFOLLOW-evaluation-001",
+        "ACTFOLLOW-evaluation-007",
+        "ACTFOLLOW-evaluation-012"
+      ]
+    }
+  ],
+  "conclusion": "Small proof of some decoder act sensitivity, not a reliable contextual or end-to-end upgrade. No new runs or default replacements.",
+  "default_changed": false,
+  "new_training_submitted": false,
+  "verified_standard_local_pairs": 390
+}

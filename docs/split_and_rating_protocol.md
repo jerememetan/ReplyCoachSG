@@ -1,5 +1,39 @@
 # Fixed split and persona based LLM evaluation
 
+## User quality requirements clarification
+
+The primary requirements are recognizably natural Singlish for LOCAL,
+approximately matching meaning across STANDARD/LOCAL, and coherent next-turn
+responses even when they differ from the authored reference. See
+[the requirements](model_quality_requirements.md). Near-neutral English no
+longer qualifies for top LOCAL style marks merely because a Singaporean might
+say it. Avoid artificial particle stuffing. The current one-draft persona schema
+cannot measure cross-style meaning; use an additional paired review. Original-
+reference token loss alone is insufficient to select a winner. Preserve prior
+frozen reports; future evaluations must use fresh matched packets and record the
+revised rubric. These changes do not create human gold labels or alter splits.
+
+## Selectable-draft policy update — 3 November 2026
+
+The project user reviewed six examples and permits plausible new personal or
+factual details in drafts they select/edit before sending, including progress,
+room, deadline and professor-approval replies. Missing prior evidence alone is
+not an appropriateness error. Explicit contradictions, role reversals and missed
+intent remain errors; agreeing is not automatically better than a valid refusal.
+The evaluator-only rubric and shared rating anchors now reflect this policy.
+Would-send is conditional on a user selecting a draft that fits their situation,
+not a certification of unknown real-world facts.
+
+Existing judge runs remain historical under their recorded rubric. Use fresh
+calibration and fresh matched output folders after this prompt change; do not
+merge them into old ratings. The runner records rubric text in the manifest and
+rejects resumes after rubric changes. Evaluation persona ratings remain separate
+from training labels; the fixed train/validation/test split is unchanged.
+
+The earlier protocol below still supplies the same three score dimensions,
+persona design and data guards. This update changes the interpretation of draft
+facts, not the schema or completed-result status.
+
 Updated 18 October 2026. Jereme reports professor approval to replace human output
 raters with persona-based AI reviewers. The agreed design is a configurable panel
 of **10 initial personas**, each scoring **appropriateness, naturalness and style fit**

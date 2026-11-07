@@ -1,0 +1,243 @@
+{
+  "observed_at_utc": "2026-11-07T07:37:14.234560+00:00",
+  "job_id": 356229,
+  "state": "RUNNING",
+  "elapsed": "01:35:56",
+  "phases": {
+    "public": {
+      "status": "complete",
+      "initial_validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 12.683092143952335,
+            "reply_tokens": 2792,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 12.691397379872933,
+            "reply_tokens": 3392,
+            "examples": 200
+          }
+        },
+        "selection_score": 12.687244761912634
+      },
+      "train_exposures": 7994,
+      "validation_count": 400,
+      "first_update_finite": true,
+      "examples_seen": 7994,
+      "source_exposures": {
+        "dailydialog": 3999,
+        "cosem": 3995
+      },
+      "selection": "Final full public pass",
+      "best_epoch": 1
+    },
+    "task_s425": {
+      "status": "complete",
+      "initial_validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 5.494414267046698,
+            "reply_tokens": 580,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 6.039706914905871,
+            "reply_tokens": 461,
+            "examples": 50
+          }
+        },
+        "selection_score": 5.767060590976285
+      },
+      "train_exposures": 1580,
+      "validation_count": 100,
+      "first_update_finite": true,
+      "best_epoch": 8,
+      "best_score": 3.235980455756491,
+      "outputs_complete": true
+    },
+    "task_s426": {
+      "status": "complete",
+      "initial_validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 5.494414267046698,
+            "reply_tokens": 580,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 6.039706914905871,
+            "reply_tokens": 461,
+            "examples": 50
+          }
+        },
+        "selection_score": 5.767060590976285
+      },
+      "train_exposures": 1580,
+      "validation_count": 100,
+      "first_update_finite": true,
+      "best_epoch": 8,
+      "best_score": 3.1999522283163913,
+      "outputs_complete": true
+    },
+    "rewrite": {
+      "status": "complete",
+      "initial_validation": {
+        "groups": {
+          "REWRITE": {
+            "token_ce": 3.311187230522639,
+            "reply_tokens": 363,
+            "examples": 42
+          }
+        },
+        "selection_score": 3.311187230522639
+      },
+      "train_exposures": 745,
+      "validation_count": 42,
+      "first_update_finite": true,
+      "best_epoch": 8,
+      "best_score": 2.9959403916823963,
+      "outputs_complete": true
+    },
+    "fidelity": {
+      "status": "running",
+      "initial_validation": {
+        "groups": {
+          "REPLAY": {
+            "token_ce": 2.9959403916823963,
+            "reply_tokens": 363,
+            "examples": 42
+          },
+          "FIDELITY": {
+            "token_ce": 1.4458735169366348,
+            "reply_tokens": 172,
+            "examples": 18
+          }
+        },
+        "selection_score": 2.2209069543095157
+      },
+      "train_exposures": 1490,
+      "validation_count": 60,
+      "first_update_finite": true,
+      "best_epoch": 2,
+      "best_score": 2.1195444378411645
+    }
+  },
+  "last_validation": {
+    "public": [
+      {
+        "examples_seen": 7994,
+        "validation": {
+          "groups": {
+            "cosem": {
+              "token_ce": 6.731959473096198,
+              "reply_tokens": 2792,
+              "examples": 200
+            },
+            "dailydialog": {
+              "token_ce": 5.502245820918173,
+              "reply_tokens": 3392,
+              "examples": 200
+            }
+          },
+          "selection_score": 6.117102647007185
+        }
+      }
+    ],
+    "task_s425": [
+      {
+        "epoch": 8,
+        "train_example_mean_ce": 3.068524119823794,
+        "validation": {
+          "groups": {
+            "STANDARD": {
+              "token_ce": 2.7521743233861593,
+              "reply_tokens": 580,
+              "examples": 50
+            },
+            "LOCAL": {
+              "token_ce": 3.719786588126822,
+              "reply_tokens": 461,
+              "examples": 50
+            }
+          },
+          "selection_score": 3.235980455756491
+        }
+      }
+    ],
+    "task_s426": [
+      {
+        "epoch": 8,
+        "train_example_mean_ce": 3.075076353021815,
+        "validation": {
+          "groups": {
+            "STANDARD": {
+              "token_ce": 2.7223388659543004,
+              "reply_tokens": 580,
+              "examples": 50
+            },
+            "LOCAL": {
+              "token_ce": 3.677565590678482,
+              "reply_tokens": 461,
+              "examples": 50
+            }
+          },
+          "selection_score": 3.1999522283163913
+        }
+      }
+    ],
+    "rewrite": [
+      {
+        "epoch": 8,
+        "train_example_mean_ce": 2.297490029927068,
+        "validation": {
+          "groups": {
+            "REWRITE": {
+              "token_ce": 2.9959403916823963,
+              "reply_tokens": 363,
+              "examples": 42
+            }
+          },
+          "selection_score": 2.9959403916823963
+        }
+      }
+    ],
+    "fidelity": [
+      {
+        "epoch": 2,
+        "train_example_mean_ce": 1.5568998381745496,
+        "validation": {
+          "groups": {
+            "REPLAY": {
+              "token_ce": 3.1629602895952127,
+              "reply_tokens": 363,
+              "examples": 42
+            },
+            "FIDELITY": {
+              "token_ce": 1.076128586087116,
+              "reply_tokens": 172,
+              "examples": 18
+            }
+          },
+          "selection_score": 2.1195444378411645
+        }
+      }
+    ]
+  },
+  "generated_outputs": 1084,
+  "output_status_counts": {
+    "complete": 1084
+  },
+  "default_changed": false,
+  "preliminary_review": {
+    "scope": "8 deterministic random seed425 greedy direct/own-English rewrite cases, both decodings for injured-wrist case in both seeds, and all18 pre-fidelity controlled challenge cases under greedy and beam4. Not blind human gold.",
+    "sample_seed": 425,
+    "findings": [
+      "Direct injured-wrist case SEADUAL-017 accepts heavy lifting under both decodings and both seeds.",
+      "Rewrite challenge001 reverses cannot finish before06:35 into can finish before06:35 under both decodings.",
+      "Several give-me-back-my-object anchors reverse the return direction; greedy challenge Can prefix18/18, beam4 14/18.",
+      "English/LOCAL direct replies can be identical; current observations do not establish a quality upgrade."
+    ],
+    "fidelity_not_yet_evaluated": true
+  }
+}

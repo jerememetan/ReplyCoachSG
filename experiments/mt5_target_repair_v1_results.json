@@ -1,0 +1,64 @@
+{
+  "status": "training_and_english_complete_local_recovery_submitted",
+  "original_job_id": 355659,
+  "original_job_state": "FAILED",
+  "original_exit_code": "1:0",
+  "elapsed": "00:13:25",
+  "failure": "KeyError response in shared LOCAL encoding; no training/English generation failure.",
+  "runs": {
+    "control_s425": {
+      "best_epoch": 6,
+      "best_score": 1.7966885431724933,
+      "selected_validation": {
+        "original_ce": 2.096659359952499,
+        "paired_ce": 1.496720961371406,
+        "selection_score": 1.7966901606619525
+      }
+    },
+    "repair_s425": {
+      "best_epoch": 6,
+      "best_score": 1.797183431507235,
+      "selected_validation": {
+        "original_ce": 2.0923072355574575,
+        "paired_ce": 1.502060766347119,
+        "selection_score": 1.7971840009522881
+      }
+    },
+    "control_s426": {
+      "best_epoch": 6,
+      "best_score": 1.795360685608662,
+      "selected_validation": {
+        "original_ce": 2.095051557031171,
+        "paired_ce": 1.4956874527403565,
+        "selection_score": 1.7953695048857639
+      }
+    },
+    "repair_s426": {
+      "best_epoch": 6,
+      "best_score": 1.790202638291248,
+      "selected_validation": {
+        "original_ce": 2.0998693698439106,
+        "paired_ce": 1.4805734167333509,
+        "selection_score": 1.7902213932886308
+      }
+    }
+  },
+  "findings": [
+    "Photo-sending direction case003 improves under repaired targets in BOTH seeds: control asks peer to send photos; repair correctly offers to send them.",
+    "Juice-choice case002 regresses under repaired targets in BOTH seeds: a bottle of juice becomes a juice stall.",
+    "Both arms/seeds still fail completion009, budget010, departure timing011 and unknown opening time012.",
+    "No consistent overall autonomous-quality upgrade established; do not equate close CE values with human accuracy."
+  ],
+  "recovery": {
+    "job_id": 355751,
+    "submission": "accepted",
+    "purpose": "Finish LOCAL only; preserve original report/checkpoints; no retraining",
+    "expected_remote_report": "artifacts/results_recovered.json",
+    "last_verified_state": "COMPLETED",
+    "exit_code": "0:0",
+    "local_report": "artifacts/mt5_target_repair_v1/results_recovered.json",
+    "verified_records": 360
+  },
+  "default_changed": false,
+  "new_training_submitted": false
+}

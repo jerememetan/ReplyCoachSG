@@ -1,0 +1,53 @@
+{
+  "reviewed": 24,
+  "total": 24,
+  "counts": {
+    "acceptable": 12,
+    "unacceptable": 9,
+    "uncertain": 3
+  },
+  "changes_or_notes": [
+    {
+      "id": "TIME-0-4",
+      "context": [
+        "I cannot leave before 14:00."
+      ],
+      "message": "Can we meet at 13:00?",
+      "draft": "Let me check and get back to you.",
+      "proposed": "uncertain",
+      "human": {
+        "verdict": "acceptable",
+        "reward": 1,
+        "notes": ""
+      }
+    },
+    {
+      "id": "AVAIL-0-4",
+      "context": [
+        "I am not available on Monday, but I am free on Tuesday."
+      ],
+      "message": "Shall we meet on Monday?",
+      "draft": "Maybe, I will let you know.",
+      "proposed": "uncertain",
+      "human": {
+        "verdict": "unacceptable",
+        "reward": -1,
+        "notes": ""
+      }
+    },
+    {
+      "id": "TIME-1-4",
+      "context": [
+        "I cannot leave before 15:00."
+      ],
+      "message": "Can we meet at 14:00?",
+      "draft": "Let me check and get back to you.",
+      "proposed": "uncertain",
+      "human": {
+        "verdict": "acceptable",
+        "reward": 1,
+        "notes": ""
+      }
+    }
+  ]
+}

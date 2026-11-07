@@ -1,0 +1,685 @@
+{
+  "summary": {
+    "preference_pairs": 17,
+    "conversations": 8,
+    "baseline_human_choice_ranked_higher": 8,
+    "dpo_human_choice_ranked_higher": 8,
+    "corrected": 1,
+    "regressed": 1,
+    "relative_margin_improved": 8,
+    "mean_validation_dpo_loss": 0.6930220688090605,
+    "fresh_assistant_review": {
+      "baseline": {
+        "pass": 8,
+        "fail": 11,
+        "uncertain": 1
+      },
+      "dpo": {
+        "pass": 7,
+        "fail": 11,
+        "uncertain": 2
+      }
+    },
+    "limitation": "17 correlated preference pairs from8 conversations, previously used in SFT selection/human review. No locked test accessed. Sequence probability ranking is not generated reply quality. Fresh20 audit is post-hoc assistant assessment, not blinded human gold. No statistical superiority claim."
+  },
+  "pairs": [
+    {
+      "item_id": "ITEM-A-010",
+      "context": [
+        "this course is so tough.",
+        "yeah, I could really use some help too."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "peer: we very kiasu sia, first lesson already like that",
+      "chosen": "okay, let's just focus on it.",
+      "rejected": "Okay, let's do it together.",
+      "review_ids": [
+        "full_epoch1:ITEM-A-010"
+      ],
+      "baseline": {
+        "chosen_logp": -10.639128684997559,
+        "rejected_logp": -10.937728881835938,
+        "margin": 0.2986001968383789
+      },
+      "dpo": {
+        "chosen_logp": -10.689571380615234,
+        "rejected_logp": -10.475818634033203,
+        "margin": -0.21375274658203125
+      },
+      "margin_change": -0.5123529434204102,
+      "dpo_loss": 0.7190929651260376
+    },
+    {
+      "item_id": "ITEM-A-054",
+      "context": [
+        "We are going to the club later right?",
+        "Yeah, I will go back to shower first."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Aiyo, don't need la, let's go now",
+      "chosen": "Ok, let's go now",
+      "rejected": "No worries, let's go ahead first.",
+      "review_ids": [
+        "full_epoch1:ITEM-A-054"
+      ],
+      "baseline": {
+        "chosen_logp": -9.282768249511719,
+        "rejected_logp": -11.047136306762695,
+        "margin": 1.7643680572509766
+      },
+      "dpo": {
+        "chosen_logp": -8.741588592529297,
+        "rejected_logp": -11.064224243164062,
+        "margin": 2.3226356506347656
+      },
+      "margin_change": 0.5582675933837891,
+      "dpo_loss": 0.6656233072280884
+    },
+    {
+      "item_id": "ITEM-B-002",
+      "context": [
+        "I haven't eaten breakfast",
+        "same sia, I'm hungry also"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "where you want eat?",
+      "chosen": "I'm not sure. Let me check the menu.",
+      "rejected": "I'm going to eat somewhere near the hotel.",
+      "review_ids": [
+        "full_epoch1:ITEM-B-002"
+      ],
+      "baseline": {
+        "chosen_logp": -7.606001853942871,
+        "rejected_logp": -15.989995956420898,
+        "margin": 8.383994102478027
+      },
+      "dpo": {
+        "chosen_logp": -7.153826713562012,
+        "rejected_logp": -16.076412200927734,
+        "margin": 8.922585487365723
+      },
+      "margin_change": 0.5385913848876953,
+      "dpo_loss": 0.6665801405906677
+    },
+    {
+      "item_id": "ITEM-C-018",
+      "context": [
+        "i'll upload my section before dinner",
+        "okay, then i can merge everything tonight"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "chosen": "okay, let's merge later",
+      "rejected": "No worries, I'll forget it later.",
+      "review_ids": [
+        "full_epoch1:ITEM-C-018"
+      ],
+      "baseline": {
+        "chosen_logp": -11.37961196899414,
+        "rejected_logp": -10.211799621582031,
+        "margin": -1.1678123474121094
+      },
+      "dpo": {
+        "chosen_logp": -11.158706665039062,
+        "rejected_logp": -10.523092269897461,
+        "margin": -0.6356143951416016
+      },
+      "margin_change": 0.5321979522705078,
+      "dpo_loss": 0.6668912768363953
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "context": [
+        "eh i struggling to do the linear algebra qn",
+        "which"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "neh the gaussian elim qn",
+      "chosen": "eh, why?",
+      "rejected": "No worries, I'll just focus on the algebra qn.",
+      "review_ids": [
+        "full_epoch1:ITEM-D-009"
+      ],
+      "baseline": {
+        "chosen_logp": -17.365345001220703,
+        "rejected_logp": -16.193958282470703,
+        "margin": -1.17138671875
+      },
+      "dpo": {
+        "chosen_logp": -17.64564323425293,
+        "rejected_logp": -16.18415641784668,
+        "margin": -1.46148681640625
+      },
+      "margin_change": -0.29010009765625,
+      "dpo_loss": 0.7077573537826538
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "context": [
+        "bro you want to eat at kopitiam later? The whole gang is cmg",
+        "if you want ah let us know"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "chosen": "Okay, let us know when you're ready.",
+      "rejected": "okay, let's meet at kopitiam later",
+      "review_ids": [
+        "full_epoch1:ITEM-E-028"
+      ],
+      "baseline": {
+        "chosen_logp": -11.331357955932617,
+        "rejected_logp": -10.522515296936035,
+        "margin": -0.808842658996582
+      },
+      "dpo": {
+        "chosen_logp": -11.67553424835205,
+        "rejected_logp": -10.530157089233398,
+        "margin": -1.1453771591186523
+      },
+      "margin_change": -0.3365345001220703,
+      "dpo_loss": 0.7101154923439026
+    },
+    {
+      "item_id": "ITEM-A-010",
+      "context": [
+        "this course is so tough.",
+        "yeah, I could really use some help too."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "peer: we very kiasu sia, first lesson already like that",
+      "chosen": "yeah, we are. I'll take a break now.",
+      "rejected": "Okay, let's do it together.",
+      "review_ids": [
+        "full_epoch2:ITEM-A-010"
+      ],
+      "baseline": {
+        "chosen_logp": -19.78073501586914,
+        "rejected_logp": -10.937726974487305,
+        "margin": -8.843008041381836
+      },
+      "dpo": {
+        "chosen_logp": -19.94313621520996,
+        "rejected_logp": -10.475822448730469,
+        "margin": -9.467313766479492
+      },
+      "margin_change": -0.6243057250976562,
+      "dpo_loss": 0.7248495817184448
+    },
+    {
+      "item_id": "ITEM-B-002",
+      "context": [
+        "I haven't eaten breakfast",
+        "same sia, I'm hungry also"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "where you want eat?",
+      "chosen": "I'm not sure yet. Let's go to the cafeteria.",
+      "rejected": "I'm going to eat somewhere near the hotel.",
+      "review_ids": [
+        "full_epoch2:ITEM-B-002"
+      ],
+      "baseline": {
+        "chosen_logp": -11.49453067779541,
+        "rejected_logp": -15.989999771118164,
+        "margin": 4.495469093322754
+      },
+      "dpo": {
+        "chosen_logp": -11.370379447937012,
+        "rejected_logp": -16.076414108276367,
+        "margin": 4.7060346603393555
+      },
+      "margin_change": 0.21056556701660156,
+      "dpo_loss": 0.6826743483543396
+    },
+    {
+      "item_id": "ITEM-C-018",
+      "context": [
+        "i'll upload my section before dinner",
+        "okay, then i can merge everything tonight"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "chosen": "okay, let's merge later",
+      "rejected": "okay, i'll forget my slide tonight",
+      "review_ids": [
+        "full_epoch2:ITEM-C-018",
+        "lora_epoch4:ITEM-C-018"
+      ],
+      "baseline": {
+        "chosen_logp": -11.379619598388672,
+        "rejected_logp": -11.311761856079102,
+        "margin": -0.06785774230957031
+      },
+      "dpo": {
+        "chosen_logp": -11.158706665039062,
+        "rejected_logp": -11.533390998840332,
+        "margin": 0.37468433380126953
+      },
+      "margin_change": 0.44254207611083984,
+      "dpo_loss": 0.6712648272514343
+    },
+    {
+      "item_id": "ITEM-C-038",
+      "context": [
+        "ive finished drafting the conclusion",
+        "great"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can help me check if this part sounds too long?",
+      "chosen": "Sure, let me check the conclusion.",
+      "rejected": "Sure, it doesn't cost too much.",
+      "review_ids": [
+        "full_epoch2:ITEM-C-038"
+      ],
+      "baseline": {
+        "chosen_logp": -7.723361015319824,
+        "rejected_logp": -11.607124328613281,
+        "margin": 3.883763313293457
+      },
+      "dpo": {
+        "chosen_logp": -6.91787052154541,
+        "rejected_logp": -11.53966999053955,
+        "margin": 4.621799468994141
+      },
+      "margin_change": 0.7380361557006836,
+      "dpo_loss": 0.6569260954856873
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "context": [
+        "eh i struggling to do the linear algebra qn",
+        "which"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "neh the gaussian elim qn",
+      "chosen": "eh, why?",
+      "rejected": "No worries, I'll take a look at the algebra qn",
+      "review_ids": [
+        "full_epoch2:ITEM-D-009"
+      ],
+      "baseline": {
+        "chosen_logp": -17.36534309387207,
+        "rejected_logp": -17.962934494018555,
+        "margin": 0.5975914001464844
+      },
+      "dpo": {
+        "chosen_logp": -17.645648956298828,
+        "rejected_logp": -17.91046714782715,
+        "margin": 0.2648181915283203
+      },
+      "margin_change": -0.33277320861816406,
+      "dpo_loss": 0.7099242806434631
+    },
+    {
+      "item_id": "ITEM-D-033",
+      "context": [
+        "hello",
+        "hi",
+        "i am already at the bus stop"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "wya",
+      "chosen": "I am reaching the bus stop",
+      "rejected": "okay, i will take a bus to get there",
+      "review_ids": [
+        "full_epoch2:ITEM-D-033"
+      ],
+      "baseline": {
+        "chosen_logp": -9.223390579223633,
+        "rejected_logp": -16.496170043945312,
+        "margin": 7.27277946472168
+      },
+      "dpo": {
+        "chosen_logp": -8.870063781738281,
+        "rejected_logp": -16.526790618896484,
+        "margin": 7.656726837158203
+      },
+      "margin_change": 0.38394737243652344,
+      "dpo_loss": 0.6741340756416321
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "context": [
+        "bro you want to eat at kopitiam later? The whole gang is cmg",
+        "if you want ah let us know"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "chosen": "Okay, let us know when you're free.",
+      "rejected": "okay, let's meet at kopitiam later",
+      "review_ids": [
+        "full_epoch2:ITEM-E-028"
+      ],
+      "baseline": {
+        "chosen_logp": -10.904885292053223,
+        "rejected_logp": -10.522515296936035,
+        "margin": -0.3823699951171875
+      },
+      "dpo": {
+        "chosen_logp": -11.019113540649414,
+        "rejected_logp": -10.53015422821045,
+        "margin": -0.48895931243896484
+      },
+      "margin_change": -0.10658931732177734,
+      "dpo_loss": 0.6984907984733582
+    },
+    {
+      "item_id": "ITEM-A-010",
+      "context": [
+        "this course is so tough.",
+        "yeah, I could really use some help too."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "peer: we very kiasu sia, first lesson already like that",
+      "chosen": "yeah, we are very busy nowadays.",
+      "rejected": "Okay, let's do it together.",
+      "review_ids": [
+        "lora_epoch4:ITEM-A-010"
+      ],
+      "baseline": {
+        "chosen_logp": -15.199724197387695,
+        "rejected_logp": -10.937728881835938,
+        "margin": -4.261995315551758
+      },
+      "dpo": {
+        "chosen_logp": -15.521095275878906,
+        "rejected_logp": -10.475820541381836,
+        "margin": -5.04527473449707
+      },
+      "margin_change": -0.7832794189453125,
+      "dpo_loss": 0.733077883720398
+    },
+    {
+      "item_id": "ITEM-B-002",
+      "context": [
+        "I haven't eaten breakfast",
+        "same sia, I'm hungry also"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "where you want eat?",
+      "chosen": "I'm going to eat somewhere near the hotel.",
+      "rejected": "I'm hungry at the cafeteria.",
+      "review_ids": [
+        "lora_epoch4:ITEM-B-002"
+      ],
+      "baseline": {
+        "chosen_logp": -15.990005493164062,
+        "rejected_logp": -8.205340385437012,
+        "margin": -7.784665107727051
+      },
+      "dpo": {
+        "chosen_logp": -16.076414108276367,
+        "rejected_logp": -8.141058921813965,
+        "margin": -7.935355186462402
+      },
+      "margin_change": -0.15069007873535156,
+      "dpo_loss": 0.7007100582122803
+    },
+    {
+      "item_id": "ITEM-C-038",
+      "context": [
+        "ive finished drafting the conclusion",
+        "great"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can help me check if this part sounds too long?",
+      "chosen": "Sure, let me check it for you.",
+      "rejected": "Sure, it doesn't cost too much.",
+      "review_ids": [
+        "lora_epoch4:ITEM-C-038"
+      ],
+      "baseline": {
+        "chosen_logp": -9.69729995727539,
+        "rejected_logp": -11.607124328613281,
+        "margin": 1.9098243713378906
+      },
+      "dpo": {
+        "chosen_logp": -9.354257583618164,
+        "rejected_logp": -11.539670944213867,
+        "margin": 2.185413360595703
+      },
+      "margin_change": 0.2755889892578125,
+      "dpo_loss": 0.6794626712799072
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "context": [
+        "eh i struggling to do the linear algebra qn",
+        "which"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "neh the gaussian elim qn",
+      "chosen": "eh, why?",
+      "rejected": "which qn would you like to do?",
+      "review_ids": [
+        "lora_epoch4:ITEM-D-009"
+      ],
+      "baseline": {
+        "chosen_logp": -17.3653507232666,
+        "rejected_logp": -12.673129081726074,
+        "margin": -4.692221641540527
+      },
+      "dpo": {
+        "chosen_logp": -17.645645141601562,
+        "rejected_logp": -12.544546127319336,
+        "margin": -5.101099014282227
+      },
+      "margin_change": -0.4088773727416992,
+      "dpo_loss": 0.7138000130653381
+    }
+  ],
+  "fresh_assistant_review": [
+    {
+      "item_id": "FRESH-DPO-001",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Agrees to5pm despite cannot leave until6:30.",
+      "baseline_reply": "That works for me. See you then.",
+      "dpo_reply": "That works for me. See you then."
+    },
+    {
+      "item_id": "FRESH-DPO-002",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Reverses ownership/roles: peer wants to keep the user calculator; user replies they can keep it.",
+      "baseline_reply": "I can keep it until tomorrow.",
+      "dpo_reply": "I can keep it until tomorrow."
+    },
+    {
+      "item_id": "FRESH-DPO-003",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Claims report finished although user has not started.",
+      "baseline_reply": "Yes, I have finished it.",
+      "dpo_reply": "Yes, I have finished it."
+    },
+    {
+      "item_id": "FRESH-DPO-004",
+      "baseline": "uncertain",
+      "dpo": "uncertain",
+      "note": "Sympathy is plausible but fails to clearly acknowledge waiting; weak rather than an explicit contradiction.",
+      "baseline_reply": "I am sorry to hear that.",
+      "dpo_reply": "I am sorry to hear that."
+    },
+    {
+      "item_id": "FRESH-DPO-005",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Contradictory yes/closed answer and invents bakery opening status despite admitted uncertainty.",
+      "baseline_reply": "Yes, it is. It's closed on Monday.",
+      "dpo_reply": "Yes, it is. The bakery is closed on Monday."
+    },
+    {
+      "item_id": "FRESH-DPO-006",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Agrees to Sunday despite user unavailable Sunday.",
+      "baseline_reply": "Yes, let's meet on Sunday then.",
+      "dpo_reply": "Yes, let's meet on Sunday then."
+    },
+    {
+      "item_id": "FRESH-DPO-007",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Answers where the bottle was lost instead of its colour.",
+      "baseline_reply": "I lost it in the seminar room.",
+      "dpo_reply": "I lost it in the seminar room."
+    },
+    {
+      "item_id": "FRESH-DPO-008",
+      "baseline": "pass",
+      "dpo": "fail",
+      "note": "Before confirms completed upload, with incidental timing; DPO instead promises future upload despite it already being done.",
+      "baseline_reply": "I already uploaded it before noon.",
+      "dpo_reply": "I will. Thanks for letting me know."
+    },
+    {
+      "item_id": "FRESH-DPO-009",
+      "baseline": "pass",
+      "dpo": "pass",
+      "note": "Agrees to return the borrowed umbrella; correct owner and role.",
+      "baseline_reply": "I can return your umbrella this evening.",
+      "dpo_reply": "I can return your umbrella this evening."
+    },
+    {
+      "item_id": "FRESH-DPO-010",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Accepts twenty-dollar buffet despite twelve-dollar budget.",
+      "baseline_reply": "That works for me. Let's meet at the twenty-dollar buffet then.",
+      "dpo_reply": "That works for me. Let's meet at the twenty-dollar buffet then."
+    },
+    {
+      "item_id": "FRESH-DPO-011",
+      "baseline": "pass",
+      "dpo": "pass",
+      "note": "Correctly states west entrance from context.",
+      "baseline_reply": "I am at the west entrance.",
+      "dpo_reply": "I am at the west entrance."
+    },
+    {
+      "item_id": "FRESH-DPO-012",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Offers to teach software despite user not knowing how to use it.",
+      "baseline_reply": "I can teach you how to use it.",
+      "dpo_reply": "Sure, let me show you how to use it."
+    },
+    {
+      "item_id": "FRESH-DPO-013",
+      "baseline": "pass",
+      "dpo": "pass",
+      "note": "Availability after four supports meeting at4:30.",
+      "baseline_reply": "Yes, I am free after four.",
+      "dpo_reply": "Yes, I am free after four."
+    },
+    {
+      "item_id": "FRESH-DPO-014",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Before self-contradicts and changes topic to arrival; after unexplained refusal and new booking promise do not resolve extra guest.",
+      "baseline_reply": "I can't make it, but I'll be there in a few minutes.",
+      "dpo_reply": "I can't do that, but I'll book a table for us."
+    },
+    {
+      "item_id": "FRESH-DPO-015",
+      "baseline": "fail",
+      "dpo": "uncertain",
+      "note": "Before chooses cookies user cannot eat; DPO acknowledges inability but wraps it in an awkward preference. Partial repair, no confident pass.",
+      "baseline_reply": "I'd prefer the peanut cookies.",
+      "dpo_reply": "I'd prefer the peanut cookies, but I can't eat them."
+    },
+    {
+      "item_id": "FRESH-DPO-016",
+      "baseline": "pass",
+      "dpo": "pass",
+      "note": "Correctly confirms possession of peer headphones.",
+      "baseline_reply": "Yes, I have them in my bag.",
+      "dpo_reply": "Yes, I have them in my bag."
+    },
+    {
+      "item_id": "FRESH-DPO-017",
+      "baseline": "fail",
+      "dpo": "fail",
+      "note": "Agrees to nine despite needing to leave by eight.",
+      "baseline_reply": "Sure, nine works for me.",
+      "dpo_reply": "Sure, nine works for me."
+    },
+    {
+      "item_id": "FRESH-DPO-018",
+      "baseline": "pass",
+      "dpo": "pass",
+      "note": "Offers to check unknown deadline rather than invent one.",
+      "baseline_reply": "Let me check the schedule.",
+      "dpo_reply": "Let me check the schedule."
+    },
+    {
+      "item_id": "FRESH-DPO-019",
+      "baseline": "pass",
+      "dpo": "pass",
+      "note": "Acknowledges thanks and confirms poster commitment.",
+      "baseline_reply": "You are welcome. I will bring the poster to the exhibition.",
+      "dpo_reply": "You are welcome. I will bring the poster to the exhibition."
+    },
+    {
+      "item_id": "FRESH-DPO-020",
+      "baseline": "pass",
+      "dpo": "pass",
+      "note": "Correctly states tickets not bought yet.",
+      "baseline_reply": "No, I haven't bought them yet.",
+      "dpo_reply": "No, I haven't bought them yet."
+    }
+  ]
+}

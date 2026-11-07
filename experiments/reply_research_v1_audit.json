@@ -1,0 +1,334 @@
+{
+  "targets": {
+    "original190": {
+      "items": 190,
+      "can_initial": 33,
+      "can_interjection_initial": 27,
+      "exact_normalized_copy": 0,
+      "unique_normalized_local": 190,
+      "most_common_openings": [
+        [
+          "can i",
+          8
+        ],
+        [
+          "okay i",
+          5
+        ],
+        [
+          "can we",
+          4
+        ],
+        [
+          "ok i",
+          4
+        ],
+        [
+          "it's okay",
+          4
+        ],
+        [
+          "can what",
+          3
+        ],
+        [
+          "ok can",
+          3
+        ],
+        [
+          "ya i",
+          3
+        ]
+      ],
+      "repeated_complete_local": []
+    },
+    "curated190": {
+      "items": 190,
+      "can_initial": 51,
+      "can_interjection_initial": 48,
+      "exact_normalized_copy": 0,
+      "unique_normalized_local": 187,
+      "most_common_openings": [
+        [
+          "can i",
+          13
+        ],
+        [
+          "never mind",
+          12
+        ],
+        [
+          "can you",
+          5
+        ],
+        [
+          "can after",
+          4
+        ],
+        [
+          "can what",
+          3
+        ],
+        [
+          "can see",
+          3
+        ],
+        [
+          "you want",
+          3
+        ],
+        [
+          "okay lah",
+          3
+        ]
+      ],
+      "repeated_complete_local": [
+        {
+          "reply": "can what time you want to meet",
+          "count": 2
+        },
+        {
+          "reply": "can i send you the link",
+          "count": 2
+        },
+        {
+          "reply": "never mind lah",
+          "count": 2
+        }
+      ]
+    },
+    "expanded790": {
+      "items": 790,
+      "can_initial": 157,
+      "can_interjection_initial": 105,
+      "exact_normalized_copy": 0,
+      "unique_normalized_local": 786,
+      "most_common_openings": [
+        [
+          "can do",
+          28
+        ],
+        [
+          "can i",
+          25
+        ],
+        [
+          "no problem",
+          21
+        ],
+        [
+          "never mind",
+          16
+        ],
+        [
+          "not sure",
+          13
+        ],
+        [
+          "i can",
+          13
+        ],
+        [
+          "can let's",
+          11
+        ],
+        [
+          "no worries",
+          10
+        ]
+      ],
+      "repeated_complete_local": [
+        {
+          "reply": "can what time you want to meet",
+          "count": 2
+        },
+        {
+          "reply": "can i send you the link",
+          "count": 2
+        },
+        {
+          "reply": "never mind lah",
+          "count": 2
+        },
+        {
+          "reply": "4pm can see you then",
+          "count": 2
+        }
+      ]
+    }
+  },
+  "sources_sha256": {
+    "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "data/distillation/shared_intent_v1_reviewed.json": "da2ee4b74c6a5eedcbd0accd85895c67ec9c2a5b4e5d4b8a909e71b1e8bd5aa6",
+    "data/training_expansion/blanket600_v1/expanded.jsonl": "667839d3bf5af03063eaaf689ee2e2cbd2019e87c91ae917923c761d62a8abfb"
+  },
+  "introduced_can_openings": [
+    {
+      "item_id": "ITEM-A-001",
+      "original": "steady bro, what time ah?",
+      "curated": "Can! What time you want to meet?"
+    },
+    {
+      "item_id": "ITEM-A-004",
+      "original": "steady, see you at 6pm!",
+      "curated": "Can! See you at 6pm."
+    },
+    {
+      "item_id": "ITEM-A-022",
+      "original": "Sure, faster ah",
+      "curated": "Can, you hurry down soon ah."
+    },
+    {
+      "item_id": "ITEM-A-029",
+      "original": "okay! I order noodles for you",
+      "curated": "Can, I order from noodle stall for you."
+    },
+    {
+      "item_id": "ITEM-A-039",
+      "original": "steady, I meet you all there",
+      "curated": "Can, see you there!"
+    },
+    {
+      "item_id": "ITEM-A-040",
+      "original": "Use mine first la",
+      "curated": "Can, you use mine lah."
+    },
+    {
+      "item_id": "ITEM-A-041",
+      "original": "Eh, can help me print also?",
+      "curated": "Can, please print one for me also."
+    },
+    {
+      "item_id": "ITEM-B-004",
+      "original": "Sure, can get me a bottle of water?",
+      "curated": "Can, you want what drink?"
+    },
+    {
+      "item_id": "ITEM-B-039",
+      "original": "OK, I come now",
+      "curated": "Can, I come over find you."
+    },
+    {
+      "item_id": "ITEM-B-040",
+      "original": "Ok, can",
+      "curated": "Can, six thirty also can."
+    },
+    {
+      "item_id": "ITEM-B-041",
+      "original": "Yea can",
+      "curated": "Can, we walk back together lah."
+    },
+    {
+      "item_id": "ITEM-C-026",
+      "original": "ya, still on. we makan after class",
+      "curated": "Can, after class meet you."
+    },
+    {
+      "item_id": "ITEM-D-028",
+      "original": "u want sit which row",
+      "curated": "Can. You want to sit at which row?"
+    },
+    {
+      "item_id": "ITEM-D-043",
+      "original": "ok can, lmk when u reaching",
+      "curated": "Can, I buy your ticket. Reaching then tell me."
+    },
+    {
+      "item_id": "ITEM-D-048",
+      "original": "okok, i gna be bringing 3",
+      "curated": "Can, three rackets I bring."
+    },
+    {
+      "item_id": "ITEM-D-049",
+      "original": "ok i need to run and exercise abit",
+      "curated": "Can, I free to go run tomorrow."
+    },
+    {
+      "item_id": "ITEM-E-017",
+      "original": "ya c u later",
+      "curated": "Can, see you later ah."
+    },
+    {
+      "item_id": "ITEM-E-033",
+      "original": "Onz ah.",
+      "curated": "Can, I come also."
+    },
+    {
+      "item_id": "ITEM-E-060",
+      "original": "ok lor we eat at 2",
+      "curated": "Can, two o'clock then eat."
+    }
+  ],
+  "curated_vs_original_changes": {
+    "local_normalized": 187,
+    "standard_normalized": 14
+  },
+  "curation": {
+    "reviewer": "Codex assistant; not independent human gold",
+    "source_sha256": "c5b1d42eeb7f8258171c5d582bcdaabc5124877e5c15f891a2704ab90412be59",
+    "standard_edits": 14,
+    "local_edits": 117,
+    "repaired_generation_failures": 2,
+    "policy": "Recognizable natural Singlish, approximately same meaning, coherent selectable drafts. Minor politeness differences allowed. Particle counts do not establish quality."
+  },
+  "overfitting": {
+    "full_lr3e4": {
+      "old_endpoint": {
+        "train_loss": 0.03340233410132142,
+        "validation_loss": 3.7708446412250916
+      },
+      "best_epoch": 1,
+      "best_validation_loss": 2.11055441724843
+    },
+    "full_lr1e4": {
+      "old_endpoint": {
+        "train_loss": 0.16405856594079002,
+        "validation_loss": 2.8896569424662095
+      },
+      "best_epoch": 2,
+      "best_validation_loss": 2.1241998608770043
+    },
+    "lora_lr3e4": {
+      "old_endpoint": {
+        "train_loss": 1.3248056680754279,
+        "validation_loss": 2.1610524933913657
+      },
+      "best_epoch": 4,
+      "best_validation_loss": 2.1567169674511613
+    }
+  },
+  "human_pair_review": {
+    "reviewed": 30,
+    "total": 30,
+    "preference_counts": {
+      "hybrid": 5,
+      "earlier_paired": 5,
+      "Tie": 1,
+      "Both bad": 19
+    },
+    "explicit_issue_flags": {
+      "hybrid": {
+        "LOCAL sounds unnatural": 1
+      },
+      "earlier_paired": {}
+    },
+    "feedback": []
+  },
+  "fresh_outputs": {
+    "hybrid": {
+      "cases": 30,
+      "can_initial": 20,
+      "exact_normalized_copy": 1
+    },
+    "earlier_paired": {
+      "cases": 30,
+      "can_initial": 14,
+      "exact_normalized_copy": 4
+    }
+  },
+  "expanded_validation_exact_full_text_overlaps": 0,
+  "nonalternating_context_items": {
+    "original_train": 10,
+    "validation": 5
+  }
+}

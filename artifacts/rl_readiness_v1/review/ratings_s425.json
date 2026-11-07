@@ -1,0 +1,506 @@
+{
+  "packet_sha256": "ec6c51bc20e528a4e0f32e9d892683be991fb8c300650578205fb7d9899acece",
+  "limitation": "Exploratory assistant inspection of one seed on reused development conversations, not independent human gold. Arm IDs hidden during rating, but outputs often reveal model identity through fluency. Assistant knows prior outputs and authored synthetic corrections. Comparisons differ in model size/family/pretraining/quantization/decoding. Selectable-draft policy permits plausible new facts and valid refusals.",
+  "ratings": [
+    {
+      "n": 1,
+      "choice": "B",
+      "reason": "B responds to the course workload; A is unrelated."
+    },
+    {
+      "n": 2,
+      "choice": "B",
+      "reason": "B acknowledges the difficult course with a plausible detail; A is unrelated."
+    },
+    {
+      "n": 3,
+      "choice": "B",
+      "reason": "B confirms the meeting; A changes meeting into checking with the peer."
+    },
+    {
+      "n": 4,
+      "choice": "B",
+      "reason": "B confirms time and meeting; A only promises a later check."
+    },
+    {
+      "n": 5,
+      "choice": "B",
+      "reason": "B offers relevant help; A asks the peer who lacks printer knowledge for instructions."
+    },
+    {
+      "n": 6,
+      "choice": "A",
+      "reason": "A offers relevant help; B asks the peer who lacks printer knowledge for instructions."
+    },
+    {
+      "n": 7,
+      "choice": "tie",
+      "reason": "Both propose another booking/location; the new hotel detail is allowed."
+    },
+    {
+      "n": 8,
+      "choice": "tie",
+      "reason": "Both agree to find another place."
+    },
+    {
+      "n": 9,
+      "choice": "tie",
+      "reason": "Both uncertainty with a check and a plausible opening-status answer are valid selectable drafts."
+    },
+    {
+      "n": 10,
+      "choice": "B",
+      "reason": "B addresses opening status; A introduces dinner instead of lunch."
+    },
+    {
+      "n": 11,
+      "choice": "A",
+      "reason": "A acknowledges the takeaway reminder; B gives an unrelated return time."
+    },
+    {
+      "n": 12,
+      "choice": "B",
+      "reason": "B acknowledges the takeaway reminder; A gives an unrelated return time."
+    },
+    {
+      "n": 13,
+      "choice": "tie",
+      "reason": "Both are plausible responses: user arrival time or reassurance about peer lateness."
+    },
+    {
+      "n": 14,
+      "choice": "tie",
+      "reason": "Both give compatible attendance/arrival responses."
+    },
+    {
+      "n": 15,
+      "choice": "A",
+      "reason": "A responds to the reminder by maintaining the user's checking action; B changes to sending without addressing care."
+    },
+    {
+      "n": 16,
+      "choice": "B",
+      "reason": "B acknowledges careful checking; A only states a sending plan."
+    },
+    {
+      "n": 17,
+      "choice": "tie",
+      "reason": "Both accept two o'clock."
+    },
+    {
+      "n": 18,
+      "choice": "tie",
+      "reason": "Both accept the proposed time."
+    },
+    {
+      "n": 19,
+      "choice": "tie",
+      "reason": "Accepting departure now or insisting on a shower are both valid user decisions."
+    },
+    {
+      "n": 20,
+      "choice": "tie",
+      "reason": "Accepting departure now or counterproposing twenty minutes are both valid."
+    },
+    {
+      "n": 21,
+      "choice": "A",
+      "reason": "A specifies a cafeteria; B proposes brunch nearby without answering the place as concretely."
+    },
+    {
+      "n": 22,
+      "choice": "B",
+      "reason": "B names a place to eat; A asks a broader location preference instead."
+    },
+    {
+      "n": 23,
+      "choice": "B",
+      "reason": "B directly answers the space question; A appends an arrival estimate to an ambiguous Yes."
+    },
+    {
+      "n": 24,
+      "choice": "tie",
+      "reason": "Both confirm space; added meeting acknowledgement is compatible."
+    },
+    {
+      "n": 25,
+      "choice": "B",
+      "reason": "B gives a specific room; A supplies only a floor with awkward preposition."
+    },
+    {
+      "n": 26,
+      "choice": "tie",
+      "reason": "A offers a relevant timetable check and B supplies a possible floor; new room/floor details are allowed."
+    },
+    {
+      "n": 27,
+      "choice": "A",
+      "reason": "A promises the requested class update; B asks the absent peer to supply what they missed."
+    },
+    {
+      "n": 28,
+      "choice": "B",
+      "reason": "B promises the class update; A asks for unrelated arrival information."
+    },
+    {
+      "n": 29,
+      "choice": "B",
+      "reason": "B responds coherently to the wrong-bus report; A is an incoherent denial."
+    },
+    {
+      "n": 30,
+      "choice": "tie",
+      "reason": "Both reassure via a relevant location/arrival update; neither clearly contradicts the user status."
+    },
+    {
+      "n": 31,
+      "choice": "tie",
+      "reason": "Both accept the outing; asking for details is also useful."
+    },
+    {
+      "n": 32,
+      "choice": "tie",
+      "reason": "Both are valid responses: request details or accept joining later."
+    },
+    {
+      "n": 33,
+      "choice": "tie",
+      "reason": "Both acknowledge attendance after the postponement."
+    },
+    {
+      "n": 34,
+      "choice": "tie",
+      "reason": "Both acknowledge the event update and attendance."
+    },
+    {
+      "n": 35,
+      "choice": "tie",
+      "reason": "Both acceptance and asking for the running time are valid."
+    },
+    {
+      "n": 36,
+      "choice": "tie",
+      "reason": "Both acceptance and asking for the running time are valid."
+    },
+    {
+      "n": 37,
+      "choice": "tie",
+      "reason": "Both confirm attendance; repeating seven is optional."
+    },
+    {
+      "n": 38,
+      "choice": "tie",
+      "reason": "Both attendance confirmation and a location request are valid."
+    },
+    {
+      "n": 39,
+      "choice": "A",
+      "reason": "A lends the existing charger coherently; B introduces an unnecessary new charger."
+    },
+    {
+      "n": 40,
+      "choice": "A",
+      "reason": "A lends the user's charger; B reverses lender and borrower."
+    },
+    {
+      "n": 41,
+      "choice": "tie",
+      "reason": "Both accept the stated meeting."
+    },
+    {
+      "n": 42,
+      "choice": "tie",
+      "reason": "Both accept meeting there; time is clear from context."
+    },
+    {
+      "n": 43,
+      "choice": "A",
+      "reason": "A preserves ongoing results work; B says that work finished last week."
+    },
+    {
+      "n": 44,
+      "choice": "tie",
+      "reason": "Both a recent completion and almost-complete status are permissible."
+    },
+    {
+      "n": 45,
+      "choice": "A",
+      "reason": "A addresses uploading the user's slides; B only refers to merging."
+    },
+    {
+      "n": 46,
+      "choice": "B",
+      "reason": "B addresses sending the user's slides; A only mentions merging."
+    },
+    {
+      "n": 47,
+      "choice": "tie",
+      "reason": "Both accept the night-market invitation; requesting details is optional."
+    },
+    {
+      "n": 48,
+      "choice": "tie",
+      "reason": "Both accept the night-market invitation."
+    },
+    {
+      "n": 49,
+      "choice": "A",
+      "reason": "A acknowledges the peer ordering first; B reverses the established waiting role."
+    },
+    {
+      "n": 50,
+      "choice": "tie",
+      "reason": "Both reassure with a compatible follow-up or user arrival update."
+    },
+    {
+      "n": 51,
+      "choice": "tie",
+      "reason": "Both agree to check the conclusion."
+    },
+    {
+      "n": 52,
+      "choice": "tie",
+      "reason": "Both agree to check; later or after sending are compatible timing choices."
+    },
+    {
+      "n": 53,
+      "choice": "B",
+      "reason": "B directly acknowledges the peer's delayed upload; A discusses the user's upload instead."
+    },
+    {
+      "n": 54,
+      "choice": "B",
+      "reason": "B directly acknowledges the peer's delayed upload; A discusses sending the user's section."
+    },
+    {
+      "n": 55,
+      "choice": "tie",
+      "reason": "Both confirm early arrival to get seats."
+    },
+    {
+      "n": 56,
+      "choice": "B",
+      "reason": "B confirms coming early tomorrow; A says the user is currently waiting for seats."
+    },
+    {
+      "n": 57,
+      "choice": "tie",
+      "reason": "Both accept around two."
+    },
+    {
+      "n": 58,
+      "choice": "tie",
+      "reason": "Both accept two."
+    },
+    {
+      "n": 59,
+      "choice": "B",
+      "reason": "B addresses court availability; A changes waiting for the court into waiting for the peer."
+    },
+    {
+      "n": 60,
+      "choice": "A",
+      "reason": "A addresses court availability; B changes waiting for court into waiting for the peer."
+    },
+    {
+      "n": 61,
+      "choice": "B",
+      "reason": "B provides possible drink choices; A only expresses uncertainty. Both permissible, B more actionable."
+    },
+    {
+      "n": 62,
+      "choice": "tie",
+      "reason": "Coffee/milk tea and beer are different permissible user preferences; do not reject a preference solely as unfamiliar."
+    },
+    {
+      "n": 63,
+      "choice": "B",
+      "reason": "B offers help on the identified question; A states an unrelated plan to work alone."
+    },
+    {
+      "n": 64,
+      "choice": "tie",
+      "reason": "Offering help and honestly being unable to solve the question are both valid."
+    },
+    {
+      "n": 65,
+      "choice": "B",
+      "reason": "Both acknowledge knowing it; B additionally asks which question needs help."
+    },
+    {
+      "n": 66,
+      "choice": "B",
+      "reason": "Both affirm familiarity; B moves the help conversation forward with a relevant question."
+    },
+    {
+      "n": 67,
+      "choice": "B",
+      "reason": "B gives a coherent refusal plus help offer; A offers an unspecified list."
+    },
+    {
+      "n": 68,
+      "choice": "A",
+      "reason": "A gives a coherent refusal plus help offer; B offers an unspecified list."
+    },
+    {
+      "n": 69,
+      "choice": "B",
+      "reason": "B addresses the bidding deadline; A introduces an unrelated link."
+    },
+    {
+      "n": 70,
+      "choice": "A",
+      "reason": "A acknowledges remembering to bid; B introduces an unrelated link."
+    },
+    {
+      "n": 71,
+      "choice": "A",
+      "reason": "A directly supplies location and arrival estimate; B only supplies a transport plan."
+    },
+    {
+      "n": 72,
+      "choice": "tie",
+      "reason": "Both supply plausible user arrival status."
+    },
+    {
+      "n": 73,
+      "choice": "A",
+      "reason": "A says the user is on the way; B reverses who is waiting."
+    },
+    {
+      "n": 74,
+      "choice": "tie",
+      "reason": "Both supply plausible user arrival status."
+    },
+    {
+      "n": 75,
+      "choice": "tie",
+      "reason": "Both agree to wait outside."
+    },
+    {
+      "n": 76,
+      "choice": "tie",
+      "reason": "Both agree to wait; explicit outside is optional."
+    },
+    {
+      "n": 77,
+      "choice": "B",
+      "reason": "B proposes alternative show availability; A gives an incoherent acceptance of sold-out tickets."
+    },
+    {
+      "n": 78,
+      "choice": "B",
+      "reason": "B explicitly proposes other cinemas; A's link offer is relevant but less clear."
+    },
+    {
+      "n": 79,
+      "choice": "A",
+      "reason": "A expresses sympathy for the peer's flu; B apologizes for not seeing them today."
+    },
+    {
+      "n": 80,
+      "choice": "B",
+      "reason": "B acknowledges the peer's illness; A transfers the peer's absence into the user role."
+    },
+    {
+      "n": 81,
+      "choice": "A",
+      "reason": "A acknowledges the peer joining; B reverses who joins whom."
+    },
+    {
+      "n": 82,
+      "choice": "B",
+      "reason": "B acknowledges the peer joining; A reverses who joins whom."
+    },
+    {
+      "n": 83,
+      "choice": "both_bad",
+      "reason": "Neither answers the Mandarin meeting-location question or asks a useful clarification."
+    },
+    {
+      "n": 84,
+      "choice": "both_bad",
+      "reason": "Neither supplies a meeting location or asks for clarification of the location request."
+    },
+    {
+      "n": 85,
+      "choice": "A",
+      "reason": "A clearly confirms lending after three; B is a less explicit acknowledgement without the stated time."
+    },
+    {
+      "n": 86,
+      "choice": "B",
+      "reason": "B confirms availability after three; A postpones confirmation until after three."
+    },
+    {
+      "n": 87,
+      "choice": "tie",
+      "reason": "Completed and not-yet-completed are both permissible unknown user progress states."
+    },
+    {
+      "n": 88,
+      "choice": "tie",
+      "reason": "Both are permissible unknown user progress alternatives."
+    },
+    {
+      "n": 89,
+      "choice": "tie",
+      "reason": "Both confirm Thursday."
+    },
+    {
+      "n": 90,
+      "choice": "tie",
+      "reason": "Both confirm Thursday; reference to others is compatible."
+    },
+    {
+      "n": 91,
+      "choice": "B",
+      "reason": "B tells the peer to update their booking; A puts the peer's change into the user role."
+    },
+    {
+      "n": 92,
+      "choice": "A",
+      "reason": "A explains changing the peer's time slot; B changes to a user booking action."
+    },
+    {
+      "n": 93,
+      "choice": "B",
+      "reason": "B acknowledges the peer cannot attend; A proceeds with meeting despite that constraint."
+    },
+    {
+      "n": 94,
+      "choice": "B",
+      "reason": "B acknowledges inability to attend; A ignores it."
+    },
+    {
+      "n": 95,
+      "choice": "A",
+      "reason": "A preserves the original room after the requested room is unavailable; B gives an incoherent booking promise."
+    },
+    {
+      "n": 96,
+      "choice": "A",
+      "reason": "A preserves the available tutorial room; B gives an incoherent completed booking claim."
+    },
+    {
+      "n": 97,
+      "choice": "A",
+      "reason": "A accepts and asks for time/place; B refers to an unspecified location."
+    },
+    {
+      "n": 98,
+      "choice": "A",
+      "reason": "A asks for a work location; B introduces after-work timing rather than jointly doing the work."
+    },
+    {
+      "n": 99,
+      "choice": "tie",
+      "reason": "Both approve the proposed release time."
+    },
+    {
+      "n": 100,
+      "choice": "B",
+      "reason": "B approves releasing recordings at five; A changes releasing recordings to leaving something."
+    }
+  ]
+}

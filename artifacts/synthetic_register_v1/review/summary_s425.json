@@ -1,0 +1,30 @@
+{
+  "seed": 425,
+  "counts": {
+    "both_bad": 7,
+    "control": 19,
+    "tie": 35,
+    "register": 14,
+    "identical": 25
+  },
+  "by_style": {
+    "LOCAL": {
+      "both_bad": 4,
+      "tie": 21,
+      "register": 6,
+      "control": 9,
+      "identical": 10
+    },
+    "STANDARD": {
+      "control": 10,
+      "tie": 14,
+      "both_bad": 3,
+      "register": 8,
+      "identical": 15
+    }
+  },
+  "packet_sha256": "550dd54ccc06d4192259df1cf2cc3f71d26b37e999983246472bb2b5cc187a3c",
+  "ratings_sha256": "5d006bb244d514ee48d616ff47f6923bf5e2d31095c833094ad27d3d566130df",
+  "reviewer_limitations": "Assistant authored the register variants and had prior exposure to comparator replies. Labels were hidden and ratings saved before this key was read, but this is not fully blind or independent human evaluation.",
+  "limitation": "Assistant inspection, not human gold. Seeds reuse the same conversations; do not count pooled cells as independent conversations."
+}

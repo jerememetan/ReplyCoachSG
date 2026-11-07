@@ -1,0 +1,85 @@
+{
+  "job_id": 355463,
+  "status": "complete",
+  "history": [
+    {
+      "step": 0,
+      "train_loss": 2.97467495474144,
+      "validation_loss": 2.9206221103668213,
+      "train_normalized_exact_match": 0.0,
+      "validation_normalized_exact_match": 0.0
+    },
+    {
+      "step": 25,
+      "train_loss": 1.1397278138876823,
+      "validation_loss": 2.4087949112057685
+    },
+    {
+      "step": 50,
+      "train_loss": 0.40262592172364464,
+      "validation_loss": 2.9500724151730537
+    },
+    {
+      "step": 75,
+      "train_loss": 0.10701368575653444,
+      "validation_loss": 3.610511898994446
+    },
+    {
+      "step": 100,
+      "train_loss": 0.018889072954668143,
+      "validation_loss": 4.715275102853775,
+      "train_normalized_exact_match": 1.0,
+      "validation_normalized_exact_match": 0.0
+    },
+    {
+      "step": 125,
+      "train_loss": 0.006215673825949,
+      "validation_loss": 5.199198004603386
+    },
+    {
+      "step": 150,
+      "train_loss": 0.0008590663027813463,
+      "validation_loss": 4.823113304376602
+    },
+    {
+      "step": 175,
+      "train_loss": 0.0004953150792948444,
+      "validation_loss": 4.468481785058975
+    },
+    {
+      "step": 200,
+      "train_loss": 0.0026441871089738288,
+      "validation_loss": 5.656464836001396
+    },
+    {
+      "step": 225,
+      "train_loss": 0.00015934488987940992,
+      "validation_loss": 5.867832395434379
+    },
+    {
+      "step": 250,
+      "train_loss": 8.636138710615289e-05,
+      "validation_loss": 5.301142957806587
+    },
+    {
+      "step": 275,
+      "train_loss": 5.63371111717645e-05,
+      "validation_loss": 5.350674119591713
+    },
+    {
+      "step": 300,
+      "train_loss": 3.662539016422736e-05,
+      "validation_loss": 5.773053926229477,
+      "train_normalized_exact_match": 1.0,
+      "validation_normalized_exact_match": 0.0
+    }
+  ],
+  "interpretation": "Can reproduce all24 training LOCAL targets by step100; severe later validation deterioration and clear semantic errors on different anchors. Intentional memorization diagnostic, not production improvement. Zero reference exact matches on12 validation targets does not imply zero valid replies.",
+  "limitations": [
+    "Capacity probe intentionally repeats training examples; training fit is not generalization.",
+    "Authors A/B/C versus D/E separate gradient updates here; original data may have appeared in previous project checkpoints or public pretraining.",
+    "Existing original scenarios overlap; this is author-disjoint transfer, not topic-disjoint student generalization.",
+    "English corrections and controls assistant authored, not human labels.",
+    "Meaning probes are diagnostic development inputs; no reference answers and no automatic quality certification."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "scope": "User feedback on the displayed random10 comparison; not automatically approved training targets.",
+  "feedback": [
+    {
+      "recorded_at_utc": "2026-11-07T18:41:03.746083+00:00",
+      "item_id": "ITEM-D-046",
+      "display_index": 2,
+      "user_text": "hmm 2 looks ok actually",
+      "scope": "User says example2 looks acceptable; individual model/style not explicitly specified.",
+      "assistant_interpretation": "SEA LOCAL aiyo, aiyo is a plausible natural reaction to sold-out tickets; revise overly negative contextual assessment. Keep English-to-LOCAL meaning preservation separate.",
+      "training_target_approved": false
+    }
+  ]
+}

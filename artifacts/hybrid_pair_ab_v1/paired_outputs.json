@@ -1,0 +1,820 @@
+{
+  "status": "complete",
+  "inputs": [
+    {
+      "item_id": "PAIR-FRESH-001",
+      "category": "food",
+      "context": [
+        "Done with your tutorial?",
+        "Yes, finally finished."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Want to get dinner at the food court beside the station?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-002",
+      "category": "food",
+      "context": [
+        "I am heading to the cafe downstairs.",
+        "I might get a drink too."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you feel like coffee or something cold?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-003",
+      "category": "food",
+      "context": [
+        "Have you eaten anything today?",
+        "Only a sandwich this morning."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "What kind of food are you in the mood for tonight?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-004",
+      "category": "food",
+      "context": [
+        "We can grab supper after the film.",
+        "Sounds good, I know a place near the cinema."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Which supper place did you have in mind?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-005",
+      "category": "food",
+      "context": [
+        "The canteen is packed right now.",
+        "We could try somewhere less crowded."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "How about the noodle shop across the road instead?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-006",
+      "category": "care",
+      "context": [
+        "I booked a clinic appointment for this afternoon.",
+        "What are you getting checked?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "My eyelid has been bothering me, so I want the doctor to look at it.",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-007",
+      "category": "care",
+      "context": [
+        "I have an interview first thing tomorrow.",
+        "How are you feeling about it?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Quite nervous honestly, I keep worrying that I will blank out.",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-008",
+      "category": "care",
+      "context": [
+        "The presentation did not go as planned.",
+        "Oh no, what happened during it?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "I forgot a section halfway through and felt so embarrassed.",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-009",
+      "category": "care",
+      "context": [
+        "I will be late because I missed my bus.",
+        "No problem, I am still at the cafe."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Thanks for waiting, today has been a bit of a mess.",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-010",
+      "category": "care",
+      "context": [
+        "I got the internship offer!",
+        "You were waiting for that email all week."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "I am so relieved that they finally got back to me.",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-011",
+      "category": "coordination",
+      "context": [
+        "I have arrived at the sports hall.",
+        "I am walking over from the bus stop."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Should I wait by the ticket counter or go inside first?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-012",
+      "category": "coordination",
+      "context": [
+        "Where should we meet before the concert?",
+        "I will wait at the entrance facing the river."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Which entrance are you waiting at again?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-013",
+      "category": "coordination",
+      "context": [
+        "Is everyone ready for the group photo?",
+        "I am here, but Maya has not arrived yet."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you want to wait a few minutes for Maya?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-014",
+      "category": "coordination",
+      "context": [
+        "I could not find the room for our discussion.",
+        "It is the small room beside the lift."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Ah found it, are you already inside?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-015",
+      "category": "coordination",
+      "context": [
+        "I will get us a table near the window.",
+        "Message me when you enter the cafe."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "I just walked in through the side door, where are you sitting?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-016",
+      "category": "study",
+      "context": [
+        "I wrote a draft of the introduction.",
+        "I can help you look through it."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could you check whether the second paragraph is too repetitive?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-017",
+      "category": "study",
+      "context": [
+        "Our slides need to be uploaded before midnight.",
+        "I have already uploaded my section."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Please remember to upload your slides tonight.",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-018",
+      "category": "study",
+      "context": [
+        "Have you managed to start the practice questions?",
+        "I finished the first two but got stuck on the third."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Which question are you stuck on exactly?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-019",
+      "category": "study",
+      "context": [
+        "The submission deadline has moved to next Monday.",
+        "That gives us more time to check the references."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Should we use tomorrow to go through the references together?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-020",
+      "category": "study",
+      "context": [
+        "I missed the first half of the lecture.",
+        "I took notes from the beginning."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could you tell me what the lecturer covered before I arrived?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-021",
+      "category": "constraints",
+      "context": [
+        "What time can you reach the station tonight?",
+        "I cannot get there before half past seven."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Would meeting at seven sharp be okay for you?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-022",
+      "category": "constraints",
+      "context": [
+        "Can we plan our project meeting this week?",
+        "I am busy all Tuesday, but Wednesday afternoon is free."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Shall we meet on Tuesday after lunch then?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-023",
+      "category": "constraints",
+      "context": [
+        "Let us choose a place for dinner.",
+        "I need to keep dinner under fifteen dollars today."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Are you okay with the thirty-dollar set menu?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-024",
+      "category": "constraints",
+      "context": [
+        "How long can you stay at the exhibition?",
+        "I need to leave by three to pick up my sister."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could you stay until four and help pack up?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-025",
+      "category": "constraints",
+      "context": [
+        "Would you like to join us for the weekend trip?",
+        "I cannot make it this weekend, but I am free the weekend after."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Can you come along this Saturday morning?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-026",
+      "category": "ownership",
+      "context": [
+        "Thanks for lending me your portable fan.",
+        "No problem, you can use it during the event."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Can I return your fan tomorrow instead of this evening?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-027",
+      "category": "ownership",
+      "context": [
+        "Did my spare umbrella help yesterday?",
+        "Yes, I still have your umbrella with me."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could you bring my umbrella back when we meet tonight?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-028",
+      "category": "ownership",
+      "context": [
+        "I think I left my notebook on your desk.",
+        "Yes, your notebook is beside my laptop."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you still have my notebook there?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-029",
+      "category": "ownership",
+      "context": [
+        "I borrowed your HDMI adapter for class.",
+        "I will need my adapter for a presentation tomorrow."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Should I return your adapter before your presentation?",
+      "response": ""
+    },
+    {
+      "item_id": "PAIR-FRESH-030",
+      "category": "ownership",
+      "context": [
+        "You can borrow my tote bag for the books.",
+        "Thanks, I will bring your tote bag home today."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could you return my tote bag at our next study session?",
+      "response": ""
+    }
+  ],
+  "outputs": [
+    {
+      "item_id": "PAIR-FRESH-001",
+      "hybrid": {
+        "standard": "I'd love to, but I can't make it.",
+        "local": "Can, I cannot make it.",
+        "local_conditioned_on": "I'd love to, but I can't make it."
+      },
+      "earlier_paired": {
+        "standard": "Yes, I'd like to get dinner there.",
+        "local": "Yes, I want to get dinner there.",
+        "local_conditioned_on": "Yes, I'd like to get dinner there."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-002",
+      "hybrid": {
+        "standard": "Coffee is fine, I'll head to the cafe now.",
+        "local": "Can, I head to the cafe now.",
+        "local_conditioned_on": "Coffee is fine, I'll head to the cafe now."
+      },
+      "earlier_paired": {
+        "standard": "I feel like a cup of coffee.",
+        "local": "I feel like a cup of coffee.",
+        "local_conditioned_on": "I feel like a cup of coffee."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-003",
+      "hybrid": {
+        "standard": "I'm not sure. Let me check the menu.",
+        "local": "Can, I check the menu.",
+        "local_conditioned_on": "I'm not sure. Let me check the menu."
+      },
+      "earlier_paired": {
+        "standard": "I'm not sure what kind of food I want.",
+        "local": "I'm not sure what kind of food I want.",
+        "local_conditioned_on": "I'm not sure what kind of food I want."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-004",
+      "hybrid": {
+        "standard": "I'm not sure. Let's go to the one near the window.",
+        "local": "Can, let's go to the one near the window.",
+        "local_conditioned_on": "I'm not sure. Let's go to the one near the window."
+      },
+      "earlier_paired": {
+        "standard": "I would like to go to Gramercy Tavern.",
+        "local": "Can, I go to Gramercy Tavern.",
+        "local_conditioned_on": "I would like to go to Gramercy Tavern."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-005",
+      "hybrid": {
+        "standard": "That works for me. Let's meet there instead.",
+        "local": "Can, let's meet there instead.",
+        "local_conditioned_on": "That works for me. Let's meet there instead."
+      },
+      "earlier_paired": {
+        "standard": "That sounds good. I'll take a look at the noodle shop.",
+        "local": "Can, I take a look at the noodle shop across the road.",
+        "local_conditioned_on": "That sounds good. I'll take a look at the noodle shop."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-006",
+      "hybrid": {
+        "standard": "That's fine, let me know when you're ready.",
+        "local": "Okay, let me know when you ready.",
+        "local_conditioned_on": "That's fine, let me know when you're ready."
+      },
+      "earlier_paired": {
+        "standard": "Okay, I'll see you at the clinic tomorrow.",
+        "local": "Okay, I see you at clinic tomorrow.",
+        "local_conditioned_on": "Okay, I'll see you at the clinic tomorrow."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-007",
+      "hybrid": {
+        "standard": "That's a shame, I can't do it.",
+        "local": "Never mind, I cannot do it.",
+        "local_conditioned_on": "That's a shame, I can't do it."
+      },
+      "earlier_paired": {
+        "standard": "Okay, let's go to the interview room first.",
+        "local": "Ok, let's go to the interview room first.",
+        "local_conditioned_on": "Okay, let's go to the interview room first."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-008",
+      "hybrid": {
+        "standard": "That's a shame. I can't believe it.",
+        "local": "Never mind, I cannot believe it.",
+        "local_conditioned_on": "That's a shame. I can't believe it."
+      },
+      "earlier_paired": {
+        "standard": "Sorry, I didn't know that.",
+        "local": "Sorry, I didn't know leh.",
+        "local_conditioned_on": "Sorry, I didn't know that."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-009",
+      "hybrid": {
+        "standard": "No worries, just let me know when you are reaching.",
+        "local": "Never mind, just let me know when you reach.",
+        "local_conditioned_on": "No worries, just let me know when you are reaching."
+      },
+      "earlier_paired": {
+        "standard": "Don't worry, I will be waiting for you.",
+        "local": "Don't worry, I will be waiting for you.",
+        "local_conditioned_on": "Don't worry, I will be waiting for you."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-010",
+      "hybrid": {
+        "standard": "That's great. Let me know when you are ready.",
+        "local": "Can, let me know when you are ready.",
+        "local_conditioned_on": "That's great. Let me know when you are ready."
+      },
+      "earlier_paired": {
+        "standard": "I am sure they will be back to you.",
+        "local": "Ya, they will be back to you.",
+        "local_conditioned_on": "I am sure they will be back to you."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-011",
+      "hybrid": {
+        "standard": "You can wait by the ticket counter.",
+        "local": "Can, you wait by the ticket counter first.",
+        "local_conditioned_on": "You can wait by the ticket counter."
+      },
+      "earlier_paired": {
+        "standard": "You need to wait by the ticket counter.",
+        "local": "You need to wait by the ticket counter first.",
+        "local_conditioned_on": "You need to wait by the ticket counter."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-012",
+      "hybrid": {
+        "standard": "I am waiting at the entrance.",
+        "local": "I waiting at the entrance.",
+        "local_conditioned_on": "I am waiting at the entrance."
+      },
+      "earlier_paired": {
+        "standard": "I am waiting at the entrance.",
+        "local": "I waiting at the entrance.",
+        "local_conditioned_on": "I am waiting at the entrance."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-013",
+      "hybrid": {
+        "standard": "I can wait a few minutes.",
+        "local": "Can, few more minutes I can wait a few minutes.",
+        "local_conditioned_on": "I can wait a few minutes."
+      },
+      "earlier_paired": {
+        "standard": "Yes, I will wait for a few minutes.",
+        "local": "Can, few more minutes I wait for a few minutes.",
+        "local_conditioned_on": "Yes, I will wait for a few minutes."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-014",
+      "hybrid": {
+        "standard": "Yes, I am already inside.",
+        "local": "Yes, I already inside.",
+        "local_conditioned_on": "Yes, I am already inside."
+      },
+      "earlier_paired": {
+        "standard": "Yes, I am already inside.",
+        "local": "Yes, I already inside.",
+        "local_conditioned_on": "Yes, I am already inside."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-015",
+      "hybrid": {
+        "standard": "I am sitting in front of the window.",
+        "local": "I sitting in front of the window.",
+        "local_conditioned_on": "I am sitting in front of the window."
+      },
+      "earlier_paired": {
+        "standard": "I am sitting at the side door.",
+        "local": "I sitting at side door.",
+        "local_conditioned_on": "I am sitting at the side door."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-016",
+      "hybrid": {
+        "standard": "I can check the draft.",
+        "local": "Can, I check the second paragraph.",
+        "local_conditioned_on": "I can check the draft."
+      },
+      "earlier_paired": {
+        "standard": "Yes, I will check whether you wrote it correctly.",
+        "local": "Can, I check whether you wrote it correctly.",
+        "local_conditioned_on": "Yes, I will check whether you wrote it correctly."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-017",
+      "hybrid": {
+        "standard": "I will remember to remember that.",
+        "local": "Never mind, I remember to remember.",
+        "local_conditioned_on": "I will remember to remember that."
+      },
+      "earlier_paired": {
+        "standard": "Thank you, I will remember to upload my section tonight.",
+        "local": "Thank you, I remember to upload my section tonight.",
+        "local_conditioned_on": "Thank you, I will remember to upload my section tonight."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-018",
+      "hybrid": {
+        "standard": "I stuck on the first two.",
+        "local": "Can, first two I stuck on the first two.",
+        "local_conditioned_on": "I stuck on the first two."
+      },
+      "earlier_paired": {
+        "standard": "I stuck on the second two.",
+        "local": "Can, second two I stuck on the second one.",
+        "local_conditioned_on": "I stuck on the second two."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-019",
+      "hybrid": {
+        "standard": "Yes, let's use those references together.",
+        "local": "Ya, let's use those references together.",
+        "local_conditioned_on": "Yes, let's use those references together."
+      },
+      "earlier_paired": {
+        "standard": "Sure, let's go through the references together.",
+        "local": "Can, let's go through the references together.",
+        "local_conditioned_on": "Sure, let's go through the references together."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-020",
+      "hybrid": {
+        "standard": "Let me see. It's covered by the introduction.",
+        "local": "Can, introduction covered by the introduction.",
+        "local_conditioned_on": "Let me see. It's covered by the introduction."
+      },
+      "earlier_paired": {
+        "standard": "It's covered by the professor concerned.",
+        "local": "Never mind covered by the professor concerned.",
+        "local_conditioned_on": "It's covered by the professor concerned."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-021",
+      "hybrid": {
+        "standard": "Yes, seven sharp works for me. See you then.",
+        "local": "Can, seven sharp then.",
+        "local_conditioned_on": "Yes, seven sharp works for me. See you then."
+      },
+      "earlier_paired": {
+        "standard": "Yes, seven works for me.",
+        "local": "Can, seven also can.",
+        "local_conditioned_on": "Yes, seven works for me."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-022",
+      "hybrid": {
+        "standard": "That works for me. Let's meet on Tuesday after lunch.",
+        "local": "Can, Tuesday after lunch lor.",
+        "local_conditioned_on": "That works for me. Let's meet on Tuesday after lunch."
+      },
+      "earlier_paired": {
+        "standard": "Yes, Tuesday would be fine.",
+        "local": "Can, Tuesday after lunch can.",
+        "local_conditioned_on": "Yes, Tuesday would be fine."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-023",
+      "hybrid": {
+        "standard": "I'm okay with that. Let's go ahead and order the menu.",
+        "local": "Can, let's order the menu.",
+        "local_conditioned_on": "I'm okay with that. Let's go ahead and order the menu."
+      },
+      "earlier_paired": {
+        "standard": "Yes, I'll take it.",
+        "local": "Can, I take the thirty-dollar set menu.",
+        "local_conditioned_on": "Yes, I'll take it."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-024",
+      "hybrid": {
+        "standard": "I can't stay until four. Could we meet after the exhibition?",
+        "local": "Can, I meet after the exhibition.",
+        "local_conditioned_on": "I can't stay until four. Could we meet after the exhibition?"
+      },
+      "earlier_paired": {
+        "standard": "Yes, four works for me.",
+        "local": "Can, four also can.",
+        "local_conditioned_on": "Yes, four works for me."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-025",
+      "hybrid": {
+        "standard": "Saturday morning works for me.",
+        "local": "Can, Saturday morning cannot.",
+        "local_conditioned_on": "Saturday morning works for me."
+      },
+      "earlier_paired": {
+        "standard": "Yes, I can come along with you.",
+        "local": "Can, Saturday morning I come along with you.",
+        "local_conditioned_on": "Yes, I can come along with you."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-026",
+      "hybrid": {
+        "standard": "I can return it tomorrow.",
+        "local": "Can, tomorrow morning return.",
+        "local_conditioned_on": "I can return it tomorrow."
+      },
+      "earlier_paired": {
+        "standard": "Yes, tomorrow night we can return it.",
+        "local": "Can, tomorrow night return.",
+        "local_conditioned_on": "Yes, tomorrow night we can return it."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-027",
+      "hybrid": {
+        "standard": "I can bring your umbrella tonight.",
+        "local": "Can, I bring your umbrella tonight.",
+        "local_conditioned_on": "I can bring your umbrella tonight."
+      },
+      "earlier_paired": {
+        "standard": "Sure, I'll bring your umbrella.",
+        "local": "Can, I bring your umbrella.",
+        "local_conditioned_on": "Sure, I'll bring your umbrella."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-028",
+      "hybrid": {
+        "standard": "Yes, I have it. It's on the third floor.",
+        "local": "Can, I have it on the third floor.",
+        "local_conditioned_on": "Yes, I have it. It's on the third floor."
+      },
+      "earlier_paired": {
+        "standard": "Yes, you still have it.",
+        "local": "Yes, you still have it.",
+        "local_conditioned_on": "Yes, you still have it."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-029",
+      "hybrid": {
+        "standard": "Yes, please return it before my presentation.",
+        "local": "Yes, please return it before my presentation.",
+        "local_conditioned_on": "Yes, please return it before my presentation."
+      },
+      "earlier_paired": {
+        "standard": "Yes, I will return my adapter.",
+        "local": "Yes, I return my adapter before class.",
+        "local_conditioned_on": "Yes, I will return my adapter."
+      }
+    },
+    {
+      "item_id": "PAIR-FRESH-030",
+      "hybrid": {
+        "standard": "Sure, I will return your tote bag for you.",
+        "local": "Can, I return your tote bag for you.",
+        "local_conditioned_on": "Sure, I will return your tote bag for you."
+      },
+      "earlier_paired": {
+        "standard": "Sure, I will return it later.",
+        "local": "Can, later I return.",
+        "local_conditioned_on": "Sure, I will return it later."
+      }
+    }
+  ],
+  "standard_checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_standard_val_v1/artifacts/full_lr3e4/best",
+  "rewrite_checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_hybrid_inference_v1/checkpoints/local_rewrite",
+  "training": false
+}

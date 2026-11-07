@@ -1,0 +1,283 @@
+{
+  "created_at_utc": "2026-11-07T13:03:05.473422+00:00",
+  "model": "SEA-LION-v1-3B fine-tuned full-public117634 + corrected790 task; separate English-to-Singlish renderer",
+  "direct_job_id": 356177,
+  "rewrite_job_id": 356662,
+  "decoding_job_id": 356913,
+  "population": "All50 existing team development-validation conversations",
+  "sampling": "Uniform random without replacement; no quality filtering",
+  "sampling_seed": 2238654621,
+  "sample_size": 10,
+  "decoding": [
+    "greedy",
+    "beam4_ng3"
+  ],
+  "max_new_tokens": 64,
+  "pipeline": "English generated independently under selected decoding; LOCAL rewrites that exact English draft under same decoding",
+  "outputs_verbatim": true,
+  "locked_test_used": false,
+  "limitations": "Repeatedly reused validation; these samples do not estimate unseen-test accuracy.",
+  "source_report_sha256": "361042d8d8154f928da86ac1f44d5724be01fcfa216797682bb8661c170bb39c",
+  "samples": [
+    {
+      "item_id": "ITEM-B-048",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "are you coming to the event?"
+        },
+        {
+          "speaker": "user",
+          "text": "I was planning to"
+        }
+      ],
+      "incoming": "the event postpone for thirty minutes",
+      "outputs": {
+        "greedy": {
+          "standard": "No worries, I'll be there in thirty minutes",
+          "local": "No worries, I come in thirty mins",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "That's fine, I'll come after thirty minutes.",
+          "local": "Okay, I come after thirty minutes.",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-D-046",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "eh help"
+        },
+        {
+          "speaker": "user",
+          "text": "what"
+        }
+      ],
+      "incoming": "the cinema ticket is sold out bruh",
+      "outputs": {
+        "greedy": {
+          "standard": "Oh no, I was planning to go with you",
+          "local": "aiyo, aiyo",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "Oh no, I can't go now. Could someone else go in my place?",
+          "local": "aiyo, aiyo",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-A-054",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "We are going to the club later right?"
+        },
+        {
+          "speaker": "user",
+          "text": "Yeah, I will go back to shower first."
+        }
+      ],
+      "incoming": "Aiyo, don't need la, let's go now",
+      "outputs": {
+        "greedy": {
+          "standard": "Okay, let's go now",
+          "local": "Okay, go now lah",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "Okay, let's go now.",
+          "local": "Okay, let's go then.",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-C-058",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "im heading to the court now"
+        },
+        {
+          "speaker": "user",
+          "text": "okay, i'll leave soon"
+        }
+      ],
+      "incoming": "court still occupied leh, need wait a bit",
+      "outputs": {
+        "greedy": {
+          "standard": "okay, i'll wait a bit",
+          "local": "okay, i wait a bit",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "okay, i'll wait a bit longer",
+          "local": "okay, i wait a bit longer",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "bro you want to eat at kopitiam later? The whole gang is cmg"
+        },
+        {
+          "speaker": "user",
+          "text": "if you want ah let us know"
+        }
+      ],
+      "incoming": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "outputs": {
+        "greedy": {
+          "standard": "ok, we can eat elsewhere",
+          "local": "ok lor, we eat elsewhere",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "ok, then we eat at 6pm instead",
+          "local": "ok, then we eat at 6pm instead",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-D-037",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "have you reached?"
+        },
+        {
+          "speaker": "user",
+          "text": "wya"
+        }
+      ],
+      "incoming": "i reached, i waiting outside mac",
+      "outputs": {
+        "greedy": {
+          "standard": "ok, i will reach in a few minutes",
+          "local": "okok, i coming",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "okay, i will be there in a few minutes",
+          "local": "okok, i coming liao",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-A-024",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "Hey have you printed the worksheet given out yesterday?"
+        },
+        {
+          "speaker": "user",
+          "text": "No, I will need to print it in school. Do you know how to use the printer?"
+        }
+      ],
+      "incoming": "paiseh, i don't know how to use the printer in school.",
+      "outputs": {
+        "greedy": {
+          "standard": "No worries, I can go to the library to print it later.",
+          "local": "No worries, go to the library print later lah.",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "No worries, just let me know when you have printed it.",
+          "local": "No worries, ask staff lah.",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "eh i struggling to do the linear algebra qn"
+        },
+        {
+          "speaker": "user",
+          "text": "which"
+        }
+      ],
+      "incoming": "neh the gaussian elim qn",
+      "outputs": {
+        "greedy": {
+          "standard": "okay, I'll do it for you",
+          "local": "can, i do it for you",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "Okay, I can help you with that one.",
+          "local": "Okay, I help you with that one.",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-B-029",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "I can't remember which room we're in"
+        },
+        {
+          "speaker": "user",
+          "text": "I'm checking the timetable"
+        }
+      ],
+      "incoming": "which room is our class in?",
+      "outputs": {
+        "greedy": {
+          "standard": "I'm checking the timetable now. I'll get back to you.",
+          "local": "I check the timetable first, then tell you ah.",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+          "local": "I check the timetable first, then let you know ah.",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-D-007",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "u wanna try the matcha at luckin?"
+        },
+        {
+          "speaker": "user",
+          "text": "nahh"
+        }
+      ],
+      "incoming": "then what u wanna drink later?",
+      "outputs": {
+        "greedy": {
+          "standard": "i want to try the green tea",
+          "local": "i anything",
+          "status": "complete"
+        },
+        "beam4_ng3": {
+          "standard": "i'm not sure what i want",
+          "local": "idk what i want leh",
+          "status": "complete"
+        }
+      }
+    }
+  ]
+}

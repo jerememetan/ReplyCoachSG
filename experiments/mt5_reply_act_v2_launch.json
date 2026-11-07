@@ -1,0 +1,18 @@
+{
+  "experiment": "mt5_reply_act_v2",
+  "job_id": 355565,
+  "submission": "accepted",
+  "last_verified_state": "COMPLETED",
+  "training": true,
+  "default_changed": false,
+  "remote_directory": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v2",
+  "local_tests_passed": 15,
+  "preflight": "Remote tokenizer confirms 190 training and 50 validation examples fit without truncation; module imports pass.",
+  "recipe": "experiments/mt5_reply_act_v2_recipe.json",
+  "report_expected": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v2/artifacts/results.json",
+  "completion_waited": false,
+  "node": "aloha",
+  "exit_code": "0:0",
+  "elapsed": "00:07:29",
+  "local_report": "artifacts/mt5_reply_act_v2/results.json"
+}

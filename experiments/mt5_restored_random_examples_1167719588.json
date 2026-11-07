@@ -1,0 +1,125 @@
+{
+  "created_at_utc": "2026-11-07T13:21:38.950157+00:00",
+  "seed": 1167719588,
+  "sample_size": 8,
+  "population": 24,
+  "sampling": "Uniform random without replacement from24 fresh assistant-written development conversations; no qualityfilter",
+  "model_job": 356868,
+  "decoding": "beam4/no_repeat_ngram3/max64",
+  "outputs_verbatim": true,
+  "locked_test_used": false,
+  "items": [
+    {
+      "item_id": "RESTORE-FRESH-014",
+      "context": [
+        "I am waiting beside the blue vending machine on level two.",
+        "I just entered the building."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "Where should I find you?",
+      "english": "I am heading towards the blue vending machine.",
+      "singlish": "I find you at the blue vending machine."
+    },
+    {
+      "item_id": "RESTORE-FRESH-021",
+      "context": [
+        "I am still in class.",
+        "I am queuing at the drinks stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "What would you like me to get you?",
+      "english": "I would like to get a bottle of wine.",
+      "singlish": "I would get a bottle of wine."
+    },
+    {
+      "item_id": "RESTORE-FRESH-006",
+      "context": [
+        "I still have your calculator.",
+        "I need it for my quiz tomorrow."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "Can you return it before class?",
+      "english": "I can return it before class.",
+      "singlish": "Can, I return it before class."
+    },
+    {
+      "item_id": "RESTORE-FRESH-009",
+      "context": [
+        "I have twelve dollars left for dinner.",
+        "There are a few stalls downstairs."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "Want to order the thirty-dollar platter?",
+      "english": "Yes, I'll order the thirty-dollar platter.",
+      "singlish": "Can, I order the thirty-dollar platter."
+    },
+    {
+      "item_id": "RESTORE-FRESH-001",
+      "context": [
+        "I am free after dinner.",
+        "We are going for a walk around the park."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "Want to join us at eight?",
+      "english": "Sure, eight works for me.",
+      "singlish": "Eight works for me."
+    },
+    {
+      "item_id": "RESTORE-FRESH-024",
+      "context": [
+        "We planned to study at the cafe.",
+        "It is getting noisy here."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "Would you like to move to the reading room instead?",
+      "english": "I'd prefer to move to the reading room.",
+      "singlish": "I prefer to move to the reading room."
+    },
+    {
+      "item_id": "RESTORE-FRESH-011",
+      "context": [
+        "I can help on Wednesday but I am away on Thursday.",
+        "I will check which day we need help."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "Can you come on Thursday morning?",
+      "english": "Thursday morning works for me.",
+      "singlish": "Thursday morning works for me."
+    },
+    {
+      "item_id": "RESTORE-FRESH-020",
+      "context": [
+        "I sent you the event poster.",
+        "I noticed the venue was wrong."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "incoming": "I fixed the venue and sent you the updated version.",
+      "english": "Thanks for letting me know. I'll check the venue and send you the updated version.",
+      "singlish": "I check the venue and send you the updated version."
+    }
+  ]
+}

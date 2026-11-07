@@ -1,0 +1,415 @@
+{
+  "verified_at_utc": "2026-11-07T13:42:35.392351+00:00",
+  "scope": "17 key checkpoint directories: recent mT5/SEA full/small/restored runs and important older mT5 baseline checkpoints. Six recent complete result reports independently matched local-versus-cluster content. Not an exhaustive audit of every historical experiment.",
+  "storage": "Persistent cluster filesystem, notGPU VRAM. Result reports also copied to local workspace. LoRA adapters require their referenced base/tokenizer.",
+  "checkpoint_policy": "Retain selected best checkpoint per stage and some latestpublicresume checkpoints; not a separateweights snapshot for everyepoch/optimizerstep. Per-epoch histories remain in resultJSON.",
+  "git_status": "Recent experimentrecords/checkpointindex are currently uncommitted/unpushed; largeweight files are ignored and have not been downloaded into thislocalworkspace. GitHub is not a completeartifactbackup.",
+  "friend_reranker": "Source/docs are in fetchedremotebranch; friendprivateQwenrerankerweights are not includedin thisinventory or availablelocally.",
+  "local_metadata_counts": {
+    "recipes": 58,
+    "launches": 37
+  },
+  "runs": [
+    {
+      "experiment": "mt5_matched_small_v1",
+      "job_id": 356229,
+      "account": "group",
+      "state": "complete",
+      "cluster_result_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/results.json",
+      "local_result_path": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/mt5_matched_small_v1/results.json",
+      "result_content_matches_cluster": true,
+      "local_summary": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_matched_small_v1_results.json",
+      "local_recipe": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_matched_small_v1_recipe.json",
+      "launch_record": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_matched_small_v1_launch.json",
+      "canonical_result_sha256": "16038b3460c20ef9ffca33196106b629295a852af0ce0447f52db39c4563fcee"
+    },
+    {
+      "experiment": "mt5_restored_pipeline_v1",
+      "job_id": 356868,
+      "account": "group",
+      "state": "complete",
+      "cluster_result_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_restored_pipeline_v1/artifacts/results.json",
+      "local_result_path": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/mt5_restored_pipeline_v1/results.json",
+      "result_content_matches_cluster": true,
+      "local_summary": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_restored_pipeline_v1_results.json",
+      "local_recipe": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_restored_pipeline_v1_recipe.json",
+      "launch_record": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_restored_pipeline_v1_launch.json",
+      "canonical_result_sha256": "93762266a53ed5ebf0594d488d435efb0a6a41b1449ce0b037a6f9c44940a66b"
+    },
+    {
+      "experiment": "mt5_matched_full_v1",
+      "job_id": 356230,
+      "account": "personal",
+      "state": "complete",
+      "cluster_result_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/artifacts/results.json",
+      "local_result_path": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/mt5_matched_full_v1/results.json",
+      "result_content_matches_cluster": true,
+      "local_summary": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_matched_full_v1_results.json",
+      "local_recipe": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_matched_full_v1_recipe.json",
+      "launch_record": "/home/spikeypear/Projects/ReplyCoachSG/experiments/mt5_matched_full_v1_launch.json",
+      "canonical_result_sha256": "af987669a77d9cae28d46199569433dfbddfaca4525c597ec16220d9a1483445"
+    },
+    {
+      "experiment": "sealion_full_v1",
+      "job_id": 356177,
+      "account": "personal",
+      "state": "complete",
+      "cluster_result_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/artifacts/results.json",
+      "local_result_path": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/sealion_full_v1/results.json",
+      "result_content_matches_cluster": true,
+      "local_summary": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_full_v1_results.json",
+      "local_recipe": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_full_v1_recipe.json",
+      "launch_record": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_full_v1_launch.json",
+      "canonical_result_sha256": "c02ce7883279dfc6f4f1f0f8e462835207fc6c6d681356eb0888a06ea1a5b194"
+    },
+    {
+      "experiment": "sealion_full_rewrite_v1",
+      "job_id": 356662,
+      "account": "personal",
+      "state": "complete",
+      "cluster_result_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_rewrite_v1/artifacts/results.json",
+      "local_result_path": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/sealion_full_rewrite_v1/results.json",
+      "result_content_matches_cluster": true,
+      "local_summary": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_full_rewrite_v1_results.json",
+      "local_recipe": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_full_rewrite_v1_recipe.json",
+      "launch_record": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_full_rewrite_v1_launch.json",
+      "canonical_result_sha256": "2f2878609104b5ee8b86b8efb30c872adfabadadf7d0e8120f395849c32d83f9"
+    },
+    {
+      "experiment": "sealion_beam_v1",
+      "job_id": 356913,
+      "account": "personal",
+      "state": "complete_with_flags",
+      "cluster_result_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_beam_v1/artifacts/results.json",
+      "local_result_path": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/sealion_beam_v1/results.json",
+      "result_content_matches_cluster": true,
+      "local_summary": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_beam_v1_results.json",
+      "local_recipe": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_beam_v1_recipe.json",
+      "launch_record": "/home/spikeypear/Projects/ReplyCoachSG/experiments/sealion_beam_v1_launch.json",
+      "canonical_result_sha256": "064256dbbb87a22a210bc8b343411dcd47c93862abd117fa84447dbd84113f90"
+    }
+  ],
+  "checkpoints": [
+    {
+      "name": "older_adapted_mt5",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "model.safetensors",
+          "bytes": 2329638768
+        }
+      ],
+      "weight_bytes": 2329638768,
+      "tokenizer_files": [
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ]
+    },
+    {
+      "name": "mt5_small_public",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/public/best_adapter",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/public/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 13626552
+        }
+      ],
+      "weight_bytes": 13626552,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/model"
+    },
+    {
+      "name": "mt5_small_task425",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/task_s425/best_adapter",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/task_s425/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 13626552
+        }
+      ],
+      "weight_bytes": 13626552,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/model"
+    },
+    {
+      "name": "mt5_small_task426",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/task_s426/best_adapter",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/task_s426/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 13626552
+        }
+      ],
+      "weight_bytes": 13626552,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/model"
+    },
+    {
+      "name": "mt5_small_rewrite",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/rewrite/best_adapter",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/rewrite/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 13626552
+        }
+      ],
+      "weight_bytes": 13626552,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/model"
+    },
+    {
+      "name": "mt5_small_fidelity",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/fidelity/best_adapter",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/artifacts/fidelity/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 13626552
+        }
+      ],
+      "weight_bytes": 13626552,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_matched_v1/model"
+    },
+    {
+      "name": "mt5_restored_english",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_restored_pipeline_v1/artifacts/standard/best",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_restored_pipeline_v1/artifacts/standard/best",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "model.safetensors",
+          "bytes": 2329638768
+        }
+      ],
+      "weight_bytes": 2329638768,
+      "tokenizer_files": [
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ]
+    },
+    {
+      "name": "mt5_restored_rewrite",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_restored_pipeline_v1/artifacts/rewrite/best",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_restored_pipeline_v1/artifacts/rewrite/best",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 7098016
+        }
+      ],
+      "weight_bytes": 7098016,
+      "tokenizer_files": [
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_restored_pipeline_v1/artifacts/standard/best"
+    },
+    {
+      "name": "older_shared_intent_rewrite_best",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s1/best",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s1/best",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 7098016
+        }
+      ],
+      "weight_bytes": 7098016,
+      "tokenizer_files": [
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best"
+    },
+    {
+      "name": "older_shared_intent_rewrite_final",
+      "account": "group",
+      "path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s1/final",
+      "resolved_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s1/final",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 7098016
+        }
+      ],
+      "weight_bytes": 7098016,
+      "tokenizer_files": [
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "base_model_reference": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best"
+    },
+    {
+      "name": "sealion_pretrained_base",
+      "account": "personal",
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1/model",
+      "resolved_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1/model",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "model.safetensors",
+          "bytes": 6356554480
+        }
+      ],
+      "weight_bytes": 6356554480,
+      "tokenizer_files": [
+        "tokenizer.model",
+        "tokenizer_config.json",
+        "special_tokens_map.json"
+      ]
+    },
+    {
+      "name": "sealion_full_public",
+      "account": "personal",
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/artifacts/full_public_adapter",
+      "resolved_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/artifacts/full_public_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 41977608
+        }
+      ],
+      "weight_bytes": 41977608,
+      "tokenizer_files": [
+        "tokenizer.model",
+        "tokenizer_config.json"
+      ],
+      "base_model_reference": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/model"
+    },
+    {
+      "name": "sealion_full_task",
+      "account": "personal",
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/artifacts/best_adapter",
+      "resolved_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/artifacts/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 41977608
+        }
+      ],
+      "weight_bytes": 41977608,
+      "tokenizer_files": [
+        "tokenizer.model",
+        "tokenizer_config.json"
+      ],
+      "base_model_reference": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/model"
+    },
+    {
+      "name": "sealion_full_rewrite",
+      "account": "personal",
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_rewrite_v1/artifacts/best_adapter",
+      "resolved_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_rewrite_v1/artifacts/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 41977608
+        }
+      ],
+      "weight_bytes": 41977608,
+      "tokenizer_files": [
+        "tokenizer.model",
+        "tokenizer_config.json"
+      ],
+      "base_model_reference": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/model"
+    },
+    {
+      "name": "mt5_full_public",
+      "account": "personal",
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/artifacts/public/best_adapter",
+      "resolved_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/artifacts/public/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 13626552
+        }
+      ],
+      "weight_bytes": 13626552,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ],
+      "base_model_reference": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/model"
+    },
+    {
+      "name": "mt5_full_task",
+      "account": "personal",
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/artifacts/task_s425/best_adapter",
+      "resolved_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/artifacts/task_s425/best_adapter",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "adapter_model.safetensors",
+          "bytes": 13626552
+        }
+      ],
+      "weight_bytes": 13626552,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ],
+      "base_model_reference": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/model"
+    },
+    {
+      "name": "mt5_full_frozen_base",
+      "account": "personal",
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/model",
+      "resolved_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_full_v1/model",
+      "exists": true,
+      "weight_files": [
+        {
+          "name": "model.safetensors",
+          "bytes": 1164836400
+        }
+      ],
+      "weight_bytes": 1164836400,
+      "tokenizer_files": [
+        "tokenizer_config.json",
+        "spiece.model"
+      ]
+    }
+  ],
+  "continuation_notes": "/home/spikeypear/Projects/ReplyCoachSG/docs/transformer_resume.md"
+}

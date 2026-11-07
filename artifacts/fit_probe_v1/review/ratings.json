@@ -1,0 +1,1686 @@
+{
+  "packet_sha256": "98eba7d10776c28a270ef77bf43ca9b245858356629b7b7b3e7bbb187cb1bf80",
+  "ratings": [
+    {
+      "n": 1,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 1,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 1,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 2,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 2,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 2,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 2,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 3,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 3,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 3,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 3,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 4,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 4,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 4,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 4,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 5,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 5,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 5,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 5,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 6,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 6,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 6,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 6,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 7,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 7,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 7,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 7,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 8,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 8,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 8,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 8,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 9,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 9,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 10,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 10,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 11,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 11,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 11,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 11,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 12,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 12,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 12,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 13,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 13,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 14,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 14,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 14,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 15,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 15,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 15,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 15,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 16,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 16,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 16,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 16,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 17,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 17,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 17,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 17,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 18,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 18,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 18,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 18,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 19,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 19,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 20,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 20,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 20,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 20,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 21,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 21,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 21,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 22,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 22,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 22,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 23,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 23,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 23,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 24,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 24,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 24,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 27,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 27,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 35,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 35,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 36,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 36,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 36,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 37,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 38,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 45,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 46,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 46,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 46,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 47,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 47,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 48,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 48,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Exact normalized match to the prechecked STANDARD target; automatic target-adherence annotation, not a new human judgment.",
+      "rating_source": "prechecked exact-target match"
+    },
+    {
+      "n": 1,
+      "option": "C",
+      "adequacy": "fail",
+      "reason": "Returning one's own fan does not answer lending it to the peer; action/ownership direction is wrong.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 1,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Sure is a valid acceptance of lending the user's fan.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 2,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Declining the offered spare ruler is a valid selectable choice even though the user's ruler is elsewhere.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 3,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Inability to meet/receive it tonight is a valid refusal of the proposed delivery arrangement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 4,
+      "option": "C",
+      "adequacy": "fail",
+      "reason": "No-you-cannot addresses the peer as the one passing the bag rather than the user responding to a return request.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 5,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Explicit inability/refusal to bring the tray is a valid alternative to agreement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 6,
+      "option": "E",
+      "adequacy": "uncertain",
+      "reason": "Not-seeing-it is an unclear answer to forwarding a schedule the user downloaded.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 7,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Reverses receiving the offered updated list into sending it to the peer without a coherent alternative arrangement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 8,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Choosing slides is a valid alternative to the reference's handwritten-notes choice.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 9,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Explicitly rejects the incompatible time and proposes meeting after six; initial sure can acknowledge the request.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 9,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Refuses an incompatible meeting time coherently.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 9,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Correctly respects the six-o'clock shift end and proposes afterwards.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 10,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Correctly declines pickup after the counter closes.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 10,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Accepts after-rehearsal collection at four despite the counter closing at three.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 10,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Unqualified acceptance inherits the requested after-rehearsal collection after closing.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 11,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Changed availability or refusal is permitted; being previously free does not force accepting the meeting.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 12,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "No is a coherent refusal of the beef-noodle offer.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 12,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Requests vegetable noodles instead, respecting the stated dietary restriction.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 13,
+      "option": "A",
+      "adequacy": "uncertain",
+      "reason": "Explicit inability respects the injury, but affirmative sure before it makes the invitation response unclear.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 13,
+      "option": "C",
+      "adequacy": "fail",
+      "reason": "Says the user can play while injured despite explicitly being unable to play court sports this week.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 13,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Refuses the game coherently in line with the injury.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 14,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Budget statement is incoherent and substitutes twenty dollars for the stated ten-dollar budget.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 14,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Not having enough available money is a plausible selectable reason for refusing the over-budget meal.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 15,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Substitutes Music Hall for the explicitly stated Studio4 practice venue without a coherent alternative arrangement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 16,
+      "option": "D",
+      "adequacy": "uncertain",
+      "reason": "An unexplained office-going update does not clearly tell the peer where to find the user previously waiting at the machine.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 17,
+      "option": "B",
+      "adequacy": "fail",
+      "reason": "Changes the equipment cage into an office cage despite explicitly excluding the office.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 18,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Yes confirms the submitted room request correctly.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 19,
+      "option": "B",
+      "adequacy": "fail",
+      "reason": "Yes affirms continued possession while the following clause says the badge was returned; contradictory answer polarity.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 19,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Claims continued possession despite the stated return to the event desk.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 19,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Yes affirms continued possession while the explanation says returned; contradictory answer polarity.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 20,
+      "option": "C",
+      "adequacy": "fail",
+      "reason": "Denies uploading despite the explicit upload yesterday.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 21,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Asking why not cycle is a valid follow-up/counterproposal, without asserting the peer agreed to cycle.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 21,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Proposing going to the park is compatible with walking there instead of cycling.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 22,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Inability to help can coherently decline helping find assistance; it need not match the reference suggestion.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 22,
+      "option": "D",
+      "adequacy": "uncertain",
+      "reason": "Offering future help does not clearly answer who can help assemble the stand now.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 23,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Asks for the missing rehearsal time, a valid response to unspecified timing.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 23,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "A changed availability or refusal for tomorrow is a valid selectable response.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 24,
+      "option": "A",
+      "adequacy": "uncertain",
+      "reason": "Generic apology for inconvenience is weakly connected to the peer's spill and the user's dry bag; responsibility is unclear.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 24,
+      "option": "B",
+      "adequacy": "uncertain",
+      "reason": "Generic apology for inconvenience is weakly connected to the peer's spill and the user's dry bag; responsibility is unclear.",
+      "rating_source": "Identical same-case draft as optionA; reused assistant inspection"
+    },
+    {
+      "n": 25,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "A refusal of lending the fan is a valid selectable alternative.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 25,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Correctly allows the peer to borrow the user's fan during the briefing.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 25,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Bringing the user's fan is a valid way to fulfil the peer's lending request.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 25,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Reverses borrower/owner into the user borrowing the peer's fan.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 25,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Correctly permits use of the user's fan during the briefing.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 26,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Confuses an offered ruler with returning the user's bag and introduces an unrelated return request.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 26,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Correctly accepts borrowing the offered spare ruler.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 26,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Correctly asks the offering peer to lend their spare ruler.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 26,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Correctly asks the offering peer to lend their spare ruler.",
+      "rating_source": "Identical same-case draft as optionC; reused assistant inspection"
+    },
+    {
+      "n": 26,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Asks the peer to borrow the user's spare ruler instead of accepting the peer's offer.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 27,
+      "option": "B",
+      "adequacy": "fail",
+      "reason": "Calls the user's raincoat the peer's and requests borrowing it, reversing ownership.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 27,
+      "option": "C",
+      "adequacy": "uncertain",
+      "reason": "Declining coat delivery while merely stating the same destination does not clearly explain the intended arrangement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 27,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Accepts delivery of the user's coat to the proposed interchange; tonight can be inherited from context.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 28,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Returning when the peer has lunch is compatible with their shared lunchtime arrangement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 28,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Returning when the fair ends can be a selectable alternative handover time; no fixed return deadline was stated.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 28,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Returning when the fair ends can be a selectable alternative handover time; no fixed return deadline was stated.",
+      "rating_source": "Identical same-case draft as optionB; reused assistant inspection"
+    },
+    {
+      "n": 28,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Inability to find the borrowed bag is a plausible new personal difficulty and valid refusal/explanation.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 28,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Returning when the peer finishes lunch is a plausible alternative handover arrangement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 29,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Inability/refusal to bring the tray is a valid selectable response.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 29,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "The room where the peer cooks is compatible with the shared cooking room; no contradictory destination is stated.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 29,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Correctly offers to take the peer's tray to the cooking room.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 29,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Correctly offers to take the peer's tray to the requested shared cooking room.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 29,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Substitutes the dining room for the explicitly requested cooking room without a coherent alternative arrangement.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 30,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Correctly offers to send the debate timetable.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 30,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Correctly offers to send the debate timetable.",
+      "rating_source": "Identical same-case draft as optionA; reused assistant inspection"
+    },
+    {
+      "n": 30,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Correctly offers to send the requested timetable.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 30,
+      "option": "D",
+      "adequacy": "uncertain",
+      "reason": "Not-seeing-it is an unclear answer to sending a timetable the user saved.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 30,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Reverses the request into the peer sending a timetable the user already has.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 31,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Reverses the peer's offer to send the updated list into the user sending it to the peer.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 31,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Wanting the offered list but being unable to receive/use it is a valid refusal or changed-availability response.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 31,
+      "option": "C",
+      "adequacy": "uncertain",
+      "reason": "Sharing an unspecified list onward could be possible, but the reply does not clearly accept receiving the offered list.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 31,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Reverses receiving the list into sending it to the peer who offered it.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 31,
+      "option": "E",
+      "adequacy": "uncertain",
+      "reason": "Sharing the list onward is possible but the recipient/action relation to the incoming offer is unclear.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 32,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Says the user wants to send slides rather than choosing which file to receive.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 32,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Choosing slides and requesting hand delivery is a plausible selectable alternative to the reference's notes choice.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 32,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Correctly chooses receiving slides, a valid alternative to notes.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 32,
+      "option": "D",
+      "adequacy": "uncertain",
+      "reason": "Chooses slides but unclearly attributes a hand-delivery intention that was not in the peer's offer.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 32,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Says the user will send the slides instead of choosing which file to receive.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 33,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Agrees to half past five despite explicitly being unable to leave work until six.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 33,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Proposes after-shift meeting, respecting six; meeting colleagues at six is an allowed new personal detail.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 33,
+      "option": "C",
+      "adequacy": "fail",
+      "reason": "Leave-work-until-six wording reverses/garbles the explicit requirement to remain at work until six.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 33,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Leave-work-until-six reverses the stated constraint despite adding a later meeting question.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 33,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Proposes after-shift meeting respecting six; a compatible colleague meeting is a selectable detail.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 34,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Picking up earlier is a valid counterproposal to impossible after-rehearsal collection.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 34,
+      "option": "B",
+      "adequacy": "uncertain",
+      "reason": "Readiness-based collection leaves whether pickup occurs before three unclear.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 34,
+      "option": "C",
+      "adequacy": "uncertain",
+      "reason": "We-will-pick-them-up leaves how the closing-time conflict is resolved unclear.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 34,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Promises collection after rehearsal ends at four despite collection ending at three.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 34,
+      "option": "E",
+      "adequacy": "uncertain",
+      "reason": "Within-three-hours timing cannot be checked against closing without a current time; feasibility uncertain.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 35,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Despite weak grammar, yes and Thursday availability coherently accept the proposed Thursday time.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 35,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Accepts the proposed Thursday-afternoon meeting; the specific three can be inherited from context.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 35,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "That-would-be-fine clearly accepts the proposed time.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 36,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Declines the beef noodles but asks for another serving of those same noodles, without specifying a non-beef alternative.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 36,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "No-thank-you is a valid refusal of food the user does not eat.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 37,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Commits to basketball despite explicit inability to play court sports this week.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 37,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Commits to basketball despite explicit inability to play court sports this week.",
+      "rating_source": "Identical same-case draft as optionA; reused assistant inspection"
+    },
+    {
+      "n": 37,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Refuses basketball in line with the injury constraint.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 37,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Correctly explains inability to play while the ankle is injured.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 38,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Accepts the twenty-dollar set despite a maximum ten-dollar budget.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 38,
+      "option": "B",
+      "adequacy": "fail",
+      "reason": "Accepts the offered twenty-dollar set despite the explicit budget.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 38,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Requests a ten-dollar set as a valid cheaper alternative; availability is a plausible selectable detail.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 38,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Requests a ten-dollar set as a valid alternative rather than accepting the twenty-dollar offer.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 39,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Gives only a level and does not identify the explicitly known Studio4 when asked which studio.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 39,
+      "option": "B",
+      "adequacy": "fail",
+      "reason": "Repeats level in an incoherent location statement without identifying the studio.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 39,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Correctly identifies Studio4 and the second level.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 39,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Correctly identifies Studio4 and the second level.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 39,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Substitutes third floor for the explicit second level and omits Studio4.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 40,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "North gate is a correct named location that can help the peer find the user, even without repeating every detail.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 40,
+      "option": "B",
+      "adequacy": "fail",
+      "reason": "Says the user will go to the machine where they explicitly are already waiting, rather than giving their location.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 40,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Wrong preposition is minor; the reply clearly identifies the correct blue machine and north gate.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 40,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Says heading to the machine despite already waiting beside it.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 40,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Directs the peer to the correct machine and gate to find the waiting user.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 41,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Correctly names the equipment cage.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 41,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Correctly names the equipment cage.",
+      "rating_source": "Identical same-case draft as optionA; reused assistant inspection"
+    },
+    {
+      "n": 41,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Correctly names the equipment cage.",
+      "rating_source": "Identical same-case draft as optionA; reused assistant inspection"
+    },
+    {
+      "n": 41,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "The cage distinguishes the correct location from the explicitly excluded office.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 41,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Names the office despite the explicit exclusion of that location.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 42,
+      "option": "A",
+      "adequacy": "pass",
+      "reason": "Correctly confirms the already submitted room request.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 42,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Correctly confirms the already submitted room request.",
+      "rating_source": "Identical same-case draft as optionA; reused assistant inspection"
+    },
+    {
+      "n": 42,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Correctly confirms sending the request.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 42,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Correctly confirms the request has been submitted.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 42,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Yes-it-is correctly answers whether the request is submitted.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 43,
+      "option": "A",
+      "adequacy": "fail",
+      "reason": "Claims the badge is still with the user despite handing it to the event desk.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 43,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Correctly denies possession and explains the handover.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 43,
+      "option": "C",
+      "adequacy": "fail",
+      "reason": "Yes affirms continued possession while explaining handover, contradicting the answer polarity.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 43,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Yes affirms continued possession while the explanation says handed to the desk.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 43,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Correctly denies possession and identifies the event-desk handover.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 44,
+      "option": "A",
+      "adequacy": "uncertain",
+      "reason": "Yes partly answers upload status, but changed is an unclear substitution for uploaded.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 44,
+      "option": "B",
+      "adequacy": "pass",
+      "reason": "Correctly confirms the photographs are in the shared folder.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 44,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Correctly confirms the photographs are in the shared folder.",
+      "rating_source": "Identical same-case draft as optionB; reused assistant inspection"
+    },
+    {
+      "n": 44,
+      "option": "C",
+      "adequacy": "pass",
+      "reason": "Yes-they-are clearly confirms upload status.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 44,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Yes-they-are clearly confirms upload status.",
+      "rating_source": "Identical same-case draft as optionC; reused assistant inspection"
+    },
+    {
+      "n": 45,
+      "option": "B",
+      "adequacy": "fail",
+      "reason": "Attributes wanting to cycle to both people despite the peer's explicit preference for walking.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 45,
+      "option": "C",
+      "adequacy": "fail",
+      "reason": "Attributes wanting to cycle to both people despite the peer's explicit preference for walking.",
+      "rating_source": "Identical same-case draft as optionB; reused assistant inspection"
+    },
+    {
+      "n": 45,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Accepts then substitutes cycling for the peer's requested walking alternative.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 45,
+      "option": "E",
+      "adequacy": "uncertain",
+      "reason": "Asking destination is weakly connected when park is already agreed and only travel mode changed.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 46,
+      "option": "A",
+      "adequacy": "uncertain",
+      "reason": "We-cannot-help-you does not clearly answer seeking help for both participants; helper/recipient scope is unclear.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 46,
+      "option": "E",
+      "adequacy": "uncertain",
+      "reason": "Offering collective help does not clearly resolve who can assist both novice participants; helper/recipient scope is unclear.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 47,
+      "option": "C",
+      "adequacy": "uncertain",
+      "reason": "Strong sympathy is weakly connected to an undecided rehearsal time and does not clearly address scheduling.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 47,
+      "option": "D",
+      "adequacy": "pass",
+      "reason": "Confirms availability the following day, a valid response even while exact time remains undecided.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 47,
+      "option": "E",
+      "adequacy": "pass",
+      "reason": "Confirms the shared plan for the following day, compatible with a still-undecided time.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 48,
+      "option": "C",
+      "adequacy": "uncertain",
+      "reason": "Sympathy may acknowledge the spill but is weakly connected to the positive dry-bag update.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 48,
+      "option": "D",
+      "adequacy": "fail",
+      "reason": "Confuses checking the user's bag with checking the user's cup, although the cup belonged to the peer.",
+      "rating_source": "assistant inspection"
+    },
+    {
+      "n": 48,
+      "option": "E",
+      "adequacy": "fail",
+      "reason": "Removed is an incoherent new action/object in response to whether the bag got wet.",
+      "rating_source": "assistant inspection"
+    }
+  ],
+  "limitation": "Exact-target match annotations are separated from assistant inspection of alternative generations."
+}

@@ -1,0 +1,1612 @@
+[
+  {
+    "item_id": "ITEM-A-001",
+    "reply_acts": [
+      "accept",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure! What time should we meet?"
+  },
+  {
+    "item_id": "ITEM-A-002",
+    "reply_acts": [
+      "express_uncertainty"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I think a reservation is required, hold on let me check"
+  },
+  {
+    "item_id": "ITEM-A-003",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yeah i checked, I am free!"
+  },
+  {
+    "item_id": "ITEM-A-004",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure! see you at 6pm"
+  },
+  {
+    "item_id": "ITEM-A-005",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Make sure to press the yellow button before pressing print"
+  },
+  {
+    "item_id": "ITEM-A-006",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Okay, lets meet for dinner first"
+  },
+  {
+    "item_id": "ITEM-A-007",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, let's meet next weekend then."
+  },
+  {
+    "item_id": "ITEM-A-008",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I invited the others too"
+  },
+  {
+    "item_id": "ITEM-A-009",
+    "reply_acts": [
+      "request_action"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Hurry! You don't want to be late for your first class"
+  },
+  {
+    "item_id": "ITEM-A-011",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Okay, I will take the seat first"
+  },
+  {
+    "item_id": "ITEM-A-013",
+    "reply_acts": [
+      "clarify",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "what would you like? I will get it for you"
+  },
+  {
+    "item_id": "ITEM-A-014",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay, I will do so by Sunday, dont worry."
+  },
+  {
+    "item_id": "ITEM-A-015",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Okay, I will be there soon!"
+  },
+  {
+    "item_id": "ITEM-A-018",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "That is abit far, but I am okay with it"
+  },
+  {
+    "item_id": "ITEM-A-020",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay, I will reach soon"
+  },
+  {
+    "item_id": "ITEM-A-021",
+    "reply_acts": [
+      "decline"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "you can't, its been reserved by someone else"
+  },
+  {
+    "item_id": "ITEM-A-022",
+    "reply_acts": [
+      "accept",
+      "request_action"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, hurry down soon"
+  },
+  {
+    "item_id": "ITEM-A-023",
+    "reply_acts": [
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries, it has been a long day"
+  },
+  {
+    "item_id": "ITEM-A-025",
+    "reply_acts": [
+      "acknowledge",
+      "request_action"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay, next time please come on time"
+  },
+  {
+    "item_id": "ITEM-A-027",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No, I am taking the bus, the MRT is very slow"
+  },
+  {
+    "item_id": "ITEM-A-028",
+    "reply_acts": [
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "You are always late haha, I will save you a seat"
+  },
+  {
+    "item_id": "ITEM-A-029",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay! i will order from the noodles stall for you"
+  },
+  {
+    "item_id": "ITEM-A-031",
+    "reply_acts": [
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Let's go for an indoor plan instead"
+  },
+  {
+    "item_id": "ITEM-A-036",
+    "reply_acts": [
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries, it happens"
+  },
+  {
+    "item_id": "ITEM-A-039",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure, see you there!"
+  },
+  {
+    "item_id": "ITEM-A-040",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, you can use mine."
+  },
+  {
+    "item_id": "ITEM-A-041",
+    "reply_acts": [
+      "accept",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, could you print one for me too?"
+  },
+  {
+    "item_id": "ITEM-A-042",
+    "reply_acts": [
+      "accept",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure! What movie are y'all watching?"
+  },
+  {
+    "item_id": "ITEM-A-045",
+    "reply_acts": [
+      "request_action"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Hurry, the professor might start soon."
+  },
+  {
+    "item_id": "ITEM-A-047",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Oh I see you, heading there now."
+  },
+  {
+    "item_id": "ITEM-A-048",
+    "reply_acts": [
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries, take your time"
+  },
+  {
+    "item_id": "ITEM-A-049",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, let's go back together"
+  },
+  {
+    "item_id": "ITEM-A-055",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, i confirm that I am going"
+  },
+  {
+    "item_id": "ITEM-A-056",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes I am. Confirmed"
+  },
+  {
+    "item_id": "ITEM-A-057",
+    "reply_acts": [
+      "support",
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Don't worry, I checked the information."
+  },
+  {
+    "item_id": "ITEM-A-058",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Okay, I understand."
+  },
+  {
+    "item_id": "ITEM-A-059",
+    "reply_acts": [
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Hold on, I will check for you"
+  },
+  {
+    "item_id": "ITEM-A-060",
+    "reply_acts": [
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "True, let's ask them too."
+  },
+  {
+    "item_id": "ITEM-B-001",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, I'd be happy to get something to eat after class."
+  },
+  {
+    "item_id": "ITEM-B-004",
+    "reply_acts": [
+      "accept",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, could you get me a bottle of water?"
+  },
+  {
+    "item_id": "ITEM-B-005",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, seven works better for me"
+  },
+  {
+    "item_id": "ITEM-B-006",
+    "reply_acts": [
+      "apologise",
+      "decline"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry, I can't make it today. I need to finish some work."
+  },
+  {
+    "item_id": "ITEM-B-007",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Okay, I'll meet you there shortly."
+  },
+  {
+    "item_id": "ITEM-B-008",
+    "reply_acts": [
+      "accept",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, what time should we meet?"
+  },
+  {
+    "item_id": "ITEM-B-010",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, three still works for me."
+  },
+  {
+    "item_id": "ITEM-B-011",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, I can go through it with you later."
+  },
+  {
+    "item_id": "ITEM-B-012",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, eight works for me."
+  },
+  {
+    "item_id": "ITEM-B-013",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Thanks for letting me know. I'll look for another place."
+  },
+  {
+    "item_id": "ITEM-B-014",
+    "reply_acts": [
+      "apologise",
+      "decline"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry, I can't join this afternoon."
+  },
+  {
+    "item_id": "ITEM-B-016",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, the slides have been uploaded to the course page."
+  },
+  {
+    "item_id": "ITEM-B-017",
+    "reply_acts": [
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, I'll send it tonight."
+  },
+  {
+    "item_id": "ITEM-B-018",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, I'll send you the link."
+  },
+  {
+    "item_id": "ITEM-B-020",
+    "reply_acts": [
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries, I'll try to find them elsewhere."
+  },
+  {
+    "item_id": "ITEM-B-021",
+    "reply_acts": [
+      "apologise",
+      "decline",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry, I can't send them right now, but I'll send them later."
+  },
+  {
+    "item_id": "ITEM-B-022",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "We need to submit it by Friday evening."
+  },
+  {
+    "item_id": "ITEM-B-023",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, I'll take a look when I'm done with mine."
+  },
+  {
+    "item_id": "ITEM-B-024",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, let's discuss it after class."
+  },
+  {
+    "item_id": "ITEM-B-028",
+    "reply_acts": [
+      "support",
+      "request_action"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries. Just send it when you're ready."
+  },
+  {
+    "item_id": "ITEM-B-032",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, two works for me."
+  },
+  {
+    "item_id": "ITEM-B-033",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Thanks for letting me know. I'll check the new room."
+  },
+  {
+    "item_id": "ITEM-B-037",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, I'll meet you at the campus gate."
+  },
+  {
+    "item_id": "ITEM-B-038",
+    "reply_acts": [
+      "support",
+      "request_action"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries. Just let me know when you arrive."
+  },
+  {
+    "item_id": "ITEM-B-039",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, I'll come over and find you."
+  },
+  {
+    "item_id": "ITEM-B-040",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, six thirty works for me."
+  },
+  {
+    "item_id": "ITEM-B-041",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, let's walk back together."
+  },
+  {
+    "item_id": "ITEM-B-044",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "It's showing at eight tonight."
+  },
+  {
+    "item_id": "ITEM-B-045",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, the plan is still on."
+  },
+  {
+    "item_id": "ITEM-B-046",
+    "reply_acts": [
+      "acknowledge",
+      "decline"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Thanks for inviting me, but I can't make it tonight."
+  },
+  {
+    "item_id": "ITEM-B-047",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, Friday works for me."
+  },
+  {
+    "item_id": "ITEM-B-049",
+    "reply_acts": [
+      "accept",
+      "request_action",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, send me the details and I'll help you book it."
+  },
+  {
+    "item_id": "ITEM-B-052",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, five still works for me."
+  },
+  {
+    "item_id": "ITEM-B-053",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, I'll book it once we confirm the time."
+  },
+  {
+    "item_id": "ITEM-B-055",
+    "reply_acts": [
+      "apologise",
+      "decline"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry, I can't join today. I need to finish my assignment."
+  },
+  {
+    "item_id": "ITEM-B-058",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "You could try the printer on the second floor."
+  },
+  {
+    "item_id": "ITEM-B-059",
+    "reply_acts": [
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, I'll bring it tomorrow."
+  },
+  {
+    "item_id": "ITEM-B-060",
+    "reply_acts": [
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries, I'll find another one."
+  },
+  {
+    "item_id": "ITEM-C-002",
+    "reply_acts": [
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "what food do they have there?"
+  },
+  {
+    "item_id": "ITEM-C-003",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "both are fine"
+  },
+  {
+    "item_id": "ITEM-C-004",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "it starts at 7"
+  },
+  {
+    "item_id": "ITEM-C-005",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yeah, we don't have class on tuesday"
+  },
+  {
+    "item_id": "ITEM-C-006",
+    "reply_acts": [
+      "acknowledge",
+      "decline"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay, i might skip it then"
+  },
+  {
+    "item_id": "ITEM-C-007",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "not yet. i was waiting for you"
+  },
+  {
+    "item_id": "ITEM-C-009",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "that's fine. i'll come over and we can share the table"
+  },
+  {
+    "item_id": "ITEM-C-010",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, i found two seats on the third floor"
+  },
+  {
+    "item_id": "ITEM-C-011",
+    "reply_acts": [
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, i'll save a seat for you"
+  },
+  {
+    "item_id": "ITEM-C-012",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, 11 works for me as well"
+  },
+  {
+    "item_id": "ITEM-C-015",
+    "reply_acts": [
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, i have them. i can send them to you"
+  },
+  {
+    "item_id": "ITEM-C-019",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, 5:30 is fine with me"
+  },
+  {
+    "item_id": "ITEM-C-020",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "not yet. the lecturer hasnt arrived"
+  },
+  {
+    "item_id": "ITEM-C-021",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "not yet. im about 5 minutes away"
+  },
+  {
+    "item_id": "ITEM-C-022",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay, i'll be there in a few minutes"
+  },
+  {
+    "item_id": "ITEM-C-025",
+    "reply_acts": [
+      "accept",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure, what kind of iced coffee would you like?"
+  },
+  {
+    "item_id": "ITEM-C-026",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, i'll meet you after class"
+  },
+  {
+    "item_id": "ITEM-C-027",
+    "reply_acts": [
+      "support",
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "no worries. get some rest and we can go another time"
+  },
+  {
+    "item_id": "ITEM-C-029",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure. we can find a quiet place in the library"
+  },
+  {
+    "item_id": "ITEM-C-030",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, i'll be thr at 2"
+  },
+  {
+    "item_id": "ITEM-C-031",
+    "reply_acts": [
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "no problem. you should head back and rest"
+  },
+  {
+    "item_id": "ITEM-C-032",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay, i'll look for somewhere else downstairs"
+  },
+  {
+    "item_id": "ITEM-C-033",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure, we can compare them after class"
+  },
+  {
+    "item_id": "ITEM-C-035",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "great, thanks for letting me know"
+  },
+  {
+    "item_id": "ITEM-C-036",
+    "reply_acts": [
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure, i'll send you a photo of it"
+  },
+  {
+    "item_id": "ITEM-C-039",
+    "reply_acts": [
+      "support",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "no worries. we'll update you after the rehearsal"
+  },
+  {
+    "item_id": "ITEM-C-040",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "great, i'll check the final version later"
+  },
+  {
+    "item_id": "ITEM-C-043",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "thanks. i'll go to level 4 now"
+  },
+  {
+    "item_id": "ITEM-C-044",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, the lecturer is inside alr, but class hasnt started yet"
+  },
+  {
+    "item_id": "ITEM-C-047",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure. lets meet after class"
+  },
+  {
+    "item_id": "ITEM-C-049",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, the same bus stop as yesterday"
+  },
+  {
+    "item_id": "ITEM-C-050",
+    "reply_acts": [
+      "support",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "no worries. take your time and come over"
+  },
+  {
+    "item_id": "ITEM-C-051",
+    "reply_acts": [
+      "accept",
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure. i'll meet you at the mrt instead"
+  },
+  {
+    "item_id": "ITEM-C-052",
+    "reply_acts": [
+      "accept",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure, i'll send you the link"
+  },
+  {
+    "item_id": "ITEM-C-054",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "thanks for letting me know. i'll head over soon"
+  },
+  {
+    "item_id": "ITEM-C-057",
+    "reply_acts": [
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sure, i'll get one for you"
+  },
+  {
+    "item_id": "ITEM-C-059",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, im waiting near the entrance"
+  },
+  {
+    "item_id": "ITEM-C-060",
+    "reply_acts": [
+      "support",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "no worries. i'll wait for you at the court"
+  },
+  {
+    "item_id": "ITEM-D-002",
+    "reply_acts": [
+      "apologise"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Oh oops, I did not know that."
+  },
+  {
+    "item_id": "ITEM-D-004",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "That's fine."
+  },
+  {
+    "item_id": "ITEM-D-005",
+    "reply_acts": [
+      "decline",
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Nope. I can't take spice."
+  },
+  {
+    "item_id": "ITEM-D-006",
+    "reply_acts": [
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "What would you like to eat?"
+  },
+  {
+    "item_id": "ITEM-D-008",
+    "reply_acts": [
+      "counterpropose",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I would be free during the weekend. Is that alright?"
+  },
+  {
+    "item_id": "ITEM-D-011",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "There is still presentation slides to be done."
+  },
+  {
+    "item_id": "ITEM-D-012",
+    "reply_acts": [
+      "express_uncertainty"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I don't know actually"
+  },
+  {
+    "item_id": "ITEM-D-014",
+    "reply_acts": [
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Maybe we should spend some time to read up about the topics."
+  },
+  {
+    "item_id": "ITEM-D-015",
+    "reply_acts": [
+      "apologise"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I am sorry. I thought it was necessary."
+  },
+  {
+    "item_id": "ITEM-D-017",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes."
+  },
+  {
+    "item_id": "ITEM-D-018",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No I have something on tomorrow. Would you be free the day after?"
+  },
+  {
+    "item_id": "ITEM-D-019",
+    "reply_acts": [
+      "apologise"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry. I forgot about that."
+  },
+  {
+    "item_id": "ITEM-D-021",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I would just need some more time."
+  },
+  {
+    "item_id": "ITEM-D-022",
+    "reply_acts": [
+      "answer_or_inform",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I am almost done too. I just want to check if you know the answer to the first question?"
+  },
+  {
+    "item_id": "ITEM-D-023",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ya, we would be adding more user stories, due to changes."
+  },
+  {
+    "item_id": "ITEM-D-024",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes. We would need to make slight adjustment to the conclusion to summarise our work better"
+  },
+  {
+    "item_id": "ITEM-D-025",
+    "reply_acts": [
+      "apologise",
+      "decline"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry, I am not able to help with that as I am busy with other project work."
+  },
+  {
+    "item_id": "ITEM-D-026",
+    "reply_acts": [
+      "answer_or_inform",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "My class is in the seminar room. Why are you asking?"
+  },
+  {
+    "item_id": "ITEM-D-028",
+    "reply_acts": [
+      "accept",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes. Which rows would you like to sit at?"
+  },
+  {
+    "item_id": "ITEM-D-031",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes. I would be going for the makeup class."
+  },
+  {
+    "item_id": "ITEM-D-032",
+    "reply_acts": [
+      "answer_or_inform",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, would we need to email the professor?"
+  },
+  {
+    "item_id": "ITEM-D-034",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, I have just left my house."
+  },
+  {
+    "item_id": "ITEM-D-035",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Okay, take your time, I will walk around first."
+  },
+  {
+    "item_id": "ITEM-D-040",
+    "reply_acts": [
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Which movie do you want to watch?"
+  },
+  {
+    "item_id": "ITEM-D-041",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Okay. I can do my own work then."
+  },
+  {
+    "item_id": "ITEM-D-043",
+    "reply_acts": [
+      "acknowledge",
+      "request_action"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ok, let me know when you are reaching soon."
+  },
+  {
+    "item_id": "ITEM-D-044",
+    "reply_acts": [
+      "acknowledge",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ok. How much is it?"
+  },
+  {
+    "item_id": "ITEM-D-045",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "My friends are joining in as well"
+  },
+  {
+    "item_id": "ITEM-D-047",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, we will be playing badminton later."
+  },
+  {
+    "item_id": "ITEM-D-048",
+    "reply_acts": [
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes can. I will be bringing 3 down."
+  },
+  {
+    "item_id": "ITEM-D-049",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, I would be free to run tomorrow"
+  },
+  {
+    "item_id": "ITEM-D-051",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "oh no, then I will see if there are other courts available"
+  },
+  {
+    "item_id": "ITEM-D-052",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ok, I will make sure to book later"
+  },
+  {
+    "item_id": "ITEM-D-053",
+    "reply_acts": [
+      "acknowledge",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "oh no, then how are you going to print the cheatsheet?"
+  },
+  {
+    "item_id": "ITEM-D-055",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ok , I will return once I have charged my phone"
+  },
+  {
+    "item_id": "ITEM-D-056",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yes, the printing queue is very long, there is about 4 other people before us"
+  },
+  {
+    "item_id": "ITEM-D-058",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ok noted, I will work on it."
+  },
+  {
+    "item_id": "ITEM-D-060",
+    "reply_acts": [
+      "acknowledge",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "oh no, is there any other printers nearby?"
+  },
+  {
+    "item_id": "ITEM-E-001",
+    "reply_acts": [
+      "apologise",
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry, I'll be reaching in 5 minutes, there was a train delay today."
+  },
+  {
+    "item_id": "ITEM-E-002",
+    "reply_acts": [
+      "apologise",
+      "decline",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "sorry, i got something on and i can't make it already, can something take over me?"
+  },
+  {
+    "item_id": "ITEM-E-003",
+    "reply_acts": [
+      "apologise",
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry, do you want to come and play with us"
+  },
+  {
+    "item_id": "ITEM-E-004",
+    "reply_acts": [
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "ok guys we are confirm having dinner this weekend right?"
+  },
+  {
+    "item_id": "ITEM-E-006",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "oh wells, next time i guess"
+  },
+  {
+    "item_id": "ITEM-E-008",
+    "reply_acts": [
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "have you finished your part?"
+  },
+  {
+    "item_id": "ITEM-E-011",
+    "reply_acts": [
+      "acknowledge",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ok, will pay you later."
+  },
+  {
+    "item_id": "ITEM-E-012",
+    "reply_acts": [
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "No worries, i shall ask other people instead"
+  },
+  {
+    "item_id": "ITEM-E-013",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yep, I'm coming"
+  },
+  {
+    "item_id": "ITEM-E-014",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Yep I know"
+  },
+  {
+    "item_id": "ITEM-E-017",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yep, see you later"
+  },
+  {
+    "item_id": "ITEM-E-018",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure thing, let's do it tomorrow night"
+  },
+  {
+    "item_id": "ITEM-E-019",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Ok, that's great!"
+  },
+  {
+    "item_id": "ITEM-E-020",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "ok, noted thank you professor!"
+  },
+  {
+    "item_id": "ITEM-E-022",
+    "reply_acts": [
+      "apologise",
+      "decline",
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sorry. I still need it by right now, I will only be able to return by next week"
+  },
+  {
+    "item_id": "ITEM-E-023",
+    "reply_acts": [
+      "accept",
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "that would be awesome, thanks!"
+  },
+  {
+    "item_id": "ITEM-E-024",
+    "reply_acts": [
+      "decline",
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "no, you got to work for it. I'm not giving this out for free"
+  },
+  {
+    "item_id": "ITEM-E-029",
+    "reply_acts": [
+      "support",
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "don't worry, I already found you a seat"
+  },
+  {
+    "item_id": "ITEM-E-030",
+    "reply_acts": [
+      "apologise"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "oh sorry, didn't know that"
+  },
+  {
+    "item_id": "ITEM-E-031",
+    "reply_acts": [
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "ok, we shall reschedule to another day instead"
+  },
+  {
+    "item_id": "ITEM-E-033",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Sure, I can come."
+  },
+  {
+    "item_id": "ITEM-E-034",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "I already booked the tickets"
+  },
+  {
+    "item_id": "ITEM-E-035",
+    "reply_acts": [
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "Are you serious? Why did you inform me only at the very last minute?"
+  },
+  {
+    "item_id": "ITEM-E-037",
+    "reply_acts": [
+      "answer_or_inform",
+      "offer_or_commit"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes, i will return it not to worry"
+  },
+  {
+    "item_id": "ITEM-E-039",
+    "reply_acts": [
+      "clarify"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "How could you forget?"
+  },
+  {
+    "item_id": "ITEM-E-041",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "there is 5 sessions left"
+  },
+  {
+    "item_id": "ITEM-E-042",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "nope, the library is currently full"
+  },
+  {
+    "item_id": "ITEM-E-043",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "oh no, okay"
+  },
+  {
+    "item_id": "ITEM-E-044",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "ok, fine 6pm"
+  },
+  {
+    "item_id": "ITEM-E-045",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "ok, that's fine"
+  },
+  {
+    "item_id": "ITEM-E-047",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "nope, we came in at third place instead"
+  },
+  {
+    "item_id": "ITEM-E-048",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "yes. It is confirmed"
+  },
+  {
+    "item_id": "ITEM-E-049",
+    "reply_acts": [
+      "acknowledge",
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "oh okay, nevermind then all is good"
+  },
+  {
+    "item_id": "ITEM-E-052",
+    "reply_acts": [
+      "support",
+      "counterpropose"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "no worries, lets meet next week then"
+  },
+  {
+    "item_id": "ITEM-E-054",
+    "reply_acts": [
+      "acknowledge",
+      "support"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "got it, no worries"
+  },
+  {
+    "item_id": "ITEM-E-056",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "okay, you can go first"
+  },
+  {
+    "item_id": "ITEM-E-057",
+    "reply_acts": [
+      "acknowledge"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "ok,  thank you!"
+  },
+  {
+    "item_id": "ITEM-E-060",
+    "reply_acts": [
+      "accept"
+    ],
+    "annotation_source": "assistant provisional annotation of original STANDARD target; not independently human reviewed",
+    "target_standard": "ok sure, let's eat at 2 instead"
+  }
+]

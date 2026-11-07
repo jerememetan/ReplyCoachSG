@@ -1,0 +1,1115 @@
+{
+  "rubric": {
+    "standard": "Coherent next user turn; valid refusals/counterproposals and plausible selectable details allowed; explicit contradictions and role reversals fail.",
+    "local": "Same contextual-adequacy criterion, independently judged.",
+    "same_meaning": "Preserve essential actors, facts, choices, time, negation, certainty, requests and commitments.",
+    "singlish": "Recognizably natural Singaporean phrasing/syntax; neutral-English copies and awkward particle stuffing do not pass."
+  },
+  "questions": [
+    {
+      "n": 1,
+      "item_id": "DURATION-DEV-001",
+      "conversation": [
+        [
+          "peer",
+          "The robotics workshop was much harder than I expected."
+        ],
+        [
+          "user",
+          "Same, that last exercise took me ages."
+        ]
+      ],
+      "message": "At least our robot finally moved!",
+      "options": {
+        "A": {
+          "standard": "Yeah, I guess so.",
+          "local": "Yeah, I think so."
+        },
+        "B": {
+          "standard": "Yes, we have a lot to do now.",
+          "local": "Ya, now a lot to do."
+        },
+        "C": {
+          "standard": "Yeah, it was a long time ago.",
+          "local": "Yeah, a long time ago."
+        },
+        "D": {
+          "standard": "Yes, our robotics workshop has been moving so fast.",
+          "local": "Ya, robotics workshop slowly moving already."
+        },
+        "E": {
+          "standard": "Yes, we have a lot of improvement in the robotics.",
+          "local": "Yes, we have a lot of improvement in the robotics."
+        },
+        "F": {
+          "standard": "Yeah, it was a long time ago.",
+          "local": "Yeah, it was a long time ago."
+        },
+        "G": {
+          "standard": "Yes, we moved to the robotics workshop already.",
+          "local": "Ya, robotics workshop already moved liao."
+        },
+        "H": {
+          "standard": "Yeah, it was a long time ago.",
+          "local": "Yeah, it was a long time ago."
+        }
+      }
+    },
+    {
+      "n": 2,
+      "item_id": "DURATION-DEV-002",
+      "conversation": [
+        [
+          "peer",
+          "I sent the revised survey to the team."
+        ],
+        [
+          "user",
+          "Thanks for handling that."
+        ]
+      ],
+      "message": "No problem, happy to help.",
+      "options": {
+        "A": {
+          "standard": "Thank you for helping me.",
+          "local": "Thank you for helping me."
+        },
+        "B": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks for telling me ah."
+        },
+        "C": {
+          "standard": "Thank you for everything.",
+          "local": "Thank you for everything."
+        },
+        "D": {
+          "standard": "Thank you for helping me.",
+          "local": "Can, thanks for helping me."
+        },
+        "E": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks ah, thanks for telling me."
+        },
+        "F": {
+          "standard": "Thank you for helping me.",
+          "local": "Can, thanks for helping me."
+        },
+        "G": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks ah, thanks ah ah."
+        },
+        "H": {
+          "standard": "Thank you for helping me.",
+          "local": "Thank you for helping me."
+        }
+      }
+    },
+    {
+      "n": 3,
+      "item_id": "DURATION-DEV-003",
+      "conversation": [
+        [
+          "user",
+          "I found a quiet table near the windows."
+        ]
+      ],
+      "message": "Nice, I will come find you after my tutorial.",
+      "options": {
+        "A": {
+          "standard": "Thanks for letting me know. I will update you after class.",
+          "local": "Thanks ah, I update you after class."
+        },
+        "B": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks for letting me know ah."
+        },
+        "C": {
+          "standard": "Thanks for letting me know. I will update you after class",
+          "local": "Thanks ah, after class I update you."
+        },
+        "D": {
+          "standard": "Thank you, I will be waiting for you.",
+          "local": "Thank you, I waiting for you."
+        },
+        "E": {
+          "standard": "Thanks, I will be waiting for you.",
+          "local": "Thanks, I waiting for you."
+        },
+        "F": {
+          "standard": "Thank you, I will be waiting for you.",
+          "local": "Thank you, I waiting for you."
+        },
+        "G": {
+          "standard": "Thanks, I will be waiting for you.",
+          "local": "Can, I waiting for you."
+        },
+        "H": {
+          "standard": "Thank you for coming.",
+          "local": "Thank you for coming."
+        }
+      }
+    },
+    {
+      "n": 4,
+      "item_id": "DURATION-DEV-004",
+      "conversation": [
+        [
+          "peer",
+          "The rehearsal went well today."
+        ]
+      ],
+      "message": "Thanks for helping me practise the lines.",
+      "options": {
+        "A": {
+          "standard": "Don't mention it.",
+          "local": "Can, I mention the lines."
+        },
+        "B": {
+          "standard": "Don't mention it.",
+          "local": "Never mention leh."
+        },
+        "C": {
+          "standard": "Thanks for letting me know. I'll send you the rehearsal.",
+          "local": "Thanks ah, I send you the rehearsal."
+        },
+        "D": {
+          "standard": "Don't worry, I will help you with the rehearsal.",
+          "local": "Can, I help you finish the rehearsal."
+        },
+        "E": {
+          "standard": "Don't mention it.",
+          "local": "Don't mention leh, never mention."
+        },
+        "F": {
+          "standard": "Don't mention it.",
+          "local": "Never mention leh, don't mention leh."
+        },
+        "G": {
+          "standard": "Thanks for letting me know. I will update you after the rehearsal.",
+          "local": "Thanks ah, rehearsal finish then I update you."
+        },
+        "H": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks ah, help me know ah."
+        }
+      }
+    },
+    {
+      "n": 5,
+      "item_id": "DURATION-DEV-005",
+      "conversation": [
+        [
+          "user",
+          "I brought my bike lock to campus."
+        ]
+      ],
+      "message": "Can I use your lock for my bicycle until this evening?",
+      "options": {
+        "A": {
+          "standard": "Sure, you can use my bike until then.",
+          "local": "Can, my bike until then use."
+        },
+        "B": {
+          "standard": "Sure, you can use my bicycle until then.",
+          "local": "My bike until then you use my bicycle lah."
+        },
+        "C": {
+          "standard": "Sure, you can use my bike until the evening.",
+          "local": "Can, you use my bike until then use."
+        },
+        "D": {
+          "standard": "Sure, I'll be able to use my bicycle.",
+          "local": "Can, I use my bike lah."
+        },
+        "E": {
+          "standard": "Yes, you can use your lock.",
+          "local": "Can, you use your lock."
+        },
+        "F": {
+          "standard": "Sure, I'll be able to use it.",
+          "local": "Can, I use it."
+        },
+        "G": {
+          "standard": "Sure, you can use my bicycle until next week.",
+          "local": "Can, next week you use my bike lah."
+        },
+        "H": {
+          "standard": "Yes, you can use your lock.",
+          "local": "Can, you use your lock."
+        }
+      }
+    },
+    {
+      "n": 6,
+      "item_id": "DURATION-DEV-006",
+      "conversation": [
+        [
+          "user",
+          "I do not have an HDMI cable with me."
+        ]
+      ],
+      "message": "I have an extra cable. Would you like to use it?",
+      "options": {
+        "A": {
+          "standard": "Yes, I'd like to use it.",
+          "local": "Yes, I want to use it."
+        },
+        "B": {
+          "standard": "Yes, I'd like to use it.",
+          "local": "Can, I use it."
+        },
+        "C": {
+          "standard": "Yes please, could you lend me a cable?",
+          "local": "Can, can lend me a cable ah?"
+        },
+        "D": {
+          "standard": "Yes please, could you lend me a cable?",
+          "local": "Want, can lend me a cable ah?"
+        },
+        "E": {
+          "standard": "Yes, I'd like to use it.",
+          "local": "Yes, I want to use it."
+        },
+        "F": {
+          "standard": "Yes, I'd like to use it.",
+          "local": "Yes, I want to use it."
+        },
+        "G": {
+          "standard": "Yes please, I'd like to use the cable.",
+          "local": "Can, I use the cable."
+        },
+        "H": {
+          "standard": "Yes please, could you lend me a cable?",
+          "local": "Want, can lend me a cable ah?"
+        }
+      }
+    },
+    {
+      "n": 7,
+      "item_id": "DURATION-DEV-007",
+      "conversation": [
+        [
+          "peer",
+          "I saved a copy of the attendance list."
+        ],
+        [
+          "user",
+          "I lost mine when my laptop restarted."
+        ]
+      ],
+      "message": "Do you want me to forward my copy to you?",
+      "options": {
+        "A": {
+          "standard": "Yes please, send me your copy to me too.",
+          "local": "Want, can send me your copy ah."
+        },
+        "B": {
+          "standard": "Yes please, send me your copy.",
+          "local": "Want, send me your copy ah?"
+        },
+        "C": {
+          "standard": "Sure, I'll send it to you later.",
+          "local": "Can, later I send you."
+        },
+        "D": {
+          "standard": "Sure, I'll send you a copy.",
+          "local": "Can, I send you a copy."
+        },
+        "E": {
+          "standard": "Sure, I'll send you my copy.",
+          "local": "Can, I send you my copy."
+        },
+        "F": {
+          "standard": "Sure, I will send you my copy.",
+          "local": "Can, I send you my copy."
+        },
+        "G": {
+          "standard": "Sure, I'll send it to you later.",
+          "local": "Can, later I send you later."
+        },
+        "H": {
+          "standard": "Sure, I'll send it to you later.",
+          "local": "Can, I send you later later."
+        }
+      }
+    },
+    {
+      "n": 8,
+      "item_id": "DURATION-DEV-008",
+      "conversation": [
+        [
+          "user",
+          "Your parcel arrived at my hostel reception and I collected it."
+        ]
+      ],
+      "message": "Could you pass my parcel to me before dinner?",
+      "options": {
+        "A": {
+          "standard": "Sure, I'll be right back.",
+          "local": "Can, I'll be right back."
+        },
+        "B": {
+          "standard": "Sure, I will send you your parcel when dinner.",
+          "local": "Can, I send you your parcel when dinner."
+        },
+        "C": {
+          "standard": "Sure, where would you like to go?",
+          "local": "Can, where would you like to go?"
+        },
+        "D": {
+          "standard": "Sure, I will send you your parcel.",
+          "local": "Can, I send you your parcel ah."
+        },
+        "E": {
+          "standard": "Sure, I will send you your parcel.",
+          "local": "Can, I send you your parcel."
+        },
+        "F": {
+          "standard": "Sure, where will you be staying?",
+          "local": "Can, where will you be staying?"
+        },
+        "G": {
+          "standard": "Sure, I'll pass you your parcel.",
+          "local": "Can, I pass you your parcel."
+        },
+        "H": {
+          "standard": "Sure, I will send you your parcel.",
+          "local": "Can, I send you your parcel."
+        }
+      }
+    },
+    {
+      "n": 9,
+      "item_id": "DURATION-DEV-009",
+      "conversation": [
+        [
+          "peer",
+          "You lent me your drawing tablet last week."
+        ]
+      ],
+      "message": "Can I give your tablet back at our next meetup?",
+      "options": {
+        "A": {
+          "standard": "Sure, I'll give it back to you next week.",
+          "local": "Can, I give you next week."
+        },
+        "B": {
+          "standard": "Sure, I'll send you my drawing.",
+          "local": "Can, I send you my drawing."
+        },
+        "C": {
+          "standard": "Sure, I'll be back in the next meetup.",
+          "local": "Can, I back in next meetup."
+        },
+        "D": {
+          "standard": "Sure, I'll be back in the next meetup.",
+          "local": "Can, I back in next meetup."
+        },
+        "E": {
+          "standard": "Sure, I'll send it back to our next meetup.",
+          "local": "Can, I send back to our next meetup."
+        },
+        "F": {
+          "standard": "Sure, I will send you my drawing tablet.",
+          "local": "Can, I send you your drawing tablet."
+        },
+        "G": {
+          "standard": "Sure, I will send you my drawing tablet.",
+          "local": "Can, I send you my drawing tablet."
+        },
+        "H": {
+          "standard": "Sure, I'll give my tablet back to you next week.",
+          "local": "Can, next week I return my tablet."
+        }
+      }
+    },
+    {
+      "n": 10,
+      "item_id": "DURATION-DEV-010",
+      "conversation": [
+        [
+          "user",
+          "I cannot leave the examination room until 3 pm."
+        ]
+      ],
+      "message": "Can you meet me outside at 2 pm?",
+      "options": {
+        "A": {
+          "standard": "Sure, I'll meet you there at 2 pm.",
+          "local": "Can, I meet you there at 2 pm."
+        },
+        "B": {
+          "standard": "I cannot make two. Could we meet at the examination room tomorrow?",
+          "local": "Both cannot leh. Before that meet meet can?"
+        },
+        "C": {
+          "standard": "I cannot make two. Could we meet at the examination room tomorrow?",
+          "local": "Two cannot leh. examination room tomorrow meet."
+        },
+        "D": {
+          "standard": "Sorry, I cannot make two. Could we meet at two instead?",
+          "local": "Can, two instead can?"
+        },
+        "E": {
+          "standard": "Sure, I'll meet you there at 2 pm.",
+          "local": "Can, two pm meet you there."
+        },
+        "F": {
+          "standard": "Sure, see you at two pm.",
+          "local": "Can, two pm meet you."
+        },
+        "G": {
+          "standard": "Sure, I'll be there at two pm.",
+          "local": "Can, two pm I go there."
+        },
+        "H": {
+          "standard": "Sure, I'll be there around two o'clock.",
+          "local": "Can, two o'clock I'll be there."
+        }
+      }
+    },
+    {
+      "n": 11,
+      "item_id": "DURATION-DEV-011",
+      "conversation": [
+        [
+          "peer",
+          "The equipment counter shuts at 4 pm."
+        ],
+        [
+          "user",
+          "My seminar runs from noon until 5 pm."
+        ]
+      ],
+      "message": "Can you pick up the lens after your seminar today?",
+      "options": {
+        "A": {
+          "standard": "Sure, I will pick it up at five pm.",
+          "local": "Can, five also can."
+        },
+        "B": {
+          "standard": "Sure, I'll pick it up.",
+          "local": "Can, I pick up the lens."
+        },
+        "C": {
+          "standard": "Sure, I will pick it up.",
+          "local": "Can, I pick up the lens then I pick it up."
+        },
+        "D": {
+          "standard": "Sure, I'll pick it up.",
+          "local": "Can, I pick up the lens."
+        },
+        "E": {
+          "standard": "Sure, I'll pick it up at five pm.",
+          "local": "Can, five pm I pick up."
+        },
+        "F": {
+          "standard": "Sure, I'll pick it up.",
+          "local": "Can, I pick up the lens."
+        },
+        "G": {
+          "standard": "Sure, I will pick it up at five pm.",
+          "local": "Can, five pm I pick up."
+        },
+        "H": {
+          "standard": "Sure, I'll pick it up.",
+          "local": "Can, I pick up the lens."
+        }
+      }
+    },
+    {
+      "n": 12,
+      "item_id": "DURATION-DEV-012",
+      "conversation": [
+        [
+          "user",
+          "My doctor told me not to run on my injured knee this week."
+        ]
+      ],
+      "message": "Want to do a long run with me tomorrow morning?",
+      "options": {
+        "A": {
+          "standard": "Yes please, let me know what I should do.",
+          "local": "Can, I tell you what I do then tell me ah."
+        },
+        "B": {
+          "standard": "Yes, I want to do a short run.",
+          "local": "Yes, I want to do a short run."
+        },
+        "C": {
+          "standard": "Yes please, let me know what I want to do.",
+          "local": "Want, let me know what I want to do then tell me ah."
+        },
+        "D": {
+          "standard": "Yes, I'll do it tomorrow morning.",
+          "local": "Can, I do it tomorrow morning."
+        },
+        "E": {
+          "standard": "Yes please, let me know what I should do.",
+          "local": "Want, tomorrow morning I do what."
+        },
+        "F": {
+          "standard": "No worries, I'll be back in about half an hour.",
+          "local": "No worries, I'll be back in about half an hour."
+        },
+        "G": {
+          "standard": "Yes, I'm going to do it tomorrow morning.",
+          "local": "Yes, I going to do it tomorrow morning."
+        },
+        "H": {
+          "standard": "Yes, tomorrow morning would be fine.",
+          "local": "Can, tomorrow morning better."
+        }
+      }
+    },
+    {
+      "n": 13,
+      "item_id": "DURATION-DEV-013",
+      "conversation": [
+        [
+          "user",
+          "I cannot eat dairy products."
+        ]
+      ],
+      "message": "Should I buy the cheese pasta for you?",
+      "options": {
+        "A": {
+          "standard": "Yes please, buy the cheese pasta for me.",
+          "local": "Want, help me buy cheese pasta for me can?"
+        },
+        "B": {
+          "standard": "Yes, I'll buy the cheese pasta for you.",
+          "local": "Can, I buy the cheese pasta for you."
+        },
+        "C": {
+          "standard": "Yes, I'll buy it for you.",
+          "local": "Can, I buy cheese pasta for you."
+        },
+        "D": {
+          "standard": "Yes, I'll buy it for you.",
+          "local": "Can, I buy cheese pasta for you."
+        },
+        "E": {
+          "standard": "Yes please, buy the cheese pasta for me.",
+          "local": "Want, help me buy cheese pasta ah."
+        },
+        "F": {
+          "standard": "Yes, I'll buy it for you.",
+          "local": "Can, I buy cheese pasta for you."
+        },
+        "G": {
+          "standard": "Yes please, buy cheese pasta for me.",
+          "local": "Can, cheese pasta buy for me."
+        },
+        "H": {
+          "standard": "Yes please, buy the cheese pasta for me.",
+          "local": "Want, buy cheese pasta for me can?"
+        }
+      }
+    },
+    {
+      "n": 14,
+      "item_id": "DURATION-DEV-014",
+      "conversation": [
+        [
+          "user",
+          "I have drafted the questions but have not sent the form yet."
+        ]
+      ],
+      "message": "Have you sent the form to everyone?",
+      "options": {
+        "A": {
+          "standard": "Yes, I have sent it to everyone.",
+          "local": "Yes, I sent it to everyone."
+        },
+        "B": {
+          "standard": "Yes, I will send it to everyone.",
+          "local": "Want, I send you the form one."
+        },
+        "C": {
+          "standard": "Yes, I have sent it to everyone.",
+          "local": "Can, I send it to everyone."
+        },
+        "D": {
+          "standard": "Yes, I have sent it to everyone, but I haven't send it yet.",
+          "local": "Want, I send you the form one, I haven't send it leh."
+        },
+        "E": {
+          "standard": "Yes, I sent it to everyone.",
+          "local": "Yes, I sent it to everyone."
+        },
+        "F": {
+          "standard": "Yes, everyone has sent it.",
+          "local": "Never mind, everyone has sent it."
+        },
+        "G": {
+          "standard": "Yes, I sent it to everyone.",
+          "local": "Can, I send it to everyone."
+        },
+        "H": {
+          "standard": "Yes, I will send it to everyone.",
+          "local": "Want, I send it to everyone can?"
+        }
+      }
+    },
+    {
+      "n": 15,
+      "item_id": "DURATION-DEV-015",
+      "conversation": [
+        [
+          "user",
+          "I returned your library book at the front desk yesterday."
+        ]
+      ],
+      "message": "Do you still have my book with you?",
+      "options": {
+        "A": {
+          "standard": "Yes, I have mine, but you don't have your book.",
+          "local": "Can, you don't have your book."
+        },
+        "B": {
+          "standard": "Yes, I have my book waiting for you.",
+          "local": "My book waiting for you."
+        },
+        "C": {
+          "standard": "Yes, I do.",
+          "local": "Yes, I do."
+        },
+        "D": {
+          "standard": "Yes, I have my book waiting for you.",
+          "local": "My book waiting for you."
+        },
+        "E": {
+          "standard": "Yes, I do.",
+          "local": "Yes, I do."
+        },
+        "F": {
+          "standard": "Yes, I have it already.",
+          "local": "Yes, I have it already."
+        },
+        "G": {
+          "standard": "Yes, I have mine, but you don't have it.",
+          "local": "Yes, I have mine, don't have leh."
+        },
+        "H": {
+          "standard": "Yes, I do.",
+          "local": "Yes, I do."
+        }
+      }
+    },
+    {
+      "n": 16,
+      "item_id": "DURATION-DEV-016",
+      "conversation": [
+        [
+          "peer",
+          "Our bus departs from Bay 14 at the south terminal."
+        ]
+      ],
+      "message": "Which bay do we need to queue at?",
+      "options": {
+        "A": {
+          "standard": "We need to queue at the south terminal.",
+          "local": "Want, we need to queue at the south terminal."
+        },
+        "B": {
+          "standard": "We need to queue at the south terminal.",
+          "local": "We need to queue at south terminal."
+        },
+        "C": {
+          "standard": "We need to queue at the south terminal.",
+          "local": "Want, south terminal we need to queue."
+        },
+        "D": {
+          "standard": "We need to queue at the railway station.",
+          "local": "We need to queue at railway station."
+        },
+        "E": {
+          "standard": "We need to queue at the railway station.",
+          "local": "We need to queue at railway station."
+        },
+        "F": {
+          "standard": "We need to queue at the south terminal.",
+          "local": "We need to queue at south terminal."
+        },
+        "G": {
+          "standard": "We need to queue at the railway station.",
+          "local": "We need to queue at railway station."
+        },
+        "H": {
+          "standard": "We need to queue at the gate.",
+          "local": "We need to queue at gate."
+        }
+      }
+    },
+    {
+      "n": 17,
+      "item_id": "DURATION-DEV-017",
+      "conversation": [
+        [
+          "user",
+          "I am standing beside the fountain, not the ticket booth."
+        ]
+      ],
+      "message": "Where should I look for you?",
+      "options": {
+        "A": {
+          "standard": "I am standing next to the fountain.",
+          "local": "Can, I standing next to the fountain."
+        },
+        "B": {
+          "standard": "I am heading to the fountain, now on the second floor.",
+          "local": "I coming, now on the second floor liao."
+        },
+        "C": {
+          "standard": "I am going to the fountain first.",
+          "local": "I going to the fountain first."
+        },
+        "D": {
+          "standard": "I am going to look for the ticket booth.",
+          "local": "I am going to look for the ticket booth."
+        },
+        "E": {
+          "standard": "I am going to look for the ticket booth.",
+          "local": "I going to look for the ticket booth."
+        },
+        "F": {
+          "standard": "I am on the way to the fountain.",
+          "local": "I am on the way to the fountain."
+        },
+        "G": {
+          "standard": "I am going to the fountain first.",
+          "local": "Can, I going to the fountain first."
+        },
+        "H": {
+          "standard": "I am heading to the fountain, I am on the second floor.",
+          "local": "I heading to second floor liao."
+        }
+      }
+    },
+    {
+      "n": 18,
+      "item_id": "DURATION-DEV-018",
+      "conversation": [
+        [
+          "peer",
+          "Can you join the baking session on Sunday?"
+        ],
+        [
+          "user",
+          "Sunday afternoon works for me."
+        ]
+      ],
+      "message": "Great, it starts at 2 in the teaching kitchen.",
+      "options": {
+        "A": {
+          "standard": "I'll be back on Sunday.",
+          "local": "Can, Sunday afternoon will be back."
+        },
+        "B": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks for letting me know."
+        },
+        "C": {
+          "standard": "Great, see you there!",
+          "local": "Swee, see you there ah!"
+        },
+        "D": {
+          "standard": "Thanks for inviting me.",
+          "local": "Thanks for inviting me."
+        },
+        "E": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks for telling me."
+        },
+        "F": {
+          "standard": "Thank you for inviting me.",
+          "local": "Can, thanks for inviting me."
+        },
+        "G": {
+          "standard": "Okay, I'll meet you at the teaching kitchen.",
+          "local": "Okay, I meet you at the teaching kitchen."
+        },
+        "H": {
+          "standard": "Thanks for inviting me.",
+          "local": "Thanks for inviting me."
+        }
+      }
+    },
+    {
+      "n": 19,
+      "item_id": "DURATION-DEV-019",
+      "conversation": [
+        [
+          "user",
+          "Do you want to come to the board-game cafe with us?"
+        ]
+      ],
+      "message": "I cannot come this time. I have a family dinner.",
+      "options": {
+        "A": {
+          "standard": "What time would you like to come?",
+          "local": "Can, what time would you like to come?"
+        },
+        "B": {
+          "standard": "Okay, let's meet you at the board-game cafe.",
+          "local": "Okay, let's meet you at board-game cafe."
+        },
+        "C": {
+          "standard": "What time would you like to come?",
+          "local": "Can, what time would you like to come?"
+        },
+        "D": {
+          "standard": "What time would you like to come?",
+          "local": "Can, I come first."
+        },
+        "E": {
+          "standard": "What time would you like to come?",
+          "local": "Can, what time you want to come?"
+        },
+        "F": {
+          "standard": "What time would you like to come?",
+          "local": "Can, what time would you like to come?"
+        },
+        "G": {
+          "standard": "No worries, we can meet another time.",
+          "local": "Never mind lah, next time then meet."
+        },
+        "H": {
+          "standard": "Okay, let's meet at the board-game cafe tomorrow.",
+          "local": "Okay, then we meet at board-game cafe tomorrow."
+        }
+      }
+    },
+    {
+      "n": 20,
+      "item_id": "DURATION-DEV-020",
+      "conversation": [
+        [
+          "user",
+          "Can you review my scholarship statement this week?"
+        ]
+      ],
+      "message": "Sure, send it over when you are ready.",
+      "options": {
+        "A": {
+          "standard": "Thank you, I will send it over next week.",
+          "local": "Thank you, I send over next week."
+        },
+        "B": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks ah, thanks ah ah."
+        },
+        "C": {
+          "standard": "Thank you very much.",
+          "local": "Can, thanks you very much."
+        },
+        "D": {
+          "standard": "Thanks for letting me know. I'll send it over when it is ready.",
+          "local": "Thanks ah, I send you the scholarship statement first."
+        },
+        "E": {
+          "standard": "Thanks, I will send it over next week.",
+          "local": "Can, next week send me send me."
+        },
+        "F": {
+          "standard": "Thanks for letting me know.",
+          "local": "Thanks for letting me know."
+        },
+        "G": {
+          "standard": "Thanks for letting me know. I will send you my scholarship statement.",
+          "local": "Thanks ah, I send you my scholarship statement."
+        },
+        "H": {
+          "standard": "Thank you very much.",
+          "local": "Can, thanks you very much."
+        }
+      }
+    },
+    {
+      "n": 21,
+      "item_id": "DURATION-DEV-021",
+      "conversation": [
+        [
+          "peer",
+          "I forgot the badminton shuttlecocks."
+        ],
+        [
+          "user",
+          "I have a fresh tube in my bag."
+        ]
+      ],
+      "message": "Could you bring your shuttlecocks to the court?",
+      "options": {
+        "A": {
+          "standard": "Sure, I will bring my shuttlecock to the court.",
+          "local": "Can, I bring my shuttlecock to court."
+        },
+        "B": {
+          "standard": "Sure, I'll bring my shuttlecock to the court.",
+          "local": "Can, I bring my shuttlecock to court."
+        },
+        "C": {
+          "standard": "Sure, I will bring my shuttlecock to the court.",
+          "local": "Can, I bring my shuttlecock to court."
+        },
+        "D": {
+          "standard": "Sure, I'll bring them to the court.",
+          "local": "Can, I bring them to court."
+        },
+        "E": {
+          "standard": "Sure, I'll bring my shuttlecock to the court.",
+          "local": "Can, I bring my shuttlecock to the court."
+        },
+        "F": {
+          "standard": "Sure, I'll bring them to the court.",
+          "local": "Can, I bring them to court."
+        },
+        "G": {
+          "standard": "Sure, I will bring my shuttlecock to the court.",
+          "local": "Can, I bring my shuttlecock to court."
+        },
+        "H": {
+          "standard": "Sure, I'll bring my shuttlecock to the court.",
+          "local": "Can, I bring my shuttlecock to the court."
+        }
+      }
+    },
+    {
+      "n": 22,
+      "item_id": "DURATION-DEV-022",
+      "conversation": [
+        [
+          "peer",
+          "I have never used this audio mixer and I do not know its controls."
+        ]
+      ],
+      "message": "I tried turning it on but still cannot get any sound.",
+      "options": {
+        "A": {
+          "standard": "Why don't you turn it on?",
+          "local": "Why don't you turn it on?"
+        },
+        "B": {
+          "standard": "Why don't you turn it on?",
+          "local": "Why don't you turn it on?"
+        },
+        "C": {
+          "standard": "Let us ask someone else how to use the mixer.",
+          "local": "Let us ask someone else how to use the mixer."
+        },
+        "D": {
+          "standard": "Let us ask someone else how to use it.",
+          "local": "Let us ask someone else how to use it anot."
+        },
+        "E": {
+          "standard": "Okay, I'll take a look at the settings for you.",
+          "local": "Okay, I go look at the settings first."
+        },
+        "F": {
+          "standard": "Why don't you turn it on?",
+          "local": "Why don't you turn it on?"
+        },
+        "G": {
+          "standard": "Why don't you turn it on?",
+          "local": "Why don't you turn it on?"
+        },
+        "H": {
+          "standard": "You cannot use any sound mixer, you can only use one of those controls.",
+          "local": "You cannot use any sound mixer lah, you can use one of those controls."
+        }
+      }
+    },
+    {
+      "n": 23,
+      "item_id": "DURATION-DEV-023",
+      "conversation": [
+        [
+          "user",
+          "I have never borrowed equipment from the media desk."
+        ]
+      ],
+      "message": "I borrow cameras there every week and know the procedure.",
+      "options": {
+        "A": {
+          "standard": "Okay, I will take a look at it.",
+          "local": "Okay, I go look at it."
+        },
+        "B": {
+          "standard": "Yes, I know what you need to do.",
+          "local": "Yes, I know what you need to do."
+        },
+        "C": {
+          "standard": "Why don't you take a look at the cameras?",
+          "local": "Can, I take a look at the cameras."
+        },
+        "D": {
+          "standard": "Could you show me how to use the media desk?",
+          "local": "Can show me how to use the media desk anot?"
+        },
+        "E": {
+          "standard": "Okay, I will send you the cameras.",
+          "local": "Can, I send you the cameras."
+        },
+        "F": {
+          "standard": "Could you show me how to use the media desk?",
+          "local": "Can show me how to use media desk anot?"
+        },
+        "G": {
+          "standard": "Yes, I know how to use the cameras.",
+          "local": "Can, I know how to use the cameras."
+        },
+        "H": {
+          "standard": "Why don't you take a look at the cameras?",
+          "local": "Why don't you look at the cameras?"
+        }
+      }
+    },
+    {
+      "n": 24,
+      "item_id": "DURATION-DEV-024",
+      "conversation": [
+        [
+          "peer",
+          "I knocked over some water on the table, sorry."
+        ]
+      ],
+      "message": "Your notes look dry, thankfully.",
+      "options": {
+        "A": {
+          "standard": "Thank you for your concern.",
+          "local": "Never mind, thank you for concern."
+        },
+        "B": {
+          "standard": "Thank you for letting me know.",
+          "local": "Thank you for telling me ah."
+        },
+        "C": {
+          "standard": "Thank you for your concern.",
+          "local": "Never mind, thanks for your concern."
+        },
+        "D": {
+          "standard": "Thanks for letting me know.",
+          "local": "My notes look dry liao, don't worry."
+        },
+        "E": {
+          "standard": "Don't worry, I will send you the notes.",
+          "local": "Don't worry, I send you the notes."
+        },
+        "F": {
+          "standard": "Thank you for your concern.",
+          "local": "Thank you for your concern."
+        },
+        "G": {
+          "standard": "Thank you for helping me with my notes.",
+          "local": "Can, thanks for helping me."
+        },
+        "H": {
+          "standard": "Thank you for your concern.",
+          "local": "Can, thanks for your concern."
+        }
+      }
+    }
+  ],
+  "limitation": "Assistant-authored development probe; not human gold. Review all fixed variants before opening key. Uncertain is not pass."
+}

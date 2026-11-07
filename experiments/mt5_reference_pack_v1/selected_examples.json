@@ -1,0 +1,225 @@
+{
+  "selection": "Five readability-selected, contextually usable saved pairs per checkpoint. Not random and not accuracy estimates; outputs copied verbatim.",
+  "models": {
+    "historical_final": [
+      {
+        "item_id": "ITEM-A-030",
+        "context": [
+          "How long is our booking?",
+          "Oh no, our timer went off."
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "sian, need book somewhere else, our booking ran out",
+        "english": "No worries, we'll book somewhere else.",
+        "local": "No worries, we book somewhere else."
+      },
+      {
+        "item_id": "ITEM-C-023",
+        "context": [
+          "saturday im quite free",
+          "same, no plans yet"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "want me to jio you for the night market thing?",
+        "english": "Sure, what time would you like to go?",
+        "local": "Can, what time you want to go?"
+      },
+      {
+        "item_id": "ITEM-C-038",
+        "context": [
+          "ive finished drafting the conclusion",
+          "great"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "can help me check if this part sounds too long?",
+        "english": "sure, i'll check it for you.",
+        "local": "Can, I check for you."
+      },
+      {
+        "item_id": "ITEM-D-038",
+        "context": [
+          "eh wya",
+          "i am outside mac",
+          "u eh"
+        ],
+        "speakers": [
+          "peer",
+          "user",
+          "user"
+        ],
+        "message": "I am reaching soon, wait for me before going in.",
+        "english": "Okay, I'll wait for you.",
+        "local": "Okay, I wait for you."
+      },
+      {
+        "item_id": "ITEM-E-025",
+        "context": [
+          "hi class, I had a family emergency and there will not be any class tomorrow.",
+          "oh no! what about the in class quiz?"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+        "english": "Okay, I'll be free on Thursday.",
+        "local": "Can, Thursday also free."
+      }
+    ],
+    "historical_best": [
+      {
+        "item_id": "ITEM-A-030",
+        "context": [
+          "How long is our booking?",
+          "Oh no, our timer went off."
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "sian, need book somewhere else, our booking ran out",
+        "english": "Yes, we can book somewhere else.",
+        "local": "Can, we book somewhere else."
+      },
+      {
+        "item_id": "ITEM-A-054",
+        "context": [
+          "We are going to the club later right?",
+          "Yeah, I will go back to shower first."
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "Aiyo, don't need la, let's go now",
+        "english": "Ok, let's go now.",
+        "local": "Can, I go now."
+      },
+      {
+        "item_id": "ITEM-C-045",
+        "context": [
+          "we said we'd sit together tmr",
+          "yep"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "you still coming early to get seats right?",
+        "english": "yes, I'm coming early to get seats.",
+        "local": "Yes, I coming early to get seats."
+      },
+      {
+        "item_id": "ITEM-C-055",
+        "context": [
+          "lets go to the exhibition at 1",
+          "sounds good"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "can go around 2 instead? i need lunch first",
+        "english": "Sure, I'll meet you at 2",
+        "local": "Can, I meet you at 2"
+      },
+      {
+        "item_id": "ITEM-E-007",
+        "context": [
+          "tomorrow what you want to eat",
+          "lets eat at Chinatown tomorrow"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "onz, tmr meet na li",
+        "english": "Okay, I'll meet you at Chinatown tomorrow.",
+        "local": "Can, I meet you at Chinatown tomorrow."
+      }
+    ],
+    "current_shared": [
+      {
+        "item_id": "ITEM-C-001",
+        "context": [
+          "are you going to the library ltr?",
+          "yeah, probably after dinner"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "i'll be at lks around 8, want to meet there?",
+        "english": "sure, i'll meet you at lks around 8.",
+        "local": "okay, i meet you at lks around 8."
+      },
+      {
+        "item_id": "ITEM-C-038",
+        "context": [
+          "ive finished drafting the conclusion",
+          "great"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "can help me check if this part sounds too long?",
+        "english": "I'll check whether the conclusion is too long.",
+        "local": "I check if the conclusion too long leh."
+      },
+      {
+        "item_id": "ITEM-C-045",
+        "context": [
+          "we said we'd sit together tmr",
+          "yep"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "you still coming early to get seats right?",
+        "english": "yes, I'm coming early to get seats.",
+        "local": "yes, I coming early to get seats."
+      },
+      {
+        "item_id": "ITEM-C-055",
+        "context": [
+          "lets go to the exhibition at 1",
+          "sounds good"
+        ],
+        "speakers": [
+          "peer",
+          "user"
+        ],
+        "message": "can go around 2 instead? i need lunch first",
+        "english": "sure, let's meet at 2",
+        "local": "2 can, meet at 2"
+      },
+      {
+        "item_id": "ITEM-D-038",
+        "context": [
+          "eh wya",
+          "i am outside mac",
+          "u eh"
+        ],
+        "speakers": [
+          "peer",
+          "user",
+          "user"
+        ],
+        "message": "I am reaching soon, wait for me before going in.",
+        "english": "ok, i will wait for you.",
+        "local": "ok i wait for you"
+      }
+    ]
+  }
+}

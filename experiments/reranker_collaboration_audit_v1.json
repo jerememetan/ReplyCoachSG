@@ -1,0 +1,76 @@
+{
+  "observed_at_utc": "2026-11-07T13:11:08.304418+00:00",
+  "repo": "jerememetan/ReplyCoachSG",
+  "remote_branch": "origin/codex/finetuned-reranker",
+  "commit": "6d5d00409911f16db2feb34b75f022bf69f05121",
+  "also_origin_main_same_commit": true,
+  "working_branch": "role-d/v5-finetune",
+  "actions": "Fetchedtrackingrefs andreadgitshow; no merge/checkout orworkingfile replacement; no messages sent.",
+  "source_git_blob_ids": {
+    "roles/E_rerank_demo/START_HERE.md": "0a66c90c75d4fbdbc305d8055f3c3265f23119de",
+    "docs/dailydialog_reranker_training.md": "beece64fdc328944485bd09c44bcd1ea6323b7ee",
+    "docs/reports/dailydialog_reranker_comparison_20261029.md": "7e45772288dd15317bdecdf4062d6b4b5047bec0",
+    "docs/v7_local_refinement.md": "1049dda59b993cd3a03925634c94e44823bb6c36",
+    "src/replycoach/qwen_reranker.py": "6693fe8b90835147cd64b8d439a843fa58facd38",
+    "src/replycoach/shared_ranker.py": "4a7b5a0dec8d28b777c51c96bdf983b7422747ee"
+  },
+  "training_report": {
+    "completed": "2026-10-29",
+    "model": "Qwen/Qwen3-Reranker-0.6B",
+    "stages": [
+      {
+        "name": "DailyDialogadaptation",
+        "training_pairs": 12000,
+        "validation_pairs": 1200,
+        "epochs_completed": 2,
+        "selected_epoch": 1
+      },
+      {
+        "name": "reviewedLoRArefinement",
+        "training_pairs": 1160,
+        "validation_pairs": 300,
+        "epochs_completed": 4,
+        "selected_epoch": 2
+      }
+    ],
+    "final_adapter": "artifacts/reranker_qwen/dd_result_20261029/stage2_reviewed/best",
+    "checkpoint_weights_not_found_in_local_workspace_or_checked_group_artifact_directory": true
+  },
+  "reported_development_comparison": {
+    "conversations": 50,
+    "saved_proposals": 400,
+    "sources": [
+      "BM25",
+      "MiniLM",
+      "V4",
+      "V5"
+    ],
+    "evaluation": "4000existingGemmaAIpersona ratings, notindependenthumanaccuracy",
+    "appropriateness": {
+      "dd_qwen": {
+        "standard": 3.634,
+        "local": 3.988
+      },
+      "prior_qwen": {
+        "standard": 3.64,
+        "local": 3.946
+      },
+      "v5_only": {
+        "standard": 3.666,
+        "local": 4.11
+      }
+    },
+    "conclusion": "Mixed; all reported style-specific comparison intervals againstpriorQwen/V5includezero; nogeneralqualitygainestablished.",
+    "known_failure": "Borrower/lenderreversedchargerreply rated5/5byexistingAIjudge; nottrustworthyasgold."
+  },
+  "integration": "FriendbranchdemodefaultQwen+DailyDialog; earlierMiniLMselectorsretained. Currentgenerationbenchmarksareunreranked.",
+  "v7": {
+    "date": "2026-11-03",
+    "implementation": "OriginalLOCAL +3randomlexicon/particlevariations, scoredbysameexistingranker; Englishunchanged",
+    "evidence": "3liveexamples,localruntimeverification; notprovensemanticorstylequalityimprovement."
+  },
+  "nov4_commit": "Finaltestreportdocumentationchanged; heldouttestcontent andtestreportnotopenedforthisdevelopmentaudit.",
+  "next_evaluation": "Keepgeneratorsfixed; build4-8distinctEnglishcandidatepool, measurewhetheracceptablecandidateexists, thencomparetop1vslearnedranking. PreservechosenEnglishinLOCALrewrite andcheckexacttimes/amounts; noautomaticblindwordsubstitution.",
+  "user_feedback": "User finds randomSEAvalidationexamples notbad; preserveusablephrasing anddo notforceparticles.",
+  "default_changed": false
+}

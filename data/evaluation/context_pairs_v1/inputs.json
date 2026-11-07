@@ -1,0 +1,322 @@
+[
+  {
+    "item_id": "CTXDEV-room-1",
+    "pair_id": "room",
+    "version": 1,
+    "context": [
+      "I reserved room C314 for our practice session.",
+      "Thanks, I will come after lunch."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room should I come to?",
+    "diagnostic_anchor": "Come to room C314.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-room-2",
+    "pair_id": "room",
+    "version": 2,
+    "context": [
+      "I reserved room C317 for our practice session.",
+      "Thanks, I will come after lunch."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room should I come to?",
+    "diagnostic_anchor": "Come to room C317.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-location-1",
+    "pair_id": "location",
+    "version": 1,
+    "context": [
+      "I am beside the orange clock on level three.",
+      "I just came through the main door."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where will I find you?",
+    "diagnostic_anchor": "I am beside the orange clock on level three.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-location-2",
+    "pair_id": "location",
+    "version": 2,
+    "context": [
+      "I am beside the green bench on level one.",
+      "I just came through the main door."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where will I find you?",
+    "diagnostic_anchor": "I am beside the green bench on level one.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-availability-1",
+    "pair_id": "availability",
+    "version": 1,
+    "context": [
+      "I can help on Friday, but I am busy on Saturday.",
+      "We only need one helper."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are you available on Friday?",
+    "diagnostic_anchor": "Yes, I can help on Friday.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-availability-2",
+    "pair_id": "availability",
+    "version": 2,
+    "context": [
+      "I am busy on Friday, but I can help on Saturday.",
+      "We only need one helper."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are you available on Friday?",
+    "diagnostic_anchor": "I cannot help on Friday, but I can help on Saturday.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-budget-1",
+    "pair_id": "budget",
+    "version": 1,
+    "context": [
+      "I have fifteen dollars left for the outing.",
+      "The booking costs forty dollars per person."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you afford the forty-dollar booking?",
+    "diagnostic_anchor": "That is more than I have. Could we choose something cheaper?",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-budget-2",
+    "pair_id": "budget",
+    "version": 2,
+    "context": [
+      "I have seventy-five dollars left for the outing.",
+      "The booking costs forty dollars per person."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you afford the forty-dollar booking?",
+    "diagnostic_anchor": "Yes, I have enough for the forty-dollar booking.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-submitted-1",
+    "pair_id": "submitted",
+    "version": 1,
+    "context": [
+      "I uploaded the consent form to the portal this afternoon.",
+      "The deadline is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted the consent form?",
+    "diagnostic_anchor": "Yes, I uploaded it this afternoon.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-submitted-2",
+    "pair_id": "submitted",
+    "version": 2,
+    "context": [
+      "I have not uploaded the consent form to the portal yet.",
+      "The deadline is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted the consent form?",
+    "diagnostic_anchor": "Not yet, I still need to upload it.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-packed-1",
+    "pair_id": "packed",
+    "version": 1,
+    "context": [
+      "I finished packing all the welcome packs into boxes.",
+      "The collection is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are the welcome packs packed yet?",
+    "diagnostic_anchor": "Yes, they are all packed into boxes.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-packed-2",
+    "pair_id": "packed",
+    "version": 2,
+    "context": [
+      "I have not started packing the welcome packs into boxes.",
+      "The collection is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are the welcome packs packed yet?",
+    "diagnostic_anchor": "Not yet, I have not started packing them.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-ownership-1",
+    "pair_id": "ownership",
+    "version": 1,
+    "context": [
+      "I lent you my power cable yesterday.",
+      "Let us sort it out after the workshop."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which one of us needs to return the power cable?",
+    "diagnostic_anchor": "You need to return my power cable to me.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-ownership-2",
+    "pair_id": "ownership",
+    "version": 2,
+    "context": [
+      "You lent me your power cable yesterday.",
+      "Let us sort it out after the workshop."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which one of us needs to return the power cable?",
+    "diagnostic_anchor": "I need to return your power cable to you.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-offer_request-1",
+    "pair_id": "offer_request",
+    "version": 1,
+    "context": [
+      "I missed the last part of the workshop.",
+      "I wrote down the key points."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I send you a photo of my notes?",
+    "diagnostic_anchor": "Yes please, send me a photo of your notes.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-offer_request-2",
+    "pair_id": "offer_request",
+    "version": 2,
+    "context": [
+      "I wrote down the key points of the workshop.",
+      "I missed the last part."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send me a photo of your notes?",
+    "diagnostic_anchor": "Sure, I will send you a photo of my notes.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-schedule-1",
+    "pair_id": "schedule",
+    "version": 1,
+    "context": [
+      "I cannot leave the lab before 18:45.",
+      "We could get dinner afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would 19:15 work for dinner?",
+    "diagnostic_anchor": "Yes, I can meet at 19:15 after leaving the lab.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-schedule-2",
+    "pair_id": "schedule",
+    "version": 2,
+    "context": [
+      "I cannot leave the lab before 20:45.",
+      "We could get dinner afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would 19:15 work for dinner?",
+    "diagnostic_anchor": "I cannot meet at 19:15. Could we meet after 20:45?",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-possession-1",
+    "pair_id": "possession",
+    "version": 1,
+    "context": [
+      "I put my umbrella in my bag before leaving home.",
+      "It is pouring outside now."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Did you bring your umbrella?",
+    "diagnostic_anchor": "Yes, my umbrella is in my bag.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  },
+  {
+    "item_id": "CTXDEV-possession-2",
+    "pair_id": "possession",
+    "version": 2,
+    "context": [
+      "I left my umbrella at home before heading out.",
+      "It is pouring outside now."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Did you bring your umbrella?",
+    "diagnostic_anchor": "No, I left it at home.",
+    "scope": "Assistant-authored development evaluation only; chosen anchor is one plausible response, not a unique required wording."
+  }
+]

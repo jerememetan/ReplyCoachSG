@@ -1,0 +1,250 @@
+{
+  "status": "complete",
+  "seeds": [
+    425,
+    1,
+    2
+  ],
+  "candidate": "Targeted80 conversations plus broader q/k/v/o/wi_0/wi_1/wo adapters",
+  "mean_pass_counts": {
+    "validation": {
+      "control": {
+        "standard_pass": 37.666666666666664,
+        "local_pass": 36.333333333333336,
+        "same_meaning_pass": 46.333333333333336,
+        "singlish_pass": 40.333333333333336,
+        "all_pass": 28.0
+      },
+      "capacity": {
+        "standard_pass": 36.666666666666664,
+        "local_pass": 34.0,
+        "same_meaning_pass": 43.666666666666664,
+        "singlish_pass": 43.333333333333336,
+        "all_pass": 28.666666666666668
+      }
+    },
+    "diagnostic": {
+      "control": {
+        "standard_pass": 10.666666666666666,
+        "local_pass": 10.333333333333334,
+        "same_meaning_pass": 22.666666666666668,
+        "singlish_pass": 18.666666666666668,
+        "all_pass": 7.0
+      },
+      "capacity": {
+        "standard_pass": 14.0,
+        "local_pass": 13.0,
+        "same_meaning_pass": 19.0,
+        "singlish_pass": 21.333333333333332,
+        "all_pass": 11.666666666666666
+      }
+    }
+  },
+  "per_seed": {
+    "425": {
+      "validation": {
+        "control": {
+          "pairs": 50,
+          "standard_fail": 9,
+          "local_fail": 7,
+          "same_meaning_fail": 7,
+          "singlish_fail": 5,
+          "all_pass": 26,
+          "standard_pass": 38,
+          "local_pass": 35,
+          "same_meaning_pass": 43,
+          "singlish_pass": 39,
+          "local_uncertain": 8,
+          "singlish_uncertain": 6,
+          "standard_uncertain": 3
+        },
+        "capacity": {
+          "pairs": 50,
+          "standard_pass": 37,
+          "local_pass": 32,
+          "same_meaning_pass": 45,
+          "singlish_pass": 39,
+          "all_pass": 28,
+          "standard_fail": 8,
+          "local_fail": 9,
+          "singlish_fail": 2,
+          "local_uncertain": 9,
+          "singlish_uncertain": 9,
+          "standard_uncertain": 5,
+          "same_meaning_fail": 4,
+          "same_meaning_uncertain": 1
+        }
+      },
+      "diagnostic": {
+        "control": {
+          "pairs": 24,
+          "standard_fail": 13,
+          "local_fail": 14,
+          "same_meaning_pass": 22,
+          "singlish_pass": 17,
+          "all_pass": 4,
+          "standard_pass": 9,
+          "local_pass": 8,
+          "singlish_fail": 4,
+          "standard_uncertain": 2,
+          "local_uncertain": 2,
+          "singlish_uncertain": 3,
+          "same_meaning_fail": 2
+        },
+        "capacity": {
+          "pairs": 24,
+          "standard_fail": 12,
+          "local_fail": 12,
+          "same_meaning_pass": 19,
+          "singlish_pass": 22,
+          "all_pass": 10,
+          "standard_pass": 12,
+          "local_pass": 11,
+          "same_meaning_fail": 4,
+          "local_uncertain": 1,
+          "singlish_uncertain": 2,
+          "same_meaning_uncertain": 1
+        }
+      }
+    },
+    "1": {
+      "validation": {
+        "control": {
+          "pairs": 50,
+          "standard_fail": 8,
+          "local_fail": 8,
+          "same_meaning_pass": 48,
+          "singlish_pass": 42,
+          "all_pass": 30,
+          "standard_pass": 38,
+          "local_pass": 37,
+          "local_uncertain": 5,
+          "singlish_uncertain": 3,
+          "singlish_fail": 5,
+          "standard_uncertain": 4,
+          "same_meaning_fail": 2
+        },
+        "capacity": {
+          "pairs": 50,
+          "standard_pass": 35,
+          "local_pass": 35,
+          "same_meaning_pass": 40,
+          "singlish_pass": 48,
+          "all_pass": 27,
+          "standard_fail": 9,
+          "local_fail": 8,
+          "standard_uncertain": 6,
+          "local_uncertain": 7,
+          "same_meaning_fail": 7,
+          "same_meaning_uncertain": 3,
+          "singlish_uncertain": 2
+        }
+      },
+      "diagnostic": {
+        "control": {
+          "pairs": 24,
+          "standard_fail": 11,
+          "local_fail": 12,
+          "same_meaning_pass": 23,
+          "singlish_pass": 20,
+          "all_pass": 10,
+          "singlish_fail": 3,
+          "standard_pass": 13,
+          "local_pass": 12,
+          "same_meaning_fail": 1,
+          "singlish_uncertain": 1
+        },
+        "capacity": {
+          "pairs": 24,
+          "standard_pass": 15,
+          "local_pass": 15,
+          "same_meaning_pass": 20,
+          "singlish_pass": 21,
+          "all_pass": 12,
+          "standard_fail": 6,
+          "local_fail": 5,
+          "same_meaning_uncertain": 2,
+          "standard_uncertain": 3,
+          "local_uncertain": 4,
+          "same_meaning_fail": 2,
+          "singlish_uncertain": 3
+        }
+      }
+    },
+    "2": {
+      "validation": {
+        "control": {
+          "pairs": 50,
+          "standard_pass": 37,
+          "local_pass": 37,
+          "same_meaning_pass": 48,
+          "singlish_fail": 7,
+          "all_pass": 28,
+          "singlish_pass": 40,
+          "standard_fail": 7,
+          "local_fail": 7,
+          "same_meaning_fail": 2,
+          "singlish_uncertain": 3,
+          "standard_uncertain": 6,
+          "local_uncertain": 6
+        },
+        "capacity": {
+          "pairs": 50,
+          "standard_pass": 38,
+          "local_pass": 35,
+          "same_meaning_pass": 46,
+          "singlish_pass": 43,
+          "all_pass": 31,
+          "standard_uncertain": 3,
+          "local_uncertain": 4,
+          "singlish_uncertain": 3,
+          "singlish_fail": 4,
+          "local_fail": 11,
+          "same_meaning_fail": 3,
+          "standard_fail": 9,
+          "same_meaning_uncertain": 1
+        }
+      },
+      "diagnostic": {
+        "control": {
+          "pairs": 24,
+          "standard_fail": 12,
+          "local_fail": 12,
+          "same_meaning_pass": 23,
+          "singlish_pass": 19,
+          "all_pass": 7,
+          "standard_pass": 10,
+          "local_pass": 11,
+          "singlish_uncertain": 3,
+          "singlish_fail": 2,
+          "standard_uncertain": 2,
+          "local_uncertain": 1,
+          "same_meaning_fail": 1
+        },
+        "capacity": {
+          "pairs": 24,
+          "standard_pass": 15,
+          "local_pass": 13,
+          "same_meaning_pass": 18,
+          "singlish_pass": 21,
+          "all_pass": 13,
+          "standard_fail": 7,
+          "local_fail": 8,
+          "local_uncertain": 3,
+          "same_meaning_fail": 6,
+          "singlish_uncertain": 2,
+          "standard_uncertain": 2,
+          "singlish_fail": 1
+        }
+      }
+    }
+  },
+  "decision": "No default replacement. Candidate improves selected diagnostic adequacy and all-pass counts in every seed, but validation STANDARD is slightly lower on average, validation all-pass changes are mixed, and paired meaning is lower on average on validation and in every seed on diagnostics. Preserve results; no general quality upgrade established.",
+  "limits": [
+    "Same50 existing and24 assistant-authored development contexts reused across seeds, not222 independent conversations.",
+    "Candidate selected after seed425; subsequent seeds measure training variability, not independent held-out generalization.",
+    "Replication compares combined data-plus-adapter intervention with control; it does not isolate adapter capacity from data. Targeted-only arm reviewed only seed425.",
+    "Same assistant authored training examples and reviewed replies; hidden labels do not ensure independent blinding. Exact unchanged pairs reuse26 seed1 and24 seed2 judgments from seed425 with provenance.",
+    "Current four-axis ratings are not directly comparable with earlier three-axis historical scores. No human accuracy or statistical significance claim."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "a": "accept",
+  "d": "decline",
+  "c": "counterpropose",
+  "q": "clarify",
+  "r": "request_action",
+  "w": "answer_or_inform",
+  "o": "offer_or_commit",
+  "k": "acknowledge",
+  "s": "support",
+  "p": "apologise",
+  "u": "express_uncertainty"
+}

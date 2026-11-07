@@ -1,0 +1,37 @@
+{
+  "optimizer_steps": 784,
+  "step_and_final_tensors_equal": true,
+  "unequal_tensors": [],
+  "metadata_equal": {
+    "v5_input.json": true,
+    "adapter_config.json": true,
+    "tokenizer_config.json": true
+  },
+  "reason": "Original job completed784 training updates but rejected nonidentical generated replies on reload. This recovery does inference only from the predeclared step784 weights; no labels/settings/thresholds changed.",
+  "reloaded_generation_differences": [
+    {
+      "item_id": "ITEM-C-001",
+      "original": {
+        "generated_standard": "Sure, I'll meet you at lks 8.",
+        "generated_local": "Can, I meet you at lks 8."
+      },
+      "reloaded": {
+        "generated_standard": "Yes, I'll meet you at the library.",
+        "generated_local": "Can, I meet you at library."
+      }
+    },
+    {
+      "item_id": "ITEM-E-027",
+      "original": {
+        "generated_standard": "Sure, let me know when you're ready to use it.",
+        "generated_local": "Can, let me know when you ready to use it."
+      },
+      "reloaded": {
+        "generated_standard": "Sure, let me know when you're free.",
+        "generated_local": "Can, let me know when you free."
+      }
+    }
+  ],
+  "identical_secondary_pairs": 48,
+  "checkpoint_weights_verified": true
+}

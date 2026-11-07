@@ -1,0 +1,73 @@
+{
+  "experiment": "sealion3b_probe_v1",
+  "repo_id": "aisingapore/SEA-LION-v1-3B",
+  "revision": "836890428766e94322a4b7de27fb081a604703a9",
+  "weights_sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107",
+  "weights_bytes": 6356554480,
+  "purpose": "Feasibility only: original learned-position MPT architecture, real-weight strict loading, LoRA gradients/updates, peak VRAM, adapter save, short finite-logit autoregressive continuation.",
+  "gpu": "One RTX3090,24GB",
+  "precision": "BF16 backbone, PEFT LoRA adapters; no quantization or full-weight optimization",
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "Wqkv",
+      "out_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "probe": {
+    "steps": 4,
+    "microbatch": 1,
+    "padded_sequence_tokens": 384,
+    "learning_rate": 0.0001,
+    "seed": 425,
+    "source": "190 original training LOCAL rows only for budget checks;4 longest encoded rows for smoke steps; no validation/test access",
+    "masking": "Prompt/pad labels -100; real target EOS retained even though pad and EOS IDs are shared"
+  },
+  "compatibility": {
+    "upstream_code": "Pinned reviewed source with MIT license, unchanged",
+    "transformers5": "Add GenerationMixin and standard post_init loading bookkeeping; construct config explicitly with old tie_word_embeddings=True default. Preserve learned positions, non-ALiBi torch attention, and upstream forward/loss.",
+    "padding": "Existing EOS reused for padding; no vocabulary resizing",
+    "inference": "4 cache-free greedy steps only, not evaluated for reply quality"
+  },
+  "environment": "Existing personal Python3.13 venv reused read-only; einops0.8.1 installed only in this snapshot/deps, not shared mT5 env",
+  "next_step": "Inspect actual checkpoint-loading correctness, gradient/update evidence and allocated/reserved VRAM. Passing only authorizes feasibility conclusion, not quality superiority or final-model promotion.",
+  "quality_evaluated": false,
+  "default_changed": false,
+  "files_sha256": {
+    "src/replycoach/__init__.py": "de57ddf5ad70d22e23053d975dbe60028cca42f825fbe994648409a2c8552587",
+    "src/replycoach/schema.py": "0424f5742901350fca0e4799df6702b61ec9dc540b9363bf1e2448e8f15abdfe",
+    "src/replycoach/tokenize.py": "61fb7a81cc81ee6b61e3bc3056bd2d43aa49baa51460ffd89405d11f2f483e4f",
+    "src/replycoach/generate/__init__.py": "2b2e903371712f88daa7d9ce457eaa5f49677a5f30f4bffef3ffb42e6ec46b7b",
+    "src/replycoach/vendor/__init__.py": "71f1ca1538d579fd3a304a95d7d2f792cca8abf9dca16f38ade9ce3e1da0dbbb",
+    "src/replycoach/generate/sealion_v1.py": "97a4f7e126fe77008dc725ee7af0cbf3085286790535d882d48feb0b29bdfc56",
+    "src/replycoach/generate/sealion_data.py": "66294f4f0409007c605d346335cb126fa37c55dbf99e41761bf32afa7bc86019",
+    "src/replycoach/vendor/sealion_v1/LICENSE": "151a54770b52e7f511ddfb7aae6f29ae6f0aef8ee119be5474270bed28e0c502",
+    "src/replycoach/vendor/sealion_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/replycoach/vendor/sealion_v1/adapt_tokenizer.py": "d68a8c8151448e949ed5ee6ffa5bd326ba76a264ea30b94908af4f5e7beb9583",
+    "src/replycoach/vendor/sealion_v1/attention.py": "96844cae928f44fd82f113f5d6f416efb2c787747ba893931f4877078166e6c4",
+    "src/replycoach/vendor/sealion_v1/blocks.py": "b1d019c0a9cc73f27e4d6dca931abb92b9201dd68d4176fe9f89065830e60800",
+    "src/replycoach/vendor/sealion_v1/configuration_mpt.py": "b117d206aaaee72be88c368c12a1af9ff4d205268b4bcd6e0743cc9d7df9d36b",
+    "src/replycoach/vendor/sealion_v1/custom_embedding.py": "5959001270bc3dbc76d3ebc54dba0f81ef625a0574d11930bd35ad20c5b1cba5",
+    "src/replycoach/vendor/sealion_v1/fc.py": "a2b575feebcd1891e75d2dd4263ee274dbe1aa73670b8d702bf1ef180723cd7f",
+    "src/replycoach/vendor/sealion_v1/ffn.py": "a225fc3369fd033a3871f27fec02c8c21dc72f0f9938a14c187ebd89b02f9c4a",
+    "src/replycoach/vendor/sealion_v1/flash_attn_triton.py": "3f548a86236f026bab28555954ae13afd7b4bc70b6ef81059570ea74d267e63c",
+    "src/replycoach/vendor/sealion_v1/hf_prefixlm_converter.py": "f55bda3248b703c6a9d065dc5e70a8d222a8adb11ce1579f70a5c148c8b24b28",
+    "src/replycoach/vendor/sealion_v1/meta_init_context.py": "8a053984416246791aed29a809df55625c46de8e3643ec16d44fbb16edd93a09",
+    "src/replycoach/vendor/sealion_v1/modeling_mpt.py": "d8190714a28dca31eb68a25a11568fb3b71f22b77a500efc9c7d8055e2b5fc5d",
+    "src/replycoach/vendor/sealion_v1/norm.py": "c2aa062d2d89993399d9ce14d04a8b2e30aacf46ac303ebafed3dc45bf6f15bc",
+    "src/replycoach/vendor/sealion_v1/param_init_fns.py": "1729529fc244149083265e65a3f2c9de4ff9f198881dd1d689fc5469e128d070",
+    "src/replycoach/vendor/sealion_v1/provenance.json": "d1b73f08e481aa7d3bb8d21af9dfa030c079583c0c82d6996c24f9865ecd5f7f",
+    "src/replycoach/vendor/sealion_v1/tokenization_SEA_BPE.py": "863f4d0c146de276a8b42ec8423fea80e59c4ee65d18afcda03ac8abc7c68842",
+    "scripts/prepare_sealion3b_probe_v1.py": "3d5ee7e091e1efdc74f07174035772f9dd6ace283d79ebc45c5dec6745f6d1a1",
+    "scripts/download_sealion3b_probe_v1.py": "7c10fc37b6f177bcbc9268721bfdb7b13aecf5e5079b7fb91995a4561c38dcb7",
+    "scripts/run_sealion3b_probe_v1.py": "628b1bf15e3e59c8e69a97a02fb825126c9ef520378da58b297cb40f25589f1f",
+    "scripts/v5_sealion3b_probe_v1.sbatch": "e4bfaf2b8b703d91634d14a27a30198be201bf03f1d5a05b84bc3da608cd5a8e",
+    "tests/test_sealion_data.py": "a621b608fa569dc37f350d074f399257a6502be07fc670aa880ca3402f16ad22",
+    "tests/test_sealion_v1_compat.py": "e71950a380cbcdc70c224eae0afa509b45bf512c53c926c9b3aa6c9532fd82db",
+    "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7"
+  }
+}

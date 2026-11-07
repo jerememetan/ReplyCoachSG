@@ -1,0 +1,23 @@
+{
+  "job_id": 355937,
+  "observed_state": "RUNNING",
+  "node": "voodoo",
+  "gpu": "RTX3090",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_dialogue_v1",
+  "public_train": 7994,
+  "public_validation": 400,
+  "project_train": 380,
+  "project_validation": 100,
+  "local_tests_passed": 13,
+  "remote_token_preflight": {
+    "public": [
+      7994,
+      400
+    ],
+    "task": [
+      380,
+      100
+    ]
+  },
+  "default_changed": false
+}

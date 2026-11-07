@@ -1,0 +1,155 @@
+{
+  "full_lr1e4": {
+    "variant": "full_lr1e4",
+    "old_endpoint": {
+      "train_loss": 0.16405856594079002,
+      "validation_loss": 2.8896569424662095
+    },
+    "history": [
+      {
+        "epoch": 0,
+        "optimizer_steps": 0,
+        "train_loss": 2.334010581832287,
+        "validation_loss": 2.598821328015163
+      },
+      {
+        "epoch": 1,
+        "optimizer_steps": 198,
+        "train_loss": 1.5790378120381476,
+        "validation_loss": 2.1812797558718713
+      },
+      {
+        "epoch": 2,
+        "optimizer_steps": 396,
+        "train_loss": 1.208914872833602,
+        "validation_loss": 2.1241998608770043
+      },
+      {
+        "epoch": 3,
+        "optimizer_steps": 594,
+        "train_loss": 0.9079795966756122,
+        "validation_loss": 2.1328343483908423
+      },
+      {
+        "epoch": 4,
+        "optimizer_steps": 792,
+        "train_loss": 0.663289583467727,
+        "validation_loss": 2.1985804640013598
+      }
+    ],
+    "best_epoch": 2,
+    "patience": 2,
+    "max_epochs": 12,
+    "min_delta": 0.0,
+    "status": "complete",
+    "selection": "Minimum token-averaged development cross entropy, including epoch0 baseline",
+    "limitation": "Repeatedly reused 50-item development set; not an unbiased test or semantic quality score. No LOCAL assessment or automatic promotion.",
+    "best_validation_loss": 2.1241998608770043,
+    "stale_epochs": 2,
+    "stop_reason": "early_stopping"
+  },
+  "full_lr3e4": {
+    "variant": "full_lr3e4",
+    "old_endpoint": {
+      "train_loss": 0.03340233410132142,
+      "validation_loss": 3.7708446412250916
+    },
+    "history": [
+      {
+        "epoch": 0,
+        "optimizer_steps": 0,
+        "train_loss": 2.334010581832287,
+        "validation_loss": 2.598821328015163
+      },
+      {
+        "epoch": 1,
+        "optimizer_steps": 198,
+        "train_loss": 1.2183739253968904,
+        "validation_loss": 2.11055441724843
+      },
+      {
+        "epoch": 2,
+        "optimizer_steps": 396,
+        "train_loss": 0.6758502219513716,
+        "validation_loss": 2.1698359232524345
+      },
+      {
+        "epoch": 3,
+        "optimizer_steps": 594,
+        "train_loss": 0.342072672649356,
+        "validation_loss": 2.353626836990488
+      }
+    ],
+    "best_epoch": 1,
+    "patience": 2,
+    "max_epochs": 12,
+    "min_delta": 0.0,
+    "status": "complete",
+    "selection": "Minimum token-averaged development cross entropy, including epoch0 baseline",
+    "limitation": "Repeatedly reused 50-item development set; not an unbiased test or semantic quality score. No LOCAL assessment or automatic promotion.",
+    "best_validation_loss": 2.11055441724843,
+    "stale_epochs": 2,
+    "stop_reason": "early_stopping"
+  },
+  "lora_lr3e4": {
+    "variant": "lora_lr3e4",
+    "old_endpoint": {
+      "train_loss": 1.3248056680754279,
+      "validation_loss": 2.1610524933913657
+    },
+    "history": [
+      {
+        "epoch": 0,
+        "optimizer_steps": 0,
+        "train_loss": 2.334010581832287,
+        "validation_loss": 2.598821328015163
+      },
+      {
+        "epoch": 1,
+        "optimizer_steps": 198,
+        "train_loss": 1.999619537476994,
+        "validation_loss": 2.3098582680883077
+      },
+      {
+        "epoch": 2,
+        "optimizer_steps": 396,
+        "train_loss": 1.8425236837399646,
+        "validation_loss": 2.222559622238422
+      },
+      {
+        "epoch": 3,
+        "optimizer_steps": 594,
+        "train_loss": 1.7354089851406487,
+        "validation_loss": 2.183448918934526
+      },
+      {
+        "epoch": 4,
+        "optimizer_steps": 792,
+        "train_loss": 1.6342977055710208,
+        "validation_loss": 2.1567169674511613
+      },
+      {
+        "epoch": 5,
+        "optimizer_steps": 990,
+        "train_loss": 1.5464246505845758,
+        "validation_loss": 2.1569533043894276
+      },
+      {
+        "epoch": 6,
+        "optimizer_steps": 1188,
+        "train_loss": 1.4633391047917697,
+        "validation_loss": 2.1615537458452687
+      }
+    ],
+    "best_epoch": 4,
+    "patience": 2,
+    "max_epochs": 12,
+    "min_delta": 0.0,
+    "status": "complete",
+    "selection": "Minimum token-averaged development cross entropy, including epoch0 baseline",
+    "limitation": "Repeatedly reused 50-item development set; not an unbiased test or semantic quality score. No LOCAL assessment or automatic promotion.",
+    "best_validation_loss": 2.1567169674511613,
+    "stale_epochs": 2,
+    "stop_reason": "early_stopping"
+  }
+}

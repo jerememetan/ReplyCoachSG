@@ -1,0 +1,2172 @@
+{
+  "status": "complete",
+  "recipe": {
+    "experiment": "sealion_full_v1",
+    "repo_id": "aisingapore/SEA-LION-v1-3B",
+    "revision": "836890428766e94322a4b7de27fb081a604703a9",
+    "weights_sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107",
+    "public": {
+      "train_pairs": 117634,
+      "cosem": 53691,
+      "dailydialog": 63943,
+      "validation": 400,
+      "passes": 1,
+      "initialization": "Fresh LoRA r8/a16/dropout.05 on original pinned SEA-LION base, same initialization policy as earlier small public run; not continuing from already-task-trained model.",
+      "learning_rate": 5e-05,
+      "microbatch": 1,
+      "accumulation": 16,
+      "tag": "DIALOGUE for both corpora",
+      "selection": "Use final full-pass checkpoint for task phase so it has seen all usable pairs. Public validation monitors every10000 but does not revert to an earlier checkpoint.",
+      "checkpoint": "Atomic trusted local .pt of LoRA weights, optimizer, RNG, progress and report every4000 examples, only at optimizer boundaries; restart same script to resume interrupted public pass."
+    },
+    "task": {
+      "conversations": 790,
+      "targets": 1580,
+      "validation": 100,
+      "seed": 425,
+      "learning_rate": 0.0001,
+      "microbatch": 1,
+      "accumulation": 8,
+      "max_epochs": 8,
+      "patience": 2,
+      "selection": "Minimum original100 target equal-style CE among trained epochs1+. Same task dataset/recipe as corrected subset-public run356064, public size+compute are intervention."
+    },
+    "evaluation": {
+      "reused12": 12,
+      "reused20": 20,
+      "reused_validation": 50,
+      "scope": "Reused development, not independent human gold or locked test. Compare English usefulness and LOCAL fidelity/naturalness against356064; do not mix this intervention into fidelity renderer pilot.",
+      "limitations": [
+        "Pattern filters are not independent semantic quality or full de-identification guarantees.",
+        "CoSEM source was historically mT5-relatedness filtered before this experiment.",
+        "Public source validation groups are not trained; product locked test unread; raw public text stays ignored/private."
+      ]
+    },
+    "runtime": {
+      "gpu": "L40S",
+      "walltime_hours": 12,
+      "system_memory_gb": 32
+    },
+    "default_changed": false,
+    "files_sha256": {
+      "src/replycoach/__init__.py": "de57ddf5ad70d22e23053d975dbe60028cca42f825fbe994648409a2c8552587",
+      "src/replycoach/author_app.py": "9f720f8535a9016e5b66a241de8b944f87bb230cc33f8be96344ebd540729ce8",
+      "src/replycoach/authoring.py": "bdc640a8d8f8bce4c4030fc2ba0898acc1b7d4d49a9d35aea5bd0d812b1ae613",
+      "src/replycoach/demo_app.py": "8af6be8f6c9130b469019d3feca06f5224c2b271935a3a43c1f8054d8485c11f",
+      "src/replycoach/demo_cli.py": "77b23675e50a49b0c974f1c3aa21a9bc915c96c802635ce37dfb536b5d1a3d4c",
+      "src/replycoach/demo_resources.py": "6694b21e5ef07e734c3017a3632128338ed5beafea2fe9a9a9ffbd7b408ac5ad",
+      "src/replycoach/evaluation.py": "b4d17649ef9a39e6e3a48aec7b2fea79383c7202be6b5ba1e311feca24311848",
+      "src/replycoach/fallback.py": "17e66580f8b1ea8c8c54c9708640ee02b2c2d1a61a8db49c51c2fbac08fb2887",
+      "src/replycoach/generate/__init__.py": "2b2e903371712f88daa7d9ce457eaa5f49677a5f30f4bffef3ffb42e6ec46b7b",
+      "src/replycoach/generate/act_follow_v1.py": "ea31f803815411cce10f5b2e5bcdb72e59298319dc48a0023d9be65224b6329b",
+      "src/replycoach/generate/clean_v5.py": "3fbed38114b124d696f384e05733bed2b837171eb7f76a4039f33644de17d68a",
+      "src/replycoach/generate/compare_v5.py": "5b97cca24c6dba90d57f94e02dd1927ff169243f75843b456be6885f70e14578",
+      "src/replycoach/generate/decode_v5.py": "df77f7115ef3d745aa22c379d042336fb5bd207270610fafc440de17c7ca5326",
+      "src/replycoach/generate/early_stopping.py": "5f60d66e058fa91b6983e914f1c1884e907e0f158129b5ec852ffd2401a82c9f",
+      "src/replycoach/generate/finetune_v5.py": "88804d5cbab46846339b43b0f9c5a27e0d94cacf7fc2682e50611257137f5e9b",
+      "src/replycoach/generate/fit_probe_v1.py": "ea8bd34b0afe61899a11334acdaad00e9eb421da2c888283dba850268e059b41",
+      "src/replycoach/generate/human_dpo_v1.py": "46b53e7e6d89c7031f9c20cce01ea3ff677e8cfed946ebe3f22f1ace49434fac",
+      "src/replycoach/generate/hybrid_v5.py": "f92734c40a28eba9be9bf29814ed3c791e3fd0c5717a9341609bd0f45983a222",
+      "src/replycoach/generate/native_rewrite_train_v2.py": "ec309b63d979b18fda4db9026fa65312a6e55619e5f83ba095ae5ad5bca06f77",
+      "src/replycoach/generate/native_rewrite_v2.py": "df7e7d566f49cfe0a8b44d533f4068bc8f60be885c929fa892259a561c103ee6",
+      "src/replycoach/generate/providers.py": "6b2847dfb37facd44826885a9fe918122f1c9bb5e14dee0355c3c7433114be60",
+      "src/replycoach/generate/reply_act_v1.py": "f97fa03ab0845f4c4e92272902fe526e23ae73c9eb970c8fbd092fe4f983a893",
+      "src/replycoach/generate/reply_act_v2.py": "09fceefb3403f8c676d84db73fd6e7e33716441ff72ce1350698b78699aca2d4",
+      "src/replycoach/generate/rerank_v5.py": "079e88fce5a31d4c764517509fb671a84000d6bb67a4c6e003c0e879654cf352",
+      "src/replycoach/generate/rewrite_v5.py": "30adce9d8f016f2e0e20760879950ebb44a5a1aebc3dbca2d039f4d823268c3f",
+      "src/replycoach/generate/sealion_data.py": "7c3e5a7ddfee21501a67b59d119e6b502a713670dffaddee489c450d6d53a15b",
+      "src/replycoach/generate/sealion_dual_v1.py": "831b0be9d86ed5431ba730c861e8401f93449a2adf7fa0e101ae0aa7cc6f5e25",
+      "src/replycoach/generate/sealion_public_v1.py": "e7ca6626004a922c443825636dd274607e36085ee679d172d976afd06864660a",
+      "src/replycoach/generate/sealion_rewrite_v1.py": "1ad4c4c8b0515348e19af0de8997f90173c0d47de695a4f97939573f4578f056",
+      "src/replycoach/generate/sealion_v1.py": "97a4f7e126fe77008dc725ee7af0cbf3085286790535d882d48feb0b29bdfc56",
+      "src/replycoach/generate/seq2seq.py": "a1021004d6a96679ce37c52fda39c266b626bcbc4eae02399f55a4798fc08c94",
+      "src/replycoach/generate/spans_v5.py": "c05f39bbfcb1704ed86163ee7942665ab2d6ec24c4a7dccbfe21f83736ad21e3",
+      "src/replycoach/generate/structured_fit_v1.py": "4418eba5a4d301f230f05b9b646b2ed6d0ae82f17239caedc8aebd8be14ff991",
+      "src/replycoach/generate/structured_rl_train_v1.py": "6b5167ad3ab81f11e7caa04e8c1c6d4b0037647f7ecc37ef5ddc343a0fb666a1",
+      "src/replycoach/generate/structured_rl_v1.py": "de848f7bf3ba65e537211ea049f62c084ef2a255c55bb0865a4fbac87c4fe625",
+      "src/replycoach/generate/style_control.py": "a3a2cb41a8b28325a103475b80eaeb9e396caf4d10b5470fb9d6bfc542500259",
+      "src/replycoach/generate/synthetic_v5.py": "ffbff7e76176158e480ee8b8343ce0b655e8cbaa7faa32118a8ea590a9a29779",
+      "src/replycoach/generate/teacher_v5.py": "2fd43859254e741829932253baa290769cf83b4d2c4275fba6b1260a0e4b4d01",
+      "src/replycoach/generate/train_v3.py": "709e61fa632d4e08c1e41a5a886db40d3b8877a515277fd8a0c7d5e340f2ed47",
+      "src/replycoach/generate/train_v5.py": "d6f05e726973003f4ebbb0c0d8978fe9610c286a797c7a56b3519bcc19ee07a3",
+      "src/replycoach/generate/v5_provider.py": "6ba54db8c4ddb6d115a8c55201e145a9cc087cb730f89a8367732d2aa8f166d6",
+      "src/replycoach/io.py": "a354cb802b9ed725c8c1201c3c54efd3e03da5c9c5f2d2c9026da0688a4b3683",
+      "src/replycoach/judging.py": "f8c885ba5c20a7c5304765525c201dd9a6090f825cea066ae982df7d48bbc52a",
+      "src/replycoach/lexicon.py": "94cb358ea37e0d4663a6c52c4e18ac83bb6466e2fdbb525fc7fd2724ccb559bc",
+      "src/replycoach/logging_utils.py": "da6758cd019248c7d26bfa8ac6c64dec721a484c231bd489a44782ef796079de",
+      "src/replycoach/memory.py": "bcdc318c4cbdd5c571bbb5cfe4eddf958342cedc8de97b3d8c2067d088f2861b",
+      "src/replycoach/pipeline.py": "b4404c523f279694928f71b4d317a99e1853343d694d7dc4b8232114e891c192",
+      "src/replycoach/reply_bank.py": "6ac807be9e743f7fa2d8650da9d95d4ea3d50a1b635ad6224c1e9ea2b88ffe63",
+      "src/replycoach/rerank.py": "9e9d4d62db879e5a9360e3e995b7117131b006fcb0b37acd0c8a1e818bad07be",
+      "src/replycoach/retrieval/__init__.py": "2e64f70b06878c54078be4a5ddc5c4eeec5ebfedbe726700418435527783aef4",
+      "src/replycoach/retrieval/v0.py": "6a0b80347da88d034f6507523d1d594c6580926f47b29032474a6a202ec74e61",
+      "src/replycoach/retrieval/v1.py": "bcf1f4e8b99eb6afbff5be7503fd6a8d5da0e73a273059f477cf84544ffd429c",
+      "src/replycoach/retrieval/v2.py": "8463a6075911559b4b78fae9d2ef4a4f32be0f627bb3fbe1a60cbe25163765bb",
+      "src/replycoach/review.py": "600ebb377daba91a1a942d3a409bf04d17523629b9a271b625b8be923b201299",
+      "src/replycoach/review_app.py": "133b79ccf47738bf0212aecab3ddab85751de81f5c2855fb9be5e6c9d997cf24",
+      "src/replycoach/schema.py": "0424f5742901350fca0e4799df6702b61ec9dc540b9363bf1e2448e8f15abdfe",
+      "src/replycoach/systems.py": "e915007d5e6766b90577a2a763996cf99f1c7e248555c37a6987fca41ac59442",
+      "src/replycoach/taxonomy.py": "d76f9984df4c268f5f03421608fcfa8a8fc6262202a4fc6c616b3bfe9f3c0893",
+      "src/replycoach/team_review.py": "0f4826a306b5b38a23870fa86aff322fd5e04f5f7ae87d2ea3fe06edd8056b14",
+      "src/replycoach/team_review_app.py": "77c4a7a369a8fc5b40ba8d24d6cf33791974181ba134938896269f956303583a",
+      "src/replycoach/tokenize.py": "61fb7a81cc81ee6b61e3bc3056bd2d43aa49baa51460ffd89405d11f2f483e4f",
+      "src/replycoach/vendor/__init__.py": "71f1ca1538d579fd3a304a95d7d2f792cca8abf9dca16f38ade9ce3e1da0dbbb",
+      "src/replycoach/vendor/sealion_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/replycoach/vendor/sealion_v1/adapt_tokenizer.py": "d68a8c8151448e949ed5ee6ffa5bd326ba76a264ea30b94908af4f5e7beb9583",
+      "src/replycoach/vendor/sealion_v1/attention.py": "96844cae928f44fd82f113f5d6f416efb2c787747ba893931f4877078166e6c4",
+      "src/replycoach/vendor/sealion_v1/blocks.py": "b1d019c0a9cc73f27e4d6dca931abb92b9201dd68d4176fe9f89065830e60800",
+      "src/replycoach/vendor/sealion_v1/configuration_mpt.py": "b117d206aaaee72be88c368c12a1af9ff4d205268b4bcd6e0743cc9d7df9d36b",
+      "src/replycoach/vendor/sealion_v1/custom_embedding.py": "5959001270bc3dbc76d3ebc54dba0f81ef625a0574d11930bd35ad20c5b1cba5",
+      "src/replycoach/vendor/sealion_v1/fc.py": "a2b575feebcd1891e75d2dd4263ee274dbe1aa73670b8d702bf1ef180723cd7f",
+      "src/replycoach/vendor/sealion_v1/ffn.py": "a225fc3369fd033a3871f27fec02c8c21dc72f0f9938a14c187ebd89b02f9c4a",
+      "src/replycoach/vendor/sealion_v1/flash_attn_triton.py": "3f548a86236f026bab28555954ae13afd7b4bc70b6ef81059570ea74d267e63c",
+      "src/replycoach/vendor/sealion_v1/hf_prefixlm_converter.py": "f55bda3248b703c6a9d065dc5e70a8d222a8adb11ce1579f70a5c148c8b24b28",
+      "src/replycoach/vendor/sealion_v1/meta_init_context.py": "8a053984416246791aed29a809df55625c46de8e3643ec16d44fbb16edd93a09",
+      "src/replycoach/vendor/sealion_v1/modeling_mpt.py": "d8190714a28dca31eb68a25a11568fb3b71f22b77a500efc9c7d8055e2b5fc5d",
+      "src/replycoach/vendor/sealion_v1/norm.py": "c2aa062d2d89993399d9ce14d04a8b2e30aacf46ac303ebafed3dc45bf6f15bc",
+      "src/replycoach/vendor/sealion_v1/param_init_fns.py": "1729529fc244149083265e65a3f2c9de4ff9f198881dd1d689fc5469e128d070",
+      "src/replycoach/vendor/sealion_v1/tokenization_SEA_BPE.py": "863f4d0c146de276a8b42ec8423fea80e59c4ee65d18afcda03ac8abc7c68842",
+      "src/replycoach/vendor/sealion_v1/provenance.json": "d1b73f08e481aa7d3bb8d21af9dfa030c079583c0c82d6996c24f9865ecd5f7f",
+      "src/replycoach/vendor/sealion_v1/LICENSE": "151a54770b52e7f511ddfb7aae6f29ae6f0aef8ee119be5474270bed28e0c502",
+      "scripts/run_sealion_dual_v1.py": "e7640441eb60203b9a151a3f18496cd8db1ed817fba105f7c29bc0edf20604af",
+      "scripts/run_sealion_dialogue_v1.py": "4439943fa13a774665249133e50c9fed7258960e7d913fb6356b2e2eca91ed32",
+      "scripts/run_sealion_expanded_v1.py": "02fe5ed9fa4e195246f6e71937a19f6947da170ebcdced89590a44acf6beb67e",
+      "scripts/run_sealion_full_v1.py": "aa954e06dbc7d80923ba5aef597ebb27672c41b6bc72a80154157f45d3cee075",
+      "scripts/prepare_sealion_full_public_v1.py": "d8b10802e9bf61db46fa299b41af99e57c28592d7be9f09f12475e77081a12dd",
+      "scripts/prepare_sealion_full_run_v1.py": "fc495494fe30f16f3de4210a932796577b05c2011de3e7bbe602a7458504cf64",
+      "scripts/v5_sealion_full_v1.sbatch": "b536d36d23b074eccfcdb9b31c15230267b71dee847416970f597fde2f4c284a",
+      "data/public/sealion_full_v1/manifest.json": "c447da3a83096673d3cff7c9437f954240773d2e392a626d084be7a7ff672309",
+      "data/public/sealion_full_v1/validation.jsonl": "e2d604b0002f77a3568ef4e366df66abedd3748727e0096b07a01d2b803e8259",
+      "data/public/sealion_full_v1/train.jsonl": "93f31a67bb288ee58605e1f0b266ff22f25126693e698e39c1c9adce6dff6d86",
+      "data/public/sealion_full_v1/pilot_private.json": "137ac5bc7e9e8d54dd173d432880317630070e0edf841ac5bcdf89410a10fbb1",
+      "data/public/sealion_full_v1/sample_quarantine_private.json": "dc4a50ebb2cfd9ac59b8e999070b0be92add045ada122f7eb985221045ab4a48",
+      "data/training_expansion/generated600_repair_v1/README.txt": "66179e5a046c1e1cae0f553d9f4c8ec220ad9054695bfe57aa4ace237cbac25d",
+      "data/training_expansion/generated600_repair_v1/patches.json": "c618847c695b3fafb43196c75a87155d98afd788ba5030879823db1a5f242542",
+      "data/training_expansion/generated600_repair_v1/changes.csv": "12fe9ccb5fb30d27ae53dc45fd9b889f2795adb9b073ea9dbb2e303c3b6295a8",
+      "data/training_expansion/generated600_repair_v1/generated_corrected.jsonl": "a18467ffb3d03a660677721fc8f63fcda4701b4dda4b395dc6dfb626a98c69c6",
+      "data/training_expansion/generated600_repair_v1/manifest.json": "aa1e5422b28770b17e923ef9c14b32e28ab2678c46c255c208cddab110a408b4",
+      "data/training_expansion/generated600_repair_v1/audit.jsonl": "e9340b77d0678d173caa7f8354aed8b703165324bcfd190ba26c9beaa667faf4",
+      "data/training_expansion/generated600_repair_v1/review_record.json": "a2d6538cbb01892b3d3231a3f81f6330df1358eb253b7dcb7bedc7130b2ccc84",
+      "data/training_expansion/generated600_repair_v1/combined_train.jsonl": "b9027a2b84e6bec01f9200ac890220cd0b6e4e1382fdb71f0213a2949b6efbc6",
+      "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+      "data/dev/validation.jsonl": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+      "data/evaluation/sealion_dual_v1/inputs.json": "1b1cdf52ec1b3f2dd7b40dd6eb07233942b1eabc3201e28c4358b5cfee08ee73",
+      "data/evaluation/sealion_dialogue_v1/inputs.json": "e96cf472d28ab1dc738ee8f20e3eaa4ed97cb1def60780a59ff6d6a15887aa4b",
+      "tests/test_sealion_parallel_v1.py": "1110b3cdbf70a5e9ddbda182802c6cf43c98aaab1d0fe75c30142e8b09bba0a5",
+      "data/training_expansion/sealion_fidelity_v1/validation.json": "0e204a9da916164fa522623f722213c0c4ff4c319ca13d634d6dfc7f795851b3",
+      "data/training_expansion/sealion_fidelity_v1/challenge.json": "2363a8c5814a6690f79f73c6d823894ac3a34eb71ff99b6e2d81946c03bd340f",
+      "data/training_expansion/sealion_fidelity_v1/manifest.json": "0bf0593be3c79a7a1b1622b4d87ba4f49be50e6392a56329f31e56b0ff8116e1",
+      "data/training_expansion/sealion_fidelity_v1/train.json": "fc4a33dd75307fb3635d63bdd8621e66a5aa67069ce8bdddc7fba91a551542ed"
+    }
+  },
+  "public_manifest": {
+    "status": "ready_exploratory",
+    "train_rows": 117634,
+    "validation_rows": 400,
+    "corpora": {
+      "cosem": {
+        "raw_train": 137396,
+        "raw_validation": 3000,
+        "included": 53701,
+        "excluded": {
+          "insufficient_context": 35743,
+          "non_two_party_visible_window": 32991,
+          "filler_incoming": 3757,
+          "merged_or_long_turn": 9201,
+          "placeholder_or_export_artifact": 476,
+          "exact_echo": 66,
+          "embedded_speaker_code": 1260,
+          "contact_or_identifiable_pattern": 191,
+          "prior_quarantine": 5,
+          "filler_response": 5
+        },
+        "training_groups": 138,
+        "included_after_sample_inspection": 53691
+      },
+      "dailydialog": {
+        "raw_train": 76052,
+        "raw_validation": 7069,
+        "included": 63945,
+        "excluded": {
+          "non_linguistic": 1213,
+          "word_budget": 3588,
+          "filler_response": 833,
+          "heldout_group": 567,
+          "heldout_pair": 747,
+          "exact_contextual_duplicate": 5032,
+          "blocked_response": 24,
+          "contact_or_identifiable_pattern": 75,
+          "exact_echo": 14,
+          "prior_quarantine": 1,
+          "embedded_speaker_code": 13
+        },
+        "training_groups": 10360,
+        "included_after_sample_inspection": 63943
+      }
+    },
+    "source_sha256": {
+      "cosem_clean_train_pairs.jsonl": "9871fb72c616dc850b3315edda80094a7296e3fc12d1912580222a111c997d09",
+      "cosem_validation_pairs.jsonl": "51c18574cb04a1cefeb562092a172eeab538ddba7f943d26cc6e2b3d65a33c86",
+      "dailydialog_train_pairs.jsonl": "06b0fe4631045638a4abe0e81f313d48114dea36565cdc804a4b0c8684f63899",
+      "dailydialog_validation_pairs.jsonl": "c33602eb243d295fc79680d8c6782e51b3ebc39935ab9d7c3fb19aede3f22223"
+    },
+    "files_sha256": {
+      "train.jsonl": "93f31a67bb288ee58605e1f0b266ff22f25126693e698e39c1c9adce6dff6d86",
+      "validation.jsonl": "e2d604b0002f77a3568ef4e366df66abedd3748727e0096b07a01d2b803e8259",
+      "pilot_private.json": "137ac5bc7e9e8d54dd173d432880317630070e0edf841ac5bcdf89410a10fbb1",
+      "sample_quarantine_private.json": "dc4a50ebb2cfd9ac59b8e999070b0be92add045ada122f7eb985221045ab4a48"
+    },
+    "scope": "All unique usable contextual pairs from available historically-cleaned CoSEM and DailyDialog source exports. No4000 sample limits, per-chat caps, response caps or marker quota. Not the complete unfiltered published CoSEM corpus.",
+    "policy": "Same conservative original filters and DIALOGUE tag; whole group/pair holdouts and project pairs excluded; six previous quarantine IDs excluded. Original public wording retained, DailyDialog punctuation detokenized.400 validation pairs identical to pilot.",
+    "limitations": [
+      "Pattern filters are not independent semantic quality or full de-identification guarantees.",
+      "CoSEM source was historically mT5-relatedness filtered before this experiment.",
+      "Public source validation groups are not trained; product locked test unread; raw public text stays ignored/private."
+    ],
+    "sample_inspection": {
+      "reviewed": 40,
+      "quarantined": 12,
+      "reviewer": "Codex assistant",
+      "scope": "Small sample review, not semantic certification of all117k rows; no public replies rewritten."
+    }
+  },
+  "public_history": [
+    {
+      "examples_seen": 0,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 5.5069012898174305,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.6694884891959205,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 4.088194889506676
+      }
+    },
+    {
+      "examples_seen": 10000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.723186153988617,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.151295945264291,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.437241049626454
+      }
+    },
+    {
+      "examples_seen": 20000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.697414325999695,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.130497120517123,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.4139557232584092
+      }
+    },
+    {
+      "examples_seen": 30000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.658283044383497,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0751813214090657,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.366732182896281
+      }
+    },
+    {
+      "examples_seen": 40000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.658687810526887,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0649494009094904,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.361818605718189
+      }
+    },
+    {
+      "examples_seen": 50000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.626082341175406,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0470282416177206,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.3365552913965635
+      }
+    },
+    {
+      "examples_seen": 60000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.636651233368367,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0447862867035256,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.340718760035946
+      }
+    },
+    {
+      "examples_seen": 70000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.623012298023985,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0365355585128735,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.3297739282684296
+      }
+    },
+    {
+      "examples_seen": 80000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.615779675683532,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0561869921891587,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.3359833339363454
+      }
+    },
+    {
+      "examples_seen": 90000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.624682430740382,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.030768796831016,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.3277256137856988
+      }
+    },
+    {
+      "examples_seen": 100000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.611964913304009,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0318144343017903,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.3218896738028993
+      }
+    },
+    {
+      "examples_seen": 110000,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.593952932800523,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0347769079786358,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.314364920389579
+      }
+    },
+    {
+      "examples_seen": 117634,
+      "validation": {
+        "groups": {
+          "cosem": {
+            "token_ce": 4.599068642161173,
+            "reply_tokens": 2391,
+            "examples": 200
+          },
+          "dailydialog": {
+            "token_ce": 2.0083359256877573,
+            "reply_tokens": 3036,
+            "examples": 200
+          }
+        },
+        "selection_score": 3.303702283924465
+      }
+    }
+  ],
+  "task_history": [
+    {
+      "epoch": 1,
+      "train_example_mean_ce": 1.932368508037887,
+      "validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 1.953207999583812,
+            "reply_tokens": 514,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 3.173381511139985,
+            "reply_tokens": 414,
+            "examples": 50
+          }
+        },
+        "selection_score": 2.5632947553618983
+      }
+    },
+    {
+      "epoch": 2,
+      "train_example_mean_ce": 1.2763101969845594,
+      "validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 1.9694326901482238,
+            "reply_tokens": 514,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 3.1385593304887487,
+            "reply_tokens": 414,
+            "examples": 50
+          }
+        },
+        "selection_score": 2.553996010318486
+      }
+    },
+    {
+      "epoch": 3,
+      "train_example_mean_ce": 0.8221707597587116,
+      "validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 2.1499613271265177,
+            "reply_tokens": 514,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 3.3878870010375977,
+            "reply_tokens": 414,
+            "examples": 50
+          }
+        },
+        "selection_score": 2.7689241640820574
+      }
+    },
+    {
+      "epoch": 4,
+      "train_example_mean_ce": 0.49495988371015726,
+      "validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 2.4931947121592346,
+            "reply_tokens": 514,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 3.6349271055005024,
+            "reply_tokens": 414,
+            "examples": 50
+          }
+        },
+        "selection_score": 3.0640609088298687
+      }
+    }
+  ],
+  "outputs": {
+    "reused12": [
+      {
+        "item_id": "SEAPUBLIC-001",
+        "styles": {
+          "STANDARD": {
+            "reply": "Seven forty works for me.",
+            "raw_text": "Seven forty works for me.",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Seven can, dinner after that can?",
+            "raw_text": "Seven can, dinner after that can?",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-002",
+        "styles": {
+          "STANDARD": {
+            "reply": "Yes, please return my headphones by tomorrow afternoon.",
+            "raw_text": "Yes, please return my headphones by tomorrow afternoon.",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, tomorrow afternoon return your headphones.",
+            "raw_text": "Can, tomorrow afternoon return your headphones.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-003",
+        "styles": {
+          "STANDARD": {
+            "reply": "I have not checked the room closing hours yet.",
+            "raw_text": "I have not checked the room closing hours yet.",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Haven\u2019t checked the room closing hours leh, ten tonight I check.",
+            "raw_text": "Haven\u2019t checked the room closing hours leh, ten tonight I check.",
+            "termination": "eos",
+            "generated_tokens": 17,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-004",
+        "styles": {
+          "STANDARD": {
+            "reply": "Yes please, send me your notes.",
+            "raw_text": "Yes please, send me your notes.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Yes please, send me your notes can?",
+            "raw_text": "Yes please, send me your notes can?",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-005",
+        "styles": {
+          "STANDARD": {
+            "reply": "I'll send you the photos later.",
+            "raw_text": "I'll send you the photos later.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, I send you later.",
+            "raw_text": "Can, I send you later.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-006",
+        "styles": {
+          "STANDARD": {
+            "reply": "That is too expensive for me today. Could we get something cheaper?",
+            "raw_text": "That is too expensive for me today. Could we get something cheaper?",
+            "termination": "eos",
+            "generated_tokens": 15,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can try the pastry set first?",
+            "raw_text": "Can try the pastry set first?",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-007",
+        "styles": {
+          "STANDARD": {
+            "reply": "I have uploaded the form last night.",
+            "raw_text": "I have uploaded the form last night.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "I upload last night, you check folder anot?",
+            "raw_text": "I upload last night, you check folder anot?",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-008",
+        "styles": {
+          "STANDARD": {
+            "reply": "I have not started making the slides yet.",
+            "raw_text": "I have not started making the slides yet.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Not yet, I still need to make the slides.",
+            "raw_text": "Not yet, I still need to make the slides.",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-009",
+        "styles": {
+          "STANDARD": {
+            "reply": "That's a shame, you worked really hard for it.",
+            "raw_text": "That's a shame, you worked really hard for it.",
+            "termination": "eos",
+            "generated_tokens": 14,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "No worries, we can discuss it together later.",
+            "raw_text": "No worries, we can discuss it together later.",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-010",
+        "styles": {
+          "STANDARD": {
+            "reply": "I am free on Sunday afternoon.",
+            "raw_text": "I am free on Sunday afternoon.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, Sunday afternoon I free.",
+            "raw_text": "Can, Sunday afternoon I free.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-011",
+        "styles": {
+          "STANDARD": {
+            "reply": "I am outside room C2.",
+            "raw_text": "I am outside room C2.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Room C2, I outside waiting.",
+            "raw_text": "Room C2, I outside waiting.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-012",
+        "styles": {
+          "STANDARD": {
+            "reply": "No thanks, I will get the vegetable rice instead.",
+            "raw_text": "No thanks, I will get the vegetable rice instead.",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "No need lah, chicken rice can.",
+            "raw_text": "No need lah, chicken rice can.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      }
+    ],
+    "reused20": [
+      {
+        "item_id": "SEADUAL-001",
+        "styles": {
+          "STANDARD": {
+            "reply": "I cannot leave before six and cannot meet after six.",
+            "raw_text": "I cannot leave before six and cannot meet after six.",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, five five meet can.",
+            "raw_text": "Can, five five meet can.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-002",
+        "styles": {
+          "STANDARD": {
+            "reply": "That is too expensive for me. Could we find something cheaper?",
+            "raw_text": "That is too expensive for me. Could we find something cheaper?",
+            "termination": "eos",
+            "generated_tokens": 14,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "No need lah, ten dollars can.",
+            "raw_text": "No need lah, ten dollars can.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-003",
+        "styles": {
+          "STANDARD": {
+            "reply": "I can't make it on Saturday, but I can make it on Friday.",
+            "raw_text": "I can't make it on Saturday, but I can make it on Friday.",
+            "termination": "eos",
+            "generated_tokens": 18,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, Saturday I free.",
+            "raw_text": "Can, Saturday I free.",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-004",
+        "styles": {
+          "STANDARD": {
+            "reply": "Yes, please return it on Monday.",
+            "raw_text": "Yes, please return it on Monday.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, Monday return your cable.",
+            "raw_text": "Can, Monday return your cable.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-005",
+        "styles": {
+          "STANDARD": {
+            "reply": "I will return your hard-copy notes before nine.",
+            "raw_text": "I will return your hard-copy notes before nine.",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "I return your notes by ten tonight.",
+            "raw_text": "I return your notes by ten tonight.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-006",
+        "styles": {
+          "STANDARD": {
+            "reply": "Yes please, I would like to see the practice clip.",
+            "raw_text": "Yes please, I would like to see the practice clip.",
+            "termination": "eos",
+            "generated_tokens": 13,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Yes please, share me the practice clip can?",
+            "raw_text": "Yes please, share me the practice clip can?",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-007",
+        "styles": {
+          "STANDARD": {
+            "reply": "I can send you the interview notes tonight.",
+            "raw_text": "I can send you the interview notes tonight.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, I send you the notes tonight.",
+            "raw_text": "Can, I send you the notes tonight.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "styles": {
+          "STANDARD": {
+            "reply": "I have already booked the room this morning.",
+            "raw_text": "I have already booked the room this morning.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "I already book the room this morning.",
+            "raw_text": "I already book the room this morning.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-009",
+        "styles": {
+          "STANDARD": {
+            "reply": "I have not started proofreading the report.",
+            "raw_text": "I have not started proofreading the report.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Not yet leh, I only started reading through the first part.",
+            "raw_text": "Not yet leh, I only started reading through the first part.",
+            "termination": "eos",
+            "generated_tokens": 15,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "styles": {
+          "STANDARD": {
+            "reply": "I am outside seminar room 4A.",
+            "raw_text": "I am outside seminar room 4A.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Seminar room 4A. I outside there waiting.",
+            "raw_text": "Seminar room 4A. I outside there waiting.",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-011",
+        "styles": {
+          "STANDARD": {
+            "reply": "It is a purple water bottle.",
+            "raw_text": "It is a purple water bottle.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Purple one lah.",
+            "raw_text": "Purple one lah.",
+            "termination": "eos",
+            "generated_tokens": 5,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-012",
+        "styles": {
+          "STANDARD": {
+            "reply": "I have not checked the weekend hours yet, but I will check them now.",
+            "raw_text": "I have not checked the weekend hours yet, but I will check them now.",
+            "termination": "eos",
+            "generated_tokens": 17,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "I check the weekend hours first, then let you know ah.",
+            "raw_text": "I check the weekend hours first, then let you know ah.",
+            "termination": "eos",
+            "generated_tokens": 14,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "styles": {
+          "STANDARD": {
+            "reply": "I would like a cup of coffee please.",
+            "raw_text": "I would like a cup of coffee please.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "You want something hot? I get you a cup of tea.",
+            "raw_text": "You want something hot? I get you a cup of tea.",
+            "termination": "eos",
+            "generated_tokens": 14,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-014",
+        "styles": {
+          "STANDARD": {
+            "reply": "I would love to go to the show.",
+            "raw_text": "I would love to go to the show.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, see you at the show then.",
+            "raw_text": "Can, see you at the show then.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "styles": {
+          "STANDARD": {
+            "reply": "I can help with the research and the presentation.",
+            "raw_text": "I can help with the research and the presentation.",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can ask them to help?",
+            "raw_text": "Can ask them to help?",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-016",
+        "styles": {
+          "STANDARD": {
+            "reply": "That is a shame.",
+            "raw_text": "That is a shame.",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Oh no, that sucks.",
+            "raw_text": "Oh no, that sucks.",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-017",
+        "styles": {
+          "STANDARD": {
+            "reply": "I cannot carry heavy things for you today.",
+            "raw_text": "I cannot carry heavy things for you today.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can help carry the crates, but cannot carry heavy things leh.",
+            "raw_text": "Can help carry the crates, but cannot carry heavy things leh.",
+            "termination": "eos",
+            "generated_tokens": 15,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-018",
+        "styles": {
+          "STANDARD": {
+            "reply": "I'll be done in about ten minutes.",
+            "raw_text": "I'll be done in about ten minutes.",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, I meet you after my lab.",
+            "raw_text": "Can, I meet you after my lab.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-019",
+        "styles": {
+          "STANDARD": {
+            "reply": "I would rather stay in the library.",
+            "raw_text": "I would rather stay in the library.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Can, find somewhere quieter for us.",
+            "raw_text": "Can, find somewhere quieter for us.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "SEADUAL-020",
+        "styles": {
+          "STANDARD": {
+            "reply": "Thanks for spotting the date error and updating the file.",
+            "raw_text": "Thanks for spotting the date error and updating the file.",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Thanks ah, updated file I send you now.",
+            "raw_text": "Thanks ah, updated file I send you now.",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          }
+        }
+      }
+    ],
+    "reused_validation": [
+      {
+        "item_id": "ITEM-A-010",
+        "styles": {
+          "STANDARD": {
+            "reply": "I know, I will try to ask for help",
+            "raw_text": "I know, I will try to ask for help",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "ya lor, we all very kiasu",
+            "raw_text": "ya lor, we all very kiasu",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-017",
+        "styles": {
+          "STANDARD": {
+            "reply": "Yes, seven at Harbourfront MRT.",
+            "raw_text": "Yes, seven at Harbourfront MRT.",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Yea, seven at Harbourfront MRT",
+            "raw_text": "Yea, seven at Harbourfront MRT",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-024",
+        "styles": {
+          "STANDARD": {
+            "reply": "No worries, I can go to the library to print it later.",
+            "raw_text": "No worries, I can go to the library to print it later.",
+            "termination": "eos",
+            "generated_tokens": 15,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "no worries, i will print it in school for you",
+            "raw_text": "no worries, i will print it in school for you",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-030",
+        "styles": {
+          "STANDARD": {
+            "reply": "Okay, I will look for another place.",
+            "raw_text": "Okay, I will look for another place.",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, we go find another place instead",
+            "raw_text": "okok, we go find another place instead",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-033",
+        "styles": {
+          "STANDARD": {
+            "reply": "I haven't checked the menu yet, let me check the timings first",
+            "raw_text": "I haven't checked the menu yet, let me check the timings first",
+            "termination": "eos",
+            "generated_tokens": 16,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "not sure if open today",
+            "raw_text": "not sure if open today",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-035",
+        "styles": {
+          "STANDARD": {
+            "reply": "I will",
+            "raw_text": "I will",
+            "termination": "eos",
+            "generated_tokens": 3,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "I dabao later",
+            "raw_text": "I dabao later",
+            "termination": "eos",
+            "generated_tokens": 5,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-038",
+        "styles": {
+          "STANDARD": {
+            "reply": "no worries, ten more minutes",
+            "raw_text": "no worries, ten more minutes",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "no worries, ten mins late is fine",
+            "raw_text": "no worries, ten mins late is fine",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-044",
+        "styles": {
+          "STANDARD": {
+            "reply": "I will not blur",
+            "raw_text": "I will not blur",
+            "termination": "eos",
+            "generated_tokens": 5,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "ya i know",
+            "raw_text": "ya i know",
+            "termination": "eos",
+            "generated_tokens": 4,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-046",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, see you at 2pm",
+            "raw_text": "ok, see you at 2pm",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can",
+            "raw_text": "can",
+            "termination": "eos",
+            "generated_tokens": 2,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-A-054",
+        "styles": {
+          "STANDARD": {
+            "reply": "Okay, let's go now",
+            "raw_text": "Okay, let's go now",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Okay, let's go now",
+            "raw_text": "Okay, let's go now",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-002",
+        "styles": {
+          "STANDARD": {
+            "reply": "I'm thinking about the caf\u00e9 near the library",
+            "raw_text": "I'm thinking about the caf\u00e9 near the library",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "anywhere you want",
+            "raw_text": "anywhere you want",
+            "termination": "eos",
+            "generated_tokens": 4,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-009",
+        "styles": {
+          "STANDARD": {
+            "reply": "Yes, I have a seat.",
+            "raw_text": "Yes, I have a seat.",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "still got space",
+            "raw_text": "still got space",
+            "termination": "eos",
+            "generated_tokens": 4,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-029",
+        "styles": {
+          "STANDARD": {
+            "reply": "I'm checking the timetable now. I'll get back to you.",
+            "raw_text": "I'm checking the timetable now. I'll get back to you.",
+            "termination": "eos",
+            "generated_tokens": 17,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "Room 201 is our class",
+            "raw_text": "Room 201 is our class",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-034",
+        "styles": {
+          "STANDARD": {
+            "reply": "I can tell you what I will be missing",
+            "raw_text": "I can tell you what I will be missing",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "I check the slides first, then let you know what you miss",
+            "raw_text": "I check the slides first, then let you know what you miss",
+            "termination": "eos",
+            "generated_tokens": 14,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-042",
+        "styles": {
+          "STANDARD": {
+            "reply": "No worries, I understand",
+            "raw_text": "No worries, I understand",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "No worries, I understand",
+            "raw_text": "No worries, I understand",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-043",
+        "styles": {
+          "STANDARD": {
+            "reply": "Sure, I would love to come",
+            "raw_text": "Sure, I would love to come",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can",
+            "raw_text": "can",
+            "termination": "eos",
+            "generated_tokens": 2,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-048",
+        "styles": {
+          "STANDARD": {
+            "reply": "No worries, I'll be there in thirty minutes",
+            "raw_text": "No worries, I'll be there in thirty minutes",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, thirty min later I come",
+            "raw_text": "okok, thirty min later I come",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-050",
+        "styles": {
+          "STANDARD": {
+            "reply": "Sure, what time should we meet?",
+            "raw_text": "Sure, what time should we meet?",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, what time ah",
+            "raw_text": "can, what time ah",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-056",
+        "styles": {
+          "STANDARD": {
+            "reply": "I can play at eight instead",
+            "raw_text": "I can play at eight instead",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okay, seven can",
+            "raw_text": "okay, seven can",
+            "termination": "eos",
+            "generated_tokens": 5,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-B-057",
+        "styles": {
+          "STANDARD": {
+            "reply": "Yes please, I can lend you my charger",
+            "raw_text": "Yes please, I can lend you my charger",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, I lend you mine",
+            "raw_text": "can, I lend you mine",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-001",
+        "styles": {
+          "STANDARD": {
+            "reply": "sure, see you at lks",
+            "raw_text": "sure, see you at lks",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, see you at lks",
+            "raw_text": "can, see you at lks",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-017",
+        "styles": {
+          "STANDARD": {
+            "reply": "yes, im done with the results section",
+            "raw_text": "yes, im done with the results section",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "ya, i only need to do the results section",
+            "raw_text": "ya, i only need to do the results section",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-018",
+        "styles": {
+          "STANDARD": {
+            "reply": "yes, i will make sure to add the slide",
+            "raw_text": "yes, i will make sure to add the slide",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "ya i add slide also",
+            "raw_text": "ya i add slide also",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-023",
+        "styles": {
+          "STANDARD": {
+            "reply": "sure, i can go with you",
+            "raw_text": "sure, i can go with you",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, thanks",
+            "raw_text": "can, thanks",
+            "termination": "eos",
+            "generated_tokens": 4,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-028",
+        "styles": {
+          "STANDARD": {
+            "reply": "no worries, i can wait",
+            "raw_text": "no worries, i can wait",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "no worries",
+            "raw_text": "no worries",
+            "termination": "eos",
+            "generated_tokens": 3,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-038",
+        "styles": {
+          "STANDARD": {
+            "reply": "I'll check it and let you know",
+            "raw_text": "I'll check it and let you know",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, i check later",
+            "raw_text": "can, i check later",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-041",
+        "styles": {
+          "STANDARD": {
+            "reply": "no worries, i understand",
+            "raw_text": "no worries, i understand",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "no worries, i'll wait for you to finish",
+            "raw_text": "no worries, i'll wait for you to finish",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-045",
+        "styles": {
+          "STANDARD": {
+            "reply": "yes, I will be there at 8am",
+            "raw_text": "yes, I will be there at 8am",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "ya i coming",
+            "raw_text": "ya i coming",
+            "termination": "eos",
+            "generated_tokens": 4,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-055",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, i'll meet you at 2",
+            "raw_text": "ok, i'll meet you at 2",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, two works for me",
+            "raw_text": "can, two works for me",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-C-058",
+        "styles": {
+          "STANDARD": {
+            "reply": "okay, i'll wait a bit",
+            "raw_text": "okay, i'll wait a bit",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okay, i wait a bit",
+            "raw_text": "okay, i wait a bit",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-007",
+        "styles": {
+          "STANDARD": {
+            "reply": "i want to try the green tea",
+            "raw_text": "i want to try the green tea",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "i anything",
+            "raw_text": "i anything",
+            "termination": "eos",
+            "generated_tokens": 3,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-009",
+        "styles": {
+          "STANDARD": {
+            "reply": "okay, I'll do it for you",
+            "raw_text": "okay, I'll do it for you",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "ok, i help you with that",
+            "raw_text": "ok, i help you with that",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-010",
+        "styles": {
+          "STANDARD": {
+            "reply": "I am not sure of the answer",
+            "raw_text": "I am not sure of the answer",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "ya i know",
+            "raw_text": "ya i know",
+            "termination": "eos",
+            "generated_tokens": 4,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-013",
+        "styles": {
+          "STANDARD": {
+            "reply": "Sure, I will answer your question in a few minutes.",
+            "raw_text": "Sure, I will answer your question in a few minutes.",
+            "termination": "eos",
+            "generated_tokens": 13,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, i give you ans for assignment 1",
+            "raw_text": "can, i give you ans for assignment 1",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-029",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, i will bid before the bidding ends",
+            "raw_text": "ok, i will bid before the bidding ends",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok",
+            "raw_text": "okok",
+            "termination": "eos",
+            "generated_tokens": 3,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-033",
+        "styles": {
+          "STANDARD": {
+            "reply": "okay, I will be there in a few minutes",
+            "raw_text": "okay, I will be there in a few minutes",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, i come over",
+            "raw_text": "okok, i come over",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-037",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, i will reach in a few minutes",
+            "raw_text": "ok, i will reach in a few minutes",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, i reach also",
+            "raw_text": "okok, i reach also",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-038",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, i will wait for you",
+            "raw_text": "ok, i will wait for you",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, i wait for u",
+            "raw_text": "okok, i wait for u",
+            "termination": "eos",
+            "generated_tokens": 8,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-046",
+        "styles": {
+          "STANDARD": {
+            "reply": "Oh no, I was planning to go with you",
+            "raw_text": "Oh no, I was planning to go with you",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "oh no",
+            "raw_text": "oh no",
+            "termination": "eos",
+            "generated_tokens": 3,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-D-050",
+        "styles": {
+          "STANDARD": {
+            "reply": "no worries, we can catch up another time.",
+            "raw_text": "no worries, we can catch up another time.",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "no worries, we understand",
+            "raw_text": "no worries, we understand",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-005",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, see you later",
+            "raw_text": "ok, see you later",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, see you later",
+            "raw_text": "okok, see you later",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-007",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, see you tomorrow",
+            "raw_text": "ok, see you tomorrow",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, see you tomorrow",
+            "raw_text": "okok, see you tomorrow",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-009",
+        "styles": {
+          "STANDARD": {
+            "reply": "Sure, I can only use it after 3",
+            "raw_text": "Sure, I can only use it after 3",
+            "termination": "eos",
+            "generated_tokens": 11,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can confirm",
+            "raw_text": "can confirm",
+            "termination": "eos",
+            "generated_tokens": 3,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-015",
+        "styles": {
+          "STANDARD": {
+            "reply": "nope, haven't started it yet",
+            "raw_text": "nope, haven't started it yet",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "haven't done alr, I only just started",
+            "raw_text": "haven't done alr, I only just started",
+            "termination": "eos",
+            "generated_tokens": 12,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-025",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, thursday then",
+            "raw_text": "ok, thursday then",
+            "termination": "eos",
+            "generated_tokens": 5,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, thursday then instead",
+            "raw_text": "can, thursday then instead",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-027",
+        "styles": {
+          "STANDARD": {
+            "reply": "no worries, you can use it later",
+            "raw_text": "no worries, you can use it later",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, change later",
+            "raw_text": "can, change later",
+            "termination": "eos",
+            "generated_tokens": 5,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-028",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, we can eat elsewhere",
+            "raw_text": "ok, we can eat elsewhere",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, next time then",
+            "raw_text": "okok, next time then",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-032",
+        "styles": {
+          "STANDARD": {
+            "reply": "no worries, I understand",
+            "raw_text": "no worries, I understand",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "okok, i understand",
+            "raw_text": "okok, i understand",
+            "termination": "eos",
+            "generated_tokens": 6,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-040",
+        "styles": {
+          "STANDARD": {
+            "reply": "I can meet you after class",
+            "raw_text": "I can meet you after class",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, we meet tmr",
+            "raw_text": "can, we meet tmr",
+            "termination": "eos",
+            "generated_tokens": 7,
+            "status": "complete"
+          }
+        }
+      },
+      {
+        "item_id": "ITEM-E-046",
+        "styles": {
+          "STANDARD": {
+            "reply": "ok, i will release it at five instead",
+            "raw_text": "ok, i will release it at five instead",
+            "termination": "eos",
+            "generated_tokens": 10,
+            "status": "complete"
+          },
+          "LOCAL": {
+            "reply": "can, i release it at five instead",
+            "raw_text": "can, i release it at five instead",
+            "termination": "eos",
+            "generated_tokens": 9,
+            "status": "complete"
+          }
+        }
+      }
+    ]
+  },
+  "public_examples_seen": 117634,
+  "public_source_exposures": {
+    "dailydialog": 63943,
+    "cosem": 53691
+  },
+  "public_optimizer_updates": 7353,
+  "public_loss_sum": 373054.74002456665,
+  "default_changed": false,
+  "budgets": {
+    "public_train": 117634,
+    "public_validation": 400,
+    "task_targets": 1580,
+    "task_validation": 100,
+    "max_public_tokens": 325,
+    "max_task_tokens": 140,
+    "no_truncation": true
+  },
+  "strict_loading_problems": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "trainable_parameters": 10485760,
+  "public_completed_full_pass": true,
+  "public_selection": "Final full-pass adapter; not an earlier best validation checkpoint.",
+  "task_initial_validation": {
+    "groups": {
+      "STANDARD": {
+        "token_ce": 2.575979263402145,
+        "reply_tokens": 514,
+        "examples": 50
+      },
+      "LOCAL": {
+        "token_ce": 3.5097336049241146,
+        "reply_tokens": 414,
+        "examples": 50
+      }
+    },
+    "selection_score": 3.04285643416313
+  },
+  "best_epoch": 2,
+  "best_score": 2.553996010318486,
+  "selected_validation": {
+    "groups": {
+      "STANDARD": {
+        "token_ce": 1.9694326901482238,
+        "reply_tokens": 514,
+        "examples": 50
+      },
+      "LOCAL": {
+        "token_ce": 3.1385593304887487,
+        "reply_tokens": 414,
+        "examples": 50
+      }
+    },
+    "selection_score": 2.553996010318486
+  },
+  "flagged_outputs": []
+}

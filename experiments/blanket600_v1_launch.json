@@ -1,0 +1,27 @@
+{
+  "status": "completed",
+  "jobs": {
+    "control": 352816,
+    "expanded": 352817
+  },
+  "accounts": {
+    "control": "group",
+    "expanded": "personal"
+  },
+  "requested_gpu": "RTX3090",
+  "source_recipe_sha256": "683619a123af14fd0f4688df2dbf8846456f0f8bd5d5b854201b302846e34b64",
+  "individual_user_reviews": 10,
+  "blanket_training_authorized": 590,
+  "dpo": false,
+  "elapsed": {
+    "control": "00:03:29",
+    "expanded": "00:03:56"
+  },
+  "optimizer_steps": 1120,
+  "all600_added_items_used": true,
+  "epochs": {
+    "control": 32,
+    "expanded": 8
+  },
+  "default_replaced": false
+}

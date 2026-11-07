@@ -1,0 +1,107 @@
+{
+  "small_full_shared_training_ids": 7889,
+  "sealion_dialogue_v1/train": {
+    "count": 7994,
+    "max_source_tokens": 238,
+    "max_target_tokens": 83,
+    "corpora": {
+      "cosem": 3995,
+      "dailydialog": 3999
+    }
+  },
+  "sealion_dialogue_v1/validation": {
+    "count": 400,
+    "max_source_tokens": 163,
+    "max_target_tokens": 65,
+    "corpora": {
+      "cosem": 200,
+      "dailydialog": 200
+    }
+  },
+  "sealion_full_v1/train": {
+    "count": 117634,
+    "max_source_tokens": 1111,
+    "max_target_tokens": 83,
+    "corpora": {
+      "dailydialog": 63943,
+      "cosem": 53691
+    }
+  },
+  "sealion_full_v1/validation": {
+    "count": 400,
+    "max_source_tokens": 163,
+    "max_target_tokens": 65,
+    "corpora": {
+      "cosem": 200,
+      "dailydialog": 200
+    }
+  },
+  "task/train": {
+    "count": 1580,
+    "max_source_tokens": 128,
+    "max_target_tokens": 32,
+    "corpora": {
+      "task": 1580
+    }
+  },
+  "task/validation": {
+    "count": 100,
+    "max_source_tokens": 72,
+    "max_target_tokens": 22,
+    "corpora": {
+      "task": 100
+    }
+  },
+  "rewrite/train": {
+    "count": 745,
+    "max_source_tokens": 161,
+    "max_target_tokens": 27,
+    "corpora": {
+      "task": 745
+    }
+  },
+  "rewrite/validation": {
+    "count": 42,
+    "max_source_tokens": 92,
+    "max_target_tokens": 18,
+    "corpora": {
+      "task": 42
+    }
+  },
+  "fidelity/train": {
+    "count": 86,
+    "max_source_tokens": 49,
+    "max_target_tokens": 16,
+    "corpora": {
+      "task": 86
+    }
+  },
+  "fidelity/validation": {
+    "count": 18,
+    "max_source_tokens": 48,
+    "max_target_tokens": 13,
+    "corpora": {
+      "task": 18
+    }
+  },
+  "fidelity/challenge": {
+    "count": 18,
+    "max_source_tokens": 53,
+    "max_target_tokens": 13,
+    "corpora": {
+      "task": 18
+    }
+  },
+  "evaluation": {
+    "count": 82,
+    "diagnostic_anchors": 32,
+    "max_source_tokens": 98
+  },
+  "protected_team_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+  "status": "pass",
+  "source_limit": 1536,
+  "target_limit": 384,
+  "original_sentencepiece_id_checks": 258034,
+  "exclusions": 0,
+  "truncations": 0
+}

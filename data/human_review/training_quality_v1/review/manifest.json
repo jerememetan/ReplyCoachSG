@@ -1,0 +1,53 @@
+{
+  "source": "/home/spikeypear/Projects/ReplyCoachSG/data/human_review/training_quality_v1/candidates.jsonl",
+  "source_sha256": "63d13f56ee10459210e7f2859b797f7ef01c81a363919552742153e72a20866b",
+  "count": 30,
+  "human_approved_count": 0,
+  "status": "pending_human_review",
+  "order": [
+    "SYN-HUMAN-EXP1-033",
+    "SYN-volume500-v1-full-115-02",
+    "ITEM-B-011",
+    "SYN-HUMAN-EXP1-025",
+    "SYN-volume500-v1-full-085-00",
+    "ITEM-E-044",
+    "SYN-HUMAN-EXP1-056",
+    "SYN-volume500-v1-full-122-01",
+    "ITEM-A-049",
+    "SYN-HUMAN-EXP1-062",
+    "SYN-volume500-v1-full-045-00",
+    "ITEM-D-058",
+    "SYN-HUMAN-EXP1-026",
+    "SYN-volume500-v1-full-108-01",
+    "ITEM-E-001",
+    "SYN-HUMAN-EXP1-081",
+    "SYN-volume500-v1-full-076-03",
+    "ITEM-A-008",
+    "SYN-HUMAN-EXP1-021",
+    "SYN-volume500-v1-full-000-00",
+    "ITEM-B-060",
+    "SYN-HUMAN-EXP1-058",
+    "SYN-volume500-v1-full-019-02",
+    "ITEM-E-011",
+    "SYN-HUMAN-EXP1-063",
+    "SYN-volume500-v1-full-069-00",
+    "ITEM-A-003",
+    "SYN-HUMAN-EXP1-023",
+    "SYN-volume500-v1-full-135-00",
+    "ITEM-C-060"
+  ],
+  "immutable_columns": [
+    "id",
+    "scenario",
+    "conversation",
+    "incoming_message",
+    "standard_reply",
+    "local_reply"
+  ],
+  "decision_values": [
+    "good",
+    "bad",
+    "unsure"
+  ],
+  "batch_size": 10
+}

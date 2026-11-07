@@ -1,0 +1,62 @@
+[
+  {
+    "item_id": "TARGETREPAIR-001",
+    "expectation": "USER buys for PEER; do not reverse the buyer. Accept, refuse, or clarify sensibly.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-002",
+    "expectation": "PEER offers to buy for USER. Any plausible choice/refusal/clarification is valid.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-003",
+    "expectation": "USER has photos; avoid reversing sender/recipient.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-004",
+    "expectation": "PEER offers the pack to USER; do not claim USER is sending it instead.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-005",
+    "expectation": "PEER holds USER drive; grant/refuse/clarify return permission without reversing ownership.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-006",
+    "expectation": "USER holds PEER marker; respond to return request with correct actors.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-007",
+    "expectation": "Earlier PEER promised their cable, now asks USER. Clarification or a coherent new offer is valid; do not require a unique hidden intent.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-008",
+    "expectation": "Not begun, so do not claim completed.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-009",
+    "expectation": "Already uploaded; respect completed state.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-010",
+    "expectation": "Do not accept the meal as if compatible with nine-dollar budget; refusals/alternatives/clarification allowed.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-011",
+    "expectation": "4:15 is before earliest departure; do not agree without resolving conflict.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  },
+  {
+    "item_id": "TARGETREPAIR-012",
+    "expectation": "Opening time unknown; no unsupported certainty. Checking/deferral/clarification valid.",
+    "label_source": "assistant-authored factual guidance, not independently human reviewed"
+  }
+]

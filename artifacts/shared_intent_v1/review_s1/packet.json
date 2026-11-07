@@ -1,0 +1,1271 @@
+{
+  "purpose": "paired assistant quality inspection, not human gold",
+  "checkpoint": "final step 784",
+  "seed": 1,
+  "rubric": {
+    "context": "Both replies work as the next user turn; valid alternatives to references allowed.",
+    "same_meaning": "Essential facts, decisions, requests and commitments compatible; minor politeness differences allowed.",
+    "singlish": "LOCAL is recognizably natural Singlish, not merely neutral English or particle stuffing."
+  },
+  "questions": [
+    {
+      "n": 1,
+      "item_id": "ITEM-A-010",
+      "conversation": [
+        [
+          "peer",
+          "this course is so tough."
+        ],
+        [
+          "user",
+          "yeah, I could really use some help too."
+        ]
+      ],
+      "message": "peer: we very kiasu sia, first lesson already like that",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll take it.",
+          "local": "Can, I take it."
+        },
+        "B": {
+          "standard": "Yes, I am very excited about it.",
+          "local": "okay, i will try to do the part after lesson"
+        }
+      }
+    },
+    {
+      "n": 2,
+      "item_id": "ITEM-A-017",
+      "conversation": [
+        [
+          "peer",
+          "Hey! Where are you now?"
+        ],
+        [
+          "user",
+          "I am reaching Harbourfront MRT, how about you?"
+        ]
+      ],
+      "message": "Eh i double check with you, we are meeting at 7pm right?",
+      "options": {
+        "A": {
+          "standard": "Yes, I will be there at 7pm.",
+          "local": "Yes, I will be there at 7pm."
+        },
+        "B": {
+          "standard": "Yes, I will check with you at 7pm.",
+          "local": "Okay, I will check with you at 7pm."
+        }
+      }
+    },
+    {
+      "n": 3,
+      "item_id": "ITEM-A-024",
+      "conversation": [
+        [
+          "peer",
+          "Hey have you printed the worksheet given out yesterday?"
+        ],
+        [
+          "user",
+          "No, I will need to print it in school. Do you know how to use the printer?"
+        ]
+      ],
+      "message": "paiseh, i don't know how to use the printer in school.",
+      "options": {
+        "A": {
+          "standard": "Okay, let me know how to use the printer.",
+          "local": "Okay, let me know how to use printer."
+        },
+        "B": {
+          "standard": "Don't worry, I will print it first.",
+          "local": "Okay, I will print it first."
+        }
+      }
+    },
+    {
+      "n": 4,
+      "item_id": "ITEM-A-030",
+      "conversation": [
+        [
+          "peer",
+          "How long is our booking?"
+        ],
+        [
+          "user",
+          "Oh no, our timer went off."
+        ]
+      ],
+      "message": "sian, need book somewhere else, our booking ran out",
+      "options": {
+        "A": {
+          "standard": "No worries, we'll book somewhere else.",
+          "local": "No worries, we book somewhere else."
+        },
+        "B": {
+          "standard": "No worries, we can book somewhere else",
+          "local": "no worries, we can book somewhere else"
+        }
+      }
+    },
+    {
+      "n": 5,
+      "item_id": "ITEM-A-033",
+      "conversation": [
+        [
+          "peer",
+          "Hey should we grab lunch?"
+        ],
+        [
+          "user",
+          "sure! Lets head to Koufu"
+        ]
+      ],
+      "message": "eh the chicken rice stall open today anot?",
+      "options": {
+        "A": {
+          "standard": "Yes, the chicken rice stall is open today.",
+          "local": "Chicken rice stall open today."
+        },
+        "B": {
+          "standard": "Yes, the chicken rice stall is open today",
+          "local": "eh, today still open"
+        }
+      }
+    },
+    {
+      "n": 6,
+      "item_id": "ITEM-A-035",
+      "conversation": [
+        [
+          "peer",
+          "I got to go for my appointment later"
+        ],
+        [
+          "user",
+          "Yeah I should get going too"
+        ]
+      ],
+      "message": "don't forget to dabao your food later",
+      "options": {
+        "A": {
+          "standard": "Sorry, I can't make it today.",
+          "local": "Don't worry, I'll be back soon"
+        },
+        "B": {
+          "standard": "Thanks for letting me know",
+          "local": "Thanks for letting me know."
+        }
+      }
+    },
+    {
+      "n": 7,
+      "item_id": "ITEM-A-038",
+      "conversation": [
+        [
+          "peer",
+          "are we still playing badminton tonight?"
+        ],
+        [
+          "user",
+          "yeah, I think so"
+        ]
+      ],
+      "message": "i might be ten mins late leh",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll be there soon.",
+          "local": "Okay, I'll be there soon"
+        },
+        "B": {
+          "standard": "Okay, I'll be there in a few minutes",
+          "local": "Can, few more minutes I reach."
+        }
+      }
+    },
+    {
+      "n": 8,
+      "item_id": "ITEM-A-044",
+      "conversation": [
+        [
+          "peer",
+          "have you submitted the project?"
+        ],
+        [
+          "user",
+          "not yet, I am checking it first"
+        ]
+      ],
+      "message": "remember ah, dont blur like sotong",
+      "options": {
+        "A": {
+          "standard": "Sorry, I didn't notice it.",
+          "local": "Sorry ah, I didn't notice it."
+        },
+        "B": {
+          "standard": "No worries, I will check it later.",
+          "local": "okay, I will check it first"
+        }
+      }
+    },
+    {
+      "n": 9,
+      "item_id": "ITEM-A-046",
+      "conversation": [
+        [
+          "peer",
+          "want to study together tomorrow?"
+        ],
+        [
+          "user",
+          "sure, what time?"
+        ]
+      ],
+      "message": "2pm u can anot, i can chiong from class",
+      "options": {
+        "A": {
+          "standard": "Ok, thanks for letting me know",
+          "local": "okay, i chiong liao"
+        },
+        "B": {
+          "standard": "Okay, I'll see you later.",
+          "local": "Can, later I see you."
+        }
+      }
+    },
+    {
+      "n": 10,
+      "item_id": "ITEM-A-054",
+      "conversation": [
+        [
+          "peer",
+          "We are going to the club later right?"
+        ],
+        [
+          "user",
+          "Yeah, I will go back to shower first."
+        ]
+      ],
+      "message": "Aiyo, don't need la, let's go now",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll go back later.",
+          "local": "Can, later I go back."
+        },
+        "B": {
+          "standard": "Ok, let's go after work.",
+          "local": "Ok, let's go now."
+        }
+      }
+    },
+    {
+      "n": 11,
+      "item_id": "ITEM-B-002",
+      "conversation": [
+        [
+          "peer",
+          "I haven't eaten breakfast"
+        ],
+        [
+          "user",
+          "same sia, I'm hungry also"
+        ]
+      ],
+      "message": "where you want eat?",
+      "options": {
+        "A": {
+          "standard": "I'm going to eat at the hawker centre.",
+          "local": "Can, I go eat at hawker centre."
+        },
+        "B": {
+          "standard": "I'm going to a nearby restaurant.",
+          "local": "I'm going to the hawker centre."
+        }
+      }
+    },
+    {
+      "n": 12,
+      "item_id": "ITEM-B-009",
+      "conversation": [
+        [
+          "peer",
+          "I'm going library now"
+        ],
+        [
+          "user",
+          "I'll come over after class"
+        ]
+      ],
+      "message": "still got space?",
+      "options": {
+        "A": {
+          "standard": "Yes, I'll be waiting for you at the library.",
+          "local": "Ya, library waiting for you."
+        },
+        "B": {
+          "standard": "Yes, I'll be there soon.",
+          "local": "Ya, still got space."
+        }
+      }
+    },
+    {
+      "n": 13,
+      "item_id": "ITEM-B-029",
+      "conversation": [
+        [
+          "peer",
+          "I can't remember which room we're in"
+        ],
+        [
+          "user",
+          "I'm checking the timetable"
+        ]
+      ],
+      "message": "which room is our class in?",
+      "options": {
+        "A": {
+          "standard": "It's in the second floor.",
+          "local": "Can, second floor in."
+        },
+        "B": {
+          "standard": "It's in the second floor.",
+          "local": "It's in the second room."
+        }
+      }
+    },
+    {
+      "n": 14,
+      "item_id": "ITEM-B-034",
+      "conversation": [
+        [
+          "peer",
+          "I might not make it to the morning class"
+        ],
+        [
+          "user",
+          "I can send you an update afterwards"
+        ]
+      ],
+      "message": "can tell me what I miss?",
+      "options": {
+        "A": {
+          "standard": "Sure, let me know when you will be free.",
+          "local": "Can, let me know when you free."
+        },
+        "B": {
+          "standard": "Sure, let me know what you missed.",
+          "local": "Can, let me know what you miss"
+        }
+      }
+    },
+    {
+      "n": 15,
+      "item_id": "ITEM-B-042",
+      "conversation": [
+        [
+          "peer",
+          "I'm waiting outside already"
+        ],
+        [
+          "user",
+          "I'm reaching soon"
+        ]
+      ],
+      "message": "sorry, I took the wrong bus",
+      "options": {
+        "A": {
+          "standard": "Sorry, I didn't take it yet.",
+          "local": "Sorry ah, I didn't take it yet."
+        },
+        "B": {
+          "standard": "No worries, I'll take the wrong bus.",
+          "local": "Don't worry, I'll take the wrong bus."
+        }
+      }
+    },
+    {
+      "n": 16,
+      "item_id": "ITEM-B-043",
+      "conversation": [
+        [
+          "peer",
+          "a few of us are going out this weekend"
+        ],
+        [
+          "user",
+          "sounds fun"
+        ]
+      ],
+      "message": "you want come?",
+      "options": {
+        "A": {
+          "standard": "sure, what time would you like to come?",
+          "local": "Can, what time you want to come?"
+        },
+        "B": {
+          "standard": "Sorry, I can't make it this weekend.",
+          "local": "sorry, i can't make it this weekend"
+        }
+      }
+    },
+    {
+      "n": 17,
+      "item_id": "ITEM-B-048",
+      "conversation": [
+        [
+          "peer",
+          "are you coming to the event?"
+        ],
+        [
+          "user",
+          "I was planning to"
+        ]
+      ],
+      "message": "the event postpone for thirty minutes",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll be there in a few minutes.",
+          "local": "Okay, few more minutes I reach."
+        },
+        "B": {
+          "standard": "Okay, I'll be there in about an hour",
+          "local": "Okay, I'll be there soon"
+        }
+      }
+    },
+    {
+      "n": 18,
+      "item_id": "ITEM-B-050",
+      "conversation": [
+        [
+          "peer",
+          "I haven't exercised in a while"
+        ],
+        [
+          "user",
+          "same, I've been busy with classes"
+        ]
+      ],
+      "message": "want to go run later?",
+      "options": {
+        "A": {
+          "standard": "Sure, let's go run later.",
+          "local": "Can, let's run later."
+        },
+        "B": {
+          "standard": "Sure, let's go run later.",
+          "local": "Can, later I go run."
+        }
+      }
+    },
+    {
+      "n": 19,
+      "item_id": "ITEM-B-056",
+      "conversation": [
+        [
+          "peer",
+          "are you free for badminton tonight?"
+        ],
+        [
+          "user",
+          "I should be free"
+        ]
+      ],
+      "message": "the court is already booked for seven",
+      "options": {
+        "A": {
+          "standard": "Sorry, I can't make it tonight. I'll be waiting for you.",
+          "local": "Okay, thanks. I'll be free tonight."
+        },
+        "B": {
+          "standard": "Okay, I'll be free tonight.",
+          "local": "Can, tonight I free."
+        }
+      }
+    },
+    {
+      "n": 20,
+      "item_id": "ITEM-B-057",
+      "conversation": [
+        [
+          "peer",
+          "my phone is almost out of battery"
+        ],
+        [
+          "user",
+          "I brought my charger"
+        ]
+      ],
+      "message": "can I borrow your charger?",
+      "options": {
+        "A": {
+          "standard": "Sure, I'll borrow it.",
+          "local": "Can, I borrow my charger."
+        },
+        "B": {
+          "standard": "Sure, I'll bring you a new one.",
+          "local": "Can, I borrow your charger"
+        }
+      }
+    },
+    {
+      "n": 21,
+      "item_id": "ITEM-C-001",
+      "conversation": [
+        [
+          "peer",
+          "are you going to the library ltr?"
+        ],
+        [
+          "user",
+          "yeah, probably after dinner"
+        ]
+      ],
+      "message": "i'll be at lks around 8, want to meet there?",
+      "options": {
+        "A": {
+          "standard": "okay, I'll meet you there around 8",
+          "local": "okay, i'll meet you there around 8"
+        },
+        "B": {
+          "standard": "sure, i'll meet you at lks8",
+          "local": "Can, I meet you at lks8 then."
+        }
+      }
+    },
+    {
+      "n": 22,
+      "item_id": "ITEM-C-017",
+      "conversation": [
+        [
+          "peer",
+          "im working on my slides now"
+        ],
+        [
+          "user",
+          "same, im doing the results section"
+        ]
+      ],
+      "message": "your part done alr?",
+      "options": {
+        "A": {
+          "standard": "yes, I am finished my part.",
+          "local": "Can, I finish my part before you finish your part."
+        },
+        "B": {
+          "standard": "yes, i am finished it alr.",
+          "local": "ya, i finished the part alr, but i still working on it"
+        }
+      }
+    },
+    {
+      "n": 23,
+      "item_id": "ITEM-C-018",
+      "conversation": [
+        [
+          "peer",
+          "i'll upload my section before dinner"
+        ],
+        [
+          "user",
+          "okay, then i can merge everything tonight"
+        ]
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "options": {
+        "A": {
+          "standard": "no worries, i'll send it tonight",
+          "local": "okay, i will shift it tonight"
+        },
+        "B": {
+          "standard": "Okay, I'll merge later.",
+          "local": "Can, later I merge."
+        }
+      }
+    },
+    {
+      "n": 24,
+      "item_id": "ITEM-C-023",
+      "conversation": [
+        [
+          "peer",
+          "saturday im quite free"
+        ],
+        [
+          "user",
+          "same, no plans yet"
+        ]
+      ],
+      "message": "want me to jio you for the night market thing?",
+      "options": {
+        "A": {
+          "standard": "Sure, what time should we meet?",
+          "local": "can, i join you for the night market"
+        },
+        "B": {
+          "standard": "Sure, what time would you like to go?",
+          "local": "Can, what time you want to go?"
+        }
+      }
+    },
+    {
+      "n": 25,
+      "item_id": "ITEM-C-028",
+      "conversation": [
+        [
+          "peer",
+          "im waiting at the cafe alr"
+        ],
+        [
+          "user",
+          "coming now"
+        ]
+      ],
+      "message": "paiseh, i ordered first because i was too hungry",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll take you to the cafe first.",
+          "local": "Can, I take you to the cafe first."
+        },
+        "B": {
+          "standard": "okay, i'll come down soon",
+          "local": "okay, i come over now"
+        }
+      }
+    },
+    {
+      "n": 26,
+      "item_id": "ITEM-C-038",
+      "conversation": [
+        [
+          "peer",
+          "ive finished drafting the conclusion"
+        ],
+        [
+          "user",
+          "great"
+        ]
+      ],
+      "message": "can help me check if this part sounds too long?",
+      "options": {
+        "A": {
+          "standard": "Sure, it runs a little bit longer than a few minutes",
+          "local": "can, i check if it doesnt sound too long"
+        },
+        "B": {
+          "standard": "sure, i'll check it for you.",
+          "local": "Can, I check for you."
+        }
+      }
+    },
+    {
+      "n": 27,
+      "item_id": "ITEM-C-041",
+      "conversation": [
+        [
+          "peer",
+          "could you upload your section before 8?"
+        ],
+        [
+          "user",
+          "yes, i'll do it"
+        ]
+      ],
+      "message": "paiseh, i only just finished class. i'll upload a bit later",
+      "options": {
+        "A": {
+          "standard": "ok, thanks for letting me know.",
+          "local": "okay, i'll send it later"
+        },
+        "B": {
+          "standard": "Okay, thanks for letting me know.",
+          "local": "Okay, thanks for letting me know."
+        }
+      }
+    },
+    {
+      "n": 28,
+      "item_id": "ITEM-C-045",
+      "conversation": [
+        [
+          "peer",
+          "we said we'd sit together tmr"
+        ],
+        [
+          "user",
+          "yep"
+        ]
+      ],
+      "message": "you still coming early to get seats right?",
+      "options": {
+        "A": {
+          "standard": "yes, I'm waiting for the seats",
+          "local": "Yes, I waiting for seats for the seats."
+        },
+        "B": {
+          "standard": "yes, I'm waiting for seats.",
+          "local": "yep, still waiting for seats"
+        }
+      }
+    },
+    {
+      "n": 29,
+      "item_id": "ITEM-C-055",
+      "conversation": [
+        [
+          "peer",
+          "lets go to the exhibition at 1"
+        ],
+        [
+          "user",
+          "sounds good"
+        ]
+      ],
+      "message": "can go around 2 instead? i need lunch first",
+      "options": {
+        "A": {
+          "standard": "ok, lets meet at 2",
+          "local": "can, 2 works for me"
+        },
+        "B": {
+          "standard": "Sure, two works for me.",
+          "local": "Can, two also can."
+        }
+      }
+    },
+    {
+      "n": 30,
+      "item_id": "ITEM-C-058",
+      "conversation": [
+        [
+          "peer",
+          "im heading to the court now"
+        ],
+        [
+          "user",
+          "okay, i'll leave soon"
+        ]
+      ],
+      "message": "court still occupied leh, need wait a bit",
+      "options": {
+        "A": {
+          "standard": "ok, i'll wait for you at the waiting area.",
+          "local": "okay, i'll leave soon"
+        },
+        "B": {
+          "standard": "ok, i'll wait for you at the court",
+          "local": "Ok, I wait for you at court."
+        }
+      }
+    },
+    {
+      "n": 31,
+      "item_id": "ITEM-D-007",
+      "conversation": [
+        [
+          "peer",
+          "u wanna try the matcha at luckin?"
+        ],
+        [
+          "user",
+          "nahh"
+        ]
+      ],
+      "message": "then what u wanna drink later?",
+      "options": {
+        "A": {
+          "standard": "I don't know what to drink.",
+          "local": "nah, i'll join later"
+        },
+        "B": {
+          "standard": "I'd like to drink a bottle of wine.",
+          "local": "Can, later I go drink a bottle of wine."
+        }
+      }
+    },
+    {
+      "n": 32,
+      "item_id": "ITEM-D-009",
+      "conversation": [
+        [
+          "peer",
+          "eh i struggling to do the linear algebra qn"
+        ],
+        [
+          "user",
+          "which"
+        ]
+      ],
+      "message": "neh the gaussian elim qn",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll do it later.",
+          "local": "Can, later I do it."
+        },
+        "B": {
+          "standard": "oh sorry, i didn't know that",
+          "local": "eh i thought u didnt do it"
+        }
+      }
+    },
+    {
+      "n": 33,
+      "item_id": "ITEM-D-010",
+      "conversation": [
+        [
+          "peer",
+          "hello, can i ask u some question idk how to do"
+        ],
+        [
+          "user",
+          "uhh i see if i can help"
+        ]
+      ],
+      "message": "uhh, u know the guassian elim qn",
+      "options": {
+        "A": {
+          "standard": "Yes, I know it.",
+          "local": "Yes, I know it."
+        },
+        "B": {
+          "standard": "yes, i know it",
+          "local": "ya i know"
+        }
+      }
+    },
+    {
+      "n": 34,
+      "item_id": "ITEM-D-013",
+      "conversation": [
+        [
+          "peer",
+          "hello"
+        ],
+        [
+          "user",
+          "yes?"
+        ]
+      ],
+      "message": "Can give me ans for assignment 1?",
+      "options": {
+        "A": {
+          "standard": "Sure, what kind of material would you like to give me?",
+          "local": "Can, what kind of material you want to give me?"
+        },
+        "B": {
+          "standard": "Sure, what kind of ans would you like to have?",
+          "local": "Can, I'll send you the ans"
+        }
+      }
+    },
+    {
+      "n": 35,
+      "item_id": "ITEM-D-029",
+      "conversation": [
+        [
+          "peer",
+          "eh so how, you still want bid for the morning class?"
+        ],
+        [
+          "user",
+          "yah can"
+        ]
+      ],
+      "message": "ok then rmb to bid before bidding ends",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll see you later.",
+          "local": "Can, later I see you."
+        },
+        "B": {
+          "standard": "Okay, thanks.",
+          "local": "okay, thanks!"
+        }
+      }
+    },
+    {
+      "n": 36,
+      "item_id": "ITEM-D-033",
+      "conversation": [
+        [
+          "peer",
+          "hello"
+        ],
+        [
+          "user",
+          "hi"
+        ],
+        [
+          "peer",
+          "i am already at the bus stop"
+        ]
+      ],
+      "message": "wya",
+      "options": {
+        "A": {
+          "standard": "okay, i am heading there now",
+          "local": "okay, i reached the bus stop"
+        },
+        "B": {
+          "standard": "okay, i am reaching the bus stop",
+          "local": "Okay, I reaching bus stop."
+        }
+      }
+    },
+    {
+      "n": 37,
+      "item_id": "ITEM-D-037",
+      "conversation": [
+        [
+          "user",
+          "have you reached?"
+        ],
+        [
+          "user",
+          "wya"
+        ]
+      ],
+      "message": "i reached, i waiting outside mac",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll take you there.",
+          "local": "Okay, I go there first."
+        },
+        "B": {
+          "standard": "okay, I'll wait for you at the mall.",
+          "local": "okay, i come over soon"
+        }
+      }
+    },
+    {
+      "n": 38,
+      "item_id": "ITEM-D-038",
+      "conversation": [
+        [
+          "peer",
+          "eh wya"
+        ],
+        [
+          "user",
+          "i am outside mac"
+        ],
+        [
+          "user",
+          "u eh"
+        ]
+      ],
+      "message": "I am reaching soon, wait for me before going in.",
+      "options": {
+        "A": {
+          "standard": "Okay, I will wait for you.",
+          "local": "okay, i come over soon"
+        },
+        "B": {
+          "standard": "Okay, I'll wait for you.",
+          "local": "Okay, I wait for you."
+        }
+      }
+    },
+    {
+      "n": 39,
+      "item_id": "ITEM-D-046",
+      "conversation": [
+        [
+          "peer",
+          "eh help"
+        ],
+        [
+          "user",
+          "what"
+        ]
+      ],
+      "message": "the cinema ticket is sold out bruh",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll get it for you.",
+          "local": "Okay, I get it for you."
+        },
+        "B": {
+          "standard": "Okay, I'll get it for you.",
+          "local": "okay, thanks for letting me know"
+        }
+      }
+    },
+    {
+      "n": 40,
+      "item_id": "ITEM-D-050",
+      "conversation": [
+        [
+          "user",
+          "eh u ok? why u never join us for bb session yesterday."
+        ]
+      ],
+      "message": "woah sorry, i came up with a flu.",
+      "options": {
+        "A": {
+          "standard": "oh no, sorry, i didn't know that you had a flu.",
+          "local": "sorry, i didn't see u today"
+        },
+        "B": {
+          "standard": "sorry, i didn't know you were having a flu.",
+          "local": "Sorry ah, I didn't know you had a flu."
+        }
+      }
+    },
+    {
+      "n": 41,
+      "item_id": "ITEM-E-005",
+      "conversation": [
+        [
+          "peer",
+          "i heard you going to cafe later to study"
+        ],
+        [
+          "user",
+          "ya you want come? dont say i never jio"
+        ]
+      ],
+      "message": "can ah, later i join you",
+      "options": {
+        "A": {
+          "standard": "okay, i'll join you later",
+          "local": "Can, later I join you."
+        },
+        "B": {
+          "standard": "okay, i'll join later",
+          "local": "can, i join you later"
+        }
+      }
+    },
+    {
+      "n": 42,
+      "item_id": "ITEM-E-007",
+      "conversation": [
+        [
+          "peer",
+          "tomorrow what you want to eat"
+        ],
+        [
+          "user",
+          "lets eat at Chinatown tomorrow"
+        ]
+      ],
+      "message": "onz, tmr meet na li",
+      "options": {
+        "A": {
+          "standard": "okay, see you tomorrow",
+          "local": "Can, see you tomorrow."
+        },
+        "B": {
+          "standard": "okay, i'll meet you there",
+          "local": "okay, i meet you tomorrow"
+        }
+      }
+    },
+    {
+      "n": 43,
+      "item_id": "ITEM-E-009",
+      "conversation": [
+        [
+          "peer",
+          "later I need to lend your charger to charge my phone"
+        ],
+        [
+          "user",
+          "ok can but I can only give you after 3"
+        ]
+      ],
+      "message": "hey can confirm i can use your charger after 3? thanks ah",
+      "options": {
+        "A": {
+          "standard": "Sorry, I can't make it later. I'll be waiting for you.",
+          "local": "Sorry ah, I cannot make it later. I waiting for you."
+        },
+        "B": {
+          "standard": "Sorry, I can't make it today, but I'll be waiting for you.",
+          "local": "sorry, i can't make it after 3"
+        }
+      }
+    },
+    {
+      "n": 44,
+      "item_id": "ITEM-E-015",
+      "conversation": [
+        [
+          "peer",
+          "Hi guys, remember to do the quiz, deadline is next week"
+        ],
+        [
+          "user",
+          "yep noted"
+        ]
+      ],
+      "message": "hi have you done the quiz alr anot",
+      "options": {
+        "A": {
+          "standard": "No, I haven't done it yet.",
+          "local": "No, I haven't done it yet."
+        },
+        "B": {
+          "standard": "Yes, I have done it alr, but I haven't done it yet",
+          "local": "ya, i finished it alr"
+        }
+      }
+    },
+    {
+      "n": 45,
+      "item_id": "ITEM-E-025",
+      "conversation": [
+        [
+          "peer",
+          "hi class, I had a family emergency and there will not be any class tomorrow."
+        ],
+        [
+          "user",
+          "oh no! what about the in class quiz?"
+        ]
+      ],
+      "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+      "options": {
+        "A": {
+          "standard": "ok, i'll be free on thursday",
+          "local": "paiseh, i'll be free on thursday"
+        },
+        "B": {
+          "standard": "Okay, I'll be free on Thursday.",
+          "local": "Can, Thursday also free."
+        }
+      }
+    },
+    {
+      "n": 46,
+      "item_id": "ITEM-E-027",
+      "conversation": [
+        [
+          "peer",
+          "eh the school got 3d printer anot how to use"
+        ],
+        [
+          "user",
+          "have, i using it now, you need to book a slot to use"
+        ],
+        [
+          "peer",
+          "ok i book later to use"
+        ]
+      ],
+      "message": "paiseh ah can i change my booking i want to use it later",
+      "options": {
+        "A": {
+          "standard": "Sure, let me know when you can make it.",
+          "local": "Can, let me know when you can make it."
+        },
+        "B": {
+          "standard": "sure, i'll book later",
+          "local": "can, i book later"
+        }
+      }
+    },
+    {
+      "n": 47,
+      "item_id": "ITEM-E-028",
+      "conversation": [
+        [
+          "user",
+          "bro you want to eat at kopitiam later? The whole gang is cmg"
+        ],
+        [
+          "user",
+          "if you want ah let us know"
+        ]
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "options": {
+        "A": {
+          "standard": "okay, i'll meet you at kopitiam later",
+          "local": "eh i cmg liao"
+        },
+        "B": {
+          "standard": "Okay, let's meet at kopitiam then.",
+          "local": "Can, kopitiam then meet us."
+        }
+      }
+    },
+    {
+      "n": 48,
+      "item_id": "ITEM-E-032",
+      "conversation": [
+        [
+          "peer",
+          "I reminded the class the tutorial is at SR3-1 liao"
+        ],
+        [
+          "user",
+          "can you change today's tutorial to be in SR3-2 instead?"
+        ]
+      ],
+      "message": "sorry ah but that one cannot, someone book liao",
+      "options": {
+        "A": {
+          "standard": "okay, let me know when the class starts",
+          "local": "Can, let me know when class starts."
+        },
+        "B": {
+          "standard": "okay, thanks for letting me know.",
+          "local": "ok i book liao"
+        }
+      }
+    },
+    {
+      "n": 49,
+      "item_id": "ITEM-E-040",
+      "conversation": [
+        [
+          "peer",
+          "so much work this week wtf"
+        ],
+        [
+          "user",
+          "ya sia"
+        ]
+      ],
+      "message": "how ah, want meet together to do work?",
+      "options": {
+        "A": {
+          "standard": "Okay, I'll meet you at the library.",
+          "local": "can, i meet you after work"
+        },
+        "B": {
+          "standard": "I'd like to meet you at the library.",
+          "local": "Can, library meet you at library."
+        }
+      }
+    },
+    {
+      "n": 50,
+      "item_id": "ITEM-E-046",
+      "conversation": [
+        [
+          "peer",
+          "hello,what time will you release the lecture recordings?"
+        ],
+        [
+          "user",
+          "usually around 10pm its out"
+        ]
+      ],
+      "message": "ni hao, can I releasae it at 5 instead?",
+      "options": {
+        "A": {
+          "standard": "Sure, five works for you",
+          "local": "Can, five also can."
+        },
+        "B": {
+          "standard": "Sure, 5 works for you.",
+          "local": "can, 5 works for me"
+        }
+      }
+    }
+  ],
+  "limitation": "Rate each axis pass/fail/uncertain. Model identities hidden but may be inferred. Same reused development conversations; no human accuracy claim."
+}

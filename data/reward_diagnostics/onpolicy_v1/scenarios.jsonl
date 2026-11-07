@@ -1,0 +1,12 @@
+{"item_id": "ONPOLICY-001", "category": "time", "context": ["I cannot meet before 18:45 tonight."], "speakers": ["user"], "message": "Would 17:30 work for dinner?"}
+{"item_id": "ONPOLICY-002", "category": "time", "context": ["I need to be home by 21:00 tonight."], "speakers": ["user"], "message": "Shall we start our two-hour movie at 20:00?"}
+{"item_id": "ONPOLICY-003", "category": "time", "context": ["My appointment is at 16:00 and cannot be moved."], "speakers": ["user"], "message": "Can you come for a meeting from 15:30 to 16:30?"}
+{"item_id": "ONPOLICY-004", "category": "time", "context": ["I can stay until 11:15, then I must leave."], "speakers": ["user"], "message": "Could you stay until noon?"}
+{"item_id": "ONPOLICY-005", "category": "availability", "context": ["I am unavailable on Wednesday. Thursday evening is free."], "speakers": ["user"], "message": "Can we meet on Wednesday evening?"}
+{"item_id": "ONPOLICY-006", "category": "availability", "context": ["I can attend the morning session, but I cannot attend the afternoon one."], "speakers": ["user"], "message": "Please join the afternoon session with us."}
+{"item_id": "ONPOLICY-007", "category": "availability", "context": ["I am working all Saturday. I have Sunday off."], "speakers": ["user"], "message": "Want to go hiking on Saturday?"}
+{"item_id": "ONPOLICY-008", "category": "availability", "context": ["I am not free this weekend. I am free next Tuesday."], "speakers": ["user"], "message": "Shall we have lunch this Sunday?"}
+{"item_id": "ONPOLICY-009", "category": "ownership", "context": ["I lent you my badminton racket yesterday."], "speakers": ["user"], "message": "Can I return your racket next week instead?"}
+{"item_id": "ONPOLICY-010", "category": "ownership", "context": ["I borrowed your power bank for my trip."], "speakers": ["user"], "message": "Could you bring my power bank back tomorrow?"}
+{"item_id": "ONPOLICY-011", "category": "ownership", "context": ["I have your library card in my wallet."], "speakers": ["user"], "message": "Do you still have my library card?"}
+{"item_id": "ONPOLICY-012", "category": "ownership", "context": ["You borrowed my folding chair for your event."], "speakers": ["user"], "message": "Would you like me to return your chair this evening?"}

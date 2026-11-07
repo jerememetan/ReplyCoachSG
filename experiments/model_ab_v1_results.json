@@ -1,0 +1,63 @@
+{
+  "scope": "STANDARD replies on reused held-out development conversations",
+  "ratings_sha256": "f28e29e63eb3922edfbdb9b0ffcf78d4d5d60d2a16646f91347a0492cc477964",
+  "results": {
+    "full_epoch1": {
+      "total": 50,
+      "reviewed": 50,
+      "default": 12,
+      "candidate": 16,
+      "tie": 11,
+      "both_bad": 11,
+      "notes": [
+        {
+          "item_id": "ITEM-B-034",
+          "notes": "Both is wrong, it shld maybe be like ill let you know what u missed"
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "notes": "The question itself is quite bad"
+        },
+        {
+          "item_id": "ITEM-B-057",
+          "notes": "Sure, I can borrow my charger for A, B is just wrong"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "notes": "User say he free, then say he cant make it for A, then for B, the User say he will be free on friday even though he is asked for Saturday"
+        },
+        {
+          "item_id": "ITEM-D-033",
+          "notes": "wya, is short for where u at? and its asking where the person is at. "
+        },
+        {
+          "item_id": "ITEM-E-005",
+          "notes": "Seems to mess up whos the speaker"
+        }
+      ]
+    },
+    "full_epoch2": {
+      "total": 50,
+      "reviewed": 50,
+      "default": 19,
+      "candidate": 19,
+      "tie": 7,
+      "both_bad": 5,
+      "notes": [
+        {
+          "item_id": "ITEM-A-035",
+          "notes": "B is slightly better"
+        }
+      ]
+    },
+    "lora_epoch4": {
+      "total": 50,
+      "reviewed": 50,
+      "default": 18,
+      "candidate": 10,
+      "tie": 9,
+      "both_bad": 13,
+      "notes": []
+    }
+  }
+}

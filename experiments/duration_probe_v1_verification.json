@@ -1,0 +1,30 @@
+{
+  "status": "complete",
+  "training_trajectories": 2,
+  "optimizer_steps_each": 784,
+  "saved_step_checkpoints_each": [
+    160,
+    320,
+    480,
+    784
+  ],
+  "fresh_development_cases": 24,
+  "reviewed_checkpoint_pairs": 192,
+  "secondary_pairs_each": 50,
+  "targeted_tests_passed": 54,
+  "all_eight_adapters_verified": true,
+  "both_account_queues_empty": true,
+  "default_changed": false,
+  "locked_test_read": false,
+  "recovery": "Control inference only; identical step784/final adapter tensors and metadata;48/50 matching secondary generations. Original failed log retained.",
+  "files_sha256": {
+    "src/replycoach/generate/finetune_v5.py": "88804d5cbab46846339b43b0f9c5a27e0d94cacf7fc2682e50611257137f5e9b",
+    "scripts/run_duration_probe_v1.py": "7eea1eef794daf77632e2eab466ce8e03c611297e65161e1c543c6d5e53dedc8",
+    "scripts/recover_duration_probe_v1.py": "27ef65bc811f402b890fa22bcf02261dbfb1503f74f52bc9007c1526499bf61e",
+    "scripts/review_duration_probe_v1.py": "2b1c872d1fc83d87ea6d9b6fb78608c845ea52dae816bc49eb118819ee40db91",
+    "scripts/analyze_duration_probe_v1.py": "89bf695d7dc783c8009b8c104bc67b36fc6033853f910fca0b8fd8d1c20e8a21",
+    "experiments/duration_probe_v1.md": "50b5469744c322e0972e5f67c61f337ed5ba401b29f1f155bf8b1d6dc8362d58",
+    "experiments/duration_probe_v1_results.json": "4ec8af5d85a2e0f1a8406405cd117b912505750e96b3827869403bf88d28a4a2",
+    "artifacts/duration_probe_v1/review/ratings.json": "e3e08b32921d7fb106f6b827998c79170587a929c6859ab96bdcfd751737de35"
+  }
+}

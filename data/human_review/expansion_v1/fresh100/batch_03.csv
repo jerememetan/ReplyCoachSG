@@ -1,0 +1,11 @@
+﻿id,scenario,conversation,incoming_message,standard_reply,local_reply,decision,corrected_standard,corrected_local,notes
+SYN-HUMAN-EXP1-087,clarifications,peer: Can you get a drink for me?,Anything cold will do.,Would you prefer water or juice?,Water or juice you want?,,,,
+SYN-HUMAN-EXP1-038,constraints,"user: I have room in my bag for one racket, not two.",Could you bring both rackets for me?,I can bring one racket. Could you carry the other one?,One racket I can bring. Other one you carry can?,,,,
+SYN-HUMAN-EXP1-077,knowledge,user: I do not know the Wi-Fi password for this room.,You know the password?,I am not sure. Let us ask the staff.,"Not sure leh, ask staff lah.",,,,
+SYN-HUMAN-EXP1-044,location,user: I left your worksheet with the library reception staff.,Where can I collect my worksheet?,You can collect it from the library reception staff.,Library reception staff there collect can liao.,,,,
+SYN-HUMAN-EXP1-092,ordinary,peer: I accidentally took the wrong staircase.,"Sorry, I will be a few minutes late.","No worries, I can wait a few minutes.","Never mind lah, few minutes I can wait.",,,,
+SYN-HUMAN-EXP1-003,ownership,peer: Your raincoat is still in my locker.,Want me to bring it to the bus interchange tonight?,"Yes please, bring my raincoat tonight.","Want, tonight bring my raincoat ah.",,,,
+SYN-HUMAN-EXP1-057,progress,user: I checked the route but have not booked the transport.,Transport booked already?,"Not yet, I have only checked the route.","Haven’t book leh, route only check already.",,,,
+SYN-HUMAN-EXP1-063,refusals,user: Shall we take the stairs up to the gallery?,My knee hurts. Could we use the lift?,"Of course, let us take the lift.","Can lah, take lift then.",,,,
+SYN-HUMAN-EXP1-017,sending,user: The map file on my phone is corrupted.,Mine opens fine. Shall I send mine over?,"Yes please, send me your working map file.","Want, your working map file send me ah.",,,,
+SYN-HUMAN-EXP1-022,time,user: I am free from 10 am until noon tomorrow.,Want to practise at 11 tomorrow?,"Yes, eleven tomorrow works for me.","Can, tomorrow eleven I free.",,,,

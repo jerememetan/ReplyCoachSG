@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "model": "sequential_rewrite_s425",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1/artifacts/rewrite_s425/final",
+      "input_format": {
+        "speaker_labels": true,
+        "joint": false,
+        "rewrite_local": true,
+        "max_source": 192,
+        "max_target": 48
+      },
+      "outputs": [
+        {
+          "item_id": "USER-001",
+          "standard": "Sure, I'll meet you at koufu later.",
+          "local": "Can, I meet you at koufu later.",
+          "local_anchor_standard": "Sure, I'll meet you at koufu later."
+        },
+        {
+          "item_id": "USER-002",
+          "standard": "Okay, I'll see you later.",
+          "local": "Okay, later I go see you.",
+          "local_anchor_standard": "Okay, I'll see you later."
+        },
+        {
+          "item_id": "USER-003",
+          "standard": "Where are you going to eat?",
+          "local": "Can, where you going to eat?",
+          "local_anchor_standard": "Where are you going to eat?"
+        }
+      ]
+    }
+  ]
+}

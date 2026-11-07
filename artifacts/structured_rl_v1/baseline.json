@@ -1,0 +1,811 @@
+{
+  "status": "complete",
+  "test": {
+    "cases": 48,
+    "greedy_correct": 12,
+    "greedy_accuracy": 0.25,
+    "expected_reward": -0.5016906087597212,
+    "outputs": [
+      {
+        "id": "SRL-test-time-000",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "15:10"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.40027210116386414,
+          0.256391316652298,
+          0.11862264573574066,
+          0.22471392154693604
+        ]
+      },
+      {
+        "id": "SRL-test-availability-000",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Thursday"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.29549917578697205,
+          0.32180243730545044,
+          0.18821939826011658,
+          0.19447894394397736
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-000",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "peer",
+          "recipient": "peer",
+          "item": "black umbrella"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.45041581988334656,
+          0.1908060610294342,
+          0.09976893663406372,
+          0.25900915265083313
+        ]
+      },
+      {
+        "id": "SRL-test-time-001",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "14:55"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4026695191860199,
+          0.25298476219177246,
+          0.11855413019657135,
+          0.22579160332679749
+        ]
+      },
+      {
+        "id": "SRL-test-availability-001",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Friday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.3047824203968048,
+          0.3093820810317993,
+          0.16765639185905457,
+          0.21817906200885773
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-001",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "peer",
+          "recipient": "user",
+          "item": "yellow notebook"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.4629879295825958,
+          0.18193824589252472,
+          0.13007400929927826,
+          0.2249998152256012
+        ]
+      },
+      {
+        "id": "SRL-test-time-002",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "10:50"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.43756693601608276,
+          0.23617957532405853,
+          0.10060351341962814,
+          0.22565004229545593
+        ]
+      },
+      {
+        "id": "SRL-test-availability-002",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Thursday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.28163352608680725,
+          0.34894970059394836,
+          0.18049919605255127,
+          0.1889175921678543
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-002",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "user",
+          "item": "pink charger"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.46244972944259644,
+          0.20495618879795074,
+          0.10670824348926544,
+          0.22588583827018738
+        ]
+      },
+      {
+        "id": "SRL-test-time-003",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "16:10"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.3685098886489868,
+          0.2735269367694855,
+          0.12117324769496918,
+          0.23678992688655853
+        ]
+      },
+      {
+        "id": "SRL-test-availability-003",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Sunday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.28035134077072144,
+          0.31097036600112915,
+          0.1977633684873581,
+          0.21091489493846893
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-003",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "user",
+          "item": "red bicycle"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.44927507638931274,
+          0.19557778537273407,
+          0.1122097596526146,
+          0.24293743073940277
+        ]
+      },
+      {
+        "id": "SRL-test-time-004",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "18:35"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.38683703541755676,
+          0.2603861391544342,
+          0.13320522010326385,
+          0.21957160532474518
+        ]
+      },
+      {
+        "id": "SRL-test-availability-004",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Tuesday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.26968619227409363,
+          0.3457055985927582,
+          0.1838483214378357,
+          0.20075981318950653
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-004",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "peer",
+          "recipient": "user",
+          "item": "yellow charger"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.44126787781715393,
+          0.20140168070793152,
+          0.11628899723291397,
+          0.2410413771867752
+        ]
+      },
+      {
+        "id": "SRL-test-time-005",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "13:05"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4034310281276703,
+          0.25658974051475525,
+          0.11716211587190628,
+          0.2228170931339264
+        ]
+      },
+      {
+        "id": "SRL-test-availability-005",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Thursday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.28305673599243164,
+          0.32268521189689636,
+          0.19219955801963806,
+          0.20205847918987274
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-005",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "peer",
+          "item": "blue jacket"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.46374931931495667,
+          0.19553586840629578,
+          0.12851348519325256,
+          0.2122013121843338
+        ]
+      },
+      {
+        "id": "SRL-test-time-006",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "12:15"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.41642120480537415,
+          0.24790464341640472,
+          0.10410100221633911,
+          0.2315731644630432
+        ]
+      },
+      {
+        "id": "SRL-test-availability-006",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Thursday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.26109522581100464,
+          0.3409319818019867,
+          0.18388180434703827,
+          0.21409092843532562
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-006",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "peer",
+          "recipient": "user",
+          "item": "blue umbrella"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.45906001329421997,
+          0.18753734230995178,
+          0.10192260891199112,
+          0.2514800429344177
+        ]
+      },
+      {
+        "id": "SRL-test-time-007",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "10:05"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.42477503418922424,
+          0.2711116075515747,
+          0.10170067846775055,
+          0.20241263508796692
+        ]
+      },
+      {
+        "id": "SRL-test-availability-007",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Wednesday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.2715195119380951,
+          0.34050241112709045,
+          0.17717429995536804,
+          0.2108037769794464
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-007",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "peer",
+          "recipient": "peer",
+          "item": "gold notebook"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4664109945297241,
+          0.18307748436927795,
+          0.13085496425628662,
+          0.21965651214122772
+        ]
+      },
+      {
+        "id": "SRL-test-time-008",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "10:25"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.452472984790802,
+          0.23062847554683685,
+          0.10746372491121292,
+          0.20943474769592285
+        ]
+      },
+      {
+        "id": "SRL-test-availability-008",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Wednesday"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.26765766739845276,
+          0.3480690121650696,
+          0.17688721418380737,
+          0.2073860913515091
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-008",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "peer",
+          "recipient": "user",
+          "item": "brown cable"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.41318759322166443,
+          0.20121222734451294,
+          0.1324911117553711,
+          0.25310906767845154
+        ]
+      },
+      {
+        "id": "SRL-test-time-009",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "13:00"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.3843550980091095,
+          0.26948612928390503,
+          0.1130286157131195,
+          0.23313008248806
+        ]
+      },
+      {
+        "id": "SRL-test-availability-009",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Thursday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.27959445118904114,
+          0.3509545624256134,
+          0.1787189245223999,
+          0.19073210656642914
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-009",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "peer",
+          "item": "orange camera"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4950886070728302,
+          0.16992492973804474,
+          0.12701250612735748,
+          0.20797398686408997
+        ]
+      },
+      {
+        "id": "SRL-test-time-010",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "09:20"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.3965489864349365,
+          0.25548821687698364,
+          0.10442710667848587,
+          0.24353572726249695
+        ]
+      },
+      {
+        "id": "SRL-test-availability-010",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Monday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.30051061511039734,
+          0.3262198865413666,
+          0.18908026814460754,
+          0.18418924510478973
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-010",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "user",
+          "item": "orange bicycle"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4925650954246521,
+          0.16645336151123047,
+          0.11215672641992569,
+          0.22882479429244995
+        ]
+      },
+      {
+        "id": "SRL-test-time-011",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "13:00"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4068409502506256,
+          0.2654401361942291,
+          0.10976732522249222,
+          0.21795153617858887
+        ]
+      },
+      {
+        "id": "SRL-test-availability-011",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Friday"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.28679895401000977,
+          0.360214501619339,
+          0.16289646923542023,
+          0.19009004533290863
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-011",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "peer",
+          "item": "orange cable"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.45832470059394836,
+          0.18480642139911652,
+          0.13168808817863464,
+          0.2251807004213333
+        ]
+      },
+      {
+        "id": "SRL-test-time-012",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "11:15"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.37003934383392334,
+          0.2755718231201172,
+          0.10797608643770218,
+          0.2464127540588379
+        ]
+      },
+      {
+        "id": "SRL-test-availability-012",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Tuesday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.28049683570861816,
+          0.3317359983921051,
+          0.19338759779930115,
+          0.1943795531988144
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-012",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "peer",
+          "item": "gold cable"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4617803394794464,
+          0.18151336908340454,
+          0.12837465107440948,
+          0.22833161056041718
+        ]
+      },
+      {
+        "id": "SRL-test-time-013",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "16:15"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.3805229961872101,
+          0.27312132716178894,
+          0.11721810698509216,
+          0.22913758456707
+        ]
+      },
+      {
+        "id": "SRL-test-availability-013",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Monday"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.29000189900398254,
+          0.32265228033065796,
+          0.17486543953418732,
+          0.21248039603233337
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-013",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "peer",
+          "item": "gold bicycle"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4719608426094055,
+          0.16558171808719635,
+          0.11189001798629761,
+          0.25056734681129456
+        ]
+      },
+      {
+        "id": "SRL-test-time-014",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "08:40"
+        },
+        "verified_reward": 1,
+        "probabilities": [
+          0.3652495741844177,
+          0.26566800475120544,
+          0.12801221013069153,
+          0.24107015132904053
+        ]
+      },
+      {
+        "id": "SRL-test-availability-014",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Thursday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.29195237159729004,
+          0.30289193987846375,
+          0.19174478948116302,
+          0.21341092884540558
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-014",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "user",
+          "recipient": "user",
+          "item": "pink umbrella"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4948573112487793,
+          0.19395893812179565,
+          0.09016939252614975,
+          0.2210143804550171
+        ]
+      },
+      {
+        "id": "SRL-test-time-015",
+        "category": "time",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "meet",
+          "at": "13:55"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.38063105940818787,
+          0.279483437538147,
+          0.11983363330364227,
+          0.2200518548488617
+        ]
+      },
+      {
+        "id": "SRL-test-availability-015",
+        "category": "availability",
+        "selected_letter": "B",
+        "selected_action": {
+          "action": "meet",
+          "day": "Saturday"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.2868708074092865,
+          0.3279277980327606,
+          0.1912088692188263,
+          0.19399259984493256
+        ]
+      },
+      {
+        "id": "SRL-test-ownership-015",
+        "category": "ownership",
+        "selected_letter": "A",
+        "selected_action": {
+          "action": "return",
+          "actor": "peer",
+          "recipient": "peer",
+          "item": "pink cable"
+        },
+        "verified_reward": -1,
+        "probabilities": [
+          0.4324128031730652,
+          0.20538610219955444,
+          0.12439475953578949,
+          0.2378063052892685
+        ]
+      }
+    ]
+  }
+}

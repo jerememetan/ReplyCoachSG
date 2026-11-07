@@ -1,0 +1,245 @@
+{
+  "created_at_utc": "2026-11-07T11:08:17.183181+00:00",
+  "selection": "Uniform random sample without replacement from82 shared reused development evaluation cases; no quality filtering.",
+  "sampling_seed": 218182997,
+  "population_size": 82,
+  "sample_size": 10,
+  "decoding": {
+    "method": "greedy",
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 64
+  },
+  "models": {
+    "mt5": {
+      "model": "google/mt5-base",
+      "public_pairs": 117634,
+      "task_conversations": 790,
+      "job_id": 356230,
+      "selected_task_epoch": 8,
+      "method": "LoRA",
+      "mode": "Direct independent STANDARD/LOCAL generation"
+    },
+    "sealion": {
+      "model": "SEA-LION-v1-3B",
+      "public_pairs": 117634,
+      "task_conversations": 790,
+      "job_id": 356177,
+      "selected_task_epoch": 2,
+      "method": "LoRA",
+      "mode": "Direct independent STANDARD/LOCAL generation"
+    }
+  },
+  "inputs": "data/evaluation/sealion_rewrite_v1/inputs.json",
+  "source_reports_sha256": {
+    "artifacts/mt5_matched_full_v1/results.json": "9cf9a50a883f82893747d0a49ce02305254fad86b6a03732545bfc24fa670f60",
+    "artifacts/sealion_full_v1/results.json": "89162de2bb141eee583e31a03e1763bdc3151c2e28f12d6c1af28c2188e550a9"
+  },
+  "human_gold": false,
+  "locked_test_used": false,
+  "outputs_edited": false,
+  "items": [
+    {
+      "item_id": "SEADUAL-017",
+      "context": [
+        "My wrist is injured, so I cannot carry heavy things.",
+        "Hope it gets better."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you help carry these heavy crates?",
+      "mt5": {
+        "standard": "I can help carry these crates.",
+        "local": "I can help carry these crates."
+      },
+      "sealion": {
+        "standard": "I cannot carry heavy things for you today.",
+        "local": "Can help carry the crates, but cannot carry heavy things leh."
+      }
+    },
+    {
+      "item_id": "ITEM-B-029",
+      "context": [
+        "I can't remember which room we're in",
+        "I'm checking the timetable"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "which room is our class in?",
+      "mt5": {
+        "standard": "I check the timetable.",
+        "local": "I check the timetable."
+      },
+      "sealion": {
+        "standard": "I'm checking the timetable now. I'll get back to you.",
+        "local": "Room 201 is our class"
+      }
+    },
+    {
+      "item_id": "ITEM-E-032",
+      "context": [
+        "I reminded the class the tutorial is at SR3-1 liao",
+        "can you change today's tutorial to be in SR3-2 instead?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry ah but that one cannot, someone book liao",
+      "mt5": {
+        "standard": "sorry, someone book",
+        "local": "sorry, someone book"
+      },
+      "sealion": {
+        "standard": "no worries, I understand",
+        "local": "okok, i understand"
+      }
+    },
+    {
+      "item_id": "ITEM-D-046",
+      "context": [
+        "eh help",
+        "what"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the cinema ticket is sold out bruh",
+      "mt5": {
+        "standard": "i'll check the ticket first",
+        "local": "i'll check the ticket first"
+      },
+      "sealion": {
+        "standard": "Oh no, I was planning to go with you",
+        "local": "oh no"
+      }
+    },
+    {
+      "item_id": "ITEM-E-027",
+      "context": [
+        "eh the school got 3d printer anot how to use",
+        "have, i using it now, you need to book a slot to use",
+        "ok i book later to use"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "paiseh ah can i change my booking i want to use it later",
+      "mt5": {
+        "standard": "okay, i book later",
+        "local": "okay, i book later"
+      },
+      "sealion": {
+        "standard": "no worries, you can use it later",
+        "local": "can, change later"
+      }
+    },
+    {
+      "item_id": "ITEM-A-035",
+      "context": [
+        "I got to go for my appointment later",
+        "Yeah I should get going too"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "don't forget to dabao your food later",
+      "mt5": {
+        "standard": "okay, I'll go for your food later",
+        "local": "okay, I'll go for you later"
+      },
+      "sealion": {
+        "standard": "I will",
+        "local": "I dabao later"
+      }
+    },
+    {
+      "item_id": "ITEM-B-043",
+      "context": [
+        "a few of us are going out this weekend",
+        "sounds fun"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you want come?",
+      "mt5": {
+        "standard": "okay, I'll come tomorrow.",
+        "local": "okay, I'll come tomorrow."
+      },
+      "sealion": {
+        "standard": "Sure, I would love to come",
+        "local": "can"
+      }
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "context": [
+        "bro you want to eat at kopitiam later? The whole gang is cmg",
+        "if you want ah let us know"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "mt5": {
+        "standard": "i dont know lah",
+        "local": "i dont know lah"
+      },
+      "sealion": {
+        "standard": "ok, we can eat elsewhere",
+        "local": "okok, next time then"
+      }
+    },
+    {
+      "item_id": "ITEM-E-046",
+      "context": [
+        "hello,what time will you release the lecture recordings?",
+        "usually around 10pm its out"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "ni hao, can I releasae it at 5 instead?",
+      "mt5": {
+        "standard": "i would like to leave it at five",
+        "local": "i would like to leave at five"
+      },
+      "sealion": {
+        "standard": "ok, i will release it at five instead",
+        "local": "can, i release it at five instead"
+      }
+    },
+    {
+      "item_id": "SEAPUBLIC-004",
+      "context": [
+        "I could not attend the briefing.",
+        "I took down the instructions."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want me to send you my briefing notes?",
+      "mt5": {
+        "standard": "I send you my briefing notes.",
+        "local": "I send you my briefing notes."
+      },
+      "sealion": {
+        "standard": "Yes please, send me your notes.",
+        "local": "Yes please, send me your notes can?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "successful_training_runs": 8,
+  "all_optimizer_steps": 784,
+  "validation_pairs_per_run": 50,
+  "diagnostic_pairs_per_run": 24,
+  "total_reviewed_pairs": 592,
+  "reviewed_independent_conversations_claim": false,
+  "targeted_training_provider_tests_passed": 51,
+  "review_contract_tests_passed": 2,
+  "checks": [
+    "training source/data hashes and tokenizer budgets",
+    "actual seed/row counts and complete final outputs",
+    "best/final adapters retained on both accounts",
+    "archive SHA256 verification on retrieval",
+    "all592 pairs have explicit four-axis ratings and reasons",
+    "within-packet and cross-seed identical-text axis consistency: zero conflicts",
+    "Python compilation and batch shell syntax",
+    "both account queues empty",
+    "configured default unchanged; held-out test not read"
+  ],
+  "final_files_sha256": {
+    "src/replycoach/generate/finetune_v5.py": "9bf71ba79d27f4ed927e2527f3c3b3bb816a88e3de36843439201b499e3f1165",
+    "src/replycoach/generate/rewrite_v5.py": "96660f8701082d1964a35a4a3676e5e79114395274e5c491923ed640eae31a4d",
+    "scripts/review_standard_focus_v1.py": "625ebd97b1a79cea6f1e997af4bacb99c9014bda919b3588393017a09858750e",
+    "scripts/analyze_standard_focus_v1.py": "f79a9b130dc816ce33a5b4c97b92308bba7763e8709b5a6d65d68073dd58ec25",
+    "tests/test_standard_focus_review.py": "70ba903cb71742ed055952ac66f50b308ebf8634f0257fd2122d4719f6124e5d",
+    "tests/test_finetune_v5.py": "038b35fe30246b2840fcfe0a2f0b81e6cbc5450a91d69ff35a940b72fff43b18",
+    "tests/test_rewrite_v5.py": "5900b07397e4e6d8b8081cc46d40c359a90d4fed25fafa7a254d4bffccb81f54",
+    "experiments/standard_focus_v1.md": "15f49d948283ff0513c16e4365e9b4c7f6234ad15348dc927305b0734a0f712a",
+    "experiments/standard_focus_v1_results.json": "3efe69ebbd16aeb70b425046a11611a0fafc33a0bfd5ae15d6a5e0cab7f7dcc4",
+    "experiments/standard_focus_v1_replication.json": "617c3369c9f01028aa052fbf92f96c0f62e1e81d7e1852194d02c9b13a5e8108"
+  }
+}

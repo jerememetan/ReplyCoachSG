@@ -1,0 +1,12 @@
+{
+  "primary": "Automatic English reply usefulness: factual consistency, response to latest message, coherent roles and practical sendability. Any valid preference/refusal/alternative is allowed, independent of intent labels or reference wording.",
+  "secondary": "LOCAL meaning preservation and naturalness scored separately; English correctness does not imply LOCAL correctness.",
+  "scope": "12 newly frozen assistant-authored development conversations. Similar semantics exist in training. Not independent human gold or original locked product test. Prior28 audit cases are reused diagnostics, not fresh tests.",
+  "selection": "Epoch selection only on fixed50 original and16 paired validation targets, equally weighted CE. No selection on these new12 outputs or reused28 diagnostics.",
+  "provenance": "Five repaired targets are assistant corrections/clarifications, not independently human reviewed. Both arms otherwise identical238-row data.",
+  "seeds": [
+    425,
+    426
+  ],
+  "stop_rule": "No automatic further training/default replacement after results. Report mixed effects, uncertainty and failures, not merely reference loss or seed counts as independent conversations."
+}

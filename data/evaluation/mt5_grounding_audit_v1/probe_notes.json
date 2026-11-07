@@ -1,0 +1,54 @@
+{
+  "scope": "Inference-only development probes. A different response is not required if both are valid; inspect factual support, not exact target matching.",
+  "facts": [
+    {
+      "item_id": "GROUND-budget-A",
+      "changed_fact": "My breakfast budget is seven dollars."
+    },
+    {
+      "item_id": "GROUND-budget-B",
+      "changed_fact": "My breakfast budget is twenty-five dollars."
+    },
+    {
+      "item_id": "GROUND-duration-A",
+      "changed_fact": "I must leave the workshop by 5:10."
+    },
+    {
+      "item_id": "GROUND-duration-B",
+      "changed_fact": "I must leave the workshop by 5:50."
+    },
+    {
+      "item_id": "GROUND-availability-A",
+      "changed_fact": "I can only attend the online briefing."
+    },
+    {
+      "item_id": "GROUND-availability-B",
+      "changed_fact": "I can attend either the online or in-person briefing."
+    },
+    {
+      "item_id": "GROUND-completion-A",
+      "changed_fact": "I have already paid the registration fee."
+    },
+    {
+      "item_id": "GROUND-completion-B",
+      "changed_fact": "I have not paid the registration fee yet."
+    },
+    {
+      "item_id": "GROUND-knowledge-A",
+      "changed_fact": "I checked the timetable: the pool closes at six."
+    },
+    {
+      "item_id": "GROUND-knowledge-B",
+      "changed_fact": "I have not checked the swimming pool timetable."
+    },
+    {
+      "item_id": "GROUND-ownership-A",
+      "changed_fact": "You still have my tripod."
+    },
+    {
+      "item_id": "GROUND-ownership-B",
+      "changed_fact": "I still have your tripod."
+    }
+  ],
+  "ownership_limit": "Ownership probe necessarily changes peer holder acknowledgment too, to keep both scenarios coherent; it is not a single-token intervention."
+}

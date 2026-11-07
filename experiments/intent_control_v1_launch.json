@@ -1,0 +1,16 @@
+{
+  "job_id": 355498,
+  "submission": "accepted",
+  "remote_directory": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/intent_control_v1",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "cases": 24,
+  "training": false,
+  "default_changed": false,
+  "purpose": "Predict incoming intent plus one-to-three reply acts and facts/constraints, condition STANDARD generation, then rewrite LOCAL. Compare against direct/free-plan arms on identical cases.",
+  "tests_passed": 5,
+  "limitation": "Prompted classifier prototype, not encoder-head training. Existing dataset labels are incoming intent only. No reply-act gold labels or production reliability claim.",
+  "last_verified_state": "COMPLETED",
+  "handoff": "docs/transformer_resume.md",
+  "exit_code": "0:0",
+  "local_report": "artifacts/component_baseline_v1/intent_qwen4b.json"
+}

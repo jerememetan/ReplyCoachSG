@@ -1,0 +1,20 @@
+{
+  "status": "prepared_not_trained",
+  "rows_per_arm": 238,
+  "changed_target_ids": [
+    "ITEM-B-004",
+    "ITEM-B-017",
+    "ITEM-B-059",
+    "ITEM-B-060",
+    "ITEM-E-008"
+  ],
+  "scope": "Matched STANDARD-only target version comparison. Exactly5 original reply targets differ; same238 conversations/variants. Historical originals, all validation and evaluation records, and LOCAL targets untouched.",
+  "provenance": "Five corrections/clarifications are assistant proposals based on explicit conversations, not independently human-reviewed gold. Other targets are retained, not certified correct.",
+  "interpretation": "A targeted consistency repair, not a demonstrated solution to all grounding errors. Starting-checkpoint audit shows failures predate these5 examples.",
+  "future_comparison": "Use identical architecture, starting checkpoint, optimizer, classifier policy, training budget and heldout automatic-usefulness evaluation for both arms. Do not compare a changed-objective repair run directly against an old auxiliary-loss baseline.",
+  "new_training_submitted": false,
+  "sha256": {
+    "data/training_expansion/mt5_grounding_repair_v1/control.jsonl": "eea0ab52cd05fe8f383107fb95979b8fdec442eb301f955173ef59515a8892b2",
+    "data/training_expansion/mt5_grounding_repair_v1/repair.jsonl": "5d2b916edba40382e323fda3e418dded7fda6d586026369d575e23b6318ac19e"
+  }
+}

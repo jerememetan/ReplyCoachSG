@@ -1,0 +1,9 @@
+Each row is one fictional conversation and its two proposed replies. Incoming messages are from peer; replies are your next turn.
+
+Fill decision with good, bad, or unsure. Leave unseen rows blank.
+GOOD means both replies fit the conversation, preserve approximately the same meaning, and LOCAL sounds naturally Singlish. Plausible selectable details, refusals and counterproposals are allowed; explicit contradictions and reversed roles are not.
+If a reply needs fixing, use corrected_standard and/or corrected_local, then mark good only when you approve the corrected pair. Bad and unsure remain excluded. Notes are optional.
+Keep the first six columns unchanged so your decisions stay tied to the exact examples.
+Review either batch files or all_candidates.csv, not both. Start with batch_01.csv.
+These are pending AI drafts. No row is considered human approved until you explicitly mark good. Import produces a reviewable candidate file, not a training job.
+Good/bad alone is not a DPO preference pair. DPO additionally needs a preferred and rejected reply to the SAME conversation/style. Both-bad or unsure should not force a winner.

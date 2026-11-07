@@ -444,3 +444,69 @@ def test_joint_training_writes_both_styles_in_one_reply(tmp_path: Path):
     with pytest.raises(ValueError, match="does not take"):
         finetune(base, train, validation, output_name="mixed", joint=True,
                  preferences_path=tmp_path / "prefs.json", **settings)
+
+
+def test_optimizer_step_budget_stops_mid_epoch_and_saves_validation(tmp_path):
+    base = tiny_model(tmp_path / 'tiny', item_texts())
+    train = write_items(tmp_path / 'train.jsonl', ITEMS[:3])
+    val = write_items(tmp_path / 'validation.jsonl', ITEMS[3:], prefix='ITEM-V')
+    report = finetune(base,train,val,lora_rank=2,lora_alpha=4,epochs=5,batch_size=2,
+                      max_source=32,max_target=12,max_steps=2,
+                      output_name='budget',output_dir=tmp_path/'artifacts')
+    assert report['optimizer_steps']==2
+    assert report['stopped_at_step_budget']
+    assert [h['epoch'] for h in report['history']]==[0,1]
+    assert report['history'][-1]['optimizer_steps']==2
+    assert len(report['validation_outputs'])==1
+    assert (tmp_path/'artifacts/budget/best/adapter_config.json').exists()
+
+
+@pytest.mark.parametrize('budget',[0,-1,True,1.5])
+def test_invalid_optimizer_step_budget_rejected_before_model_load(tmp_path,budget):
+    with pytest.raises(ValueError,match='max_steps'):
+        finetune('unloaded',max_steps=budget,output_dir=tmp_path)
+
+
+def test_standard_emphasis_changes_only_training_exposure(tmp_path):
+    base = tiny_model(tmp_path / 'tiny', item_texts())
+    train = write_items(tmp_path / 'train.jsonl', ITEMS[:3])
+    validation = write_items(tmp_path / 'validation.jsonl', ITEMS[3:], prefix='ITEM-V')
+    report = finetune(base, train, validation, output_dir=tmp_path / 'artifacts', output_name='weighted',
+                      lora_rank=2, lora_alpha=4, epochs=1, batch_size=2, max_source=64, max_target=12,
+                      rewrite_local=True, standard_repeats=2, save_final=True)
+    assert report['train_pairs'] == 9
+    assert report['standard_extra_rows'] == 3
+    assert report['train_items'] == 3
+    assert report['validation_items'] == 1
+    assert len(report['final_validation_outputs']) == 1
+    assert report['final_validation_outputs'][0]['generated_standard'] is not None
+
+
+def test_step_snapshots_do_not_change_training_trajectory(tmp_path):
+    import torch
+    from safetensors.torch import load_file
+    base = tiny_model(tmp_path / 'tiny', item_texts())
+    train = write_items(tmp_path / 'train.jsonl', ITEMS[:3])
+    val = write_items(tmp_path / 'validation.jsonl', ITEMS[3:], prefix='ITEM-V')
+    settings = dict(lora_rank=2, lora_alpha=4, epochs=3, batch_size=2, max_source=64,
+                    max_target=12, max_steps=3, save_final=True, rewrite_local=True,
+                    output_dir=tmp_path / 'artifacts')
+    plain = finetune(base, train, val, output_name='plain', **settings)
+    captured = finetune(base, train, val, output_name='captured', save_steps=(1, 3), **settings)
+    assert set(captured['step_checkpoints']) == {'1', '3'}
+    def weights(name):
+        return load_file(str(tmp_path / 'artifacts' / name / 'adapter_model.safetensors'))
+    expected = weights('plain/final')
+    for name in ['captured/final', 'captured/step_3']:
+        actual = weights(name)
+        assert all(torch.equal(v, actual[k]) for k, v in expected.items())
+    assert any(not torch.equal(v, weights('captured/step_1')[k]) for k, v in expected.items())
+    assert plain['final_validation_outputs'] == captured['final_validation_outputs']
+    metadata = json.loads((tmp_path / 'artifacts/captured/step_1/v5_input.json').read_text())
+    assert metadata['rewrite_local'] and metadata['max_source'] == 64
+
+
+@pytest.mark.parametrize('steps', [(0,), (True,), (1, 1), (4,)])
+def test_invalid_step_snapshots_fail_before_model_load(tmp_path, steps):
+    with pytest.raises(ValueError, match='save_steps'):
+        finetune('unloaded', output_dir=tmp_path, max_steps=3, save_steps=steps)

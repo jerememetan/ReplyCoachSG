@@ -1,5 +1,7 @@
 # Model card — V5 (mT5-base + LoRA)
 
+The current friend-handoff checkpoints have separate cards: [mT5 A](mt5_reference_A_MODEL_CARD.md) and [SEA-LION repair25](sealion_repair25_MODEL_CARD.md), with matching Hugging Face-style cards in [mt5_reference_A_README.md](mt5_reference_A_README.md) and [sealion_repair25_README.md](sealion_repair25_README.md). The historical `spk1_ul025_s425` card below remains a record of that different checkpoint; its non-synthetic-data statement and evaluation numbers do not describe the new exports.
+
 Role D owns this card. Numbers come from the run reports in `artifacts/*.json` (gitignored; copied back from the cluster).
 Fields marked **TODO** are not measured yet.
 

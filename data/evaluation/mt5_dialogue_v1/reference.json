@@ -1,0 +1,168 @@
+{
+  "status": "complete",
+  "standard_checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_standard_val_v1/artifacts/full_lr3e4/best",
+  "local_checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_hybrid_inference_v1/checkpoints/local_rewrite",
+  "scope": "Existing experimental mT5 pipeline, not app default or matched-data/parameter/pretraining control. STANDARD checkpoint used790 project training rows; SEA-LION run uses190 original conversations.",
+  "cases": [
+    {
+      "item_id": "SEADUAL-001",
+      "standard": "That works for me. See you then.",
+      "standard_status": "complete",
+      "local": "Can, see you then.",
+      "local_standard_anchor": "That works for me. See you then.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-002",
+      "standard": "Yes, I'd like to get the twenty-seven-dollar lunch set.",
+      "standard_status": "complete",
+      "local": "Can, twenty-seven dollar lunch set.",
+      "local_standard_anchor": "Yes, I'd like to get the twenty-seven-dollar lunch set.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-003",
+      "standard": "I cannot make it on Saturday, but I will be free on Saturday.",
+      "standard_status": "complete",
+      "local": "Can, Saturday I cannot.",
+      "local_standard_anchor": "I cannot make it on Saturday, but I will be free on Saturday.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-004",
+      "standard": "I can return it on Monday.",
+      "standard_status": "complete",
+      "local": "Can, Monday I return it on Monday.",
+      "local_standard_anchor": "I can return it on Monday.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-005",
+      "standard": "I can return them before nine.",
+      "standard_status": "complete",
+      "local": "Can, I return mine before nine.",
+      "local_standard_anchor": "I can return them before nine.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-006",
+      "standard": "I'd love to, but I can't do it.",
+      "standard_status": "complete",
+      "local": "Can, I cannot do it.",
+      "local_standard_anchor": "I'd love to, but I can't do it.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-007",
+      "standard": "Sure, I can send them to you tonight.",
+      "standard_status": "complete",
+      "local": "Can, I send you to you tonight.",
+      "local_standard_anchor": "Sure, I can send them to you tonight.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-008",
+      "standard": "No, I haven't booked it yet.",
+      "standard_status": "complete",
+      "local": "Nope, I booked the room first.",
+      "local_standard_anchor": "No, I haven't booked it yet.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-009",
+      "standard": "Yes, it is ready.",
+      "standard_status": "complete",
+      "local": "Ya, proofread report ready.",
+      "local_standard_anchor": "Yes, it is ready.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-010",
+      "standard": "I am outside the seminar room 4A.",
+      "standard_status": "complete",
+      "local": "I am outside seminar room 4A.",
+      "local_standard_anchor": "I am outside the seminar room 4A.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-011",
+      "standard": "My bottle is blue.",
+      "standard_status": "complete",
+      "local": "My bottle is blue.",
+      "local_standard_anchor": "My bottle is blue.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-012",
+      "standard": "Yes, it closes at seven.",
+      "standard_status": "complete",
+      "local": "Yes, seven hours close at seven.",
+      "local_standard_anchor": "Yes, it closes at seven.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-013",
+      "standard": "I would get a bottle of water.",
+      "standard_status": "complete",
+      "local": "Can, I get a bottle of water.",
+      "local_standard_anchor": "I would get a bottle of water.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-014",
+      "standard": "I'd love to, but I can't make it.",
+      "standard_status": "complete",
+      "local": "Can, I cannot make it.",
+      "local_standard_anchor": "I'd love to, but I can't make it.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-015",
+      "standard": "That's great. Let me know if you have any other questions.",
+      "standard_status": "complete",
+      "local": "Can, let me know if you need any other questions.",
+      "local_standard_anchor": "That's great. Let me know if you have any other questions.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-016",
+      "standard": "That's a shame, I can't do it.",
+      "standard_status": "complete",
+      "local": "Never mind, I cannot do it.",
+      "local_standard_anchor": "That's a shame, I can't do it.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-017",
+      "standard": "I cannot handle them, but I can help carry them.",
+      "standard_status": "complete",
+      "local": "Can, I help carry them, but I cannot handle them.",
+      "local_standard_anchor": "I cannot handle them, but I can help carry them.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-018",
+      "standard": "Okay, I'll meet you at the lab.",
+      "standard_status": "complete",
+      "local": "Okay, I meet you at lab.",
+      "local_standard_anchor": "Okay, I'll meet you at the lab.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-019",
+      "standard": "I'd prefer to move somewhere near the library.",
+      "standard_status": "complete",
+      "local": "Ya, I prefer to move somewhere near library.",
+      "local_standard_anchor": "I'd prefer to move somewhere near the library.",
+      "local_status": "complete"
+    },
+    {
+      "item_id": "SEADUAL-020",
+      "standard": "Thanks for letting me know. I'll send you the updated file.",
+      "standard_status": "complete",
+      "local": "Thanks for letting me know. I send you the updated file.",
+      "local_standard_anchor": "Thanks for letting me know. I'll send you the updated file.",
+      "local_status": "complete"
+    }
+  ]
+}

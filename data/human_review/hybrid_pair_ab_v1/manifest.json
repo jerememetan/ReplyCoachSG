@@ -1,0 +1,16 @@
+{
+  "cases": 30,
+  "categories": {
+    "care": 5,
+    "constraints": 5,
+    "coordination": 5,
+    "food": 5,
+    "ownership": 5,
+    "study": 5
+  },
+  "scope": "Fresh assistant-authored conversational inputs, no reference replies or training labels. Same domains as prior work; not independent population sample.",
+  "training": false,
+  "locked_test_read": false,
+  "overlap_check": "Incoming messages normalized and checked against explicit train/validation/expanded and prior diagnostic inputs; no locked test opened",
+  "input_sha256": "5e9120c415112f633ef0cc64429d2b8b7e1a938988ee15ab31d70cadf05eb0b6"
+}

@@ -1,0 +1,315 @@
+{
+  "seed": 425,
+  "arms": [
+    "control",
+    "register"
+  ],
+  "randomization_seed": 16133544486579765058,
+  "packet_sha256": "550dd54ccc06d4192259df1cf2cc3f71d26b37e999983246472bb2b5cc187a3c",
+  "source_sha256": {
+    "control_s425.json": "7b551e7d0e5ced7f3b2ffc920ece9e3780e6d398e493c77cb6e274c5389fce64",
+    "register_s425.json": "d538fd672d4d26b6155a2564fbc81f211b8115334e7f8d084cc9670f8271c438"
+  },
+  "mapping": {
+    "1": {
+      "A": "register",
+      "B": "control"
+    },
+    "2": {
+      "A": "register",
+      "B": "control"
+    },
+    "3": {
+      "A": "register",
+      "B": "control"
+    },
+    "4": {
+      "A": "register",
+      "B": "control"
+    },
+    "5": {
+      "A": "control",
+      "B": "register"
+    },
+    "6": {
+      "A": "register",
+      "B": "control"
+    },
+    "7": {
+      "A": "register",
+      "B": "control"
+    },
+    "8": {
+      "A": "control",
+      "B": "register"
+    },
+    "9": {
+      "A": "register",
+      "B": "control"
+    },
+    "10": {
+      "A": "register",
+      "B": "control"
+    },
+    "11": {
+      "A": "register",
+      "B": "control"
+    },
+    "12": {
+      "A": "control",
+      "B": "register"
+    },
+    "13": {
+      "A": "register",
+      "B": "control"
+    },
+    "14": {
+      "A": "control",
+      "B": "register"
+    },
+    "15": {
+      "A": "control",
+      "B": "register"
+    },
+    "16": {
+      "A": "control",
+      "B": "register"
+    },
+    "17": {
+      "A": "register",
+      "B": "control"
+    },
+    "18": {
+      "A": "control",
+      "B": "register"
+    },
+    "19": {
+      "A": "register",
+      "B": "control"
+    },
+    "20": {
+      "A": "register",
+      "B": "control"
+    },
+    "21": {
+      "A": "control",
+      "B": "register"
+    },
+    "22": {
+      "A": "register",
+      "B": "control"
+    },
+    "23": {
+      "A": "register",
+      "B": "control"
+    },
+    "24": {
+      "A": "control",
+      "B": "register"
+    },
+    "25": {
+      "A": "register",
+      "B": "control"
+    },
+    "26": {
+      "A": "register",
+      "B": "control"
+    },
+    "27": {
+      "A": "register",
+      "B": "control"
+    },
+    "28": {
+      "A": "register",
+      "B": "control"
+    },
+    "29": {
+      "A": "control",
+      "B": "register"
+    },
+    "30": {
+      "A": "register",
+      "B": "control"
+    },
+    "31": {
+      "A": "register",
+      "B": "control"
+    },
+    "32": {
+      "A": "register",
+      "B": "control"
+    },
+    "33": {
+      "A": "control",
+      "B": "register"
+    },
+    "34": {
+      "A": "control",
+      "B": "register"
+    },
+    "35": {
+      "A": "register",
+      "B": "control"
+    },
+    "36": {
+      "A": "control",
+      "B": "register"
+    },
+    "37": {
+      "A": "register",
+      "B": "control"
+    },
+    "38": {
+      "A": "control",
+      "B": "register"
+    },
+    "39": {
+      "A": "control",
+      "B": "register"
+    },
+    "40": {
+      "A": "register",
+      "B": "control"
+    },
+    "41": {
+      "A": "register",
+      "B": "control"
+    },
+    "42": {
+      "A": "control",
+      "B": "register"
+    },
+    "43": {
+      "A": "control",
+      "B": "register"
+    },
+    "44": {
+      "A": "register",
+      "B": "control"
+    },
+    "45": {
+      "A": "register",
+      "B": "control"
+    },
+    "46": {
+      "A": "control",
+      "B": "register"
+    },
+    "47": {
+      "A": "register",
+      "B": "control"
+    },
+    "48": {
+      "A": "control",
+      "B": "register"
+    },
+    "49": {
+      "A": "control",
+      "B": "register"
+    },
+    "50": {
+      "A": "register",
+      "B": "control"
+    },
+    "51": {
+      "A": "control",
+      "B": "register"
+    },
+    "52": {
+      "A": "register",
+      "B": "control"
+    },
+    "53": {
+      "A": "control",
+      "B": "register"
+    },
+    "54": {
+      "A": "control",
+      "B": "register"
+    },
+    "55": {
+      "A": "register",
+      "B": "control"
+    },
+    "56": {
+      "A": "register",
+      "B": "control"
+    },
+    "57": {
+      "A": "register",
+      "B": "control"
+    },
+    "58": {
+      "A": "register",
+      "B": "control"
+    },
+    "59": {
+      "A": "control",
+      "B": "register"
+    },
+    "60": {
+      "A": "control",
+      "B": "register"
+    },
+    "61": {
+      "A": "register",
+      "B": "control"
+    },
+    "62": {
+      "A": "register",
+      "B": "control"
+    },
+    "63": {
+      "A": "control",
+      "B": "register"
+    },
+    "64": {
+      "A": "control",
+      "B": "register"
+    },
+    "65": {
+      "A": "control",
+      "B": "register"
+    },
+    "66": {
+      "A": "control",
+      "B": "register"
+    },
+    "67": {
+      "A": "control",
+      "B": "register"
+    },
+    "68": {
+      "A": "register",
+      "B": "control"
+    },
+    "69": {
+      "A": "control",
+      "B": "register"
+    },
+    "70": {
+      "A": "control",
+      "B": "register"
+    },
+    "71": {
+      "A": "register",
+      "B": "control"
+    },
+    "72": {
+      "A": "control",
+      "B": "register"
+    },
+    "73": {
+      "A": "register",
+      "B": "control"
+    },
+    "74": {
+      "A": "register",
+      "B": "control"
+    },
+    "75": {
+      "A": "control",
+      "B": "register"
+    }
+  }
+}

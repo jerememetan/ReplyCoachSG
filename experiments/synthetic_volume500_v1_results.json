@@ -1,0 +1,84 @@
+{
+  "status": "training_complete",
+  "job": 350866,
+  "elapsed": "00:20:35",
+  "arms": {
+    "control8": {
+      "mean_best_validation_loss": 2.5068,
+      "by_seed": {
+        "425": 2.499,
+        "1": 2.5075,
+        "2": 2.5139
+      }
+    },
+    "control_long": {
+      "mean_best_validation_loss": 2.4958666666666667,
+      "by_seed": {
+        "425": 2.4873,
+        "1": 2.4942,
+        "2": 2.5061
+      }
+    },
+    "plus190": {
+      "mean_best_validation_loss": 2.5022333333333333,
+      "by_seed": {
+        "425": 2.5033,
+        "1": 2.4954,
+        "2": 2.508
+      }
+    },
+    "plus500": {
+      "mean_best_validation_loss": 2.5170333333333335,
+      "by_seed": {
+        "425": 2.5272,
+        "1": 2.5057,
+        "2": 2.5182
+      }
+    }
+  },
+  "source_report_sha256": {
+    "control_long_s1.json": "20eaa7cd8e59a42c06420fcdd761ea5e6849509df1b4166d8573814c5bcecf46",
+    "plus500_s1.json": "2f41e0956c04bab0517ce6744b517d8fbb31f73f8cca545af364bf159debc7c4",
+    "control8_s425.json": "64053a2c2e4735a192efb1828aadc2fd76a212e3f54e31f3dcad26a77e7dbb04",
+    "control8_s1.json": "b06db76b78185986ce31a003944383f02a42ad9dadb26308862de899e1178671",
+    "control_long_s2.json": "b87a589178a4fe31046d7c7bb1147a888e6e640d78632e761b137a22b1dd4736",
+    "plus190_s2.json": "e82eaebd9c1f78b997a17c2778571402ff8ccf8502dc7a34cf67129c7053fe3a",
+    "plus500_s425.json": "ef0246f9e07af1dc2e2e4eaa99ee8112af405df3265d1f2af845cce98883944d",
+    "plus500_s2.json": "e3e3c838306623ea3a8544385408457c24689312b324c98d614a4eb7975f0438",
+    "control8_s2.json": "8246aa7803771b233b7b483d8ec1b07d26747f445c7fa64fd09a18b7fcfbef85",
+    "control_long_s425.json": "e725d9063e5c364d38b49ffa14bbc18e539abe3ddd51c24bae0641ada410e42c",
+    "plus190_s425.json": "dbf4799e436dddaa2e872a32c4acb40d212d644ac0cb7ea3a17fb56abce18f4c",
+    "plus190_s1.json": "8f2a8079c51d32ea3660e9b086dd3b4c6f6b64656f22bcd864b6cf9998010135"
+  },
+  "qualitative_seed425": {
+    "seed": 425,
+    "counts": {
+      "both_bad": 27,
+      "plus500": 11,
+      "control_long": 16,
+      "tie": 40,
+      "identical": 6
+    },
+    "by_style": {
+      "STANDARD": {
+        "both_bad": 14,
+        "control_long": 8,
+        "tie": 18,
+        "plus500": 7,
+        "identical": 3
+      },
+      "LOCAL": {
+        "both_bad": 13,
+        "plus500": 4,
+        "tie": 22,
+        "control_long": 8,
+        "identical": 3
+      }
+    },
+    "packet_sha256": "9b4c9bad58aac81a2a85b5b2d2a9d03ade4c10c523d02dbed64031df6bf3e144",
+    "ratings_sha256": "f335fb1ae24cdb14c312375f0936a0fcab8c1809280edbacf772412b05cf6994",
+    "reviewer_limitations": "Single-seed exploratory assistant comparison; not human gold or independent blind review. Arm names were hidden while rating, but assistant knows the project, has seen prior model outputs, and authored synthetic corrections. Ratings use the selectable-draft policy and are subjective. Identical outputs are not assessed as acceptable.",
+    "limitation": "Assistant inspection, not human gold. Seeds reuse the same conversations; do not count pooled cells as independent conversations."
+  },
+  "conclusion": "No demonstrated benefit from +500. Longer authored-only training has lowest mean validation loss. Single-seed assistant reply review is exploratory, not a human accuracy benchmark. No default checkpoint changed."
+}

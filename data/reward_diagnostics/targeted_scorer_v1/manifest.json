@@ -1,0 +1,17 @@
+{
+  "cases": 97,
+  "partition_counts": {
+    "review": 24,
+    "development": 24,
+    "heldout": 24,
+    "actor": 25
+  },
+  "label_policy": "Scorer sees only conversation, incoming message, style and draft. Original labels and policy transfer declared before outcomes.",
+  "source_sha256": {
+    "data/reward_diagnostics/targeted_rl_v1/human_reviews.json": "bc0b18b40bf065b931baadf414983b45b93a034b733a25c577fe69edb94d7fce",
+    "data/reward_diagnostics/targeted_rl_v1/review.jsonl": "997c1ccbacfcb528d816205cae89d2ec3ecdde13dd423ce84bb1990610af597a",
+    "data/reward_diagnostics/targeted_rl_v1/development.jsonl": "227ab8731ee70c793e44752cb11e5ae226087e3a87680aab8c60250f496dcdf5",
+    "data/reward_diagnostics/targeted_rl_v1/heldout.jsonl": "c885a6183343e490ce0945cbb4481a9be08e7badfa9023773506406ef965fb0c",
+    "artifacts/human_dpo_v1/full_evaluation.json": "d2f060e06609ea3888585e8f8a0496dfbdeb61cd1d7acc89121a756b47d7e099"
+  }
+}

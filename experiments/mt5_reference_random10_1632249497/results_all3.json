@@ -1,0 +1,1541 @@
+{
+  "status": "complete",
+  "checkpoint_unchanged": true,
+  "models": {
+    "historical_final": {
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s1/final",
+      "outputs": [
+        {
+          "item_id": "ITEM-E-007",
+          "english": {
+            "item_id": "ITEM-E-007",
+            "text": "okay, see you tomorrow",
+            "token_ids": [
+              0,
+              259,
+              69381,
+              261,
+              2354,
+              521,
+              259,
+              82548,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-E-007",
+            "text": "Can, see you tomorrow.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              2354,
+              521,
+              259,
+              82548,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "okay, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "english": {
+            "item_id": "ITEM-D-046",
+            "text": "Okay, I'll get it for you.",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              336,
+              277,
+              1578,
+              1689,
+              609,
+              332,
+              521,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-D-046",
+            "text": "Okay, I get it for you.",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              336,
+              1689,
+              609,
+              332,
+              521,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Okay, I'll get it for you."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "english": {
+            "item_id": "ITEM-B-034",
+            "text": "Sure, let me know when you will be free.",
+            "token_ids": [
+              0,
+              85719,
+              261,
+              3256,
+              416,
+              3076,
+              259,
+              1909,
+              521,
+              898,
+              390,
+              1652,
+              260,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-B-034",
+            "text": "Can, let me know when you free.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              3256,
+              416,
+              3076,
+              259,
+              1909,
+              521,
+              1652,
+              260,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Sure, let me know when you will be free."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "english": {
+            "item_id": "ITEM-A-038",
+            "text": "Okay, I'll be there in a few minutes",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              336,
+              277,
+              1578,
+              390,
+              2108,
+              281,
+              259,
+              262,
+              259,
+              6924,
+              7935,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-A-038",
+            "text": "Can, few more minutes I reach.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              259,
+              6924,
+              1097,
+              7935,
+              336,
+              259,
+              11125,
+              260,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Okay, I'll be there in a few minutes"
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "english": {
+            "item_id": "ITEM-A-033",
+            "text": "Yes, the chicken rice stall is open today.",
+            "token_ids": [
+              0,
+              15570,
+              261,
+              287,
+              259,
+              50159,
+              259,
+              22577,
+              153252,
+              339,
+              5169,
+              7883,
+              260,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-A-033",
+            "text": "Chicken rice stall open today.",
+            "token_ids": [
+              0,
+              259,
+              78198,
+              259,
+              22577,
+              153252,
+              5169,
+              7883,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Yes, the chicken rice stall is open today."
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "english": {
+            "item_id": "ITEM-B-009",
+            "text": "Yes, I'll be waiting for you at the library.",
+            "token_ids": [
+              0,
+              15570,
+              261,
+              336,
+              277,
+              1578,
+              390,
+              259,
+              46200,
+              332,
+              521,
+              344,
+              287,
+              63995,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-B-009",
+            "text": "Ya, library waiting for you.",
+            "token_ids": [
+              0,
+              3219,
+              261,
+              63995,
+              259,
+              46200,
+              332,
+              521,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Yes, I'll be waiting for you at the library."
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "english": {
+            "item_id": "ITEM-D-029",
+            "text": "Okay, I'll see you later.",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              336,
+              277,
+              1578,
+              2354,
+              521,
+              13245,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-D-029",
+            "text": "Can, later I see you.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              13245,
+              336,
+              2354,
+              521,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Okay, I'll see you later."
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "english": {
+            "item_id": "ITEM-E-025",
+            "text": "Okay, I'll be free on Thursday.",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              336,
+              277,
+              1578,
+              390,
+              1652,
+              351,
+              18048,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-E-025",
+            "text": "Can, Thursday also free.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              18048,
+              1607,
+              1652,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Okay, I'll be free on Thursday."
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "english": {
+            "item_id": "ITEM-C-038",
+            "text": "sure, i'll check it for you.",
+            "token_ids": [
+              0,
+              7779,
+              261,
+              259,
+              266,
+              277,
+              1578,
+              4245,
+              609,
+              332,
+              521,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-C-038",
+            "text": "Can, I check for you.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              336,
+              4245,
+              332,
+              521,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "sure, i'll check it for you."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "english": {
+            "item_id": "ITEM-C-017",
+            "text": "yes, I am finished my part.",
+            "token_ids": [
+              0,
+              36339,
+              261,
+              336,
+              728,
+              259,
+              47149,
+              1037,
+              2456,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-C-017",
+            "text": "Can, I finish my part before you finish your part.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              336,
+              27039,
+              1037,
+              2456,
+              5038,
+              521,
+              27039,
+              772,
+              2456,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "yes, I am finished my part."
+        }
+      ],
+      "exact_saved_pairs": null,
+      "differences": []
+    },
+    "historical_best": {
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s1/best",
+      "outputs": [
+        {
+          "item_id": "ITEM-E-007",
+          "english": {
+            "item_id": "ITEM-E-007",
+            "text": "Okay, I'll meet you at Chinatown tomorrow.",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              336,
+              277,
+              1578,
+              15070,
+              521,
+              344,
+              3182,
+              14623,
+              259,
+              82548,
+              260,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-E-007",
+            "text": "Can, I meet you at Chinatown tomorrow.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              336,
+              15070,
+              521,
+              344,
+              3182,
+              14623,
+              259,
+              82548,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Okay, I'll meet you at Chinatown tomorrow."
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "english": {
+            "item_id": "ITEM-D-046",
+            "text": "okay, I'll take it.",
+            "token_ids": [
+              0,
+              259,
+              69381,
+              261,
+              336,
+              277,
+              1578,
+              3658,
+              609,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-D-046",
+            "text": "Can, I take it.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              336,
+              3658,
+              609,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "okay, I'll take it."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "english": {
+            "item_id": "ITEM-B-034",
+            "text": "Sure, let me know what you missed.",
+            "token_ids": [
+              0,
+              85719,
+              261,
+              3256,
+              416,
+              3076,
+              2119,
+              521,
+              11409,
+              345,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-B-034",
+            "text": "Can, let me know what you missed.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              3256,
+              416,
+              3076,
+              2119,
+              521,
+              11409,
+              345,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Sure, let me know what you missed."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "english": {
+            "item_id": "ITEM-A-038",
+            "text": "Okay, I'll be there around nine o'clock.",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              336,
+              277,
+              1578,
+              390,
+              2108,
+              5945,
+              88124,
+              259,
+              268,
+              277,
+              51864,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-A-038",
+            "text": "Can, I'll be there around nine o'clock.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              336,
+              277,
+              1578,
+              390,
+              2108,
+              5945,
+              88124,
+              259,
+              268,
+              277,
+              51864,
+              260,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Okay, I'll be there around nine o'clock."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "english": {
+            "item_id": "ITEM-A-033",
+            "text": "Yep, the chicken rice stall open today.",
+            "token_ids": [
+              0,
+              9445,
+              325,
+              261,
+              287,
+              259,
+              50159,
+              259,
+              22577,
+              153252,
+              5169,
+              7883,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-A-033",
+            "text": "Yep, the chicken rice stall open today.",
+            "token_ids": [
+              0,
+              9445,
+              325,
+              261,
+              287,
+              259,
+              50159,
+              259,
+              22577,
+              153252,
+              5169,
+              7883,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Yep, the chicken rice stall open today."
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "english": {
+            "item_id": "ITEM-B-009",
+            "text": "No, I'll come over later.",
+            "token_ids": [
+              0,
+              653,
+              261,
+              336,
+              277,
+              1578,
+              1532,
+              910,
+              13245,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-B-009",
+            "text": "Can, I come over later.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              336,
+              1532,
+              910,
+              13245,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "No, I'll come over later."
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "english": {
+            "item_id": "ITEM-D-029",
+            "text": "ok, let me know if I can bid before bidding ends.",
+            "token_ids": [
+              0,
+              5412,
+              261,
+              3256,
+              416,
+              3076,
+              955,
+              336,
+              738,
+              32070,
+              5038,
+              330,
+              133653,
+              3162,
+              263,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-D-029",
+            "text": "Can, let me know if I can bid before bidding ends.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              3256,
+              416,
+              3076,
+              955,
+              336,
+              738,
+              32070,
+              5038,
+              330,
+              133653,
+              3162,
+              263,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "ok, let me know if I can bid before bidding ends."
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "english": {
+            "item_id": "ITEM-E-025",
+            "text": "yeah, I'll be free on thursday.",
+            "token_ids": [
+              0,
+              259,
+              110576,
+              261,
+              336,
+              277,
+              1578,
+              390,
+              1652,
+              351,
+              394,
+              15445,
+              4407,
+              260,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-E-025",
+            "text": "Can, I'll be free on thursday.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              336,
+              277,
+              1578,
+              390,
+              1652,
+              351,
+              394,
+              15445,
+              4407,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "yeah, I'll be free on thursday."
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "english": {
+            "item_id": "ITEM-C-038",
+            "text": "Sure, it doesn't sound too long.",
+            "token_ids": [
+              0,
+              85719,
+              261,
+              609,
+              259,
+              6975,
+              272,
+              277,
+              270,
+              17882,
+              6320,
+              2952,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-C-038",
+            "text": "Can, it doesn't sound too long.",
+            "token_ids": [
+              0,
+              4016,
+              261,
+              609,
+              259,
+              6975,
+              272,
+              277,
+              270,
+              17882,
+              6320,
+              2952,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Sure, it doesn't sound too long."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "english": {
+            "item_id": "ITEM-C-017",
+            "text": "yes, I am done.",
+            "token_ids": [
+              0,
+              36339,
+              261,
+              336,
+              728,
+              11798,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-C-017",
+            "text": "Yes, I am done.",
+            "token_ids": [
+              0,
+              15570,
+              261,
+              336,
+              728,
+              11798,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "yes, I am done."
+        }
+      ],
+      "exact_saved_pairs": null,
+      "differences": []
+    },
+    "current_shared": {
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_context_control_v1/artifacts/seed1_control/final",
+      "outputs": [
+        {
+          "item_id": "ITEM-E-007",
+          "english": {
+            "item_id": "ITEM-E-007",
+            "text": "I'll meet her at Chinatown tomorrow.",
+            "token_ids": [
+              0,
+              336,
+              277,
+              1578,
+              15070,
+              1001,
+              344,
+              3182,
+              14623,
+              259,
+              82548,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-E-007",
+            "text": "I meet her at Chinatown tomorrow.",
+            "token_ids": [
+              0,
+              336,
+              15070,
+              1001,
+              344,
+              3182,
+              14623,
+              259,
+              82548,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "I'll meet her at Chinatown tomorrow."
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "english": {
+            "item_id": "ITEM-D-046",
+            "text": "okay, I'll check whether it's sold out",
+            "token_ids": [
+              0,
+              259,
+              69381,
+              261,
+              336,
+              277,
+              1578,
+              4245,
+              414,
+              15219,
+              609,
+              277,
+              263,
+              22026,
+              1350,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-D-046",
+            "text": "okay, I check whether it's sold out",
+            "token_ids": [
+              0,
+              259,
+              69381,
+              261,
+              336,
+              4245,
+              414,
+              15219,
+              609,
+              277,
+              263,
+              22026,
+              1350,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "okay, I'll check whether it's sold out"
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "english": {
+            "item_id": "ITEM-B-034",
+            "text": "Sure, let me know what you missed.",
+            "token_ids": [
+              0,
+              85719,
+              261,
+              3256,
+              416,
+              3076,
+              2119,
+              521,
+              11409,
+              345,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-B-034",
+            "text": "Okay, let me know what you missed.",
+            "token_ids": [
+              0,
+              259,
+              104722,
+              261,
+              3256,
+              416,
+              3076,
+              2119,
+              521,
+              11409,
+              345,
+              260,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "Sure, let me know what you missed."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "english": {
+            "item_id": "ITEM-A-038",
+            "text": "I'm not sure if I'll be late.",
+            "token_ids": [
+              0,
+              336,
+              277,
+              282,
+              776,
+              7779,
+              955,
+              336,
+              277,
+              1578,
+              390,
+              31683,
+              260,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-A-038",
+            "text": "I'm not sure if I'll be late.",
+            "token_ids": [
+              0,
+              336,
+              277,
+              282,
+              776,
+              7779,
+              955,
+              336,
+              277,
+              1578,
+              390,
+              31683,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "I'm not sure if I'll be late."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "english": {
+            "item_id": "ITEM-A-033",
+            "text": "I'm not sure if the chicken rice stall opens today.",
+            "token_ids": [
+              0,
+              336,
+              277,
+              282,
+              776,
+              7779,
+              955,
+              287,
+              259,
+              50159,
+              259,
+              22577,
+              153252,
+              5169,
+              263,
+              7883,
+              260,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-A-033",
+            "text": "Not sure chicken rice opens today leh.",
+            "token_ids": [
+              0,
+              7483,
+              7779,
+              259,
+              50159,
+              259,
+              22577,
+              5169,
+              263,
+              7883,
+              16796,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "I'm not sure if the chicken rice stall opens today."
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "english": {
+            "item_id": "ITEM-B-009",
+            "text": "I'm not sure if there's space. Let's check the schedule.",
+            "token_ids": [
+              0,
+              336,
+              277,
+              282,
+              776,
+              7779,
+              955,
+              2108,
+              277,
+              263,
+              11495,
+              260,
+              8672,
+              277,
+              263,
+              4245,
+              287,
+              31499,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-B-009",
+            "text": "Not sure there's space leh. Check the schedule first.",
+            "token_ids": [
+              0,
+              7483,
+              7779,
+              2108,
+              277,
+              263,
+              11495,
+              16796,
+              260,
+              10849,
+              287,
+              31499,
+              2262,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "I'm not sure if there's space. Let's check the schedule."
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "english": {
+            "item_id": "ITEM-D-029",
+            "text": "ok, let me know if I can bid before bidding ends",
+            "token_ids": [
+              0,
+              5412,
+              261,
+              3256,
+              416,
+              3076,
+              955,
+              336,
+              738,
+              32070,
+              5038,
+              330,
+              133653,
+              3162,
+              263,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-D-029",
+            "text": "ok, let me know if I can bid before bidding ends",
+            "token_ids": [
+              0,
+              5412,
+              261,
+              3256,
+              416,
+              3076,
+              955,
+              336,
+              738,
+              32070,
+              5038,
+              330,
+              133653,
+              3162,
+              263,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "ok, let me know if I can bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "english": {
+            "item_id": "ITEM-E-025",
+            "text": "I'll check whether the make up class will be free on thursday.",
+            "token_ids": [
+              0,
+              336,
+              277,
+              1578,
+              4245,
+              414,
+              15219,
+              287,
+              2149,
+              1150,
+              3931,
+              898,
+              390,
+              1652,
+              351,
+              394,
+              15445,
+              4407,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-E-025",
+            "text": "I check whether the make up class got free on thursday leh.",
+            "token_ids": [
+              0,
+              336,
+              4245,
+              414,
+              15219,
+              287,
+              2149,
+              1150,
+              3931,
+              5666,
+              1652,
+              351,
+              394,
+              15445,
+              4407,
+              16796,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "I'll check whether the make up class will be free on thursday."
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "english": {
+            "item_id": "ITEM-C-038",
+            "text": "I'll check whether the conclusion is too long.",
+            "token_ids": [
+              0,
+              336,
+              277,
+              1578,
+              4245,
+              414,
+              15219,
+              287,
+              259,
+              49666,
+              339,
+              6320,
+              2952,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-C-038",
+            "text": "I check if the conclusion too long leh.",
+            "token_ids": [
+              0,
+              336,
+              4245,
+              955,
+              287,
+              259,
+              49666,
+              6320,
+              2952,
+              16796,
+              260,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "I'll check whether the conclusion is too long."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "english": {
+            "item_id": "ITEM-C-017",
+            "text": "yes, I'm done.",
+            "token_ids": [
+              0,
+              36339,
+              261,
+              336,
+              277,
+              282,
+              11798,
+              260,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "local": {
+            "item_id": "ITEM-C-017",
+            "text": "okay, done alr.",
+            "token_ids": [
+              0,
+              259,
+              69381,
+              261,
+              11798,
+              440,
+              286,
+              260,
+              1,
+              1,
+              1,
+              1
+            ],
+            "status": "complete"
+          },
+          "standard_anchor": "yes, I'm done."
+        }
+      ],
+      "exact_saved_pairs": null,
+      "differences": []
+    }
+  },
+  "training_performed": false,
+  "input_sha256": "c532b19675c785ac24270555a4462ccc69924b2501cd01038def3269b2e51b05",
+  "decode": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 48,
+    "max_source": 192
+  }
+}

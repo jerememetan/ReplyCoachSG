@@ -1,0 +1,10 @@
+{
+  "job_id": 355463,
+  "state": "COMPLETED",
+  "remote_directory": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/rewrite_diagnostic_v3",
+  "default_changed": false,
+  "completion_waited": false,
+  "exit_code": "0:0",
+  "elapsed": "00:01:48",
+  "results": "experiments/rewrite_diagnostic_v3_results.json"
+}

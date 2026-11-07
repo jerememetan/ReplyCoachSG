@@ -1,0 +1,12 @@
+﻿id,scenario,conversation,incoming_message,standard_reply,local_reply,decision,corrected_standard,corrected_local,notes
+SYN-HUMAN-EXP1-081,clarifications,peer: Can you bring the folder tomorrow?,I need it before the briefing.,Which folder do you mean?,Which folder ah?,,,,
+SYN-HUMAN-EXP1-033,constraints,user: I sprained my ankle and cannot play court sports this week.,Want to join our basketball game tomorrow?,"Sorry, I cannot play while my ankle is injured.","Paiseh, ankle injured leh, cannot play.",,,,
+SYN-HUMAN-EXP1-071,knowledge,user: I have never operated the stage lights.,I use that lighting desk every week.,Could you show me how to operate it?,Can show me how to use anot?,,,,
+SYN-HUMAN-EXP1-043,location,"peer: Our booth is C17, opposite the registration desk.",Which booth are we assigned to?,"We are at booth C17, opposite registration.","C17 lah, registration opposite.",,,,
+SYN-HUMAN-EXP1-093,ordinary,peer: Thanks for helping us pack up after the event.,You saved us a lot of time.,You are welcome. I was happy to help.,"No problem lah, happy to help.",,,,
+SYN-HUMAN-EXP1-009,ownership,user: I only brought one helmet and need it for my ride.,Can I borrow your helmet for the afternoon?,"Sorry, I need my helmet for my ride this afternoon.","Paiseh, afternoon I need my helmet for my ride leh.",,,,
+SYN-HUMAN-EXP1-052,progress,user: I submitted the room request this morning.,Have you sent the request yet?,"Yes, I submitted it this morning.","Ya, this morning submit liao.",,,,
+SYN-HUMAN-EXP1-064,refusals,user: Do you want to rehearse together after class?,"I cannot today, but I am free tomorrow afternoon.",Tomorrow afternoon works for me.,"Can, tomorrow afternoon I free also.",,,,
+SYN-HUMAN-EXP1-011,sending,user: I downloaded the debate schedule.,Can forward the schedule to me?,"Sure, I will forward the schedule to you.","Can, schedule I forward you.",,,,
+SYN-HUMAN-EXP1-024,time,"peer: The costume counter closes at 3 pm.
+user: My rehearsal finishes at 4 pm.",Can you collect the costumes after rehearsal?,The counter will be closed by then. Could someone collect them earlier?,That time counter close liao. Can ask someone earlier collect anot?,,,,

@@ -1,5 +1,9 @@
 # Role E — Reranker, integration, demo
 
+## Role D checkpoint handoff — 8 November 2026
+
+The exported generator references are documented in the [mT5 A model card](../D_transformer/mt5_reference_A_MODEL_CARD.md) and [SEA-LION repair25 model card](../D_transformer/sealion_repair25_MODEL_CARD.md). The [checkpoint handoff guide](../../artifacts/model_handoff_v1/README.md) records the archives, loader and checksums; full model weights are shared separately from Git. These are experimental generator references and do not change the shared selector or demo defaults below. Read [the current transformer handoff](../../docs/transformer_resume.md) for the latest generator results. Earlier dated entries describe their own experiment scope.
+
 ## Current priority updated 29 October 2026
 
 User direction on 29 October: the planned final demo **V6 reranker** is Qwen3-Reranker-0.6B
@@ -62,6 +66,29 @@ is also complete. Patience 2 stopped after six epochs and retained epoch 4;
 all 100 saved reply choices match the earlier four-epoch adapter. More training
 under this protocol produced no better validation-selected checkpoint. Preserve
 this result and its limitations in the final report.
+## Historical Role D evaluation handoff — 3 November 2026
+
+This entry records the generator handoff on that date; it does not supersede Role E's later frozen-evaluation work or results.
+
+D’s bounded training ablations are complete; retain the existing supervised V5
+checkpoint. See [the consolidated results](../../experiments/v5_ablation_summary_20261103.md).
+No new experimental adapter was promoted, and the final test set remains locked.
+
+The user permits plausible new personal/factual details in selectable drafts.
+The evaluator-only and shared rubrics now reject explicit contradictions/role
+reversals, rather than missing evidence alone. Use fresh matched calibration/main
+folders after syncing the updated rubric; old judge runs retain their original
+rubric and must not be merged. The runner records rubric text in resume checks.
+Fresh P01 policy diagnostic matched 6/6 reviewed examples; this is not main-panel
+accuracy. See [the check](../../experiments/eval_policy_20261103.md).
+
+The exporter input check passed for 190 bank items/50 validation queries without
+loading models. Real generator/hybrid exports, main ten-persona ratings and demo
+proof remain pending. Source/rubric changes are local workspace changes; if running
+on the cluster, sync the updated evaluator rubric or use its frozen calibrated
+copy in `~/ReplyCoachSG/experiments/eval_policy_20261103/rubric.md`. Do not accidentally
+resume the historical cluster checkout’s old-rubric ratings.
+
 
 ## Current priority updated 18 October 2026
 

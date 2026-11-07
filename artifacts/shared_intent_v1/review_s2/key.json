@@ -1,0 +1,211 @@
+{
+  "mapping": {
+    "1": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "2": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "3": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "4": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "5": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "6": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "7": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "8": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "9": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "10": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "11": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "12": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "13": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "14": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "15": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "16": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "17": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "18": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "19": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "20": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "21": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "22": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "23": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "24": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "25": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "26": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "27": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "28": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "29": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "30": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "31": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "32": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "33": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "34": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "35": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "36": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "37": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "38": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "39": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "40": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "41": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "42": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "43": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "44": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "45": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "46": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "47": {
+      "A": "original",
+      "B": "rewrite"
+    },
+    "48": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "49": {
+      "A": "rewrite",
+      "B": "original"
+    },
+    "50": {
+      "A": "original",
+      "B": "rewrite"
+    }
+  },
+  "seed": 2,
+  "randomization_seed": 12161950510446804304,
+  "packet_sha256": "7f93d2c904faf452a5626be61b807097fc3cdcb8acff85350bdee12c2a0de363",
+  "source_sha256": {
+    "original_s2.json": "c01d241a28abed3e136f660e397b5503ca28b429a4b9769074c4b5f5c0718dd6",
+    "rewrite_s2.json": "34c43763ff477bf161b17b01dd338954aede5cbb49e5fd4ae74fc9b48c1e611a"
+  }
+}

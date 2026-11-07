@@ -19,7 +19,7 @@ import torch
 from torch.nn.utils.rnn import pad_sequence
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
-from replycoach.generate.style_control import mt5_input
+from replycoach.generate.style_control import mt5_input, REWRITE_STYLE
 from replycoach.io import ROOT
 
 ARTIFACTS = ROOT / "artifacts"
@@ -79,7 +79,8 @@ def encode_rows(rows: list[dict], tokenizer, max_source: int, max_target: int, s
     The tag is ``style`` if given, else the row's own ``style`` (team items), else the one implied by its source.
     """
     styles = [style or row.get("style") or STYLE_BY_SOURCE[row["source"]] for row in rows]
-    sources = tokenizer([mt5_input(tag, row["message"], row["context"], speaker_labels, row.get("speakers"))
+    sources = tokenizer([mt5_input(tag, row["message"], row["context"], speaker_labels, row.get("speakers"),
+                                   standard_reply=row.get("standard_reply"))
                          for tag, row in zip(styles, rows)])["input_ids"]
     targets = tokenizer([row["response"] for row in rows], max_length=max_target, truncation=True)["input_ids"]
     for index, row in enumerate(rows):
@@ -88,9 +89,12 @@ def encode_rows(rows: list[dict], tokenizer, max_source: int, max_target: int, s
         while len(sources[index]) > max_source and context:
             context, speakers = context[1:], speakers and speakers[1:]
             sources[index] = tokenizer(
-                mt5_input(styles[index], row["message"], context, speaker_labels, speakers)
+                mt5_input(styles[index], row["message"], context, speaker_labels, speakers,
+                          standard_reply=row.get("standard_reply"))
             )["input_ids"]
         if len(sources[index]) > max_source:
+            if styles[index] == REWRITE_STYLE:
+                raise ValueError("Rewrite source exceeds token budget; refusing to truncate the chosen standard reply")
             sources[index] = [*sources[index][: max_source - 1], tokenizer.eos_token_id]
     return list(zip(sources, targets))
 

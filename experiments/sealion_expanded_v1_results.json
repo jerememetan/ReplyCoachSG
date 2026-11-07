@@ -1,0 +1,58 @@
+{
+  "jobs": {
+    "saved": {
+      "job_id": 356049,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:15:02"
+    },
+    "preserved": {
+      "job_id": 356050,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:19:30"
+    }
+  },
+  "models": {
+    "saved": {
+      "best_epoch": 1,
+      "selected_validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 1.9731851147074644,
+            "reply_tokens": 514,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 3.941016573260948,
+            "reply_tokens": 414,
+            "examples": 50
+          }
+        },
+        "selection_score": 2.957100843984206
+      },
+      "flagged_outputs": []
+    },
+    "preserved": {
+      "best_epoch": 2,
+      "selected_validation": {
+        "groups": {
+          "STANDARD": {
+            "token_ce": 2.0284605557352653,
+            "reply_tokens": 514,
+            "examples": 50
+          },
+          "LOCAL": {
+            "token_ce": 3.2570199707280034,
+            "reply_tokens": 414,
+            "examples": 50
+          }
+        },
+        "selection_score": 2.6427402632316346
+      },
+      "flagged_outputs": []
+    }
+  },
+  "default_changed": false,
+  "quality_review": "Assistant inspected reused12 outputs across both policies; not human gold, no aggregate quality score or promotion. Saved targets still plain English or ownership reversal; preserved targets show more colloquial wording but still violate timing/unknown-hours/budget/unfinished-slides. Reused development only."
+}

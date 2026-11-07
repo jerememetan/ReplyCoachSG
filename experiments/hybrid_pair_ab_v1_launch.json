@@ -1,0 +1,11 @@
+{
+  "job_id": 355242,
+  "status": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:00:32",
+  "directory": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_hybrid_pair_ab_v1",
+  "cases": 30,
+  "review_status": "awaiting_user",
+  "url": "http://127.0.0.1:8513",
+  "training": false
+}
