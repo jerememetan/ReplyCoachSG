@@ -1,0 +1,706 @@
+[
+  {
+    "item_id": "CONTRAST-availability-4-0-0",
+    "category": "availability",
+    "context": [
+      "I am free on Monday, but I am unavailable on Sunday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Are you free on Monday?",
+    "rewrite_message": "Remind me which days work for you?",
+    "standard_anchor": "Yes, I am free on Monday.",
+    "english": {
+      "positive": "Yes, I am free on Monday.",
+      "negative": "I am unavailable on Monday."
+    },
+    "rewrite": {
+      "positive": "Monday I free.",
+      "negative": "Monday I cannot make it."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-availability-4-0-1",
+    "category": "availability",
+    "context": [
+      "I am free on Monday, but I am unavailable on Sunday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Are you free on Sunday?",
+    "rewrite_message": "Remind me which days work for you?",
+    "standard_anchor": "I am unavailable on Sunday.",
+    "english": {
+      "positive": "I am unavailable on Sunday.",
+      "negative": "Yes, I am free on Sunday."
+    },
+    "rewrite": {
+      "positive": "Sunday I cannot make it.",
+      "negative": "Sunday I free."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-availability-4-1-0",
+    "category": "availability",
+    "context": [
+      "I am free on Sunday, but I am unavailable on Monday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Are you free on Monday?",
+    "rewrite_message": "Remind me which days work for you?",
+    "standard_anchor": "I am unavailable on Monday.",
+    "english": {
+      "positive": "I am unavailable on Monday.",
+      "negative": "Yes, I am free on Monday."
+    },
+    "rewrite": {
+      "positive": "Monday I cannot make it.",
+      "negative": "Monday I free."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-availability-4-1-1",
+    "category": "availability",
+    "context": [
+      "I am free on Sunday, but I am unavailable on Monday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Are you free on Sunday?",
+    "rewrite_message": "Remind me which days work for you?",
+    "standard_anchor": "Yes, I am free on Sunday.",
+    "english": {
+      "positive": "Yes, I am free on Sunday.",
+      "negative": "I am unavailable on Sunday."
+    },
+    "rewrite": {
+      "positive": "Sunday I free.",
+      "negative": "Sunday I cannot make it."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-completion-4-0-0",
+    "category": "completion",
+    "context": [
+      "I have submitted the visitor form. I have not submitted the permit form."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Have you submitted the visitor form?",
+    "rewrite_message": "What is the status of your forms?",
+    "standard_anchor": "I have submitted the visitor form.",
+    "english": {
+      "positive": "I have submitted the visitor form.",
+      "negative": "I have not submitted the visitor form yet."
+    },
+    "rewrite": {
+      "positive": "The visitor form I submit already.",
+      "negative": "The visitor form I haven't submit yet."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-completion-4-0-1",
+    "category": "completion",
+    "context": [
+      "I have submitted the visitor form. I have not submitted the permit form."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Have you submitted the permit form?",
+    "rewrite_message": "What is the status of your forms?",
+    "standard_anchor": "I have not submitted the permit form yet.",
+    "english": {
+      "positive": "I have not submitted the permit form yet.",
+      "negative": "I have submitted the permit form."
+    },
+    "rewrite": {
+      "positive": "The permit form I haven't submit yet.",
+      "negative": "The permit form I submit already."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-completion-4-1-0",
+    "category": "completion",
+    "context": [
+      "I have submitted the permit form. I have not submitted the visitor form."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Have you submitted the visitor form?",
+    "rewrite_message": "What is the status of your forms?",
+    "standard_anchor": "I have not submitted the visitor form yet.",
+    "english": {
+      "positive": "I have not submitted the visitor form yet.",
+      "negative": "I have submitted the visitor form."
+    },
+    "rewrite": {
+      "positive": "The visitor form I haven't submit yet.",
+      "negative": "The visitor form I submit already."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-completion-4-1-1",
+    "category": "completion",
+    "context": [
+      "I have submitted the permit form. I have not submitted the visitor form."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Have you submitted the permit form?",
+    "rewrite_message": "What is the status of your forms?",
+    "standard_anchor": "I have submitted the permit form.",
+    "english": {
+      "positive": "I have submitted the permit form.",
+      "negative": "I have not submitted the permit form yet."
+    },
+    "rewrite": {
+      "positive": "The permit form I submit already.",
+      "negative": "The permit form I haven't submit yet."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-ownership-4-0-0",
+    "category": "ownership",
+    "context": [
+      "The pencil case belongs to me. The measuring tape belongs to you."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who owns the pencil case?",
+    "rewrite_message": "Whose things are these again?",
+    "standard_anchor": "The pencil case belongs to me.",
+    "english": {
+      "positive": "The pencil case belongs to me.",
+      "negative": "The pencil case belongs to you."
+    },
+    "rewrite": {
+      "positive": "The pencil case is mine.",
+      "negative": "The pencil case is yours."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-ownership-4-0-1",
+    "category": "ownership",
+    "context": [
+      "The pencil case belongs to me. The measuring tape belongs to you."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who owns the measuring tape?",
+    "rewrite_message": "Whose things are these again?",
+    "standard_anchor": "The measuring tape belongs to you.",
+    "english": {
+      "positive": "The measuring tape belongs to you.",
+      "negative": "The measuring tape belongs to me."
+    },
+    "rewrite": {
+      "positive": "The measuring tape is yours.",
+      "negative": "The measuring tape is mine."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-ownership-4-1-0",
+    "category": "ownership",
+    "context": [
+      "The measuring tape belongs to me. The pencil case belongs to you."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who owns the pencil case?",
+    "rewrite_message": "Whose things are these again?",
+    "standard_anchor": "The pencil case belongs to you.",
+    "english": {
+      "positive": "The pencil case belongs to you.",
+      "negative": "The pencil case belongs to me."
+    },
+    "rewrite": {
+      "positive": "The pencil case is yours.",
+      "negative": "The pencil case is mine."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-ownership-4-1-1",
+    "category": "ownership",
+    "context": [
+      "The measuring tape belongs to me. The pencil case belongs to you."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who owns the measuring tape?",
+    "rewrite_message": "Whose things are these again?",
+    "standard_anchor": "The measuring tape belongs to me.",
+    "english": {
+      "positive": "The measuring tape belongs to me.",
+      "negative": "The measuring tape belongs to you."
+    },
+    "rewrite": {
+      "positive": "The measuring tape is mine.",
+      "negative": "The measuring tape is yours."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-return_direction-4-0-0",
+    "category": "return_direction",
+    "context": [
+      "I borrowed your pencil case. You borrowed my measuring tape. We are returning both today."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who should return the pencil case to whom?",
+    "rewrite_message": "How are we returning these things?",
+    "standard_anchor": "I will return the pencil case to you.",
+    "english": {
+      "positive": "I will return the pencil case to you.",
+      "negative": "You will return the pencil case to me."
+    },
+    "rewrite": {
+      "positive": "I return the pencil case to you later.",
+      "negative": "Later you return the pencil case to me."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-return_direction-4-0-1",
+    "category": "return_direction",
+    "context": [
+      "I borrowed your pencil case. You borrowed my measuring tape. We are returning both today."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who should return the measuring tape to whom?",
+    "rewrite_message": "How are we returning these things?",
+    "standard_anchor": "You will return the measuring tape to me.",
+    "english": {
+      "positive": "You will return the measuring tape to me.",
+      "negative": "I will return the measuring tape to you."
+    },
+    "rewrite": {
+      "positive": "Later you return the measuring tape to me.",
+      "negative": "I return the measuring tape to you later."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-return_direction-4-1-0",
+    "category": "return_direction",
+    "context": [
+      "I borrowed your measuring tape. You borrowed my pencil case. We are returning both today."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who should return the pencil case to whom?",
+    "rewrite_message": "How are we returning these things?",
+    "standard_anchor": "You will return the pencil case to me.",
+    "english": {
+      "positive": "You will return the pencil case to me.",
+      "negative": "I will return the pencil case to you."
+    },
+    "rewrite": {
+      "positive": "Later you return the pencil case to me.",
+      "negative": "I return the pencil case to you later."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-return_direction-4-1-1",
+    "category": "return_direction",
+    "context": [
+      "I borrowed your measuring tape. You borrowed my pencil case. We are returning both today."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Who should return the measuring tape to whom?",
+    "rewrite_message": "How are we returning these things?",
+    "standard_anchor": "I will return the measuring tape to you.",
+    "english": {
+      "positive": "I will return the measuring tape to you.",
+      "negative": "You will return the measuring tape to me."
+    },
+    "rewrite": {
+      "positive": "I return the measuring tape to you later.",
+      "negative": "Later you return the measuring tape to me."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-exact_time-4-0-0",
+    "category": "exact_time",
+    "context": [
+      "My ceramics practice starts at 07:24. My briefing starts at 15:57."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "What time does your practice start?",
+    "rewrite_message": "What are the times for your activities?",
+    "standard_anchor": "My practice starts at 07:24.",
+    "english": {
+      "positive": "My practice starts at 07:24.",
+      "negative": "My practice starts at 15:57."
+    },
+    "rewrite": {
+      "positive": "My practice starts at 07:24.",
+      "negative": "My practice starts at 15:57."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-exact_time-4-0-1",
+    "category": "exact_time",
+    "context": [
+      "My ceramics practice starts at 07:24. My briefing starts at 15:57."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "What time does your briefing start?",
+    "rewrite_message": "What are the times for your activities?",
+    "standard_anchor": "My briefing starts at 15:57.",
+    "english": {
+      "positive": "My briefing starts at 15:57.",
+      "negative": "My briefing starts at 07:24."
+    },
+    "rewrite": {
+      "positive": "My briefing starts at 15:57.",
+      "negative": "My briefing starts at 07:24."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-exact_time-4-1-0",
+    "category": "exact_time",
+    "context": [
+      "My ceramics practice starts at 15:57. My briefing starts at 07:24."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "What time does your practice start?",
+    "rewrite_message": "What are the times for your activities?",
+    "standard_anchor": "My practice starts at 15:57.",
+    "english": {
+      "positive": "My practice starts at 15:57.",
+      "negative": "My practice starts at 07:24."
+    },
+    "rewrite": {
+      "positive": "My practice starts at 15:57.",
+      "negative": "My practice starts at 07:24."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-exact_time-4-1-1",
+    "category": "exact_time",
+    "context": [
+      "My ceramics practice starts at 15:57. My briefing starts at 07:24."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "What time does your briefing start?",
+    "rewrite_message": "What are the times for your activities?",
+    "standard_anchor": "My briefing starts at 07:24.",
+    "english": {
+      "positive": "My briefing starts at 07:24.",
+      "negative": "My briefing starts at 15:57."
+    },
+    "rewrite": {
+      "positive": "My briefing starts at 07:24.",
+      "negative": "My briefing starts at 15:57."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-amount-4-0-0",
+    "category": "amount",
+    "context": [
+      "My budget is $19. The ceramics event entry fee is $43."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "How much is the budget?",
+    "rewrite_message": "Remind me of the two amounts?",
+    "standard_anchor": "The budget is $19.",
+    "english": {
+      "positive": "The budget is $19.",
+      "negative": "The budget is $43."
+    },
+    "rewrite": {
+      "positive": "The budget is $19 lah.",
+      "negative": "The budget is $43 lah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-amount-4-0-1",
+    "category": "amount",
+    "context": [
+      "My budget is $19. The ceramics event entry fee is $43."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "How much is the entry fee?",
+    "rewrite_message": "Remind me of the two amounts?",
+    "standard_anchor": "The entry fee is $43.",
+    "english": {
+      "positive": "The entry fee is $43.",
+      "negative": "The entry fee is $19."
+    },
+    "rewrite": {
+      "positive": "The entry fee is $43 lah.",
+      "negative": "The entry fee is $19 lah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-amount-4-1-0",
+    "category": "amount",
+    "context": [
+      "My budget is $43. The ceramics event entry fee is $19."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "How much is the budget?",
+    "rewrite_message": "Remind me of the two amounts?",
+    "standard_anchor": "The budget is $43.",
+    "english": {
+      "positive": "The budget is $43.",
+      "negative": "The budget is $19."
+    },
+    "rewrite": {
+      "positive": "The budget is $43 lah.",
+      "negative": "The budget is $19 lah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-amount-4-1-1",
+    "category": "amount",
+    "context": [
+      "My budget is $43. The ceramics event entry fee is $19."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "How much is the entry fee?",
+    "rewrite_message": "Remind me of the two amounts?",
+    "standard_anchor": "The entry fee is $19.",
+    "english": {
+      "positive": "The entry fee is $19.",
+      "negative": "The entry fee is $43."
+    },
+    "rewrite": {
+      "positive": "The entry fee is $19 lah.",
+      "negative": "The entry fee is $43 lah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-room-4-0-0",
+    "category": "room",
+    "context": [
+      "My workshop is in T794. My seminar is in U895."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Which room is your workshop in?",
+    "rewrite_message": "Which rooms are your events in?",
+    "standard_anchor": "My workshop is in T794.",
+    "english": {
+      "positive": "My workshop is in T794.",
+      "negative": "My workshop is in U895."
+    },
+    "rewrite": {
+      "positive": "My workshop at T794.",
+      "negative": "My workshop at U895."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-room-4-0-1",
+    "category": "room",
+    "context": [
+      "My workshop is in T794. My seminar is in U895."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Which room is your seminar in?",
+    "rewrite_message": "Which rooms are your events in?",
+    "standard_anchor": "My seminar is in U895.",
+    "english": {
+      "positive": "My seminar is in U895.",
+      "negative": "My seminar is in T794."
+    },
+    "rewrite": {
+      "positive": "My seminar at U895.",
+      "negative": "My seminar at T794."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-room-4-1-0",
+    "category": "room",
+    "context": [
+      "My workshop is in U895. My seminar is in T794."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Which room is your workshop in?",
+    "rewrite_message": "Which rooms are your events in?",
+    "standard_anchor": "My workshop is in U895.",
+    "english": {
+      "positive": "My workshop is in U895.",
+      "negative": "My workshop is in T794."
+    },
+    "rewrite": {
+      "positive": "My workshop at U895.",
+      "negative": "My workshop at T794."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-room-4-1-1",
+    "category": "room",
+    "context": [
+      "My workshop is in U895. My seminar is in T794."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Which room is your seminar in?",
+    "rewrite_message": "Which rooms are your events in?",
+    "standard_anchor": "My seminar is in T794.",
+    "english": {
+      "positive": "My seminar is in T794.",
+      "negative": "My seminar is in U895."
+    },
+    "rewrite": {
+      "positive": "My seminar at T794.",
+      "negative": "My seminar at U895."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-before_after-4-0-0",
+    "category": "before_after",
+    "context": [
+      "The collection must happen before 07:24. The delivery must happen after 07:24."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Does the collection need to be before or after 07:24?",
+    "rewrite_message": "What are the timing constraints again?",
+    "standard_anchor": "The collection must be before 07:24.",
+    "english": {
+      "positive": "The collection must be before 07:24.",
+      "negative": "The collection must be after 07:24."
+    },
+    "rewrite": {
+      "positive": "The collection must be before 07:24 ah.",
+      "negative": "The collection must be after 07:24 ah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-before_after-4-0-1",
+    "category": "before_after",
+    "context": [
+      "The collection must happen before 07:24. The delivery must happen after 07:24."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Does the delivery need to be before or after 07:24?",
+    "rewrite_message": "What are the timing constraints again?",
+    "standard_anchor": "The delivery must be after 07:24.",
+    "english": {
+      "positive": "The delivery must be after 07:24.",
+      "negative": "The delivery must be before 07:24."
+    },
+    "rewrite": {
+      "positive": "The delivery must be after 07:24 ah.",
+      "negative": "The delivery must be before 07:24 ah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-before_after-4-1-0",
+    "category": "before_after",
+    "context": [
+      "The delivery must happen before 07:24. The collection must happen after 07:24."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Does the collection need to be before or after 07:24?",
+    "rewrite_message": "What are the timing constraints again?",
+    "standard_anchor": "The collection must be after 07:24.",
+    "english": {
+      "positive": "The collection must be after 07:24.",
+      "negative": "The collection must be before 07:24."
+    },
+    "rewrite": {
+      "positive": "The collection must be after 07:24 ah.",
+      "negative": "The collection must be before 07:24 ah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  },
+  {
+    "item_id": "CONTRAST-before_after-4-1-1",
+    "category": "before_after",
+    "context": [
+      "The delivery must happen before 07:24. The collection must happen after 07:24."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Does the delivery need to be before or after 07:24?",
+    "rewrite_message": "What are the timing constraints again?",
+    "standard_anchor": "The delivery must be before 07:24.",
+    "english": {
+      "positive": "The delivery must be before 07:24.",
+      "negative": "The delivery must be after 07:24."
+    },
+    "rewrite": {
+      "positive": "The delivery must be before 07:24 ah.",
+      "negative": "The delivery must be after 07:24 ah."
+    },
+    "negative_reason": "Contradicts an explicitly stated actor, binding, polarity or exact value."
+  }
+]

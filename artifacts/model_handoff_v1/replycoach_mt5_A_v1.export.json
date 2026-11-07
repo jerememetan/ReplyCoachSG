@@ -1,0 +1,21 @@
+{
+  "status": "ready",
+  "archive": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1.tar",
+  "bytes": 2353233920,
+  "sha256": "a4651363d7ef607ccdf33514b6af3837124f4e027d5ef0157b1a298f6aaee49f",
+  "bundle": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1",
+  "manifest_sha256": "4d31e79604d8818e430c7cf288ae9c0b738ca18db18e309fbcef6e929c7c6165",
+  "verification_job": 357669,
+  "exact_example_pairs": 10,
+  "previous_documentation_revisions": [
+    {
+      "sha256": "0e53df7c9d81f8f853c0b4c00d7f120d903ef4b7a6a912c4af4787e88f56856d",
+      "manifest_sha256": "d8868fd585f4245238f2ca07f8b23594d95c656b1ee5879ba5ed7096d041048b",
+      "bytes": 2353213440
+    }
+  ],
+  "model_cards_revision": "model-cards-v1",
+  "documentation_only_update": true,
+  "unchanged_files_checked": 24,
+  "weight_files_unchanged": 2
+}

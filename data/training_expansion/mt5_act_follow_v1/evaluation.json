@@ -1,0 +1,620 @@
+[
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-001",
+    "context": [
+      "I have a free evening tomorrow.",
+      "Our club has a board-game night."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to join the games?",
+    "item_id": "ACTFOLLOW-evaluation-001-1",
+    "reply_acts": [
+      "accept"
+    ],
+    "response": "Yes, I would like to join the games.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-001",
+    "context": [
+      "I have a free evening tomorrow.",
+      "Our club has a board-game night."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to join the games?",
+    "item_id": "ACTFOLLOW-evaluation-001-2",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "Thanks, but I will skip the games tomorrow.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-002",
+    "context": [
+      "I have already finished my revision.",
+      "There is a pottery session this weekend."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to try it together?",
+    "item_id": "ACTFOLLOW-evaluation-002-1",
+    "reply_acts": [
+      "accept"
+    ],
+    "response": "Sure, let us try the pottery session.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-002",
+    "context": [
+      "I have already finished my revision.",
+      "There is a pottery session this weekend."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to try it together?",
+    "item_id": "ACTFOLLOW-evaluation-002-2",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "I would rather pass on the pottery session, thanks.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-003",
+    "context": [
+      "I am volunteering until 8:20 tonight.",
+      "We could have dinner after that."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you meet for dinner at 7:50?",
+    "item_id": "ACTFOLLOW-evaluation-003-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "I cannot meet at 7:50 because I am volunteering until 8:20.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-003",
+    "context": [
+      "I am volunteering until 8:20 tonight.",
+      "We could have dinner after that."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you meet for dinner at 7:50?",
+    "item_id": "ACTFOLLOW-evaluation-003-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "I cannot make 7:50. Could we meet after 8:20 instead?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-004",
+    "context": [
+      "I am busy on Thursday, but Saturday is free.",
+      "I will ask the rest of the group."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you attend our practice on Thursday?",
+    "item_id": "ACTFOLLOW-evaluation-004-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "I cannot attend practice on Thursday.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-004",
+    "context": [
+      "I am busy on Thursday, but Saturday is free.",
+      "I will ask the rest of the group."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you attend our practice on Thursday?",
+    "item_id": "ACTFOLLOW-evaluation-004-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "Thursday does not work for me. Could we practise on Saturday instead?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-005",
+    "context": [
+      "I have to leave the workshop by 5:10.",
+      "The review takes forty minutes."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we start the review at five?",
+    "item_id": "ACTFOLLOW-evaluation-005-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "A forty-minute review at five runs past my 5:10 departure, so I cannot do that.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-005",
+    "context": [
+      "I have to leave the workshop by 5:10.",
+      "The review takes forty minutes."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we start the review at five?",
+    "item_id": "ACTFOLLOW-evaluation-005-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "I must leave by 5:10. Could we start the forty-minute review at 4:30?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-006",
+    "context": [
+      "I only have seven dollars for breakfast.",
+      "We can eat near campus."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like the sixteen-dollar breakfast platter?",
+    "item_id": "ACTFOLLOW-evaluation-006-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "No thanks, the sixteen-dollar platter is over my seven-dollar budget.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-006",
+    "context": [
+      "I only have seven dollars for breakfast.",
+      "We can eat near campus."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like the sixteen-dollar breakfast platter?",
+    "item_id": "ACTFOLLOW-evaluation-006-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "That platter is over my budget. Could we find breakfast for seven dollars or less?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-007",
+    "context": [
+      "My shoulder is injured and I cannot lift heavy objects.",
+      "Take care of it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you help lift this heavy cabinet?",
+    "item_id": "ACTFOLLOW-evaluation-007-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "I cannot lift the cabinet because my shoulder is injured.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-007",
+    "context": [
+      "My shoulder is injured and I cannot lift heavy objects.",
+      "Take care of it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you help lift this heavy cabinet?",
+    "item_id": "ACTFOLLOW-evaluation-007-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "I cannot lift it with my injured shoulder. Could we ask someone else?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-008",
+    "context": [
+      "I can only attend the online briefing.",
+      "There is also an in-person briefing."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Will you come to the in-person briefing?",
+    "item_id": "ACTFOLLOW-evaluation-008-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "I cannot attend in person; I can only join online.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-008",
+    "context": [
+      "I can only attend the online briefing.",
+      "There is also an in-person briefing."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Will you come to the in-person briefing?",
+    "item_id": "ACTFOLLOW-evaluation-008-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "I cannot attend in person. Could I join the online briefing instead?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-009",
+    "context": [
+      "You borrowed my tripod for filming.",
+      "I have finished using it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your tripod at the bus interchange?",
+    "item_id": "ACTFOLLOW-evaluation-009-1",
+    "reply_acts": [
+      "accept"
+    ],
+    "response": "Yes, you can return my tripod at the bus interchange.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-009",
+    "context": [
+      "You borrowed my tripod for filming.",
+      "I have finished using it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your tripod at the bus interchange?",
+    "item_id": "ACTFOLLOW-evaluation-009-2",
+    "reply_acts": [
+      "clarify"
+    ],
+    "response": "Which bus interchange do you mean?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-010",
+    "context": [
+      "You still have my reference book.",
+      "It is safely in my locker."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would Monday be okay to return your book?",
+    "item_id": "ACTFOLLOW-evaluation-010-1",
+    "reply_acts": [
+      "accept"
+    ],
+    "response": "Yes, Monday is fine for returning my book.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-010",
+    "context": [
+      "You still have my reference book.",
+      "It is safely in my locker."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would Monday be okay to return your book?",
+    "item_id": "ACTFOLLOW-evaluation-010-2",
+    "reply_acts": [
+      "clarify"
+    ],
+    "response": "What time on Monday could you return it?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-011",
+    "context": [
+      "I have not checked the swimming pool timetable.",
+      "The holiday hours might differ."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does the pool close at six?",
+    "item_id": "ACTFOLLOW-evaluation-011-1",
+    "reply_acts": [
+      "express_uncertainty"
+    ],
+    "response": "I do not know whether the pool closes at six.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-011",
+    "context": [
+      "I have not checked the swimming pool timetable.",
+      "The holiday hours might differ."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does the pool close at six?",
+    "item_id": "ACTFOLLOW-evaluation-011-2",
+    "reply_acts": [
+      "express_uncertainty",
+      "offer_or_commit"
+    ],
+    "response": "I do not know. I will check the swimming pool timetable.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-012",
+    "context": [
+      "I do not know the submission date for the photography contest.",
+      "The organiser posted an update."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is the deadline next Wednesday?",
+    "item_id": "ACTFOLLOW-evaluation-012-1",
+    "reply_acts": [
+      "express_uncertainty"
+    ],
+    "response": "I am not sure whether the deadline is next Wednesday.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-012",
+    "context": [
+      "I do not know the submission date for the photography contest.",
+      "The organiser posted an update."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is the deadline next Wednesday?",
+    "item_id": "ACTFOLLOW-evaluation-012-2",
+    "reply_acts": [
+      "express_uncertainty",
+      "offer_or_commit"
+    ],
+    "response": "I am not sure. I will check the contest submission date.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-013",
+    "context": [
+      "I emailed you the signed consent form yesterday.",
+      "I will search for it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you emailed the consent form?",
+    "item_id": "ACTFOLLOW-evaluation-013-1",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "response": "Yes, I emailed you the signed consent form yesterday.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-013",
+    "context": [
+      "I emailed you the signed consent form yesterday.",
+      "I will search for it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you emailed the consent form?",
+    "item_id": "ACTFOLLOW-evaluation-013-2",
+    "reply_acts": [
+      "answer_or_inform",
+      "request_action"
+    ],
+    "response": "Yes, I emailed it yesterday. Please check your inbox.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-014",
+    "context": [
+      "I have already paid the registration fee.",
+      "Thanks for sorting that out."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you paid the fee yet?",
+    "item_id": "ACTFOLLOW-evaluation-014-1",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "response": "Yes, I have already paid the registration fee.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-014",
+    "context": [
+      "I have already paid the registration fee.",
+      "Thanks for sorting that out."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you paid the fee yet?",
+    "item_id": "ACTFOLLOW-evaluation-014-2",
+    "reply_acts": [
+      "answer_or_inform",
+      "request_action"
+    ],
+    "response": "Yes, I paid the fee. Please check the payment receipt.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-015",
+    "context": [
+      "I saved the interview transcript on my laptop.",
+      "I missed the interview."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you share the transcript with me?",
+    "item_id": "ACTFOLLOW-evaluation-015-1",
+    "reply_acts": [
+      "offer_or_commit"
+    ],
+    "response": "Sure, I will send you the interview transcript.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-015",
+    "context": [
+      "I saved the interview transcript on my laptop.",
+      "I missed the interview."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you share the transcript with me?",
+    "item_id": "ACTFOLLOW-evaluation-015-2",
+    "reply_acts": [
+      "clarify"
+    ],
+    "response": "Which address should I send the transcript to?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-016",
+    "context": [
+      "I will be near the music building after lunch.",
+      "We could work on the poster."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Come and meet me there.",
+    "item_id": "ACTFOLLOW-evaluation-016-1",
+    "reply_acts": [
+      "accept"
+    ],
+    "response": "Okay, I will come over after lunch.",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-evaluation-016",
+    "context": [
+      "I will be near the music building after lunch.",
+      "We could work on the poster."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Come and meet me there.",
+    "item_id": "ACTFOLLOW-evaluation-016-2",
+    "reply_acts": [
+      "clarify"
+    ],
+    "response": "Where exactly should I meet you?",
+    "split": "evaluation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  }
+]

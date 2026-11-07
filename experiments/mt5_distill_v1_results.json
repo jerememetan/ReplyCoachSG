@@ -1,0 +1,173 @@
+{
+  "status": "complete",
+  "job": 351013,
+  "elapsed": "00:17:59",
+  "arms": {
+    "control": {
+      "mean_best_validation_loss": 2.4959000000000002,
+      "by_seed": {
+        "425": 2.4874,
+        "1": 2.4942,
+        "2": 2.5061
+      }
+    },
+    "teacher": {
+      "mean_best_validation_loss": 2.9072,
+      "by_seed": {
+        "425": 2.9101,
+        "1": 2.9098,
+        "2": 2.9017
+      }
+    },
+    "mixed": {
+      "mean_best_validation_loss": 2.5375,
+      "by_seed": {
+        "425": 2.5423,
+        "1": 2.5293,
+        "2": 2.5409
+      }
+    }
+  },
+  "runs": {
+    "control_s425.json": {
+      "best_loss": 2.4874,
+      "best_epoch": 9,
+      "best_steps": 315,
+      "final_validation_loss": 2.607,
+      "final_train_loss": 1.6882,
+      "source_sha256": "a4ba416892349d11181b5a3b3336123dc86e9d07780ad7798c4d31a0213cf9b0"
+    },
+    "control_s1.json": {
+      "best_loss": 2.4942,
+      "best_epoch": 10,
+      "best_steps": 350,
+      "final_validation_loss": 2.65,
+      "final_train_loss": 1.6934,
+      "source_sha256": "fae9c10f8bb3edb8214a72b135ef23405ea0901a382dadb10b99010d24ef4165"
+    },
+    "control_s2.json": {
+      "best_loss": 2.5061,
+      "best_epoch": 10,
+      "best_steps": 350,
+      "final_validation_loss": 2.6068,
+      "final_train_loss": 1.6251,
+      "source_sha256": "583e606db269729440665e2664ba0b558cc3f1d20ae2f335da1e0d64b34f085e"
+    },
+    "teacher_s425.json": {
+      "best_loss": 2.9101,
+      "best_epoch": 2,
+      "best_steps": 70,
+      "final_validation_loss": 3.8108,
+      "final_train_loss": 1.2941,
+      "source_sha256": "164a8e05e537ec8336615369423403020161e4b2788384b86f6a18b4549d842a"
+    },
+    "teacher_s1.json": {
+      "best_loss": 2.9098,
+      "best_epoch": 2,
+      "best_steps": 70,
+      "final_validation_loss": 3.7746,
+      "final_train_loss": 1.2636,
+      "source_sha256": "ef08d2109449943aabf10fe665b9737b3b44a0c9a6f0804f068ea2811f752ae8"
+    },
+    "teacher_s2.json": {
+      "best_loss": 2.9017,
+      "best_epoch": 2,
+      "best_steps": 70,
+      "final_validation_loss": 3.8858,
+      "final_train_loss": 1.2648,
+      "source_sha256": "898f85effdb75820836473c371878fefc8d83d101b60a056cb0f5f0d7cb22a85"
+    },
+    "mixed_s425.json": {
+      "best_loss": 2.5423,
+      "best_epoch": 8,
+      "best_steps": 472,
+      "final_validation_loss": 2.5937,
+      "final_train_loss": 1.7032,
+      "source_sha256": "9b8eee186e0a060bce76c2573f8c9d2e6f8fad973505fa0b1141a45bb64164ee"
+    },
+    "mixed_s1.json": {
+      "best_loss": 2.5293,
+      "best_epoch": 11,
+      "best_steps": 649,
+      "final_validation_loss": 2.607,
+      "final_train_loss": 1.7987,
+      "source_sha256": "3bf601d132bf382e9a71e936a44aa717a277e0ee48dd8efaa20dc27667744718"
+    },
+    "mixed_s2.json": {
+      "best_loss": 2.5409,
+      "best_epoch": 10,
+      "best_steps": 590,
+      "final_validation_loss": 2.6149,
+      "final_train_loss": 1.8222,
+      "source_sha256": "6e09937d96fb75d262c9dc70b461ad5556672cb4cb305528d682294765c6919c"
+    }
+  },
+  "qualitative": {
+    "teacher": {
+      "seed": 425,
+      "counts": {
+        "teacher": 19,
+        "both_bad": 8,
+        "tie": 43,
+        "control": 29,
+        "identical": 1
+      },
+      "by_style": {
+        "STANDARD": {
+          "teacher": 12,
+          "tie": 19,
+          "both_bad": 4,
+          "control": 14,
+          "identical": 1
+        },
+        "LOCAL": {
+          "both_bad": 4,
+          "teacher": 7,
+          "control": 15,
+          "tie": 24
+        }
+      },
+      "packet_sha256": "cce152b94b97c7dfc9b3eabf63faef5ace4d9a9e029ab0c6fb8a1a6b98be5d50",
+      "ratings_sha256": "d590ac35f6ad760c8ae52a4ec530e3313687c3adab030c953ce035a7c332fde6",
+      "reviewer_limitations": "One-seed exploratory assistant judgments on reused development conversations, not human gold. Arm identities hidden during ratings, but model style may reveal identity; assistant has seen prior controls and edited teacher targets. Plausible independent user facts, refusals and clarifications are allowed. Some adequacy decisions are ambiguous. No human accuracy claim.",
+      "limitation": "Assistant inspection, not human gold. Seeds reuse the same conversations; do not count pooled cells as independent conversations."
+    },
+    "mixed": {
+      "seed": 425,
+      "counts": {
+        "mixed": 19,
+        "tie": 53,
+        "both_bad": 7,
+        "control": 17,
+        "identical": 4
+      },
+      "by_style": {
+        "STANDARD": {
+          "mixed": 10,
+          "tie": 24,
+          "both_bad": 2,
+          "control": 11,
+          "identical": 3
+        },
+        "LOCAL": {
+          "mixed": 9,
+          "tie": 29,
+          "both_bad": 5,
+          "control": 6,
+          "identical": 1
+        }
+      },
+      "packet_sha256": "bb27dbd94ef9deff06dae118d4951fe75a0dfa430c2defafbec1eda91af5a439",
+      "ratings_sha256": "236d6c45acd88eec197a67b2a0937bb3da9d7ccc56ff42c5c85e5e1346dd0622",
+      "reviewer_limitations": "One-seed exploratory assistant judgments on reused development conversations, not human gold. Arm identities hidden during ratings, but model style may reveal identity; assistant has seen prior controls and edited teacher targets. Plausible independent user facts, refusals and clarifications are allowed. Some adequacy decisions are ambiguous. No human accuracy claim.",
+      "limitation": "Assistant inspection, not human gold. Seeds reuse the same conversations; do not count pooled cells as independent conversations."
+    }
+  },
+  "limitations": [
+    "Teacher-only best checkpoints all selected at epoch 2 (70 updates), even though runs completed 784 updates. Original-reference CE may favor checkpoints before student adapts to teacher wording. Final-step model outputs were not saved, so this cannot establish that all distillation checkpoints fail.",
+    "Teacher targets are 190 assistant-audited Gemma pairs with 29 editorial revisions; not human gold.",
+    "Qualitative review is one-seed exploratory assistant judgment on 50 reused development conversations; arm identities may be inferred and adequacy labels are fallible.",
+    "No held-out test reads, no default changes, no RL actor updates."
+  ],
+  "decision": "Teacher-only selected checkpoints show no quality gain; mixed is inconclusive (19 vs17 preferences). Do not claim mT5 matched Gemma or rule out distillation/RLHF generally."
+}

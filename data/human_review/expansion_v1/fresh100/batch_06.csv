@@ -1,0 +1,11 @@
+﻿id,scenario,conversation,incoming_message,standard_reply,local_reply,decision,corrected_standard,corrected_local,notes
+SYN-HUMAN-EXP1-088,clarifications,peer: Can you bring the banner to the event?,The organising team needs it.,Where should I hand the banner over?,Banner hand over where ah?,,,,
+SYN-HUMAN-EXP1-034,constraints,user: My laptop has no battery left and I do not have its charger.,Can you edit the video on your laptop right now?,I cannot use my laptop now. Could I borrow a charger first?,Laptop now cannot use leh. Can borrow charger first anot?,,,,
+SYN-HUMAN-EXP1-080,knowledge,peer: I cannot work out why the printer is jammed.,Should we keep trying the same button?,Let us stop and ask the staff to check it.,"Stop first lah, ask staff check.",,,,
+SYN-HUMAN-EXP1-041,location,peer: The practice venue is Studio 4 on level 2.,Which studio should I head to?,Head to Studio 4 on level two.,"Studio 4, level two there go.",,,,
+SYN-HUMAN-EXP1-095,ordinary,peer: I did not get selected for the team.,"Quite disappointed, honestly.",I am sorry to hear that. Do you want to talk about it?,"Aiyoh, sorry to hear that. Want talk about it anot?",,,,
+SYN-HUMAN-EXP1-005,ownership,user: I brought a spare set of earplugs.,Could I have your spare set for the concert?,"Sure, you can have my spare set.","Can, my spare set give you.",,,,
+SYN-HUMAN-EXP1-053,progress,"user: I reserved the projector, but the speakers are still unconfirmed.",Both projector and speakers settled already?,"The projector is reserved, but the speakers are not confirmed yet.","Projector reserve liao, speakers haven’t confirm leh.",,,,
+SYN-HUMAN-EXP1-070,refusals,user: Shall I reserve a seat for you at the talk?,"No need, I will not be attending.","Okay, I will not reserve a seat for you.","Can, then your seat I don’t reserve liao.",,,,
+SYN-HUMAN-EXP1-019,sending,user: I sent the form to Mei but not to the rest of the committee.,Has the whole committee received the form?,"Not yet, I have only sent it to Mei.","Haven’t leh, only Mei I send already.",,,,
+SYN-HUMAN-EXP1-026,time,user: I can only stay at the fair until 5 pm.,Our shift is 6 to 7. Can you cover it?,"Sorry, I need to leave by five, so I cannot cover that shift.","Paiseh, five must leave liao, that shift cannot cover.",,,,

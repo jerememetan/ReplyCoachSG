@@ -1,0 +1,133 @@
+{
+  "status": "ready_exploratory",
+  "train_rows": 7994,
+  "validation_rows": 400,
+  "corpora": {
+    "cosem": {
+      "raw_train_after_group_exclusion": 137396,
+      "raw_validation": 3000,
+      "heldout_group_rows_excluded": 0,
+      "filters": {
+        "train": {
+          "insufficient_context": 35743,
+          "non_two_party_visible_window": 32991,
+          "filler_incoming": 3757,
+          "merged_or_long_turn": 9201,
+          "placeholder_or_export_artifact": 476,
+          "exact_echo": 66,
+          "embedded_speaker_code": 1260,
+          "contact_or_identifiable_pattern": 191,
+          "filler_response": 5
+        },
+        "validation": {
+          "insufficient_context": 780,
+          "filler_incoming": 334,
+          "non_two_party_visible_window": 873,
+          "embedded_speaker_code": 4,
+          "merged_or_long_turn": 119,
+          "contact_or_identifiable_pattern": 2,
+          "placeholder_or_export_artifact": 1
+        }
+      },
+      "eligible": {
+        "train": 53706,
+        "validation": 887
+      },
+      "heldout_pair_rows_excluded": 0,
+      "selected_train": 3995,
+      "selected_validation": 200,
+      "train_groups": 134,
+      "validation_groups": 11,
+      "train_strata": {
+        "casual_shortforms": 1000,
+        "other": 1497,
+        "explicit_local_markers": 1498
+      },
+      "validation_strata": {
+        "other": 152,
+        "explicit_local_markers": 15,
+        "casual_shortforms": 33
+      }
+    },
+    "dailydialog": {
+      "raw_train_after_group_exclusion": 75485,
+      "raw_validation": 7069,
+      "heldout_group_rows_excluded": 567,
+      "filters": {
+        "train": {
+          "non_linguistic": 1213,
+          "word_budget": 3588,
+          "filler_response": 833,
+          "blocked_response": 24,
+          "contact_or_identifiable_pattern": 75,
+          "exact_echo": 14,
+          "embedded_speaker_code": 13
+        },
+        "validation": {
+          "non_linguistic": 110,
+          "word_budget": 304,
+          "filler_response": 109,
+          "embedded_speaker_code": 4,
+          "blocked_response": 2,
+          "contact_or_identifiable_pattern": 1,
+          "exact_echo": 1
+        }
+      },
+      "eligible": {
+        "train": 68978,
+        "validation": 6538
+      },
+      "heldout_pair_rows_excluded": 747,
+      "selected_train": 3999,
+      "selected_validation": 200,
+      "train_groups": 3185,
+      "validation_groups": 182,
+      "train_strata": {
+        "other": 3992,
+        "casual_shortforms": 7
+      },
+      "validation_strata": {
+        "other": 200
+      }
+    }
+  },
+  "source_sha256": {
+    "cosem_clean_train_pairs.jsonl": "9871fb72c616dc850b3315edda80094a7296e3fc12d1912580222a111c997d09",
+    "cosem_validation_pairs.jsonl": "51c18574cb04a1cefeb562092a172eeab538ddba7f943d26cc6e2b3d65a33c86",
+    "dailydialog_train_pairs.jsonl": "06b0fe4631045638a4abe0e81f313d48114dea36565cdc804a4b0c8684f63899",
+    "dailydialog_validation_pairs.jsonl": "c33602eb243d295fc79680d8c6782e51b3ebc39935ab9d7c3fb19aede3f22223"
+  },
+  "files_sha256": {
+    "train.jsonl": "83340f5e216ce5ef0eaf5b3317b0ef9d6eb68f9d0ccc7927309a69f06de91c65",
+    "validation.jsonl": "e2d604b0002f77a3568ef4e366df66abedd3748727e0096b07a01d2b803e8259",
+    "pilot_private.json": "267deddd02b003ad504de6e65c6d0f8c0ddc9a4edf86a71d1b9ec969ea19140d",
+    "quarantine_private.json": "8a865d9f623baeaf0931fb1af4d19e4c4348827659facac78f3db56903bee172"
+  },
+  "provenance": "Original public replies only, no generation/rewrites. DailyDialog punctuation detokenized; CoSEM wording preserved. Input CoSEM clean set was historically selected by mT5 likelihood-relatedness, not human or LLM-chat gold.",
+  "grouping": "CoSEM original chat IDs hashed; DailyDialog dialogues reconstructed from contiguous original pair export with strict continuity; repeated whole dialogues removed from train if present in validation.",
+  "policy": "Both sources use training-only DIALOGUE tag, avoiding automatic corpus=style labeling. Two-party visible context required, not a guarantee that entire original CoSEM chats had only two participants. Train response repetition<=3, perchat caps; marker/shortform strata provide coverage, not style gold or model-selection reward.",
+  "limitations": [
+    "Pattern privacy/export checks are not proof of full de-identification. Keep raw/processed public text out of Git and do not quote private examples in user reports.",
+    "Filtering is not independent human semantic review; original pair extraction can contain topic shifts/truncated turns. Inspect a small sample before training.",
+    "Sources/public validation groups remain separate. No project evaluation or locked test enters public training."
+  ],
+  "sample_inspection": {
+    "rows_inspected": 40,
+    "source_counts": {
+      "cosem": 20,
+      "dailydialog": 20
+    },
+    "quarantined": 6,
+    "reviewer": "assistant",
+    "independent_human_review": false,
+    "interpretation": "Small qualitative inspection, not certification of the whole dataset or a measured corpus correctness rate. Native wording is retained; only exclusions, no replacement replies."
+  },
+  "quarantine_ids": {
+    "PUBLIC-001bc3ee4e7f7d851d2f": "Reply changes to rain/location from an unrelated latest message; unclear adjacency.",
+    "PUBLIC-0027a128e19edb3fcf18": "Reply mixes a weather acknowledgment with a separate gaming topic.",
+    "PUBLIC-0044694e0b228c00493d": "Greeting/name-like response without enough recoverable response meaning.",
+    "PUBLIC-00700e57e13ba9826505": "Borrow request followed by a venue answer; the actual response intent is unclear.",
+    "PUBLIC-01243c99eaf2a2dfb046": "Response ends with a historical date-like export fragment.",
+    "PUBLIC-015f73143c11ff727316": "Unclear punchline/reference response; poor fit for generic reply adaptation."
+  }
+}

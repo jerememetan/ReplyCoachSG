@@ -1,0 +1,207 @@
+{
+  "status": "replication_complete",
+  "jobs": [
+    351086,
+    351130
+  ],
+  "seeds": [
+    425,
+    1,
+    2
+  ],
+  "comparisons": "original versus sequential rewrite; aligned-only arm trained all seeds but qualitatively reviewed only for seed425",
+  "per_seed_reviews": {
+    "425": {
+      "checkpoint": "final step 784",
+      "counts": {
+        "original": {
+          "pairs": 50,
+          "context_pass": 35,
+          "same_meaning_fail": 30,
+          "singlish_fail": 20,
+          "all_three_pass": 8,
+          "same_meaning_pass": 17,
+          "singlish_pass": 27,
+          "context_fail": 12,
+          "same_meaning_uncertain": 3,
+          "singlish_uncertain": 3,
+          "context_uncertain": 3
+        },
+        "rewrite": {
+          "pairs": 50,
+          "context_fail": 15,
+          "same_meaning_uncertain": 3,
+          "singlish_pass": 37,
+          "all_three_pass": 23,
+          "context_pass": 32,
+          "same_meaning_pass": 42,
+          "same_meaning_fail": 5,
+          "singlish_fail": 13,
+          "context_uncertain": 3
+        },
+        "aligned": {
+          "pairs": 50,
+          "context_pass": 32,
+          "same_meaning_fail": 30,
+          "singlish_fail": 12,
+          "all_three_pass": 10,
+          "context_fail": 16,
+          "singlish_uncertain": 4,
+          "same_meaning_pass": 19,
+          "singlish_pass": 34,
+          "same_meaning_uncertain": 1,
+          "context_uncertain": 2
+        }
+      },
+      "packet_sha256": "7fbfdbf55f57303aff72ba97379e7c5d2dde896d9611de8ae7e71418baf5a9a3",
+      "ratings_sha256": "e6c568ff57df96af29da40427890d2a935ddf637c7c040a6f70301b0d4f94917",
+      "limitation": "Single-seed exploratory assistant review on 50 reused development conversations; not human gold. Identities hidden during ratings but may be inferred from outputs. Assistant authored 117 LOCAL revisions and knows prior model behavior. Uncertainty retained for ambiguous contexts/style rather than forced correctness. All-three-pass requires every axis pass; grammar/style strength judgments need independent human calibration. Assistant judgments are not independent human gold; 50 reused development conversations."
+    },
+    "1": {
+      "checkpoint": "final step 784",
+      "seed": 1,
+      "counts": {
+        "rewrite": {
+          "pairs": 50,
+          "context_fail": 12,
+          "same_meaning_pass": 48,
+          "singlish_pass": 39,
+          "all_three_pass": 28,
+          "context_pass": 35,
+          "singlish_fail": 9,
+          "singlish_uncertain": 2,
+          "context_uncertain": 3,
+          "same_meaning_fail": 2
+        },
+        "original": {
+          "pairs": 50,
+          "context_uncertain": 7,
+          "same_meaning_fail": 28,
+          "singlish_fail": 26,
+          "all_three_pass": 8,
+          "context_pass": 32,
+          "same_meaning_pass": 21,
+          "singlish_pass": 22,
+          "context_fail": 11,
+          "same_meaning_uncertain": 1,
+          "singlish_uncertain": 2
+        }
+      },
+      "packet_sha256": "8484376c72a7957ee33a186e8e787b8d80983d19d69a3d93aa7c4f4118946904",
+      "ratings_sha256": "3dcb984dae6401964dd6d3a99ba842243707b7a1d52e494003d1715296572176",
+      "limitation": "Exploratory assistant review, not human gold. Same reviewer as first seed, author of LOCAL training edits, and familiar with previous model outputs. Arm IDs hidden but style may reveal them. Context/style ambiguities retained as uncertain; judgments remain fallible. These seeds repeat the SAME 50 conversations, not new independent cases. Assistant judgments are not independent human gold; 50 reused development conversations."
+    },
+    "2": {
+      "checkpoint": "final step 784",
+      "seed": 2,
+      "counts": {
+        "rewrite": {
+          "pairs": 50,
+          "context_pass": 33,
+          "same_meaning_pass": 48,
+          "singlish_fail": 14,
+          "all_three_pass": 23,
+          "context_fail": 11,
+          "same_meaning_fail": 2,
+          "singlish_pass": 34,
+          "singlish_uncertain": 2,
+          "context_uncertain": 6
+        },
+        "original": {
+          "pairs": 50,
+          "context_pass": 32,
+          "same_meaning_pass": 23,
+          "singlish_fail": 25,
+          "all_three_pass": 9,
+          "singlish_pass": 22,
+          "context_fail": 9,
+          "same_meaning_fail": 26,
+          "context_uncertain": 9,
+          "singlish_uncertain": 3,
+          "same_meaning_uncertain": 1
+        }
+      },
+      "packet_sha256": "7f93d2c904faf452a5626be61b807097fc3cdcb8acff85350bdee12c2a0de363",
+      "ratings_sha256": "38420603c802dcf858f28bb49771d9cb2ad64fc75fe92c4c42fdd903625b32d4",
+      "limitation": "Exploratory assistant review, not human gold. Same reviewer as first seed, author of LOCAL training edits, and familiar with previous model outputs. Arm IDs hidden but style may reveal them. Context/style ambiguities retained as uncertain; judgments remain fallible. These seeds repeat the SAME 50 conversations, not new independent cases. Assistant judgments are not independent human gold; 50 reused development conversations."
+    }
+  },
+  "mean_pass_count_per_50": {
+    "original": {
+      "context_pass": 33,
+      "same_meaning_pass": 20.333333333333332,
+      "singlish_pass": 23.666666666666668,
+      "all_three_pass": 8.333333333333334
+    },
+    "rewrite": {
+      "context_pass": 33.333333333333336,
+      "same_meaning_pass": 46,
+      "singlish_pass": 36.666666666666664,
+      "all_three_pass": 24.666666666666668
+    }
+  },
+  "source_reports": {
+    "original_s425": {
+      "steps": 784,
+      "report_sha256": "6bdccd85888173690055dcdb40bfbc3c3ee5408909642b7f243ab622e203be6c",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "aligned_s425": {
+      "steps": 784,
+      "report_sha256": "eaa87dd6f7ffbccd52d2cef930f8690cc305d0150b7a88238632835b683e072c",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "rewrite_s425": {
+      "steps": 784,
+      "report_sha256": "2555b05f548007179520233b6d288f5c1c1878a5121755bc2cfcea2aec787812",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "original_s1": {
+      "steps": 784,
+      "report_sha256": "9f0bb886c726dfe57764c50667356d6495f31fc0e09fe2a80ce6ba416262a853",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "aligned_s1": {
+      "steps": 784,
+      "report_sha256": "bfc9839ea35fd4554f0f1c030a0b894cecda7c2242d8420c531cd0ac7df8097a",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "rewrite_s1": {
+      "steps": 784,
+      "report_sha256": "782f49f3c131e5295a244d523a798efcd4bbef444beebaf141f86b7fdabb09aa",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "original_s2": {
+      "steps": 784,
+      "report_sha256": "c01d241a28abed3e136f660e397b5503ca28b429a4b9769074c4b5f5c0718dd6",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "aligned_s2": {
+      "steps": 784,
+      "report_sha256": "df38c60148e340bae9d054524f301fc6cca75abb7b68dcb80b1d3409af81432c",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    },
+    "rewrite_s2": {
+      "steps": 784,
+      "report_sha256": "34c43763ff477bf161b17b01dd338954aede5cbb49e5fd4ae74fc9b48c1e611a",
+      "trainable_parameters": 1769472,
+      "parameter_count": 584170752
+    }
+  },
+  "limits": [
+    "All seeds reuse the same 50 development conversations; these are NOT 150 independent new conversations.",
+    "Same assistant reviewer and author of target edits; not independent human gold. Style and contextual judgments are subjective; uncertainty is retained.",
+    "Inconsistent quality/style judgments are possible; no human accuracy or statistical significance claim.",
+    "Both original and rewrite are fixed-final-step experimental checkpoints, not the selected deployed default.",
+    "Original-reference and rewrite oracle-conditioned LOCAL losses are not directly comparable quality scores."
+  ],
+  "decision": "Meaning and local-style improvement repeats across seeds; all-three pass count improves each seed. Context pass counts remain essentially unchanged. Do not promote to production or start RL based on these assistant judgments alone."
+}

@@ -1,0 +1,723 @@
+{
+  "version": "V5",
+  "stage": "finetune",
+  "method": "lora",
+  "base_model": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best",
+  "train_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/dpo_review73_v1/data/dev/train.jsonl",
+  "validation_path": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/dpo_review73_v1/data/dev/validation.jsonl",
+  "train_items": 190,
+  "train_pairs": 560,
+  "train_pairs_by_kind": {
+    "items": 380,
+    "context_variants": 0,
+    "context_pairs": 180,
+    "rehearsal": 0
+  },
+  "rehearsal_paths": [],
+  "synthetic": null,
+  "validation_items": 50,
+  "seed": 425,
+  "speaker_labels": true,
+  "joint": false,
+  "unlikelihood": null,
+  "preferences": null,
+  "lora": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.1,
+    "targets": [
+      "q",
+      "v"
+    ]
+  },
+  "epochs_requested": 8,
+  "patience": 2,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "max_source_tokens": 128,
+  "max_target_tokens": 48,
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 3090",
+  "parameter_count": 584170752,
+  "trainable_parameters": 1769472,
+  "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/dpo_review73_v1/artifacts/sft_s425/best",
+  "history": [
+    {
+      "epoch": 0,
+      "validation_loss": 3.0005,
+      "validation_loss_standard": 2.5988,
+      "validation_loss_local": 3.4023
+    },
+    {
+      "epoch": 1,
+      "train_loss": 3.0709,
+      "validation_loss": 2.9142,
+      "validation_loss_standard": 2.5185,
+      "validation_loss_local": 3.3099,
+      "seconds": 4.8
+    },
+    {
+      "epoch": 2,
+      "train_loss": 2.9147,
+      "validation_loss": 2.7176,
+      "validation_loss_standard": 2.3642,
+      "validation_loss_local": 3.071,
+      "seconds": 9.4
+    },
+    {
+      "epoch": 3,
+      "train_loss": 2.7203,
+      "validation_loss": 2.6255,
+      "validation_loss_standard": 2.2847,
+      "validation_loss_local": 2.9663,
+      "seconds": 14.2
+    },
+    {
+      "epoch": 4,
+      "train_loss": 2.627,
+      "validation_loss": 2.576,
+      "validation_loss_standard": 2.2362,
+      "validation_loss_local": 2.9157,
+      "seconds": 18.8
+    },
+    {
+      "epoch": 5,
+      "train_loss": 2.5197,
+      "validation_loss": 2.544,
+      "validation_loss_standard": 2.2115,
+      "validation_loss_local": 2.8766,
+      "seconds": 23.5
+    },
+    {
+      "epoch": 6,
+      "train_loss": 2.4693,
+      "validation_loss": 2.5208,
+      "validation_loss_standard": 2.1806,
+      "validation_loss_local": 2.8611,
+      "seconds": 28.1
+    },
+    {
+      "epoch": 7,
+      "train_loss": 2.3783,
+      "validation_loss": 2.508,
+      "validation_loss_standard": 2.1622,
+      "validation_loss_local": 2.8538,
+      "seconds": 32.7
+    },
+    {
+      "epoch": 8,
+      "train_loss": 2.3409,
+      "validation_loss": 2.499,
+      "validation_loss_standard": 2.1615,
+      "validation_loss_local": 2.8365,
+      "seconds": 37.4
+    }
+  ],
+  "best_epoch": 8,
+  "best_validation_loss": 2.499,
+  "peak_cuda_gb": 5.614,
+  "validation_outputs": [
+    {
+      "item_id": "ITEM-A-010",
+      "context": [
+        "this course is so tough.",
+        "yeah, I could really use some help too."
+      ],
+      "message": "peer: we very kiasu sia, first lesson already like that",
+      "reference_standard": "haha, its okay",
+      "generated_standard": "okay, I'll take it.",
+      "reference_local": "haha, nehmind",
+      "generated_local": "okay, i will try to do it later."
+    },
+    {
+      "item_id": "ITEM-A-017",
+      "context": [
+        "Hey! Where are you now?",
+        "I am reaching Harbourfront MRT, how about you?"
+      ],
+      "message": "Eh i double check with you, we are meeting at 7pm right?",
+      "reference_standard": "Nope, its at 8pm",
+      "generated_standard": "Yes, 7pm is fine.",
+      "reference_local": "No la, its at 8pm",
+      "generated_local": "Yep, 7pm is fine."
+    },
+    {
+      "item_id": "ITEM-A-024",
+      "context": [
+        "Hey have you printed the worksheet given out yesterday?",
+        "No, I will need to print it in school. Do you know how to use the printer?"
+      ],
+      "message": "paiseh, i don't know how to use the printer in school.",
+      "reference_standard": "It's okay, I will figure it out",
+      "generated_standard": "Okay, let me know how to use the printer.",
+      "reference_local": "It's okay, I will find out how to use it one",
+      "generated_local": "Okay, let me know how to use the printer."
+    },
+    {
+      "item_id": "ITEM-A-030",
+      "context": [
+        "How long is our booking?",
+        "Oh no, our timer went off."
+      ],
+      "message": "sian, need book somewhere else, our booking ran out",
+      "reference_standard": "okay, i will book a pod at the library",
+      "generated_standard": "No worries, I'll book somewhere else.",
+      "reference_local": "okay i will chope a pod at the library",
+      "generated_local": "okay, we can book somewhere else"
+    },
+    {
+      "item_id": "ITEM-A-033",
+      "context": [
+        "Hey should we grab lunch?",
+        "sure! Lets head to Koufu"
+      ],
+      "message": "eh the chicken rice stall open today anot?",
+      "reference_standard": "I will check the opening hours first.",
+      "generated_standard": "Yes, it opens today.",
+      "reference_local": "I check whether open anot first.",
+      "generated_local": "yep, the chicken rice stall open today"
+    },
+    {
+      "item_id": "ITEM-A-035",
+      "context": [
+        "I got to go for my appointment later",
+        "Yeah I should get going too"
+      ],
+      "message": "don't forget to dabao your food later",
+      "reference_standard": "Okay, thank you!",
+      "generated_standard": "Okay, I'll be back soon.",
+      "reference_local": "Okay, gamxia",
+      "generated_local": "Okay, I'll meet you later"
+    },
+    {
+      "item_id": "ITEM-A-038",
+      "context": [
+        "are we still playing badminton tonight?",
+        "yeah, I think so"
+      ],
+      "message": "i might be ten mins late leh",
+      "reference_standard": "That's okay, we can wait for you.",
+      "generated_standard": "Okay, I'll be there around nine",
+      "reference_local": "Can la, we wait for you.",
+      "generated_local": "okay, let me know when you reach"
+    },
+    {
+      "item_id": "ITEM-A-044",
+      "context": [
+        "have you submitted the project?",
+        "not yet, I am checking it first"
+      ],
+      "message": "remember ah, dont blur like sotong",
+      "reference_standard": "Don't worry, I will remember to submit",
+      "generated_standard": "No worries, I will send it to you later.",
+      "reference_local": "Can, I will remember one.",
+      "generated_local": "okay, i will send it later"
+    },
+    {
+      "item_id": "ITEM-A-046",
+      "context": [
+        "want to study together tomorrow?",
+        "sure, what time?"
+      ],
+      "message": "2pm u can anot, i can chiong from class",
+      "reference_standard": "You don't have to, take your time",
+      "generated_standard": "okay, 2pm sounds good.",
+      "reference_local": "Don't need la,  take your time.",
+      "generated_local": "okay, 2pm i can"
+    },
+    {
+      "item_id": "ITEM-A-054",
+      "context": [
+        "We are going to the club later right?",
+        "Yeah, I will go back to shower first."
+      ],
+      "message": "Aiyo, don't need la, let's go now",
+      "reference_standard": "Fair point, let's go",
+      "generated_standard": "Ok, let's go now.",
+      "reference_local": "ok la, let's go",
+      "generated_local": "Ok, let's go now"
+    },
+    {
+      "item_id": "ITEM-B-002",
+      "context": [
+        "I haven't eaten breakfast",
+        "same sia, I'm hungry also"
+      ],
+      "message": "where you want eat?",
+      "reference_standard": "How about the food court near the library?",
+      "generated_standard": "I'm going to eat at the cafeteria.",
+      "reference_local": "Can try the food court near the library.",
+      "generated_local": "I'm going to eat at the hawker centre"
+    },
+    {
+      "item_id": "ITEM-B-009",
+      "context": [
+        "I'm going library now",
+        "I'll come over after class"
+      ],
+      "message": "still got space?",
+      "reference_standard": "Yes, I found a few seats near the entrance.",
+      "generated_standard": "Yes, I'll be there in a few minutes.",
+      "reference_local": "Ya,  entrance got some seats.",
+      "generated_local": "Ya, still got space"
+    },
+    {
+      "item_id": "ITEM-B-029",
+      "context": [
+        "I can't remember which room we're in",
+        "I'm checking the timetable"
+      ],
+      "message": "which room is our class in?",
+      "reference_standard": "We're in SR3-3 today.",
+      "generated_standard": "It's in the second floor.",
+      "reference_local": "Today is SR3-2",
+      "generated_local": "It's in the second floor"
+    },
+    {
+      "item_id": "ITEM-B-034",
+      "context": [
+        "I might not make it to the morning class",
+        "I can send you an update afterwards"
+      ],
+      "message": "can tell me what I miss?",
+      "reference_standard": "Sure, I'll let you know what was covered.",
+      "generated_standard": "Sure, let me know what you missed.",
+      "reference_local": "Can, I update later.",
+      "generated_local": "Okay, let me know when you reach"
+    },
+    {
+      "item_id": "ITEM-B-042",
+      "context": [
+        "I'm waiting outside already",
+        "I'm reaching soon"
+      ],
+      "message": "sorry, I took the wrong bus",
+      "reference_standard": "No worries. Just let me know when you get here.",
+      "generated_standard": "I'm sorry, I didn't take it yet.",
+      "reference_local": "gg bro, update me when you reach.",
+      "generated_local": "Okay, I'll take the wrong bus."
+    },
+    {
+      "item_id": "ITEM-B-043",
+      "context": [
+        "a few of us are going out this weekend",
+        "sounds fun"
+      ],
+      "message": "you want come?",
+      "reference_standard": "Sure, I'd be happy to join you.",
+      "generated_standard": "Sure, I'll come.",
+      "reference_local": "Yea sure",
+      "generated_local": "okay, i'll come later"
+    },
+    {
+      "item_id": "ITEM-B-048",
+      "context": [
+        "are you coming to the event?",
+        "I was planning to"
+      ],
+      "message": "the event postpone for thirty minutes",
+      "reference_standard": "Thanks for letting me know. I'll arrive later too.",
+      "generated_standard": "okay, I'll be there in about half an hour.",
+      "reference_local": "Okay then I come later also.",
+      "generated_local": "okay, I'll be there"
+    },
+    {
+      "item_id": "ITEM-B-050",
+      "context": [
+        "I haven't exercised in a while",
+        "same, I've been busy with classes"
+      ],
+      "message": "want to go run later?",
+      "reference_standard": "Sure, what time do you want to go?",
+      "generated_standard": "Sure, I'll run later.",
+      "reference_local": "Can, what time you want run?",
+      "generated_local": "okay, I'll join later"
+    },
+    {
+      "item_id": "ITEM-B-056",
+      "context": [
+        "are you free for badminton tonight?",
+        "I should be free"
+      ],
+      "message": "the court is already booked for seven",
+      "reference_standard": "Okay, seven works for me.",
+      "generated_standard": "Okay, seven works for me.",
+      "reference_local": "Ok, seven can.",
+      "generated_local": "okay, seven works for me"
+    },
+    {
+      "item_id": "ITEM-B-057",
+      "context": [
+        "my phone is almost out of battery",
+        "I brought my charger"
+      ],
+      "message": "can I borrow your charger?",
+      "reference_standard": "Sure, you can borrow mine.",
+      "generated_standard": "Sure, I'll bring you a new one.",
+      "reference_local": "Yah can",
+      "generated_local": "Can, I borrow your charger"
+    },
+    {
+      "item_id": "ITEM-C-001",
+      "context": [
+        "are you going to the library ltr?",
+        "yeah, probably after dinner"
+      ],
+      "message": "i'll be at lks around 8, want to meet there?",
+      "reference_standard": "sure, see you there",
+      "generated_standard": "Sure, I'll meet you there around 8",
+      "reference_local": "can, see you there",
+      "generated_local": "okay, i'll meet you there"
+    },
+    {
+      "item_id": "ITEM-C-017",
+      "context": [
+        "im working on my slides now",
+        "same, im doing the results section"
+      ],
+      "message": "your part done alr?",
+      "reference_standard": "i just need to finish the last slide",
+      "generated_standard": "yes, I am finished it alr.",
+      "reference_local": "almost alr, left one slide only",
+      "generated_local": "yea, i finished it alr"
+    },
+    {
+      "item_id": "ITEM-C-018",
+      "context": [
+        "i'll upload my section before dinner",
+        "okay, then i can merge everything tonight"
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "reference_standard": "thanks for the reminder. i'll upload it shortly",
+      "generated_standard": "okay, i'll merge later.",
+      "reference_local": "ya, i remember. i upload in a while",
+      "generated_local": "okay, i'll merge later"
+    },
+    {
+      "item_id": "ITEM-C-023",
+      "context": [
+        "saturday im quite free",
+        "same, no plans yet"
+      ],
+      "message": "want me to jio you for the night market thing?",
+      "reference_standard": "yes, id like to go. lmk what time you're heading thr",
+      "generated_standard": "Sure, let me know when you're free.",
+      "reference_local": "can, jio me. just tell me what time yall going",
+      "generated_local": "okay, i'll join you for the night market"
+    },
+    {
+      "item_id": "ITEM-C-028",
+      "context": [
+        "im waiting at the cafe alr",
+        "coming now"
+      ],
+      "message": "paiseh, i ordered first because i was too hungry",
+      "reference_standard": "thats completely fine. i'll order when i arrive",
+      "generated_standard": "okay, i'll wait for you at the cafe",
+      "reference_local": "no problem lah, you eat first. i order when i reach",
+      "generated_local": "okay, i'll be there soon"
+    },
+    {
+      "item_id": "ITEM-C-038",
+      "context": [
+        "ive finished drafting the conclusion",
+        "great"
+      ],
+      "message": "can help me check if this part sounds too long?",
+      "reference_standard": "sure. send it to me and i'll take a look",
+      "generated_standard": "Sure, let me check it for you.",
+      "reference_local": "can, just send me bah. i help you check",
+      "generated_local": "okay, let me check"
+    },
+    {
+      "item_id": "ITEM-C-041",
+      "context": [
+        "could you upload your section before 8?",
+        "yes, i'll do it"
+      ],
+      "message": "paiseh, i only just finished class. i'll upload a bit later",
+      "reference_standard": "no worries. just upload it when you're ready",
+      "generated_standard": "ok, i'll send you later",
+      "reference_local": "it's okay, upload later can. just let us know",
+      "generated_local": "okay, i'll send you later"
+    },
+    {
+      "item_id": "ITEM-C-045",
+      "context": [
+        "we said we'd sit together tmr",
+        "yep"
+      ],
+      "message": "you still coming early to get seats right?",
+      "reference_standard": "yes, i'll arrive a little early",
+      "generated_standard": "Yes, I'm coming early to get seats.",
+      "reference_local": "ya, i come early and get seats first",
+      "generated_local": "yep, i reaching early"
+    },
+    {
+      "item_id": "ITEM-C-055",
+      "context": [
+        "lets go to the exhibition at 1",
+        "sounds good"
+      ],
+      "message": "can go around 2 instead? i need lunch first",
+      "reference_standard": "sure, 2 works for me",
+      "generated_standard": "Sure, 2 works for me.",
+      "reference_local": "can, go makan first. 2 is fine",
+      "generated_local": "can, 2 works for me"
+    },
+    {
+      "item_id": "ITEM-C-058",
+      "context": [
+        "im heading to the court now",
+        "okay, i'll leave soon"
+      ],
+      "message": "court still occupied leh, need wait a bit",
+      "reference_standard": "okay, i'll come over slowly then",
+      "generated_standard": "okay, i'll wait for you.",
+      "reference_local": "okay lor, i come a bit later then",
+      "generated_local": "okay, i'll leave soon"
+    },
+    {
+      "item_id": "ITEM-D-007",
+      "context": [
+        "u wanna try the matcha at luckin?",
+        "nahh"
+      ],
+      "message": "then what u wanna drink later?",
+      "reference_standard": "I would like to try the new cafe latte there.",
+      "generated_standard": "I'm not sure.",
+      "reference_local": "i want drink the new latte",
+      "generated_local": "idk leh, i think i'll join later"
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "context": [
+        "eh i struggling to do the linear algebra qn",
+        "which"
+      ],
+      "message": "neh the gaussian elim qn",
+      "reference_standard": "I have done the question. Allow me to assist.",
+      "generated_standard": "eh, i think i'll do it myself",
+      "reference_local": "so easy, come i help u",
+      "generated_local": "eh i dont think i can do it"
+    },
+    {
+      "item_id": "ITEM-D-010",
+      "context": [
+        "hello, can i ask u some question idk how to do",
+        "uhh i see if i can help"
+      ],
+      "message": "uhh, u know the guassian elim qn",
+      "reference_standard": "I am sorry, I can't provide much help for that question.",
+      "generated_standard": "yes, i know it",
+      "reference_local": "lol u think i know how do mehh",
+      "generated_local": "ya i know"
+    },
+    {
+      "item_id": "ITEM-D-013",
+      "context": [
+        "hello",
+        "yes?"
+      ],
+      "message": "Can give me ans for assignment 1?",
+      "reference_standard": "Nope. You should learn to do it by yourself.",
+      "generated_standard": "Sure, I'll give you a list.",
+      "reference_local": "ownself go learn bruh",
+      "generated_local": "can, i give you a list"
+    },
+    {
+      "item_id": "ITEM-D-029",
+      "context": [
+        "eh so how, you still want bid for the morning class?",
+        "yah can"
+      ],
+      "message": "ok then rmb to bid before bidding ends",
+      "reference_standard": "Ok, I will bid later.",
+      "generated_standard": "okay, thanks.",
+      "reference_local": "ok i bid later",
+      "generated_local": "okay, i will send u the link"
+    },
+    {
+      "item_id": "ITEM-D-033",
+      "context": [
+        "hello",
+        "hi",
+        "i am already at the bus stop"
+      ],
+      "message": "wya",
+      "reference_standard": "I am currently still on the way to the bus stop.",
+      "generated_standard": "okay, i will take a bus to get there",
+      "reference_local": "im still otw",
+      "generated_local": "okay, i am reaching soon"
+    },
+    {
+      "item_id": "ITEM-D-037",
+      "context": [
+        "have you reached?",
+        "wya"
+      ],
+      "message": "i reached, i waiting outside mac",
+      "reference_standard": "Ok , I am heading there right now.",
+      "generated_standard": "okay, i'll wait for you.",
+      "reference_local": "okok, i gg over now",
+      "generated_local": "okay, i reached alr"
+    },
+    {
+      "item_id": "ITEM-D-038",
+      "context": [
+        "eh wya",
+        "i am outside mac",
+        "u eh"
+      ],
+      "message": "I am reaching soon, wait for me before going in.",
+      "reference_standard": "Okay, hurry up.",
+      "generated_standard": "ok, i will wait for you.",
+      "reference_local": "faster la",
+      "generated_local": "ok, i am reaching soon"
+    },
+    {
+      "item_id": "ITEM-D-046",
+      "context": [
+        "eh help",
+        "what"
+      ],
+      "message": "the cinema ticket is sold out bruh",
+      "reference_standard": "Oh no, can we see if there are other timings?",
+      "generated_standard": "okay, I'll take it.",
+      "reference_local": "aiyo, got other timings anot",
+      "generated_local": "okay, i'll take it"
+    },
+    {
+      "item_id": "ITEM-D-050",
+      "context": [
+        "eh u ok? why u never join us for bb session yesterday."
+      ],
+      "message": "woah sorry, i came up with a flu.",
+      "reference_standard": "It's ok. We shall play basketball again when you get better.",
+      "generated_standard": "oh, sorry, i didn't see u today.",
+      "reference_local": "oh, is ok, we play another time, when u feeling better",
+      "generated_local": "sorry, i dont think i will be able to join us for bb session"
+    },
+    {
+      "item_id": "ITEM-E-005",
+      "context": [
+        "i heard you going to cafe later to study",
+        "ya you want come? dont say i never jio"
+      ],
+      "message": "can ah, later i join you",
+      "reference_standard": "sweet, see you later",
+      "generated_standard": "ok, i join later",
+      "reference_local": "ok swee see you later",
+      "generated_local": "can, i join later"
+    },
+    {
+      "item_id": "ITEM-E-007",
+      "context": [
+        "tomorrow what you want to eat",
+        "lets eat at Chinatown tomorrow"
+      ],
+      "message": "onz, tmr meet na li",
+      "reference_standard": "Shall we meet at the train station?",
+      "generated_standard": "okay, tmr i meet u",
+      "reference_local": "we meet at mrt?",
+      "generated_local": "okay, tmr i meet u"
+    },
+    {
+      "item_id": "ITEM-E-009",
+      "context": [
+        "later I need to lend your charger to charge my phone",
+        "ok can but I can only give you after 3"
+      ],
+      "message": "hey can confirm i can use your charger after 3? thanks ah",
+      "reference_standard": "yes, all good",
+      "generated_standard": "Sure, I'll be able to use it after 3",
+      "reference_local": "ya can ah",
+      "generated_local": "can, i confirm with you after 3"
+    },
+    {
+      "item_id": "ITEM-E-015",
+      "context": [
+        "Hi guys, remember to do the quiz, deadline is next week",
+        "yep noted"
+      ],
+      "message": "hi have you done the quiz alr anot",
+      "reference_standard": "Yes, I finished it already.",
+      "generated_standard": "No, I haven't done it yet.",
+      "reference_local": "Ya i fin alr",
+      "generated_local": "yep, i finished it alr"
+    },
+    {
+      "item_id": "ITEM-E-025",
+      "context": [
+        "hi class, I had a family emergency and there will not be any class tomorrow.",
+        "oh no! what about the in class quiz?"
+      ],
+      "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+      "reference_standard": "Yes, we are able to meet on thursday.",
+      "generated_standard": "yeah, thursday is fine.",
+      "reference_local": "ya we thursday can.",
+      "generated_local": "okay, thursday is fine."
+    },
+    {
+      "item_id": "ITEM-E-027",
+      "context": [
+        "eh the school got 3d printer anot how to use",
+        "have, i using it now, you need to book a slot to use",
+        "ok i book later to use"
+      ],
+      "message": "paiseh ah can i change my booking i want to use it later",
+      "reference_standard": "can, no problem",
+      "generated_standard": "can, i change it later",
+      "reference_local": "canz, np",
+      "generated_local": "can, i change it later"
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "context": [
+        "bro you want to eat at kopitiam later? The whole gang is cmg",
+        "if you want ah let us know"
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "reference_standard": "all good man, we can meet next time",
+      "generated_standard": "okay, let's meet at kopitiam later.",
+      "reference_local": "all good, we meet next time bah",
+      "generated_local": "okay, i can meet you at kopitiam later"
+    },
+    {
+      "item_id": "ITEM-E-032",
+      "context": [
+        "I reminded the class the tutorial is at SR3-1 liao",
+        "can you change today's tutorial to be in SR3-2 instead?"
+      ],
+      "message": "sorry ah but that one cannot, someone book liao",
+      "reference_standard": "alright, lets stick to the current arrangements",
+      "generated_standard": "okay, let me know when the class starts",
+      "reference_local": "ok lor, we stick to the current arrangements",
+      "generated_local": "okay, i booked for you"
+    },
+    {
+      "item_id": "ITEM-E-040",
+      "context": [
+        "so much work this week wtf",
+        "ya sia"
+      ],
+      "message": "how ah, want meet together to do work?",
+      "reference_standard": "sure thing, let's do that",
+      "generated_standard": "yeah, I'll meet you there.",
+      "reference_local": "can ah",
+      "generated_local": "can, i meet y'all after work"
+    },
+    {
+      "item_id": "ITEM-E-046",
+      "context": [
+        "hello,what time will you release the lecture recordings?",
+        "usually around 10pm its out"
+      ],
+      "message": "ni hao, can I releasae it at 5 instead?",
+      "reference_standard": "no sorry, I can't do that",
+      "generated_standard": "Sure, 5 is fine.",
+      "reference_local": "sorry, cant do",
+      "generated_local": "can, i leave it at 5"
+    }
+  ]
+}

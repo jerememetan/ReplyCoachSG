@@ -1,0 +1,146 @@
+[
+  {
+    "item_id": "TARGETREPAIR-001",
+    "context": [
+      "I am going to the minimart after class.",
+      "I am still in a meeting."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you pick up a tea for me?"
+  },
+  {
+    "item_id": "TARGETREPAIR-002",
+    "context": [
+      "I am still in the seminar.",
+      "I am at the juice stall now."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What should I get you?"
+  },
+  {
+    "item_id": "TARGETREPAIR-003",
+    "context": [
+      "I have the field-trip photos on my phone.",
+      "I did not take any photos."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send me those photos?"
+  },
+  {
+    "item_id": "TARGETREPAIR-004",
+    "context": [
+      "I could not download the registration pack.",
+      "I have a copy in my email."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like me to forward it to you?"
+  },
+  {
+    "item_id": "TARGETREPAIR-005",
+    "context": [
+      "You still have my USB drive.",
+      "Yes, it is in my laptop bag."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your USB drive tomorrow?"
+  },
+  {
+    "item_id": "TARGETREPAIR-006",
+    "context": [
+      "I still have your whiteboard marker.",
+      "I need it for the lesson."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you return my marker before the lesson?"
+  },
+  {
+    "item_id": "TARGETREPAIR-007",
+    "context": [
+      "You said you would bring your HDMI cable.",
+      "Yes, I will pack it tonight."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "You are bringing the HDMI cable, right?"
+  },
+  {
+    "item_id": "TARGETREPAIR-008",
+    "context": [
+      "I have not begun writing my lab report.",
+      "The submission is on Friday."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is your lab report finished?"
+  },
+  {
+    "item_id": "TARGETREPAIR-009",
+    "context": [
+      "I already uploaded the practice video.",
+      "I will look for the link."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Do you still need to upload the video?"
+  },
+  {
+    "item_id": "TARGETREPAIR-010",
+    "context": [
+      "I only have nine dollars for dinner.",
+      "There are a few places nearby."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to get the twenty-two-dollar meal?"
+  },
+  {
+    "item_id": "TARGETREPAIR-011",
+    "context": [
+      "I cannot leave the office until 4:40.",
+      "We could get coffee afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we meet for coffee at 4:15?"
+  },
+  {
+    "item_id": "TARGETREPAIR-012",
+    "context": [
+      "I have not checked when the robotics room opens.",
+      "Holiday hours may be different."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does it open at eight?"
+  }
+]

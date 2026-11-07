@@ -1,0 +1,62 @@
+{
+  "scope": "Same 20 development contexts and fixed STANDARD anchors across all systems",
+  "assistant_flagged_standard_cases": {
+    "1": "Off-topic meeting suggestion in response to relief after submitting report.",
+    "2": "Changes supportive eye-appointment conversation into own scheduling conflict.",
+    "3": "Asked which bread; answers fried eggs without addressing bread choice.",
+    "5": "Swaps borrower/lender role: peer offers to return user notes; user offers to return them.",
+    "6": "Claims completed proofreading without prior evidence of completion.",
+    "7": "Contradicts stated inability to play by saying arrival in minutes.",
+    "9": "Asks for notification of overthinking when peer has just reported it.",
+    "12": "Should identify blue sign; instead requests to see it.",
+    "13": "Incoherent location: behind your stand for leaving that same stand.",
+    "14": "Treats distress about unequal workload as a good idea.",
+    "16": "Accepts tonight despite explicitly being busy tonight.",
+    "17": "Requests finding announcement earlier, an impossible backward-time request.",
+    "18": "Responds to gratitude by saying glad peer did not notice; mismatched meaning."
+  },
+  "limitations": [
+    "Assistant issue flags, not human preference labels or calibrated quality ratings.",
+    "Unflagged cases are not certified passes.",
+    "Can openings include grammatical uses; not a naturalness metric.",
+    "Do not compare rates with previous different 30-case review.",
+    "Development cases are not untouched test evidence."
+  ],
+  "surface_diagnostics": {
+    "full_context": {
+      "n": 20,
+      "can_openings": 4,
+      "normalized_copies": 11
+    },
+    "anchor_only": {
+      "n": 20,
+      "can_openings": 1,
+      "normalized_copies": 9
+    },
+    "exemplar": {
+      "n": 20,
+      "can_openings": 1,
+      "normalized_copies": 13
+    },
+    "incumbent_best_beam1": {
+      "n": 20,
+      "can_openings": 16,
+      "normalized_copies": 1
+    },
+    "incumbent_best_beam4": {
+      "n": 20,
+      "can_openings": 12,
+      "normalized_copies": 4
+    },
+    "incumbent_final_beam1": {
+      "n": 20,
+      "can_openings": 14,
+      "normalized_copies": 2
+    },
+    "incumbent_final_beam4": {
+      "n": 20,
+      "can_openings": 15,
+      "normalized_copies": 2
+    }
+  }
+}

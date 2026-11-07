@@ -1,0 +1,244 @@
+{
+  "seed": 498116495,
+  "pool_size": 106,
+  "sampling": "Single uniform draw without replacement from all106 shared development conversations; no retries or quality filtering.",
+  "models": {
+    "sealion": {
+      "label": "SEA-LION 3B",
+      "repo": "aisingapore/SEA-LION-v1-3B",
+      "english_checkpoint_job": 356177,
+      "rewrite_checkpoint_job": 356662,
+      "inference_job": 356913,
+      "method": "beam4_ng3",
+      "max_new_tokens": 64,
+      "source_report": "artifacts/sealion_beam_v1/results.json",
+      "source_report_sha256": "361042d8d8154f928da86ac1f44d5724be01fcfa216797682bb8661c170bb39c"
+    },
+    "older_mt5": {
+      "label": "Older mT5 reference",
+      "checkpoint": "shared_intent_v1/rewrite_s1/final",
+      "checkpoint_job": 351130,
+      "replay_job": 357554,
+      "historical_pairs_reproduced_exactly": 50,
+      "max_new_tokens": 48,
+      "note": "The older checkpoint the user recalled; not certified the best on every case.",
+      "source_report": "artifacts/mt5_context_pairs_v1/control_results.json",
+      "source_report_sha256": "8b2e6721b964262dc879d429f8076f5acf0a02189af479db4a2886b0117911dc"
+    },
+    "context_mt5": {
+      "label": "mT5 +180 context pairs",
+      "checkpoint_job": 357555,
+      "seed": 1,
+      "checkpoint": "Finalstep784",
+      "shared_adapter": true,
+      "max_new_tokens": 48,
+      "source_report": "artifacts/mt5_context_pairs_v1/context_results.json",
+      "source_report_sha256": "71cdf439017c71c451e40fd87e542deafb09ba3cbd4955bca2b1441dde5db50b"
+    },
+    "mlp_mt5": {
+      "label": "mT5 small MLP",
+      "checkpoint_job": 357449,
+      "english_selected_epoch": 3,
+      "rewrite_selected_epoch": 4,
+      "max_new_tokens": 64,
+      "source_report": "artifacts/mt5_mlp_generation_v1/results.json",
+      "source_report_sha256": "1ff515373a10a916c7239c72eca50d9aeb6b5e9480ad19a2cfc86b484310575f"
+    }
+  },
+  "decoding": "Four beams, no_repeat_ngram_size3, deterministic. Existing checkpoint-specific token caps retained and recorded per model.",
+  "pipeline": "Own generated English followed by its own Singlish renderer; no reference-English anchors or independent direct-LOCAL replies.",
+  "outputs_edited": false,
+  "locked_test_used": false,
+  "samples": [
+    {
+      "item_id": "SEADUAL-002",
+      "context": [
+        "My lunch budget today is eleven dollars.",
+        "We can find something nearby."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want the twenty-seven-dollar lunch set?",
+      "models": {
+        "sealion": {
+          "english": "That's too expensive for me. Could we find something cheaper?",
+          "singlish": "Too expensive leh. Find something cheaper can?",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "older_mt5": {
+          "english": "Yes, I'd like to get the twenty-seven-dollar lunch set.",
+          "singlish": "Can, twenty-seven lunch set also can.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "context_mt5": {
+          "english": "Yes, I'll check the twenty-seven-dollar lunch budget.",
+          "singlish": "Can, twenty-seven-dollar lunch set I check.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mlp_mt5": {
+          "english": "Yes, I'd prefer the twenty-seven-dollar lunch set.",
+          "singlish": "Can, I get the twenty-dollar lunch set.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "RESTORE-FRESH-001",
+      "context": [
+        "I am free after dinner.",
+        "We are going for a walk around the park."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want to join us at eight?",
+      "models": {
+        "sealion": {
+          "english": "Yes, I would like to join you at eight.",
+          "singlish": "Can, I join you at eight.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "older_mt5": {
+          "english": "Sure, eight works for me.",
+          "singlish": "Can, eight also can.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "context_mt5": {
+          "english": "Yes, I'll join you at eight.",
+          "singlish": "Yes, eight I join you at eight.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mlp_mt5": {
+          "english": "No worries, see you at eight.",
+          "singlish": "Can, see you at eight.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "RESTORE-FRESH-023",
+      "context": [
+        "We are meeting for supper tonight.",
+        "Let me know if you can come."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "Sorry, I have too much work and cannot join tonight.",
+      "models": {
+        "sealion": {
+          "english": "No worries. I understand.",
+          "singlish": "No worries lah, next time then catch up.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "older_mt5": {
+          "english": "Sorry, I can't come tonight.",
+          "singlish": "Sorry ah, I cannot come tonight.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "context_mt5": {
+          "english": "I'll check whether you can make it tonight.",
+          "singlish": "I check whether you can make it tonight.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mlp_mt5": {
+          "english": "That works for me.",
+          "singlish": "Okay, let me know when you free.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-E-040",
+      "context": [
+        "so much work this week wtf",
+        "ya sia"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "how ah, want meet together to do work?",
+      "models": {
+        "sealion": {
+          "english": "Sure, let's meet this week.",
+          "singlish": "Can, let's meet this week.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "older_mt5": {
+          "english": "I'd like to meet you at the library.",
+          "singlish": "Can, library meet you at library.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "context_mt5": {
+          "english": "I'm not sure yet. I'll check my schedule.",
+          "singlish": "I not sure yet leh. I check my schedule first.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mlp_mt5": {
+          "english": "Sure, let's meet at the library.",
+          "singlish": "ya sia idk what time leh",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "RESTORE-FRESH-003",
+      "context": [
+        "I missed the last part of the briefing.",
+        "I wrote down the key points."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want me to send you a photo of my notes?",
+      "models": {
+        "sealion": {
+          "english": "Yes please, send me a photo of your notes.",
+          "singlish": "Yes please, send me a photo of your notes ah.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "older_mt5": {
+          "english": "Sure, I'll send you a photo.",
+          "singlish": "Can, I send you a photo.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "context_mt5": {
+          "english": "Sure, I'll send you a photo of my notes.",
+          "singlish": "Can, I send you a photo of my notes.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mlp_mt5": {
+          "english": "Sure, please send me a photo of your notes.",
+          "singlish": "Can, I send you a photo of my notes.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    }
+  ]
+}

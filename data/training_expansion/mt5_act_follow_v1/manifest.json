@@ -1,0 +1,27 @@
+{
+  "experiment": "mt5_act_follow_v1",
+  "counts": {
+    "train": {
+      "conversations": 24,
+      "targets": 48
+    },
+    "validation": {
+      "conversations": 8,
+      "targets": 16
+    },
+    "evaluation": {
+      "conversations": 16,
+      "targets": 32
+    }
+  },
+  "source_sha256": {
+    "data/training_expansion/mt5_act_follow_v1/train.json": "c6559b34a5d8d04db390abef1c0f8731303efd6eab3bff0e440e1e2b09aad5bc",
+    "data/training_expansion/mt5_act_follow_v1/validation.json": "cc73a1822438db4091e349da22b14ae021ac6db5598db15c0de3f7b414d12e9e",
+    "data/training_expansion/mt5_act_follow_v1/evaluation.json": "72cef0f0806d3e60e2ac98a70fe7d2a8df347542020cbccaf7a44b7468308326"
+  },
+  "provenance": "Explicit assistant-authored pairs, two context-compatible reply-act choices per conversation. New English targets only; original LOCAL targets unchanged.",
+  "scope": "Development experiment. Evaluation conversations are frozen before training and first output inspection, but assistant-authored and structurally related to training; not independent human gold or the locked product test.",
+  "split_policy": "Whole conversation groups kept together; no exact context/speaker/message overlap among new splits or with original 190/50 and prior 24 diagnostics. No claim of broad semantic decontamination.",
+  "classifier_policy": "Only original 190 provisional labels supervise classifier. Alternative replies to paired conversations are not treated as uniquely inferable hidden intentions.",
+  "evaluation_policy": "Primary supplied-act controllability on 16 fresh evaluation conversations with two routes each. Classifier-predicted pipeline evaluated separately as any compatible response, not exact preferred-act accuracy. No tuning on these evaluation outputs during this run."
+}

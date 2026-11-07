@@ -39,6 +39,12 @@ def load_v5() -> ReplyGenerator:
             f"Role D: no trained V5 checkpoint at {checkpoint}. Copy one into artifacts/ or set {CHECKPOINT_ENV} "
             "to a stage 2 checkpoint folder, e.g. artifacts/spk1_ul025_s425/best."
         )
+    from replycoach.generate.hybrid_v5 import configured_rewriter, HybridV5Generator, LOCAL_REWRITE_ENV
+    rewriter = configured_rewriter()
+    if rewriter is not None:
+        if not (rewriter / 'v5_input.json').exists():
+            raise GeneratorUnavailable(f'No LOCAL rewrite checkpoint at {rewriter}; check {LOCAL_REWRITE_ENV}.')
+        return HybridV5Generator(checkpoint, rewriter)
     return V5Generator(checkpoint)
 
 

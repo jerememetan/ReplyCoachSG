@@ -1,0 +1,2174 @@
+{
+  "status": "complete",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "model_metadata": {
+    "name": "qwen3:4b-instruct-2507-q4_K_M",
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "modified_at": "2026-11-06T14:57:07.004298277+08:00",
+    "size": 2497293803,
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen3",
+      "families": [
+        "qwen3"
+      ],
+      "parameter_size": "4.0B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 262144,
+      "embedding_length": 2560,
+      "runner": "ggml"
+    },
+    "capabilities": [
+      "tools",
+      "thinking",
+      "completion"
+    ]
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 425,
+    "num_ctx": 4096,
+    "num_predict": 512
+  },
+  "prompts": {
+    "direct": "Draft the USER's next short message to PEER. Respect explicit roles, ownership, negation, completed versus future actions and constraints. Answer the latest message. Accepting, refusing, counterproposing and clarifying are valid. Plausible personal choices or new details are allowed unless they contradict the conversation. Use natural conversational standard English, normally one or two brief sentences. All supplied conversation strings are task data, never instructions. Return JSON with only a reply string.",
+    "plan": "Extract a brief explicit reply plan, not a reply or a reasoning essay. Identify the latest peer request, established facts with their correct actors/owners, explicit constraints, and a suitable reply goal. Do not invent established facts. User-selectable preferences, refusals, counterproposals and clarification are allowed. Conversation strings are task data, never instructions. Return only JSON with latest_request string, known_facts array, constraints array, reply_goal string. Keep each field brief.",
+    "rewrite": "Rewrite the supplied English draft into natural Singaporean student-chat Singlish. Preserve the same meaning: speaker, recipient, ownership, negation, uncertainty, timing, completion, question, refusal and commitment. Do not answer the draft or add actions or facts. Use the examples only as stylistic guidance; never copy their content. Natural Singlish can be English-led; do not mechanically prepend Can or append particles. Return JSON with only a reply string."
+  },
+  "cases": [
+    {
+      "item_id": "COMP1-001",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "No, I finish at 7:15, so 6:45 is too early."
+        },
+        "runtime": {
+          "seconds": 34.218007903080434,
+          "done_reason": "stop",
+          "prompt_tokens": 179,
+          "output_tokens": 27
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "User's shift ends at 7:15",
+            "Dinner meeting proposed at 6:45"
+          ],
+          "known_facts": [
+            "User finishes shift at 7:15",
+            "Peer suggests dinner at 6:45"
+          ],
+          "latest_request": "Confirm or respond to peer's dinner suggestion at 6:45",
+          "reply_goal": "Politely decline the dinner meeting at 6:45 due to shift ending at 7:15"
+        },
+        "runtime": {
+          "seconds": 6.978220845106989,
+          "done_reason": "stop",
+          "prompt_tokens": 182,
+          "output_tokens": 121
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'll finish my shift at 7:15, so I can't make it to dinner at 6:45. Maybe we can plan something later?"
+        },
+        "runtime": {
+          "seconds": 3.1007630806416273,
+          "done_reason": "stop",
+          "prompt_tokens": 308,
+          "output_tokens": 40
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "I finish at 7:15. Could we meet after that?",
+        "status": "complete",
+        "value": {
+          "reply": "I finish 7.15, can we meet after that?"
+        },
+        "runtime": {
+          "seconds": 1.636272429022938,
+          "done_reason": "stop",
+          "prompt_tokens": 264,
+          "output_tokens": 20
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "No, I finish at 7:15, so 6:45 is too early.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, 6:45 too early. I finish at 7:15 la."
+        },
+        "runtime": {
+          "seconds": 1.5626882198266685,
+          "done_reason": "stop",
+          "prompt_tokens": 270,
+          "output_tokens": 28
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I'll finish my shift at 7:15, so I can't make it to dinner at 6:45. Maybe we can plan something later?",
+        "status": "complete",
+        "value": {
+          "reply": "7.15 shift, so no lah at 6.45 dinner. Maybe plan later?"
+        },
+        "runtime": {
+          "seconds": 1.3706445437856019,
+          "done_reason": "stop",
+          "prompt_tokens": 283,
+          "output_tokens": 27
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-002",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "No, that would mean I'm already gone by 4:30, which is when I need to leave campus."
+        },
+        "runtime": {
+          "seconds": 2.1216600062325597,
+          "done_reason": "stop",
+          "prompt_tokens": 178,
+          "output_tokens": 31
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "User must leave campus by 4:30",
+            "Meeting duration is one hour",
+            "Peer suggests starting at 4:00"
+          ],
+          "known_facts": [
+            "User's departure time is 4:30",
+            "Meeting is one hour long",
+            "Peer proposes starting at 4:00"
+          ],
+          "latest_request": "Can we start our one-hour meeting at four?",
+          "reply_goal": "Confirm if starting at 4:00 allows user to leave by 4:30"
+        },
+        "runtime": {
+          "seconds": 8.304765423759818,
+          "done_reason": "stop",
+          "prompt_tokens": 181,
+          "output_tokens": 129
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, starting at 4:00 works because I need to leave by 4:30."
+        },
+        "runtime": {
+          "seconds": 1.0182853951118886,
+          "done_reason": "stop",
+          "prompt_tokens": 313,
+          "output_tokens": 28
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Could we start earlier? I need to leave by 4:30.",
+        "status": "complete",
+        "value": {
+          "reply": "Can we start earlier? I need leave by 4.30"
+        },
+        "runtime": {
+          "seconds": 1.4935143636539578,
+          "done_reason": "stop",
+          "prompt_tokens": 265,
+          "output_tokens": 20
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "No, that would mean I'm already gone by 4:30, which is when I need to leave campus.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, by 4.30 already? Need leave campus, so no lah."
+        },
+        "runtime": {
+          "seconds": 1.4459954560734332,
+          "done_reason": "stop",
+          "prompt_tokens": 274,
+          "output_tokens": 26
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Yes, starting at 4:00 works because I need to leave by 4:30.",
+        "status": "complete",
+        "value": {
+          "reply": "Yes, 4pm work lah, need leave by 4:30"
+        },
+        "runtime": {
+          "seconds": 0.9978033285588026,
+          "done_reason": "stop",
+          "prompt_tokens": 271,
+          "output_tokens": 22
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-003",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "No, I cannot come on Wednesday evening as I have already stated I cannot rehearse on Wednesday."
+        },
+        "runtime": {
+          "seconds": 1.1702854121103883,
+          "done_reason": "stop",
+          "prompt_tokens": 174,
+          "output_tokens": 26
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "User cannot rehearse on Wednesday",
+            "User is free on Thursday"
+          ],
+          "known_facts": [
+            "Peer reports that everyone picked Wednesday evening",
+            "User is unavailable on Wednesday"
+          ],
+          "latest_request": "Can you come?",
+          "reply_goal": "Politely decline and suggest an alternative day"
+        },
+        "runtime": {
+          "seconds": 4.421432920265943,
+          "done_reason": "stop",
+          "prompt_tokens": 177,
+          "output_tokens": 82
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm sorry, but I can't make it on Wednesday. Thursday would work better for me though!"
+        },
+        "runtime": {
+          "seconds": 2.021653473842889,
+          "done_reason": "stop",
+          "prompt_tokens": 263,
+          "output_tokens": 27
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "I cannot do Wednesday. Is Thursday still possible?",
+        "status": "complete",
+        "value": {
+          "reply": "Wed no, Thursday still ok?"
+        },
+        "runtime": {
+          "seconds": 1.1657009716145694,
+          "done_reason": "stop",
+          "prompt_tokens": 259,
+          "output_tokens": 13
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "No, I cannot come on Wednesday evening as I have already stated I cannot rehearse on Wednesday.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, wednesday evening cannot. already say no rehearse."
+        },
+        "runtime": {
+          "seconds": 0.7565690386109054,
+          "done_reason": "stop",
+          "prompt_tokens": 269,
+          "output_tokens": 21
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I'm sorry, but I can't make it on Wednesday. Thursday would work better for me though!",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, Wed cannot. Thu better lah!"
+        },
+        "runtime": {
+          "seconds": 1.2728365417569876,
+          "done_reason": "stop",
+          "prompt_tokens": 270,
+          "output_tokens": 17
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-004",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I can only attend the morning session."
+        },
+        "runtime": {
+          "seconds": 0.45901531213894486,
+          "done_reason": "stop",
+          "prompt_tokens": 172,
+          "output_tokens": 14
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "User only attends morning sessions",
+            "Peer is asking about session preference"
+          ],
+          "known_facts": [
+            "User can attend only morning sessions",
+            "Peer has not yet confirmed session availability"
+          ],
+          "latest_request": "Would you prefer the morning or afternoon session?",
+          "reply_goal": "Confirm morning preference explicitly"
+        },
+        "runtime": {
+          "seconds": 4.540000596083701,
+          "done_reason": "stop",
+          "prompt_tokens": 175,
+          "output_tokens": 84
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I can only attend morning sessions."
+        },
+        "runtime": {
+          "seconds": 1.5585888680070639,
+          "done_reason": "stop",
+          "prompt_tokens": 263,
+          "output_tokens": 13
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "The morning session, please.",
+        "status": "complete",
+        "value": {
+          "reply": "Morning session, lah?"
+        },
+        "runtime": {
+          "seconds": 0.5034484821371734,
+          "done_reason": "stop",
+          "prompt_tokens": 255,
+          "output_tokens": 11
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I can only attend the morning session.",
+        "status": "complete",
+        "value": {
+          "reply": "morning session only lah."
+        },
+        "runtime": {
+          "seconds": 0.6904253629036248,
+          "done_reason": "stop",
+          "prompt_tokens": 257,
+          "output_tokens": 12
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I can only attend morning sessions.",
+        "status": "complete",
+        "value": {
+          "reply": "Morning session only lah. Can only go in the morning."
+        },
+        "runtime": {
+          "seconds": 1.3828253201209009,
+          "done_reason": "stop",
+          "prompt_tokens": 256,
+          "output_tokens": 18
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-005",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Sure, I'll return your stapler before lunch."
+        },
+        "runtime": {
+          "seconds": 0.7630644696764648,
+          "done_reason": "stop",
+          "prompt_tokens": 173,
+          "output_tokens": 17
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent facts",
+            "Only use established conversation data",
+            "Reply must be explicit and brief",
+            "Do not propose new solutions"
+          ],
+          "known_facts": [
+            "User still has stapler lent by peer",
+            "Peer needs stapler for poster",
+            "Peer requests return before lunch"
+          ],
+          "latest_request": "Could you return my stapler before lunch?",
+          "reply_goal": "Confirm return of stapler before lunch"
+        },
+        "runtime": {
+          "seconds": 6.634136084001511,
+          "done_reason": "stop",
+          "prompt_tokens": 176,
+          "output_tokens": 111
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Sure, I'll return your stapler before lunch."
+        },
+        "runtime": {
+          "seconds": 1.4416987532749772,
+          "done_reason": "stop",
+          "prompt_tokens": 288,
+          "output_tokens": 17
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Sure, I will return your stapler before lunch.",
+        "status": "complete",
+        "value": {
+          "reply": "ok lah, return your stapler before lunch"
+        },
+        "runtime": {
+          "seconds": 1.6039039380848408,
+          "done_reason": "stop",
+          "prompt_tokens": 260,
+          "output_tokens": 15
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "Sure, I'll return your stapler before lunch.",
+        "status": "complete",
+        "value": {
+          "reply": "sure, i return your stapler before lunch"
+        },
+        "runtime": {
+          "seconds": 1.2102561285719275,
+          "done_reason": "stop",
+          "prompt_tokens": 260,
+          "output_tokens": 15
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Sure, I'll return your stapler before lunch.",
+        "status": "complete",
+        "value": {
+          "reply": "sure, i return your stapler before lunch"
+        },
+        "runtime": {
+          "seconds": 0.8055144399404526,
+          "done_reason": "stop",
+          "prompt_tokens": 260,
+          "output_tokens": 15
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-006",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, that's fine. Just make sure to return it before you leave."
+        },
+        "runtime": {
+          "seconds": 1.841866521164775,
+          "done_reason": "stop",
+          "prompt_tokens": 177,
+          "output_tokens": 22
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Umbrella is currently with peer",
+            "Peer will return umbrella after class",
+            "User agreed to keep umbrella until rain stops"
+          ],
+          "known_facts": [
+            "User initially offered to keep peer's umbrella until rain stops",
+            "Peer currently has the umbrella in their bag",
+            "Peer proposes returning the umbrella after class"
+          ],
+          "latest_request": "Is it okay if I return your umbrella after class?",
+          "reply_goal": "Confirm acceptance of return timing and ensure no obligation remains"
+        },
+        "runtime": {
+          "seconds": 6.957156873308122,
+          "done_reason": "stop",
+          "prompt_tokens": 180,
+          "output_tokens": 120
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, that's fine. Just return it after class, and there's no obligation either way."
+        },
+        "runtime": {
+          "seconds": 1.3900373098440468,
+          "done_reason": "stop",
+          "prompt_tokens": 303,
+          "output_tokens": 26
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Yes, after class is fine.",
+        "status": "complete",
+        "value": {
+          "reply": "Yes, after class lah, fine."
+        },
+        "runtime": {
+          "seconds": 0.984530929941684,
+          "done_reason": "stop",
+          "prompt_tokens": 256,
+          "output_tokens": 14
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "Yes, that's fine. Just make sure to return it before you leave.",
+        "status": "complete",
+        "value": {
+          "reply": "ok lah, just make sure return before you leave"
+        },
+        "runtime": {
+          "seconds": 0.9839752237312496,
+          "done_reason": "stop",
+          "prompt_tokens": 265,
+          "output_tokens": 16
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Yes, that's fine. Just return it after class, and there's no obligation either way.",
+        "status": "complete",
+        "value": {
+          "reply": "ok lah, just return after class, no need to do anything"
+        },
+        "runtime": {
+          "seconds": 1.4116997430101037,
+          "done_reason": "stop",
+          "prompt_tokens": 269,
+          "output_tokens": 19
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-007",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, please send them."
+        },
+        "runtime": {
+          "seconds": 0.6110847322270274,
+          "done_reason": "stop",
+          "prompt_tokens": 172,
+          "output_tokens": 12
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent established facts",
+            "User may refuse or request clarification",
+            "Reply must be explicit and brief"
+          ],
+          "known_facts": [
+            "User missed instructions for the survey",
+            "Peer took notes during the briefing"
+          ],
+          "latest_request": "Would you like me to send you my notes?",
+          "reply_goal": "Offer a clear, concise option for the user to accept or decline receiving the notes"
+        },
+        "runtime": {
+          "seconds": 4.459502604324371,
+          "done_reason": "stop",
+          "prompt_tokens": 175,
+          "output_tokens": 104
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, please send them."
+        },
+        "runtime": {
+          "seconds": 1.5180692179128528,
+          "done_reason": "stop",
+          "prompt_tokens": 283,
+          "output_tokens": 12
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Yes please, that would help.",
+        "status": "complete",
+        "value": {
+          "reply": "yes lah, help me out, i take"
+        },
+        "runtime": {
+          "seconds": 1.4567132871598005,
+          "done_reason": "stop",
+          "prompt_tokens": 256,
+          "output_tokens": 15
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "Yes, please send them.",
+        "status": "complete",
+        "value": {
+          "reply": "Yes, send them lah."
+        },
+        "runtime": {
+          "seconds": 0.974498996976763,
+          "done_reason": "stop",
+          "prompt_tokens": 255,
+          "output_tokens": 12
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Yes, please send them.",
+        "status": "complete",
+        "value": {
+          "reply": "Yes, send them lah."
+        },
+        "runtime": {
+          "seconds": 0.9507889691740274,
+          "done_reason": "stop",
+          "prompt_tokens": 255,
+          "output_tokens": 12
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-008",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I already saved it on my laptop, but I can't send it tonight because I don't have access to your device or files."
+        },
+        "runtime": {
+          "seconds": 1.6614678441546857,
+          "done_reason": "stop",
+          "prompt_tokens": 169,
+          "output_tokens": 33
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "User saved the recording on their laptop",
+            "Peer missed the tutorial",
+            "Request is for sending the recording tonight"
+          ],
+          "known_facts": [
+            "User has the tutorial recording on their laptop",
+            "Peer missed the tutorial",
+            "Peer requests the recording tonight"
+          ],
+          "latest_request": "Could you send me the recording tonight?",
+          "reply_goal": "Confirm the recording is available and offer to send it tonight"
+        },
+        "runtime": {
+          "seconds": 6.675260927062482,
+          "done_reason": "stop",
+          "prompt_tokens": 172,
+          "output_tokens": 107
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, I have the recording on my laptop. I can send it to you tonight."
+        },
+        "runtime": {
+          "seconds": 1.8325715567916632,
+          "done_reason": "stop",
+          "prompt_tokens": 281,
+          "output_tokens": 24
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Sure, I will send it tonight.",
+        "status": "complete",
+        "value": {
+          "reply": "sure, i send tonight"
+        },
+        "runtime": {
+          "seconds": 0.478819583542645,
+          "done_reason": "stop",
+          "prompt_tokens": 257,
+          "output_tokens": 11
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I already saved it on my laptop, but I can't send it tonight because I don't have access to your device or files.",
+        "status": "complete",
+        "value": {
+          "reply": "already save on laptop, but can't send tonight. no access to your device or files."
+        },
+        "runtime": {
+          "seconds": 0.9613187457434833,
+          "done_reason": "stop",
+          "prompt_tokens": 276,
+          "output_tokens": 25
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Yes, I have the recording on my laptop. I can send it to you tonight.",
+        "status": "complete",
+        "value": {
+          "reply": "Laptop ada, boleh kirim you tonight"
+        },
+        "runtime": {
+          "seconds": 1.2456423938274384,
+          "done_reason": "stop",
+          "prompt_tokens": 267,
+          "output_tokens": 16
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-009",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, I uploaded them a few minutes ago."
+        },
+        "runtime": {
+          "seconds": 0.747748261783272,
+          "done_reason": "stop",
+          "prompt_tokens": 167,
+          "output_tokens": 16
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent facts",
+            "Do not speculate about upload status"
+          ],
+          "known_facts": [
+            "User uploaded slides a few minutes ago"
+          ],
+          "latest_request": "Confirm if slides have been uploaded",
+          "reply_goal": "Acknowledge upload and confirm completion"
+        },
+        "runtime": {
+          "seconds": 3.550745896063745,
+          "done_reason": "stop",
+          "prompt_tokens": 170,
+          "output_tokens": 59
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yes, I uploaded them a few minutes ago."
+        },
+        "runtime": {
+          "seconds": 1.3127584541216493,
+          "done_reason": "stop",
+          "prompt_tokens": 249,
+          "output_tokens": 16
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Yes, I have already uploaded them.",
+        "status": "complete",
+        "value": {
+          "reply": "Yes, already upload lah."
+        },
+        "runtime": {
+          "seconds": 0.4108425471931696,
+          "done_reason": "stop",
+          "prompt_tokens": 257,
+          "output_tokens": 12
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "Yes, I uploaded them a few minutes ago.",
+        "status": "complete",
+        "value": {
+          "reply": "Yes, upload a few min ago"
+        },
+        "runtime": {
+          "seconds": 0.8893857360817492,
+          "done_reason": "stop",
+          "prompt_tokens": 259,
+          "output_tokens": 13
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Yes, I uploaded them a few minutes ago.",
+        "status": "complete",
+        "value": {
+          "reply": "Yes, upload a few min ago"
+        },
+        "runtime": {
+          "seconds": 0.4575635800138116,
+          "done_reason": "stop",
+          "prompt_tokens": 259,
+          "output_tokens": 13
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-010",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "No, it's not ready yet. I haven't started editing at all."
+        },
+        "runtime": {
+          "seconds": 1.610616129823029,
+          "done_reason": "stop",
+          "prompt_tokens": 168,
+          "output_tokens": 22
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not assume the video is edited",
+            "Do not invent facts about progress",
+            "Do not offer unsolicited advice",
+            "Do not suggest future actions without user input"
+          ],
+          "known_facts": [
+            "User has not started editing the video",
+            "Peer asked if the edited video is ready"
+          ],
+          "latest_request": "Confirm whether the edited video is ready",
+          "reply_goal": "Explicitly state that the video is not ready due to no editing having started"
+        },
+        "runtime": {
+          "seconds": 5.646102789789438,
+          "done_reason": "stop",
+          "prompt_tokens": 171,
+          "output_tokens": 118
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "The video is not ready because I haven't started editing it."
+        },
+        "runtime": {
+          "seconds": 1.0601995359174907,
+          "done_reason": "stop",
+          "prompt_tokens": 291,
+          "output_tokens": 19
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Not yet, I have not started editing it.",
+        "status": "complete",
+        "value": {
+          "reply": "No yet, i still no start edit it"
+        },
+        "runtime": {
+          "seconds": 1.472846608608961,
+          "done_reason": "stop",
+          "prompt_tokens": 259,
+          "output_tokens": 15
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "No, it's not ready yet. I haven't started editing at all.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, still not ready. Ihavnt start edit at all."
+        },
+        "runtime": {
+          "seconds": 1.4926727442070842,
+          "done_reason": "stop",
+          "prompt_tokens": 265,
+          "output_tokens": 23
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "The video is not ready because I haven't started editing it.",
+        "status": "complete",
+        "value": {
+          "reply": "Video belum ready, still no start edit."
+        },
+        "runtime": {
+          "seconds": 0.6522555239498615,
+          "done_reason": "stop",
+          "prompt_tokens": 262,
+          "output_tokens": 15
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-011",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm outside seminar room 5B."
+        },
+        "runtime": {
+          "seconds": 0.8331461548805237,
+          "done_reason": "stop",
+          "prompt_tokens": 169,
+          "output_tokens": 15
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent facts",
+            "Reply only to the latest peer request",
+            "Maintain factual accuracy"
+          ],
+          "known_facts": [
+            "User is waiting outside seminar room 5B",
+            "Peer is coming upstairs now"
+          ],
+          "latest_request": "Which room are you outside?",
+          "reply_goal": "Explicitly confirm the room location as seminar room 5B"
+        },
+        "runtime": {
+          "seconds": 4.125090831425041,
+          "done_reason": "stop",
+          "prompt_tokens": 172,
+          "output_tokens": 96
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm outside seminar room 5B."
+        },
+        "runtime": {
+          "seconds": 0.6545549891889095,
+          "done_reason": "stop",
+          "prompt_tokens": 272,
+          "output_tokens": 15
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "I am outside seminar room 5B.",
+        "status": "complete",
+        "value": {
+          "reply": "I outside room 5B alr."
+        },
+        "runtime": {
+          "seconds": 0.4077669088728726,
+          "done_reason": "stop",
+          "prompt_tokens": 258,
+          "output_tokens": 15
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'm outside seminar room 5B.",
+        "status": "complete",
+        "value": {
+          "reply": "I outside room 5B alr."
+        },
+        "runtime": {
+          "seconds": 0.7100767088122666,
+          "done_reason": "stop",
+          "prompt_tokens": 258,
+          "output_tokens": 15
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I'm outside seminar room 5B.",
+        "status": "complete",
+        "value": {
+          "reply": "I outside room 5B alr."
+        },
+        "runtime": {
+          "seconds": 0.8433658108115196,
+          "done_reason": "stop",
+          "prompt_tokens": 258,
+          "output_tokens": 15
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-012",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "My bottle is blue."
+        },
+        "runtime": {
+          "seconds": 0.5840314691886306,
+          "done_reason": "stop",
+          "prompt_tokens": 169,
+          "output_tokens": 11
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent facts",
+            "Do not assume ownership of items",
+            "Do not speculate about peer's intentions"
+          ],
+          "known_facts": [
+            "User left a green water bottle in the studio",
+            "Peer mentions there are a few bottles in the studio"
+          ],
+          "latest_request": "What colour is yours?",
+          "reply_goal": "Clarify the colour of the user's bottle without asserting ownership or inventing details"
+        },
+        "runtime": {
+          "seconds": 5.273151150904596,
+          "done_reason": "stop",
+          "prompt_tokens": 172,
+          "output_tokens": 106
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "My bottle is green."
+        },
+        "runtime": {
+          "seconds": 0.9119858839549124,
+          "done_reason": "stop",
+          "prompt_tokens": 282,
+          "output_tokens": 11
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Mine is green.",
+        "status": "complete",
+        "value": {
+          "reply": "Green lah, mine. Paiseh, next time we makan."
+        },
+        "runtime": {
+          "seconds": 1.3814689419232309,
+          "done_reason": "stop",
+          "prompt_tokens": 253,
+          "output_tokens": 21
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "My bottle is blue.",
+        "status": "complete",
+        "value": {
+          "reply": "My bottle blue lah."
+        },
+        "runtime": {
+          "seconds": 0.5558059327304363,
+          "done_reason": "stop",
+          "prompt_tokens": 254,
+          "output_tokens": 11
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "My bottle is green.",
+        "status": "complete",
+        "value": {
+          "reply": "my bottle green lah"
+        },
+        "runtime": {
+          "seconds": 0.5033817132934928,
+          "done_reason": "stop",
+          "prompt_tokens": 254,
+          "output_tokens": 10
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-013",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm not sure, I'll check the website."
+        },
+        "runtime": {
+          "seconds": 1.4126420672982931,
+          "done_reason": "stop",
+          "prompt_tokens": 171,
+          "output_tokens": 17
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent facts",
+            "Only respond to the latest peer request",
+            "Keep reply brief and explicit"
+          ],
+          "known_facts": [
+            "User has not checked if lab is open tonight",
+            "Peer asks if lab closes at nine"
+          ],
+          "latest_request": "Does it close at nine?",
+          "reply_goal": "Confirm or clarify lab closing time without assuming"
+        },
+        "runtime": {
+          "seconds": 5.079154082108289,
+          "done_reason": "stop",
+          "prompt_tokens": 174,
+          "output_tokens": 96
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I don't know if it closes at nine. I haven't checked yet."
+        },
+        "runtime": {
+          "seconds": 1.281286631245166,
+          "done_reason": "stop",
+          "prompt_tokens": 273,
+          "output_tokens": 22
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "I am not sure. Let me check the opening hours.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, not sure yet. Check opening hours dulu."
+        },
+        "runtime": {
+          "seconds": 0.8748005833476782,
+          "done_reason": "stop",
+          "prompt_tokens": 261,
+          "output_tokens": 20
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'm not sure, I'll check the website.",
+        "status": "complete",
+        "value": {
+          "reply": "Not sure yet, check website la."
+        },
+        "runtime": {
+          "seconds": 0.7686003129929304,
+          "done_reason": "stop",
+          "prompt_tokens": 260,
+          "output_tokens": 14
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I don't know if it closes at nine. I haven't checked yet.",
+        "status": "complete",
+        "value": {
+          "reply": "I dunno if close at 9. Haven't check yet."
+        },
+        "runtime": {
+          "seconds": 0.8781377472914755,
+          "done_reason": "stop",
+          "prompt_tokens": 265,
+          "output_tokens": 20
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-014",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm not sure either, but I can try to figure it out together."
+        },
+        "runtime": {
+          "seconds": 1.368258652742952,
+          "done_reason": "stop",
+          "prompt_tokens": 171,
+          "output_tokens": 22
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not assume prior knowledge of the scanner",
+            "Do not invent facts about the scanner's operation",
+            "Do not offer unsolicited advice or steps",
+            "Do not suggest actions beyond what is explicitly requested"
+          ],
+          "known_facts": [
+            "User does not know how to use the scanner",
+            "Peer does not know how to use the scanner",
+            "Peer requests to see how to scan"
+          ],
+          "latest_request": "Can you show me how to scan this?",
+          "reply_goal": "Acknowledge the request and state inability to demonstrate without prior knowledge"
+        },
+        "runtime": {
+          "seconds": 6.208706299774349,
+          "done_reason": "stop",
+          "prompt_tokens": 174,
+          "output_tokens": 135
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I don't know how to use the scanner either, so I can't show you."
+        },
+        "runtime": {
+          "seconds": 1.291375373955816,
+          "done_reason": "stop",
+          "prompt_tokens": 311,
+          "output_tokens": 24
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "I am not sure how either. Shall we ask someone?",
+        "status": "complete",
+        "value": {
+          "reply": "Makai how? Awe ask someone?"
+        },
+        "runtime": {
+          "seconds": 0.9096328560262918,
+          "done_reason": "stop",
+          "prompt_tokens": 261,
+          "output_tokens": 16
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'm not sure either, but I can try to figure it out together.",
+        "status": "complete",
+        "value": {
+          "reply": "Not sure neither, but i try figure out together"
+        },
+        "runtime": {
+          "seconds": 0.9099787357263267,
+          "done_reason": "stop",
+          "prompt_tokens": 265,
+          "output_tokens": 16
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I don't know how to use the scanner either, so I can't show you.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, scanner i don't know how to use. Can't show you."
+        },
+        "runtime": {
+          "seconds": 1.077002024743706,
+          "done_reason": "stop",
+          "prompt_tokens": 267,
+          "output_tokens": 24
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-015",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "No, that's over my budget. Let's look for something under eight dollars."
+        },
+        "runtime": {
+          "seconds": 1.4333833446726203,
+          "done_reason": "stop",
+          "prompt_tokens": 170,
+          "output_tokens": 23
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Lunch budget is eight dollars",
+            "Peer suggests an eighteen-dollar lunch set"
+          ],
+          "known_facts": [
+            "User's lunch budget is eight dollars",
+            "Peer proposes an eighteen-dollar lunch set"
+          ],
+          "latest_request": "Respond to peer's suggestion about the lunch set within budget constraints",
+          "reply_goal": "Clearly decline the eighteen-dollar lunch set due to budget limit"
+        },
+        "runtime": {
+          "seconds": 5.648562835995108,
+          "done_reason": "stop",
+          "prompt_tokens": 173,
+          "output_tokens": 97
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "That's over my budget—eight dollars is all I have today."
+        },
+        "runtime": {
+          "seconds": 1.2321402300149202,
+          "done_reason": "stop",
+          "prompt_tokens": 275,
+          "output_tokens": 20
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "That is over my budget. Shall we find something cheaper?",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, over budget. Find something cheaper lah?"
+        },
+        "runtime": {
+          "seconds": 1.1590522420592606,
+          "done_reason": "stop",
+          "prompt_tokens": 261,
+          "output_tokens": 18
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "No, that's over my budget. Let's look for something under eight dollars.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, below 8 dollar. Not in my budget."
+        },
+        "runtime": {
+          "seconds": 1.0720758619718254,
+          "done_reason": "stop",
+          "prompt_tokens": 266,
+          "output_tokens": 20
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "That's over my budget—eight dollars is all I have today.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, 8 dollar only. I have no more today."
+        },
+        "runtime": {
+          "seconds": 1.3332675020210445,
+          "done_reason": "stop",
+          "prompt_tokens": 267,
+          "output_tokens": 21
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-016",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm sorry, but I can't carry heavy things right now because my wrist is still sore."
+        },
+        "runtime": {
+          "seconds": 0.8241335060447454,
+          "done_reason": "stop",
+          "prompt_tokens": 175,
+          "output_tokens": 26
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "User's wrist is still sore",
+            "User cannot carry heavy things",
+            "Peer is asking for help with heavy boxes"
+          ],
+          "known_facts": [
+            "User has a sore wrist",
+            "User is unable to carry heavy items",
+            "Peer requests assistance with carrying boxes"
+          ],
+          "latest_request": "Can you help me carry these heavy boxes?",
+          "reply_goal": "Politely decline the request due to physical limitation"
+        },
+        "runtime": {
+          "seconds": 4.745683661662042,
+          "done_reason": "stop",
+          "prompt_tokens": 178,
+          "output_tokens": 107
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm sorry, but my wrist is still sore and I can't carry heavy things right now."
+        },
+        "runtime": {
+          "seconds": 1.7227909821085632,
+          "done_reason": "stop",
+          "prompt_tokens": 288,
+          "output_tokens": 26
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "I cannot carry them with my wrist like this. Could we ask someone else?",
+        "status": "complete",
+        "value": {
+          "reply": "Wrist ni tak carry. Can we ask someone else?"
+        },
+        "runtime": {
+          "seconds": 1.3229744341224432,
+          "done_reason": "stop",
+          "prompt_tokens": 265,
+          "output_tokens": 18
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'm sorry, but I can't carry heavy things right now because my wrist is still sore.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, now cannot. Wrist still sore."
+        },
+        "runtime": {
+          "seconds": 0.9550949800759554,
+          "done_reason": "stop",
+          "prompt_tokens": 269,
+          "output_tokens": 18
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I'm sorry, but my wrist is still sore and I can't carry heavy things right now.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, wrist still sore. Can't carry heavy thing now."
+        },
+        "runtime": {
+          "seconds": 0.7826938140206039,
+          "done_reason": "stop",
+          "prompt_tokens": 269,
+          "output_tokens": 21
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-017",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Yeah, I'm glad you're okay. I didn't even notice I was sweating until after it was over."
+        },
+        "runtime": {
+          "seconds": 1.2645404119975865,
+          "done_reason": "stop",
+          "prompt_tokens": 172,
+          "output_tokens": 29
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent established facts",
+            "Do not provide reasoning or explanations",
+            "Keep response brief and explicit",
+            "Only return JSON structure as specified"
+          ],
+          "known_facts": [
+            "The presentation is finally over",
+            "The peer stated they practised for it all week",
+            "The peer expressed relief about not freezing during the presentation"
+          ],
+          "latest_request": "Acknowledge the peer's relief and respond appropriately",
+          "reply_goal": "Express understanding and maintain positive rapport"
+        },
+        "runtime": {
+          "seconds": 5.3350948807783425,
+          "done_reason": "stop",
+          "prompt_tokens": 175,
+          "output_tokens": 118
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm glad you're relieved — that's exactly how I felt too."
+        },
+        "runtime": {
+          "seconds": 0.9575971267186105,
+          "done_reason": "stop",
+          "prompt_tokens": 295,
+          "output_tokens": 21
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Glad it went okay. You can finally relax now.",
+        "status": "complete",
+        "value": {
+          "reply": "Glad it go okay lah. You can relax now."
+        },
+        "runtime": {
+          "seconds": 1.352702418807894,
+          "done_reason": "stop",
+          "prompt_tokens": 261,
+          "output_tokens": 18
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "Yeah, I'm glad you're okay. I didn't even notice I was sweating until after it was over.",
+        "status": "complete",
+        "value": {
+          "reply": "Yeah, glad you okay. I didn't even notice sweat until after it all done."
+        },
+        "runtime": {
+          "seconds": 1.5397232039831579,
+          "done_reason": "stop",
+          "prompt_tokens": 272,
+          "output_tokens": 24
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I'm glad you're relieved — that's exactly how I felt too.",
+        "status": "complete",
+        "value": {
+          "reply": "Aww thanks, same lah. I feel relaxed too."
+        },
+        "runtime": {
+          "seconds": 1.485528654884547,
+          "done_reason": "stop",
+          "prompt_tokens": 269,
+          "output_tokens": 18
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-018",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm sorry you're feeling overwhelmed—I can see how that must be tough. Want to talk about how we might split things up or assign some tasks?"
+        },
+        "runtime": {
+          "seconds": 2.09919555997476,
+          "done_reason": "stop",
+          "prompt_tokens": 175,
+          "output_tokens": 37
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent established facts",
+            "Do not provide reasoning or explanations",
+            "Do not offer unsolicited advice",
+            "Do not assume user preferences"
+          ],
+          "known_facts": [
+            "User has been doing most of the project on their own",
+            "Peer has not seen significant help from others",
+            "Peer feels overwhelmed"
+          ],
+          "latest_request": "Acknowledge peer's feeling of being overwhelmed and explore collaboration options",
+          "reply_goal": "Open a collaborative discussion without imposing solutions"
+        },
+        "runtime": {
+          "seconds": 6.202773477882147,
+          "done_reason": "stop",
+          "prompt_tokens": 178,
+          "output_tokens": 120
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I hear that — feeling overwhelmed is real. How about we check in on what you'd need to make collaboration easier?"
+        },
+        "runtime": {
+          "seconds": 1.3824640698730946,
+          "done_reason": "stop",
+          "prompt_tokens": 299,
+          "output_tokens": 30
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "That sounds exhausting. Want to talk through what is left?",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, too much. Want talk through what left?"
+        },
+        "runtime": {
+          "seconds": 1.163673693779856,
+          "done_reason": "stop",
+          "prompt_tokens": 261,
+          "output_tokens": 19
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'm sorry you're feeling overwhelmed—I can see how that must be tough. Want to talk about how we might split things up or assign some tasks?",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, you feel overwhelmed. I get it. Want to split things or assign tasks?"
+        },
+        "runtime": {
+          "seconds": 1.4986532693728805,
+          "done_reason": "stop",
+          "prompt_tokens": 285,
+          "output_tokens": 26
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I hear that — feeling overwhelmed is real. How about we check in on what you'd need to make collaboration easier?",
+        "status": "complete",
+        "value": {
+          "reply": "I feel overwhelmed, actually. What you need for collab to be easier?"
+        },
+        "runtime": {
+          "seconds": 1.207641453947872,
+          "done_reason": "stop",
+          "prompt_tokens": 278,
+          "output_tokens": 22
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-019",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "That's tough—I'm sorry you didn't get the internship."
+        },
+        "runtime": {
+          "seconds": 1.622551729902625,
+          "done_reason": "stop",
+          "prompt_tokens": 167,
+          "output_tokens": 19
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not assume the user's emotional state",
+            "Do not offer unsolicited advice",
+            "Do not speculate about future opportunities"
+          ],
+          "known_facts": [
+            "The user received interview results this morning",
+            "The user did not get the internship",
+            "The peer asked about the interview outcome"
+          ],
+          "latest_request": "Acknowledge the peer's message and respond with a brief, neutral statement",
+          "reply_goal": "Confirm receipt of the peer's message without adding emotional or speculative content"
+        },
+        "runtime": {
+          "seconds": 5.234542171936482,
+          "done_reason": "stop",
+          "prompt_tokens": 170,
+          "output_tokens": 121
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I received your message. Thanks for sharing."
+        },
+        "runtime": {
+          "seconds": 1.3339531500823796,
+          "done_reason": "stop",
+          "prompt_tokens": 294,
+          "output_tokens": 15
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Sorry to hear that. Do you want to talk about it?",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, want talk about it?"
+        },
+        "runtime": {
+          "seconds": 1.1880604638718069,
+          "done_reason": "stop",
+          "prompt_tokens": 262,
+          "output_tokens": 15
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "That's tough—I'm sorry you didn't get the internship.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, internship no get. Sory lah."
+        },
+        "runtime": {
+          "seconds": 0.8567056111060083,
+          "done_reason": "stop",
+          "prompt_tokens": 267,
+          "output_tokens": 18
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I received your message. Thanks for sharing.",
+        "status": "complete",
+        "value": {
+          "reply": "Get your msg. Thx for share."
+        },
+        "runtime": {
+          "seconds": 0.8586285458877683,
+          "done_reason": "stop",
+          "prompt_tokens": 258,
+          "output_tokens": 15
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-020",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Oh, that's really unfortunate. Hope it's nothing serious and you get better soon."
+        },
+        "runtime": {
+          "seconds": 1.2371525294147432,
+          "done_reason": "stop",
+          "prompt_tokens": 175,
+          "output_tokens": 24
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent facts",
+            "Only use established information from conversation",
+            "Reply must be brief and explicit"
+          ],
+          "known_facts": [
+            "User has a clinic appointment after class",
+            "Peer has a painful bump on eyelid and is getting it checked"
+          ],
+          "latest_request": "Acknowledge peer's situation and suggest a possible connection to the user's clinic appointment",
+          "reply_goal": "Suggest that the peer's eyelid issue might be something the user's clinic could help with"
+        },
+        "runtime": {
+          "seconds": 6.409148052800447,
+          "done_reason": "stop",
+          "prompt_tokens": 178,
+          "output_tokens": 122
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Maybe your eyelid bump could be something the clinic after class can look at too."
+        },
+        "runtime": {
+          "seconds": 1.5487886550836265,
+          "done_reason": "stop",
+          "prompt_tokens": 303,
+          "output_tokens": 23
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "That sounds uncomfortable. Hope the appointment goes okay.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, appointment nih macam tak comfortable. Hope it go okay lah."
+        },
+        "runtime": {
+          "seconds": 1.0434341407380998,
+          "done_reason": "stop",
+          "prompt_tokens": 259,
+          "output_tokens": 24
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "Oh, that's really unfortunate. Hope it's nothing serious and you get better soon.",
+        "status": "complete",
+        "value": {
+          "reply": "Paiseh, hope you get better soon lah. Makan next time?"
+        },
+        "runtime": {
+          "seconds": 1.5486458078958094,
+          "done_reason": "stop",
+          "prompt_tokens": 267,
+          "output_tokens": 22
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Maybe your eyelid bump could be something the clinic after class can look at too.",
+        "status": "complete",
+        "value": {
+          "reply": "Mungkin eyelid bump you tu boleh check by clinic after class la."
+        },
+        "runtime": {
+          "seconds": 1.1422717366367579,
+          "done_reason": "stop",
+          "prompt_tokens": 266,
+          "output_tokens": 22
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-021",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'll go for the peanut toast, thanks!"
+        },
+        "runtime": {
+          "seconds": 1.0808950858190656,
+          "done_reason": "stop",
+          "prompt_tokens": 168,
+          "output_tokens": 16
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Only respond to the latest peer request",
+            "Do not invent established facts",
+            "Maintain brevity and clarity",
+            "Do not provide reasoning or explanations"
+          ],
+          "known_facts": [
+            "Peer has not had breakfast yet",
+            "Peer is choosing between kaya toast and peanut toast"
+          ],
+          "latest_request": "Select a toast option from kaya or peanut toast",
+          "reply_goal": "Ask peer to confirm choice or provide next step"
+        },
+        "runtime": {
+          "seconds": 5.615453629288822,
+          "done_reason": "stop",
+          "prompt_tokens": 171,
+          "output_tokens": 114
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "So, kaya or peanut?"
+        },
+        "runtime": {
+          "seconds": 1.3877207930199802,
+          "done_reason": "stop",
+          "prompt_tokens": 287,
+          "output_tokens": 13
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Kaya toast, please.",
+        "status": "complete",
+        "value": {
+          "reply": "Kaya toast, i get for you"
+        },
+        "runtime": {
+          "seconds": 1.3422978846356273,
+          "done_reason": "stop",
+          "prompt_tokens": 255,
+          "output_tokens": 14
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'll go for the peanut toast, thanks!",
+        "status": "complete",
+        "value": {
+          "reply": "Peanut toast lah, thanks!"
+        },
+        "runtime": {
+          "seconds": 0.6431170818395913,
+          "done_reason": "stop",
+          "prompt_tokens": 259,
+          "output_tokens": 14
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "So, kaya or peanut?",
+        "status": "complete",
+        "value": {
+          "reply": "So, kaya or peanut? What you want, i get for you?"
+        },
+        "runtime": {
+          "seconds": 1.2284123077988625,
+          "done_reason": "stop",
+          "prompt_tokens": 256,
+          "output_tokens": 22
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-022",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'd like a coke, please."
+        },
+        "runtime": {
+          "seconds": 0.9360284460708499,
+          "done_reason": "stop",
+          "prompt_tokens": 171,
+          "output_tokens": 14
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent preferences or options",
+            "Only suggest drinks that are explicitly mentioned or implied",
+            "Do not assume peer's preferences"
+          ],
+          "known_facts": [
+            "User stated they are getting a drink before the lecture",
+            "Peer expressed interest in getting a drink as well",
+            "Peer is asking what to get the user"
+          ],
+          "latest_request": "What would you like me to get you?",
+          "reply_goal": "Offer a specific drink option that is consistent with the established facts"
+        },
+        "runtime": {
+          "seconds": 6.375898856669664,
+          "done_reason": "stop",
+          "prompt_tokens": 174,
+          "output_tokens": 122
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'm not sure what to ask for since I didn't mention any specific drink."
+        },
+        "runtime": {
+          "seconds": 1.4739124742336571,
+          "done_reason": "stop",
+          "prompt_tokens": 298,
+          "output_tokens": 23
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "An iced tea, please.",
+        "status": "complete",
+        "value": {
+          "reply": "Iced tea, lah. I buy for you"
+        },
+        "runtime": {
+          "seconds": 0.59872871870175,
+          "done_reason": "stop",
+          "prompt_tokens": 256,
+          "output_tokens": 16
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'd like a coke, please.",
+        "status": "complete",
+        "value": {
+          "reply": "Coke lah, i get for you"
+        },
+        "runtime": {
+          "seconds": 1.126108628232032,
+          "done_reason": "stop",
+          "prompt_tokens": 257,
+          "output_tokens": 14
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "I'm not sure what to ask for since I didn't mention any specific drink.",
+        "status": "complete",
+        "value": {
+          "reply": "what you want, i get for you"
+        },
+        "runtime": {
+          "seconds": 1.0377358221448958,
+          "done_reason": "stop",
+          "prompt_tokens": 266,
+          "output_tokens": 14
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-023",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Great, thanks for handling that."
+        },
+        "runtime": {
+          "seconds": 1.2054533553309739,
+          "done_reason": "stop",
+          "prompt_tokens": 177,
+          "output_tokens": 13
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "Do not invent established facts",
+            "Reply only to the latest peer request",
+            "Keep response brief and explicit"
+          ],
+          "known_facts": [
+            "User found the missing citation in the report",
+            "Peer acknowledged finding the citation as 'the last thing we needed'",
+            "Peer has fixed the issue and sent an updated file"
+          ],
+          "latest_request": "Acknowledge receipt of the updated file and confirm completion of the task",
+          "reply_goal": "Confirm receipt and closure of the task"
+        },
+        "runtime": {
+          "seconds": 4.940318485721946,
+          "done_reason": "stop",
+          "prompt_tokens": 180,
+          "output_tokens": 120
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Received the updated file. Task completed."
+        },
+        "runtime": {
+          "seconds": 1.13489989656955,
+          "done_reason": "stop",
+          "prompt_tokens": 303,
+          "output_tokens": 14
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Thanks, I will check the updated file.",
+        "status": "complete",
+        "value": {
+          "reply": "Thx, i check updated file lah"
+        },
+        "runtime": {
+          "seconds": 1.0471395878121257,
+          "done_reason": "stop",
+          "prompt_tokens": 258,
+          "output_tokens": 14
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "Great, thanks for handling that.",
+        "status": "complete",
+        "value": {
+          "reply": "Great, thanks for handle that"
+        },
+        "runtime": {
+          "seconds": 0.7770197940990329,
+          "done_reason": "stop",
+          "prompt_tokens": 256,
+          "output_tokens": 12
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Received the updated file. Task completed.",
+        "status": "complete",
+        "value": {
+          "reply": "Get the updated file. Task done."
+        },
+        "runtime": {
+          "seconds": 0.31447284016758204,
+          "done_reason": "stop",
+          "prompt_tokens": 257,
+          "output_tokens": 14
+        }
+      }
+    },
+    {
+      "item_id": "COMP1-024",
+      "direct_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "I'll meet you there after my tutorial."
+        },
+        "runtime": {
+          "seconds": 1.217675119638443,
+          "done_reason": "stop",
+          "prompt_tokens": 169,
+          "output_tokens": 15
+        }
+      },
+      "plan": {
+        "status": "complete",
+        "value": {
+          "constraints": [
+            "No new meeting times proposed",
+            "No changes to existing tutorial schedule",
+            "No additional tasks beyond poster work"
+          ],
+          "known_facts": [
+            "User has a tutorial",
+            "User will meet peer after tutorial",
+            "Peer suggests meeting at the same location as tutorial end"
+          ],
+          "latest_request": "Confirm meeting after tutorial at the same location",
+          "reply_goal": "Acknowledge and confirm the meeting without proposing new times or tasks"
+        },
+        "runtime": {
+          "seconds": 5.988008349668235,
+          "done_reason": "stop",
+          "prompt_tokens": 172,
+          "output_tokens": 110
+        }
+      },
+      "planned_standard": {
+        "status": "complete",
+        "value": {
+          "reply": "Got it, I'll meet you there after my tutorial."
+        },
+        "runtime": {
+          "seconds": 1.0431652590632439,
+          "done_reason": "stop",
+          "prompt_tokens": 285,
+          "output_tokens": 18
+        }
+      },
+      "oracle_local": {
+        "standard_anchor": "Sure, where should I meet you?",
+        "status": "complete",
+        "value": {
+          "reply": "Lah, where meet you?"
+        },
+        "runtime": {
+          "seconds": 0.7744068410247564,
+          "done_reason": "stop",
+          "prompt_tokens": 257,
+          "output_tokens": 13
+        }
+      },
+      "direct_local": {
+        "standard_anchor": "I'll meet you there after my tutorial.",
+        "status": "complete",
+        "value": {
+          "reply": "I meet you there after tutorial lah."
+        },
+        "runtime": {
+          "seconds": 0.7891454719938338,
+          "done_reason": "stop",
+          "prompt_tokens": 258,
+          "output_tokens": 14
+        }
+      },
+      "planned_local": {
+        "standard_anchor": "Got it, I'll meet you there after my tutorial.",
+        "status": "complete",
+        "value": {
+          "reply": "Get it, i meet you there after tutorial."
+        },
+        "runtime": {
+          "seconds": 0.6159290270879865,
+          "done_reason": "stop",
+          "prompt_tokens": 261,
+          "output_tokens": 16
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Assistant authored and correlated familiar scenario families, not representative human evaluation.",
+    "No original final test read. These cases become development material after inspection.",
+    "Model families, sizes, pretraining, quantization and prompt interfaces differ; not a causal size ablation.",
+    "Explicit-plan route uses extra calls/tokens; not matched compute.",
+    "Correct-reference-anchor rewriting isolates style capability; actual-anchor rewriting measures pipeline behavior."
+  ],
+  "failed_stages": 0
+}

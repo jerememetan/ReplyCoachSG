@@ -1,0 +1,349 @@
+{
+  "status": "complete",
+  "summary": {
+    "partitions": {
+      "actor": {
+        "cases": 25,
+        "allowed_verdict_matches": 23,
+        "definite_cases": 23,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 1.0,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "development": {
+        "cases": 24,
+        "allowed_verdict_matches": 23,
+        "definite_cases": 20,
+        "positive_acceptance": 0.9166666666666666,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 0.9583333333333333,
+        "abstentions": 4,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "heldout": {
+        "cases": 24,
+        "allowed_verdict_matches": 24,
+        "definite_cases": 20,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 1.0,
+        "abstentions": 4,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "review": {
+        "cases": 24,
+        "allowed_verdict_matches": 23,
+        "definite_cases": 21,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 0.8888888888888888,
+        "balanced_agreement": 0.9444444444444444,
+        "abstentions": 4,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 1,
+        "raw_failures": 0
+      }
+    },
+    "sensitive_categories": {
+      "ability": {
+        "cases": 2,
+        "allowed_verdict_matches": 2,
+        "definite_cases": 2,
+        "positive_acceptance": null,
+        "negative_rejection": 1.0,
+        "balanced_agreement": null,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "availability": {
+        "cases": 10,
+        "allowed_verdict_matches": 10,
+        "definite_cases": 8,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 1.0,
+        "abstentions": 2,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "budget": {
+        "cases": 1,
+        "allowed_verdict_matches": 1,
+        "definite_cases": 1,
+        "positive_acceptance": null,
+        "negative_rejection": 1.0,
+        "balanced_agreement": null,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "commitment": {
+        "cases": 1,
+        "allowed_verdict_matches": 1,
+        "definite_cases": 1,
+        "positive_acceptance": 1.0,
+        "negative_rejection": null,
+        "balanced_agreement": null,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "completion": {
+        "cases": 4,
+        "allowed_verdict_matches": 4,
+        "definite_cases": 4,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 1.0,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "constraint": {
+        "cases": 2,
+        "allowed_verdict_matches": 1,
+        "definite_cases": 1,
+        "positive_acceptance": null,
+        "negative_rejection": 1.0,
+        "balanced_agreement": null,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "coordination": {
+        "cases": 3,
+        "allowed_verdict_matches": 2,
+        "definite_cases": 2,
+        "positive_acceptance": null,
+        "negative_rejection": 1.0,
+        "balanced_agreement": null,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "knowledge": {
+        "cases": 3,
+        "allowed_verdict_matches": 3,
+        "definite_cases": 3,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 1.0,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "location": {
+        "cases": 1,
+        "allowed_verdict_matches": 1,
+        "definite_cases": 1,
+        "positive_acceptance": 1.0,
+        "negative_rejection": null,
+        "balanced_agreement": null,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "non_answer": {
+        "cases": 1,
+        "allowed_verdict_matches": 1,
+        "definite_cases": 1,
+        "positive_acceptance": null,
+        "negative_rejection": 1.0,
+        "balanced_agreement": null,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "ownership": {
+        "cases": 11,
+        "allowed_verdict_matches": 11,
+        "definite_cases": 9,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 1.0,
+        "abstentions": 2,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      },
+      "time": {
+        "cases": 10,
+        "allowed_verdict_matches": 10,
+        "definite_cases": 10,
+        "positive_acceptance": 1.0,
+        "negative_rejection": 1.0,
+        "balanced_agreement": 1.0,
+        "abstentions": 0,
+        "positive_rewards_on_expected_negatives": 0,
+        "abstentions_on_definite": 0,
+        "raw_failures": 0
+      }
+    },
+    "necessary_diagnostic_pass": true,
+    "ready_for_rl": false,
+    "readiness_note": "Passing these small assistant-labeled diagnostics alone does not establish reliable rewards on sampled on-policy replies. Failures prohibit using this scorer for RL."
+  },
+  "disagreements": [
+    {
+      "id": "OWNER-2-1",
+      "scenario_id": "OWNER-2",
+      "split": "development",
+      "category": "ownership",
+      "context": [
+        "I lent you my headphones this morning."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can I keep your headphones until tomorrow?",
+      "draft": "Yes, you can keep my headphones until tomorrow.",
+      "proposed_verdict": "acceptable",
+      "proposed_reward": 1,
+      "reason": "Preserves who owns and who holds the object.",
+      "provenance": "Assistant-authored proposed policy label; not a scorer prediction or human-approved gold.",
+      "expected_verdicts": [
+        "acceptable"
+      ],
+      "expectation_provenance": "assistant proposed diagnostic label",
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The user lent the headphones to the peer, so the peer currently holds them. The user is the owner, not the one who needs to give permission to 'keep' them in a way that implies the user is currently holding them.",
+        "issues": [
+          "wrong_role"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 2626429015,
+        "prompt_eval_count": 496,
+        "eval_count": 68,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "id": "ACTOR-FRESH-DPO-015-dpo",
+      "scenario_id": "FRESH-DPO-015",
+      "split": "actor",
+      "category": "constraint",
+      "context": [
+        "I cannot eat peanuts."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Would you like the peanut cookies?",
+      "draft": "I'd prefer the peanut cookies, but I can't eat them.",
+      "expected_verdicts": [
+        "uncertain"
+      ],
+      "expectation_provenance": "prior contextual assistant review of saved model output; not human gold",
+      "sources": [
+        "dpo"
+      ],
+      "rating": {
+        "verdict": "unacceptable",
+        "reason": "The draft contradicts the user's explicit constraint of not being able to eat peanuts.",
+        "issues": [
+          "explicit_contradiction"
+        ],
+        "reward": -1
+      },
+      "runtime": {
+        "total_duration": 1914003698,
+        "prompt_eval_count": 498,
+        "eval_count": 39,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "id": "ACTOR-FRESH-DPO-004-baseline",
+      "scenario_id": "FRESH-DPO-004",
+      "split": "actor",
+      "category": "coordination",
+      "context": [
+        "I will wait outside the science museum."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "My train is delayed by fifteen minutes.",
+      "draft": "I am sorry to hear that.",
+      "expected_verdicts": [
+        "uncertain"
+      ],
+      "expectation_provenance": "prior contextual assistant review of saved model output; not human gold",
+      "sources": [
+        "baseline",
+        "dpo"
+      ],
+      "rating": {
+        "verdict": "acceptable",
+        "reason": "The draft is a polite acknowledgment of the peer's statement and does not violate any constraints.",
+        "issues": [
+          "none"
+        ],
+        "reward": 1
+      },
+      "runtime": {
+        "total_duration": 1812593281,
+        "prompt_eval_count": 493,
+        "eval_count": 37,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "id": "AVAIL-0-4",
+      "scenario_id": "AVAIL-0",
+      "split": "review",
+      "category": "availability",
+      "context": [
+        "I am not available on Monday, but I am free on Tuesday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Shall we meet on Monday?",
+      "draft": "Maybe, I will let you know.",
+      "proposed_verdict": "uncertain",
+      "proposed_reward": null,
+      "reason": "Does not commit, but fails to clearly preserve stated unavailability.",
+      "provenance": "Assistant-authored proposed policy label; not a scorer prediction or human-approved gold.",
+      "expected_verdicts": [
+        "unacceptable"
+      ],
+      "expectation_provenance": "explicit human verdict",
+      "rating": {
+        "verdict": "uncertain",
+        "reason": "The draft uses a noncommittal phrase that the policy explicitly labels as having ambiguous human judgment when it conflicts with explicit unavailability.",
+        "issues": [
+          "unclear"
+        ],
+        "reward": null
+      },
+      "runtime": {
+        "total_duration": 2382517485,
+        "prompt_eval_count": 498,
+        "eval_count": 44,
+        "done_reason": "stop"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "mapping": {
+    "FRESH-DPO-001": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-002": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-003": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-004": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-005": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-006": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-007": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-008": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-009": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-010": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-011": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-012": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-013": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-014": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-015": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-016": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-017": {
+      "A": "dpo_epoch2",
+      "B": "default"
+    },
+    "FRESH-DPO-018": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-019": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    },
+    "FRESH-DPO-020": {
+      "A": "default",
+      "B": "dpo_epoch2"
+    }
+  },
+  "packet_sha256": "ba22d3a3102ee0f5de0d2c265d009e6c71f5674ca6edc5ba645a58bb3bbc516c"
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "Interim assistant review of public arm seed425 selected epoch5 on frozen new12 development cases. Inspected cases are now reused; not independent human gold or locked test. No exact-reference/intent compliance score.",
+  "validation": {
+    "before": {
+      "STANDARD": 2.1105543969006373,
+      "LOCAL": 3.2433127270861974,
+      "macro": 2.676933561993417
+    },
+    "selected": {
+      "STANDARD": 2.117675648886582,
+      "LOCAL": 2.8147958281759067,
+      "macro": 2.4662357385312443
+    }
+  },
+  "outcomes": {
+    "SEAPUBLIC-001": "Both respect unavailability; English wording awkward.",
+    "SEAPUBLIC-002": "STANDARD correct recipient; LOCAL reverses who returns headphones.",
+    "SEAPUBLIC-003": "Both assert unknown closing time.",
+    "SEAPUBLIC-004": "Both respond as recipient correctly; LOCAL reads English.",
+    "SEAPUBLIC-005": "Both sensible sending responses; LOCAL more colloquial.",
+    "SEAPUBLIC-006": "Both agree to purchase despite budget.",
+    "SEAPUBLIC-007": "Both contradict already-uploaded fact.",
+    "SEAPUBLIC-008": "Both claim completed despite not started.",
+    "SEAPUBLIC-009": "English questioning studying is unsupportive; LOCAL unrelated responsibility claim.",
+    "SEAPUBLIC-010": "Both sensible picnic responses.",
+    "SEAPUBLIC-011": "Both change outsideC2 to inside roomC.",
+    "SEAPUBLIC-012": "Both accept chicken despite no-meat constraint."
+  },
+  "conclusion": "Reference CE improvement does not establish contextual reliability or overall upgrade. Await second seed/control/SEA-LION; no app promotion."
+}

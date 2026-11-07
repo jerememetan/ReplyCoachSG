@@ -1,0 +1,161 @@
+﻿id,scenario,conversation,incoming_message,standard_reply,local_reply,decision,corrected_standard,corrected_local,notes
+SYN-volume500-v1-full-049-03,refusals_counteroffers,"user: I'll handle the data analysis part for the presentation.
+peer: Perfect, I'll take care of the visual designs.
+user: I think we should use a minimalist theme for the slides.
+peer: Agreed, it'll make the data stand out more.",Can you help me finish the conclusion slides? I'm stuck on the wording.,"I can't do it right now, but I can review your draft later.","Cannot do now, but I can help check your draft later.",,,,
+SYN-volume500-v1-full-119-01,roles_requests,"peer: Eh, we need to buy the clay and brushes for the workshop tomorrow.","You can go buy the clay, I'll handle the brushes.",That works for me. I'll head to the art store now.,Can do. I go buy the clay first then.,,,,
+SYN-volume500-v1-full-025-02,changes_constraints,,Is it okay if I cook some fried rice in the common kitchen tonight?,"That's fine, just make sure to clean the stove afterwards.","Go ahead, just remember to wipe the stove clean later.",,,,
+SYN-volume500-v1-full-136-02,context_references,,You still have my power bank? I need it for the library.,"I have it here, I'll bring it to the library now.","Got it, I'll bring it to the library now.",,,,
+SYN-volume500-v1-full-046-01,direct_answers,"user: Are we still meeting for dinner at 7pm?
+peer: Yes, at the usual place.
+user: Great, see you there.
+peer: Wait, did you book the table?
+peer: I'm heading there now, are you already there?","I'm still at the MRT station, will be there in 10 mins.","Take your time, I'm already seated at the table.","No rush, I already here at the table.",,,,
+SYN-volume500-v1-full-004-03,missing_new_details,,I've finished the first draft of the report. Need you to check the intro.,I'll take a look at the intro and get back to you.,Let me check the intro first and let you know.,,,,
+SYN-volume500-v1-full-052-03,refusals_counteroffers,"peer: Do you want to join the orientation booth this Saturday?
+user: I'd love to, but I have a family dinner.
+peer: No worries, maybe next week's event then?
+user: I'm free next Sunday. Does that work?
+peer: Next Sunday is good. Can you help with the registration desk?","I can't do the registration desk as I'm busy then, but I can help with logistics.",Logistics would be helpful. I'll find someone for registration.,Logistics can help. I'll find someone for registration.,,,,
+SYN-volume500-v1-full-103-01,roles_requests,"user: I'll be at the MRT station at 5pm to pick you up.
+peer: Steady. You driving or taking a Grab?
+user: I'm driving my car.",Can you help me carry my suitcase to the lobby?,I can definitely help you carry that suitcase into the lobby.,"Can help carry your suitcase to the lobby, no problem.",,,,
+SYN-volume500-v1-full-075-03,changes_constraints,peer: Can you send me the photos from the CCA event?,"I'd prefer if you only send the ones of the performers, don't include the crowd shots.",I'll send only the performer photos then.,"No problem, only sending the performer photos to you.",,,,
+SYN-volume500-v1-full-105-03,context_references,user: Which stall did we have last time?,"We had the one near the library, remember?","Right, that's the one near the library.","Correct, the one near library.",,,,
+SYN-volume500-v1-full-041-01,direct_answers,"user: How long does it take you to get to campus from Jurong?
+peer: Usually about 45 minutes if I take the MRT.
+user: That's not too bad. Do you usually take the express bus?","No lah, I take the train only. Faster for me.",That makes sense. The train is definitely more reliable during peak hours.,"True, train more steady for peak hour anyway.",,,,
+SYN-volume500-v1-full-122-01,missing_new_details,"user: Did you finish the first draft of the lab report?
+peer: Almost done, just need to fix the conclusion.
+user: Let me know when you're done, I'll check it.
+peer: I just sent it over to your email.",I updated the graphs but didn't change the text yet.,"Thanks, I'll take a look at the new graphs now.","Got it, let me check the graphs first.",,,,
+SYN-volume500-v1-full-023-03,refusals_counteroffers,"peer: Want to go see the new Marvel movie tonight?
+user: I'd love to, but I have a lot of reading to do.
+peer: Can we do it this weekend instead?","Sorry, this weekend I'm also busy. How about next Tuesday?",Next Tuesday works. Let's go then.,Next Tuesday can. Let's go then.,,,,
+SYN-volume500-v1-full-058-02,roles_requests,peer: Who is coming to the airport to pick up the equipment?,Can you let me know who is driving to the airport?,I'll be the one driving there to collect the equipment.,I'll drive there to collect the equipment.,,,,
+SYN-volume500-v1-full-002-02,changes_constraints,"peer: You got the notes for today's lecture?
+user: Yeah, I took quite a few notes.
+peer: Can share the PDF?
+user: Sure, just send me your email.
+peer: Sent it already.
+user: Received, thanks!",Can you skip the last part of the notes?,I think we need that part for the midterm.,"Better keep it, need that part for the exam.",,,,
+SYN-volume500-v1-full-131-02,context_references,"peer: Did you submit the form for the hiking club?
+user: Not yet, I'm waiting for the treasurer to sign it.",The deadline is tomorrow at 11pm.,I'll follow up with them today to get it signed in time.,I'll check with them today to get it signed before deadline.,,,,
+SYN-volume500-v1-full-081-02,direct_answers,"user: How's the prep for the Chem quiz going?
+peer: It's tough. I'm struggling with the thermodynamics part.
+peer: Do you think we need to study the last chapter?",Do you think the last chapter is important?,I think it's important because it's on the syllabus.,"I think it's important, it's in the syllabus.",,,,
+SYN-volume500-v1-full-123-03,missing_new_details,"user: Want to book the badminton court this Friday?
+peer: Sure, what time?
+user: Let's do 7pm to 9pm.
+peer: I'll check if that slot is available.
+user: Let me know what you find.","The 7pm slot is full. 我想 book 8pm instead, you okay?",8pm is fine with me. Let's go ahead and book that.,8pm can. Go ahead and book that slot.,,,,
+SYN-volume500-v1-full-091-00,refusals_counteroffers,"user: I really want to join the Hiking Club this semester.
+peer: The registration deadline was actually yesterday, man.",Is there any way to still sign up? Maybe I can pay a late fee?,I'm not sure they'll accept late entries. I'll check for a waiting list.,Not sure if they accept late entries. I'll check waiting list first.,,,,
+SYN-volume500-v1-full-132-00,roles_requests,"user: Did you guys finalize the layout for the fundraising booth yet?
+peer: Not yet, still debating between the corner spot or near the entrance.
+user: The entrance has more foot traffic, but the corner is less crowded.",I think the entrance is better for visibility. Let's go for that one.,"I agree, the entrance is better for visibility. Let's book that spot.",Entrance better for visibility. Let's just go for that one.,,,,
+SYN-volume500-v1-full-121-02,changes_constraints,"peer: It's starting to drizzle. Do you want to share my umbrella to the library?
+user: Thanks, but I'm actually almost at the bus stop already.
+peer: Oh, I see. Do you want to walk together anyway?
+user: I'm trying to catch the 10:15 bus, so I have to rush.","Can you still walk with me, or do you need to catch that bus?",I'll have to pass this time since I need to catch that bus.,"Better I go alone, need to catch the bus on time.",,,,
+SYN-volume500-v1-full-122-00,context_references,"user: Hey, are you going to the library later?
+peer: Yeah, I need to finish my history essay.
+user: I'm heading there now. Want to grab a table?
+peer: Sure, let's meet at the level 3 study pods.",I think the chairs there are super uncomfortable though.,"True, but it's the only place with enough outlets.","Yeah, only there got enough power points.",,,,
+SYN-volume500-v1-full-074-00,direct_answers,"user: Hey, are we still watching that horror movie this weekend?
+peer: Yeah, definitely. Do you prefer the 7pm or 9pm show?
+user: 9pm is better for me since I have a late lab.",So let's book the 9pm one then. You want me to grab the tickets?,"Yes, please go ahead and book the tickets for us.","Can, go ahead and book the tickets for us.",,,,
+SYN-volume500-v1-full-130-01,missing_new_details,"peer: Who's doing the intro?
+user: I can take that part.
+peer: Great, thanks!
+user: Do we need to practice the transition?
+peer: Probably.
+user: When are we meeting?",The rehearsal is set for Friday at 6pm.,"Got it, I'll be there by 6.","Noted, I'll be there by 6pm.",,,,
+SYN-volume500-v1-full-019-00,refusals_counteroffers,user: I'll drop off the projector at the CCA room by 5pm today.,Actually can you bring it to the library instead? I need to check the settings there.,"I can't make it to the library, but I can leave it at the CCA room.","Cannot go library, I leave it at CCA room only.",,,,
+SYN-volume500-v1-full-028-02,roles_requests,"peer: Who is handling the registration desk?
+user: I can do that.
+peer: Great, and the logistics?
+user: I'll help with that too.
+peer: Who's doing the heavy lifting?
+user: I'll coordinate the movers.",Can you also manage the social media posts?,I'll take care of the social media posts.,I can handle the social media posts also.,,,,
+SYN-volume500-v1-full-049-02,changes_constraints,"user: I've finished the first draft of the report.
+peer: Great, let me know when you want me to look at it.
+user: I'm going to start the editing phase now.
+peer: Just send me the file whenever you're ready.","Actually, can we change the deadline for the final polish to Friday instead of tomorrow?","Friday works for me, let's aim for that.","Friday can, let's do that instead.",,,,
+SYN-volume500-v1-full-006-01,context_references,"user: Did you manage to book the studio for our rehearsal?
+peer: Not yet, the system was down for an hour.
+user: That's annoying. Let me know when it's back up.
+peer: It's working now! I just booked the room for 3pm on Friday.","Wait, is that the same room we used last time?","Yes, it's the same room as our last session.","Yeah, same room as before.",,,,
+SYN-volume500-v1-full-083-03,direct_answers,"user: Is the quiz on Friday covering the whole module?
+peer: I think it's only the first three chapters.","Wait, so we don't need to study the last two chapters?","Correct, we only need to focus on the first three chapters.","Correct, only need to study first three chapters. No need for the rest.",,,,
+SYN-volume500-v1-full-043-03,missing_new_details,"user: Do you have the slides for the marketing project?
+peer: I'm still polishing the last few slides.
+user: Take your time, we have plenty of time before the deadline.
+peer: I'll send them over by tonight.
+user: Perfect, thanks!
+peer: I just sent them. Let me know if the flow makes sense.","I just saw the slides. The transition between part 2 and 3 is a bit confusing, can we fix it?",I'll look at that transition and revise it now.,"I check and fix that part now, don't worry.",,,,
+SYN-volume500-v1-full-118-02,refusals_counteroffers,"user: Can you help me pick up the costume from the studio?
+peer: I can, but I'm only free after 6 PM.
+user: That's a bit late for me since I have a bus to catch.","I can, but I'm only free after 6 PM.",That's too late for me. Could someone else collect it before six?,Too late for me. Can someone else collect before six?,,,,
+SYN-volume500-v1-full-030-00,roles_requests,"user: Hey, do you want to book a badminton court this Friday?
+peer: Sure, what time works for you?
+user: How about 7pm at SportSG?","I just checked, the 7pm slot is fully booked. Maybe 8pm instead?","That works for me, let's book the 8pm slot then.","Can do, let's just take the 8pm one.",,,,
+SYN-volume500-v1-full-069-01,changes_constraints,"user: Want to book the badminton court for 7pm tonight?
+peer: I think the 7pm slot is already taken.",Can we book for 8pm instead then?,"Let's go for 8pm then, I'll check the availability.","Can, let's do 8pm. I go check first.",,,,
+SYN-volume500-v1-full-001-02,context_references,"peer: Did you get my parcel from the mailroom?
+user: Not yet, I haven't passed by there.
+peer: Oh, I see.
+user: I'll go there after my lecture.
+peer: Let me know when you've picked it up.
+user: Will do!","I'm heading there now, will update you in a bit.","Great, just let me know once you're done.","Steady, update me when you're done.",,,,
+SYN-volume500-v1-full-099-00,direct_answers,"user: Hey, did you manage to find that sociology book yet?
+peer: Not yet, the shelf was empty.
+user: I checked the main branch too.
+peer: Maybe it's at the annex?
+user: I'll go check there this afternoon.
+peer: Let me know if you find it!",Did you end up finding the book at the annex?,"I found it, but it's currently checked out.","Found the book, but someone else took it out already.",,,,
+SYN-volume500-v1-full-087-00,missing_new_details,"user: I'm heading to the library now.
+peer: I'll meet you there in 10 mins.
+user: Wait, I need to grab a coffee first.
+peer: No problem, just let me know when you're done.
+user: Done. See you at the entrance.",Which gate are you standing at?,I'm at the main entrance near the fountain.,"Main entrance one, by the fountain.",,,,
+SYN-volume500-v1-full-056-01,refusals_counteroffers,"user: Do you want to book the badminton court for Saturday?
+peer: I'm down for that. What time?
+user: How about 10am?
+peer: I have a lab then. Maybe 2pm?
+user: 2pm works for me.
+peer: Wait, I just realized I have a family dinner at 3pm.",Can we still do the booking for 2pm?,I can't make 2pm work anymore. How about we do it next week?,2pm cannot already. Better we just book for next week instead.,,,,
+SYN-volume500-v1-full-093-02,roles_requests,,We need to decide who's leading the dance routine for practice.,I'm happy to lead the routine if everyone agrees.,I can lead the routine if you guys okay.,,,,
+SYN-volume500-v1-full-054-01,changes_constraints,"user: The poster design is almost done.
+peer: Great, let me know if you need any help with the colors.
+user: I think the blue is a bit too dark.","Actually, let's change the background to white instead of blue.",White background works. I'll update the file now.,White background can. I'll update the file now.,,,,
+SYN-volume500-v1-full-043-02,context_references,"user: The MRT was so packed this morning, I almost missed the first train.
+peer: Tell me about it. The North-South line was a nightmare.",I'm taking the bus today to avoid the crowd. You should try it too.,"Good idea, I'll check the bus timings for my route.","True, I also going to check bus timings later.",,,,
+SYN-volume500-v1-full-102-00,direct_answers,"user: Hey, did you finish the intro slides for the marketing project?
+peer: Almost done. Just need to fix the formatting on the last few.
+user: Let me know when you're done so I can compile everything.",Just sent them over to your email. Let me know if you can see them.,I got them! I'll start compiling the final deck now.,Received. Will start compiling the slides now.,,,,
+SYN-volume500-v1-full-126-00,missing_new_details,"user: Hey, are we still picking up the costumes tomorrow?
+peer: Yeah, the shop said they'd have them ready by noon.
+user: Great, I'll bring my car to make it easier.",What time should we meet at the shop?,Let's meet there at 1:00 PM.,Meet there at 1 PM then.,,,,
+SYN-volume500-v1-full-124-03,refusals_counteroffers,,Do you want to split the cost of the bulk eggs and milk?,"I'm good for now, but maybe we can buy bread next week?","I'm okay for now, maybe next week buy bread together?",,,,
+SYN-volume500-v1-full-024-02,roles_requests,peer: Can you send me those photos from the orientation party?,"Sure, I'll send the ones of us by the stage.","Thanks, please send the photos of us by the stage.","Thanks, send me the ones of us by stage.",,,,
+SYN-volume500-v1-full-017-03,changes_constraints,"user: The poster looks good, but the font is too small.
+peer: I'll make it bigger then.
+user: Make sure the date is clear too.
+peer: Done. Should I change the color to red?
+user: Maybe blue is better for the theme.
+peer: Blue it is. Anything else?","Actually, can we change the deadline to next Friday? 之前那个时间太赶了.",Next Friday is fine. I'll update the poster with the new date.,Next Friday can. I'll update the poster now.,,,,
+SYN-volume500-v1-full-027-00,context_references,"user: Did you finish the readings for the quiz tomorrow?
+peer: Just started the second chapter. It's quite dense.
+user: I'm stuck on the methodology section. Need to re-read it.",I found some notes on that section online. Want me to send them?,"Yes please, that would be really helpful for my revision.","Can, please send over. Help me a lot for revision.",,,,
+SYN-volume500-v1-full-039-02,direct_answers,"peer: Do you know if the kitchen is open tonight?
+user: I think it's open until midnight.
+peer: Great, I'll cook some noodles there.",Is there a limit on how many people can use it at once?,"Yes, it's limited to four people at a time.",Limit is four people only at a time.,,,,
+SYN-volume500-v1-full-117-02,missing_new_details,"user: Do you know if the floor 3 study area is full?
+peer: I'm not sure, I haven't checked today.",I'm going there now to check. Want me to see if there's any space left?,"Yes, please let me know if they have any seats.","Yeah, let me know if any seats left.",,,,
+SYN-volume500-v1-full-080-02,refusals_counteroffers,"user: Want to go to the chicken rice stall?
+peer: I'm not really feeling rice today.
+user: How about the pasta place nearby?",I'm not really feeling rice today.,"I can't make it to the pasta place, let's grab sandwiches instead.","Pasta place also no can, let's just go get sandwiches.",,,,
+SYN-volume500-v1-full-002-00,roles_requests,"user: Did you finish the intro slides for the marketing project?
+peer: Almost done, just need to fix the formatting.
+user: Let me know when they're ready so I can review.",Just sent the file over to the group chat now!,"Thanks, I'll check them out and let you know.","Got it, let me check the file then update you.",,,,

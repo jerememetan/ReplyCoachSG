@@ -1,0 +1,17 @@
+{
+  "reviewed": 30,
+  "total": 30,
+  "preference_counts": {
+    "hybrid": 5,
+    "earlier_paired": 5,
+    "Tie": 1,
+    "Both bad": 19
+  },
+  "explicit_issue_flags": {
+    "hybrid": {
+      "LOCAL sounds unnatural": 1
+    },
+    "earlier_paired": {}
+  },
+  "feedback": []
+}

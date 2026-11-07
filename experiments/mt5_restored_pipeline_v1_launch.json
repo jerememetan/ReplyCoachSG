@@ -1,0 +1,31 @@
+{
+  "job_id": 356868,
+  "observed_state": "COMPLETED",
+  "node": "lucas",
+  "gpu": "NVIDIA L40S",
+  "remote_root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_restored_pipeline_v1",
+  "walltime_hours": 4,
+  "system_memory_gb": 32,
+  "source_files_verified": 92,
+  "source_checkpoint_files_verified": 6,
+  "tests_passed": 6,
+  "original_adapted_checkpoint_preserved": true,
+  "english_training": "Full582401280 parameters inFP32,LR3e-5,790STANDARDtargets/50validation,max12epochs,patience2,epoch0eligible",
+  "rewrite_training": "Separate rank16q/v LoRA on selected English checkpoint,745auditedtrain/42validation,LR3e-5,max12patience2,epoch0eligible",
+  "latest_observation": {
+    "stage": "standard",
+    "epoch": 5,
+    "validation_ce": 2.1480680093683047,
+    "initial_validation_ce": 2.598811398086877,
+    "first_optimizer_update_finite": true
+  },
+  "initial_base_reproduction": "InitialSTANDARDvalidation2.598811 reproduces older shared_intent epoch0 report rounded2.5988",
+  "fresh_evaluation_cases": 24,
+  "reused_evaluation_cases": 82,
+  "team_originals_unchanged": 190,
+  "default_changed": false,
+  "results_pending": false,
+  "observed_at_utc": "2026-11-07T13:11:08.304418+00:00",
+  "exit_code": 0,
+  "elapsed": "00:19:29"
+}

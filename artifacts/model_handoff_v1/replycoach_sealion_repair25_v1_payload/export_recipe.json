@@ -1,0 +1,72 @@
+{
+  "kind": "sealion",
+  "name": "replycoach_sealion_repair25_v1",
+  "model": "aisingapore/SEA-LION-v1-3B,3178255360base +2x10485760adapter parameters",
+  "lineage": "English adapter from full117634-public-pair trainingjob356177; rewrite from356662 followed by contrastive repair357651,selectedstep25. English repair selectedstep0. Latest displayed candidate, comprehensive quality review pending.",
+  "adapters": [
+    "english",
+    "singlish"
+  ],
+  "decoding": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 64,
+    "max_context_tokens": 384,
+    "length_penalty": 1.0,
+    "do_sample": false
+  },
+  "source_directories": [
+    {
+      "source": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1/model",
+      "destination": "base",
+      "files": [
+        "model.safetensors",
+        "config.json",
+        "generation_config.json",
+        "tokenizer.model",
+        "tokenizer_config.json",
+        "special_tokens_map.json",
+        "LICENSE"
+      ],
+      "expected_sha256": {
+        "model.safetensors": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107"
+      }
+    },
+    {
+      "source": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/artifacts/best_adapter",
+      "destination": "adapters/english",
+      "files": [
+        "adapter_model.safetensors",
+        "adapter_config.json",
+        "README.md"
+      ],
+      "expected_sha256": {
+        "adapter_model.safetensors": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "adapter_config.json": "f5bb26bc63c376e64ed060f54cc87a44ece14a7328f064d02abc487aa75578bc"
+      }
+    },
+    {
+      "source": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_contrast_repair_v1_retry1/artifacts/rewrite/selected",
+      "destination": "adapters/singlish",
+      "files": [
+        "adapter_model.safetensors",
+        "adapter_config.json",
+        "README.md"
+      ],
+      "expected_sha256": {
+        "adapter_model.safetensors": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2",
+        "adapter_config.json": "d05758cc0b34f769e22b48a3816493697528813351bc4048c400d0ee4d5a97dc"
+      }
+    },
+    {
+      "source": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1/deps/einops",
+      "destination": "deps/einops",
+      "all_files": true
+    },
+    {
+      "source": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1/deps/einops-0.8.1.dist-info",
+      "destination": "deps/einops-0.8.1.dist-info",
+      "all_files": true
+    }
+  ]
+}

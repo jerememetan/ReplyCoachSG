@@ -1,0 +1,261 @@
+{
+  "mapping": {
+    "1": {
+      "A": "original",
+      "B": "rewrite",
+      "C": "aligned"
+    },
+    "2": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "3": {
+      "A": "original",
+      "B": "rewrite",
+      "C": "aligned"
+    },
+    "4": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    },
+    "5": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "6": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "7": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "8": {
+      "A": "original",
+      "B": "rewrite",
+      "C": "aligned"
+    },
+    "9": {
+      "A": "original",
+      "B": "rewrite",
+      "C": "aligned"
+    },
+    "10": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "11": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "12": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "13": {
+      "A": "original",
+      "B": "rewrite",
+      "C": "aligned"
+    },
+    "14": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "15": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "16": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "17": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "18": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "19": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    },
+    "20": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "21": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "22": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    },
+    "23": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    },
+    "24": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "25": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    },
+    "26": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "27": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "28": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "29": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "30": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "31": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "32": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "33": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "34": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "35": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "36": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "37": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "38": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "39": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    },
+    "40": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "41": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "42": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "43": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    },
+    "44": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "45": {
+      "A": "aligned",
+      "B": "rewrite",
+      "C": "original"
+    },
+    "46": {
+      "A": "original",
+      "B": "rewrite",
+      "C": "aligned"
+    },
+    "47": {
+      "A": "rewrite",
+      "B": "original",
+      "C": "aligned"
+    },
+    "48": {
+      "A": "rewrite",
+      "B": "aligned",
+      "C": "original"
+    },
+    "49": {
+      "A": "original",
+      "B": "aligned",
+      "C": "rewrite"
+    },
+    "50": {
+      "A": "aligned",
+      "B": "original",
+      "C": "rewrite"
+    }
+  },
+  "randomization_seed": 14820448754555001292,
+  "packet_sha256": "7fbfdbf55f57303aff72ba97379e7c5d2dde896d9611de8ae7e71418baf5a9a3",
+  "source_sha256": {
+    "original_s425.json": "6bdccd85888173690055dcdb40bfbc3c3ee5408909642b7f243ab622e203be6c",
+    "aligned_s425.json": "eaa87dd6f7ffbccd52d2cef930f8690cc305d0150b7a88238632835b683e072c",
+    "rewrite_s425.json": "2555b05f548007179520233b6d288f5c1c1878a5121755bc2cfcea2aec787812"
+  }
+}

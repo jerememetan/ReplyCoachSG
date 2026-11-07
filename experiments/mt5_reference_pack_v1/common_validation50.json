@@ -1,0 +1,1306 @@
+[
+  {
+    "item_id": "ITEM-A-010",
+    "context": [
+      "this course is so tough.",
+      "yeah, I could really use some help too."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "peer: we very kiasu sia, first lesson already like that",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll take it.",
+        "local": "Can, I take it."
+      },
+      "historical_best": {
+        "english": "yeah, I think I'll do it soon.",
+        "local": "yeah, I'll do it soon."
+      },
+      "current_shared": {
+        "english": "yeah, I could use some help.",
+        "local": "yeah, I use some help."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "context": [
+      "Hey! Where are you now?",
+      "I am reaching Harbourfront MRT, how about you?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Eh i double check with you, we are meeting at 7pm right?",
+    "models": {
+      "historical_final": {
+        "english": "Yes, I will be there at 7pm.",
+        "local": "Yes, I will be there at 7pm."
+      },
+      "historical_best": {
+        "english": "Yes, I am reaching at 7.",
+        "local": "I am reaching at 7."
+      },
+      "current_shared": {
+        "english": "Yes, I'll check with you at 7pm.",
+        "local": "Okay, 7pm I check you at 7pm."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "context": [
+      "Hey have you printed the worksheet given out yesterday?",
+      "No, I will need to print it in school. Do you know how to use the printer?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i don't know how to use the printer in school.",
+    "models": {
+      "historical_final": {
+        "english": "Okay, let me know how to use the printer.",
+        "local": "Okay, let me know how to use printer."
+      },
+      "historical_best": {
+        "english": "Oh, I know how to use the printer.",
+        "local": "Yes, I know how to use the printer."
+      },
+      "current_shared": {
+        "english": "Okay, let me know how to use the printer.",
+        "local": "Okay, let me know how to use printer."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "context": [
+      "How long is our booking?",
+      "Oh no, our timer went off."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sian, need book somewhere else, our booking ran out",
+    "models": {
+      "historical_final": {
+        "english": "No worries, we'll book somewhere else.",
+        "local": "No worries, we book somewhere else."
+      },
+      "historical_best": {
+        "english": "Yes, we can book somewhere else.",
+        "local": "Can, we book somewhere else."
+      },
+      "current_shared": {
+        "english": "I'm not sure if we can book anywhere else. Let's check the timetable.",
+        "local": "Not sure where we book leh. Check the timetable first."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "context": [
+      "Hey should we grab lunch?",
+      "sure! Lets head to Koufu"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh the chicken rice stall open today anot?",
+    "models": {
+      "historical_final": {
+        "english": "Yes, the chicken rice stall is open today.",
+        "local": "Chicken rice stall open today."
+      },
+      "historical_best": {
+        "english": "Yep, the chicken rice stall open today.",
+        "local": "Yep, the chicken rice stall open today."
+      },
+      "current_shared": {
+        "english": "I'm not sure if the chicken rice stall opens today.",
+        "local": "Not sure chicken rice opens today leh."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-035",
+    "context": [
+      "I got to go for my appointment later",
+      "Yeah I should get going too"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "don't forget to dabao your food later",
+    "models": {
+      "historical_final": {
+        "english": "Thanks for letting me know",
+        "local": "Thanks for letting me know."
+      },
+      "historical_best": {
+        "english": "Okay, I'll meet you later.",
+        "local": "Can, I meet you later."
+      },
+      "current_shared": {
+        "english": "Okay, I'll meet you later",
+        "local": "Okay, I'll meet you later"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "context": [
+      "are we still playing badminton tonight?",
+      "yeah, I think so"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i might be ten mins late leh",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll be there in a few minutes",
+        "local": "Can, few more minutes I reach."
+      },
+      "historical_best": {
+        "english": "Okay, I'll be there around nine o'clock.",
+        "local": "Can, I'll be there around nine o'clock."
+      },
+      "current_shared": {
+        "english": "I'm not sure if I'll be late.",
+        "local": "I'm not sure if I'll be late."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-044",
+    "context": [
+      "have you submitted the project?",
+      "not yet, I am checking it first"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "remember ah, dont blur like sotong",
+    "models": {
+      "historical_final": {
+        "english": "Sorry, I didn't notice it.",
+        "local": "Sorry ah, I didn't notice it."
+      },
+      "historical_best": {
+        "english": "yeah, I am sure I will submitted it soon.",
+        "local": "Yes, I will submitted it soon."
+      },
+      "current_shared": {
+        "english": "I'm not sure if it's sotong. I'll check it later.",
+        "local": "I not sure if it's sotong leh. I check later."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll see you later.",
+        "local": "Can, later I see you."
+      },
+      "historical_best": {
+        "english": "Okay, I'll meet you tomorrow.",
+        "local": "Can, I meet you tomorrow."
+      },
+      "current_shared": {
+        "english": "That works for me. See you tomorrow.",
+        "local": "Can, see you tomorrow."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "context": [
+      "We are going to the club later right?",
+      "Yeah, I will go back to shower first."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Aiyo, don't need la, let's go now",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll go back later.",
+        "local": "Can, later I go back."
+      },
+      "historical_best": {
+        "english": "Ok, let's go now.",
+        "local": "Can, I go now."
+      },
+      "current_shared": {
+        "english": "Okay, let's go now.",
+        "local": "Okay, go now."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "context": [
+      "I haven't eaten breakfast",
+      "same sia, I'm hungry also"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "where you want eat?",
+    "models": {
+      "historical_final": {
+        "english": "I'm going to eat at the hawker centre.",
+        "local": "Can, I go eat at hawker centre."
+      },
+      "historical_best": {
+        "english": "I'm not sure yet.",
+        "local": "I'm not sure yet."
+      },
+      "current_shared": {
+        "english": "I'm not sure where I'll eat.",
+        "local": "I'm not sure where I'll eat."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "context": [
+      "I'm going library now",
+      "I'll come over after class"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "still got space?",
+    "models": {
+      "historical_final": {
+        "english": "Yes, I'll be waiting for you at the library.",
+        "local": "Ya, library waiting for you."
+      },
+      "historical_best": {
+        "english": "No, I'll come over later.",
+        "local": "Can, I come over later."
+      },
+      "current_shared": {
+        "english": "I'm not sure if there's space. Let's check the schedule.",
+        "local": "Not sure there's space leh. Check the schedule first."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?",
+    "models": {
+      "historical_final": {
+        "english": "It's in the second floor.",
+        "local": "Can, second floor in."
+      },
+      "historical_best": {
+        "english": "It's in the third room.",
+        "local": "We're in the third room."
+      },
+      "current_shared": {
+        "english": "Let's check the timetable.",
+        "local": "Check the timetable first."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "context": [
+      "I might not make it to the morning class",
+      "I can send you an update afterwards"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can tell me what I miss?",
+    "models": {
+      "historical_final": {
+        "english": "Sure, let me know when you will be free.",
+        "local": "Can, let me know when you free."
+      },
+      "historical_best": {
+        "english": "Sure, let me know what you missed.",
+        "local": "Can, let me know what you missed."
+      },
+      "current_shared": {
+        "english": "Sure, let me know what you missed.",
+        "local": "Okay, let me know what you missed."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus",
+    "models": {
+      "historical_final": {
+        "english": "Sorry, I didn't take it yet.",
+        "local": "Sorry ah, I didn't take it yet."
+      },
+      "historical_best": {
+        "english": "I'm going to take the wrong bus.",
+        "local": "I'm going to take the wrong bus."
+      },
+      "current_shared": {
+        "english": "I'll wait for you at the bus stop.",
+        "local": "I wait for you at the bus stop."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "context": [
+      "a few of us are going out this weekend",
+      "sounds fun"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you want come?",
+    "models": {
+      "historical_final": {
+        "english": "sure, what time would you like to come?",
+        "local": "Can, what time you want to come?"
+      },
+      "historical_best": {
+        "english": "sure, I'll be back in a few minutes.",
+        "local": "Can, I'll be back in a few minutes."
+      },
+      "current_shared": {
+        "english": "I'm not sure if I'll be able to come.",
+        "local": "I'm not sure if I can come."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "context": [
+      "are you coming to the event?",
+      "I was planning to"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the event postpone for thirty minutes",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll be there in a few minutes.",
+        "local": "Okay, few more minutes I reach."
+      },
+      "historical_best": {
+        "english": "yeah, I'll be there in about half an hour.",
+        "local": "Can, I'll be there in half an hour."
+      },
+      "current_shared": {
+        "english": "I'm not sure if I'll be able to make it for thirty minutes.",
+        "local": "I'm not sure if I can make it for thirty minutes."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?",
+    "models": {
+      "historical_final": {
+        "english": "Sure, let's go run later.",
+        "local": "Can, later I go run."
+      },
+      "historical_best": {
+        "english": "Sure, I'll go run later.",
+        "local": "Can, I go run later."
+      },
+      "current_shared": {
+        "english": "I'm not sure if I'll be able to run later.",
+        "local": "I'm not sure if I can run later."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll be free tonight.",
+        "local": "Can, tonight I free."
+      },
+      "historical_best": {
+        "english": "Okay, I'll be there.",
+        "local": "Can, I'll be there."
+      },
+      "current_shared": {
+        "english": "Okay, I'll book it for seven.",
+        "local": "Okay, I book for seven then."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "context": [
+      "my phone is almost out of battery",
+      "I brought my charger"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can I borrow your charger?",
+    "models": {
+      "historical_final": {
+        "english": "Sure, I'll borrow it.",
+        "local": "Can, I borrow my charger."
+      },
+      "historical_best": {
+        "english": "Sure, I can borrow your charger.",
+        "local": "Can, I borrow your charger."
+      },
+      "current_shared": {
+        "english": "Sure, I'll borrow your charger.",
+        "local": "Can, I borrow your charger."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "context": [
+      "are you going to the library ltr?",
+      "yeah, probably after dinner"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i'll be at lks around 8, want to meet there?",
+    "models": {
+      "historical_final": {
+        "english": "sure, i'll meet you at lks8",
+        "local": "Can, I meet you at lks8 then."
+      },
+      "historical_best": {
+        "english": "Sure, I'll meet you there around 8",
+        "local": "Sure, I'll meet you there around 8"
+      },
+      "current_shared": {
+        "english": "sure, i'll meet you at lks around 8.",
+        "local": "okay, i meet you at lks around 8."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "context": [
+      "im working on my slides now",
+      "same, im doing the results section"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "your part done alr?",
+    "models": {
+      "historical_final": {
+        "english": "yes, I am finished my part.",
+        "local": "Can, I finish my part before you finish your part."
+      },
+      "historical_best": {
+        "english": "yes, I am done.",
+        "local": "Yes, I am done."
+      },
+      "current_shared": {
+        "english": "yes, I'm done.",
+        "local": "okay, done alr."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "context": [
+      "i'll upload my section before dinner",
+      "okay, then i can merge everything tonight"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh dont forget your slide ah, we need merge later",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll merge later.",
+        "local": "Can, later I merge."
+      },
+      "historical_best": {
+        "english": "okay, i'll merge later.",
+        "local": "Can, merge later."
+      },
+      "current_shared": {
+        "english": "okay, let's merge later",
+        "local": "okay, merge later"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?",
+    "models": {
+      "historical_final": {
+        "english": "Sure, what time would you like to go?",
+        "local": "Can, what time you want to go?"
+      },
+      "historical_best": {
+        "english": "Sure, I'll be back in a few minutes.",
+        "local": "Can, I'll be back in a few minutes."
+      },
+      "current_shared": {
+        "english": "I'm not sure if I can help with the night market.",
+        "local": "I not sure if I can help with night market."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "context": [
+      "im waiting at the cafe alr",
+      "coming now"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i ordered first because i was too hungry",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll take you to the cafe first.",
+        "local": "Can, I take you to the cafe first."
+      },
+      "historical_best": {
+        "english": "Okay, I'll wait for you at the cafe",
+        "local": "Okay, I wait for you at the cafe."
+      },
+      "current_shared": {
+        "english": "okay, i'll be waiting for you",
+        "local": "okay i waiting for you"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "context": [
+      "ive finished drafting the conclusion",
+      "great"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can help me check if this part sounds too long?",
+    "models": {
+      "historical_final": {
+        "english": "sure, i'll check it for you.",
+        "local": "Can, I check for you."
+      },
+      "historical_best": {
+        "english": "Sure, it doesn't sound too long.",
+        "local": "Can, it doesn't sound too long."
+      },
+      "current_shared": {
+        "english": "I'll check whether the conclusion is too long.",
+        "local": "I check if the conclusion too long leh."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "models": {
+      "historical_final": {
+        "english": "Okay, thanks for letting me know.",
+        "local": "Okay, thanks for letting me know."
+      },
+      "historical_best": {
+        "english": "okay, I'll do it later.",
+        "local": "Can, I'll do it later."
+      },
+      "current_shared": {
+        "english": "okay, i'll do it later",
+        "local": "okay, i'll do it later"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?",
+    "models": {
+      "historical_final": {
+        "english": "yes, I'm waiting for the seats",
+        "local": "Yes, I waiting for seats for the seats."
+      },
+      "historical_best": {
+        "english": "yes, I'm coming early to get seats.",
+        "local": "Yes, I coming early to get seats."
+      },
+      "current_shared": {
+        "english": "yes, I'm coming early to get seats.",
+        "local": "yes, I coming early to get seats."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-055",
+    "context": [
+      "lets go to the exhibition at 1",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can go around 2 instead? i need lunch first",
+    "models": {
+      "historical_final": {
+        "english": "Sure, two works for me.",
+        "local": "Can, two also can."
+      },
+      "historical_best": {
+        "english": "Sure, I'll meet you at 2",
+        "local": "Can, I meet you at 2"
+      },
+      "current_shared": {
+        "english": "sure, let's meet at 2",
+        "local": "2 can, meet at 2"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "context": [
+      "im heading to the court now",
+      "okay, i'll leave soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "court still occupied leh, need wait a bit",
+    "models": {
+      "historical_final": {
+        "english": "ok, i'll wait for you at the court",
+        "local": "Ok, I wait for you at court."
+      },
+      "historical_best": {
+        "english": "okay, i'll leave soon.",
+        "local": "Can, leave soon."
+      },
+      "current_shared": {
+        "english": "okay, i'll leave soon",
+        "local": "okay i leave soon"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "context": [
+      "u wanna try the matcha at luckin?",
+      "nahh"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "then what u wanna drink later?",
+    "models": {
+      "historical_final": {
+        "english": "I'd like to drink a bottle of wine.",
+        "local": "Can, later I go drink a bottle of wine."
+      },
+      "historical_best": {
+        "english": "I'm not sure.",
+        "local": "Can, I'm not sure."
+      },
+      "current_shared": {
+        "english": "I'm not sure. Let's check the timings.",
+        "local": "Okay, check the timings first."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "context": [
+      "eh i struggling to do the linear algebra qn",
+      "which"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "neh the gaussian elim qn",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll do it later.",
+        "local": "Can, later I do it."
+      },
+      "historical_best": {
+        "english": "which qn?",
+        "local": "which qn?"
+      },
+      "current_shared": {
+        "english": "which qn?",
+        "local": "which qn ah?"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "context": [
+      "hello, can i ask u some question idk how to do",
+      "uhh i see if i can help"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "uhh, u know the guassian elim qn",
+    "models": {
+      "historical_final": {
+        "english": "Yes, I know it.",
+        "local": "Yes, I know it."
+      },
+      "historical_best": {
+        "english": "yes, i know.",
+        "local": "Yes, i know."
+      },
+      "current_shared": {
+        "english": "I'm not sure if i can help.",
+        "local": "I'm not sure if i can help."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-013",
+    "context": [
+      "hello",
+      "yes?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Can give me ans for assignment 1?",
+    "models": {
+      "historical_final": {
+        "english": "Sure, what kind of material would you like to give me?",
+        "local": "Can, what kind of material you want to give me?"
+      },
+      "historical_best": {
+        "english": "Sure, I'll give you a list.",
+        "local": "Can, I give you a list."
+      },
+      "current_shared": {
+        "english": "Sure, I'll send you a list of all the assignments.",
+        "local": "Okay, I send you a list of all the assignments."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "context": [
+      "eh so how, you still want bid for the morning class?",
+      "yah can"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ok then rmb to bid before bidding ends",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll see you later.",
+        "local": "Can, later I see you."
+      },
+      "historical_best": {
+        "english": "ok, let me know if I can bid before bidding ends.",
+        "local": "Can, let me know if I can bid before bidding ends."
+      },
+      "current_shared": {
+        "english": "ok, let me know if I can bid before bidding ends",
+        "local": "ok, let me know if I can bid before bidding ends"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "context": [
+      "hello",
+      "hi",
+      "i am already at the bus stop"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "wya",
+    "models": {
+      "historical_final": {
+        "english": "okay, i am reaching the bus stop",
+        "local": "Okay, I reaching bus stop."
+      },
+      "historical_best": {
+        "english": "where are you going?",
+        "local": "Where are you going?"
+      },
+      "current_shared": {
+        "english": "I am reaching the bus stop",
+        "local": "I am reaching the bus stop"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "context": [
+      "have you reached?",
+      "wya"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "i reached, i waiting outside mac",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll take you there.",
+        "local": "Okay, I go there first."
+      },
+      "historical_best": {
+        "english": "where are you going?",
+        "local": "Can, where you going?"
+      },
+      "current_shared": {
+        "english": "I'm not sure if you're reaching yet.",
+        "local": "I not sure if you reaching yet."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-038",
+    "context": [
+      "eh wya",
+      "i am outside mac",
+      "u eh"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "user"
+    ],
+    "message": "I am reaching soon, wait for me before going in.",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll wait for you.",
+        "local": "Okay, I wait for you."
+      },
+      "historical_best": {
+        "english": "I am reaching in a few minutes.",
+        "local": "I am reaching in a few minutes."
+      },
+      "current_shared": {
+        "english": "ok, i will wait for you.",
+        "local": "ok i wait for you"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll get it for you.",
+        "local": "Okay, I get it for you."
+      },
+      "historical_best": {
+        "english": "okay, I'll take it.",
+        "local": "Can, I take it."
+      },
+      "current_shared": {
+        "english": "okay, I'll check whether it's sold out",
+        "local": "okay, I check whether it's sold out"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "context": [
+      "eh u ok? why u never join us for bb session yesterday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "woah sorry, i came up with a flu.",
+    "models": {
+      "historical_final": {
+        "english": "sorry, i didn't know you were having a flu.",
+        "local": "Sorry ah, I didn't know you had a flu."
+      },
+      "historical_best": {
+        "english": "oh, sorry to hear that.",
+        "local": "Oh, sorry to hear that."
+      },
+      "current_shared": {
+        "english": "I'm sorry to hear that. I'll check whether u have a flu.",
+        "local": "I'm sorry to hear that. I check whether u have a flu."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "context": [
+      "i heard you going to cafe later to study",
+      "ya you want come? dont say i never jio"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can ah, later i join you",
+    "models": {
+      "historical_final": {
+        "english": "okay, i'll join you later",
+        "local": "Can, later I join you."
+      },
+      "historical_best": {
+        "english": "ok, i'll join you later.",
+        "local": "Can, later I join you later."
+      },
+      "current_shared": {
+        "english": "okay, i'll join you later",
+        "local": "okay, i join you later"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "context": [
+      "tomorrow what you want to eat",
+      "lets eat at Chinatown tomorrow"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "onz, tmr meet na li",
+    "models": {
+      "historical_final": {
+        "english": "okay, see you tomorrow",
+        "local": "Can, see you tomorrow."
+      },
+      "historical_best": {
+        "english": "Okay, I'll meet you at Chinatown tomorrow.",
+        "local": "Can, I meet you at Chinatown tomorrow."
+      },
+      "current_shared": {
+        "english": "I'll meet her at Chinatown tomorrow.",
+        "local": "I meet her at Chinatown tomorrow."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "context": [
+      "later I need to lend your charger to charge my phone",
+      "ok can but I can only give you after 3"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hey can confirm i can use your charger after 3? thanks ah",
+    "models": {
+      "historical_final": {
+        "english": "Sorry, I can't make it later. I'll be waiting for you.",
+        "local": "Sorry ah, I cannot make it later. I waiting for you."
+      },
+      "historical_best": {
+        "english": "Sure, I'll let you know when you leave.",
+        "local": "Can, I let you know when you leave."
+      },
+      "current_shared": {
+        "english": "sure, let me know when you can use your charger.",
+        "local": "can, let me know when you use your charger."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "models": {
+      "historical_final": {
+        "english": "No, I haven't done it yet.",
+        "local": "No, I haven't done it yet."
+      },
+      "historical_best": {
+        "english": "No, I haven't done it yet.",
+        "local": "No, I haven't done it yet."
+      },
+      "current_shared": {
+        "english": "I haven't done it yet",
+        "local": "I haven't done it yet"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "context": [
+      "hi class, I had a family emergency and there will not be any class tomorrow.",
+      "oh no! what about the in class quiz?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+    "models": {
+      "historical_final": {
+        "english": "Okay, I'll be free on Thursday.",
+        "local": "Can, Thursday also free."
+      },
+      "historical_best": {
+        "english": "yeah, I'll be free on thursday.",
+        "local": "Can, I'll be free on thursday."
+      },
+      "current_shared": {
+        "english": "I'll check whether the make up class will be free on thursday.",
+        "local": "I check whether the make up class got free on thursday leh."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-027",
+    "context": [
+      "eh the school got 3d printer anot how to use",
+      "have, i using it now, you need to book a slot to use",
+      "ok i book later to use"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "paiseh ah can i change my booking i want to use it later",
+    "models": {
+      "historical_final": {
+        "english": "Sure, let me know when you can make it.",
+        "local": "Can, let me know when you can make it."
+      },
+      "historical_best": {
+        "english": "Sure, i can use it later.",
+        "local": "Can, i use it later."
+      },
+      "current_shared": {
+        "english": "sure, i'll use it later",
+        "local": "can, i use it later"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "models": {
+      "historical_final": {
+        "english": "Okay, let's meet at kopitiam then.",
+        "local": "Can, kopitiam then meet us."
+      },
+      "historical_best": {
+        "english": "Okay, let's meet at kopitiam later.",
+        "local": "Can, let us know later."
+      },
+      "current_shared": {
+        "english": "I'm not sure if you'll be able to make it. Let's know when you're ready.",
+        "local": "I not sure if you can make it leh. Let me know when you're ready."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "models": {
+      "historical_final": {
+        "english": "okay, let me know when the class starts",
+        "local": "Can, let me know when class starts."
+      },
+      "historical_best": {
+        "english": "okay, let me know if there's anything I can do for you.",
+        "local": "Can, let me know if there's anything I can do for you."
+      },
+      "current_shared": {
+        "english": "okay, let's book SR3 instead.",
+        "local": "okay, let's book SR3 instead."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-040",
+    "context": [
+      "so much work this week wtf",
+      "ya sia"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "how ah, want meet together to do work?",
+    "models": {
+      "historical_final": {
+        "english": "I'd like to meet you at the library.",
+        "local": "Can, library meet you at library."
+      },
+      "historical_best": {
+        "english": "sure, I'll meet you sometime next week.",
+        "local": "Can, I meet you sometime next week."
+      },
+      "current_shared": {
+        "english": "I'm not sure yet. Let's check my schedule.",
+        "local": "I not sure leh. Check my schedule first."
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-046",
+    "context": [
+      "hello,what time will you release the lecture recordings?",
+      "usually around 10pm its out"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ni hao, can I releasae it at 5 instead?",
+    "models": {
+      "historical_final": {
+        "english": "Sure, five works for you",
+        "local": "Can, five also can."
+      },
+      "historical_best": {
+        "english": "Sure, I'll let you know when the lecture starts.",
+        "local": "Can, I let you know when the lecture starts."
+      },
+      "current_shared": {
+        "english": "sure, five works for me.",
+        "local": "five works for me."
+      }
+    }
+  }
+]

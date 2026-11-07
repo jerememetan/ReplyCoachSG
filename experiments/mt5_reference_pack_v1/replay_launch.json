@@ -1,0 +1,13 @@
+{
+  "job_id": 357652,
+  "remote_root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_reference_pack_v1",
+  "state": "COMPLETED",
+  "purpose": "Current-environment exact paired replay of all three mT5 reference checkpoints on frozen50",
+  "training_performed": false,
+  "results_pending": false,
+  "exit_code": 0,
+  "elapsed": "00:00:27",
+  "exact_pairs_per_checkpoint": 50,
+  "total_exact_pairs": 150,
+  "report": "replay_results.json"
+}

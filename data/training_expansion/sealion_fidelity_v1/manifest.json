@@ -1,0 +1,11 @@
+{
+  "counts": {
+    "train": 86,
+    "validation": 18,
+    "challenge": 18
+  },
+  "scope": "Controlled supplemental template test; new input/anchor strings and template variants split apart. Objects/times may occur in historical training or pretraining; not independent unseen-domain gold. Challenge has no training gradients or checkpoint selection.",
+  "human_gold": false,
+  "team_data_changed": false,
+  "training_schedule": "745 audited rewrite replay pairs +745 targeted exposures/epoch; smaller unique targeted set cycled evenly."
+}

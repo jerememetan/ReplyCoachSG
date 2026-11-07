@@ -1,0 +1,11 @@
+﻿id,scenario,conversation,incoming_message,standard_reply,local_reply,decision,corrected_standard,corrected_local,notes
+SYN-HUMAN-EXP1-086,clarifications,peer: Are you free for rehearsal tomorrow?,We have not fixed the time yet.,What time are you planning to rehearse?,You all planning what time rehearse ah?,good,,,
+SYN-HUMAN-EXP1-035,constraints,user: I am keeping within a ten-dollar lunch budget today.,Want the twenty-dollar set meal?,That is over my budget. Could we choose something cheaper?,Over my budget leh. Cheaper one can?,good,,,
+SYN-HUMAN-EXP1-074,knowledge,peer: I have never assembled this display stand either.,Do you know who could help us?,We could ask the workshop assistant.,Ask workshop assistant can lah.,good,,,
+SYN-HUMAN-EXP1-048,location,"user: I put the badminton nets in the equipment cage, not the office.",Where did you keep the nets?,I put them in the equipment cage.,Equipment cage there I put liao.,good,,,
+SYN-HUMAN-EXP1-099,ordinary,peer: I spilled a little water on the table.,"Your bag is dry, thankfully.","No worries, thanks for checking my bag.","Never mind lah, thanks for checking my bag ah.",good,,,
+SYN-HUMAN-EXP1-007,ownership,user: Your baking tray is on my kitchen shelf.,Could you bring my tray to the cooking room?,"Sure, I will bring your tray to the cooking room.","Can, your tray I bring to cooking room.",good,,,
+SYN-HUMAN-EXP1-060,progress,user: I uploaded the photos to the shared folder yesterday.,Have you uploaded the photos?,"Yes, they have been in the shared folder since yesterday.","Ya, yesterday upload shared folder liao.",good,,,
+SYN-HUMAN-EXP1-068,refusals,user: Want to cycle to the park with me?,I would rather walk there.,"Sure, let us walk to the park instead.","Can, walk to park instead lah.",good,,,
+SYN-HUMAN-EXP1-020,sending,peer: I can send you either the slides or my handwritten notes.,Which one do you need?,Please send me your handwritten notes.,Your handwritten notes send me can?,good,,,
+SYN-HUMAN-EXP1-029,time,user: I am available either Tuesday morning or Thursday afternoon.,Thursday at 3 can?,"Yes, Thursday at three works for me.","Can, Thursday three I free.",good,,,

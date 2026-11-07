@@ -1,0 +1,1140 @@
+[
+  {
+    "kind": "time",
+    "value": "06:15",
+    "standard_anchor": "I cannot leave before 06:15.",
+    "response": "Before 06:15 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-001",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "06:15",
+    "standard_anchor": "Please return it before 06:15.",
+    "response": "Return before 06:15 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-002",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "06:15",
+    "standard_anchor": "I will arrive at 06:15.",
+    "response": "I reach at 06:15.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-003",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "06:15",
+    "standard_anchor": "Could we meet after 06:15?",
+    "response": "After 06:15 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-004",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "06:45",
+    "standard_anchor": "I cannot leave before 06:45.",
+    "response": "Before 06:45 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-005",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "06:45",
+    "standard_anchor": "Please return it before 06:45.",
+    "response": "Return before 06:45 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-006",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "06:45",
+    "standard_anchor": "I will arrive at 06:45.",
+    "response": "I reach at 06:45.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-007",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "06:45",
+    "standard_anchor": "Could we meet after 06:45?",
+    "response": "After 06:45 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-008",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:20",
+    "standard_anchor": "I cannot leave before 07:20.",
+    "response": "Before 07:20 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-009",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:20",
+    "standard_anchor": "Please return it before 07:20.",
+    "response": "Return before 07:20 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-010",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:20",
+    "standard_anchor": "I will arrive at 07:20.",
+    "response": "I reach at 07:20.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-011",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:20",
+    "standard_anchor": "Could we meet after 07:20?",
+    "response": "After 07:20 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-012",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:50",
+    "standard_anchor": "I cannot leave before 07:50.",
+    "response": "Before 07:50 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-013",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:50",
+    "standard_anchor": "Please return it before 07:50.",
+    "response": "Return before 07:50 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-014",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:50",
+    "standard_anchor": "I will arrive at 07:50.",
+    "response": "I reach at 07:50.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-015",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "07:50",
+    "standard_anchor": "Could we meet after 07:50?",
+    "response": "After 07:50 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-016",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:05",
+    "standard_anchor": "I cannot leave before 08:05.",
+    "response": "Before 08:05 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-017",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:05",
+    "standard_anchor": "Please return it before 08:05.",
+    "response": "Return before 08:05 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-018",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:05",
+    "standard_anchor": "I will arrive at 08:05.",
+    "response": "I reach at 08:05.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-019",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:05",
+    "standard_anchor": "Could we meet after 08:05?",
+    "response": "After 08:05 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-020",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:40",
+    "standard_anchor": "I cannot leave before 08:40.",
+    "response": "Before 08:40 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-021",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:40",
+    "standard_anchor": "Please return it before 08:40.",
+    "response": "Return before 08:40 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-022",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:40",
+    "standard_anchor": "I will arrive at 08:40.",
+    "response": "I reach at 08:40.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-023",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "08:40",
+    "standard_anchor": "Could we meet after 08:40?",
+    "response": "After 08:40 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-024",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:10",
+    "standard_anchor": "I cannot leave before 09:10.",
+    "response": "Before 09:10 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-025",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:10",
+    "standard_anchor": "Please return it before 09:10.",
+    "response": "Return before 09:10 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-026",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:10",
+    "standard_anchor": "I will arrive at 09:10.",
+    "response": "I reach at 09:10.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-027",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:10",
+    "standard_anchor": "Could we meet after 09:10?",
+    "response": "After 09:10 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-028",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:35",
+    "standard_anchor": "I cannot leave before 09:35.",
+    "response": "Before 09:35 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-029",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:35",
+    "standard_anchor": "Please return it before 09:35.",
+    "response": "Return before 09:35 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-030",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:35",
+    "standard_anchor": "I will arrive at 09:35.",
+    "response": "I reach at 09:35.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-031",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "09:35",
+    "standard_anchor": "Could we meet after 09:35?",
+    "response": "After 09:35 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-032",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "10:25",
+    "standard_anchor": "I cannot leave before 10:25.",
+    "response": "Before 10:25 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-033",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "10:25",
+    "standard_anchor": "Please return it before 10:25.",
+    "response": "Return before 10:25 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-034",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "10:25",
+    "standard_anchor": "I will arrive at 10:25.",
+    "response": "I reach at 10:25.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-035",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "10:25",
+    "standard_anchor": "Could we meet after 10:25?",
+    "response": "After 10:25 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-036",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "11:55",
+    "standard_anchor": "I cannot leave before 11:55.",
+    "response": "Before 11:55 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-037",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "11:55",
+    "standard_anchor": "Please return it before 11:55.",
+    "response": "Return before 11:55 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-038",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "11:55",
+    "standard_anchor": "I will arrive at 11:55.",
+    "response": "I reach at 11:55.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-039",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "11:55",
+    "standard_anchor": "Could we meet after 11:55?",
+    "response": "After 11:55 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-040",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "13:30",
+    "standard_anchor": "I cannot leave before 13:30.",
+    "response": "Before 13:30 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-041",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "13:30",
+    "standard_anchor": "Please return it before 13:30.",
+    "response": "Return before 13:30 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-042",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "13:30",
+    "standard_anchor": "I will arrive at 13:30.",
+    "response": "I reach at 13:30.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-043",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "13:30",
+    "standard_anchor": "Could we meet after 13:30?",
+    "response": "After 13:30 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-044",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "16:45",
+    "standard_anchor": "I cannot leave before 16:45.",
+    "response": "Before 16:45 cannot leave leh.",
+    "context": [],
+    "speakers": [],
+    "message": "Can you meet earlier?",
+    "item_id": "FIDELITY-TRAIN-045",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "16:45",
+    "standard_anchor": "Please return it before 16:45.",
+    "response": "Return before 16:45 ah.",
+    "context": [],
+    "speakers": [],
+    "message": "When do you need it back?",
+    "item_id": "FIDELITY-TRAIN-046",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "16:45",
+    "standard_anchor": "I will arrive at 16:45.",
+    "response": "I reach at 16:45.",
+    "context": [],
+    "speakers": [],
+    "message": "What time will you arrive?",
+    "item_id": "FIDELITY-TRAIN-047",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "time",
+    "value": "16:45",
+    "standard_anchor": "Could we meet after 16:45?",
+    "response": "After 16:45 meet can?",
+    "context": [],
+    "speakers": [],
+    "message": "When shall we meet?",
+    "item_id": "FIDELITY-TRAIN-048",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "charger",
+    "value": "Monday",
+    "standard_anchor": "Please return my charger on Monday.",
+    "response": "Monday return my charger ah.",
+    "context": [
+      "You still have my charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-049",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "charger",
+    "value": "Monday",
+    "standard_anchor": "I will return your charger on Monday.",
+    "response": "Monday I return your charger.",
+    "context": [
+      "I still have your charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-050",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "charger",
+    "value": "Tuesday",
+    "standard_anchor": "Please return my charger on Tuesday.",
+    "response": "Tuesday return my charger ah.",
+    "context": [
+      "You still have my charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-051",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "charger",
+    "value": "Tuesday",
+    "standard_anchor": "I will return your charger on Tuesday.",
+    "response": "Tuesday I return your charger.",
+    "context": [
+      "I still have your charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-052",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "charger",
+    "value": "Thursday",
+    "standard_anchor": "Please return my charger on Thursday.",
+    "response": "Thursday return my charger ah.",
+    "context": [
+      "You still have my charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-053",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "charger",
+    "value": "Thursday",
+    "standard_anchor": "I will return your charger on Thursday.",
+    "response": "Thursday I return your charger.",
+    "context": [
+      "I still have your charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-054",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "charger",
+    "value": "Friday",
+    "standard_anchor": "Please return my charger on Friday.",
+    "response": "Friday return my charger ah.",
+    "context": [
+      "You still have my charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-055",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "charger",
+    "value": "Friday",
+    "standard_anchor": "I will return your charger on Friday.",
+    "response": "Friday I return your charger.",
+    "context": [
+      "I still have your charger."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-056",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "adapter",
+    "value": "Monday",
+    "standard_anchor": "Please return my adapter on Monday.",
+    "response": "Monday return my adapter ah.",
+    "context": [
+      "You still have my adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-057",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "adapter",
+    "value": "Monday",
+    "standard_anchor": "I will return your adapter on Monday.",
+    "response": "Monday I return your adapter.",
+    "context": [
+      "I still have your adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-058",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "adapter",
+    "value": "Tuesday",
+    "standard_anchor": "Please return my adapter on Tuesday.",
+    "response": "Tuesday return my adapter ah.",
+    "context": [
+      "You still have my adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-059",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "adapter",
+    "value": "Tuesday",
+    "standard_anchor": "I will return your adapter on Tuesday.",
+    "response": "Tuesday I return your adapter.",
+    "context": [
+      "I still have your adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-060",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "adapter",
+    "value": "Thursday",
+    "standard_anchor": "Please return my adapter on Thursday.",
+    "response": "Thursday return my adapter ah.",
+    "context": [
+      "You still have my adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-061",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "adapter",
+    "value": "Thursday",
+    "standard_anchor": "I will return your adapter on Thursday.",
+    "response": "Thursday I return your adapter.",
+    "context": [
+      "I still have your adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-062",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "adapter",
+    "value": "Friday",
+    "standard_anchor": "Please return my adapter on Friday.",
+    "response": "Friday return my adapter ah.",
+    "context": [
+      "You still have my adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-063",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "adapter",
+    "value": "Friday",
+    "standard_anchor": "I will return your adapter on Friday.",
+    "response": "Friday I return your adapter.",
+    "context": [
+      "I still have your adapter."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-064",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "notebook",
+    "value": "Monday",
+    "standard_anchor": "Please return my notebook on Monday.",
+    "response": "Monday return my notebook ah.",
+    "context": [
+      "You still have my notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-065",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "notebook",
+    "value": "Monday",
+    "standard_anchor": "I will return your notebook on Monday.",
+    "response": "Monday I return your notebook.",
+    "context": [
+      "I still have your notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-066",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "notebook",
+    "value": "Tuesday",
+    "standard_anchor": "Please return my notebook on Tuesday.",
+    "response": "Tuesday return my notebook ah.",
+    "context": [
+      "You still have my notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-067",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "notebook",
+    "value": "Tuesday",
+    "standard_anchor": "I will return your notebook on Tuesday.",
+    "response": "Tuesday I return your notebook.",
+    "context": [
+      "I still have your notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-068",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "notebook",
+    "value": "Thursday",
+    "standard_anchor": "Please return my notebook on Thursday.",
+    "response": "Thursday return my notebook ah.",
+    "context": [
+      "You still have my notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-069",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "notebook",
+    "value": "Thursday",
+    "standard_anchor": "I will return your notebook on Thursday.",
+    "response": "Thursday I return your notebook.",
+    "context": [
+      "I still have your notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-070",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "notebook",
+    "value": "Friday",
+    "standard_anchor": "Please return my notebook on Friday.",
+    "response": "Friday return my notebook ah.",
+    "context": [
+      "You still have my notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-071",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "notebook",
+    "value": "Friday",
+    "standard_anchor": "I will return your notebook on Friday.",
+    "response": "Friday I return your notebook.",
+    "context": [
+      "I still have your notebook."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-072",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "umbrella",
+    "value": "Monday",
+    "standard_anchor": "Please return my umbrella on Monday.",
+    "response": "Monday return my umbrella ah.",
+    "context": [
+      "You still have my umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-073",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "umbrella",
+    "value": "Monday",
+    "standard_anchor": "I will return your umbrella on Monday.",
+    "response": "Monday I return your umbrella.",
+    "context": [
+      "I still have your umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Monday?",
+    "item_id": "FIDELITY-TRAIN-074",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "umbrella",
+    "value": "Tuesday",
+    "standard_anchor": "Please return my umbrella on Tuesday.",
+    "response": "Tuesday return my umbrella ah.",
+    "context": [
+      "You still have my umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-075",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "umbrella",
+    "value": "Tuesday",
+    "standard_anchor": "I will return your umbrella on Tuesday.",
+    "response": "Tuesday I return your umbrella.",
+    "context": [
+      "I still have your umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Tuesday?",
+    "item_id": "FIDELITY-TRAIN-076",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "umbrella",
+    "value": "Thursday",
+    "standard_anchor": "Please return my umbrella on Thursday.",
+    "response": "Thursday return my umbrella ah.",
+    "context": [
+      "You still have my umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-077",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "umbrella",
+    "value": "Thursday",
+    "standard_anchor": "I will return your umbrella on Thursday.",
+    "response": "Thursday I return your umbrella.",
+    "context": [
+      "I still have your umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Thursday?",
+    "item_id": "FIDELITY-TRAIN-078",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_me",
+    "object": "umbrella",
+    "value": "Friday",
+    "standard_anchor": "Please return my umbrella on Friday.",
+    "response": "Friday return my umbrella ah.",
+    "context": [
+      "You still have my umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can I return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-079",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "ownership",
+    "direction": "return_to_you",
+    "object": "umbrella",
+    "value": "Friday",
+    "standard_anchor": "I will return your umbrella on Friday.",
+    "response": "Friday I return your umbrella.",
+    "context": [
+      "I still have your umbrella."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you return it on Friday?",
+    "item_id": "FIDELITY-TRAIN-080",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "amount",
+    "value": "six",
+    "standard_anchor": "My budget is six dollars. Could we find something cheaper?",
+    "response": "My budget six dollars only leh. Find cheaper one can?",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like the expensive lunch set?",
+    "item_id": "FIDELITY-TRAIN-081",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "amount",
+    "value": "eight",
+    "standard_anchor": "My budget is eight dollars. Could we find something cheaper?",
+    "response": "My budget eight dollars only leh. Find cheaper one can?",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like the expensive lunch set?",
+    "item_id": "FIDELITY-TRAIN-082",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "amount",
+    "value": "eleven",
+    "standard_anchor": "My budget is eleven dollars. Could we find something cheaper?",
+    "response": "My budget eleven dollars only leh. Find cheaper one can?",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like the expensive lunch set?",
+    "item_id": "FIDELITY-TRAIN-083",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "amount",
+    "value": "fourteen",
+    "standard_anchor": "My budget is fourteen dollars. Could we find something cheaper?",
+    "response": "My budget fourteen dollars only leh. Find cheaper one can?",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like the expensive lunch set?",
+    "item_id": "FIDELITY-TRAIN-084",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "amount",
+    "value": "seventeen",
+    "standard_anchor": "My budget is seventeen dollars. Could we find something cheaper?",
+    "response": "My budget seventeen dollars only leh. Find cheaper one can?",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like the expensive lunch set?",
+    "item_id": "FIDELITY-TRAIN-085",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  },
+  {
+    "kind": "amount",
+    "value": "twenty",
+    "standard_anchor": "My budget is twenty dollars. Could we find something cheaper?",
+    "response": "My budget twenty dollars only leh. Find cheaper one can?",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like the expensive lunch set?",
+    "item_id": "FIDELITY-TRAIN-086",
+    "provenance": "Assistant-authored controlled template pair, not human gold; supplemental experiment only. No team record edited."
+  }
+]

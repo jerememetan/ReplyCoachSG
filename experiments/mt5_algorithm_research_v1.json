@@ -1,0 +1,85 @@
+{
+  "created_at_utc": "2026-11-07T13:25:27.738443+00:00",
+  "scope": "User requests latest mT5 examples, concrete reranker explanation and studies on algorithmic improvements.",
+  "random_sample_file": "experiments/mt5_restored_random_examples_1167719588.json",
+  "sampling": {
+    "seed": 1167719588,
+    "samples": 8,
+    "population": 24,
+    "outputs_verbatim": true,
+    "quality_filtering": false,
+    "model_job": 356868,
+    "decode": "beam4_ng3"
+  },
+  "recorded_reranker_demo": {
+    "source": "https://github.com/jerememetan/ReplyCoachSG/blob/6d5d00409911f16db2feb34b75f022bf69f05121/docs/qwen_reranker_experiment.md",
+    "kind": "Historical reviewed-only QwenLoRA greeting diagnostic, NOT latestDailyDialogadapter andNOT a new inference run",
+    "candidates": [
+      {
+        "text": "I'm fine, thanks",
+        "score": 2.654
+      },
+      {
+        "text": "I 到了, you where ah?",
+        "score": -2.85
+      }
+    ],
+    "score_kind": "uncalibrated yes-minus-no logit",
+    "interpretation": "Select highest scored existing candidate; no editing or semantic guarantee."
+  },
+  "papers": [
+    {
+      "title": "A Systematic Evaluation of Response Selection for Open Domain Dialogue",
+      "authors": "Hedayatnia et al.",
+      "year": 2022,
+      "url": "https://aclanthology.org/2022.sigdial-1.30/",
+      "finding": "Studies manually annotated real generator candidate pools; multiple valid positives and verified hard negatives improved response selection relative to compared adversarial data.",
+      "application": "Review actual training-only mT5 alternatives, especially role/polarity/time reversals, instead of relying mainly on unrelated random negatives.",
+      "limit": "Not a validation of this exact mT5 checkpoint, Singlish targets, or course pipeline."
+    },
+    {
+      "title": "Dialogue Natural Language Inference",
+      "authors": "Welleck et al.",
+      "year": 2019,
+      "url": "https://aclanthology.org/P19-1363/",
+      "finding": "NLI-trained reranking reduced persona contradictions in their dialogue experiments.",
+      "application": "Validate a contradiction-aware score using explicitly attributed You/Peer facts to downrank e.g submitted->not-submitted and unavailable->available.",
+      "limit": "Persona consistency differs from full conversation reasoning, ownership and numerical comparison; NLI is a fallible model."
+    },
+    {
+      "title": "Lexically Constrained Decoding for Sequence Generation Using Grid Beam Search",
+      "authors": "Hokamp and Liu",
+      "year": 2017,
+      "url": "https://aclanthology.org/P17-1141/",
+      "finding": "Grid beam search enforces supplied words/phrases during token-by-token generation; demonstrated in translation.",
+      "application": "Require critical English-draft time/amount tokens to remain in LOCAL generation; additionally validate that new conflicting values did not appear.",
+      "limit": "Forcing08:10 to appear does not preserve negation, before/after or ownership; translation results do not establish Singlish performance."
+    },
+    {
+      "title": "A Diversity-Promoting Objective Function for Neural Conversation Models",
+      "authors": "Li et al.",
+      "year": 2016,
+      "url": "https://aclanthology.org/N16-1014/",
+      "finding": "MMI-based objectives/decoding strategies target generic conversational responses; reported automatic andhuman gains on their datasets.",
+      "application": "Candidate scoring can penalize replies that are probable regardless of context.",
+      "limit": "Project already has older MMI/generic/copy/marker reranking code; previous surface metrics are not semantic-quality proof. Not a new untried project idea."
+    }
+  ],
+  "proposed_first_experiment": {
+    "generator_frozen": true,
+    "candidate_count": "4–8 distinct English candidates per context",
+    "measure_first": "Independent manual acceptable-candidate coverage, allowing multiple plausible replies; no exact authored-intent matching.",
+    "comparisons": [
+      "Original top1",
+      "Friendtrainedreranker on identical pool",
+      "Same reranker plus separatelyvalidated contradiction/valuechecks"
+    ],
+    "training_labels": "Only training-conversation candidates with reviewed appropriate/inappropriate judgments; new24evaluation examples and lockedtest remain excluded.",
+    "local_pipeline": "Rank English first; then render selected English toLOCAL; preserve actualchosenanchor and apply rewrite-only number/time consistency checks.",
+    "fallback": "If every available candidate is unacceptable, reranking cannot create a good answer; reject/regenerate or use a clearly identified fallback.",
+    "success": "Higher human-reviewed contextual usefulness and English/LOCAL fidelity on held-out conversations, not lower pairloss or moreparticles."
+  },
+  "status": "Research and examples prepared; no new training, checkpoint download, friend messages or deployment change",
+  "locked_test_used": false,
+  "default_changed": false
+}

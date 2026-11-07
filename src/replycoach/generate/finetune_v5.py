@@ -162,6 +162,12 @@ def preference_pairs(sheet_path: Path, train_rows: list[dict]) -> tuple[list[tup
     Returns the pairs, the count of "same" answers, and how many pairs came from "both bad".
     """
     sheet = json.loads(Path(sheet_path).read_text(encoding="utf-8"))
+    critic = sheet.get("training_critic")
+    if critic is not None and (critic.get("status") != "complete" or
+                               critic.get("purpose") != "training_preferences"):
+        raise ValueError("critic preference run must be complete and designated for training")
+    if critic is not None and critic.get("prompt_version") != "selectable-v5-user-reviewed":
+        raise ValueError("unsupported critic prompt version; regenerate labels under the selectable-draft rubric")
     rows = {(row["item_id"], row["style"]): row for row in train_rows}
     # Pairs from validation items would leak them into training.
     outside = [question["item_id"] for question in sheet["questions"]
@@ -255,6 +261,15 @@ def finetune(
     dpo_weight: float = 1.0,
     dpo_beta: float = 0.1,
     joint: bool = False,
+    synthetic_path: Path | None = None,
+    synthetic_count: int = 190,
+    max_steps: int | None = None,
+    teacher_path: Path | None = None,
+    teacher_mode: str = "replace",
+    rewrite_local: bool = False,
+    save_final: bool = False,
+    standard_repeats: int = 1,
+    save_steps: tuple[int, ...] = (),
 ) -> dict:
     """Fine-tune ``base_model`` (a stage 1 checkpoint). ``lora_rank=0`` trains every weight instead of an adapter.
 
@@ -278,6 +293,14 @@ def finetune(
     if not output_name.replace("_", "").replace("-", "").isalnum():
         raise ValueError("output name may contain only letters, digits, underscores, and hyphens")
     run_dir = output_dir / output_name
+    if max_steps is not None and (type(max_steps) is not int or max_steps < 1):
+        raise ValueError("max_steps must be a positive integer")
+    if any(type(step) is not int or step < 1 for step in save_steps) or len(set(save_steps)) != len(save_steps):
+        raise ValueError('save_steps must contain unique positive integers')
+    if save_steps and (max_steps is None or max(save_steps) > max_steps):
+        raise ValueError('save_steps requires a max_steps budget covering every requested step')
+    if any((run_dir / f'step_{step}').exists() for step in save_steps):
+        raise ValueError('Requested step checkpoint already exists; choose a fresh output name')
     best_dir = run_dir / "best"
     # Runs take minutes, so there is no resume: a reused name would mix two runs' files.
     if best_dir.exists():
@@ -289,18 +312,54 @@ def finetune(
     if joint and (negatives_path or preferences_path):
         # Both are made of single-style replies, which a joint model is never asked for.
         raise ValueError("joint training does not take --negatives or --preferences yet")
+    if rewrite_local and (joint or negatives_path or preferences_path or synthetic_path or context_variants
+                          or (teacher_path is not None and teacher_mode == 'augment')):
+        raise ValueError('Rewrite experiment requires one paired target per input and no other auxiliary objectives')
     if input_format(base_model)["speaker_labels"] and not speaker_labels:
         raise ValueError(f"{base_model} was trained with speaker labels; add --speaker-labels")
     torch.manual_seed(seed)
 
+    if standard_repeats != 1 and not rewrite_local:
+        raise ValueError('STANDARD repeats requires sequential rewrite training')
+    from replycoach.generate.rewrite_v5 import emphasize_standard
+    emphasize_standard([], standard_repeats)
     train_rows = item_rows(train_path)
     validation_rows = item_rows(validation_path)
     overlap = {row["item_id"] for row in train_rows} & {row["item_id"] for row in validation_rows}
     if overlap:
         raise ValueError(f"items in both training and validation: {', '.join(sorted(overlap)[:3])}")
+    teacher_report = None
+    if teacher_mode not in ('replace', 'augment'):
+        raise ValueError('teacher_mode must be replace or augment')
+    if teacher_path is not None:
+        if synthetic_path or preferences_path or negatives_path or context_variants or joint:
+            raise ValueError('Teacher experiment must isolate target changes; other auxiliary objectives are disabled')
+        from replycoach.generate.teacher_v5 import load_teacher_targets
+        teacher_rows, teacher_report = load_teacher_targets(teacher_path, train_rows, train_path)
+        teacher_report['mode'] = teacher_mode
+        train_rows = teacher_rows if teacher_mode == 'replace' else [*train_rows, *teacher_rows]
+    synthetic = []
+    synthetic_report = None
+    if synthetic_path is not None:
+        from replycoach.generate.synthetic_v5 import load_synthetic, manifest
+        if synthetic_count < 1:
+            raise ValueError("synthetic count must be positive")
+        available = load_synthetic(synthetic_path, [*train_rows, *validation_rows])
+        # Sample items, never individual styles, to preserve paired supervision.
+        pairs = [available[i:i + 2] for i in range(0, len(available), 2)]
+        selected = random.Random(seed).sample(pairs, min(synthetic_count, len(pairs)))
+        synthetic = [row for pair in selected for row in pair]
+        synthetic_report = {**manifest(synthetic_path, len(pairs)), "selected_items": len(selected),
+                            "selected_ids": [pair[0]["item_id"] for pair in selected]}
+        if joint:
+            synthetic = joint_rows(synthetic)
     if joint:
         train_rows = joint_rows(train_rows)
+    if rewrite_local:
+        from replycoach.generate.rewrite_v5 import rewrite_rows
+        train_rows = rewrite_rows(train_rows)
     item_pairs = len(train_rows)
+    standard_extra = emphasize_standard([r for r in train_rows if r['style'] == 'STANDARD'], standard_repeats - 1) if standard_repeats > 1 else []
     target_limit = 2 * max_target if joint else max_target
     variants = [variant for row in train_rows for variant in shorter_contexts(row)] if context_variants else []
     # Read from the training file only, so no validation conversation is ever trained on.
@@ -312,7 +371,7 @@ def finetune(
                                                   else ([], 0, 0))
     if preferences_path and not preferences:
         raise ValueError(f"no questions answered 1, 2 or both bad in {preferences_path}")
-    train_rows = [*train_rows, *variants, *inner, *rehearsal]
+    train_rows = [*train_rows, *variants, *inner, *rehearsal, *synthetic, *standard_extra]
 
     tokenizer = AutoTokenizer.from_pretrained(base_model)
     pad_id = tokenizer.pad_token_id
@@ -325,8 +384,12 @@ def finetune(
                       speaker_labels=speaker_labels) for side in (0, 1))
     )) if preferences else []
     # Validated per style, so the report shows if one style lags behind the other.
+    loss_rows = validation_rows
+    if rewrite_local:
+        loss_rows = rewrite_rows(validation_rows)
     validation_encoded = {
-        style: encode_rows([row for row in validation_rows if row["style"] == style], tokenizer, max_source, max_target,
+        style: encode_rows([row for row in loss_rows if row["style"] ==
+                           ('LOCAL_REWRITE' if rewrite_local and style == 'LOCAL' else style)], tokenizer, max_source, max_target,
                            speaker_labels=speaker_labels)
         for style in STYLES
     } if not joint else {JOINT_STYLE: encode_rows(joint_rows(validation_rows), tokenizer, max_source, target_limit,
@@ -372,6 +435,12 @@ def finetune(
         "train_pairs_by_kind": {"items": item_pairs, "context_variants": len(variants), "context_pairs": len(inner),
                                 "rehearsal": len(rehearsal)},
         "rehearsal_paths": [str(path) for path in rehearsal_paths],
+        "synthetic": synthetic_report,
+        "teacher": teacher_report,
+        "rewrite_local": rewrite_local,
+        "standard_repeats": standard_repeats,
+        "standard_extra_rows": len(standard_extra),
+        "local_validation_conditioning": "authored reference standard (oracle; not independent LOCAL loss)" if rewrite_local else "conversation only",
         "validation_items": len(validation_rows) // 2, "seed": seed, "speaker_labels": speaker_labels,
         "joint": joint,
         "unlikelihood": {
@@ -396,12 +465,18 @@ def finetune(
             **{f"validation_loss_{style.lower()}": round(value, 4) for style, value in before.items()},
         }],
     }
+    if synthetic_path is not None:
+        report["train_pairs_by_kind"]["synthetic"] = len(synthetic)
     print(json.dumps(report["history"][0]), flush=True)
 
     best_loss, stale = float("inf"), 0
     negative_order = torch.Generator().manual_seed(seed)
     preference_order = torch.Generator().manual_seed(seed)
     started = time.perf_counter()
+    optimizer_steps = 0
+    report["max_steps"] = max_steps
+    report['requested_save_steps'] = sorted(save_steps)
+    report['step_checkpoints'] = {}
     for epoch in range(1, epochs + 1):
         model.train()
         epoch_loss, epoch_tokens, epoch_penalty, penalty_steps = 0.0, 0, 0.0, 0
@@ -436,9 +511,21 @@ def finetune(
             loss.backward()
             torch.nn.utils.clip_grad_norm_(trainable, 1.0)
             optimizer.step()
+            optimizer_steps += 1
+            if optimizer_steps in save_steps:
+                checkpoint = run_dir / f'step_{optimizer_steps}'
+                model.save_pretrained(checkpoint)
+                tokenizer.save_pretrained(checkpoint)
+                (checkpoint / INPUT_FORMAT).write_text(json.dumps({
+                    'speaker_labels': speaker_labels, 'joint': joint,
+                    **({'rewrite_local': True, 'max_source': max_source, 'max_target': max_target}
+                       if rewrite_local else {})}) + '\n', encoding='utf-8')
+                report['step_checkpoints'][str(optimizer_steps)] = str(checkpoint)
             token_count = int(labels.ne(-100).sum().item())
             epoch_loss += float(likelihood.item()) * token_count
             epoch_tokens += token_count
+            if max_steps is not None and optimizer_steps >= max_steps:
+                break
 
         losses = evaluate()
         # Unweighted mean, so neither style decides the checkpoint alone.
@@ -450,7 +537,11 @@ def finetune(
             **({"dpo_loss": round(epoch_dpo / dpo_steps, 4), "dpo_agreement": round(epoch_agreement / dpo_steps, 3)}
                if dpo_steps else {}),
             "seconds": round(time.perf_counter() - started, 1),
+            "optimizer_steps": optimizer_steps,
         }
+        report["optimizer_steps"] = optimizer_steps
+        if max_steps is not None and optimizer_steps >= max_steps:
+            report["stopped_at_step_budget"] = True
         report["history"].append(entry)
         print(json.dumps(entry), flush=True)
         if mean_loss < best_loss:
@@ -458,22 +549,36 @@ def finetune(
             report["best_epoch"], report["best_validation_loss"] = epoch, round(mean_loss, 4)
             model.save_pretrained(best_dir)  # a LoRA model saves only its adapter
             tokenizer.save_pretrained(best_dir)
-            (best_dir / INPUT_FORMAT).write_text(json.dumps({"speaker_labels": speaker_labels, "joint": joint}) + "\n",
+            (best_dir / INPUT_FORMAT).write_text(json.dumps({"speaker_labels": speaker_labels, "joint": joint,
+                **({"rewrite_local": True, "max_source": max_source, "max_target": max_target} if rewrite_local else {})}) + "\n",
                                                  encoding="utf-8")
         else:
             stale += 1
         if device.type == "cuda":
             report["peak_cuda_gb"] = round(torch.cuda.max_memory_allocated() / (1024 ** 3), 3)
         report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        if report.get("stopped_at_step_budget"):
+            break
         if stale >= patience:
             # Validation has stopped improving; more epochs would only memorise the training items.
             report["stopped_early"] = True
             break
 
+    if save_final:
+        final_dir = run_dir / "final"
+        model.save_pretrained(final_dir)
+        tokenizer.save_pretrained(final_dir)
+        (final_dir / INPUT_FORMAT).write_text(json.dumps({"speaker_labels": speaker_labels, "joint": joint,
+            **({"rewrite_local": True, "max_source": max_source, "max_target": max_target} if rewrite_local else {})}) + "\n", encoding="utf-8")
+        report['final_checkpoint'] = str(final_dir)
+        report['final_validation_outputs'] = validation_outputs(
+            model, tokenizer, validation_rows, max_source, max_target, device,
+            speaker_labels=speaker_labels, joint=joint, rewrite_local=rewrite_local)
     # Replies from the best epoch for every validation item, to read and to compare with V4.
     model = load_finetuned(best_dir, device)
     report["validation_outputs"] = validation_outputs(
-        model, tokenizer, validation_rows, max_source, max_target, device, speaker_labels=speaker_labels, joint=joint
+        model, tokenizer, validation_rows, max_source, max_target, device, speaker_labels=speaker_labels, joint=joint,
+        rewrite_local=rewrite_local
     )
     if joint:
         report["joint_unsplit"] = sum(not row["joint_split"] for row in report["validation_outputs"])
@@ -515,7 +620,8 @@ def joint_decoding(tokenizer, decoding: dict | None) -> dict:
 
 
 def validation_outputs(model, tokenizer, validation_rows: list[dict], max_source: int, max_target: int, device,
-                       decoding: dict | None = None, speaker_labels: bool = False, joint: bool = False) -> list[dict]:
+                       decoding: dict | None = None, speaker_labels: bool = False, joint: bool = False,
+                       rewrite_local: bool = False) -> list[dict]:
     """Both styles generated for each validation item, next to the team's two references.
 
     A ``joint`` model writes both in one reply of up to ``2 * max_target`` tokens, which is then split. Its
@@ -526,7 +632,12 @@ def validation_outputs(model, tokenizer, validation_rows: list[dict], max_source
     references = {row["item_id"]: row for row in validation_rows if row["style"] == "STANDARD"}
     local_references = {row["item_id"]: row["response"] for row in validation_rows if row["style"] == "LOCAL"}
     rows = list(references.values())
-    if joint:
+    if joint and rewrite_local:
+        raise ValueError('Joint and sequential rewrite are different generation modes')
+    if rewrite_local:
+        from replycoach.generate.rewrite_v5 import generate_pair
+        generated = generate_pair(model, tokenizer, rows, max_source, max_target, device, decoding, speaker_labels)
+    elif joint:
         texts = generate_replies(model, tokenizer, rows, JOINT_STYLE, max_source, 2 * max_target, device,
                                  joint_decoding(tokenizer, decoding), speaker_labels)
         halves = [split_joint(text) or (text.strip(), text.strip()) for text in texts]
@@ -542,6 +653,8 @@ def validation_outputs(model, tokenizer, validation_rows: list[dict], max_source
             "item_id": row["item_id"], "context": row["context"], "message": row["message"],
             "reference_standard": row["response"], "generated_standard": generated["STANDARD"][index],
             "reference_local": local_references[row["item_id"]], "generated_local": generated["LOCAL"][index],
+            **({"local_conditioned_on": generated['STANDARD'][index],
+                "rewrite_skipped_empty_standard": not bool(generated['STANDARD'][index].strip())} if rewrite_local else {}),
             **({"joint_reply": texts[index], "joint_split": split_joint(texts[index]) is not None} if joint else {}),
         }
         for index, row in enumerate(rows)
@@ -552,6 +665,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="V5 stage 2: LoRA fine-tune of a stage 1 mT5 on development items.")
     parser.add_argument("--base-model", required=True, help="Stage 1 checkpoint, e.g. artifacts/mt5_v5_pretrain/best")
     parser.add_argument("--train-items", type=Path, default=DEV_TRAIN)
+    parser.add_argument("--synthetic-items", type=Path, help="Reviewed paired synthetic JSONL; see docs/synthetic_v5.md")
+    parser.add_argument("--synthetic-count", type=int, default=190, help="Maximum synthetic items per epoch")
+    parser.add_argument("--teacher-targets", type=Path, help="Audited teacher targets for exactly the original training inputs")
+    parser.add_argument("--teacher-mode", choices=['replace', 'augment'], default='replace')
+    parser.add_argument("--rewrite-local", action='store_true', help='Generate STANDARD then condition LOCAL on that exact draft')
+    parser.add_argument("--save-final", action='store_true', help='Save final-step weights and outputs as well as best-by-loss')
+    parser.add_argument("--standard-repeats", type=int, default=1, help='STANDARD exposure per paired rewrite row')
+    parser.add_argument('--save-steps', type=int, nargs='+', default=[], help='Save exact optimizer-step checkpoints without interrupting training')
     parser.add_argument("--validation-items", type=Path, default=DEV_VALIDATION)
     parser.add_argument("--lora-rank", type=int, default=16, help="0 trains every weight instead of an adapter.")
     parser.add_argument("--lora-alpha", type=int, default=32)
@@ -559,6 +680,7 @@ def main() -> None:
     parser.add_argument("--lora-targets", nargs="+", default=["q", "v"], help="mT5 layers: q k v o wi_0 wi_1 wo")
     parser.add_argument("--epochs", type=int, default=30)
     parser.add_argument("--patience", type=int, default=5, help="Stop after this many epochs without improvement.")
+    parser.add_argument("--max-steps", type=int, help="Cap optimizer updates, validating the final partial epoch too.")
     parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--learning-rate", type=float, default=1e-3)
     parser.add_argument("--max-source-tokens", type=int, default=128)
@@ -594,7 +716,11 @@ def main() -> None:
         rehearsal_count=args.rehearsal_count, speaker_labels=args.speaker_labels, seed=args.seed,
         negatives_path=args.negatives, unlikelihood_weight=args.unlikelihood_weight,
         negatives_per_row=args.negatives_per_row, preferences_path=args.preferences, dpo_weight=args.dpo_weight,
-        dpo_beta=args.dpo_beta, joint=args.joint,
+        dpo_beta=args.dpo_beta, joint=args.joint, synthetic_path=args.synthetic_items,
+        synthetic_count=args.synthetic_count, max_steps=args.max_steps,
+        teacher_path=args.teacher_targets, teacher_mode=args.teacher_mode,
+        rewrite_local=args.rewrite_local, save_final=args.save_final, standard_repeats=args.standard_repeats,
+        save_steps=tuple(args.save_steps),
     )
     print(f"stage 1 validation loss: {report['history'][0]['validation_loss']}; "
           f"best: {report['best_validation_loss']} (epoch {report['best_epoch']})")

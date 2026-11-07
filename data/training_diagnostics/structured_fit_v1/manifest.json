@@ -1,0 +1,14 @@
+{
+  "train_cases": 12,
+  "permuted_cases": 36,
+  "novel_cases": 12,
+  "purpose": "Can existing model/input/objective fit tiny training data?",
+  "permuted_scope": "Same12 facts, all three nonidentity cyclic option rotations; no independent scenario claim",
+  "novel_scope": "Twelve previously reused synthetic validation cases, no gradient or checkpoint selection; not untouched test",
+  "training_selection": "One case per correct option position per category, frozen before diagnostic results",
+  "source_sha256": {
+    "train.jsonl": "00f75ee7a41b39ebf40f1b4b36564ced01844b69a3feb64ff496d5abd16c351d",
+    "validation.jsonl": "6aad2173710d3aee781021b65b8eb7928612a5248d6b367f3994e5e30a192562"
+  },
+  "no_locked_or_synthetic_test_read": true
+}

@@ -1,0 +1,305 @@
+{
+  "method": "base",
+  "optimizer_steps": 0,
+  "base_files_sha256": {
+    "config.json": "a0458a792eb3e2762d20be282086dceff3b3043e76e929288e912f3e2db51cd3",
+    "generation_config.json": "e49433d4db80d6d0c9bc88ceda99c723c79eabfcbb67feff9a719f9a774e949b",
+    "model.safetensors": "20b20e1ac9382c2ca83b6e0b2c665ec4fb1104f853c0e2489d9b0ad205f871ac",
+    "tokenizer.json": "b23d6ee13c7b975febb7876a6f5c2d02470a309fbf8497e06ccef9c5ace30742",
+    "tokenizer_config.json": "114fb53375b77766239e5e0f431714a79701169a2ee9bbcd41ec364988dae0f8",
+    "v5_input.json": "155c80cd027746c140276d3721942029e9ffcb7752e7c0dca310e0ff7ffd9ce7"
+  },
+  "train_generations": [
+    {
+      "item_id": "FIT-086",
+      "generated_standard": "I'm afraid I can't make it tomorrow.",
+      "target": "What time are you planning to rehearse?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-035",
+      "generated_standard": "No, I don't have enough money.",
+      "target": "That is over my budget. Could we choose something cheaper?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-074",
+      "generated_standard": "I'm sorry, but I can't help you.",
+      "target": "We could ask the workshop assistant.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-048",
+      "generated_standard": "I kept them in the office cage.",
+      "target": "I put them in the equipment cage.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-099",
+      "generated_standard": "I apologize for the inconvenience.",
+      "target": "No worries, thanks for checking my bag.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-007",
+      "generated_standard": "I'm sorry. I can't do that.",
+      "target": "Sure, I will bring your tray to the cooking room.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-060",
+      "generated_standard": "No, I haven't.",
+      "target": "Yes, they have been in the shared folder since yesterday.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-068",
+      "generated_standard": "Why don't we go to the park?",
+      "target": "Sure, let us walk to the park instead.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-020",
+      "generated_standard": "I need the slides.",
+      "target": "Please send me your handwritten notes.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-029",
+      "generated_standard": "I am afraid I can't make it.",
+      "target": "Yes, Thursday at three works for me.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-001",
+      "generated_standard": "Sure.",
+      "target": "Sure, you can use my fan during the briefing.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-002",
+      "generated_standard": "No, I don't need one.",
+      "target": "Yes please, could I borrow your extra ruler?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-003",
+      "generated_standard": "I'm afraid I can't.",
+      "target": "Yes please, bring my raincoat tonight.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-004",
+      "generated_standard": "No, you can't.",
+      "target": "Sure, I will return your bag during lunch.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-011",
+      "generated_standard": "I'm sorry. I didn't see it.",
+      "target": "Sure, I will forward the schedule to you.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-012",
+      "generated_standard": "No, I'll send it to you in a few minutes.",
+      "target": "Yes please, send me the updated song list before practice.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-021",
+      "generated_standard": "I'm afraid I can't make it.",
+      "target": "I cannot leave before six. Could we meet after my shift?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-024",
+      "generated_standard": "No, I'm afraid I can't.",
+      "target": "The counter will be closed by then. Could someone collect them earlier?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-031",
+      "generated_standard": "No, I don't.",
+      "target": "No thanks, could you get me the vegetable noodles instead?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-033",
+      "generated_standard": "I'm afraid I can't.",
+      "target": "Sorry, I cannot play while my ankle is injured.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-041",
+      "generated_standard": "I'm going to head to the Music Hall.",
+      "target": "Head to Studio 4 on level two.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-042",
+      "generated_standard": "I am on the way to the office.",
+      "target": "I am beside the blue vending machine at the north gate.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-052",
+      "generated_standard": "Yes, I have.",
+      "target": "Yes, I submitted it this morning.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "FIT-055",
+      "generated_standard": "Yes, I do.",
+      "target": "No, I returned it to the event desk after our shift.",
+      "exact_target_match": false
+    }
+  ],
+  "paraphrase_generations": [
+    {
+      "item_id": "PARA-086",
+      "generated_standard": "I'm very sorry to hear that.",
+      "target": "What time are you planning to rehearse?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-035",
+      "generated_standard": "That's a good idea. I'll take it.",
+      "target": "That is over my budget. Could we choose something cheaper?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-074",
+      "generated_standard": "I'm sorry, but we can't help you.",
+      "target": "We could ask the workshop assistant.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-048",
+      "generated_standard": "I stored them at the office.",
+      "target": "I put them in the equipment cage.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-099",
+      "generated_standard": "I'm sorry to hear that.",
+      "target": "No worries, thanks for checking my bag.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-007",
+      "generated_standard": "I'm sorry. I can't help you.",
+      "target": "Sure, I will bring your tray to the cooking room.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-060",
+      "generated_standard": "Yes, they are.",
+      "target": "Yes, they have been in the shared folder since yesterday.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-068",
+      "generated_standard": "Where would you like to go?",
+      "target": "Sure, let us walk to the park instead.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-020",
+      "generated_standard": "I would like to send the slides by hand.",
+      "target": "Please send me your handwritten notes.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-029",
+      "generated_standard": "That would be fine.",
+      "target": "Yes, Thursday at three works for me.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-001",
+      "generated_standard": "I'm afraid I can't.",
+      "target": "Sure, you can use my fan during the briefing.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-002",
+      "generated_standard": "Yes, I'd like to borrow it.",
+      "target": "Yes please, could I borrow your extra ruler?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-003",
+      "generated_standard": "No, I'm going to the bus interchange.",
+      "target": "Yes please, bring my raincoat tonight.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-004",
+      "generated_standard": "I'm sorry. I can't find it.",
+      "target": "Sure, I will return your bag during lunch.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-011",
+      "generated_standard": "I'm sorry. I didn't see it.",
+      "target": "Sure, I will forward the schedule to you.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-012",
+      "generated_standard": "I'd like to, but I'm afraid I can't.",
+      "target": "Yes please, send me the updated song list before practice.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-021",
+      "generated_standard": "Yes, I think so.",
+      "target": "I cannot leave before six. Could we meet after my shift?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-024",
+      "generated_standard": "I will be able to pick up the costumes when they are ready.",
+      "target": "The counter will be closed by then. Could someone collect them earlier?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-031",
+      "generated_standard": "No, thank you.",
+      "target": "No thanks, could you get me the vegetable noodles instead?",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-033",
+      "generated_standard": "I'm afraid I can't.",
+      "target": "Sorry, I cannot play while my ankle is injured.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-041",
+      "generated_standard": "You need to go to the third floor.",
+      "target": "Head to Studio 4 on level two.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-042",
+      "generated_standard": "I am at the northern gate.",
+      "target": "I am beside the blue vending machine at the north gate.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-052",
+      "generated_standard": "Yes, it is.",
+      "target": "Yes, I submitted it this morning.",
+      "exact_target_match": false
+    },
+    {
+      "item_id": "PARA-055",
+      "generated_standard": "Yes, it is.",
+      "target": "No, I returned it to the event desk after our shift.",
+      "exact_target_match": false
+    }
+  ],
+  "limitation": "Unchanged stage1 checkpoint; generated after diagnostic runs, with no optimization or selection."
+}

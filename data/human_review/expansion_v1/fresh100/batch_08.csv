@@ -1,0 +1,11 @@
+﻿id,scenario,conversation,incoming_message,standard_reply,local_reply,decision,corrected_standard,corrected_local,notes
+SYN-HUMAN-EXP1-084,clarifications,peer: Could you help me carry the equipment?,I will be at the pickup point.,What equipment do you need help carrying?,What equipment need help carry ah?,,,,
+SYN-HUMAN-EXP1-037,constraints,user: I promised not to share the draft outside our group.,Can you forward the draft to the other class?,"Sorry, I promised to keep it within our group.","Paiseh, promise keep within our group liao.",,,,
+SYN-HUMAN-EXP1-079,knowledge,user: I have never booked a campus locker.,I booked mine last term and can help you.,"Thanks, could you explain how to book one?","Thanks ah, can explain how to book anot?",,,,
+SYN-HUMAN-EXP1-049,location,peer: The display boards are in the second-floor corridor.,Do you know where the boards are?,"Yes, they are in the corridor on level two.","Ya, level two corridor there.",,,,
+SYN-HUMAN-EXP1-097,ordinary,peer: I am exhausted after that full day of volunteering.,Going home to rest now.,Get some rest. You have done a lot today.,"Go rest lah, today you do a lot already.",,,,
+SYN-HUMAN-EXP1-010,ownership,user: I have two spare tent pegs in my backpack.,Can I take one? My tent is missing a peg.,"Sure, take one of my spare tent pegs.","Can, my spare tent peg you take one.",,,,
+SYN-HUMAN-EXP1-059,progress,user: I have collected the cash from everyone except Ben.,Everyone paid for the dinner?,"Not yet, Ben has not paid me.","Haven’t all pay leh, Ben haven’t pay me.",,,,
+SYN-HUMAN-EXP1-061,refusals,user: Want to join us for supper tonight?,"Sorry, I need to get up early, so I will skip tonight.","No worries, we can have supper another time.","Never mind lah, next time then supper.",,,,
+SYN-HUMAN-EXP1-014,sending,peer: I recorded the guest lecture for you.,You want the whole recording or just the last part?,Please send me the whole recording.,Whole recording send me can?,,,,
+SYN-HUMAN-EXP1-030,time,user: I need thirty minutes to walk from the field to the auditorium.,Practice ends at 4.45. Can you reach the auditorium at 5?,I would reach around five fifteen. Could we meet then?,I about five fifteen then reach leh. That time meet can?,,,,

@@ -1,0 +1,107 @@
+{
+  "rl": {
+    "arm": "rl",
+    "status": "complete",
+    "history": [
+      {
+        "epoch": 0,
+        "optimizer_steps": 0,
+        "train": {
+          "cases": 192,
+          "greedy_correct": 48,
+          "greedy_accuracy": 0.25,
+          "expected_reward": -0.4986713683853547
+        },
+        "validation": {
+          "cases": 48,
+          "greedy_correct": 12,
+          "greedy_accuracy": 0.25,
+          "expected_reward": -0.4973488003015518
+        }
+      },
+      {
+        "epoch": 1,
+        "optimizer_steps": 96,
+        "train": {
+          "cases": 192,
+          "greedy_correct": 48,
+          "greedy_accuracy": 0.25,
+          "expected_reward": -0.4980338014041384
+        },
+        "validation": {
+          "cases": 48,
+          "greedy_correct": 12,
+          "greedy_accuracy": 0.25,
+          "expected_reward": -0.49873146414756775
+        },
+        "mean_kl": 0.37882284534862265
+      }
+    ],
+    "best_epoch": 0,
+    "optimizer_steps": 96,
+    "stop_reason": "validation_patience1",
+    "test": {
+      "cases": 48,
+      "greedy_correct": 12,
+      "greedy_accuracy": 0.25,
+      "expected_reward": -0.5016906087597212
+    }
+  },
+  "sft": {
+    "arm": "sft",
+    "status": "complete",
+    "history": [
+      {
+        "epoch": 0,
+        "optimizer_steps": 0,
+        "train": {
+          "cases": 192,
+          "greedy_correct": 48,
+          "greedy_accuracy": 0.25,
+          "expected_reward": -0.4986713683853547
+        },
+        "validation": {
+          "cases": 48,
+          "greedy_correct": 12,
+          "greedy_accuracy": 0.25,
+          "expected_reward": -0.4973488003015518
+        }
+      },
+      {
+        "epoch": 1,
+        "optimizer_steps": 96,
+        "train": {
+          "cases": 192,
+          "greedy_correct": 51,
+          "greedy_accuracy": 0.265625,
+          "expected_reward": -0.49620639098187286
+        },
+        "validation": {
+          "cases": 48,
+          "greedy_correct": 13,
+          "greedy_accuracy": 0.2708333333333333,
+          "expected_reward": -0.5003470095495383
+        },
+        "mean_kl": 0.1292750355496537
+      }
+    ],
+    "best_epoch": 0,
+    "optimizer_steps": 96,
+    "stop_reason": "validation_patience1",
+    "test": {
+      "cases": 48,
+      "greedy_correct": 12,
+      "greedy_accuracy": 0.25,
+      "expected_reward": -0.5016906087597212
+    }
+  },
+  "baseline": {
+    "status": "complete",
+    "test": {
+      "cases": 48,
+      "greedy_correct": 12,
+      "greedy_accuracy": 0.25,
+      "expected_reward": -0.5016906087597212
+    }
+  }
+}

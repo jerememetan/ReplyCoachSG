@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "inputs": "inputs.json",
+  "sampling_unchanged": true,
+  "reference_keys": [
+    "historical_final",
+    "historical_best",
+    "current_shared"
+  ],
+  "outputs_unchanged": true,
+  "inference_job": 357654,
+  "gpu_requested": "Any project GPU",
+  "remote_results": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_reference_pack_v1/artifacts/random10_1632249497_all3.json",
+  "node": "aloha",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "elapsed": "00:00:27",
+  "exit_code": 0,
+  "complete_pairs": 30,
+  "input_ids_and_anchors_verified": true,
+  "A_matches_previous10": true,
+  "all_checkpoints_unchanged": true,
+  "results_sha256": "a61da8cdc8d0ee9d17dfaeba2599de7fb3741c816225a0f46b8f4c8b15a811eb"
+}

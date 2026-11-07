@@ -1,0 +1,145 @@
+{
+  "purpose": "Actual recurring student context failures for inspection; not newly approved training data",
+  "items": [
+    {
+      "item_id": "ITEM-A-024",
+      "conversation": [
+        [
+          "peer",
+          "Hey have you printed the worksheet given out yesterday?"
+        ],
+        [
+          "user",
+          "No, I will need to print it in school. Do you know how to use the printer?"
+        ]
+      ],
+      "message": "paiseh, i don't know how to use the printer in school.",
+      "rewrite_by_seed": {
+        "425": {
+          "generated_standard": "Don't worry, I will print it first. Do you know how to print it?",
+          "generated_local": "Don't worry, I know how to print it first."
+        },
+        "1": {
+          "generated_standard": "Okay, let me know how to use the printer.",
+          "generated_local": "Okay, let me know how to use printer."
+        },
+        "2": {
+          "generated_standard": "Okay, I will print it first. Do you know how to print it?",
+          "generated_local": "Okay, I know how to print it first."
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-B-034",
+      "conversation": [
+        [
+          "peer",
+          "I might not make it to the morning class"
+        ],
+        [
+          "user",
+          "I can send you an update afterwards"
+        ]
+      ],
+      "message": "can tell me what I miss?",
+      "rewrite_by_seed": {
+        "425": {
+          "generated_standard": "Sure, let me know what you missed.",
+          "generated_local": "Can, let me know what you missed."
+        },
+        "1": {
+          "generated_standard": "Sure, let me know when you will be free.",
+          "generated_local": "Can, let me know when you free."
+        },
+        "2": {
+          "generated_standard": "Sure, let me know what you missed.",
+          "generated_local": "Can, let me know what you miss."
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-B-057",
+      "conversation": [
+        [
+          "peer",
+          "my phone is almost out of battery"
+        ],
+        [
+          "user",
+          "I brought my charger"
+        ]
+      ],
+      "message": "can I borrow your charger?",
+      "rewrite_by_seed": {
+        "425": {
+          "generated_standard": "Sure, I'll borrow mine too.",
+          "generated_local": "Can, I borrow mine also."
+        },
+        "1": {
+          "generated_standard": "Sure, I'll borrow it.",
+          "generated_local": "Can, I borrow my charger."
+        },
+        "2": {
+          "generated_standard": "Sure, I'll borrow it.",
+          "generated_local": "Can, I borrow my charger."
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-D-013",
+      "conversation": [
+        [
+          "peer",
+          "hello"
+        ],
+        [
+          "user",
+          "yes?"
+        ]
+      ],
+      "message": "Can give me ans for assignment 1?",
+      "rewrite_by_seed": {
+        "425": {
+          "generated_standard": "Sure, I'll give you a few more minutes.",
+          "generated_local": "Can, I give you a few more minutes."
+        },
+        "1": {
+          "generated_standard": "Sure, what kind of material would you like to give me?",
+          "generated_local": "Can, what kind of material you want to give me?"
+        },
+        "2": {
+          "generated_standard": "Sure, I'll take them.",
+          "generated_local": "Can, I take them."
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "conversation": [
+        [
+          "user",
+          "bro you want to eat at kopitiam later? The whole gang is cmg"
+        ],
+        [
+          "user",
+          "if you want ah let us know"
+        ]
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "rewrite_by_seed": {
+        "425": {
+          "generated_standard": "Okay, let me know when you're free.",
+          "generated_local": "Okay, let me know when you free."
+        },
+        "1": {
+          "generated_standard": "Okay, let's meet at kopitiam then.",
+          "generated_local": "Can, kopitiam then meet us."
+        },
+        "2": {
+          "generated_standard": "Don't worry, I'll join you later",
+          "generated_local": "Don't worry, I join you later."
+        }
+      }
+    }
+  ]
+}

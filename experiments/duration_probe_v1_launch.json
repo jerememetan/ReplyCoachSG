@@ -1,0 +1,32 @@
+{
+  "jobs": {
+    "control": 352662,
+    "capacity": 352663
+  },
+  "accounts": {
+    "control": "group",
+    "capacity": "personal"
+  },
+  "gpu_request": "3090",
+  "seed": 425,
+  "source_recipe_sha256": "f8e10d5d8a2d17ff8a428dc880ae4a269840e6375beb2fe2839e119528d611d9",
+  "tests": {
+    "training_rewrite_teacher": 53,
+    "review_contract": 1
+  },
+  "status": "complete_after_inference_recovery",
+  "control_initial_job_state": "FAILED after784 updates and first3 inference artifacts",
+  "recovery_job": 352670,
+  "recovery_kind": "Inference only; step784/final tensor identity required",
+  "capacity_job_state": "COMPLETED",
+  "control_elapsed": "00:02:52",
+  "capacity_elapsed": "00:04:01",
+  "recovery_elapsed": "00:00:19",
+  "weights_retrained": false,
+  "default_replaced": false,
+  "held_out_test_read": false,
+  "recovery_files_sha256": {
+    "scripts/recover_duration_probe_v1.py": "27ef65bc811f402b890fa22bcf02261dbfb1503f74f52bc9007c1526499bf61e",
+    "scripts/v5_duration_recover.sbatch": "4bd7c49fb52b4ea843ef69e2b8e0518cce49c21e84d232c23cd95f0487b73ecf"
+  }
+}

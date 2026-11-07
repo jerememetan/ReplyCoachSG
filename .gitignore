@@ -35,3 +35,13 @@ Thumbs.db
 docs/superpowers/
 # SMU restricted course handout — do not push to GitHub
 Group Project Guidelines*.pdf
+
+/data/public/native_rewrite_v2/
+/experiments/native_rewrite_v2_results/
+/data/public/sealion_dialogue_v1/
+
+/data/public/sealion_full_v1/
+
+# Exported model weights are shared separately from repository code/model cards.
+/artifacts/model_handoff_v1/*.tar
+/artifacts/model_handoff_v1/*.tar.*

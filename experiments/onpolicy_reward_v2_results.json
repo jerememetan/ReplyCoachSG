@@ -1,0 +1,648 @@
+{
+  "fresh": {
+    "samples": 48,
+    "scenario_groups": 12,
+    "unique_prompt_drafts": 48,
+    "expected_counts": {
+      "acceptable": 11,
+      "unacceptable": 24,
+      "uncertain": 13
+    },
+    "positive_acceptance": 0.45454545454545453,
+    "negative_rejection": 0.9583333333333334,
+    "balanced_agreement": 0.7064393939393939,
+    "false_positive_ids": [
+      "ONPOLICY2-012-S2"
+    ],
+    "definite_abstentions": 0,
+    "mixed_reward_groups": 6,
+    "raw_failures": 0,
+    "scoped_pilot_gate_pass": false,
+    "scope": "Assistant judgments on48 correlated samples from12 fresh instances, not human accuracy or broad scorer readiness",
+    "groups": {
+      "ONPOLICY2-004": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY2-001": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "uncertain",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY2-002": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "uncertain",
+          "uncertain",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY2-003": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "acceptable",
+          "unacceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY2-009": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY2-006": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "uncertain",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY2-011": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "acceptable",
+          "acceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY2-010": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "unacceptable",
+          "acceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY2-005": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "uncertain",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY2-007": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "unacceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY2-008": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "uncertain",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY2-012": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "expected": [
+          "unacceptable",
+          "uncertain",
+          "unacceptable",
+          "unacceptable"
+        ]
+      }
+    }
+  },
+  "regression_v1": {
+    "samples": 48,
+    "scenario_groups": 12,
+    "unique_prompt_drafts": 48,
+    "expected_counts": {
+      "acceptable": 14,
+      "unacceptable": 23,
+      "uncertain": 11
+    },
+    "positive_acceptance": 0.6428571428571429,
+    "negative_rejection": 1.0,
+    "balanced_agreement": 0.8214285714285714,
+    "false_positive_ids": [],
+    "definite_abstentions": 1,
+    "mixed_reward_groups": 9,
+    "raw_failures": 1,
+    "scoped_pilot_gate_pass": false,
+    "scope": "Assistant judgments on48 correlated samples from12 fresh instances, not human accuracy or broad scorer readiness",
+    "groups": {
+      "ONPOLICY-005": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-011": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "acceptable",
+          "acceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-003": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "uncertain",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-001": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "acceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-002": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          1,
+          null
+        ],
+        "expected": [
+          "unacceptable",
+          "uncertain",
+          "uncertain",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-008": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "acceptable",
+          "unacceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-012": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-009": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "acceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-007": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-010": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "unacceptable",
+          "uncertain",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-004": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "expected": [
+          "unacceptable",
+          "uncertain",
+          "acceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-006": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "acceptable",
+          "acceptable",
+          "unacceptable"
+        ]
+      }
+    }
+  },
+  "regression_v2": {
+    "samples": 48,
+    "scenario_groups": 12,
+    "unique_prompt_drafts": 48,
+    "expected_counts": {
+      "acceptable": 14,
+      "unacceptable": 23,
+      "uncertain": 11
+    },
+    "positive_acceptance": 0.7142857142857143,
+    "negative_rejection": 1.0,
+    "balanced_agreement": 0.8571428571428572,
+    "false_positive_ids": [],
+    "definite_abstentions": 0,
+    "mixed_reward_groups": 9,
+    "raw_failures": 0,
+    "scoped_pilot_gate_pass": false,
+    "scope": "Assistant judgments on48 correlated samples from12 fresh instances, not human accuracy or broad scorer readiness",
+    "groups": {
+      "ONPOLICY-003": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "uncertain",
+          "uncertain",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-012": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-008": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "expected": [
+          "unacceptable",
+          "uncertain",
+          "acceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-005": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "unacceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-011": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "unacceptable",
+          "acceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-001": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "unacceptable",
+          "acceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-007": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "unacceptable",
+          "acceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-009": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "acceptable",
+          "acceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      },
+      "ONPOLICY-002": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "uncertain",
+          "unacceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-006": {
+        "category": "availability",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "expected": [
+          "acceptable",
+          "unacceptable",
+          "acceptable",
+          "acceptable"
+        ]
+      },
+      "ONPOLICY-004": {
+        "category": "time",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "unacceptable",
+          "acceptable",
+          "uncertain"
+        ]
+      },
+      "ONPOLICY-010": {
+        "category": "ownership",
+        "unique_drafts": 4,
+        "rewards": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "expected": [
+          "uncertain",
+          "acceptable",
+          "unacceptable",
+          "unacceptable"
+        ]
+      }
+    }
+  },
+  "regression_repaired_ids": [
+    "ONPOLICY-006-S1"
+  ],
+  "regression_new_error_ids": [],
+  "limitation": "Regression cases informed v2 prompt, not independent validation. Fresh48 replies are correlated within12 new same-family instances. Labels are assistant judgments, not human gold. Fresh gate unchanged, no post-result relabeling or prompt edits."
+}

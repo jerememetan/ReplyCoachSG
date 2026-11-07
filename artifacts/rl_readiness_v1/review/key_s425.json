@@ -1,0 +1,415 @@
+{
+  "seed": 425,
+  "arms": [
+    "control_long",
+    "chat"
+  ],
+  "randomization_seed": 7528227232214623426,
+  "packet_sha256": "ec6c51bc20e528a4e0f32e9d892683be991fb8c300650578205fb7d9899acece",
+  "source_sha256": {
+    "control_long_s425.json": "e725d9063e5c364d38b49ffa14bbc18e539abe3ddd51c24bae0641ada410e42c",
+    "chat_s425.json": "0a8648e27f1e96944de7474ee8ba31178a7f261f722aa71ac08cf54742f59dad"
+  },
+  "mapping": {
+    "1": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "2": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "3": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "4": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "5": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "6": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "7": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "8": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "9": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "10": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "11": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "12": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "13": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "14": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "15": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "16": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "17": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "18": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "19": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "20": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "21": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "22": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "23": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "24": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "25": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "26": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "27": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "28": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "29": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "30": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "31": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "32": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "33": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "34": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "35": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "36": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "37": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "38": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "39": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "40": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "41": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "42": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "43": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "44": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "45": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "46": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "47": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "48": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "49": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "50": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "51": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "52": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "53": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "54": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "55": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "56": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "57": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "58": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "59": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "60": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "61": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "62": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "63": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "64": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "65": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "66": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "67": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "68": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "69": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "70": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "71": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "72": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "73": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "74": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "75": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "76": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "77": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "78": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "79": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "80": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "81": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "82": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "83": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "84": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "85": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "86": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "87": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "88": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "89": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "90": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "91": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "92": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "93": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "94": {
+      "A": "control_long",
+      "B": "chat"
+    },
+    "95": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "96": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "97": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "98": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "99": {
+      "A": "chat",
+      "B": "control_long"
+    },
+    "100": {
+      "A": "control_long",
+      "B": "chat"
+    }
+  }
+}

@@ -1,0 +1,292 @@
+{
+  "questions": [
+    {
+      "id": "FRESH-DPO-001",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-001",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I can only leave after 6:30."
+        }
+      ],
+      "message": "Want to meet at 5?",
+      "A": "That works for me. See you then.",
+      "B": "That works for me. See you then."
+    },
+    {
+      "id": "FRESH-DPO-002",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-002",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I lent you my calculator this morning."
+        }
+      ],
+      "message": "Can I keep your calculator until tomorrow?",
+      "A": "I can keep it until tomorrow.",
+      "B": "I can keep it until tomorrow."
+    },
+    {
+      "id": "FRESH-DPO-003",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-003",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I have not started the lab report yet."
+        }
+      ],
+      "message": "Have you finished the lab report?",
+      "A": "Yes, I have finished it.",
+      "B": "Yes, I have finished it."
+    },
+    {
+      "id": "FRESH-DPO-004",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-004",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I will wait outside the science museum."
+        }
+      ],
+      "message": "My train is delayed by fifteen minutes.",
+      "A": "I am sorry to hear that.",
+      "B": "I am sorry to hear that."
+    },
+    {
+      "id": "FRESH-DPO-005",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-005",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I do not know whether the bakery is open on Monday."
+        }
+      ],
+      "message": "Is the bakery open this Monday?",
+      "A": "Yes, it is. It's closed on Monday.",
+      "B": "Yes, it is. The bakery is closed on Monday."
+    },
+    {
+      "id": "FRESH-DPO-006",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-006",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I cannot attend on Sunday, but Saturday is free."
+        }
+      ],
+      "message": "Shall we meet on Sunday then?",
+      "A": "Yes, let's meet on Sunday then.",
+      "B": "Yes, let's meet on Sunday then."
+    },
+    {
+      "id": "FRESH-DPO-007",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-007",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I left my blue water bottle in the seminar room."
+        }
+      ],
+      "message": "What colour is the bottle you lost?",
+      "A": "I lost it in the seminar room.",
+      "B": "I lost it in the seminar room."
+    },
+    {
+      "id": "FRESH-DPO-008",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-008",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I already uploaded the document."
+        }
+      ],
+      "message": "Remember to upload the document before noon.",
+      "A": "I already uploaded it before noon.",
+      "B": "I will. Thanks for letting me know."
+    },
+    {
+      "id": "FRESH-DPO-009",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-009",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I am borrowing your umbrella today."
+        }
+      ],
+      "message": "Could you return my umbrella this evening?",
+      "A": "I can return your umbrella this evening.",
+      "B": "I can return your umbrella this evening."
+    },
+    {
+      "id": "FRESH-DPO-010",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-010",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I can pay up to twelve dollars for lunch."
+        }
+      ],
+      "message": "How about the twenty-dollar buffet?",
+      "A": "That works for me. Let's meet at the twenty-dollar buffet then.",
+      "B": "That works for me. Let's meet at the twenty-dollar buffet then."
+    },
+    {
+      "id": "FRESH-DPO-011",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-011",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I am waiting at the west entrance."
+        }
+      ],
+      "message": "Which entrance are you at?",
+      "A": "I am at the west entrance.",
+      "B": "I am at the west entrance."
+    },
+    {
+      "id": "FRESH-DPO-012",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-012",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I have not learnt how to use this software."
+        }
+      ],
+      "message": "Could you teach me how to use it?",
+      "A": "I can teach you how to use it.",
+      "B": "Sure, let me show you how to use it."
+    },
+    {
+      "id": "FRESH-DPO-013",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-013",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I am free after the lecture finishes at four."
+        }
+      ],
+      "message": "Are you available at half past four?",
+      "A": "Yes, I am free after four.",
+      "B": "Yes, I am free after four."
+    },
+    {
+      "id": "FRESH-DPO-014",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-014",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I booked a table for three people."
+        }
+      ],
+      "message": "Can my sister join us too?",
+      "A": "I can't do that, but I'll book a table for us.",
+      "B": "I can't make it, but I'll be there in a few minutes."
+    },
+    {
+      "id": "FRESH-DPO-015",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-015",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I cannot eat peanuts."
+        }
+      ],
+      "message": "Would you like the peanut cookies?",
+      "A": "I'd prefer the peanut cookies.",
+      "B": "I'd prefer the peanut cookies, but I can't eat them."
+    },
+    {
+      "id": "FRESH-DPO-016",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-016",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I have your headphones in my bag."
+        }
+      ],
+      "message": "Do you have my headphones with you?",
+      "A": "Yes, I have them in my bag.",
+      "B": "Yes, I have them in my bag."
+    },
+    {
+      "id": "FRESH-DPO-017",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-017",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I need to leave by eight tonight."
+        }
+      ],
+      "message": "Can we start the film at nine?",
+      "A": "Sure, nine works for me.",
+      "B": "Sure, nine works for me."
+    },
+    {
+      "id": "FRESH-DPO-018",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-018",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I do not know the homework deadline."
+        }
+      ],
+      "message": "When is the homework due?",
+      "A": "Let me check the schedule.",
+      "B": "Let me check the schedule."
+    },
+    {
+      "id": "FRESH-DPO-019",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-019",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I will bring the poster to the exhibition."
+        }
+      ],
+      "message": "Thanks for bringing the poster tomorrow.",
+      "A": "You are welcome. I will bring the poster to the exhibition.",
+      "B": "You are welcome. I will bring the poster to the exhibition."
+    },
+    {
+      "id": "FRESH-DPO-020",
+      "comparison": "dpo_epoch2",
+      "item_id": "FRESH-DPO-020",
+      "conversation": [
+        {
+          "speaker": "user",
+          "text": "I have not bought the tickets yet."
+        }
+      ],
+      "message": "Have you bought our tickets already?",
+      "A": "No, I haven't bought them yet.",
+      "B": "No, I haven't bought them yet."
+    }
+  ],
+  "scope": "20 fresh generation-only conversations; no DPO updates or checkpoint selection on these prompts",
+  "comparison_labels": {
+    "dpo_epoch2": "DPO comparison"
+  },
+  "identities": {
+    "default": "Unchanged epoch1 full model before DPO",
+    "dpo_epoch2": "DPO best epoch2"
+  }
+}

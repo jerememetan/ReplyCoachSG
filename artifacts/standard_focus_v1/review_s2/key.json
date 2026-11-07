@@ -1,0 +1,307 @@
+{
+  "mapping": {
+    "1": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "2": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "3": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "4": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "5": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "6": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "7": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "8": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "9": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "10": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "11": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "12": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "13": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "14": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "15": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "16": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "17": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "18": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "19": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "20": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "21": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "22": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "23": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "24": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "25": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "26": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "27": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "28": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "29": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "30": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "31": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "32": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "33": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "34": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "35": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "36": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "37": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "38": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "39": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "40": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "41": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "42": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "43": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "44": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "45": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "46": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "47": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "48": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "49": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "50": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "51": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "52": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "53": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "54": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "55": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "56": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "57": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "58": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "59": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "60": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "61": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "62": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "63": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "64": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "65": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "66": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "67": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "68": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "69": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "70": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "71": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "72": {
+      "A": "capacity",
+      "B": "control"
+    },
+    "73": {
+      "A": "control",
+      "B": "capacity"
+    },
+    "74": {
+      "A": "capacity",
+      "B": "control"
+    }
+  },
+  "packet_sha256": "7ad26b5d99ab77d732e55045287acb04c4d9f544b4110b7d11f8661c64f65c76",
+  "source_sha256": {
+    "validation/control": "5b41a8dd4fb4b86d0f012a42c4adbee71f7aa1051f6b27e296915b7d1ef2d39d",
+    "validation/capacity": "e1ad0735aa52288635cbc23b35c82dbe63f678ed0c1fb3df82da070975b1bb31",
+    "diagnostic/control": "42cff4bf6fa1b049f86382199c46f2eb04d6a9864e65c006ae80357356888426",
+    "diagnostic/capacity": "fd86663b49d6708534640ebf7f2467984306a2fdecf6ac08a871d5dff601f77e"
+  }
+}

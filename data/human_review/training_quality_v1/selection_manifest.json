@@ -1,0 +1,14 @@
+{
+  "seed": 1120,
+  "source": "data/training_expansion/blanket600_v1/expanded.jsonl",
+  "source_sha256": "667839d3bf5af03063eaaf689ee2e2cbd2019e87c91ae917923c761d62a8abfb",
+  "total": 30,
+  "counts": {
+    "original_targets_revised": 10,
+    "generated_fresh100": 10,
+    "generated_volume500": 10
+  },
+  "purpose": "Training target quality review, not model evaluation. No original locked test read. Original validation excluded. Original drafts and dataset unchanged.",
+  "human_reviews_submitted": 0,
+  "assistant_suggestions_are_human_approvals": false
+}

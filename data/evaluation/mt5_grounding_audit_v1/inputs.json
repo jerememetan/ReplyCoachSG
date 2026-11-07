@@ -1,0 +1,366 @@
+[
+  {
+    "item_id": "ACTFOLLOW-evaluation-001-1",
+    "conversation_id": "ACTFOLLOW-evaluation-001",
+    "context": [
+      "I have a free evening tomorrow.",
+      "Our club has a board-game night."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to join the games?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-002-1",
+    "conversation_id": "ACTFOLLOW-evaluation-002",
+    "context": [
+      "I have already finished my revision.",
+      "There is a pottery session this weekend."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to try it together?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-003-1",
+    "conversation_id": "ACTFOLLOW-evaluation-003",
+    "context": [
+      "I am volunteering until 8:20 tonight.",
+      "We could have dinner after that."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you meet for dinner at 7:50?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-004-1",
+    "conversation_id": "ACTFOLLOW-evaluation-004",
+    "context": [
+      "I am busy on Thursday, but Saturday is free.",
+      "I will ask the rest of the group."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you attend our practice on Thursday?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-005-1",
+    "conversation_id": "ACTFOLLOW-evaluation-005",
+    "context": [
+      "I have to leave the workshop by 5:10.",
+      "The review takes forty minutes."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we start the review at five?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-006-1",
+    "conversation_id": "ACTFOLLOW-evaluation-006",
+    "context": [
+      "I only have seven dollars for breakfast.",
+      "We can eat near campus."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like the sixteen-dollar breakfast platter?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-007-1",
+    "conversation_id": "ACTFOLLOW-evaluation-007",
+    "context": [
+      "My shoulder is injured and I cannot lift heavy objects.",
+      "Take care of it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you help lift this heavy cabinet?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-008-1",
+    "conversation_id": "ACTFOLLOW-evaluation-008",
+    "context": [
+      "I can only attend the online briefing.",
+      "There is also an in-person briefing."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Will you come to the in-person briefing?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-009-1",
+    "conversation_id": "ACTFOLLOW-evaluation-009",
+    "context": [
+      "You borrowed my tripod for filming.",
+      "I have finished using it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your tripod at the bus interchange?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-010-1",
+    "conversation_id": "ACTFOLLOW-evaluation-010",
+    "context": [
+      "You still have my reference book.",
+      "It is safely in my locker."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would Monday be okay to return your book?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-011-1",
+    "conversation_id": "ACTFOLLOW-evaluation-011",
+    "context": [
+      "I have not checked the swimming pool timetable.",
+      "The holiday hours might differ."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does the pool close at six?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-012-1",
+    "conversation_id": "ACTFOLLOW-evaluation-012",
+    "context": [
+      "I do not know the submission date for the photography contest.",
+      "The organiser posted an update."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is the deadline next Wednesday?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-013-1",
+    "conversation_id": "ACTFOLLOW-evaluation-013",
+    "context": [
+      "I emailed you the signed consent form yesterday.",
+      "I will search for it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you emailed the consent form?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-014-1",
+    "conversation_id": "ACTFOLLOW-evaluation-014",
+    "context": [
+      "I have already paid the registration fee.",
+      "Thanks for sorting that out."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you paid the fee yet?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-015-1",
+    "conversation_id": "ACTFOLLOW-evaluation-015",
+    "context": [
+      "I saved the interview transcript on my laptop.",
+      "I missed the interview."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you share the transcript with me?"
+  },
+  {
+    "item_id": "ACTFOLLOW-evaluation-016-1",
+    "conversation_id": "ACTFOLLOW-evaluation-016",
+    "context": [
+      "I will be near the music building after lunch.",
+      "We could work on the poster."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Come and meet me there."
+  },
+  {
+    "item_id": "GROUND-budget-A",
+    "conversation_id": "GROUND-budget",
+    "context": [
+      "My breakfast budget is seven dollars.",
+      "We can eat near campus."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like the sixteen-dollar breakfast platter?"
+  },
+  {
+    "item_id": "GROUND-budget-B",
+    "conversation_id": "GROUND-budget",
+    "context": [
+      "My breakfast budget is twenty-five dollars.",
+      "We can eat near campus."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like the sixteen-dollar breakfast platter?"
+  },
+  {
+    "item_id": "GROUND-duration-A",
+    "conversation_id": "GROUND-duration",
+    "context": [
+      "I must leave the workshop by 5:10.",
+      "The review takes forty minutes."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we start the review at five?"
+  },
+  {
+    "item_id": "GROUND-duration-B",
+    "conversation_id": "GROUND-duration",
+    "context": [
+      "I must leave the workshop by 5:50.",
+      "The review takes forty minutes."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we start the review at five?"
+  },
+  {
+    "item_id": "GROUND-availability-A",
+    "conversation_id": "GROUND-availability",
+    "context": [
+      "I can only attend the online briefing.",
+      "There is an in-person briefing tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Will you come to the in-person briefing?"
+  },
+  {
+    "item_id": "GROUND-availability-B",
+    "conversation_id": "GROUND-availability",
+    "context": [
+      "I can attend either the online or in-person briefing.",
+      "There is an in-person briefing tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Will you come to the in-person briefing?"
+  },
+  {
+    "item_id": "GROUND-completion-A",
+    "conversation_id": "GROUND-completion",
+    "context": [
+      "I have already paid the registration fee.",
+      "Thanks for checking the registration."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you paid the fee yet?"
+  },
+  {
+    "item_id": "GROUND-completion-B",
+    "conversation_id": "GROUND-completion",
+    "context": [
+      "I have not paid the registration fee yet.",
+      "Thanks for checking the registration."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you paid the fee yet?"
+  },
+  {
+    "item_id": "GROUND-knowledge-A",
+    "conversation_id": "GROUND-knowledge",
+    "context": [
+      "I checked the timetable: the pool closes at six.",
+      "The holiday timetable is the relevant one."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does the pool close at six?"
+  },
+  {
+    "item_id": "GROUND-knowledge-B",
+    "conversation_id": "GROUND-knowledge",
+    "context": [
+      "I have not checked the swimming pool timetable.",
+      "The holiday timetable is the relevant one."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does the pool close at six?"
+  },
+  {
+    "item_id": "GROUND-ownership-A",
+    "conversation_id": "GROUND-ownership",
+    "context": [
+      "You still have my tripod.",
+      "It is safely in my bag."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What should we do about returning the tripod?"
+  },
+  {
+    "item_id": "GROUND-ownership-B",
+    "conversation_id": "GROUND-ownership",
+    "context": [
+      "I still have your tripod.",
+      "Thanks for keeping it safe."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What should we do about returning the tripod?"
+  }
+]

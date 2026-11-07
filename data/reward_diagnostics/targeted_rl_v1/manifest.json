@@ -1,0 +1,17 @@
+{
+  "status": "awaiting_user_policy_review",
+  "scenario_groups": 18,
+  "review_drafts": 24,
+  "development_drafts": 24,
+  "heldout_drafts": 24,
+  "human_approved": 0,
+  "rl_updates": 0,
+  "scorer_implemented": false,
+  "limitation": "Template family shared across partitions; disjoint scenario instances do not establish broad language generalization. Heldout labels assistant-authored, not human gold. Neither packet nor labels constitute an automated reward scorer.",
+  "files_sha256": {
+    "review.jsonl": "997c1ccbacfcb528d816205cae89d2ec3ecdde13dd423ce84bb1990610af597a",
+    "development.jsonl": "227ab8731ee70c793e44752cb11e5ae226087e3a87680aab8c60250f496dcdf5",
+    "heldout.jsonl": "c885a6183343e490ce0945cbb4481a9be08e7badfa9023773506406ef965fb0c",
+    "review_packet.json": "3c95b9368ed96d2e9732d62641300bfb9683c525f99e6d0da8ac7fa2baaad80f"
+  }
+}

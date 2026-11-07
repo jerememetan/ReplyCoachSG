@@ -1,0 +1,4950 @@
+{
+  "status": "running",
+  "arm": "control",
+  "recipe": {
+    "experiment": "sealion_contrast_v1",
+    "revision": "836890428766e94322a4b7de27fb081a604703a9",
+    "weights_sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107",
+    "initial_adapters": {
+      "english": {
+        "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_v1/artifacts/best_adapter",
+        "files_sha256": {
+          "adapter_model.safetensors": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+          "adapter_config.json": "f5bb26bc63c376e64ed060f54cc87a44ece14a7328f064d02abc487aa75578bc"
+        }
+      },
+      "rewrite": {
+        "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_full_rewrite_v1/artifacts/best_adapter",
+        "files_sha256": {
+          "adapter_model.safetensors": "2db1043556b5678683ea33e0f91ddd924ac98b14168ed043dd57b2ce64cf9426",
+          "adapter_config.json": "238ae221adf866990a14e822621dae070a067eb00aeb3b27f61bce7e5a33627b"
+        }
+      }
+    },
+    "arms": [
+      "control",
+      "repair"
+    ],
+    "seed": 425,
+    "gpu": "NVIDIA L40S",
+    "training": {
+      "stages": [
+        "english",
+        "rewrite"
+      ],
+      "ordinary_train": [
+        790,
+        745
+      ],
+      "ordinary_validation": [
+        50,
+        42
+      ],
+      "new_synthetic_train": 128,
+      "new_synthetic_validation": 32,
+      "optimizer_steps": 200,
+      "replay_examples_per_step": 8,
+      "auxiliary_pairs_per_step": 1,
+      "auxiliary_weight": {
+        "control": 0.0,
+        "repair": 0.1
+      },
+      "learning_rate": 1e-05,
+      "weight_decay": 0.01,
+      "objective": "mean of 8 ordinary causal reply CEs + weight*(positive reply CE + .25*relu(.2+positiveCE-negativeCE))",
+      "matched": "Same initial adapters, replay/auxiliary order and per-step dropout seed; both arms forward/backward auxiliary graphs.",
+      "snapshots": [
+        0,
+        25,
+        50,
+        100,
+        150,
+        200
+      ],
+      "selection": "Step0 eligible; ordinary validation token CE <=1.02*initial; minimize .8*ordinaryCE+.2*synthetic positive example-mean CE.",
+      "checkpoint_selection_limit": "Guard is a loss constraint, not a guarantee of contextual quality. No automatic default promotion."
+    },
+    "evaluation": {
+      "cases": 126,
+      "methods": [
+        "greedy",
+        "beam4_ng3"
+      ],
+      "max_new_tokens": 64,
+      "routes": [
+        "own_english",
+        "fixed_baseline_english",
+        "diagnostic"
+      ],
+      "note": "Reused development cases; none included in new training. Synthetic validation uses held entity combinations within templates. Human review pending."
+    },
+    "default_changed": false,
+    "files_sha256": {
+      "src/replycoach/demo_app.py": "8af6be8f6c9130b469019d3feca06f5224c2b271935a3a43c1f8054d8485c11f",
+      "src/replycoach/pipeline.py": "b4404c523f279694928f71b4d317a99e1853343d694d7dc4b8232114e891c192",
+      "src/replycoach/authoring.py": "bdc640a8d8f8bce4c4030fc2ba0898acc1b7d4d49a9d35aea5bd0d812b1ae613",
+      "src/replycoach/io.py": "a354cb802b9ed725c8c1201c3c54efd3e03da5c9c5f2d2c9026da0688a4b3683",
+      "src/replycoach/__init__.py": "de57ddf5ad70d22e23053d975dbe60028cca42f825fbe994648409a2c8552587",
+      "src/replycoach/judging.py": "f8c885ba5c20a7c5304765525c201dd9a6090f825cea066ae982df7d48bbc52a",
+      "src/replycoach/fallback.py": "17e66580f8b1ea8c8c54c9708640ee02b2c2d1a61a8db49c51c2fbac08fb2887",
+      "src/replycoach/review_app.py": "133b79ccf47738bf0212aecab3ddab85751de81f5c2855fb9be5e6c9d997cf24",
+      "src/replycoach/reply_bank.py": "6ac807be9e743f7fa2d8650da9d95d4ea3d50a1b635ad6224c1e9ea2b88ffe63",
+      "src/replycoach/rerank.py": "9e9d4d62db879e5a9360e3e995b7117131b006fcb0b37acd0c8a1e818bad07be",
+      "src/replycoach/tokenize.py": "61fb7a81cc81ee6b61e3bc3056bd2d43aa49baa51460ffd89405d11f2f483e4f",
+      "src/replycoach/demo_resources.py": "6694b21e5ef07e734c3017a3632128338ed5beafea2fe9a9a9ffbd7b408ac5ad",
+      "src/replycoach/taxonomy.py": "d76f9984df4c268f5f03421608fcfa8a8fc6262202a4fc6c616b3bfe9f3c0893",
+      "src/replycoach/logging_utils.py": "da6758cd019248c7d26bfa8ac6c64dec721a484c231bd489a44782ef796079de",
+      "src/replycoach/memory.py": "bcdc318c4cbdd5c571bbb5cfe4eddf958342cedc8de97b3d8c2067d088f2861b",
+      "src/replycoach/demo_cli.py": "77b23675e50a49b0c974f1c3aa21a9bc915c96c802635ce37dfb536b5d1a3d4c",
+      "src/replycoach/team_review_app.py": "77c4a7a369a8fc5b40ba8d24d6cf33791974181ba134938896269f956303583a",
+      "src/replycoach/evaluation.py": "b4d17649ef9a39e6e3a48aec7b2fea79383c7202be6b5ba1e311feca24311848",
+      "src/replycoach/team_review.py": "0f4826a306b5b38a23870fa86aff322fd5e04f5f7ae87d2ea3fe06edd8056b14",
+      "src/replycoach/author_app.py": "9f720f8535a9016e5b66a241de8b944f87bb230cc33f8be96344ebd540729ce8",
+      "src/replycoach/review.py": "600ebb377daba91a1a942d3a409bf04d17523629b9a271b625b8be923b201299",
+      "src/replycoach/schema.py": "0424f5742901350fca0e4799df6702b61ec9dc540b9363bf1e2448e8f15abdfe",
+      "src/replycoach/systems.py": "e915007d5e6766b90577a2a763996cf99f1c7e248555c37a6987fca41ac59442",
+      "src/replycoach/lexicon.py": "94cb358ea37e0d4663a6c52c4e18ac83bb6466e2fdbb525fc7fd2724ccb559bc",
+      "src/replycoach/vendor/__init__.py": "71f1ca1538d579fd3a304a95d7d2f792cca8abf9dca16f38ade9ce3e1da0dbbb",
+      "src/replycoach/retrieval/v2.py": "8463a6075911559b4b78fae9d2ef4a4f32be0f627bb3fbe1a60cbe25163765bb",
+      "src/replycoach/retrieval/__init__.py": "2e64f70b06878c54078be4a5ddc5c4eeec5ebfedbe726700418435527783aef4",
+      "src/replycoach/retrieval/v1.py": "bcf1f4e8b99eb6afbff5be7503fd6a8d5da0e73a273059f477cf84544ffd429c",
+      "src/replycoach/retrieval/v0.py": "6a0b80347da88d034f6507523d1d594c6580926f47b29032474a6a202ec74e61",
+      "src/replycoach/generate/sealion_full_rewrite_v1.py": "bc54cc04596e86ab8755e52be4282ebfc19c611928adcd4a1f1f2a8e42e9bdb5",
+      "src/replycoach/generate/rewrite_v5.py": "30adce9d8f016f2e0e20760879950ebb44a5a1aebc3dbca2d039f4d823268c3f",
+      "src/replycoach/generate/style_control.py": "a3a2cb41a8b28325a103475b80eaeb9e396caf4d10b5470fb9d6bfc542500259",
+      "src/replycoach/generate/seq2seq.py": "a1021004d6a96679ce37c52fda39c266b626bcbc4eae02399f55a4798fc08c94",
+      "src/replycoach/generate/native_rewrite_v2.py": "df7e7d566f49cfe0a8b44d533f4068bc8f60be885c929fa892259a561c103ee6",
+      "src/replycoach/generate/linear_probe_v1.py": "95651e022bd642cd5771ce643929b1de9207cf1e0cadfaad8a71a3ab9b0e6b97",
+      "src/replycoach/generate/__init__.py": "2b2e903371712f88daa7d9ce457eaa5f49677a5f30f4bffef3ffb42e6ec46b7b",
+      "src/replycoach/generate/finetune_v5.py": "88804d5cbab46846339b43b0f9c5a27e0d94cacf7fc2682e50611257137f5e9b",
+      "src/replycoach/generate/native_rewrite_train_v2.py": "ec309b63d979b18fda4db9026fa65312a6e55619e5f83ba095ae5ad5bca06f77",
+      "src/replycoach/generate/teacher_v5.py": "2fd43859254e741829932253baa290769cf83b4d2c4275fba6b1260a0e4b4d01",
+      "src/replycoach/generate/train_v5.py": "d6f05e726973003f4ebbb0c0d8978fe9610c286a797c7a56b3519bcc19ee07a3",
+      "src/replycoach/generate/clean_v5.py": "3fbed38114b124d696f384e05733bed2b837171eb7f76a4039f33644de17d68a",
+      "src/replycoach/generate/mt5_adapter_switch_v1.py": "fb0de81a8b0a9d0a732597241af2f69a87bc935cfe577d05a8d0030dd43132ab",
+      "src/replycoach/generate/sealion_contrast_v1.py": "bd78e37303afb411df3603161628f597ce5c9405bad07323cf24c693fb55593e",
+      "src/replycoach/generate/synthetic_v5.py": "ffbff7e76176158e480ee8b8343ce0b655e8cbaa7faa32118a8ea590a9a29779",
+      "src/replycoach/generate/act_follow_v1.py": "ea31f803815411cce10f5b2e5bcdb72e59298319dc48a0023d9be65224b6329b",
+      "src/replycoach/generate/context_pair_ablation_v1.py": "1f90282b4579b1dbb7687a9290a57ed24bdcfb36250e6860a3fdaed71a77358e",
+      "src/replycoach/generate/compare_v5.py": "5b97cca24c6dba90d57f94e02dd1927ff169243f75843b456be6885f70e14578",
+      "src/replycoach/generate/sealion_public_v1.py": "e7ca6626004a922c443825636dd274607e36085ee679d172d976afd06864660a",
+      "src/replycoach/generate/v5_provider.py": "6ba54db8c4ddb6d115a8c55201e145a9cc087cb730f89a8367732d2aa8f166d6",
+      "src/replycoach/generate/rerank_v5.py": "079e88fce5a31d4c764517509fb671a84000d6bb67a4c6e003c0e879654cf352",
+      "src/replycoach/generate/early_stopping.py": "5f60d66e058fa91b6983e914f1c1884e907e0f158129b5ec852ffd2401a82c9f",
+      "src/replycoach/generate/spans_v5.py": "c05f39bbfcb1704ed86163ee7942665ab2d6ec24c4a7dccbfe21f83736ad21e3",
+      "src/replycoach/generate/providers.py": "6b2847dfb37facd44826885a9fe918122f1c9bb5e14dee0355c3c7433114be60",
+      "src/replycoach/generate/sealion_data.py": "7c3e5a7ddfee21501a67b59d119e6b502a713670dffaddee489c450d6d53a15b",
+      "src/replycoach/generate/structured_rl_train_v1.py": "6b5167ad3ab81f11e7caa04e8c1c6d4b0037647f7ecc37ef5ddc343a0fb666a1",
+      "src/replycoach/generate/structured_rl_v1.py": "de848f7bf3ba65e537211ea049f62c084ef2a255c55bb0865a4fbac87c4fe625",
+      "src/replycoach/generate/structured_fit_v1.py": "4418eba5a4d301f230f05b9b646b2ed6d0ae82f17239caedc8aebd8be14ff991",
+      "src/replycoach/generate/sealion_rewrite_v1.py": "1ad4c4c8b0515348e19af0de8997f90173c0d47de695a4f97939573f4578f056",
+      "src/replycoach/generate/human_dpo_v1.py": "46b53e7e6d89c7031f9c20cce01ea3ff677e8cfed946ebe3f22f1ace49434fac",
+      "src/replycoach/generate/sealion_beam_v1.py": "80b7542b2e560523fbcea8e90ce99f7f89273ed34d1db1cba2ba21390b64b795",
+      "src/replycoach/generate/hybrid_v5.py": "f92734c40a28eba9be9bf29814ed3c791e3fd0c5717a9341609bd0f45983a222",
+      "src/replycoach/generate/fit_probe_v1.py": "ea8bd34b0afe61899a11334acdaad00e9eb421da2c888283dba850268e059b41",
+      "src/replycoach/generate/decode_v5.py": "df77f7115ef3d745aa22c379d042336fb5bd207270610fafc440de17c7ca5326",
+      "src/replycoach/generate/sealion_dual_v1.py": "831b0be9d86ed5431ba730c861e8401f93449a2adf7fa0e101ae0aa7cc6f5e25",
+      "src/replycoach/generate/reply_act_v2.py": "09fceefb3403f8c676d84db73fd6e7e33716441ff72ce1350698b78699aca2d4",
+      "src/replycoach/generate/mt5_output_heads_v1.py": "ac2cbc7b51b3e3bd7a5ce26cbae54ef07ff7bf42d05abcc7c8351c471ebfd41c",
+      "src/replycoach/generate/train_v3.py": "709e61fa632d4e08c1e41a5a886db40d3b8877a515277fd8a0c7d5e340f2ed47",
+      "src/replycoach/generate/reply_act_v1.py": "f97fa03ab0845f4c4e92272902fe526e23ae73c9eb970c8fbd092fe4f983a893",
+      "src/replycoach/generate/mt5_pretrained_compat.py": "29e1e6fcf20e2dad336e3bd2104ddec565ae97d3317d08aefc5fb2d984e127f9",
+      "src/replycoach/generate/mt5_matched_v1.py": "2b33ef72c08c800e012ef38f9eca75510423c7576d1732ff177da0fd9c49568e",
+      "src/replycoach/generate/sealion_v1.py": "97a4f7e126fe77008dc725ee7af0cbf3085286790535d882d48feb0b29bdfc56",
+      "src/replycoach/vendor/sealion_v1/param_init_fns.py": "1729529fc244149083265e65a3f2c9de4ff9f198881dd1d689fc5469e128d070",
+      "src/replycoach/vendor/sealion_v1/ffn.py": "a225fc3369fd033a3871f27fec02c8c21dc72f0f9938a14c187ebd89b02f9c4a",
+      "src/replycoach/vendor/sealion_v1/tokenization_SEA_BPE.py": "863f4d0c146de276a8b42ec8423fea80e59c4ee65d18afcda03ac8abc7c68842",
+      "src/replycoach/vendor/sealion_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "src/replycoach/vendor/sealion_v1/adapt_tokenizer.py": "d68a8c8151448e949ed5ee6ffa5bd326ba76a264ea30b94908af4f5e7beb9583",
+      "src/replycoach/vendor/sealion_v1/norm.py": "c2aa062d2d89993399d9ce14d04a8b2e30aacf46ac303ebafed3dc45bf6f15bc",
+      "src/replycoach/vendor/sealion_v1/flash_attn_triton.py": "3f548a86236f026bab28555954ae13afd7b4bc70b6ef81059570ea74d267e63c",
+      "src/replycoach/vendor/sealion_v1/configuration_mpt.py": "b117d206aaaee72be88c368c12a1af9ff4d205268b4bcd6e0743cc9d7df9d36b",
+      "src/replycoach/vendor/sealion_v1/blocks.py": "b1d019c0a9cc73f27e4d6dca931abb92b9201dd68d4176fe9f89065830e60800",
+      "src/replycoach/vendor/sealion_v1/modeling_mpt.py": "d8190714a28dca31eb68a25a11568fb3b71f22b77a500efc9c7d8055e2b5fc5d",
+      "src/replycoach/vendor/sealion_v1/fc.py": "a2b575feebcd1891e75d2dd4263ee274dbe1aa73670b8d702bf1ef180723cd7f",
+      "src/replycoach/vendor/sealion_v1/custom_embedding.py": "5959001270bc3dbc76d3ebc54dba0f81ef625a0574d11930bd35ad20c5b1cba5",
+      "src/replycoach/vendor/sealion_v1/meta_init_context.py": "8a053984416246791aed29a809df55625c46de8e3643ec16d44fbb16edd93a09",
+      "src/replycoach/vendor/sealion_v1/attention.py": "96844cae928f44fd82f113f5d6f416efb2c787747ba893931f4877078166e6c4",
+      "src/replycoach/vendor/sealion_v1/hf_prefixlm_converter.py": "f55bda3248b703c6a9d065dc5e70a8d222a8adb11ce1579f70a5c148c8b24b28",
+      "src/replycoach/vendor/sealion_v1/provenance.json": "d1b73f08e481aa7d3bb8d21af9dfa030c079583c0c82d6996c24f9865ecd5f7f",
+      "src/replycoach/vendor/sealion_v1/LICENSE": "151a54770b52e7f511ddfb7aae6f29ae6f0aef8ee119be5474270bed28e0c502",
+      "scripts/run_sealion_contrast_v1.py": "0f1bcc0534a30d7caa848611b2da9f60d531bfdf397530cfa34a11b5efe44e93",
+      "scripts/prepare_sealion_contrast_v1.py": "5fec65d1c7fbe7f5acd743eae673418e96b71713f6037fe2c86c5910d25e6a0e",
+      "scripts/run_sealion_dual_v1.py": "e7640441eb60203b9a151a3f18496cd8db1ed817fba105f7c29bc0edf20604af",
+      "scripts/run_sealion_dialogue_v1.py": "4439943fa13a774665249133e50c9fed7258960e7d913fb6356b2e2eca91ed32",
+      "scripts/run_sealion_expanded_v1.py": "02fe5ed9fa4e195246f6e71937a19f6947da170ebcdced89590a44acf6beb67e",
+      "scripts/run_sealion_full_rewrite_v1.py": "808357721d72ae74a407a29add568208c732e76472402847bfc11bfca40aecdf",
+      "scripts/v5_sealion_contrast_v1.sbatch": "ebf2477728b9620a3f0d7fdfe54aa3e7ec82d3ae71296c14785c3b18d811539f",
+      "data/training_expansion/sealion_contrast_v1/validation.json": "d21e5989a1a338798c59610a29995f4fbee04144d79d15eb9b4474c46ee4e8b8",
+      "data/training_expansion/sealion_contrast_v1/manifest.json": "bc255d325c2fed8f982955d3bb9ea179153303b6a6005b91861433699fc30c58",
+      "data/training_expansion/sealion_contrast_v1/train.json": "8531e5a4fd6360027b8b2cbcef50b8d44dc42fca5d4bacc38d219823e746faa2",
+      "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+      "data/dev/validation.jsonl": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+      "data/training_expansion/generated600_repair_v1/combined_train.jsonl": "b9027a2b84e6bec01f9200ac890220cd0b6e4e1382fdb71f0213a2949b6efbc6",
+      "data/training_expansion/sealion_rewrite_v1/pair_audit.json": "582c506b844fd52ee3e27b267eb27f991de8c3b2cd9e7d8e014f6f3ef951fecb",
+      "data/evaluation/sealion_full_rewrite_v1/inputs.json": "20f9b7b46acf8fe3734e87623fe454b99e2eb2fd33fe183686789c632f280ab5",
+      "data/evaluation/restored_pipeline_v1/inputs.json": "2534ecf636740909e956a566f76a2a89941e8bc9bb9ff672b071e3a8c5d3e561",
+      "data/evaluation/context_pairs_v1/inputs.json": "baff83365c68c7de96a6108ea29958aa0977b619295e7d93b221ae0fa782fe1d",
+      "tests/test_sealion_contrast_v1.py": "2bd9b82386b58d41032008ba2e6a060738ac8d368f07c6d14a6872dc8f0da904",
+      "tests/test_sealion_beam_v1.py": "d79bffea2c3be6c02b44b48ae8b35c4d6128a39abd80d8ed4196be4361b26621",
+      "tests/test_sealion_rewrite_v1.py": "9b430da55af5a0b189a40cd5abf5d494d152ddaa88011829ae9d4eec2c3dfada",
+      "baseline_beam_results.json": "361042d8d8154f928da86ac1f44d5724be01fcfa216797682bb8661c170bb39c"
+    }
+  },
+  "stages": {
+    "english": {
+      "status": "running",
+      "replay_train": 790,
+      "replay_validation": 50,
+      "auxiliary_train": 128,
+      "auxiliary_validation": 32,
+      "trainable_parameters": 10485760,
+      "initial_adapter_sha256": "1641ff25c7ab16ef1d3f56835f1984f72f4d523b42de90828660004495ab503a",
+      "schedule_sha256": "1ac1a5182aa092ff2ff777dc77a03dbaec4a7e1a4a07a8bfda1805d3b2196edc",
+      "history": [
+        {
+          "step": 0,
+          "scores": {
+            "replay": {
+              "token_ce": 1.9694326901482238,
+              "reply_tokens": 514,
+              "examples": 50
+            },
+            "positive_example_mean_ce": 0.4816812248900533,
+            "negative_example_mean_ce": 0.9895467152819037,
+            "ranking_win_fraction": 0.84375,
+            "selection_score": 1.67188239709659
+          },
+          "replay_guard_passed": true,
+          "selected": true
+        },
+        {
+          "step": 25,
+          "scores": {
+            "replay": {
+              "token_ce": 2.0435724107671804,
+              "reply_tokens": 514,
+              "examples": 50
+            },
+            "positive_example_mean_ce": 0.5105517418123782,
+            "negative_example_mean_ce": 1.0707440478727221,
+            "ranking_win_fraction": 0.75,
+            "selection_score": 1.73696827697622
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        },
+        {
+          "step": 50,
+          "scores": {
+            "replay": {
+              "token_ce": 2.1430178164044245,
+              "reply_tokens": 514,
+              "examples": 50
+            },
+            "positive_example_mean_ce": 0.5244754329323769,
+            "negative_example_mean_ce": 1.1628697803243995,
+            "ranking_win_fraction": 0.8125,
+            "selection_score": 1.8193093397100149
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        },
+        {
+          "step": 100,
+          "scores": {
+            "replay": {
+              "token_ce": 2.1677063335936357,
+              "reply_tokens": 514,
+              "examples": 50
+            },
+            "positive_example_mean_ce": 0.6085067046806216,
+            "negative_example_mean_ce": 1.2571893045678735,
+            "ranking_win_fraction": 0.8125,
+            "selection_score": 1.855866407811033
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        }
+      ],
+      "auxiliary_changed_primary_gradient": false,
+      "frozen_base_received_no_gradients": true,
+      "optimizer_steps": 100,
+      "selected_step": 0,
+      "best_score": 1.67188239709659
+    }
+  },
+  "outputs": {},
+  "default_changed": false,
+  "baseline_english": {
+    "greedy": [
+      {
+        "item_id": "SEAPUBLIC-001",
+        "output": {
+          "reply": "Seven forty works for me.",
+          "raw_text": "Seven forty works for me.",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-002",
+        "output": {
+          "reply": "Yes, please return my headphones by tomorrow afternoon.",
+          "raw_text": "Yes, please return my headphones by tomorrow afternoon.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-003",
+        "output": {
+          "reply": "I have not checked the room closing hours yet.",
+          "raw_text": "I have not checked the room closing hours yet.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-004",
+        "output": {
+          "reply": "Yes please, send me your notes.",
+          "raw_text": "Yes please, send me your notes.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-005",
+        "output": {
+          "reply": "I'll send you the photos later.",
+          "raw_text": "I'll send you the photos later.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-006",
+        "output": {
+          "reply": "That is too expensive for me today. Could we get something cheaper?",
+          "raw_text": "That is too expensive for me today. Could we get something cheaper?",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-007",
+        "output": {
+          "reply": "I have uploaded the form last night.",
+          "raw_text": "I have uploaded the form last night.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-008",
+        "output": {
+          "reply": "I have not started making the slides yet.",
+          "raw_text": "I have not started making the slides yet.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-009",
+        "output": {
+          "reply": "That's a shame, you worked really hard for it.",
+          "raw_text": "That's a shame, you worked really hard for it.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-010",
+        "output": {
+          "reply": "I am free on Sunday afternoon.",
+          "raw_text": "I am free on Sunday afternoon.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-011",
+        "output": {
+          "reply": "I am outside room C2.",
+          "raw_text": "I am outside room C2.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-012",
+        "output": {
+          "reply": "No thanks, I will get the vegetable rice instead.",
+          "raw_text": "No thanks, I will get the vegetable rice instead.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-001",
+        "output": {
+          "reply": "I cannot leave before six and cannot meet after six.",
+          "raw_text": "I cannot leave before six and cannot meet after six.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-002",
+        "output": {
+          "reply": "That is too expensive for me. Could we find something cheaper?",
+          "raw_text": "That is too expensive for me. Could we find something cheaper?",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-003",
+        "output": {
+          "reply": "I can't make it on Saturday, but I can make it on Friday.",
+          "raw_text": "I can't make it on Saturday, but I can make it on Friday.",
+          "termination": "eos",
+          "generated_tokens": 18,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-004",
+        "output": {
+          "reply": "Yes, please return it on Monday.",
+          "raw_text": "Yes, please return it on Monday.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-005",
+        "output": {
+          "reply": "I will return your hard-copy notes before nine.",
+          "raw_text": "I will return your hard-copy notes before nine.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-006",
+        "output": {
+          "reply": "Yes please, I would like to see the practice clip.",
+          "raw_text": "Yes please, I would like to see the practice clip.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-007",
+        "output": {
+          "reply": "I can send you the interview notes tonight.",
+          "raw_text": "I can send you the interview notes tonight.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "output": {
+          "reply": "I have already booked the room this morning.",
+          "raw_text": "I have already booked the room this morning.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-009",
+        "output": {
+          "reply": "I have not started proofreading the report.",
+          "raw_text": "I have not started proofreading the report.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "output": {
+          "reply": "I am outside seminar room 4A.",
+          "raw_text": "I am outside seminar room 4A.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-011",
+        "output": {
+          "reply": "It is a purple water bottle.",
+          "raw_text": "It is a purple water bottle.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-012",
+        "output": {
+          "reply": "I have not checked the weekend hours yet, but I will check them now.",
+          "raw_text": "I have not checked the weekend hours yet, but I will check them now.",
+          "termination": "eos",
+          "generated_tokens": 17,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "output": {
+          "reply": "I would like a cup of coffee please.",
+          "raw_text": "I would like a cup of coffee please.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-014",
+        "output": {
+          "reply": "I would love to go to the show.",
+          "raw_text": "I would love to go to the show.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "output": {
+          "reply": "I can help with the research and the presentation.",
+          "raw_text": "I can help with the research and the presentation.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-016",
+        "output": {
+          "reply": "That is a shame.",
+          "raw_text": "That is a shame.",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-017",
+        "output": {
+          "reply": "I cannot carry heavy things for you today.",
+          "raw_text": "I cannot carry heavy things for you today.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-018",
+        "output": {
+          "reply": "I'll be done in about ten minutes.",
+          "raw_text": "I'll be done in about ten minutes.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-019",
+        "output": {
+          "reply": "I would rather stay in the library.",
+          "raw_text": "I would rather stay in the library.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-020",
+        "output": {
+          "reply": "Thanks for spotting the date error and updating the file.",
+          "raw_text": "Thanks for spotting the date error and updating the file.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-010",
+        "output": {
+          "reply": "I know, I will try to ask for help",
+          "raw_text": "I know, I will try to ask for help",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-017",
+        "output": {
+          "reply": "Yes, seven at Harbourfront MRT.",
+          "raw_text": "Yes, seven at Harbourfront MRT.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-024",
+        "output": {
+          "reply": "No worries, I can go to the library to print it later.",
+          "raw_text": "No worries, I can go to the library to print it later.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-030",
+        "output": {
+          "reply": "Okay, I will look for another place.",
+          "raw_text": "Okay, I will look for another place.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-033",
+        "output": {
+          "reply": "I haven't checked the menu yet, let me check the timings first",
+          "raw_text": "I haven't checked the menu yet, let me check the timings first",
+          "termination": "eos",
+          "generated_tokens": 16,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-035",
+        "output": {
+          "reply": "I will",
+          "raw_text": "I will",
+          "termination": "eos",
+          "generated_tokens": 3,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-038",
+        "output": {
+          "reply": "no worries, ten more minutes",
+          "raw_text": "no worries, ten more minutes",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-044",
+        "output": {
+          "reply": "I will not blur",
+          "raw_text": "I will not blur",
+          "termination": "eos",
+          "generated_tokens": 5,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-046",
+        "output": {
+          "reply": "ok, see you at 2pm",
+          "raw_text": "ok, see you at 2pm",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-054",
+        "output": {
+          "reply": "Okay, let's go now",
+          "raw_text": "Okay, let's go now",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-002",
+        "output": {
+          "reply": "I'm thinking about the caf\u00e9 near the library",
+          "raw_text": "I'm thinking about the caf\u00e9 near the library",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-009",
+        "output": {
+          "reply": "Yes, I have a seat.",
+          "raw_text": "Yes, I have a seat.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-029",
+        "output": {
+          "reply": "I'm checking the timetable now. I'll get back to you.",
+          "raw_text": "I'm checking the timetable now. I'll get back to you.",
+          "termination": "eos",
+          "generated_tokens": 17,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-034",
+        "output": {
+          "reply": "I can tell you what I will be missing",
+          "raw_text": "I can tell you what I will be missing",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-042",
+        "output": {
+          "reply": "No worries, I understand",
+          "raw_text": "No worries, I understand",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-043",
+        "output": {
+          "reply": "Sure, I would love to come",
+          "raw_text": "Sure, I would love to come",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-048",
+        "output": {
+          "reply": "No worries, I'll be there in thirty minutes",
+          "raw_text": "No worries, I'll be there in thirty minutes",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-050",
+        "output": {
+          "reply": "Sure, what time should we meet?",
+          "raw_text": "Sure, what time should we meet?",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-056",
+        "output": {
+          "reply": "I can play at eight instead",
+          "raw_text": "I can play at eight instead",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-057",
+        "output": {
+          "reply": "Yes please, I can lend you my charger",
+          "raw_text": "Yes please, I can lend you my charger",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-001",
+        "output": {
+          "reply": "sure, see you at lks",
+          "raw_text": "sure, see you at lks",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-017",
+        "output": {
+          "reply": "yes, im done with the results section",
+          "raw_text": "yes, im done with the results section",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-018",
+        "output": {
+          "reply": "yes, i will make sure to add the slide",
+          "raw_text": "yes, i will make sure to add the slide",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-023",
+        "output": {
+          "reply": "sure, i can go with you",
+          "raw_text": "sure, i can go with you",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-028",
+        "output": {
+          "reply": "no worries, i can wait",
+          "raw_text": "no worries, i can wait",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-038",
+        "output": {
+          "reply": "I'll check it and let you know",
+          "raw_text": "I'll check it and let you know",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-041",
+        "output": {
+          "reply": "no worries, i understand",
+          "raw_text": "no worries, i understand",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-045",
+        "output": {
+          "reply": "yes, I will be there at 8am",
+          "raw_text": "yes, I will be there at 8am",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-055",
+        "output": {
+          "reply": "ok, i'll meet you at 2",
+          "raw_text": "ok, i'll meet you at 2",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-058",
+        "output": {
+          "reply": "okay, i'll wait a bit",
+          "raw_text": "okay, i'll wait a bit",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-007",
+        "output": {
+          "reply": "i want to try the green tea",
+          "raw_text": "i want to try the green tea",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-009",
+        "output": {
+          "reply": "okay, I'll do it for you",
+          "raw_text": "okay, I'll do it for you",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-010",
+        "output": {
+          "reply": "I am not sure of the answer",
+          "raw_text": "I am not sure of the answer",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-013",
+        "output": {
+          "reply": "Sure, I will answer your question in a few minutes.",
+          "raw_text": "Sure, I will answer your question in a few minutes.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-029",
+        "output": {
+          "reply": "ok, i will bid before the bidding ends",
+          "raw_text": "ok, i will bid before the bidding ends",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-033",
+        "output": {
+          "reply": "okay, I will be there in a few minutes",
+          "raw_text": "okay, I will be there in a few minutes",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-037",
+        "output": {
+          "reply": "ok, i will reach in a few minutes",
+          "raw_text": "ok, i will reach in a few minutes",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-038",
+        "output": {
+          "reply": "ok, i will wait for you",
+          "raw_text": "ok, i will wait for you",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-046",
+        "output": {
+          "reply": "Oh no, I was planning to go with you",
+          "raw_text": "Oh no, I was planning to go with you",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-050",
+        "output": {
+          "reply": "no worries, we can catch up another time.",
+          "raw_text": "no worries, we can catch up another time.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-005",
+        "output": {
+          "reply": "ok, see you later",
+          "raw_text": "ok, see you later",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-007",
+        "output": {
+          "reply": "ok, see you tomorrow",
+          "raw_text": "ok, see you tomorrow",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-009",
+        "output": {
+          "reply": "Sure, I can only use it after 3",
+          "raw_text": "Sure, I can only use it after 3",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-015",
+        "output": {
+          "reply": "nope, haven't started it yet",
+          "raw_text": "nope, haven't started it yet",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-025",
+        "output": {
+          "reply": "ok, thursday then",
+          "raw_text": "ok, thursday then",
+          "termination": "eos",
+          "generated_tokens": 5,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-027",
+        "output": {
+          "reply": "no worries, you can use it later",
+          "raw_text": "no worries, you can use it later",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-028",
+        "output": {
+          "reply": "ok, we can eat elsewhere",
+          "raw_text": "ok, we can eat elsewhere",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-032",
+        "output": {
+          "reply": "no worries, I understand",
+          "raw_text": "no worries, I understand",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-040",
+        "output": {
+          "reply": "I can meet you after class",
+          "raw_text": "I can meet you after class",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-046",
+        "output": {
+          "reply": "ok, i will release it at five instead",
+          "raw_text": "ok, i will release it at five instead",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-001",
+        "output": {
+          "reply": "I can join you at eight.",
+          "raw_text": "I can join you at eight.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-002",
+        "output": {
+          "reply": "I can wait for you in the entrance for two minutes.",
+          "raw_text": "I can wait for you in the entrance for two minutes.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-003",
+        "output": {
+          "reply": "Yes please, send me a photo of your notes.",
+          "raw_text": "Yes please, send me a photo of your notes.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-004",
+        "output": {
+          "reply": "I can send you the photo tonight.",
+          "raw_text": "I can send you the photo tonight.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-005",
+        "output": {
+          "reply": "No need to return it on Tuesday.",
+          "raw_text": "No need to return it on Tuesday.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-006",
+        "output": {
+          "reply": "I can return it before class, but I need to check the calculator is still in working order.",
+          "raw_text": "I can return it before class, but I need to check the calculator is still in working order.",
+          "termination": "eos",
+          "generated_tokens": 21,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-007",
+        "output": {
+          "reply": "I submitted the form this morning.",
+          "raw_text": "I submitted the form this morning.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-008",
+        "output": {
+          "reply": "I have not started packing them yet.",
+          "raw_text": "I have not started packing them yet.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-009",
+        "output": {
+          "reply": "That is too much for me. Could we order something smaller?",
+          "raw_text": "That is too much for me. Could we order something smaller?",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-010",
+        "output": {
+          "reply": "I cannot leave before seven. Could we meet after work?",
+          "raw_text": "I cannot leave before seven. Could we meet after work?",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-011",
+        "output": {
+          "reply": "I can help on Thursday morning but I will be away on Thursday.",
+          "raw_text": "I can help on Thursday morning but I will be away on Thursday.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-012",
+        "output": {
+          "reply": "No thanks, I will get the vegetable noodles instead.",
+          "raw_text": "No thanks, I will get the vegetable noodles instead.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-013",
+        "output": {
+          "reply": "I cannot lift heavy boxes today, but I can help carry the boxes.",
+          "raw_text": "I cannot lift heavy boxes today, but I can help carry the boxes.",
+          "termination": "eos",
+          "generated_tokens": 16,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-014",
+        "output": {
+          "reply": "I am waiting beside the blue vending machine on level two.",
+          "raw_text": "I am waiting beside the blue vending machine on level two.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-015",
+        "output": {
+          "reply": "I have not checked whether the cafe is open on public holidays.",
+          "raw_text": "I have not checked whether the cafe is open on public holidays.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-016",
+        "output": {
+          "reply": "I am sorry to hear that.",
+          "raw_text": "I am sorry to hear that.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-017",
+        "output": {
+          "reply": "I can help with the slides for the other sections.",
+          "raw_text": "I can help with the slides for the other sections.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-018",
+        "output": {
+          "reply": "Congratulations! How was your test?",
+          "raw_text": "Congratulations! How was your test?",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-019",
+        "output": {
+          "reply": "I will remember to bring my water bottle.",
+          "raw_text": "I will remember to bring my water bottle.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-020",
+        "output": {
+          "reply": "Thanks for updating the venue. I'll go and check the updated poster.",
+          "raw_text": "Thanks for updating the venue. I'll go and check the updated poster.",
+          "termination": "eos",
+          "generated_tokens": 17,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-021",
+        "output": {
+          "reply": "Water would be fine.",
+          "raw_text": "Water would be fine.",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-022",
+        "output": {
+          "reply": "That works for me. See you at the station after my lesson.",
+          "raw_text": "That works for me. See you at the station after my lesson.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-023",
+        "output": {
+          "reply": "No worries, I understand.",
+          "raw_text": "No worries, I understand.",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-024",
+        "output": {
+          "reply": "That would be quieter, but I am not sure about the availability of seats.",
+          "raw_text": "That would be quieter, but I am not sure about the availability of seats.",
+          "termination": "eos",
+          "generated_tokens": 17,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-room-1",
+        "output": {
+          "reply": "I reserved room C314 for our practice session.",
+          "raw_text": "I reserved room C314 for our practice session.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-room-2",
+        "output": {
+          "reply": "I reserved room C317 for our practice session.",
+          "raw_text": "I reserved room C317 for our practice session.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-location-1",
+        "output": {
+          "reply": "I am beside the orange clock on level three.",
+          "raw_text": "I am beside the orange clock on level three.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-location-2",
+        "output": {
+          "reply": "I am beside the green bench on level one.",
+          "raw_text": "I am beside the green bench on level one.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-availability-1",
+        "output": {
+          "reply": "I am free on Friday, but I am busy on Saturday.",
+          "raw_text": "I am free on Friday, but I am busy on Saturday.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-availability-2",
+        "output": {
+          "reply": "I am busy on Friday, but I can help on Saturday.",
+          "raw_text": "I am busy on Friday, but I can help on Saturday.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-budget-1",
+        "output": {
+          "reply": "I can only afford fifty dollars.",
+          "raw_text": "I can only afford fifty dollars.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-budget-2",
+        "output": {
+          "reply": "I can only afford thirty dollars.",
+          "raw_text": "I can only afford thirty dollars.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-submitted-1",
+        "output": {
+          "reply": "I have submitted the consent form to the portal this afternoon.",
+          "raw_text": "I have submitted the consent form to the portal this afternoon.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-submitted-2",
+        "output": {
+          "reply": "I have not submitted the consent form yet.",
+          "raw_text": "I have not submitted the consent form yet.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-packed-1",
+        "output": {
+          "reply": "I have finished packing all the welcome packs into boxes.",
+          "raw_text": "I have finished packing all the welcome packs into boxes.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-packed-2",
+        "output": {
+          "reply": "I have not started packing the welcome packs into boxes.",
+          "raw_text": "I have not started packing the welcome packs into boxes.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-ownership-1",
+        "output": {
+          "reply": "I need to return the cable to you.",
+          "raw_text": "I need to return the cable to you.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-ownership-2",
+        "output": {
+          "reply": "I need to return the cable to you.",
+          "raw_text": "I need to return the cable to you.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-offer_request-1",
+        "output": {
+          "reply": "Yes please, send me a photo of your notes.",
+          "raw_text": "Yes please, send me a photo of your notes.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-offer_request-2",
+        "output": {
+          "reply": "I'll send you a photo of my notes in a few minutes.",
+          "raw_text": "I'll send you a photo of my notes in a few minutes.",
+          "termination": "eos",
+          "generated_tokens": 16,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-schedule-1",
+        "output": {
+          "reply": "I cannot leave before 18:45, but I can eat after 19:15.",
+          "raw_text": "I cannot leave before 18:45, but I can eat after 19:15.",
+          "termination": "eos",
+          "generated_tokens": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-schedule-2",
+        "output": {
+          "reply": "That works for me. Let's meet at 19:15.",
+          "raw_text": "That works for me. Let's meet at 19:15.",
+          "termination": "eos",
+          "generated_tokens": 18,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-possession-1",
+        "output": {
+          "reply": "I put my umbrella in my bag before leaving home.",
+          "raw_text": "I put my umbrella in my bag before leaving home.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-possession-2",
+        "output": {
+          "reply": "I forgot to pack it before leaving.",
+          "raw_text": "I forgot to pack it before leaving.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "status": "complete"
+        }
+      }
+    ],
+    "beam4_ng3": [
+      {
+        "item_id": "SEAPUBLIC-001",
+        "output": {
+          "reply": "Seven forty works for me.",
+          "raw_text": "Seven forty works for me.",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "token_ids": [
+            21798,
+            28701,
+            2191,
+            371,
+            548,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.8215951919555664,
+          "normalized_score": -0.2602278845650809,
+          "forward_calls": 25,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-002",
+        "output": {
+          "reply": "Yes, please return my headphones by tomorrow afternoon.",
+          "raw_text": "Yes, please return my headphones by tomorrow afternoon.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            6351,
+            249832,
+            2357,
+            2080,
+            575,
+            30786,
+            494,
+            8700,
+            7435,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.5292229652404785,
+          "normalized_score": -0.22992936047640714,
+          "forward_calls": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-003",
+        "output": {
+          "reply": "I have not checked the room closing hours yet.",
+          "raw_text": "I have not checked the room closing hours yet.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            479,
+            502,
+            12188,
+            311,
+            1679,
+            11897,
+            2299,
+            2310,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.359113693237305,
+          "normalized_score": -0.48719215393066406,
+          "forward_calls": 34,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-004",
+        "output": {
+          "reply": "Yes, please send me your briefing notes.",
+          "raw_text": "Yes, please send me your briefing notes.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            6351,
+            249832,
+            2357,
+            3444,
+            548,
+            462,
+            38810,
+            7064,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.4062135219573975,
+          "normalized_score": -0.24062135219573974,
+          "forward_calls": 22,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-005",
+        "output": {
+          "reply": "Sure, I'll send you the photos later.",
+          "raw_text": "Sure, I'll send you the photos later.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            249866,
+            642,
+            3444,
+            364,
+            311,
+            3567,
+            2663,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.3216559886932373,
+          "normalized_score": -0.27680466572443646,
+          "forward_calls": 20,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-006",
+        "output": {
+          "reply": "That would be too expensive for me. Could we find something cheaper?",
+          "raw_text": "That would be too expensive for me. Could we find something cheaper?",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            1940,
+            732,
+            381,
+            1260,
+            7094,
+            371,
+            548,
+            249835,
+            16452,
+            427,
+            993,
+            1501,
+            14952,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -6.599843978881836,
+          "normalized_score": -0.4399895985921224,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-007",
+        "output": {
+          "reply": "Yes, I uploaded the form last night.",
+          "raw_text": "Yes, I uploaded the form last night.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            22302,
+            311,
+            1283,
+            1123,
+            1803,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.759517192840576,
+          "normalized_score": -0.2759517192840576,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-008",
+        "output": {
+          "reply": "I have not started making the slides yet.",
+          "raw_text": "I have not started making the slides yet.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            357,
+            479,
+            502,
+            2340,
+            1802,
+            311,
+            19760,
+            2310,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.4769928455352783,
+          "normalized_score": -0.24769928455352783,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-009",
+        "output": {
+          "reply": "I'm sorry to hear that.",
+          "raw_text": "I'm sorry to hear that.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            357,
+            249866,
+            249827,
+            10527,
+            332,
+            3996,
+            397,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.09620475769043,
+          "normalized_score": -0.4551338619656033,
+          "forward_calls": 32,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-010",
+        "output": {
+          "reply": "Yes, I would love to join your picnic.",
+          "raw_text": "Yes, I would love to join your picnic.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            732,
+            1184,
+            332,
+            2629,
+            462,
+            25128,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.55867862701416,
+          "normalized_score": -0.41442532972856,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-011",
+        "output": {
+          "reply": "I am waiting outside room C2.",
+          "raw_text": "I am waiting outside room C2.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            3387,
+            1679,
+            358,
+            249846,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.616398811340332,
+          "normalized_score": -0.17959986792670357,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEAPUBLIC-012",
+        "output": {
+          "reply": "No thanks, could you order something without meat for me?",
+          "raw_text": "No thanks, could you order something without meat for me?",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            1813,
+            4845,
+            249832,
+            932,
+            364,
+            1766,
+            1501,
+            1605,
+            8229,
+            371,
+            548,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -6.096707820892334,
+          "normalized_score": -0.4689775246840257,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-001",
+        "output": {
+          "reply": "I cannot leave before six. Could we meet for dinner at five fifty instead?",
+          "raw_text": "I cannot leave before six. Could we meet for dinner at five fifty instead?",
+          "termination": "eos",
+          "generated_tokens": 17,
+          "token_ids": [
+            357,
+            3830,
+            3434,
+            1134,
+            3092,
+            249835,
+            16452,
+            427,
+            1701,
+            371,
+            6336,
+            435,
+            2585,
+            26391,
+            3972,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -5.851759433746338,
+          "normalized_score": -0.3442211431615493,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-002",
+        "output": {
+          "reply": "That's too expensive for me. Could we find something cheaper?",
+          "raw_text": "That's too expensive for me. Could we find something cheaper?",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            1940,
+            249866,
+            249821,
+            1260,
+            7094,
+            371,
+            548,
+            249835,
+            16452,
+            427,
+            993,
+            1501,
+            14952,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -5.9567790031433105,
+          "normalized_score": -0.39711860020955403,
+          "forward_calls": 25,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-003",
+        "output": {
+          "reply": "I cannot make it on Saturday, but I am free on Friday.",
+          "raw_text": "I cannot make it on Saturday, but I am free on Friday.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            3830,
+            798,
+            399,
+            372,
+            3734,
+            249832,
+            556,
+            357,
+            725,
+            1214,
+            372,
+            3375,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.638025283813477,
+          "normalized_score": -0.3092016855875651,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-004",
+        "output": {
+          "reply": "Yes, please return my cable on Monday.",
+          "raw_text": "Yes, please return my cable on Monday.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            6351,
+            249832,
+            2357,
+            2080,
+            575,
+            9895,
+            372,
+            4001,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.534719705581665,
+          "normalized_score": -0.2534719705581665,
+          "forward_calls": 20,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-005",
+        "output": {
+          "reply": "I will return your notes before nine tonight.",
+          "raw_text": "I will return your notes before nine tonight.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            357,
+            505,
+            2080,
+            462,
+            7064,
+            1134,
+            7979,
+            9856,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.496788501739502,
+          "normalized_score": -0.4496788501739502,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-006",
+        "output": {
+          "reply": "Yes please, share the practice clip with me.",
+          "raw_text": "Yes please, share the practice clip with me.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            6351,
+            2357,
+            249832,
+            2253,
+            311,
+            3702,
+            10864,
+            398,
+            548,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.5716159343719482,
+          "normalized_score": -0.3246923576701771,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-007",
+        "output": {
+          "reply": "Sure, I'll send them to you tonight.",
+          "raw_text": "Sure, I'll send them to you tonight.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            249866,
+            642,
+            3444,
+            701,
+            332,
+            364,
+            9856,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.5959484577178955,
+          "normalized_score": -0.21632903814315796,
+          "forward_calls": 17,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "output": {
+          "reply": "Yes, I've already booked the room this morning.",
+          "raw_text": "Yes, I've already booked the room this morning.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            249866,
+            363,
+            2138,
+            19144,
+            311,
+            1679,
+            477,
+            3538,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.2538211345672607,
+          "normalized_score": -0.25029393342825085,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-009",
+        "output": {
+          "reply": "I have not started proofreading the report.",
+          "raw_text": "I have not started proofreading the report.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            357,
+            479,
+            502,
+            2340,
+            77937,
+            311,
+            1419,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.3569064140319824,
+          "normalized_score": -0.37298960155910915,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "output": {
+          "reply": "I am waiting outside seminar room 4A.",
+          "raw_text": "I am waiting outside seminar room 4A.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            3387,
+            24493,
+            1679,
+            249813,
+            249877,
+            249843,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.0918729305267334,
+          "normalized_score": -0.1901702664115212,
+          "forward_calls": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-011",
+        "output": {
+          "reply": "My purple water bottle is purple.",
+          "raw_text": "My purple water bottle is purple.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "token_ids": [
+            1910,
+            17120,
+            1514,
+            9623,
+            370,
+            17120,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.3218235969543457,
+          "normalized_score": -0.4152279496192932,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-012",
+        "output": {
+          "reply": "I have not checked the weekend hours yet.",
+          "raw_text": "I have not checked the weekend hours yet.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            357,
+            479,
+            502,
+            12188,
+            311,
+            4145,
+            2299,
+            2310,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.9715993404388428,
+          "normalized_score": -0.2971599340438843,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "output": {
+          "reply": "Could you get me a cup of coffee?",
+          "raw_text": "Could you get me a cup of coffee?",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            16452,
+            364,
+            651,
+            548,
+            303,
+            3708,
+            339,
+            5465,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -4.144961357116699,
+          "normalized_score": -0.41449613571166993,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-014",
+        "output": {
+          "reply": "Yes, I would love to join you for the show tonight.",
+          "raw_text": "Yes, I would love to join you for the show tonight.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            732,
+            1184,
+            332,
+            2629,
+            364,
+            371,
+            311,
+            1079,
+            9856,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -6.101418495178223,
+          "normalized_score": -0.4358156067984445,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "output": {
+          "reply": "You can ask for help from others in the group.",
+          "raw_text": "You can ask for help from others in the group.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            885,
+            491,
+            1696,
+            371,
+            792,
+            481,
+            2288,
+            337,
+            311,
+            1586,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.216122150421143,
+          "normalized_score": -0.6013435125350952,
+          "forward_calls": 34,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-016",
+        "output": {
+          "reply": "I am sorry to hear that.",
+          "raw_text": "I am sorry to hear that.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "token_ids": [
+            357,
+            725,
+            10527,
+            332,
+            3996,
+            397,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.3383069038391113,
+          "normalized_score": -0.2922883629798889,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-017",
+        "output": {
+          "reply": "I cannot carry heavy crates today. Could someone else help carry them?",
+          "raw_text": "I cannot carry heavy crates today. Could someone else help carry them?",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            3830,
+            4780,
+            6052,
+            80630,
+            1668,
+            249835,
+            16452,
+            2546,
+            2863,
+            792,
+            4780,
+            701,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -7.362919807434082,
+          "normalized_score": -0.4908613204956055,
+          "forward_calls": 28,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-018",
+        "output": {
+          "reply": "That works for me. I'll see you after my lab.",
+          "raw_text": "That works for me. I'll see you after my lab.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            1940,
+            2191,
+            371,
+            548,
+            249835,
+            357,
+            249866,
+            642,
+            902,
+            364,
+            903,
+            575,
+            3690,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.1787333488464355,
+          "normalized_score": -0.3452488899230957,
+          "forward_calls": 19,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-019",
+        "output": {
+          "reply": "Yes, let's find a quiet study area near the library.",
+          "raw_text": "Yes, let's find a quiet study area near the library.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            6351,
+            249832,
+            1575,
+            249866,
+            249821,
+            993,
+            303,
+            8049,
+            2618,
+            1686,
+            1935,
+            311,
+            7309,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.101231098175049,
+          "normalized_score": -0.47341540654500325,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-020",
+        "output": {
+          "reply": "Thanks for spotting that, I'll check the updated file now.",
+          "raw_text": "Thanks for spotting that, I'll check the updated file now.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            4210,
+            371,
+            60232,
+            397,
+            249832,
+            357,
+            249866,
+            642,
+            1792,
+            311,
+            6364,
+            2801,
+            924,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.963626384735107,
+          "normalized_score": -0.3309084256490072,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-010",
+        "output": {
+          "reply": "I'm sorry to hear that, I'll try my best to help.",
+          "raw_text": "I'm sorry to hear that, I'll try my best to help.",
+          "termination": "eos",
+          "generated_tokens": 18,
+          "token_ids": [
+            357,
+            249866,
+            249827,
+            10527,
+            332,
+            3996,
+            397,
+            249832,
+            357,
+            249866,
+            642,
+            1427,
+            575,
+            1008,
+            332,
+            792,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -12.013683319091797,
+          "normalized_score": -0.6674268510606554,
+          "forward_calls": 36,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-017",
+        "output": {
+          "reply": "Yes, we are meeting at 7pm.",
+          "raw_text": "Yes, we are meeting at 7pm.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            6351,
+            249832,
+            427,
+            426,
+            3654,
+            435,
+            249813,
+            249884,
+            3448,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.4329965114593506,
+          "normalized_score": -0.31209059195085004,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-024",
+        "output": {
+          "reply": "No worries, just let me know when you have printed it.",
+          "raw_text": "No worries, just let me know when you have printed it.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            1813,
+            23871,
+            249832,
+            721,
+            1575,
+            548,
+            810,
+            709,
+            364,
+            479,
+            11021,
+            399,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.223961353302002,
+          "normalized_score": -0.3731400966644287,
+          "forward_calls": 25,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-030",
+        "output": {
+          "reply": "Okay, let's look for another place.",
+          "raw_text": "Okay, let's look for another place.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            30265,
+            249832,
+            1575,
+            249866,
+            249821,
+            786,
+            371,
+            1596,
+            1295,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -6.377992153167725,
+          "normalized_score": -0.5798174684697931,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-033",
+        "output": {
+          "reply": "I'm not sure, let's check before we go.",
+          "raw_text": "I'm not sure, let's check before we go.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            249866,
+            249827,
+            502,
+            1473,
+            249832,
+            1575,
+            249866,
+            249821,
+            1792,
+            1134,
+            427,
+            638,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.449272155761719,
+          "normalized_score": -0.4966181437174479,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-035",
+        "output": {
+          "reply": "Yes, I will",
+          "raw_text": "Yes, I will",
+          "termination": "eos",
+          "generated_tokens": 5,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            505,
+            1
+          ],
+          "cumulative_log_probability": -3.713355541229248,
+          "normalized_score": -0.7426711082458496,
+          "forward_calls": 36,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-038",
+        "output": {
+          "reply": "no worries, ten more minutes won't make a difference",
+          "raw_text": "no worries, ten more minutes won't make a difference",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            820,
+            23871,
+            249832,
+            4668,
+            573,
+            2427,
+            1441,
+            249866,
+            249815,
+            798,
+            303,
+            4999,
+            1
+          ],
+          "cumulative_log_probability": -6.773610591888428,
+          "normalized_score": -0.5210469686068021,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-044",
+        "output": {
+          "reply": "yes, I will not blur like sotong",
+          "raw_text": "yes, I will not blur like sotong",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            7401,
+            249832,
+            357,
+            505,
+            502,
+            41406,
+            689,
+            309,
+            95262,
+            1
+          ],
+          "cumulative_log_probability": -5.621737480163574,
+          "normalized_score": -0.5621737480163574,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-046",
+        "output": {
+          "reply": "Sure, I'll be there at 2pm.",
+          "raw_text": "Sure, I'll be there at 2pm.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            249866,
+            642,
+            381,
+            726,
+            435,
+            249813,
+            249846,
+            3448,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.009209156036377,
+          "normalized_score": -0.5391699350797213,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-A-054",
+        "output": {
+          "reply": "Okay, let's go now.",
+          "raw_text": "Okay, let's go now.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            30265,
+            249832,
+            1575,
+            249866,
+            249821,
+            638,
+            924,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.136587142944336,
+          "normalized_score": -0.34850968254937065,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-002",
+        "output": {
+          "reply": "I'm looking for somewhere near the library",
+          "raw_text": "I'm looking for somewhere near the library",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            357,
+            249866,
+            249827,
+            1690,
+            371,
+            10540,
+            1935,
+            311,
+            7309,
+            1
+          ],
+          "cumulative_log_probability": -6.630931854248047,
+          "normalized_score": -0.6630931854248047,
+          "forward_calls": 37,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-009",
+        "output": {
+          "reply": "Yes, there is still space.",
+          "raw_text": "Yes, there is still space.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "token_ids": [
+            6351,
+            249832,
+            726,
+            370,
+            1280,
+            2495,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.4351205825805664,
+          "normalized_score": -0.3043900728225708,
+          "forward_calls": 21,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-029",
+        "output": {
+          "reply": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+          "raw_text": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+          "termination": "eos",
+          "generated_tokens": 27,
+          "token_ids": [
+            357,
+            249866,
+            249827,
+            11380,
+            311,
+            51047,
+            1036,
+            924,
+            249832,
+            556,
+            357,
+            249866,
+            642,
+            1575,
+            364,
+            810,
+            2436,
+            357,
+            810,
+            670,
+            1679,
+            427,
+            249866,
+            306,
+            337,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -11.978285789489746,
+          "normalized_score": -0.44364021442554613,
+          "forward_calls": 38,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-034",
+        "output": {
+          "reply": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+          "raw_text": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+          "termination": "eos",
+          "generated_tokens": 20,
+          "token_ids": [
+            885,
+            491,
+            2179,
+            548,
+            727,
+            364,
+            2681,
+            337,
+            311,
+            3538,
+            249835,
+            357,
+            491,
+            3444,
+            364,
+            326,
+            4970,
+            22453,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -15.597322463989258,
+          "normalized_score": -0.7798661231994629,
+          "forward_calls": 46,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-042",
+        "output": {
+          "reply": "No worries, let me know when you reach",
+          "raw_text": "No worries, let me know when you reach",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            1813,
+            23871,
+            249832,
+            1575,
+            548,
+            810,
+            709,
+            364,
+            4509,
+            1
+          ],
+          "cumulative_log_probability": -4.70181941986084,
+          "normalized_score": -0.470181941986084,
+          "forward_calls": 28,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-043",
+        "output": {
+          "reply": "Sure, I would love to come.",
+          "raw_text": "Sure, I would love to come.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            732,
+            1184,
+            332,
+            1474,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.0208001136779785,
+          "normalized_score": -0.4467555681864421,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-048",
+        "output": {
+          "reply": "That's fine, I'll come after thirty minutes.",
+          "raw_text": "That's fine, I'll come after thirty minutes.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            1940,
+            249866,
+            249821,
+            4540,
+            249832,
+            357,
+            249866,
+            642,
+            1474,
+            903,
+            20219,
+            2427,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.291247367858887,
+          "normalized_score": -0.5208033834184919,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-050",
+        "output": {
+          "reply": "Sure, what time should we meet?",
+          "raw_text": "Sure, what time should we meet?",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            15604,
+            249832,
+            727,
+            666,
+            977,
+            427,
+            1701,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -2.4816181659698486,
+          "normalized_score": -0.27573535177442765,
+          "forward_calls": 21,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-056",
+        "output": {
+          "reply": "No worries, I'll find another time.",
+          "raw_text": "No worries, I'll find another time.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            1813,
+            23871,
+            249832,
+            357,
+            249866,
+            642,
+            993,
+            1596,
+            666,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -6.056956768035889,
+          "normalized_score": -0.5506324334578081,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-B-057",
+        "output": {
+          "reply": "Sure, go ahead and use my charger.",
+          "raw_text": "Sure, go ahead and use my charger.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            15604,
+            249832,
+            638,
+            5166,
+            336,
+            861,
+            575,
+            33451,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.796821117401123,
+          "normalized_score": -0.4796821117401123,
+          "forward_calls": 31,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-001",
+        "output": {
+          "reply": "sure, let's meet there at 8",
+          "raw_text": "sure, let's meet there at 8",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            1473,
+            249832,
+            1575,
+            249866,
+            249821,
+            1701,
+            726,
+            435,
+            249813,
+            249880,
+            1
+          ],
+          "cumulative_log_probability": -4.652958393096924,
+          "normalized_score": -0.4229962175542658,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-017",
+        "output": {
+          "reply": "not yet, im still working on it",
+          "raw_text": "not yet, im still working on it",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            502,
+            2310,
+            249832,
+            1103,
+            1280,
+            1743,
+            372,
+            399,
+            1
+          ],
+          "cumulative_log_probability": -5.094001293182373,
+          "normalized_score": -0.5660001436869303,
+          "forward_calls": 34,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-018",
+        "output": {
+          "reply": "yes, i'll make sure to include the slide",
+          "raw_text": "yes, i'll make sure to include the slide",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            7401,
+            249832,
+            1143,
+            249866,
+            642,
+            798,
+            1473,
+            332,
+            2073,
+            311,
+            15288,
+            1
+          ],
+          "cumulative_log_probability": -7.599168300628662,
+          "normalized_score": -0.6332640250523885,
+          "forward_calls": 31,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-023",
+        "output": {
+          "reply": "Sure, I'd love to join you for that.",
+          "raw_text": "Sure, I'd love to join you for that.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            249866,
+            249824,
+            1184,
+            332,
+            2629,
+            364,
+            371,
+            397,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.878596782684326,
+          "normalized_score": -0.6060459063603327,
+          "forward_calls": 31,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-028",
+        "output": {
+          "reply": "no worries, i'll wait for you",
+          "raw_text": "no worries, i'll wait for you",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            820,
+            23871,
+            249832,
+            1143,
+            249866,
+            642,
+            2759,
+            371,
+            364,
+            1
+          ],
+          "cumulative_log_probability": -5.616172790527344,
+          "normalized_score": -0.5616172790527344,
+          "forward_calls": 33,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-038",
+        "output": {
+          "reply": "I'll take a look and let you know if it's too long.",
+          "raw_text": "I'll take a look and let you know if it's too long.",
+          "termination": "eos",
+          "generated_tokens": 18,
+          "token_ids": [
+            357,
+            249866,
+            642,
+            1072,
+            303,
+            786,
+            336,
+            1575,
+            364,
+            810,
+            720,
+            399,
+            249866,
+            249821,
+            1260,
+            1077,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -8.433782577514648,
+          "normalized_score": -0.4685434765285916,
+          "forward_calls": 37,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-041",
+        "output": {
+          "reply": "no worries. i'll wait a bit longer",
+          "raw_text": "no worries. i'll wait a bit longer",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            820,
+            23871,
+            249835,
+            1143,
+            249866,
+            642,
+            2759,
+            303,
+            2021,
+            3571,
+            1
+          ],
+          "cumulative_log_probability": -5.2340312004089355,
+          "normalized_score": -0.47582101821899414,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-045",
+        "output": {
+          "reply": "Yes, I will be there at 8am.",
+          "raw_text": "Yes, I will be there at 8am.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            505,
+            381,
+            726,
+            435,
+            249813,
+            249880,
+            366,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.172262668609619,
+          "normalized_score": -0.5976885557174683,
+          "forward_calls": 37,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-055",
+        "output": {
+          "reply": "ok, i'll meet you at 2 instead",
+          "raw_text": "ok, i'll meet you at 2 instead",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            7779,
+            249832,
+            1143,
+            249866,
+            642,
+            1701,
+            364,
+            435,
+            249813,
+            249846,
+            3972,
+            1
+          ],
+          "cumulative_log_probability": -4.669484615325928,
+          "normalized_score": -0.38912371794382733,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-C-058",
+        "output": {
+          "reply": "okay, i'll wait a bit longer",
+          "raw_text": "okay, i'll wait a bit longer",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            13224,
+            249832,
+            1143,
+            249866,
+            642,
+            2759,
+            303,
+            2021,
+            3571,
+            1
+          ],
+          "cumulative_log_probability": -4.416623115539551,
+          "normalized_score": -0.4416623115539551,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-007",
+        "output": {
+          "reply": "i'm not sure what i want",
+          "raw_text": "i'm not sure what i want",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            1143,
+            249866,
+            249827,
+            502,
+            1473,
+            727,
+            1143,
+            837,
+            1
+          ],
+          "cumulative_log_probability": -6.7146220207214355,
+          "normalized_score": -0.7460691134134928,
+          "forward_calls": 38,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-009",
+        "output": {
+          "reply": "Okay, I can help you with that one.",
+          "raw_text": "Okay, I can help you with that one.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            30265,
+            249832,
+            357,
+            491,
+            792,
+            364,
+            398,
+            397,
+            611,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.561257839202881,
+          "normalized_score": -0.5055688944729891,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-010",
+        "output": {
+          "reply": "I'm not sure of the answer, but I'll try to find it for you.",
+          "raw_text": "I'm not sure of the answer, but I'll try to find it for you.",
+          "termination": "eos",
+          "generated_tokens": 21,
+          "token_ids": [
+            357,
+            249866,
+            249827,
+            502,
+            1473,
+            339,
+            311,
+            4206,
+            249832,
+            556,
+            357,
+            249866,
+            642,
+            1427,
+            332,
+            993,
+            399,
+            371,
+            364,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -13.617093086242676,
+          "normalized_score": -0.648433004106794,
+          "forward_calls": 33,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-013",
+        "output": {
+          "reply": "Sure, I'll send you an answer in a few minutes.",
+          "raw_text": "Sure, I'll send you an answer in a few minutes.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            249866,
+            642,
+            3444,
+            364,
+            326,
+            4206,
+            337,
+            303,
+            1330,
+            2427,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.706498622894287,
+          "normalized_score": -0.5137665748596192,
+          "forward_calls": 32,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-029",
+        "output": {
+          "reply": "Ok, I will bid before bidding ends.",
+          "raw_text": "Ok, I will bid before bidding ends.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            8180,
+            249832,
+            357,
+            505,
+            9368,
+            1134,
+            35309,
+            8649,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.8331193923950195,
+          "normalized_score": -0.583311939239502,
+          "forward_calls": 34,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-033",
+        "output": {
+          "reply": "okay, I'll meet you at the bus stop",
+          "raw_text": "okay, I'll meet you at the bus stop",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            13224,
+            249832,
+            357,
+            249866,
+            642,
+            1701,
+            364,
+            435,
+            311,
+            3645,
+            3304,
+            1
+          ],
+          "cumulative_log_probability": -6.5652642250061035,
+          "normalized_score": -0.5471053520838419,
+          "forward_calls": 28,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-037",
+        "output": {
+          "reply": "okay, i will be there in a few minutes",
+          "raw_text": "okay, i will be there in a few minutes",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            13224,
+            249832,
+            1143,
+            505,
+            381,
+            726,
+            337,
+            303,
+            1330,
+            2427,
+            1
+          ],
+          "cumulative_log_probability": -5.809744834899902,
+          "normalized_score": -0.5281586213545366,
+          "forward_calls": 28,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-038",
+        "output": {
+          "reply": "ok, i will wait for u",
+          "raw_text": "ok, i will wait for u",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "token_ids": [
+            7779,
+            249832,
+            1143,
+            505,
+            2759,
+            371,
+            2491,
+            1
+          ],
+          "cumulative_log_probability": -3.4476094245910645,
+          "normalized_score": -0.43095117807388306,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-046",
+        "output": {
+          "reply": "Oh no, I can't go now. Could someone else go in my place?",
+          "raw_text": "Oh no, I can't go now. Could someone else go in my place?",
+          "termination": "eos",
+          "generated_tokens": 19,
+          "token_ids": [
+            5534,
+            820,
+            249832,
+            357,
+            491,
+            249866,
+            249815,
+            638,
+            924,
+            249835,
+            16452,
+            2546,
+            2863,
+            638,
+            337,
+            575,
+            1295,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -12.729056358337402,
+          "normalized_score": -0.669950334649337,
+          "forward_calls": 41,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-D-050",
+        "output": {
+          "reply": "no worries, take care",
+          "raw_text": "no worries, take care",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "token_ids": [
+            820,
+            23871,
+            249832,
+            1072,
+            1263,
+            1
+          ],
+          "cumulative_log_probability": -3.551089286804199,
+          "normalized_score": -0.5918482144673666,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-005",
+        "output": {
+          "reply": "ok, see you later",
+          "raw_text": "ok, see you later",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "token_ids": [
+            7779,
+            249832,
+            902,
+            364,
+            2663,
+            1
+          ],
+          "cumulative_log_probability": -3.0952541828155518,
+          "normalized_score": -0.5158756971359253,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-007",
+        "output": {
+          "reply": "okay, see you tomorrow",
+          "raw_text": "okay, see you tomorrow",
+          "termination": "eos",
+          "generated_tokens": 6,
+          "token_ids": [
+            13224,
+            249832,
+            902,
+            364,
+            8700,
+            1
+          ],
+          "cumulative_log_probability": -3.488443613052368,
+          "normalized_score": -0.5814072688420614,
+          "forward_calls": 30,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-009",
+        "output": {
+          "reply": "Sure, I will use it after 3.",
+          "raw_text": "Sure, I will use it after 3.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            505,
+            861,
+            399,
+            903,
+            249813,
+            249869,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -6.132503986358643,
+          "normalized_score": -0.5575003623962402,
+          "forward_calls": 30,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-015",
+        "output": {
+          "reply": "Nope, I haven't done it yet.",
+          "raw_text": "Nope, I haven't done it yet.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            64004,
+            249832,
+            357,
+            5365,
+            249866,
+            249815,
+            2098,
+            399,
+            2310,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.767727851867676,
+          "normalized_score": -0.5243388956243341,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-025",
+        "output": {
+          "reply": "sure, let's do a make up class on thursday instead",
+          "raw_text": "sure, let's do a make up class on thursday instead",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            1473,
+            249832,
+            1575,
+            249866,
+            249821,
+            519,
+            303,
+            798,
+            560,
+            1444,
+            372,
+            114832,
+            3972,
+            1
+          ],
+          "cumulative_log_probability": -8.007742881774902,
+          "normalized_score": -0.5719816344124931,
+          "forward_calls": 32,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-027",
+        "output": {
+          "reply": "no worries, you can use it later",
+          "raw_text": "no worries, you can use it later",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            820,
+            23871,
+            249832,
+            364,
+            491,
+            861,
+            399,
+            2663,
+            1
+          ],
+          "cumulative_log_probability": -4.40356969833374,
+          "normalized_score": -0.48928552203708225,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-028",
+        "output": {
+          "reply": "ok, then we eat at 6pm instead",
+          "raw_text": "ok, then we eat at 6pm instead",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            7779,
+            249832,
+            999,
+            427,
+            4501,
+            435,
+            249813,
+            249881,
+            3448,
+            3972,
+            1
+          ],
+          "cumulative_log_probability": -12.529376983642578,
+          "normalized_score": -1.1390342712402344,
+          "forward_calls": 41,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-032",
+        "output": {
+          "reply": "Okay, I'll go to SR3-2 instead.",
+          "raw_text": "Okay, I'll go to SR3-2 instead.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            30265,
+            249832,
+            357,
+            249866,
+            642,
+            638,
+            332,
+            26088,
+            249869,
+            249840,
+            249846,
+            3972,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -6.4911298751831055,
+          "normalized_score": -0.4636521339416504,
+          "forward_calls": 32,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-040",
+        "output": {
+          "reply": "Sure, let's meet this week.",
+          "raw_text": "Sure, let's meet this week.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            15604,
+            249832,
+            1575,
+            249866,
+            249821,
+            1701,
+            477,
+            1200,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.223906517028809,
+          "normalized_score": -0.7223906517028809,
+          "forward_calls": 36,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "ITEM-E-046",
+        "output": {
+          "reply": "ok, i will release it at 5 instead",
+          "raw_text": "ok, i will release it at 5 instead",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            7779,
+            249832,
+            1143,
+            505,
+            3831,
+            399,
+            435,
+            249813,
+            249872,
+            3972,
+            1
+          ],
+          "cumulative_log_probability": -6.428403854370117,
+          "normalized_score": -0.5844003503972833,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-001",
+        "output": {
+          "reply": "Yes, I would like to join you at eight.",
+          "raw_text": "Yes, I would like to join you at eight.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            732,
+            689,
+            332,
+            2629,
+            364,
+            435,
+            5536,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.100817680358887,
+          "normalized_score": -0.4250681400299072,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-002",
+        "output": {
+          "reply": "Sure, I will wait here for you in two minutes.",
+          "raw_text": "Sure, I will wait here for you in two minutes.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            505,
+            2759,
+            1027,
+            371,
+            364,
+            337,
+            896,
+            2427,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.403991222381592,
+          "normalized_score": -0.33876855556781477,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-003",
+        "output": {
+          "reply": "Yes please, send me a photo of your notes.",
+          "raw_text": "Yes please, send me a photo of your notes.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            6351,
+            2357,
+            249832,
+            3444,
+            548,
+            303,
+            4232,
+            339,
+            462,
+            7064,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.0799355506896973,
+          "normalized_score": -0.08999462922414143,
+          "forward_calls": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-004",
+        "output": {
+          "reply": "Sure, I'll send it to you tonight.",
+          "raw_text": "Sure, I'll send it to you tonight.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            249866,
+            642,
+            3444,
+            399,
+            332,
+            364,
+            9856,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.897334337234497,
+          "normalized_score": -0.24144452810287476,
+          "forward_calls": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-005",
+        "output": {
+          "reply": "That works for me. I will return your umbrella on Tuesday.",
+          "raw_text": "That works for me. I will return your umbrella on Tuesday.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            1940,
+            2191,
+            371,
+            548,
+            249835,
+            357,
+            505,
+            2080,
+            462,
+            32148,
+            372,
+            4572,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.927467346191406,
+          "normalized_score": -0.4233905247279576,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-006",
+        "output": {
+          "reply": "Sure, I'll return it before class.",
+          "raw_text": "Sure, I'll return it before class.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            249866,
+            642,
+            2080,
+            399,
+            1134,
+            1444,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.386992454528809,
+          "normalized_score": -0.3988174958662553,
+          "forward_calls": 32,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-007",
+        "output": {
+          "reply": "I submitted it this morning.",
+          "raw_text": "I submitted it this morning.",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "token_ids": [
+            357,
+            11085,
+            399,
+            477,
+            3538,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.090861201286316,
+          "normalized_score": -0.15583731446947371,
+          "forward_calls": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-008",
+        "output": {
+          "reply": "I have not started packing them yet.",
+          "raw_text": "I have not started packing them yet.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            357,
+            479,
+            502,
+            2340,
+            20689,
+            701,
+            2310,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.663778066635132,
+          "normalized_score": -0.29597534073723686,
+          "forward_calls": 20,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-009",
+        "output": {
+          "reply": "That is too expensive for me. Could we get something cheaper?",
+          "raw_text": "That is too expensive for me. Could we get something cheaper?",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            1940,
+            370,
+            1260,
+            7094,
+            371,
+            548,
+            249835,
+            16452,
+            427,
+            651,
+            1501,
+            14952,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -6.9635162353515625,
+          "normalized_score": -0.4973940168108259,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-010",
+        "output": {
+          "reply": "I cannot leave before seven. Could we meet after work?",
+          "raw_text": "I cannot leave before seven. Could we meet after work?",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            357,
+            3830,
+            3434,
+            1134,
+            5443,
+            249835,
+            16452,
+            427,
+            1701,
+            903,
+            675,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -3.8136672973632812,
+          "normalized_score": -0.29335902287409854,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-011",
+        "output": {
+          "reply": "I can come on Thursday morning, but I am away on Thursday.",
+          "raw_text": "I can come on Thursday morning, but I am away on Thursday.",
+          "termination": "eos",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            491,
+            1474,
+            372,
+            4537,
+            3538,
+            249832,
+            556,
+            357,
+            725,
+            1834,
+            372,
+            4537,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.441404342651367,
+          "normalized_score": -0.36276028951009115,
+          "forward_calls": 28,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-012",
+        "output": {
+          "reply": "No thanks, I cannot eat seafood.",
+          "raw_text": "No thanks, I cannot eat seafood.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            1813,
+            4845,
+            249832,
+            357,
+            3830,
+            4501,
+            25299,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.7350475788116455,
+          "normalized_score": -0.30389417542351616,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-013",
+        "output": {
+          "reply": "I cannot lift heavy boxes. Could someone else help me?",
+          "raw_text": "I cannot lift heavy boxes. Could someone else help me?",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            357,
+            3830,
+            9660,
+            6052,
+            11037,
+            249835,
+            16452,
+            2546,
+            2863,
+            792,
+            548,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -4.467225074768066,
+          "normalized_score": -0.34363269805908203,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-014",
+        "output": {
+          "reply": "I am waiting beside the blue vending machine on level two.",
+          "raw_text": "I am waiting beside the blue vending machine on level two.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            23535,
+            311,
+            4998,
+            61882,
+            4125,
+            372,
+            1691,
+            896,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.5973271131515503,
+          "normalized_score": -0.1228713163962731,
+          "forward_calls": 15,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-015",
+        "output": {
+          "reply": "I have not checked whether the cafe is open on public holidays.",
+          "raw_text": "I have not checked whether the cafe is open on public holidays.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            357,
+            479,
+            502,
+            12188,
+            2958,
+            311,
+            19195,
+            370,
+            1388,
+            372,
+            1724,
+            11095,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.2592153549194336,
+          "normalized_score": -0.23280109677995955,
+          "forward_calls": 21,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-016",
+        "output": {
+          "reply": "I'm sorry to hear that.",
+          "raw_text": "I'm sorry to hear that.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            357,
+            249866,
+            249827,
+            10527,
+            332,
+            3996,
+            397,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.5195062160491943,
+          "normalized_score": -0.27994513511657715,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-017",
+        "output": {
+          "reply": "No worries. You can take over the slides for one section.",
+          "raw_text": "No worries. You can take over the slides for one section.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            1813,
+            23871,
+            249835,
+            885,
+            491,
+            1072,
+            723,
+            311,
+            19760,
+            371,
+            611,
+            4605,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -9.008622169494629,
+          "normalized_score": -0.6434730121067592,
+          "forward_calls": 35,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-018",
+        "output": {
+          "reply": "Congratulations! That's great news.",
+          "raw_text": "Congratulations! That's great news.",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            31598,
+            249893,
+            1940,
+            249866,
+            249821,
+            929,
+            2373,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.81423020362854,
+          "normalized_score": -0.42380335595872665,
+          "forward_calls": 31,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-019",
+        "output": {
+          "reply": "Yes, I will remember to bring my water bottle.",
+          "raw_text": "Yes, I will remember to bring my water bottle.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            505,
+            3863,
+            332,
+            2420,
+            575,
+            1514,
+            9623,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.4078433513641357,
+          "normalized_score": -0.2839869459470113,
+          "forward_calls": 19,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-020",
+        "output": {
+          "reply": "Thanks, I'll check the updated poster now.",
+          "raw_text": "Thanks, I'll check the updated poster now.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            4210,
+            249832,
+            357,
+            249866,
+            642,
+            1792,
+            311,
+            6364,
+            15778,
+            924,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.8486928939819336,
+          "normalized_score": -0.3207244078318278,
+          "forward_calls": 23,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-021",
+        "output": {
+          "reply": "Could you get me a bottle of water?",
+          "raw_text": "Could you get me a bottle of water?",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            16452,
+            364,
+            651,
+            548,
+            303,
+            9623,
+            339,
+            1514,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -2.0608572959899902,
+          "normalized_score": -0.206085729598999,
+          "forward_calls": 16,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-022",
+        "output": {
+          "reply": "I'll meet you there after my lesson.",
+          "raw_text": "I'll meet you there after my lesson.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            249866,
+            642,
+            1701,
+            364,
+            726,
+            903,
+            575,
+            11703,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.539590358734131,
+          "normalized_score": -0.3217809417031028,
+          "forward_calls": 22,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-023",
+        "output": {
+          "reply": "No worries. I understand.",
+          "raw_text": "No worries. I understand.",
+          "termination": "eos",
+          "generated_tokens": 7,
+          "token_ids": [
+            1813,
+            23871,
+            249835,
+            357,
+            2118,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.747234582901001,
+          "normalized_score": -0.39246208327157156,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "RESTORE-FRESH-024",
+        "output": {
+          "reply": "That would be fine. Let's go there instead.",
+          "raw_text": "That would be fine. Let's go there instead.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            1940,
+            732,
+            381,
+            4540,
+            249835,
+            4644,
+            249866,
+            249821,
+            638,
+            726,
+            3972,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -6.642423629760742,
+          "normalized_score": -0.5109556638277494,
+          "forward_calls": 27,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-room-1",
+        "output": {
+          "reply": "I reserved room C314 for our practice session.",
+          "raw_text": "I reserved room C314 for our practice session.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            357,
+            12442,
+            1679,
+            358,
+            249869,
+            249845,
+            249877,
+            371,
+            607,
+            3702,
+            5797,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.273210287094116,
+          "normalized_score": -0.17486232977647048,
+          "forward_calls": 20,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-room-2",
+        "output": {
+          "reply": "I reserved room C317 for our practice session.",
+          "raw_text": "I reserved room C317 for our practice session.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            357,
+            12442,
+            1679,
+            358,
+            249869,
+            249845,
+            249884,
+            371,
+            607,
+            3702,
+            5797,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.1906402111053467,
+          "normalized_score": -0.16851078546964204,
+          "forward_calls": 19,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-location-1",
+        "output": {
+          "reply": "I am beside the orange clock on level three.",
+          "raw_text": "I am beside the orange clock on level three.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            725,
+            23535,
+            311,
+            11575,
+            12129,
+            372,
+            1691,
+            1389,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -0.5196120142936707,
+          "normalized_score": -0.04723745584487915,
+          "forward_calls": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-location-2",
+        "output": {
+          "reply": "I am beside the green bench on level one.",
+          "raw_text": "I am beside the green bench on level one.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            725,
+            23535,
+            311,
+            3978,
+            10660,
+            372,
+            1691,
+            611,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -0.6725307703018188,
+          "normalized_score": -0.061139160936528984,
+          "forward_calls": 12,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-availability-1",
+        "output": {
+          "reply": "I am free on Friday, but I am busy on Saturday.",
+          "raw_text": "I am free on Friday, but I am busy on Saturday.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            357,
+            725,
+            1214,
+            372,
+            3375,
+            249832,
+            556,
+            357,
+            725,
+            6864,
+            372,
+            3734,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.965035915374756,
+          "normalized_score": -0.28321685109819683,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-availability-2",
+        "output": {
+          "reply": "I am busy on Friday, but I can help on Saturday.",
+          "raw_text": "I am busy on Friday, but I can help on Saturday.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            357,
+            725,
+            6864,
+            372,
+            3375,
+            249832,
+            556,
+            357,
+            491,
+            792,
+            372,
+            3734,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.7409570217132568,
+          "normalized_score": -0.12435407297951835,
+          "forward_calls": 16,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-budget-1",
+        "output": {
+          "reply": "I only have fifteen dollars left. I can't afford the forty-dollar booking.",
+          "raw_text": "I only have fifteen dollars left. I can't afford the forty-dollar booking.",
+          "termination": "eos",
+          "generated_tokens": 19,
+          "token_ids": [
+            357,
+            849,
+            479,
+            28539,
+            8266,
+            2084,
+            249835,
+            357,
+            491,
+            249866,
+            249815,
+            5302,
+            311,
+            28701,
+            249840,
+            45732,
+            12146,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -9.0145263671875,
+          "normalized_score": -0.47444875616776316,
+          "forward_calls": 34,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-budget-2",
+        "output": {
+          "reply": "I can't afford the forty-dollar booking. I only have seventy-five dollars.",
+          "raw_text": "I can't afford the forty-dollar booking. I only have seventy-five dollars.",
+          "termination": "eos",
+          "generated_tokens": 20,
+          "token_ids": [
+            357,
+            491,
+            249866,
+            249815,
+            5302,
+            311,
+            28701,
+            249840,
+            45732,
+            12146,
+            249835,
+            357,
+            849,
+            479,
+            62268,
+            249840,
+            24593,
+            8266,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -8.09890365600586,
+          "normalized_score": -0.40494518280029296,
+          "forward_calls": 31,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-submitted-1",
+        "output": {
+          "reply": "Yes, I've uploaded it to the portal this afternoon.",
+          "raw_text": "Yes, I've uploaded it to the portal this afternoon.",
+          "termination": "eos",
+          "generated_tokens": 14,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            249866,
+            363,
+            22302,
+            399,
+            332,
+            311,
+            17646,
+            477,
+            7435,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.1294941902160645,
+          "normalized_score": -0.2949638707297189,
+          "forward_calls": 28,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-submitted-2",
+        "output": {
+          "reply": "I have not submitted the consent form yet.",
+          "raw_text": "I have not submitted the consent form yet.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            357,
+            479,
+            502,
+            11085,
+            311,
+            17099,
+            1283,
+            2310,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.7668824195861816,
+          "normalized_score": -0.2766882419586182,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-packed-1",
+        "output": {
+          "reply": "I have packed all the welcome packs into boxes.",
+          "raw_text": "I have packed all the welcome packs into boxes.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            479,
+            12488,
+            529,
+            311,
+            5836,
+            21706,
+            780,
+            11037,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.8444876670837402,
+          "normalized_score": -0.34949887882579456,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-packed-2",
+        "output": {
+          "reply": "I have not started packing the welcome packs into boxes.",
+          "raw_text": "I have not started packing the welcome packs into boxes.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            357,
+            479,
+            502,
+            2340,
+            20689,
+            311,
+            5836,
+            21706,
+            780,
+            11037,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.0771381855010986,
+          "normalized_score": -0.25642818212509155,
+          "forward_calls": 22,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-ownership-1",
+        "output": {
+          "reply": "You need to return the cable to me.",
+          "raw_text": "You need to return the cable to me.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            885,
+            730,
+            332,
+            2080,
+            311,
+            9895,
+            332,
+            548,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.023723602294922,
+          "normalized_score": -0.5023723602294922,
+          "forward_calls": 28,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-ownership-2",
+        "output": {
+          "reply": "I need to return the cable you lent me yesterday.",
+          "raw_text": "I need to return the cable you lent me yesterday.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            357,
+            730,
+            332,
+            2080,
+            311,
+            9895,
+            364,
+            34174,
+            548,
+            7310,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -5.246435165405273,
+          "normalized_score": -0.43720293045043945,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-offer_request-1",
+        "output": {
+          "reply": "Yes please, send me a photo of your notes.",
+          "raw_text": "Yes please, send me a photo of your notes.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            6351,
+            2357,
+            249832,
+            3444,
+            548,
+            303,
+            4232,
+            339,
+            462,
+            7064,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.2422372102737427,
+          "normalized_score": -0.10351976752281189,
+          "forward_calls": 13,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-offer_request-2",
+        "output": {
+          "reply": "Sure, I will send you a photo of my notes.",
+          "raw_text": "Sure, I will send you a photo of my notes.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            15604,
+            249832,
+            357,
+            505,
+            3444,
+            364,
+            303,
+            4232,
+            339,
+            575,
+            7064,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.1841564178466797,
+          "normalized_score": -0.24493510906512922,
+          "forward_calls": 18,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-schedule-1",
+        "output": {
+          "reply": "I cannot leave before 18:45. Could we get dinner after 19:15?",
+          "raw_text": "I cannot leave before 18:45. Could we get dinner after 19:15?",
+          "termination": "eos",
+          "generated_tokens": 24,
+          "token_ids": [
+            357,
+            3830,
+            3434,
+            1134,
+            249813,
+            249845,
+            249880,
+            249853,
+            249877,
+            249872,
+            249835,
+            16452,
+            427,
+            651,
+            6336,
+            903,
+            249813,
+            249845,
+            249878,
+            249853,
+            249845,
+            249872,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -6.198558807373047,
+          "normalized_score": -0.25827328364054364,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-schedule-2",
+        "output": {
+          "reply": "That works for me. Let's meet at 19:15.",
+          "raw_text": "That works for me. Let's meet at 19:15.",
+          "termination": "eos",
+          "generated_tokens": 18,
+          "token_ids": [
+            1940,
+            2191,
+            371,
+            548,
+            249835,
+            4644,
+            249866,
+            249821,
+            1701,
+            435,
+            249813,
+            249845,
+            249878,
+            249853,
+            249845,
+            249872,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.564302921295166,
+          "normalized_score": -0.25357238451639813,
+          "forward_calls": 22,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-possession-1",
+        "output": {
+          "reply": "I put my umbrella in my bag before leaving home.",
+          "raw_text": "I put my umbrella in my bag before leaving home.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            357,
+            1466,
+            575,
+            32148,
+            337,
+            575,
+            2496,
+            1134,
+            6824,
+            1061,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -1.3821934461593628,
+          "normalized_score": -0.1151827871799469,
+          "forward_calls": 16,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "CTXDEV-possession-2",
+        "output": {
+          "reply": "I left my umbrella at home before heading out.",
+          "raw_text": "I left my umbrella at home before heading out.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            2084,
+            575,
+            32148,
+            435,
+            1061,
+            1134,
+            12042,
+            557,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -4.261901378631592,
+          "normalized_score": -0.38744557987559924,
+          "forward_calls": 26,
+          "status": "complete"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "item_id": "DIAG3-availability-positive",
+    "standard": "Friday afternoon works for me.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-availability-negative",
+    "standard": "Friday afternoon does not work for me.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-booking-future",
+    "standard": "I will book the room later.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-booking-complete",
+    "standard": "I have already booked the room.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-owner-you",
+    "standard": "You can go first.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-owner-me",
+    "standard": "I can go first.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-not-yet",
+    "standard": "I have not finished the slides yet.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-already",
+    "standard": "I have already finished the slides.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-reassure",
+    "standard": "No worries, just let me know when you are done.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-support",
+    "standard": "That sounds exhausting. Get some rest first.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-uncertainty",
+    "standard": "I am not sure; let me check first.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  },
+  {
+    "item_id": "DIAG3-return",
+    "standard": "I will return your charger after my phone finishes charging.",
+    "context": [],
+    "speakers": [],
+    "message": "",
+    "group_id": "diagnostic-probes",
+    "split": "probe"
+  }
+]

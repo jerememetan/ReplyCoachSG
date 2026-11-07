@@ -1,5 +1,27 @@
 # Role E — Reranker, integration, demo
 
+## Evaluation handoff — 3 November 2026
+
+D’s bounded training ablations are complete; retain the existing supervised V5
+checkpoint. See [the consolidated results](../../experiments/v5_ablation_summary_20261103.md).
+No new experimental adapter was promoted, and the final test set remains locked.
+
+The user permits plausible new personal/factual details in selectable drafts.
+The evaluator-only and shared rubrics now reject explicit contradictions/role
+reversals, rather than missing evidence alone. Use fresh matched calibration/main
+folders after syncing the updated rubric; old judge runs retain their original
+rubric and must not be merged. The runner records rubric text in resume checks.
+Fresh P01 policy diagnostic matched 6/6 reviewed examples; this is not main-panel
+accuracy. See [the check](../../experiments/eval_policy_20261103.md).
+
+The exporter input check passed for 190 bank items/50 validation queries without
+loading models. Real generator/hybrid exports, main ten-persona ratings and demo
+proof remain pending. Source/rubric changes are local workspace changes; if running
+on the cluster, sync the updated evaluator rubric or use its frozen calibrated
+copy in `~/ReplyCoachSG/experiments/eval_policy_20261103/rubric.md`. Do not accidentally
+resume the historical cluster checkout’s old-rubric ratings.
+
+
 ## Current priority updated 18 October 2026
 
 The [judge experiment report](../../docs/judge_pilot_experiments.md) records the

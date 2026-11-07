@@ -1,0 +1,1362 @@
+{
+  "packet_sha256": "7ad26b5d99ab77d732e55045287acb04c4d9f544b4110b7d11f8661c64f65c76",
+  "limitation": "Exploratory assistant ratings. Exact unchanged pairs reuse seed425 judgments with provenance; changed pairs newly inspected. Same reviewer, training-data author, familiar with prior outputs; model identities hidden but may be inferred. Not human gold or independent conversations.",
+  "ratings": [
+    {
+      "n": 4,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Coherent identical neutral-English replies, without a distinct LOCAL register.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 5,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Compatible opening-status answers, with natural reduced LOCAL syntax.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 7,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges delay and gives compatible own arrival estimate; reduced LOCAL syntax.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 16,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts invitation and asks meeting time in both registers.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 18,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts and asks meeting time in both styles.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 20,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly lends the user's charger; topic-first LOCAL preserves ownership and borrower.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 38,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Waiting at entrance respects the request; LOCAL preserves it naturally.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 38,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly agrees to wait for the arriving peer; natural reduced LOCAL syntax.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 41,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Joining each other later is compatible with the mutual meetup; LOCAL preserves it.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 47,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts refusal and offers another occasion; natural Singlish phrasing.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 50,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts the peer's proposed five o'clock release; LOCAL also-can is recognizable.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 50,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts the peer's proposed five o'clock release; LOCAL also-can is recognizable.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 53,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly offers to send the backup; natural LOCAL can and reduced syntax.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 54,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly accepts receiving peer audio; want and ah give recognizable LOCAL phrasing.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 54,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Reverses the audio offer into the user sending audio they asked to receive.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 55,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Suggests asking another person after the peer cannot open the locker; natural LOCAL phrasing.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 55,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "User may know how to open the locker; offering to open it is compatible with peer inability.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 56,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Asks the experienced peer for instruction; natural LOCAL question form.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 58,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges attendance naturally in both registers.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 58,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Asking about other shifts is a plausible follow-up after confirmation; LOCAL can marks register.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 66,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Context makes take-it interpretable as notes; singular take-note wording gives uncertain distinct LOCAL style.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 67,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "User promises to return a coat that the peer explicitly borrowed from the user.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 70,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly accepts peer ordering mushroom rice for the user; natural LOCAL request.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 74,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly identifies the user's east entrance; natural reduced LOCAL syntax.",
+      "rating_source": "Exact same case and both draft strings as frozen seed425 review; reused judgment, not new independent evidence."
+    },
+    {
+      "n": 1,
+      "option": "A",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Taking some time is weakly specified in response to course difficulty, though LOCAL preserves it."
+    },
+    {
+      "n": 1,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Excitement about a challenging course is a plausible selectable perspective; LOCAL is neutral English."
+    },
+    {
+      "n": 2,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Confirms seven with compatible arrival; natural reduced LOCAL syntax."
+    },
+    {
+      "n": 2,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Confirms seven, but LOCAL is identical neutral English."
+    },
+    {
+      "n": 3,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "Asks an already answered knowledge question; LOCAL instead asserts printer knowledge and drops the question."
+    },
+    {
+      "n": 3,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "A coherent offer to teach is possible because the user never explicitly said they cannot use it; LOCAL preserves it."
+    },
+    {
+      "n": 4,
+      "option": "A",
+      "standard": "pass",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Another booking is coherent, but LOCAL repeats book awkwardly."
+    },
+    {
+      "n": 5,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Plausible stall-opening answer; LOCAL has natural reduced syntax."
+    },
+    {
+      "n": 6,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Acknowledgement and farewell fit a reminder, but LOCAL stays neutral English."
+    },
+    {
+      "n": 6,
+      "option": "B",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Imminent arrival is weakly connected to the food reminder; identical LOCAL lacks local style."
+    },
+    {
+      "n": 7,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges lateness and gives compatible own arrival estimate; LOCAL is natural."
+    },
+    {
+      "n": 8,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges reminder and promises checking; LOCAL preserves it naturally."
+    },
+    {
+      "n": 8,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Sending the project file is a plausible related next step; LOCAL preserves the commitment."
+    },
+    {
+      "n": 9,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Stating two-thirty is a selectable counterproposal to two, with no explicit availability constraint; LOCAL preserves it."
+    },
+    {
+      "n": 9,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts the proposed meeting and gives a later farewell; natural LOCAL can."
+    },
+    {
+      "n": 10,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Going back together first is a valid counterproposal; lor marks LOCAL without changing the plan."
+    },
+    {
+      "n": 10,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Accepts leaving now; repeated now is intelligible but naturalness is uncertain."
+    },
+    {
+      "n": 11,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Asking the peer's food preference is a valid next step while undecided; LOCAL preserves the practical question."
+    },
+    {
+      "n": 11,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Cafeteria answers where to eat; LOCAL drops auxiliary and article naturally."
+    },
+    {
+      "n": 12,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Yes answers remaining space and adds compatible waiting status; LOCAL preserves it."
+    },
+    {
+      "n": 12,
+      "option": "B",
+      "standard": "uncertain",
+      "local": "fail",
+      "same_meaning": "fail",
+      "singlish": "uncertain",
+      "reason": "STANDARD's not-yet answer is ambiguous; LOCAL drops capacity and class timing into a circular arrival fragment."
+    },
+    {
+      "n": 13,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Floor information is a plausible selectable location answer; LOCAL reduced syntax is recognizable."
+    },
+    {
+      "n": 13,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "An ordinal room can be a selectable location where no exact room was stated; LOCAL one marks register."
+    },
+    {
+      "n": 14,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Reverses who missed class and should receive the update."
+    },
+    {
+      "n": 14,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Asks the absent peer to tell the attending user what the peer missed."
+    },
+    {
+      "n": 15,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Deliberately taking a wrong bus is not a coherent response to the peer's mistake."
+    },
+    {
+      "n": 15,
+      "option": "B",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Own missed-bus status is weakly connected to the peer's admission; LOCAL is identical neutral English."
+    },
+    {
+      "n": 16,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts invitation and asks a plausible arrival-time question; natural LOCAL reduction."
+    },
+    {
+      "n": 17,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Gives compatible own arrival timing despite postponement; LOCAL preserves it."
+    },
+    {
+      "n": 17,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges postponement and says the user will wait; natural LOCAL reduction."
+    },
+    {
+      "n": 18,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts the run, with LOCAL I-go preserving participation in the shared plan."
+    },
+    {
+      "n": 19,
+      "option": "A",
+      "standard": "pass",
+      "local": "fail",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "STANDARD accepts seven; LOCAL both rejects and accepts seven, changing the clear decision."
+    },
+    {
+      "n": 19,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts seven with natural LOCAL also-can phrasing."
+    },
+    {
+      "n": 20,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Reverses borrower and lender and suggests borrowing own charger."
+    },
+    {
+      "n": 21,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts the proposed approximate eight-o'clock arrival; LOCAL preserves timing."
+    },
+    {
+      "n": 21,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "A compatible imminent-arrival update accepts meeting there; LOCAL preserves it naturally."
+    },
+    {
+      "n": 22,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "A new completion update is permitted; LOCAL preserves all-slides completion."
+    },
+    {
+      "n": 22,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "STANDARD reports nearly finished, while LOCAL adds a finish-first commitment and drops progress degree."
+    },
+    {
+      "n": 23,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges reminder and agrees to merging; natural LOCAL reduction."
+    },
+    {
+      "n": 23,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges reminder and joint merging plan; lah marks LOCAL."
+    },
+    {
+      "n": 24,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts invitation and asks meeting time in both registers."
+    },
+    {
+      "n": 24,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts night-market invitation; natural LOCAL reduction."
+    },
+    {
+      "n": 25,
+      "option": "A",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Looking at an unspecified thing is weakly connected to the peer ordering food; contextual adequacy uncertain."
+    },
+    {
+      "n": 25,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Coming over to share dinner is a plausible selectable response; LOCAL preserves the plan."
+    },
+    {
+      "n": 26,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Offering to check after a few minutes is a valid next step; LOCAL preserves it."
+    },
+    {
+      "n": 26,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Offering a later check is a valid reply; LOCAL preserves it naturally."
+    },
+    {
+      "n": 27,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledges delay and supplies own compatible upload plan; LOCAL preserves it."
+    },
+    {
+      "n": 27,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Sending own section later is a compatible update; LOCAL preserves it naturally."
+    },
+    {
+      "n": 28,
+      "option": "A",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Current waiting for a seat does not clearly confirm tomorrow's early arrival."
+    },
+    {
+      "n": 28,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Clearly confirms early arrival to get seats; natural LOCAL reduction."
+    },
+    {
+      "n": 29,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts proposed adjustment with inherited location/time; LOCAL preserves intent."
+    },
+    {
+      "n": 29,
+      "option": "B",
+      "standard": "uncertain",
+      "local": "pass",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "STANDARD ambiguously declines today but proposes two today; LOCAL drops refusal and accepts two."
+    },
+    {
+      "n": 30,
+      "option": "A",
+      "standard": "pass",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Waiting is appropriate, but LOCAL repeats the duration awkwardly."
+    },
+    {
+      "n": 30,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Agrees to wait for the occupied court; LOCAL reduced syntax is recognizable."
+    },
+    {
+      "n": 31,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Wine is a plausible selectable preference; LOCAL remains neutral English."
+    },
+    {
+      "n": 31,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Coffee is a plausible preference; LOCAL can gives recognizable acknowledgement."
+    },
+    {
+      "n": 32,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Telling the struggling peer to use the algebra question does not provide coherent help."
+    },
+    {
+      "n": 32,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Offers to inspect the question; natural LOCAL reduction."
+    },
+    {
+      "n": 33,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Valid familiarity confirmation; LOCAL remains ordinary English."
+    },
+    {
+      "n": 33,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Valid familiarity confirmation; LOCAL remains ordinary English."
+    },
+    {
+      "n": 34,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Offers the assignment itself rather than answers or coherent help/refusal."
+    },
+    {
+      "n": 34,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Says the user will take answers instead of responding to the request to supply them."
+    },
+    {
+      "n": 35,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Gives a compatible after-bidding update plan, without promising to bid after closing."
+    },
+    {
+      "n": 35,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledgement and farewell can close the reminder exchange; natural LOCAL phrasing."
+    },
+    {
+      "n": 36,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Gives a compatible imminent-arrival location update; LOCAL preserves it."
+    },
+    {
+      "n": 36,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "uncertain",
+      "singlish": "pass",
+      "reason": "Both signal movement towards peer, but heading versus reaching leaves arrival imminence uncertain."
+    },
+    {
+      "n": 37,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Library waiting plan is a plausible new arrangement without an explicit conflicting user location."
+    },
+    {
+      "n": 37,
+      "option": "B",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Looking at an unspecified thing is weakly connected to the peer's location update."
+    },
+    {
+      "n": 39,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Promises to obtain the unavailable ticket without a coherent alternative or clarification."
+    },
+    {
+      "n": 39,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Taking an unavailable ticket does not coherently help with sold-out admission."
+    },
+    {
+      "n": 40,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Asks why the peer came with the group despite explicit absence; LOCAL is identical neutral English."
+    },
+    {
+      "n": 40,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Sharing a plausible own illness is a selectable response to peer illness; LOCAL remains ordinary English."
+    },
+    {
+      "n": 41,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Joining later is compatible with the mutual cafe meetup; LOCAL preserves it."
+    },
+    {
+      "n": 42,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Repeats meeting without answering the explicit where question."
+    },
+    {
+      "n": 42,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Substitutes Changi for the already agreed Chinatown location without a coherent rescheduling explanation."
+    },
+    {
+      "n": 43,
+      "option": "A",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Generic inability and waiting status do not clearly resolve charger availability."
+    },
+    {
+      "n": 43,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Returning one's own charger tomorrow does not coherently answer lending it after three."
+    },
+    {
+      "n": 44,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Valid unfinished-quiz update; leh naturally marks LOCAL."
+    },
+    {
+      "n": 44,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Valid unfinished-quiz update, but subject omission alone gives uncertain distinct Singlish strength."
+    },
+    {
+      "n": 45,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Confirms Thursday availability; natural LOCAL reduced syntax."
+    },
+    {
+      "n": 45,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "A prior assumption of Thursday availability is a plausible response; reduced LOCAL copula is recognizable."
+    },
+    {
+      "n": 46,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Agrees to later printer use; LOCAL preserves the plan."
+    },
+    {
+      "n": 46,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Sending a booking confirmation is a plausible selectable next step; LOCAL preserves it."
+    },
+    {
+      "n": 47,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Promises to join the peer later despite the peer's explicit inability to attend."
+    },
+    {
+      "n": 48,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Booking later is a plausible alternative after the requested room is unavailable now."
+    },
+    {
+      "n": 48,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Confuses a room-booking problem with booking a course."
+    },
+    {
+      "n": 49,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts working together and asks meeting time in both registers."
+    },
+    {
+      "n": 49,
+      "option": "B",
+      "standard": "pass",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Library proposal is appropriate, but LOCAL repeats library awkwardly."
+    },
+    {
+      "n": 51,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "User takes own keys rather than allowing the requesting peer to borrow them."
+    },
+    {
+      "n": 51,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "User takes own key rather than answering the peer's borrowing request."
+    },
+    {
+      "n": 52,
+      "option": "A",
+      "standard": "pass",
+      "local": "uncertain",
+      "same_meaning": "fail",
+      "singlish": "uncertain",
+      "reason": "Own spare is a valid possible alternative; LOCAL drops it and becomes an awkward ready-thank-you fragment."
+    },
+    {
+      "n": 52,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Appropriate thanks for the offer; identical LOCAL lacks distinct register."
+    },
+    {
+      "n": 53,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly offers to send the backup; natural LOCAL reduction."
+    },
+    {
+      "n": 56,
+      "option": "B",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Next-week setup is weakly connected to the experienced-peer statement; adequacy uncertain."
+    },
+    {
+      "n": 57,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts absence and offers a later camp update; natural LOCAL phrasing."
+    },
+    {
+      "n": 57,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Acknowledgement and a general later farewell can respond to illness without asserting camp attendance."
+    },
+    {
+      "n": 59,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Six is a compatible counterproposal after the five-o'clock lab end; LOCAL preserves it."
+    },
+    {
+      "n": 59,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts four despite explicit inability to leave before five."
+    },
+    {
+      "n": 60,
+      "option": "A",
+      "standard": "uncertain",
+      "local": "fail",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "Earlier than eleven does not ensure before nine; LOCAL also contradicts itself about meeting before then."
+    },
+    {
+      "n": 60,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts eleven despite needing to leave campus by nine."
+    },
+    {
+      "n": 61,
+      "option": "A",
+      "standard": "uncertain",
+      "local": "pass",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "STANDARD completion since an introduction-only prior turn is uncertain; LOCAL instead says unfinished, a clear meaning reversal."
+    },
+    {
+      "n": 61,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "fail",
+      "singlish": "fail",
+      "reason": "Both drafts contain conflicting completion/future-finishing statements; LOCAL repeats a circular finish sequence."
+    },
+    {
+      "n": 62,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Denies filling an application the user explicitly submitted already."
+    },
+    {
+      "n": 62,
+      "option": "B",
+      "standard": "pass",
+      "local": "fail",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "STANDARD confirms submission; LOCAL switches to conflicting send-to-peer/send-to-user instructions."
+    },
+    {
+      "n": 63,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Substitutes an ordinal room instead of the explicitly known TowerC room610."
+    },
+    {
+      "n": 63,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Does not identify the known room, and LOCAL repeats interview room awkwardly."
+    },
+    {
+      "n": 64,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "fail",
+      "reason": "Valid uncertainty about new location; identical LOCAL lacks local style."
+    },
+    {
+      "n": 64,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Admits uncertainty and proposes checking location; leh and reduced LOCAL syntax are recognizable."
+    },
+    {
+      "n": 65,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Merely restates the peer's absence instead of agreeing to provide an update or clarifying it."
+    },
+    {
+      "n": 65,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Correctly promises to update the absent peer after the briefing; natural LOCAL order."
+    },
+    {
+      "n": 66,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "Asks about notes the absent user supposedly took; LOCAL adds incoherent briefing-taking actions."
+    },
+    {
+      "n": 67,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Reverses who returns the coat; peer holds the user's coat."
+    },
+    {
+      "n": 68,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Sure plus Monday return can imply bringing back the requested toolkit; LOCAL preserves the return plan."
+    },
+    {
+      "n": 68,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Sending the peer their toolkit is a valid return method; LOCAL preserves it."
+    },
+    {
+      "n": 69,
+      "option": "A",
+      "standard": "fail",
+      "local": "uncertain",
+      "same_meaning": "fail",
+      "singlish": "pass",
+      "reason": "STANDARD accepts an allergenic sandwich; LOCAL instead offers to get it for the peer, with unclear acknowledgement and changed beneficiary."
+    },
+    {
+      "n": 69,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Accepts the offered egg sandwich despite explicit allergy."
+    },
+    {
+      "n": 70,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Wanting to order mushroom rice is a coherent acceptance/alternative; LOCAL preserves own-ordering intention."
+    },
+    {
+      "n": 71,
+      "option": "A",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Agrees to lift despite the explicit inability to lift anything."
+    },
+    {
+      "n": 71,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Agrees to lift despite injury, and LOCAL repeats lift awkwardly."
+    },
+    {
+      "n": 72,
+      "option": "A",
+      "standard": "uncertain",
+      "local": "uncertain",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Sending the order avoids an explicit after-hours pickup promise, but its logistics remain unclear."
+    },
+    {
+      "n": 72,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "uncertain",
+      "reason": "Promises pickup after closing, with repeated collect in LOCAL."
+    },
+    {
+      "n": 73,
+      "option": "A",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Reading the chapter later is a valid first step towards helping; LOCAL preserves it."
+    },
+    {
+      "n": 73,
+      "option": "B",
+      "standard": "pass",
+      "local": "pass",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Reading after class is a valid help step; LOCAL preserves timing and action."
+    },
+    {
+      "n": 74,
+      "option": "B",
+      "standard": "fail",
+      "local": "fail",
+      "same_meaning": "pass",
+      "singlish": "pass",
+      "reason": "Generic entrance does not answer which entrance despite the stated east location."
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "seed": 425,
+  "arms": [
+    "control_long",
+    "plus500"
+  ],
+  "randomization_seed": 16771048775296536244,
+  "packet_sha256": "9b4c9bad58aac81a2a85b5b2d2a9d03ade4c10c523d02dbed64031df6bf3e144",
+  "source_sha256": {
+    "control_long_s425.json": "e725d9063e5c364d38b49ffa14bbc18e539abe3ddd51c24bae0641ada410e42c",
+    "plus500_s425.json": "ef0246f9e07af1dc2e2e4eaa99ee8112af405df3265d1f2af845cce98883944d"
+  },
+  "mapping": {
+    "1": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "2": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "3": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "4": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "5": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "6": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "7": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "8": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "9": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "10": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "11": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "12": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "13": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "14": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "15": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "16": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "17": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "18": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "19": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "20": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "21": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "22": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "23": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "24": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "25": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "26": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "27": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "28": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "29": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "30": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "31": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "32": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "33": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "34": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "35": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "36": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "37": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "38": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "39": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "40": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "41": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "42": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "43": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "44": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "45": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "46": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "47": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "48": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "49": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "50": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "51": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "52": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "53": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "54": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "55": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "56": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "57": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "58": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "59": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "60": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "61": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "62": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "63": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "64": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "65": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "66": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "67": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "68": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "69": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "70": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "71": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "72": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "73": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "74": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "75": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "76": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "77": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "78": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "79": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "80": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "81": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "82": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "83": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "84": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "85": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "86": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "87": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "88": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "89": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "90": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "91": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "92": {
+      "A": "control_long",
+      "B": "plus500"
+    },
+    "93": {
+      "A": "plus500",
+      "B": "control_long"
+    },
+    "94": {
+      "A": "control_long",
+      "B": "plus500"
+    }
+  }
+}

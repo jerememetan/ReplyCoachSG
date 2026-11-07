@@ -1,0 +1,323 @@
+{
+  "arm": "capacity",
+  "checkpoint": "final step 784",
+  "outputs": [
+    {
+      "item_id": "FOCUS-DIAG-001",
+      "context": [
+        "I have the keys to the music room."
+      ],
+      "message": "May I take your keys until rehearsal ends?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I will take my key until rehearsal ends.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, I take my key until rehearsal end.",
+      "local_conditioned_on": "Sure, I will take my key until rehearsal ends.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-002",
+      "context": [
+        "I left my access card at home."
+      ],
+      "message": "You can use my spare card if you need it.",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Thanks for letting me know. I can use my spare card.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Thanks ah, I go use mine also can.",
+      "local_conditioned_on": "Thanks for letting me know. I can use my spare card.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-003",
+      "context": [
+        "My laptop broke.",
+        "I saved a backup of the slides."
+      ],
+      "message": "Can you email me the backup?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I will send you the backup.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, I send you the backup.",
+      "local_conditioned_on": "Sure, I will send you the backup.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-004",
+      "context": [
+        "I missed the announcement about the field trip."
+      ],
+      "message": "I recorded it. Shall I send you the audio?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I will send you the audio.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, I send you the audio.",
+      "local_conditioned_on": "Sure, I will send you the audio.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-005",
+      "context": [
+        "I cannot figure out how to open the equipment locker."
+      ],
+      "message": "I tried the handle again but I still cannot open it.",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Let us ask someone else how to open the equipment locker.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Then we ask someone else how to open the equipment locker lah.",
+      "local_conditioned_on": "Let us ask someone else how to open the equipment locker.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-006",
+      "context": [
+        "I have never connected a projector before."
+      ],
+      "message": "I set these projectors up every week.",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Could you show me how to use the projector?",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can show me how to use the projector anot?",
+      "local_conditioned_on": "Could you show me how to use the projector?",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-007",
+      "context": [
+        "Are you coming for the overnight camp?"
+      ],
+      "message": "Sorry, I am sick and will stay home.",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "No worries, we will update you after the camp.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Never mind lah, after camp update you.",
+      "local_conditioned_on": "No worries, we will update you after the camp.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-008",
+      "context": [
+        "Are you joining our volunteer shift?"
+      ],
+      "message": "Yes, I have signed up for the same shift.",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Great, see you there!",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Swee, see you there ah!",
+      "local_conditioned_on": "Great, see you there!",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-009",
+      "context": [
+        "My lab ends at 5 pm and I cannot leave early."
+      ],
+      "message": "Could we meet at 4 pm today?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I cannot make it today. Could we meet at four instead?",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, four instead can?",
+      "local_conditioned_on": "Sure, I cannot make it today. Could we meet at four instead?",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-010",
+      "context": [
+        "I must catch a flight at noon and leave campus by 9 am."
+      ],
+      "message": "Can we meet on campus at 11 am?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "I have to leave campus by 9pm. Could we meet before then?",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "I must leave campus by 9pm. Before that meet can?",
+      "local_conditioned_on": "I have to leave campus by 9pm. Could we meet before then?",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-011",
+      "context": [
+        "I have only written the introduction to my essay."
+      ],
+      "message": "Have you finished the whole essay already?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Not yet, I will explain it to you when it is finished.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Not yet, I finish the essay when it is ready.",
+      "local_conditioned_on": "Not yet, I will explain it to you when it is finished.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-012",
+      "context": [
+        "I submitted the final application this morning."
+      ],
+      "message": "Have you sent in the application yet?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Yes, I have received the final application.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Want, final application I received liao.",
+      "local_conditioned_on": "Yes, I have received the final application.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-013",
+      "context": [
+        "The interview is in Tower C, room 610."
+      ],
+      "message": "Which room should we go to for the interview?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "The third room, we should go to the interview room.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Then we go to the interview room first.",
+      "local_conditioned_on": "The third room, we should go to the interview room.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-014",
+      "context": [
+        "The coach changed our practice location but has not told us the new venue."
+      ],
+      "message": "Do you know where practice is now?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "I am not sure. Let us check where the practice room is.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Not sure leh, we check practice room first.",
+      "local_conditioned_on": "I am not sure. Let us check where the practice room is.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-015",
+      "context": [
+        "I will attend the safety briefing and you will be away."
+      ],
+      "message": "Could you tell me what I miss afterwards?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, let me know what you miss at the safety briefing.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, safety briefing you miss then tell me what you miss.",
+      "local_conditioned_on": "Sure, let me know what you miss at the safety briefing.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-016",
+      "context": [
+        "I will be away during the election briefing.",
+        "I can attend it for us."
+      ],
+      "message": "Should I take notes for you?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Yes please, take notes for me too.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Want, cannot take notes leh.",
+      "local_conditioned_on": "Yes please, take notes for me too.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-017",
+      "context": [
+        "I borrowed your lab coat yesterday."
+      ],
+      "message": "Can I return the coat to you this Friday?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I will return it this Friday.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, I return the coat then return.",
+      "local_conditioned_on": "Sure, I will return it this Friday.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-018",
+      "context": [
+        "I still have the toolkit you lent me."
+      ],
+      "message": "Can you bring my toolkit back on Monday?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I will send you your toolkit.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, I send you your toolkit.",
+      "local_conditioned_on": "Sure, I will send you your toolkit.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-019",
+      "context": [
+        "I am allergic to eggs."
+      ],
+      "message": "Want me to get you the egg sandwich?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Yes please, send me the egg sandwich.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Want, send me the egg sandwich can?",
+      "local_conditioned_on": "Yes please, send me the egg sandwich.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-020",
+      "context": [
+        "I would like a vegetarian dinner."
+      ],
+      "message": "Should I order the mushroom rice for you?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Yes please, order the mushroom rice for me.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Want, help me order mushroom rice ah.",
+      "local_conditioned_on": "Yes please, order the mushroom rice for me.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-021",
+      "context": [
+        "Could you help me carry these boxes?",
+        "I hurt my wrist and cannot lift anything."
+      ],
+      "message": "Can you lift the heaviest box for me then?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I will lift the boxes for you.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, I lift the boxes for you.",
+      "local_conditioned_on": "Sure, I will lift the boxes for you.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-022",
+      "context": [
+        "The shop closes at 6 pm.",
+        "I finish work at 7 pm."
+      ],
+      "message": "Can you collect the order after work today?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I'll collect it after work.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, after work collect.",
+      "local_conditioned_on": "Sure, I'll collect it after work.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-023",
+      "context": [
+        "I have read chapter one but not chapter two."
+      ],
+      "message": "Can you explain chapter two to me?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "Sure, I will read it now.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "Can, now read chapter two liao.",
+      "local_conditioned_on": "Sure, I will read it now.",
+      "rewrite_skipped_empty_standard": false
+    },
+    {
+      "item_id": "FOCUS-DIAG-024",
+      "context": [
+        "I am outside the west entrance.",
+        "I am at the east entrance."
+      ],
+      "message": "Which entrance are you waiting at?",
+      "reference_standard": "Evaluation only.",
+      "generated_standard": "I am waiting at the entrance.",
+      "reference_local": "Evaluation only lah.",
+      "generated_local": "I waiting at entrance liao.",
+      "local_conditioned_on": "I am waiting at the entrance.",
+      "rewrite_skipped_empty_standard": false
+    }
+  ]
+}

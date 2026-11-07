@@ -1,0 +1,299 @@
+{
+  "status": "complete",
+  "standard_checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_standard_val_v1/artifacts/full_lr3e4/best",
+  "rewrite_checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_hybrid_inference_v1/checkpoints/local_rewrite",
+  "cases": [
+    {
+      "item_id": "COMP1-001",
+      "direct_standard": "That works for me. See you then.",
+      "direct_local": {
+        "standard_anchor": "That works for me. See you then.",
+        "reply": "Can, see you then."
+      },
+      "oracle_local": {
+        "standard_anchor": "I finish at 7:15. Could we meet after that?",
+        "reply": "Can, after that we meet."
+      }
+    },
+    {
+      "item_id": "COMP1-002",
+      "direct_standard": "I can't make it at four. Could we meet at four?",
+      "direct_local": {
+        "standard_anchor": "I can't make it at four. Could we meet at four?",
+        "reply": "Can, four also can."
+      },
+      "oracle_local": {
+        "standard_anchor": "Could we start earlier? I need to leave by 4:30.",
+        "reply": "Can, earlier need to start."
+      }
+    },
+    {
+      "item_id": "COMP1-003",
+      "direct_standard": "Wednesday evening works for me.",
+      "direct_local": {
+        "standard_anchor": "Wednesday evening works for me.",
+        "reply": "Can, Wednesday evening I can."
+      },
+      "oracle_local": {
+        "standard_anchor": "I cannot do Wednesday. Is Thursday still possible?",
+        "reply": "Can, Thursday I cannot."
+      }
+    },
+    {
+      "item_id": "COMP1-004",
+      "direct_standard": "I prefer the morning session.",
+      "direct_local": {
+        "standard_anchor": "I prefer the morning session.",
+        "reply": "I prefer the morning one."
+      },
+      "oracle_local": {
+        "standard_anchor": "The morning session, please.",
+        "reply": "Can, morning please."
+      }
+    },
+    {
+      "item_id": "COMP1-005",
+      "direct_standard": "I can return it before lunch.",
+      "direct_local": {
+        "standard_anchor": "I can return it before lunch.",
+        "reply": "Can, before lunch I return."
+      },
+      "oracle_local": {
+        "standard_anchor": "Sure, I will return your stapler before lunch.",
+        "reply": "Can, I return your stapler before lunch."
+      }
+    },
+    {
+      "item_id": "COMP1-006",
+      "direct_standard": "Yes, please return it after class.",
+      "direct_local": {
+        "standard_anchor": "Yes, please return it after class.",
+        "reply": "Can, after class return one."
+      },
+      "oracle_local": {
+        "standard_anchor": "Yes, after class is fine.",
+        "reply": "Can, after class you return your umbrella."
+      }
+    },
+    {
+      "item_id": "COMP1-007",
+      "direct_standard": "I'd love to, but I can't do it during the briefing.",
+      "direct_local": {
+        "standard_anchor": "I'd love to, but I can't do it during the briefing.",
+        "reply": "Can, I don't do it during the briefing."
+      },
+      "oracle_local": {
+        "standard_anchor": "Yes please, that would help.",
+        "reply": "Can, I send you mine also."
+      }
+    },
+    {
+      "item_id": "COMP1-008",
+      "direct_standard": "Sure, I'll send you the recording tonight.",
+      "direct_local": {
+        "standard_anchor": "Sure, I'll send you the recording tonight.",
+        "reply": "Can, I send you the recording."
+      },
+      "oracle_local": {
+        "standard_anchor": "Sure, I will send it tonight.",
+        "reply": "Can, tonight I send you."
+      }
+    },
+    {
+      "item_id": "COMP1-009",
+      "direct_standard": "No, I haven't uploaded them yet.",
+      "direct_local": {
+        "standard_anchor": "No, I haven't uploaded them yet.",
+        "reply": "No, I haven't upload yet."
+      },
+      "oracle_local": {
+        "standard_anchor": "Yes, I have already uploaded them.",
+        "reply": "Yes, I already uploaded them."
+      }
+    },
+    {
+      "item_id": "COMP1-010",
+      "direct_standard": "Yes, it is ready.",
+      "direct_local": {
+        "standard_anchor": "Yes, it is ready.",
+        "reply": "Yes, ready."
+      },
+      "oracle_local": {
+        "standard_anchor": "Not yet, I have not started editing it.",
+        "reply": "Never mind, I already finished the video."
+      }
+    },
+    {
+      "item_id": "COMP1-011",
+      "direct_standard": "I am outside the seminar room.",
+      "direct_local": {
+        "standard_anchor": "I am outside the seminar room.",
+        "reply": "I am outside seminar room."
+      },
+      "oracle_local": {
+        "standard_anchor": "I am outside seminar room 5B.",
+        "reply": "I am outside seminar room already."
+      }
+    },
+    {
+      "item_id": "COMP1-012",
+      "direct_standard": "I'm not sure. Let me check the flyer.",
+      "direct_local": {
+        "standard_anchor": "I'm not sure. Let me check the flyer.",
+        "reply": "Can, let me check the flyer."
+      },
+      "oracle_local": {
+        "standard_anchor": "Mine is green.",
+        "reply": "Mine is red."
+      }
+    },
+    {
+      "item_id": "COMP1-013",
+      "direct_standard": "Yes, it closes at nine.",
+      "direct_local": {
+        "standard_anchor": "Yes, it closes at nine.",
+        "reply": "Yes, nine at nine."
+      },
+      "oracle_local": {
+        "standard_anchor": "I am not sure. Let me check the opening hours.",
+        "reply": "Can, I check the opening hours."
+      }
+    },
+    {
+      "item_id": "COMP1-014",
+      "direct_standard": "I can show you how to use the new scanner.",
+      "direct_local": {
+        "standard_anchor": "I can show you how to use the new scanner.",
+        "reply": "Can, I show you how to use the new scanner."
+      },
+      "oracle_local": {
+        "standard_anchor": "I am not sure how either. Shall we ask someone?",
+        "reply": "Can, ask someone."
+      }
+    },
+    {
+      "item_id": "COMP1-015",
+      "direct_standard": "Yes, I'd love to try the eighteen-dollar lunch set.",
+      "direct_local": {
+        "standard_anchor": "Yes, I'd love to try the eighteen-dollar lunch set.",
+        "reply": "Can, eighteen dollar lunch set."
+      },
+      "oracle_local": {
+        "standard_anchor": "That is over my budget. Shall we find something cheaper?",
+        "reply": "Can, let's find something cheaper."
+      }
+    },
+    {
+      "item_id": "COMP1-016",
+      "direct_standard": "I can do that for you.",
+      "direct_local": {
+        "standard_anchor": "I can do that for you.",
+        "reply": "Can, you help me do that for you."
+      },
+      "oracle_local": {
+        "standard_anchor": "I cannot carry them with my wrist like this. Could we ask someone else?",
+        "reply": "Can, ask someone else lor."
+      }
+    },
+    {
+      "item_id": "COMP1-017",
+      "direct_standard": "I am sorry to hear that.",
+      "direct_local": {
+        "standard_anchor": "I am sorry to hear that.",
+        "reply": "Never mind, I apologize to hear that."
+      },
+      "oracle_local": {
+        "standard_anchor": "Glad it went okay. You can finally relax now.",
+        "reply": "Glad it went okay."
+      }
+    },
+    {
+      "item_id": "COMP1-018",
+      "direct_standard": "That's a shame, but I can't handle it.",
+      "direct_local": {
+        "standard_anchor": "That's a shame, but I can't handle it.",
+        "reply": "Never mind, I can handle it."
+      },
+      "oracle_local": {
+        "standard_anchor": "That sounds exhausting. Want to talk through what is left?",
+        "reply": "Can, need to talk through what is left."
+      }
+    },
+    {
+      "item_id": "COMP1-019",
+      "direct_standard": "I'm sorry to hear that.",
+      "direct_local": {
+        "standard_anchor": "I'm sorry to hear that.",
+        "reply": "Never mind, I sorry to hear that."
+      },
+      "oracle_local": {
+        "standard_anchor": "Sorry to hear that. Do you want to talk about it?",
+        "reply": "Can, you want to talk about it?"
+      }
+    },
+    {
+      "item_id": "COMP1-020",
+      "direct_standard": "I am sorry to hear that. Could you tell me when you have it checked?",
+      "direct_local": {
+        "standard_anchor": "I am sorry to hear that. Could you tell me when you have it checked?",
+        "reply": "Can, you tell me when you have it checked."
+      },
+      "oracle_local": {
+        "standard_anchor": "That sounds uncomfortable. Hope the appointment goes okay.",
+        "reply": "Never mind, appointment goes okay."
+      }
+    },
+    {
+      "item_id": "COMP1-021",
+      "direct_standard": "I have a bottle of kayak toast.",
+      "direct_local": {
+        "standard_anchor": "I have a bottle of kayak toast.",
+        "reply": "Ya, I have a bottle of kayak toast."
+      },
+      "oracle_local": {
+        "standard_anchor": "Kaya toast, please.",
+        "reply": "Can, kayak toast please."
+      }
+    },
+    {
+      "item_id": "COMP1-022",
+      "direct_standard": "I'd like to get a bottle of water.",
+      "direct_local": {
+        "standard_anchor": "I'd like to get a bottle of water.",
+        "reply": "Can, I get a bottle of water."
+      },
+      "oracle_local": {
+        "standard_anchor": "An iced tea, please.",
+        "reply": "Can, iced tea please."
+      }
+    },
+    {
+      "item_id": "COMP1-023",
+      "direct_standard": "Thanks for letting me know. I'll send you the updated file.",
+      "direct_local": {
+        "standard_anchor": "Thanks for letting me know. I'll send you the updated file.",
+        "reply": "Thanks for letting me know. I send you the updated file."
+      },
+      "oracle_local": {
+        "standard_anchor": "Thanks, I will check the updated file.",
+        "reply": "Thanks ah, I check the updated file."
+      }
+    },
+    {
+      "item_id": "COMP1-024",
+      "direct_standard": "Okay, I'll meet you at the library then.",
+      "direct_local": {
+        "standard_anchor": "Okay, I'll meet you at the library then.",
+        "reply": "Okay, I meet you at library then."
+      },
+      "oracle_local": {
+        "standard_anchor": "Sure, where should I meet you?",
+        "reply": "Can, where you meet you?"
+      }
+    }
+  ],
+  "limitations": [
+    "Existing task-adapted mT5 versus prompted chat models is a practical system comparison, not isolated size or instruction-tuning effects.",
+    "mT5 does not have a trained explicit-plan task; no untrained planning prompt is used as a capability verdict."
+  ]
+}

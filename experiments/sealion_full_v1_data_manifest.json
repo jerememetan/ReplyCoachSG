@@ -1,0 +1,71 @@
+{
+  "status": "ready_exploratory",
+  "train_rows": 117634,
+  "validation_rows": 400,
+  "corpora": {
+    "cosem": {
+      "raw_train": 137396,
+      "raw_validation": 3000,
+      "included": 53701,
+      "excluded": {
+        "insufficient_context": 35743,
+        "non_two_party_visible_window": 32991,
+        "filler_incoming": 3757,
+        "merged_or_long_turn": 9201,
+        "placeholder_or_export_artifact": 476,
+        "exact_echo": 66,
+        "embedded_speaker_code": 1260,
+        "contact_or_identifiable_pattern": 191,
+        "prior_quarantine": 5,
+        "filler_response": 5
+      },
+      "training_groups": 138,
+      "included_after_sample_inspection": 53691
+    },
+    "dailydialog": {
+      "raw_train": 76052,
+      "raw_validation": 7069,
+      "included": 63945,
+      "excluded": {
+        "non_linguistic": 1213,
+        "word_budget": 3588,
+        "filler_response": 833,
+        "heldout_group": 567,
+        "heldout_pair": 747,
+        "exact_contextual_duplicate": 5032,
+        "blocked_response": 24,
+        "contact_or_identifiable_pattern": 75,
+        "exact_echo": 14,
+        "prior_quarantine": 1,
+        "embedded_speaker_code": 13
+      },
+      "training_groups": 10360,
+      "included_after_sample_inspection": 63943
+    }
+  },
+  "source_sha256": {
+    "cosem_clean_train_pairs.jsonl": "9871fb72c616dc850b3315edda80094a7296e3fc12d1912580222a111c997d09",
+    "cosem_validation_pairs.jsonl": "51c18574cb04a1cefeb562092a172eeab538ddba7f943d26cc6e2b3d65a33c86",
+    "dailydialog_train_pairs.jsonl": "06b0fe4631045638a4abe0e81f313d48114dea36565cdc804a4b0c8684f63899",
+    "dailydialog_validation_pairs.jsonl": "c33602eb243d295fc79680d8c6782e51b3ebc39935ab9d7c3fb19aede3f22223"
+  },
+  "files_sha256": {
+    "train.jsonl": "93f31a67bb288ee58605e1f0b266ff22f25126693e698e39c1c9adce6dff6d86",
+    "validation.jsonl": "e2d604b0002f77a3568ef4e366df66abedd3748727e0096b07a01d2b803e8259",
+    "pilot_private.json": "137ac5bc7e9e8d54dd173d432880317630070e0edf841ac5bcdf89410a10fbb1",
+    "sample_quarantine_private.json": "dc4a50ebb2cfd9ac59b8e999070b0be92add045ada122f7eb985221045ab4a48"
+  },
+  "scope": "All unique usable contextual pairs from available historically-cleaned CoSEM and DailyDialog source exports. No4000 sample limits, per-chat caps, response caps or marker quota. Not the complete unfiltered published CoSEM corpus.",
+  "policy": "Same conservative original filters and DIALOGUE tag; whole group/pair holdouts and project pairs excluded; six previous quarantine IDs excluded. Original public wording retained, DailyDialog punctuation detokenized.400 validation pairs identical to pilot.",
+  "limitations": [
+    "Pattern filters are not independent semantic quality or full de-identification guarantees.",
+    "CoSEM source was historically mT5-relatedness filtered before this experiment.",
+    "Public source validation groups are not trained; product locked test unread; raw public text stays ignored/private."
+  ],
+  "sample_inspection": {
+    "reviewed": 40,
+    "quarantined": 12,
+    "reviewer": "Codex assistant",
+    "scope": "Small sample review, not semantic certification of all117k rows; no public replies rewritten."
+  }
+}

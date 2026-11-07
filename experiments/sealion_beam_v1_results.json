@@ -1,0 +1,210 @@
+{
+  "experiment": "sealion_beam_v1",
+  "job_id": 356913,
+  "state": "COMPLETED",
+  "exit_code": 0,
+  "elapsed": "00:11:16",
+  "report_status": "complete_with_flags",
+  "retrieved_at_utc": "2026-11-07T13:01:16.009929+00:00",
+  "report_sha256": "361042d8d8154f928da86ac1f44d5724be01fcfa216797682bb8661c170bb39c",
+  "training_performed": false,
+  "adapters_unchanged": true,
+  "greedy_exact_replay_verified": {
+    "direct": 164,
+    "rewrite": 132
+  },
+  "recorded_output_entries": 1896,
+  "note_output_count": "Includes repeated same-case routes and memoized identical anchors; not1896 independent conversations.",
+  "all_route_anchors_verified": true,
+  "flagged_entries": 40,
+  "flag_types": {
+    "length_limit": 40
+  },
+  "methods": {
+    "greedy": {
+      "direct_status_counts": {
+        "complete": 212
+      },
+      "rewrites": {
+        "fixed_english": {
+          "count": 82,
+          "status_counts": {
+            "complete": 82
+          }
+        },
+        "own_english": {
+          "count": 106,
+          "status_counts": {
+            "complete": 106
+          }
+        },
+        "diagnostic": {
+          "count": 32,
+          "status_counts": {
+            "complete": 32
+          }
+        },
+        "fresh_diagnostic": {
+          "count": 24,
+          "status_counts": {
+            "complete": 24
+          }
+        },
+        "challenge": {
+          "count": 18,
+          "status_counts": {
+            "complete": 18
+          }
+        }
+      },
+      "direct_seconds": 28.231764087453485,
+      "rewrite_seconds": 27.25045464001596,
+      "rewrite_cache_hits": 83
+    },
+    "beam4": {
+      "direct_status_counts": {
+        "complete": 203,
+        "length_limit": 9
+      },
+      "rewrites": {
+        "fixed_english": {
+          "count": 82,
+          "status_counts": {
+            "complete": 77,
+            "length_limit": 5
+          }
+        },
+        "own_english": {
+          "count": 106,
+          "status_counts": {
+            "complete": 103,
+            "length_limit": 3
+          }
+        },
+        "diagnostic": {
+          "count": 32,
+          "status_counts": {
+            "complete": 32
+          }
+        },
+        "fresh_diagnostic": {
+          "count": 24,
+          "status_counts": {
+            "complete": 24
+          }
+        },
+        "challenge": {
+          "count": 18,
+          "status_counts": {
+            "complete": 18
+          }
+        }
+      },
+      "direct_seconds": 99.11224802304059,
+      "rewrite_seconds": 89.42793885618448,
+      "rewrite_cache_hits": 11
+    },
+    "beam8": {
+      "direct_status_counts": {
+        "complete": 199,
+        "length_limit": 13
+      },
+      "rewrites": {
+        "fixed_english": {
+          "count": 82,
+          "status_counts": {
+            "complete": 77,
+            "length_limit": 5
+          }
+        },
+        "own_english": {
+          "count": 106,
+          "status_counts": {
+            "complete": 102,
+            "length_limit": 4
+          }
+        },
+        "diagnostic": {
+          "count": 32,
+          "status_counts": {
+            "complete": 31,
+            "length_limit": 1
+          }
+        },
+        "fresh_diagnostic": {
+          "count": 24,
+          "status_counts": {
+            "complete": 24
+          }
+        },
+        "challenge": {
+          "count": 18,
+          "status_counts": {
+            "complete": 18
+          }
+        }
+      },
+      "direct_seconds": 115.64559374097735,
+      "rewrite_seconds": 109.64575836714357,
+      "rewrite_cache_hits": 8
+    },
+    "beam4_ng3": {
+      "direct_status_counts": {
+        "complete": 212
+      },
+      "rewrites": {
+        "fixed_english": {
+          "count": 82,
+          "status_counts": {
+            "complete": 82
+          }
+        },
+        "own_english": {
+          "count": 106,
+          "status_counts": {
+            "complete": 106
+          }
+        },
+        "diagnostic": {
+          "count": 32,
+          "status_counts": {
+            "complete": 32
+          }
+        },
+        "fresh_diagnostic": {
+          "count": 24,
+          "status_counts": {
+            "complete": 24
+          }
+        },
+        "challenge": {
+          "count": 18,
+          "status_counts": {
+            "complete": 18
+          }
+        }
+      },
+      "direct_seconds": 89.21835991740227,
+      "rewrite_seconds": 83.16906156204641,
+      "rewrite_cache_hits": 11
+    }
+  },
+  "assistant_review": {
+    "scope": "All24 new assistant-authored conversations: English,directLOCAL,ownEnglishrewrite forgreedy/beam4/beam8; all24English+ownrewrite forbeam4_ng3; selected7controlledchallenge and8diagnostic anchors per method. No independent human ratings, no semantic accuracy percentage.",
+    "strengths": [
+      "Usable conversational phrasing in invitations,photo-sharing,known-status,location,food-refusal andsocialdecline cases. Neutral/short replies can be appropriate without mandatoryparticles.",
+      "English-first reduces some independent-English/LOCAL contradictions, such as budget-refusal and before-class returns.",
+      "Beam4/8 sometimes produce cleaner complete English: freshcalculator-return loses greedy invented working-order check; shoulder refusal anddriving-test congratulations improve inreviewedcases."
+    ],
+    "limitations": [
+      "Direction/ownership: please-return-MY-umbrella becomes I-return-YOUR-umbrella acrossallmethods, evenwithcorrect diagnostic English.",
+      "Temporal precision:08:10->eightfifteen and06:35->sixthirty persist acrossmethods;14:25 improveswithbeam inone controlledcase. Freshworktime7:25maybelost/reversed inrewriting.",
+      "Availability: Thursday-away English remains self-contradictory underbeams; LOCALmayacceptThursday.",
+      "Faithfulness: not-started-packing becomes still-packing undergreedy/beam4; beam8 repairsonecase, butnotconsistent.",
+      "Naturalness/fluency notfactualaccuracy; changingCan/particles doesnot establishcorrectness."
+    ],
+    "decoding_conclusion": "Plainbeam4and8atlengthpenalty1 are notunambiguous upgrades:9/212 and13/212 directoutputs hit64-token cap;5/82fixed-anchor rewrites cap undereach. Greedy andbeam4_ng3have0caps intheseroutes. Repetitioncontrolledbeam4is acandidate forfurtherqualitycomparison, notprovenwinner.",
+    "provisional_product_assessment": "Useful draft-reply candidate onordinarychat; semantic reliability remains limiting. English-first pipeline preferred forfurtherstudy; no automaticdefaultpromotion. Beamchoicesretainallfailed/cappedoutputs."
+  },
+  "default_changed": false
+}

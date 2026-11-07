@@ -1,0 +1,18 @@
+﻿id,scenario,conversation,incoming_message,standard_reply,local_reply,decision,corrected_standard,corrected_local,notes
+SYN-volume500-v1-full-045-00,generated_volume500,"user: Hey, I'm looking at the studio for our project meeting tomorrow at 2pm.
+peer: Actually, can we move it to 4pm instead? The room is booked by another club earlier.",Can we do 4pm then? I'll update the calendar.,Four works for me. Thanks for updating the calendar.,Four can. Thanks for updating the calendar.,,,,
+ITEM-D-058,original_targets_revised,"peer: eh so how should we split up the report
+user: im not sure eh, you got any idea","i think you can do the transformers part, then i do the rest of the report","Ok noted, I will work on it.","Ok can, I will do the transformers part then.",,,,
+SYN-HUMAN-EXP1-026,generated_fresh100,user: I can only stay at the fair until 5 pm.,Our shift is 6 to 7. Can you cover it?,"Sorry, I need to leave by five, so I cannot cover that shift.","Paiseh, five must leave liao, that shift cannot cover.",,,,
+SYN-volume500-v1-full-108-01,generated_volume500,,Can you drive me to the faculty building after the seminar?,"I'm taking the bus today, but I can walk with you if you like.",I'm taking bus today. Can walk together if you want.,,,,
+ITEM-E-001,original_targets_revised,"peer: See yalls for tomorrow's presentation
+user: yep, see yalls",hey you reaching soon? the presentation is starting in 5 mins,"Sorry, I'll be reaching in 5 minutes, there was a train delay today.","Sorry, I reach in 5 mins. Train delay today.",,,,
+SYN-HUMAN-EXP1-081,generated_fresh100,peer: Can you bring the folder tomorrow?,I need it before the briefing.,Which folder do you mean?,Which folder ah?,,,,
+SYN-volume500-v1-full-076-03,generated_volume500,"peer: Can you help me print these handouts?
+user: Sure, send me the files.
+peer: Sent! Thanks a lot.",Could you also staple them for me?,"I can staple them, but I'll need to do it at the office.","Can staple, but I have to go to office to do it.",,,,
+ITEM-A-008,original_targets_revised,"peer: What time are you reaching the club later?
+user: Oh, maybe around 11pm.","did you jio the others, or are they busy",I invited the others too,I jio the others also already.,,,,
+SYN-HUMAN-EXP1-021,generated_fresh100,user: My shift ends at 6 pm and I cannot leave early.,Can meet at 5.30 outside the shop?,I cannot leave before six. Could we meet after my shift?,Six before cannot leave leh. My shift end then meet can?,,,,
+SYN-volume500-v1-full-000-00,generated_volume500,"user: Hey, I'm heading back to the hostel now.
+peer: Let me know when you're near the lobby so I can grab your parcel.",I'm about 5 minutes away from the lobby.,I'll meet you at the lobby.,I'll meet you at lobby then.,,,,

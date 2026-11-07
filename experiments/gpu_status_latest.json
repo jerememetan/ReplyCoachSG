@@ -1,0 +1,27 @@
+{
+  "observed_at_utc": "2026-11-07T19:15:21.610205+00:00",
+  "accounts_checked": [
+    "CS425G9",
+    "hm.teoh.2024"
+  ],
+  "running_jobs": [],
+  "queued_jobs": [],
+  "latest_training": {
+    "control_job": 357650,
+    "repair_job": 357651,
+    "status": "COMPLETED",
+    "gpu": "NVIDIA L40S",
+    "control_elapsed": "00:22:56",
+    "repair_elapsed": "00:22:50",
+    "selected_english_step": 0,
+    "selected_singlish_step": 25
+  },
+  "latest_export_checks": {
+    "mt5_job": 357669,
+    "sealion_job": 357670,
+    "status": "COMPLETED",
+    "exact_saved_example_pairs_each": 10
+  },
+  "full126_case_quality_review": "pending",
+  "new_jobs_launched_in_this_status_check": false
+}

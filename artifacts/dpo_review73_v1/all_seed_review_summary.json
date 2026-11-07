@@ -1,0 +1,90 @@
+{
+  "by_seed": {
+    "425": {
+      "counts": {
+        "tie": 20,
+        "both_bad": 11,
+        "sft": 11,
+        "dpo": 7,
+        "identical": 51
+      },
+      "by_style": {
+        "LOCAL": {
+          "tie": 10,
+          "sft": 6,
+          "dpo": 5,
+          "both_bad": 5,
+          "identical": 24
+        },
+        "STANDARD": {
+          "tie": 10,
+          "both_bad": 6,
+          "sft": 5,
+          "dpo": 2,
+          "identical": 27
+        }
+      },
+      "limitation": "Assistant inspection, not independent human evaluation; policy shared with training-label review. Ratings frozen before reading the arm key."
+    },
+    "1": {
+      "counts": {
+        "both_bad": 15,
+        "sft": 8,
+        "tie": 18,
+        "dpo": 10,
+        "identical": 49
+      },
+      "by_style": {
+        "LOCAL": {
+          "both_bad": 8,
+          "sft": 5,
+          "tie": 9,
+          "dpo": 6,
+          "identical": 22
+        },
+        "STANDARD": {
+          "sft": 3,
+          "tie": 9,
+          "both_bad": 7,
+          "dpo": 4,
+          "identical": 27
+        }
+      },
+      "limitation": "Secondary review after seed-425 primary result; ratings recorded before reading this seed arm key; not independent human judgments."
+    },
+    "2": {
+      "counts": {
+        "both_bad": 10,
+        "tie": 29,
+        "dpo": 7,
+        "sft": 13,
+        "identical": 41
+      },
+      "by_style": {
+        "LOCAL": {
+          "both_bad": 5,
+          "tie": 18,
+          "dpo": 3,
+          "sft": 8,
+          "identical": 16
+        },
+        "STANDARD": {
+          "both_bad": 5,
+          "tie": 11,
+          "dpo": 4,
+          "sft": 5,
+          "identical": 25
+        }
+      },
+      "limitation": "Secondary review after seed-425 primary result; ratings recorded before reading this seed arm key; not independent human judgments."
+    }
+  },
+  "pooled_descriptive_counts": {
+    "tie": 67,
+    "both_bad": 36,
+    "sft": 32,
+    "dpo": 24,
+    "identical": 141
+  },
+  "limitation": "Three seeds reuse the same 50 conversations. Pooled 300 cells are not 300 independent conversations. Assistant inspection is not human ground truth; seeds 1 and 2 are exploratory follow-ups."
+}

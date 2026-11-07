@@ -1,0 +1,18 @@
+{
+  "archive": "artifacts/model_handoff_v1/replycoach_mt5_A_v1.tar",
+  "sha256": "a4651363d7ef607ccdf33514b6af3837124f4e027d5ef0157b1a298f6aaee49f",
+  "bytes": 2353233920,
+  "manifest_sha256": "4d31e79604d8818e430c7cf288ae9c0b738ca18db18e309fbcef6e929c7c6165",
+  "documentation_only": true,
+  "unchanged_files_checked": 24,
+  "weight_files_unchanged": 2,
+  "updated_files": [
+    "README.md",
+    "MODEL_CARD.md",
+    "INFERENCE_GUIDE.md",
+    "adapters/shared/README.md",
+    "training_specs.json",
+    "evaluation_summary.json"
+  ],
+  "model_cards_revision": "model-cards-v1"
+}

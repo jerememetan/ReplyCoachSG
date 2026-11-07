@@ -1,0 +1,262 @@
+{
+  "purpose": "exploratory_anonymized_assistant_review",
+  "seed": 1,
+  "limitation": "Secondary review after seed-425 primary result; ratings recorded before reading this seed arm key; not independent human judgments.",
+  "ratings": [
+    {
+      "n": 1,
+      "choice": "both_bad",
+      "reason": "Neither clearly responds to the peer’s remark about shared anxiety; take it is unrelated and a generic help offer misses the remark."
+    },
+    {
+      "n": 2,
+      "choice": "B",
+      "reason": "A asks again for instructions from a peer who just said they do not know. B is a plausible prospective printing offer; no explicit user inability was established."
+    },
+    {
+      "n": 3,
+      "choice": "A",
+      "reason": "Own printing later is consistent with the user’s stated need; B repeats the unanswered instruction request to a peer who does not know."
+    },
+    {
+      "n": 4,
+      "choice": "tie",
+      "reason": "Both propose a new booking; an unmentioned hotel is allowed as a selectable new detail. No strong preference."
+    },
+    {
+      "n": 5,
+      "choice": "tie",
+      "reason": "Capitalization-only difference."
+    },
+    {
+      "n": 6,
+      "choice": "tie",
+      "reason": "Both offer a plausible opening-status answer."
+    },
+    {
+      "n": 7,
+      "choice": "A",
+      "reason": "Directly answers stall opening; B switches to the already established meal-meeting plan."
+    },
+    {
+      "n": 8,
+      "choice": "both_bad",
+      "reason": "Neither meaningfully acknowledges taking food away; both give an unrelated personal meeting/return update."
+    },
+    {
+      "n": 9,
+      "choice": "tie",
+      "reason": "Both provide possible independent user arrival times; unknown personal timing is allowed."
+    },
+    {
+      "n": 10,
+      "choice": "tie",
+      "reason": "Both provide possible arrival updates; no established time rules out nine."
+    },
+    {
+      "n": 11,
+      "choice": "both_bad",
+      "reason": "Both use the unnatural STANDARD phrase I am blurred and miss the submission reminder."
+    },
+    {
+      "n": 12,
+      "choice": "tie",
+      "reason": "Both give an unframed three-o’clock counterproposal rather than directly accepting two; no clear comparative difference."
+    },
+    {
+      "n": 13,
+      "choice": "tie",
+      "reason": "Equivalent acceptance of going now."
+    },
+    {
+      "n": 14,
+      "choice": "both_bad",
+      "reason": "A copies the peer’s wrong-bus status into the user’s reply; B is an unclear unrelated transport apology."
+    },
+    {
+      "n": 15,
+      "choice": "tie",
+      "reason": "Both naturally accept the invitation."
+    },
+    {
+      "n": 16,
+      "choice": "A",
+      "reason": "Aligns the arrival with the stated half-hour postponement; B could arrive early but does not address the new schedule as clearly."
+    },
+    {
+      "n": 17,
+      "choice": "tie",
+      "reason": "Both accept running together; slight wording difference."
+    },
+    {
+      "n": 18,
+      "choice": "tie",
+      "reason": "Both accept the run invitation; no substantive difference."
+    },
+    {
+      "n": 19,
+      "choice": "B",
+      "reason": "Confirms availability for seven; A changes to after seven without framing the change."
+    },
+    {
+      "n": 20,
+      "choice": "both_bad",
+      "reason": "A uses alr in STANDARD; B places completion last week while user describes working on the section now."
+    },
+    {
+      "n": 21,
+      "choice": "A",
+      "reason": "Merge preserves the planned task; forget explicitly conflicts with the reminder."
+    },
+    {
+      "n": 22,
+      "choice": "B",
+      "reason": "Merge preserves the planned task; forget conflicts with the reminder."
+    },
+    {
+      "n": 23,
+      "choice": "A",
+      "reason": "Directly accepts the specific night-market invitation; B redundantly asks for availability already supplied."
+    },
+    {
+      "n": 24,
+      "choice": "A",
+      "reason": "Looking at the menu fits joining a peer who already ordered; ordering for that peer ignores the stated progress."
+    },
+    {
+      "n": 25,
+      "choice": "tie",
+      "reason": "Both offer the requested check; minor phrasing difference."
+    },
+    {
+      "n": 26,
+      "choice": "tie",
+      "reason": "Both give an own-section sending/uploading update; no clear relative distinction."
+    },
+    {
+      "n": 27,
+      "choice": "B",
+      "reason": "More natural early-arrival confirmation; adding already to a future plan is awkward."
+    },
+    {
+      "n": 28,
+      "choice": "B",
+      "reason": "Coherent offer to help the peer; A is convoluted and does not address the clarified question."
+    },
+    {
+      "n": 29,
+      "choice": "tie",
+      "reason": "Equivalent knowledge confirmation."
+    },
+    {
+      "n": 30,
+      "choice": "both_bad",
+      "reason": "Both replace the bidding reminder with an unrelated sending/meeting commitment."
+    },
+    {
+      "n": 31,
+      "choice": "both_bad",
+      "reason": "Both promise a link rather than respond to the bidding reminder; article change does not fix relevance."
+    },
+    {
+      "n": 32,
+      "choice": "both_bad",
+      "reason": "Neither provides a clear location in response to where are you."
+    },
+    {
+      "n": 33,
+      "choice": "B",
+      "reason": "Specific plausible bus-stop location answers where; A only gives an arrival estimate."
+    },
+    {
+      "n": 34,
+      "choice": "tie",
+      "reason": "Arrived and arriving soon are both possible personal statuses with no earlier user location constraint."
+    },
+    {
+      "n": 35,
+      "choice": "B",
+      "reason": "User already outside Mac should wait for the peer; A says user is arriving instead."
+    },
+    {
+      "n": 36,
+      "choice": "both_bad",
+      "reason": "Both offer to take an unavailable ticket without a coherent response to it being sold out."
+    },
+    {
+      "n": 37,
+      "choice": "both_bad",
+      "reason": "Neither clearly handles sold-out tickets; both give generic acquisition/sending actions without a clear alternative."
+    },
+    {
+      "n": 38,
+      "choice": "tie",
+      "reason": "Equivalent apologies about not seeing the peer; neither handles illness particularly well."
+    },
+    {
+      "n": 39,
+      "choice": "both_bad",
+      "reason": "A apologizes as if user missed the session; B gives a contextless joining plan instead of addressing the peer’s illness."
+    },
+    {
+      "n": 40,
+      "choice": "both_bad",
+      "reason": "Both are weak STANDARD phrasing and shift to user joining after the peer accepted joining them."
+    },
+    {
+      "n": 41,
+      "choice": "B",
+      "reason": "There refers to the established Chinatown plan. A announces cancellation instead of addressing the location question."
+    },
+    {
+      "n": 42,
+      "choice": "both_bad",
+      "reason": "Neither supplies or confirms the requested meeting location."
+    },
+    {
+      "n": 43,
+      "choice": "B",
+      "reason": "Despite an omitted object, the intended charger handoff addresses the request; A shifts use of the charger to the user."
+    },
+    {
+      "n": 44,
+      "choice": "A",
+      "reason": "Offers the handoff after three; B shifts who will use the charger."
+    },
+    {
+      "n": 45,
+      "choice": "tie",
+      "reason": "Both naturally confirm Thursday availability."
+    },
+    {
+      "n": 46,
+      "choice": "B",
+      "reason": "Changing the booking addresses the peer’s request; booking later changes the action."
+    },
+    {
+      "n": 47,
+      "choice": "both_bad",
+      "reason": "Both keep a meeting with a peer who explicitly said they cannot attend."
+    },
+    {
+      "n": 48,
+      "choice": "both_bad",
+      "reason": "Both suggest booking the requested room despite its stated unavailability."
+    },
+    {
+      "n": 49,
+      "choice": "tie",
+      "reason": "Equivalent acceptance of meeting to work."
+    },
+    {
+      "n": 50,
+      "choice": "tie",
+      "reason": "Both propose plausible meeting details; no established availability/location makes one better."
+    },
+    {
+      "n": 51,
+      "choice": "B",
+      "reason": "Directly accepts the proposed release time; leave it is the wrong/unclear action."
+    }
+  ]
+}

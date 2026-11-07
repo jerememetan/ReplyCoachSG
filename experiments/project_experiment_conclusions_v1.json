@@ -1,0 +1,392 @@
+{
+  "created_at_utc": "2026-11-07T17:36:28.134139+00:00",
+  "main_generator_configuration_count": 7,
+  "pretrained_generator_backbone_count": 5,
+  "fine_tuned_pretrained_generator_count": 3,
+  "from_scratch_lstm_baselines": 2,
+  "benchmark_teacher_pretrained_models": 2,
+  "models": [
+    {
+      "name": "LSTM encoder-decoder",
+      "role": "Earlier trained baseline",
+      "source": "experiments/role_c_v3_dailydialog.md"
+    },
+    {
+      "name": "LSTM encoder-decoder with attention",
+      "role": "Earlier trained baseline",
+      "source": "experiments/role_c_v4_dailydialog.md"
+    },
+    {
+      "name": "google/mt5-small",
+      "parameters": 300176768,
+      "role": "Fine-tuned pretrained generator candidate",
+      "source": "artifacts/mt5_v5_pretrain.json"
+    },
+    {
+      "name": "google/mt5-base",
+      "parameters": 582401280,
+      "role": "Fine-tuned pretrained generator candidate",
+      "source": "artifacts/mt5_base.json"
+    },
+    {
+      "name": "aisingapore/SEA-LION-v1-3B",
+      "parameters": 3178255360,
+      "role": "Fine-tuned pretrained generator candidate",
+      "source": "experiments/sealion_full_v1_recipe.json"
+    },
+    {
+      "name": "Qwen3 4B Instruct2507",
+      "role": "Prompted capability/planning benchmark; not proposed prompt-only final model",
+      "source": "experiments/component_baseline_v1_results.json"
+    },
+    {
+      "name": "Gemma4 12B",
+      "role": "Benchmark,offline teacher and AI judge; not proposed prompt-only final model",
+      "source": "experiments/component_baseline_v1_results.json"
+    }
+  ],
+  "additional_components": [
+    "BM25 lexical retrieval",
+    "MiniLM embeddings/retrieval",
+    "Qwen3-Reranker0.6B"
+  ],
+  "verified_older_training_record_lower_bound": 52,
+  "training_count_scope": "52distincttraining/pretrainingcheckpoint reports verified in rootartifacts+historicalshared-intent subgroup alone. Later experiment groups add more; this is a lowerbound, not an exhaustive deduplicated project run count or proof every historicalweightfile is present.",
+  "older_training_records": [
+    {
+      "report": "artifacts/spk1_ul025_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_ul025_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/full_ul025_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/full_ul025_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_small_full.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_small_full/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/full_ul025_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/full_ul025_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_v5_smoke.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_v5_smoke/best",
+      "stage": "pretrain"
+    },
+    {
+      "report": "artifacts/spk1_lora_cp_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_lora_cp_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_lora_cp_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_lora_cp_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_spans_lora_cp_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora_cp_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/lora_check.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/lora_check/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_base_spans.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_spans/best",
+      "stage": "spans"
+    },
+    {
+      "report": "artifacts/spk1_joint_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_joint_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_spans_lora_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/clean_ul025_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/clean_ul025_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_lora_cp.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_lora_cp/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_spans_lora_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_joint_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_joint_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_lora_cp_ul_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_lora_cp_ul_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_base_after_spans_spk.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best",
+      "stage": "pretrain"
+    },
+    {
+      "report": "artifacts/full_ul025_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/full_ul025_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_spans_lora_cp_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora_cp_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_lora_cp_ul_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_lora_cp_ul_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_base_lora.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_lora/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_small_lora.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_small_lora/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/clean_ul025_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/clean_ul025_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_base_cosem_full.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_cosem_full/best",
+      "stage": "pretrain"
+    },
+    {
+      "report": "artifacts/mt5_base_cosem_clean.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_cosem_clean/best",
+      "stage": "pretrain"
+    },
+    {
+      "report": "artifacts/spk1_ul05_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_ul05_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/clean_ul025_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/clean_ul025_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_ul05_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_ul05_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_lora_cp_ul.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_lora_cp_ul/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_ul025_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_ul025_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_lora_all.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_lora_all/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_spans_lora.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_spans_lora_reh.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora_reh/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_spans_lora_spk.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora_spk/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_base.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base/best",
+      "stage": "pretrain"
+    },
+    {
+      "report": "artifacts/spk1_joint_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_joint_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/spk1_ul025_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_ul025_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_base_after_spans.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans/best",
+      "stage": "pretrain"
+    },
+    {
+      "report": "artifacts/base_spans_lora_cp.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_spans_lora_cp/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/base_lora_ctx.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/base_lora_ctx/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/mt5_v5_pretrain.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_v5_pretrain/best",
+      "stage": "pretrain"
+    },
+    {
+      "report": "artifacts/spk1_ul05_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/spk1_ul05_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/training/rewrite_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1/artifacts/rewrite_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/training/aligned_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1/artifacts/aligned_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/training/original_s425.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1/artifacts/original_s425/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/seeds12/aligned_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/aligned_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/seeds12/original_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/original_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/seeds12/aligned_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/aligned_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/seeds12/rewrite_s2.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s2/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/seeds12/original_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/original_s1/best",
+      "stage": "finetune"
+    },
+    {
+      "report": "artifacts/shared_intent_v1/seeds12/rewrite_s1.json",
+      "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/experiments/shared_intent_v1_seeds12/artifacts/rewrite_s1/best",
+      "stage": "finetune"
+    }
+  ],
+  "conclusions": [
+    {
+      "area": "Overall",
+      "finding": "Fine-tuned SEA-LION English-first currently strongest candidate on reviewed conversations, including random shared examples; no final-ready reliability or independent human accuracy established."
+    },
+    {
+      "area": "mT5",
+      "finding": "Older mT5 remains a useful reference and can produce natural local replies. Newer variants do not automatically improve it; persistent failures concern role assignment,negation,availability,status,numbers and deadlines."
+    },
+    {
+      "area": "Public adaptation and data volume",
+      "finding": "Full-model public adaptation,span corruption,CoSEM/DailyDialog and small/full data trials completed. Larger public corpora do not consistently improve reply quality despite some lower losses."
+    },
+    {
+      "area": "Task expansion and target repair/distillation",
+      "finding": "190\u2192790 comparisons,repaired600generated examples and reviewed teacher targets tried. Target coherence and style matter; neither more synthetic data nor offline distillation established robust contextual improvement."
+    },
+    {
+      "area": "English-first rewriting/shared and split adapters",
+      "finding": "English anchors help intent consistency in some experiments. Rewriters can still change meaning, and preserving wrong English does not yield a correct pair."
+    },
+    {
+      "area": "Full fine-tuning and LoRA",
+      "finding": "Many LR,seed,duration and adapter-target variants tried; lower validation loss is not equivalent to better replies. No universally best mT5 variant established."
+    },
+    {
+      "area": "Generation decoding",
+      "finding": "Greedy,beam4,beam8 and no-repeat constraints tried. Some wording improves; plainSEAbeam can loop. No-repeat3 helps repetition but does not ensure factual correctness."
+    },
+    {
+      "area": "Planning/reply acts/structured objectives",
+      "finding": "Prompted large-model plans and trained mT5 classifier/conditioning/structured-task trials explored; no reliable end-to-end mT5 upgrade established."
+    },
+    {
+      "area": "Unlikelihood/preferences/reward/RL pilots",
+      "finding": "Unlikelihood,DPO/preference and constrained reward/structured-RL experiments are mixed or unreliable. Judge/scorer failures matter; this is not a completed successful general RLHF solution."
+    },
+    {
+      "area": "Output head and small MLP",
+      "finding": "Actual token-generator alternatives to LoRA completed.394kMLP English loss near separateLoRA, but rewrite loss/meaning failures persist;192Moutput-only head not an upgrade."
+    },
+    {
+      "area": "Frozen linear diagnostic probes",
+      "finding": "Availability/completion mostly near chance on reserved synthetic cases; ownership modest. Limited readouts do not prove facts absent and were not a generation-model replacement."
+    },
+    {
+      "area": "180contextpairs",
+      "finding": "No consistent context-pair benefit across the two tested seeds: worse macroCE in seed1, marginally better in seed2; role,negation,budget,time failures remain in reviewed newcases. Not proof all auxiliary ratios/budgets are ineffective."
+    },
+    {
+      "area": "Rerankers",
+      "finding": "BM25/MiniLM and teammate trainedQwen3-Reranker0.6B are separate components. No confirmed gain on current generator pools; ranking cannot supply absent good candidates."
+    },
+    {
+      "area": "Not executed",
+      "finding": "MoE-LoRA was discussed but has not been run. Research suggestions are not counted as completed experiments."
+    }
+  ],
+  "latest_context_pair_results": {
+    "1": {
+      "control": 2.2400050618913063,
+      "context": 2.2594947803852237
+    },
+    "2": {
+      "control": 2.2585484431064446,
+      "context": 2.2560504112497766
+    }
+  },
+  "limitations": [
+    "No lockedprojecttest read for this summary.",
+    "Qualitative model preference is based on reused development/assistant review and small random samples, not an independent human leaderboard.",
+    "LSTM baselines have documented reports; their checkpointfiles were not re-audited locally in this turn."
+  ],
+  "recommendation": "Prioritise a frozen fine-tuned SEA-LION English\u2192Singlish candidate for a properly labelled same-input human review; retain older mT5 as a smaller baseline. Target role/negation/time/amount supervision before more adapter-type sweeps.",
+  "default_changed": false
+}

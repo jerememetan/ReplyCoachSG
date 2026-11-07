@@ -1,0 +1,2847 @@
+{
+  "2": {
+    "local": "Yes please, lend me your extra ruler can?",
+    "reason": "Replace unnatural standalone Want; preserve borrowing direction.",
+    "id": "SYN-HUMAN-EXP1-002"
+  },
+  "3": {
+    "local": "Yes please, bring my raincoat to the interchange tonight ah.",
+    "reason": "Natural acceptance and explicit destination.",
+    "id": "SYN-HUMAN-EXP1-003"
+  },
+  "6": {
+    "local": "Yes please, lend me one pen can?",
+    "reason": "Natural request instead of standalone Want.",
+    "id": "SYN-HUMAN-EXP1-006"
+  },
+  "8": {
+    "local": "Can, you return my goggles when we meet at the pool.",
+    "reason": "Make returner explicit; PEER holds USER goggles.",
+    "id": "SYN-HUMAN-EXP1-008"
+  },
+  "11": {
+    "local": "Sure, I forward you the schedule.",
+    "reason": "Natural send direction and less formulaic topicalization.",
+    "id": "SYN-HUMAN-EXP1-011"
+  },
+  "12": {
+    "local": "Yes please, send me the updated song list before practice ah.",
+    "reason": "Repair reversed before-practice word order and unnatural Want.",
+    "id": "SYN-HUMAN-EXP1-012"
+  },
+  "13": {
+    "local": "Okay, I send finance a photo of the receipt.",
+    "reason": "Natural phrasing with clear recipient.",
+    "id": "SYN-HUMAN-EXP1-013"
+  },
+  "16": {
+    "local": "Yes please, email me a copy ah.",
+    "reason": "Natural acceptance of incoming offer.",
+    "id": "SYN-HUMAN-EXP1-016"
+  },
+  "17": {
+    "local": "Yes please, send me your map file ah. Mine cannot open.",
+    "reason": "Preserve recipient roles and stated file problem.",
+    "id": "SYN-HUMAN-EXP1-017"
+  },
+  "18": {
+    "standard": "I'll check whether our leader has approved it and send it once approval is confirmed.",
+    "local": "I check with our leader first ah. Confirm approved then I send.",
+    "reason": "Approval state unknown; do not invent not-yet approval.",
+    "id": "SYN-HUMAN-EXP1-018"
+  },
+  "19": {
+    "local": "Not everyone yet leh, I only sent it to Mei.",
+    "reason": "Fix unnatural completion word order; preserve partial sending.",
+    "id": "SYN-HUMAN-EXP1-019"
+  },
+  "21": {
+    "local": "Before six cannot leave leh. Meet after my shift can?",
+    "reason": "Repair inverted time phrase.",
+    "id": "SYN-HUMAN-EXP1-021"
+  },
+  "24": {
+    "local": "By then counter close liao. Can ask someone to collect earlier?",
+    "reason": "Natural earlier-collection phrasing.",
+    "id": "SYN-HUMAN-EXP1-024"
+  },
+  "25": {
+    "local": "That time got appointment leh. After three then call can?",
+    "reason": "Repair inverted after-three phrase.",
+    "id": "SYN-HUMAN-EXP1-025"
+  },
+  "28": {
+    "local": "Like that miss the last shuttle liao. Leave before ten can?",
+    "reason": "Repair inverted before-ten phrase.",
+    "id": "SYN-HUMAN-EXP1-028"
+  },
+  "37": {
+    "local": "Paiseh, I promised to keep the draft within our group.",
+    "reason": "Make promise and object clear without forced tense particles.",
+    "id": "SYN-HUMAN-EXP1-037"
+  },
+  "41": {
+    "local": "Go Studio 4, level two.",
+    "reason": "Repair unnatural destination word order.",
+    "id": "SYN-HUMAN-EXP1-041"
+  },
+  "42": {
+    "local": "I waiting beside the blue vending machine at the north gate.",
+    "reason": "Natural location phrasing.",
+    "id": "SYN-HUMAN-EXP1-042"
+  },
+  "43": {
+    "local": "Booth C17, opposite the registration desk.",
+    "reason": "Preserve location relation without inverted word order or forced lah.",
+    "id": "SYN-HUMAN-EXP1-043"
+  },
+  "47": {
+    "standard": "I'm not sure which other lift is available. Let's check the signs.",
+    "local": "Not sure which other lift can use leh. Check the signs first.",
+    "reason": "Do not invent a lift near an unstated staircase.",
+    "id": "SYN-HUMAN-EXP1-047"
+  },
+  "48": {
+    "local": "I put the nets in the equipment cage liao.",
+    "reason": "Natural placement statement.",
+    "id": "SYN-HUMAN-EXP1-048"
+  },
+  "54": {
+    "local": "Haven’t start assembling leh, I only read the instructions.",
+    "reason": "Repair completion word order and preserve not-started fact.",
+    "id": "SYN-HUMAN-EXP1-054"
+  },
+  "55": {
+    "local": "Not with me liao. I returned it to the event desk after the shift.",
+    "reason": "Clear badge return location and timing.",
+    "id": "SYN-HUMAN-EXP1-055"
+  },
+  "57": {
+    "local": "Haven’t book leh, I only checked the route.",
+    "reason": "Repair unnatural checked-route phrase.",
+    "id": "SYN-HUMAN-EXP1-057"
+  },
+  "60": {
+    "local": "Ya, I uploaded them to the shared folder yesterday liao.",
+    "reason": "Keep shared-folder destination clear.",
+    "id": "SYN-HUMAN-EXP1-060"
+  },
+  "66": {
+    "local": "Okay, then we don’t order your portion.",
+    "reason": "Natural acknowledgement without unnecessary Can/l iao framing.",
+    "id": "SYN-HUMAN-EXP1-066"
+  },
+  "70": {
+    "local": "Okay, then I won’t reserve a seat for you.",
+    "reason": "Natural acceptance of declined seat.",
+    "id": "SYN-HUMAN-EXP1-070"
+  },
+  "76": {
+    "standard": "Let's look for a translated version of the instructions.",
+    "local": "Find a translated version of the instructions first lah.",
+    "reason": "Avoid inventing USER Japanese inability; retain practical help.",
+    "id": "SYN-HUMAN-EXP1-076"
+  },
+  "78": {
+    "local": "Yes please, guide me through the installation can?",
+    "reason": "Natural acceptance without standalone Want.",
+    "id": "SYN-HUMAN-EXP1-078"
+  },
+  "89": {
+    "standard": "Let me check the amount and get back to you.",
+    "local": "I check the amount first, then let you know ah.",
+    "reason": "Amount absent; remove invented twelve dollars.",
+    "id": "SYN-HUMAN-EXP1-089"
+  },
+  "91": {
+    "standard": "Congratulations! I'm glad you passed.",
+    "local": "Wah, congrats! Finally pass liao!",
+    "reason": "Congratulate without inventing how much they studied.",
+    "id": "SYN-HUMAN-EXP1-091"
+  },
+  "98": {
+    "local": "No worries, I update you on whatever you miss.",
+    "reason": "Repair reversed update phrasing.",
+    "id": "SYN-HUMAN-EXP1-098"
+  },
+  "109": {
+    "standard": "Sure, I'll leave out the last section when I send you the notes.",
+    "local": "Okay, I leave out the last part when I send you.",
+    "reason": "Remove invented midterm requirement; answer request.",
+    "id": "SYN-volume500-v1-full-002-02"
+  },
+  "112": {
+    "standard": "I'll add the budget slides and send you the updated file.",
+    "local": "I add the budget slides then send you the updated file ah.",
+    "reason": "Avoid inventing why slides were missing; commit to fix.",
+    "id": "SYN-volume500-v1-full-003-01"
+  },
+  "114": {
+    "standard": "I'm not sure which venue it is. Let's check with the organiser.",
+    "local": "Not sure hall or studio leh. Check with the organiser first.",
+    "reason": "Venue absent; remove invented studio answer.",
+    "id": "SYN-volume500-v1-full-003-03"
+  },
+  "116": {
+    "standard": "Could you check your guard house? Let me know if the parcel is there.",
+    "local": "Can check your guard house first? Let me know if the parcel is there ah.",
+    "reason": "Keep sender/recipient locations distinct; recipient checks their delivery point.",
+    "id": "SYN-volume500-v1-full-004-02"
+  },
+  "120": {
+    "standard": "Let me check which questions I've completed and get back to you.",
+    "local": "I check which questions I finished first, then update you ah.",
+    "reason": "Do not invent completion or last-night timing.",
+    "id": "SYN-volume500-v1-full-005-02"
+  },
+  "123": {
+    "standard": "I'm not sure whether it is the same room. Let's check the booking details.",
+    "local": "Not sure same room anot. Check the booking details first.",
+    "reason": "Room identity unspecified; do not fabricate sameness.",
+    "id": "SYN-volume500-v1-full-006-01"
+  },
+  "128": {
+    "standard": "Could we study after my shift? I'll confirm what time I can finish.",
+    "local": "After my shift then study can? I confirm what time I finish first.",
+    "reason": "Respect shift and tight morning without inventing a7pm end time.",
+    "id": "SYN-volume500-v1-full-007-02"
+  },
+  "133": {
+    "standard": "Could we check whether five more slides will fit within our presentation time?",
+    "local": "Add five more slides can fit our time anot? Check first lah.",
+    "reason": "Keep concern tentative; do not invent a short assigned slot.",
+    "id": "SYN-volume500-v1-full-009-00"
+  },
+  "134": {
+    "standard": "I'm not sure what was said about the midterm notes. Let's check with the professor.",
+    "local": "Not sure what the prof said about the midterm notes leh. Check with the prof first.",
+    "reason": "Remove invented Tuesday notes and content coverage.",
+    "id": "SYN-volume500-v1-full-009-02"
+  },
+  "135": {
+    "standard": "I don't know their closing time. Could you check before going over?",
+    "local": "Not sure what time they close leh. Check first before you go over?",
+    "reason": "Remove invented6pm opening-hours fact and arrival guarantee.",
+    "id": "SYN-volume500-v1-full-009-03"
+  },
+  "137": {
+    "standard": "The last information was the studio, but let's confirm whether it has changed.",
+    "local": "Last I heard was studio, but check if got change first ah.",
+    "reason": "Reflect unresolved gym/studio change instead of asserting no move.",
+    "id": "SYN-volume500-v1-full-010-02"
+  },
+  "144": {
+    "standard": "Okay, you're working with Wei Ting then.",
+    "local": "Oh, with Wei Ting ah.",
+    "reason": "Remove invented partner assessment and gender assumption.",
+    "id": "SYN-volume500-v1-full-012-01"
+  },
+  "148": {
+    "standard": "I'm not sure how crowded it is right now. I'll check when I get on.",
+    "local": "Not sure how crowded now leh. I get on then see.",
+    "reason": "Remove invented crowdedness and rain explanation.",
+    "id": "SYN-volume500-v1-full-013-01"
+  },
+  "149": {
+    "standard": "Sure, I can help collect your parcel. Where should I pick it up?",
+    "local": "Can help collect. Pick up from where ah?",
+    "reason": "Avoid invented nearby location and clarify pickup point.",
+    "id": "SYN-volume500-v1-full-013-02"
+  },
+  "150": {
+    "standard": "Could you take the data analysis section while I handle the intro and conclusion?",
+    "local": "You take the data analysis can? I do intro and conclusion.",
+    "reason": "Preserve known USER roles and propose allocation instead of inventing unassigned status or completion.",
+    "id": "SYN-volume500-v1-full-013-03"
+  },
+  "153": {
+    "standard": "I'm not sure when the studio closes. Let's check before you go.",
+    "local": "Not sure what time the studio closes leh. Check before you go first.",
+    "reason": "Remove invented6pm closing time.",
+    "id": "SYN-volume500-v1-full-014-03"
+  },
+  "156": {
+    "standard": "Let's discuss whether the eco-friendly campaign is the topic we want.",
+    "local": "Eco-friendly campaign ah? We discuss first before deciding lah.",
+    "reason": "Remove invented decided tech-startup topic.",
+    "id": "SYN-volume500-v1-full-015-02"
+  },
+  "160": {
+    "standard": "Let me check the photo you sent and get back to you.",
+    "local": "I check the photo you sent first, then reply you ah.",
+    "reason": "Do not ask to resend a photo before checking existing message.",
+    "id": "SYN-volume500-v1-full-017-01"
+  },
+  "161": {
+    "standard": "Sure, I'll clear the table while you handle the cooking.",
+    "local": "Okay, you cook, I clear the table.",
+    "reason": "Latest peer takes cooking; explicitly accept updated role split.",
+    "id": "SYN-volume500-v1-full-017-02"
+  },
+  "162": {
+    "standard": "Next Friday works for me. Could you update the date on the poster too?",
+    "local": "Next Friday can. Can update the poster date also?",
+    "reason": "PEER has been editing poster; keep established editor direction.",
+    "id": "SYN-volume500-v1-full-017-03"
+  },
+  "164": {
+    "standard": "Could we check whether we have enough time to prepare the T-shirts?",
+    "local": "Got enough time to prepare the T-shirts anot? Check first lah.",
+    "reason": "Concern is prep time; remove invented stock shortage.",
+    "id": "SYN-volume500-v1-full-019-01"
+  },
+  "165": {
+    "standard": "We could try the bus next time.",
+    "local": "Next time try bus lor.",
+    "reason": "One train delay does not establish bus-route reliability.",
+    "id": "SYN-volume500-v1-full-019-02"
+  },
+  "166": {
+    "standard": "How about ten on Saturday morning? Would that work for you?",
+    "local": "Saturday morning ten can anot?",
+    "reason": "Present time as a proposal rather than an established availability fact.",
+    "id": "SYN-volume500-v1-full-019-03"
+  },
+  "169": {
+    "standard": "Sure. What sugar level would you like instead?",
+    "local": "Can, you want change to how much sugar?",
+    "reason": "Less sugar does not specify30percent; ask rather than silently decide.",
+    "id": "SYN-volume500-v1-full-020-02"
+  },
+  "173": {
+    "local": "I take charge of the technical demo can.",
+    "reason": "Preserve specific technical-demo commitment, not vague technical section.",
+    "id": "SYN-volume500-v1-full-021-02"
+  },
+  "174": {
+    "standard": "Horror works for me. Do you have a particular film in mind?",
+    "local": "Horror can. You got any movie in mind anot?",
+    "reason": "Avoid vague invented new-film reference.",
+    "id": "SYN-volume500-v1-full-021-03"
+  },
+  "179": {
+    "standard": "Let me check whether I have the Economics notes and get back to you.",
+    "local": "I check whether I got the Economics notes first, then let you know ah.",
+    "reason": "Question is receiving notes, not writing them; remove invented unfinished status.",
+    "id": "SYN-volume500-v1-full-023-00"
+  },
+  "181": {
+    "local": "Okay lah, chicken rice then, save time.",
+    "reason": "Natural choice acknowledgement.",
+    "id": "SYN-volume500-v1-full-023-02"
+  },
+  "183": {
+    "standard": "I'm not sure about Sunday opening hours. Let's check before going.",
+    "local": "Not sure Sunday got open anot. Check first before going lah.",
+    "reason": "Remove invented daily10pm garden hours.",
+    "id": "SYN-volume500-v1-full-024-01"
+  },
+  "184": {
+    "context_speakers": [
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER requests photos; PEER then offers to send them.",
+    "id": "SYN-volume500-v1-full-024-02"
+  },
+  "188": {
+    "standard": "Let's check whether there are seats in the student lounge.",
+    "local": "Go check student lounge got seats anot lah.",
+    "reason": "Remove invented lounge occupancy and room-booking access.",
+    "id": "SYN-volume500-v1-full-025-03"
+  },
+  "193": {
+    "standard": "Six works for me. Where should we arrange the return?",
+    "local": "Six can. Return the projector where ah?",
+    "reason": "Remove unstated lab return location while preserving accepted time.",
+    "id": "SYN-volume500-v1-full-027-02"
+  },
+  "194": {
+    "context_speakers": [
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER asked for a lift; PEER declines and suggests coffee.",
+    "id": "SYN-volume500-v1-full-027-03"
+  },
+  "196": {
+    "standard": "I'm not sure whether we picked up the snacks. Let's check the bags.",
+    "local": "Not sure got buy snacks anot. Check the bags first.",
+    "reason": "Do not invent forgetting snacks; purchase state absent.",
+    "id": "SYN-volume500-v1-full-028-01"
+  },
+  "204": {
+    "standard": "Let me check where I stopped in the chapter and update you.",
+    "local": "I check which part I read until first, then let you know.",
+    "reason": "Remove invented completed chapter and last-night timing.",
+    "id": "SYN-volume500-v1-full-030-01"
+  },
+  "205": {
+    "standard": "Wednesday works for me. What time in the morning?",
+    "local": "Wednesday can. Morning what time ah?",
+    "reason": "Preserve morning preference without inventing schedule rearrangement.",
+    "id": "SYN-volume500-v1-full-030-02"
+  },
+  "207": {
+    "local": "Okay, I make the date font bigger.",
+    "reason": "Natural conversational acknowledgement rather than formal enlarge wording.",
+    "id": "SYN-volume500-v1-full-031-00"
+  },
+  "208": {
+    "standard": "Let's check how many people need a copy before we borrow the books.",
+    "local": "Check how many people need a copy first, then borrow lah.",
+    "reason": "Remove invented four copies per book.",
+    "id": "SYN-volume500-v1-full-031-01"
+  },
+  "210": {
+    "standard": "I'll check the shelf and let you know whether I find them.",
+    "local": "I check the shelf first, find them then let you know ah.",
+    "reason": "Remove invented found status and three-book count.",
+    "id": "SYN-volume500-v1-full-031-03"
+  },
+  "213": {
+    "standard": "Let me check where I stopped in the chapter and get back to you.",
+    "local": "I check where I read until first, then reply you ah.",
+    "reason": "Completion unknown; avoid inventing last-night completion.",
+    "id": "SYN-volume500-v1-full-032-02"
+  },
+  "214": {
+    "standard": "Let me check the handouts. How many copies do you need?",
+    "local": "I check the handouts first. You need how many copies ah?",
+    "reason": "Remove invented forgotten-at-home explanation.",
+    "id": "SYN-volume500-v1-full-032-03"
+  },
+  "216": {
+    "standard": "Which questions are you stuck on? We can go through them together.",
+    "local": "Which questions you stuck at? We go through together lah.",
+    "reason": "Offer relevant help instead of inventing identical USER difficulty.",
+    "id": "SYN-volume500-v1-full-033-01"
+  },
+  "218": {
+    "standard": "You can borrow it in an hour as planned. I'll need it back after that.",
+    "local": "One hour later can borrow, like we said. Use finish return me ah.",
+    "reason": "Respect explicit promise of later availability rather than unexplained reversal.",
+    "id": "SYN-volume500-v1-full-033-03"
+  },
+  "221": {
+    "standard": "Sure, I'll drop the books off at the counter after my lecture.",
+    "local": "Okay, after class I drop the books at the counter.",
+    "reason": "Keep book ownership neutral; USER already needs to return books.",
+    "id": "SYN-volume500-v1-full-034-02"
+  },
+  "222": {
+    "standard": "The list pairs us with Sarah, but I'm not sure whether that covers the whole semester.",
+    "local": "List put Sarah with us, but not sure whole semester anot leh.",
+    "reason": "Group-list entry does not establish semester-long assignment.",
+    "id": "SYN-volume500-v1-full-034-03"
+  },
+  "225": {
+    "standard": "Yes please, could you bring the posters for the booth?",
+    "local": "Yes please, help bring the posters for the booth ah.",
+    "reason": "Remove unrelated invented registration-table assignment.",
+    "id": "SYN-volume500-v1-full-035-02"
+  },
+  "227": {
+    "standard": "Thanks for checking. Let's start a group chat with Sarah.",
+    "local": "Thanks for checking ah. Start a group chat with Sarah lah.",
+    "reason": "Acknowledge report without falsely claiming USER also saw portal list.",
+    "id": "SYN-volume500-v1-full-036-00"
+  },
+  "228": {
+    "standard": "Okay, I'll get chicken rice and you can get fish soup.",
+    "local": "Okay, I get chicken rice, you get fish soup.",
+    "reason": "Preserve independent food choices; no unstated order-taking obligation.",
+    "id": "SYN-volume500-v1-full-036-01"
+  },
+  "230": {
+    "standard": "Four works for me. See you then.",
+    "local": "Four can, see you then.",
+    "reason": "Accept proposed time without inventing own morning constraint.",
+    "id": "SYN-volume500-v1-full-036-03"
+  },
+  "232": {
+    "standard": "I'm not sure of the final headcount. I'll check with the group.",
+    "local": "Not sure final headcount leh. I check with the group first.",
+    "reason": "Remove invented three-person group size.",
+    "id": "SYN-volume500-v1-full-037-01"
+  },
+  "234": {
+    "standard": "I'm not sure whether the stall is open or offers extra spicy. Let's check.",
+    "local": "Not sure got open or got extra spicy anot. Go check first lah.",
+    "reason": "Remove invented opening and menu availability.",
+    "id": "SYN-volume500-v1-full-037-03"
+  },
+  "238": {
+    "standard": "I was thinking of the indie band concert. Would you like to join?",
+    "local": "I thinking of the indie band one. You want join anot?",
+    "reason": "Keep selectable event preference; remove invented8pm starting time.",
+    "id": "SYN-volume500-v1-full-039-00"
+  },
+  "240": {
+    "standard": "I'm not sure about the capacity limit. Let's check the kitchen rules.",
+    "local": "Not sure can have how many people leh. Check the kitchen rules first.",
+    "reason": "Remove invented four-person occupancy limit.",
+    "id": "SYN-volume500-v1-full-039-02"
+  },
+  "243": {
+    "standard": "How about meeting at the hall at four? Does that work for everyone?",
+    "local": "Hall there four can anot? Everyone okay?",
+    "reason": "Present time as proposed plan rather than asserting prior agreement.",
+    "id": "SYN-volume500-v1-full-040-02"
+  },
+  "245": {
+    "standard": "Let's check whether the student lounge has space for us.",
+    "local": "Go check student lounge got space anot lah.",
+    "reason": "Remove invented lounge noise and unavailable-library alternative pods.",
+    "id": "SYN-volume500-v1-full-041-00"
+  },
+  "246": {
+    "standard": "If the train is faster for your route, that makes sense.",
+    "local": "For your route train faster then take train lor.",
+    "reason": "Remove unsupported general peak-hour reliability claim.",
+    "id": "SYN-volume500-v1-full-041-01"
+  },
+  "247": {
+    "standard": "How about finding a laksa stall instead?",
+    "local": "Then find a laksa stall instead can?",
+    "reason": "Keep food preference; do not invent a stall across the road.",
+    "id": "SYN-volume500-v1-full-041-02"
+  },
+  "249": {
+    "standard": "Could you collect it from the lobby for me? Thanks for checking.",
+    "local": "Can help me collect from the lobby? Thanks ah.",
+    "reason": "USER parcel delivered to PEER; ask recipient to collect instead of assuming shared building.",
+    "id": "SYN-volume500-v1-full-042-00"
+  },
+  "252": {
+    "standard": "I'll check with everyone else whether nine works for them.",
+    "local": "I ask the others if nine can first ah.",
+    "reason": "Remove invented group confirmation.",
+    "id": "SYN-volume500-v1-full-042-03"
+  },
+  "256": {
+    "context_speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER invites PEER, who is already committed to cousins group and declines.",
+    "id": "SYN-volume500-v1-full-044-01"
+  },
+  "257": {
+    "context_speakers": [
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER asks for formatting help; PEER offers layout only.",
+    "id": "SYN-volume500-v1-full-044-02"
+  },
+  "258": {
+    "standard": "I'm not sure how much space is left. Let's check before bringing the containers.",
+    "local": "Not sure got how much space left leh. Check first before bringing the containers.",
+    "reason": "Remove invented fridge capacity/available space.",
+    "id": "SYN-volume500-v1-full-044-03"
+  },
+  "261": {
+    "context_speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer",
+      "user",
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER volunteers5:30 collection; PEER thanks them and asks for update.",
+    "id": "SYN-volume500-v1-full-045-02"
+  },
+  "264": {
+    "standard": "No rush. Let me know when you arrive.",
+    "local": "No rush lah, reach then let me know.",
+    "reason": "Remove invented already-seated location.",
+    "id": "SYN-volume500-v1-full-046-01"
+  },
+  "265": {
+    "standard": "Could you compare the Grab arrival estimate with the train delay before deciding?",
+    "local": "Compare the Grab waiting time with the train delay first lah.",
+    "reason": "Do not guarantee ride speed/safety or on-time arrival.",
+    "id": "SYN-volume500-v1-full-046-02"
+  },
+  "268": {
+    "standard": "I'll check the parcel details so you can identify the right box.",
+    "local": "I check the parcel details first, then tell you which box ah.",
+    "reason": "Remove invented small-blue-box identity.",
+    "id": "SYN-volume500-v1-full-047-01"
+  },
+  "274": {
+    "standard": "I don't have a favourite yet. Have you tried any of the campus cafés?",
+    "local": "Not sure which one best leh. You tried any nice ones on campus?",
+    "reason": "Avoid inventing a regular cafe and its location.",
+    "id": "SYN-volume500-v1-full-048-03"
+  },
+  "280": {
+    "standard": "I'm not sure of the pickup time. Could you check whether it is in the email?",
+    "local": "Not sure pickup what time leh. Can check the email got put anot?",
+    "reason": "Remove invented8:15 shuttle departure.",
+    "id": "SYN-volume500-v1-full-050-01"
+  },
+  "282": {
+    "standard": "The intro slides are uploaded. Let's check whether any other sections still need adding.",
+    "local": "Intro slides upload liao. Check if got other parts still need to add.",
+    "reason": "Intro completion does not establish whole presentation complete.",
+    "id": "SYN-volume500-v1-full-050-03"
+  },
+  "283": {
+    "standard": "Eight works for me. Shall we keep the two-hour session and finish at ten?",
+    "local": "Eight can. Still play two hours until ten can anot?",
+    "reason": "Make changed end time explicit proposal rather than unconditional booking.",
+    "id": "SYN-volume500-v1-full-051-00"
+  },
+  "284": {
+    "standard": "Could you hold on to the gear until we can arrange a handover? I'd rather collect it directly.",
+    "local": "Can keep the gear first? I rather collect from you when we both free.",
+    "reason": "Avoid inventing gym lockers and unverified safe storage access.",
+    "id": "SYN-volume500-v1-full-051-01"
+  },
+  "286": {
+    "standard": "Let's find a quiet study spot in the library. Shall we check what is available?",
+    "local": "Find a quiet spot in the library lah. Check where got space first.",
+    "reason": "Remove unsupported quieter-third-floor claim.",
+    "id": "SYN-volume500-v1-full-051-03"
+  },
+  "287": {
+    "standard": "Bring it along and we can test whether it is loud enough before practice.",
+    "local": "Bring first lah, before practice we test if loud enough.",
+    "reason": "Offer practical test without inventing USER ownership of another speaker.",
+    "id": "SYN-volume500-v1-full-052-00"
+  },
+  "289": {
+    "context_speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer",
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER invites and assigns duties; PEER cannot register but offers logistics.",
+    "id": "SYN-volume500-v1-full-052-03"
+  },
+  "290": {
+    "standard": "We could try the faculty printer, but let's check that it is working first.",
+    "local": "Can try the faculty printer, but check if working first ah.",
+    "reason": "Library outage known; alternative printer working state unconfirmed.",
+    "id": "SYN-volume500-v1-full-053-00"
+  },
+  "293": {
+    "standard": "I'm not sure which stall is best. Which area are you looking in?",
+    "local": "Not sure which stall best leh. You looking around which area?",
+    "reason": "Remove invented BlockFour stall quality and existence claim.",
+    "id": "SYN-volume500-v1-full-053-03"
+  },
+  "297": {
+    "standard": "I'll check the booking and confirm whether we have a court for Friday.",
+    "local": "I check the booking first, then confirm Friday got court anot.",
+    "reason": "Remove invented successful booking and7to9 slot.",
+    "id": "SYN-volume500-v1-full-054-03"
+  },
+  "298": {
+    "standard": "Okay, I'm heading to the library. Are you coming too?",
+    "local": "Okay, I going library. You coming also anot?",
+    "reason": "Do not assume PEER destination from train-line reply.",
+    "id": "SYN-volume500-v1-full-055-00"
+  },
+  "301": {
+    "standard": "Sure, let's meet at Exit A instead.",
+    "local": "Can, meet at Exit A instead.",
+    "reason": "Keep agreed exit change without invented ease-of-finding claim.",
+    "id": "SYN-volume500-v1-full-056-00"
+  },
+  "302": {
+    "standard": "Two still works for me. What time would you need to leave for dinner?",
+    "local": "Two still can for me. You need to leave for dinner what time ah?",
+    "reason": "Do not contradict USER confirmed2pm availability; check PEER departure constraint.",
+    "id": "SYN-volume500-v1-full-056-01"
+  },
+  "304": {
+    "standard": "How about Exit C? I'll meet you there in about fifteen minutes.",
+    "local": "Exit C can? I about fifteen minutes then reach.",
+    "reason": "Label exit as proposal and preserve stated travel time.",
+    "id": "SYN-volume500-v1-full-056-03"
+  },
+  "305": {
+    "standard": "Okay, let's leave the props for tomorrow's session.",
+    "local": "Okay, props tomorrow then bring lah.",
+    "reason": "Align both styles; remove English-only extra blocking plan.",
+    "id": "SYN-volume500-v1-full-057-00"
+  },
+  "306": {
+    "context_speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER asks logo-position preference, PEER specifies top right, USER agrees.",
+    "id": "SYN-volume500-v1-full-057-01"
+  },
+  "307": {
+    "context_speakers": [
+      "peer",
+      "user",
+      "peer",
+      "user"
+    ],
+    "reason": "Generated speaker repair: PEER is assigned food distribution; USER asks about crates and receives refusal.",
+    "id": "SYN-volume500-v1-full-057-02"
+  },
+  "311": {
+    "standard": "I'll check who is driving to collect the equipment and let you know.",
+    "local": "I check who driving to collect the equipment first, then tell you ah.",
+    "reason": "Do not invent USER driving assignment.",
+    "id": "SYN-volume500-v1-full-058-02"
+  },
+  "314": {
+    "standard": "Let's check whether the summit photos were included in the upload.",
+    "local": "Check if the summit photos upload already anot first lah.",
+    "reason": "Do not claim USER searched folder or assume PEER must reupload unseen photos.",
+    "id": "SYN-volume500-v1-full-059-02"
+  },
+  "315": {
+    "standard": "Let me check the tracking number and send it to you.",
+    "local": "I check the tracking number first, then send you ah.",
+    "reason": "Avoid pretending the tracking number is already being sent.",
+    "id": "SYN-volume500-v1-full-059-03"
+  },
+  "318": {
+    "standard": "Thanks, I'll check Telegram now.",
+    "local": "Thanks ah, I check Telegram now.",
+    "reason": "Sent is not confirmation of USER receipt/read state.",
+    "id": "SYN-volume500-v1-full-060-02"
+  },
+  "319": {
+    "local": "Ya, make the font bigger instead lah.",
+    "reason": "Natural agreement; avoid ungrammatical Make sense fragment.",
+    "id": "SYN-volume500-v1-full-060-03"
+  },
+  "320": {
+    "standard": "The library printer is down at the moment. Could we try another printer?",
+    "local": "Library printer down now leh. Try another printer can?",
+    "reason": "Use known printer outage instead of invented paper shortage.",
+    "id": "SYN-volume500-v1-full-061-00"
+  },
+  "323": {
+    "standard": "Sure, I'll share the Monday notes and help summarise the last part.",
+    "local": "Can, I send the Monday notes first, then help summarise the last part.",
+    "reason": "Remove invented unfinished-summary state while accepting help request.",
+    "id": "SYN-volume500-v1-full-061-03"
+  },
+  "324": {
+    "standard": "Eight still works for me. If the library is crowded, we can look for another spot.",
+    "local": "Eight can. If library crowded then find another spot lah.",
+    "reason": "Answer time question and keep crowd/quietness uncertainty.",
+    "id": "SYN-volume500-v1-full-062-00"
+  },
+  "327": {
+    "standard": "I'm still deciding. I'll compare the waiting times first.",
+    "local": "Still thinking leh. I check the waiting times first.",
+    "reason": "Keep styles aligned without train/taxi/Grab substitution.",
+    "id": "SYN-volume500-v1-full-062-03"
+  },
+  "328": {
+    "standard": "I'm not sure whether there is a microwave. Let's check when we get there.",
+    "local": "Not sure got microwave anot leh. Reach there then check.",
+    "reason": "Remove invented kitchen appliance availability.",
+    "id": "SYN-volume500-v1-full-063-02"
+  },
+  "329": {
+    "standard": "Meeting at three works for me. Is the tutorial itself still at two?",
+    "local": "Meet at three can. Tutorial itself still at two ah?",
+    "reason": "Accept meeting change without assuming authority to reschedule tutorial.",
+    "id": "SYN-volume500-v1-full-063-03"
+  },
+  "333": {
+    "standard": "Let me check the shopping bags to see whether we got the snacks.",
+    "local": "I check the bags first, see if got buy the snacks anot.",
+    "reason": "Remove invented chips/biscuits purchase.",
+    "id": "SYN-volume500-v1-full-064-03"
+  },
+  "334": {
+    "standard": "Let's meet on the ground floor. I'll come and find you.",
+    "local": "Ground floor meet lah. I come find you.",
+    "reason": "Make a plan rather than inventing USER current location.",
+    "id": "SYN-volume500-v1-full-065-00"
+  },
+  "337": {
+    "standard": "Let's check whether another print shop can do the colour copies.",
+    "local": "Check another print shop can print colour anot lah.",
+    "reason": "Remove unsupported downstairs-shop location and colour service claim.",
+    "id": "SYN-volume500-v1-full-065-03"
+  },
+  "338": {
+    "standard": "I haven't checked the schedule yet. Let's look at the portal or notice board.",
+    "local": "I haven’t check the schedule yet leh. Check portal or notice board first.",
+    "reason": "Preserve explicit unknown schedule; remove invented next-morning confirmation.",
+    "id": "SYN-volume500-v1-full-066-01"
+  },
+  "341": {
+    "local": "Friday coffee can, see you then.",
+    "reason": "Repair awkward can-for-me construction.",
+    "id": "SYN-volume500-v1-full-067-00"
+  },
+  "343": {
+    "local": "Five at the void deck can.",
+    "reason": "Natural agreement on proposed place/time.",
+    "id": "SYN-volume500-v1-full-067-02"
+  },
+  "346": {
+    "standard": "What time are you thinking of going?",
+    "local": "You thinking of going what time ah?",
+    "reason": "Directly clarify invitation time without treating an unmade plan as fixed.",
+    "id": "SYN-volume500-v1-full-068-02"
+  },
+  "348": {
+    "local": "Yes please, help with the conclusion also can?",
+    "reason": "Replace stiff much-better construction with natural acceptance.",
+    "id": "SYN-volume500-v1-full-069-00"
+  },
+  "352": {
+    "standard": "I'm not sure when it ends. Let's check the session schedule.",
+    "local": "Not sure finish what time leh. Check the schedule first.",
+    "reason": "Remove invented7:30 session end.",
+    "id": "SYN-volume500-v1-full-070-01"
+  },
+  "354": {
+    "standard": "We need at least twenty pens in total. How many pens are in each pack?",
+    "local": "Need at least twenty pens altogether. One pack got how many ah?",
+    "reason": "Unknown pack size means five packs cannot be certified sufficient.",
+    "id": "SYN-volume500-v1-full-070-03"
+  },
+  "356": {
+    "standard": "Sorry, I can't help before ten tonight. Could someone else help you meet the deadline?",
+    "local": "Paiseh, I cannot help before ten tonight. Can ask someone else to help?",
+    "reason": "Respect known10pm deadline; do not present tomorrow as meeting it.",
+    "id": "SYN-volume500-v1-full-071-01"
+  },
+  "358": {
+    "standard": "I'm not sure of the submission location. Let's check the instructions.",
+    "local": "Not sure submit where leh. Check the instructions first.",
+    "reason": "Remove invented official Drive submission location.",
+    "id": "SYN-volume500-v1-full-071-03"
+  },
+  "361": {
+    "standard": "Sorry, I'll skip the concert tonight. Have fun!",
+    "local": "Paiseh, tonight I skip. You enjoy ah!",
+    "reason": "Keep selectable refusal without invented assignment deadline.",
+    "id": "SYN-volume500-v1-full-072-03"
+  },
+  "362": {
+    "standard": "That sounds good. Shall we meet there at twelve thirty?",
+    "local": "Sounds good, twelve thirty there can?",
+    "reason": "Make added meeting time a proposal.",
+    "id": "SYN-volume500-v1-full-073-00"
+  },
+  "364": {
+    "standard": "Let's confirm our group size and check whether the room can fit everyone.",
+    "local": "Check our group got how many people first, then see if the room enough.",
+    "reason": "Remove invented four-person requirement.",
+    "id": "SYN-volume500-v1-full-073-02"
+  },
+  "369": {
+    "local": "Okay, I start on the intro now.",
+    "reason": "Acknowledge instruction without asserting verified file receipt.",
+    "id": "SYN-volume500-v1-full-074-03"
+  },
+  "370": {
+    "standard": "I'll check that the cables are packed with the equipment before returning it.",
+    "local": "I check the cables got pack with the equipment anot first.",
+    "reason": "Do not invent cables/sensor readiness.",
+    "id": "SYN-volume500-v1-full-075-00"
+  },
+  "374": {
+    "standard": "Let's find another place to print them before tomorrow's deadline.",
+    "local": "Find another place to print before tomorrow lah.",
+    "reason": "Renovation closure today does not establish reopening tomorrow.",
+    "id": "SYN-volume500-v1-full-076-00"
+  },
+  "375": {
+    "standard": "We planned to meet at the void deck, but I'm not sure whether the event venue changed. Let's confirm.",
+    "local": "We said void deck meet, but not sure event venue got change anot. Confirm first lah.",
+    "reason": "Distinguish personal meeting point from uncertain official event venue.",
+    "id": "SYN-volume500-v1-full-076-01"
+  },
+  "376": {
+    "standard": "Could you send the exit number or a location pin so I can find you?",
+    "local": "Can send the exit number or location pin? I come find you.",
+    "reason": "Remove invented ExitB and coffee-shop landmark.",
+    "id": "SYN-volume500-v1-full-076-02"
+  },
+  "377": {
+    "standard": "Sure, I'll staple them after printing.",
+    "local": "Can, print finish I staple for you.",
+    "reason": "Avoid unstated office constraint; clear accepted task order.",
+    "id": "SYN-volume500-v1-full-076-03"
+  },
+  "378": {
+    "local": "Nice lah, enjoy your East Coast trip on Saturday.",
+    "reason": "Keep place and date aligned with English and incoming plan.",
+    "id": "SYN-volume500-v1-full-077-00"
+  },
+  "383": {
+    "standard": "Could you get the popcorn and snacks while I book the tickets?",
+    "local": "You help get popcorn and snacks can? I book the tickets.",
+    "reason": "Make division of tasks a request in both styles rather than unilateral assignment.",
+    "id": "SYN-volume500-v1-full-078-01"
+  },
+  "385": {
+    "standard": "Could we check with the organisers whether moving it to Saturday is possible?",
+    "local": "Can move to Saturday anot? Ask the organisers first lah.",
+    "reason": "Do not assume authority to reschedule official orientation or invent hall venue.",
+    "id": "SYN-volume500-v1-full-078-03"
+  },
+  "390": {
+    "standard": "Let me check whether my registration went through and get back to you.",
+    "local": "I check if my registration went through first, then let you know ah.",
+    "reason": "Remove invented completed registration and morning timing.",
+    "id": "SYN-volume500-v1-full-080-00"
+  },
+  "392": {
+    "standard": "Then how about the pasta place I suggested?",
+    "local": "Then the pasta place I suggested can anot?",
+    "reason": "Respond to no-rice preference without invented inability or ungrammatical no can.",
+    "id": "SYN-volume500-v1-full-080-02"
+  },
+  "394": {
+    "standard": "Which cinema would you prefer? We can confirm before booking.",
+    "local": "You prefer which cinema ah? Confirm first before booking lah.",
+    "reason": "Cinema not established; remove invented VivoCity decision.",
+    "id": "SYN-volume500-v1-full-081-00"
+  },
+  "396": {
+    "standard": "Let's check whether the last chapter is included before deciding what to study.",
+    "local": "Check if the last chapter got include first, then decide what to study lah.",
+    "reason": "Remove unsupported claim that chapter is on assessed syllabus.",
+    "id": "SYN-volume500-v1-full-081-02"
+  },
+  "400": {
+    "standard": "I can help ask around for the elasticity notes.",
+    "local": "I help ask around for the elasticity notes ah.",
+    "reason": "Do not invent USER possession of missing notes.",
+    "id": "SYN-volume500-v1-full-083-01"
+  },
+  "402": {
+    "standard": "It might be just the first three, but let's confirm the coverage before skipping the others.",
+    "local": "Might be first three only, but confirm first before skipping the rest ah.",
+    "reason": "Preserve uncertainty in PEER syllabus claim.",
+    "id": "SYN-volume500-v1-full-083-03"
+  },
+  "408": {
+    "standard": "I'm not sure about weekend hours. Let's check before going.",
+    "local": "Not sure weekend got open anot. Check before going first lah.",
+    "reason": "Remove unsupported Sunday closure claim.",
+    "id": "SYN-volume500-v1-full-085-02"
+  },
+  "409": {
+    "standard": "Could we keep the headings as they are and change the body text to Arial?",
+    "local": "Headings keep the same can? Body text change to Arial.",
+    "reason": "Make partial agreement/proposal consistent in both styles.",
+    "id": "SYN-volume500-v1-full-085-03"
+  },
+  "410": {
+    "context": [
+      {
+        "speaker": "user",
+        "text": "I have a draft of the marketing report ready. Could you help revise it?"
+      },
+      {
+        "speaker": "peer",
+        "text": "I can take a look, but I may not have time for a full rewrite."
+      },
+      {
+        "speaker": "user",
+        "text": "Could you at least check the wording?"
+      }
+    ],
+    "reason": "Clarify generated revision request so PEER limited proofreading offer and USER acceptance have consistent roles.",
+    "id": "SYN-volume500-v1-full-086-00"
+  },
+  "412": {
+    "standard": "I'm at the library entrance. Can you see me?",
+    "local": "I at the library entrance. You see me anot?",
+    "reason": "Use established library entrance; remove invented fountain landmark.",
+    "id": "SYN-volume500-v1-full-087-00"
+  },
+  "413": {
+    "standard": "I'll check who is handling registration and let you know.",
+    "local": "I check who handling registration first, then tell you ah.",
+    "reason": "Remove invented named registration worker and gender.",
+    "id": "SYN-volume500-v1-full-087-01"
+  },
+  "424": {
+    "standard": "What time does your lecture finish? We can meet at the library after that.",
+    "local": "Your lecture finish what time ah? After that library meet can?",
+    "reason": "A3pm lecture may finish after4; clarify end time instead of inventing a study area and4pm availability.",
+    "id": "SYN-volume500-v1-full-090-00"
+  },
+  "429": {
+    "standard": "Could we check whether the student lounge has space?",
+    "local": "Check student lounge got space anot first lah.",
+    "reason": "Remove unsupported usually-empty lounge claim.",
+    "id": "SYN-volume500-v1-full-091-01"
+  },
+  "433": {
+    "context_speakers": [
+      "user",
+      "peer"
+    ],
+    "reason": "Generated speaker repair: USER requests PEER notes; PEER delays tidying and offers their study group.",
+    "id": "SYN-volume500-v1-full-092-02"
+  },
+  "434": {
+    "standard": "Yes, let's meet at four.",
+    "local": "Still on, see you at four.",
+    "reason": "Remove invented auditorium location while confirming proposed time.",
+    "id": "SYN-volume500-v1-full-092-03"
+  },
+  "437": {
+    "local": "Fishball noodles can, go there instead lah.",
+    "reason": "Preserve acceptance without claiming no other choice.",
+    "id": "SYN-volume500-v1-full-093-03"
+  },
+  "439": {
+    "standard": "Could we check whether the current booking allows your sister to join before changing it?",
+    "local": "Check if your sister can join our current booking first lah.",
+    "reason": "Remove unsupported court-size price difference and verify participant rules.",
+    "id": "SYN-volume500-v1-full-094-01"
+  },
+  "440": {
+    "local": "Actually, order delivery instead can? Then no need cook.",
+    "reason": "Keep proposed delivery preference and consent question aligned with English.",
+    "id": "SYN-volume500-v1-full-094-02"
+  },
+  "441": {
+    "standard": "It could be checked out. I'll check the online catalogue.",
+    "local": "Maybe someone borrowed liao. I check the catalogue first.",
+    "reason": "Keep checkout state tentative rather than treating guess as likely fact.",
+    "id": "SYN-volume500-v1-full-094-03"
+  },
+  "443": {
+    "standard": "Five works for me, but could we check that the shop will still be open?",
+    "local": "Five can, but check the shop still open anot first ah.",
+    "reason": "Remove invented4:30 closing time.",
+    "id": "SYN-volume500-v1-full-095-03"
+  },
+  "446": {
+    "standard": "Sorry, I need to finish my project. Let's catch up another day.",
+    "local": "Paiseh, I need to finish my project first. Another day then catch up lah.",
+    "reason": "Respect stated workload without adding another same-evening outing.",
+    "id": "SYN-volume500-v1-full-096-02"
+  },
+  "447": {
+    "local": "Thanks ah, next version I fix the typos.",
+    "reason": "More natural acknowledgement and clear correction commitment.",
+    "id": "SYN-volume500-v1-full-096-03"
+  },
+  "448": {
+    "standard": "I'm not sure when the main act starts. Let me check the flyer.",
+    "local": "Not sure main act start what time leh. I check the flyer first.",
+    "reason": "Remove invented8pm guess.",
+    "id": "SYN-volume500-v1-full-097-00"
+  },
+  "449": {
+    "standard": "I'll check who is handling the heavy lifting and update you.",
+    "local": "I check who handling the heavy stuff first, then update you ah.",
+    "reason": "Remove invented seniors assignment and ingredient-prep role.",
+    "id": "SYN-volume500-v1-full-097-01"
+  },
+  "450": {
+    "standard": "I'm not sure of the quiz format. Let's check the professor's announcement.",
+    "local": "Not sure quiz what format leh. Check the prof’s announcement first.",
+    "reason": "Remove fabricated professor statement about quiz format.",
+    "id": "SYN-volume500-v1-full-097-02"
+  },
+  "451": {
+    "standard": "Three works for me. Shall we confirm the shift change with the organiser?",
+    "local": "Three can. Confirm the shift change with the organiser first ah?",
+    "reason": "Do not unilaterally update official shift for everyone.",
+    "id": "SYN-volume500-v1-full-097-03"
+  },
+  "455": {
+    "standard": "Sure, I'll order your laksa. Would you like any extras?",
+    "local": "Can, I order laksa for you. Want add anything anot?",
+    "reason": "Use established laksa preference instead of asking for whole order again.",
+    "id": "SYN-volume500-v1-full-098-03"
+  },
+  "456": {
+    "standard": "Let me check the annex catalogue and confirm whether a copy is available.",
+    "local": "I check the annex catalogue first, see if got copy available anot.",
+    "reason": "Remove invented finding/checkout result.",
+    "id": "SYN-volume500-v1-full-099-00"
+  },
+  "461": {
+    "standard": "Which tickets do you mean? We had only discussed going to the mall.",
+    "local": "Tickets for what ah? We only said go mall.",
+    "reason": "Clarify unsupported ticket reference; no movie/event established.",
+    "id": "SYN-volume500-v1-full-100-01"
+  },
+  "462": {
+    "standard": "I'll set up the Zoom link and send it over.",
+    "local": "I set up the Zoom link then send you ah.",
+    "reason": "Remove invented already-sent link and group-chat posting.",
+    "id": "SYN-volume500-v1-full-100-02"
+  },
+  "463": {
+    "standard": "Yes, I'll remove the blurry photos and update the folder tonight.",
+    "local": "Can, I remove the blur ones then update the folder tonight.",
+    "reason": "Keep requested tonight deadline without inventing10pm time.",
+    "id": "SYN-volume500-v1-full-100-03"
+  },
+  "468": {
+    "standard": "I'll check my email and confirm whether I can open the file.",
+    "local": "I check my email and see if can open the file first ah.",
+    "reason": "Sent file is not proof USER received/opened it.",
+    "id": "SYN-volume500-v1-full-102-00"
+  },
+  "471": {
+    "standard": "Yes, please leave the keys at the front desk.",
+    "local": "Can, leave the keys at the front desk.",
+    "reason": "Remove invented earlier agreement.",
+    "id": "SYN-volume500-v1-full-102-03"
+  },
+  "474": {
+    "standard": "I'm not sure where there are more outlets. Could we check with the library staff?",
+    "local": "Not sure where got more power points leh. Ask the library staff can?",
+    "reason": "Remove invented ground-floor cafe outlet layout.",
+    "id": "SYN-volume500-v1-full-103-02"
+  },
+  "476": {
+    "standard": "Let's check the freshmen discount eligibility and terms before applying.",
+    "local": "Check the freshmen discount conditions first lah, see if we qualify.",
+    "reason": "Do not invent USER eligibility or alternative discounts.",
+    "id": "SYN-volume500-v1-full-104-00"
+  },
+  "477": {
+    "standard": "Let me check which review session the PDF covers before sending it.",
+    "local": "I check the PDF is for which review first, then send you ah.",
+    "reason": "Module3 content identity absent; do not assert confirmation.",
+    "id": "SYN-volume500-v1-full-104-01"
+  },
+  "478": {
+    "standard": "Thanks, Block C at three. Have they provided the room number yet?",
+    "local": "Thanks ah, Block C at three. Got room number already anot?",
+    "reason": "Retain known block/time while clarifying missing room number.",
+    "id": "SYN-volume500-v1-full-104-02"
+  },
+  "479": {
+    "standard": "Sure, I'll handle the posts and you can take care of logistics.",
+    "local": "Can, I do the posts, you handle logistics.",
+    "reason": "Accept offered role split without introducing an unrelated budget assignment.",
+    "id": "SYN-volume500-v1-full-104-03"
+  },
+  "483": {
+    "standard": "I can meet at three, but the orientation starts at two. Shall we check whether joining late is okay?",
+    "local": "Meet at three can, but orientation starts at two leh. Check if can join late first?",
+    "reason": "Separate meeting plan from official event schedule.",
+    "id": "SYN-volume500-v1-full-106-00"
+  },
+  "485": {
+    "context": [
+      {
+        "speaker": "peer",
+        "text": "The photos from the gala are so good!"
+      },
+      {
+        "speaker": "user",
+        "text": "Thanks! I took some of the dance troupe."
+      },
+      {
+        "speaker": "peer",
+        "text": "Could you send me some of the performance shots?"
+      }
+    ],
+    "reason": "Clarify generated photo ownership: USER has photos, PEER requests performance and trophy shots.",
+    "id": "SYN-volume500-v1-full-106-02"
+  },
+  "486": {
+    "standard": "Let me check whether I have the sociology chapter notes. I'll send what I can find.",
+    "local": "I check if I got the chapter notes first. Got then I send you ah.",
+    "reason": "Remove invented possession/PDF format.",
+    "id": "SYN-volume500-v1-full-106-03"
+  },
+  "489": {
+    "context_speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "reason": "Generated speaker repair: USER proposes Gatsby, PEER agrees and asks meeting location.",
+    "id": "SYN-volume500-v1-full-107-03"
+  },
+  "490": {
+    "standard": "Could we check whether there is space and permission for a bake sale too?",
+    "local": "Got space and permission to do a bake sale also anot? Check first lah.",
+    "reason": "Remove invented lack of space and next-week allocation.",
+    "id": "SYN-volume500-v1-full-108-00"
+  },
+  "492": {
+    "standard": "I'm not sure how long the walk takes. Let's check the route on a map.",
+    "local": "Not sure walk how long leh. Check the route on the map first.",
+    "reason": "Remove invented10-minute route estimate.",
+    "id": "SYN-volume500-v1-full-108-02"
+  },
+  "493": {
+    "standard": "Meeting at ten works for me. Shall we confirm what time the event itself starts?",
+    "local": "Meet at ten can. Event itself starts what time ah?",
+    "reason": "Do not assume official orientation start time can be changed by two attendees.",
+    "id": "SYN-volume500-v1-full-108-03"
+  },
+  "496": {
+    "standard": "I'll add some oranges and milk to the shopping list.",
+    "local": "I add oranges and milk to the list ah.",
+    "reason": "USER is established shopper; do not switch purchase responsibility to PEER.",
+    "id": "SYN-volume500-v1-full-109-02"
+  },
+  "498": {
+    "standard": "We agreed to team up, but let's confirm the final report partners on the official list.",
+    "local": "We said team up together, but check the official list for the final report first ah.",
+    "reason": "Distinguish personal team agreement from unknown final-report allocation.",
+    "id": "SYN-volume500-v1-full-110-00"
+  },
+  "501": {
+    "message_text": "Do you still have the umbrella I lent you?",
+    "reason": "Generated incoming-message repair: PEER lent umbrella to USER; remove contradictory I-borrowed direction.",
+    "id": "SYN-volume500-v1-full-110-03"
+  },
+  "504": {
+    "standard": "I'm checking the portal now. I'll confirm whether registration is closed.",
+    "local": "I check the portal now, then confirm registration closed already anot.",
+    "reason": "Promised check is not a known result; remove fabricated official closure.",
+    "id": "SYN-volume500-v1-full-111-02"
+  },
+  "505": {
+    "standard": "Do you have another way to pay, or should we choose something within your cash budget?",
+    "local": "Got another way to pay anot? If not, we find something within your cash budget.",
+    "reason": "Address cash constraint without inventing relative food prices.",
+    "id": "SYN-volume500-v1-full-111-03"
+  },
+  "507": {
+    "standard": "I can help check whether tickets are still available. What is your budget?",
+    "local": "I help check got tickets left anot. Your budget how much ah?",
+    "reason": "Do not assert inability to obtain another ticket without availability information.",
+    "id": "SYN-volume500-v1-full-112-01"
+  },
+  "508": {
+    "standard": "Which brand would you prefer? I can check what is available.",
+    "local": "You prefer which brand ah? I check what got available.",
+    "reason": "USER only saw tofu; remove invented organic purchase and sale.",
+    "id": "SYN-volume500-v1-full-112-02"
+  },
+  "509": {
+    "standard": "I may not be able to finish by tomorrow. Which sections need checking most urgently?",
+    "local": "Might not finish by tomorrow leh. Which parts most urgent?",
+    "reason": "Do not suggest an unspecified Friday as satisfying tomorrow deadline; negotiate scope.",
+    "id": "SYN-volume500-v1-full-112-03"
+  },
+  "513": {
+    "standard": "Could you send a photo so I can check whether the bag is mine?",
+    "local": "Can send a photo? I check if the bag mine anot.",
+    "reason": "Blue alone does not establish bag ownership.",
+    "id": "SYN-volume500-v1-full-113-03"
+  },
+  "514": {
+    "standard": "Could you send a photo of the cable so I can identify it?",
+    "local": "Can send a photo of the cable? I check if mine anot.",
+    "reason": "Remove unsupported confirmation of charger appearance.",
+    "id": "SYN-volume500-v1-full-114-00"
+  },
+  "516": {
+    "standard": "I'm not sure who might have it. I'll ask at the office again.",
+    "local": "Not sure who got it leh. I ask at the office again.",
+    "reason": "Avoid claiming an observation not present in context; maintain search task.",
+    "id": "SYN-volume500-v1-full-114-02"
+  },
+  "517": {
+    "standard": "I was only planning to stay in the lab until five. Could we arrange the handover before then?",
+    "local": "I only at the lab until five leh. Can hand over before five?",
+    "reason": "Respect USER stated five-o’clock departure instead of accepting5:30 without resolving it.",
+    "id": "SYN-volume500-v1-full-114-03"
+  },
+  "518": {
+    "standard": "Six might work if we finish before my shift. I'll confirm the exact timing.",
+    "local": "Six maybe can, but must finish before my shift. I confirm the timing first ah.",
+    "reason": "Respect existing shift constraint and avoid unverified later7pm counterproposal.",
+    "id": "SYN-volume500-v1-full-115-00"
+  },
+  "519": {
+    "standard": "I'll add the competitor analysis page and send the updated slides.",
+    "local": "I add the competitor analysis page then send the updated slides ah.",
+    "reason": "Fix omission without inventing forgetting or verification of file contents.",
+    "id": "SYN-volume500-v1-full-115-01"
+  },
+  "520": {
+    "local": "No need lah, the summary slide I handle.",
+    "reason": "Natural refusal of extra help while retaining USER ownership of summary.",
+    "id": "SYN-volume500-v1-full-115-02"
+  },
+  "521": {
+    "standard": "I'll check that we are finished with the projector and arrange its return before five.",
+    "local": "I check if we use finish already, then arrange to return before five.",
+    "reason": "Remove unsupported finished-use status while respecting return deadline.",
+    "id": "SYN-volume500-v1-full-116-00"
+  },
+  "523": {
+    "standard": "She can borrow it, but please return it to me by Friday as planned.",
+    "local": "She borrow can, but Friday must return me like we agreed ah.",
+    "reason": "Preserve original temporary loan deadline instead of unbounded keep/give permission.",
+    "id": "SYN-volume500-v1-full-116-02"
+  },
+  "528": {
+    "standard": "I'm not sure about the dress code. Let's check the event announcement.",
+    "local": "Not sure dress code what leh. Check the event announcement first.",
+    "reason": "Remove invented smart-casual permission and no-dress-code claim.",
+    "id": "SYN-volume500-v1-full-118-00"
+  },
+  "532": {
+    "standard": "I'm not sure which floor the lounge is on. Let's check the building directory.",
+    "local": "Not sure lounge at which floor leh. Check the building directory first.",
+    "reason": "Remove invented third-floor lift landmark.",
+    "id": "SYN-volume500-v1-full-119-00"
+  },
+  "534": {
+    "standard": "I'm not sure about its closing time. Let's check the café's hours.",
+    "local": "Not sure the café closes what time leh. Check the opening hours first.",
+    "reason": "Remove invented8pm closing time.",
+    "id": "SYN-volume500-v1-full-119-02"
+  },
+  "535": {
+    "standard": "Four doesn't work for me. Could we find another time?",
+    "local": "Four cannot for me leh. Find another time can?",
+    "reason": "Keep valid refusal without an invented lab-session explanation.",
+    "id": "SYN-volume500-v1-full-119-03"
+  },
+  "536": {
+    "standard": "I'm heading down with my ID. Could you tell the staff I'll collect it in person?",
+    "local": "I coming down with my ID. Can tell the staff I collect it myself?",
+    "reason": "Address stated ID requirement without inventing10-minute ETA.",
+    "id": "SYN-volume500-v1-full-120-01"
+  },
+  "537": {
+    "local": "Not sure due when leh. I check the portal first, then update you.",
+    "reason": "Repair stiff not-sure-the-date-one phrase.",
+    "id": "SYN-volume500-v1-full-120-02"
+  },
+  "538": {
+    "standard": "Could you handle the booking next time? I can help coordinate everyone’s availability.",
+    "local": "Next time you book can? I help ask everyone when free.",
+    "reason": "Remove invented logged-in app state while keeping counterproposal.",
+    "id": "SYN-volume500-v1-full-120-03"
+  },
+  "539": {
+    "standard": "I can't carry the microscope alone. Could someone help me with it?",
+    "local": "Microscope I cannot carry alone leh. Can ask someone to help?",
+    "reason": "Keep personal carrying limitation; avoid general claim no single person can carry it.",
+    "id": "SYN-volume500-v1-full-121-00"
+  },
+  "540": {
+    "standard": "He seems organised. Let’s agree on the tasks together.",
+    "local": "He quite organised. We discuss who does what first lah.",
+    "reason": "Use known organised description without inventing demonstrated group reliability.",
+    "id": "SYN-volume500-v1-full-121-01"
+  },
+  "542": {
+    "standard": "Could you check how many chairs are already there and bring extras if needed?",
+    "local": "Can check there got how many chairs first? Not enough then bring extras ah.",
+    "reason": "Remove invented sufficient chairs and unrequested snack swap.",
+    "id": "SYN-volume500-v1-full-121-03"
+  },
+  "543": {
+    "standard": "Could we look for another study area with more comfortable chairs?",
+    "local": "Then find another study area with more comfortable chairs can?",
+    "reason": "Remove invented exclusive outlet availability.",
+    "id": "SYN-volume500-v1-full-122-00"
+  },
+  "545": {
+    "standard": "How about going through the last module together this afternoon?",
+    "local": "This afternoon go through the last module together can?",
+    "reason": "Make newly introduced session time a proposal in both styles.",
+    "id": "SYN-volume500-v1-full-122-02"
+  },
+  "546": {
+    "standard": "I'll check the room booking to see whether it is available at three.",
+    "local": "I check the room booking first, see if three got slot anot.",
+    "reason": "Remove invented available-until-five booking result.",
+    "id": "SYN-volume500-v1-full-122-03"
+  },
+  "551": {
+    "context_speakers": [
+      "peer",
+      "user",
+      "peer",
+      "user",
+      "peer",
+      "user"
+    ],
+    "standard": "No worries, glad you found it. I won't need to bring mine then.",
+    "local": "No worries, found then good lah. I no need bring mine already.",
+    "reason": "Generated role repair: PEER needs charger, USER offers USB-C, PEER finds their own and cancels borrowing.",
+    "id": "SYN-volume500-v1-full-124-00"
+  },
+  "552": {
+    "id": "SYN-volume500-v1-full-124-01",
+    "local": "Okay, I bring some biscuits to share later.",
+    "reason": "Preserve specific biscuit-sharing plan across styles."
+  },
+  "554": {
+    "standard": "No thanks, I do not need eggs or milk right now. Shall we buy bread together next week?",
+    "local": "Eggs and milk I don’t need for now. Next week buy bread together can?",
+    "reason": "Make decline and alternative purchase clear rather than ambiguous I-am-good.",
+    "id": "SYN-volume500-v1-full-124-03"
+  },
+  "556": {
+    "standard": "I'll take the intro. Could you handle the Q&A?",
+    "local": "I do intro. You handle Q&A can?",
+    "reason": "Present additional PEER role as a request rather than unilateral instruction.",
+    "id": "SYN-volume500-v1-full-125-02"
+  },
+  "559": {
+    "standard": "Seven doesn't work for me. Could we arrange another time?",
+    "local": "Seven cannot for me leh. Find another time can?",
+    "reason": "Keep selectable refusal without invented home-by-six reason.",
+    "id": "SYN-volume500-v1-full-126-01"
+  },
+  "561": {
+    "standard": "Could we use the library printer as planned? I can send you the file again.",
+    "local": "Use the library printer like planned can? I send you the file again.",
+    "reason": "Personal ink shortage need not block planned library printing; remove invented lecture/ink-refill detour.",
+    "id": "SYN-volume500-v1-full-127-00"
+  },
+  "562": {
+    "standard": "We could start with stoichiometry since we both find it difficult.",
+    "local": "Start with stoichiometry lah, we both stuck there.",
+    "reason": "Use stated difficulty instead of inventing chapters4/5 assessment priority.",
+    "id": "SYN-volume500-v1-full-127-01"
+  },
+  "563": {
+    "standard": "Yes please, help handle logistics and equipment setup.",
+    "local": "Yes please, help with logistics and equipment setup ah.",
+    "reason": "Natural acceptance of offered help without stiff much-better wording or inflated lead role.",
+    "id": "SYN-volume500-v1-full-127-02"
+  },
+  "568": {
+    "standard": "Let me check whether the final PDF is available before printing.",
+    "local": "I check if got the final PDF first ah, then print.",
+    "reason": "Remove invented design-team dependency.",
+    "id": "SYN-volume500-v1-full-128-03"
+  },
+  "571": {
+    "local": "Can, four at the void deck.",
+    "reason": "Natural acceptance without repeated can framing.",
+    "id": "SYN-volume500-v1-full-129-02"
+  },
+  "576": {
+    "standard": "Let me check the ticket status and get back to you.",
+    "local": "I check the ticket status first, then reply you ah.",
+    "reason": "Ticket purchase result absent; do not assert failed purchase.",
+    "id": "SYN-volume500-v1-full-130-03"
+  },
+  "578": {
+    "standard": "I can't go before five because of my lecture. Could I send you the file to print instead?",
+    "local": "Before five cannot go, I in class leh. I send you the file for you to print can?",
+    "reason": "Preserve known until-five constraint without extending it to all day.",
+    "id": "SYN-volume500-v1-full-131-01"
+  },
+  "580": {
+    "standard": "I'll check my room. If it is there, I'll keep it aside for you.",
+    "local": "I check my room first. If got, I keep for you.",
+    "reason": "Make holding the bottle conditional on actually finding it.",
+    "id": "SYN-volume500-v1-full-131-03"
+  },
+  "585": {
+    "standard": "Tomorrow morning works for me. Where shall we meet?",
+    "local": "Tomorrow morning can. Meet where ah?",
+    "reason": "Remove invented usual meeting spot.",
+    "id": "SYN-volume500-v1-full-133-01"
+  },
+  "587": {
+    "standard": "Sure, I'll handle the intro. We can practise the other parts together.",
+    "local": "Can, I do intro. Other parts we practise together lah.",
+    "reason": "Accept requested intro role without unilaterally assigning technical speaking to struggling PEER.",
+    "id": "SYN-volume500-v1-full-133-03"
+  },
+  "588": {
+    "standard": "If the train works better for your route, it makes sense to take it.",
+    "local": "For your route train better then take train lor.",
+    "reason": "Remove unsupported general peak-hour reliability claim.",
+    "id": "SYN-volume500-v1-full-134-00"
+  },
+  "589": {
+    "standard": "Six works for me, but could we confirm that the shop will still be open?",
+    "local": "Six can, but confirm the shop still open anot first ah.",
+    "reason": "Remove invented foyer meeting point and check late pickup feasibility.",
+    "id": "SYN-volume500-v1-full-134-01"
+  },
+  "594": {
+    "standard": "I'm not sure whether registration is open. Let's check the club announcement.",
+    "local": "Not sure registration open already anot. Check the club announcement first.",
+    "reason": "Remove invented Friday10am portal opening.",
+    "id": "SYN-volume500-v1-full-135-02"
+  },
+  "595": {
+    "standard": "I'll stop the rehearsal in time to return it by five for the next booking.",
+    "local": "I stop rehearsal and return it by five. Next booking need to use mah.",
+    "reason": "Respect explicit hard return deadline instead of requesting an incompatible six-o’clock return.",
+    "id": "SYN-volume500-v1-full-136-01"
+  },
+  "596": {
+    "standard": "Let me check my bag. If I have it, I'll bring it to the library.",
+    "local": "I check my bag first. If with me, I bring to the library.",
+    "reason": "Power-bank possession not established; make return conditional on locating it.",
+    "id": "SYN-volume500-v1-full-136-02"
+  },
+  "598": {
+    "standard": "Let's try the café. Shall we check whether there is space?",
+    "local": "Café can. Check got space anot first?",
+    "reason": "Accept location change without assuming table-booking service or quieter conditions.",
+    "id": "SYN-volume500-v1-full-137-00"
+  },
+  "101": {
+    "id": "SYN-volume500-v1-full-000-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, lobby there meet you then."
+  },
+  "107": {
+    "id": "SYN-volume500-v1-full-002-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, I check the file then update you."
+  },
+  "108": {
+    "id": "SYN-volume500-v1-full-002-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check the booking first, then confirm four still got room anot."
+  },
+  "111": {
+    "id": "SYN-volume500-v1-full-003-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, collect already let me know."
+  },
+  "113": {
+    "id": "SYN-volume500-v1-full-003-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No need lah, you focus on the design. Text I handle."
+  },
+  "115": {
+    "id": "SYN-volume500-v1-full-004-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, send me your summary ah."
+  },
+  "117": {
+    "id": "SYN-volume500-v1-full-004-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check the intro first, then reply you ah."
+  },
+  "118": {
+    "id": "SYN-volume500-v1-full-005-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I add the QR code and change it to navy blue."
+  },
+  "119": {
+    "id": "SYN-volume500-v1-full-005-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, both I do. You get the snacks later ah."
+  },
+  "121": {
+    "id": "SYN-volume500-v1-full-005-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Saturday morning can, shift to then lah."
+  },
+  "122": {
+    "id": "SYN-volume500-v1-full-006-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, next week then catch up."
+  },
+  "124": {
+    "id": "SYN-volume500-v1-full-006-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I get some chips for you."
+  },
+  "125": {
+    "id": "SYN-volume500-v1-full-006-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, you book tickets, I get popcorn."
+  },
+  "127": {
+    "id": "SYN-volume500-v1-full-007-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Eight thirty can? Then can finish earlier."
+  },
+  "129": {
+    "id": "SYN-volume500-v1-full-008-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, add finish then let me know."
+  },
+  "130": {
+    "id": "SYN-volume500-v1-full-008-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, three at the foyer."
+  },
+  "131": {
+    "id": "SYN-volume500-v1-full-008-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks for helping with the chapter summary also ah."
+  },
+  "132": {
+    "id": "SYN-volume500-v1-full-008-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I go lecture hall then."
+  },
+  "136": {
+    "id": "SYN-volume500-v1-full-010-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I help get your coffee also."
+  },
+  "138": {
+    "id": "SYN-volume500-v1-full-010-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I leave the projector at the front desk instead."
+  },
+  "139": {
+    "id": "SYN-volume500-v1-full-011-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, we do the data analysis together first."
+  },
+  "141": {
+    "id": "SYN-volume500-v1-full-011-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Understand lah, you got other things to handle."
+  },
+  "142": {
+    "id": "SYN-volume500-v1-full-011-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check the content first, then update you ah."
+  },
+  "143": {
+    "id": "SYN-volume500-v1-full-012-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check the draft first, then tell you if the font size okay."
+  },
+  "145": {
+    "id": "SYN-volume500-v1-full-012-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Paiseh, I using the power bank now, cannot lend."
+  },
+  "146": {
+    "id": "SYN-volume500-v1-full-012-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, come join for the last hour lah."
+  },
+  "147": {
+    "id": "SYN-volume500-v1-full-013-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Haven’t got them yet leh. I check my folder first."
+  },
+  "151": {
+    "id": "SYN-volume500-v1-full-014-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Running also can. Track there meet lah."
+  },
+  "152": {
+    "id": "SYN-volume500-v1-full-014-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Oh okay, I go locker collect then."
+  },
+  "155": {
+    "id": "SYN-volume500-v1-full-015-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Shuttlecocks I can help order also. Need how many ah?"
+  },
+  "157": {
+    "id": "SYN-volume500-v1-full-015-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, five A4 copies, black and white."
+  },
+  "158": {
+    "id": "SYN-volume500-v1-full-016-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Then focus on the practice questions in that slide deck first lah."
+  },
+  "159": {
+    "id": "SYN-volume500-v1-full-016-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, you take the conclusion slides also."
+  },
+  "163": {
+    "id": "SYN-volume500-v1-full-019-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Library I cannot go leh, but I can leave it at the CCA room."
+  },
+  "167": {
+    "id": "SYN-volume500-v1-full-020-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, go downstairs buy together lah."
+  },
+  "168": {
+    "id": "SYN-volume500-v1-full-020-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, bring up then I keep for you first."
+  },
+  "170": {
+    "id": "SYN-volume500-v1-full-020-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Paiseh, I already got another project group."
+  },
+  "171": {
+    "id": "SYN-volume500-v1-full-021-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay lah, you go rest first."
+  },
+  "172": {
+    "id": "SYN-volume500-v1-full-021-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I go check lost and found then."
+  },
+  "175": {
+    "id": "SYN-volume500-v1-full-022-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I go concierge collect for you later."
+  },
+  "176": {
+    "id": "SYN-volume500-v1-full-022-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I tell them we take five then."
+  },
+  "178": {
+    "id": "SYN-volume500-v1-full-022-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not yet leh, still looking through my bag."
+  },
+  "180": {
+    "id": "SYN-volume500-v1-full-023-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Maybe someone borrowed liao. I check the catalogue first."
+  },
+  "182": {
+    "id": "SYN-volume500-v1-full-023-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Next Tuesday can, see you then."
+  },
+  "185": {
+    "id": "SYN-volume500-v1-full-025-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks for spotting ah, I fix the typos in the conclusion."
+  },
+  "186": {
+    "id": "SYN-volume500-v1-full-025-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Confirm, three of us for this project."
+  },
+  "187": {
+    "id": "SYN-volume500-v1-full-025-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, cook finish remember to clean the stove ah."
+  },
+  "189": {
+    "id": "SYN-volume500-v1-full-026-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "You hold the umbrella, I walk under."
+  },
+  "190": {
+    "id": "SYN-volume500-v1-full-026-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I send here in the chat lah."
+  },
+  "191": {
+    "id": "SYN-volume500-v1-full-027-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Yes please, send me ah. Will help with my revision."
+  },
+  "192": {
+    "id": "SYN-volume500-v1-full-027-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check with the treasurer first, then tell you the budget."
+  },
+  "195": {
+    "id": "SYN-volume500-v1-full-028-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Then watch that horror one lah."
+  },
+  "197": {
+    "id": "SYN-volume500-v1-full-028-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Social media posts I can handle also."
+  },
+  "198": {
+    "id": "SYN-volume500-v1-full-028-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, main gate meet."
+  },
+  "199": {
+    "id": "SYN-volume500-v1-full-029-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Friday can, but must finish the edits by then ah."
+  },
+  "200": {
+    "id": "SYN-volume500-v1-full-029-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, all the best for your quiz tomorrow ah."
+  },
+  "201": {
+    "id": "SYN-volume500-v1-full-029-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Intro first lah, save some time."
+  },
+  "202": {
+    "id": "SYN-volume500-v1-full-029-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, collect already let me know ah."
+  },
+  "203": {
+    "id": "SYN-volume500-v1-full-030-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Eight can, book that slot lah."
+  },
+  "206": {
+    "id": "SYN-volume500-v1-full-030-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, tonight I go collect it myself then."
+  },
+  "209": {
+    "id": "SYN-volume500-v1-full-031-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tickets I book. You tell me what time ah."
+  },
+  "211": {
+    "id": "SYN-volume500-v1-full-032-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, seven then. See you!"
+  },
+  "212": {
+    "id": "SYN-volume500-v1-full-032-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Aiyoh, then chicken rice instead lah."
+  },
+  "215": {
+    "id": "SYN-volume500-v1-full-033-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Seven full already, find another time lah."
+  },
+  "217": {
+    "id": "SYN-volume500-v1-full-033-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Today I really busy leh. Can you help with the methodology instead?"
+  },
+  "219": {
+    "id": "SYN-volume500-v1-full-034-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, I check the folder now."
+  },
+  "220": {
+    "id": "SYN-volume500-v1-full-034-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "The café near the library can?"
+  },
+  "223": {
+    "id": "SYN-volume500-v1-full-035-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Four can, see you at the library."
+  },
+  "224": {
+    "id": "SYN-volume500-v1-full-035-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Lunch can, go canteen instead lah."
+  },
+  "226": {
+    "id": "SYN-volume500-v1-full-035-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tuesday can, book that slot then."
+  },
+  "229": {
+    "id": "SYN-volume500-v1-full-036-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, three at the library then."
+  },
+  "231": {
+    "id": "SYN-volume500-v1-full-037-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I fix the font on page two."
+  },
+  "233": {
+    "id": "SYN-volume500-v1-full-037-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, tonight I book the tickets for us."
+  },
+  "235": {
+    "id": "SYN-volume500-v1-full-038-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, five thirty I meet you at the library instead."
+  },
+  "236": {
+    "id": "SYN-volume500-v1-full-038-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tomorrow morning can. What time ah?"
+  },
+  "239": {
+    "id": "SYN-volume500-v1-full-039-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I help carry your water bottles."
+  },
+  "241": {
+    "id": "SYN-volume500-v1-full-039-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I send the summary only. Slides too big."
+  },
+  "242": {
+    "id": "SYN-volume500-v1-full-040-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Ah thanks, I go check the lobby now."
+  },
+  "244": {
+    "id": "SYN-volume500-v1-full-040-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, charcoal sticks I go get."
+  },
+  "248": {
+    "id": "SYN-volume500-v1-full-041-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries. Sunday can help for one hour instead?"
+  },
+  "250": {
+    "id": "SYN-volume500-v1-full-042-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, eggs and milk only then."
+  },
+  "251": {
+    "id": "SYN-volume500-v1-full-042-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can help, tell me when to start ah."
+  },
+  "253": {
+    "id": "SYN-volume500-v1-full-043-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Ya lah, I also go check the bus timings for my route."
+  },
+  "255": {
+    "id": "SYN-volume500-v1-full-044-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, two copies then. The rest see from your laptop."
+  },
+  "259": {
+    "id": "SYN-volume500-v1-full-045-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Four can, thanks for updating the calendar ah."
+  },
+  "260": {
+    "id": "SYN-volume500-v1-full-045-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, see you at the gate then."
+  },
+  "262": {
+    "id": "SYN-volume500-v1-full-045-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Didn’t see leh, but I help keep a lookout."
+  },
+  "263": {
+    "id": "SYN-volume500-v1-full-046-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Ya, I think I stay home and rest instead."
+  },
+  "266": {
+    "id": "SYN-volume500-v1-full-046-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tomorrow morning cannot, four in the afternoon can anot?"
+  },
+  "267": {
+    "id": "SYN-volume500-v1-full-047-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, I go down collect now."
+  },
+  "269": {
+    "id": "SYN-volume500-v1-full-047-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, data analysis I take. I start on it first."
+  },
+  "270": {
+    "id": "SYN-volume500-v1-full-047-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Confirm coming, see you at the registration booth."
+  },
+  "271": {
+    "id": "SYN-volume500-v1-full-048-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Three better, book that slot lah."
+  },
+  "272": {
+    "id": "SYN-volume500-v1-full-048-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, next one then catch up."
+  },
+  "273": {
+    "id": "SYN-volume500-v1-full-048-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, I go download the PDF now."
+  },
+  "275": {
+    "id": "SYN-volume500-v1-full-049-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I only got one umbrella, but can share mine."
+  },
+  "276": {
+    "id": "SYN-volume500-v1-full-049-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure leh, haven’t checked that side yet."
+  },
+  "277": {
+    "id": "SYN-volume500-v1-full-049-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Friday can, aim for that then."
+  },
+  "278": {
+    "id": "SYN-volume500-v1-full-049-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Now cannot do leh, but later I can help check your draft."
+  },
+  "279": {
+    "id": "SYN-volume500-v1-full-050-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Good lah. Let me know if they fix it tomorrow."
+  },
+  "281": {
+    "id": "SYN-volume500-v1-full-050-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Notes I can do, you handle the attendance list ah."
+  },
+  "285": {
+    "id": "SYN-volume500-v1-full-051-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Ready already then good lah, free then go collect."
+  },
+  "288": {
+    "id": "SYN-volume500-v1-full-052-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Six can. We finish by seven thirty ah."
+  },
+  "291": {
+    "id": "SYN-volume500-v1-full-053-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Regular butter flavour can?"
+  },
+  "292": {
+    "id": "SYN-volume500-v1-full-053-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check the booking details first, then tell you about the projector."
+  },
+  "294": {
+    "id": "SYN-volume500-v1-full-054-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, return to me by four ah."
+  },
+  "295": {
+    "id": "SYN-volume500-v1-full-054-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "White background can. I update the file now."
+  },
+  "296": {
+    "id": "SYN-volume500-v1-full-054-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Seven cannot leh. Eight can anot?"
+  },
+  "299": {
+    "id": "SYN-volume500-v1-full-055-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I finish this summary first, then help you with the last chapter."
+  },
+  "300": {
+    "id": "SYN-volume500-v1-full-055-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, I go check near the bin for your bottle."
+  },
+  "303": {
+    "id": "SYN-volume500-v1-full-056-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tampines still can, see you there later."
+  },
+  "309": {
+    "id": "SYN-volume500-v1-full-058-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can help me pick up the umbrella? Thanks ah."
+  },
+  "310": {
+    "id": "SYN-volume500-v1-full-058-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Aiyoh, I was craving their soup leh."
+  },
+  "312": {
+    "id": "SYN-volume500-v1-full-058-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, finish the conclusion then send over ah."
+  },
+  "313": {
+    "id": "SYN-volume500-v1-full-059-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries. Friday can help with prep instead?"
+  },
+  "316": {
+    "id": "SYN-volume500-v1-full-060-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure can extend the deadline anot. I check with the committee first."
+  },
+  "317": {
+    "id": "SYN-volume500-v1-full-060-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I upload it to the shared drive once I’m done."
+  },
+  "321": {
+    "id": "SYN-volume500-v1-full-061-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I busy until six leh. Six thirty meet can?"
+  },
+  "322": {
+    "id": "SYN-volume500-v1-full-061-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Paiseh, the power bank not with me."
+  },
+  "325": {
+    "id": "SYN-volume500-v1-full-062-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, five thirty I pick you up at the station instead."
+  },
+  "326": {
+    "id": "SYN-volume500-v1-full-062-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Sunday also can, go then lah."
+  },
+  "330": {
+    "id": "SYN-volume500-v1-full-064-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure studio opens what time leh. I check the booking first."
+  },
+  "331": {
+    "id": "SYN-volume500-v1-full-064-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, bibliography I handle also."
+  },
+  "332": {
+    "id": "SYN-volume500-v1-full-064-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Two cannot leh, but I can get them ready by five."
+  },
+  "335": {
+    "id": "SYN-volume500-v1-full-065-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Send me the notes first, then I can highlight those parts."
+  },
+  "336": {
+    "id": "SYN-volume500-v1-full-065-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, free then send me the photos."
+  },
+  "339": {
+    "id": "SYN-volume500-v1-full-066-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can print now, thanks ah."
+  },
+  "340": {
+    "id": "SYN-volume500-v1-full-066-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I go book the room first."
+  },
+  "345": {
+    "id": "SYN-volume500-v1-full-068-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Start setting up first lah, wait for him to join."
+  },
+  "347": {
+    "id": "SYN-volume500-v1-full-068-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I rather do the editing. You help pick the best photos can?"
+  },
+  "351": {
+    "id": "SYN-volume500-v1-full-070-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check the sports hub got another court free anot first."
+  },
+  "353": {
+    "id": "SYN-volume500-v1-full-070-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, logistics and transport I handle also."
+  },
+  "355": {
+    "id": "SYN-volume500-v1-full-071-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I add dumplings to your laksa order."
+  },
+  "357": {
+    "id": "SYN-volume500-v1-full-071-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Four can, see you then."
+  },
+  "359": {
+    "id": "SYN-volume500-v1-full-072-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No need lah, later I go print mine myself."
+  },
+  "360": {
+    "id": "SYN-volume500-v1-full-072-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, shift to four thirty instead."
+  },
+  "363": {
+    "id": "SYN-volume500-v1-full-073-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Extra chilli for me please, thanks ah."
+  },
+  "365": {
+    "id": "SYN-volume500-v1-full-073-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can fit lah, umbrella quite big."
+  },
+  "366": {
+    "id": "SYN-volume500-v1-full-074-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Yes please, help book the tickets for us ah."
+  },
+  "367": {
+    "id": "SYN-volume500-v1-full-074-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Sunday can, meet then lah."
+  },
+  "368": {
+    "id": "SYN-volume500-v1-full-074-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Saturday cannot leh. Sunday morning can anot?"
+  },
+  "371": {
+    "id": "SYN-volume500-v1-full-075-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tomorrow’s notes I can take."
+  },
+  "372": {
+    "id": "SYN-volume500-v1-full-075-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Haven’t checked the bin leh, I go now."
+  },
+  "373": {
+    "id": "SYN-volume500-v1-full-075-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I send the performer photos only, no crowd shots."
+  },
+  "379": {
+    "id": "SYN-volume500-v1-full-077-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, four at the library instead."
+  },
+  "380": {
+    "id": "SYN-volume500-v1-full-077-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, free then send me the notes ah."
+  },
+  "381": {
+    "id": "SYN-volume500-v1-full-077-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, use until end of today then return me ah."
+  },
+  "382": {
+    "id": "SYN-volume500-v1-full-078-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Water only lah, I get it with the groceries."
+  },
+  "384": {
+    "id": "SYN-volume500-v1-full-078-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tonight after six anytime can come over."
+  },
+  "386": {
+    "id": "SYN-volume500-v1-full-079-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, conclusion slides I handle then."
+  },
+  "387": {
+    "id": "SYN-volume500-v1-full-079-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Maybe leh. I check the printer area next."
+  },
+  "388": {
+    "id": "SYN-volume500-v1-full-079-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure what time leh. I check the schedule first."
+  },
+  "389": {
+    "id": "SYN-volume500-v1-full-079-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I help buy two bowls while you finish your report."
+  },
+  "391": {
+    "id": "SYN-volume500-v1-full-080-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I get plain white paper then."
+  },
+  "393": {
+    "id": "SYN-volume500-v1-full-080-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No lah, I going Jurong East for gym first."
+  },
+  "395": {
+    "id": "SYN-volume500-v1-full-081-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I driving, I pick you up."
+  },
+  "397": {
+    "id": "SYN-volume500-v1-full-081-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I let the others know we’re changing to the indoor court."
+  },
+  "398": {
+    "id": "SYN-volume500-v1-full-082-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Chicken rice can, try that stall lah."
+  },
+  "399": {
+    "id": "SYN-volume500-v1-full-083-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, Saturday afternoon coffee then."
+  },
+  "401": {
+    "id": "SYN-volume500-v1-full-083-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I handle the merchandise booth then."
+  },
+  "403": {
+    "id": "SYN-volume500-v1-full-084-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Courtyard bigger, move there can fit more tables."
+  },
+  "404": {
+    "id": "SYN-volume500-v1-full-084-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I go straight to the gym for practice."
+  },
+  "405": {
+    "id": "SYN-volume500-v1-full-084-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Markers arrive then let me know ah, I go collect."
+  },
+  "406": {
+    "id": "SYN-volume500-v1-full-085-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Six cannot leh. Tomorrow morning can?"
+  },
+  "407": {
+    "id": "SYN-volume500-v1-full-085-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I print five copies for you this afternoon."
+  },
+  "411": {
+    "id": "SYN-volume500-v1-full-086-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Ya, use last night’s slide then."
+  },
+  "414": {
+    "id": "SYN-volume500-v1-full-087-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I pick you up at the station exit."
+  },
+  "415": {
+    "id": "SYN-volume500-v1-full-087-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, café there meet instead lah."
+  },
+  "416": {
+    "id": "SYN-volume500-v1-full-088-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Then keep the tripod first lah, no need return it today."
+  },
+  "417": {
+    "id": "SYN-volume500-v1-full-088-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, two at the canteen instead."
+  },
+  "418": {
+    "id": "SYN-volume500-v1-full-088-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, before eight I return your umbrella."
+  },
+  "420": {
+    "id": "SYN-volume500-v1-full-089-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, send the final file to the print shop."
+  },
+  "421": {
+    "id": "SYN-volume500-v1-full-089-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No problem, stick to the original plan then."
+  },
+  "422": {
+    "id": "SYN-volume500-v1-full-089-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tonight cannot leh, next week I join."
+  },
+  "423": {
+    "id": "SYN-volume500-v1-full-089-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I fix the wrong markings before we start again."
+  },
+  "425": {
+    "id": "SYN-volume500-v1-full-090-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "You help with the printing can? Thanks ah."
+  },
+  "427": {
+    "id": "SYN-volume500-v1-full-090-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Paiseh, our group full already."
+  },
+  "428": {
+    "id": "SYN-volume500-v1-full-091-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure they accept late entries anot. I check if got waiting list."
+  },
+  "430": {
+    "id": "SYN-volume500-v1-full-091-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure what time start leh. I check the schedule first, then tell you."
+  },
+  "431": {
+    "id": "SYN-volume500-v1-full-091-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, data analysis I do."
+  },
+  "432": {
+    "id": "SYN-volume500-v1-full-092-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, share your umbrella then. Thanks ah."
+  },
+  "435": {
+    "id": "SYN-volume500-v1-full-093-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, you take the slides also. Thanks ah."
+  },
+  "436": {
+    "id": "SYN-volume500-v1-full-093-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I can lead if everyone okay."
+  },
+  "438": {
+    "id": "SYN-volume500-v1-full-094-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, tell me which parts you need help with ah."
+  },
+  "442": {
+    "id": "SYN-volume500-v1-full-095-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, check with the group then update me."
+  },
+  "444": {
+    "id": "SYN-volume500-v1-full-096-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I want to join, but I got class right after this leh."
+  },
+  "445": {
+    "id": "SYN-volume500-v1-full-096-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Paiseh, I using the power bank to charge my laptop now."
+  },
+  "452": {
+    "id": "SYN-volume500-v1-full-098-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Send what you got first, I find the missing part elsewhere."
+  },
+  "453": {
+    "id": "SYN-volume500-v1-full-098-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I mean the first example one lah."
+  },
+  "454": {
+    "id": "SYN-volume500-v1-full-098-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Go now lah, can finish earlier."
+  },
+  "457": {
+    "id": "SYN-volume500-v1-full-099-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, sign up for dance club then."
+  },
+  "458": {
+    "id": "SYN-volume500-v1-full-099-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Eight can, thanks for the lift ah."
+  },
+  "459": {
+    "id": "SYN-volume500-v1-full-099-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Didn’t see leh, but I help check lost and found."
+  },
+  "460": {
+    "id": "SYN-volume500-v1-full-100-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Level three study area meet can?"
+  },
+  "464": {
+    "id": "SYN-volume500-v1-full-101-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Library I cannot go leh. Find a study room instead can?"
+  },
+  "465": {
+    "id": "SYN-volume500-v1-full-101-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, shift from three to four then."
+  },
+  "466": {
+    "id": "SYN-volume500-v1-full-101-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No umbrella leh. Wait for the rain to stop first?"
+  },
+  "467": {
+    "id": "SYN-volume500-v1-full-101-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I go find a table near the window for us."
+  },
+  "469": {
+    "id": "SYN-volume500-v1-full-102-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I shorten it to under two thousand words."
+  },
+  "470": {
+    "id": "SYN-volume500-v1-full-102-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I busy with another module leh, but can help with the text."
+  },
+  "472": {
+    "id": "SYN-volume500-v1-full-103-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Ya, snacks and drinks first lah."
+  },
+  "473": {
+    "id": "SYN-volume500-v1-full-103-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, I help carry your suitcase to the lobby."
+  },
+  "475": {
+    "id": "SYN-volume500-v1-full-103-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Four can, if we’re collecting tomorrow."
+  },
+  "480": {
+    "id": "SYN-volume500-v1-full-105-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, four chairs and two tables. I arrange."
+  },
+  "482": {
+    "id": "SYN-volume500-v1-full-105-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Oh ya, the stall near the library."
+  },
+  "484": {
+    "id": "SYN-volume500-v1-full-106-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks for the update ah. I ask if anyone knows the dress code."
+  },
+  "487": {
+    "id": "SYN-volume500-v1-full-107-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Four can, see you then."
+  },
+  "488": {
+    "id": "SYN-volume500-v1-full-107-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Haven’t seen the link leh, send me can?"
+  },
+  "491": {
+    "id": "SYN-volume500-v1-full-108-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I taking bus today leh, but can walk with you if you want."
+  },
+  "494": {
+    "id": "SYN-volume500-v1-full-109-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Sunday can, go then lah."
+  },
+  "495": {
+    "id": "SYN-volume500-v1-full-109-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I go East Coast Park instead."
+  },
+  "497": {
+    "id": "SYN-volume500-v1-full-109-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, stage directions I handle. You focus on the lines."
+  },
+  "499": {
+    "id": "SYN-volume500-v1-full-110-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, South Wing gate instead."
+  },
+  "500": {
+    "id": "SYN-volume500-v1-full-110-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, tidy finish then send me ah."
+  },
+  "502": {
+    "id": "SYN-volume500-v1-full-111-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Second floor near the study pods can?"
+  },
+  "503": {
+    "id": "SYN-volume500-v1-full-111-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "If I go, I help you take photos."
+  },
+  "506": {
+    "id": "SYN-volume500-v1-full-112-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Cannot leh, I already on the way to the library."
+  },
+  "510": {
+    "id": "SYN-volume500-v1-full-113-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Then I print single-sided lah."
+  },
+  "511": {
+    "id": "SYN-volume500-v1-full-113-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No frying then I boil noodles instead lah."
+  },
+  "512": {
+    "id": "SYN-volume500-v1-full-113-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay lah, I go buy a new plank from the hardware shop then."
+  },
+  "515": {
+    "id": "SYN-volume500-v1-full-114-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can help book for us? Thanks ah."
+  },
+  "522": {
+    "id": "SYN-volume500-v1-full-116-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Today cannot leh, tomorrow morning I bring it over."
+  },
+  "524": {
+    "id": "SYN-volume500-v1-full-117-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, see you at the venue directly."
+  },
+  "525": {
+    "id": "SYN-volume500-v1-full-117-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No rush lah, I wait for you to finish."
+  },
+  "526": {
+    "id": "SYN-volume500-v1-full-117-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Yes please, check got seats left anot then let me know."
+  },
+  "527": {
+    "id": "SYN-volume500-v1-full-117-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can help book. Later send me your pickup location ah."
+  },
+  "529": {
+    "id": "SYN-volume500-v1-full-118-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Thanks ah, I submit now."
+  },
+  "530": {
+    "id": "SYN-volume500-v1-full-118-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Too late for me leh. Can ask someone to collect before six?"
+  },
+  "531": {
+    "id": "SYN-volume500-v1-full-118-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, reach then I leave it at your door."
+  },
+  "533": {
+    "id": "SYN-volume500-v1-full-119-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, clay I go buy. You get the brushes ah."
+  },
+  "541": {
+    "id": "SYN-volume500-v1-full-121-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I need catch the bus leh, this time cannot walk with you."
+  },
+  "544": {
+    "id": "SYN-volume500-v1-full-122-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, I check the updated graphs first."
+  },
+  "547": {
+    "id": "SYN-volume500-v1-full-123-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Wednesday can, shift the session then."
+  },
+  "548": {
+    "id": "SYN-volume500-v1-full-123-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I heading out now leh, tomorrow morning I help check."
+  },
+  "549": {
+    "id": "SYN-volume500-v1-full-123-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I check the room features online first, see got whiteboard anot."
+  },
+  "550": {
+    "id": "SYN-volume500-v1-full-123-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Eight can, go ahead and book that slot."
+  },
+  "553": {
+    "id": "SYN-volume500-v1-full-124-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I can help take over his part of the experiment."
+  },
+  "557": {
+    "id": "SYN-volume500-v1-full-125-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Confirm, Friday I coming."
+  },
+  "558": {
+    "id": "SYN-volume500-v1-full-126-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tomorrow one at the shop can?"
+  },
+  "560": {
+    "id": "SYN-volume500-v1-full-126-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Ya, I add clay to the supply list."
+  },
+  "564": {
+    "id": "SYN-volume500-v1-full-127-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Tomorrow afternoon I free, can rehearse then."
+  },
+  "565": {
+    "id": "SYN-volume500-v1-full-128-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, eight at the studio instead."
+  },
+  "566": {
+    "id": "SYN-volume500-v1-full-128-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Today really cannot make it leh, paiseh."
+  },
+  "567": {
+    "id": "SYN-volume500-v1-full-128-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Still with me, tonight I return it to the committee room."
+  },
+  "569": {
+    "id": "SYN-volume500-v1-full-129-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "I coming out from Exit A."
+  },
+  "570": {
+    "id": "SYN-volume500-v1-full-129-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Confirm chicken rice, let’s go."
+  },
+  "572": {
+    "id": "SYN-volume500-v1-full-129-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No need call lah, later I check again."
+  },
+  "573": {
+    "id": "SYN-volume500-v1-full-130-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, see you at the café instead."
+  },
+  "574": {
+    "id": "SYN-volume500-v1-full-130-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Okay, Friday by six I reach."
+  },
+  "575": {
+    "id": "SYN-volume500-v1-full-130-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, PPT design I handle, you do research."
+  },
+  "577": {
+    "id": "SYN-volume500-v1-full-131-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, library there meet instead."
+  },
+  "579": {
+    "id": "SYN-volume500-v1-full-131-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Today I follow up with the treasurer, get it signed before the deadline."
+  },
+  "581": {
+    "id": "SYN-volume500-v1-full-132-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Entrance better for visibility, take that spot lah."
+  },
+  "582": {
+    "id": "SYN-volume500-v1-full-132-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can, three chicken rice and two laksa. I order now."
+  },
+  "583": {
+    "id": "SYN-volume500-v1-full-132-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Six can, help me collect then ah."
+  },
+  "584": {
+    "id": "SYN-volume500-v1-full-133-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "No worries, chicken rice then, save some money."
+  },
+  "586": {
+    "id": "SYN-volume500-v1-full-133-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Yes please, include my graphs in the final layout also."
+  },
+  "590": {
+    "id": "SYN-volume500-v1-full-134-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Library full already, café instead can?"
+  },
+  "591": {
+    "id": "SYN-volume500-v1-full-134-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Nice lah, want company then let me know."
+  },
+  "592": {
+    "id": "SYN-volume500-v1-full-135-00",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can send the analysis part first? I start putting it into the slides."
+  },
+  "593": {
+    "id": "SYN-volume500-v1-full-135-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure who got it leh. I check lost and found first."
+  },
+  "597": {
+    "id": "SYN-volume500-v1-full-136-03",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Not sure still open on Tuesdays anot. I check their page first."
+  },
+  "599": {
+    "id": "SYN-volume500-v1-full-137-01",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Can help with stage deco? I handle the sound check."
+  },
+  "600": {
+    "id": "SYN-volume500-v1-full-137-02",
+    "reason": "Natural conversational Singlish phrasing; preserve reply intention and stated facts.",
+    "local": "Around seven I reach, like we said."
+  },
+  "140": {
+    "id": "SYN-volume500-v1-full-011-01",
+    "standard": "Okay, keep your charger until you are done. Could I borrow it after four?",
+    "local": "Okay, you use your charger first. After four then lend me can?",
+    "reason": "Respect latest owner needing charger until4; do not promise a contradictory3pm return."
+  },
+  "350": {
+    "id": "SYN-volume500-v1-full-069-02",
+    "message_text": "Can we still walk together? I will use my raincoat.",
+    "standard": "Sure, we can walk together. I will use my umbrella.",
+    "local": "Can, walk together lah. I use my umbrella, you use your raincoat.",
+    "reason": "Generated incoming-message repair: PEER owns raincoat and USER owns umbrella; remove unexplained second umbrella offer."
+  },
+  "481": {
+    "id": "SYN-volume500-v1-full-105-02",
+    "message_text": "I just saw your parcel at the concierge. Can you come down to collect it?",
+    "standard": "Yes, I can go down and collect my parcel.",
+    "local": "Can, I go down collect my parcel myself.",
+    "reason": "Generated incoming-message repair: keep USER parcel ownership and PEER inability to deliver upstairs consistent."
+  },
+  "555": {
+    "id": "SYN-volume500-v1-full-125-00",
+    "standard": "See you at the library. I will bring the notes as planned.",
+    "local": "See you at the library, I bring the notes like we said.",
+    "reason": "Keep established notes commitment without inventing current on-the-way status."
+  }
+}

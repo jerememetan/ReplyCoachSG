@@ -1,0 +1,56 @@
+{
+  "created_at_utc": "2026-11-07T11:14:41.988402+00:00",
+  "scope": "User recalls stronger English/LOCAL differentiation in older mT5; compare exact-copy frequency on SAME50 reused validation cases.",
+  "old": {
+    "model": "shared_intent_v1 rewrite_s1 finalstep784",
+    "job_id": 351130,
+    "decoding": "beam4/no_repeat_ngram3/max48",
+    "pipeline": "Generate STANDARD then anchored LOCAL rewrite",
+    "initialization": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best",
+    "method": "lora",
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.1,
+      "targets": [
+        "q",
+        "v"
+      ]
+    },
+    "exact_copies": 4,
+    "cases": 50
+  },
+  "new": {
+    "model": "mt5_matched_full_v1 task425 bestepoch8",
+    "job_id": 356230,
+    "pipeline": "Independent direct STANDARD and LOCAL with style prefix",
+    "initialization": "Original google/mt5-base then fresh public117634 LoRA",
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05,
+      "target_modules": [
+        "q",
+        "k",
+        "v",
+        "o",
+        "wi_0",
+        "wi_1",
+        "wo"
+      ]
+    },
+    "decoding": "greedy orbeam4/no_repeat_ngram3/max64",
+    "exact_copies_by_decoding": {
+      "greedy": 41,
+      "beam4": 32
+    },
+    "cases": 50
+  },
+  "conclusion": "Current direct model regressed substantially on style differentiation relative to earlier anchored pipeline. Do not present current samples as continuation of old checkpoint or evidence old mT5 could not differentiate styles.",
+  "causal_limits": "Initialization,data,LoRA setup,training budget,input task andgeneration cap differ. Exact copying is a style diagnostic,not human semantic accuracy; this comparison does not isolate a single cause.",
+  "source_sha256": {
+    "artifacts/shared_intent_v1/seeds12/rewrite_s1.json": "782f49f3c131e5295a244d523a798efcd4bbef444beebaf141f86b7fdabb09aa",
+    "artifacts/mt5_matched_full_v1/results.json": "9cf9a50a883f82893747d0a49ce02305254fad86b6a03732545bfc24fa670f60"
+  },
+  "default_changed": false
+}

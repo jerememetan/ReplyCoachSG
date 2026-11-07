@@ -1,0 +1,711 @@
+{
+  "status": "complete",
+  "seed": 426,
+  "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_standard_val_v1/artifacts/full_lr3e4/best",
+  "sampling": {
+    "do_sample": true,
+    "num_beams": 1,
+    "num_return_sequences": 4,
+    "temperature": 0.8,
+    "top_p": 0.9,
+    "max_new_tokens": 48
+  },
+  "results": [
+    {
+      "item_id": "ONPOLICY2-001",
+      "category": "time",
+      "context": [
+        "What time does your class finish?",
+        "It finishes at17:20. I cannot meet before17:20."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could we meet at16:45?",
+      "id": "ONPOLICY2-001-S1",
+      "draft": "I cannot make it at five. Could we meet at two thirty?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-001",
+      "category": "time",
+      "context": [
+        "What time does your class finish?",
+        "It finishes at17:20. I cannot meet before17:20."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could we meet at16:45?",
+      "id": "ONPOLICY2-001-S2",
+      "draft": "That works for me. See you then.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-001",
+      "category": "time",
+      "context": [
+        "What time does your class finish?",
+        "It finishes at17:20. I cannot meet before17:20."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could we meet at16:45?",
+      "id": "ONPOLICY2-001-S3",
+      "draft": "That works for me. Let's meet at the front desk.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-001",
+      "category": "time",
+      "context": [
+        "What time does your class finish?",
+        "It finishes at17:20. I cannot meet before17:20."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Could we meet at16:45?",
+      "id": "ONPOLICY2-001-S4",
+      "draft": "I cannot make it for the next day. Could we meet at the early morning?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-002",
+      "category": "time",
+      "context": [
+        "I have to leave the cafe by14:10 to catch my bus."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can you stay at the cafe until14:45?",
+      "id": "ONPOLICY2-002-S1",
+      "draft": "I cannot stay at the cafe until tomorrow. Could we meet there after tomorrow?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-002",
+      "category": "time",
+      "context": [
+        "I have to leave the cafe by14:10 to catch my bus."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can you stay at the cafe until14:45?",
+      "id": "ONPOLICY2-002-S2",
+      "draft": "Sorry, I cannot stay there. Could we meet at the mrt instead?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-002",
+      "category": "time",
+      "context": [
+        "I have to leave the cafe by14:10 to catch my bus."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can you stay at the cafe until14:45?",
+      "id": "ONPOLICY2-002-S3",
+      "draft": "I cannot stay there at a coffee shop instead.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-002",
+      "category": "time",
+      "context": [
+        "I have to leave the cafe by14:10 to catch my bus."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can you stay at the cafe until14:45?",
+      "id": "ONPOLICY2-002-S4",
+      "draft": "I cannot stay there until tomorrow. Could I leave the cafe by 7:30?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-003",
+      "category": "time",
+      "context": [
+        "I need to be home no later than22:15."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Want to start a two-hour film at21:30?",
+      "id": "ONPOLICY2-003-S1",
+      "draft": "That works for me. Let's meet at the two-hour movie then.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-003",
+      "category": "time",
+      "context": [
+        "I need to be home no later than22:15."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Want to start a two-hour film at21:30?",
+      "id": "ONPOLICY2-003-S2",
+      "draft": "No, I cannot do that. I can always start at two.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-003",
+      "category": "time",
+      "context": [
+        "I need to be home no later than22:15."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Want to start a two-hour film at21:30?",
+      "id": "ONPOLICY2-003-S3",
+      "draft": "I can't make it at the afternoon.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-003",
+      "category": "time",
+      "context": [
+        "I need to be home no later than22:15."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Want to start a two-hour film at21:30?",
+      "id": "ONPOLICY2-003-S4",
+      "draft": "Yes, please, I can do it for tomorrow.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-004",
+      "category": "time",
+      "context": [
+        "The earliest I can arrive is08:40."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Are you able to get here at08:15?",
+      "id": "ONPOLICY2-004-S1",
+      "draft": "No, I can't make it at five.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-004",
+      "category": "time",
+      "context": [
+        "The earliest I can arrive is08:40."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Are you able to get here at08:15?",
+      "id": "ONPOLICY2-004-S2",
+      "draft": "No, I can't make it at the 9:30.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-004",
+      "category": "time",
+      "context": [
+        "The earliest I can arrive is08:40."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Are you able to get here at08:15?",
+      "id": "ONPOLICY2-004-S3",
+      "draft": "I can't make it at five. Could we meet another time?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-004",
+      "category": "time",
+      "context": [
+        "The earliest I can arrive is08:40."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Are you able to get here at08:15?",
+      "id": "ONPOLICY2-004-S4",
+      "draft": "I can't make it at five thirty. Could we meet at eight?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-005",
+      "category": "availability",
+      "context": [
+        "I cannot meet this Friday. I am free next Monday instead."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we do this Friday?",
+      "id": "ONPOLICY2-005-S1",
+      "draft": "Friday is fine, let's meet then.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-005",
+      "category": "availability",
+      "context": [
+        "I cannot meet this Friday. I am free next Monday instead."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we do this Friday?",
+      "id": "ONPOLICY2-005-S2",
+      "draft": "Friday works for me. I can't do Thursday.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-005",
+      "category": "availability",
+      "context": [
+        "I cannot meet this Friday. I am free next Monday instead."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we do this Friday?",
+      "id": "ONPOLICY2-005-S3",
+      "draft": "Friday works for me, let's meet next Friday.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-005",
+      "category": "availability",
+      "context": [
+        "I cannot meet this Friday. I am free next Monday instead."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we do this Friday?",
+      "id": "ONPOLICY2-005-S4",
+      "draft": "Let's meet next Friday then.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-006",
+      "category": "availability",
+      "context": [
+        "Is the evening session okay?",
+        "No, I can attend only the lunchtime session."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Come to the evening session with me?",
+      "id": "ONPOLICY2-006-S1",
+      "draft": "I can't make it. Could you bring a bottle of wine?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-006",
+      "category": "availability",
+      "context": [
+        "Is the evening session okay?",
+        "No, I can attend only the lunchtime session."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Come to the evening session with me?",
+      "id": "ONPOLICY2-006-S2",
+      "draft": "Yes, I can come for the evening session.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-006",
+      "category": "availability",
+      "context": [
+        "Is the evening session okay?",
+        "No, I can attend only the lunchtime session."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Come to the evening session with me?",
+      "id": "ONPOLICY2-006-S3",
+      "draft": "Yes, I'll be there by the next session.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-006",
+      "category": "availability",
+      "context": [
+        "Is the evening session okay?",
+        "No, I can attend only the lunchtime session."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Come to the evening session with me?",
+      "id": "ONPOLICY2-006-S4",
+      "draft": "I can't make it today, but I can leave at the booth.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-007",
+      "category": "availability",
+      "context": [
+        "I have a shift for the whole of Sunday. Saturday is free."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Fancy a day trip on Sunday?",
+      "id": "ONPOLICY2-007-S1",
+      "draft": "Yes, it's free. I have a shift on Sunday.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-007",
+      "category": "availability",
+      "context": [
+        "I have a shift for the whole of Sunday. Saturday is free."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Fancy a day trip on Sunday?",
+      "id": "ONPOLICY2-007-S2",
+      "draft": "Sure, I will shift the shifts on Sunday.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-007",
+      "category": "availability",
+      "context": [
+        "I have a shift for the whole of Sunday. Saturday is free."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Fancy a day trip on Sunday?",
+      "id": "ONPOLICY2-007-S3",
+      "draft": "Yes, it's a shared one for my parents.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-007",
+      "category": "availability",
+      "context": [
+        "I have a shift for the whole of Sunday. Saturday is free."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Fancy a day trip on Sunday?",
+      "id": "ONPOLICY2-007-S4",
+      "draft": "Yes, I have a shift on Sunday.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-008",
+      "category": "availability",
+      "context": [
+        "I am away all next week. I will be back the following Monday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we get coffee next Thursday?",
+      "id": "ONPOLICY2-008-S1",
+      "draft": "Let's get it a coffee next Friday.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-008",
+      "category": "availability",
+      "context": [
+        "I am away all next week. I will be back the following Monday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we get coffee next Thursday?",
+      "id": "ONPOLICY2-008-S2",
+      "draft": "I cannot go with the following week, i will be back by then.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-008",
+      "category": "availability",
+      "context": [
+        "I am away all next week. I will be back the following Monday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we get coffee next Thursday?",
+      "id": "ONPOLICY2-008-S3",
+      "draft": "No, I am free on Friday.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-008",
+      "category": "availability",
+      "context": [
+        "I am away all next week. I will be back the following Monday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can we get coffee next Thursday?",
+      "id": "ONPOLICY2-008-S4",
+      "draft": "I cannot make it until Friday. Could we finish the order instead?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-009",
+      "category": "ownership",
+      "context": [
+        "You have my rain jacket from yesterday. I lent it to you."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Is it okay if I give your jacket back on Monday?",
+      "id": "ONPOLICY2-009-S1",
+      "draft": "Yes, I'll keep it to the cleaning area.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-009",
+      "category": "ownership",
+      "context": [
+        "You have my rain jacket from yesterday. I lent it to you."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Is it okay if I give your jacket back on Monday?",
+      "id": "ONPOLICY2-009-S2",
+      "draft": "Sorry, I would have gone to the other part of the jackets.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-009",
+      "category": "ownership",
+      "context": [
+        "You have my rain jacket from yesterday. I lent it to you."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Is it okay if I give your jacket back on Monday?",
+      "id": "ONPOLICY2-009-S3",
+      "draft": "I can't do tomorrow. Could we make it tomorrow?",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-009",
+      "category": "ownership",
+      "context": [
+        "You have my rain jacket from yesterday. I lent it to you."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Is it okay if I give your jacket back on Monday?",
+      "id": "ONPOLICY2-009-S4",
+      "draft": "Yes, it's fine.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-010",
+      "category": "ownership",
+      "context": [
+        "I borrowed your bicycle to get to class."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Please return my bicycle this afternoon.",
+      "id": "ONPOLICY2-010-S1",
+      "draft": "I'll return it to you at the class next time.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-010",
+      "category": "ownership",
+      "context": [
+        "I borrowed your bicycle to get to class."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Please return my bicycle this afternoon.",
+      "id": "ONPOLICY2-010-S2",
+      "draft": "I'll return it afternoon.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-010",
+      "category": "ownership",
+      "context": [
+        "I borrowed your bicycle to get to class."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Please return my bicycle this afternoon.",
+      "id": "ONPOLICY2-010-S3",
+      "draft": "No problem, I can return my bicycle tomorrow.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-010",
+      "category": "ownership",
+      "context": [
+        "I borrowed your bicycle to get to class."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Please return my bicycle this afternoon.",
+      "id": "ONPOLICY2-010-S4",
+      "draft": "I can return your bicycle during class.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-011",
+      "category": "ownership",
+      "context": [
+        "Have you seen my keys?",
+        "Yes, your keys are in my backpack."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you still have my keys with you?",
+      "id": "ONPOLICY2-011-S1",
+      "draft": "Yes, I still have them, but I can't find them.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-011",
+      "category": "ownership",
+      "context": [
+        "Have you seen my keys?",
+        "Yes, your keys are in my backpack."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you still have my keys with you?",
+      "id": "ONPOLICY2-011-S2",
+      "draft": "Yes, they are still in my backpack.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-011",
+      "category": "ownership",
+      "context": [
+        "Have you seen my keys?",
+        "Yes, your keys are in my backpack."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you still have my keys with you?",
+      "id": "ONPOLICY2-011-S3",
+      "draft": "Yes, I have mine.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-011",
+      "category": "ownership",
+      "context": [
+        "Have you seen my keys?",
+        "Yes, your keys are in my backpack."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you still have my keys with you?",
+      "id": "ONPOLICY2-011-S4",
+      "draft": "Yes, I have them in my backpack.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-012",
+      "category": "ownership",
+      "context": [
+        "You borrowed my charging cable for your trip."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Should I bring your cable back tonight?",
+      "id": "ONPOLICY2-012-S1",
+      "draft": "I'm already waiting for it to bring back.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-012",
+      "category": "ownership",
+      "context": [
+        "You borrowed my charging cable for your trip."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Should I bring your cable back tonight?",
+      "id": "ONPOLICY2-012-S2",
+      "draft": "Yes, I could bring your cable back tonight.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-012",
+      "category": "ownership",
+      "context": [
+        "You borrowed my charging cable for your trip."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Should I bring your cable back tonight?",
+      "id": "ONPOLICY2-012-S3",
+      "draft": "I'd be happy to bring it.",
+      "ended_with_eos": true
+    },
+    {
+      "item_id": "ONPOLICY2-012",
+      "category": "ownership",
+      "context": [
+        "You borrowed my charging cable for your trip."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Should I bring your cable back tonight?",
+      "id": "ONPOLICY2-012-S4",
+      "draft": "Yes, I will bring my cable tonight.",
+      "ended_with_eos": true
+    }
+  ]
+}

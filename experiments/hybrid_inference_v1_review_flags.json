@@ -1,0 +1,104 @@
+{
+  "scope": "Post-hoc assistant inspection of all53 anchor/rewrite pairs, flags only; not blinded human accuracy or comprehensive context/naturalness scoring",
+  "flagged_pairs": [
+    {
+      "item_id": "ITEM-A-033",
+      "standard": "Yes, it's open today. Let's head to the chicken rice stall.",
+      "local": "Can, today I head to the chicken rice stall.",
+      "flag": "changed_facts_or_collective_action",
+      "reason": "LOCAL drops the explicit open-today claim and changes let us head there to I head there."
+    },
+    {
+      "item_id": "ITEM-B-029",
+      "standard": "It's in the third floor.",
+      "local": "Can, third floor in.",
+      "flag": "unclear_wording",
+      "reason": "Third floor in is malformed; location may be inferable but needs human review."
+    },
+    {
+      "item_id": "ITEM-B-034",
+      "standard": "Sure, let me know when you're done.",
+      "local": "Can, let me know when you finish class.",
+      "flag": "changed_completion_event",
+      "reason": "When you are done becomes when you finish class."
+    },
+    {
+      "item_id": "ITEM-B-042",
+      "standard": "No worries, I'll head there soon.",
+      "local": "No worries, I come down first.",
+      "flag": "timing_or_direction_uncertain",
+      "reason": "Head there soon becomes come down first; timing/order changes need review."
+    },
+    {
+      "item_id": "ITEM-B-050",
+      "standard": "I'd love to, but I'm really busy.",
+      "local": "Can, I go run first.",
+      "flag": "refusal_changed_to_action",
+      "reason": "Busy/refusal becomes I go run first."
+    },
+    {
+      "item_id": "ITEM-C-017",
+      "standard": "Yes, I am done.",
+      "local": "Can, I finish the final part.",
+      "flag": "completion_tense_uncertain",
+      "reason": "I am done becomes I finish the final part, with unclear completion status."
+    },
+    {
+      "item_id": "ITEM-C-028",
+      "standard": "okay, i'll head there soon",
+      "local": "Okay, I go there first.",
+      "flag": "timing_or_order_uncertain",
+      "reason": "Head there soon becomes go there first."
+    },
+    {
+      "item_id": "ITEM-C-058",
+      "standard": "okay, i'll head there soon",
+      "local": "Okay, I go there first.",
+      "flag": "timing_or_order_uncertain",
+      "reason": "Head there soon becomes go there first."
+    },
+    {
+      "item_id": "ITEM-D-013",
+      "standard": "Sure, I can do that for you.",
+      "local": "Can, you can do that for you.",
+      "flag": "actor_reversal",
+      "reason": "I can do that for you becomes you can do that for you."
+    },
+    {
+      "item_id": "ITEM-D-029",
+      "standard": "Okay, let me know when you're done.",
+      "local": "Can, let me know before bidding ends.",
+      "flag": "changed_deadline",
+      "reason": "When you are done becomes before bidding ends."
+    },
+    {
+      "item_id": "ITEM-D-037",
+      "standard": "Okay, I'll head there soon.",
+      "local": "Okay, I reaching there soon.",
+      "flag": "changed_progress",
+      "reason": "Head there soon becomes reaching there soon, changing departure versus arrival."
+    },
+    {
+      "item_id": "ITEM-D-050",
+      "standard": "No worries, just let us know when you're done.",
+      "local": "No worries, let me know when you come down.",
+      "flag": "changed_event",
+      "reason": "Let us know when done becomes let me know when you come down."
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "standard": "Okay, let us know when you're ready.",
+      "local": "Okay, let me know when you ready.",
+      "flag": "recipient_scope_uncertain",
+      "reason": "Let us know becomes let me know; group/individual recipient shift."
+    },
+    {
+      "item_id": "ITEM-E-040",
+      "standard": "I can't make it, but I'll meet you at a coffee shop.",
+      "local": "Can, I meet you at coffee shop.",
+      "flag": "refusal_qualification_omitted",
+      "reason": "LOCAL keeps the coffee-shop alternative but drops cannot make it qualifier; contextual meaning needs review."
+    }
+  ],
+  "limitation": "Unflagged does not certify acceptable reply quality. Matching a wrong STANDARD answer can still be a successful rewrite but a bad conversational suggestion. Frequent Can prefixes and neutral-English copies also need naturalness review."
+}

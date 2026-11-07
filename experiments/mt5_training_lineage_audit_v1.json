@@ -1,0 +1,395 @@
+{
+  "status": "complete",
+  "scope": "Read-only corpus lineage audit; not an exhaustive semantic audit of all790 targets.",
+  "source_sha256": {
+    "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "data/training_expansion/blanket600_v1/expanded.jsonl": "667839d3bf5af03063eaaf689ee2e2cbd2019e87c91ae917923c761d62a8abfb"
+  },
+  "original_rows": 190,
+  "expanded_rows": 790,
+  "changed_original_targets": [
+    {
+      "item_id": "ITEM-A-014",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "hello, have you done the literature review?"
+        },
+        {
+          "speaker": "user",
+          "text": "oh not yet, when is the assignment due again?"
+        }
+      ],
+      "message": "Don't blur leh, do before Sunday",
+      "original_target": "okay, I will do so by Sunday, dont worry.",
+      "expanded_target": "Okay, I'll finish it before Sunday. Don't worry.",
+      "assistant_observation": "Deadline wording changes by Sunday to before Sunday, matching the incoming message more precisely."
+    },
+    {
+      "item_id": "ITEM-B-004",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "I going cafe"
+        },
+        {
+          "speaker": "user",
+          "text": "I still in class"
+        }
+      ],
+      "message": "Can help me buy drink?",
+      "original_target": "Sure, could you get me a bottle of water?",
+      "expanded_target": "Sure, what drink would you like me to buy?",
+      "assistant_observation": "Original responds to peer purchase request by asking peer to buy for user. Revised target addresses the incoming purchase request. Direction mismatch is worth correcting."
+    },
+    {
+      "item_id": "ITEM-B-017",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "I'll send you the recording tonight"
+        },
+        {
+          "speaker": "user",
+          "text": "ok thanks"
+        }
+      ],
+      "message": "you still sending me the recording later?",
+      "original_target": "Yes, I'll send it tonight.",
+      "expanded_target": "I thought you were sending it to me. Do you need my recording too?",
+      "assistant_observation": "Earlier peer offers recording, then asks if user is sending it. Revised target clarifies inconsistent directions. Original may be a reciprocal promise; do not call it definitively false."
+    },
+    {
+      "item_id": "ITEM-B-059",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "I'll bring my laptop charger tomorrow"
+        },
+        {
+          "speaker": "user",
+          "text": "okay, thanks"
+        }
+      ],
+      "message": "you bringing the charger tomorrow right?",
+      "original_target": "Yes, I'll bring it tomorrow.",
+      "expanded_target": "You said you'd bring yours. Should I bring mine too?",
+      "assistant_observation": "Peer says they will bring charger, then asks user to bring one. Revised target clarifies possible shared responsibility. Both can be plausible choices; source is ambiguous."
+    },
+    {
+      "item_id": "ITEM-B-060",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "can you lend me your adapter?"
+        },
+        {
+          "speaker": "user",
+          "text": "I was looking for it"
+        }
+      ],
+      "message": "sorry, I left the adapter at home",
+      "original_target": "No worries, I'll find another one.",
+      "expanded_target": "I found my adapter; you can borrow it when we meet.",
+      "assistant_observation": "Conversation has an unclear lending direction. Expanded target newly claims adapter found; neither version should be accepted as verified factual gold automatically."
+    },
+    {
+      "item_id": "ITEM-C-030",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "lets meet at the library after lunch"
+        },
+        {
+          "speaker": "user",
+          "text": "okay"
+        }
+      ],
+      "message": "we still studying at 2 later right?",
+      "original_target": "yes, i'll be thr at 2",
+      "expanded_target": "Yes, I'll be there at two.",
+      "assistant_observation": "Primarily wording/time-format normalization."
+    },
+    {
+      "item_id": "ITEM-C-044",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "i might be late for tutorial"
+        },
+        {
+          "speaker": "user",
+          "text": "im almost there"
+        }
+      ],
+      "message": "lecturer inside alr?",
+      "original_target": "yes, the lecturer is inside alr, but class hasnt started yet",
+      "expanded_target": "Yes, the lecturer is inside already, but class hasn't started yet.",
+      "assistant_observation": "Primarily grammar/abbreviation normalization."
+    },
+    {
+      "item_id": "ITEM-D-012",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "u unds what the prof saying?"
+        },
+        {
+          "speaker": "user",
+          "text": "yahh"
+        }
+      ],
+      "message": "what did he say",
+      "original_target": "I don't know actually",
+      "expanded_target": "Actually, I didn't catch that part clearly.",
+      "assistant_observation": "Rephrases admission of not understanding after previously saying yes. Not a clear factual repair."
+    },
+    {
+      "item_id": "ITEM-D-043",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "eh i might be late"
+        },
+        {
+          "speaker": "user",
+          "text": "the movie starting soon tho"
+        }
+      ],
+      "message": "can help me buy ticket first, will be reaching soon",
+      "original_target": "Ok, let me know when you are reaching soon.",
+      "expanded_target": "Okay, I'll buy your ticket. Let me know when you're nearby.",
+      "assistant_observation": "Revised reply explicitly commits to requested ticket purchase; original only requests arrival update."
+    },
+    {
+      "item_id": "ITEM-D-048",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "eh rmb to bring the bmt net?"
+        }
+      ],
+      "message": "okok, can u bring extra racket to borrow me",
+      "original_target": "Yes can. I will be bringing 3 down.",
+      "expanded_target": "Yes, I'll bring three rackets.",
+      "assistant_observation": "Revised reply names rackets instead of implicit three. Mostly explicitness."
+    },
+    {
+      "item_id": "ITEM-E-002",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "is anyone going for the workshop later?"
+        },
+        {
+          "speaker": "user",
+          "text": "I think i'm free to go"
+        },
+        {
+          "speaker": "peer",
+          "text": "ok, remember to sign up as well"
+        }
+      ],
+      "message": "bro you confirm going right",
+      "original_target": "sorry, i got something on and i can't make it already, can something take over me?",
+      "expanded_target": "Sorry, something came up and I can't make it. Can someone take my place?",
+      "assistant_observation": "Grammar and readability repair."
+    },
+    {
+      "item_id": "ITEM-E-008",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "sorry whens the deadline again"
+        },
+        {
+          "speaker": "user",
+          "text": "its tomorrow"
+        }
+      ],
+      "message": "oh shoot its tomorrow? gg liao paiseh i haven't started",
+      "original_target": "have you finished your part?",
+      "expanded_target": "Would you like to work on it together tonight?",
+      "assistant_observation": "Original asks if peer finished immediately after peer says they have not started. Revised target offers help instead of ignoring that state."
+    },
+    {
+      "item_id": "ITEM-E-022",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "You are lending the charger for a week right?"
+        },
+        {
+          "speaker": "user",
+          "text": "yep, next week i will return the charger."
+        }
+      ],
+      "message": "sorry ah, but legit need the charger asap, can return eariler? paiseh",
+      "original_target": "Sorry. I still need it by right now, I will only be able to return by next week",
+      "expanded_target": "Sorry, I still need it. I can only return it next week.",
+      "assistant_observation": "Wording repair of charger-return refusal; essentially same act."
+    },
+    {
+      "item_id": "ITEM-E-024",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "woah is that a bot that generates notes for you?"
+        },
+        {
+          "speaker": "user",
+          "text": "yea, I made it myself and it has been a gamechanger sia"
+        }
+      ],
+      "message": "eh steng leh the auto generated notes your bot made for you, \u6211\u4e5f\u8981",
+      "original_target": "no, you got to work for it. I'm not giving this out for free",
+      "expanded_target": "No, you need to earn it. I'm not giving it away for free.",
+      "assistant_observation": "Wording/tone change; no demonstrated grounding repair."
+    }
+  ],
+  "generation_sources": {
+    "original": 190,
+    "Codex assistant": 100,
+    "gemma4:12b": 500
+  },
+  "supportive_training_examples": [
+    {
+      "id": "SYN-HUMAN-EXP1-004",
+      "split": "dev",
+      "session_memory": [
+        {
+          "speaker": "user",
+          "text": "I still have the tote bag you lent me for the fair."
+        }
+      ],
+      "message": {
+        "text": "Can pass my bag back during lunch?"
+      },
+      "replies": {
+        "standard": "Sure, I will return your bag during lunch.",
+        "local": "Can, lunch that time return your bag."
+      },
+      "training_authorization": {
+        "mode": "blanket_training_authorization",
+        "individually_reviewed": false,
+        "user_instruction": "how about just accept everything, and go train",
+        "scope": "Training authorized by project owner; no per-item quality judgment inferred for blanket-authorized rows."
+      },
+      "provenance": {
+        "generator": "Codex assistant",
+        "prompt_version": "human-expansion-fresh-v1",
+        "batch_id": "fresh100",
+        "source": "New assistant-authored fictional candidate; pending user review"
+      }
+    },
+    {
+      "id": "SYN-HUMAN-EXP1-021",
+      "split": "dev",
+      "session_memory": [
+        {
+          "speaker": "user",
+          "text": "My shift ends at 6 pm and I cannot leave early."
+        }
+      ],
+      "message": {
+        "text": "Can meet at 5.30 outside the shop?"
+      },
+      "replies": {
+        "standard": "I cannot leave before six. Could we meet after my shift?",
+        "local": "Six before cannot leave leh. My shift end then meet can?"
+      },
+      "training_authorization": {
+        "mode": "blanket_training_authorization",
+        "individually_reviewed": false,
+        "user_instruction": "how about just accept everything, and go train",
+        "scope": "Training authorized by project owner; no per-item quality judgment inferred for blanket-authorized rows."
+      },
+      "provenance": {
+        "generator": "Codex assistant",
+        "prompt_version": "human-expansion-fresh-v1",
+        "batch_id": "fresh100",
+        "source": "New assistant-authored fictional candidate; pending user review"
+      }
+    },
+    {
+      "id": "SYN-HUMAN-EXP1-035",
+      "split": "dev",
+      "session_memory": [
+        {
+          "speaker": "user",
+          "text": "I am keeping within a ten-dollar lunch budget today."
+        }
+      ],
+      "message": {
+        "text": "Want the twenty-dollar set meal?"
+      },
+      "replies": {
+        "standard": "That is over my budget. Could we choose something cheaper?",
+        "local": "Over my budget leh. Cheaper one can?"
+      },
+      "training_authorization": {
+        "mode": "individual_review",
+        "individually_reviewed": true,
+        "user_instruction": "yes all 10 looks good",
+        "scope": "Training authorized by project owner; no per-item quality judgment inferred for blanket-authorized rows."
+      },
+      "provenance": {
+        "generator": "Codex assistant",
+        "prompt_version": "human-expansion-fresh-v1",
+        "batch_id": "fresh100",
+        "source": "New assistant-authored fictional candidate; pending user review"
+      }
+    }
+  ],
+  "findings": [
+    "Recent reply-act pilots replay original190 targets, while their initialization checkpoint was previously trained on an expanded corpus with14 original STANDARD targets revised. This is a real target-version change, not proof it caused the observed failures.",
+    "Representative budget, shift-end and borrower-return targets already teach correct constraint handling. A few bad targets cannot explain all generalization errors.",
+    "Some original/revised directions are ambiguous; do not blanket-copy all revised targets as human-approved gold.",
+    "The600 additions include500 Gemma-generated and100 assistant-generated examples. Authorization is not independent human quality validation."
+  ],
+  "proposed_change": "Use one explicit, versioned target policy for original conversations across decoder and act-label training, starting with five targeted repairs/clarifications. Do not edit original or historical corpora. First compare earlier checkpoint audit outputs before training.",
+  "proposals": [
+    {
+      "item_id": "ITEM-B-004",
+      "old_target": "Sure, could you get me a bottle of water?",
+      "proposed_standard": "Sure, what drink would you like me to buy?",
+      "reason": "Respond to the peer purchase request instead of reversing the buyer.",
+      "approval_status": "assistant proposal, not independently human reviewed",
+      "applied": false
+    },
+    {
+      "item_id": "ITEM-B-017",
+      "old_target": "Yes, I'll send it tonight.",
+      "proposed_standard": "I thought you were sending the recording to me. Do you need one from me as well?",
+      "reason": "Clarify the inconsistent sending directions without assuming an unmentioned recording exists.",
+      "approval_status": "assistant proposal, not independently human reviewed",
+      "applied": false
+    },
+    {
+      "item_id": "ITEM-B-059",
+      "old_target": "Yes, I'll bring it tomorrow.",
+      "proposed_standard": "You said you would bring your charger. Do you need me to bring one too?",
+      "reason": "Clarify who is bringing a charger rather than silently changing responsibility.",
+      "approval_status": "assistant proposal, not independently human reviewed",
+      "applied": false
+    },
+    {
+      "item_id": "ITEM-B-060",
+      "old_target": "No worries, I'll find another one.",
+      "proposed_standard": "I was still looking for my adapter. Are you asking to borrow mine?",
+      "reason": "Clarify the lending direction without asserting that the adapter was found.",
+      "approval_status": "assistant proposal, not independently human reviewed",
+      "applied": false
+    },
+    {
+      "item_id": "ITEM-E-008",
+      "old_target": "have you finished your part?",
+      "proposed_standard": "Would you like to work on it together tonight?",
+      "reason": "Acknowledge not-started state by offering a next action rather than asking if it is finished.",
+      "approval_status": "assistant proposal, not independently human reviewed",
+      "applied": false
+    }
+  ],
+  "historical_files_changed": false,
+  "new_training_submitted": false
+}

@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "model": "epoch1_standard",
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_standard_val_v1/artifacts/full_lr3e4/best",
+      "input_format": {
+        "speaker_labels": true,
+        "joint": false,
+        "standard_only_diagnostic": true,
+        "max_source": 192,
+        "max_target": 48
+      },
+      "outputs": [
+        {
+          "item_id": "USER-001",
+          "standard": "Sure, let's meet at koufu then.",
+          "local": "yes, i'll meet you at koufu later"
+        },
+        {
+          "item_id": "USER-002",
+          "standard": "Okay, I'll see you then.",
+          "local": "Okay, I'll see you then."
+        },
+        {
+          "item_id": "USER-003",
+          "standard": "Let's meet at the hawker centre at the main entrance.",
+          "local": "we meet at the hawker centre at the main entrance"
+        }
+      ]
+    }
+  ]
+}

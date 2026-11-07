@@ -1,0 +1,1119 @@
+{
+  "status": "complete",
+  "purpose": "Intentional small-set capacity diagnostic, not product model selection",
+  "settings": {
+    "steps": 300,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "seed": 425,
+    "mode": "anchor_only",
+    "base": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/best"
+  },
+  "history": [
+    {
+      "step": 0,
+      "train_loss": 2.97467495474144,
+      "validation_loss": 2.9206221103668213,
+      "train_outputs": [
+        {
+          "item_id": "ITEM-A-002",
+          "standard": "I think a reservation is required, hold on let me check",
+          "local": "I'm not sure if I'll be able to make it for a few weeks",
+          "local_conditioned_on": "I think a reservation is required, hold on let me check",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-005",
+          "standard": "Just press the yellow button first.",
+          "local": "I'm not sure if I'll be able to get a replacement",
+          "local_conditioned_on": "Just press the yellow button first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-013",
+          "standard": "What would you like? I will buy it for you.",
+          "local": "I'm not sure if I'll be able to do it",
+          "local_conditioned_on": "What would you like? I will buy it for you.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-018",
+          "standard": "That is abit far, but I am okay with it",
+          "local": "I'm okay with it",
+          "local_conditioned_on": "That is abit far, but I am okay with it",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-021",
+          "standard": "You can't; the seat has already been reserved.",
+          "local": "I'm sorry I can't make it for a while",
+          "local_conditioned_on": "You can't; the seat has already been reserved.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-027",
+          "standard": "No, I am taking the bus, the MRT is very slow",
+          "local": "I'm taking the mrt now",
+          "local_conditioned_on": "No, I am taking the bus, the MRT is very slow",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-036",
+          "standard": "No worries, it happens",
+          "local": "I'm sorry guys I'll be back in a few minutes",
+          "local_conditioned_on": "No worries, it happens",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-041",
+          "standard": "Could you help print it for me too?",
+          "local": "I'm not sure if I can print it",
+          "local_conditioned_on": "Could you help print it for me too?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-006",
+          "standard": "Sorry, I can't make it today. I need to finish some work.",
+          "local": "Sorry I can't make it today",
+          "local_conditioned_on": "Sorry, I can't make it today. I need to finish some work.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-016",
+          "standard": "Yes, the slides are on the course page already.",
+          "local": "I'm not sure if I'll be able to read the slides already",
+          "local_conditioned_on": "Yes, the slides are on the course page already.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-021",
+          "standard": "Sorry, I can't send them right now, but I'll send them later.",
+          "local": "Sorry guys I'm not going to be able to make it for a while. I'll send them later.",
+          "local_conditioned_on": "Sorry, I can't send them right now, but I'll send them later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-038",
+          "standard": "No worries. Just let me know when you arrive.",
+          "local": "I'll be back in a few minutes",
+          "local_conditioned_on": "No worries. Just let me know when you arrive.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-046",
+          "standard": "Thanks for inviting me, but I can't make it tonight.",
+          "local": "I'm not sure if I can make it tonight",
+          "local_conditioned_on": "Thanks for inviting me, but I can't make it tonight.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-053",
+          "standard": "Sure, I'll book it later.",
+          "local": "I'm not sure if I'll be able to make it",
+          "local_conditioned_on": "Sure, I'll book it later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-005",
+          "standard": "yeah, we don't have class on tuesday",
+          "local": "I'm not sure if I can make it on tuesday",
+          "local_conditioned_on": "yeah, we don't have class on tuesday",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-007",
+          "standard": "not yet. i was waiting for you",
+          "local": "I'm reaching in 10mins",
+          "local_conditioned_on": "not yet. i was waiting for you",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-020",
+          "standard": "Not yet. The lecturer is not here either.",
+          "local": "I'm sorry I've got a few mistakes in it. I'll be back in a minute.",
+          "local_conditioned_on": "Not yet. The lecturer is not here either.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-027",
+          "standard": "It is okay. Rest first; we can eat together another time.",
+          "local": "I'm okay with that. I'll be back in a few minutes.",
+          "local_conditioned_on": "It is okay. Rest first; we can eat together another time.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-031",
+          "standard": "no problem. you should head back and rest",
+          "local": "i think i'll be back in a few weeks",
+          "local_conditioned_on": "no problem. you should head back and rest",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-039",
+          "standard": "no worries. we'll update you after the rehearsal",
+          "local": "I'm not sure if I'll be able to reread the rehearsal tmr",
+          "local_conditioned_on": "no worries. we'll update you after the rehearsal",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-044",
+          "standard": "The lecturer is inside already, but class has not started yet.",
+          "local": "I'm not sure if the lecturer is going to be able to do it tmr",
+          "local_conditioned_on": "The lecturer is inside already, but class has not started yet.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-059",
+          "standard": "Yes, I've arrived. I'm waiting at the entrance.",
+          "local": "I'm at the entrance",
+          "local_conditioned_on": "Yes, I've arrived. I'm waiting at the entrance.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-060",
+          "standard": "It's okay, I'll wait here. Come when you can.",
+          "local": "I'm okay. I'll be there in a few minutes.",
+          "local_conditioned_on": "It's okay, I'll wait here. Come when you can.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-003",
+          "standard": "Either is fine with me.",
+          "local": "I'm not sure if I'll be able to do it",
+          "local_conditioned_on": "Either is fine with me.",
+          "style_example_id": null
+        }
+      ],
+      "train_normalized_exact_match": 0.0,
+      "validation_outputs": [
+        {
+          "item_id": "ITEM-D-005",
+          "standard": "No, I don't want it. I can't eat spicy food.",
+          "local": "I'm not sure if I can get spicy food",
+          "local_conditioned_on": "No, I don't want it. I can't eat spicy food.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-018",
+          "standard": "Sorry, I have something on tomorrow. What about the day after tomorrow?",
+          "local": "Sorry I can't make it tomorrow",
+          "local_conditioned_on": "Sorry, I have something on tomorrow. What about the day after tomorrow?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-019",
+          "standard": "Sorry. I forgot about that.",
+          "local": "Sorry I forgot to rewrite",
+          "local_conditioned_on": "Sorry. I forgot about that.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-022",
+          "standard": "I am going to finish soon. What is your answer to the first question?",
+          "local": "I'm not sure if I can get a replacement",
+          "local_conditioned_on": "I am going to finish soon. What is your answer to the first question?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-028",
+          "standard": "Which row would you like to sit in?",
+          "local": "I'm not sure which row I want to sit in",
+          "local_conditioned_on": "Which row would you like to sit in?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-035",
+          "standard": "Okay, take your time, I will walk around first.",
+          "local": "I'm reaching in a few minutes",
+          "local_conditioned_on": "Okay, take your time, I will walk around first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-052",
+          "standard": "Ok, I will make sure to book later",
+          "local": "I'm not sure if I'll be able to make it for a while",
+          "local_conditioned_on": "Ok, I will make sure to book later",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-055",
+          "standard": "Ok , I will return once I have charged my phone",
+          "local": "I'm sorry guys I'll be back in a few minutes",
+          "local_conditioned_on": "Ok , I will return once I have charged my phone",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-029",
+          "standard": "Don't worry, I've already reserved a seat for you.",
+          "local": "I'm not sure if I'll be able to get a seat",
+          "local_conditioned_on": "Don't worry, I've already reserved a seat for you.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-034",
+          "standard": "Yes, I have already booked it.",
+          "local": "I'm not sure if I'll be able to make it for a while",
+          "local_conditioned_on": "Yes, I have already booked it.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-035",
+          "standard": "Why did you wait until the last minute to tell me?",
+          "local": "I'm sorry I didn't rly rmb",
+          "local_conditioned_on": "Why did you wait until the last minute to tell me?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-056",
+          "standard": "okay, you can go first",
+          "local": "I'm not sure if I'll be able to get a singlish rewrite",
+          "local_conditioned_on": "okay, you can go first",
+          "style_example_id": null
+        }
+      ],
+      "validation_normalized_exact_match": 0.0,
+      "meaning_probes_outputs": [
+        {
+          "item_id": "DIAG3-availability-positive",
+          "standard": "Friday afternoon works for me.",
+          "local": "Friday afternoon is fine.",
+          "local_conditioned_on": "Friday afternoon works for me.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-availability-negative",
+          "standard": "Friday afternoon does not work for me.",
+          "local": "Friday afternoon I can't make it",
+          "local_conditioned_on": "Friday afternoon does not work for me.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-booking-future",
+          "standard": "I will book the room later.",
+          "local": "I'm not sure if I'll be able to make it for a while",
+          "local_conditioned_on": "I will book the room later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-booking-complete",
+          "standard": "I have already booked the room.",
+          "local": "I'm not sure if I'll be able to make it for a while",
+          "local_conditioned_on": "I have already booked the room.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-owner-you",
+          "standard": "You can go first.",
+          "local": "I'm not sure if I'll be able to make it",
+          "local_conditioned_on": "You can go first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-owner-me",
+          "standard": "I can go first.",
+          "local": "I'm not sure if I can make it. I'll be there in a few minutes.",
+          "local_conditioned_on": "I can go first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-not-yet",
+          "standard": "I have not finished the slides yet.",
+          "local": "I'm finished the slides alr",
+          "local_conditioned_on": "I have not finished the slides yet.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-already",
+          "standard": "I have already finished the slides.",
+          "local": "I'm finished the slides already",
+          "local_conditioned_on": "I have already finished the slides.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-reassure",
+          "standard": "No worries, just let me know when you are done.",
+          "local": "Sorry I'm not done. I'll be finished by tomorrow.",
+          "local_conditioned_on": "No worries, just let me know when you are done.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-support",
+          "standard": "That sounds exhausting. Get some rest first.",
+          "local": "I'm not sure if I'll be able to get a rewrite.",
+          "local_conditioned_on": "That sounds exhausting. Get some rest first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-uncertainty",
+          "standard": "I am not sure; let me check first.",
+          "local": "I'm not sure if I can get a replacement",
+          "local_conditioned_on": "I am not sure; let me check first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-return",
+          "standard": "I will return your charger after my phone finishes charging.",
+          "local": "Where are you guys now?",
+          "local_conditioned_on": "I will return your charger after my phone finishes charging.",
+          "style_example_id": null
+        }
+      ]
+    },
+    {
+      "step": 25,
+      "train_loss": 1.1397278138876823,
+      "validation_loss": 2.4087949112057685
+    },
+    {
+      "step": 50,
+      "train_loss": 0.40262592172364464,
+      "validation_loss": 2.9500724151730537
+    },
+    {
+      "step": 75,
+      "train_loss": 0.10701368575653444,
+      "validation_loss": 3.610511898994446
+    },
+    {
+      "step": 100,
+      "train_loss": 0.018889072954668143,
+      "validation_loss": 4.715275102853775,
+      "train_outputs": [
+        {
+          "item_id": "ITEM-A-002",
+          "standard": "I think a reservation is required, hold on let me check",
+          "local": "Eh i think need reserve one, wait ah I check",
+          "local_conditioned_on": "I think a reservation is required, hold on let me check",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-005",
+          "standard": "Just press the yellow button first.",
+          "local": "press yellow button first can already",
+          "local_conditioned_on": "Just press the yellow button first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-013",
+          "standard": "What would you like? I will buy it for you.",
+          "local": "what you want, i buy for you",
+          "local_conditioned_on": "What would you like? I will buy it for you.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-018",
+          "standard": "That is abit far, but I am okay with it",
+          "local": "Abit far leh, but okay la",
+          "local_conditioned_on": "That is abit far, but I am okay with it",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-021",
+          "standard": "You can't; the seat has already been reserved.",
+          "local": "you can't, it got choped already",
+          "local_conditioned_on": "You can't; the seat has already been reserved.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-027",
+          "standard": "No, I am taking the bus, the MRT is very slow",
+          "local": "No, I taking bus, MRT very slow",
+          "local_conditioned_on": "No, I am taking the bus, the MRT is very slow",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-036",
+          "standard": "No worries, it happens",
+          "local": "Neh mind, happens one",
+          "local_conditioned_on": "No worries, it happens",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-041",
+          "standard": "Could you help print it for me too?",
+          "local": "Eh, can help me print also?",
+          "local_conditioned_on": "Could you help print it for me too?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-006",
+          "standard": "Sorry, I can't make it today. I need to finish some work.",
+          "local": "Paiseh, today cannot. Need finish some work.",
+          "local_conditioned_on": "Sorry, I can't make it today. I need to finish some work.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-016",
+          "standard": "Yes, the slides are on the course page already.",
+          "local": "Ya, the slides are on the course page already.",
+          "local_conditioned_on": "Yes, the slides are on the course page already.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-021",
+          "standard": "Sorry, I can't send them right now, but I'll send them later.",
+          "local": "Paiseh, now cannot. I'll send them later.",
+          "local_conditioned_on": "Sorry, I can't send them right now, but I'll send them later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-038",
+          "standard": "No worries. Just let me know when you arrive.",
+          "local": "Nevermind, just update me when you reach.",
+          "local_conditioned_on": "No worries. Just let me know when you arrive.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-046",
+          "standard": "Thanks for inviting me, but I can't make it tonight.",
+          "local": "Thanks for asking, but tonight cannot ah",
+          "local_conditioned_on": "Thanks for inviting me, but I can't make it tonight.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-053",
+          "standard": "Sure, I'll book it later.",
+          "local": "Can, I book later.",
+          "local_conditioned_on": "Sure, I'll book it later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-005",
+          "standard": "yeah, we don't have class on tuesday",
+          "local": "ya, tuesday no class",
+          "local_conditioned_on": "yeah, we don't have class on tuesday",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-007",
+          "standard": "not yet. i was waiting for you",
+          "local": "havent leh, i was waiting for you",
+          "local_conditioned_on": "not yet. i was waiting for you",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-020",
+          "standard": "Not yet. The lecturer is not here either.",
+          "local": "not yet leh, lecturer also not here",
+          "local_conditioned_on": "Not yet. The lecturer is not here either.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-027",
+          "standard": "It is okay. Rest first; we can eat together another time.",
+          "local": "it's okay lah, rest first. next time we makan",
+          "local_conditioned_on": "It is okay. Rest first; we can eat together another time.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-031",
+          "standard": "no problem. you should head back and rest",
+          "local": "okay lah, go back and rest first",
+          "local_conditioned_on": "no problem. you should head back and rest",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-039",
+          "standard": "no worries. we'll update you after the rehearsal",
+          "local": "it's okay lah, we update you after rehearsal",
+          "local_conditioned_on": "no worries. we'll update you after the rehearsal",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-044",
+          "standard": "The lecturer is inside already, but class has not started yet.",
+          "local": "inside alr, but hasnt start yet",
+          "local_conditioned_on": "The lecturer is inside already, but class has not started yet.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-059",
+          "standard": "Yes, I've arrived. I'm waiting at the entrance.",
+          "local": "ya, reached alr. waiting at the entrance",
+          "local_conditioned_on": "Yes, I've arrived. I'm waiting at the entrance.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-060",
+          "standard": "It's okay, I'll wait here. Come when you can.",
+          "local": "it's okay lah, i wait here. come when you can",
+          "local_conditioned_on": "It's okay, I'll wait here. Come when you can.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-003",
+          "standard": "Either is fine with me.",
+          "local": "i anything",
+          "local_conditioned_on": "Either is fine with me.",
+          "style_example_id": null
+        }
+      ],
+      "train_normalized_exact_match": 1.0,
+      "validation_outputs": [
+        {
+          "item_id": "ITEM-D-005",
+          "standard": "No, I don't want it. I can't eat spicy food.",
+          "local": "Neh mind, I can't eat spicy food.",
+          "local_conditioned_on": "No, I don't want it. I can't eat spicy food.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-018",
+          "standard": "Sorry, I have something on tomorrow. What about the day after tomorrow?",
+          "local": "Paiseh, I have something on tomorrow.",
+          "local_conditioned_on": "Sorry, I have something on tomorrow. What about the day after tomorrow?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-019",
+          "standard": "Sorry. I forgot about that.",
+          "local": "Paiseh, now cannot. Need print also.",
+          "local_conditioned_on": "Sorry. I forgot about that.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-022",
+          "standard": "I am going to finish soon. What is your answer to the first question?",
+          "local": "I am going to finish soon.",
+          "local_conditioned_on": "I am going to finish soon. What is your answer to the first question?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-028",
+          "standard": "Which row would you like to sit in?",
+          "local": "which row would you like to sit in?",
+          "local_conditioned_on": "Which row would you like to sit in?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-035",
+          "standard": "Okay, take your time, I will walk around first.",
+          "local": "Okay, take your time, I walk around first.",
+          "local_conditioned_on": "Okay, take your time, I will walk around first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-052",
+          "standard": "Ok, I will make sure to book later",
+          "local": "Paiseh, now cannot. Make sure to book later.",
+          "local_conditioned_on": "Ok, I will make sure to book later",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-055",
+          "standard": "Ok , I will return once I have charged my phone",
+          "local": "Ok, I return once you charged my phone.",
+          "local_conditioned_on": "Ok , I will return once I have charged my phone",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-029",
+          "standard": "Don't worry, I've already reserved a seat for you.",
+          "local": "Don't worry, I've already reserved a seat for you.",
+          "local_conditioned_on": "Don't worry, I've already reserved a seat for you.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-034",
+          "standard": "Yes, I have already booked it.",
+          "local": "Ya, I have already booked it.",
+          "local_conditioned_on": "Yes, I have already booked it.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-035",
+          "standard": "Why did you wait until the last minute to tell me?",
+          "local": "Why you wait until last minute to tell me?",
+          "local_conditioned_on": "Why did you wait until the last minute to tell me?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-056",
+          "standard": "okay, you can go first",
+          "local": "okay lah, you can go first",
+          "local_conditioned_on": "okay, you can go first",
+          "style_example_id": null
+        }
+      ],
+      "validation_normalized_exact_match": 0.0,
+      "meaning_probes_outputs": [
+        {
+          "item_id": "DIAG3-availability-positive",
+          "standard": "Friday afternoon works for me.",
+          "local": "Friday afternoon works for me.",
+          "local_conditioned_on": "Friday afternoon works for me.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-availability-negative",
+          "standard": "Friday afternoon does not work for me.",
+          "local": "Friday afternoon doesnt work for me",
+          "local_conditioned_on": "Friday afternoon does not work for me.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-booking-future",
+          "standard": "I will book the room later.",
+          "local": "I booked the room later.",
+          "local_conditioned_on": "I will book the room later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-booking-complete",
+          "standard": "I have already booked the room.",
+          "local": "Paiseh, already booked alr.",
+          "local_conditioned_on": "I have already booked the room.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-owner-you",
+          "standard": "You can go first.",
+          "local": "you can go first. i anything",
+          "local_conditioned_on": "You can go first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-owner-me",
+          "standard": "I can go first.",
+          "local": "can go first. i anything",
+          "local_conditioned_on": "I can go first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-not-yet",
+          "standard": "I have not finished the slides yet.",
+          "local": "havent leh, i havent finished the slides yet.",
+          "local_conditioned_on": "I have not finished the slides yet.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-already",
+          "standard": "I have already finished the slides.",
+          "local": "havent already finished the slides.",
+          "local_conditioned_on": "I have already finished the slides.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-reassure",
+          "standard": "No worries, just let me know when you are done.",
+          "local": "Nevermind, just update me when you are done.",
+          "local_conditioned_on": "No worries, just let me know when you are done.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-support",
+          "standard": "That sounds exhausting. Get some rest first.",
+          "local": "it sounds okay lah, get some rest first. get one more rest first",
+          "local_conditioned_on": "That sounds exhausting. Get some rest first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-uncertainty",
+          "standard": "I am not sure; let me check first.",
+          "local": "Eh, i am not sure, but i check first.",
+          "local_conditioned_on": "I am not sure; let me check first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-return",
+          "standard": "I will return your charger after my phone finishes charging.",
+          "local": "I return your charger after your phone finishes charging",
+          "local_conditioned_on": "I will return your charger after my phone finishes charging.",
+          "style_example_id": null
+        }
+      ]
+    },
+    {
+      "step": 125,
+      "train_loss": 0.006215673825949,
+      "validation_loss": 5.199198004603386
+    },
+    {
+      "step": 150,
+      "train_loss": 0.0008590663027813463,
+      "validation_loss": 4.823113304376602
+    },
+    {
+      "step": 175,
+      "train_loss": 0.0004953150792948444,
+      "validation_loss": 4.468481785058975
+    },
+    {
+      "step": 200,
+      "train_loss": 0.0026441871089738288,
+      "validation_loss": 5.656464836001396
+    },
+    {
+      "step": 225,
+      "train_loss": 0.00015934488987940992,
+      "validation_loss": 5.867832395434379
+    },
+    {
+      "step": 250,
+      "train_loss": 8.636138710615289e-05,
+      "validation_loss": 5.301142957806587
+    },
+    {
+      "step": 275,
+      "train_loss": 5.63371111717645e-05,
+      "validation_loss": 5.350674119591713
+    },
+    {
+      "step": 300,
+      "train_loss": 3.662539016422736e-05,
+      "validation_loss": 5.773053926229477,
+      "train_outputs": [
+        {
+          "item_id": "ITEM-A-002",
+          "standard": "I think a reservation is required, hold on let me check",
+          "local": "Eh i think need reserve one, wait ah I check",
+          "local_conditioned_on": "I think a reservation is required, hold on let me check",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-005",
+          "standard": "Just press the yellow button first.",
+          "local": "press yellow button first can already",
+          "local_conditioned_on": "Just press the yellow button first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-013",
+          "standard": "What would you like? I will buy it for you.",
+          "local": "what you want, i buy for you",
+          "local_conditioned_on": "What would you like? I will buy it for you.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-018",
+          "standard": "That is abit far, but I am okay with it",
+          "local": "Abit far leh, but okay la",
+          "local_conditioned_on": "That is abit far, but I am okay with it",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-021",
+          "standard": "You can't; the seat has already been reserved.",
+          "local": "you can't, it got choped already",
+          "local_conditioned_on": "You can't; the seat has already been reserved.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-027",
+          "standard": "No, I am taking the bus, the MRT is very slow",
+          "local": "No, I taking bus, MRT very slow",
+          "local_conditioned_on": "No, I am taking the bus, the MRT is very slow",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-036",
+          "standard": "No worries, it happens",
+          "local": "Neh mind, happens one",
+          "local_conditioned_on": "No worries, it happens",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-A-041",
+          "standard": "Could you help print it for me too?",
+          "local": "Eh, can help me print also?",
+          "local_conditioned_on": "Could you help print it for me too?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-006",
+          "standard": "Sorry, I can't make it today. I need to finish some work.",
+          "local": "Paiseh, today cannot. Need finish some work.",
+          "local_conditioned_on": "Sorry, I can't make it today. I need to finish some work.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-016",
+          "standard": "Yes, the slides are on the course page already.",
+          "local": "Ya, the slides are on the course page already.",
+          "local_conditioned_on": "Yes, the slides are on the course page already.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-021",
+          "standard": "Sorry, I can't send them right now, but I'll send them later.",
+          "local": "Paiseh, now cannot. I'll send them later.",
+          "local_conditioned_on": "Sorry, I can't send them right now, but I'll send them later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-038",
+          "standard": "No worries. Just let me know when you arrive.",
+          "local": "Nevermind, just update me when you reach.",
+          "local_conditioned_on": "No worries. Just let me know when you arrive.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-046",
+          "standard": "Thanks for inviting me, but I can't make it tonight.",
+          "local": "Thanks for asking, but tonight cannot ah",
+          "local_conditioned_on": "Thanks for inviting me, but I can't make it tonight.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-B-053",
+          "standard": "Sure, I'll book it later.",
+          "local": "Can, I book later.",
+          "local_conditioned_on": "Sure, I'll book it later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-005",
+          "standard": "yeah, we don't have class on tuesday",
+          "local": "ya, tuesday no class",
+          "local_conditioned_on": "yeah, we don't have class on tuesday",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-007",
+          "standard": "not yet. i was waiting for you",
+          "local": "havent leh, i was waiting for you",
+          "local_conditioned_on": "not yet. i was waiting for you",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-020",
+          "standard": "Not yet. The lecturer is not here either.",
+          "local": "not yet leh, lecturer also not here",
+          "local_conditioned_on": "Not yet. The lecturer is not here either.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-027",
+          "standard": "It is okay. Rest first; we can eat together another time.",
+          "local": "it's okay lah, rest first. next time we makan",
+          "local_conditioned_on": "It is okay. Rest first; we can eat together another time.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-031",
+          "standard": "no problem. you should head back and rest",
+          "local": "okay lah, go back and rest first",
+          "local_conditioned_on": "no problem. you should head back and rest",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-039",
+          "standard": "no worries. we'll update you after the rehearsal",
+          "local": "it's okay lah, we update you after rehearsal",
+          "local_conditioned_on": "no worries. we'll update you after the rehearsal",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-044",
+          "standard": "The lecturer is inside already, but class has not started yet.",
+          "local": "inside alr, but hasnt start yet",
+          "local_conditioned_on": "The lecturer is inside already, but class has not started yet.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-059",
+          "standard": "Yes, I've arrived. I'm waiting at the entrance.",
+          "local": "ya, reached alr. waiting at the entrance",
+          "local_conditioned_on": "Yes, I've arrived. I'm waiting at the entrance.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-060",
+          "standard": "It's okay, I'll wait here. Come when you can.",
+          "local": "it's okay lah, i wait here. come when you can",
+          "local_conditioned_on": "It's okay, I'll wait here. Come when you can.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-C-003",
+          "standard": "Either is fine with me.",
+          "local": "i anything",
+          "local_conditioned_on": "Either is fine with me.",
+          "style_example_id": null
+        }
+      ],
+      "train_normalized_exact_match": 1.0,
+      "validation_outputs": [
+        {
+          "item_id": "ITEM-D-005",
+          "standard": "No, I don't want it. I can't eat spicy food.",
+          "local": "No, I can't. I'm eating spicy food.",
+          "local_conditioned_on": "No, I don't want it. I can't eat spicy food.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-018",
+          "standard": "Sorry, I have something on tomorrow. What about the day after tomorrow?",
+          "local": "Paiseh, today cannot. Need prep some time.",
+          "local_conditioned_on": "Sorry, I have something on tomorrow. What about the day after tomorrow?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-019",
+          "standard": "Sorry. I forgot about that.",
+          "local": "Paiseh, now cannot. Need finish writing.",
+          "local_conditioned_on": "Sorry. I forgot about that.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-022",
+          "standard": "I am going to finish soon. What is your answer to the first question?",
+          "local": "it's okay lah, i finish soon.",
+          "local_conditioned_on": "I am going to finish soon. What is your answer to the first question?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-028",
+          "standard": "Which row would you like to sit in?",
+          "local": "which row would you like to sit in?",
+          "local_conditioned_on": "Which row would you like to sit in?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-035",
+          "standard": "Okay, take your time, I will walk around first.",
+          "local": "okay lah, I walk around first.",
+          "local_conditioned_on": "Okay, take your time, I will walk around first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-052",
+          "standard": "Ok, I will make sure to book later",
+          "local": "Paiseh, now cannot book later.",
+          "local_conditioned_on": "Ok, I will make sure to book later",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-D-055",
+          "standard": "Ok , I will return once I have charged my phone",
+          "local": "Paiseh, now cannot ah",
+          "local_conditioned_on": "Ok , I will return once I have charged my phone",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-029",
+          "standard": "Don't worry, I've already reserved a seat for you.",
+          "local": "Don't worry, I've already reserved a seat for you",
+          "local_conditioned_on": "Don't worry, I've already reserved a seat for you.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-034",
+          "standard": "Yes, I have already booked it.",
+          "local": "Ya, I booked it.",
+          "local_conditioned_on": "Yes, I have already booked it.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-035",
+          "standard": "Why did you wait until the last minute to tell me?",
+          "local": "Eh, i waited until last minute to tell you",
+          "local_conditioned_on": "Why did you wait until the last minute to tell me?",
+          "style_example_id": null
+        },
+        {
+          "item_id": "ITEM-E-056",
+          "standard": "okay, you can go first",
+          "local": "okay lah, go first",
+          "local_conditioned_on": "okay, you can go first",
+          "style_example_id": null
+        }
+      ],
+      "validation_normalized_exact_match": 0.0,
+      "meaning_probes_outputs": [
+        {
+          "item_id": "DIAG3-availability-positive",
+          "standard": "Friday afternoon works for me.",
+          "local": "Friday afternoon works for me",
+          "local_conditioned_on": "Friday afternoon works for me.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-availability-negative",
+          "standard": "Friday afternoon does not work for me.",
+          "local": "Friday afternoon doesnt work for me",
+          "local_conditioned_on": "Friday afternoon does not work for me.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-booking-future",
+          "standard": "I will book the room later.",
+          "local": "Can, I book later.",
+          "local_conditioned_on": "I will book the room later.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-booking-complete",
+          "standard": "I have already booked the room.",
+          "local": "havent booked leh, but already booked",
+          "local_conditioned_on": "I have already booked the room.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-owner-you",
+          "standard": "You can go first.",
+          "local": "you can go first",
+          "local_conditioned_on": "You can go first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-owner-me",
+          "standard": "I can go first.",
+          "local": "can go first",
+          "local_conditioned_on": "I can go first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-not-yet",
+          "standard": "I have not finished the slides yet.",
+          "local": "havent leh, i havent finished the slides yet",
+          "local_conditioned_on": "I have not finished the slides yet.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-already",
+          "standard": "I have already finished the slides.",
+          "local": "havent started leh, but already finished",
+          "local_conditioned_on": "I have already finished the slides.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-reassure",
+          "standard": "No worries, just let me know when you are done.",
+          "local": "Nevermind, just update me when you are done.",
+          "local_conditioned_on": "No worries, just let me know when you are done.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-support",
+          "standard": "That sounds exhausting. Get some rest first.",
+          "local": "it sounds okay lah, get some rest first. go rest first",
+          "local_conditioned_on": "That sounds exhausting. Get some rest first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-uncertainty",
+          "standard": "I am not sure; let me check first.",
+          "local": "Eh, i think need check first.",
+          "local_conditioned_on": "I am not sure; let me check first.",
+          "style_example_id": null
+        },
+        {
+          "item_id": "DIAG3-return",
+          "standard": "I will return your charger after my phone finishes charging.",
+          "local": "it's okay lah, i return your charger after charging",
+          "local_conditioned_on": "I will return your charger after my phone finishes charging.",
+          "style_example_id": null
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Capacity probe intentionally repeats training examples; training fit is not generalization.",
+    "Authors A/B/C versus D/E separate gradient updates here; original data may have appeared in previous project checkpoints or public pretraining.",
+    "Existing original scenarios overlap; this is author-disjoint transfer, not topic-disjoint student generalization.",
+    "English corrections and controls assistant authored, not human labels.",
+    "Meaning probes are diagnostic development inputs; no reference answers and no automatic quality certification."
+  ],
+  "checkpoint_policy": "Fixed step 300 capacity endpoint; not a validation-selected production checkpoint"
+}

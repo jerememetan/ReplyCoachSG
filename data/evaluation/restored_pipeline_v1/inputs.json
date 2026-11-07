@@ -1,0 +1,338 @@
+[
+  {
+    "item_id": "RESTORE-FRESH-001",
+    "category": "invitation",
+    "context": [
+      "I am free after dinner.",
+      "We are going for a walk around the park."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to join us at eight?",
+    "diagnostic_anchor": "Yes, I would like to join you at eight."
+  },
+  {
+    "item_id": "RESTORE-FRESH-002",
+    "category": "waiting",
+    "context": [
+      "I am at the entrance beside the ticket machine.",
+      "My bus is reaching in two minutes."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you wait there for me?",
+    "diagnostic_anchor": "Sure, I will wait here for you."
+  },
+  {
+    "item_id": "RESTORE-FRESH-003",
+    "category": "offer",
+    "context": [
+      "I missed the last part of the briefing.",
+      "I wrote down the key points."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want me to send you a photo of my notes?",
+    "diagnostic_anchor": "Yes please, send me a photo of your notes."
+  },
+  {
+    "item_id": "RESTORE-FRESH-004",
+    "category": "send",
+    "context": [
+      "I saved the group photo on my phone.",
+      "I forgot to take a photo."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you send it to me tonight?",
+    "diagnostic_anchor": "Sure, I will send you the group photo tonight."
+  },
+  {
+    "item_id": "RESTORE-FRESH-005",
+    "category": "return_request",
+    "context": [
+      "You borrowed my umbrella yesterday.",
+      "It is still in my locker."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I give it back to you on Tuesday?",
+    "diagnostic_anchor": "Yes please, return my umbrella on Tuesday."
+  },
+  {
+    "item_id": "RESTORE-FRESH-006",
+    "category": "return_promise",
+    "context": [
+      "I still have your calculator.",
+      "I need it for my quiz tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you return it before class?",
+    "diagnostic_anchor": "Sure, I will return your calculator before class."
+  },
+  {
+    "item_id": "RESTORE-FRESH-007",
+    "category": "known_status",
+    "context": [
+      "I submitted the registration form this morning.",
+      "Thanks for reminding me."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted your form yet?",
+    "diagnostic_anchor": "Yes, I submitted it this morning."
+  },
+  {
+    "item_id": "RESTORE-FRESH-008",
+    "category": "unfinished",
+    "context": [
+      "I have not started packing the welcome kits.",
+      "We can finish them tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are the kits packed already?",
+    "diagnostic_anchor": "Not yet, I have not started packing them."
+  },
+  {
+    "item_id": "RESTORE-FRESH-009",
+    "category": "budget",
+    "context": [
+      "I have twelve dollars left for dinner.",
+      "There are a few stalls downstairs."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to order the thirty-dollar platter?",
+    "diagnostic_anchor": "That is over my budget. Could we get something cheaper?"
+  },
+  {
+    "item_id": "RESTORE-FRESH-010",
+    "category": "schedule",
+    "context": [
+      "I am working until 7:25 and cannot leave early.",
+      "We can meet after work."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we meet at 6:50?",
+    "diagnostic_anchor": "I cannot meet at 6:50. Could we meet after 7:25?"
+  },
+  {
+    "item_id": "RESTORE-FRESH-011",
+    "category": "availability",
+    "context": [
+      "I can help on Wednesday but I am away on Thursday.",
+      "I will check which day we need help."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you come on Thursday morning?",
+    "diagnostic_anchor": "I cannot come on Thursday, but I can help on Wednesday."
+  },
+  {
+    "item_id": "RESTORE-FRESH-012",
+    "category": "diet",
+    "context": [
+      "I do not eat seafood.",
+      "We can choose something else."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I get you the prawn noodles?",
+    "diagnostic_anchor": "No thanks, I do not eat seafood. Could I have something without seafood?"
+  },
+  {
+    "item_id": "RESTORE-FRESH-013",
+    "category": "physical",
+    "context": [
+      "My shoulder is injured and I cannot lift heavy boxes.",
+      "Please take care of it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you help move this heavy cupboard?",
+    "diagnostic_anchor": "Sorry, I cannot lift heavy things with my injured shoulder."
+  },
+  {
+    "item_id": "RESTORE-FRESH-014",
+    "category": "location",
+    "context": [
+      "I am waiting beside the blue vending machine on level two.",
+      "I just entered the building."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where should I find you?",
+    "diagnostic_anchor": "I am beside the blue vending machine on level two."
+  },
+  {
+    "item_id": "RESTORE-FRESH-015",
+    "category": "known_unknown",
+    "context": [
+      "I have not checked whether the cafe opens on public holidays.",
+      "Their hours sometimes change."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Will it be open tomorrow morning?",
+    "diagnostic_anchor": "I have not checked yet. Let me check before confirming."
+  },
+  {
+    "item_id": "RESTORE-FRESH-016",
+    "category": "sympathy",
+    "context": [
+      "My application results came out.",
+      "How did it go?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "I did not get selected and I feel quite upset.",
+    "diagnostic_anchor": "I am sorry to hear that. Do you want to talk about it?"
+  },
+  {
+    "item_id": "RESTORE-FRESH-017",
+    "category": "support",
+    "context": [
+      "I have been handling almost all the presentation slides.",
+      "Have the others taken any sections?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Not really. I am exhausted trying to do everything.",
+    "diagnostic_anchor": "That sounds exhausting. Could we ask the others to share the work?"
+  },
+  {
+    "item_id": "RESTORE-FRESH-018",
+    "category": "celebration",
+    "context": [
+      "I finally finished my driving test.",
+      "How did it go?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "I passed on my first try!",
+    "diagnostic_anchor": "Congratulations! I am happy for you."
+  },
+  {
+    "item_id": "RESTORE-FRESH-019",
+    "category": "reminder",
+    "context": [
+      "I am leaving for the library soon.",
+      "I am heading out too."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Remember to bring your water bottle.",
+    "diagnostic_anchor": "Thanks for reminding me. I will bring it."
+  },
+  {
+    "item_id": "RESTORE-FRESH-020",
+    "category": "correction",
+    "context": [
+      "I sent you the event poster.",
+      "I noticed the venue was wrong."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "I fixed the venue and sent you the updated version.",
+    "diagnostic_anchor": "Thanks for fixing it and sending the updated version. I will check it."
+  },
+  {
+    "item_id": "RESTORE-FRESH-021",
+    "category": "drink_choice",
+    "context": [
+      "I am still in class.",
+      "I am queuing at the drinks stall."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What would you like me to get you?",
+    "diagnostic_anchor": "A cup of tea, please. Thank you for getting it for me."
+  },
+  {
+    "item_id": "RESTORE-FRESH-022",
+    "category": "clarification",
+    "context": [
+      "We could meet near the station.",
+      "There are two exits."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Meet me there after your lesson.",
+    "diagnostic_anchor": "Which exit should I meet you at after my lesson?"
+  },
+  {
+    "item_id": "RESTORE-FRESH-023",
+    "category": "decline",
+    "context": [
+      "We are meeting for supper tonight.",
+      "Let me know if you can come."
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "Sorry, I have too much work and cannot join tonight.",
+    "diagnostic_anchor": "No worries, we can meet another time."
+  },
+  {
+    "item_id": "RESTORE-FRESH-024",
+    "category": "change_plan",
+    "context": [
+      "We planned to study at the cafe.",
+      "It is getting noisy here."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to move to the reading room instead?",
+    "diagnostic_anchor": "Yes, I would prefer somewhere quieter. Let us try the reading room."
+  }
+]

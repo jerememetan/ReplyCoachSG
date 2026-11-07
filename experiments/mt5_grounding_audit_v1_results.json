@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "job_id": 355657,
+  "exit_code": "0:0",
+  "elapsed": "00:01:42",
+  "training": false,
+  "verified_outputs": 140,
+  "report_sha256": "9245fa520512769d8dd557116bce9c091e250fd796dfc041b23867a2eeea6d93",
+  "earlier_base_hash_matches_prior_fit_probe": true,
+  "findings": [
+    "Grounding failures appear before the recent reply-act pilots: earlier base agrees to online-only-incompatible in-person briefing, fails paid/unpaid distinction, asserts unchecked closing time, and gives inconsistent budget wording.",
+    "Selected STANDARD checkpoint also fails these fact-change probes; paired direct training recovers paid/unpaid distinction but not budget/duration/knowledge grounding.",
+    "Within the same paired-gated checkpoint, disabling conditioning recovers the paid/unpaid distinction while predicted conditioning says unpaid for both. This supports a harmful conditioning effect on this probe, not a universal causal ranking.",
+    "Reproduced prior16 automatic outputs exactly for paired-direct and paired-gated-predicted paths; observed differences are not newly invented summaries.",
+    "Training-corpus audit identifies14 original-target revisions in expanded initialization corpus, whereas recent pilots replay the older targets. Target inconsistency is real; it is not proven to cause all errors."
+  ],
+  "chosen_change": "Stage a single consistent STANDARD target version with5 specific assistant repairs/clarifications, compared against identical unchanged targets. No new architecture or more-epochs claim.",
+  "prepared_manifest": "data/training_expansion/mt5_grounding_repair_v1/manifest.json",
+  "new_training_submitted": false,
+  "default_changed": false
+}

@@ -1,0 +1,1634 @@
+[
+  {
+    "item_id": "ITEM-A-001-CTX-1",
+    "origin_item_id": "ITEM-A-001",
+    "style": "REPLY",
+    "message": "hey are you free this weekend",
+    "context": [],
+    "speakers": [],
+    "response": "yea sure, why?"
+  },
+  {
+    "item_id": "ITEM-A-002-CTX-1",
+    "origin_item_id": "ITEM-A-002",
+    "style": "REPLY",
+    "message": "Did you make a booking tonight at the restaurant?",
+    "context": [],
+    "speakers": [],
+    "response": "Not yet, I am checking their opening hours."
+  },
+  {
+    "item_id": "ITEM-A-003-CTX-1",
+    "origin_item_id": "ITEM-A-003",
+    "style": "REPLY",
+    "message": "Would you like to join us at the function this Sunday?",
+    "context": [],
+    "speakers": [],
+    "response": "Okay! Where is the function held at?"
+  },
+  {
+    "item_id": "ITEM-A-004-CTX-1",
+    "origin_item_id": "ITEM-A-004",
+    "style": "REPLY",
+    "message": "Hey, its been a long time since our group met.",
+    "context": [],
+    "speakers": [],
+    "response": "Yeah, I have been having a hard time thinking where we should meet at."
+  },
+  {
+    "item_id": "ITEM-A-005-CTX-1",
+    "origin_item_id": "ITEM-A-005",
+    "style": "REPLY",
+    "message": "Hi! How do you uses the printer at level 5?",
+    "context": [],
+    "speakers": [],
+    "response": "Oh, just press the start button and it should automatically start printing."
+  },
+  {
+    "item_id": "ITEM-A-006-CTX-1",
+    "origin_item_id": "ITEM-A-006",
+    "style": "REPLY",
+    "message": "Hey, would you like to play tennis with us tonight?",
+    "context": [],
+    "speakers": [],
+    "response": "Sure! Where should we go?"
+  },
+  {
+    "item_id": "ITEM-A-007-CTX-1",
+    "origin_item_id": "ITEM-A-007",
+    "style": "REPLY",
+    "message": "The project work seems quite heavy.",
+    "context": [],
+    "speakers": [],
+    "response": "Yeah, maybe we should start on it this weekend."
+  },
+  {
+    "item_id": "ITEM-A-008-CTX-1",
+    "origin_item_id": "ITEM-A-008",
+    "style": "REPLY",
+    "message": "What time are you reaching the club later?",
+    "context": [],
+    "speakers": [],
+    "response": "Oh, maybe around 11pm."
+  },
+  {
+    "item_id": "ITEM-A-009-CTX-1",
+    "origin_item_id": "ITEM-A-009",
+    "style": "REPLY",
+    "message": "Can you help me check where is the lecture later?",
+    "context": [],
+    "speakers": [],
+    "response": "It is at LT27, I am heading there now."
+  },
+  {
+    "item_id": "ITEM-A-011-CTX-1",
+    "origin_item_id": "ITEM-A-011",
+    "style": "REPLY",
+    "message": "have you eaten the noodles stall before?",
+    "context": [],
+    "speakers": [],
+    "response": "nope, only the Muslim stall"
+  },
+  {
+    "item_id": "ITEM-A-013-CTX-1",
+    "origin_item_id": "ITEM-A-013",
+    "style": "REPLY",
+    "message": "where are you?",
+    "context": [],
+    "speakers": [],
+    "response": "I am going to buy a drink at the convenience store first."
+  },
+  {
+    "item_id": "ITEM-A-014-CTX-1",
+    "origin_item_id": "ITEM-A-014",
+    "style": "REPLY",
+    "message": "hello, have you done the literature review?",
+    "context": [],
+    "speakers": [],
+    "response": "oh not yet, when is the assignment due again?"
+  },
+  {
+    "item_id": "ITEM-A-015-CTX-1",
+    "origin_item_id": "ITEM-A-015",
+    "style": "REPLY",
+    "message": "Hi would you be participating in our open session tonight?",
+    "context": [],
+    "speakers": [],
+    "response": "Yes, where is it held at"
+  },
+  {
+    "item_id": "ITEM-A-018-CTX-1",
+    "origin_item_id": "ITEM-A-018",
+    "style": "REPLY",
+    "message": "Hey should we meet for the group project this weekend?",
+    "context": [],
+    "speakers": [],
+    "response": "Sure! Let's meet at the Med-Sci Library."
+  },
+  {
+    "item_id": "ITEM-A-020-CTX-1",
+    "origin_item_id": "ITEM-A-020",
+    "style": "REPLY",
+    "message": "Hey are you joining us for the party?",
+    "context": [],
+    "speakers": [],
+    "response": "Yeah! Is it at the hall?"
+  },
+  {
+    "item_id": "ITEM-A-021-CTX-1",
+    "origin_item_id": "ITEM-A-021",
+    "style": "REPLY",
+    "message": "Hey are you working on the individual assignment now?",
+    "context": [],
+    "speakers": [],
+    "response": "yeah, its due next Monday"
+  },
+  {
+    "item_id": "ITEM-A-022-CTX-1",
+    "origin_item_id": "ITEM-A-022",
+    "style": "REPLY",
+    "message": "I am going to be late for the tutorial",
+    "context": [],
+    "speakers": [],
+    "response": "Don't worry, I can reserve a seat for you"
+  },
+  {
+    "item_id": "ITEM-A-023-CTX-1",
+    "origin_item_id": "ITEM-A-023",
+    "style": "REPLY",
+    "message": "Hey, you ordered chicken rice right?",
+    "context": [],
+    "speakers": [],
+    "response": "No? I ordered from the noodles stall"
+  },
+  {
+    "item_id": "ITEM-A-025-CTX-1",
+    "origin_item_id": "ITEM-A-025",
+    "style": "REPLY",
+    "message": "Sorry, I will be about 15 minutes late",
+    "context": [],
+    "speakers": [],
+    "response": "Hurry, I have been waiting for quite a while"
+  },
+  {
+    "item_id": "ITEM-A-027-CTX-1",
+    "origin_item_id": "ITEM-A-027",
+    "style": "REPLY",
+    "message": "we are meeting at Suntec city right?",
+    "context": [],
+    "speakers": [],
+    "response": "Yep, on my way there now."
+  },
+  {
+    "item_id": "ITEM-A-028-CTX-1",
+    "origin_item_id": "ITEM-A-028",
+    "style": "REPLY",
+    "message": "what time are you reaching class today?",
+    "context": [],
+    "speakers": [],
+    "response": "I am on time, how about you?"
+  },
+  {
+    "item_id": "ITEM-A-029-CTX-1",
+    "origin_item_id": "ITEM-A-029",
+    "style": "REPLY",
+    "message": "Could you help me order chicken rice?",
+    "context": [],
+    "speakers": [],
+    "response": "Okay, give me a second"
+  },
+  {
+    "item_id": "ITEM-A-031-CTX-1",
+    "origin_item_id": "ITEM-A-031",
+    "style": "REPLY",
+    "message": "Bro, look at the sky",
+    "context": [],
+    "speakers": [],
+    "response": "Oh no, it is raining so heavily now"
+  },
+  {
+    "item_id": "ITEM-A-036-CTX-1",
+    "origin_item_id": "ITEM-A-036",
+    "style": "REPLY",
+    "message": "What would you like from the drinks stall?",
+    "context": [],
+    "speakers": [],
+    "response": "I would like a cold Milo"
+  },
+  {
+    "item_id": "ITEM-A-039-CTX-1",
+    "origin_item_id": "ITEM-A-039",
+    "style": "REPLY",
+    "message": "Do you want to join us for dinner?",
+    "context": [],
+    "speakers": [],
+    "response": "Sure! Where are y'all eating at?"
+  },
+  {
+    "item_id": "ITEM-A-040-CTX-1",
+    "origin_item_id": "ITEM-A-040",
+    "style": "REPLY",
+    "message": "did you bring your charger?",
+    "context": [],
+    "speakers": [],
+    "response": "yeah, why?"
+  },
+  {
+    "item_id": "ITEM-A-041-CTX-1",
+    "origin_item_id": "ITEM-A-041",
+    "style": "REPLY",
+    "message": "hey, have you printed the worksheet?",
+    "context": [],
+    "speakers": [],
+    "response": "not yet"
+  },
+  {
+    "item_id": "ITEM-A-042-CTX-1",
+    "origin_item_id": "ITEM-A-042",
+    "style": "REPLY",
+    "message": "are you free this weekend?",
+    "context": [],
+    "speakers": [],
+    "response": "yeah, I think so"
+  },
+  {
+    "item_id": "ITEM-A-045-CTX-1",
+    "origin_item_id": "ITEM-A-045",
+    "style": "REPLY",
+    "message": "I think I am going to be late for class",
+    "context": [],
+    "speakers": [],
+    "response": "how late?"
+  },
+  {
+    "item_id": "ITEM-A-047-CTX-1",
+    "origin_item_id": "ITEM-A-047",
+    "style": "REPLY",
+    "message": "I am at the canteen now.",
+    "context": [],
+    "speakers": [],
+    "response": "Okay, where are you sitting?"
+  },
+  {
+    "item_id": "ITEM-A-048-CTX-1",
+    "origin_item_id": "ITEM-A-048",
+    "style": "REPLY",
+    "message": "sorry, I might be late for class today",
+    "context": [],
+    "speakers": [],
+    "response": "how late will you be?"
+  },
+  {
+    "item_id": "ITEM-A-049-CTX-1",
+    "origin_item_id": "ITEM-A-049",
+    "style": "REPLY",
+    "message": "are you taking the MRT home?",
+    "context": [],
+    "speakers": [],
+    "response": "yeah, why?"
+  },
+  {
+    "item_id": "ITEM-A-055-CTX-1",
+    "origin_item_id": "ITEM-A-055",
+    "style": "REPLY",
+    "message": "There is a tennis session tonight",
+    "context": [],
+    "speakers": [],
+    "response": "Yep, I am going!"
+  },
+  {
+    "item_id": "ITEM-A-056-CTX-1",
+    "origin_item_id": "ITEM-A-056",
+    "style": "REPLY",
+    "message": "The party tonight, we are going right?",
+    "context": [],
+    "speakers": [],
+    "response": "Yep, I am going!"
+  },
+  {
+    "item_id": "ITEM-A-057-CTX-1",
+    "origin_item_id": "ITEM-A-057",
+    "style": "REPLY",
+    "message": "Hey! Have you done the results section?",
+    "context": [],
+    "speakers": [],
+    "response": "Yep, I finished it last week."
+  },
+  {
+    "item_id": "ITEM-A-058-CTX-1",
+    "origin_item_id": "ITEM-A-058",
+    "style": "REPLY",
+    "message": "Hey you finished the assignment?",
+    "context": [],
+    "speakers": [],
+    "response": "Not yet, could you send me yours?"
+  },
+  {
+    "item_id": "ITEM-A-059-CTX-1",
+    "origin_item_id": "ITEM-A-059",
+    "style": "REPLY",
+    "message": "This schedule is killing me.",
+    "context": [],
+    "speakers": [],
+    "response": "Same here, I hate this tutorial slot."
+  },
+  {
+    "item_id": "ITEM-A-060-CTX-1",
+    "origin_item_id": "ITEM-A-060",
+    "style": "REPLY",
+    "message": "Let's go to the library for our study session",
+    "context": [],
+    "speakers": [],
+    "response": "Sure, should we invite the others?"
+  },
+  {
+    "item_id": "ITEM-B-001-CTX-1",
+    "origin_item_id": "ITEM-B-001",
+    "style": "REPLY",
+    "message": "lecture ending soon",
+    "context": [],
+    "speakers": [],
+    "response": "ya i hungry already sia"
+  },
+  {
+    "item_id": "ITEM-B-004-CTX-1",
+    "origin_item_id": "ITEM-B-004",
+    "style": "REPLY",
+    "message": "I going cafe",
+    "context": [],
+    "speakers": [],
+    "response": "I still in class"
+  },
+  {
+    "item_id": "ITEM-B-005-CTX-1",
+    "origin_item_id": "ITEM-B-005",
+    "style": "REPLY",
+    "message": "want eat dinner at six?",
+    "context": [],
+    "speakers": [],
+    "response": "six i cant sia"
+  },
+  {
+    "item_id": "ITEM-B-006-CTX-1",
+    "origin_item_id": "ITEM-B-006",
+    "style": "REPLY",
+    "message": "want eat lunch?",
+    "context": [],
+    "speakers": [],
+    "response": "I still got some work to do sia"
+  },
+  {
+    "item_id": "ITEM-B-007-CTX-1",
+    "origin_item_id": "ITEM-B-007",
+    "style": "REPLY",
+    "message": "You at canteen already?",
+    "context": [],
+    "speakers": [],
+    "response": "I walking there now"
+  },
+  {
+    "item_id": "ITEM-B-008-CTX-1",
+    "origin_item_id": "ITEM-B-008",
+    "style": "REPLY",
+    "message": "I have quite a lot to finish today",
+    "context": [],
+    "speakers": [],
+    "response": "same here"
+  },
+  {
+    "item_id": "ITEM-B-010-CTX-1",
+    "origin_item_id": "ITEM-B-010",
+    "style": "REPLY",
+    "message": "let's meet at the library at three",
+    "context": [],
+    "speakers": [],
+    "response": "okay, I'll be there"
+  },
+  {
+    "item_id": "ITEM-B-011-CTX-1",
+    "origin_item_id": "ITEM-B-011",
+    "style": "REPLY",
+    "message": "I need  revise for tomorrow",
+    "context": [],
+    "speakers": [],
+    "response": "I also have a lot to cover"
+  },
+  {
+    "item_id": "ITEM-B-012-CTX-1",
+    "origin_item_id": "ITEM-B-012",
+    "style": "REPLY",
+    "message": "want study together tonight?",
+    "context": [],
+    "speakers": [],
+    "response": "sure, I seven can"
+  },
+  {
+    "item_id": "ITEM-B-013-CTX-1",
+    "origin_item_id": "ITEM-B-013",
+    "style": "REPLY",
+    "message": "where you studying today?",
+    "context": [],
+    "speakers": [],
+    "response": "I haven't decided yet"
+  },
+  {
+    "item_id": "ITEM-B-014-CTX-1",
+    "origin_item_id": "ITEM-B-014",
+    "style": "REPLY",
+    "message": "want study together this afternoon?",
+    "context": [],
+    "speakers": [],
+    "response": "I got other commitment already"
+  },
+  {
+    "item_id": "ITEM-B-016-CTX-1",
+    "origin_item_id": "ITEM-B-016",
+    "style": "REPLY",
+    "message": "I missed the first half of class",
+    "context": [],
+    "speakers": [],
+    "response": "I was there from the start"
+  },
+  {
+    "item_id": "ITEM-B-017-CTX-1",
+    "origin_item_id": "ITEM-B-017",
+    "style": "REPLY",
+    "message": "I'll send you the recording tonight",
+    "context": [],
+    "speakers": [],
+    "response": "ok thanks"
+  },
+  {
+    "item_id": "ITEM-B-018-CTX-1",
+    "origin_item_id": "ITEM-B-018",
+    "style": "REPLY",
+    "message": "I couldn't attend yesterday's tutorial",
+    "context": [],
+    "speakers": [],
+    "response": "I still got the recording"
+  },
+  {
+    "item_id": "ITEM-B-020-CTX-1",
+    "origin_item_id": "ITEM-B-020",
+    "style": "REPLY",
+    "message": "can send me last week's notes?",
+    "context": [],
+    "speakers": [],
+    "response": "sure, I'll look for them"
+  },
+  {
+    "item_id": "ITEM-B-021-CTX-1",
+    "origin_item_id": "ITEM-B-021",
+    "style": "REPLY",
+    "message": "can share your notes from the lecture?",
+    "context": [],
+    "speakers": [],
+    "response": "I have them open"
+  },
+  {
+    "item_id": "ITEM-B-022-CTX-1",
+    "origin_item_id": "ITEM-B-022",
+    "style": "REPLY",
+    "message": "how is your section going?",
+    "context": [],
+    "speakers": [],
+    "response": "almost finished"
+  },
+  {
+    "item_id": "ITEM-B-023-CTX-1",
+    "origin_item_id": "ITEM-B-023",
+    "style": "REPLY",
+    "message": "I finished my part already",
+    "context": [],
+    "speakers": [],
+    "response": "I'm still working on mine"
+  },
+  {
+    "item_id": "ITEM-B-024-CTX-1",
+    "origin_item_id": "ITEM-B-024",
+    "style": "REPLY",
+    "message": "I'm confused about the presentation",
+    "context": [],
+    "speakers": [],
+    "response": "we can go through it together later"
+  },
+  {
+    "item_id": "ITEM-B-028-CTX-1",
+    "origin_item_id": "ITEM-B-028",
+    "style": "REPLY",
+    "message": "is your part ready?",
+    "context": [],
+    "speakers": [],
+    "response": "I'm still working on the final part"
+  },
+  {
+    "item_id": "ITEM-B-032-CTX-1",
+    "origin_item_id": "ITEM-B-032",
+    "style": "REPLY",
+    "message": "can we meet before the tutorial?",
+    "context": [],
+    "speakers": [],
+    "response": "sure, I'll be there at one thirty"
+  },
+  {
+    "item_id": "ITEM-B-033-CTX-1",
+    "origin_item_id": "ITEM-B-033",
+    "style": "REPLY",
+    "message": "are you already on campus?",
+    "context": [],
+    "speakers": [],
+    "response": "yea, I arrived already"
+  },
+  {
+    "item_id": "ITEM-B-037-CTX-1",
+    "origin_item_id": "ITEM-B-037",
+    "style": "REPLY",
+    "message": "let's meet at the campus gate",
+    "context": [],
+    "speakers": [],
+    "response": "okay, I'm walking over"
+  },
+  {
+    "item_id": "ITEM-B-038-CTX-1",
+    "origin_item_id": "ITEM-B-038",
+    "style": "REPLY",
+    "message": "where are you now?",
+    "context": [],
+    "speakers": [],
+    "response": "I'm still on the bus"
+  },
+  {
+    "item_id": "ITEM-B-039-CTX-1",
+    "origin_item_id": "ITEM-B-039",
+    "style": "REPLY",
+    "message": "I'm near the wrong building",
+    "context": [],
+    "speakers": [],
+    "response": "I know where you are"
+  },
+  {
+    "item_id": "ITEM-B-040-CTX-1",
+    "origin_item_id": "ITEM-B-040",
+    "style": "REPLY",
+    "message": "we're meeting at six",
+    "context": [],
+    "speakers": [],
+    "response": "okay, I'll be there"
+  },
+  {
+    "item_id": "ITEM-B-041-CTX-1",
+    "origin_item_id": "ITEM-B-041",
+    "style": "REPLY",
+    "message": "I'm heading back to campus",
+    "context": [],
+    "speakers": [],
+    "response": "I'm leaving soon also"
+  },
+  {
+    "item_id": "ITEM-B-044-CTX-1",
+    "origin_item_id": "ITEM-B-044",
+    "style": "REPLY",
+    "message": "there's a movie showing tonight",
+    "context": [],
+    "speakers": [],
+    "response": "I haven't seen it yet"
+  },
+  {
+    "item_id": "ITEM-B-045-CTX-1",
+    "origin_item_id": "ITEM-B-045",
+    "style": "REPLY",
+    "message": "let's go to the museum on Saturday",
+    "context": [],
+    "speakers": [],
+    "response": "Yea, Saturday can"
+  },
+  {
+    "item_id": "ITEM-B-046-CTX-1",
+    "origin_item_id": "ITEM-B-046",
+    "style": "REPLY",
+    "message": "we're going to the club event tonight",
+    "context": [],
+    "speakers": [],
+    "response": "I have some work to finish"
+  },
+  {
+    "item_id": "ITEM-B-047-CTX-1",
+    "origin_item_id": "ITEM-B-047",
+    "style": "REPLY",
+    "message": "let's check out the career fair tomorrow afternoon",
+    "context": [],
+    "speakers": [],
+    "response": "sounds good"
+  },
+  {
+    "item_id": "ITEM-B-049-CTX-1",
+    "origin_item_id": "ITEM-B-049",
+    "style": "REPLY",
+    "message": "I'll buy the tickets later",
+    "context": [],
+    "speakers": [],
+    "response": "okay"
+  },
+  {
+    "item_id": "ITEM-B-052-CTX-1",
+    "origin_item_id": "ITEM-B-052",
+    "style": "REPLY",
+    "message": "let's play basketball at five",
+    "context": [],
+    "speakers": [],
+    "response": "five works for me"
+  },
+  {
+    "item_id": "ITEM-B-053-CTX-1",
+    "origin_item_id": "ITEM-B-053",
+    "style": "REPLY",
+    "message": "I haven't booked the court yet",
+    "context": [],
+    "speakers": [],
+    "response": "let me know once you decide"
+  },
+  {
+    "item_id": "ITEM-B-055-CTX-1",
+    "origin_item_id": "ITEM-B-055",
+    "style": "REPLY",
+    "message": "we're going to the gym after class",
+    "context": [],
+    "speakers": [],
+    "response": "I still got assignment"
+  },
+  {
+    "item_id": "ITEM-B-058-CTX-1",
+    "origin_item_id": "ITEM-B-058",
+    "style": "REPLY",
+    "message": "I need to print the report",
+    "context": [],
+    "speakers": [],
+    "response": "I'm heading to the printer"
+  },
+  {
+    "item_id": "ITEM-B-059-CTX-1",
+    "origin_item_id": "ITEM-B-059",
+    "style": "REPLY",
+    "message": "I'll bring my laptop charger tomorrow",
+    "context": [],
+    "speakers": [],
+    "response": "okay, thanks"
+  },
+  {
+    "item_id": "ITEM-B-060-CTX-1",
+    "origin_item_id": "ITEM-B-060",
+    "style": "REPLY",
+    "message": "can you lend me your adapter?",
+    "context": [],
+    "speakers": [],
+    "response": "I was looking for it"
+  },
+  {
+    "item_id": "ITEM-C-002-CTX-1",
+    "origin_item_id": "ITEM-C-002",
+    "style": "REPLY",
+    "message": "what sld we eat ltr?",
+    "context": [],
+    "speakers": [],
+    "response": "idk"
+  },
+  {
+    "item_id": "ITEM-C-003-CTX-1",
+    "origin_item_id": "ITEM-C-003",
+    "style": "REPLY",
+    "message": "what do you wanna eat for lunch?",
+    "context": [],
+    "speakers": [],
+    "response": "mala"
+  },
+  {
+    "item_id": "ITEM-C-004-CTX-1",
+    "origin_item_id": "ITEM-C-004",
+    "style": "REPLY",
+    "message": "the work shop is till like 10 though",
+    "context": [],
+    "speakers": [],
+    "response": "omg jesus"
+  },
+  {
+    "item_id": "ITEM-C-005-CTX-1",
+    "origin_item_id": "ITEM-C-005",
+    "style": "REPLY",
+    "message": "yall going the workshop ah?",
+    "context": [],
+    "speakers": [],
+    "response": "ya"
+  },
+  {
+    "item_id": "ITEM-C-007-CTX-1",
+    "origin_item_id": "ITEM-C-007",
+    "style": "REPLY",
+    "message": "im going downstairs to get food",
+    "context": [],
+    "speakers": [],
+    "response": "okay, i might join you"
+  },
+  {
+    "item_id": "ITEM-C-009-CTX-1",
+    "origin_item_id": "ITEM-C-009",
+    "style": "REPLY",
+    "message": "i'll go get a table first",
+    "context": [],
+    "speakers": [],
+    "response": "okay, reaching soon"
+  },
+  {
+    "item_id": "ITEM-C-010-CTX-1",
+    "origin_item_id": "ITEM-C-010",
+    "style": "REPLY",
+    "message": "im heading to the library now",
+    "context": [],
+    "speakers": [],
+    "response": "i came earlier to look for seats"
+  },
+  {
+    "item_id": "ITEM-C-011-CTX-1",
+    "origin_item_id": "ITEM-C-011",
+    "style": "REPLY",
+    "message": "im buying coffee downstairs",
+    "context": [],
+    "speakers": [],
+    "response": "im alr at the library"
+  },
+  {
+    "item_id": "ITEM-C-012-CTX-1",
+    "origin_item_id": "ITEM-C-012",
+    "style": "REPLY",
+    "message": "study at 10 tmr?",
+    "context": [],
+    "speakers": [],
+    "response": "ok, library?"
+  },
+  {
+    "item_id": "ITEM-C-015-CTX-1",
+    "origin_item_id": "ITEM-C-015",
+    "style": "REPLY",
+    "message": "i cant find yesterday's slides",
+    "context": [],
+    "speakers": [],
+    "response": "i downloaded some files after class"
+  },
+  {
+    "item_id": "ITEM-C-019-CTX-1",
+    "origin_item_id": "ITEM-C-019",
+    "style": "REPLY",
+    "message": "rehearsal at 5 later?",
+    "context": [],
+    "speakers": [],
+    "response": "yep, works for me"
+  },
+  {
+    "item_id": "ITEM-C-020-CTX-1",
+    "origin_item_id": "ITEM-C-020",
+    "style": "REPLY",
+    "message": "im walking over now",
+    "context": [],
+    "speakers": [],
+    "response": "im near the classroom"
+  },
+  {
+    "item_id": "ITEM-C-021-CTX-1",
+    "origin_item_id": "ITEM-C-021",
+    "style": "REPLY",
+    "message": "im at the mrt alr",
+    "context": [],
+    "speakers": [],
+    "response": "im walking from campus"
+  },
+  {
+    "item_id": "ITEM-C-022-CTX-1",
+    "origin_item_id": "ITEM-C-022",
+    "style": "REPLY",
+    "message": "meet at exit b?",
+    "context": [],
+    "speakers": [],
+    "response": "can"
+  },
+  {
+    "item_id": "ITEM-C-025-CTX-1",
+    "origin_item_id": "ITEM-C-025",
+    "style": "REPLY",
+    "message": "im still stuck in the project room",
+    "context": [],
+    "speakers": [],
+    "response": "im going to get a drink downstairs"
+  },
+  {
+    "item_id": "ITEM-C-026-CTX-1",
+    "origin_item_id": "ITEM-C-026",
+    "style": "REPLY",
+    "message": "we can eat after class tmr",
+    "context": [],
+    "speakers": [],
+    "response": "sounds good"
+  },
+  {
+    "item_id": "ITEM-C-027-CTX-1",
+    "origin_item_id": "ITEM-C-027",
+    "style": "REPLY",
+    "message": "want to get supper after we finish?",
+    "context": [],
+    "speakers": [],
+    "response": "i sld be free"
+  },
+  {
+    "item_id": "ITEM-C-029-CTX-1",
+    "origin_item_id": "ITEM-C-029",
+    "style": "REPLY",
+    "message": "i need to get quite a bit of work done tonight",
+    "context": [],
+    "speakers": [],
+    "response": "same here"
+  },
+  {
+    "item_id": "ITEM-C-030-CTX-1",
+    "origin_item_id": "ITEM-C-030",
+    "style": "REPLY",
+    "message": "lets meet at the library after lunch",
+    "context": [],
+    "speakers": [],
+    "response": "okay"
+  },
+  {
+    "item_id": "ITEM-C-031-CTX-1",
+    "origin_item_id": "ITEM-C-031",
+    "style": "REPLY",
+    "message": "wanna stay and study together tonight?",
+    "context": [],
+    "speakers": [],
+    "response": "maybe until around 9"
+  },
+  {
+    "item_id": "ITEM-C-032-CTX-1",
+    "origin_item_id": "ITEM-C-032",
+    "style": "REPLY",
+    "message": "im checking the study rooms upstairs",
+    "context": [],
+    "speakers": [],
+    "response": "lmk if theres space"
+  },
+  {
+    "item_id": "ITEM-C-033-CTX-1",
+    "origin_item_id": "ITEM-C-033",
+    "style": "REPLY",
+    "message": "i still need to organise all the lecture files",
+    "context": [],
+    "speakers": [],
+    "response": "mine are a mess too"
+  },
+  {
+    "item_id": "ITEM-C-035-CTX-1",
+    "origin_item_id": "ITEM-C-035",
+    "style": "REPLY",
+    "message": "i couldnt find the slides earlier",
+    "context": [],
+    "speakers": [],
+    "response": "maybe it hasnt been uploaded yet"
+  },
+  {
+    "item_id": "ITEM-C-036-CTX-1",
+    "origin_item_id": "ITEM-C-036",
+    "style": "REPLY",
+    "message": "my notes for today are incomplete",
+    "context": [],
+    "speakers": [],
+    "response": "i wrote down most of the examples"
+  },
+  {
+    "item_id": "ITEM-C-039-CTX-1",
+    "origin_item_id": "ITEM-C-039",
+    "style": "REPLY",
+    "message": "can you join the rehearsal tonight?",
+    "context": [],
+    "speakers": [],
+    "response": "i sld be able to"
+  },
+  {
+    "item_id": "ITEM-C-040-CTX-1",
+    "origin_item_id": "ITEM-C-040",
+    "style": "REPLY",
+    "message": "im fixing the references now",
+    "context": [],
+    "speakers": [],
+    "response": "okay, i'll check the figures"
+  },
+  {
+    "item_id": "ITEM-C-043-CTX-1",
+    "origin_item_id": "ITEM-C-043",
+    "style": "REPLY",
+    "message": "im waiting outside the usual room",
+    "context": [],
+    "speakers": [],
+    "response": "im still downstairs"
+  },
+  {
+    "item_id": "ITEM-C-044-CTX-1",
+    "origin_item_id": "ITEM-C-044",
+    "style": "REPLY",
+    "message": "i might be late for tutorial",
+    "context": [],
+    "speakers": [],
+    "response": "im almost there"
+  },
+  {
+    "item_id": "ITEM-C-047-CTX-1",
+    "origin_item_id": "ITEM-C-047",
+    "style": "REPLY",
+    "message": "we both finish around the same time",
+    "context": [],
+    "speakers": [],
+    "response": "yeah, around 5"
+  },
+  {
+    "item_id": "ITEM-C-049-CTX-1",
+    "origin_item_id": "ITEM-C-049",
+    "style": "REPLY",
+    "message": "meet at the bus stop after class?",
+    "context": [],
+    "speakers": [],
+    "response": "okay"
+  },
+  {
+    "item_id": "ITEM-C-050-CTX-1",
+    "origin_item_id": "ITEM-C-050",
+    "style": "REPLY",
+    "message": "im alr at the entrance",
+    "context": [],
+    "speakers": [],
+    "response": "im on my way"
+  },
+  {
+    "item_id": "ITEM-C-051-CTX-1",
+    "origin_item_id": "ITEM-C-051",
+    "style": "REPLY",
+    "message": "meet outside the library at 4",
+    "context": [],
+    "speakers": [],
+    "response": "sure"
+  },
+  {
+    "item_id": "ITEM-C-052-CTX-1",
+    "origin_item_id": "ITEM-C-052",
+    "style": "REPLY",
+    "message": "im thinking of going to the club event tmr",
+    "context": [],
+    "speakers": [],
+    "response": "i alr registered"
+  },
+  {
+    "item_id": "ITEM-C-054-CTX-1",
+    "origin_item_id": "ITEM-C-054",
+    "style": "REPLY",
+    "message": "im heading over first",
+    "context": [],
+    "speakers": [],
+    "response": "okay, i'll join after dinner"
+  },
+  {
+    "item_id": "ITEM-C-057-CTX-1",
+    "origin_item_id": "ITEM-C-057",
+    "style": "REPLY",
+    "message": "i forgot to bring anything to drink",
+    "context": [],
+    "speakers": [],
+    "response": "im stopping by a shop first"
+  },
+  {
+    "item_id": "ITEM-C-059-CTX-1",
+    "origin_item_id": "ITEM-C-059",
+    "style": "REPLY",
+    "message": "im changing now",
+    "context": [],
+    "speakers": [],
+    "response": "im downstairs alr"
+  },
+  {
+    "item_id": "ITEM-C-060-CTX-1",
+    "origin_item_id": "ITEM-C-060",
+    "style": "REPLY",
+    "message": "we're supposed to meet at 6 for badminton",
+    "context": [],
+    "speakers": [],
+    "response": "i'll be there"
+  },
+  {
+    "item_id": "ITEM-D-002-CTX-1",
+    "origin_item_id": "ITEM-D-002",
+    "style": "REPLY",
+    "message": "Eh u sure later eat pepper lunch",
+    "context": [],
+    "speakers": [],
+    "response": "yah why?"
+  },
+  {
+    "item_id": "ITEM-D-004-CTX-1",
+    "origin_item_id": "ITEM-D-004",
+    "style": "REPLY",
+    "message": "eh paiseh, i later cannot join u for dinner",
+    "context": [],
+    "speakers": [],
+    "response": "whyyyyy"
+  },
+  {
+    "item_id": "ITEM-D-005-CTX-1",
+    "origin_item_id": "ITEM-D-005",
+    "style": "REPLY",
+    "message": "eh later eat what?",
+    "context": [],
+    "speakers": [],
+    "response": "idk eh"
+  },
+  {
+    "item_id": "ITEM-D-006-CTX-1",
+    "origin_item_id": "ITEM-D-006",
+    "style": "REPLY",
+    "message": "eh",
+    "context": [],
+    "speakers": [],
+    "response": "what"
+  },
+  {
+    "item_id": "ITEM-D-008-CTX-1",
+    "origin_item_id": "ITEM-D-008",
+    "style": "REPLY",
+    "message": "eh rmb our date tmr hor",
+    "context": [],
+    "speakers": [],
+    "response": "ehhh i think i might not make it sia"
+  },
+  {
+    "item_id": "ITEM-D-011-CTX-1",
+    "origin_item_id": "ITEM-D-011",
+    "style": "REPLY",
+    "message": "ehh u know got assignment deal right?",
+    "context": [],
+    "speakers": [],
+    "response": "yah"
+  },
+  {
+    "item_id": "ITEM-D-012-CTX-1",
+    "origin_item_id": "ITEM-D-012",
+    "style": "REPLY",
+    "message": "u unds what the prof saying?",
+    "context": [],
+    "speakers": [],
+    "response": "yahh"
+  },
+  {
+    "item_id": "ITEM-D-014-CTX-1",
+    "origin_item_id": "ITEM-D-014",
+    "style": "REPLY",
+    "message": "wahh the quiz was so tough",
+    "context": [],
+    "speakers": [],
+    "response": "yah sia"
+  },
+  {
+    "item_id": "ITEM-D-015-CTX-1",
+    "origin_item_id": "ITEM-D-015",
+    "style": "REPLY",
+    "message": "ehh hello",
+    "context": [],
+    "speakers": [],
+    "response": "what"
+  },
+  {
+    "item_id": "ITEM-D-017-CTX-1",
+    "origin_item_id": "ITEM-D-017",
+    "style": "REPLY",
+    "message": "eh, so tmr how?",
+    "context": [],
+    "speakers": [],
+    "response": "tmr what how?"
+  },
+  {
+    "item_id": "ITEM-D-018-CTX-1",
+    "origin_item_id": "ITEM-D-018",
+    "style": "REPLY",
+    "message": "eh",
+    "context": [],
+    "speakers": [],
+    "response": "yes?"
+  },
+  {
+    "item_id": "ITEM-D-019-CTX-1",
+    "origin_item_id": "ITEM-D-019",
+    "style": "REPLY",
+    "message": "eh so meeting tmr?",
+    "context": [],
+    "speakers": [],
+    "response": "huh? we meeting tmr meh?"
+  },
+  {
+    "item_id": "ITEM-D-021-CTX-1",
+    "origin_item_id": "ITEM-D-021",
+    "style": "REPLY",
+    "message": "hows your part of the project going?",
+    "context": [],
+    "speakers": [],
+    "response": "uhh seems to be on track, but i may need a little more time"
+  },
+  {
+    "item_id": "ITEM-D-022-CTX-1",
+    "origin_item_id": "ITEM-D-022",
+    "style": "REPLY",
+    "message": "i am almost done with the assignment",
+    "context": [],
+    "speakers": [],
+    "response": "oh"
+  },
+  {
+    "item_id": "ITEM-D-023-CTX-1",
+    "origin_item_id": "ITEM-D-023",
+    "style": "REPLY",
+    "message": "hi, hows the sprint going?",
+    "context": [],
+    "speakers": [],
+    "response": "ohh its fine so far"
+  },
+  {
+    "item_id": "ITEM-D-024-CTX-1",
+    "origin_item_id": "ITEM-D-024",
+    "style": "REPLY",
+    "message": "Eh have u vetted the proposal?",
+    "context": [],
+    "speakers": [],
+    "response": "yah"
+  },
+  {
+    "item_id": "ITEM-D-025-CTX-1",
+    "origin_item_id": "ITEM-D-025",
+    "style": "REPLY",
+    "message": "Hi hows your work going",
+    "context": [],
+    "speakers": [],
+    "response": "good"
+  },
+  {
+    "item_id": "ITEM-D-026-CTX-1",
+    "origin_item_id": "ITEM-D-026",
+    "style": "REPLY",
+    "message": "eh, you got class later is it?",
+    "context": [],
+    "speakers": [],
+    "response": "yah why?"
+  },
+  {
+    "item_id": "ITEM-D-031-CTX-1",
+    "origin_item_id": "ITEM-D-031",
+    "style": "REPLY",
+    "message": "eh u also miss last week's class right?",
+    "context": [],
+    "speakers": [],
+    "response": "ya"
+  },
+  {
+    "item_id": "ITEM-D-034-CTX-1",
+    "origin_item_id": "ITEM-D-034",
+    "style": "REPLY",
+    "message": "eh so we meeting at 11 right?",
+    "context": [],
+    "speakers": [],
+    "response": "yah i will leave house by 10"
+  },
+  {
+    "item_id": "ITEM-D-035-CTX-1",
+    "origin_item_id": "ITEM-D-035",
+    "style": "REPLY",
+    "message": "eh where are u at?",
+    "context": [],
+    "speakers": [],
+    "response": "i just reached mall"
+  },
+  {
+    "item_id": "ITEM-D-040-CTX-1",
+    "origin_item_id": "ITEM-D-040",
+    "style": "REPLY",
+    "message": "eh are u free this sunday",
+    "context": [],
+    "speakers": [],
+    "response": "yes"
+  },
+  {
+    "item_id": "ITEM-D-041-CTX-1",
+    "origin_item_id": "ITEM-D-041",
+    "style": "REPLY",
+    "message": "eh i sudd got smth on sia",
+    "context": [],
+    "speakers": [],
+    "response": "then our date tmr how?"
+  },
+  {
+    "item_id": "ITEM-D-043-CTX-1",
+    "origin_item_id": "ITEM-D-043",
+    "style": "REPLY",
+    "message": "eh i might be late",
+    "context": [],
+    "speakers": [],
+    "response": "the movie starting soon tho"
+  },
+  {
+    "item_id": "ITEM-D-044-CTX-1",
+    "origin_item_id": "ITEM-D-044",
+    "style": "REPLY",
+    "message": "hello",
+    "context": [],
+    "speakers": [],
+    "response": "yes?"
+  },
+  {
+    "item_id": "ITEM-D-047-CTX-1",
+    "origin_item_id": "ITEM-D-047",
+    "style": "REPLY",
+    "message": "eh",
+    "context": [],
+    "speakers": [],
+    "response": "yes?"
+  },
+  {
+    "item_id": "ITEM-D-049-CTX-1",
+    "origin_item_id": "ITEM-D-049",
+    "style": "REPLY",
+    "message": "eh are u free tmr?",
+    "context": [],
+    "speakers": [],
+    "response": "yes why?"
+  },
+  {
+    "item_id": "ITEM-D-052-CTX-1",
+    "origin_item_id": "ITEM-D-052",
+    "style": "REPLY",
+    "message": "eh tmr got basketball right?",
+    "context": [],
+    "speakers": [],
+    "response": "ya"
+  },
+  {
+    "item_id": "ITEM-D-053-CTX-1",
+    "origin_item_id": "ITEM-D-053",
+    "style": "REPLY",
+    "message": "eh, i got problem",
+    "context": [],
+    "speakers": [],
+    "response": "wat problem"
+  },
+  {
+    "item_id": "ITEM-D-055-CTX-1",
+    "origin_item_id": "ITEM-D-055",
+    "style": "REPLY",
+    "message": "eh is my charger with you?",
+    "context": [],
+    "speakers": [],
+    "response": "yah i am using it rn"
+  },
+  {
+    "item_id": "ITEM-D-056-CTX-1",
+    "origin_item_id": "ITEM-D-056",
+    "style": "REPLY",
+    "message": "eh are you printing your stuff?",
+    "context": [],
+    "speakers": [],
+    "response": "yap"
+  },
+  {
+    "item_id": "ITEM-D-058-CTX-1",
+    "origin_item_id": "ITEM-D-058",
+    "style": "REPLY",
+    "message": "eh so how should we split up the report",
+    "context": [],
+    "speakers": [],
+    "response": "im not sure eh, you got any idea"
+  },
+  {
+    "item_id": "ITEM-E-001-CTX-1",
+    "origin_item_id": "ITEM-E-001",
+    "style": "REPLY",
+    "message": "See yalls for tomorrow's presentation",
+    "context": [],
+    "speakers": [],
+    "response": "yep, see yalls"
+  },
+  {
+    "item_id": "ITEM-E-002-CTX-1",
+    "origin_item_id": "ITEM-E-002",
+    "style": "REPLY",
+    "message": "is anyone going for the workshop later?",
+    "context": [],
+    "speakers": [],
+    "response": "I think i'm free to go"
+  },
+  {
+    "item_id": "ITEM-E-003-CTX-1",
+    "origin_item_id": "ITEM-E-003",
+    "style": "REPLY",
+    "message": "finally weekend already, whats your weekend plans?",
+    "context": [],
+    "speakers": [],
+    "response": "I plan to play basketball with my friends"
+  },
+  {
+    "item_id": "ITEM-E-004-CTX-2",
+    "origin_item_id": "ITEM-E-004",
+    "style": "REPLY",
+    "message": "ya sia so worth",
+    "context": [
+      "this resturant damm good leh, got one for one"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "response": "we should go eat this on the weekends"
+  },
+  {
+    "item_id": "ITEM-E-006-CTX-1",
+    "origin_item_id": "ITEM-E-006",
+    "style": "REPLY",
+    "message": "you going club today ah",
+    "context": [],
+    "speakers": [],
+    "response": "ya later i going clubbing"
+  },
+  {
+    "item_id": "ITEM-E-008-CTX-1",
+    "origin_item_id": "ITEM-E-008",
+    "style": "REPLY",
+    "message": "sorry whens the deadline again",
+    "context": [],
+    "speakers": [],
+    "response": "its tomorrow"
+  },
+  {
+    "item_id": "ITEM-E-011-CTX-1",
+    "origin_item_id": "ITEM-E-011",
+    "style": "REPLY",
+    "message": "do you need help with printing your notes? i'm in the printer room now",
+    "context": [],
+    "speakers": [],
+    "response": "yes, please wait ah i send you my notes to print. How much isit ah"
+  },
+  {
+    "item_id": "ITEM-E-012-CTX-1",
+    "origin_item_id": "ITEM-E-012",
+    "style": "REPLY",
+    "message": "I think there isnt anymore plugs in the event liao",
+    "context": [],
+    "speakers": [],
+    "response": "wah shag can share the plug with you? My battery dying"
+  },
+  {
+    "item_id": "ITEM-E-013-CTX-1",
+    "origin_item_id": "ITEM-E-013",
+    "style": "REPLY",
+    "message": "i got a room at library level 4 to work on our project",
+    "context": [],
+    "speakers": [],
+    "response": "ok can thanks ah bro"
+  },
+  {
+    "item_id": "ITEM-E-014-CTX-1",
+    "origin_item_id": "ITEM-E-014",
+    "style": "REPLY",
+    "message": "Lets meet at the station tonight",
+    "context": [],
+    "speakers": [],
+    "response": "ok, chinatown mrt right?"
+  },
+  {
+    "item_id": "ITEM-E-017-CTX-1",
+    "origin_item_id": "ITEM-E-017",
+    "style": "REPLY",
+    "message": "lets meet at 6 later for a run!",
+    "context": [],
+    "speakers": [],
+    "response": "aites see you later!"
+  },
+  {
+    "item_id": "ITEM-E-018-CTX-1",
+    "origin_item_id": "ITEM-E-018",
+    "style": "REPLY",
+    "message": "omg is next week the quiz already",
+    "context": [],
+    "speakers": [],
+    "response": "yea its quiz 1, lucky its open book so can bring cheatsheet"
+  },
+  {
+    "item_id": "ITEM-E-019-CTX-1",
+    "origin_item_id": "ITEM-E-019",
+    "style": "REPLY",
+    "message": "have you done your part on your proposal already?",
+    "context": [],
+    "speakers": [],
+    "response": "yea, I got my features written down alr, you can use my key features to link to your part"
+  },
+  {
+    "item_id": "ITEM-E-020-CTX-2",
+    "origin_item_id": "ITEM-E-020",
+    "style": "REPLY",
+    "message": "for this week notes will take a while, there are some last minute changes",
+    "context": [
+      "hi prof I don't see the notes for this week, can i check if you are releasing any materials?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "response": "ok, roughly when will it be released?"
+  },
+  {
+    "item_id": "ITEM-E-022-CTX-1",
+    "origin_item_id": "ITEM-E-022",
+    "style": "REPLY",
+    "message": "You are lending the charger for a week right?",
+    "context": [],
+    "speakers": [],
+    "response": "yep, next week i will return the charger."
+  },
+  {
+    "item_id": "ITEM-E-024-CTX-1",
+    "origin_item_id": "ITEM-E-024",
+    "style": "REPLY",
+    "message": "woah is that a bot that generates notes for you?",
+    "context": [],
+    "speakers": [],
+    "response": "yea, I made it myself and it has been a gamechanger sia"
+  },
+  {
+    "item_id": "ITEM-E-029-CTX-1",
+    "origin_item_id": "ITEM-E-029",
+    "style": "REPLY",
+    "message": "i reaching in 15 mins, u there already?",
+    "context": [],
+    "speakers": [],
+    "response": "yea i'm at the library already"
+  },
+  {
+    "item_id": "ITEM-E-031-CTX-1",
+    "origin_item_id": "ITEM-E-031",
+    "style": "REPLY",
+    "message": "we can meet together next week saturday?",
+    "context": [],
+    "speakers": [],
+    "response": "can ah I onz one"
+  },
+  {
+    "item_id": "ITEM-E-033-CTX-1",
+    "origin_item_id": "ITEM-E-033",
+    "style": "REPLY",
+    "message": "How are you man? its been a while",
+    "context": [],
+    "speakers": [],
+    "response": "ya sia, what you doing this friday? u going cca?"
+  },
+  {
+    "item_id": "ITEM-E-034-CTX-1",
+    "origin_item_id": "ITEM-E-034",
+    "style": "REPLY",
+    "message": "hey lets go to this event together",
+    "context": [],
+    "speakers": [],
+    "response": "Imma book the tickets"
+  },
+  {
+    "item_id": "ITEM-E-035-CTX-1",
+    "origin_item_id": "ITEM-E-035",
+    "style": "REPLY",
+    "message": "I should be able to make it for the race next week!",
+    "context": [],
+    "speakers": [],
+    "response": "sweet, see you there!"
+  },
+  {
+    "item_id": "ITEM-E-037-CTX-1",
+    "origin_item_id": "ITEM-E-037",
+    "style": "REPLY",
+    "message": "u want my notes? but u must rmb to return me ah",
+    "context": [],
+    "speakers": [],
+    "response": "ya of course dont worry"
+  },
+  {
+    "item_id": "ITEM-E-039-CTX-1",
+    "origin_item_id": "ITEM-E-039",
+    "style": "REPLY",
+    "message": "remind me to return you your cheatsheet tomorrow, might forget",
+    "context": [],
+    "speakers": [],
+    "response": "ok"
+  },
+  {
+    "item_id": "ITEM-E-041-CTX-1",
+    "origin_item_id": "ITEM-E-041",
+    "style": "REPLY",
+    "message": "hi, whats the total number of tutorial sessions for this course?",
+    "context": [],
+    "speakers": [],
+    "response": "about 20"
+  },
+  {
+    "item_id": "ITEM-E-042-CTX-1",
+    "origin_item_id": "ITEM-E-042",
+    "style": "REPLY",
+    "message": "I going to study later",
+    "context": [],
+    "speakers": [],
+    "response": "I at the library alr"
+  },
+  {
+    "item_id": "ITEM-E-043-CTX-1",
+    "origin_item_id": "ITEM-E-043",
+    "style": "REPLY",
+    "message": "later want go drink anot? I treat",
+    "context": [],
+    "speakers": [],
+    "response": "onz ah"
+  },
+  {
+    "item_id": "ITEM-E-044-CTX-1",
+    "origin_item_id": "ITEM-E-044",
+    "style": "REPLY",
+    "message": "what time we meeting again?",
+    "context": [],
+    "speakers": [],
+    "response": "4pm"
+  },
+  {
+    "item_id": "ITEM-E-047-CTX-1",
+    "origin_item_id": "ITEM-E-047",
+    "style": "REPLY",
+    "message": "how was the race yesterday?",
+    "context": [],
+    "speakers": [],
+    "response": "oo its damm fun, you should have went and see it"
+  },
+  {
+    "item_id": "ITEM-E-048-CTX-1",
+    "origin_item_id": "ITEM-E-048",
+    "style": "REPLY",
+    "message": "idk what do, i'm kinda lost",
+    "context": [],
+    "speakers": [],
+    "response": "don't worry, let me send you the plan for this week"
+  },
+  {
+    "item_id": "ITEM-E-049-CTX-2",
+    "origin_item_id": "ITEM-E-049",
+    "style": "REPLY",
+    "message": "i finished my part already",
+    "context": [
+      "guys we need to finalize the slides"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "response": "can we meet tonight to do a final check"
+  },
+  {
+    "item_id": "ITEM-E-052-CTX-1",
+    "origin_item_id": "ITEM-E-052",
+    "style": "REPLY",
+    "message": "are we meeting this week?",
+    "context": [],
+    "speakers": [],
+    "response": "yes, we are meeting at the MRT"
+  },
+  {
+    "item_id": "ITEM-E-054-CTX-1",
+    "origin_item_id": "ITEM-E-054",
+    "style": "REPLY",
+    "message": "we playing badminton at the court",
+    "context": [],
+    "speakers": [],
+    "response": "ok nice, i coming over"
+  },
+  {
+    "item_id": "ITEM-E-056-CTX-1",
+    "origin_item_id": "ITEM-E-056",
+    "style": "REPLY",
+    "message": "I taking MRT later, want meet?",
+    "context": [],
+    "speakers": [],
+    "response": "um,  can wait for like 30 minutes"
+  },
+  {
+    "item_id": "ITEM-E-057-CTX-1",
+    "origin_item_id": "ITEM-E-057",
+    "style": "REPLY",
+    "message": "we just split so each one do one part can liao",
+    "context": [],
+    "speakers": [],
+    "response": "ok can i do part 2 u do part 3"
+  },
+  {
+    "item_id": "ITEM-E-060-CTX-1",
+    "origin_item_id": "ITEM-E-060",
+    "style": "REPLY",
+    "message": "we eating lunch later",
+    "context": [],
+    "speakers": [],
+    "response": "ya, maybe at like 3pm"
+  }
+]

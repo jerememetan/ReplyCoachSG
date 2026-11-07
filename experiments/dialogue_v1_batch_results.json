@@ -1,0 +1,54 @@
+{
+  "jobs": {
+    "355937": "COMPLETED exit0 52m48s",
+    "355938": "COMPLETED exit0 11m57s",
+    "355942": "COMPLETED exit0 3m57s"
+  },
+  "sealion": {
+    "project_only_macro_ce": 2.8437178018504907,
+    "public_adapted_macro_ce": 2.731314103546424,
+    "selected_task_epoch": 2,
+    "generation_flags": []
+  },
+  "mt5": {
+    "public": {
+      "425": {
+        "groups": {
+          "STANDARD": 2.117675648886582,
+          "LOCAL": 2.8147958281759067
+        },
+        "selection_score": 2.4662357385312443
+      },
+      "426": {
+        "groups": {
+          "STANDARD": 2.128677480796288,
+          "LOCAL": 2.820706448689459
+        },
+        "selection_score": 2.474691964742873
+      }
+    },
+    "control": {
+      "425": {
+        "groups": {
+          "STANDARD": 2.098652437432059,
+          "LOCAL": 2.8483135126159405
+        },
+        "selection_score": 2.473482975024
+      },
+      "426": {
+        "groups": {
+          "STANDARD": 2.103323110424239,
+          "LOCAL": 2.850453678284188
+        },
+        "selection_score": 2.4768883943542135
+      }
+    }
+  },
+  "quality": "Assistant inspected new12 across both SEA checkpoints and both mT5 arms/seeds; development-only, not human gold. No reliable overall upgrade. SEA fixes outsideC2 English and no-meat English, but LOCAL diet response drifts and new role/unfinished-slides errors persist. mT5 public arm improves headphone ownership English over control, but both arms still invent closing hours, ignore budget, contradict uploaded/unfinished facts and change outside to inside; some LOCAL replies plain English or contradict English.",
+  "default_changed": false,
+  "training_currently_running": false,
+  "mt5_mean_macro_ce": {
+    "public": 2.4704638516370587,
+    "control": 2.475185684689107
+  }
+}

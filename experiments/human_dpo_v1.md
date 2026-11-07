@@ -1,0 +1,15 @@
+# Human preference DPO pilot v1
+
+Submitted 2026-11-05, job354579, personal cs701/studentqos, one RTX3090. Results pending. Source/data frozen with SHA256 in human_dpo_v1_recipe.json. Starts from full3e-4 epoch1 best validation checkpoint; no default replacement.
+
+The user's 150 A/B decisions contain94 decisive choices. Deduplicating removes6 repeats. Two unordered reply pairs have inconsistent directions across comparisons; all4 directed instances are excluded, leaving84 pairs over42 conversations. No invented labels from27 ties or29 both-bad votes; user notes preserved in original reviews but not silently converted into corrected targets. Group split seed425:34 training conversations/67 pairs,8 validation conversations/17 pairs. All pairs for a conversation stay together.
+
+Full-parameter AdamW lr1e-5, weight decay.01, batch2, clip1, DPO beta.1 plus .1 chosen-response supervised loss. Frozen reference log probabilities cached before optimization from same epoch1 checkpoint; dropout disabled for reference and policy. Maximum5 epochs, patience2; select minimum held-out DPO loss, including untrained baseline. Track train/validation DPO losses and relative preference agreement plus raw sequence preference rates. These are not semantic reply-accuracy scores. Best checkpoint saved; no automatic promotion.
+
+IMPORTANT: the34 preference training conversations were formerly in data/dev/validation.jsonl and now explicitly enter DPO optimization. For this model they are training data, not validation evidence. Grouped8 held-out preference conversations and the other8 original conversations are excluded from DPO updates but were previously used for SFT selection/human review. The old50-case benchmark must not be presented as independent evaluation for this model. Locked test never read. Twenty freshly authored audit prompts with new IDs are generation-only, never used for gradients or checkpoint selection. Their placeholder response strings are not reference labels and are never scored. Next step: blind human comparison of saved pre-update versus selected DPO outputs, emphasizing fresh cases.
+
+Outputs: artifacts/human_dpo/report.json (baseline and DPO generations, curves, best epoch) and artifacts/human_dpo/best inside the remote directory in launch JSON. Tests2 passed: export counts/dedup/conflict removal/conversation split and a tiny end-to-end DPO update with baseline loss/checkpoint/generation assertions and leakage rejection. Python compile and shell syntax passed. Session ends after submission; do not wait for training completion.
+
+## Completed update
+
+Job354579 completed exit0 in2m04s. Best epoch2, early stopped epoch4. Held-out DPO loss .693147 baseline to .693022 best, negligible change. Raw chosen sequence probability ranking8/17 at both baseline and selected epoch2. Train DPO loss .693147 to .557388 at selected epoch2. Fresh generations changed 5/20; blind user review pending in data/human_review/dpo_ab_v1. No established generalization improvement. Reports local artifacts/human_dpo_v1/report.json.

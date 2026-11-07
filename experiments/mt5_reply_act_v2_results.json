@@ -1,0 +1,64 @@
+{
+  "job_id": 355565,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:07:29",
+  "status": "complete",
+  "failed_stages": [],
+  "metrics": {
+    "auxiliary_control": {
+      "best_epoch": 3,
+      "token_ce": 2.0658572098304484,
+      "act_micro_f1": 0.43216079473495483,
+      "act_exact_match": 0.03999999910593033,
+      "initial_identity_ce_gap": 0.0,
+      "residual_scale": 0.0,
+      "route_changes": {}
+    },
+    "gated_predicted": {
+      "best_epoch": 1,
+      "token_ce": 2.077367926671587,
+      "act_micro_f1": 0.41558441519737244,
+      "act_exact_match": 0.0,
+      "initial_identity_ce_gap": 0.0,
+      "residual_scale": -0.008692263625562191,
+      "route_changes": {
+        "validation": {
+          "none": 18,
+          "oracle": 16
+        },
+        "diagnostic": {
+          "none": 5,
+          "oracle": 5
+        }
+      }
+    },
+    "gated_mixed": {
+      "best_epoch": 1,
+      "token_ce": 2.0736420094966888,
+      "act_micro_f1": 0.4192139804363251,
+      "act_exact_match": 0.0,
+      "initial_identity_ce_gap": 0.0,
+      "residual_scale": -0.0052117700688540936,
+      "route_changes": {
+        "validation": {
+          "none": 13,
+          "oracle": 12
+        },
+        "diagnostic": {
+          "none": 3,
+          "oracle": 6
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "Identity-initialization instability fixed: all actual-checkpoint initial CE gaps are zero.",
+    "No contextual improvement established. Gated predicted/mixed best validation CE remains slightly worse than auxiliary control.",
+    "Oracle generations are readable now, but supplied decline/counterpropose still fails to enforce unavailable Wednesday or lunch-budget constraints.",
+    "Conditioning changes some strings, so it is not entirely inactive, but textual changes do not establish helpful intent control.",
+    "All 518 generated STANDARD/LOCAL pairs have complete route coverage and exact rewrite anchors; no failed reported stages."
+  ],
+  "default_changed": false,
+  "new_training_submitted": false
+}

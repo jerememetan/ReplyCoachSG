@@ -17,7 +17,7 @@ import math
 import os
 from pathlib import Path
 
-from replycoach.generate.style_control import JOINT_STYLE, split_joint
+from replycoach.generate.style_control import JOINT_STYLE, REWRITE_STYLE, split_joint
 from replycoach.generate.train_v5 import ARTIFACTS
 from replycoach.io import ROOT
 from replycoach.schema import STYLES, Candidate
@@ -64,7 +64,8 @@ class V5Generator:
         self.model = load_checkpoint(self.checkpoint, self.device).eval()
         self.tokenizer = AutoTokenizer.from_pretrained(self.checkpoint)
         self.format = input_format(self.checkpoint)
-        self.max_source, self.max_target = max_source, max_target
+        self.max_source = self.format.get('max_source', max_source)
+        self.max_target = self.format.get('max_target', max_target)
 
     def generate(self, message: str, context: list[str]) -> list[Candidate]:
         """One STANDARD and one LOCAL Candidate for ``message`` after ``context`` (oldest turn first).
@@ -78,7 +79,17 @@ class V5Generator:
 
         row = {"context": list(context), "message": message, "response": ""}
         speaker_labels, joint = self.format["speaker_labels"], self.format["joint"]
-        if joint:
+        rewrite_local = self.format.get('rewrite_local', False)
+        if joint and rewrite_local:
+            raise ValueError('Checkpoint cannot be both joint and sequential rewrite')
+        if rewrite_local:
+            from replycoach.generate.rewrite_v5 import generate_pair
+            limit = self.max_target
+            paired = generate_pair(self.model, self.tokenizer, [row], self.max_source, limit,
+                                   self.device, DECODING, speaker_labels)
+            replies = {style: paired[style][0].strip() for style in STYLES}
+            scored = list(replies.items())
+        elif joint:
             limit = 2 * self.max_target
             [text] = generate_replies(self.model, self.tokenizer, [row], JOINT_STYLE, self.max_source, limit,
                                       self.device, joint_decoding(self.tokenizer, DECODING), speaker_labels)
@@ -91,15 +102,20 @@ class V5Generator:
                                                self.device, DECODING, speaker_labels)[0].strip()
                        for style in STYLES}
             scored = list(replies.items())
-        logprobs = {style: reply_logprobs(self.model, self.tokenizer, [{**row, "response": text}], style,
+        logprobs = {style: reply_logprobs(self.model, self.tokenizer,
+                    [{**row, "response": text,
+                      **({'standard_reply': replies['STANDARD']} if rewrite_local and style == 'LOCAL' else {})}],
+                    REWRITE_STYLE if rewrite_local and style == 'LOCAL' else style,
                                           self.max_source, limit, self.device, speaker_labels)[0]
                     for style, text in scored}
         meta = {
             "checkpoint": str(self.checkpoint), "speaker_labels": speaker_labels, "joint": joint,
+            "rewrite_local": rewrite_local,
             "decoding": {**DECODING, "max_new_tokens": limit, "joint_repeats_blocked_per_half": joint},
             "speakers": "guessed: alternating back from the message" if speaker_labels and context else None,
             "score": "exp(mean token log-probability) of the reply under the model",
             **({"joint_split": halves is not None} if joint else {}),
+            **({'local_conditioned_on': replies['STANDARD']} if rewrite_local else {}),
         }
         candidates = []
         for style in STYLES:

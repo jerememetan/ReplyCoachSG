@@ -1,0 +1,311 @@
+[
+  {
+    "conversation_id": "ACTFOLLOW-validation-001",
+    "context": [
+      "I have some free time on Saturday.",
+      "There is a campus concert."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to come to the concert?",
+    "item_id": "ACTFOLLOW-validation-001-1",
+    "reply_acts": [
+      "accept"
+    ],
+    "response": "Yes, I would like to come to the concert.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-001",
+    "context": [
+      "I have some free time on Saturday.",
+      "There is a campus concert."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to come to the concert?",
+    "item_id": "ACTFOLLOW-validation-001-2",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "Thanks, but I will skip the concert.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-002",
+    "context": [
+      "My shift finishes at nine.",
+      "We can have supper afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we meet at eight thirty?",
+    "item_id": "ACTFOLLOW-validation-002-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "I cannot meet at eight thirty because my shift finishes at nine.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-002",
+    "context": [
+      "My shift finishes at nine.",
+      "We can have supper afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we meet at eight thirty?",
+    "item_id": "ACTFOLLOW-validation-002-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "I cannot meet at eight thirty. Could we meet after nine?",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-003",
+    "context": [
+      "I need to leave the cafe by noon.",
+      "Our planning session takes an hour."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we start at eleven thirty?",
+    "item_id": "ACTFOLLOW-validation-003-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "An hour from eleven thirty runs past noon, so that will not work.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-003",
+    "context": [
+      "I need to leave the cafe by noon.",
+      "Our planning session takes an hour."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we start at eleven thirty?",
+    "item_id": "ACTFOLLOW-validation-003-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "I must leave by noon. Could we start the hour-long session at eleven?",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-004",
+    "context": [
+      "You have my portable speaker.",
+      "I packed it safely."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your speaker on Friday?",
+    "item_id": "ACTFOLLOW-validation-004-1",
+    "reply_acts": [
+      "accept"
+    ],
+    "response": "Yes, Friday is fine for returning my speaker.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-004",
+    "context": [
+      "You have my portable speaker.",
+      "I packed it safely."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your speaker on Friday?",
+    "item_id": "ACTFOLLOW-validation-004-2",
+    "reply_acts": [
+      "clarify"
+    ],
+    "response": "What time on Friday would you return it?",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-005",
+    "context": [
+      "I have not checked the museum opening hours.",
+      "The weekend schedule might be different."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does it open at ten?",
+    "item_id": "ACTFOLLOW-validation-005-1",
+    "reply_acts": [
+      "express_uncertainty"
+    ],
+    "response": "I am not sure whether it opens at ten.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-005",
+    "context": [
+      "I have not checked the museum opening hours.",
+      "The weekend schedule might be different."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does it open at ten?",
+    "item_id": "ACTFOLLOW-validation-005-2",
+    "reply_acts": [
+      "express_uncertainty",
+      "offer_or_commit"
+    ],
+    "response": "I am not sure. I will check the museum opening hours.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-006",
+    "context": [
+      "I already submitted our survey form.",
+      "Good, that was the last thing left."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted the form?",
+    "item_id": "ACTFOLLOW-validation-006-1",
+    "reply_acts": [
+      "answer_or_inform"
+    ],
+    "response": "Yes, I have already submitted our survey form.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-006",
+    "context": [
+      "I already submitted our survey form.",
+      "Good, that was the last thing left."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted the form?",
+    "item_id": "ACTFOLLOW-validation-006-2",
+    "reply_acts": [
+      "answer_or_inform",
+      "request_action"
+    ],
+    "response": "Yes, I submitted it. Please check the confirmation message.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-007",
+    "context": [
+      "I have the lab worksheet on my tablet.",
+      "I lost my copy."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send me the worksheet?",
+    "item_id": "ACTFOLLOW-validation-007-1",
+    "reply_acts": [
+      "offer_or_commit"
+    ],
+    "response": "Sure, I will send you the lab worksheet.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-007",
+    "context": [
+      "I have the lab worksheet on my tablet.",
+      "I lost my copy."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send me the worksheet?",
+    "item_id": "ACTFOLLOW-validation-007-2",
+    "reply_acts": [
+      "clarify"
+    ],
+    "response": "Where should I send the worksheet?",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-008",
+    "context": [
+      "I can spend twelve dollars on dinner.",
+      "There are several places nearby."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we get the thirty-dollar buffet?",
+    "item_id": "ACTFOLLOW-validation-008-1",
+    "reply_acts": [
+      "decline"
+    ],
+    "response": "The thirty-dollar buffet is over my twelve-dollar budget.",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  },
+  {
+    "conversation_id": "ACTFOLLOW-validation-008",
+    "context": [
+      "I can spend twelve dollars on dinner.",
+      "There are several places nearby."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we get the thirty-dollar buffet?",
+    "item_id": "ACTFOLLOW-validation-008-2",
+    "reply_acts": [
+      "decline",
+      "counterpropose"
+    ],
+    "response": "That buffet is over my budget. Could we find dinner for twelve dollars or less?",
+    "split": "validation",
+    "origin": "assistant-authored development supervision; not independently human reviewed"
+  }
+]

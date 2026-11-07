@@ -1,0 +1,1723 @@
+{
+  "audit": {
+    "reviewer": "Codex assistant; not independent human gold",
+    "source_sha256": "c5b1d42eeb7f8258171c5d582bcdaabc5124877e5c15f891a2704ab90412be59",
+    "standard_edits": 14,
+    "local_edits": 117,
+    "repaired_generation_failures": 2,
+    "policy": "Recognizable natural Singlish, approximately same meaning, coherent selectable drafts. Minor politeness differences allowed. Particle counts do not establish quality."
+  },
+  "reviewed_sha256": "da2ee4b74c6a5eedcbd0accd85895c67ec9c2a5b4e5d4b8a909e71b1e8bd5aa6",
+  "items": [
+    {
+      "item_id": "ITEM-A-001",
+      "standard_edited": false,
+      "original_standard": "Sure! What time should we meet?",
+      "standard": "Sure! What time should we meet?",
+      "generated_local": "Can! What time you want to meet?",
+      "final_local": "Can! What time you want to meet?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-002",
+      "standard_edited": false,
+      "original_standard": "I think a reservation is required, hold on let me check",
+      "standard": "I think a reservation is required, hold on let me check",
+      "generated_local": "I think need to book one, wait ah let me check first.",
+      "final_local": "I think need to book one, wait ah let me check first.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-003",
+      "standard_edited": false,
+      "original_standard": "yeah i checked, I am free!",
+      "standard": "yeah i checked, I am free!",
+      "generated_local": "Yeah, I checked already, I'm free!",
+      "final_local": "Checked already, I free!",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-004",
+      "standard_edited": false,
+      "original_standard": "sure! see you at 6pm",
+      "standard": "sure! see you at 6pm",
+      "generated_local": "Can! See you at 6pm.",
+      "final_local": "Can! See you at 6pm.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-005",
+      "standard_edited": false,
+      "original_standard": "Make sure to press the yellow button before pressing print",
+      "standard": "Make sure to press the yellow button before pressing print",
+      "generated_local": "You must press the yellow button first before you press print.",
+      "final_local": "Yellow button must press first, then press print.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-006",
+      "standard_edited": false,
+      "original_standard": "Okay, lets meet for dinner first",
+      "standard": "Okay, lets meet for dinner first",
+      "generated_local": "Okay, let's go makan first then.",
+      "final_local": "Can, meet for dinner first.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-007",
+      "standard_edited": false,
+      "original_standard": "Sure, let's meet next weekend then.",
+      "standard": "Sure, let's meet next weekend then.",
+      "generated_local": "Can, then we meet next weekend lor.",
+      "final_local": "Can, then we meet next weekend lor.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-008",
+      "standard_edited": false,
+      "original_standard": "I invited the others too",
+      "standard": "I invited the others too",
+      "generated_local": "I already jio the others already.",
+      "final_local": "I jio the others also already.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-009",
+      "standard_edited": false,
+      "original_standard": "Hurry! You don't want to be late for your first class",
+      "standard": "Hurry! You don't want to be late for your first class",
+      "generated_local": "Hurry up leh! Don't want to be late for your first class one.",
+      "final_local": "Faster leh, first class don't be late.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-011",
+      "standard_edited": false,
+      "original_standard": "Okay, I will take the seat first",
+      "standard": "Okay, I will take the seat first",
+      "generated_local": "Okay, I go chope the seat first.",
+      "final_local": "Okay, I go chope the seat first.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-013",
+      "standard_edited": false,
+      "original_standard": "what would you like? I will get it for you",
+      "standard": "what would you like? I will get it for you",
+      "generated_local": "You want what? I can buy for you one.",
+      "final_local": "You want what? I can buy for you one.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-014",
+      "standard_edited": true,
+      "original_standard": "okay, I will do so by Sunday, dont worry.",
+      "standard": "Okay, I'll finish it before Sunday. Don't worry.",
+      "generated_local": "Okay, I will finish before Sunday. Don't worry.",
+      "final_local": "Before Sunday I finish, don't worry.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-015",
+      "standard_edited": false,
+      "original_standard": "Okay, I will be there soon!",
+      "standard": "Okay, I will be there soon!",
+      "generated_local": "Okay, I'm coming soon!",
+      "final_local": "Can, I reaching there soon!",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-018",
+      "standard_edited": false,
+      "original_standard": "That is abit far, but I am okay with it",
+      "standard": "That is abit far, but I am okay with it",
+      "generated_local": "A bit far leh, but can one.",
+      "final_local": "A bit far leh, but can one.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-020",
+      "standard_edited": false,
+      "original_standard": "okay, I will reach soon",
+      "standard": "okay, I will reach soon",
+      "generated_local": "Okay, I'm coming soon.",
+      "final_local": "Okay, I reaching soon.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-021",
+      "standard_edited": false,
+      "original_standard": "you can't, its been reserved by someone else",
+      "standard": "you can't, its been reserved by someone else",
+      "generated_local": "Cannot leh, someone else already reserve already.",
+      "final_local": "Cannot, seat already got people chope.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-022",
+      "standard_edited": false,
+      "original_standard": "Sure, hurry down soon",
+      "standard": "Sure, hurry down soon",
+      "generated_local": "Can, you hurry down soon ah.",
+      "final_local": "Can, you hurry down soon ah.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-023",
+      "standard_edited": false,
+      "original_standard": "No worries, it has been a long day",
+      "standard": "No worries, it has been a long day",
+      "generated_local": "No worries, today was a long day already.",
+      "final_local": "Never mind lah, long day today.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-025",
+      "standard_edited": false,
+      "original_standard": "okay, next time please come on time",
+      "standard": "okay, next time please come on time",
+      "generated_local": "Okay, next time please come on time hor.",
+      "final_local": "Okay, next time on time ah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-027",
+      "standard_edited": false,
+      "original_standard": "No, I am taking the bus, the MRT is very slow",
+      "standard": "No, I am taking the bus, the MRT is very slow",
+      "generated_local": "No, I take bus one. MRT very slow.",
+      "final_local": "No, I take bus one. MRT very slow.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-028",
+      "standard_edited": false,
+      "original_standard": "You are always late haha, I will save you a seat",
+      "standard": "You are always late haha, I will save you a seat",
+      "generated_local": "You always late sia haha, I save seat for you one",
+      "final_local": "You always late sia haha, I save seat for you one",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-029",
+      "standard_edited": false,
+      "original_standard": "okay! i will order from the noodles stall for you",
+      "standard": "okay! i will order from the noodles stall for you",
+      "generated_local": "Okay, I will order from the noodles stall for you then.",
+      "final_local": "Can, I order from noodle stall for you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-031",
+      "standard_edited": false,
+      "original_standard": "Let's go for an indoor plan instead",
+      "standard": "Let's go for an indoor plan instead",
+      "generated_local": "Better go for indoor plan already.",
+      "final_local": "Change to indoor plan lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-036",
+      "standard_edited": false,
+      "original_standard": "No worries, it happens",
+      "standard": "No worries, it happens",
+      "generated_local": "No worries, happens lah.",
+      "final_local": "Never mind, happens one.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-039",
+      "standard_edited": false,
+      "original_standard": "sure, see you there!",
+      "standard": "sure, see you there!",
+      "generated_local": "Sure, see you there then!",
+      "final_local": "Can, see you there!",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-040",
+      "standard_edited": false,
+      "original_standard": "Sure, you can use mine.",
+      "standard": "Sure, you can use mine.",
+      "generated_local": "Can, you use mine lah.",
+      "final_local": "Can, you use mine lah.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-041",
+      "standard_edited": false,
+      "original_standard": "Yes, could you print one for me too?",
+      "standard": "Yes, could you print one for me too?",
+      "generated_local": "Can, please print one for me also.",
+      "final_local": "Can, please print one for me also.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-042",
+      "standard_edited": false,
+      "original_standard": "Sure! What movie are y'all watching?",
+      "standard": "Sure! What movie are y'all watching?",
+      "generated_local": "Can! You guys want to watch what movie?",
+      "final_local": "Can! You all watching what movie ah?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-045",
+      "standard_edited": false,
+      "original_standard": "Hurry, the professor might start soon.",
+      "standard": "Hurry, the professor might start soon.",
+      "generated_local": "Faster lah, the professor might start soon already.",
+      "final_local": "Faster leh, prof might start soon.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-047",
+      "standard_edited": false,
+      "original_standard": "Oh I see you, heading there now.",
+      "standard": "Oh I see you, heading there now.",
+      "generated_local": "Oh I see you already, heading there now.",
+      "final_local": "See you already, coming over now.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-048",
+      "standard_edited": false,
+      "original_standard": "No worries, take your time",
+      "standard": "No worries, take your time",
+      "generated_local": "No worries, take your time only.",
+      "final_local": "Never mind, slowly come.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-049",
+      "standard_edited": false,
+      "original_standard": "Sure, let's go back together",
+      "standard": "Sure, let's go back together",
+      "generated_local": "Can, let's go back together.",
+      "final_local": "Can, let's go back together.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-055",
+      "standard_edited": false,
+      "original_standard": "yes, i confirm that I am going",
+      "standard": "yes, i confirm that I am going",
+      "generated_local": "Yes, confirm I coming.",
+      "final_local": "Yes, confirm I coming.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-056",
+      "standard_edited": false,
+      "original_standard": "Yes I am. Confirmed",
+      "standard": "Yes I am. Confirmed",
+      "generated_local": "Yes, I'm going. Confirmed already.",
+      "final_local": "Confirm going lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-057",
+      "standard_edited": false,
+      "original_standard": "Don't worry, I checked the information.",
+      "standard": "Don't worry, I checked the information.",
+      "generated_local": "Don't worry, I already check the info one.",
+      "final_local": "Don't worry, I already check the info one.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-058",
+      "standard_edited": false,
+      "original_standard": "Okay, I understand.",
+      "standard": "Okay, I understand.",
+      "generated_local": "Okay, I get you.",
+      "final_local": "Okay lah, understand.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-A-059",
+      "standard_edited": false,
+      "original_standard": "Hold on, I will check for you",
+      "standard": "Hold on, I will check for you",
+      "generated_local": "Wait ah, let me check for you first.",
+      "final_local": "Wait ah, let me check for you first.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-A-060",
+      "standard_edited": false,
+      "original_standard": "True, let's ask them too.",
+      "standard": "True, let's ask them too.",
+      "generated_local": "Correct, let's ask them also.",
+      "final_local": "Ya lor, ask them also.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-001",
+      "standard_edited": false,
+      "original_standard": "Sure, I'd be happy to get something to eat after class.",
+      "standard": "Sure, I'd be happy to get something to eat after class.",
+      "generated_local": "Can, let's go eat after class.",
+      "final_local": "Can, let's go eat after class.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-004",
+      "standard_edited": true,
+      "original_standard": "Sure, could you get me a bottle of water?",
+      "standard": "Sure, what drink would you like me to buy?",
+      "generated_local": "Can, you want what drink?",
+      "final_local": "Can, you want what drink?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-005",
+      "standard_edited": false,
+      "original_standard": "Sure, seven works better for me",
+      "standard": "Sure, seven works better for me",
+      "generated_local": "Can, seven also can.",
+      "final_local": "Seven better for me, can.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-006",
+      "standard_edited": false,
+      "original_standard": "Sorry, I can't make it today. I need to finish some work.",
+      "standard": "Sorry, I can't make it today. I need to finish some work.",
+      "generated_local": "Sorry, cannot join today. Still need to finish my work first.",
+      "final_local": "Paiseh, today cannot. Need finish work first.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-007",
+      "standard_edited": false,
+      "original_standard": "Okay, I'll meet you there shortly.",
+      "standard": "Okay, I'll meet you there shortly.",
+      "generated_local": "Okay, I'm coming there now.",
+      "final_local": "I coming, reach soon.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-008",
+      "standard_edited": false,
+      "original_standard": "Sure, what time should we meet?",
+      "standard": "Sure, what time should we meet?",
+      "generated_local": "Can, what time you want to meet?",
+      "final_local": "Can, what time you want to meet?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-010",
+      "standard_edited": false,
+      "original_standard": "Yes, three still works for me.",
+      "standard": "Yes, three still works for me.",
+      "generated_local": "Yes, three still can.",
+      "final_local": "Yes, three still can.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-011",
+      "standard_edited": false,
+      "original_standard": "Sure, I can go through it with you later.",
+      "standard": "Sure, I can go through it with you later.",
+      "generated_local": "Can, later I go through with you.",
+      "final_local": "Can, later I go through with you.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-012",
+      "standard_edited": false,
+      "original_standard": "Sure, eight works for me.",
+      "standard": "Sure, eight works for me.",
+      "generated_local": "Can, eight also can.",
+      "final_local": "Can, eight also can.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-013",
+      "standard_edited": false,
+      "original_standard": "Thanks for letting me know. I'll look for another place.",
+      "standard": "Thanks for letting me know. I'll look for another place.",
+      "generated_local": "Thanks for telling me. I go look for another place then.",
+      "final_local": "Thanks for telling me. I go look for another place then.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-014",
+      "standard_edited": false,
+      "original_standard": "Sorry, I can't join this afternoon.",
+      "standard": "Sorry, I can't join this afternoon.",
+      "generated_local": "Sorry ah, I cannot join this afternoon.",
+      "final_local": "Sorry ah, I cannot join this afternoon.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-016",
+      "standard_edited": false,
+      "original_standard": "Yes, the slides have been uploaded to the course page.",
+      "standard": "Yes, the slides have been uploaded to the course page.",
+      "generated_local": "Yes, they already upload the slides to the course page already.",
+      "final_local": "Ya, slides upload to course page already.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-017",
+      "standard_edited": true,
+      "original_standard": "Yes, I'll send it tonight.",
+      "standard": "I thought you were sending it to me. Do you need my recording too?",
+      "generated_local": "I thought you were sending it to me already. You need my recording too ah?",
+      "final_local": "Thought you sending me. You need my recording also ah?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-018",
+      "standard_edited": false,
+      "original_standard": "Sure, I'll send you the link.",
+      "standard": "Sure, I'll send you the link.",
+      "generated_local": "Can, I send you the link now.",
+      "final_local": "Can, I send you the link.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-020",
+      "standard_edited": false,
+      "original_standard": "No worries, I'll try to find them elsewhere.",
+      "standard": "No worries, I'll try to find them elsewhere.",
+      "generated_local": "No worries, let me try to find them from other places.",
+      "final_local": "Never mind, I try find the notes somewhere else.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-021",
+      "standard_edited": false,
+      "original_standard": "Sorry, I can't send them right now, but I'll send them later.",
+      "standard": "Sorry, I can't send them right now, but I'll send them later.",
+      "generated_local": "Sorry, cannot send now. I'll send to you later lor.",
+      "final_local": "Paiseh, now cannot send. Later I send you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-022",
+      "standard_edited": false,
+      "original_standard": "We need to submit it by Friday evening.",
+      "standard": "We need to submit it by Friday evening.",
+      "generated_local": "Need to submit by Friday evening already.",
+      "final_local": "By Friday evening must submit.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-023",
+      "standard_edited": false,
+      "original_standard": "Sure, I'll take a look when I'm done with mine.",
+      "standard": "Sure, I'll take a look when I'm done with mine.",
+      "generated_local": "Can, I finish my part first then I check for you.",
+      "final_local": "Can, I finish my part first then I check for you.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-024",
+      "standard_edited": false,
+      "original_standard": "Sure, let's discuss it after class.",
+      "standard": "Sure, let's discuss it after class.",
+      "generated_local": "Sure, can. After class we talk about it.",
+      "final_local": "Can, after class we discuss.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-028",
+      "standard_edited": false,
+      "original_standard": "No worries. Just send it when you're ready.",
+      "standard": "No worries. Just send it when you're ready.",
+      "generated_local": "No worries, you send when you're ready only.",
+      "final_local": "Never mind, ready then send me.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-032",
+      "standard_edited": false,
+      "original_standard": "Sure, two works for me.",
+      "standard": "Sure, two works for me.",
+      "generated_local": "Can, two also can.",
+      "final_local": "Can, two also can.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-033",
+      "standard_edited": false,
+      "original_standard": "Thanks for letting me know. I'll check the new room.",
+      "standard": "Thanks for letting me know. I'll check the new room.",
+      "generated_local": "Thanks for telling me. I go check the new room now.",
+      "final_local": "Thanks ah, I go check new room.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-037",
+      "standard_edited": false,
+      "original_standard": "Yes, I'll meet you at the campus gate.",
+      "standard": "Yes, I'll meet you at the campus gate.",
+      "generated_local": null,
+      "final_local": "Ya, campus gate we meet.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-038",
+      "standard_edited": false,
+      "original_standard": "No worries. Just let me know when you arrive.",
+      "standard": "No worries. Just let me know when you arrive.",
+      "generated_local": "No worries, you reach then let me know lor.",
+      "final_local": "No worries, you reach then let me know lor.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-039",
+      "standard_edited": false,
+      "original_standard": "Sure, I'll come over and find you.",
+      "standard": "Sure, I'll come over and find you.",
+      "generated_local": "Can, I go find you now.",
+      "final_local": "Can, I come over find you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-040",
+      "standard_edited": false,
+      "original_standard": "Sure, six thirty works for me.",
+      "standard": "Sure, six thirty works for me.",
+      "generated_local": "Can, six thirty also can.",
+      "final_local": "Can, six thirty also can.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-041",
+      "standard_edited": false,
+      "original_standard": "Sure, let's walk back together.",
+      "standard": "Sure, let's walk back together.",
+      "generated_local": null,
+      "final_local": "Can, we walk back together lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-044",
+      "standard_edited": false,
+      "original_standard": "It's showing at eight tonight.",
+      "standard": "It's showing at eight tonight.",
+      "generated_local": "It's showing at eight tonight liao.",
+      "final_local": "Eight tonight lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-045",
+      "standard_edited": false,
+      "original_standard": "Yes, the plan is still on.",
+      "standard": "Yes, the plan is still on.",
+      "generated_local": "Yes, still going as planned.",
+      "final_local": "Ya, still on lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-046",
+      "standard_edited": false,
+      "original_standard": "Thanks for inviting me, but I can't make it tonight.",
+      "standard": "Thanks for inviting me, but I can't make it tonight.",
+      "generated_local": "Thanks for the invite, but I cannot join tonight, got work to finish.",
+      "final_local": "Thanks for jio, tonight cannot ah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-047",
+      "standard_edited": false,
+      "original_standard": "Sure, Friday works for me.",
+      "standard": "Sure, Friday works for me.",
+      "generated_local": "Can, Friday also can.",
+      "final_local": "Can, Friday also can.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-049",
+      "standard_edited": false,
+      "original_standard": "Sure, send me the details and I'll help you book it.",
+      "standard": "Sure, send me the details and I'll help you book it.",
+      "generated_local": "Can, send me the details then I help you book.",
+      "final_local": "Can, send me the details then I help you book.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-052",
+      "standard_edited": false,
+      "original_standard": "Yes, five still works for me.",
+      "standard": "Yes, five still works for me.",
+      "generated_local": "Yes, five still can.",
+      "final_local": "Yes, five still can.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-B-053",
+      "standard_edited": false,
+      "original_standard": "Sure, I'll book it once we confirm the time.",
+      "standard": "Sure, I'll book it once we confirm the time.",
+      "generated_local": "Can, once we confirm the time I will book for us.",
+      "final_local": "Can, confirm time first then I book.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-055",
+      "standard_edited": false,
+      "original_standard": "Sorry, I can't join today. I need to finish my assignment.",
+      "standard": "Sorry, I can't join today. I need to finish my assignment.",
+      "generated_local": "Sorry, cannot join today. I need to finish my assignment first.",
+      "final_local": "Paiseh, today cannot join. Need finish assignment.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-058",
+      "standard_edited": false,
+      "original_standard": "You could try the printer on the second floor.",
+      "standard": "You could try the printer on the second floor.",
+      "generated_local": "You can try the printer on the second floor also.",
+      "final_local": "Can try the second floor printer.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-059",
+      "standard_edited": true,
+      "original_standard": "Yes, I'll bring it tomorrow.",
+      "standard": "You said you'd bring yours. Should I bring mine too?",
+      "generated_local": "You say you bring yours already. Need I bring mine also?",
+      "final_local": "You said bringing yours, I need bring mine also ah?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-B-060",
+      "standard_edited": true,
+      "original_standard": "No worries, I'll find another one.",
+      "standard": "I found my adapter; you can borrow it when we meet.",
+      "generated_local": "I found my adapter already, you can borrow when we meet later.",
+      "final_local": "Found mine liao, can borrow when we meet.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-002",
+      "standard_edited": false,
+      "original_standard": "what food do they have there?",
+      "standard": "what food do they have there?",
+      "generated_local": "They got what food there ah?",
+      "final_local": "They got what food there ah?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-C-003",
+      "standard_edited": false,
+      "original_standard": "both are fine",
+      "standard": "both are fine",
+      "generated_local": "Any one can, I okay only.",
+      "final_local": "I anything, both also can.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-004",
+      "standard_edited": false,
+      "original_standard": "it starts at 7",
+      "standard": "it starts at 7",
+      "generated_local": "Start from 7 o'clock.",
+      "final_local": "Seven start lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-005",
+      "standard_edited": false,
+      "original_standard": "yeah, we don't have class on tuesday",
+      "standard": "yeah, we don't have class on tuesday",
+      "generated_local": "Yeah, Tuesday no class already.",
+      "final_local": "Ya, Tuesday we no class.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-006",
+      "standard_edited": false,
+      "original_standard": "okay, i might skip it then",
+      "standard": "okay, i might skip it then",
+      "generated_local": "Okay, maybe I skip also then.",
+      "final_local": "Okay lor, maybe I skip then.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-007",
+      "standard_edited": false,
+      "original_standard": "not yet. i was waiting for you",
+      "standard": "not yet. i was waiting for you",
+      "generated_local": "Not yet. I was waiting for you already.",
+      "final_local": "Haven't eaten leh, I was waiting for you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-009",
+      "standard_edited": false,
+      "original_standard": "that's fine. i'll come over and we can share the table",
+      "standard": "that's fine. i'll come over and we can share the table",
+      "generated_local": "No problem, I'll come over and we can share the table together.",
+      "final_local": "Can lah, I come over then we share table.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-010",
+      "standard_edited": false,
+      "original_standard": "yes, i found two seats on the third floor",
+      "standard": "yes, i found two seats on the third floor",
+      "generated_local": "Yes, I already found two seats on the third floor.",
+      "final_local": "Got two seats on third floor liao.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-011",
+      "standard_edited": false,
+      "original_standard": "yes, i'll save a seat for you",
+      "standard": "yes, i'll save a seat for you",
+      "generated_local": "Can, I help you chope one seat first.",
+      "final_local": "Can, I help you chope one seat first.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-C-012",
+      "standard_edited": false,
+      "original_standard": "yes, 11 works for me as well",
+      "standard": "yes, 11 works for me as well",
+      "generated_local": "Can, 11am also can.",
+      "final_local": "Can, eleven also can.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-015",
+      "standard_edited": false,
+      "original_standard": "yes, i have them. i can send them to you",
+      "standard": "yes, i have them. i can send them to you",
+      "generated_local": "Yes, I have already. I can send to you.",
+      "final_local": "Got the slides, can send you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-019",
+      "standard_edited": false,
+      "original_standard": "yes, 5:30 is fine with me",
+      "standard": "yes, 5:30 is fine with me",
+      "generated_local": "Can, 5:30 also can.",
+      "final_local": "Can, 5:30 also can.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-C-020",
+      "standard_edited": false,
+      "original_standard": "not yet. the lecturer hasnt arrived",
+      "standard": "not yet. the lecturer hasnt arrived",
+      "generated_local": "Not yet, lecturer haven't come yet.",
+      "final_local": "Not yet, lecturer haven't come yet.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-C-021",
+      "standard_edited": false,
+      "original_standard": "not yet. im about 5 minutes away",
+      "standard": "not yet. im about 5 minutes away",
+      "generated_local": "Not yet, I'm about 5 minutes away already.",
+      "final_local": "Haven't reach, about five more minutes.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-022",
+      "standard_edited": false,
+      "original_standard": "okay, i'll be there in a few minutes",
+      "standard": "okay, i'll be there in a few minutes",
+      "generated_local": "Okay, I'll be there in a few minutes.",
+      "final_local": "Okay, few more minutes I reach.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-025",
+      "standard_edited": false,
+      "original_standard": "sure, what kind of iced coffee would you like?",
+      "standard": "sure, what kind of iced coffee would you like?",
+      "generated_local": "Sure, you want what kind of iced coffee?",
+      "final_local": "Can, what kind of iced coffee you want?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-026",
+      "standard_edited": false,
+      "original_standard": "yes, i'll meet you after class",
+      "standard": "yes, i'll meet you after class",
+      "generated_local": "Yes, I'll meet you after class.",
+      "final_local": "Can, after class meet you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-027",
+      "standard_edited": false,
+      "original_standard": "no worries. get some rest and we can go another time",
+      "standard": "no worries. get some rest and we can go another time",
+      "generated_local": "No worries, go rest first. We can go another time.",
+      "final_local": "Never mind lah, rest first. Next time we go.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-029",
+      "standard_edited": false,
+      "original_standard": "sure. we can find a quiet place in the library",
+      "standard": "sure. we can find a quiet place in the library",
+      "generated_local": "Sure, we can go find a quiet spot in the library later.",
+      "final_local": "Can, library we find somewhere quiet.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-030",
+      "standard_edited": true,
+      "original_standard": "yes, i'll be thr at 2",
+      "standard": "Yes, I'll be there at two.",
+      "generated_local": "Yes, I'll be there at 2 o'clock.",
+      "final_local": "Ya, two o'clock I reach.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-031",
+      "standard_edited": false,
+      "original_standard": "no problem. you should head back and rest",
+      "standard": "no problem. you should head back and rest",
+      "generated_local": "No problem, you go back and rest first.",
+      "final_local": "Okay lah, go back rest first.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-032",
+      "standard_edited": false,
+      "original_standard": "okay, i'll look for somewhere else downstairs",
+      "standard": "okay, i'll look for somewhere else downstairs",
+      "generated_local": "Okay, then I go look for other place downstairs.",
+      "final_local": "Okay, then I go look for other place downstairs.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-C-033",
+      "standard_edited": false,
+      "original_standard": "sure, we can compare them after class",
+      "standard": "sure, we can compare them after class",
+      "generated_local": "Sure, can compare after class.",
+      "final_local": "Can, after class compare notes.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-035",
+      "standard_edited": false,
+      "original_standard": "great, thanks for letting me know",
+      "standard": "great, thanks for letting me know",
+      "generated_local": "Great, thanks for telling me.",
+      "final_local": "Swee, thanks for telling me.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-036",
+      "standard_edited": false,
+      "original_standard": "sure, i'll send you a photo of it",
+      "standard": "sure, i'll send you a photo of it",
+      "generated_local": "Sure, I send you the photo now.",
+      "final_local": "Can, I send you the photo.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-039",
+      "standard_edited": false,
+      "original_standard": "no worries. we'll update you after the rehearsal",
+      "standard": "no worries. we'll update you after the rehearsal",
+      "generated_local": "No worries, we'll update you after rehearsal later.",
+      "final_local": "Never mind, rehearsal finish then we update you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-040",
+      "standard_edited": false,
+      "original_standard": "great, i'll check the final version later",
+      "standard": "great, i'll check the final version later",
+      "generated_local": "Great, I'll check the final version later lor.",
+      "final_local": "Swee, final version I check later.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-043",
+      "standard_edited": false,
+      "original_standard": "thanks. i'll go to level 4 now",
+      "standard": "thanks. i'll go to level 4 now",
+      "generated_local": "Thanks, I'm going to level 4 now.",
+      "final_local": "Thanks ah, I go level four now.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-044",
+      "standard_edited": true,
+      "original_standard": "yes, the lecturer is inside alr, but class hasnt started yet",
+      "standard": "Yes, the lecturer is inside already, but class hasn't started yet.",
+      "generated_local": "Yes, lecturer already inside, but class not start yet.",
+      "final_local": "Yes, lecturer already inside, but class not start yet.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-C-047",
+      "standard_edited": false,
+      "original_standard": "sure. lets meet after class",
+      "standard": "sure. lets meet after class",
+      "generated_local": "Sure, let's meet after class then.",
+      "final_local": "Can, after class we meet.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-049",
+      "standard_edited": false,
+      "original_standard": "yes, the same bus stop as yesterday",
+      "standard": "yes, the same bus stop as yesterday",
+      "generated_local": "Yes, same bus stop as yesterday.",
+      "final_local": "Ya, yesterday that bus stop.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-050",
+      "standard_edited": false,
+      "original_standard": "no worries. take your time and come over",
+      "standard": "no worries. take your time and come over",
+      "generated_local": "No worries, take your time and come over only.",
+      "final_local": "Never mind, slowly come over.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-051",
+      "standard_edited": false,
+      "original_standard": "sure. i'll meet you at the mrt instead",
+      "standard": "sure. i'll meet you at the mrt instead",
+      "generated_local": "Can, I meet you at the MRT instead.",
+      "final_local": "Can, I meet you at the MRT instead.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-C-052",
+      "standard_edited": false,
+      "original_standard": "sure, i'll send you the link",
+      "standard": "sure, i'll send you the link",
+      "generated_local": "Sure, I send you the link now.",
+      "final_local": "Can, I send you the link.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-054",
+      "standard_edited": false,
+      "original_standard": "thanks for letting me know. i'll head over soon",
+      "standard": "thanks for letting me know. i'll head over soon",
+      "generated_local": "Thanks for telling me. I'll head over soon.",
+      "final_local": "Thanks ah, I come over soon.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-057",
+      "standard_edited": false,
+      "original_standard": "sure, i'll get one for you",
+      "standard": "sure, i'll get one for you",
+      "generated_local": "Sure, I'll get one for you.",
+      "final_local": "Can, I get one for you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-059",
+      "standard_edited": false,
+      "original_standard": "yes, im waiting near the entrance",
+      "standard": "yes, im waiting near the entrance",
+      "generated_local": "Yes, I'm waiting near the entrance already.",
+      "final_local": "Ya, I waiting near entrance.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-C-060",
+      "standard_edited": false,
+      "original_standard": "no worries. i'll wait for you at the court",
+      "standard": "no worries. i'll wait for you at the court",
+      "generated_local": "No worries, I wait for you at the court already.",
+      "final_local": "Never mind, I wait at court for you.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-002",
+      "standard_edited": false,
+      "original_standard": "Oh oops, I did not know that.",
+      "standard": "Oh oops, I did not know that.",
+      "generated_local": "Oh no, I didn't know already.",
+      "final_local": "Aiyoh, I didn't know leh.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-004",
+      "standard_edited": false,
+      "original_standard": "That's fine.",
+      "standard": "That's fine.",
+      "generated_local": "It's okay, no worries.",
+      "final_local": "Never mind lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-005",
+      "standard_edited": false,
+      "original_standard": "Nope. I can't take spice.",
+      "standard": "Nope. I can't take spice.",
+      "generated_local": "No lah, I cannot eat spicy one.",
+      "final_local": "Don't want lah, I cannot take spicy.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-006",
+      "standard_edited": false,
+      "original_standard": "What would you like to eat?",
+      "standard": "What would you like to eat?",
+      "generated_local": "You want to eat what?",
+      "final_local": "You want to eat what?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-008",
+      "standard_edited": false,
+      "original_standard": "I would be free during the weekend. Is that alright?",
+      "standard": "I would be free during the weekend. Is that alright?",
+      "generated_local": "I free this weekend lor. Can or not?",
+      "final_local": "I free this weekend lor. Can or not?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-011",
+      "standard_edited": false,
+      "original_standard": "There is still presentation slides to be done.",
+      "standard": "There is still presentation slides to be done.",
+      "generated_local": "Still need to finish the presentation slides leh.",
+      "final_local": "Still need to finish the presentation slides leh.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-012",
+      "standard_edited": true,
+      "original_standard": "I don't know actually",
+      "standard": "Actually, I didn't catch that part clearly.",
+      "generated_local": "Actually, I didn't catch that part clearly leh.",
+      "final_local": "Actually ah, that part I didn't catch clearly.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-014",
+      "standard_edited": false,
+      "original_standard": "Maybe we should spend some time to read up about the topics.",
+      "standard": "Maybe we should spend some time to read up about the topics.",
+      "generated_local": "Maybe we can spend some time to read up on the topics first.",
+      "final_local": "Maybe we take some time read up those topics lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-015",
+      "standard_edited": false,
+      "original_standard": "I am sorry. I thought it was necessary.",
+      "standard": "I am sorry. I thought it was necessary.",
+      "generated_local": "Sorry ah, I thought it was needed only.",
+      "final_local": "Paiseh, I thought needed one.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-017",
+      "standard_edited": false,
+      "original_standard": "yes.",
+      "standard": "yes.",
+      "generated_local": "Can, go.",
+      "final_local": "Ya, confirm.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-018",
+      "standard_edited": false,
+      "original_standard": "No I have something on tomorrow. Would you be free the day after?",
+      "standard": "No I have something on tomorrow. Would you be free the day after?",
+      "generated_local": "No, tomorrow I got thing already. You free the day after?",
+      "final_local": "Tomorrow I got something on. Day after you free?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-019",
+      "standard_edited": false,
+      "original_standard": "Sorry. I forgot about that.",
+      "standard": "Sorry. I forgot about that.",
+      "generated_local": "Sorry, I totally forgot already.",
+      "final_local": "Paiseh, I forgot about that.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-021",
+      "standard_edited": false,
+      "original_standard": "I would just need some more time.",
+      "standard": "I would just need some more time.",
+      "generated_local": "I just need a bit more time only.",
+      "final_local": "Just need a bit more time only.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-022",
+      "standard_edited": false,
+      "original_standard": "I am almost done too. I just want to check if you know the answer to the first question?",
+      "standard": "I am almost done too. I just want to check if you know the answer to the first question?",
+      "generated_local": "I also almost done already. Just want to check if you know the answer to the first question?",
+      "final_local": "I also almost done liao. First question you know the answer anot?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-023",
+      "standard_edited": false,
+      "original_standard": "Ya, we would be adding more user stories, due to changes.",
+      "standard": "Ya, we would be adding more user stories, due to changes.",
+      "generated_local": "Ya, we will add more user stories because of the changes.",
+      "final_local": "Ya, got changes, so we adding more user stories.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-024",
+      "standard_edited": false,
+      "original_standard": "Yes. We would need to make slight adjustment to the conclusion to summarise our work better",
+      "standard": "Yes. We would need to make slight adjustment to the conclusion to summarise our work better",
+      "generated_local": "Yeah, need to adjust the conclusion a bit to summarize our work better.",
+      "final_local": "Ya, conclusion need change a bit, summarise our work better.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-025",
+      "standard_edited": false,
+      "original_standard": "Sorry, I am not able to help with that as I am busy with other project work.",
+      "standard": "Sorry, I am not able to help with that as I am busy with other project work.",
+      "generated_local": "Sorry ah, I cannot help with the slides because I'm quite busy with other projects already.",
+      "final_local": "Sorry ah, I cannot help with the slides because I'm quite busy with other projects already.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-026",
+      "standard_edited": false,
+      "original_standard": "My class is in the seminar room. Why are you asking?",
+      "standard": "My class is in the seminar room. Why are you asking?",
+      "generated_local": "My class is at the seminar room one. Why you ask?",
+      "final_local": "My class is at the seminar room one. Why you ask?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-028",
+      "standard_edited": false,
+      "original_standard": "Yes. Which rows would you like to sit at?",
+      "standard": "Yes. Which rows would you like to sit at?",
+      "generated_local": "Can. You want to sit at which row?",
+      "final_local": "Can. You want to sit at which row?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-031",
+      "standard_edited": false,
+      "original_standard": "Yes. I would be going for the makeup class.",
+      "standard": "Yes. I would be going for the makeup class.",
+      "generated_local": "Yeah, I will go for the makeup class.",
+      "final_local": "Ya, makeup class I going.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-032",
+      "standard_edited": false,
+      "original_standard": "Yes, would we need to email the professor?",
+      "standard": "Yes, would we need to email the professor?",
+      "generated_local": "Yeah, we need to email the professor or not?",
+      "final_local": "Yeah, we need to email the professor or not?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-034",
+      "standard_edited": false,
+      "original_standard": "Yes, I have just left my house.",
+      "standard": "Yes, I have just left my house.",
+      "generated_local": "Yeah, just left house already.",
+      "final_local": "Yeah, just left house already.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-035",
+      "standard_edited": false,
+      "original_standard": "Okay, take your time, I will walk around first.",
+      "standard": "Okay, take your time, I will walk around first.",
+      "generated_local": "Okay, no rush. I go walk around first lor.",
+      "final_local": "Okay, no rush. I go walk around first lor.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-040",
+      "standard_edited": false,
+      "original_standard": "Which movie do you want to watch?",
+      "standard": "Which movie do you want to watch?",
+      "generated_local": "You want watch which movie?",
+      "final_local": "You want watch which movie?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-041",
+      "standard_edited": false,
+      "original_standard": "Okay. I can do my own work then.",
+      "standard": "Okay. I can do my own work then.",
+      "generated_local": "Okay, then I go do my own work first.",
+      "final_local": "Okay, then I go do my own work first.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-043",
+      "standard_edited": true,
+      "original_standard": "Ok, let me know when you are reaching soon.",
+      "standard": "Okay, I'll buy your ticket. Let me know when you're nearby.",
+      "generated_local": "Okay, I buy for you first. You reach then let me know.",
+      "final_local": "Can, I buy your ticket. Reaching then tell me.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-044",
+      "standard_edited": false,
+      "original_standard": "Ok. How much is it?",
+      "standard": "Ok. How much is it?",
+      "generated_local": "Ok, how much you want me to pay?",
+      "final_local": "Can, how much ah?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-045",
+      "standard_edited": false,
+      "original_standard": "My friends are joining in as well",
+      "standard": "My friends are joining in as well",
+      "generated_local": "My friends also going join",
+      "final_local": "My friends also going join",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-047",
+      "standard_edited": false,
+      "original_standard": "Yes, we will be playing badminton later.",
+      "standard": "Yes, we will be playing badminton later.",
+      "generated_local": "Yes, we still play badminton later.",
+      "final_local": "Ya, later still playing badminton.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-048",
+      "standard_edited": true,
+      "original_standard": "Yes can. I will be bringing 3 down.",
+      "standard": "Yes, I'll bring three rackets.",
+      "generated_local": "Can, I bring three rackets for you.",
+      "final_local": "Can, three rackets I bring.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-049",
+      "standard_edited": false,
+      "original_standard": "Yes, I would be free to run tomorrow",
+      "standard": "Yes, I would be free to run tomorrow",
+      "generated_local": "Can, I free to go run tomorrow.",
+      "final_local": "Can, I free to go run tomorrow.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-051",
+      "standard_edited": false,
+      "original_standard": "oh no, then I will see if there are other courts available",
+      "standard": "oh no, then I will see if there are other courts available",
+      "generated_local": "Oh no, then I check if other courts still available.",
+      "final_local": "Oh no, I go see got other courts free anot.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-052",
+      "standard_edited": false,
+      "original_standard": "Ok, I will make sure to book later",
+      "standard": "Ok, I will make sure to book later",
+      "generated_local": "Ok, I'll book later lor.",
+      "final_local": "Okay, later I book.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-D-053",
+      "standard_edited": false,
+      "original_standard": "oh no, then how are you going to print the cheatsheet?",
+      "standard": "oh no, then how are you going to print the cheatsheet?",
+      "generated_local": "Oh no, then how you want to print the cheatsheet?",
+      "final_local": "Oh no, then how you want to print the cheatsheet?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-055",
+      "standard_edited": false,
+      "original_standard": "Ok , I will return once I have charged my phone",
+      "standard": "Ok , I will return once I have charged my phone",
+      "generated_local": "Ok, I finish charge my phone then I return you.",
+      "final_local": "Ok, I finish charge my phone then I return you.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-056",
+      "standard_edited": false,
+      "original_standard": "Yes, the printing queue is very long, there is about 4 other people before us",
+      "standard": "Yes, the printing queue is very long, there is about 4 other people before us",
+      "generated_local": "Yeah, the queue very long one. There are about 4 people before us.",
+      "final_local": "Yeah, the queue very long one. There are about 4 people before us.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-058",
+      "standard_edited": false,
+      "original_standard": "Ok noted, I will work on it.",
+      "standard": "Ok noted, I will work on it.",
+      "generated_local": "Ok can, I will do the transformers part then.",
+      "final_local": "Ok can, I will do the transformers part then.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-D-060",
+      "standard_edited": false,
+      "original_standard": "oh no, is there any other printers nearby?",
+      "standard": "oh no, is there any other printers nearby?",
+      "generated_local": "Oh no, then any other printer nearby ah?",
+      "final_local": "Oh no, then any other printer nearby ah?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-001",
+      "standard_edited": false,
+      "original_standard": "Sorry, I'll be reaching in 5 minutes, there was a train delay today.",
+      "standard": "Sorry, I'll be reaching in 5 minutes, there was a train delay today.",
+      "generated_local": "Sorry, I reach in 5 mins. Train delay today.",
+      "final_local": "Sorry, I reach in 5 mins. Train delay today.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-002",
+      "standard_edited": true,
+      "original_standard": "sorry, i got something on and i can't make it already, can something take over me?",
+      "standard": "Sorry, something came up and I can't make it. Can someone take my place?",
+      "generated_local": "Sorry ah, something come up so I cannot go already. Can someone take my place?",
+      "final_local": "Sorry ah, something come up so I cannot go already. Can someone take my place?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-003",
+      "standard_edited": false,
+      "original_standard": "Sorry, do you want to come and play with us",
+      "standard": "Sorry, do you want to come and play with us",
+      "generated_local": "Sorry ah, you want to come join us play also can.",
+      "final_local": "Paiseh, you want come play with us anot?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-004",
+      "standard_edited": false,
+      "original_standard": "ok guys we are confirm having dinner this weekend right?",
+      "standard": "ok guys we are confirm having dinner this weekend right?",
+      "generated_local": "Ok guys, we confirm dinner this weekend right?",
+      "final_local": "Ok guys, we confirm dinner this weekend right?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-006",
+      "standard_edited": false,
+      "original_standard": "oh wells, next time i guess",
+      "standard": "oh wells, next time i guess",
+      "generated_local": "Oh well, next time then.",
+      "final_local": "Aiyah, next time lor.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-008",
+      "standard_edited": true,
+      "original_standard": "have you finished your part?",
+      "standard": "Would you like to work on it together tonight?",
+      "generated_local": "You want to work on it together tonight?",
+      "final_local": "Tonight want do together anot?",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-011",
+      "standard_edited": false,
+      "original_standard": "Ok, will pay you later.",
+      "standard": "Ok, will pay you later.",
+      "generated_local": "Ok, later I pay you.",
+      "final_local": "Ok, later I pay you.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-012",
+      "standard_edited": false,
+      "original_standard": "No worries, i shall ask other people instead",
+      "standard": "No worries, i shall ask other people instead",
+      "generated_local": "No worries, I go ask others instead.",
+      "final_local": "No worries, I go ask others instead.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-013",
+      "standard_edited": false,
+      "original_standard": "Yep, I'm coming",
+      "standard": "Yep, I'm coming",
+      "generated_local": "Yeah, I coming.",
+      "final_local": "Yeah, I coming.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-014",
+      "standard_edited": false,
+      "original_standard": "Yep I know",
+      "standard": "Yep I know",
+      "generated_local": "Ok, I know already.",
+      "final_local": "Ya, I know liao.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-017",
+      "standard_edited": false,
+      "original_standard": "yep, see you later",
+      "standard": "yep, see you later",
+      "generated_local": "Ok, see you later.",
+      "final_local": "Can, see you later ah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-018",
+      "standard_edited": false,
+      "original_standard": "Sure thing, let's do it tomorrow night",
+      "standard": "Sure thing, let's do it tomorrow night",
+      "generated_local": "Can, let's do it tomorrow night.",
+      "final_local": "Can, tomorrow night we do together.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-019",
+      "standard_edited": false,
+      "original_standard": "Ok, that's great!",
+      "standard": "Ok, that's great!",
+      "generated_local": "Ok, steady lah!",
+      "final_local": "Swee lah!",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-020",
+      "standard_edited": false,
+      "original_standard": "ok, noted thank you professor!",
+      "standard": "ok, noted thank you professor!",
+      "generated_local": "Ok, noted. Thanks professor!",
+      "final_local": "Noted, thanks ah prof!",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-022",
+      "standard_edited": true,
+      "original_standard": "Sorry. I still need it by right now, I will only be able to return by next week",
+      "standard": "Sorry, I still need it. I can only return it next week.",
+      "generated_local": "Sorry ah, I still need it. Can only return next week only.",
+      "final_local": "Paiseh, still need it leh. Next week then can return.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-023",
+      "standard_edited": false,
+      "original_standard": "that would be awesome, thanks!",
+      "standard": "that would be awesome, thanks!",
+      "generated_local": "That would be great, thanks ah!",
+      "final_local": "Swee, thanks ah!",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-024",
+      "standard_edited": true,
+      "original_standard": "no, you got to work for it. I'm not giving this out for free",
+      "standard": "No, you need to earn it. I'm not giving it away for free.",
+      "generated_local": "No lah, you have to earn it. I cannot just give it away for free one.",
+      "final_local": "No lah, you have to earn it. I cannot just give it away for free one.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-029",
+      "standard_edited": false,
+      "original_standard": "don't worry, I already found you a seat",
+      "standard": "don't worry, I already found you a seat",
+      "generated_local": "Don't worry, I already find seat for you already.",
+      "final_local": "Found seat for you liao, don't worry.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-030",
+      "standard_edited": false,
+      "original_standard": "oh sorry, didn't know that",
+      "standard": "oh sorry, didn't know that",
+      "generated_local": "Oh sorry, I didn't know leh.",
+      "final_local": "Oh sorry, I didn't know leh.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-031",
+      "standard_edited": false,
+      "original_standard": "ok, we shall reschedule to another day instead",
+      "standard": "ok, we shall reschedule to another day instead",
+      "generated_local": "Ok, then we reschedule to another day lah.",
+      "final_local": "Okay lor, change to another day.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-033",
+      "standard_edited": false,
+      "original_standard": "Sure, I can come.",
+      "standard": "Sure, I can come.",
+      "generated_local": "Can, I come also.",
+      "final_local": "Can, I come also.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-034",
+      "standard_edited": false,
+      "original_standard": "I already booked the tickets",
+      "standard": "I already booked the tickets",
+      "generated_local": "I already book the tickets already",
+      "final_local": "Tickets book liao.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-035",
+      "standard_edited": false,
+      "original_standard": "Are you serious? Why did you inform me only at the very last minute?",
+      "standard": "Are you serious? Why did you inform me only at the very last minute?",
+      "generated_local": "Are you serious? Why you only tell me now at the last minute?",
+      "final_local": "Are you serious? Why you only tell me now at the last minute?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-037",
+      "standard_edited": false,
+      "original_standard": "yes, i will return it not to worry",
+      "standard": "yes, i will return it not to worry",
+      "generated_local": "Yes, I will return it, don't worry.",
+      "final_local": "Ya, I return one, don't worry.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-039",
+      "standard_edited": false,
+      "original_standard": "How could you forget?",
+      "standard": "How could you forget?",
+      "generated_local": "How can you forget leh?",
+      "final_local": "How can you forget leh?",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-041",
+      "standard_edited": false,
+      "original_standard": "there is 5 sessions left",
+      "standard": "there is 5 sessions left",
+      "generated_local": "Still got 5 sessions left only.",
+      "final_local": "Still got 5 sessions left only.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-042",
+      "standard_edited": false,
+      "original_standard": "nope, the library is currently full",
+      "standard": "nope, the library is currently full",
+      "generated_local": "No, the library full already.",
+      "final_local": "No, the library full already.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-043",
+      "standard_edited": false,
+      "original_standard": "oh no, okay",
+      "standard": "oh no, okay",
+      "generated_local": "Oh no, okay can.",
+      "final_local": "Wah, okay lor.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-044",
+      "standard_edited": false,
+      "original_standard": "ok, fine 6pm",
+      "standard": "ok, fine 6pm",
+      "generated_local": "Ok, can. 6pm then.",
+      "final_local": "Ok, can. 6pm then.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-045",
+      "standard_edited": false,
+      "original_standard": "ok, that's fine",
+      "standard": "ok, that's fine",
+      "generated_local": "Ok, no problem.",
+      "final_local": "Never mind lah.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-047",
+      "standard_edited": false,
+      "original_standard": "nope, we came in at third place instead",
+      "standard": "nope, we came in at third place instead",
+      "generated_local": "No lah, we only got third place only.",
+      "final_local": "No leh, got third instead.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-048",
+      "standard_edited": false,
+      "original_standard": "yes. It is confirmed",
+      "standard": "yes. It is confirmed",
+      "generated_local": "Yes, confirm one.",
+      "final_local": "Yes, confirm one.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-049",
+      "standard_edited": false,
+      "original_standard": "oh okay, nevermind then all is good",
+      "standard": "oh okay, nevermind then all is good",
+      "generated_local": "Oh okay, no worries then. All good.",
+      "final_local": "Okay lah, never mind. All good.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-052",
+      "standard_edited": false,
+      "original_standard": "no worries, lets meet next week then",
+      "standard": "no worries, lets meet next week then",
+      "generated_local": "No worries, next week then.",
+      "final_local": "Never mind, next week then meet.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-054",
+      "standard_edited": false,
+      "original_standard": "got it, no worries",
+      "standard": "got it, no worries",
+      "generated_local": "Can, no problem.",
+      "final_local": "Can, no problem.",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-056",
+      "standard_edited": false,
+      "original_standard": "okay, you can go first",
+      "standard": "okay, you can go first",
+      "generated_local": "Okay, you go first lah.",
+      "final_local": "Okay lor, you go first.",
+      "local_edited": true
+    },
+    {
+      "item_id": "ITEM-E-057",
+      "standard_edited": false,
+      "original_standard": "ok,  thank you!",
+      "standard": "ok,  thank you!",
+      "generated_local": "Ok, thanks ah!",
+      "final_local": "Ok, thanks ah!",
+      "local_edited": false
+    },
+    {
+      "item_id": "ITEM-E-060",
+      "standard_edited": false,
+      "original_standard": "ok sure, let's eat at 2 instead",
+      "standard": "ok sure, let's eat at 2 instead",
+      "generated_local": "Ok can, let's eat at 2 then.",
+      "final_local": "Can, two o'clock then eat.",
+      "local_edited": true
+    }
+  ]
+}

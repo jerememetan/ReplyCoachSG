@@ -1,0 +1,146 @@
+[
+  {
+    "item_id": "SEAPUBLIC-001",
+    "context": [
+      "I cannot leave work before 8:10.",
+      "We can get dinner afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "7:40 can meet already or not?"
+  },
+  {
+    "item_id": "SEAPUBLIC-002",
+    "context": [
+      "You still have my headphones.",
+      "Yes, I kept them in their case."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your headphones tomorrow afternoon?"
+  },
+  {
+    "item_id": "SEAPUBLIC-003",
+    "context": [
+      "I have not checked the community room closing hours.",
+      "They may change during holidays."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does the room close at ten tonight?"
+  },
+  {
+    "item_id": "SEAPUBLIC-004",
+    "context": [
+      "I could not attend the briefing.",
+      "I took down the instructions."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want me to send you my briefing notes?"
+  },
+  {
+    "item_id": "SEAPUBLIC-005",
+    "context": [
+      "I have the event photos saved on my laptop.",
+      "I missed the event."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you send me the photos later?"
+  },
+  {
+    "item_id": "SEAPUBLIC-006",
+    "context": [
+      "I only have six dollars for a snack today.",
+      "There are stalls near the station."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to get the fifteen-dollar pastry set?"
+  },
+  {
+    "item_id": "SEAPUBLIC-007",
+    "context": [
+      "I uploaded the signed form last night.",
+      "I will check the folder."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you uploaded the form yet?"
+  },
+  {
+    "item_id": "SEAPUBLIC-008",
+    "context": [
+      "I have not started making the slides.",
+      "The meeting is later this week."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Your slides ready already?"
+  },
+  {
+    "item_id": "SEAPUBLIC-009",
+    "context": [
+      "I failed the assessment.",
+      "Oh no, how are you feeling?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Quite disappointed, I studied hard for it."
+  },
+  {
+    "item_id": "SEAPUBLIC-010",
+    "context": [
+      "I am free on Sunday afternoon.",
+      "We are planning a small picnic."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to join our picnic?"
+  },
+  {
+    "item_id": "SEAPUBLIC-011",
+    "context": [
+      "I am waiting outside room C2.",
+      "I am on my way."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room are you outside?"
+  },
+  {
+    "item_id": "SEAPUBLIC-012",
+    "context": [
+      "I do not eat meat.",
+      "We can choose something nearby."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I order the chicken rice for you?"
+  }
+]

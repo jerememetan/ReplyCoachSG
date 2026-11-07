@@ -1,0 +1,39 @@
+{
+  "status": "complete",
+  "job_id": 355818,
+  "exit_code": "0:0",
+  "elapsed": "00:00:17",
+  "repo_id": "aisingapore/SEA-LION-v1-3B",
+  "revision": "836890428766e94322a4b7de27fb081a604703a9",
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "feasibility_passed": true,
+  "base_parameters": 3178255360,
+  "trainable_parameters": 10485760,
+  "strict_loading_problems": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "steps_completed": 4,
+  "changed_adapter_tensors": 256,
+  "peak_allocated_gib": 6.891900062561035,
+  "peak_reserved_gib": 7.009765625,
+  "stress_sequence_tokens": 384,
+  "microbatch": 1,
+  "training_rows_budget_verified": 190,
+  "precision": "BF16 base; LoRA adapters only; no quantization",
+  "adapter_and_tokenizer_saved": true,
+  "cache_free_continuation_tokens": 4,
+  "local_tests_passed": 6,
+  "report_sha256": "c7e3db26b7369a6b441a217dcf79b9728288a2bee79d21c05be5d09f4940a492",
+  "quality_evaluated": false,
+  "full_task_training_submitted": false,
+  "default_changed": false,
+  "limitations": [
+    "Four optimizer steps on four original training LOCAL examples establish tested compatibility/VRAM fit only; no generalization or quality ranking.",
+    "Reported memory applies to microbatch1 at384 tokens with gradient checkpointing; larger batches/sequences require measurement.",
+    "Initial job355797 failed before loading on legacy config default; job355809 passed first training step but report serialization failed. Both failed artifacts retained; job355818 is complete.",
+    "Earlier upstream checkpoint/indexing APIs emit deprecation warnings under current library versions; source/compat wrapper are pinned and tested."
+  ]
+}

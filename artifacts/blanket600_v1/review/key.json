@@ -1,0 +1,305 @@
+{
+  "mapping": {
+    "1": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "2": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "3": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "4": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "5": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "6": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "7": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "8": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "9": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "10": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "11": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "12": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "13": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "14": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "15": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "16": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "17": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "18": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "19": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "20": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "21": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "22": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "23": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "24": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "25": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "26": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "27": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "28": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "29": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "30": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "31": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "32": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "33": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "34": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "35": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "36": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "37": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "38": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "39": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "40": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "41": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "42": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "43": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "44": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "45": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "46": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "47": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "48": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "49": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "50": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "51": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "52": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "53": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "54": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "55": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "56": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "57": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "58": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "59": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "60": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "61": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "62": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "63": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "64": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "65": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "66": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "67": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "68": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "69": {
+      "A": "expanded",
+      "B": "control"
+    },
+    "70": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "71": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "72": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "73": {
+      "A": "control",
+      "B": "expanded"
+    },
+    "74": {
+      "A": "expanded",
+      "B": "control"
+    }
+  },
+  "packet_sha256": "8a998e0d3b25e36739b7dbe08d4ea1ee88d59486c821981b4c57d3971868c6b8",
+  "source_sha256": {
+    "control": "3dfdd289c978c043fefc68bcab70ce9ff46ad9ceeda80149cecfc0aa571cb4e3",
+    "expanded": "16c982331c9b116f280ce0c91eaea0d7fdee7e0e6edb59aadaa260b85e3901c6"
+  }
+}

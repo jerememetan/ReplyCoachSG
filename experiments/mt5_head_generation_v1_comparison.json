@@ -1,0 +1,622 @@
+{
+  "models": {
+    "full_english_plus_lora": {
+      "english_ce": 2.146852073381687,
+      "rewrite_ce": 2.4055889214365935,
+      "job": 356868
+    },
+    "independent_lora": {
+      "english_ce": 2.2605030789457516,
+      "rewrite_ce": 2.4832408250856006,
+      "job": 357048
+    },
+    "linear": {
+      "english_ce": 2.302091212519284,
+      "rewrite_ce": 2.747033924439065,
+      "job": 357448,
+      "selected_learning_rates": {
+        "standard": 0.0003,
+        "rewrite": 0.0003
+      },
+      "trainable_parameters": 192086016,
+      "elapsed": "00:14:14"
+    },
+    "mlp": {
+      "english_ce": 2.265742549814027,
+      "rewrite_ce": 2.6977021011110836,
+      "job": 357449,
+      "selected_learning_rates": {
+        "standard": 0.0003,
+        "rewrite": 0.0003
+      },
+      "trainable_parameters": 394240,
+      "elapsed": "00:07:39"
+    }
+  },
+  "metric": "Same-tokenizer development reply cross entropy; lower is better, not reply accuracy.",
+  "review_scope": "All24 previously frozen assistant-authored conversations, both variants and both decoders; plus correct-English beam4 rewrite route24 each. No locked test.",
+  "examples": [
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-001",
+      "category": "invitation",
+      "context": [
+        "I am free after dinner.",
+        "We are going for a walk around the park."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want to join us at eight?",
+      "route": "actual_english",
+      "english_draft": "Sure, I'll meet you there at eight.",
+      "local": "Okay, see you at eight.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-001",
+      "category": "invitation",
+      "context": [
+        "I am free after dinner.",
+        "We are going for a walk around the park."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want to join us at eight?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Yes, I would like to join you at eight.",
+      "local": "Okay, see you at eight.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-002",
+      "category": "waiting",
+      "context": [
+        "I am at the entrance beside the ticket machine.",
+        "My bus is reaching in two minutes."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you wait there for me?",
+      "route": "actual_english",
+      "english_draft": "Sure, I will wait for you at the entrance.",
+      "local": "Haven\u2019t reach yet.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-002",
+      "category": "waiting",
+      "context": [
+        "I am at the entrance beside the ticket machine.",
+        "My bus is reaching in two minutes."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you wait there for me?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Sure, I will wait here for you.",
+      "local": "I reach liao.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-003",
+      "category": "offer",
+      "context": [
+        "I missed the last part of the briefing.",
+        "I wrote down the key points."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want me to send you a photo of my notes?",
+      "route": "actual_english",
+      "english_draft": "Yes, please send me a photo of your notes.",
+      "local": "Okay, send me a photo of my notes.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-003",
+      "category": "offer",
+      "context": [
+        "I missed the last part of the briefing.",
+        "I wrote down the key points."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want me to send you a photo of my notes?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Yes please, send me a photo of your notes.",
+      "local": "Okay, send me a photo of my notes.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-007",
+      "category": "known_status",
+      "context": [
+        "I submitted the registration form this morning.",
+        "Thanks for reminding me."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Have you submitted your form yet?",
+      "route": "actual_english",
+      "english_draft": "I haven't submitted my form yet.",
+      "local": "I haven\u2019t submitted my form yet.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-007",
+      "category": "known_status",
+      "context": [
+        "I submitted the registration form this morning.",
+        "Thanks for reminding me."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Have you submitted your form yet?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Yes, I submitted it this morning.",
+      "local": "Yes, I submitted my form.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-011",
+      "category": "availability",
+      "context": [
+        "I can help on Wednesday but I am away on Thursday.",
+        "I will check which day we need help."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you come on Thursday morning?",
+      "route": "actual_english",
+      "english_draft": "I cannot make it on Thursday morning.",
+      "local": "Can, I can, but I cannot make it.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-011",
+      "category": "availability",
+      "context": [
+        "I can help on Wednesday but I am away on Thursday.",
+        "I will check which day we need help."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you come on Thursday morning?",
+      "route": "fresh_diagnostic",
+      "english_draft": "I cannot come on Thursday, but I can help on Wednesday.",
+      "local": "Can, I can help with Tuesday afternoon.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-013",
+      "category": "physical",
+      "context": [
+        "My shoulder is injured and I cannot lift heavy boxes.",
+        "Please take care of it."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Could you help move this heavy cupboard?",
+      "route": "actual_english",
+      "english_draft": "I'm not sure whether I can fit it.",
+      "local": "Can, I help you with the heavy boxes.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-013",
+      "category": "physical",
+      "context": [
+        "My shoulder is injured and I cannot lift heavy boxes.",
+        "Please take care of it."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Could you help move this heavy cupboard?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Sorry, I cannot lift heavy things with my injured shoulder.",
+      "local": "I cannot lift heavy boxes leh.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-018",
+      "category": "celebration",
+      "context": [
+        "I finally finished my driving test.",
+        "How did it go?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "I passed on my first try!",
+      "route": "actual_english",
+      "english_draft": "I'm glad you passed it.",
+      "local": "Okay, I'll send you a summary of your driving test.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-018",
+      "category": "celebration",
+      "context": [
+        "I finally finished my driving test.",
+        "How did it go?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "I passed on my first try!",
+      "route": "fresh_diagnostic",
+      "english_draft": "Congratulations! I am happy for you.",
+      "local": "Thanks ah, I already finished my driving test.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-021",
+      "category": "drink_choice",
+      "context": [
+        "I am still in class.",
+        "I am queuing at the drinks stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What would you like me to get you?",
+      "route": "actual_english",
+      "english_draft": "Could you get me a bottle of water?",
+      "local": "Can I get you a bottle of water?",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "linear",
+      "item_id": "RESTORE-FRESH-021",
+      "category": "drink_choice",
+      "context": [
+        "I am still in class.",
+        "I am queuing at the drinks stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What would you like me to get you?",
+      "route": "fresh_diagnostic",
+      "english_draft": "A cup of tea, please. Thank you for getting it for me.",
+      "local": "No worries, I'll get a bottle of ice cream.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-001",
+      "category": "invitation",
+      "context": [
+        "I am free after dinner.",
+        "We are going for a walk around the park."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want to join us at eight?",
+      "route": "actual_english",
+      "english_draft": "No worries, see you at eight.",
+      "local": "Can, see you at eight.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-001",
+      "category": "invitation",
+      "context": [
+        "I am free after dinner.",
+        "We are going for a walk around the park."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want to join us at eight?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Yes, I would like to join you at eight.",
+      "local": "Can, see you at eight.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-002",
+      "category": "waiting",
+      "context": [
+        "I am at the entrance beside the ticket machine.",
+        "My bus is reaching in two minutes."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you wait there for me?",
+      "route": "actual_english",
+      "english_draft": "Sure, I will wait for you at the entrance.",
+      "local": "Can, see you at the entrance.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-002",
+      "category": "waiting",
+      "context": [
+        "I am at the entrance beside the ticket machine.",
+        "My bus is reaching in two minutes."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you wait there for me?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Sure, I will wait here for you.",
+      "local": "Can, see you at the entrance.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-003",
+      "category": "offer",
+      "context": [
+        "I missed the last part of the briefing.",
+        "I wrote down the key points."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want me to send you a photo of my notes?",
+      "route": "actual_english",
+      "english_draft": "Sure, please send me a photo of your notes.",
+      "local": "Can, I send you a photo of my notes.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-003",
+      "category": "offer",
+      "context": [
+        "I missed the last part of the briefing.",
+        "I wrote down the key points."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want me to send you a photo of my notes?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Yes please, send me a photo of your notes.",
+      "local": "Can, send me a photo of my notes.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-007",
+      "category": "known_status",
+      "context": [
+        "I submitted the registration form this morning.",
+        "Thanks for reminding me."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Have you submitted your form yet?",
+      "route": "actual_english",
+      "english_draft": "Yes, I haven't submitted my form yet.",
+      "local": "I haven\u2019t submitted my form yet.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-007",
+      "category": "known_status",
+      "context": [
+        "I submitted the registration form this morning.",
+        "Thanks for reminding me."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Have you submitted your form yet?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Yes, I submitted it this morning.",
+      "local": "I submitted my form now.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-011",
+      "category": "availability",
+      "context": [
+        "I can help on Wednesday but I am away on Thursday.",
+        "I will check which day we need help."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you come on Thursday morning?",
+      "route": "actual_english",
+      "english_draft": "Thursday morning works for me.",
+      "local": "Thursday morning cannot leh.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-011",
+      "category": "availability",
+      "context": [
+        "I can help on Wednesday but I am away on Thursday.",
+        "I will check which day we need help."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you come on Thursday morning?",
+      "route": "fresh_diagnostic",
+      "english_draft": "I cannot come on Thursday, but I can help on Wednesday.",
+      "local": "Wednesday morning cannot leh.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-013",
+      "category": "physical",
+      "context": [
+        "My shoulder is injured and I cannot lift heavy boxes.",
+        "Please take care of it."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Could you help move this heavy cupboard?",
+      "route": "actual_english",
+      "english_draft": "Sure, I'll help you with that.",
+      "local": "Can help me lift the cupboard?",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-013",
+      "category": "physical",
+      "context": [
+        "My shoulder is injured and I cannot lift heavy boxes.",
+        "Please take care of it."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Could you help move this heavy cupboard?",
+      "route": "fresh_diagnostic",
+      "english_draft": "Sorry, I cannot lift heavy things with my injured shoulder.",
+      "local": "I cannot lift heavy things leh.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-018",
+      "category": "celebration",
+      "context": [
+        "I finally finished my driving test.",
+        "How did it go?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "I passed on my first try!",
+      "route": "actual_english",
+      "english_draft": "Thanks for letting me know.",
+      "local": "Okay, let me know when you reach.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-018",
+      "category": "celebration",
+      "context": [
+        "I finally finished my driving test.",
+        "How did it go?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "I passed on my first try!",
+      "route": "fresh_diagnostic",
+      "english_draft": "Congratulations! I am happy for you.",
+      "local": "Thanks ah, I almost finished.",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-021",
+      "category": "drink_choice",
+      "context": [
+        "I am still in class.",
+        "I am queuing at the drinks stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What would you like me to get you?",
+      "route": "actual_english",
+      "english_draft": "Could you get me something to drink?",
+      "local": "Can I get you something to drink?",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    },
+    {
+      "variant": "mlp",
+      "item_id": "RESTORE-FRESH-021",
+      "category": "drink_choice",
+      "context": [
+        "I am still in class.",
+        "I am queuing at the drinks stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What would you like me to get you?",
+      "route": "fresh_diagnostic",
+      "english_draft": "A cup of tea, please. Thank you for getting it for me.",
+      "local": "Can I get a cup of tea for you?",
+      "selection": "Illustrative selected examples, not random; all24 reviewed."
+    }
+  ],
+  "conclusion": "Small MLP is parameter-efficient and has English loss close to independent LoRA, but rewriting remains meaning-unstable. Output-only alternatives have not established an overall improvement.",
+  "default_changed": false,
+  "limitations": [
+    "Two-LR head search vs earlier single-LR LoRA, and backbone dropout differs. Complete recipes compared, not isolated causal effect.",
+    "Development repeatedly reused; assistant review is not human gold or an unbiased accuracy estimate."
+  ]
+}
