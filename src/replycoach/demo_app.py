@@ -234,6 +234,7 @@ def main() -> None:
         if system_mode == "All models (experimental)":
             shared_selector = st.selectbox("Shared selector", list(SHARED_SELECTORS), key="shared_selector_checkpoint_v2")
             st.caption("Compare BM25, MiniLM, V4 and V5, then select one reply per style with a shared ranker.")
+            st.caption("V5: SEA-LION 3B · selected from the three-transformer validation comparison. Historical evaluations used the original mT5.")
             st.caption("V7 refines the local winner: the same ranker chooses from the original and three lexicon variations.")
             st.caption("First use loads local models; later requests reuse them.")
             if SHARED_SELECTORS[shared_selector] == "qwen_dailydialog":
@@ -253,11 +254,11 @@ def main() -> None:
                     st.caption("SEA-LION runs locally in BF16 on a compatible GPU. CPU weights need roughly 13 GB plus working memory. The school GPU cluster is not required for local inference.")
 
     with st.expander("Reply bank settings"):
-        bank_choice = st.selectbox("Reply bank", ["Pilot examples (drafts)", "Reviewed development file"], key="bank_choice")
+        bank_choice = st.selectbox("Reply bank", ["Pilot examples (drafts)", "Reviewed development file"], index=1, key="bank_choice")
         development_path = ""
         if bank_choice == "Reviewed development file":
             development_path = st.text_input(
-                "Development JSONL path", key="development_path",
+                "Development JSONL path", value="data/dev/train.jsonl", key="development_path",
                 help="Only completed, independently reviewed dev records are allowed. Test and unassigned records are rejected.",
             )
         st.caption("MiniLM runs locally. The first comparison may download the public model weights.")
@@ -298,7 +299,8 @@ def main() -> None:
     st.session_state.comparison_identity = identity
 
     def execute_request():
-        group = ('sealion_handoff' if generator_provider.startswith('SEA-LION') else
+        group = ('sealion_all_models' if system_mode == 'All models (experimental)' else
+                 'sealion_handoff' if generator_provider.startswith('SEA-LION') else
                  'mt5_handoff' if generator_provider.startswith('mT5 A') else 'baseline')
         demo_resources.prepare_model_group(group)
         turns = [parse_preview_line(line) for line in session_text.splitlines() if line.strip()]
@@ -315,7 +317,7 @@ def main() -> None:
                     bm25_factory=lambda: demo_resources.get_bm25(bank.serialized),
                     minilm_factory=lambda: demo_resources.get_minilm(bank.serialized),
                     v4_factory=lambda: demo_resources.get_generator("v4"),
-                    v5_factory=lambda: demo_resources.get_generator("v5"),
+                    v5_factory=lambda: demo_resources.get_generator("sealion_handoff"),
                     scorer_factory=lambda: demo_resources.get_shared_ranker(SHARED_SELECTORS[shared_selector]),
                     speakers=[{"you": "user", "peer": "peer", "neutral": "unknown"}[role] for role, _ in turns],
                     log=True,

@@ -1,5 +1,11 @@
 # Frozen 60-item final evaluation
 
+The interactive demo's V5 slot changed to SEA-LION 3B after the separate
+[8 November transformer validation comparison](evaluation/transformer_selection_20261108.md).
+The frozen results documented here used **original mT5**, not SEA-LION. The
+final-test runner still explicitly requests the original `v5` provider. No
+SEA-LION + Qwen + V7 end-to-end held-out quality result has been established.
+
 ## Include V7 in a new final report
 
 Run the existing entry point with a separate output directory:

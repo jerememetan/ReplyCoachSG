@@ -128,10 +128,11 @@ and a Light local suggestion: four clickable replies that fill the display-only
 chat composer. They select saved replies; they do not generate new text. The CLI
 continues to return one pair from BM25.
 
-The default reply bank is still the **20 pilot drafts**, not DailyDialog or CoSEM.
-The reviewed split is now published: **190 train/reply-bank items, 50 validation
-queries and 60 held-out test items**. Choose **Reviewed development file** under
-**Reply bank settings** and enter `data/dev/train.jsonl` (or an absolute path).
+The Streamlit demo defaults to **Reviewed development file** with
+`data/dev/train.jsonl` already filled in: the **190 reviewed train/reply-bank
+items** used in the final demo and evaluation. The **50 validation queries and
+60 held-out test items** remain separate. The **20 pilot drafts** are still
+available under **Reply bank settings**, along with an editable development path.
 Every record must be `dev`, `completed`, explicitly privacy-safe,
 and independently reviewed. Test, unassigned, incomplete and duplicate records
 are rejected; selecting a file never edits or splits it.
@@ -165,7 +166,10 @@ registry never uses the one-batch smoke checkpoint or fake production replies.
 
 Choose **All models (experimental)** under **System settings**, enter the
 conversation and incoming message, then click **Suggest two replies**. The app
-compares eight proposals: Standard and Local from BM25, MiniLM, V4 and V5. One
+compares eight proposals: Standard and Local from BM25, MiniLM, V4 and V5.
+**V5 now uses SEA-LION 3B**, selected in the completed 8 November validation
+comparison. The explicit **V5 (mT5/LoRA)** option in Generator only/Hybrid and
+the frozen evaluation runners retain the original mT5 model. One
 shared local cross-encoder selects an initial reply per style. **V7 then refines
 the Local winner:** lightweight lexicon substitutions produce exactly three
 randomized, distinct variations, and the same ranker selects from those three
@@ -188,13 +192,32 @@ virtual environment used to launch Streamlit:
 .\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py --server.fileWatcherType none
 ```
 
-V4 and V5 require the privately shared checkpoint files; they are not downloaded
-from GitHub. Copy D's adapted base to `artifacts/mt5_base_after_spans_spk/best/`
-and adapter/tokenizer to `artifacts/spk1_ul025_s425/best/` (or use `V5_CHECKPOINT`).
-Select **Reviewed development file** and `data/dev/train.jsonl` to use the
+V4 and V5 require privately shared weights; GitHub does not download them.
+For the All models V5 slot, place the full SEA-LION handoff at
+`artifacts/model_handoff_v1/replycoach_sealion_repair25_v1/` (or set
+`REPLYCOACH_SEALION_BUNDLE`). For the legacy mT5 option and frozen evaluations,
+copy D's adapted base to `artifacts/mt5_base_after_spans_spk/best/` and
+adapter/tokenizer to `artifacts/spk1_ul025_s425/best/` (or use `V5_CHECKPOINT`).
+The demo preselects **Reviewed development file** and `data/dev/train.jsonl`, the
 190-example bank evaluated in the report. First use loads the local generators
 and the selected ranker. Frozen MiniLM may download its public weights; trained
 V6 checkpoints must be supplied privately. Cached requests reuse them.
+
+The completed generator comparison covers all graded fields:
+
+| Model | Appropriateness | Naturalness | Style fit | Would send |
+|---|---:|---:|---:|---:|
+| Original mT5 | 4.037 | 4.951 | 4.448 | 70.5% |
+| New mT5 A | 3.651 | 4.791 | 4.580 | 58.3% |
+| **SEA-LION 3B** | **4.516** | **4.961** | **4.603** | **83.3%** |
+
+These are equal-style validation means from 50 conversations and ten AI personas,
+not a human study or a reevaluation of the complete V6/V7 pipeline. The report
+includes separate Standard/Local scores, problem and uncertainty flags, score
+distributions, reuse provenance, and paired intervals for all metrics. Tiny
+naturalness/style differences must not be treated as established improvements.
+See the [full findings](docs/evaluation/transformer_selection_20261108.md) and
+[aggregate evidence](docs/evaluation/transformer_selection_20261108.json).
 
 The default V6 ranker is pinned to `Qwen/Qwen3-Reranker-0.6B` revision
 `e61197ed45024b0ed8a2d74b80b4d909f1255473`, with the verified DailyDialog →
@@ -501,9 +524,10 @@ Incoming message + dynamic session memory
 **Locked decisions**
 
 - Scope is casual peer coordination only.
-- V4 = V3 RNN + attention. The delivered V5 is mT5-base + LoRA; older mT5-small
-  notebooks are earlier experiments. Compare the delivered systems before
-  selecting the final generator.
+- V4 = V3 RNN + attention. Original V5 is mT5-base + LoRA; the current All models
+  V5 slot uses SEA-LION 3B. The legacy mT5 provider remains for frozen runs; older mT5-small
+  notebooks are earlier experiments. SEA-LION was selected by the separate
+  three-generator validation comparison linked above.
 - Memory is dynamic: newest two turns plus up to two relevant older turns from the last eight session messages.
 - Local style is restrained and English-led.
 - Unknown/low-confidence inputs fall back to safe neutral English.
@@ -511,11 +535,12 @@ Incoming message + dynamic session memory
 **Corpus**
 
 - Dual-style task data = **team-authored, independently human-reviewed** items;
-  the official 300-item split is published. The demo still defaults to pilot drafts.
+  the official 300-item split is published. The demo defaults to the 190 reviewed
+  training/reply-bank examples; validation and test queries stay separate.
 - Public **DailyDialog** supplies generic conversational pretraining/adaptation;
   it does not replace team-authored STANDARD/LOCAL labels. See the role reports
   for the actual corpus stages and their quality limitations.
-- The delivered V5 uses local adapted mT5-base weights and a shared LoRA adapter,
+- Legacy mT5 V5 uses local adapted mT5-base weights and a shared LoRA adapter,
   with no hosted generation API.
 
 `data/pilot/pilot_20.jsonl` is an engineering fixture (`draft_needs_team_review`). Rewrite and peer-review it before treating it as gold.

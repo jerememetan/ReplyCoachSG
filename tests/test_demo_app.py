@@ -1,4 +1,5 @@
 from replycoach.demo_app import build_preview_html, parse_preview_line
+from html import unescape
 
 import pytest
 from streamlit.testing.v1 import AppTest
@@ -71,13 +72,26 @@ def test_preview_html_shows_selected_reply_in_composer():
     assert "Sure, see you there." in html
 
 
-def test_demo_identifies_pilot_drafts_without_loading_model(demo_test, fake_encoder):
+def test_demo_defaults_to_reviewed_training_bank_without_loading_model(demo_test, fake_encoder):
     assert not demo_test.exception
     captions = " ".join(caption.value for caption in demo_test.caption)
-    assert "Pilot examples (drafts)" in captions
-    assert "20 examples" in captions
+    assert demo_test.selectbox(key='bank_choice').value == 'Reviewed development file'
+    assert demo_test.text_input(key='development_path').value == 'data/dev/train.jsonl'
+    assert 'Reviewed development examples' in captions
+    assert '190 examples' in captions
+    assert not demo_test.error
     assert not fake_encoder.calls
     assert demo_test.button(key="compare").label == "Compare reply suggestions"
+
+
+def test_pilot_bank_remains_available_and_switching_clears_suggestions(demo_test):
+    app = compare_in_app(demo_test)
+    app.selectbox(key='bank_choice').select('Pilot examples (drafts)').run()
+    captions = ' '.join(caption.value for caption in app.caption)
+    assert 'Pilot examples (drafts)' in captions
+    assert '20 examples' in captions
+    assert not suggestion_keys(app)
+    assert app.session_state.last_comparison is None
 
 
 def test_comparison_introduces_the_reply_selection_section(demo_test):
@@ -108,7 +122,7 @@ def test_each_method_style_button_fills_display_only_composer(demo_test, method,
     app.button(key=f"select_{method}_{style}").click().run()
     assert app.session_state.selected_reply == selected
     assert app.text_area(key="conversation").value == before
-    assert any('preview-composer selected' in block.value and selected in block.value for block in app.markdown)
+    assert any('preview-composer selected' in block.value and selected in unescape(block.value) for block in app.markdown)
     assert len(app.dataframe) == 2
 
 
@@ -129,10 +143,10 @@ def test_demo_minilm_failure_is_visible_and_retry_recovers(demo_test, monkeypatc
     assert not app.warning
 
 
-def test_bank_switch_clears_old_suggestions_and_blocks_invalid_path(demo_test):
+def test_blank_bank_path_clears_old_suggestions_and_blocks_comparison(demo_test):
     app = compare_in_app(demo_test)
     app.button(key="select_bm25_standard").click().run()
-    app.selectbox(key="bank_choice").select("Reviewed development file").run()
+    app.text_input(key="development_path").input("").run()
     assert not suggestion_keys(app)
     assert app.session_state.selected_reply == ""
     assert app.button(key="compare").disabled
@@ -314,7 +328,8 @@ def enable_all_models(app, monkeypatch, stub_generator):
         if provider == 'v4':
             return stub_generator
         from test_all_models import Generator
-        return Generator('V5')
+        assert provider == 'sealion_handoff'
+        return Generator('SEALION')
 
     monkeypatch.setattr(demo_resources, 'get_generator', generator)
     monkeypatch.setattr(demo_resources, 'get_shared_ranker', lambda selector='pretrained': Scorer(), raising=False)
@@ -331,6 +346,10 @@ def test_all_models_shows_eight_proposals_and_click_only_fills_composer(demo_tes
     assert any('4/4 models compared' in caption.value for caption in app.caption)
     assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
     assert len(app.dataframe[0].value) == 8
+    proposals = app.session_state.last_all_models_result.proposals
+    assert len(proposals['V5']) == 2
+    assert all(c.meta['generation_source'] == 'SEALION' for c in proposals['V5'])
+    assert any('V5: SEA-LION 3B' in caption.value for caption in app.caption)
     before = app.text_area(key='conversation').value
     chosen = app.button(key='select_all_standard').label
     app.button(key='select_all_standard').click().run()
@@ -352,7 +371,7 @@ def test_all_models_partial_source_failure_is_visible(demo_test, monkeypatch, st
     app = enable_all_models(demo_test, monkeypatch, stub_generator)
 
     def generator(provider):
-        if provider == 'v5':
+        if provider == 'sealion_handoff':
             raise RuntimeError('V5 checkpoint unavailable')
         return stub_generator
 

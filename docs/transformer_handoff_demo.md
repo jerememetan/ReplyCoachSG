@@ -2,10 +2,12 @@
 
 The November 8 transformer handoff is available as two separate generator choices:
 **mT5 A (new handoff)** and **SEA-LION 3B (new handoff)**. In Streamlit, select
-**Generator only** or **Hybrid**, then choose the model. The original V5 option,
-All models comparison, V6/V7 pipeline and frozen evaluation entry points retain
-their existing checkpoints and ranking policy. These new bundles have not been added
-to the historical evaluation results.
+**Generator only** or **Hybrid**, then choose the model. Following the completed
+three-model validation comparison, **All models** uses **SEA-LION 3B** for its
+V5 slot. Qwen selection and V7 Local refinement keep their existing policies.
+The explicit original V5 generator option and frozen evaluation entry points
+retain mT5. Historical evaluation results have not been relabelled or rerun.
+See [all metrics, flags and paired comparisons](evaluation/transformer_selection_20261108.md).
 
 ## Local files
 
@@ -87,3 +89,17 @@ These are two requests for one example per model, not a benchmark or new quality
 evaluation. Peak allocation excludes CUDA driver/display overhead. Evidence is
 saved locally at `output/gpu_handoff_smoke.json`. Neither model requires the
 school cluster for this local setup.
+
+## All models after SEA-LION selection
+
+The interactive V5 slot now supplies SEA-LION proposals with `generation_source`
+set to `SEALION`; the table retains the version label V5. The Qwen shared
+selector and V7 four-candidate Local refinement are unchanged. Missing SEA-LION
+weights produce an explicit V5 source error, with no substitution of old mT5.
+
+Two live requests exercised the current 190-example bank, BM25, MiniLM, V4,
+SEA-LION, GPU Qwen ranking and V7 refinement. Both completed with four available
+sources and no errors. The first request took 42.81 seconds including initial
+loading; the reused-model request took 2.94 seconds. This is an integration
+smoke check with two examples, not a latency benchmark or end-to-end quality
+evaluation. Evidence is local at `output/sealion_current_pipeline_smoke.json`.
