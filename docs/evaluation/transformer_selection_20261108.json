@@ -1,0 +1,471 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-08",
+  "completed": true,
+  "evaluation_split": "validation",
+  "conversations": 50,
+  "styles": 2,
+  "personas": 10,
+  "candidates": 300,
+  "nominal_rating_cells": 3000,
+  "provenance_counts": {
+    "new_gemma_call": 2960,
+    "current_run": 40
+  },
+  "laptop_seed_ratings": 141,
+  "fresh_cluster_ratings": 2819,
+  "summary": [
+    {
+      "model": "Original mT5",
+      "style": "STANDARD",
+      "conversations": 50,
+      "appropriateness": 3.804,
+      "naturalness": 4.948,
+      "style_fit": 5,
+      "would_send": 0.664,
+      "rating_cells": 500,
+      "uncertain_count": 0,
+      "problem_counts": {
+        "none": 443,
+        "garbled_or_unreadable": 0,
+        "offensive_or_unsafe": 0,
+        "personal_info": 0,
+        "generic_or_unrelated_fallback": 57
+      },
+      "low_appropriateness_count": 149,
+      "score_distributions": {
+        "appropriateness": {
+          "1": 70,
+          "2": 79,
+          "3": 24,
+          "4": 33,
+          "5": 294
+        },
+        "naturalness": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 26,
+          "5": 474
+        },
+        "style_fit": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 500
+        }
+      }
+    },
+    {
+      "model": "Original mT5",
+      "style": "LOCAL",
+      "conversations": 50,
+      "appropriateness": 4.2700000000000005,
+      "naturalness": 4.954,
+      "style_fit": 3.896,
+      "would_send": 0.746,
+      "rating_cells": 500,
+      "uncertain_count": 0,
+      "problem_counts": {
+        "none": 469,
+        "garbled_or_unreadable": 0,
+        "offensive_or_unsafe": 0,
+        "personal_info": 0,
+        "generic_or_unrelated_fallback": 31
+      },
+      "low_appropriateness_count": 79,
+      "score_distributions": {
+        "appropriateness": {
+          "1": 32,
+          "2": 47,
+          "3": 19,
+          "4": 58,
+          "5": 344
+        },
+        "naturalness": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 23,
+          "5": 477
+        },
+        "style_fit": {
+          "1": 0,
+          "2": 40,
+          "3": 191,
+          "4": 50,
+          "5": 219
+        }
+      }
+    },
+    {
+      "model": "New mT5 A",
+      "style": "STANDARD",
+      "conversations": 50,
+      "appropriateness": 3.554,
+      "naturalness": 4.944,
+      "style_fit": 5,
+      "would_send": 0.574,
+      "rating_cells": 500,
+      "uncertain_count": 0,
+      "problem_counts": {
+        "none": 445,
+        "garbled_or_unreadable": 0,
+        "offensive_or_unsafe": 0,
+        "personal_info": 0,
+        "generic_or_unrelated_fallback": 55
+      },
+      "low_appropriateness_count": 188,
+      "score_distributions": {
+        "appropriateness": {
+          "1": 82,
+          "2": 106,
+          "3": 28,
+          "4": 21,
+          "5": 263
+        },
+        "naturalness": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 28,
+          "5": 472
+        },
+        "style_fit": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 500
+        }
+      }
+    },
+    {
+      "model": "New mT5 A",
+      "style": "LOCAL",
+      "conversations": 50,
+      "appropriateness": 3.7479999999999998,
+      "naturalness": 4.638,
+      "style_fit": 4.16,
+      "would_send": 0.592,
+      "rating_cells": 500,
+      "uncertain_count": 0,
+      "problem_counts": {
+        "none": 473,
+        "garbled_or_unreadable": 0,
+        "offensive_or_unsafe": 0,
+        "personal_info": 0,
+        "generic_or_unrelated_fallback": 27
+      },
+      "low_appropriateness_count": 150,
+      "score_distributions": {
+        "appropriateness": {
+          "1": 45,
+          "2": 105,
+          "3": 32,
+          "4": 67,
+          "5": 251
+        },
+        "naturalness": {
+          "1": 0,
+          "2": 10,
+          "3": 20,
+          "4": 111,
+          "5": 359
+        },
+        "style_fit": {
+          "1": 2,
+          "2": 62,
+          "3": 89,
+          "4": 48,
+          "5": 299
+        }
+      }
+    },
+    {
+      "model": "SEA-LION 3B",
+      "style": "STANDARD",
+      "conversations": 50,
+      "appropriateness": 4.486,
+      "naturalness": 4.958,
+      "style_fit": 5,
+      "would_send": 0.832,
+      "rating_cells": 500,
+      "uncertain_count": 0,
+      "problem_counts": {
+        "none": 490,
+        "garbled_or_unreadable": 0,
+        "offensive_or_unsafe": 0,
+        "personal_info": 0,
+        "generic_or_unrelated_fallback": 10
+      },
+      "low_appropriateness_count": 63,
+      "score_distributions": {
+        "appropriateness": {
+          "1": 19,
+          "2": 44,
+          "3": 20,
+          "4": 9,
+          "5": 408
+        },
+        "naturalness": {
+          "1": 0,
+          "2": 0,
+          "3": 3,
+          "4": 15,
+          "5": 482
+        },
+        "style_fit": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 500
+        }
+      }
+    },
+    {
+      "model": "SEA-LION 3B",
+      "style": "LOCAL",
+      "conversations": 50,
+      "appropriateness": 4.546,
+      "naturalness": 4.964,
+      "style_fit": 4.206,
+      "would_send": 0.834,
+      "rating_cells": 500,
+      "uncertain_count": 1,
+      "problem_counts": {
+        "none": 494,
+        "garbled_or_unreadable": 0,
+        "offensive_or_unsafe": 0,
+        "personal_info": 0,
+        "generic_or_unrelated_fallback": 6
+      },
+      "low_appropriateness_count": 51,
+      "score_distributions": {
+        "appropriateness": {
+          "1": 26,
+          "2": 25,
+          "3": 12,
+          "4": 24,
+          "5": 413
+        },
+        "naturalness": {
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 18,
+          "5": 482
+        },
+        "style_fit": {
+          "1": 0,
+          "2": 42,
+          "3": 114,
+          "4": 43,
+          "5": 301
+        }
+      }
+    }
+  ],
+  "overall": {
+    "Original mT5": {
+      "appropriateness": 4.037,
+      "naturalness": 4.9510000000000005,
+      "style_fit": 4.448,
+      "would_send": 0.7050000000000001
+    },
+    "New mT5 A": {
+      "appropriateness": 3.651,
+      "naturalness": 4.791,
+      "style_fit": 4.58,
+      "would_send": 0.583
+    },
+    "SEA-LION 3B": {
+      "appropriateness": 4.516,
+      "naturalness": 4.961,
+      "style_fit": 4.603,
+      "would_send": 0.833
+    }
+  },
+  "paired_all_metrics": [
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "Original mT5",
+      "metric": "appropriateness",
+      "difference": 0.479,
+      "ci95": [
+        0.109,
+        0.856
+      ],
+      "units": "score points"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "Original mT5",
+      "metric": "naturalness",
+      "difference": 0.01,
+      "ci95": [
+        -0.03699999999999999,
+        0.05199999999999999
+      ],
+      "units": "score points"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "Original mT5",
+      "metric": "style_fit",
+      "difference": 0.155,
+      "ci95": [
+        -0.021000000000000015,
+        0.335
+      ],
+      "units": "score points"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "Original mT5",
+      "metric": "would_send",
+      "difference": 0.128,
+      "ci95": [
+        0.018,
+        0.242
+      ],
+      "units": "proportion"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "Original mT5",
+      "metric": "uncertain",
+      "difference": 0.001,
+      "ci95": [
+        0.0,
+        0.0030000000000000005
+      ],
+      "units": "proportion"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "Original mT5",
+      "metric": "problem_flagged",
+      "difference": -0.07200000000000001,
+      "ci95": [
+        -0.133,
+        -0.016000000000000004
+      ],
+      "units": "proportion"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "New mT5 A",
+      "metric": "appropriateness",
+      "difference": 0.865,
+      "ci95": [
+        0.456,
+        1.296
+      ],
+      "units": "score points"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "New mT5 A",
+      "metric": "naturalness",
+      "difference": 0.17,
+      "ci95": [
+        0.073,
+        0.27899999999999997
+      ],
+      "units": "score points"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "New mT5 A",
+      "metric": "style_fit",
+      "difference": 0.022999999999999944,
+      "ci95": [
+        -0.18600000000000003,
+        0.23499999999999993
+      ],
+      "units": "score points"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "New mT5 A",
+      "metric": "would_send",
+      "difference": 0.25,
+      "ci95": [
+        0.131,
+        0.37
+      ],
+      "units": "proportion"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "New mT5 A",
+      "metric": "uncertain",
+      "difference": 0.001,
+      "ci95": [
+        0.0,
+        0.0030000000000000005
+      ],
+      "units": "proportion"
+    },
+    {
+      "top_model": "SEA-LION 3B",
+      "other_model": "New mT5 A",
+      "metric": "problem_flagged",
+      "difference": -0.066,
+      "ci95": [
+        -0.10800000000000001,
+        -0.028999999999999998
+      ],
+      "units": "proportion"
+    }
+  ],
+  "recommendation": "SEA-LION 3B",
+  "generation_failures": {
+    "Original mT5": 0,
+    "New mT5 A": 0,
+    "SEA-LION 3B": 0
+  },
+  "generation_call_seconds": {
+    "Original mT5": 0.80446,
+    "New mT5 A": 1.66536,
+    "SEA-LION 3B": 3.83282
+  },
+  "judge": {
+    "judge_model": "gemma4:12b",
+    "model_digest": "6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b",
+    "options": {
+      "temperature": 0,
+      "seed": 425,
+      "num_predict": 2048,
+      "num_ctx": 4096
+    },
+    "think": false
+  },
+  "cluster_job_id": "358003",
+  "cluster_ollama_version": {
+    "version": "0.40.13"
+  },
+  "source_run": "experiments/judging/transformer_selection_20261108_01",
+  "source_sha256": {
+    "freeze.json": "2fdb479b5a36f87ae7dec040bbff2e875adce6ae0f70b05f3449b7faa591efc8",
+    "judge_run.json": "e8c0191ffa2dbec24fb046b8307f658e204f7f2a48d8ac4c1b8aefc94de67119",
+    "result.json": "86fdf91316eb11856b58beedd09c37be33c1d968842d3b4a2c45d38fa7b11770",
+    "ratings.jsonl": "369c5c95647532cd5bc985bc98ac412d6ce781f6c7c386e705e078bdf7e59f72",
+    "packet/judge_inputs.jsonl": "2e03ed4372692499648cd7125bc49ce48c850988176bf9674a5518922c0a7566",
+    "packet/PRIVATE_mapping.jsonl": "13063ddb2c4c2b047f26a6da33283bb52a3049f4390760947fe94fbbc8eb478c",
+    "v5_outputs.json": "5e0659d2c50e93f291451d958a1cd59179176b2af85bc4661a4fca30f15bd080",
+    "mt5_handoff_outputs.json": "6e2edb7463eeedaba5f16cb9f6d93f7cb50ea7cec33080eca44fa167fb0cfd31",
+    "sealion_handoff_outputs.json": "317ff3ece378d5382ac01840454233417507a5a48d8469fc807ed74129067a2d"
+  },
+  "limitations": [
+    "Correlated fictional AI personas, not independent human evidence. Validation model selection, not a held-out test.",
+    "Ten personas are correlated views of one model.",
+    "141 ratings originated on the laptop; remaining fresh ratings used the cluster. Same model digest and grading settings; cross-runtime replay was not performed.",
+    "Forty exact-task rating reuses are not independent additional inferences.",
+    "Generator-only selection: SEA-LION plus Qwen/V7 has not received a new matched quality evaluation.",
+    "Pairwise 95% bootstrap intervals are unadjusted for multiple comparisons."
+  ]
+}
