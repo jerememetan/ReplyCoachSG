@@ -12,7 +12,7 @@ class GeneratorUnavailable(RuntimeError):
 
 
 class ReplyGenerator(Protocol):
-    source: str  # V4 or V5; kept on Candidates before the shared reranker.
+    source: str  # Kept on Candidates before the shared reranker.
 
     def generate(self, message: str, context: list[str]) -> list[Candidate]:
         """Return both STANDARD and LOCAL, with finite input scores in [0, 1]."""
@@ -60,16 +60,25 @@ def load_v5() -> ReplyGenerator:
 
 
 def load_generator(provider: str) -> ReplyGenerator:
-    if provider not in {"v4", "v5"}:
-        raise ValueError("generator provider must be v4 or v5")
+    sources = {'v4': 'V4', 'v5': 'V5', 'mt5_handoff': 'MT5_A', 'sealion_handoff': 'SEALION'}
+    if provider not in sources:
+        raise ValueError(f"unknown generator provider: {provider}")
     try:
-        generator = load_v4() if provider == "v4" else load_v5()
+        if provider in {'mt5_handoff', 'sealion_handoff'}:
+            from replycoach.generate.handoff_provider import HandoffGenerator
+            from replycoach.io import ROOT
+            kind = 'mt5' if provider == 'mt5_handoff' else 'sealion'
+            name = 'replycoach_mt5_A_v1' if kind == 'mt5' else 'replycoach_sealion_repair25_v1'
+            variable = 'REPLYCOACH_MT5_A_BUNDLE' if kind == 'mt5' else 'REPLYCOACH_SEALION_BUNDLE'
+            generator = HandoffGenerator(Path(os.environ.get(variable, ROOT / 'artifacts/model_handoff_v1' / name)), kind)
+        else:
+            generator = load_v4() if provider == "v4" else load_v5()
     except GeneratorUnavailable:
         raise
     except (OSError, RuntimeError) as exc:
         owner = "C" if provider == "v4" else "D"
         raise GeneratorUnavailable(f"Role {owner}: cannot load trained {provider.upper()} model: {exc}") from exc
-    expected = provider.upper()
+    expected = sources[provider]
     if getattr(generator, "source", None) != expected or not callable(getattr(generator, "generate", None)):
         raise ValueError(f"provider {provider} must return a {expected} ReplyGenerator")
     return generator

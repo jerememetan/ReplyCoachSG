@@ -9,7 +9,7 @@ from dataclasses import asdict, dataclass, field
 from typing import Any, Iterable, Literal
 
 STYLES = ("STANDARD", "LOCAL")
-SOURCES = ("V0", "V1", "V2", "V3", "V4", "V5", "V6", "V7", "fallback", "gold")
+SOURCES = ("V0", "V1", "V2", "V3", "V4", "V5", "V6", "V7", "MT5_A", "SEALION", "fallback", "gold")
 SPLITS = ("unassigned", "pilot", "dev", "test")
 SPEAKERS = ("peer", "user", "other")
 LANGUAGE_TAGS = ("en", "singlish", "zh", "pinyin")

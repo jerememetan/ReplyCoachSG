@@ -69,9 +69,9 @@ def read_finetuned_manifest(checkpoint):
 
 
 class CrossEncoderScorer:
-    """One small pinned CPU model; downloaded weights only, never hosted inference."""
+    """One small pinned model; downloaded weights only, never hosted inference."""
 
-    def __init__(self, checkpoint=None, *, style_aware=False):
+    def __init__(self, checkpoint=None, *, style_aware=False, device='cpu'):
         manifest = read_finetuned_manifest(checkpoint) if checkpoint is not None else None
         if manifest:
             for name in ['model.safetensors', 'config.json', 'tokenizer.json']:
@@ -80,13 +80,13 @@ class CrossEncoderScorer:
         from transformers import AutoModelForSequenceClassification, AutoTokenizer
 
         self.identity = {'model': MODEL_NAME, 'revision': MODEL_REVISION,
-                         'query_format': QUERY_FORMAT, 'max_length': 512, 'device': 'cpu'}
+                         'query_format': QUERY_FORMAT, 'max_length': 512, 'device': str(device)}
         source = Path(checkpoint) if manifest else MODEL_NAME
         kwargs = {'local_files_only': True} if manifest else {'revision': MODEL_REVISION}
         self.tokenizer = AutoTokenizer.from_pretrained(source, trust_remote_code=False, **kwargs)
         self.tokenizer.truncation_side = 'left'
         self.model = AutoModelForSequenceClassification.from_pretrained(
-            source, trust_remote_code=False, use_safetensors=True, **kwargs).to('cpu').eval()
+            source, trust_remote_code=False, use_safetensors=True, **kwargs).to(device).eval()
         if manifest:
             from replycoach.reranker_fit import weights_sha256
             if weights_sha256(self.model) != manifest['best_weights_sha256']:
@@ -109,6 +109,7 @@ class CrossEncoderScorer:
             lengths = self.tokenizer(queries, replies, truncation=False, return_length=True)['length']
             encoded = self.tokenizer(queries, replies, padding=True, truncation='only_first',
                                      max_length=512, return_tensors='pt')
+            encoded = {key: value.to(next(self.model.parameters()).device) for key, value in encoded.items()}
             with torch.inference_mode():
                 values = self.model(**encoded).logits
             if values.ndim != 2 or values.shape[1] != 1:

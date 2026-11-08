@@ -10,6 +10,36 @@ from replycoach.retrieval.v0 import V0Retriever
 from replycoach.schema import DialogueItem
 from replycoach.generate.providers import load_generator
 
+_generators = {}
+_model_group = 'baseline'
+
+
+def runtime_device():
+    import torch
+    return 'cuda' if torch.cuda.is_available() else 'cpu'
+
+
+def prepare_model_group(group):
+    """Release other model groups before loading a large transformer on an 8 GB GPU."""
+    global _model_group
+    if group == _model_group:
+        return
+    for generator in _generators.values():
+        if callable(getattr(generator, 'close', None)):
+            generator.close()
+    generator = None
+    _generators.clear()
+    for resource in [get_generator, get_shared_ranker, get_minilm, get_minilm_model]:
+        clear = getattr(resource, 'clear', None)
+        if clear is not None:
+            clear()
+    import gc
+    gc.collect()
+    if runtime_device() == 'cuda':
+        import torch
+        torch.cuda.empty_cache()
+    _model_group = group
+
 
 @st.cache_resource(max_entries=1, show_spinner=False)
 def get_minilm_model():
@@ -33,16 +63,23 @@ def get_minilm(bank_json: str):
     return V2Retriever.from_items(items, model=get_minilm_model(), cache_file=None)
 
 
-@st.cache_resource(max_entries=2, show_spinner=False)
+@st.cache_resource(max_entries=4, show_spinner=False)
 def get_generator(provider: str):
-    """Bounded V4/V5 resources, loaded only after a generation request."""
-    return load_generator(provider)
+    """Generator resources, loaded only after a generation request."""
+    generator = load_generator(provider)
+    if provider == 'v4' and hasattr(generator, 'model'):
+        import torch
+        generator.device = torch.device(runtime_device())
+        generator.model.to(generator.device)
+    _generators[provider] = generator
+    return generator
 
 
 @st.cache_resource(max_entries=4, show_spinner=False)
-def get_shared_ranker(selector='pretrained'):
+def get_shared_ranker(selector='pretrained', *, device=None):
     from replycoach.shared_ranker import CrossEncoderScorer
     from replycoach.io import ROOT
+    device = device or runtime_device()
     if selector == 'qwen_dailydialog':
         from replycoach.qwen_reranker import QwenReranker
 
@@ -54,16 +91,16 @@ def get_shared_ranker(selector='pretrained'):
         for path, variable in [(base, 'REPLYCOACH_QWEN_BASE'), (adapter, 'REPLYCOACH_QWEN_DD_ADAPTER')]:
             if not path.is_dir():
                 raise FileNotFoundError(f'Qwen checkpoint folder missing: {path}. Supply the private files or set {variable}.')
-        return QwenReranker(base, adapter=adapter)
+        return QwenReranker(base, adapter=adapter, device=device)
     if selector == 'pretrained':
-        return CrossEncoderScorer()
+        return CrossEncoderScorer(device=device)
     if selector == 'finetuned':
         checkpoint = Path(os.environ.get('REPLYCOACH_V6_CHECKPOINT', str(ROOT/'artifacts/reranker_v6/best')))
-        return CrossEncoderScorer(checkpoint=checkpoint)
+        return CrossEncoderScorer(checkpoint=checkpoint, device=device)
     if selector == 'reviewed':
         checkpoint = Path(os.environ.get(
             'REPLYCOACH_V6_REVIEWED_CHECKPOINT',
             str(ROOT/'artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best'),
         ))
-        return CrossEncoderScorer(checkpoint=checkpoint)
+        return CrossEncoderScorer(checkpoint=checkpoint, device=device)
     raise ValueError('unknown shared selector')

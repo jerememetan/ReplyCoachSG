@@ -237,15 +237,20 @@ def main() -> None:
             st.caption("V7 refines the local winner: the same ranker chooses from the original and three lexicon variations.")
             st.caption("First use loads local models; later requests reuse them.")
             if SHARED_SELECTORS[shared_selector] == "qwen_dailydialog":
-                st.caption("V6 uses Qwen adapted on DailyDialog, then refined on reviewed examples. CPU ranking can take longer, especially on first use.")
+                st.caption("V6 uses Qwen adapted on DailyDialog, then refined on reviewed examples. First use verifies the checkpoint and loads the reranker.")
         elif system_mode != "Retrieval comparison":
             if system_mode != "Generator only":
                 retrieval_method = st.selectbox("Retrieval method", ["BM25", "MiniLM"], key="retrieval_method")
             if system_mode in {"Generator only", "Hybrid"}:
                 generator_provider = st.selectbox(
-                    "Generator", ["V4 (attention-RNN)", "V5 (mT5/LoRA)"], key="generator_provider",
+                    "Generator", ["V4 (attention-RNN)", "V5 (mT5/LoRA)",
+                                  "mT5 A (new handoff)", "SEA-LION 3B (new handoff)"], key="generator_provider",
                 )
                 st.caption("Trained-model handoff required: Role C for V4, Role D for V5. See docs/role_handoffs.md.")
+                if "new handoff" in generator_provider:
+                    st.caption("Experimental transformer handoff. Uses your laptop GPU when available. First use verifies and loads the bundle; later requests reuse it. Switching models releases the previous model to make room.")
+                if generator_provider.startswith("SEA-LION"):
+                    st.caption("SEA-LION runs locally in BF16 on a compatible GPU. CPU weights need roughly 13 GB plus working memory. The school GPU cluster is not required for local inference.")
 
     with st.expander("Reply bank settings"):
         bank_choice = st.selectbox("Reply bank", ["Pilot examples (drafts)", "Reviewed development file"], key="bank_choice")
@@ -293,10 +298,14 @@ def main() -> None:
     st.session_state.comparison_identity = identity
 
     def execute_request():
+        group = ('sealion_handoff' if generator_provider.startswith('SEA-LION') else
+                 'mt5_handoff' if generator_provider.startswith('mT5 A') else 'baseline')
+        demo_resources.prepare_model_group(group)
         turns = [parse_preview_line(line) for line in session_text.splitlines() if line.strip()]
         session = [text for _, text in turns]
         st.session_state.selected_reply = ""
         st.session_state.last_all_models_result = None
+        st.caption(f"Running on {'laptop GPU' if demo_resources.runtime_device() == 'cuda' else 'CPU'}")
         with st.spinner("Comparing four models and refining the local reply…" if system_mode == "All models (experimental)" else "Finding reply suggestions…"):
             if system_mode == "All models (experimental)":
                 st.session_state.last_comparison = None
@@ -323,7 +332,9 @@ def main() -> None:
                 st.session_state.last_comparison = None
                 retriever_factory = (lambda: demo_resources.get_bm25(bank.serialized)) if retrieval_method == "BM25" else (
                     lambda: demo_resources.get_minilm(bank.serialized))
-                provider = "v4" if generator_provider.startswith("V4") else "v5"
+                provider = {"V4 (attention-RNN)": "v4", "V5 (mT5/LoRA)": "v5",
+                            "mT5 A (new handoff)": "mt5_handoff",
+                            "SEA-LION 3B (new handoff)": "sealion_handoff"}[generator_provider]
                 st.session_state.last_system_result = run_system(
                     message.strip(), session, memory_mode,
                     mode={label: mode for mode, label in MODE_LABELS.items()}[system_mode],

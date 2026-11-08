@@ -83,3 +83,5 @@ Group Project Guidelines*.pdf
 # Exported model weights are shared separately from repository code/model cards.
 /artifacts/model_handoff_v1/*.tar
 /artifacts/model_handoff_v1/*.tar.*
+/artifacts/model_handoff_v1/replycoach_mt5_A_v1/
+/artifacts/model_handoff_v1/replycoach_sealion_repair25_v1/

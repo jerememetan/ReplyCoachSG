@@ -269,6 +269,35 @@ def test_new_system_retry_recovers_after_real_provider_becomes_available(demo_te
     assert not app.warning
 
 
+@pytest.mark.parametrize('label,provider,source', [
+    ('mT5 A (new handoff)', 'mt5_handoff', 'MT5_A'),
+    ('SEA-LION 3B (new handoff)', 'sealion_handoff', 'SEALION'),
+])
+def test_new_handoff_choices_reach_generator_and_preserve_provenance(
+    demo_test, monkeypatch, stub_generator, label, provider, source,
+):
+    from dataclasses import replace
+    calls = []
+    stub_generator.source = source
+    stub_generator.outputs = [replace(c, source=source) for c in stub_generator.outputs]
+
+    def generator(selected):
+        calls.append(selected)
+        return stub_generator
+
+    monkeypatch.setattr(demo_resources, 'get_generator', generator)
+    app = demo_test
+    app.selectbox(key='system_mode').select('Generator only').run()
+    app.selectbox(key='generator_provider').select(label).run()
+    compare_in_app(app)
+    assert not app.exception
+    assert calls == [provider]
+    result = app.session_state.last_system_result
+    assert not result.errors
+    assert result.generation_count == 2
+    assert result.result.standard.meta['generation_source'] == source
+
+
 def enable_all_models(app, monkeypatch, stub_generator):
     from replycoach import all_models
     from replycoach.shared_ranker import PairScore

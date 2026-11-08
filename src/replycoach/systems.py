@@ -72,8 +72,8 @@ def _generate(prepared: PreparedInput, factory: Callable[[], ReplyGenerator] | N
     if factory is None:
         raise GeneratorUnavailable("No trained generator is configured; see docs/role_handoffs.md.")
     generator = factory()
-    if generator.source not in {"V4", "V5"}:
-        raise ValueError("generator source must be V4 or V5")
+    if generator.source not in {"V4", "V5", "MT5_A", "SEALION"}:
+        raise ValueError("unsupported generator source")
     candidates = generator.generate(prepared.message, list(prepared.memory))
     if not isinstance(candidates, (list, tuple)) or not candidates:
         raise ValueError("generator must return nonempty Candidate outputs")

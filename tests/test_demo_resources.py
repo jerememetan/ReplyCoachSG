@@ -7,6 +7,51 @@ import pytest
 from replycoach.io import load_items
 
 
+@pytest.mark.parametrize('available,device', [(True, 'cuda'), (False, 'cpu')])
+def test_demo_requests_gpu_for_ranker_when_available(monkeypatch, available, device):
+    import torch
+    from replycoach import demo_resources, shared_ranker
+    calls = []
+    monkeypatch.setattr(torch.cuda, 'is_available', lambda: available)
+    monkeypatch.setattr(shared_ranker, 'CrossEncoderScorer', lambda **kwargs: calls.append(kwargs) or object())
+    demo_resources.get_shared_ranker.clear()
+    try:
+        demo_resources.get_shared_ranker('pretrained')
+        assert calls == [{'device': device}]
+    finally:
+        demo_resources.get_shared_ranker.clear()
+
+
+def test_switching_large_model_releases_cached_workers(monkeypatch):
+    from replycoach import demo_resources
+    closed = []
+    class Worker:
+        def close(self):
+            closed.append(True)
+    monkeypatch.setattr(demo_resources, '_model_group', 'mt5_handoff')
+    monkeypatch.setattr(demo_resources, '_generators', {'mt5_handoff': Worker()})
+    monkeypatch.setattr(demo_resources, 'runtime_device', lambda: 'cpu')
+    demo_resources.prepare_model_group('sealion_handoff')
+    assert closed == [True]
+    assert demo_resources._generators == {}
+    assert demo_resources._model_group == 'sealion_handoff'
+
+
+def test_frozen_evaluation_can_keep_cpu_on_a_gpu_machine(monkeypatch):
+    from replycoach import demo_resources, shared_ranker
+    calls = []
+    monkeypatch.setattr(demo_resources, 'runtime_device', lambda: 'cuda')
+    monkeypatch.setattr(shared_ranker, 'CrossEncoderScorer', lambda **kwargs: calls.append(kwargs) or object())
+    demo_resources.get_shared_ranker.clear()
+    try:
+        cpu = demo_resources.get_shared_ranker('pretrained', device='cpu')
+        gpu = demo_resources.get_shared_ranker('pretrained')
+        assert cpu is not gpu
+        assert calls == [{'device': 'cpu'}, {'device': 'cuda'}]
+    finally:
+        demo_resources.get_shared_ranker.clear()
+
+
 def test_v2_accepts_shared_encoder_without_writing_artifacts(fake_encoder, monkeypatch):
     from replycoach.retrieval.v2 import V2Retriever
 
@@ -184,7 +229,8 @@ def test_qwen_demo_loads_verified_local_adapter_and_caches_it(monkeypatch, tmp_p
     try:
         result = demo_resources.get_shared_ranker('qwen_dailydialog')
         assert demo_resources.get_shared_ranker('qwen_dailydialog') is result
-        assert calls == [(base, {'adapter': adapter})]
+        assert calls == [(base, {'adapter': adapter, 'device': demo_resources.runtime_device()})]
+
     finally:
         demo_resources.get_shared_ranker.clear()
 
@@ -216,6 +262,6 @@ def test_qwen_demo_honors_paths_and_never_falls_back(monkeypatch, tmp_path, miss
         else:
             with pytest.raises(ValueError, match='provenance'):
                 demo_resources.get_shared_ranker('qwen_dailydialog')
-            assert calls == [(base, {'adapter': adapter})]
+            assert calls == [(base, {'adapter': adapter, 'device': demo_resources.runtime_device()})]
     finally:
         demo_resources.get_shared_ranker.clear()

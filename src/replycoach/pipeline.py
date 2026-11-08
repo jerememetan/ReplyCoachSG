@@ -69,7 +69,7 @@ def rank_result(
     restored = []
     for candidate in candidates:
         meta = {**candidate.meta, "candidate_source": candidate.source}
-        if candidate.source in {"V3", "V4", "V5"}:
+        if candidate.source in {"V3", "V4", "V5", "MT5_A", "SEALION"}:
             meta["generation_source"] = candidate.source
         else:
             meta.update(retrieval_source=candidate.source, retrieval_method=retrieval_method or method)
