@@ -1,5 +1,24 @@
 # Frozen 60-item final evaluation
 
+## Include V7 in a new final report
+
+Run the existing entry point with a separate output directory:
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_final_test.py --include-v7 --out experiments/judging/final_test_v7_01
+```
+
+Append `--resume` to continue that directory. This mode reads the completed
+4,800-judgment baseline in `final_test_20261102_01`, applies V7 to its saved
+V6 Local winners, and records all four candidates and the chosen reply before
+judging. The evaluation uses a fixed sampling seed. It reuses Standard grades
+and exact Local grades from the same conversation, and sends only new final
+Local replies to the same Gemma model and ten personas.
+
+The new `result.json` reports all six systems, the actual new judgment count,
+and paired V7 minus V6 Local means. Those differences are descriptive AI-judge
+results. The sections below describe the original completed baseline.
+
 The user authorized the held-out run on 2 November 2026. This is separate from
 the completed 50-conversation validation evaluation. Do not use its outputs or
 ratings for checkpoint choice, training labels, prompt adjustment or tuning.

@@ -121,7 +121,7 @@ def validate_rating(row):
     return row
 
 
-def load_packet(folder):
+def load_packet(folder, *, local_only=False):
     public_path, private_path = folder / "judge_inputs.jsonl", folder / "PRIVATE_mapping.jsonl"
     public, private = read_jsonl(public_path), read_jsonl(private_path)
     digest = sha256(public_path.read_bytes()).hexdigest()
@@ -164,9 +164,10 @@ def load_packet(folder):
             raise ValueError("Duplicate system/conversation/style candidate")
         coverage[meta["system"]].add(cell)
         seen.add(cid)
-    expected = {(row["conversation_id"], style) for row in public for style in ("STANDARD", "LOCAL")}
+    styles = ("LOCAL",) if local_only else ("STANDARD", "LOCAL")
+    expected = {(row["conversation_id"], style) for row in public for style in styles}
     if any(cells != expected for cells in coverage.values()):
-        raise ValueError("Every system must cover the same conversations and both styles")
+        raise ValueError("Every system must cover the same conversations and requested styles")
     return public, mapping, {"public": digest, "private": sha256(private_path.read_bytes()).hexdigest()}
 
 
@@ -242,11 +243,12 @@ def main(argv=None):
     parser.add_argument("--out-dir", type=Path, help="New run folder; default PACKET/ratings")
     parser.add_argument("--resume", action="store_true", help="Continue unchanged run; retry failures, skip successes")
     parser.add_argument("--calibrate", action="store_true", help="Diagnostic run with the first persona only")
+    parser.add_argument("--local-only", action="store_true", help="Judge a supplemental Local-only packet")
     action = parser.add_mutually_exclusive_group()
     action.add_argument("--check-only", action="store_true", help="Validate inputs; no Ollama requests or writes")
     action.add_argument("--summary-only", action="store_true", help="Display saved results without Ollama requests")
     args = parser.parse_args(argv)
-    public, mapping, hashes = load_packet(args.packet)
+    public, mapping, hashes = load_packet(args.packet, local_only=args.local_only)
     out = (args.out_dir or args.packet / "ratings").resolve()
     if out == (ROOT / "data").resolve() or (ROOT / "data").resolve() in out.parents:
         raise ValueError("Write judging results outside data/")

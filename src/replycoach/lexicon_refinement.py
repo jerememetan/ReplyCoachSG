@@ -104,7 +104,8 @@ class LocalRefinement:
 
 
 def refine_local_reply(original: Candidate, scorer: PairScorer,
-                       speakers: list[str] | None = None) -> LocalRefinement:
+                       speakers: list[str] | None = None, *,
+                       rng: random.Random | None = None) -> LocalRefinement:
     """Refine only the first-pass LOCAL winner; preserve it on visible failure."""
     original.validate()
     if original.style != 'LOCAL':
@@ -112,7 +113,10 @@ def refine_local_reply(original: Candidate, scorer: PairScorer,
     result = LocalRefinement(original)
     started = perf_counter()
     try:
-        result.variations = generate_local_variants(original.candidate_text)
+        if rng is None:
+            result.variations = generate_local_variants(original.candidate_text)
+        else:
+            result.variations = generate_local_variants(original.candidate_text, rng=rng)
     except Exception as exc:
         result.error = str(exc) or type(exc).__name__
     result.generation_seconds = perf_counter() - started

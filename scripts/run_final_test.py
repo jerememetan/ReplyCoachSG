@@ -26,6 +26,8 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out',type=Path,required=True)
     parser.add_argument('--resume',action='store_true')
+    parser.add_argument('--include-v7', action='store_true',
+                        help='Extend the completed frozen baseline and report all six systems')
     args=parser.parse_args()
     if any(os.environ.get(k) for k in ['REPLYCOACH_V4_CHECKPOINT','V5_CHECKPOINT',
                                       'REPLYCOACH_QWEN_BASE','REPLYCOACH_QWEN_DD_ADAPTER']):
@@ -33,6 +35,9 @@ def main():
     out=args.out.resolve()
     if not out.is_relative_to(ROOT/'experiments/judging'):
         raise ValueError('final output must be in the ignored experiments/judging directory')
+    if args.include_v7:
+        from final_v7_runner import run_extension
+        return run_extension(out, resume=args.resume)
     spec=importlib.util.spec_from_file_location('local_judge',ROOT/'scripts/judge_replies.py')
     judge=importlib.util.module_from_spec(spec);spec.loader.exec_module(judge)
     config=judge.judge_settings(judge.read_env(ROOT/'.env'))
@@ -84,7 +89,7 @@ def main():
                 minilm_factory=lambda:demo_resources.get_minilm(bank.serialized),
                 v4_factory=lambda:demo_resources.get_generator('v4'),
                 v5_factory=lambda:demo_resources.get_generator('v5'),
-                scorer_factory=lambda:demo_resources.get_shared_ranker('qwen_dailydialog'))
+                scorer_factory=lambda:demo_resources.get_shared_ranker('qwen_dailydialog', device='cpu'))
             if not output.complete: raise RuntimeError('Incomplete model comparison: '+str(output.source_errors)+str(output.ranking_error))
             outputs[item.id]=output.to_dict()
             with journal.open('a',encoding='utf-8') as f:

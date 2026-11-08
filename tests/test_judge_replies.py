@@ -64,6 +64,25 @@ def packet(folder):
     return public_path
 
 
+def test_local_only_packet_requires_explicit_opt_in(tmp_path):
+    folder = tmp_path / "supplement"
+    public_path = packet(folder)
+    private_path = folder / "PRIVATE_mapping.jsonl"
+    rows = [json.loads(line) for line in public_path.read_text(encoding="utf-8").splitlines()]
+    private = [json.loads(line) for line in private_path.read_text(encoding="utf-8").splitlines()]
+    local = [row for row in rows if row["style"] == "LOCAL"]
+    public_path.write_text("".join(json.dumps(r) + "\n" for r in local), encoding="utf-8")
+    digest = sha256(public_path.read_bytes()).hexdigest()
+    private_path.write_text("".join(
+        json.dumps({**row, "judge_inputs_sha256": digest}) + "\n"
+        for row in private if row["style"] == "LOCAL"
+    ), encoding="utf-8")
+    judge = runner()
+    with pytest.raises(ValueError, match="requested styles"):
+        judge.load_packet(folder)
+    assert judge.load_packet(folder, local_only=True)[0] == local
+
+
 @contextlib.contextmanager
 def ollama_stub():
     state = dict(requests=[], bad=False)
