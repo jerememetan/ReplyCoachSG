@@ -9,8 +9,8 @@ from pathlib import Path
 import streamlit as st
 
 from replycoach import demo_resources
-from replycoach.all_models import run_v7_all_models
-from replycoach.demo_all_models import render_all_models
+from replycoach.sealion_comparison import run_sealion_local_refinement
+from replycoach.demo_sealion import render_sealion_comparison
 from replycoach.io import ROOT
 from replycoach.pipeline import CoachResult, ComparisonResult, compare_replies
 from replycoach.reply_bank import load_reply_bank
@@ -19,12 +19,6 @@ from replycoach.systems import SystemResult, run_system
 MODE_LABELS = {
     "retrieval_only": "Retrieval only", "generator_only": "Generator only",
     "hybrid": "Hybrid", "fallback_only": "Fallback only",
-}
-SHARED_SELECTORS = {
-    "V6 (Qwen + DailyDialog)": "qwen_dailydialog",
-    "Fine-tuned MiniLM (20 reviews)": "reviewed",
-    "Fine-tuned MiniLM (original)": "finetuned",
-    "Frozen MiniLM": "pretrained",
 }
 
 
@@ -230,15 +224,11 @@ def main() -> None:
             key="system_mode",
         )
         retrieval_method, generator_provider = "BM25", "V4 (attention-RNN)"
-        shared_selector = "Frozen MiniLM"
         if system_mode == "All models (experimental)":
-            shared_selector = st.selectbox("Shared selector", list(SHARED_SELECTORS), key="shared_selector_checkpoint_v2")
-            st.caption("Compare BM25, MiniLM, V4 and V5, then select one reply per style with a shared ranker.")
+            st.caption("Compare BM25, MiniLM, V4 and V5. Standard comes directly from SEA-LION; Local gets optional wording refinement.")
             st.caption("V5: SEA-LION 3B · selected from the three-transformer validation comparison. Historical evaluations used the original mT5.")
-            st.caption("V7 refines the local winner: the same ranker chooses from the original and three lexicon variations.")
             st.caption("First use loads local models; later requests reuse them.")
-            if SHARED_SELECTORS[shared_selector] == "qwen_dailydialog":
-                st.caption("V6 uses Qwen adapted on DailyDialog, then refined on reviewed examples. First use verifies the checkpoint and loads the reranker.")
+            st.caption("Each eligible Local phrase has a 50% chance of changing. Qwen chooses from the original SEA-LION reply and three distinct variations when available.")
         elif system_mode != "Retrieval comparison":
             if system_mode != "Generator only":
                 retrieval_method = st.selectbox("Retrieval method", ["BM25", "MiniLM"], key="retrieval_method")
@@ -290,7 +280,7 @@ def main() -> None:
                         type="primary", key="compare", disabled=bank is None or not message.strip())
 
     identity = (bank_choice, development_path, bank.fingerprint if bank else None, session_text, message,
-                memory_mode, system_mode, retrieval_method, generator_provider, shared_selector)
+                memory_mode, system_mode, retrieval_method, generator_provider, 'sealion_lexical_v2')
     if bank is None or st.session_state.get("comparison_identity") != identity:
         st.session_state.last_comparison = None
         st.session_state.last_system_result = None
@@ -299,7 +289,7 @@ def main() -> None:
     st.session_state.comparison_identity = identity
 
     def execute_request():
-        group = ('sealion_all_models' if system_mode == 'All models (experimental)' else
+        group = ('sealion_lexical_all_models' if system_mode == 'All models (experimental)' else
                  'sealion_handoff' if generator_provider.startswith('SEA-LION') else
                  'mt5_handoff' if generator_provider.startswith('mT5 A') else 'baseline')
         demo_resources.prepare_model_group(group)
@@ -308,17 +298,17 @@ def main() -> None:
         st.session_state.selected_reply = ""
         st.session_state.last_all_models_result = None
         st.caption(f"Running on {'laptop GPU' if demo_resources.runtime_device() == 'cuda' else 'CPU'}")
-        with st.spinner("Comparing four models and refining the local reply…" if system_mode == "All models (experimental)" else "Finding reply suggestions…"):
+        with st.spinner("Generating SEA-LION replies and refining Local wording…" if system_mode == "All models (experimental)" else "Finding reply suggestions…"):
             if system_mode == "All models (experimental)":
                 st.session_state.last_comparison = None
                 st.session_state.last_system_result = None
-                st.session_state.last_all_models_result = run_v7_all_models(
+                st.session_state.last_all_models_result = run_sealion_local_refinement(
                     message.strip(), session, memory_mode,
                     bm25_factory=lambda: demo_resources.get_bm25(bank.serialized),
                     minilm_factory=lambda: demo_resources.get_minilm(bank.serialized),
                     v4_factory=lambda: demo_resources.get_generator("v4"),
                     v5_factory=lambda: demo_resources.get_generator("sealion_handoff"),
-                    scorer_factory=lambda: demo_resources.get_shared_ranker(SHARED_SELECTORS[shared_selector]),
+                    scorer_factory=lambda: demo_resources.get_shared_ranker('qwen_dailydialog'),
                     speakers=[{"you": "user", "peer": "peer", "neutral": "unknown"}[role] for role, _ in turns],
                     log=True,
                 )
@@ -364,9 +354,8 @@ def main() -> None:
             st.rerun()
     all_output = st.session_state.last_all_models_result
     if all_output is not None:
-        render_all_models(all_output, select_reply, selector_label=shared_selector)
-        if (all_output.source_errors or all_output.ranking_error
-                or (all_output.local_refinement and all_output.local_refinement.error)) and st.button("Retry all models", key="retry_all_models"):
+        render_sealion_comparison(all_output, select_reply)
+        if (all_output.source_errors or (all_output.local_refinement and all_output.local_refinement.error)) and st.button("Retry all models", key="retry_all_models"):
             execute_request()
             st.rerun()
 

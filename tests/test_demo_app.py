@@ -334,6 +334,8 @@ def enable_all_models(app, monkeypatch, stub_generator):
     monkeypatch.setattr(demo_resources, 'get_generator', generator)
     monkeypatch.setattr(demo_resources, 'get_shared_ranker', lambda selector='pretrained': Scorer(), raising=False)
     monkeypatch.setattr(all_models, 'log_event', lambda *args, **kwargs: None)
+    from replycoach import sealion_comparison
+    monkeypatch.setattr(sealion_comparison, 'log_event', lambda *args, **kwargs: None)
     app.selectbox(key='system_mode').select('All models (experimental)').run()
     return app
 
@@ -384,116 +386,108 @@ def test_all_models_partial_source_failure_is_visible(demo_test, monkeypatch, st
     assert 'V5' not in set(app.dataframe[0].value['Model'])
 
 
-def test_all_models_ranker_error_preserves_proposals_and_retry_recovers(demo_test, monkeypatch, stub_generator):
+def test_all_models_skips_ranker_without_editable_phrases_and_has_no_selector(demo_test, monkeypatch, stub_generator):
     app = enable_all_models(demo_test, monkeypatch, stub_generator)
-    good = demo_resources.get_shared_ranker
-
-    def unavailable(selector='pretrained'):
-        raise RuntimeError('Ranker weights unavailable')
-
-    monkeypatch.setattr(demo_resources, 'get_shared_ranker', unavailable)
+    def forbidden(*args, **kwargs):
+        raise AssertionError('The final demo must not load a reranker')
+    monkeypatch.setattr(demo_resources, 'get_shared_ranker', forbidden)
     compare_in_app(app)
-    assert not app.exception
+    assert not app.error
+    assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
+    assert app.button(key='select_all_standard').label == 'SEALION standard'
+    assert app.button(key='select_all_local').label == 'SEALION local'
+    assert 'shared_selector_checkpoint_v2' not in {s.key for s in app.selectbox}
+    assert not any(e.label in {'Shared ranking details','V7 local candidates'} for e in app.expander)
+    rows = app.dataframe[0].value
+    assert rows.loc[rows['Base reply'],'Model'].tolist() == ['V5','V5']
+
+
+def test_legacy_selector_state_cannot_override_direct_sealion(demo_test, monkeypatch, stub_generator):
+    demo_test.session_state['shared_selector_checkpoint_v2'] = 'V6 (Qwen + DailyDialog)'
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    compare_in_app(app)
+    assert app.button(key='select_all_standard').label == 'SEALION standard'
+    assert app.session_state.last_all_models_result.to_dict()['v7']['status']=='skipped'
+
+
+def test_direct_reply_click_does_not_repeat_generation(demo_test, monkeypatch, stub_generator):
+    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+    from test_all_models import Generator
+    sea = Generator('SEALION')
+    monkeypatch.setattr(demo_resources,'get_generator',lambda provider: sea if provider=='sealion_handoff' else stub_generator)
+    compare_in_app(app)
+    assert len(sea.calls)==1
+    before=app.text_area(key='conversation').value
+    app.button(key='select_all_local').click().run()
+    assert app.session_state.selected_reply=='SEALION local'
+    assert app.text_area(key='conversation').value==before
+    assert len(sea.calls)==1
+
+
+def test_sealion_failure_preserves_comparison_and_retry_restores_final_replies(demo_test, monkeypatch, stub_generator):
+    app=enable_all_models(demo_test,monkeypatch,stub_generator)
+    good=demo_resources.get_generator
+    def unavailable(provider):
+        if provider=='sealion_handoff':raise RuntimeError('SEA-LION checkpoint unavailable')
+        return good(provider)
+    monkeypatch.setattr(demo_resources,'get_generator',unavailable)
+    compare_in_app(app)
     assert not suggestion_keys(app)
-    assert len(app.dataframe[0].value) == 8
-    assert any('Ranker weights unavailable' in error.value for error in app.error)
-    monkeypatch.setattr(demo_resources, 'get_shared_ranker', good)
+    assert len(app.dataframe[0].value)==6
+    assert any('SEA-LION final replies unavailable' in e.value for e in app.error)
+    monkeypatch.setattr(demo_resources,'get_generator',good)
     app.button(key='retry_all_models').click().run()
     assert not app.exception and not app.error
-    assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
+    assert app.button(key='select_all_standard').label=='SEALION standard'
 
 
-def test_qwen_ranker_is_default_and_switching_selectors_clears_results(demo_test, monkeypatch, stub_generator):
-    app = enable_all_models(demo_test, monkeypatch, stub_generator)
-    assert app.selectbox(key='shared_selector_checkpoint_v2').value == 'V6 (Qwen + DailyDialog)'
-    scorer_factory = demo_resources.get_shared_ranker
-    calls = []
-    def selected_scorer(selector='pretrained'):
-        calls.append(selector)
-        return scorer_factory(selector)
-    monkeypatch.setattr(demo_resources, 'get_shared_ranker', selected_scorer)
-    compare_in_app(app)
-    assert calls == ['qwen_dailydialog']
-    assert any('Selected by V6 (Qwen + DailyDialog)' in c.value for c in app.caption)
-    for label, selector in [('Frozen MiniLM', 'pretrained'), ('Fine-tuned MiniLM (original)', 'finetuned'),
-                            ('Fine-tuned MiniLM (20 reviews)', 'reviewed'),
-                            ('V6 (Qwen + DailyDialog)', 'qwen_dailydialog')]:
-        app.button(key='select_all_standard').click().run()
-        app.selectbox(key='shared_selector_checkpoint_v2').select(label).run()
-        assert app.session_state.last_all_models_result is None
-        assert app.session_state.selected_reply == ''
-        compare_in_app(app)
-        assert not app.exception and calls[-1] == selector
-        assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
-
-
-def test_legacy_minilm_session_does_not_override_qwen_default(demo_test, monkeypatch, stub_generator):
-    demo_test.session_state['shared_selector'] = 'Frozen MiniLM'
-    demo_test.session_state['shared_selector_checkpoint'] = 'Fine-tuned V6 (20 reviews)'
-    app = enable_all_models(demo_test, monkeypatch, stub_generator)
-    assert app.selectbox(key='shared_selector_checkpoint_v2').value == 'V6 (Qwen + DailyDialog)'
-
-
-def test_v7_shows_four_local_candidates_and_clicking_does_not_repeat_inference(demo_test, monkeypatch, stub_generator):
-    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+def test_local_wording_refinement_only_scores_sealion_variants(demo_test,monkeypatch,stub_generator):
+    from replycoach.schema import Candidate
     from replycoach.shared_ranker import PairScore
-
-    calls = []
-
+    app=enable_all_models(demo_test,monkeypatch,stub_generator)
+    class Sea:
+        source='SEALION'
+        def generate(self,message,context):
+            return [Candidate([],message,'Original standard unchanged.','STANDARD',self.source,.5),
+                    Candidate([],message,'Never mind, please meet tomorrow.','LOCAL',self.source,.5)]
+    calls=[]
     class Scorer:
-        identity = {'model': 'test-only', 'revision': 'fixed'}
-
-        def score_pairs(self, pairs):
+        identity={'model':'test-only','revision':'fixed'}
+        def score_pairs(self,pairs):
             calls.append(pairs)
-            return [PairScore(10 if reply.endswith('sia.') else 0) for _, reply in pairs]
-
-    monkeypatch.setattr(demo_resources, 'get_shared_ranker', lambda selector: Scorer())
-    settings = [(widget.key, widget.options) for widget in app.selectbox]
+            return [PairScore(10 if text=='Never mind, please meet tomorrow.' else 0) for _,text in pairs]
+    monkeypatch.setattr(demo_resources,'get_generator',lambda p:Sea() if p=='sealion_handoff' else stub_generator)
+    monkeypatch.setattr(demo_resources,'get_shared_ranker',lambda selector:Scorer())
     compare_in_app(app)
-    output = app.session_state.last_all_models_result
-    assert output.local_refinement is not None, 'The demo must enable V7 automatically'
-    assert output.local_refinement.complete
-    assert [len(pairs) for pairs in calls] == [len(output.ranking.candidates), 4]
-    assert settings == [(widget.key, widget.options) for widget in app.selectbox]
-    assert not list(app.slider)
-    assert any(expander.label == 'V7 local candidates' for expander in app.expander)
-    rows = app.dataframe[-1].value
-    assert len(rows) == 4 and set(rows['Candidate']) == {'Original', 'Variation 1', 'Variation 2', 'Variation 3'}
-    assert rows['Selected'].sum() == 1
-    chosen = output.final_local.candidate_text
-    assert app.button(key='select_all_local').label == chosen
-    before = app.text_area(key='conversation').value
-    app.button(key='select_all_local').click().run()
-    assert app.session_state.selected_reply == chosen
-    assert app.text_area(key='conversation').value == before
-    assert len(calls) == 2
-    assert app.session_state.last_all_models_result.local_refinement.variations == output.local_refinement.variations
-    assert not app.exception
+    assert app.button(key='select_all_standard').label=='Original standard unchanged.'
+    assert app.button(key='select_all_local').label=='Never mind, please meet tomorrow.'
+    assert len(calls)==1 and len(calls[0])==4
+    output=app.session_state.last_all_models_result.to_dict()
+    assert output['v7']['method']=='lexical_bernoulli_v2'
+    assert output['v7']['candidate_count']==4
+    assert any(e.label=='Local wording candidates' for e in app.expander)
 
 
-def test_v7_second_pass_failure_is_visible_and_retry_restores_refinement(demo_test, monkeypatch, stub_generator):
-    app = enable_all_models(demo_test, monkeypatch, stub_generator)
+def test_local_ranker_error_keeps_sealion_and_retry_recovers(demo_test,monkeypatch,stub_generator):
+    from replycoach.schema import Candidate
     from replycoach.shared_ranker import PairScore
-
-    calls = []
-
-    class Scorer:
-        identity = {'model': 'test-only', 'revision': 'fixed'}
-
-        def score_pairs(self, pairs):
-            calls.append(pairs)
-            if len(calls) == 2:
-                raise RuntimeError('V7 scorer stopped')
-            return [PairScore(1) for _ in pairs]
-
-    monkeypatch.setattr(demo_resources, 'get_shared_ranker', lambda selector: Scorer())
+    app=enable_all_models(demo_test,monkeypatch,stub_generator)
+    class Sea:
+        source='SEALION'
+        def generate(self,message,context):
+            return [Candidate([],message,'Standard intact.','STANDARD',self.source,.5),
+                    Candidate([],message,'Never mind, please meet tomorrow.','LOCAL',self.source,.5)]
+    monkeypatch.setattr(demo_resources,'get_generator',lambda p:Sea() if p=='sealion_handoff' else stub_generator)
+    def failed(selector):raise RuntimeError('Local Qwen unavailable')
+    monkeypatch.setattr(demo_resources,'get_shared_ranker',failed)
     compare_in_app(app)
-    output = app.session_state.last_all_models_result
-    assert output.local_refinement is not None, 'The demo must attempt the V7 second pass'
-    assert output.local_refinement.error == 'V7 scorer stopped'
-    assert app.button(key='select_all_local').label == output.ranking.local.candidate_text
-    assert any('V7 scorer stopped' in warning.value for warning in app.warning)
+    assert app.button(key='select_all_standard').label=='Standard intact.'
+    assert app.button(key='select_all_local').label=='Never mind, please meet tomorrow.'
+    assert any('Local Qwen unavailable' in w.value for w in app.warning)
+    class Scorer:
+        identity={'model':'test-only','revision':'fixed'}
+        def score_pairs(self,pairs):return [PairScore(1) for _ in pairs]
+    monkeypatch.setattr(demo_resources,'get_shared_ranker',lambda selector:Scorer())
     app.button(key='retry_all_models').click().run()
-    assert not app.exception
+    assert not app.exception and not app.warning
     assert app.session_state.last_all_models_result.local_refinement.complete
-    assert not list(app.warning)

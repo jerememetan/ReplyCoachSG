@@ -1,0 +1,330 @@
+{
+  "version": "chat-variations-v2-augmentation-reuse",
+  "notes": "Optional casual abbreviations and selected local-word substitutions. Independent 50% phrase rolls; longest whole phrases; no cascading or particle padding. Ambiguous normalization mappings are not blindly reversed.",
+  "conversions": [
+    {
+      "phrases": [
+        "never mind",
+        "nevermind"
+      ],
+      "replacements": [
+        "nvm"
+      ]
+    },
+    {
+      "phrases": [
+        "tomorrow"
+      ],
+      "replacements": [
+        "tmr",
+        "tmrw"
+      ]
+    },
+    {
+      "phrases": [
+        "please"
+      ],
+      "replacements": [
+        "pls",
+        "plz"
+      ]
+    },
+    {
+      "phrases": [
+        "thank you"
+      ],
+      "replacements": [
+        "thanks",
+        "thx",
+        "xiexie",
+        "xie xie"
+      ]
+    },
+    {
+      "phrases": [
+        "thanks"
+      ],
+      "replacements": [
+        "thx",
+        "xiexie",
+        "xie xie"
+      ]
+    },
+    {
+      "phrases": [
+        "see you"
+      ],
+      "replacements": [
+        "see u"
+      ]
+    },
+    {
+      "phrases": [
+        "on my way"
+      ],
+      "replacements": [
+        "omw"
+      ]
+    },
+    {
+      "phrases": [
+        "on the way"
+      ],
+      "replacements": [
+        "otw"
+      ]
+    },
+    {
+      "phrases": [
+        "by the way"
+      ],
+      "replacements": [
+        "btw"
+      ]
+    },
+    {
+      "phrases": [
+        "be right back"
+      ],
+      "replacements": [
+        "brb"
+      ]
+    },
+    {
+      "phrases": [
+        "let me know"
+      ],
+      "replacements": [
+        "lmk"
+      ]
+    },
+    {
+      "phrases": [
+        "because"
+      ],
+      "replacements": [
+        "cos"
+      ]
+    },
+    {
+      "phrases": [
+        "okay"
+      ],
+      "replacements": [
+        "ok",
+        "okok"
+      ]
+    },
+    {
+      "phrases": [
+        "message me"
+      ],
+      "replacements": [
+        "msg me"
+      ]
+    },
+    {
+      "phrases": [
+        "minutes"
+      ],
+      "replacements": [
+        "mins"
+      ]
+    },
+    {
+      "phrases": [
+        "minute"
+      ],
+      "replacements": [
+        "min"
+      ]
+    },
+    {
+      "phrases": [
+        "information"
+      ],
+      "replacements": [
+        "info"
+      ]
+    },
+    {
+      "phrases": [
+        "as soon as possible"
+      ],
+      "replacements": [
+        "asap"
+      ]
+    },
+    {
+      "phrases": [
+        "already"
+      ],
+      "replacements": [
+        "alr"
+      ]
+    },
+    {
+      "phrases": [
+        "answer"
+      ],
+      "replacements": [
+        "ans"
+      ]
+    },
+    {
+      "phrases": [
+        "around"
+      ],
+      "replacements": [
+        "ard"
+      ]
+    },
+    {
+      "phrases": [
+        "badminton"
+      ],
+      "replacements": [
+        "bmt"
+      ]
+    },
+    {
+      "phrases": [
+        "coming"
+      ],
+      "replacements": [
+        "cmg"
+      ]
+    },
+    {
+      "phrases": [
+        "confirm"
+      ],
+      "replacements": [
+        "cfm"
+      ]
+    },
+    {
+      "phrases": [
+        "later"
+      ],
+      "replacements": [
+        "ltr"
+      ]
+    },
+    {
+      "phrases": [
+        "library"
+      ],
+      "replacements": [
+        "lib"
+      ]
+    },
+    {
+      "phrases": [
+        "question"
+      ],
+      "replacements": [
+        "qn"
+      ]
+    },
+    {
+      "phrases": [
+        "remember"
+      ],
+      "replacements": [
+        "rmb"
+      ]
+    },
+    {
+      "phrases": [
+        "school"
+      ],
+      "replacements": [
+        "sch"
+      ]
+    },
+    {
+      "phrases": [
+        "something"
+      ],
+      "replacements": [
+        "smth"
+      ]
+    },
+    {
+      "phrases": [
+        "today"
+      ],
+      "replacements": [
+        "tdy"
+      ]
+    },
+    {
+      "phrases": [
+        "together"
+      ],
+      "replacements": [
+        "tgt"
+      ]
+    },
+    {
+      "phrases": [
+        "you"
+      ],
+      "replacements": [
+        "u"
+      ]
+    },
+    {
+      "phrases": [
+        "eat"
+      ],
+      "replacements": [
+        "makan"
+      ]
+    },
+    {
+      "phrases": [
+        "invite"
+      ],
+      "replacements": [
+        "jio"
+      ]
+    },
+    {
+      "phrases": [
+        "sorry"
+      ],
+      "replacements": [
+        "paiseh"
+      ]
+    },
+    {
+      "phrases": [
+        "do not have"
+      ],
+      "replacements": [
+        "don't have"
+      ]
+    }
+  ],
+  "sources": {
+    "augmentation_abbreviations": {
+      "path": "scripts/data-split/near_dups.py",
+      "sha256": "744f2c02d196fc1bfaec93dd5a3817c164bbfd0a0c5dd9c7de06d18adf941783"
+    },
+    "local_terms": {
+      "path": "data/lexicons/local_terms.json",
+      "sha256": "e7c62a50be2ba3e3a294450ad39f8f3b148b5d397b4f9055dcf3e01969868910",
+      "reused_canonicals": [
+        "do not have",
+        "eat",
+        "invite",
+        "sorry"
+      ]
+    },
+    "user_additions": [
+      "thank you/thanks -> xiexie / xie xie"
+    ]
+  }
+}
