@@ -167,22 +167,25 @@ registry never uses the one-batch smoke checkpoint or fake production replies.
 Choose **All models (experimental)** under **System settings**, enter the
 conversation and incoming message, then click **Suggest two replies**. The app
 compares eight proposals: Standard and Local from BM25, MiniLM, V4 and V5.
-**V5 now uses SEA-LION 3B**, selected in the completed 8 November validation
-comparison. The explicit **V5 (mT5/LoRA)** option in Generator only/Hybrid and
-the frozen evaluation runners retain the original mT5 model. One
-shared local cross-encoder selects an initial reply per style. **V7 then refines
-the Local winner:** lightweight lexicon substitutions produce exactly three
-randomized, distinct variations, and the same ranker selects from those three
-plus the original. Standard English stays unchanged. The selected replies remain
-clickable, and the full proposal table shows their origins and fallbacks.
+**V5 uses SEA-LION 3B. Standard stays direct; Local gets optional random wording
+refinement.** At the user's request on 9 November, each eligible phrase has an
+independent 50% chance of conversion (for example never mind → nvm, tomorrow →
+tmr/tmrw, please → pls/plz). Qwen scores SEA-LION's original Local reply plus
+three distinct wording variations; it never chooses across the other models.
+The original can win. No particles are forced. With too few possible variations,
+Local stays original and Qwen is not loaded. See the
+[v2 method, short-reply policy and evaluation limits](docs/v7_random_lexical.md).
+The proposal table marks SEA-LION as the base source; clickable final replies
+and JSON export show the refinement trace and `lexical_bernoulli_v2` identity.
 
-V7 runs automatically in this mode, with no new settings. Expand **V7 local
-candidates** to see all four final candidates, the selection, and separate
-lexicon/reranking times. The JSON download retains the original proposals and
-initial ranking and adds a `v7` trace; its top-level `local` is the final displayed
-reply. A V7 failure is visible, keeps the original Local reply, and can be retried.
-Other demo modes and the baseline `run_all_models` comparison keep their existing
-behavior. See [V7 behavior and measured overhead](docs/v7_local_refinement.md).
+If SEA-LION is unavailable, the demo shows its error and any available comparison
+proposals, but no replacement final replies. Retry after resolving the model
+issue. BM25, MiniLM and V4 are comparison sources and cannot override SEA-LION.
+
+The explicit **V5 (mT5/LoRA)** option in Generator only/Hybrid and the legacy
+frozen runners retain original mT5. Other demo modes are unchanged. Historical
+`run_all_models` and `run_v7_all_models` research/evaluation APIs remain intact;
+see [V7's historical behavior](docs/v7_local_refinement.md).
 
 For V5 and this mode, install the optional inference dependencies in the same
 virtual environment used to launch Streamlit:
@@ -219,67 +222,43 @@ naturalness/style differences must not be treated as established improvements.
 See the [full findings](docs/evaluation/transformer_selection_20261108.md) and
 [aggregate evidence](docs/evaluation/transformer_selection_20261108.json).
 
-The default V6 ranker is pinned to `Qwen/Qwen3-Reranker-0.6B` revision
+The subsequent **six-system pipeline re-evaluation** is also complete: 60
+previously inspected test conversations, 7,200 valid rating cells, zero failures.
+SEA-LION alone (V5) leads mean appropriateness: **4.555 Standard / 4.552 Local**.
+V7 v1 improves Local style fit (**4.875**) and simulated would-send (**85.2%**) over
+V6, but it is not the appropriateness leader. V6/V7 Standard is identical.
+See the [full pipeline findings](docs/evaluation/current_pipeline_20261108.md)
+and [aggregate evidence](docs/evaluation/current_pipeline_20261108.json) for all
+metrics, paired uncertainty and limitations. This is correlated AI-persona
+evidence on an already-inspected test set. On 9 November the user explicitly
+requested the direct SEA-LION demo path described above; this is a product
+decision after inspection. The current V7 v2 wording pass has not been regraded.
+Historical mT5 scores remain separate.
+
+### Historical V6/V7 research setup
+
+The preserved V6/V7 research runners and the current four-candidate Local
+wording pass use `Qwen/Qwen3-Reranker-0.6B` revision
 `e61197ed45024b0ed8a2d74b80b4d909f1255473`, with the verified DailyDialog →
-reviewed-data LoRA adapter. Scores are relevance signals, not
-confidence percentages. A missing source produces a labelled partial comparison;
-a missing ranker shows its error and proposals rather than silently substituting
-the old formula. No live Gemma calls or new training are involved.
-
-The file-watcher option avoids Streamlit probing Transformers' unused optional
-image/audio modules. Restart Streamlit after editing source when using this option.
-
-**Validation result:** the saved-proposal replay improved on the old mixed-score
-heuristic's point estimates but did not improve on always choosing V5. The mode
-therefore remains experimental; the overall default is Retrieval comparison. See
-[the ranking work log](docs/all_models_ranking_worklog.md) for evidence and limits.
-
-**All models defaults to “V6 (Qwen + DailyDialog)”**, at the user's request
-on 29 October 2026. It selects Standard and Local replies from the four source
-models; the scorer itself does not generate replies. V7 reuses it for the final
-four-candidate Local selection without changing its criteria. Supply the private local base
-and tokenizer at `artifacts/reranker_qwen/pretrained/`, and the final adapter,
-configuration and training manifest at
+reviewed-data adapter. For reproducing those experiments, keep the private base
+at `artifacts/reranker_qwen/pretrained/` and the adapter/manifest at
 `artifacts/reranker_qwen/dd_result_20261029/stage2_reviewed/best/`.
-Alternative locations can be set before launching Streamlit:
+Their scores are relevance logits, not confidence percentages or Gemma grades.
+These runners still reject missing/invalid checkpoints rather than silently
+substituting another ranker. In the demo, a Local ranker error preserves the
+original SEA-LION Local reply with a visible error/retry. Standard never uses
+Qwen. Historical frozen outputs are not regenerated by this demo.
 
-```powershell
-$env:REPLYCOACH_QWEN_BASE = "C:\path\to\qwen-base"
-$env:REPLYCOACH_QWEN_DD_ADAPTER = "C:\path\to\stage2_reviewed\best"
-```
+Earlier MiniLM checkpoint implementations remain in the research APIs. See the
+[V6 training handoff](roles/E_rerank_demo/V6_TRAINING.md),
+[reviewed-pair results](docs/reranker_hard_examples.md),
+[augmentation experiment](docs/reranker_augmentation.md), and
+[Qwen experiment](docs/qwen_reranker_experiment.md).
 
-The adapter's provenance and base/adapter hashes are verified on loading. Missing
-or invalid files produce a visible error while preserving source proposals; the
-app does not silently use a different ranker. First CPU use loads about 1.2 GB of
-base weights and can take longer. Requests then reuse the cached scorer. Shared
-ranking details and the JSON download identify the adapter and its yes-minus-no
-scores. This demo choice does not establish superiority over V5: see the
-[matched comparison](docs/reports/dailydialog_reranker_comparison_20261029.md).
-
-**Fine-tuned MiniLM (20 reviews)** remains selectable. This earlier V6 checkpoint
-adds 13 suitable and 7 unsuitable reviewed alternatives to the original training
-pairs. Keep its private model/tokenizer and training manifest at
-`artifacts/reranker_v6/kaggle_output_20261027_reviewed01/reranker_v6/best/`,
-or set `REPLYCOACH_V6_REVIEWED_CHECKPOINT` to that checkpoint folder. Missing
-weights produce a visible error; the demo does not silently use another ranker.
-This demonstration choice does not establish a quality improvement over the
-original V6; see the [reviewed-pair results](docs/reranker_hard_examples.md).
-
-**Fine-tuned MiniLM (original)** and **Frozen MiniLM** remain selectable. Original V6 was
-trained on Kaggle GPU using the 190 reviewed training conversations and
-user-approved weak negatives. Copy its private model/tokenizer and training
-manifest to `artifacts/reranker_v6/best/` (or set `REPLYCOACH_V6_CHECKPOINT`).
-It improves on the original frozen scorer's validation means, while V5-only
-still has higher means. All four selectors remain experimental.
-See the [V6 training handoff](roles/E_rerank_demo/V6_TRAINING.md) for the private
-notebook, reproducible commands, checkpoint-selection losses and evaluation caveats.
-The Kaggle training notebook also supports seeded random short-form augmentation;
-see [augmentation settings and experiment](docs/reranker_augmentation.md).
-
-A separate [Qwen3 pretrained/LoRA experiment](docs/qwen_reranker_experiment.md)
-tests a multilingual instruction-aware reranker on the same saved proposals.
-Its earlier raw and reviewed-only checkpoints remain separate experiments; the
-DailyDialog-refined adapter above is the selected V6 demo checkpoint.
+The overall launch mode remains Retrieval comparison; choose All models
+(experimental) for the direct SEA-LION product demonstration. No new training or
+live Gemma grading is involved. Restart Streamlit after editing source when
+using `--server.fileWatcherType none`.
 
 On this CPU-only PyTorch setup, V5's verified three-item warm generation time was
 4.5-6.4 seconds per pair, with a roughly 51-second first load. These are not

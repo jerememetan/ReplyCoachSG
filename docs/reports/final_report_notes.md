@@ -1,5 +1,23 @@
 # Final report inclusion notes
 
+## Completed current-pipeline comparison (8 November)
+
+Include the [verified six-system report](../evaluation/current_pipeline_20261108.md)
+and its [aggregate evidence](../evaluation/current_pipeline_20261108.json).
+The 60-conversation regrade is complete (7,200 cells, zero failures), with
+SEA-LION as V5. Report every criterion, both styles, paired conversation-level
+intervals, problem/uncertainty flags, source choices and measured V7 overhead.
+SEA-LION alone leads appropriateness; V7 v1 improves Local style fit and would-send
+over V6. Do not claim the Qwen selector improves on SEA-LION alone. Its Standard
+appropriateness falls by 0.560 and Local by 0.168 in this comparison.
+
+Keep the earlier 50-conversation transformer validation selection separate from
+this already-inspected test re-evaluation. The ten personas share one model;
+they are not independent human judges. The scored V7 v1 used particle edits.
+After reviewing the results, the user chose direct SEA-LION Standard and optional
+[V7 v2 wording refinement](../v7_random_lexical.md) of SEA-LION Local for the
+demo. The 8 November regrade does not measure that later product choice.
+
 User requirement, recorded 27 October 2026: **include the training and refinement
 of Role E's V6 reranker in the final project report.** This is a report-writing
 reminder and evidence index, not the completed final report.

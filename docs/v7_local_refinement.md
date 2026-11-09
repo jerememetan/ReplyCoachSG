@@ -1,7 +1,12 @@
 # V7 local reply refinement
 
-Choose **All models (experimental)** in the Streamlit demo and click **Suggest
-two replies**. V7 runs automatically after the existing four-source comparison:
+**Historical v1 research path:** the demo now keeps SEA-LION Standard direct and
+uses [random lexical V7 v2](v7_random_lexical.md) on SEA-LION Local only. It no
+longer selects across the four source models or uses the particle-oriented v1
+below. This implementation and its frozen evaluations remain historical.
+
+The former **All models (experimental)** path ran V7 automatically after the
+existing four-source comparison:
 
 1. BM25, MiniLM, V4 and V5 produce their usual Standard and Local proposals.
 2. The existing shared ranker selects the original winner for each style.

@@ -1,5 +1,12 @@
 # All-model ranking work log
 
+**9 November 2026 product update:** the user requested SEA-LION base replies in
+the All models demo after inspecting evaluation and live selection failures.
+Standard stays direct; the user subsequently chose random lexical v2 refinement
+of SEA-LION Local only. Cross-model V6 selection and particle-oriented V7 v1
+are bypassed. This work log and research runners remain historical evidence,
+with no frozen scores overwritten; v2 has no new quality evaluation yet.
+
 Later follow-up: the separate [fine-tuned V6 experiment](../roles/E_rerank_demo/V6_TRAINING.md)
 completed on 27 October. This log records the original frozen-scorer baseline;
 the trained option and its comparisons are documented in that handoff.

@@ -1,10 +1,57 @@
 # Frozen 60-item final evaluation
 
+## Current-pipeline regrade: 8 November 2026
+
+**Completed:** 7,200/7,200 cells, zero failures; cluster job 358114 exited 0:0
+after 6h 45m 33s, finishing at 22:26 Singapore time. See the
+[verified six-system findings](evaluation/current_pipeline_20261108.md) and
+[aggregate evidence](evaluation/current_pipeline_20261108.json).
+SEA-LION alone has the highest appropriateness means. V7 improves Local style
+fit and simulated would-send over V6, while leaving Standard unchanged.
+
+The separately authorized re-evaluation uses the same 60 test conversations and
+six systems: BM25 (V0/V1 normalization), MiniLM (V2), V4 attention RNN,
+V5 **SEA-LION 3B**, V6 Qwen + DailyDialog selection, and V7 Local refinement.
+V3 is excluded because its supplied saved replies cover validation only; trained
+weights were not received for these test cases.
+
+```powershell
+.\.venv\Scripts\python.exe scripts/run_final_test.py --current-pipeline --out experiments/judging/final_current_20261108_01
+```
+
+This profile requires an allocated CUDA GPU for generation and the exact cached
+Gemma judge. Cluster job **358114** was launched on `aloha` (RTX 3090) on
+8 November. Its isolated workspace is `~/ReplyCoachSG_final_cluster_20261108_01`.
+The local ignored `output/current_final_cluster_job.json` records its paths;
+`progress.json` in the run folder is authoritative for progress. The laptop
+mirror copies evidence only and does not run inference.
+
+Fresh replies and the **current** rubric are frozen in a new run; old-rubric
+grades are never imported. The 720 candidate rows (6 x 60 x 2) yield **7,200
+nominal candidate/persona cells**. Identical complete conversation/style/reply
+tasks can reuse the same persona grade within this new run. Reports retain
+provenance counts. Ten personas grade appropriateness, naturalness, style fit,
+would-send, problem category and uncertainty. The final report includes paired
+conversation-level bootstrap intervals for V6 versus V5 and V7 versus V6.
+
+V6 and V7 share Standard replies; V7 changes only Local selection. V7 uses the
+existing three-variation-plus-original algorithm with a fixed per-case seed
+(`425:<item_id>`) for reproducibility. No generators, rankers, rubric criteria,
+or model weights are trained or changed. Missing model outputs fail the run.
+
+These test conversations have already been inspected. Present this as a
+re-evaluation after validation-based SEA-LION selection, with correlated AI
+personas rather than independent human ratings. Do not tune from these scores
+or describe this as a fresh unseen test. Historical runs below remain intact.
+
+## Historical frozen evaluation
+
 The interactive demo's V5 slot changed to SEA-LION 3B after the separate
 [8 November transformer validation comparison](evaluation/transformer_selection_20261108.md).
 The frozen results documented here used **original mT5**, not SEA-LION. The
-final-test runner still explicitly requests the original `v5` provider. No
-SEA-LION + Qwen + V7 end-to-end held-out quality result has been established.
+legacy final-test runner still explicitly requests the original `v5` provider.
+The separate `--current-pipeline` profile above now records the SEA-LION + Qwen
++ V7 re-evaluation; do not relabel these historical mT5 scores as SEA-LION.
 
 ## Include V7 in a new final report
 
