@@ -26,8 +26,11 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--out',type=Path,required=True)
     parser.add_argument('--resume',action='store_true')
-    parser.add_argument('--include-v7', action='store_true',
+    profile=parser.add_mutually_exclusive_group()
+    profile.add_argument('--include-v7', action='store_true',
                         help='Extend the completed frozen baseline and report all six systems')
+    profile.add_argument('--current-pipeline', action='store_true',
+                         help='New six-system/60-case GPU re-evaluation with SEA-LION and the current rubric')
     args=parser.parse_args()
     if any(os.environ.get(k) for k in ['REPLYCOACH_V4_CHECKPOINT','V5_CHECKPOINT',
                                       'REPLYCOACH_QWEN_BASE','REPLYCOACH_QWEN_DD_ADAPTER']):
@@ -35,6 +38,9 @@ def main():
     out=args.out.resolve()
     if not out.is_relative_to(ROOT/'experiments/judging'):
         raise ValueError('final output must be in the ignored experiments/judging directory')
+    if args.current_pipeline:
+        from current_final_runner import run_current
+        return run_current(out,resume=args.resume)
     if args.include_v7:
         from final_v7_runner import run_extension
         return run_extension(out, resume=args.resume)
