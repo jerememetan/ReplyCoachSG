@@ -1,5 +1,0 @@
-# Separate STANDARD-content repair candidates
-
-Prepared13 positive demonstrations from previously reviewed development cases: relevant support/acknowledgment, clear location proposals, completed-state tracking, wrong-question corrections, sensible offers, explicit budget/availability limits and owner/borrower direction. Sources and old STANDARD output preserved per item. No LOCAL targets generated. Assistant corrections are not new human gold; whole-pair Both-bad votes do not imply every STANDARD response was wrong. Some candidates improve appropriateness rather than correct an explicit contradiction.
-
-These13 reviewed cases are development-derived and must never be called fresh test evidence for a future model trained on them. No training launched on these candidates. The current three LOCAL trials keep STANDARD fixed for causal clarity. Broader content training requires additional context-audited demonstrations and a separate fresh validation set, rather than treating these13 alone as adequate training data.

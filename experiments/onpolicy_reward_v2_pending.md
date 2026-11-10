@@ -1,9 +1,0 @@
-# Revised prompted reward scorer v2
-
-User authorized fixing v1 refusal/counterproposal mistakes and a fresh sampled audit. New scorer scripts/targeted_reward_v2.py, original v1 intact. Prompt clarifies that whole-draft changed date/time can be a counterproposal; repetition is not contradiction; current/past possession can coexist; owner can grant borrower permission; refusal does not imply inability to attend every other event. Keeps negative constraint/ownership checks and uncertainty/no-reward mapping. No vocabulary overrides or auto-acceptance bypasses. Malformed verdict/issues combinations still abstain with raw evidence, not silent repair.
-
-Prompt hash frozen before viewing fresh48 sampled drafts or labeling them. Sampling job354827 completed exit0 on unchanged full3e-4 epoch1, seed426, same sampling settings as prior audit.12 new instances with more paraphrasing and some multi-turn context; four replies each. All48 contextual labels/rationales frozen before scorer outcomes. No target labels used in sampling. Same family overlap limits broad independence.
-
-Scoring job354828: revised scorer on48 old development/regression drafts plus48 fresh sampled drafts, one frozen model digest/prompt, random interleaving. Old48 were used to author prompt fixes; only fresh48 count as new validation. Same engineering gate as v1, no threshold relaxations: balanced definite agreement>=.9, positive acceptance>=.8, zero positive rewards on definite negatives, definite abstention<=.2, >=3 mixed reward groups,48 fresh completions, no malformed calls. Case payload excludes labels, IDs, categories and rationales.
-
-Six tests passed covering payload isolation, null abstention/raw-evidence handling, preservation of old prompt hash and existing gate contracts. Source compilation/shell syntax passed. No actor RL updates, checkpoint promotions, test reads, or Streamlit restarts. Results pending.

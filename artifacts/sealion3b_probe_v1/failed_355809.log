@@ -1,57 +1,0 @@
-Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:   2%|▏         | 7/388 [00:00<00:06, 56.87it/s]Loading weights:   4%|▍         | 15/388 [00:00<00:06, 60.93it/s]Loading weights:   6%|▌         | 22/388 [00:00<00:06, 60.31it/s]Loading weights:   7%|▋         | 29/388 [00:00<00:05, 60.57it/s]Loading weights:   9%|▉         | 36/388 [00:00<00:05, 59.18it/s]Loading weights:  11%|█         | 42/388 [00:00<00:06, 57.25it/s]Loading weights:  12%|█▏        | 48/388 [00:00<00:06, 54.89it/s]Loading weights:  14%|█▍        | 54/388 [00:00<00:06, 51.23it/s]Loading weights:  16%|█▌        | 62/388 [00:01<00:05, 56.02it/s]Loading weights:  18%|█▊        | 68/388 [00:01<00:06, 53.02it/s]Loading weights:  20%|██        | 78/388 [00:01<00:05, 61.10it/s]Loading weights:  22%|██▏       | 85/388 [00:01<00:05, 57.21it/s]Loading weights:  24%|██▎       | 92/388 [00:01<00:05, 54.17it/s]Loading weights:  26%|██▋       | 102/388 [00:01<00:04, 62.56it/s]Loading weights:  29%|██▊       | 111/388 [00:01<00:04, 56.87it/s]Loading weights:  32%|███▏      | 123/388 [00:02<00:03, 68.33it/s]Loading weights:  34%|███▍      | 131/388 [00:02<00:03, 66.61it/s]Loading weights:  36%|███▌      | 138/388 [00:02<00:03, 62.98it/s]Loading weights:  38%|███▊      | 146/388 [00:02<00:03, 64.83it/s]Loading weights:  39%|███▉      | 153/388 [00:02<00:04, 57.16it/s]Loading weights:  42%|████▏     | 163/388 [00:02<00:03, 60.71it/s]Loading weights:  44%|████▍     | 170/388 [00:02<00:03, 59.56it/s]Loading weights:  47%|████▋     | 181/388 [00:03<00:03, 65.15it/s]Loading weights:  48%|████▊     | 188/388 [00:03<00:03, 59.06it/s]Loading weights:  51%|█████     | 198/388 [00:03<00:02, 65.38it/s]Loading weights:  53%|█████▎    | 205/388 [00:03<00:02, 63.39it/s]Loading weights:  55%|█████▍    | 212/388 [00:03<00:03, 58.26it/s]Loading weights:  57%|█████▋    | 222/388 [00:03<00:02, 65.75it/s]Loading weights:  59%|█████▉    | 229/388 [00:03<00:02, 62.94it/s]Loading weights:  61%|██████    | 236/388 [00:03<00:02, 59.29it/s]Loading weights:  63%|██████▎   | 246/388 [00:04<00:02, 68.87it/s]Loading weights:  65%|██████▌   | 254/388 [00:04<00:02, 64.18it/s]Loading weights:  67%|██████▋   | 261/388 [00:04<00:02, 63.40it/s]Loading weights:  69%|██████▉   | 268/388 [00:04<00:02, 57.81it/s]Loading weights:  71%|███████   | 276/388 [00:04<00:01, 60.95it/s]Loading weights:  73%|███████▎  | 283/388 [00:04<00:01, 62.44it/s]Loading weights:  75%|███████▌  | 291/388 [00:04<00:01, 65.50it/s]Loading weights:  77%|███████▋  | 298/388 [00:04<00:01, 58.39it/s]Loading weights:  79%|███████▉  | 306/388 [00:05<00:01, 60.14it/s]Loading weights:  81%|████████  | 313/388 [00:05<00:01, 59.68it/s]Loading weights:  82%|████████▏ | 320/388 [00:05<00:01, 58.82it/s]Loading weights:  85%|████████▌ | 330/388 [00:05<00:00, 67.63it/s]Loading weights:  87%|████████▋ | 337/388 [00:05<00:00, 64.04it/s]Loading weights:  89%|████████▊ | 344/388 [00:05<00:00, 59.46it/s]Loading weights:  91%|█████████ | 353/388 [00:05<00:00, 55.54it/s]Loading weights:  94%|█████████▍| 365/388 [00:05<00:00, 65.15it/s]Loading weights:  96%|█████████▋| 374/388 [00:06<00:00, 68.90it/s]Loading weights:  98%|█████████▊| 382/388 [00:06<00:00, 70.09it/s]Loading weights: 100%|██████████| 388/388 [00:07<00:00, 51.77it/s]
-[transformers] You are using an old version of the checkpointing format that is deprecated (We will also silently ignore `gradient_checkpointing_kwargs` in case you passed it).Please update to the new format on your modeling file. To use the new format, you need to completely remove the definition of the method `_set_gradient_checkpointing` in your model.
-/common/home/users/h/hm.teoh.2024/ReplyCoachSG_focus_v1/.venv/lib/python3.13/site-packages/torch/_dynamo/eval_frame.py:1548: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
-  return fn(*args, **kwargs)
-Traceback (most recent call last):
-  File "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1_retry/scripts/run_sealion3b_probe_v1.py", line 65, in main
-    write(report);print('Probe step',step,'loss',float(out.loss.detach()),'peak GiB',torch.cuda.max_memory_allocated()/2**30,flush=True)
-    ~~~~~^^^^^^^^
-  File "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1_retry/scripts/run_sealion3b_probe_v1.py", line 15, in write
-    OUT.mkdir(exist_ok=True);tmp=OUT/'probe.tmp';tmp.write_text(json.dumps(report,indent=2)+'\n');tmp.replace(OUT/'probe.json')
-                                                                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-          ~~~~~~^^^^^
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/encoder.py", line 200, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/encoder.py", line 261, in iterencode
-    return _iterencode(o, 0)
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/encoder.py", line 180, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-                    f'is not JSON serializable')
-TypeError: Object of type set is not JSON serializable
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1_retry/scripts/run_sealion3b_probe_v1.py", line 87, in <module>
-    if __name__=='__main__':main()
-                            ~~~~^^
-  File "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1_retry/scripts/run_sealion3b_probe_v1.py", line 85, in main
-    write(report);raise
-    ~~~~~^^^^^^^^
-  File "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion3b_probe_v1_retry/scripts/run_sealion3b_probe_v1.py", line 15, in write
-    OUT.mkdir(exist_ok=True);tmp=OUT/'probe.tmp';tmp.write_text(json.dumps(report,indent=2)+'\n');tmp.replace(OUT/'probe.json')
-                                                                ~~~~~~~~~~^^^^^^^^^^^^^^^^^
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/__init__.py", line 238, in dumps
-    **kw).encode(obj)
-          ~~~~~~^^^^^
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/encoder.py", line 200, in encode
-    chunks = self.iterencode(o, _one_shot=True)
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/encoder.py", line 261, in iterencode
-    return _iterencode(o, 0)
-  File "/opt/apps/software/Python/3.13.1-GCCcore-13.3.0/lib/python3.13/json/encoder.py", line 180, in default
-    raise TypeError(f'Object of type {o.__class__.__name__} '
-                    f'is not JSON serializable')
-TypeError: Object of type set is not JSON serializable
-Job ID: 355809
-Cluster: crimson
-User/Group: hm.teoh.2024/hm.teoh.2024
-State: FAILED (exit code 1)
-Nodes: 1
-Cores per node: 4
-CPU Utilized: 00:00:19
-CPU Efficiency: 25.00% of 00:01:16 core-walltime
-Job Wall-clock time: 00:00:19
-Memory Utilized: 4.04 MB
-Memory Efficiency: 0.01% of 32.00 GB (32.00 GB/node)

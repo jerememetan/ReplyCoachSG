@@ -1,6 +1,0 @@
-{
-  "source_sha256": "7bbbc9ac380c738b204485605b31ef982ea358fc393d48f89bf7323ab155a6dc",
-  "stage": "Before fresh output judgments or scorer outcomes",
-  "sampling_job": 354827,
-  "gate": "Same as v1: balanced definite agreement>=.9, positive acceptance>=.8, zero positive rewards on definite negatives, definite abstention<=.2, >=3 mixed groups,48 completed fresh cases, no raw failures; old batch is regression only"
-}

@@ -1,8 +1,0 @@
-{
-  "cases": 24,
-  "created_for": "Restore older mT5 adapted base and explore SEA-LION beam search",
-  "scope": "New assistant-authored development conversations; not independently human-authored gold or a claim of unseen pretraining templates.",
-  "selection": "Frozen before new mT5 training or SEA beam inference; never used for checkpoint selection/training.",
-  "diagnostic_anchor": "Assistant context-compatible English for isolated rendering only; excluded from ordinary model inputs.",
-  "locked_test_used": false
-}

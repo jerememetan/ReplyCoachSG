@@ -1,8 +1,0 @@
-{
-  "job_id": 354579,
-  "status": "submitted",
-  "account": "cs701",
-  "directory": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_human_dpo_v1",
-  "base": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_standard_val_v1/artifacts/full_lr3e4/best",
-  "completion_waited": false
-}

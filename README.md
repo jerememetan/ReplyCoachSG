@@ -117,7 +117,8 @@ per conversation. [Full V7 v2 evaluation and comparison table](docs/evaluation/v
 | [`src/replycoach/`](src/replycoach/) | Demo, retrieval, generation and ranking code |
 | [`data/`](data/) | Reply bank, evaluation splits, lexicons and rubric |
 | [`docs/evaluation/`](docs/evaluation/) | Consolidated findings and aggregate results |
-| [`experiments/`](experiments/) | Research runs and supporting records |
-| [`scripts/`](scripts/), [`tests/`](tests/) | Training, evaluation and verification |
+| [`scripts/`](scripts/), [`tests/`](tests/) | Selected evaluation utilities and demo tests |
 
 See [TEAM.md](TEAM.md) for project roles.
+
+Historical evaluation replays require the original checkpoints and saved judging packets from the project team.
