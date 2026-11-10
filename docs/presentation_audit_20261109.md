@@ -13,8 +13,9 @@
   and is a separate comparison. SEA-LION alone led mean appropriateness.
 - **V7:** The 60-case results measure particle-oriented V7 v1. Local style
   fit and simulated would-send improved over V6. The current
-  [V7 v2 phrase refinement](v7_random_lexical.md) has been checked in the demo
-  but has no new quality scores. Gemma persona ratings are simulated judgments.
+  [V7 v2 phrase refinement](v7_random_lexical.md) now has a
+  [separate Local-only evaluation](evaluation/v7_v2_local_20261109.md).
+  Gemma persona ratings are simulated judgments.
 
 For the demo, choose **All models (experimental)**, **M2**, and **Reviewed
 development file** (`data/dev/train.jsonl`). Standard comes directly from

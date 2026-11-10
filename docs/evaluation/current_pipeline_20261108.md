@@ -10,6 +10,9 @@ only. Qwen no longer selects across the four models. See the
 not a newly validated pipeline or a fresh unseen-test result. Frozen runs and
 the aggregate JSON below still describe the evaluated six-system configuration.
 
+The later [isolated V7 v2 Local evaluation](v7_v2_local_20261109.md) adds the
+current demo's Local scores and a consolidated results table.
+
 ## Scope and verification
 
 - Same 60 previously inspected test conversations; fixed reviewed 190-conversation reply bank; M2 memory. SEA-LION was selected earlier on the separate 50-conversation validation comparison.

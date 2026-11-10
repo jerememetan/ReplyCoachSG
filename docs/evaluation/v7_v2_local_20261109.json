@@ -1,0 +1,134 @@
+{
+  "record_type": "isolated_v7_v2_local_evaluation",
+  "conversations": 60,
+  "summary": {
+    "system": "V7 v2",
+    "memory_mode": "M2",
+    "retrieval_method": "none",
+    "requested_mode": "lexical_refinement",
+    "style": "LOCAL",
+    "appropriateness": 4.6033333333333335,
+    "naturalness": 4.908333333333333,
+    "style_fit": 3.9466666666666668,
+    "would_send_pct": 81.16666666666667,
+    "rated": 600,
+    "expected": 600,
+    "failed": 0,
+    "conversations": 60
+  },
+  "paired": [
+    {
+      "before": "V5",
+      "metric": "appropriateness",
+      "difference": 0.05166666666666667,
+      "ci95": [
+        -0.0016666666666666607,
+        0.13500000000000004
+      ]
+    },
+    {
+      "before": "V5",
+      "metric": "naturalness",
+      "difference": 0.009999999999999993,
+      "ci95": [
+        0.0,
+        0.02999999999999998
+      ]
+    },
+    {
+      "before": "V5",
+      "metric": "style_fit",
+      "difference": 0.15666666666666668,
+      "ci95": [
+        0.05500000000000001,
+        0.2816666666666667
+      ]
+    },
+    {
+      "before": "V5",
+      "metric": "would_send",
+      "difference": 0.028333333333333332,
+      "ci95": [
+        0.0033333333333333327,
+        0.06666666666666667
+      ]
+    },
+    {
+      "before": "V7 v1",
+      "metric": "appropriateness",
+      "difference": 0.16333333333333333,
+      "ci95": [
+        0.023333333333333338,
+        0.3383333333333334
+      ]
+    },
+    {
+      "before": "V7 v1",
+      "metric": "naturalness",
+      "difference": -0.006666666666666687,
+      "ci95": [
+        -0.07500000000000001,
+        0.05833333333333335
+      ]
+    },
+    {
+      "before": "V7 v1",
+      "metric": "style_fit",
+      "difference": -0.9283333333333333,
+      "ci95": [
+        -1.1966666666666668,
+        -0.6666666666666666
+      ]
+    },
+    {
+      "before": "V7 v1",
+      "metric": "would_send",
+      "difference": -0.04,
+      "ci95": [
+        -0.11833333333333333,
+        0.03666666666666667
+      ]
+    }
+  ],
+  "seed": 425,
+  "method": "lexical_bernoulli_v2",
+  "judge": {
+    "judge_model": "gemma4:12b",
+    "model_digest": "6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b",
+    "options": {
+      "temperature": 0,
+      "seed": 425,
+      "num_predict": 2048,
+      "num_ctx": 4096
+    },
+    "think": false
+  },
+  "provenance_counts": {
+    "exact_historical_task": 480,
+    "new_gemma_call": 120
+  },
+  "problem_counts": {
+    "none": 590,
+    "generic_or_unrelated_fallback": 10
+  },
+  "uncertain_count": 0,
+  "refinement": {
+    "skipped": 42,
+    "changed": 12,
+    "mean_lexicon_seconds": 0.0008997633286829417,
+    "mean_reranking_seconds": 0.048268003334912164
+  },
+  "execution": {
+    "ollama_version": {
+      "version": "0.40.15"
+    },
+    "backend": "local_ollama"
+  },
+  "evidence_sha256": {
+    "freeze.json": "9266980dcd4e0146c194d7b9ecc2fe822c84e5922622e6e1be69f5d6fdcc5423",
+    "traces.json": "bb2e5aa03c04ae6eec1422236ac7cc82372522d1f180f5f22ba313f9877eea4c",
+    "ratings.jsonl": "ec20138a66bd969a0e97a589b4346c1640c23fa5912ca2b4ef724e3c7831e72f",
+    "packet/judge_inputs.jsonl": "cd926167e03f1ff66a06c7b340e04759cb0d8e23c6af1c1ba3ee72e2daea1926",
+    "packet/PRIVATE_mapping.jsonl": "e476575139f61729c55e5a5e40c24772c92079ceeda75cb42ba35f38f0ef0a53"
+  }
+}

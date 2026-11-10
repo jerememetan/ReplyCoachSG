@@ -232,7 +232,8 @@ and [aggregate evidence](docs/evaluation/current_pipeline_20261108.json) for all
 metrics, paired uncertainty and limitations. This is correlated AI-persona
 evidence on an already-inspected test set. On 9 November the user explicitly
 requested the direct SEA-LION demo path described above; this is a product
-decision after inspection. The current V7 v2 wording pass has not been regraded.
+decision after inspection. The separate [V7 v2 Local evaluation](docs/evaluation/v7_v2_local_20261109.md)
+uses the same 60 conversations and adds a Local-only row for the current demo.
 Historical mT5 scores remain separate.
 
 ### Historical V6/V7 research setup

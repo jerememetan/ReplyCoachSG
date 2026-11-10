@@ -68,6 +68,6 @@ tests/research callers can inject a seed for reproducibility. No new user settin
 fine-tuning, generator calls or Gemma criteria were introduced.
 
 The old particle-oriented `lexicon_variations_v1` remains unchanged for historical
-research/evaluation. Its 8 November quality figures do **not** measure this new
-SEA-LION-anchored v2 policy. No quality improvement or new held-out score is
-claimed until v2 is evaluated separately.
+research/evaluation. The [isolated V7 v2 Local evaluation](evaluation/v7_v2_local_20261109.md)
+reports the SEA-LION-anchored method separately on the same 60 revisited cases,
+with one fixed draw per conversation and the same Gemma rubric and personas.
