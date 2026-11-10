@@ -66,6 +66,8 @@ data/authoring/*.jsonl.lock
 
 # Generated exports and local agent working notes
 /output/
+/tmp/
+/PanGPI.log
 docs/superpowers/
 /.agents/tasks/
 

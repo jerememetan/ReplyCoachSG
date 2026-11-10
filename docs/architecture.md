@@ -1,5 +1,23 @@
 # Architecture
 
+## Presentation demo
+
+In **All models (experimental)**, the demo selects conversation history with
+M2 and collects Standard and Local proposals from BM25, MiniLM, V4 and
+SEA-LION 3B. The reviewed development file supplies the retrieval bank.
+
+- **Standard:** the original SEA-LION Standard reply.
+- **Light Local:** the original SEA-LION Local reply goes to V7 v2. If three
+  distinct dictionary variants are available, Qwen ranks them and the original.
+  Otherwise the original stays.
+- **Comparison table:** BM25, MiniLM and V4 proposals are displayed alongside
+  SEA-LION. This display is independent of final reply selection.
+
+See the [V7 v2 method](v7_random_lexical.md) and the
+[presentation demo setup](../README.md#run-the-full-presentation-demo).
+
+## Earlier pipeline design
+
 ```
 session (last 8 turns)
         |
