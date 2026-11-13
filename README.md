@@ -107,6 +107,8 @@ per conversation. [Full V7 v2 evaluation and comparison table](docs/evaluation/v
 
 - [Transformer selection on 50 validation conversations](docs/evaluation/transformer_selection_20261108.md)
 - [Six-system evaluation including historical V7 v1](docs/evaluation/current_pipeline_20261108.md)
+- [V6 refinement and memory experiments](docs/evaluation/qwen_refinement_20261113.md)
+- [Follow-up Standard V6 fine-tuning](docs/evaluation/qwen_standard_continuation_20261113.md)
 - [Architecture and version history](docs/architecture.md)
 - [Evaluation entry points and data splits](docs/final_test_evaluation.md)
 
