@@ -7,9 +7,9 @@ M2 and collects Standard and Local proposals from BM25, MiniLM, V4 and
 SEA-LION 3B. The reviewed development file supplies the retrieval bank.
 
 - **Standard:** the original SEA-LION Standard reply.
-- **Light Local:** the original SEA-LION Local reply goes to V7 v2. If three
-  distinct dictionary variants are available, Qwen ranks them and the original.
-  Otherwise the original stays.
+- **Light Local:** V7 v2 tries to generate up to three distinct dictionary
+  variants of the SEA-LION Local reply. Qwen ranks the original and any
+  variants found. With zero variants, the original is returned directly.
 - **Comparison table:** BM25, MiniLM and V4 proposals are displayed alongside
   SEA-LION. This display is independent of final reply selection.
 

@@ -228,7 +228,7 @@ def main() -> None:
             st.caption("Compare BM25, MiniLM, V4 and V5. Standard comes directly from SEA-LION; Local gets optional wording refinement.")
             st.caption("V5: SEA-LION 3B · selected from the three-transformer validation comparison. Historical evaluations used the original mT5.")
             st.caption("First use loads local models; later requests reuse them.")
-            st.caption("Each eligible Local phrase has a 50% chance of changing. Qwen chooses from the original SEA-LION reply and three distinct variations when available.")
+            st.caption("Each eligible Local phrase has a 50% chance of changing per attempt. Qwen ranks any distinct variations alongside the original SEA-LION reply, up to three variants.")
         elif system_mode != "Retrieval comparison":
             if system_mode != "Generator only":
                 retrieval_method = st.selectbox("Retrieval method", ["BM25", "MiniLM"], key="retrieval_method")

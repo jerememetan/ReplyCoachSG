@@ -441,7 +441,14 @@ def test_sealion_failure_preserves_comparison_and_retry_restores_final_replies(d
     assert app.button(key='select_all_standard').label=='SEALION standard'
 
 
-def test_local_wording_refinement_only_scores_sealion_variants(demo_test,monkeypatch,stub_generator):
+@pytest.mark.parametrize(('local_reply', 'candidate_count'), [
+    ('Eat!', 2),
+    ('Please!', 3),
+    ('Never mind, please meet tomorrow.', 4),
+])
+def test_local_wording_refinement_only_scores_sealion_variants(
+    demo_test, monkeypatch, stub_generator, local_reply, candidate_count,
+):
     from replycoach.schema import Candidate
     from replycoach.shared_ranker import PairScore
     app=enable_all_models(demo_test,monkeypatch,stub_generator)
@@ -449,22 +456,22 @@ def test_local_wording_refinement_only_scores_sealion_variants(demo_test,monkeyp
         source='SEALION'
         def generate(self,message,context):
             return [Candidate([],message,'Original standard unchanged.','STANDARD',self.source,.5),
-                    Candidate([],message,'Never mind, please meet tomorrow.','LOCAL',self.source,.5)]
+                    Candidate([],message,local_reply,'LOCAL',self.source,.5)]
     calls=[]
     class Scorer:
         identity={'model':'test-only','revision':'fixed'}
         def score_pairs(self,pairs):
             calls.append(pairs)
-            return [PairScore(10 if text=='Never mind, please meet tomorrow.' else 0) for _,text in pairs]
+            return [PairScore(10 if text==local_reply else 0) for _,text in pairs]
     monkeypatch.setattr(demo_resources,'get_generator',lambda p:Sea() if p=='sealion_handoff' else stub_generator)
     monkeypatch.setattr(demo_resources,'get_shared_ranker',lambda selector:Scorer())
     compare_in_app(app)
     assert app.button(key='select_all_standard').label=='Original standard unchanged.'
-    assert app.button(key='select_all_local').label=='Never mind, please meet tomorrow.'
-    assert len(calls)==1 and len(calls[0])==4
+    assert app.button(key='select_all_local').label==local_reply
+    assert len(calls)==1 and len(calls[0])==candidate_count
     output=app.session_state.last_all_models_result.to_dict()
     assert output['v7']['method']=='lexical_bernoulli_v2'
-    assert output['v7']['candidate_count']==4
+    assert output['v7']['candidate_count']==candidate_count
     assert any(e.label=='Local wording candidates' for e in app.expander)
 
 

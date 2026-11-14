@@ -88,8 +88,9 @@ please be reminded that you have to return the equipment by tomorrow 9pm. If not
 
 **Standard** comes directly from SEA-LION 3B. **Light Local** starts from its
 Local reply. V7 v2 tries dictionary substitutions such as `eat` → `makan` or
-`tomorrow` → `tmr`. If it produces three distinct edits, Qwen ranks them
-alongside the original. Otherwise the app keeps the original. The comparison
+`tomorrow` → `tmr`. Qwen ranks up to three distinct variants alongside the
+original whenever at least one is available. With zero variants, the app keeps
+the original directly. The comparison
 table also shows BM25, MiniLM and V4 proposals. If SEA-LION fails to load, the
 table can still show available proposals and the app reports the model error.
 [V7 v2 method and fallback behavior](docs/v7_random_lexical.md)
@@ -103,7 +104,8 @@ table can still show available proposals and the app reports the model error.
 
 These are simulated ratings from ten Gemma personas on 60 previously inspected
 test conversations. The Local follow-up used one reproducible wording sample
-per conversation. [Full V7 v2 evaluation and comparison table](docs/evaluation/v7_v2_local_20261109.md)
+per conversation and required three distinct variants before ranking.
+[Full V7 v2 evaluation and comparison table](docs/evaluation/v7_v2_local_20261109.md)
 
 - [Transformer selection on 50 validation conversations](docs/evaluation/transformer_selection_20261108.md)
 - [Six-system evaluation including historical V7 v1](docs/evaluation/current_pipeline_20261108.md)

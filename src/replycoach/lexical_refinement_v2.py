@@ -1,4 +1,4 @@
-"""Independent per-phrase random shortening, followed by four-candidate scoring."""
+"""Independent per-phrase random edits and ranking against the original reply."""
 from dataclasses import dataclass,field,replace
 from functools import lru_cache
 from hashlib import sha256
@@ -48,7 +48,7 @@ def randomize_local_text(reply,*,rng):
 
 
 def generate_lexical_variants(reply,*,rng=None):
-    """Three unique changed samples, or none when a four-candidate pool cannot form.
+    """Return up to three distinct changed replies from the bounded sampling run.
 
     Rejecting unchanged/duplicate attempts conditions the final distribution;
     50% is the per-attempt edit probability, not a final-output edit quota.
@@ -58,8 +58,8 @@ def generate_lexical_variants(reply,*,rng=None):
     for _ in range(64):
         text=randomize_local_text(reply,rng=rng);key=' '.join(text.split()).casefold()
         if key!=original:variants.setdefault(key,text)
-        if len(variants)==3:return list(variants.values())
-    return []
+        if len(variants)==3:break
+    return list(variants.values())
 
 
 @dataclass
@@ -76,7 +76,8 @@ class LexicalRefinement:
     @property
     def complete(self):
         return self.error is None and (self.skipped_reason is not None or
-            (len(self.variations)==3 and self.ranking is not None and len(self.ranking.candidates)==4
+            (bool(self.variations) and self.ranking is not None
+             and len(self.ranking.candidates)==1+len(self.variations)
              and self.ranking.local is not None))
 
     @property
@@ -102,7 +103,7 @@ def refine_lexical_local(original,scorer_factory,speakers=None,*,rng=None):
         result.lexicon_sha256=_dictionary()[2]
         result.variations=generate_lexical_variants(original.candidate_text,rng=rng)
         if not result.variations:
-            result.skipped_reason='Could not produce three distinct wording variations; kept the original SEA-LION reply.'
+            result.skipped_reason='No distinct wording variations were found. Kept the original SEA-LION reply.'
     except Exception as exc:result.error=str(exc) or type(exc).__name__
     result.generation_seconds=perf_counter()-tick
     if result.error or result.skipped_reason:return result

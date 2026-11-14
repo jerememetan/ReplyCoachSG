@@ -1,4 +1,5 @@
 import importlib,random
+import pytest
 from replycoach.schema import Candidate
 from replycoach.shared_ranker import PairScore
 
@@ -53,12 +54,31 @@ def test_refinement_scores_only_four_local_candidates_and_can_keep_original():
     assert result.to_dict()['replacement_probability']==.5
 
 
-def test_short_reply_skips_without_padding_or_loading_ranker():
+@pytest.mark.parametrize(('reply', 'expected'), [
+    ('Eat!', {'Makan!'}),
+    ('Please!', {'Pls!', 'Plz!'}),
+])
+def test_short_reply_ranks_available_variants(reply, expected):
+    m=api();calls=[]
+    class Scorer:
+        identity={'model':'test-only','revision':'fixed'}
+        def score_pairs(self,pairs):
+            calls.append(pairs)
+            return [PairScore(0 if text==reply else 1) for _,text in pairs]
+    result=m.refine_lexical_local(original(reply),Scorer,['user'],rng=random.Random(425))
+    assert result.complete and result.to_dict()['status']=='completed'
+    assert set(result.variations)==expected
+    assert result.selected.candidate_text in expected
+    assert len(calls)==1 and {text for _,text in calls[0]}==expected | {reply}
+    assert result.to_dict()['candidate_count']==len(expected)+1
+
+
+def test_no_edits_skips_without_loading_ranker():
     m=api()
     def forbidden():raise AssertionError('No ranker needed')
-    result=m.refine_lexical_local(original('Please!'),forbidden,['user'])
+    result=m.refine_lexical_local(original('See everyone at noon.'),forbidden,['user'])
     assert result.complete and result.skipped_reason and not result.error
-    assert result.selected.candidate_text=='Please!' and result.variations==[]
+    assert result.selected.candidate_text=='See everyone at noon.' and result.variations==[]
     assert result.to_dict()['status']=='skipped'
 
 
