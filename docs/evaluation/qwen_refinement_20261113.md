@@ -134,3 +134,7 @@ We replayed the original, fine-tuned and matched-control V6 adapters on the same
 Fine-tuning changed seven of the 60 picks. Against original V6, appropriateness rose by 0.140 (paired 95% bootstrap interval [0.000, 0.337]) and would-send rose by 3.67 percentage points ([0.00, 8.67]). Naturalness fell by 0.018 and style fit stayed level. Direct SEA-LION still led fine-tuned V6 by 0.420 appropriateness points and 12.83 percentage points of would-send, supporting the existing Standard demo choice.
 
 The local scoring script and per-case scores are in `output/qwen_refinement_loop/presentation_standard_replay.py` and `output/qwen_refinement_loop/presentation_standard_replay.json`.
+
+### Suggested final-report wording
+
+We investigated whether SEA-LION-generated replies could improve the V6 Qwen reranker through distillation-style fine-tuning. We paired SEA-LION replies with competing candidates and used Jev and Gemma to label reply preferences. On the same 60-conversation evaluation, the strongest fine-tuned checkpoint increased Standard appropriateness from 3.995 to 4.135 out of 5 and simulated would-send from 71.5% to 75.2%. Further fine-tuning yielded no additional gain on that evaluation, and direct SEA-LION retained the highest scores for Standard replies. See the [continuation study](qwen_standard_continuation_20261113.md).
