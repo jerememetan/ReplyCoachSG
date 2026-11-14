@@ -1,5 +1,5 @@
 {
-  "version": "chat-variations-v2-augmentation-reuse",
+  "version": "chat-variations-v2-peh-cleanup-forms",
   "notes": "Optional casual abbreviations and selected local-word substitutions. Independent 50% phrase rolls; longest whole phrases; no cascading or particle padding. Ambiguous normalization mappings are not blindly reversed.",
   "conversions": [
     {
@@ -103,7 +103,8 @@
         "because"
       ],
       "replacements": [
-        "cos"
+        "cos",
+        "becoz"
       ]
     },
     {
@@ -160,7 +161,10 @@
         "already"
       ],
       "replacements": [
-        "alr"
+        "alr",
+        "oredi",
+        "alrd",
+        "ald"
       ]
     },
     {
@@ -232,7 +236,8 @@
         "remember"
       ],
       "replacements": [
-        "rmb"
+        "rmb",
+        "rem"
       ]
     },
     {
@@ -272,7 +277,8 @@
         "you"
       ],
       "replacements": [
-        "u"
+        "u",
+        "chiu"
       ]
     },
     {
@@ -306,6 +312,881 @@
       "replacements": [
         "don't have"
       ]
+    },
+    {
+      "phrases": [
+        "also"
+      ],
+      "replacements": [
+        "oso"
+      ]
+    },
+    {
+      "phrases": [
+        "don't know"
+      ],
+      "replacements": [
+        "dunno",
+        "dk"
+      ]
+    },
+    {
+      "phrases": [
+        "don’t know"
+      ],
+      "replacements": [
+        "dunno",
+        "dk"
+      ]
+    },
+    {
+      "phrases": [
+        "dont know"
+      ],
+      "replacements": [
+        "dunno",
+        "dk"
+      ]
+    },
+    {
+      "phrases": [
+        "don't need"
+      ],
+      "replacements": [
+        "dunnid"
+      ]
+    },
+    {
+      "phrases": [
+        "don’t need"
+      ],
+      "replacements": [
+        "dunnid"
+      ]
+    },
+    {
+      "phrases": [
+        "dont need"
+      ],
+      "replacements": [
+        "dunnid"
+      ]
+    },
+    {
+      "phrases": [
+        "do it like that"
+      ],
+      "replacements": [
+        "do it liddat"
+      ]
+    },
+    {
+      "phrases": [
+        "only"
+      ],
+      "replacements": [
+        "oni"
+      ]
+    },
+    {
+      "phrases": [
+        "relax"
+      ],
+      "replacements": [
+        "relak"
+      ]
+    },
+    {
+      "phrases": [
+        "sabotage"
+      ],
+      "replacements": [
+        "sabo"
+      ]
+    },
+    {
+      "phrases": [
+        "save me a seat"
+      ],
+      "replacements": [
+        "chope a seat for me"
+      ]
+    },
+    {
+      "phrases": [
+        "get the food to go"
+      ],
+      "replacements": [
+        "dabao the food"
+      ]
+    },
+    {
+      "phrases": [
+        "hang out after class"
+      ],
+      "replacements": [
+        "lepak after class"
+      ]
+    },
+    {
+      "phrases": [
+        "just make a rough guess"
+      ],
+      "replacements": [
+        "just agak-agak"
+      ]
+    },
+    {
+      "phrases": [
+        "can't make it"
+      ],
+      "replacements": [
+        "cmi"
+      ]
+    },
+    {
+      "phrases": [
+        "can’t make it"
+      ],
+      "replacements": [
+        "cmi"
+      ]
+    },
+    {
+      "phrases": [
+        "cant make it"
+      ],
+      "replacements": [
+        "cmi"
+      ]
+    },
+    {
+      "phrases": [
+        "china"
+      ],
+      "replacements": [
+        "cheena"
+      ]
+    },
+    {
+      "phrases": [
+        "english"
+      ],
+      "replacements": [
+        "engrish"
+      ]
+    },
+    {
+      "phrases": [
+        "government"
+      ],
+      "replacements": [
+        "gahment",
+        "gov",
+        "govt"
+      ]
+    },
+    {
+      "phrases": [
+        "singaporean"
+      ],
+      "replacements": [
+        "sinkie"
+      ]
+    },
+    {
+      "phrases": [
+        "singaporeans"
+      ],
+      "replacements": [
+        "sinkies"
+      ]
+    },
+    {
+      "phrases": [
+        "at the moment"
+      ],
+      "replacements": [
+        "atm"
+      ]
+    },
+    {
+      "phrases": [
+        "average"
+      ],
+      "replacements": [
+        "avg"
+      ]
+    },
+    {
+      "phrases": [
+        "back"
+      ],
+      "replacements": [
+        "bck"
+      ]
+    },
+    {
+      "phrases": [
+        "become"
+      ],
+      "replacements": [
+        "becum"
+      ]
+    },
+    {
+      "phrases": [
+        "boy"
+      ],
+      "replacements": [
+        "boi"
+      ]
+    },
+    {
+      "phrases": [
+        "boyfriend"
+      ],
+      "replacements": [
+        "boyf"
+      ]
+    },
+    {
+      "phrases": [
+        "business"
+      ],
+      "replacements": [
+        "biz"
+      ]
+    },
+    {
+      "phrases": [
+        "cos"
+      ],
+      "replacements": [
+        "coz"
+      ]
+    },
+    {
+      "phrases": [
+        "definitely"
+      ],
+      "replacements": [
+        "defo",
+        "deffo"
+      ]
+    },
+    {
+      "phrases": [
+        "don't"
+      ],
+      "replacements": [
+        "donch",
+        "dun"
+      ]
+    },
+    {
+      "phrases": [
+        "don’t"
+      ],
+      "replacements": [
+        "donch",
+        "dun"
+      ]
+    },
+    {
+      "phrases": [
+        "dont"
+      ],
+      "replacements": [
+        "donch",
+        "dun"
+      ]
+    },
+    {
+      "phrases": [
+        "don't want"
+      ],
+      "replacements": [
+        "dunwan",
+        "dw"
+      ]
+    },
+    {
+      "phrases": [
+        "don’t want"
+      ],
+      "replacements": [
+        "dunwan",
+        "dw"
+      ]
+    },
+    {
+      "phrases": [
+        "dont want"
+      ],
+      "replacements": [
+        "dunwan",
+        "dw"
+      ]
+    },
+    {
+      "phrases": [
+        "every"
+      ],
+      "replacements": [
+        "ebery"
+      ]
+    },
+    {
+      "phrases": [
+        "favourite"
+      ],
+      "replacements": [
+        "fav"
+      ]
+    },
+    {
+      "phrases": [
+        "for real"
+      ],
+      "replacements": [
+        "fr"
+      ]
+    },
+    {
+      "phrases": [
+        "from"
+      ],
+      "replacements": [
+        "frm"
+      ]
+    },
+    {
+      "phrases": [
+        "fuck"
+      ],
+      "replacements": [
+        "fk"
+      ]
+    },
+    {
+      "phrases": [
+        "fucker"
+      ],
+      "replacements": [
+        "fker"
+      ]
+    },
+    {
+      "phrases": [
+        "get it"
+      ],
+      "replacements": [
+        "geddit"
+      ]
+    },
+    {
+      "phrases": [
+        "girl"
+      ],
+      "replacements": [
+        "gurl"
+      ]
+    },
+    {
+      "phrases": [
+        "girlfriend"
+      ],
+      "replacements": [
+        "girlf"
+      ]
+    },
+    {
+      "phrases": [
+        "got"
+      ],
+      "replacements": [
+        "gt"
+      ]
+    },
+    {
+      "phrases": [
+        "happy"
+      ],
+      "replacements": [
+        "heypi"
+      ]
+    },
+    {
+      "phrases": [
+        "have"
+      ],
+      "replacements": [
+        "hv",
+        "hav",
+        "hab"
+      ]
+    },
+    {
+      "phrases": [
+        "hong kong"
+      ],
+      "replacements": [
+        "hk"
+      ]
+    },
+    {
+      "phrases": [
+        "i don't want"
+      ],
+      "replacements": [
+        "idw"
+      ]
+    },
+    {
+      "phrases": [
+        "i don’t want"
+      ],
+      "replacements": [
+        "idw"
+      ]
+    },
+    {
+      "phrases": [
+        "i dont want"
+      ],
+      "replacements": [
+        "idw"
+      ]
+    },
+    {
+      "phrases": [
+        "in my honest opinion"
+      ],
+      "replacements": [
+        "imho"
+      ]
+    },
+    {
+      "phrases": [
+        "is"
+      ],
+      "replacements": [
+        "ish"
+      ]
+    },
+    {
+      "phrases": [
+        "just"
+      ],
+      "replacements": [
+        "jus",
+        "juz"
+      ]
+    },
+    {
+      "phrases": [
+        "know"
+      ],
+      "replacements": [
+        "noe"
+      ]
+    },
+    {
+      "phrases": [
+        "last"
+      ],
+      "replacements": [
+        "rast"
+      ]
+    },
+    {
+      "phrases": [
+        "like"
+      ],
+      "replacements": [
+        "rike",
+        "riek"
+      ]
+    },
+    {
+      "phrases": [
+        "look"
+      ],
+      "replacements": [
+        "rook"
+      ]
+    },
+    {
+      "phrases": [
+        "looks"
+      ],
+      "replacements": [
+        "rooks"
+      ]
+    },
+    {
+      "phrases": [
+        "many"
+      ],
+      "replacements": [
+        "mani"
+      ]
+    },
+    {
+      "phrases": [
+        "market"
+      ],
+      "replacements": [
+        "mkt"
+      ]
+    },
+    {
+      "phrases": [
+        "money"
+      ],
+      "replacements": [
+        "marnee"
+      ]
+    },
+    {
+      "phrases": [
+        "month"
+      ],
+      "replacements": [
+        "mth"
+      ]
+    },
+    {
+      "phrases": [
+        "more"
+      ],
+      "replacements": [
+        "moar"
+      ]
+    },
+    {
+      "phrases": [
+        "need"
+      ],
+      "replacements": [
+        "nid"
+      ]
+    },
+    {
+      "phrases": [
+        "never"
+      ],
+      "replacements": [
+        "nvr",
+        "nv"
+      ]
+    },
+    {
+      "phrases": [
+        "night"
+      ],
+      "replacements": [
+        "nite"
+      ]
+    },
+    {
+      "phrases": [
+        "nights"
+      ],
+      "replacements": [
+        "nites"
+      ]
+    },
+    {
+      "phrases": [
+        "now"
+      ],
+      "replacements": [
+        "nao"
+      ]
+    },
+    {
+      "phrases": [
+        "people"
+      ],
+      "replacements": [
+        "ppl",
+        "pple"
+      ]
+    },
+    {
+      "phrases": [
+        "police"
+      ],
+      "replacements": [
+        "polis"
+      ]
+    },
+    {
+      "phrases": [
+        "report"
+      ],
+      "replacements": [
+        "repork"
+      ]
+    },
+    {
+      "phrases": [
+        "rich"
+      ],
+      "replacements": [
+        "lich"
+      ]
+    },
+    {
+      "phrases": [
+        "right"
+      ],
+      "replacements": [
+        "rite"
+      ]
+    },
+    {
+      "phrases": [
+        "shit"
+      ],
+      "replacements": [
+        "shiat",
+        "shiate"
+      ]
+    },
+    {
+      "phrases": [
+        "should"
+      ],
+      "replacements": [
+        "shld",
+        "shd"
+      ]
+    },
+    {
+      "phrases": [
+        "singapore"
+      ],
+      "replacements": [
+        "sg",
+        "sinkapore",
+        "sgp"
+      ]
+    },
+    {
+      "phrases": [
+        "sleep"
+      ],
+      "replacements": [
+        "slp"
+      ]
+    },
+    {
+      "phrases": [
+        "student"
+      ],
+      "replacements": [
+        "stewdent"
+      ]
+    },
+    {
+      "phrases": [
+        "stupid"
+      ],
+      "replacements": [
+        "stoopid"
+      ]
+    },
+    {
+      "phrases": [
+        "that"
+      ],
+      "replacements": [
+        "tat"
+      ]
+    },
+    {
+      "phrases": [
+        "then"
+      ],
+      "replacements": [
+        "den"
+      ]
+    },
+    {
+      "phrases": [
+        "think"
+      ],
+      "replacements": [
+        "tink"
+      ]
+    },
+    {
+      "phrases": [
+        "this"
+      ],
+      "replacements": [
+        "dis",
+        "tis"
+      ]
+    },
+    {
+      "phrases": [
+        "thought"
+      ],
+      "replacements": [
+        "tot"
+      ]
+    },
+    {
+      "phrases": [
+        "through"
+      ],
+      "replacements": [
+        "thru"
+      ]
+    },
+    {
+      "phrases": [
+        "uncle"
+      ],
+      "replacements": [
+        "unker"
+      ]
+    },
+    {
+      "phrases": [
+        "very"
+      ],
+      "replacements": [
+        "bery",
+        "beri"
+      ]
+    },
+    {
+      "phrases": [
+        "video"
+      ],
+      "replacements": [
+        "vid"
+      ]
+    },
+    {
+      "phrases": [
+        "videos"
+      ],
+      "replacements": [
+        "vids"
+      ]
+    },
+    {
+      "phrases": [
+        "week"
+      ],
+      "replacements": [
+        "wk"
+      ]
+    },
+    {
+      "phrases": [
+        "what"
+      ],
+      "replacements": [
+        "wat",
+        "wad",
+        "wht"
+      ]
+    },
+    {
+      "phrases": [
+        "with"
+      ],
+      "replacements": [
+        "wif"
+      ]
+    },
+    {
+      "phrases": [
+        "without"
+      ],
+      "replacements": [
+        "w/o"
+      ]
+    },
+    {
+      "phrases": [
+        "won't"
+      ],
+      "replacements": [
+        "wun"
+      ]
+    },
+    {
+      "phrases": [
+        "won’t"
+      ],
+      "replacements": [
+        "wun"
+      ]
+    },
+    {
+      "phrases": [
+        "wont"
+      ],
+      "replacements": [
+        "wun"
+      ]
+    },
+    {
+      "phrases": [
+        "would"
+      ],
+      "replacements": [
+        "wld"
+      ]
+    },
+    {
+      "phrases": [
+        "year old"
+      ],
+      "replacements": [
+        "yr old"
+      ]
+    },
+    {
+      "phrases": [
+        "years old"
+      ],
+      "replacements": [
+        "yrs old"
+      ]
+    },
+    {
+      "phrases": [
+        "yesterday"
+      ],
+      "replacements": [
+        "ytd"
+      ]
+    },
+    {
+      "phrases": [
+        "your"
+      ],
+      "replacements": [
+        "ur",
+        "yur"
+      ]
+    },
+    {
+      "phrases": [
+        "yourself"
+      ],
+      "replacements": [
+        "yrself"
+      ]
     }
   ],
   "sources": {
@@ -325,6 +1206,26 @@
     },
     "user_additions": [
       "thank you/thanks -> xiexie / xie xie"
-    ]
+    ],
+    "peh_chat_forms": {
+      "author": "Justin Peh",
+      "url": "https://github.com/justinpeh97/singlish-english-nmt/blob/main/data_generate/clean_english_to_singlish.txt",
+      "note": "All 16 chat forms with adapted phrase matching."
+    },
+    "peh_cleanup_forms": {
+      "author": "Justin Peh",
+      "url": "https://github.com/justinpeh97/singlish-english-nmt/blob/main/data_generate/clean_english_replace.txt",
+      "source_blob_sha": "2cfbff4064dd16b466ba77815474494d67ea4d90",
+      "note": "Reversed spelling pairs, excluding punctuation-only changes."
+    },
+    "wiktionary_chat_forms": {
+      "note": "Original phrase rules based on Wiktionary word senses.",
+      "entries": {
+        "save me a seat": "https://en.wiktionary.org/wiki/chope#English",
+        "get the food to go": "https://en.wiktionary.org/wiki/tapao#English",
+        "hang out after class": "https://en.wiktionary.org/wiki/lepak#English",
+        "just make a rough guess": "https://en.wiktionary.org/wiki/agak-agak#English"
+      }
+    }
   }
 }
