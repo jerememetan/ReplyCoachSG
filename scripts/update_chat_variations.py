@@ -26,7 +26,6 @@ PEH_CHAT_RULES = (
     (('sabotage',), 'sabo'),
     (('singaporean',), 'sinkie'),
     (('singaporeans',), 'sinkies'),
-    (('you',), 'chiu'),
 )
 # Reverse the cleanup pairs so their casual spellings become V7 variants.
 PEH_CLEANUP_RULES = (
@@ -133,6 +132,26 @@ WIKTIONARY_CHAT_RULES = (
     ('hang out after class', 'lepak after class', 'lepak'),
     ('just make a rough guess', 'just agak-agak', 'agak-agak'),
 )
+CHAT_PARTICLE_FORMS = {
+    'okay': ('okay lah', 'okay lor', 'hao', 'okay ah', 'okay la'),
+    'ok': ('ok lah', 'ok lor', 'hao', 'ok ah', 'ok la'),
+    'okok': ('okay lah', 'okay lor', 'hao', 'okay ah', 'okay la'),
+    'can': ('can ah', 'can lah', 'can lor'),
+    'sure': ('can', 'can lah', 'hao'),
+    'sounds good': ('sounds good lah', 'can', 'hao'),
+    'no worries': ('no worries lah',),
+    'no problem': ('no problem lah',),
+    "don't worry": ("don't worry lah",),
+    'don’t worry': ('don’t worry lah',),
+    "let's go": ("let's go lah", "let's go ah", "let's go lor"),
+    'let’s go': ('let’s go lah', 'let’s go ah', 'let’s go lor'),
+    'take care': ('take care ah',),
+    'ya': ('ya lah', 'ya lor', 'ya sia', 'ya ah'),
+    'yeah': ('ya lah', 'ya lor'),
+    'nothing much': ('nothing much lah',),
+    'not sure': ('not sure leh', 'not sure sia'),
+    'wait a bit': ('wait a bit ah',),
+}
 
 
 def build_dictionary(existing):
@@ -158,13 +177,18 @@ def build_dictionary(existing):
         merge(phrase, forms)
     for phrase, replacement, _ in WIKTIONARY_CHAT_RULES:
         merge(phrase, [replacement])
-    result.update(version='chat-variations-v2-peh-cleanup-forms',
-        notes='Optional casual abbreviations and selected local-word substitutions. Independent 50% phrase rolls; longest whole phrases; no cascading or particle padding. Ambiguous normalization mappings are not blindly reversed.',
+    for phrase, forms in CHAT_PARTICLE_FORMS.items():
+        merge(phrase, forms)
+    for entry in entries:
+        if 'you' in entry['phrases']:
+            entry['replacements'] = [form for form in entry['replacements'] if form != 'chiu']
+    result.update(version='chat-variations-v3-particle-forms',
+        notes='Casual abbreviations, local wording, and particle forms. Substitutions match the longest whole phrase in the original reply without cascading.',
         sources={'augmentation_abbreviations':source,
             'local_terms':{'path':'data/lexicons/local_terms.json','sha256':sha256(raw).hexdigest(),'reused_canonicals':sorted(imported)},
             'user_additions':['thank you/thanks -> xiexie / xie xie'],
             'peh_chat_forms': {'author': 'Justin Peh', 'url': PEH_SOURCE + 'clean_english_to_singlish.txt',
-                               'note': 'All 16 chat forms with adapted phrase matching.'},
+                               'note': '15 chat forms with adapted phrase matching. The you-to-chiu rule is excluded.'},
             'peh_cleanup_forms': {'author': 'Justin Peh', 'url': PEH_SOURCE + 'clean_english_replace.txt',
                                   'source_blob_sha': '2cfbff4064dd16b466ba77815474494d67ea4d90',
                                   'note': 'Reversed spelling pairs, excluding punctuation-only changes.'},

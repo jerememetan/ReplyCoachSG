@@ -1,6 +1,6 @@
 {
-  "version": "chat-variations-v2-peh-cleanup-forms",
-  "notes": "Optional casual abbreviations and selected local-word substitutions. Independent 50% phrase rolls; longest whole phrases; no cascading or particle padding. Ambiguous normalization mappings are not blindly reversed.",
+  "version": "chat-variations-v3-particle-forms",
+  "notes": "Casual abbreviations, local wording, and particle forms. Substitutions match the longest whole phrase in the original reply without cascading.",
   "conversions": [
     {
       "phrases": [
@@ -113,7 +113,12 @@
       ],
       "replacements": [
         "ok",
-        "okok"
+        "okok",
+        "okay lah",
+        "okay lor",
+        "hao",
+        "okay ah",
+        "okay la"
       ]
     },
     {
@@ -277,8 +282,7 @@
         "you"
       ],
       "replacements": [
-        "u",
-        "chiu"
+        "u"
       ]
     },
     {
@@ -1187,6 +1191,165 @@
       "replacements": [
         "yrself"
       ]
+    },
+    {
+      "phrases": [
+        "ok"
+      ],
+      "replacements": [
+        "ok lah",
+        "ok lor",
+        "hao",
+        "ok ah",
+        "ok la"
+      ]
+    },
+    {
+      "phrases": [
+        "okok"
+      ],
+      "replacements": [
+        "okay lah",
+        "okay lor",
+        "hao",
+        "okay ah",
+        "okay la"
+      ]
+    },
+    {
+      "phrases": [
+        "can"
+      ],
+      "replacements": [
+        "can ah",
+        "can lah",
+        "can lor"
+      ]
+    },
+    {
+      "phrases": [
+        "sure"
+      ],
+      "replacements": [
+        "can",
+        "can lah",
+        "hao"
+      ]
+    },
+    {
+      "phrases": [
+        "sounds good"
+      ],
+      "replacements": [
+        "sounds good lah",
+        "can",
+        "hao"
+      ]
+    },
+    {
+      "phrases": [
+        "no worries"
+      ],
+      "replacements": [
+        "no worries lah"
+      ]
+    },
+    {
+      "phrases": [
+        "no problem"
+      ],
+      "replacements": [
+        "no problem lah"
+      ]
+    },
+    {
+      "phrases": [
+        "don't worry"
+      ],
+      "replacements": [
+        "don't worry lah"
+      ]
+    },
+    {
+      "phrases": [
+        "don’t worry"
+      ],
+      "replacements": [
+        "don’t worry lah"
+      ]
+    },
+    {
+      "phrases": [
+        "let's go"
+      ],
+      "replacements": [
+        "let's go lah",
+        "let's go ah",
+        "let's go lor"
+      ]
+    },
+    {
+      "phrases": [
+        "let’s go"
+      ],
+      "replacements": [
+        "let’s go lah",
+        "let’s go ah",
+        "let’s go lor"
+      ]
+    },
+    {
+      "phrases": [
+        "take care"
+      ],
+      "replacements": [
+        "take care ah"
+      ]
+    },
+    {
+      "phrases": [
+        "ya"
+      ],
+      "replacements": [
+        "ya lah",
+        "ya lor",
+        "ya sia",
+        "ya ah"
+      ]
+    },
+    {
+      "phrases": [
+        "yeah"
+      ],
+      "replacements": [
+        "ya lah",
+        "ya lor"
+      ]
+    },
+    {
+      "phrases": [
+        "nothing much"
+      ],
+      "replacements": [
+        "nothing much lah"
+      ]
+    },
+    {
+      "phrases": [
+        "not sure"
+      ],
+      "replacements": [
+        "not sure leh",
+        "not sure sia"
+      ]
+    },
+    {
+      "phrases": [
+        "wait a bit"
+      ],
+      "replacements": [
+        "wait a bit ah"
+      ]
     }
   ],
   "sources": {
@@ -1210,7 +1373,7 @@
     "peh_chat_forms": {
       "author": "Justin Peh",
       "url": "https://github.com/justinpeh97/singlish-english-nmt/blob/main/data_generate/clean_english_to_singlish.txt",
-      "note": "All 16 chat forms with adapted phrase matching."
+      "note": "15 chat forms with adapted phrase matching. The you-to-chiu rule is excluded."
     },
     "peh_cleanup_forms": {
       "author": "Justin Peh",

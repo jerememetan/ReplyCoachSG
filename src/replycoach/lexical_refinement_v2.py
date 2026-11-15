@@ -1,7 +1,8 @@
-"""Independent per-phrase random edits and ranking against the original reply."""
+"""Sample distinct phrase edits and rank them against the original reply."""
 from dataclasses import dataclass,field,replace
 from functools import lru_cache
 from hashlib import sha256
+from itertools import combinations
 import json,random,re
 from time import perf_counter
 
@@ -10,7 +11,8 @@ from replycoach.schema import Candidate
 from replycoach.shared_ranker import rank_proposals
 
 PROBABILITY=.5
-METHOD='lexical_bernoulli_v2'
+METHOD='lexical_phrase_diversity_v3'
+MAX_VARIANTS = 6
 _PROTECTED=re.compile(r'```[\s\S]*?```|`[^`]*`|https?://\S+|www\.\S+|[\w.+-]+@[\w.-]+\.[\w-]+',re.I)
 
 
@@ -31,35 +33,57 @@ def _dictionary():
     return terms,pattern,sha256(raw).hexdigest()
 
 
-def randomize_local_text(reply,*,rng):
-    """One independent 50% roll per eligible original phrase occurrence."""
+def _phrase_matches(reply):
     if not isinstance(reply,str) or not reply.strip():raise ValueError('reply must be nonempty')
     terms,pattern,_=_dictionary()
     protected=[m.span() for m in _PROTECTED.finditer(reply)]
-    pieces=[];position=0
     for match in pattern.finditer(reply):
         if any(match.start()<end and match.end()>start for start,end in protected):continue
-        if rng.random()>=PROBABILITY:continue
-        replacement=rng.choice(terms[' '.join(match.group().split()).casefold()])
-        if match.group().isupper():replacement=replacement.upper()
-        elif match.group()[0].isupper():replacement=replacement[0].upper()+replacement[1:]
-        pieces.extend([reply[position:match.start()],replacement]);position=match.end()
-    return ''.join([*pieces,reply[position:]])
+        phrase = ' '.join(match.group().split()).casefold()
+        yield match, phrase, terms[phrase]
 
 
-def generate_lexical_variants(reply,*,rng=None):
-    """Return up to three distinct changed replies from the bounded sampling run.
+def _apply_edits(reply, edits):
+    for match, replacement in sorted(edits, key=lambda edit: edit[0].start(), reverse=True):
+        if match.group().isupper():
+            replacement = replacement.upper()
+        elif match.group()[0].isupper():
+            replacement = replacement[0].upper() + replacement[1:]
+        reply = reply[:match.start()] + replacement + reply[match.end():]
+    return reply
 
-    Rejecting unchanged/duplicate attempts conditions the final distribution;
-    50% is the per-attempt edit probability, not a final-output edit quota.
-    """
+
+def randomize_local_text(reply,*,rng):
+    """One independent 50% roll per eligible original phrase occurrence."""
+    return _apply_edits(reply, [(match, rng.choice(forms)) for match, _, forms in
+                               _phrase_matches(reply) if rng.random() < PROBABILITY])
+
+
+def generate_lexical_variants(reply, *, rng=None, limit=MAX_VARIANTS):
+    """Prefer different phrases, then combine edits or use another spelling."""
     rng=rng if rng is not None else random.Random()
-    variants={};original=' '.join(reply.split()).casefold()
-    for _ in range(64):
-        text=randomize_local_text(reply,rng=rng);key=' '.join(text.split()).casefold()
-        if key!=original:variants.setdefault(key,text)
-        if len(variants)==3:break
-    return list(variants.values())
+    matches = list(_phrase_matches(reply))
+    by_phrase = {}
+    for match, phrase, forms in matches:
+        by_phrase.setdefault(phrase, []).append((match, forms))
+    edits = []
+    groups = list(by_phrase.values())
+    for occurrences in rng.sample(groups, k=min(3, len(groups))):
+        match, forms = rng.choice(occurrences)
+        edits.append((match, rng.choice(forms)))
+    candidates = [_apply_edits(reply, [edit]) for edit in edits]
+    if len(edits) == 2:
+        candidates.append(_apply_edits(reply, edits))
+    if len(edits) >= 3:
+        candidates.extend(_apply_edits(reply, pair) for pair in combinations(edits, 2))
+    alternatives = [_apply_edits(reply, [(match, form)]) for match, _, forms in matches
+                    for form in forms]
+    rng.shuffle(alternatives)
+    candidates.extend(alternatives)
+    unique = {}
+    for text in candidates:
+        unique.setdefault(' '.join(text.split()).casefold(), text)
+    return list(unique.values())[:limit]
 
 
 @dataclass
@@ -85,7 +109,7 @@ class LexicalRefinement:
         return self.ranking.local if self.complete and self.ranking is not None else self.original
 
     def to_dict(self):
-        return dict(record_type='v7_lexical_refinement',method=METHOD,replacement_probability=PROBABILITY,
+        return dict(record_type='v7_lexical_refinement',method=METHOD,
             conversion_lexicon_sha256=self.lexicon_sha256,complete=self.complete,
             status='failed' if self.error else 'skipped' if self.skipped_reason else 'completed',
             skipped_reason=self.skipped_reason,error=self.error,original=self.original.to_dict(),

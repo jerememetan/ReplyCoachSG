@@ -45,7 +45,7 @@ def test_chat_rules_adapted_from_peh_preserve_meaning():
     from test_lexical_refinement_v2 import Rolls
 
     reply = 'I don’t know. We only need one. You can also do it like that.'
-    assert randomize_local_text(reply, rng=Rolls([0, 0, 1, 1, 0, 0])) == (
+    assert randomize_local_text(reply, rng=Rolls([0, 0, 1, 1, 1, 0, 0])) == (
         'I dunno. We oni need one. You can oso do it liddat.'
     )
     assert randomize_local_text('I like that.', rng=Rolls([0, 0])) == 'I rike tat.'
@@ -63,7 +63,8 @@ def test_wiktionary_phrases_match_their_intended_context():
         'Save the file. Can we get it to go?': 'Save the file. Can we geddit to go?',
     }
     for original, expected in examples.items():
-        assert randomize_local_text(original, rng=Rolls([0])) == expected
+        rolls = [1, 0] if 'Can we' in original else [0]
+        assert randomize_local_text(original, rng=Rolls(rolls)) == expected
 
 
 def test_remaining_peh_forms_are_available_in_the_live_dictionary():
@@ -79,12 +80,14 @@ def test_remaining_peh_forms_are_available_in_the_live_dictionary():
         'english': 'engrish',
         'singaporean': 'sinkie',
         'singaporeans': 'sinkies',
-        'you': 'chiu',
         'government': 'gahment',
     }
     for phrase, replacement in expected.items():
         assert replacement in terms[phrase]
-    assert 'u' in terms['you']
+    assert terms['you'] == ('u',)
+    assert builder().build_dictionary({'conversions': [
+        {'phrases': ['you'], 'replacements': ['u', 'chiu']},
+    ]})['conversions'][0]['replacements'] == ['u']
 
 
 def test_peh_cleanup_gives_local_spellings_in_reverse():
