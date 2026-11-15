@@ -10,7 +10,7 @@ from replycoach.io import ROOT, load_items, write_jsonl
 
 
 @pytest.fixture
-def demo_test(monkeypatch, fake_encoder, tmp_path):
+def demo_test(monkeypatch, fake_encoder, tmp_path, request):
     # Missing-provider tests must not depend on a teammate's installed weights.
     monkeypatch.setenv("REPLYCOACH_V4_CHECKPOINT", str(tmp_path / "missing_v4.pt"))
     monkeypatch.setenv("V5_CHECKPOINT", str(tmp_path / "missing_v5"))
@@ -24,7 +24,8 @@ def demo_test(monkeypatch, fake_encoder, tmp_path):
     monkeypatch.setattr(systems, "log_event", lambda *args, **kwargs: None)
     if cached_generator:
         cached_generator.clear()
-    app = AppTest.from_file(str(ROOT / "src/replycoach/demo_app.py"), default_timeout=20).run()
+    entry_point = getattr(request, "param", "demo_experiments.py")
+    app = AppTest.from_file(str(ROOT / "src/replycoach" / entry_point), default_timeout=20).run()
     yield app
     demo_resources.get_bm25.clear()
     cached_minilm.clear()
@@ -316,8 +317,6 @@ def enable_all_models(app, monkeypatch, stub_generator):
     from replycoach import all_models
     from replycoach.shared_ranker import PairScore
 
-    assert 'All models (experimental)' in app.selectbox(key='system_mode').options
-
     class Scorer:
         identity = {'model': 'test-only', 'revision': 'fixed'}
 
@@ -336,8 +335,32 @@ def enable_all_models(app, monkeypatch, stub_generator):
     monkeypatch.setattr(all_models, 'log_event', lambda *args, **kwargs: None)
     from replycoach import sealion_comparison
     monkeypatch.setattr(sealion_comparison, 'log_event', lambda *args, **kwargs: None)
-    app.selectbox(key='system_mode').select('All models (experimental)').run()
+    if app.selectbox:
+        app.selectbox(key='system_mode').select('All models (experimental)').run()
     return app
+
+
+@pytest.mark.parametrize('demo_test', ['demo_app.py'], indirect=True)
+def test_final_demo_uses_fixed_pipeline_and_collapses_details(demo_test, monkeypatch, stub_generator):
+    assert not demo_test.exception
+    assert not demo_test.selectbox
+    assert demo_test.button(key='compare').label == 'Suggest two replies'
+    select_memory = pipeline.select_memory
+    modes = []
+
+    def record_mode(session, message, *, mode):
+        modes.append(mode)
+        return select_memory(session, message, mode=mode)
+
+    monkeypatch.setattr(pipeline, 'select_memory', record_mode)
+    app = compare_in_app(enable_all_models(demo_test, monkeypatch, stub_generator))
+    output = app.session_state.last_all_models_result
+    assert modes == ['M2']
+    assert set(output.proposals) == {'BM25', 'MiniLM', 'V4', 'V5'}
+    assert suggestion_keys(app) == {'select_all_standard', 'select_all_local'}
+    details, = app.expander
+    assert details.label == 'Details' and not details.proto.expanded
+    assert len(details.dataframe[0].value) == 8
 
 
 def test_all_models_shows_eight_proposals_and_click_only_fills_composer(demo_test, monkeypatch, stub_generator):
@@ -444,7 +467,7 @@ def test_sealion_failure_preserves_comparison_and_retry_restores_final_replies(d
 @pytest.mark.parametrize(('local_reply', 'candidate_count'), [
     ('Eat!', 2),
     ('Please!', 3),
-    ('Never mind, please meet tomorrow.', 4),
+    ('Never mind, please meet tomorrow.', 7),
 ])
 def test_local_wording_refinement_only_scores_sealion_variants(
     demo_test, monkeypatch, stub_generator, local_reply, candidate_count,
@@ -470,9 +493,9 @@ def test_local_wording_refinement_only_scores_sealion_variants(
     assert app.button(key='select_all_local').label==local_reply
     assert len(calls)==1 and len(calls[0])==candidate_count
     output=app.session_state.last_all_models_result.to_dict()
-    assert output['v7']['method']=='lexical_bernoulli_v2'
+    assert output['v7']['method']=='lexical_phrase_diversity_v3'
     assert output['v7']['candidate_count']==candidate_count
-    assert any(e.label=='Local wording candidates' for e in app.expander)
+    assert any(h.value=='Local wording candidates' for h in app.subheader)
 
 
 def test_local_ranker_error_keeps_sealion_and_retry_recovers(demo_test,monkeypatch,stub_generator):

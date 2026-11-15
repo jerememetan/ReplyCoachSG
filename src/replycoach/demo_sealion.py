@@ -6,9 +6,7 @@ import streamlit as st
 def render_sealion_comparison(output,select_reply):
     st.divider()
     st.header('Selected replies')
-    if output.complete:
-        st.caption('4/4 models compared · SEA-LION 3B supplies both base replies')
-    elif len(output.available_sources)<4:
+    if len(output.available_sources)<4:
         st.warning(f'Partial comparison: {len(output.available_sources)}/4 models available.')
     refinement=output.local_refinement
     if refinement and refinement.error:
@@ -30,22 +28,23 @@ def render_sealion_comparison(output,select_reply):
                     if refinement.skipped_reason:st.caption(refinement.skipped_reason)
                     elif refinement.complete:
                         st.caption('Local refinement kept the original.' if candidate.candidate_text==refinement.original.candidate_text
-                                   else 'Local wording refined from SEA-LION using V7.')
-        st.caption('Standard stays unchanged. Other models are shown for comparison; Qwen only ranks SEA-LION Local wording variants.')
-    st.subheader('Model proposals')
-    rows=[]
-    for model,candidates in output.proposals.items():
-        for candidate in candidates:
-            fallback=candidate.meta.get('candidate_source',candidate.source)=='fallback'
-            rows.append({'Model':model,'Style':candidate.style.title(),'Reply':candidate.candidate_text,
-                'Origin':'Safety fallback' if fallback else 'Retrieved' if model in {'BM25','MiniLM'} else 'Generated',
-                'Base reply':model=='V5'})
-    if rows:st.dataframe(rows,use_container_width=True,hide_index=True)
-    with st.expander('Generation details'):
+                                   else 'Local wording refined with V7 v3.')
+    with st.expander('Details', expanded=False):
+        st.subheader('Model proposals')
+        if output.complete:
+            st.caption('4/4 models compared · SEA-LION 3B supplies both base replies')
+        rows=[]
+        for model,candidates in output.proposals.items():
+            for candidate in candidates:
+                fallback=candidate.meta.get('candidate_source',candidate.source)=='fallback'
+                rows.append({'Model':model,'Style':candidate.style.title(),'Reply':candidate.candidate_text,
+                    'Origin':'Safety fallback' if fallback else 'Retrieved' if model in {'BM25','MiniLM'} else 'Generated',
+                    'Base reply':model=='V5'})
+        if rows:st.dataframe(rows,use_container_width=True,hide_index=True)
         st.write('Source time (seconds):',{k:round(v,2) for k,v in output.source_seconds.items()})
-    if refinement:
-        with st.expander('Local wording candidates'):
-            st.caption('Independent 50% phrase edits; no added particles. Qwen scores are ranking signals, not confidence percentages.')
+        if refinement:
+            st.subheader('Local wording candidates')
+            st.caption('V7 tries different phrase edits, including forms with Singlish particles. Higher Qwen scores place a reply higher in the ranking.')
             if refinement.skipped_reason:st.caption(refinement.skipped_reason)
             scores={c.candidate_text:c.score for c in refinement.ranking.candidates} if refinement.ranking else {}
             st.dataframe([{'Candidate':'Original' if i==0 else f'Variation {i}','Reply':text,
@@ -54,6 +53,6 @@ def render_sealion_comparison(output,select_reply):
                 for i,text in enumerate([refinement.original.candidate_text,*refinement.variations])],
                 use_container_width=True,hide_index=True)
             st.caption(f'Wording sampling: {refinement.generation_seconds*1000:.2f} ms; Local reranking: {refinement.ranking_seconds:.2f} seconds.')
-    st.download_button('Download all-model result (JSON)',
-        json.dumps(output.to_dict(),ensure_ascii=False,indent=2,allow_nan=False),
-        file_name='replycoach_all_models.json',mime='application/json',key='download_all_models')
+        st.download_button('Download all-model result (JSON)',
+            json.dumps(output.to_dict(),ensure_ascii=False,indent=2,allow_nan=False),
+            file_name='replycoach_all_models.json',mime='application/json',key='download_all_models')

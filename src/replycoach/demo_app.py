@@ -1,4 +1,4 @@
-"""Interactive BM25/MiniLM comparison with a display-only chat preview."""
+"""ReplyCoach demo and experimental comparisons with a shared chat preview."""
 
 from __future__ import annotations
 
@@ -157,7 +157,7 @@ def render_system(output: SystemResult, bank) -> None:
     st.write("**Selected memory:**", output.prepared.memory or "(none)")
 
 
-def main() -> None:
+def main(*, final_demo: bool = True) -> None:
     st.set_page_config(page_title="Reply Coach", layout="wide")
     st.markdown(
         """
@@ -218,40 +218,35 @@ def main() -> None:
     st.session_state.setdefault("last_system_result", None)
     st.session_state.setdefault("last_all_models_result", None)
 
-    with st.expander("System settings"):
-        system_mode = st.selectbox(
-            "System mode", ["Retrieval comparison", "All models (experimental)", "Retrieval only", "Generator only", "Hybrid"],
-            key="system_mode",
-        )
-        retrieval_method, generator_provider = "BM25", "V4 (attention-RNN)"
-        if system_mode == "All models (experimental)":
-            st.caption("Compare BM25, MiniLM, V4 and V5. Standard comes directly from SEA-LION; Local gets optional wording refinement.")
-            st.caption("V5: SEA-LION 3B · selected from the three-transformer validation comparison. Historical evaluations used the original mT5.")
-            st.caption("First use loads local models; later requests reuse them.")
-            st.caption("Each eligible Local phrase has a 50% chance of changing per attempt. Qwen ranks any distinct variations alongside the original SEA-LION reply, up to three variants.")
-        elif system_mode != "Retrieval comparison":
-            if system_mode != "Generator only":
-                retrieval_method = st.selectbox("Retrieval method", ["BM25", "MiniLM"], key="retrieval_method")
-            if system_mode in {"Generator only", "Hybrid"}:
-                generator_provider = st.selectbox(
-                    "Generator", ["V4 (attention-RNN)", "V5 (mT5/LoRA)",
-                                  "mT5 A (new handoff)", "SEA-LION 3B (new handoff)"], key="generator_provider",
-                )
-                st.caption("Trained-model handoff required: Role C for V4, Role D for V5. See docs/role_handoffs.md.")
-                if "new handoff" in generator_provider:
-                    st.caption("Experimental transformer handoff. Uses your laptop GPU when available. First use verifies and loads the bundle; later requests reuse it. Switching models releases the previous model to make room.")
-                if generator_provider.startswith("SEA-LION"):
-                    st.caption("SEA-LION runs locally in BF16 on a compatible GPU. CPU weights need roughly 13 GB plus working memory. The school GPU cluster is not required for local inference.")
-
-    with st.expander("Reply bank settings"):
-        bank_choice = st.selectbox("Reply bank", ["Pilot examples (drafts)", "Reviewed development file"], index=1, key="bank_choice")
-        development_path = ""
-        if bank_choice == "Reviewed development file":
-            development_path = st.text_input(
-                "Development JSONL path", value="data/dev/train.jsonl", key="development_path",
-                help="Only completed, independently reviewed dev records are allowed. Test and unassigned records are rejected.",
+    system_mode = "All models (experimental)"
+    retrieval_method, generator_provider = "BM25", "V4 (attention-RNN)"
+    bank_choice, development_path = "Reviewed development file", "data/dev/train.jsonl"
+    if not final_demo:
+        with st.expander("System settings"):
+            system_mode = st.selectbox(
+                "System mode", ["Retrieval comparison", "All models (experimental)", "Retrieval only", "Generator only", "Hybrid"],
+                key="system_mode",
             )
-        st.caption("MiniLM runs locally. The first comparison may download the public model weights.")
+            if system_mode == "All models (experimental)":
+                st.caption("V5: SEA-LION 3B supplies the base replies. V7 v3 refines Light Local wording.")
+            elif system_mode != "Retrieval comparison":
+                if system_mode != "Generator only":
+                    retrieval_method = st.selectbox("Retrieval method", ["BM25", "MiniLM"], key="retrieval_method")
+                if system_mode in {"Generator only", "Hybrid"}:
+                    generator_provider = st.selectbox(
+                        "Generator", ["V4 (attention-RNN)", "V5 (mT5/LoRA)",
+                                      "mT5 A (new handoff)", "SEA-LION 3B (new handoff)"], key="generator_provider",
+                    )
+                    st.caption("Trained generators require checkpoints. See the README for setup.")
+        with st.expander("Reply bank settings"):
+            bank_choice = st.selectbox("Reply bank", ["Pilot examples (drafts)", "Reviewed development file"], index=1, key="bank_choice")
+            development_path = ""
+            if bank_choice == "Reviewed development file":
+                development_path = st.text_input(
+                    "Development JSONL path", value="data/dev/train.jsonl", key="development_path",
+                    help="Only completed, independently reviewed dev records are allowed. Test and unassigned records are rejected.",
+                )
+            st.caption("MiniLM runs locally. The first comparison may download the public model weights.")
     bank = None
     try:
         if bank_choice == "Reviewed development file":
@@ -261,7 +256,8 @@ def main() -> None:
             bank = load_reply_bank(path if path.is_absolute() else ROOT / path)
         else:
             bank = load_reply_bank()
-        st.caption(f"Reply bank: {bank.label} · {len(bank.items)} examples · {bank.path.name}")
+        if not final_demo:
+            st.caption(f"Reply bank: {bank.label} · {len(bank.items)} examples · {bank.path.name}")
     except (OSError, ValueError) as exc:
         st.error(f"Cannot load reply bank: {exc}")
 
@@ -275,7 +271,7 @@ def main() -> None:
             help="One message per line. Start a line with You: or Peer: to show its sender in the preview.",
         )
         message = st.text_input("Incoming message", "eh later go makan? can 吃饭 then library", key="incoming")
-        memory_mode = st.selectbox("Memory", ["M2", "M1", "M0"], key="memory_mode")
+        memory_mode = "M2" if final_demo else st.selectbox("Memory", ["M2", "M1", "M0"], key="memory_mode")
         run = st.button("Compare reply suggestions" if system_mode == "Retrieval comparison" else "Suggest two replies",
                         type="primary", key="compare", disabled=bank is None or not message.strip())
 
