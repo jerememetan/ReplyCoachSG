@@ -1,4 +1,4 @@
-# V7 v2: random wording refinement of SEA-LION Local
+# V7 v3: wording refinement of SEA-LION Local
 
 On 9 November 2026 the user chose to refine SEA-LION Local directly. Standard
 remains the original SEA-LION reply. The other three models remain comparison
@@ -7,27 +7,29 @@ sources and cannot replace either base reply.
 ## How it works
 
 1. Generate the original Standard/Local pair from SEA-LION.
-2. For each eligible whole phrase in the original Local text, independently roll
-   a fixed 50% chance of conversion. If converting, randomly pick an allowed
-   replacement from `data/lexicons/chat_variations.json`.
-3. Sample up to three distinct changed replies. Discard unchanged and duplicate
-   attempts. Always retain the original as a candidate.
+2. Find eligible whole phrases in the original Local text. Particle forms such
+   as `can ah` are eligible wherever their source phrase matches.
+3. Sample a single edit for up to three distinct phrases, then try
+   two-phrase combinations and other single edits. Keep up to six distinct
+   variants alongside the original.
 4. If there is at least one variant, Qwen + DailyDialog ranks the original and
    the available variants using its existing conversation and style criteria.
    The original can win.
 
-For example, `Never mind, please meet tomorrow.` can yield `Nvm, please meet
-tmr.`, `Never mind, pls meet tomorrow.`, or combinations of these edits.
-Every occurrence rolls separately, including repeated words. 50% applies before
-rejecting duplicate/unchanged attempts; it does not mean exactly half the final
-reply changes, or that the reranker chooses edited candidates half the time.
+For example, `Please eat.` can yield `Pls eat.`, `Please makan.`, and
+`Pls makan.`. `Okay, meet at 7.` can yield `Okay lor, meet at 7.`,
+`Okay ah, meet at 7.`, or `Okay la, meet at 7.`. `Ok` has the same particle options.
+`Can meet at 7?` can yield `Can ah meet at 7?`, `Can lah meet at 7?`, and
+`Can lor meet at 7?`. Qwen ranks these candidates alongside the original.
 
-The dictionary contains **143 conversion groups / 144 input phrases**, including
+Common chat phrases also have particle variants, such as `no worries lah`,
+`let's go lah`, `take care ah`, and `not sure leh`.
+
+The dictionary contains **160 conversion groups / 161 input phrases**, including
 never mind/nevermind → nvm, tomorrow → tmr/tmrw, please → pls/plz, you → u,
 remember → rmb, already → alr, eat → makan, invite → jio, sorry → paiseh, and
 thank you/thanks → xiexie / xie xie as additional options. Abbreviations make
-text casual; they are not alone evidence of Singlish authenticity. No particles
-are automatically appended.
+text casual and by themselves provide limited evidence of Singlish authenticity.
 
 `scripts/update_chat_variations.py` reuses the existing augmentation
 `abbreviation_snapshot()` allowlist from `reranker_packaging.py`, whose original
@@ -38,9 +40,10 @@ the existing local-term lexicon, with its source hash. The source tables remain
 unchanged. Rerun this script to refresh the merged dictionary, then restart the
 demo to clear its cached dictionary.
 
-The refresh script includes all 16 replacement forms from Justin Peh's
-English-to-Singlish preprocessing rules. `because → cos` was already present,
-and `you` can also become `chiu`. Contractions support straight and curly
+The refresh script includes 15 replacement forms from Justin Peh's
+English-to-Singlish preprocessing rules. `because → cos` was already present.
+Following review of the 60-conversation replay, `you → u` is the only
+replacement for `you`. Contractions support straight and curly
 apostrophes and the source's unpunctuated spellings. V7 restricts `liddat` to
 `do it like that` so it preserves the meaning of replies such as `I like that`.
 Some source forms, including `cheena`, `engrish`, and `sinkie`, can read as mocking.
@@ -73,8 +76,8 @@ The retrieval/normalization lexicon is separate and unchanged.
 
 ## Short replies and errors
 
-Sampling is bounded to 64 attempts. For example, `Please!` has two permitted
-shortenings, so Qwen can rank those two against the original. With zero variants,
+For example, `Please!` has two permitted shortenings, so Qwen can rank those
+two against the original. With zero variants,
 the app keeps the original, shows the skipped explanation, and skips loading Qwen.
 
 If dictionary loading or Qwen fails, keep the original Local reply, show the
@@ -84,7 +87,7 @@ proposals without substituting another final-output model.
 ## Trace and evaluation boundary
 
 The JSON export identifies `sealion_standard_lexical_v7_local`, with method
-`lexical_bernoulli_v2`, probability, dictionary hash, original/variants/selected
+`lexical_phrase_diversity_v3`, dictionary hash, original/variants/selected
 reply, Qwen identity/scores, timings, status and any skip/error. The UI's Local
 wording candidates panel shows the same choice. Live sampling is unseeded;
 tests/research callers can inject a seed for reproducibility. No new user setting,
@@ -95,3 +98,6 @@ research/evaluation. The [isolated V7 v2 Local evaluation](evaluation/v7_v2_loca
 reports the SEA-LION-anchored method on the same 60 revisited cases with one fixed
 draw per conversation and the same Gemma rubric and personas. That run required
 three distinct variants to rank. Its scores apply to that evaluated policy.
+The [V7 v3 evaluation](evaluation/v7_v3_local_20261115.md) reports the
+final expanded-particle replay, the intermediate standalone-only run, and the
+separate development experiment with reviewed replies.

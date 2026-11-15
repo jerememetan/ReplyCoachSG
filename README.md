@@ -26,17 +26,25 @@ python3 -m venv .venv
 ./.venv/bin/python -m streamlit run src/replycoach/demo_app.py --server.fileWatcherType none
 ```
 
-Open [http://localhost:8501](http://localhost:8501). The default **Retrieval
-comparison** runs BM25 and MiniLM against the **Reviewed development file**
-(`data/dev/train.jsonl`, 190 examples). This mode works from the repository
-without the private checkpoint handoff. MiniLM may need internet access to
-download its public embedding model on first use. For BM25 only, select
-**Retrieval only** and choose **BM25**.
+Open [http://localhost:8501](http://localhost:8501). The app opens in the final
+pipeline with **M2** memory and the **Reviewed development file**
+(`data/dev/train.jsonl`, 190 examples). Set up the presentation checkpoints
+below before generating replies.
 
 ## Run the full presentation demo
 
-The full comparison uses weights distributed separately by the project team.
-Copy or extract the **complete** checkpoints into these locations:
+Download the [demo checkpoint archive](https://drive.google.com/file/d/15UAlPPn2LGflhzIoQwglMkDf6mtldctn/view?usp=sharing)
+(`ReplyCoachSG-demo-checkpoints.zip`, 7.68 GB). Extract it from the repository
+root (the folder containing `pyproject.toml`). On Windows PowerShell, run the
+following command from that folder.
+
+```powershell
+tar.exe -xf "$env:USERPROFILE\Downloads\ReplyCoachSG-demo-checkpoints.zip"
+```
+
+Adjust the archive path if you saved it somewhere else. The archive already
+contains the `artifacts/` directory structure. If you received the checkpoints
+individually, place the **complete** files or folders at these locations:
 
 | Checkpoint | Location |
 | --- | --- |
@@ -63,12 +71,11 @@ installing dependencies or replacing a checkpoint. The first request loads
 the models, so allow extra time for that request. Gemma and Ollama are used
 for offline grading and are optional for running the demo.
 
-1. Under **System settings**, choose **All models (experimental)**.
-2. Keep **Memory** on **M2** and **Reply bank** on **Reviewed development file**.
-3. Enter the **Recent conversation** and **Incoming message**. Use one turn per
+1. Enter the **Recent conversation** and **Incoming message**. Use one turn per
    line in the conversation, prefixed with `You:` or `Peer:`.
-4. Click **Suggest two replies**. Open **Local wording candidates** to see
-   which variants were scored. Click a reply to preview it in the composer.
+2. Click **Suggest two replies**, then click a reply to preview it in the composer.
+3. Open **Details** to inspect the model proposals and the Qwen scores under
+   **Local wording candidates**.
 
 Try this example:
 
@@ -87,25 +94,39 @@ please be reminded that you have to return the equipment by tomorrow 9pm. If not
 ```
 
 **Standard** comes directly from SEA-LION 3B. **Light Local** starts from its
-Local reply. V7 v2 tries dictionary substitutions such as `eat` → `makan` or
-`tomorrow` → `tmr`. Qwen ranks up to three distinct variants alongside the
-original whenever at least one is available. With zero variants, the app keeps
-the original directly. The comparison
+Local reply. V7 v3 tries edits to different phrases, including particle forms
+such as `can lah` and `okay lor`. Qwen ranks up to six distinct variants
+alongside the original whenever at least one is available. With zero variants,
+the app keeps the original. The comparison
 table also shows BM25, MiniLM and V4 proposals. If SEA-LION fails to load, the
 table can still show available proposals and the app reports the model error.
-[V7 v2 method and fallback behavior](docs/v7_random_lexical.md)
+[V7 v3 method and fallback behavior](docs/v7_random_lexical.md)
+
+## Try retrieval without the presentation checkpoints
+
+After installing `.[demo]`, launch the separate comparison app. On Windows:
+
+```powershell
+.\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_experiments.py --server.fileWatcherType none
+```
+
+On macOS or Linux, use `./.venv/bin/python`. The app opens in **Retrieval
+comparison** with BM25 and MiniLM. MiniLM may need internet access for its
+public embedding model on first use. For BM25 alone, choose **Retrieval only**
+and select **BM25**. This entry point also keeps the experimental controls for
+comparing generators, memory settings, and reply banks.
 
 ## Results
 
 | Final demo output | Appropriateness /5 | Naturalness /5 | Style fit /5 | Would send |
 | --- | ---: | ---: | ---: | ---: |
 | Standard · V5 SEA-LION | 4.555 | 4.975 | 5.000 | 88.0% |
-| Light Local · V7 v2 | 4.603 | 4.908 | 3.947 | 81.2% |
+| Light Local · V7 v3 | 4.655 | 4.948 | 4.393 | 86.5% |
 
 These are simulated ratings from ten Gemma personas on 60 previously inspected
-test conversations. The Local follow-up used one reproducible wording sample
-per conversation and required three distinct variants before ranking.
-[Full V7 v2 evaluation and comparison table](docs/evaluation/v7_v2_local_20261109.md)
+test conversations. The Local replay used one reproducible candidate draw per
+conversation with the expanded particle mappings.
+[V7 v3 evaluation and comparison with V7 v2](docs/evaluation/v7_v3_local_20261115.md)
 
 - [Transformer selection on 50 validation conversations](docs/evaluation/transformer_selection_20261108.md)
 - [Six-system evaluation including historical V7 v1](docs/evaluation/current_pipeline_20261108.md)
@@ -113,6 +134,28 @@ per conversation and required three distinct variants before ranking.
 - [Follow-up Standard V6 fine-tuning](docs/evaluation/qwen_standard_continuation_20261113.md)
 - [Architecture and version history](docs/architecture.md)
 - [Evaluation entry points and data splits](docs/final_test_evaluation.md)
+
+## Preprocessing, training, and evaluation
+
+The prepared files in `data/dev/` and `data/test/` contain 190 training,
+50 validation, and 60 test conversations. The demo uses the training file as
+its reply bank. The test split is used for evaluation.
+
+- **Regenerate the split.** Use the [pinned research snapshot](https://github.com/jerememetan/ReplyCoachSG/tree/8c50579fc675f06db2051bdaa58345a82208e2ad)
+  in a separate folder. From its root, with the project dependencies installed,
+  run `python scripts/data-split/make_split.py --items-dir data/authoring --out-dir .`
+  with that environment's Python. The included manifest fixes the assignments.
+- **Training.** The research snapshot contains the [RNN training entry point](https://github.com/jerememetan/ReplyCoachSG/blob/8c50579fc675f06db2051bdaa58345a82208e2ad/scripts/run_role_c.py),
+  [RNN reproduction instructions](https://github.com/jerememetan/ReplyCoachSG/blob/8c50579fc675f06db2051bdaa58345a82208e2ad/roles/C_rnn_attention/EXPERIMENT_REPORT.md#reproduction),
+  [V6 Qwen training notebook and input-bundle instructions](https://github.com/jerememetan/ReplyCoachSG/blob/8c50579fc675f06db2051bdaa58345a82208e2ad/docs/dailydialog_reranker_training.md#run-it-on-kaggle),
+  and the [SEA-LION adaptation recipe](https://github.com/jerememetan/ReplyCoachSG/blob/8c50579fc675f06db2051bdaa58345a82208e2ad/roles/D_transformer/sealion_repair25_MODEL_CARD.md).
+  Exact retraining requires the original training inputs and starting checkpoints.
+  The demo checkpoint archive supplies the inference artifacts.
+- **Evaluation.** The [evaluation guide](docs/final_test_evaluation.md) documents
+  `scripts/run_final_test.py --current-pipeline`, which runs the historical
+  six-system comparison with V7 v1. The [V7 v3 evaluation](docs/evaluation/v7_v3_local_20261115.md)
+  reports the subsequent Local-only replay. Re-running that follow-up requires
+  the saved SEA-LION outputs, the matching Gemma judge, and the replay inputs.
 
 ## Repository map
 

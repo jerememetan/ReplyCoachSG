@@ -1,11 +1,12 @@
 # New transformer bundles in the demo
 
 The November 8 transformer handoff is available as two separate generator choices:
-**mT5 A (new handoff)** and **SEA-LION 3B (new handoff)**. In Streamlit, select
+**mT5 A (new handoff)** and **SEA-LION 3B (new handoff)**. Launch
+`src/replycoach/demo_experiments.py` through Streamlit, select
 **Generator only** or **Hybrid**, then choose the model. Following the completed
 three-model validation comparison, **All models** uses **SEA-LION 3B** for its
 V5 slot. The final demo uses SEA-LION directly for Standard and applies
-[V7 v2 wording refinement](v7_random_lexical.md) to SEA-LION Local.
+[V7 v3 wording refinement](v7_random_lexical.md) to SEA-LION Local.
 The explicit original V5 generator option and frozen evaluation entry points
 retain mT5. Historical evaluation results have not been relabelled or rerun.
 See [all metrics, flags and paired comparisons](evaluation/transformer_selection_20261108.md).
@@ -95,7 +96,8 @@ school cluster for this local setup.
 
 The interactive V5 slot supplies SEA-LION proposals with `generation_source`
 set to `SEALION`. The table retains the version label V5. The final demo uses
-Qwen for the four-candidate Local refinement when three variants are available.
+Qwen to rank up to six Local variants alongside the original when at least one
+variant is available.
 Missing SEA-LION weights produce an explicit V5 source error.
 
 Two live requests exercised the 190-example bank, BM25, MiniLM, V4,
