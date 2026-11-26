@@ -1,0 +1,282 @@
+{
+    "title":  "Table 3.2. V3/V4 development validation diagnostics and distillation results",
+    "experiment_dates":  [
+                             "2026-10-20",
+                             "2026-11-14",
+                             "2026-11-20"
+                         ],
+    "validation_conversations":  50,
+    "outputs_per_model":  100,
+    "seed":  425,
+    "default_v4_replaced":  false,
+    "distillation_test_accessed":  false,
+    "models":  {
+                   "v3":  {
+                              "validation_token_ce":  4.202263035833262,
+                              "standard_token_f1":  0.13359657336127925,
+                              "local_token_f1":  0.08790129804835686,
+                              "different_style_pairs":  28,
+                              "vocab_size":  5251,
+                              "checkpoint_sha256":  "4ce9887b4c7312847af1bdd5d5f84f17c1090c2b6600cb1185488804d3e4a999",
+                              "ce_device":  "cpu"
+                          },
+                   "original":  {
+                                    "validation_token_ce":  4.1619237508865625,
+                                    "standard_token_f1":  0.11675485625485627,
+                                    "local_token_f1":  0.09179392004624204,
+                                    "different_style_pairs":  34,
+                                    "vocab_size":  5251,
+                                    "checkpoint_sha256":  "a8b4f0e1f554b86926959ce0a5df4c7a297bdaa71fe03ecf91e67afcb93d900f",
+                                    "ce_device":  "cuda",
+                                    "input_format":  "legacy-flat-v1",
+                                    "reproduced_outputs":  100
+                                },
+                   "round1":  {
+                                  "validation_token_ce":  4.150293510258607,
+                                  "standard_token_f1":  0.1072295016644862,
+                                  "local_token_f1":  0.09220746900158665,
+                                  "different_style_pairs":  35,
+                                  "vocab_size":  5255,
+                                  "checkpoint_sha256":  "b1d8d59243c1744f63d174e8e42a2c69fbe09859cd93d241cfb55cf827219e56",
+                                  "ce_device":  "cuda",
+                                  "input_format":  "speaker-incoming-v1",
+                                  "reproduced_outputs":  100
+                              },
+                   "matched_diverse":  {
+                                           "validation_token_ce":  4.161432142926706,
+                                           "standard_token_f1":  0.12740100336539967,
+                                           "local_token_f1":  0.10566440576966891,
+                                           "different_style_pairs":  32,
+                                           "vocab_size":  5393,
+                                           "checkpoint_sha256":  "6e4670e5730fa811e26e1908fcd9704e58829a1e2d0c90b05e738362a8c9563a",
+                                           "ce_device":  "cuda",
+                                           "input_format":  "speaker-incoming-v1",
+                                           "reproduced_outputs":  100
+                                       },
+                   "full_diverse":  {
+                                        "validation_token_ce":  4.163220044835233,
+                                        "standard_token_f1":  0.11279061134943488,
+                                        "local_token_f1":  0.09696488066457107,
+                                        "different_style_pairs":  30,
+                                        "vocab_size":  5393,
+                                        "checkpoint_sha256":  "33a7b4f95c69cfdf4798b57b1db3dfd03e35a2090f3440c490d63632b756dd41",
+                                        "ce_device":  "cuda",
+                                        "input_format":  "speaker-incoming-v1",
+                                        "reproduced_outputs":  100
+                                    }
+               },
+    "diverse_data":  {
+                         "candidate_inputs":  438,
+                         "accepted_pairs":  146,
+                         "accepted_dailydialog_train_pairs":  107,
+                         "accepted_original_ai_scenarios":  39,
+                         "matched_targets":  197,
+                         "matched_scenarios":  122,
+                         "full_targets":  292,
+                         "independent_human_review_completed":  false
+                     },
+    "paired_bootstrap_95":  {
+                                "matched_diverse_minus_original":  {
+                                                                       "STANDARD":  {
+                                                                                        "mean_difference":  0.010646147110543397,
+                                                                                        "ci95":  [
+                                                                                                     -0.022722688753455008,
+                                                                                                     0.04146172487643073
+                                                                                                 ]
+                                                                                    },
+                                                                       "LOCAL":  {
+                                                                                     "mean_difference":  0.0138704857234269,
+                                                                                     "ci95":  [
+                                                                                                  -0.022206475335809703,
+                                                                                                  0.04938789519304224
+                                                                                              ]
+                                                                                 },
+                                                                       "both_styles_mean":  {
+                                                                                                "mean_difference":  0.012258316416985146,
+                                                                                                "ci95":  [
+                                                                                                             -0.01634645236299648,
+                                                                                                             0.037308638126149735
+                                                                                                         ]
+                                                                                            }
+                                                                   },
+                                "matched_diverse_minus_round1":  {
+                                                                     "STANDARD":  {
+                                                                                      "mean_difference":  0.020171501700913464,
+                                                                                      "ci95":  [
+                                                                                                   -0.0035289010610992017,
+                                                                                                   0.04543612390361614
+                                                                                               ]
+                                                                                  },
+                                                                     "LOCAL":  {
+                                                                                   "mean_difference":  0.013456936768082281,
+                                                                                   "ci95":  [
+                                                                                                -0.010001681243593007,
+                                                                                                0.04005032720547419
+                                                                                            ]
+                                                                               },
+                                                                     "both_styles_mean":  {
+                                                                                              "mean_difference":  0.016814219234497874,
+                                                                                              "ci95":  [
+                                                                                                           -0.0005189478735918337,
+                                                                                                           0.03621660513549058
+                                                                                                       ]
+                                                                                          }
+                                                                 },
+                                "full_diverse_minus_original":  {
+                                                                    "STANDARD":  {
+                                                                                     "mean_difference":  -0.0039642449054213755,
+                                                                                     "ci95":  [
+                                                                                                  -0.033881339820310406,
+                                                                                                  0.025320813173754342
+                                                                                              ]
+                                                                                 },
+                                                                    "LOCAL":  {
+                                                                                  "mean_difference":  0.0051709606183290395,
+                                                                                  "ci95":  [
+                                                                                               -0.029934844906555437,
+                                                                                               0.04070315568933988
+                                                                                           ]
+                                                                              },
+                                                                    "both_styles_mean":  {
+                                                                                             "mean_difference":  0.00060335785645383,
+                                                                                             "ci95":  [
+                                                                                                          -0.028176975524905095,
+                                                                                                          0.02552306167344866
+                                                                                                      ]
+                                                                                         }
+                                                                },
+                                "full_diverse_minus_round1":  {
+                                                                  "STANDARD":  {
+                                                                                   "mean_difference":  0.005561109684948693,
+                                                                                   "ci95":  [
+                                                                                                -0.017111368267095823,
+                                                                                                0.029249646517912762
+                                                                                            ]
+                                                                               },
+                                                                  "LOCAL":  {
+                                                                                "mean_difference":  0.0047574116629844196,
+                                                                                "ci95":  [
+                                                                                             -0.02219586027147946,
+                                                                                             0.035446358951506
+                                                                                         ]
+                                                                            },
+                                                                  "both_styles_mean":  {
+                                                                                           "mean_difference":  0.005159260673966556,
+                                                                                           "ci95":  [
+                                                                                                        -0.015165081109121355,
+                                                                                                        0.025784164897709776
+                                                                                                    ]
+                                                                                       }
+                                                              },
+                                "full_minus_matched":  {
+                                                           "STANDARD":  {
+                                                                            "mean_difference":  -0.014610392015964771,
+                                                                            "ci95":  [
+                                                                                         -0.040209951280229916,
+                                                                                         0.011182696921241787
+                                                                                     ]
+                                                                        },
+                                                           "LOCAL":  {
+                                                                         "mean_difference":  -0.008699525105097859,
+                                                                         "ci95":  [
+                                                                                      -0.02495246202026388,
+                                                                                      0.006533600532594328
+                                                                                  ]
+                                                                     },
+                                                           "both_styles_mean":  {
+                                                                                    "mean_difference":  -0.011654958560531316,
+                                                                                    "ci95":  [
+                                                                                                 -0.026224704127142204,
+                                                                                                 0.0028094036295661226
+                                                                                             ]
+                                                                                }
+                                                       }
+                            },
+    "exploratory_bootstrap_90":  {
+                                     "A_minus_original":  {
+                                                              "STANDARD":  {
+                                                                               "difference":  0.010646147110543397,
+                                                                               "ci90":  [
+                                                                                            -0.017237238415179598,
+                                                                                            0.03703886856177878
+                                                                                        ],
+                                                                               "ci95":  [
+                                                                                            -0.022722688753455008,
+                                                                                            0.04146172487643073
+                                                                                        ]
+                                                                           },
+                                                              "LOCAL":  {
+                                                                            "difference":  0.0138704857234269,
+                                                                            "ci90":  [
+                                                                                         -0.015519353676938817,
+                                                                                         0.043852493997230825
+                                                                                     ],
+                                                                            "ci95":  [
+                                                                                         -0.022206475335809703,
+                                                                                         0.04938789519304224
+                                                                                     ]
+                                                                        },
+                                                              "both_styles_mean":  {
+                                                                                       "difference":  0.012258316416985146,
+                                                                                       "ci90":  [
+                                                                                                    -0.010500018222231844,
+                                                                                                    0.033810142652325306
+                                                                                                ],
+                                                                                       "ci95":  [
+                                                                                                    -0.01634645236299648,
+                                                                                                    0.037308638126149735
+                                                                                                ]
+                                                                                   }
+                                                          },
+                                     "A_minus_round1":  {
+                                                            "STANDARD":  {
+                                                                             "difference":  0.020171501700913464,
+                                                                             "ci90":  [
+                                                                                          0.0007990493166963779,
+                                                                                          0.04108514124334558
+                                                                                      ],
+                                                                             "ci95":  [
+                                                                                          -0.0035289010610992017,
+                                                                                          0.04543612390361614
+                                                                                      ]
+                                                                         },
+                                                            "LOCAL":  {
+                                                                          "difference":  0.013456936768082281,
+                                                                          "ci90":  [
+                                                                                       -0.006800248934072462,
+                                                                                       0.035816170344962914
+                                                                                   ],
+                                                                          "ci95":  [
+                                                                                       -0.010001681243593007,
+                                                                                       0.04005032720547419
+                                                                                   ]
+                                                                      },
+                                                            "both_styles_mean":  {
+                                                                                     "difference":  0.016814219234497874,
+                                                                                     "ci90":  [
+                                                                                                  0.0016885581137129134,
+                                                                                                  0.033097643567303006
+                                                                                              ],
+                                                                                     "ci95":  [
+                                                                                                  -0.0005189478735918337,
+                                                                                                  0.03621660513549058
+                                                                                              ]
+                                                                                 }
+                                                        }
+                                 },
+    "verification_job_id":  "372706",
+    "gpu":  "NVIDIA GeForce RTX 3090",
+    "limitations":  [
+                        "Development validation reused; one training seed.",
+                        "Token F1 is reference overlap, not contextual quality.",
+                        "CE across different vocabularies is not directly comparable.",
+                        "Synthetic screening is automatic plus AI-assisted, not independent human review.",
+                        "Raw evidence and checkpoints are ignored and shared separately."
+                    ],
+    "sources":  [
+                    "artifacts/role_c_runs/20261020_colab_handoff/comparison.json",
+                    "artifacts/role_c_runs/20261120_distillation_diverse/cluster_results/comparison.json",
+                    "artifacts/role_c_runs/20261120_distillation_diverse/cluster_results/verification.json",
+                    "artifacts/role_c_runs/20261121_report_section/bootstrap_supplement.json"
+                ]
+}
