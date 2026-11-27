@@ -1,0 +1,364 @@
+{
+  "seed": 20261108,
+  "cases": [
+    {
+      "review_id": "STYLE-REVIEW-001",
+      "context": [
+        [
+          "user",
+          "I left my purple water bottle in the studio."
+        ],
+        [
+          "peer",
+          "There are a few bottles here."
+        ]
+      ],
+      "message": "What colour is your bottle?",
+      "english": "My purple water bottle is purple.",
+      "options": {
+        "A": "My purple water bottle purple.",
+        "B": "My purple water bottle is purple."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-002",
+      "context": [
+        [
+          "peer",
+          "I have been doing most of the group project alone."
+        ],
+        [
+          "user",
+          "Have the others been helping?"
+        ]
+      ],
+      "message": "Not really, and I am feeling overwhelmed.",
+      "english": "You can ask for help from others in the group.",
+      "options": {
+        "A": "You can ask for help from the others in the group.",
+        "B": "You can ask for help from others in the group.",
+        "C": "Can ask for help from others in the group?",
+        "D": "Ask group members help lah."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-003",
+      "context": [
+        [
+          "user",
+          "I already booked our tutorial room this morning."
+        ],
+        [
+          "peer",
+          "Thanks for arranging that."
+        ]
+      ],
+      "message": "Have you booked the room yet?",
+      "english": "Yes, I've already booked the room this morning.",
+      "options": {
+        "A": "Ya, I’ve already booked the room this morning.",
+        "B": "Yes, I've already booked the room this morning."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-004",
+      "context": [
+        [
+          "user",
+          "I am waiting outside seminar room 4A."
+        ],
+        [
+          "peer",
+          "I am coming upstairs."
+        ]
+      ],
+      "message": "Which room are you outside?",
+      "english": "I am waiting outside seminar room 4A.",
+      "options": {
+        "A": "I waiting outside seminar room 4A."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-005",
+      "context": [
+        [
+          "user",
+          "I am still in the tutorial."
+        ],
+        [
+          "peer",
+          "I am at the coffee stall."
+        ]
+      ],
+      "message": "What drink should I get you?",
+      "english": "Could you get me a cup of coffee?",
+      "options": {
+        "A": "Can get me a cup of coffee?"
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-006",
+      "context": [
+        [
+          "user",
+          "have you reached?"
+        ],
+        [
+          "user",
+          "wya"
+        ]
+      ],
+      "message": "i reached, i waiting outside mac",
+      "english": "okay, i will be there in a few minutes",
+      "options": {
+        "A": "okay, i coming in a few minutes",
+        "B": "okay, i will be there in a few minutes",
+        "C": "okay, i coming"
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-007",
+      "context": [
+        [
+          "user",
+          "I am working until 7:25 and cannot leave early."
+        ],
+        [
+          "peer",
+          "We can meet after work."
+        ]
+      ],
+      "message": "Can we meet at 6:50?",
+      "english": "I cannot leave before seven. Could we meet after work?",
+      "options": {
+        "A": "I cannot leave before seven leh. Meet after work can?",
+        "B": "Paiseh, I cannot leave before seven. Meet after work can?"
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-008",
+      "context": [
+        [
+          "peer",
+          "I'm waiting outside already"
+        ],
+        [
+          "user",
+          "I'm reaching soon"
+        ]
+      ],
+      "message": "sorry, I took the wrong bus",
+      "english": "No worries, let me know when you reach",
+      "options": {
+        "A": "No worries, take your time",
+        "B": "No worries, let me know when you reach"
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-009",
+      "context": [
+        [
+          "peer",
+          "u wanna try the matcha at luckin?"
+        ],
+        [
+          "user",
+          "nahh"
+        ]
+      ],
+      "message": "then what u wanna drink later?",
+      "english": "i'm not sure what i want",
+      "options": {
+        "A": "i not sure what i want",
+        "B": "idk what i want leh",
+        "C": "i'm not sure what i want"
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-010",
+      "context": [
+        [
+          "peer",
+          "eh the school got 3d printer anot how to use"
+        ],
+        [
+          "user",
+          "have, i using it now, you need to book a slot to use"
+        ],
+        [
+          "peer",
+          "ok i book later to use"
+        ]
+      ],
+      "message": "paiseh ah can i change my booking i want to use it later",
+      "english": "no worries, you can use it later",
+      "options": {
+        "A": "no worries, you can use it later",
+        "B": "no worries, use later bah"
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-011",
+      "context": [
+        [
+          "user",
+          "I can meet at the library."
+        ]
+      ],
+      "message": "Shall we meet there?",
+      "english": "Okay.",
+      "options": {
+        "A": "Can, library there meet."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-012",
+      "context": [
+        [
+          "user",
+          "My bottle is purple."
+        ]
+      ],
+      "message": "What colour is your bottle?",
+      "english": "Purple.",
+      "options": {
+        "A": "My bottle purple."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-013",
+      "context": [
+        [
+          "user",
+          "I am outside room 4A."
+        ]
+      ],
+      "message": "Which room?",
+      "english": "Room 4A.",
+      "options": {
+        "A": "Room 4A."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-014",
+      "context": [
+        [
+          "user",
+          "I have not paid the fee yet."
+        ]
+      ],
+      "message": "Have you paid?",
+      "english": "No.",
+      "options": {
+        "A": "Haven’t pay leh.",
+        "B": "No."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    },
+    {
+      "review_id": "STYLE-REVIEW-015",
+      "context": [
+        [
+          "user",
+          "I am free on Thursday."
+        ]
+      ],
+      "message": "Are you free on Thursday?",
+      "english": "Yes.",
+      "options": {
+        "A": "Thursday I free.",
+        "B": "Yes."
+      },
+      "criteria": [
+        "Preserves people, facts, timing, polarity and decision",
+        "Natural restrained Singlish",
+        "Useful response in the conversation"
+      ],
+      "note": "Unchanged wording may be appropriate. English draft can itself be wrong. No mandatory particles."
+    }
+  ],
+  "human_ratings": null
+}

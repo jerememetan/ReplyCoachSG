@@ -1,0 +1,30 @@
+[
+  {
+    "label": "selected",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v2/outputs/selective_abstention/selected",
+    "bytes": 41977608,
+    "sha256": "4b25eab2e516840653303417526856061c621e49aaf3fd51c3749fb39730f55b",
+    "config_sha256": "238ae221adf866990a14e822621dae070a067eb00aeb3b27f61bce7e5a33627b"
+  },
+  {
+    "label": "step_0070",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v2/outputs/selective_abstention/step_0070",
+    "bytes": 41977608,
+    "sha256": "2433a6da0802108c2228b053c510cc672dcc6256cb0cf4e1d8fa1f44a56280fc",
+    "config_sha256": "238ae221adf866990a14e822621dae070a067eb00aeb3b27f61bce7e5a33627b"
+  },
+  {
+    "label": "step_0140",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v2/outputs/selective_abstention/step_0140",
+    "bytes": 41977608,
+    "sha256": "4b25eab2e516840653303417526856061c621e49aaf3fd51c3749fb39730f55b",
+    "config_sha256": "238ae221adf866990a14e822621dae070a067eb00aeb3b27f61bce7e5a33627b"
+  },
+  {
+    "label": "step_0280",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v2/outputs/selective_abstention/step_0280",
+    "bytes": 41977608,
+    "sha256": "1b425e880d7551c44600bea05c0ab0057daa258f0b3079be74918c5fa410013e",
+    "config_sha256": "238ae221adf866990a14e822621dae070a067eb00aeb3b27f61bce7e5a33627b"
+  }
+]

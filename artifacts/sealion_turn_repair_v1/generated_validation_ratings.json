@@ -1,0 +1,448 @@
+{
+  "reviewer": "Assistant; also author of synthetic targets, not independent human evaluation.",
+  "packet_sha256": "913e9c2666ac2887a7849a5aead4b61dc52e12e92f8325d0708a80aac4f4e672",
+  "model_key_consulted_before_rating": false,
+  "scope": "Generated validation English only; no challenge/user output used to rate or choose a checkpoint.",
+  "ratings": [
+    {
+      "item_id": "TURN-VALIDATION-001",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "D": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "E": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "F": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "G": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "H": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "I": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "J": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-002",
+      "ratings": {
+        "A": {
+          "rating": "fail",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        },
+        "B": {
+          "rating": "uncertain",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        },
+        "C": {
+          "rating": "fail",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        },
+        "D": {
+          "rating": "fail",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        },
+        "E": {
+          "rating": "fail",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        },
+        "F": {
+          "rating": "fail",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        },
+        "G": {
+          "rating": "fail",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        },
+        "H": {
+          "rating": "uncertain",
+          "reason": "Unknown call topic: prefer a role-correct text-first draft; vague explanation/personal-topic proposal is uncertain. Do not insist on unavailable voice chat or invent a past conversation."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-003",
+      "ratings": {
+        "A": {
+          "rating": "fail",
+          "reason": "Requester needs captions edited; offering to help reverses the role."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Requester needs captions edited; offering to help reverses the role."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Requester needs captions edited; offering to help reverses the role."
+        },
+        "D": {
+          "rating": "pass",
+          "reason": "Requester needs captions edited; offering to help reverses the role."
+        },
+        "E": {
+          "rating": "pass",
+          "reason": "Requester needs captions edited; offering to help reverses the role."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-004",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Unsent email gives a known status; merely saying receipt was not checked misses that status."
+        },
+        "B": {
+          "rating": "fail",
+          "reason": "Unsent email gives a known status; merely saying receipt was not checked misses that status."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Unsent email gives a known status; merely saying receipt was not checked misses that status."
+        },
+        "D": {
+          "rating": "pass",
+          "reason": "Unsent email gives a known status; merely saying receipt was not checked misses that status."
+        },
+        "E": {
+          "rating": "pass",
+          "reason": "Unsent email gives a known status; merely saying receipt was not checked misses that status."
+        },
+        "F": {
+          "rating": "pass",
+          "reason": "Unsent email gives a known status; merely saying receipt was not checked misses that status."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-005",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Peer has the user ruler, so peer returns it to the user."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Peer has the user ruler, so peer returns it to the user."
+        },
+        "C": {
+          "rating": "fail",
+          "reason": "Peer has the user ruler, so peer returns it to the user."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-006",
+      "ratings": {
+        "A": {
+          "rating": "fail",
+          "reason": "User is on duty on Wednesday; unqualified acceptance conflicts with that constraint."
+        },
+        "B": {
+          "rating": "fail",
+          "reason": "User is on duty on Wednesday; unqualified acceptance conflicts with that constraint."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "User is on duty on Wednesday; unqualified acceptance conflicts with that constraint."
+        },
+        "D": {
+          "rating": "fail",
+          "reason": "User is on duty on Wednesday; unqualified acceptance conflicts with that constraint."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-007",
+      "ratings": {
+        "A": {
+          "rating": "fail",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        },
+        "B": {
+          "rating": "fail",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        },
+        "C": {
+          "rating": "fail",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        },
+        "D": {
+          "rating": "fail",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        },
+        "E": {
+          "rating": "fail",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        },
+        "F": {
+          "rating": "uncertain",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        },
+        "G": {
+          "rating": "fail",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        },
+        "H": {
+          "rating": "uncertain",
+          "reason": "Known own budget16 vs ticket28. Asking friend to pay could be a legitimate counteroffer, so uncertain rather than automatically wrong; accepting own cost or switching buyer roles fails."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-008",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "B": {
+          "rating": "fail",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "D": {
+          "rating": "fail",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "E": {
+          "rating": "fail",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "F": {
+          "rating": "fail",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "G": {
+          "rating": "pass",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "H": {
+          "rating": "pass",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        },
+        "I": {
+          "rating": "fail",
+          "reason": "Answer should use the agreed west lobby; unsupported alternative venue does not answer the current plan."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-009",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "D": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-010",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-011",
+      "ratings": {
+        "A": {
+          "rating": "fail",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        },
+        "D": {
+          "rating": "pass",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        },
+        "E": {
+          "rating": "pass",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        },
+        "F": {
+          "rating": "pass",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        },
+        "G": {
+          "rating": "fail",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        },
+        "H": {
+          "rating": "pass",
+          "reason": "Venue explicitly unprovided; do not state a specific venue as established."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-012",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "D": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "E": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "F": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "G": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-013",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-014",
+      "ratings": {
+        "A": {
+          "rating": "fail",
+          "reason": "Cannot meet before5 conflicts with proposing4. Appointment finishes at5; changing it to an appointment at5 is also an explicit fact change."
+        },
+        "B": {
+          "rating": "fail",
+          "reason": "Cannot meet before5 conflicts with proposing4. Appointment finishes at5; changing it to an appointment at5 is also an explicit fact change."
+        },
+        "C": {
+          "rating": "fail",
+          "reason": "Cannot meet before5 conflicts with proposing4. Appointment finishes at5; changing it to an appointment at5 is also an explicit fact change."
+        },
+        "D": {
+          "rating": "fail",
+          "reason": "Cannot meet before5 conflicts with proposing4. Appointment finishes at5; changing it to an appointment at5 is also an explicit fact change."
+        },
+        "E": {
+          "rating": "fail",
+          "reason": "Cannot meet before5 conflicts with proposing4. Appointment finishes at5; changing it to an appointment at5 is also an explicit fact change."
+        },
+        "F": {
+          "rating": "fail",
+          "reason": "Cannot meet before5 conflicts with proposing4. Appointment finishes at5; changing it to an appointment at5 is also an explicit fact change."
+        },
+        "G": {
+          "rating": "fail",
+          "reason": "Cannot meet before5 conflicts with proposing4. Appointment finishes at5; changing it to an appointment at5 is also an explicit fact change."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-015",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Checking now is allowed as an alternative plan; no explicit constraint requires waiting until later."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Checking now is allowed as an alternative plan; no explicit constraint requires waiting until later."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Checking now is allowed as an alternative plan; no explicit constraint requires waiting until later."
+        },
+        "D": {
+          "rating": "pass",
+          "reason": "Checking now is allowed as an alternative plan; no explicit constraint requires waiting until later."
+        },
+        "E": {
+          "rating": "pass",
+          "reason": "Checking now is allowed as an alternative plan; no explicit constraint requires waiting until later."
+        }
+      }
+    },
+    {
+      "item_id": "TURN-VALIDATION-016",
+      "ratings": {
+        "A": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "B": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        },
+        "C": {
+          "rating": "pass",
+          "reason": "Answers the latest question and preserves explicit context; wording alternatives accepted."
+        }
+      }
+    }
+  ]
+}

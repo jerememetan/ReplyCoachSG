@@ -1,0 +1,4171 @@
+{
+  "reviewer": "Assistant exploratory meaning/style review",
+  "blind": false,
+  "independent_human_gold": false,
+  "scope": "full",
+  "stage": "singlish",
+  "completed_at_utc": "2026-11-21T05:05:42.386213+00:00",
+  "raw_file_sha256": "ded08d2f5323e2339f462b98d690bd34c60a017ac7bf203aaa7e2522f55870c2",
+  "english_review_file_sha256": "97784b33077b5b93431cb58b7b47a4f26cc41e2a82c0c18155c8fac72b03d2dc",
+  "english_generation_file_sha256": "4240e6733c36ed6ac6790719e12c9d90c9ffabf76e6cc09061b1cb6383a47510",
+  "recipe_sha256": "086e3f826489a1fa4cf1b2cd2656457f23a51b564d3588d1a3d32e846ae7ea02",
+  "protocol": "Preserve accepted English meaning, roles, tense, polarity, conditions, names, times and numbers; natural local style.",
+  "interpretation": "Compare every rewrite with its own exact accepted English anchor and supplied conversation. Keep roles, ownership, polarity, factual status, conditions, times, numbers, and material commitments. Context can resolve references and ordinary ellipsis. Reject material additions, lost conditions, changed roles or states, and unnatural/broken local wording. Neutral conversational English can be natural locally; particles or spelling changes alone do not establish fidelity or naturalness.",
+  "coverage": "All 692 generated Singlish rewrites read with their English anchors and complete supplied contexts/speaker roles.",
+  "source_labels_consulted_during_review": false,
+  "targets_edited": 0,
+  "decisions": [
+    {
+      "item_id": "ITEM-A-001",
+      "raw_sha256": "7b477a7a13f49833544ecd5e685b35826fd01d6620f71c25575525d85fce88b0",
+      "decision": "accept",
+      "reason": "Preserves acceptance with natural steady wording."
+    },
+    {
+      "item_id": "ITEM-A-002",
+      "raw_sha256": "e80097726c8e67938256cd96872657bc6bb1e051ce71da3e95fd62cccceacf0a",
+      "decision": "reject",
+      "reason": "Adds a save-booking-time rationale absent from the English anchor."
+    },
+    {
+      "item_id": "ITEM-A-006",
+      "raw_sha256": "d76cfeac9d0c392a4aae149aecb98a2196eae308cb314fa94d3b79c4fc1e231b",
+      "decision": "accept",
+      "reason": "Preserves accepting dinner before the later meeting."
+    },
+    {
+      "item_id": "ITEM-A-007",
+      "raw_sha256": "0a6b6e15f5283baf5080cc55dd14ee19558058f70f426e3a8d0665f9adb4eb12",
+      "decision": "accept",
+      "reason": "Preserves next-weekend meeting acceptance."
+    },
+    {
+      "item_id": "ITEM-A-011",
+      "raw_sha256": "59f33db06acb91222e394796c4327f096c8933900cc77c5cffd7c4a870cf6fb1",
+      "decision": "accept",
+      "reason": "Preserves reserving a seat for the peer; already natural local wording."
+    },
+    {
+      "item_id": "ITEM-A-013",
+      "raw_sha256": "942ff51e53273bb333298e5e863bc4cbfaca590d6fc25c1e2c731dc075f9fb40",
+      "decision": "accept",
+      "reason": "Preserves asking the peer's drink preference."
+    },
+    {
+      "item_id": "ITEM-A-015",
+      "raw_sha256": "d454c8904d2ad46d0e73bc631d0cb6768218ce2d2d2dcfb92dc13f2d116e7f8f",
+      "decision": "accept",
+      "reason": "Preserves imminent arrival."
+    },
+    {
+      "item_id": "ITEM-A-018",
+      "raw_sha256": "e6e04df493ccdb27faafe9223c04d9b1d4b1dc03e1794eb7ac3453ed61b1f5c9",
+      "decision": "accept",
+      "reason": "Preserves acceptance of Central Library as the changed venue."
+    },
+    {
+      "item_id": "ITEM-A-020",
+      "raw_sha256": "899640f7da29d673ed62356c18e9720f84fd19d60b1f8d1d2beec6faaf79e28a",
+      "decision": "reject",
+      "reason": "Drops the English commitment to arrive soon, leaving only a generic farewell."
+    },
+    {
+      "item_id": "ITEM-A-021",
+      "raw_sha256": "4b5c7aef235425784bc790e5c89cdf6aaeb69db029c53e4ab0a5f08869eb7a4e",
+      "decision": "accept",
+      "reason": "Preserves permission to sit here."
+    },
+    {
+      "item_id": "ITEM-A-022",
+      "raw_sha256": "70ca7f949efd5c494f80d971d2c9cb8e61d4699010e8532dcffe4f015a25858e",
+      "decision": "accept",
+      "reason": "Preserves helping mark the peer's attendance, supplied by context."
+    },
+    {
+      "item_id": "ITEM-A-023",
+      "raw_sha256": "e2205e3265c66c89c7a92a46da6fa5eaf0fde6c8918275efbebea71b3f6ef754",
+      "decision": "accept",
+      "reason": "Preserves reassurance and allowing time; neutral wording is natural."
+    },
+    {
+      "item_id": "ITEM-A-025",
+      "raw_sha256": "c3f205f9366fe0227ac76a5fbc4320e88be85aceab071c790e2754c1ae7ce906",
+      "decision": "accept",
+      "reason": "Preserves reassurance and allowing time."
+    },
+    {
+      "item_id": "ITEM-A-027",
+      "raw_sha256": "ec521a176a20cb8168c8e059d6e951c4f6c085a818604a8eb43a072871bdd03a",
+      "decision": "accept",
+      "reason": "Preserves the MRT journey to Suntec."
+    },
+    {
+      "item_id": "ITEM-A-028",
+      "raw_sha256": "4ac11755d925af27bd0e7bf23663d6b3ca9a0ad7f21df6d781b71ccfc032c87f",
+      "decision": "accept",
+      "reason": "Preserves saving a seat for the peer."
+    },
+    {
+      "item_id": "ITEM-A-029",
+      "raw_sha256": "a0f1d65bd1b04004f4a8d12ed2092a7c32c01381ef059a55f4d74b52342090d5",
+      "decision": "accept",
+      "reason": "Preserves switching the order to noodles."
+    },
+    {
+      "item_id": "ITEM-A-031",
+      "raw_sha256": "14d09e8825c72edad274943b3269e225543dee09042fa6c0a6c1834015a8b714",
+      "decision": "accept",
+      "reason": "Preserves waiting for the rain to stop; neutral conversational wording is usable locally."
+    },
+    {
+      "item_id": "ITEM-A-039",
+      "raw_sha256": "0c7837ddf47cc015687704f33f0b83f3611eb7abe71faf33082f6c4e0b108964",
+      "decision": "accept",
+      "reason": "Preserves joining dinner at the food court."
+    },
+    {
+      "item_id": "ITEM-A-040",
+      "raw_sha256": "6655053da55dac9fe42a69f64a9d57ee9ced40292dd1e81c76eeffb72d0be222",
+      "decision": "accept",
+      "reason": "Preserves the offer to bring the user's charger."
+    },
+    {
+      "item_id": "ITEM-A-041",
+      "raw_sha256": "3f1253186532f545cf8ce0c4db746d3847bb13e89f0474b87757114a229a5b1a",
+      "decision": "accept",
+      "reason": "Preserves wanting the worksheet printed too."
+    },
+    {
+      "item_id": "ITEM-A-042",
+      "raw_sha256": "705c67819ddbf87c274a068d6825139798d713702b6e13735b9670f868490ab6",
+      "decision": "accept",
+      "reason": "Preserves accepting and asking which movie."
+    },
+    {
+      "item_id": "ITEM-A-047",
+      "raw_sha256": "8ad6df853a98df45ecfd413ffec7ff6f5c4e38d30287662929eea46a8e367b9c",
+      "decision": "accept",
+      "reason": "Preserves coming now and arrival in a few minutes."
+    },
+    {
+      "item_id": "ITEM-A-048",
+      "raw_sha256": "1e327e836755f139e4ee95f5f08f3555490a45f9a1676e5e63702730fbfc8a08",
+      "decision": "accept",
+      "reason": "Preserves reassurance and understanding."
+    },
+    {
+      "item_id": "ITEM-A-049",
+      "raw_sha256": "ae47f49733b2e6224f214fb4071365e1e73c1438d637ab41149ab1c5b31bec32",
+      "decision": "accept",
+      "reason": "Preserves travelling home together."
+    },
+    {
+      "item_id": "ITEM-A-055",
+      "raw_sha256": "f971b70f3c1b2e28248350e216f5128f5bf43690eab6d81e195f97646ac81bea",
+      "decision": "accept",
+      "reason": "Preserves confirming attendance."
+    },
+    {
+      "item_id": "ITEM-A-056",
+      "raw_sha256": "fdec38af35c040187d3c42ed61b3de56280770079c0f86f363f50b1b29b4a0e1",
+      "decision": "accept",
+      "reason": "Affirmative confirmation retains attendance in the explicit party context."
+    },
+    {
+      "item_id": "ITEM-A-058",
+      "raw_sha256": "dba018c1029e3dd2b04f4614b319104bd553b7814ff9dfa383c230a10291ddd6",
+      "decision": "accept",
+      "reason": "Preserves accepting the refusal and understanding."
+    },
+    {
+      "item_id": "ITEM-A-059",
+      "raw_sha256": "ed71f183a782e68e3d8916517d4d60b0aebaf496726e799b0dfdcb55eb8e0e9b",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and requesting slot clarification."
+    },
+    {
+      "item_id": "ITEM-A-060",
+      "raw_sha256": "cf46353fa23c84662f433470d27fa2cf7d9c0c4faab52cdcebb6d556459b8e37",
+      "decision": "accept",
+      "reason": "Resolves do that to the context's invitation without changing the action."
+    },
+    {
+      "item_id": "ITEM-B-001",
+      "raw_sha256": "42f3c5052e1d8f6d6c034cceb955c3e56f3e18dc9ad1d4599c5dadcbd6b90adc",
+      "decision": "accept",
+      "reason": "Preserves eating after class."
+    },
+    {
+      "item_id": "ITEM-B-005",
+      "raw_sha256": "8a73bce889d432cf7b5fe3b12e5327e226ec5c5fcc94ee9ec142c5fb6145bfbf",
+      "decision": "accept",
+      "reason": "Preserves accepting seven and the closing."
+    },
+    {
+      "item_id": "ITEM-B-006",
+      "raw_sha256": "cc557e711dd8300fe24045a6a1b8701b086ca284c614e693a808d7dfb9b9bb49",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and checking availability first."
+    },
+    {
+      "item_id": "ITEM-B-007",
+      "raw_sha256": "2bbb4011de04c28e4afabfcb31b8cfe26145d4d8ca4f01103e2edf59a534c37c",
+      "decision": "accept",
+      "reason": "Preserves arrival in a few minutes."
+    },
+    {
+      "item_id": "ITEM-B-008",
+      "raw_sha256": "020d258fdf58868979f42844d0fd4b5ae3eb43b2ab2436d5ba9e0258ce07d840",
+      "decision": "accept",
+      "reason": "Preserves accepting library study; later is supplied by the invitation."
+    },
+    {
+      "item_id": "ITEM-B-010",
+      "raw_sha256": "975f9185d31330bac4dfaf6fb671e6028a07a3b069080ff66a288957628a8d81",
+      "decision": "accept",
+      "reason": "Preserves that three still works."
+    },
+    {
+      "item_id": "ITEM-B-012",
+      "raw_sha256": "ee107f78d8d82530c0b84a63ae91c7daa410d62b95dc8440a5f99a5486945dbf",
+      "decision": "accept",
+      "reason": "Preserves acceptance of eight."
+    },
+    {
+      "item_id": "ITEM-B-013",
+      "raw_sha256": "354f411c1556a41a5ab5ad3e9f6535d8b64d4f722db90beee8c04841ac52bd66",
+      "decision": "accept",
+      "reason": "Preserves choosing the main library."
+    },
+    {
+      "item_id": "ITEM-B-014",
+      "raw_sha256": "83a81da1e172f6b8ff836e5cd46e922c2fdd9f15b704c16fd5ff84890f599f28",
+      "decision": "accept",
+      "reason": "Preserves apologetic refusal."
+    },
+    {
+      "item_id": "ITEM-B-016",
+      "raw_sha256": "09465ed1afc9dd7305b1f4b6de960ade08e58f7e7e1df7934f3301170837a4b3",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about upload and checking with the lecturer."
+    },
+    {
+      "item_id": "ITEM-B-017",
+      "raw_sha256": "2e22fc8b58905ee84126f3519e575a83b3431aa0021633d7b0181942b007c976",
+      "decision": "accept",
+      "reason": "Preserves sending the recording tonight."
+    },
+    {
+      "item_id": "ITEM-B-018",
+      "raw_sha256": "141dbba39fd0ab502d89336a50e6b198f66766474889cdc933095f10fbf2c4f1",
+      "decision": "accept",
+      "reason": "Preserves sending the recording link."
+    },
+    {
+      "item_id": "ITEM-B-020",
+      "raw_sha256": "9a9fed34e07a1d5dab4c7e2f69653570a057bf803d0be58b4bfcbea49235bc3d",
+      "decision": "accept",
+      "reason": "Preserves reassurance and looking for the peer's notes."
+    },
+    {
+      "item_id": "ITEM-B-021",
+      "raw_sha256": "e0d07152e62b1fb86daf7fda3d969f0b09b84060f1ccd61ece0a16bea6dbddb1",
+      "decision": "accept",
+      "reason": "Preserves sending the notes now."
+    },
+    {
+      "item_id": "ITEM-B-023",
+      "raw_sha256": "4156dc38f6cc6e2ae6385056cec9274b592dbe56ecddee6d61ca249db3511d9f",
+      "decision": "accept",
+      "reason": "Preserves checking the peer's work later."
+    },
+    {
+      "item_id": "ITEM-B-024",
+      "raw_sha256": "0260d534bc2453d8a9eedcd5c15a37991159a470b29a6619ded5c795c6320ec2",
+      "decision": "accept",
+      "reason": "Preserves accepting discussion after class through contextual ellipsis."
+    },
+    {
+      "item_id": "ITEM-B-028",
+      "raw_sha256": "af101ad1ddf3960bf653d98da8b16107310e2498104cc64e6d45de89c8139f58",
+      "decision": "accept",
+      "reason": "Preserves reassurance and understanding."
+    },
+    {
+      "item_id": "ITEM-B-032",
+      "raw_sha256": "35a484ddc880a64d7490b8d5e9f518006ac918de22eccee4dcb44976a04e125b",
+      "decision": "accept",
+      "reason": "Preserves accepting two."
+    },
+    {
+      "item_id": "ITEM-B-033",
+      "raw_sha256": "4f783a5931072a6339a071d470a9c82f03f9c0516d09673aa181e0d24b937161",
+      "decision": "accept",
+      "reason": "Preserves thanks for the room-change update."
+    },
+    {
+      "item_id": "ITEM-B-037",
+      "raw_sha256": "6b6e4600c6670c29d52b29fb514e1ee42014efe1f31db7f6d06ac3cf3cde71f9",
+      "decision": "reject",
+      "reason": "Changes a future gate meeting into already being at the gate while the user is still walking."
+    },
+    {
+      "item_id": "ITEM-B-038",
+      "raw_sha256": "edf5ff5508eba2cfa0ca828b5ee0aee2d75e4806651b9c7af42cf8c85b1a65ba",
+      "decision": "accept",
+      "reason": "Preserves reassurance and catching up soon."
+    },
+    {
+      "item_id": "ITEM-B-039",
+      "raw_sha256": "c9ab780be242ecd4dd8059c6272d0661fe0f03c14e5ac24f5ba122ab994a1f89",
+      "decision": "accept",
+      "reason": "Preserves going to find the peer."
+    },
+    {
+      "item_id": "ITEM-B-040",
+      "raw_sha256": "b0b9e3bdb2cc232f7fad47290aca01b6383077807888a4b3b257deffd845e750",
+      "decision": "accept",
+      "reason": "Preserves acceptance of six thirty."
+    },
+    {
+      "item_id": "ITEM-B-041",
+      "raw_sha256": "93957758f8b137ba96672bdb459f6a995bad2b994f380daedba9a2b8a1c9abd1",
+      "decision": "accept",
+      "reason": "Preserves walking back together."
+    },
+    {
+      "item_id": "ITEM-B-044",
+      "raw_sha256": "21638d1253b8e98a7ed8eb009c9681ba32ed8ad3037edaabdc2a09ded8eed2c1",
+      "decision": "reject",
+      "reason": "Dunno start time anot is malformed local phrasing rather than a natural statement of uncertainty."
+    },
+    {
+      "item_id": "ITEM-B-045",
+      "raw_sha256": "4fce9527bcd8a659cff7806a7524f12e36e385f410b1602f01e4d2270e47af07",
+      "decision": "accept",
+      "reason": "Preserves planned museum attendance on Saturday."
+    },
+    {
+      "item_id": "ITEM-B-046",
+      "raw_sha256": "649ea848ac417fc37ee0269931cf7d7e8e9ae1e652048f8b34a7c0d2701799b1",
+      "decision": "accept",
+      "reason": "Preserves apology and inability to come tonight."
+    },
+    {
+      "item_id": "ITEM-B-047",
+      "raw_sha256": "5cf0fa585d04a81238613c6750026708af2ef8255bdacafa2d74dc704e0d3dd5",
+      "decision": "accept",
+      "reason": "Preserves accepting Friday."
+    },
+    {
+      "item_id": "ITEM-B-049",
+      "raw_sha256": "780f3595715b108620612585625c99849c655243bbd2c6aa0383c669fce47b20",
+      "decision": "accept",
+      "reason": "Preserves booking the peer's requested single ticket through context."
+    },
+    {
+      "item_id": "ITEM-B-052",
+      "raw_sha256": "5f5a1e27756114b7e1ab043cc8015f58e479cd9ea2a1cb848f3247b932268bb3",
+      "decision": "accept",
+      "reason": "Preserves confirming five."
+    },
+    {
+      "item_id": "ITEM-B-053",
+      "raw_sha256": "375df2548c15cc2bb947e3476d9bb8ac2cdcc081ca11ccbd228fc7458ec0b307",
+      "decision": "accept",
+      "reason": "Preserves booking the court for the group."
+    },
+    {
+      "item_id": "ITEM-B-055",
+      "raw_sha256": "71986a819692dd2a0fe682932cf7d77f6cc96080cedb41597d13949283f681db",
+      "decision": "accept",
+      "reason": "Preserves inability to join today."
+    },
+    {
+      "item_id": "ITEM-B-059",
+      "raw_sha256": "05ddd24a73dae7348c3b02b6ec91962fb29be46ab22d05319179a91f51ec1246",
+      "decision": "accept",
+      "reason": "Preserves bringing the charger tomorrow."
+    },
+    {
+      "item_id": "ITEM-C-002",
+      "raw_sha256": "82560e777ba5a1c248f86de10a1df1bf37317f87719881ef82f5b3de8a98da20",
+      "decision": "reject",
+      "reason": "Dunno Cathay got what anot combines incompatible question forms and sounds unnatural."
+    },
+    {
+      "item_id": "ITEM-C-003",
+      "raw_sha256": "4ec64443c10ebec1e38bc4a7c7427ac2ae52afe1b4e890e5dde463cb18df3c2c",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about the soup choice and checking the menu."
+    },
+    {
+      "item_id": "ITEM-C-005",
+      "raw_sha256": "5770d689da6e619ae971170d6fe345e804b5f27a7733f544596cfb91b1bf17e1",
+      "decision": "accept",
+      "reason": "Preserves no Tuesday class."
+    },
+    {
+      "item_id": "ITEM-C-007",
+      "raw_sha256": "dc50e710ccdb7fe9f7ba0f6bea6cc18e22fcf1520a24edad2ea1b5cd9dbf4ef7",
+      "decision": "accept",
+      "reason": "Preserves not having eaten and going downstairs soon."
+    },
+    {
+      "item_id": "ITEM-C-010",
+      "raw_sha256": "a24bbba27df30e0e03a0abd317bc495d280edf0b5de73ca2e87589dd629da11d",
+      "decision": "reject",
+      "reason": "Adds that the user is sitting in the seat rather than only having found it."
+    },
+    {
+      "item_id": "ITEM-C-011",
+      "raw_sha256": "0f9500be47c1784427334e1672e300178725b1102f302c923a516958da2a5bb1",
+      "decision": "accept",
+      "reason": "Preserves reserving the peer a seat."
+    },
+    {
+      "item_id": "ITEM-C-012",
+      "raw_sha256": "2f80aaa63562377abc2206b2e7751311638fc0b5bba66fc510d66180a634fdcb",
+      "decision": "accept",
+      "reason": "Preserves eleven as the accepted time."
+    },
+    {
+      "item_id": "ITEM-C-015",
+      "raw_sha256": "2664681a8ff1538fc2c5d74082ff5dccd2ee47fc22c453b63c8335a1d0135083",
+      "decision": "accept",
+      "reason": "Preserves having the downloaded slides; after-class timing remains in context."
+    },
+    {
+      "item_id": "ITEM-C-019",
+      "raw_sha256": "dde8f7f86d51c879eb1a4496d48d7b9316d61e8cec5a2b1d6de84048074606ad",
+      "decision": "accept",
+      "reason": "Preserves moving rehearsal to five thirty."
+    },
+    {
+      "item_id": "ITEM-C-022",
+      "raw_sha256": "ab53880f6ba93cb979b38c5ef4e635130948746be4e1bc8b8065b862e114f304",
+      "decision": "accept",
+      "reason": "Preserves coming over now."
+    },
+    {
+      "item_id": "ITEM-C-025",
+      "raw_sha256": "ee6b2227cdc621010b4d581ab843ee4565404ffe7fe6636fb6a0c5935d620f28",
+      "decision": "accept",
+      "reason": "Preserves buying the requested iced coffee for the peer."
+    },
+    {
+      "item_id": "ITEM-C-026",
+      "raw_sha256": "048bbbb565ffc418843bb7c06ab69ff690c2b042e952c5bfa1f1917978cc6ddf",
+      "decision": "accept",
+      "reason": "Preserves meeting after class tomorrow for the context's meal."
+    },
+    {
+      "item_id": "ITEM-C-027",
+      "raw_sha256": "137f503297a62e282beaaad86d10b468eea6c7de3577fdb847fa263c91ac2630",
+      "decision": "accept",
+      "reason": "Preserves the care wish in the explicitly tired-peer context; rest first is a natural local realization of take care here rather than a separate future arrangement."
+    },
+    {
+      "item_id": "ITEM-C-029",
+      "raw_sha256": "6d3c27490d10e646ea5f14f1f7b5985ef780b51b23983184a95d0a9b9def5b52",
+      "decision": "accept",
+      "reason": "Preserves meeting at the library later."
+    },
+    {
+      "item_id": "ITEM-C-030",
+      "raw_sha256": "01d2505a52bc7bf018c2b78430842deb5a66a7fac2a3c413a6a0735f306df631",
+      "decision": "accept",
+      "reason": "Preserves studying at two through contextual ellipsis."
+    },
+    {
+      "item_id": "ITEM-C-031",
+      "raw_sha256": "0f5c1012d164d46ba077f355610f01b8252249d8f0af1c2928c17a02d589b039",
+      "decision": "reject",
+      "reason": "Adds permission or advice to rest to an anchor that only acknowledges understanding."
+    },
+    {
+      "item_id": "ITEM-C-032",
+      "raw_sha256": "0e16bc664370186b41015fc4dd69b948ad83b3ac2428f68fadcb3e1db256190e",
+      "decision": "accept",
+      "reason": "Preserves checking downstairs after upstairs is full."
+    },
+    {
+      "item_id": "ITEM-C-033",
+      "raw_sha256": "e6f4021c9e2b8ac9b26ae69376c69f3cf7cf771f0695aa51bebc775344aa8a22",
+      "decision": "accept",
+      "reason": "Preserves comparing notes after class."
+    },
+    {
+      "item_id": "ITEM-C-035",
+      "raw_sha256": "18bd038a41d741c999ad22f7fc03a4b6fcc778b75ca0a6c59338e3c0fe4a5742",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking now."
+    },
+    {
+      "item_id": "ITEM-C-036",
+      "raw_sha256": "274bbb3360c2d4afce91b16a5ff49113389a9e95d3806ae14064a5256e5c8a42",
+      "decision": "accept",
+      "reason": "Preserves sending the requested photo."
+    },
+    {
+      "item_id": "ITEM-C-039",
+      "raw_sha256": "af5c493b8138561bb38d3d4f8e1c874ce897d6da334f7efe0dcdf792239e999c",
+      "decision": "accept",
+      "reason": "Acknowledges the cancellation with reassurance; understanding remains conveyed pragmatically."
+    },
+    {
+      "item_id": "ITEM-C-040",
+      "raw_sha256": "f18b378417461c42c64bf07cfcba587ae91c14b3e2970cb1754d902213131f73",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking the completed references now."
+    },
+    {
+      "item_id": "ITEM-C-043",
+      "raw_sha256": "e54d39f10789a25b656aaeedef4e5f93b87e78c9dd1963f6cd1d686a54b84373",
+      "decision": "accept",
+      "reason": "Preserves thanks and heading over now."
+    },
+    {
+      "item_id": "ITEM-C-044",
+      "raw_sha256": "a00c2f162b64cf64d26323407c301e46649cf803fe1165f0d0ecf8dbf14f89b3",
+      "decision": "accept",
+      "reason": "Preserves imminent entry and an inside-arrival update; wording is more formal but understandable locally."
+    },
+    {
+      "item_id": "ITEM-C-047",
+      "raw_sha256": "0fffe19f9cc5c6d74ca4fafc4cd0fa37c1c297eed5107b9626a4536689c9f349",
+      "decision": "accept",
+      "reason": "Resolves do that to the explicitly proposed shared MRT journey."
+    },
+    {
+      "item_id": "ITEM-C-049",
+      "raw_sha256": "8cd8d21cdca56ff81574d256c28a03ade7edaa397aad8861bf333c23321f2d5e",
+      "decision": "accept",
+      "reason": "Preserves the same bus stop as yesterday."
+    },
+    {
+      "item_id": "ITEM-C-050",
+      "raw_sha256": "ec7b734dac6277a4c65a3e16e3fdd0e1f126585dfe99b7f620b43c899f569725",
+      "decision": "accept",
+      "reason": "Preserves reassurance and allowing time."
+    },
+    {
+      "item_id": "ITEM-C-051",
+      "raw_sha256": "8f82e543a9732b53933d12fcd79b502023431c69a3df09151fb416a929e62892",
+      "decision": "accept",
+      "reason": "Preserves changing the meeting to the MRT."
+    },
+    {
+      "item_id": "ITEM-C-052",
+      "raw_sha256": "dd5cfd49bc60a445ea2a39741c367f10616723ed0b3202ca1cc2c98d9855ac8d",
+      "decision": "accept",
+      "reason": "Preserves sending the link later."
+    },
+    {
+      "item_id": "ITEM-C-054",
+      "raw_sha256": "b87fc5bdf6546209e31e353bd7b22fe76f4a9e0e176a92794451ebf8323cd0c8",
+      "decision": "accept",
+      "reason": "Preserves coming in after dinner."
+    },
+    {
+      "item_id": "ITEM-C-057",
+      "raw_sha256": "9a01f3a497c66334a327336d22240b6293b40e19bd8a1826f6f0d7ae9a973530",
+      "decision": "accept",
+      "reason": "Preserves buying the peer one bottle of water through context."
+    },
+    {
+      "item_id": "ITEM-C-059",
+      "raw_sha256": "447993aecf708fe77d20b8e6491ff488f9ac94db6893ccbc76ec3d57c161ca00",
+      "decision": "accept",
+      "reason": "Preserves still travelling and arriving soon; apology is a politeness marker."
+    },
+    {
+      "item_id": "ITEM-D-002",
+      "raw_sha256": "b1fb69b96ab4819e2d25a768a3e638cddf8058a8505d2b2e4ee9c203db096e46",
+      "decision": "accept",
+      "reason": "Preserves finding another place to eat."
+    },
+    {
+      "item_id": "ITEM-D-005",
+      "raw_sha256": "69fe6306a82b79c3d1724f7c446e102141af11f999d89585c5011384afe96766",
+      "decision": "accept",
+      "reason": "Preserves declining and disliking curry fish head."
+    },
+    {
+      "item_id": "ITEM-D-006",
+      "raw_sha256": "9f5dd0812b33bfb64ac3c6c2986f00576396c0a3808c143b91642008ab855d81",
+      "decision": "accept",
+      "reason": "Preserves asking what the peer wants to eat."
+    },
+    {
+      "item_id": "ITEM-D-008",
+      "raw_sha256": "fde45123ad70aabc72661649b10ab13ce3852b8d83a8e106272a25bcb5589752",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about attendance timing."
+    },
+    {
+      "item_id": "ITEM-D-017",
+      "raw_sha256": "4b12b763945ca447c5852ec05e0b4d4f852ffdae15b5efbf5c41036c0fc6f346",
+      "decision": "accept",
+      "reason": "Affirmative ya preserves the context's confirmed plan."
+    },
+    {
+      "item_id": "ITEM-D-018",
+      "raw_sha256": "56c791c39445a291b53abb3e3bf30728303ea9799f3351081651b15db773b597",
+      "decision": "accept",
+      "reason": "Preserves confirming attendance tomorrow."
+    },
+    {
+      "item_id": "ITEM-D-019",
+      "raw_sha256": "1dd715b38714149fb5547f9b36bce12eaa3f20c6dc19933c7aeff3a1a51706fa",
+      "decision": "accept",
+      "reason": "Preserves the acknowledged agreement to meet tomorrow."
+    },
+    {
+      "item_id": "ITEM-D-021",
+      "raw_sha256": "b3be88ec972936b143946c099a28b1097dc541047d6e967deb00a0abff585e50",
+      "decision": "reject",
+      "reason": "Changes explicit no to ya when asked whether help is needed, creating an ambiguous opposite polarity."
+    },
+    {
+      "item_id": "ITEM-D-022",
+      "raw_sha256": "8d95fa20f434965f617384d3250f5c1af26c5fcceabfcbe3f1b78e614ef90db7",
+      "decision": "accept",
+      "reason": "Preserves the user's near-complete assignment status."
+    },
+    {
+      "item_id": "ITEM-D-023",
+      "raw_sha256": "d2870fcbd497a1325184646f1d3295a53e7fe0d1d669e958371a939d8107a118",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about new stories and consulting the scrum master."
+    },
+    {
+      "item_id": "ITEM-D-025",
+      "raw_sha256": "22a444d0fce7dc6fd6c32bad58cb9ae53bb2d812442c95a96b9c982167312efa",
+      "decision": "accept",
+      "reason": "Preserves willingness to help."
+    },
+    {
+      "item_id": "ITEM-D-026",
+      "raw_sha256": "99d85bc3c556f5f489f2d1fc7e5a34f9e4e526882e983ce606471c6d0cc34310",
+      "decision": "reject",
+      "reason": "Adds a promise to update the peer absent from the English anchor."
+    },
+    {
+      "item_id": "ITEM-D-028",
+      "raw_sha256": "86944958f7d5152c9cc3802f432dfcc61b5ed4ddb8d7d5a6543248d26cdb1af2",
+      "decision": "accept",
+      "reason": "Preserves helping the peer find a seat."
+    },
+    {
+      "item_id": "ITEM-D-031",
+      "raw_sha256": "fc230e8212c6fd11d9aa8cc573f24f79928fa8cc28883226ea994b7e93d4f4dc",
+      "decision": "accept",
+      "reason": "Preserves attending the makeup class."
+    },
+    {
+      "item_id": "ITEM-D-032",
+      "raw_sha256": "672e9deb52f5367f6a127056e3376090746dbe8ec1b67f59ab41c6e75a5c573a",
+      "decision": "accept",
+      "reason": "Preserves preference for the later class."
+    },
+    {
+      "item_id": "ITEM-D-034",
+      "raw_sha256": "7091f3366a04d2acb7c58533c2038c06c0d82684e98d232287a1dededdff3b36",
+      "decision": "accept",
+      "reason": "Preserves leaving now."
+    },
+    {
+      "item_id": "ITEM-D-035",
+      "raw_sha256": "bda16dc61fca3672d617f517fe3a7cebc06b050c9fa0e5e06d1c4275fd199786",
+      "decision": "accept",
+      "reason": "Preserves reassurance and allowing time."
+    },
+    {
+      "item_id": "ITEM-D-040",
+      "raw_sha256": "01c9de1a807d42534759708ad4354d95bfa532fbddfdd11d18945d3add07ee91",
+      "decision": "accept",
+      "reason": "Preserves asking which movie the peer wants."
+    },
+    {
+      "item_id": "ITEM-D-041",
+      "raw_sha256": "06b09b66e68957381ad4e5fef0e3d670b991ec38b9cdc9c992367493c5fd006e",
+      "decision": "accept",
+      "reason": "Preserves postponing to next week."
+    },
+    {
+      "item_id": "ITEM-D-043",
+      "raw_sha256": "c7e2a201b25ac321003ba39ebf7fa3dd3d1e2a560e5de7a45b747cb84d07473a",
+      "decision": "accept",
+      "reason": "Preserves buying tickets for the peer."
+    },
+    {
+      "item_id": "ITEM-D-044",
+      "raw_sha256": "45aca1a15d6eef71fcb04bcdb565cd70e04c1b923a2ef5928793781f0878578f",
+      "decision": "accept",
+      "reason": "Preserves paying the peer tonight."
+    },
+    {
+      "item_id": "ITEM-D-045",
+      "raw_sha256": "d8f5be29408c03fd02b77496b880febebda61d57f90caa6ffbefe3e0da89332e",
+      "decision": "accept",
+      "reason": "Preserves not knowing other attendees."
+    },
+    {
+      "item_id": "ITEM-D-047",
+      "raw_sha256": "945c97795acd5b694c1cd7dfd73d6ed7c22bd4f87db96d0b91dd47a409c1b228",
+      "decision": "accept",
+      "reason": "Preserves the confirmed badminton plan through context."
+    },
+    {
+      "item_id": "ITEM-D-048",
+      "raw_sha256": "1c21f00befba7e0a22e6cdc87ed311700b56904682e3235e6bd71c773a33fea1",
+      "decision": "accept",
+      "reason": "Preserves bringing spare rackets for the peer."
+    },
+    {
+      "item_id": "ITEM-D-049",
+      "raw_sha256": "fd818c390ecfcbcd679bdb0d55ff6ec85d7248b0d5a6656df11b428caca965de",
+      "decision": "accept",
+      "reason": "Confirms availability for the context's run tomorrow."
+    },
+    {
+      "item_id": "ITEM-D-051",
+      "raw_sha256": "0e1c0d0a1b1213eafd024c0d4b5d98f8e589090135b4b58708626000bae5aab6",
+      "decision": "accept",
+      "reason": "Preserves surprise and asking what happened."
+    },
+    {
+      "item_id": "ITEM-D-052",
+      "raw_sha256": "a9dc70ca0c85f0b62113d9dbcfd66da4c261e6f64db427eeae27bd91866c31e0",
+      "decision": "accept",
+      "reason": "Preserves booking the court."
+    },
+    {
+      "item_id": "ITEM-D-055",
+      "raw_sha256": "f8e191dc1a4a383c810e0ee560c39dbf7f15b9f4e6e897e894501ad6bfcc6ace",
+      "decision": "accept",
+      "reason": "Preserves returning the charger after charging the user's phone."
+    },
+    {
+      "item_id": "ITEM-D-056",
+      "raw_sha256": "c11cdf8e28772fa679789964cc461d7e9a2b1ab88f3a2b85442e358ed14ad34e",
+      "decision": "accept",
+      "reason": "Preserves the long queue description."
+    },
+    {
+      "item_id": "ITEM-D-058",
+      "raw_sha256": "3c79f5970099e62e062c7542cab88fc5e663e81f65369dc0c047fd9d8824ed09",
+      "decision": "accept",
+      "reason": "Preserves the user's transformers assignment; the peer's remaining work is explicitly supplied by context."
+    },
+    {
+      "item_id": "ITEM-D-060",
+      "raw_sha256": "1bb1d9db17a3d7b97d90e237e3f50bdb58129fe0b86698102d8172c0b1b39ef9",
+      "decision": "reject",
+      "reason": "Changes asking the peer to report another printer into the user promising to check."
+    },
+    {
+      "item_id": "ITEM-E-001",
+      "raw_sha256": "72f17a76188d72971d7eb88eb7a0d835e3ce61cf46d03cd9ddc07bd129c7b2bc",
+      "decision": "reject",
+      "reason": "Replaces arrival in five minutes with being late and repeats presentation start time instead."
+    },
+    {
+      "item_id": "ITEM-E-003",
+      "raw_sha256": "971058799be111d52a936a6dd42567297c977139bd31664f4fd4811e0b4380f3",
+      "decision": "accept",
+      "reason": "Preserves apologetic unavailability to play today."
+    },
+    {
+      "item_id": "ITEM-E-004",
+      "raw_sha256": "816b8667df83b142a89aea0d40de277972f69b0a7055cd147b82dbaff3c135aa",
+      "decision": "accept",
+      "reason": "Preserves the weekend plan."
+    },
+    {
+      "item_id": "ITEM-E-006",
+      "raw_sha256": "4b09de2e0d5d68079ef0c738e711649d9dec6c99b7eef42e1550506fb2a925c8",
+      "decision": "accept",
+      "reason": "Preserves reassurance and a next-time farewell."
+    },
+    {
+      "item_id": "ITEM-E-012",
+      "raw_sha256": "db67b85c477d3bfc98f87cf777fc3117ccb3ef2ca8cfe42ca8aa90d819fc8518",
+      "decision": "accept",
+      "reason": "Preserves reassurance and thanks for the update."
+    },
+    {
+      "item_id": "ITEM-E-013",
+      "raw_sha256": "58adec6f10ddc477ae9a86f699fbcba3086c6a1dd006fa857b2b41c7a45e677f",
+      "decision": "reject",
+      "reason": "Changes a promise to attend into merely knowing about the meeting."
+    },
+    {
+      "item_id": "ITEM-E-014",
+      "raw_sha256": "dfb95259d041349d78523071878fbf8e536aeabbdb523670a5c92c900392cf0b",
+      "decision": "reject",
+      "reason": "Drops the promise to bring the requested item, leaving only acknowledgment of knowing."
+    },
+    {
+      "item_id": "ITEM-E-017",
+      "raw_sha256": "63f9b8dde5c261108a42c82b27dcdcbd8529e227d1d22684ec13144af5d5c797",
+      "decision": "accept",
+      "reason": "Preserves meeting at six."
+    },
+    {
+      "item_id": "ITEM-E-018",
+      "raw_sha256": "880373a08adff66d2834d6f02d6c1727ad4023ef7d3e4b3a7dff9ad7add78163",
+      "decision": "accept",
+      "reason": "Preserves agreeing to work together."
+    },
+    {
+      "item_id": "ITEM-E-019",
+      "raw_sha256": "4f389ad4f95e94e8f643ab263cc25566f9a88ad6cbe2414bdf418340971dbe3e",
+      "decision": "accept",
+      "reason": "Preserves adding the peer's key features now to the context's section."
+    },
+    {
+      "item_id": "ITEM-E-022",
+      "raw_sha256": "88fb0aceaf6298716d5fbb55136b071067b4d528ab3c5d4d0da6f0585b88e0ce",
+      "decision": "accept",
+      "reason": "Preserves returning the charger earlier."
+    },
+    {
+      "item_id": "ITEM-E-023",
+      "raw_sha256": "7f377a3ab9df7320da1f6233beed33928ad86a39a73066106e65186a86cb2acd",
+      "decision": "accept",
+      "reason": "Preserves accepting the offered tutorial."
+    },
+    {
+      "item_id": "ITEM-E-029",
+      "raw_sha256": "7e48ea0b4ae379265fa701c99dc4c3c7284d9c222106ca2139fef28ac9206d86",
+      "decision": "accept",
+      "reason": "Preserves helping secure a seat for the peer."
+    },
+    {
+      "item_id": "ITEM-E-030",
+      "raw_sha256": "ea9ee98b42f4e74eaff5f8be5be722550122346e5c79be4f273d5603b782a799",
+      "decision": "accept",
+      "reason": "Preserves reassurance and allowing time."
+    },
+    {
+      "item_id": "ITEM-E-031",
+      "raw_sha256": "74079d7e811aaa90d21558046b81b97030f947a13f5d2ef12cdf3e3af65f2bf1",
+      "decision": "accept",
+      "reason": "Preserves accepting another meeting day."
+    },
+    {
+      "item_id": "ITEM-E-033",
+      "raw_sha256": "211838ff318161d2f7ba35a71745a278eab82b22b481dc7a139ff9da621f02a1",
+      "decision": "reject",
+      "reason": "Adds a what-time question and omits the explicit Friday availability statement."
+    },
+    {
+      "item_id": "ITEM-E-034",
+      "raw_sha256": "bc182f058850d6b55c5224802953d31b20a3fdda35675b775e7c384f65ef989d",
+      "decision": "accept",
+      "reason": "Preserves booking the tickets through context."
+    },
+    {
+      "item_id": "ITEM-E-035",
+      "raw_sha256": "9c96a2f065213e37f1dcdd4d3acbc1e8c86a02e1e65dbcf7dda5559c02124fbc",
+      "decision": "reject",
+      "reason": "Adds seeing the peer next week instead of only acknowledging their cancellation."
+    },
+    {
+      "item_id": "ITEM-E-037",
+      "raw_sha256": "f6631e2cfe3f79b3970e3220c76882f4977c5780b7bf11d2e37c8d9ad51be6ac",
+      "decision": "accept",
+      "reason": "Preserves returning the peer's notes."
+    },
+    {
+      "item_id": "ITEM-E-041",
+      "raw_sha256": "58a5c9b3db10f5b0287569a7650c1d01dc06f5bda607de4faba30dbd9a7bf087",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about remaining sessions and checking course information."
+    },
+    {
+      "item_id": "ITEM-E-042",
+      "raw_sha256": "77b662ef4839a5e2395688ed1d8131acf3ab9847944ae2515b263546433bb759",
+      "decision": "accept",
+      "reason": "Preserves not-yet status and checking seats later."
+    },
+    {
+      "item_id": "ITEM-E-043",
+      "raw_sha256": "347ce8f4e7a1ce8007a84fb90dc598d8f474e55064a46fae004d4e3b50ac555d",
+      "decision": "accept",
+      "reason": "Preserves reassurance and leaving the outing for another time."
+    },
+    {
+      "item_id": "ITEM-E-044",
+      "raw_sha256": "bf95d74ada42dffe440a1f5dce171e4fa1ca5e9a728789f971af15fbc9d2c857",
+      "decision": "accept",
+      "reason": "Preserves accepting six pm."
+    },
+    {
+      "item_id": "ITEM-E-045",
+      "raw_sha256": "dfac4d134feb9195d34b0f4b3558926cb1b7ba2ddbdb1ee2357008a53ad7d2e7",
+      "decision": "accept",
+      "reason": "Preserves accepting the refusal and understanding."
+    },
+    {
+      "item_id": "ITEM-E-047",
+      "raw_sha256": "81f229a2a09f21b2a5c686268330ebd126fea27c97ce28ee78852af3533e7e61",
+      "decision": "accept",
+      "reason": "Preserves winning first place."
+    },
+    {
+      "item_id": "ITEM-E-048",
+      "raw_sha256": "3c476e921b326bc4708e58fcf0f8d3b25e7f76d0c11d5dd0a211fe19fc6dff67",
+      "decision": "accept",
+      "reason": "Preserves confirmation of the plan."
+    },
+    {
+      "item_id": "ITEM-E-049",
+      "raw_sha256": "31f542d5981af6fd4dc9d726c848a967ee726388955093cf3948f41bc2ca7f05",
+      "decision": "accept",
+      "reason": "Preserves reassurance and seeing the peer next week."
+    },
+    {
+      "item_id": "ITEM-E-052",
+      "raw_sha256": "25d2f4400611c2de003ce45eb2d61a1e975c0e35d6eecd52b5016707908794ae",
+      "decision": "accept",
+      "reason": "Preserves accepting next week."
+    },
+    {
+      "item_id": "ITEM-E-054",
+      "raw_sha256": "25e749e3f3bbec56691d8d3b24f138841590d0ba689ce1a3087ccec8f6e0b6cb",
+      "decision": "accept",
+      "reason": "Preserves bringing the requested rackets."
+    },
+    {
+      "item_id": "ITEM-E-056",
+      "raw_sha256": "e58e941a77353e217bf7904ce848717602e106ce76a3ba67dfb326acc9bce127",
+      "decision": "accept",
+      "reason": "Preserves reassurance and allowing time."
+    },
+    {
+      "item_id": "ITEM-E-060",
+      "raw_sha256": "e7fc7ca373dccf0828029ddebc031b460c1ef6e63e7e8dafa42dbc166c681181",
+      "decision": "accept",
+      "reason": "Preserves moving lunch to two."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-001",
+      "raw_sha256": "2dff33e68f7ecaa47c2bb71fb1499ed69533d6a48673c8ce05bd4ca65be8d742",
+      "decision": "accept",
+      "reason": "Preserves apologetic refusal to lend the fan."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-002",
+      "raw_sha256": "0dce543bfa64ab91c2fe4f58c4adafc59fdfecaa81deca44c67317d68f100332",
+      "decision": "accept",
+      "reason": "Preserves accepting the ruler loan; repeated please is awkward but intelligible casual texting."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-003",
+      "raw_sha256": "2349e25805d17da5a5b5c718eb368b4881c04934729b201eec51d0257e8cb48f",
+      "decision": "accept",
+      "reason": "Preserves bringing the raincoat tonight; the interchange is the single offered destination."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-004",
+      "raw_sha256": "109d89766cc33b2a23285bc5ab45d28c14c9969ddb090cbd0ef3540631e49928",
+      "decision": "accept",
+      "reason": "Preserves returning the bag during lunch."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-005",
+      "raw_sha256": "0b5ccc676e877a29e511e57492ba9934885e1f8f65cd287b1b472b61d917c108",
+      "decision": "accept",
+      "reason": "Preserves lending the user's spare earplugs through context."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-007",
+      "raw_sha256": "db39c093843b815bb104f1a70d554b070f6b2c4b7ee6c7a8a1c38f2bc408f6b4",
+      "decision": "accept",
+      "reason": "Preserves bringing the peer's tray to the requested destination through unambiguous context."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-009",
+      "raw_sha256": "5978af03109b7fd5edaf7d17e006fbea1276a9a603e940e51c4c73020785248d",
+      "decision": "accept",
+      "reason": "Preserves keeping the only helmet for the user's ride; neutral wording is natural enough locally."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-010",
+      "raw_sha256": "e8da15ae02bc9ff7eacb4faee4027395e6b89a9aa4ba266991cc4b62e7f6adac",
+      "decision": "accept",
+      "reason": "Preserves permission to take one tent peg."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-011",
+      "raw_sha256": "63337b1c1876db617c923ae045e7c92e87e3d744964555b4e21b1b8fee93dee2",
+      "decision": "reject",
+      "reason": "Adds immediate sending now to an English promise without that timing."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-012",
+      "raw_sha256": "88d798211a0762e22ecc022cb26d0a95b2c049f0959e5c9816fdeeb65d175092",
+      "decision": "accept",
+      "reason": "Preserves requesting the song list before practice."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-013",
+      "raw_sha256": "c98a5e508c4c597a55edfc726a2903011ded77e19f1bbb22770e263d96db629d",
+      "decision": "accept",
+      "reason": "Preserves sending the requested receipt photo to finance through context."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-014",
+      "raw_sha256": "8194bc5935e463e72eb9968340b61fc424445dce9ff0e1cc78d6c99f79146c6e",
+      "decision": "accept",
+      "reason": "Preserves selecting the whole recording."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-015",
+      "raw_sha256": "96844a45bec72b1260bcb669530d6c160503a1d8c8ff7ade26919cbd626db9ef",
+      "decision": "reject",
+      "reason": "Adds sending now to an English sharing promise without that timing."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-016",
+      "raw_sha256": "c28e2002cae34feb549af649febee36399d214101e41b88cc41e3c766da67119",
+      "decision": "accept",
+      "reason": "Preserves requesting a copy of the offered consent form."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-017",
+      "raw_sha256": "d1979e7e735cc1550d949c30b17eda046b8fa64aa4f5e817e59a18e4c3183790",
+      "decision": "accept",
+      "reason": "Preserves requesting the peer's working map file."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-018",
+      "raw_sha256": "802628dd0beb449fc577cd5431c96c5ebff30c98733c4c3f8f8f90a5b9044199",
+      "decision": "accept",
+      "reason": "Preserves leader approval as a prerequisite to sending the final file."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-019",
+      "raw_sha256": "8f300dc4786f97fe3079a93f8a5687b4973726ead4675860ebb32db8962d3759",
+      "decision": "accept",
+      "reason": "Preserves sending only to Mei, not the rest; local tense is recoverable from context."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-020",
+      "raw_sha256": "1c5f6f89b003e139e33411031821365a34358a39d93812a9a80043e6445d9db3",
+      "decision": "accept",
+      "reason": "Preserves choosing handwritten notes."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-022",
+      "raw_sha256": "654c3f9ec9e07700a19eadeeb0fd7e791cee72748e6a125f7c0920415efa8b48",
+      "decision": "accept",
+      "reason": "Resolves acceptance to the proposed eleven o'clock practice."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-024",
+      "raw_sha256": "356d7eafb1e2ece1aa08201f138ca105bc4172bac7579bae0858d06302f623a4",
+      "decision": "accept",
+      "reason": "Preserves refusal to collect after rehearsal."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-025",
+      "raw_sha256": "d78e194df13d3090e53f89ec21e100651c427b66caade5c273fe08555b7f5716",
+      "decision": "accept",
+      "reason": "Preserves apologetic inability to attend."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-026",
+      "raw_sha256": "273326b49132f5eff19dc1b72a549481d654b1c386103adc73b51065f1285146",
+      "decision": "accept",
+      "reason": "Preserves inability to stay after five."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-027",
+      "raw_sha256": "94151a79e94fe08ae5c47040630fde17c9b27742d85f5bf1896c72a556462ad3",
+      "decision": "accept",
+      "reason": "Preserves Saturday refusal; eh conveys conversational softening."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-029",
+      "raw_sha256": "473feafb321d690b6c3f96809671837e458f05f83d8b740792928669b85fc75b",
+      "decision": "accept",
+      "reason": "Preserves Thursday at three."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-030",
+      "raw_sha256": "e73f6d5f5430b5118130e41a78c0c9e6e7f40781a273218bfee5c66588406d12",
+      "decision": "reject",
+      "reason": "Adds reaching by five while omitting the explicit inability to reach the auditorium by five, weakening the key timing distinction."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-034",
+      "raw_sha256": "3a9d8c8d4407e1ce223283463a6c0cdd57989fcea554127267f17abbac8000fb",
+      "decision": "accept",
+      "reason": "Preserves refusal until the laptop is charged."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-036",
+      "raw_sha256": "5fee9f7b2dade762935badb95556d326bd67b7413c8e4783e35cd00ab7ae88c8",
+      "decision": "accept",
+      "reason": "Preserves inability to enter and asking another person to help."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-037",
+      "raw_sha256": "b8b1916cde946cec3fa577644768ce51dd994212dc7acf86bc65b31ecf951c84",
+      "decision": "accept",
+      "reason": "Preserves the promise not to share outside the group."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-038",
+      "raw_sha256": "04ecb26de35d13db6119d6200d321e22a3005b19b3b4d963d75da1996b0da3a8",
+      "decision": "accept",
+      "reason": "Preserves space for only one racket."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-039",
+      "raw_sha256": "eaab75f963a348082e999d917c26fec2581ee63e6846cf90e5b3da44ecedc554",
+      "decision": "accept",
+      "reason": "Preserves inability to drive and seeking another driver."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-040",
+      "raw_sha256": "13e4146c2e72af735168057b4bc05526a203c0b893d31b9c4af0c9897cda90d3",
+      "decision": "accept",
+      "reason": "Preserves the quiet-room restriction on speaking."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-041",
+      "raw_sha256": "b89daac87ba26fa426f7155da978d1bd7a5262c818cf83e1b5c7c255be04ff3f",
+      "decision": "accept",
+      "reason": "Preserves Studio four on level two."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-042",
+      "raw_sha256": "46666ee9c33b244f2c847504673055592f0e1126c4cda630c2326a660644b4e8",
+      "decision": "accept",
+      "reason": "Preserves the blue machine at the north gate."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-043",
+      "raw_sha256": "dff60beedcb343693338daa1b1b94e95dbd5bfa665c8d8eeb780fc3e0a204788",
+      "decision": "accept",
+      "reason": "Preserves booth C17 opposite registration."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-044",
+      "raw_sha256": "b7cc09abdec68129ac54170fd07edc45da2f168792d4071428232cced07aaf59",
+      "decision": "accept",
+      "reason": "Preserves collection from library reception."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-046",
+      "raw_sha256": "0b0c1dbdeba2d503b2d7d206e5c2598fd72d71b36795e55a814f1b46d1c3d865",
+      "decision": "accept",
+      "reason": "Preserves not-yet arrival and two remaining stops."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-048",
+      "raw_sha256": "9b0fa29c3f1eaa04c433c19109a03415abb84c1536bf9b74285026709fcd03fe",
+      "decision": "accept",
+      "reason": "Preserves the equipment cage rather than office."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-050",
+      "raw_sha256": "8e75737eefc0701bf3b6e9f104c4db3283ae4159dc1590503bd59a7ee510016c",
+      "decision": "reject",
+      "reason": "Adds asking the organizer first to an anchor that only states uncertainty."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-051",
+      "raw_sha256": "289e7a6c4c61f5aa82488d16c14f79341783549e3ebb66e85ee0ecc7eafb6029",
+      "decision": "accept",
+      "reason": "Preserves packed first-aid kit and unpacked bottles."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-052",
+      "raw_sha256": "3543e9332b168b49638c3cfbd856a6e71c75f53cef7b23a29d140b3ae19a881c",
+      "decision": "accept",
+      "reason": "Preserves submission this morning."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-053",
+      "raw_sha256": "ba605b897da74d81d9dbd2ecb4a6fdeff0fe2f15785e5f0f1d6fabeafb9e289e",
+      "decision": "accept",
+      "reason": "Preserves reserved projector and unconfirmed speakers."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-054",
+      "raw_sha256": "0046b152081b510fb17ba255eb59cce63a34a4451d718b23cf13a93ebad01a90",
+      "decision": "accept",
+      "reason": "Preserves assembly not having started."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-055",
+      "raw_sha256": "a5d801428604de29c8a13f75b5e97ad7d7026ae88e55022db962022b27a3daa2",
+      "decision": "accept",
+      "reason": "Preserves returning the badge to the desk after the shift."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-057",
+      "raw_sha256": "ae6c0ded21ef0af143a122049e253c5b9f8ced40220f73206100d5d8e3e0e67e",
+      "decision": "reject",
+      "reason": "Changes a completed route check into a future check and adds an update promise."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-058",
+      "raw_sha256": "3cd81018a56f98557a554225afc40f4837395ca85604b78a5cfe30ee53100d06",
+      "decision": "accept",
+      "reason": "Preserves allowing immediate use."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-059",
+      "raw_sha256": "177afcfad0070dd9068cb62682c1e2efa0d3880e7db7399b7a1122f6f095b43b",
+      "decision": "accept",
+      "reason": "Preserves Ben being unpaid."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-060",
+      "raw_sha256": "b22a0c34d810332b2078d84d124446d04861ce2974a1a1c37513f67d8e8013a9",
+      "decision": "accept",
+      "reason": "Preserves uploading yesterday to the shared folder."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-061",
+      "raw_sha256": "e0ba2e266cdfaf119f47b6d1ce4c8f19eecf6e089c9089b64a9f2c294b33b96a",
+      "decision": "accept",
+      "reason": "Acknowledges the peer's stated decision to skip tonight without adding a different activity."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-062",
+      "raw_sha256": "df6f829b630e82e7d46dbc11ec6956a91d7dc05e037e60e7d4f28472c10e8a0c",
+      "decision": "accept",
+      "reason": "Preserves Saturday refusal and offering help another day as a tentative alternative."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-063",
+      "raw_sha256": "a061860e30ccd5cf9dee44f5aa6e5cb73568b868d895cb9f8472f09b6e84b7f1",
+      "decision": "accept",
+      "reason": "Preserves taking the lift and its safer rationale; easier is compressed."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-064",
+      "raw_sha256": "989a4b1ce90142f4935c0b9673e1f75e64a519e0cc074df452f1b9e82351c167",
+      "decision": "accept",
+      "reason": "Preserves tomorrow-afternoon acceptance."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-065",
+      "raw_sha256": "e343e6485ad6a576561a9d13cd339ff3dce30f67c07a879e5cc161c62285da8b",
+      "decision": "accept",
+      "reason": "Preserves wanting to join but doubting tolerance of spicy food."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-067",
+      "raw_sha256": "dc70965cd79ee5e91068d7bd0e950522410f07ebd6c19c9d8fc5776d146300c8",
+      "decision": "accept",
+      "reason": "Preserves agreeing to stay late."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-068",
+      "raw_sha256": "038f3d746ad585e0f06bbcb6474ebacfd217c73ac40c40437073b57b48891f04",
+      "decision": "accept",
+      "reason": "Preserves walking instead of cycling to the park through context."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-071",
+      "raw_sha256": "e06353234752e1acf063f21b3ba3ee8cc235831cb3b00095d0baa37801350147",
+      "decision": "accept",
+      "reason": "Preserves requesting a demonstration of the equipment."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-072",
+      "raw_sha256": "9b5e3791e4ed1170d9c7d5cef7452aebc14cd12acf587c0bbb2fd12df9e9dc81",
+      "decision": "accept",
+      "reason": "Preserves asking which button was pressed."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-073",
+      "raw_sha256": "fa82e492a049256843344162a5721e6a3c48493f59f86a732993d0ab38823e7e",
+      "decision": "accept",
+      "reason": "Preserves thanks and requesting a booking-portal demonstration."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-074",
+      "raw_sha256": "086a2aeac8b68c5f625c25c7349c4ec5df2ca0f315594662706f25dc70fd6378",
+      "decision": "reject",
+      "reason": "Adds asking an unspecified them to an anchor that only states not knowing a helper."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-075",
+      "raw_sha256": "b9a0270abe3acfd0526281f3cc9f6f03df4ecc1fb59adb6c5c2d497bd7bbbad7",
+      "decision": "accept",
+      "reason": "Preserves offering the laminator demonstration through context."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-076",
+      "raw_sha256": "04fc87291c034bc70ee4d412b67590914821a8d0089531c19c01527a71e582ec",
+      "decision": "accept",
+      "reason": "Preserves not knowing the instructions and requesting a copy."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-077",
+      "raw_sha256": "9f43c846615feec7071937eaac5440cb4209696cbf9bef36a2cd720e41679989",
+      "decision": "reject",
+      "reason": "Adds asking staff to an anchor that only states not knowing the password."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-078",
+      "raw_sha256": "adb6e00c8eaba668c302d10ea74c2a2a87c1f4fdfcc1533b66a33e585aea0abe",
+      "decision": "accept",
+      "reason": "Preserves requesting the software walkthrough."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-079",
+      "raw_sha256": "b2e60e5d9d7716d413fcb4d4e6593742991c117a4291e527feda8f4d6ddecbfe",
+      "decision": "accept",
+      "reason": "Preserves positive acknowledgment and requesting the booking link."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-080",
+      "raw_sha256": "2896862a6b8c7c2de70df123884354fb397ac411aaf32ab48c58aa9c0afc92a8",
+      "decision": "accept",
+      "reason": "Preserves trying another button first."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-081",
+      "raw_sha256": "5fe2d3b677aacb64771defeba2454218354d91c06141fe88dd531043993b9320",
+      "decision": "accept",
+      "reason": "Preserves bringing the folder before briefing."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-082",
+      "raw_sha256": "8629fd76d17adbd26f607d20d25f0e72a31c6a5f4c2ebf5a2dcfd145c8906e4e",
+      "decision": "accept",
+      "reason": "Preserves acceptance of six and a conventional meeting close."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-083",
+      "raw_sha256": "204ad055906e38816359c86cd261768026579cba0067802342ac2b47a5213c11",
+      "decision": "accept",
+      "reason": "Preserves printing the requested copies."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-084",
+      "raw_sha256": "6dfd5f656a345094b6b3b79de846277c462d3d9a137e216803549b619b31fd52",
+      "decision": "accept",
+      "reason": "Preserves helping carry equipment."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-085",
+      "raw_sha256": "ae6f4ffa9335d9619bc9f9924ed3985a80a0b9aa751870c1bc91a5f06fea41cb",
+      "decision": "accept",
+      "reason": "Preserves sending the latest version as soon as possible."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-086",
+      "raw_sha256": "9002f2210377398666bc36604487e2ae1b01891416b5fe0c09df7e84565355b1",
+      "decision": "accept",
+      "reason": "Preserves declining tomorrow and suggesting another time."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-087",
+      "raw_sha256": "4e029e9a7a90182db03b8cb4eef09d55e601296a891c8a81caaaa4365dbba262",
+      "decision": "accept",
+      "reason": "Preserves asking the drink preference."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-088",
+      "raw_sha256": "2a3a89c946dc9168cfc278a6e21946689cda9f07eb9f52faf7775a357bfe1a8b",
+      "decision": "accept",
+      "reason": "Preserves bringing the banner to the event."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-089",
+      "raw_sha256": "96c6625594b99d1bb5a3a482e71d5207eaa1a117d4c3b87a4a10f8ce2a520e72",
+      "decision": "reject",
+      "reason": "Drops email as the delivery method and adds a separate update after sending the amount."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-090",
+      "raw_sha256": "aaee5c679b81d4cee6f33019c251090313a9d61590bbdd68ec69c9d17fbac503",
+      "decision": "accept",
+      "reason": "Preserves unknown availability and requesting room details."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-091",
+      "raw_sha256": "9e1e3b53f470415bbbe3cf4ade1e0f8b479e1a3b89f11f371f4cd12fab5ab1bc",
+      "decision": "accept",
+      "reason": "Preserves congratulations and positive reaction."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-092",
+      "raw_sha256": "348d4a577382a2d9ba81ed8570bb8073ee2a26ad0c7273ca9f579086e750c04e",
+      "decision": "accept",
+      "reason": "Preserves requesting an update during the delayed journey; arrival is a relevant instance of that request."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-093",
+      "raw_sha256": "4d1524a0dc36bb990f8d9ce7187489b8d45ff358e649262181116193140f4916",
+      "decision": "accept",
+      "reason": "Preserves being glad to help."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-094",
+      "raw_sha256": "9b889b7f6cda432a0fa6f30fd3eda726d107b6ad6c5d0753aac1427297595e8c",
+      "decision": "reject",
+      "reason": "Ya pls introduces a request rather than the anchor's welcome and offer of another bottle."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-096",
+      "raw_sha256": "6aa7aae7c14238c8c337b8058305e49d3e39592d9021a027b9a3d2e0f67c0bbb",
+      "decision": "accept",
+      "reason": "Preserves positive acknowledgment that practice helped, using a conversational generalization."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-097",
+      "raw_sha256": "f807922f45880ec64042bd7d5171084df4a1c722542a424b38475ee18ce34813",
+      "decision": "accept",
+      "reason": "Rest well is a conventional care wish in the stated going-home-to-rest context."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-098",
+      "raw_sha256": "8850fdd1b04c09c957b77d1282d9983f0524001e4a6db04288237a54fda40da9",
+      "decision": "reject",
+      "reason": "Changes a possible future missed start into an already missed briefing."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-099",
+      "raw_sha256": "1b6dbabcd047cd732360d8b7d6027faee6d69829fd40e6f51839a77062c6fa20",
+      "decision": "accept",
+      "reason": "Preserves reassurance and offering more help."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-100",
+      "raw_sha256": "9c2323282ea756b0c6f7e515c01a0cf909e8d2688d0bc2a0acde12bffcdec90f",
+      "decision": "accept",
+      "reason": "Preserves appreciation for completed work; swee fits positive news here."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-000-00",
+      "raw_sha256": "d61358dae47697348cedfc3544900cf3490199632134d85af8cfab9f856444f5",
+      "decision": "accept",
+      "reason": "Preserves thanks and meeting at the lobby."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-001-00",
+      "raw_sha256": "35dbfa0a207c043ce960358897072b878b0e11730bd39a966f0b337477b280d4",
+      "decision": "accept",
+      "reason": "Preserves proposing twelve thirty at the building."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-001-01",
+      "raw_sha256": "7f84566295239306f81b46f9a4d4bccc615d324eac2b9699a1bd89da05bf1dfe",
+      "decision": "accept",
+      "reason": "Preserves Saturday-afternoon acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-001-02",
+      "raw_sha256": "f49b8e40e77785264a99b5f4d835adc1326f1cb00eb12f656dfb589e2e7c57b8",
+      "decision": "reject",
+      "reason": "Changes asking the peer for a pickup update into promising the user's own pickup update."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-001-03",
+      "raw_sha256": "4c649cd201be3b1c66dbf4910da1876d8d84281c6b26d2ac8aa97310529b2c3e",
+      "decision": "accept",
+      "reason": "Preserves headcount uncertainty and checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-002-00",
+      "raw_sha256": "98d1f7859ee19787032802a6c36b8d87149734fee5fe18206bb6ebc46725288f",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-002-01",
+      "raw_sha256": "e1d6933c08bc473f4d29d70b1a442c69fb85f993f00cfd990f66c1e9067d1dba",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about the four pm room and checking with the organizer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-002-02",
+      "raw_sha256": "9e250d79fc2ad14dbc382d3c5ee7128da8372ab382368a01263e1990918ff833",
+      "decision": "accept",
+      "reason": "Preserves omitting the last notes section."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-002-03",
+      "raw_sha256": "4def2e1cf131111f880d8616d7557708855223add2ded891cee007459f2d30b0",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about helping and suggesting another helper."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-003-00",
+      "raw_sha256": "484bc261bf4cb612720209eacbd8a9e19a58d03b54d635b586572e7be580a2f5",
+      "decision": "accept",
+      "reason": "Preserves collecting after the peer is done."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-003-01",
+      "raw_sha256": "2d347867f03c1b326378955a33a62b600b0b04e174b557e58fa57d3e456d1269",
+      "decision": "reject",
+      "reason": "Adds sending the file and drops the after-finishing condition from the English anchor."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-003-02",
+      "raw_sha256": "3bc665cf844168edfb81520fa27746f0e88c3226cd84a17f4d7805d8775f0169",
+      "decision": "accept",
+      "reason": "Preserves delegating poster text to the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-003-03",
+      "raw_sha256": "e76101ddc09cb3acbb50c448baa0d82dac952e06c1229cf4695287eb311e90c5",
+      "decision": "accept",
+      "reason": "Preserves uncertainty between main hall and studio."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-004-01",
+      "raw_sha256": "2c38c93b5119a93a94bdfbe841d4d13987d314b2da336080eebdc56aa1d4f3d3",
+      "decision": "accept",
+      "reason": "Preserves accepting and requesting the summary instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-004-02",
+      "raw_sha256": "314e22e61200b81615381dd724f272cdc1572a5fa15c4078c13ed35388e4f523",
+      "decision": "accept",
+      "reason": "Preserves asking the peer to check for the parcel at the guard house."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-004-03",
+      "raw_sha256": "d228a14123dd6acfb54ba1904df00fcd5dc85808192e8403623a1938be46779d",
+      "decision": "accept",
+      "reason": "Preserves checking the introduction and updating the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-005-00",
+      "raw_sha256": "a8c98b854a4ca6253876427f46c6315a083e22ee47ec43dd5d1a7217a73bf279",
+      "decision": "accept",
+      "reason": "Preserves QR-code addition and navy-blue color change."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-005-02",
+      "raw_sha256": "3322511c1d6b01377009f7b67c432bbf4f082b813591eb1da6428fc80f8efe5d",
+      "decision": "accept",
+      "reason": "Preserves ongoing work on the last question set."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-005-03",
+      "raw_sha256": "4ac377ea47bd606f363579497e4ced5b67351d43c7ef5f9dcba0f622e48311b8",
+      "decision": "accept",
+      "reason": "Preserves Saturday-morning acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-006-00",
+      "raw_sha256": "07857ebef0a3792bc695b71ee063051652c07471fdfa4dcd82060f0ad1d7e92d",
+      "decision": "accept",
+      "reason": "Preserves meeting next week."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-006-01",
+      "raw_sha256": "2317c0fa585e1a18df93d289d7914ffa948afc1128fcb72f0847b08e8f0e8eb1",
+      "decision": "accept",
+      "reason": "Preserves checking the booking confirmation because room identity is uncertain."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-006-02",
+      "raw_sha256": "e4e295fc99bd7bf34024b8eaa08cda2932d739e284ac2ffb8f30ef08a5d1a094",
+      "decision": "accept",
+      "reason": "Preserves buying potato chips at the supermarket."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-006-03",
+      "raw_sha256": "ed83d2a699fb6d7cc1829634304fe8717df02ba007e3fe64c21c1a432818c125",
+      "decision": "accept",
+      "reason": "Preserves joint ticket booking; together retains the shared action despite local subject ellipsis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-007-01",
+      "raw_sha256": "9fa50bda4a4ff8ab4436a86744761edff45712347eca59f195e74e4319bb63a9",
+      "decision": "accept",
+      "reason": "Preserves eight am and finishing by ten am."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-007-02",
+      "raw_sha256": "4b56b31671f61848e18ff8abefab0da0a3374dd4474c1bd1cf97c8c2b1891e00",
+      "decision": "accept",
+      "reason": "Preserves checking the schedule and reporting back."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-008-00",
+      "raw_sha256": "035776a55d2d0acdab5acfc4660890bca948cd0cfc927b65db29806a11b4acca",
+      "decision": "accept",
+      "reason": "Preserves awaiting the peer's completion update as a direct update request."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-008-01",
+      "raw_sha256": "d43c0afeb216cef73ffb00aeee99f5044469234525016375ea2df71497966517",
+      "decision": "reject",
+      "reason": "Turns a definite commitment to meet into asking whether three at the foyer is acceptable."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-008-02",
+      "raw_sha256": "44f78750e5c74e84ad88960d262d73b7f431c3ef84245e277e50df842ed62f03",
+      "decision": "accept",
+      "reason": "Preserves offering to help with the first-chapter summary too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-008-03",
+      "raw_sha256": "366d48cca558d17e0437c88295765aa8bbf81eed7db59a5db6a792432efde262",
+      "decision": "accept",
+      "reason": "Preserves ten am arrival at the context's lecture hall."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-009-00",
+      "raw_sha256": "aff1505dbeabd4bcba52be3fc51f6c9202d9efcaad8a82546a0d26864a89e6ea",
+      "decision": "accept",
+      "reason": "Preserves adding five pages; pages and slides refer to the same presentation here."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-009-02",
+      "raw_sha256": "cdfacdc445c1d5ecc2c3a8921aea01c972677e0885caa173e6a75919930ff3b2",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about midterm notes and checking the syllabus."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-009-03",
+      "raw_sha256": "973924e77885c22a8cc08e5aca76594c7347b574312e503b5e06a2067c30b9e9",
+      "decision": "accept",
+      "reason": "Preserves unknown closing time and checking the website."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-010-02",
+      "raw_sha256": "2ca939068846a82d520fb1b704fb72cadd626eef192e3daa3578226b86ad2e57",
+      "decision": "accept",
+      "reason": "Preserves venue uncertainty and checking with the organizer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-010-03",
+      "raw_sha256": "b3865517016c56fda19044b37bc34dbf8afb14370ef824794ec475957d7edda7",
+      "decision": "accept",
+      "reason": "Preserves leaving the projector at the front desk through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-011-00",
+      "raw_sha256": "53729e4b2b37f3f5e83e047e3b2d2f4abc7db5e3422460e96730b3dc9fc7bd55",
+      "decision": "accept",
+      "reason": "Preserves working together on data analysis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-011-02",
+      "raw_sha256": "ac4adb251e9741e9d5baf1894ca4861f9572cb0fa370dc5502d54e9953d88ad7",
+      "decision": "accept",
+      "reason": "Preserves disappointment and a possible next-year signup."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-011-03",
+      "raw_sha256": "c3a32d9414c58a0fc89963a463cc2dc36e220e807626c62191cbf3eee48c664d",
+      "decision": "accept",
+      "reason": "Preserves checking content and updating the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-012-00",
+      "raw_sha256": "0699121fb175193bd7866a0dbb5dad0bc492e5fa4fbbb2a70850be2db7e87ede",
+      "decision": "accept",
+      "reason": "Preserves checking font size now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-012-02",
+      "raw_sha256": "6c1310df94655bb003990fa3fc07f32b8260fd61c2668eae3c72f652ad4c6587",
+      "decision": "accept",
+      "reason": "Preserves not having a power bank available now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-012-03",
+      "raw_sha256": "2baf4503ead2d15452536e82dd58597f96cdfc5c07c86184c3f6018163e877d0",
+      "decision": "accept",
+      "reason": "Preserves permission to join the final hour."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-013-00",
+      "raw_sha256": "c0a733604ff2b6ef53c158accc348a841087be763a719c487cd67d7ef38d3b83",
+      "decision": "accept",
+      "reason": "Preserves not seeing the photos and requesting them."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-013-01",
+      "raw_sha256": "082bec0f298d8488ac649b85521a68fb1238923b50a747b28ad686fd036c49f7",
+      "decision": "reject",
+      "reason": "Adds checking before boarding to an anchor that only states uncertainty."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-013-02",
+      "raw_sha256": "5a95237a2ce1fbe6e4905e5362f88266e455575328430c82f982a715aa1771eb",
+      "decision": "reject",
+      "reason": "Changes asking the peer for a parcel photo into the user sending a photo after an added location check."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-013-03",
+      "raw_sha256": "74ce4ff0026d440704b8af86e16575f7b34fd0c8984c55f259a675eab217ae63",
+      "decision": "reject",
+      "reason": "Adds the user's intro-and-conclusion assignment to an anchor that only states uncertainty about analysis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-014-01",
+      "raw_sha256": "967c268cde59def58d1f79feac102394ace9b75ddb42f6728fc0d436924337d1",
+      "decision": "accept",
+      "reason": "Preserves proposing a run instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-014-03",
+      "raw_sha256": "4f462e8d8cad092fa90cc30b5999e3774155a4d95757d197e17e851ab780dbd7",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and checking the website."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-015-00",
+      "raw_sha256": "c54ed0e104fb0c7856cece10296c497ed1483d6815fe8dc5dd9949e96d345959",
+      "decision": "accept",
+      "reason": "Preserves using the peer's wall plug instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-015-01",
+      "raw_sha256": "43db14e26d01082718fe4022ca45f5e7a7793e751bd5aa2944a51c36974c01a3",
+      "decision": "accept",
+      "reason": "Preserves handling shuttlecock orders too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-015-02",
+      "raw_sha256": "cf92d6e24ac4faa31be361e5edac920b7c4189dc346417ca5ac02186c9e79981",
+      "decision": "accept",
+      "reason": "Preserves the undecided topic."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-015-03",
+      "raw_sha256": "17770c845baebe3672dac53870bfec3d1a9088dfc5450e9b57ca71aee94166f5",
+      "decision": "accept",
+      "reason": "Preserves A4 and black-and-white printing."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-016-01",
+      "raw_sha256": "e5a49e1ea3173bb8816ac641f53875cd4d5cbe70b8df9805c686c1ea33f3e99b",
+      "decision": "accept",
+      "reason": "Preserves focusing on the specified slide-deck practice problems."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-016-03",
+      "raw_sha256": "815457c0800b4cccef3bfc81fca20e5cc2ef5cc30f874e1dc4f83d8fae62485c",
+      "decision": "accept",
+      "reason": "Preserves letting the peer handle conclusion slides too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-017-01",
+      "raw_sha256": "7ba13ad25d581ecb0614fbcac37d0c7b5167481a1a74e940b135dcebad32fc61",
+      "decision": "accept",
+      "reason": "Preserves checking and updating the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-017-02",
+      "raw_sha256": "e8d4ad1351605463ec0ee13c47ddc0cde405ba3780ea5cce1ac5548ca4bf519e",
+      "decision": "accept",
+      "reason": "Preserves helping clear the table."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-017-03",
+      "raw_sha256": "e7f01c9614503a79af4ca778056fefadbc0796a739256cde9de2d260df05d644",
+      "decision": "reject",
+      "reason": "Adds seeing the peer next Friday even though Friday is a poster deadline, not a meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-019-00",
+      "raw_sha256": "a52d4f0a5fc10e26d15a77853993712d5396f1525f508d1931da93fcc1338d00",
+      "decision": "accept",
+      "reason": "Preserves delivering the projector to the library."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-019-01",
+      "raw_sha256": "020516c916af8d8fab279d4ba1b2c3461bb1752a44b8d4e5a7a9d5044ba001d8",
+      "decision": "accept",
+      "reason": "Preserves the tentative t-shirt suggestion; neutral conversational wording is usable locally."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-019-02",
+      "raw_sha256": "082ff1fa3d4f763e9872653b0aa1e5ea7f45800a8cb0dd1af0d9298fe21cf68e",
+      "decision": "accept",
+      "reason": "Preserves trying the bus next time through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-019-03",
+      "raw_sha256": "b501aff699f7051396c6faeebf98c4d75d81331d044e53147e2b2f3c07a4e0d5",
+      "decision": "accept",
+      "reason": "Preserves six on Saturday."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-020-00",
+      "raw_sha256": "a1531bf6b54680ab28fde16f2e400312e9b365493b76e3959728799b3f91d719",
+      "decision": "accept",
+      "reason": "Preserves going to the shop together."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-020-01",
+      "raw_sha256": "dbe1fc51306a79cd26c0694cf14b9ecbe56c73485939e5d9c145c4282b0fe47f",
+      "decision": "accept",
+      "reason": "Preserves bringing the parcel up to the counter."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-020-02",
+      "raw_sha256": "20bf4149fc385ad2707458944efd58b471633ef3cc598a9f592fba67ea024f3b",
+      "decision": "accept",
+      "reason": "Preserves changing to less sugar."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-020-03",
+      "raw_sha256": "308c890be2087cf384f0bd30420a8ee54fda89748bb34a95775fc70027d3b271",
+      "decision": "accept",
+      "reason": "Preserves uncertainty, checking availability, and reporting back."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-021-01",
+      "raw_sha256": "372858e50a8c6ec8e32acd13fcb93ebe77ee19d5496205ba872422f0618616b4",
+      "decision": "accept",
+      "reason": "Preserves checking lost and found."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-021-02",
+      "raw_sha256": "24b81352e3a7ef3f8a1b4a6baa0cc1f231bba87dfd31caf3b685ac3069a4be68",
+      "decision": "accept",
+      "reason": "Preserves taking the technical-demo task."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-021-03",
+      "raw_sha256": "8fd48a9cfd5e4b7f673040fdd58734771029553fd73969f8e735bb151d24523a",
+      "decision": "accept",
+      "reason": "Preserves choosing horror and asking for a recommendation."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-022-00",
+      "raw_sha256": "e85940e77ed3293c3517c3594c58eb8fbf4a8c5bec48e1e6de6f3711244a36e7",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and checking with the concierge."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-022-01",
+      "raw_sha256": "0b52ebfcb8e0bfc7a96499edd4c78729ddddfa7485dfc8d0e26459723f3d6aa3",
+      "decision": "accept",
+      "reason": "Preserves five and requesting confirmation."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-022-02",
+      "raw_sha256": "c7aff96794e5c0b0314748884796735c33cb4c2a4be5f0c56fb5931ea200484a",
+      "decision": "accept",
+      "reason": "Preserves accepting the laksa trip through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-022-03",
+      "raw_sha256": "3752792221893fa47daf810a190f9f4a610b34adce61fc268340c05064b1ff46",
+      "decision": "accept",
+      "reason": "Preserves the unchecked bag and checking after reaching home."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-023-00",
+      "raw_sha256": "6b25457bb7a61285570ed1f8371ef19b9043660078c530e2a5e4add43138e297",
+      "decision": "reject",
+      "reason": "Replaces delivering the notes as soon as possible with only an update, losing the delivery promise."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-023-01",
+      "raw_sha256": "ec08e6b1c1be51aaf476a758659990dc88f932a009ac6a6f2255ba010ccb23a3",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking the catalogue."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-023-02",
+      "raw_sha256": "a1590b63731e6d2e4aa2e84dc3273b66faffd418b9e7216def2527f5bb7ba36f",
+      "decision": "accept",
+      "reason": "Preserves chicken-rice stall at one pm."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-023-03",
+      "raw_sha256": "d880e058df1aae2dd2ab2c9726ced5999e70116783c8daab71d2ae3f0811dd5d",
+      "decision": "accept",
+      "reason": "Preserves next-Tuesday acceptance and meeting through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-024-01",
+      "raw_sha256": "5270b24656a3e5841b8100a51b5e77aa1eaa2e10e65f39e74454c5a817e0dfbe",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about Sunday opening and checking hours."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-024-02",
+      "raw_sha256": "cf235b336232673913829ba444856ba9bda5372af8b56d85ecd233f3dee3669d",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-025-00",
+      "raw_sha256": "665e8147cf8c90cd5be53d60b5caec431703d1363bcf446d46a65622aebaa43a",
+      "decision": "accept",
+      "reason": "Preserves thanks and fixing the identified typos now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-025-01",
+      "raw_sha256": "cf6255d2e2dd223a2e84336cf369397efce02fec0af8ff5a838fabdd5e2250a8",
+      "decision": "accept",
+      "reason": "Preserves confirmation of a three-person team."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-025-02",
+      "raw_sha256": "893dd8fd8192bbed4b812ef0fd26c6c55ed9ca88650212a3256e1563db6c4b0a",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about permission and asking kitchen staff."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-025-03",
+      "raw_sha256": "aa8bc1593f43f8835d6d84599d2aa157b33b51d50eebbc523c0fab31287f376d",
+      "decision": "accept",
+      "reason": "Preserves trying the student lounge."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-026-02",
+      "raw_sha256": "59cd7f5fdc33151e505911eeba470255b2d81207bc1c42f12b92cc341f33734e",
+      "decision": "accept",
+      "reason": "Preserves the user offering to hold the umbrella."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-026-03",
+      "raw_sha256": "44d2ad3c88894f99a780350363bb3c16f22fbbec0f0c28531c6fc9568d8b6329",
+      "decision": "accept",
+      "reason": "Preserves sending via Telegram."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-027-00",
+      "raw_sha256": "c3dea09ffa039712164b38677e02305238874ac37e0c82946fdbb96827f434c7",
+      "decision": "accept",
+      "reason": "Yes please accepts the peer's explicit offer to send the notes."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-027-01",
+      "raw_sha256": "a5d6693d6b4756ab9d79c13c9e549652b86c4375cce17b6435c8fc1769b4cecb",
+      "decision": "accept",
+      "reason": "Preserves checking the budget and updating the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-027-03",
+      "raw_sha256": "01b7612e9f40a7fb06d3f4968e6bb5c35c35de274a07bb591f386f27d3ebc46a",
+      "decision": "accept",
+      "reason": "Preserves accepting the context's coffee meeting later through ellipsis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-028-00",
+      "raw_sha256": "2da4aba0728191bf942be3fac1624000cda8116763d8a9a727ece91cac932bdc",
+      "decision": "accept",
+      "reason": "Preserves endorsing the proposed horror film."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-028-01",
+      "raw_sha256": "bd1ce7de990c9760216e07abae5ac51887bc23c64ad336fccf32c06f932f9a23",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about snacks and checking the list."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-028-02",
+      "raw_sha256": "f49f18694fa0e5b7b79eb80b930c0ff1ccddaefcf12a8e5d38fbf72a92bc8a88",
+      "decision": "accept",
+      "reason": "Preserves taking responsibility for social media posts."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-028-03",
+      "raw_sha256": "dadde3a5a74a8faab72d5f7d500eca24186b3eec183cb2c6f78792c5b2cf41bd",
+      "decision": "accept",
+      "reason": "Preserves the main-gate meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-029-01",
+      "raw_sha256": "d24e53c0cd254bb8a22906b999da8e2ac9b5eaac12a7d62943f17f23ccb1f79e",
+      "decision": "accept",
+      "reason": "Preserves disappointment and hoping to see the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-029-02",
+      "raw_sha256": "c587c472c52d7f06c6dcc46db131c5c88d21be26f314f127ae3bb8b25c2a39fc",
+      "decision": "reject",
+      "reason": "Adds a save-time rationale absent from the English anchor."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-029-03",
+      "raw_sha256": "63df979a24fbf7354996814b78d5869817552f40a7e15f712da097892122edf8",
+      "decision": "reject",
+      "reason": "Transfers going alone from the peer to the user and removes the conditional accompaniment offer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-030-00",
+      "raw_sha256": "e97ef775ecefc520461daca1faacbfaf7a3770e2e503fe7d66aba0da8c2ab776",
+      "decision": "accept",
+      "reason": "Preserves accepting and booking eight pm."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-030-02",
+      "raw_sha256": "ae08963cecf51cba96d23c84c624718f8f2b26b041550b457fd3520e833935c4",
+      "decision": "accept",
+      "reason": "Preserves Wednesday acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-030-03",
+      "raw_sha256": "156ae68f830b775c415fa412b0e4f04b0a2caf050c6f5f6df7d571eafde7bcd4",
+      "decision": "accept",
+      "reason": "Preserves reassurance and asking for a feasible pickup update."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-031-00",
+      "raw_sha256": "e71aad12b3164c1917165bf60a53d9bb39f5dcb5acab7ed57249115ad578ae01",
+      "decision": "accept",
+      "reason": "Preserves thanks and adjusting the date font identified in context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-031-01",
+      "raw_sha256": "bf1c56bd39626f1a1f35bb99c2a38aa1544431753768d2e3db973e035e6a8212",
+      "decision": "accept",
+      "reason": "Preserves unknown copy count and checking the syllabus."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-031-02",
+      "raw_sha256": "f01ba1c152ce952e50a50aed9efdf57b031ea8313144a7af8ae6c20d78421147",
+      "decision": "accept",
+      "reason": "Preserves joint ticket booking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-031-03",
+      "raw_sha256": "c5d83b5bebcba110244411e9aeec15f03c0291124df61686742ef7cf4c7d58d5",
+      "decision": "accept",
+      "reason": "Preserves not finding the books and checking the shelf later."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-032-01",
+      "raw_sha256": "305e64ada28a6211d590963b8752662455890e51ab8a86be101dc77c78b128f5",
+      "decision": "accept",
+      "reason": "Preserves disappointment and trying somewhere else."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-032-02",
+      "raw_sha256": "a8d96e2bf016380c9b86a1d3a4d594a59be1bb6f449da2062eb1b9f8f5da1c11",
+      "decision": "reject",
+      "reason": "Changes not finished to not started and contradicts working on it now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-032-03",
+      "raw_sha256": "e781b1e05b3adb2c45c56a7bd02a7cec32b5ac92bdfb9419ef1b73f98b037618",
+      "decision": "accept",
+      "reason": "Preserves preparing the handouts and sending when ready."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-033-00",
+      "raw_sha256": "7f9d8bf319480ca14a71316efe1147c03934702391d565cf7e183bc80678c556",
+      "decision": "accept",
+      "reason": "Preserves choosing another booking time through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-033-02",
+      "raw_sha256": "cb485a4efab3b4b655b055884078f645639a91317f80315780cca090dd4b184a",
+      "decision": "reject",
+      "reason": "Reverses inability to finish the intro tonight into a promise to finish tonight."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-033-03",
+      "raw_sha256": "7bbc6f2794c541facb9f4176f0fee9993dda38921648ae7fede19e058b820466",
+      "decision": "accept",
+      "reason": "Preserves apology and currently using the power bank."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-034-00",
+      "raw_sha256": "91f410ea9f62fe743343d29d0b9cad4c057621bc56c8fdd869ed57a52184dd95",
+      "decision": "accept",
+      "reason": "Preserves checking the shared folder now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-034-03",
+      "raw_sha256": "5b71f9f6ae1d9e98b8b3ffbd103fa8c831ba1b124a29da01adabf43ab3f89635",
+      "decision": "reject",
+      "reason": "Adds a list-checking plan to an anchor that only states semester-membership uncertainty."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-035-00",
+      "raw_sha256": "21bddb05f26a110c8c90f40ae985c241b918a7e55cc00c3b7f88163489c73047",
+      "decision": "accept",
+      "reason": "Preserves the four pm library meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-035-01",
+      "raw_sha256": "a5921dbb2747d5ac0caf7eb56049bc4468e802093143823f5b594556f5be749c",
+      "decision": "accept",
+      "reason": "Preserves accepting lunch instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-035-02",
+      "raw_sha256": "54c918ab41dcb98130feebd38f46b2ad2f421c5285a9da1db2046fc0b24f1d50",
+      "decision": "accept",
+      "reason": "Preserves requesting the fundraising posters."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-036-00",
+      "raw_sha256": "b6afc7ed13b3958bea3af63dd8e2243c8cec8d57adee1edf7e7b0bb580e0404a",
+      "decision": "accept",
+      "reason": "Preserves checking Group four now; the portal source is supplied by context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-036-02",
+      "raw_sha256": "26c939c9ed0c354be0e8a538c3a69f04539410680bc73cacbb8f320af44fdf49",
+      "decision": "accept",
+      "reason": "Preserves three pm and the meeting close."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-036-03",
+      "raw_sha256": "829e2fb4ddfdf809e0dbbf5c06b537c70e23cc2720ffc8b030c47ae9a11bf325",
+      "decision": "accept",
+      "reason": "Preserves four pm tomorrow and the meeting close."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-037-00",
+      "raw_sha256": "257b34c972aecb7dbdaac72d8526b73670fd32acb07ccf0fc4d85620adb720ce",
+      "decision": "accept",
+      "reason": "Preserves fixing page two now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-037-01",
+      "raw_sha256": "88050e849c3565505855c0de350b27b30a3ec5400ded8ec2e04b2e311b1d3d63",
+      "decision": "accept",
+      "reason": "Preserves attendance uncertainty and checking the group chat."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-037-02",
+      "raw_sha256": "adc2d93d9b49d2b50cac24f87becd3e9d843a36bb1e7b9202c4aecc07ecb447e",
+      "decision": "accept",
+      "reason": "Preserves accepting ticket-booking responsibility."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-037-03",
+      "raw_sha256": "585ceec537a0d9ee273aeb9ed3612200a316d3f4598679ee699fa696ddff5635",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about stall opening and checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-038-00",
+      "raw_sha256": "46a9c8a85d87987c105f6f4995fc5f15c893ddfaef957a409781fe84125e45a6",
+      "decision": "reject",
+      "reason": "Changes the exact five-thirty meeting into a by-five-thirty arrival bound."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-038-01",
+      "raw_sha256": "8b42e8a396d30f1b86c5dabe1b47008d90dabea76bb3f48199a919ef683c9934",
+      "decision": "accept",
+      "reason": "Preserves tomorrow-morning acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-038-02",
+      "raw_sha256": "b3fb9046ed91b605bc8e5864e1839bf07f50a134a2169a6b297b0273bbaca9cb",
+      "decision": "accept",
+      "reason": "Preserves attending the mixer after tomorrow's orientation through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-039-01",
+      "raw_sha256": "b401bf873c574929f457bd29629bd71f3aa6f03341af9060235e070a6ce18920",
+      "decision": "accept",
+      "reason": "Preserves carrying the peer's extra bottles."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-039-02",
+      "raw_sha256": "1899f598940096f5d814ec5ed34ccf9d9b5aba82a4c3e163c3414fe7575a564f",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about simultaneous kitchen users."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-039-03",
+      "raw_sha256": "de7e374945b85c2f855454ac8270ccfd9a1d9b5d9ddf5a1a9f54a360c7e49d37",
+      "decision": "accept",
+      "reason": "Preserves sending the summary instead of slides."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-040-01",
+      "raw_sha256": "3e1417fc9fa4b9b27ba324e5bf2c2a61aec83c5367cc5dbc9f298bda39fdda73",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking the lobby now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-040-02",
+      "raw_sha256": "6b52408b17f734f450dd3c7aff6ed81cf827939e036fdbc46b85c79118e45646",
+      "decision": "reject",
+      "reason": "Drops pm from six thirty where the context supplies no time-of-day disambiguation."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-040-03",
+      "raw_sha256": "87573603778ed993228b42e1d46c3c0d3a4a9445e26707595616d74f8b811051",
+      "decision": "reject",
+      "reason": "Drops the user's inability to get markers and replaces it with a request assigning them to the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-041-00",
+      "raw_sha256": "2e27e1dd2c8438769808a1ff8655cfed024f97f73b186732bcd8b42a2b0213cd",
+      "decision": "reject",
+      "reason": "Drops the explicit ten-minute arrival promise at the new lounge venue."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-041-02",
+      "raw_sha256": "858e909ad53efac4f47bec7e65307031465ff307d2e0daab4829db6866b40e0d",
+      "decision": "accept",
+      "reason": "Preserves choosing spicy noodles instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-041-03",
+      "raw_sha256": "a6a5d14702b140781ddc566e8ff0bb99043809015d429bbbb56303fc20dc12a8",
+      "decision": "accept",
+      "reason": "Preserves reassurance and finding another helper."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-042-00",
+      "raw_sha256": "e81d2844c7109b200c70c64b8347962d6df4ede61dc8fcddb34676cb1bbbdfe4",
+      "decision": "accept",
+      "reason": "Preserves checking the lobby then collecting the parcel."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-042-01",
+      "raw_sha256": "328acccfe4008a1861a8abc9a88949f093a3d486f05be80f6e2c3f9c91587bb8",
+      "decision": "accept",
+      "reason": "Preserves buying only eggs and milk, omitting bread."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-042-02",
+      "raw_sha256": "eb5cdc9f180da58ebce1d1092542cbcdc34e0aa47e63304afad24515edd4f90c",
+      "decision": "reject",
+      "reason": "Drops the explicit inability to do food preparation."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-042-03",
+      "raw_sha256": "93eec90d236ab27868ba7d7bcd48d557ae670ed3eba1a4fb088dbe0061c0332f",
+      "decision": "accept",
+      "reason": "Preserves nine for the user and checking others' availability; check marks uncertainty."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-043-02",
+      "raw_sha256": "fa60ee84e02ac71362c8f24ff5673117baa591837c22bb45e380406627e1a200",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking bus schedules."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-043-03",
+      "raw_sha256": "c4fa5a259e448774e2553e3a7542cbc858cd329017467a83234428c034a799cf",
+      "decision": "accept",
+      "reason": "Preserves fixing the identified transition through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-044-00",
+      "raw_sha256": "11444ab4b5a5715727dfbed1e89cadb9aa2925a5d2860531ff7cff0a5ca0254a",
+      "decision": "accept",
+      "reason": "Preserves printing only two copies."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-044-01",
+      "raw_sha256": "7a590aa4b968ca385c083a8f5ff736f14d6115f583f621393907527858d02968",
+      "decision": "accept",
+      "reason": "Preserves reassurance and offering help if needed."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-044-03",
+      "raw_sha256": "48658478d5c89856e806adee519be31239116cdb3633df66875fdb847140572d",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about space and checking first."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-00",
+      "raw_sha256": "b85ef0b5ade2c9aa3c69a37bbd6e67d052ee52e731530f45d25093466ce42fa0",
+      "decision": "accept",
+      "reason": "Preserves accepting four and the user's calendar update."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-01",
+      "raw_sha256": "5f61732705811c995e49818288017d0f517d2fd4b9deeaf2cc824c3efb0e9274",
+      "decision": "accept",
+      "reason": "Preserves meeting at the gate."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-03",
+      "raw_sha256": "5962c718c68d327b5eb7b63c1732ae4d2a7ae0ee28a38e4afea0d22aea1262fd",
+      "decision": "accept",
+      "reason": "Preserves not seeing the lanyard and checking lost and found."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-046-00",
+      "raw_sha256": "eee2401b559794a148095295a8fbe0f848083c1292a8a696d8e0ebc2763a69f8",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about going and checking the schedule."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-046-01",
+      "raw_sha256": "26cf30c0968de1738052f4c795efcaca99b9761f8557e325ac6d3758d31174ca",
+      "decision": "accept",
+      "reason": "Preserves arrival in ten minutes."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-046-02",
+      "raw_sha256": "4101415a336bb7e8fd101470675576b46589f3d901689117f0cc62b6abf38abe",
+      "decision": "accept",
+      "reason": "Preserves the Grab suggestion."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-046-03",
+      "raw_sha256": "0a6eaccae1351409f59968dd73c11f8442f1289f4fc69a88da1b554cc18a4e78",
+      "decision": "accept",
+      "reason": "Preserves tomorrow-morning agreement."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-047-00",
+      "raw_sha256": "0928223c0bed12eb0a815d9df5ed63fb05eea5d953ccf351b8c9aff2999f7278",
+      "decision": "accept",
+      "reason": "Preserves collecting now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-047-01",
+      "raw_sha256": "cf471063b0b089c30efab3e58f8a2012d133aee57a44dc018f4ae48b37c5a8ac",
+      "decision": "reject",
+      "reason": "Reverses checking from the peer to the user and adds a report-back promise."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-047-02",
+      "raw_sha256": "4c09688a1cb86af77dcfe82fd584fd19a5d87ea389c198a4eeb97e953524b613",
+      "decision": "accept",
+      "reason": "Preserves responsibility for data analysis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-047-03",
+      "raw_sha256": "e14e746fbbcd9d5804262c216b4b1e1b8afcd457636a4e255f3e5217c4453b37",
+      "decision": "accept",
+      "reason": "Preserves definite registration-booth attendance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-048-00",
+      "raw_sha256": "ffc65ae1d3e464dad0e04315d526f6b6d741dd65ad78c1ba12031634424da5ad",
+      "decision": "accept",
+      "reason": "Preserves accepting three pm practice."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-048-01",
+      "raw_sha256": "9dc3baa08bf523516729244a664cf5c351e5c20cfeebaefe3b2850f7139f057e",
+      "decision": "accept",
+      "reason": "Preserves disappointment and looking forward to meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-048-02",
+      "raw_sha256": "c40d162957112b78fcb0f7862d0765b0f16da8891b2f7bc4e583ff43086bf9ee",
+      "decision": "accept",
+      "reason": "Preserves checking the portal now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-048-03",
+      "raw_sha256": "287f0e7668b89a66eb0b2cf65e52129667786b2dfafefc901756c581f1794000",
+      "decision": "reject",
+      "reason": "I find out anot is malformed and loses the promise to report the result."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-049-00",
+      "raw_sha256": "5c94bed4bf9c429e1d8bf5fee628068cd1fdf9f01c3ad9350fbcfc6d7f4ed5c1",
+      "decision": "reject",
+      "reason": "Reverses lending an umbrella to the peer into borrowing the peer's umbrella."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-049-01",
+      "raw_sha256": "0d8f07e561965615131a97d29cb9f86061754d1641ca2c8c212ce615389b39da",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about humanities-wing availability."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-049-02",
+      "raw_sha256": "66fb33dcaee8bb4043b33168ce545d059a789c6f66ddfdb960c158a16356602d",
+      "decision": "accept",
+      "reason": "Preserves Friday acceptance and sending the file then."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-049-03",
+      "raw_sha256": "3e900c7b40b3efb5e4f85a7fda2bfeeb8b8338983b9509e0097f4969e373b6c5",
+      "decision": "accept",
+      "reason": "Preserves offering conclusion help while uncertain about wording."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-050-00",
+      "raw_sha256": "cd4ac16e33069442bb9ef11935191a76bc71263b706e194059e85c42731b1070",
+      "decision": "accept",
+      "reason": "Preserves positive acknowledgment and thanks for the repair update."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-050-01",
+      "raw_sha256": "f3b1d28cef22412142c63faec262e6e022f7ab4ae37a596739e0ce3b837da25b",
+      "decision": "accept",
+      "reason": "Preserves unknown pickup time and checking the email."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-050-03",
+      "raw_sha256": "61fa3fe6154734a7f93cb3a5b8a6f14da886935f3865a6e770ad83b1576524e9",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about more slides and checking the folder."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-051-00",
+      "raw_sha256": "aae050503ff37eb8a8bf78ade4ff7e293fef81380bf8142836986ab7e05a4124",
+      "decision": "accept",
+      "reason": "Preserves accepting the eight pm booking through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-051-03",
+      "raw_sha256": "c8469039a662b7f6c0246c500bf24b4ad3d2cb1071c481963ffdd48fc70e8ffa",
+      "decision": "accept",
+      "reason": "Preserves proposing the library and asking for the study spot."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-052-00",
+      "raw_sha256": "58ce3c6f6da0428c299432ea5159f6689b0eb60cd803545d72c69c66c03d65cc",
+      "decision": "accept",
+      "reason": "Preserves checking whether volume covers the group."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-052-02",
+      "raw_sha256": "df1422214f602c402181c183bd794004e55d3238c6079a51b67a1997d55d6b92",
+      "decision": "accept",
+      "reason": "Preserves six acceptance and the user's seven-thirty limit."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-052-03",
+      "raw_sha256": "d2d39502bb0dfad1c06655892ca46ded215711366be569f418b3414ae203e4b4",
+      "decision": "accept",
+      "reason": "Preserves accepting logistics and assigning it to the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-053-00",
+      "raw_sha256": "76e55cc9ba118c50bc62eea16c52403c80c5fddb3c7eeda32e85c8f6207ef050",
+      "decision": "accept",
+      "reason": "Preserves switching the active printing trip to the faculty building through contextual ellipsis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-053-01",
+      "raw_sha256": "3e3b86f25e386c29eef1e16bda5b9a17c55f10d7fe80a0ebc4652b42b7fc673c",
+      "decision": "accept",
+      "reason": "Preserves choosing butter popcorn."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-053-02",
+      "raw_sha256": "61eb680c58e6b9500c3d0cc8dd8becc970d31b4ba32e5007a80c540166e04fe9",
+      "decision": "accept",
+      "reason": "Preserves checking projector availability and updating the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-053-03",
+      "raw_sha256": "b33802d01e0cf1631af856646651a3729cf13d0abfd7debbcef73de97d3e4eac",
+      "decision": "reject",
+      "reason": "Changes asking the peer which stall is best into asking a stall owner."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-054-00",
+      "raw_sha256": "7b095e57a5b3df532333c6a4e616d25098deadf3576c48ce6ad54e8b43a6c5d2",
+      "decision": "accept",
+      "reason": "Preserves permission to keep the power bank until four."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-054-01",
+      "raw_sha256": "6069530f35f5a653657445a293301261d9ef2fba81d4a7817cc1186e0d333cc1",
+      "decision": "accept",
+      "reason": "Preserves approving the immediate white-background change as a terse choice confirmation."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-054-02",
+      "raw_sha256": "a71792bbafa137b5ec56b62957908f6b95c570d650128e316633411fbe37639c",
+      "decision": "reject",
+      "reason": "Changes unavailable before seven into unavailable at seven, and weakens a by-seven-thirty promise into a question."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-054-03",
+      "raw_sha256": "3162bed56a341cf940ea80295f26abc4b429edec28b2f5e480e38b43dee77bed",
+      "decision": "accept",
+      "reason": "Preserves unbooked status and checking the court's availability through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-055-00",
+      "raw_sha256": "a45cc1a8517566e9b3c4a94b09061eb5fb1a24e2a2ceef6375d8645f5e95b926",
+      "decision": "accept",
+      "reason": "Preserves taking the Circle line too and meeting at the library."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-055-01",
+      "raw_sha256": "9d8171e5f0265dddb53711ef6eb7d87287d4a5b571bb491f3c72c9af44844ae7",
+      "decision": "accept",
+      "reason": "Preserves offering final-chapter help while not having started."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-055-02",
+      "raw_sha256": "fdeab940529e7bc4e192bea7ad53b17d924bf89aef0c9693a21c905ee2089a09",
+      "decision": "accept",
+      "reason": "Preserves checking the bin now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-056-00",
+      "raw_sha256": "c329cbecec03d861bc9e4f1f35b1d6b75110803dd5172a0c0fab00718daa1aab",
+      "decision": "accept",
+      "reason": "Preserves choosing Exit A for the meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-056-01",
+      "raw_sha256": "4976f67535109f3d6e56c6ebfe17088b8c9a0ae7e29867ecc57ef4c784cd4843",
+      "decision": "accept",
+      "reason": "Preserves approving the two pm booking through the explicit question."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-056-02",
+      "raw_sha256": "3d2c9ea52c59950bd323a674cd2f8ef8311d7809581900e95d4802c1dd99a1fe",
+      "decision": "accept",
+      "reason": "Preserves confirming Tampines remains suitable."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-056-03",
+      "raw_sha256": "3b26a26309208e2c17475748474e05ae5dd2ff6fc98807ce84a41ecc0e44bc91",
+      "decision": "accept",
+      "reason": "Preserves Exit B and arrival in about fifteen minutes."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-057-00",
+      "raw_sha256": "e825b5aa149342833b13abae6a411269cf206ccf91f20959410025bbb30561a9",
+      "decision": "accept",
+      "reason": "Preserves leaving props for tomorrow."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-057-01",
+      "raw_sha256": "2fc99a1e65cfa23ff3424f92547c87f4e330626979235cd3e864889ff2f1877f",
+      "decision": "accept",
+      "reason": "Preserves placing the logo at top right."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-057-02",
+      "raw_sha256": "3c27426489114a0c69dae9c9637d2607f4e50282e1bc6cd5f4d6da03e35dcf88",
+      "decision": "accept",
+      "reason": "Preserves seeking another person for crates and reassures the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-057-03",
+      "raw_sha256": "8d32e20539852e8d6586de92c89b86f1fece733ac0ceb060ff81617ad7e46fc3",
+      "decision": "accept",
+      "reason": "Preserves tomorrow-evening availability."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-058-00",
+      "raw_sha256": "65c0a9adec3c5469540c2bb6302239ffe03a92e672ea33e35fb2132824250153",
+      "decision": "accept",
+      "reason": "Preserves thanks and heading to the identified place now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-058-01",
+      "raw_sha256": "71cd40c53c35ff9915ba92c9de70fff58a91b3cd55642a179d17b042393db6a2",
+      "decision": "accept",
+      "reason": "Preserves disappointment and looking forward to laksa."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-058-02",
+      "raw_sha256": "6f4218b92362f7ac9fc578bce0032b682f6afd733da76efa2f79547b0975c218",
+      "decision": "accept",
+      "reason": "Preserves promising the driver information."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-058-03",
+      "raw_sha256": "e287fae121a104a4bb71a57f3d188c3f187c93e553159c24721acc3fd843b9a7",
+      "decision": "accept",
+      "reason": "Preserves waiting for the peer to finish the conclusion."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-059-02",
+      "raw_sha256": "3dc189e727a01ecd65f8c7d5d06778fbacd605575cecaaaf5fb0c7fc2a85dcfb",
+      "decision": "reject",
+      "reason": "Adds an update promise absent from the English check-and-search plan."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-059-03",
+      "raw_sha256": "f87e5a11455db5dd51754828a6cbcc3db26c5139bc3b68138cc72833270384b6",
+      "decision": "accept",
+      "reason": "Preserves having the tracking number."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-060-01",
+      "raw_sha256": "d343e82fc6d15096a007b5e8ebd2a30bcdfa0c27f42ec45479e0804c73e3faa9",
+      "decision": "accept",
+      "reason": "Preserves uploading the requested photo through the specified shared-drive context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-060-02",
+      "raw_sha256": "5caace48ff2c848a1cfb11e24edd50e0c419ef26c5b49792d7c6b2be03b4d7ae",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking Telegram now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-060-03",
+      "raw_sha256": "1d04c0bb5d5f22143aaf4f6128615ceb5ba911727b073521ce7aacb4f22f9e49",
+      "decision": "accept",
+      "reason": "Preserves enlarging font instead of changing colors."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-061-00",
+      "raw_sha256": "d348c2b1b1a7d140c03e7f330dec9bdb3eff5b56817d23ed1a0900fcfef2d7fe",
+      "decision": "accept",
+      "reason": "Preserves printing a copy and asking the payment amount."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-061-01",
+      "raw_sha256": "93f0c26e2502bd43524ff60cee351d33a636100dd38393bb4f83e1ed3cc41b0b",
+      "decision": "accept",
+      "reason": "Preserves five at the cafe."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-061-02",
+      "raw_sha256": "eac41adb2b82a83c89b0143a820ec797ae2652b81b419c227d59faf94bc59e18",
+      "decision": "accept",
+      "reason": "Both resolves to the charger plus power bank without adding a new item."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-061-03",
+      "raw_sha256": "73221befd761c018d3f1881845e1d57ac00b7389d748d1ead6f71420813269b3",
+      "decision": "accept",
+      "reason": "Preserves summarizing the final part but not the whole lecture."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-062-00",
+      "raw_sha256": "0eb6ddb6fbdf797eddf342bc6e1592bdbaaa44af818ef0121ebf946dbb25811a",
+      "decision": "accept",
+      "reason": "Preserves eight pm acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-062-01",
+      "raw_sha256": "1ab24f34783fd34b8e8761404b3b8b86be068c5c9ded1b5fe257e5af9619bb65",
+      "decision": "accept",
+      "reason": "Preserves the corrected five-thirty pickup time."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-062-02",
+      "raw_sha256": "fceb5cfc92dc6205447ffc95d9482a8b61108fc8a7d0fe1d6ba13f7b717f3cc7",
+      "decision": "accept",
+      "reason": "Preserves Sunday acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-062-03",
+      "raw_sha256": "e701db94b865fb60b6f5147a45e7b7e6b2ff83378d7840089c4ebb4f7f01596a",
+      "decision": "reject",
+      "reason": "Changes the user's affirmative choice of the 147 into a question directed back at the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-063-02",
+      "raw_sha256": "62ca4d5a85131545295992dc8848605c2480f0702792342c8f4f552046ef426c",
+      "decision": "accept",
+      "reason": "Preserves microwave uncertainty and checking first."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-063-03",
+      "raw_sha256": "0b616edd88e0db45d56720b8a67183dba840808f4c7088586b18a58afefda0d3",
+      "decision": "accept",
+      "reason": "Preserves moving the meeting to three pm."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-064-00",
+      "raw_sha256": "89d5f4e7f9e60fc5b492f2be97985b508b502272a200f4c8047bb62dfc38f203",
+      "decision": "accept",
+      "reason": "Preserves unknown opening time and checking with the organizer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-064-01",
+      "raw_sha256": "ac9632164e0ce70a35d61bc736bdfe1a9c296edacb7d6e2d5b5bd4876420a9a9",
+      "decision": "accept",
+      "reason": "Preserves taking the bibliography task too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-064-02",
+      "raw_sha256": "f9a834c83c257e2e1c8ef0cd589a53838153fdd675fd670d09b3eaf6143cb644",
+      "decision": "accept",
+      "reason": "Preserves inability to meet the deadline while still offering printing."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-064-03",
+      "raw_sha256": "9ce5a130a111a5a4f502702d8920d067cc9680396a901e3ad6190d0aef6c808d",
+      "decision": "accept",
+      "reason": "Preserves buying eggs and milk but uncertainty about snacks."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-065-00",
+      "raw_sha256": "a6fcf236bb95da6b81d3a0db21f2c3f7093e32c161623195de3f3c2681bc98e7",
+      "decision": "accept",
+      "reason": "Preserves proposing the ground-floor library meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-065-01",
+      "raw_sha256": "ad55ba7bb241a296e6b17e2905cae9fab213c1755512d7e62b37b66ffa8efed4",
+      "decision": "accept",
+      "reason": "Preserves highlighting the specified case-study content through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-065-02",
+      "raw_sha256": "64816b708d6f2b0c5feff21e815f85f41e0faae4699d50e9fb5c9ef9caba344f",
+      "decision": "accept",
+      "reason": "Preserves thanks and reviewing the offered photos."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-066-01",
+      "raw_sha256": "9c909d7b086b9053f3d4a4e740961635554bcf7a3c7ff0287df19501b3c9cba8",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about tomorrow's walk and checking the notice board."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-066-02",
+      "raw_sha256": "b1f133b12dcce533e8584dc7de826083c6f1a07a5c46d2369025c48149e94e64",
+      "decision": "accept",
+      "reason": "Preserves requesting printing now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-066-03",
+      "raw_sha256": "22755dbbc9bcf3da917ce96b97e3479cdb193257fa14c7c2b7ed7c98794fc63d",
+      "decision": "accept",
+      "reason": "Preserves booking the study room."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-067-00",
+      "raw_sha256": "23f2b34b2e09f3d8cfad1438c24a9f1f777e9b6ba006f31b155b47aca609afe9",
+      "decision": "accept",
+      "reason": "Preserves Friday coffee acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-067-01",
+      "raw_sha256": "148896034eb2d10d633cfbe774cb2be177197fe03aa4f740875125b2d5b30b9e",
+      "decision": "accept",
+      "reason": "Preserves bringing ten chairs."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-067-02",
+      "raw_sha256": "6004a870402694ecf765bd9f1eb30cbba9d4c1d901813724a715e1cd64208643",
+      "decision": "accept",
+      "reason": "Preserves five pm at the void deck."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-068-00",
+      "raw_sha256": "9eba030c287c32f6f6d38d2ed8e1401b9395ee9f0827c90e8f3776f434a6e367",
+      "decision": "accept",
+      "reason": "Preserves data-analysis workload as the reason for declining conclusion help."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-068-01",
+      "raw_sha256": "c99e9101e5167960fff40a07e98b520109add96dec2ef0f4f05eb221d2109303",
+      "decision": "accept",
+      "reason": "Preserves starting without Wei Ming."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-068-02",
+      "raw_sha256": "556b511671c99ea668ec866f5294c5cdbdd298e8afd1c1cba196eb6c049fcb1e",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about the lunch option and checking its menu; wording is clipped but understandable."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-068-03",
+      "raw_sha256": "7130f7c63a10fb1d1f40f4912e31f7d22087f612900213d26f4100ef090d75c1",
+      "decision": "accept",
+      "reason": "Preserves helping compile the final album."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-069-00",
+      "raw_sha256": "21226d99e382f45985cf841bf8348af5aed8cf7b4e6d83ba275a45f98a82afd5",
+      "decision": "accept",
+      "reason": "Preserves requesting help with conclusion slides too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-069-01",
+      "raw_sha256": "88d45ccfb577dd1a525819b56e81015c4bb21582dcb8082225d55cc1a7f6604a",
+      "decision": "accept",
+      "reason": "Preserves the proposed eight pm booking through the peer's question."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-069-02",
+      "raw_sha256": "d9f3999a4f36232b667cf31cbde60749fb81913699578c68f7a1248b0d23ea58",
+      "decision": "accept",
+      "reason": "Preserves walking together while the user uses the umbrella."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-070-00",
+      "raw_sha256": "47f67ed366e9e401e65a0d4568dbbc27e0f8382a21b648686367642d96a20831",
+      "decision": "accept",
+      "reason": "Preserves court-availability uncertainty and consulting the organizer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-070-01",
+      "raw_sha256": "ba4b7b1ede26e8d0458a66937626b5e1851efefde3733245c3602e20708a8940",
+      "decision": "accept",
+      "reason": "Preserves checking the flyer about unknown duration/end time, given the known start."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-070-02",
+      "raw_sha256": "2d0e7d946856a5d037727ae760ef49ec6b886e6e09c0591ad04d3784a3d4f8cf",
+      "decision": "accept",
+      "reason": "Preserves accepting logistics and transport."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-071-00",
+      "raw_sha256": "b3ac90d3a7cab74b4717abecc13e84dff2829b0770060b3b19bee439909b3b89",
+      "decision": "accept",
+      "reason": "Preserves adding dumplings to the order."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-071-01",
+      "raw_sha256": "96424899d14c92999a2eb43e0b8b4e9f2a19ef34f0d4468f12a215e6bc580318",
+      "decision": "reject",
+      "reason": "Changes availability until ten into ten can and loses the clear latest-finish limit and tentative question."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-071-02",
+      "raw_sha256": "b2a2abe6bd0743d959d3d50405a2318ab5be2551361c62c1e33a9f18f8c61be9",
+      "decision": "accept",
+      "reason": "Preserves accepting four."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-071-03",
+      "raw_sha256": "17f830e2cb3c2d54645083bd64d9755217d6c8dfe8b643d4f0650cfe954eff56",
+      "decision": "accept",
+      "reason": "Preserves asking for the file so the user can upload it."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-072-01",
+      "raw_sha256": "d69d9eb76132b4abd3e90f1d3e42dfdc1438881acc58957cb252bff87099d066",
+      "decision": "accept",
+      "reason": "Preserves requesting the user's copies too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-072-02",
+      "raw_sha256": "104d21a40823f6ba6d6296a54ff7414dbc847644064517509ed5067cbd227c42",
+      "decision": "accept",
+      "reason": "Preserves four-thirty meeting acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-072-03",
+      "raw_sha256": "56de6adfb10b278634de5aa8e9465f411a9d8a94cac9e8166edf3c9b0b3ed709",
+      "decision": "accept",
+      "reason": "Preserves accepting tonight's concert."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-073-00",
+      "raw_sha256": "191e4301fba9089530584d4cd66f05ca78b8fa48dbfe34d62698aef2f2d704f7",
+      "decision": "reject",
+      "reason": "Adds a pasta-availability question and changes a simple acceptance into uncertainty about food at the library."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-073-01",
+      "raw_sha256": "71bace516c04c1637eb6503cd73f297ac74b45bd5c05a62dce0978c384fc8f38",
+      "decision": "accept",
+      "reason": "Preserves requesting extra chili."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-073-02",
+      "raw_sha256": "d01ea8d33384a017f03bee4ba8bd26a0a5dd1211b0742fba0419695d13173b9e",
+      "decision": "accept",
+      "reason": "Preserves accepting the three pm two-person room through the immediately supplied capacity condition."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-073-03",
+      "raw_sha256": "4eb32cdb3c03629189c4fd8130ed64117a342102b845aaeeb4fc93dc0106f9dc",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about both fitting and checking first."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-074-00",
+      "raw_sha256": "f2e58a079e6c49d56284df2a3315622287a41de44371020580ceb9a2d97e8c25",
+      "decision": "accept",
+      "reason": "Preserves requesting nine pm tickets."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-074-01",
+      "raw_sha256": "03990b2775835943dc2b07bdfd70810e4966bc7cd16ca92abdc3448f311ab770",
+      "decision": "accept",
+      "reason": "Preserves the corrected Sunday meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-074-02",
+      "raw_sha256": "c3f8b434e5e50404da159129364910ba8b16473de119c58e76cff59aad67851c",
+      "decision": "accept",
+      "reason": "Preserves Saturday refusal because of other commitments."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-074-03",
+      "raw_sha256": "b54860482adac108283439fa139a8b773743af42e7ba15b9f6f5cd7f79f2f175",
+      "decision": "accept",
+      "reason": "Preserves starting the intro now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-075-00",
+      "raw_sha256": "a2f8f35a25c318a7dcf9365f416b2debbf9171d903b039760c2c46a7dfbe441a",
+      "decision": "accept",
+      "reason": "Preserves checking the bag for cables rather than asserting possession."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-075-01",
+      "raw_sha256": "1ebeb17c4866799d31bf712f096fe44c66ea69290f264746227421583d1fc83c",
+      "decision": "accept",
+      "reason": "Preserves volunteering to take tomorrow's session notes through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-075-02",
+      "raw_sha256": "dc4452fea78e565ff1e947acd1f7d75819980f2885250b408fbd052811741be5",
+      "decision": "reject",
+      "reason": "Adds a report-back promise to an anchor that only promises a return-bin check."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-075-03",
+      "raw_sha256": "9a408d88e24206e263da0de08c4357d7d471ced6fdc99189ac171544f785824c",
+      "decision": "accept",
+      "reason": "Preserves sending only performer photos."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-076-00",
+      "raw_sha256": "87af78a30e42241aa3c4b878bddb970a3bf70f263fbe3de6d71d3f41aa915f87",
+      "decision": "accept",
+      "reason": "Preserves finding another printing location."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-076-01",
+      "raw_sha256": "6f8d066e71fcfbe336fa90f366c93a504840b11b35862f4c6fb54b39e731ed3a",
+      "decision": "accept",
+      "reason": "Preserves undecided status and checking with organizers."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-076-02",
+      "raw_sha256": "c9492bf1be768b1039a78001afa9a1459a00cd7199b168feba01f18e266c371d",
+      "decision": "accept",
+      "reason": "Preserves requesting exit identification before locating the peer for the meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-076-03",
+      "raw_sha256": "53ae535ee0496b7125192baa0a499b85c821a1505d0415b44ce507ab17d566d1",
+      "decision": "accept",
+      "reason": "Preserves stapling the peer's handouts."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-077-00",
+      "raw_sha256": "9d1323b44f44eca11967399cbb733974adc8763e2756a745dd46f36cacd50d7c",
+      "decision": "accept",
+      "reason": "Preserves positive reaction and wishing enjoyment."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-077-01",
+      "raw_sha256": "a6cfea550d4c8666cf5919e634feff0cc30957507822d11fb6747531e10339d8",
+      "decision": "accept",
+      "reason": "Preserves accepting four."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-077-02",
+      "raw_sha256": "149f01ebdd9f6f7ba6ee191e0390b919660b2553a2dc3820c2905ea5a7097c5a",
+      "decision": "accept",
+      "reason": "Preserves reassurance and keeping the notes in mind."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-077-03",
+      "raw_sha256": "883ed50b4116df7028a96e277b73d65207ae6822f618701028b9b76f5de2ea3e",
+      "decision": "accept",
+      "reason": "Preserves permission to use the bank until day's end."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-078-00",
+      "raw_sha256": "e2cc7ca177ba7ecdb91e7a8326ead10a94766165bf99cbb29fa1da99faebf217",
+      "decision": "reject",
+      "reason": "Adds an explicit promise to go get water to an anchor that only states a drink preference."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-078-01",
+      "raw_sha256": "a351a879124bf856405f8d4cd7052e4e4773d45e6abdc2741e7d782ed45b8787",
+      "decision": "reject",
+      "reason": "Uses book popcorn and snacks, an unnatural and narrower action than taking care of obtaining them."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-078-02",
+      "raw_sha256": "79e5ead7f588d970bee8d82834dcd1309868f54b11cea2f48dd59555f53ada5d",
+      "decision": "accept",
+      "reason": "Preserves promising a feasible collection-time update."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-078-03",
+      "raw_sha256": "e5cc37d029a6844c6fccf550b777124658336f6748bd03a26db219aea6b1128a",
+      "decision": "accept",
+      "reason": "Preserves Saturday rescheduling acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-079-00",
+      "raw_sha256": "5f70e704814a2ca12d40ac244188ea1b69612d567979f711b8d85870cd85cdb6",
+      "decision": "accept",
+      "reason": "Preserves reassuring the peer and handling the conclusion."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-079-01",
+      "raw_sha256": "0ab3a30e74cca78b5dc98f75b9352a3809e7d3ad0d211bb915382ebaaf5ef22e",
+      "decision": "accept",
+      "reason": "Preserves the completed printer-area search and no result, with past status supplied by did not find."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-079-02",
+      "raw_sha256": "abbc1b29626b52b5fb83fedf43594a533469a26b8828a26df127b562a009c9aa",
+      "decision": "accept",
+      "reason": "Preserves seven pm practice confirmation."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-079-03",
+      "raw_sha256": "d1d80efe4741491431c4e04a43d2fda47ecd7240da9c769de6ecbdab0e581a3a",
+      "decision": "accept",
+      "reason": "Preserves buying two bowls for the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-080-00",
+      "raw_sha256": "9d5d806aa0a3bdab1bdb09a677aa7ee49b4348c104edb1858d299264c1fec129",
+      "decision": "accept",
+      "reason": "Preserves not having registered and doing so as soon as possible."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-080-01",
+      "raw_sha256": "b45159523d9fcf39364a73fa24781d644dcdba07757f731ddef8a9749a62828b",
+      "decision": "accept",
+      "reason": "Preserves choosing white paper."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-080-02",
+      "raw_sha256": "42801217b2ac4437a587636bc8dc35d2e949608c81e5fceb3a9e1f1e0e13c80f",
+      "decision": "reject",
+      "reason": "Adds the user's own no-rice preference, copying a preference that belongs to the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-080-03",
+      "raw_sha256": "4ff46338508d78f0b2e765ef64f4cc22b210fdcaf172afe72b8e1a6edf04d6d1",
+      "decision": "accept",
+      "reason": "Preserves taking the MRT home to Tampines; neutral wording is natural enough locally."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-00",
+      "raw_sha256": "85ef0524604497c3b68c1392228abf2ca7c47cf41b72c223fd77e56e914cab00",
+      "decision": "accept",
+      "reason": "Preserves cinema uncertainty and checking movie details."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-01",
+      "raw_sha256": "25af79a6fd0fc76cce5d0b7f389a88d5cc1653a66e8ca19a3730f1ffcdb266e8",
+      "decision": "reject",
+      "reason": "Adds not knowing the driver to an anchor that only promises to provide the driver's identity."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-02",
+      "raw_sha256": "95af04b809c869ca08e1c2508382bb9c689ce14373248cf3ac7489065b669dba",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about whether to study the last chapter and checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-03",
+      "raw_sha256": "cdcffa09419b25ef1e82418eb57ef1ea0c2c262912ff28ae1e703236d79dc615",
+      "decision": "accept",
+      "reason": "Preserves choosing the indoor court."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-082-01",
+      "raw_sha256": "b076598777a4332b4003780c393228d2f5b621196414f451d89936ebe2c05734",
+      "decision": "accept",
+      "reason": "Preserves choosing the next stall's chicken rice."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-083-00",
+      "raw_sha256": "79eaa1a0158d88d3b22a6cd60511a4e2763725f6e776bb4159846ca3a28f95a1",
+      "decision": "accept",
+      "reason": "Preserves Saturday-afternoon coffee."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-083-02",
+      "raw_sha256": "17d195a8a2362554046f0b2840d546b923b391afd1fb7172b7a032a0fb09b4d5",
+      "decision": "accept",
+      "reason": "Preserves the conditional promise to update availability for merchandise."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-083-03",
+      "raw_sha256": "808e235cc46847cd2f61e7b27968fc10ecdfbb6a24bd3e56916fd61120eaf445",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about the final two chapters and checking the syllabus."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-084-00",
+      "raw_sha256": "c882966403fe82ddec64aa9ebc5f4486d5314bb0667dfdc47fe93098fd01a5da",
+      "decision": "accept",
+      "reason": "Preserves moving the booth to the courtyard."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-084-02",
+      "raw_sha256": "cd8778618edd48bd0463eb3f8129aa8547f0e191768154ba41576a3a75ab6209",
+      "decision": "accept",
+      "reason": "Preserves going to the gym instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-084-03",
+      "raw_sha256": "1e114a3f32789f190d4122cc99cc091d3eb9a092e673e99e63212e7065a95629",
+      "decision": "accept",
+      "reason": "Preserves requesting an update once markers arrive."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-085-00",
+      "raw_sha256": "fc9bef0c703e16acb81f1d776fb30478ec8b5dc85b00118f2a0ee9d9e159ccc2",
+      "decision": "accept",
+      "reason": "Preserves accepting six pm."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-085-01",
+      "raw_sha256": "34448bdac32d22179ad47c5f2e927d754835508ee72578e0623e4ce2e0185e85",
+      "decision": "accept",
+      "reason": "Preserves printing five flyer copies for the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-085-02",
+      "raw_sha256": "80d969c6d91f3143de789598b6d8c952d9d0879f3e64b606485c6d354983e711",
+      "decision": "accept",
+      "reason": "Preserves weekend-opening uncertainty and checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-085-03",
+      "raw_sha256": "f2913d82784252db8dfcf9a7643f040d644ce4cf3b9d2c01a6f386b67fa41822",
+      "decision": "accept",
+      "reason": "Preserves accepting the sole requested font change; Arial and whole-report scope are explicit in the immediately preceding request."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-086-00",
+      "raw_sha256": "84b767b516ecb58f663c7a217669e1fcd3e7b0e8b05b4aafb7ebce3cf477f006",
+      "decision": "accept",
+      "reason": "Preserves appreciation for grammar and flow help."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-086-01",
+      "raw_sha256": "60209b5889c674bf7b606a07165051cc0a238bcb97ceef80f8404e25dbc1b618",
+      "decision": "accept",
+      "reason": "Preserves returning to last night's slide."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-087-00",
+      "raw_sha256": "bf613fc4acdc071346167a7d8c89cb32550028f184a1fe1f7cd1c19bdc561a39",
+      "decision": "accept",
+      "reason": "Preserves currently being at the entrance gate."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-087-01",
+      "raw_sha256": "e4def756e51954ba77cfe224f5371d0f906575115b1f1109f03cc6d2fc28c202",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about the registration handler and checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-087-02",
+      "raw_sha256": "01f083450929df18a1a10e34c9ae085a173f52d6fb2165aa9690ddd03d1f66c9",
+      "decision": "accept",
+      "reason": "Preserves refusing station pickup while offering the mall meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-087-03",
+      "raw_sha256": "3e8fb5aed64d4c9b7070d259a2f2e0b1871659c7ee8a0c2dad2112a35b28099f",
+      "decision": "accept",
+      "reason": "Preserves the changed cafe meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-088-01",
+      "raw_sha256": "698ec4114a5f4ab2a26a85bde286fab1dbef61e47bf62958370d9d53e20000ce",
+      "decision": "accept",
+      "reason": "Preserves the canteen meeting; canteens is a minor typo with one clear venue in context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-088-02",
+      "raw_sha256": "9564f88a3955c3b1a1e02729485853f6a31b130ec56326ea9e428d4d0fe14d38",
+      "decision": "reject",
+      "reason": "Changes a by-eight deadline promise into returning at eight, losing the explicit latest-time bound."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-089-00",
+      "raw_sha256": "42467cfa981b8dbbcb338cb648515acde0095c2c65e5480f31a8e1276cd96c47",
+      "decision": "accept",
+      "reason": "Preserves sending the final file to the shop now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-089-01",
+      "raw_sha256": "4eeaebe6344784daf140348ea8d0b281118025629132e3befba6a140d3c6010d",
+      "decision": "accept",
+      "reason": "Preserves returning to the original next-experiment plan."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-089-02",
+      "raw_sha256": "05ffdc0d3fa5fae6ed47038ff49c08687e099d693983e6347caef49217f928c2",
+      "decision": "accept",
+      "reason": "Preserves tonight uncertainty and checking the schedule."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-089-03",
+      "raw_sha256": "fe08e89816b951f577b78c95fd49d7bd0366509bd4d5f4ff0e7dbd04125663b7",
+      "decision": "accept",
+      "reason": "Preserves fixing markings before the next run."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-090-01",
+      "raw_sha256": "ca73395b12733e9ef4986eefa9c519a8bfb15feac781399d37d0e0530f05a78d",
+      "decision": "accept",
+      "reason": "Preserves delegating printing to the peer as a polite confirmation request."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-090-02",
+      "raw_sha256": "5942d04fdc5a996f6f17d91e4077fed5d6b5151b6a8767ba1d3d5b42a169f431",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and checking the schedule."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-090-03",
+      "raw_sha256": "62ed60b004af557b5038aa3803c0b55ae0bbbccc6faa31f5e491a93e758f25ea",
+      "decision": "accept",
+      "reason": "Preserves not belonging to the requested group; neutral refusal is usable locally."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-091-00",
+      "raw_sha256": "424e2818163f56e9479aae7bdd7ed83b3f5022ebe584bb8c68df2405117870b1",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about a late fee and checking with the office."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-091-01",
+      "raw_sha256": "30ea6d8112ef6662e71a556c2a9424b48bb479252da4ea25edc43ff9106a48a5",
+      "decision": "accept",
+      "reason": "Preserves checking computer-lab availability."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-091-02",
+      "raw_sha256": "bd9bb582e20f3f60ae1f7954c66733081ff630d15232557947bc9b32e0e2b272",
+      "decision": "accept",
+      "reason": "Preserves unknown opening time and consulting organizers."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-091-03",
+      "raw_sha256": "d3107fc0d922e428ef190484b730841b638224eb4100f943e104fdf20f952987",
+      "decision": "accept",
+      "reason": "Preserves handling the lab data analysis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-092-00",
+      "raw_sha256": "cb1c9559579c9c1cf953173a53a92e8474ba737a9ea5810ffc4aa290242fc5dd",
+      "decision": "accept",
+      "reason": "Preserves sharing the umbrella."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-092-02",
+      "raw_sha256": "d5bf1fe286d8f87d79d5c45ec9d2cc6fa7a3e68e40110869dcf525a8ac2505a6",
+      "decision": "accept",
+      "reason": "Preserves joining the peer's study group."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-092-03",
+      "raw_sha256": "7561f1192634b5d25324c108ac258592175ca6c028248cce13b8aeb40dca4fd3",
+      "decision": "accept",
+      "reason": "Preserves confirmed four pm rehearsal."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-093-01",
+      "raw_sha256": "f5b61cc45d0fe803ca2760cc2514985157be53dcd8c364b3e791318db25039be",
+      "decision": "accept",
+      "reason": "Preserves the conditional update about needing slides."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-093-02",
+      "raw_sha256": "4d361f9cbd7f175cabe703d128e862ffa9f025599806f20913e81aba4b3b0c5e",
+      "decision": "accept",
+      "reason": "Preserves volunteering to lead the routine through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-093-03",
+      "raw_sha256": "b786521419373a6c0f34701e0cae9f663270d4e4847af467ac8bdda50a5e3ec4",
+      "decision": "accept",
+      "reason": "Preserves choosing the fishball-noodle place instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-094-00",
+      "raw_sha256": "31ceef9143135d99c2b8ba302e0a2b7267a48cfba398fddd46805e8f26da628f",
+      "decision": "accept",
+      "reason": "Preserves giving the peer the lab-report lead through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-094-03",
+      "raw_sha256": "3b753d3123b1d571addc07054a43e20b888a2759ea154ea71bc5f521e9f44260",
+      "decision": "accept",
+      "reason": "Preserves checking catalogue checkout status, with the weekend supplied by context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-095-00",
+      "raw_sha256": "9a448c7d0b5f9d2fe08f8d70f6dedd29490b2b748c8732cfeb03c2f23ab98186",
+      "decision": "accept",
+      "reason": "Preserves requesting an update after headcount is known."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-095-03",
+      "raw_sha256": "2a2e23347152aa675b346ab78b872d426de3e98d6752c39e455d1e62a51b67f6",
+      "decision": "reject",
+      "reason": "Adds a shop meeting venue not supplied by the anchor or context and weakens definite pickup into a question."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-096-00",
+      "raw_sha256": "26cf533d27a3c51b8fc7f4a1614492bb7dda8f9f3eb9c206a4403e4b49561dc9",
+      "decision": "accept",
+      "reason": "Preserves joining the final edits."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-096-01",
+      "raw_sha256": "02bec8b4dcac9487c5d0943b1897ea1334c2485f88dac7f845e2115cadbf48ed",
+      "decision": "accept",
+      "reason": "Preserves another person currently borrowing the power bank."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-096-03",
+      "raw_sha256": "a41c419818613098d01f0b6077fbcff4483617f76d556511ac4de911a0a1ee5b",
+      "decision": "accept",
+      "reason": "Preserves thanks and correcting typos now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-097-01",
+      "raw_sha256": "16ce137925ea6325c38e34a189113d36868cd0de765d8bcb7c63f6778d8e6472",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about heavy lifting and consulting organizers."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-097-02",
+      "raw_sha256": "931124bb506d82e1fd727ec117b9bdfbefa9ece2573c0985eed7a3f50f701e2a",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about multiple choice and checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-097-03",
+      "raw_sha256": "c50ae8862e71176518b79f9ec7e745b5380660f322683cf5901102c115416d54",
+      "decision": "accept",
+      "reason": "Preserves three and confirming the time."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-098-00",
+      "raw_sha256": "1567ba123569f0604210a93b9b63cb66b0a0038894c3d0502123ac691c45a846",
+      "decision": "accept",
+      "reason": "Preserves reviewing available notes later when able."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-098-01",
+      "raw_sha256": "70c653241d1a584df87cb3954d8dea9e9e76e00aeb027ce8e84c634475990a5f",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and requesting slide clarification; neutral conversational English is usable locally."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-098-02",
+      "raw_sha256": "c54dfd045e6125aec4efbc0774b5018a0b31746dc2d176759c78bb215f2905b3",
+      "decision": "reject",
+      "reason": "Adds finishing earlier as a rationale absent from the English anchor."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-098-03",
+      "raw_sha256": "bbf47992bec629a097509efee0a4b8fdb072af7b65640ffe01e471c62f248ef6",
+      "decision": "accept",
+      "reason": "Preserves ordering the peer's laksa through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-099-00",
+      "raw_sha256": "1bfc3fef7b8addb34a795da1e1b24aeee0b79cf5f2253978c49cc241dbd9a5d1",
+      "decision": "reject",
+      "reason": "Adds an annex-checking commitment and changes an if-found update into an unconditional report after checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-099-01",
+      "raw_sha256": "3312b6a23d6e57f221ea481ec64783246111269e11731f129ddf6d2eb112488c",
+      "decision": "accept",
+      "reason": "Preserves the user's choice to join dance instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-099-02",
+      "raw_sha256": "b160776eae3427a3517a06fe0883969ddc4f24888499440e3e2e63dccf1a2dc2",
+      "decision": "accept",
+      "reason": "Preserves accepting eight for pickup."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-099-03",
+      "raw_sha256": "633219128881d7082a8b854820c3a451f9af2ab2b2c93487a2e8fad1702b7062",
+      "decision": "accept",
+      "reason": "Preserves not seeing the folder and checking around the canteen."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-100-00",
+      "raw_sha256": "06eaf45ed5801c4b22c83d0aaf8b90ba7d3e593d6f258923db9c2ce1a2b1e6ac",
+      "decision": "accept",
+      "reason": "Preserves checking the meeting floor and updating the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-100-01",
+      "raw_sha256": "2868de819637adaae6a8fe0cffd684e88166e1ab40fef6640711fd9fd261289a",
+      "decision": "accept",
+      "reason": "Preserves proposing joint ticket booking as a question."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-100-02",
+      "raw_sha256": "237d9b07497021b4c6bf538b624da22a2052f8e10b2cdfd58a8564f226f78d62",
+      "decision": "accept",
+      "reason": "Preserves link not set up and sending only once ready."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-100-03",
+      "raw_sha256": "1d32a855f1bf9597c6e12851a243a2f9607f8b5eca5de97999c586b7939b1190",
+      "decision": "accept",
+      "reason": "Preserves sending tonight instead of tomorrow."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-101-00",
+      "raw_sha256": "1e90e06de49f9f75429aedb0f51d2164e9ed5e303c322610f02319b22c96b609",
+      "decision": "reject",
+      "reason": "Adds a question about quietness absent from the English library-choice anchor."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-101-01",
+      "raw_sha256": "e7127ebfd1daeb3fdbbee8d6be5b6374f516264bb739b34ce00b8cf3e8fbdddc",
+      "decision": "accept",
+      "reason": "Preserves accepting four."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-101-02",
+      "raw_sha256": "7f3e690d863dc343ff6ed67dc84317f35788657e79bb1454a13858ede93946cc",
+      "decision": "accept",
+      "reason": "Preserves not having an umbrella."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-101-03",
+      "raw_sha256": "711bea61c6dcf9e314452867f1223097f2c6950cdbb06cac055af75ddd3dae41",
+      "decision": "accept",
+      "reason": "Preserves seeking a quiet window table as a proposal."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-102-00",
+      "raw_sha256": "89e0066d1b4634e0daac34e9f533072d965051c672b50387c04d4c498b6af8e2",
+      "decision": "accept",
+      "reason": "Preserves thanks and checking email now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-102-02",
+      "raw_sha256": "747be3c8af002a62c3ec52a42a9a56e6932d4e5210fa565643366674915b0f95",
+      "decision": "accept",
+      "reason": "Preserves taking conclusion slides today."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-102-03",
+      "raw_sha256": "e6e62fec9bbabe680a0a9bfa27355b2c58808ba7121f97604d2de7fe25dcc3cc",
+      "decision": "accept",
+      "reason": "Preserves leaving keys at the front desk."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-103-00",
+      "raw_sha256": "80d8d2b50e27f516061192c1a052dbcca482874f26da51f22bfac6e20698ff14",
+      "decision": "accept",
+      "reason": "Preserves focusing on snacks and drinks for now through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-103-01",
+      "raw_sha256": "d7311830ccd6bab0d050e2b57d547b4dc3039da1fe44d5f7db30341cf42ac086",
+      "decision": "accept",
+      "reason": "Preserves the same shared-carrying offer and limitation, including its original awkwardness."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-103-02",
+      "raw_sha256": "bf2a9902be5417e5005029d48300f669602e9f40ffe5ccc51b2bbdad60712bc6",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about more outlets and asking staff."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-103-03",
+      "raw_sha256": "b5a9211c036be4afd768f1a5eb2eadd346e45b59301f8278b624d972a9d77be6",
+      "decision": "accept",
+      "reason": "Preserves four pm acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-104-00",
+      "raw_sha256": "b0a7fb913ed64ee905ec1d2536db3862dccab522cd642b70d53f2994c189f320",
+      "decision": "accept",
+      "reason": "Preserves checking whether freshmen discounts exist."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-104-01",
+      "raw_sha256": "843daea21a56f910981f1eed9e99cbb6a99e102fe0096e388ee48e46fb7d9546",
+      "decision": "accept",
+      "reason": "Preserves identifying Module three review notes."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-104-02",
+      "raw_sha256": "cd38af4582925783ad8ae21de24e6797449b1355a03f8718133bd589839e209e",
+      "decision": "accept",
+      "reason": "Preserves checking the missing room identification now through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-104-03",
+      "raw_sha256": "b1c937c428ea5752cf0dc8cc4607e4c1d05bb8b556b1ca67f86e0e2d5140a19f",
+      "decision": "accept",
+      "reason": "Preserves handling social media posts."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-105-02",
+      "raw_sha256": "0012dc67f55f2ec63e81e6ca245e420fa7002469b8c675605afba1e60c140136",
+      "decision": "reject",
+      "reason": "Specifies concierge collection instead of the anchor's unspecified alternative collector."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-105-03",
+      "raw_sha256": "f2bf1f6bdebfb230c870472a017f1494fe72b90fe93a946bc4a1f063a69378e5",
+      "decision": "accept",
+      "reason": "Preserves acknowledging the remembered stall."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-106-00",
+      "raw_sha256": "afd0be3a9d6716c6c917d917bc138d842e5f5331bc0b98cb101e440312b48a69",
+      "decision": "accept",
+      "reason": "Preserves accepting three pm."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-106-01",
+      "raw_sha256": "fe280e9f2c5dcef420b758a78b90878e345e1d996f15e82e9f081b4f9b3e0067",
+      "decision": "reject",
+      "reason": "Adds an active dress-code check and changes a once-known notification condition into an after-check update."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-106-02",
+      "raw_sha256": "44ee10d198bb6e6b3aed8c5614d35ca7ad1a3a2ef63c508cb35443636e032c1c",
+      "decision": "accept",
+      "reason": "Preserves sending trophy photos too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-106-03",
+      "raw_sha256": "df1db751a8159965de05e6caaf5a7d265b94fbe57ec2b120bf00e8aafc07d6cf",
+      "decision": "reject",
+      "reason": "Adds a check-first commitment to a statement that checking has not happened yet."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-107-00",
+      "raw_sha256": "b5ceddc705173df226252e52da6f333c1a5da9c27b3f5e75e29d8dc5cebede06",
+      "decision": "accept",
+      "reason": "Preserves four pm acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-107-02",
+      "raw_sha256": "6a5f5cef6ca7fee1de8ae70ed830e0d2149a9e701af6270a0c24ab7c1c227b03",
+      "decision": "accept",
+      "reason": "Preserves not seeing the link and requesting it."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-107-03",
+      "raw_sha256": "809c65316d117b03f2e08c689cd8bad210519564705f34f74775bc95cc29c25c",
+      "decision": "accept",
+      "reason": "Preserves proposing the library meeting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-108-00",
+      "raw_sha256": "8f03e1bc69ba1c2bf28569d7b67995dee87583fba87fd8a5a3b5a49a16dbb6dc",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and checking organizer permission before the joint bake sale."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-108-01",
+      "raw_sha256": "92abb87585149c173ccc8ba2f83e467c53e8128cb899b8e30d378618b4510212",
+      "decision": "accept",
+      "reason": "Preserves driving the peer after the seminar to the context's faculty building."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-108-03",
+      "raw_sha256": "e6f9e970aaf99c44c1c48ee80dce820ca7c6b7bbd07fe91e0cb9d086bbdb4fbc",
+      "decision": "accept",
+      "reason": "Preserves the foyer at ten am."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-109-00",
+      "raw_sha256": "120754b3255b5ff4dc21f46eb899d636ca56cfea7e225e5d2ef43f68f9e356b2",
+      "decision": "accept",
+      "reason": "Preserves Sunday and booking the movie."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-109-02",
+      "raw_sha256": "48f08ed35c278c135e7e437f4b929af46e738944498fb9bcba785dbef487c6e6",
+      "decision": "accept",
+      "reason": "Preserves asking for clarification about specific snacks or drinks."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-109-03",
+      "raw_sha256": "c1efa702b506d107e8f59a9dcd74c6bcbac3394973cd0fd40d2be1858aba6070",
+      "decision": "accept",
+      "reason": "Preserves the stage-direction and dialogue focus with the peer's dialogue role supplied explicitly by context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-110-00",
+      "raw_sha256": "52e27a5253885890906a22287823f99228d8c720d2ea0067fcbc3b9420c8bfc8",
+      "decision": "accept",
+      "reason": "Preserves final-partner uncertainty and checking the group list."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-110-01",
+      "raw_sha256": "7319d96744a667a7725d1cde47bd497d96a376b14a83ff4cb79620d237ee00f3",
+      "decision": "accept",
+      "reason": "Preserves South Wing gate after class."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-110-02",
+      "raw_sha256": "55278ee5001c4f1679943130430f51fc3932e849fd23ca56435c5674cbda10c1",
+      "decision": "accept",
+      "reason": "Preserves waiting until the notes are finished."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-110-03",
+      "raw_sha256": "7beb40d5aca2bcca2ac5d1cbffccbd561bca2c8544ddbf7624748f0a4bd225b8",
+      "decision": "reject",
+      "reason": "Invents an already-completed umbrella return as the reason for no longer having it."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-111-00",
+      "raw_sha256": "d985d917ddecff594c3fd446ddaa6e74c2efe35479ce09682be226d898e8b31a",
+      "decision": "accept",
+      "reason": "Preserves floor uncertainty and checking the schedule."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-111-01",
+      "raw_sha256": "8bf5e4fb4d012ebf4e10d55e3ac54cdd382af540e445a71445a2d147046504a8",
+      "decision": "reject",
+      "reason": "Drops the explicit if-attending condition on photo help."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-111-02",
+      "raw_sha256": "e50ec613c9f65dfbc257e32b69dffa5a071b067f8f5d8c00f70a36f8d4a0041e",
+      "decision": "accept",
+      "reason": "Preserves checking the portal and updating after finding out; local present/future form remains compatible with checking now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-111-03",
+      "raw_sha256": "0133ccc29cce75778cd8072e7a5e3f18b50dde986fbec88acc692b5c83a3157e",
+      "decision": "accept",
+      "reason": "Preserves the ATM stop before deciding cash or card."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-112-00",
+      "raw_sha256": "7e77891bc4616c9d8ea290f89b2e52f9100e66a482989a627ca91645c65dfb48",
+      "decision": "accept",
+      "reason": "Preserves retrieving the tripod for the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-112-03",
+      "raw_sha256": "c9816af40b19d3bd8eee4b4e2076b1532de46691056ab3702665bc6179f7d051",
+      "decision": "accept",
+      "reason": "Preserves declining help and suggesting another person."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-113-00",
+      "raw_sha256": "4608ef5a0ee8a95121d3f426b4f170e33336e0eb2f69112d5e7a89b3237215d3",
+      "decision": "accept",
+      "reason": "Preserves single-sided printing."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-113-01",
+      "raw_sha256": "0dab7c54fdecaab0195aea5c4a0d69f8a403fda741bb403b23a2e15c9f502670",
+      "decision": "accept",
+      "reason": "Preserves switching to steaming instead of frying."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-113-03",
+      "raw_sha256": "3a5eace7cda55ce5dad61860ffd237082fcae5de516159639f9286dbf8272a07",
+      "decision": "accept",
+      "reason": "Preserves certainty about bag ownership."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-114-00",
+      "raw_sha256": "156e0f6ccf59ea2d34b76940991e74f68e1eb75d62b86fb2429ae2da5edf1824",
+      "decision": "accept",
+      "reason": "Preserves uncertainty, checking the room, and updating the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-114-01",
+      "raw_sha256": "e92a8bfce2efcef72dbfa7254866677abfe4b0901aabbc07621aece473612044",
+      "decision": "accept",
+      "reason": "Preserves asking the peer to book tickets for the group."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-114-02",
+      "raw_sha256": "1c60e6446a17cf7e5af08ce5e412bef5856f50e8b694329dfbd61e9fd5e323e0",
+      "decision": "accept",
+      "reason": "Preserves not seeing a matching person, with the blue-lanyard description supplied by the question."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-114-03",
+      "raw_sha256": "af3c1112a4a46c9e0daf7febfdbe1ed4afb955b231873da3172433eeb9ee6a8f",
+      "decision": "accept",
+      "reason": "Preserves five-thirty acceptance and the meeting close."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-115-00",
+      "raw_sha256": "55ffbbdca1b18b60a3105cbf13e1d9d1b7776125fd3172008a204bd5c7449c30",
+      "decision": "accept",
+      "reason": "Preserves six pm meeting acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-115-01",
+      "raw_sha256": "f2143a7fc233c6d640073b95c99513f3013aec22c0f687f064bc1edfab29e2ee",
+      "decision": "accept",
+      "reason": "Preserves adding competitor analysis to the shared folder."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-115-02",
+      "raw_sha256": "268b2aca287103ec17a1149cb0b54b58930c67f69d0109b93954c5e5a1541cb2",
+      "decision": "accept",
+      "reason": "Preserves asking the peer to handle the final summary too."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-116-00",
+      "raw_sha256": "056e6da634e30ecb1f30ad6dc1323919d654cd4ac53e23b87c87e97e99d97a42",
+      "decision": "accept",
+      "reason": "Preserves unfinished projector use and return before five pm through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-116-01",
+      "raw_sha256": "bcd8fe2091abb7bb93bf36dcad7a9ec930caab5320dc9fbdf8bb41c03b88744f",
+      "decision": "accept",
+      "reason": "Preserves bringing the tripod today."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-116-02",
+      "raw_sha256": "7443977eac97b59f2190f36b6b8e0ba279a049b5536b1b52085fd19daeacf2d7",
+      "decision": "accept",
+      "reason": "Preserves permission to lend the umbrella to the sister."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-117-00",
+      "raw_sha256": "dddcdde363bb444650ff69c49fe8f062676e83cbdb6468c0e2005eff68ab741e",
+      "decision": "accept",
+      "reason": "Preserves meeting directly at the venue."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-117-01",
+      "raw_sha256": "6ea074cbd2bdc4f3bfb78c3da8be4532b4d404756124c3cd7b06201d6a9fd216",
+      "decision": "accept",
+      "reason": "Preserves waiting here for the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-117-02",
+      "raw_sha256": "f714c6e7ed08c2b168d01cc1c9fac5c04e1c433605f01896098aab951a033447",
+      "decision": "accept",
+      "reason": "Preserves requesting an update about study-area fullness."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-117-03",
+      "raw_sha256": "8b0e00b8c6a036b3d831000adb268b9fbcf4f65afc205a9f4237d31806e064fa",
+      "decision": "accept",
+      "reason": "Preserves booking the context's return Grab for the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-118-01",
+      "raw_sha256": "f1587715b0ae89b0bfe82fd4aa5ea4b2d9c010b91e96dbc8a0cc3f223cd13833",
+      "decision": "accept",
+      "reason": "Preserves thanks and the need to hurry."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-118-02",
+      "raw_sha256": "b8bfb524f924e28203ecedfd7f4ffc6d332ad0ef3c2b74277582d8d434c31c04",
+      "decision": "accept",
+      "reason": "Preserves declining late collection because of the bus."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-118-03",
+      "raw_sha256": "09a5f1bbb6e55ff8420570dc21b69c7a7124b4e6c19e764c86d2195bc38d93a9",
+      "decision": "accept",
+      "reason": "Preserves returning the power bank to the owner's door during the already stated return trip."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-119-00",
+      "raw_sha256": "a41f6e0bccb796f36dd960dd91664945029fb3edf61f24f82d794896fa1ae488",
+      "decision": "reject",
+      "reason": "Replaces asking the peer for the floor with asking staff, adding a different information source."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-119-01",
+      "raw_sha256": "ad0e256165f35205bf553f33e2a249b278b4672cb888c1b9a7de82db8530614d",
+      "decision": "accept",
+      "reason": "Preserves thanks and going to the art shop now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-119-02",
+      "raw_sha256": "2f3383629586259fbe3ebfd6c6bc82f058c6d49c1c5d02b89cc4b1514911837e",
+      "decision": "accept",
+      "reason": "Preserves opening-hours uncertainty and checking before going."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-119-03",
+      "raw_sha256": "2a4d1e4cad657ddaf060a5cef95bb25b6ec15cf4c30893b88f42ea7260d0a828",
+      "decision": "accept",
+      "reason": "Preserves four pm acceptance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-120-01",
+      "raw_sha256": "63837617a65908416d745ea74ab4f7097196f2629ebd571fdf00eacee2a251af",
+      "decision": "accept",
+      "reason": "Preserves bringing the user's ID downstairs."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-120-02",
+      "raw_sha256": "d7505f35f8b110ef49e8ed9a5cc0838be9d89aba4094323df876084f347c8d4a",
+      "decision": "accept",
+      "reason": "Preserves deadline uncertainty and consulting organizers."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-120-03",
+      "raw_sha256": "0bf50223f51147c902e13efb098c1f12e8d322fb6916a5c60842545182d319c7",
+      "decision": "accept",
+      "reason": "Preserves volunteering for next-time court bookings."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-121-00",
+      "raw_sha256": "834c9a9ad3f2329c7567a112cc9b6e6928b0c1f08b0b64dfc753ce33331a17e9",
+      "decision": "accept",
+      "reason": "Preserves microscope refusal while offering centrifuge drop-off."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-121-01",
+      "raw_sha256": "305fbe7ed25c520b9d2bef484184e26b4b7666f4dd935d0d7986d57e85cceafd",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about group work and asking the partner."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-121-02",
+      "raw_sha256": "20a62562cf2d991e918c3d86347883a06b5fce51e2d37b72bf98827eca6453c8",
+      "decision": "accept",
+      "reason": "Preserves the ten-fifteen bus constraint and inability to walk together."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-121-03",
+      "raw_sha256": "0bdee580f1f408cb35db1bb4cac8259ecc236ac3c16ec141f8928bd5b1ca3357",
+      "decision": "accept",
+      "reason": "Preserves checking for spare folding chairs through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-122-00",
+      "raw_sha256": "41c89698fdfcaaf6ef42c17ad9b4fd4c266dd647656bd652d2bbd524f297d5f2",
+      "decision": "accept",
+      "reason": "Preserves trying level-four study pods instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-122-01",
+      "raw_sha256": "382a0003ab5961a1ef509af74b8219d740378799d6577233389c1893643f8cae",
+      "decision": "accept",
+      "reason": "Preserves checking the updated graphs now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-122-02",
+      "raw_sha256": "cbcb790d3909d43e68b14b88106b425f5b655e986120844f4b607214a490275a",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about the referenced final module and checking the syllabus."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-122-03",
+      "raw_sha256": "352757ced15f4e6d57c6ab0e9699c4ff0af3389ed3027e21eb943c0291c7d5d4",
+      "decision": "accept",
+      "reason": "Preserves room uncertainty and asking the peer to check with organizers."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-123-00",
+      "raw_sha256": "17fc10f804167f5bf724922616b99f1e23b13a27d497b58157e60534235693ea",
+      "decision": "accept",
+      "reason": "Preserves Wednesday acceptance and confirming time."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-123-01",
+      "raw_sha256": "3dd5c1edf3e2425ab943370a158da996e47f178311a5e9958d8b64c032235eae",
+      "decision": "accept",
+      "reason": "Preserves attempting a later search; later retains deferral from now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-123-02",
+      "raw_sha256": "dab967e4cdfa231eddd903139ed0ea66cf11a300b749692e661f769edd2a648c",
+      "decision": "accept",
+      "reason": "Preserves checking for a whiteboard."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-123-03",
+      "raw_sha256": "ed458f7019325c56e049d7b2f8a41619c649ed61de1daa2bf4799e858955613d",
+      "decision": "accept",
+      "reason": "Preserves accepting eight pm."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-124-00",
+      "raw_sha256": "813c97d616543c960ee6a6ac7d0aaaccaf1646c35c51f791274ab578a8d525cd",
+      "decision": "accept",
+      "reason": "Preserves reassurance and using the user's own USB-C charger."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-124-01",
+      "raw_sha256": "cb614816c431388826fe7396f4d3c0f1f12cefcef165e8b2663ae9954a909a27",
+      "decision": "accept",
+      "reason": "Preserves bringing personal snacks."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-124-02",
+      "raw_sha256": "8cc50823041de1eb35cfabf4c0ab7d224232abff7a0ead9d96a549c06249f0fd",
+      "decision": "accept",
+      "reason": "Preserves apologetic refusal of chemistry-lab help."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-124-03",
+      "raw_sha256": "ae21665781979b3985086e161088c034e2a774fb5591e37ef5c9dc0b0a7c0a82",
+      "decision": "reject",
+      "reason": "Changes splitting monetary cost into splitting eggs and milk themselves, making the object of sharing ambiguous."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-125-00",
+      "raw_sha256": "56698a068089ab361ae80ea06564102d956f42944acb2b1466d2891958c87c9c",
+      "decision": "accept",
+      "reason": "Preserves arrival at the library soon."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-125-02",
+      "raw_sha256": "b3b999b62ff6c1a1d8c7e4ac85e3a500a8e97bf34efa23d150cf630410470d5c",
+      "decision": "reject",
+      "reason": "Swaps the user's chosen Q&A role and uncertainty about intro into the opposite allocation."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-125-03",
+      "raw_sha256": "7a4abc41f572cf012fa50164d72441bed7a2085865ea03fe7fe791d47ef332cc",
+      "decision": "accept",
+      "reason": "Preserves definite attendance."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-126-00",
+      "raw_sha256": "25bd52e1407c6330218f9438b8b8e5612f0ea1d764d48c479a4e5465453ddbde",
+      "decision": "accept",
+      "reason": "Preserves noon at the shop."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-126-01",
+      "raw_sha256": "81670b4fbb1812cbee1a3d03b932adb80dd705353d1202c8f7d7a7e6d450727d",
+      "decision": "accept",
+      "reason": "Preserves accepting seven pm."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-126-03",
+      "raw_sha256": "f049b0d3df177487f81ff5f6fecbdc25d19662cf7fc6390ea04f21a1ed871b9c",
+      "decision": "accept",
+      "reason": "Preserves adding clay to the list."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-127-00",
+      "raw_sha256": "ea0668b24f20a353cd824023aa28e3163396c7c03cd9c5aacf5427d45bbb48fd",
+      "decision": "accept",
+      "reason": "Preserves taking over printing for the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-127-01",
+      "raw_sha256": "dbcc91994be40845c71e66719d06de96324938bb21345005b86788fdcd723a63",
+      "decision": "accept",
+      "reason": "Preserves chapter uncertainty and checking the study guide."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-127-02",
+      "raw_sha256": "29c5df460e94c5a06e93c02f0a3de7bacdf4b97de4a1a4d482a23e23c496ce58",
+      "decision": "accept",
+      "reason": "Preserves thanks and consulting the committee about logistics and equipment setup."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-127-03",
+      "raw_sha256": "699769864be1aa0e74b01c0823a782a8403c2b2f8ed33b03b1340b9d575773b7",
+      "decision": "accept",
+      "reason": "Preserves availability uncertainty and checking the schedule."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-128-00",
+      "raw_sha256": "c600f4ec7d9c9f00f9e3f09b04db4f15d61cb5e4250dedcc76be8eb480c6e250",
+      "decision": "reject",
+      "reason": "Changes arrival by eight into an exact eight arrival, dropping the explicit latest-time bound."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-128-01",
+      "raw_sha256": "95432111b66e0a5400753959c2bc17500700b4584de9f1b2b9d9130df3bc76a3",
+      "decision": "accept",
+      "reason": "Preserves inability to help now because of heading home after class."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-128-02",
+      "raw_sha256": "aec015bba9dc6d800c8beacaeb8627c44b5d86a728b13019d3f61ce22335fd5f",
+      "decision": "accept",
+      "reason": "Preserves possession and return to the committee room by Friday."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-128-03",
+      "raw_sha256": "6c2bc2448ec087ff5abeea8a831471c67a4ed94bb65969c5bdfc7d2ec7461c5d",
+      "decision": "accept",
+      "reason": "Preserves not having the final PDF and sending once received."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-129-00",
+      "raw_sha256": "b4b32294303aac5723a99e68339cb9d917e62a4ee34e6777377b2b5635af4c63",
+      "decision": "accept",
+      "reason": "Preserves exiting through B."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-129-01",
+      "raw_sha256": "97ac45ca3305b96d0f4414cd3eb6ca95aa0a850a3f29f65c13fadf51525e2293",
+      "decision": "accept",
+      "reason": "Preserves choosing chicken rice."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-129-02",
+      "raw_sha256": "055f50375153f15fa91ab4367c12f93192be3d0e98176edf1c4d8c168b5d3a48",
+      "decision": "accept",
+      "reason": "Preserves four at the void deck."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-129-03",
+      "raw_sha256": "d92b0038e58c76fac5ae818b64380eca713378c82d52df0fbfb729bdd006e76e",
+      "decision": "accept",
+      "reason": "Preserves calling the office and requesting a lost-and-found check."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-130-00",
+      "raw_sha256": "b88ebf04303ed82c9412000d78c695ab57fc8fbc0db552ac57e799f876a68f7f",
+      "decision": "accept",
+      "reason": "Preserves moving the meeting to the cafe."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-130-01",
+      "raw_sha256": "2acd7b81bb6998753505086bdcc44bdc724d40b86d924fe35bad1367f173c76e",
+      "decision": "accept",
+      "reason": "Preserves accepting six pm Friday through the explicit rehearsal context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-130-02",
+      "raw_sha256": "ce4cf1bf92eae80a114d101d6e6f55805c3dece28e63e7375d60678ec0c9662c",
+      "decision": "accept",
+      "reason": "Preserves user designing PPT and peer doing research."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-130-03",
+      "raw_sha256": "4ec58139cc0a2ce4e082b77fa2f4917d06c5e37686dd1e2410dc7304f0cdfd48",
+      "decision": "accept",
+      "reason": "Preserves not-yet status and still waiting."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-131-00",
+      "raw_sha256": "6937951057185ea33df3b76ae84d4c832d657a29fd8d55a9411a4e19bdf8082c",
+      "decision": "accept",
+      "reason": "Preserves meeting at the library instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-131-01",
+      "raw_sha256": "609896a6d23303efd30b32578bad5dac0e1527e0474d97523e9aaec8d6363078",
+      "decision": "accept",
+      "reason": "Preserves the until-five lecture constraint and inability to go now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-131-03",
+      "raw_sha256": "6c481c440a9f4c8aa81a2fac742bd91bd04c3830ccaaf181d05b715c3a4be9e9",
+      "decision": "reject",
+      "reason": "Adds a return-if-found promise absent from the English room-check anchor."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-132-00",
+      "raw_sha256": "f4b9deb72f35ff127de85f743008f7e5c9e007536b9728f78b96ef0880a37e41",
+      "decision": "accept",
+      "reason": "Preserves choosing the entrance booth location."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-132-01",
+      "raw_sha256": "cbdb846f1914891b163afd5007dcdbb395a50c1e6138dd0262dc31921bcb4a19",
+      "decision": "accept",
+      "reason": "Preserves asking the group headcount."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-133-00",
+      "raw_sha256": "87e658969e74e33f0ebb660b5bdb4589924861e5bfe30ff4469039aede954504",
+      "decision": "accept",
+      "reason": "Preserves accepting chicken rice instead."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-133-01",
+      "raw_sha256": "299ca66f5be754eae870f7420afbad227b7e7af49ad4e6e52ec29b40831a1fe3",
+      "decision": "accept",
+      "reason": "Preserves tomorrow-morning acceptance and a conventional meeting close."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-133-02",
+      "raw_sha256": "1992ccb47792c8d796551a0e030f305a8f9e55fa3557d91130640ef396985cbd",
+      "decision": "accept",
+      "reason": "Preserves requesting the user's graphs in the final slides through context."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-133-03",
+      "raw_sha256": "048824521cc718b2e956550738ddf736f61cd6958643df6c9cad4c54278cfe70",
+      "decision": "reject",
+      "reason": "Replaces the user's Q&A uncertainty with a new request assigning Q&A to the peer."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-134-00",
+      "raw_sha256": "5c81d4c10f126f4cf5ff66f82a298d27766d81e11f6157904314d380307bd5d7",
+      "decision": "accept",
+      "reason": "Preserves choosing the train."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-134-01",
+      "raw_sha256": "9337f5fbd15587c9af26923555b9553555872ca39a88c53008bb28d196148a08",
+      "decision": "accept",
+      "reason": "Preserves accepting six pm pickup."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-134-02",
+      "raw_sha256": "c61f27deea2eb85ebac84e96ac60cc568ff21e2f836588280bcda11716d4477b",
+      "decision": "accept",
+      "reason": "Preserves library fullness and proposing another time."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-134-03",
+      "raw_sha256": "52afdd3f32e3e9184c1068b563ac2ae9f81685871669d3de2afca6d371ebdf34",
+      "decision": "accept",
+      "reason": "Preserves approval and requesting hiking timing."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-135-00",
+      "raw_sha256": "648bd4b4a534273930e24aa037ddbd905a9bcae7e8a85c726ef3bbfd5db72e52",
+      "decision": "accept",
+      "reason": "Preserves positive acknowledgment and requesting the analysis section."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-135-01",
+      "raw_sha256": "3bf972e6a431dc707c1161e3b4fdf28b3ca0bae7ba4cd216d7cde9ee136df849",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about the finder and direction, and checking lost and found."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-135-02",
+      "raw_sha256": "022c3a9885e1b3434075daf2bdcf08e82ef1dc84ced56cd0c449db8fad76946b",
+      "decision": "accept",
+      "reason": "Preserves registration-opening uncertainty and checking."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-136-01",
+      "raw_sha256": "37d94f6887dcb7fc167078de266cfe4aedc2f8bfa121f9aa4110884f026350f4",
+      "decision": "accept",
+      "reason": "Preserves return by five pm today."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-136-02",
+      "raw_sha256": "3b414803a42d03dffadfa82a1d36ed45dd8da1d85da1e4ce4977bf0446ef8ad3",
+      "decision": "reject",
+      "reason": "Changes a definite self-check into an ambiguous check-bag question without a clear checker."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-136-03",
+      "raw_sha256": "be77a01b04490df1c68e27d1e5978cd4389247fee1837337b01d8ae3326bcb30",
+      "decision": "accept",
+      "reason": "Preserves uncertainty and checking first."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-137-00",
+      "raw_sha256": "ff88a55d03f4b72a3ca9118e482117050f42ae7e801284c60dedb9925498a0e7",
+      "decision": "accept",
+      "reason": "Preserves the cafe meeting choice."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-137-02",
+      "raw_sha256": "ce21b1b42bd74ac3bee267b89ee3ba364f23f020ac7c20eb7d8f3fb7291a7406",
+      "decision": "accept",
+      "reason": "Preserves approximate seven pm arrival at the hall through context."
+    }
+  ]
+}

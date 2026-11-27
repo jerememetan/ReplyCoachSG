@@ -1,0 +1,1038 @@
+[
+  {
+    "item_id": "BC-evaluation-00011",
+    "context": [
+      "I'm thinking of going to that tea tasting workshop this Saturday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "That sounds cool! Do you want to go together?"
+  },
+  {
+    "item_id": "BC-evaluation-00017",
+    "context": [
+      "do u have any calligraphy ink left?",
+      "no, i'm completely out of it."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ah okay, do u think your brother has any spare?"
+  },
+  {
+    "item_id": "BC-evaluation-00036",
+    "context": [
+      "I'm thinking of joining that bowling league. Want to be my teammate?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Sure! Are we going for the competitive one or just for fun?"
+  },
+  {
+    "item_id": "BC-evaluation-00037",
+    "context": [
+      "I'm running out of black calligraphy ink for my project.",
+      "I have some leftover ink, but it's more of a dark grey."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "You want me to bring some over to your place?"
+  },
+  {
+    "item_id": "BC-evaluation-00039",
+    "context": [
+      "Did u finish drying the rosemary?",
+      "Not yet, still a bit damp.",
+      "Need me to help move them to the rack?",
+      "No need, just a bit more time."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Actually, I think I should put them out now."
+  },
+  {
+    "item_id": "BC-evaluation-00051",
+    "context": [
+      "Are we still on for the tea tasting this weekend?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Yeah, are we meeting at the cafe at 3pm?"
+  },
+  {
+    "item_id": "BC-evaluation-00054",
+    "context": [
+      "Found a new geocache near the reservoir.",
+      "Really? Is it hard to find?",
+      "A bit tricky. I'm heading there this Sunday.",
+      "Wanna join?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Wanna join?"
+  },
+  {
+    "item_id": "BC-evaluation-00068",
+    "context": [
+      "u still down for the pen swap tmr?",
+      "yeah still down",
+      "meet at the library then?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "2pm still ok for u?"
+  },
+  {
+    "item_id": "BC-evaluation-00078",
+    "context": [
+      "did u finish fixing the snow globe?",
+      "almost done with the base",
+      "how's the glitter part going?"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "u managed to get it to spin smoothly?"
+  },
+  {
+    "item_id": "BC-evaluation-00079",
+    "context": [
+      "Did the herbs dry out properly?",
+      "They seem mostly dry.",
+      "Should we grind them now?",
+      "I think we should wait a bit more."
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Okay, let's wait until tomorrow then."
+  },
+  {
+    "item_id": "BC-evaluation-00096",
+    "context": [
+      "I'm really looking forward to the bowling league this weekend."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Actually, I can't make it anymore. Something came up."
+  },
+  {
+    "item_id": "BC-evaluation-00101",
+    "context": [
+      "I'll bring the stargazing mat for our trip."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Is it the big one with the waterproof lining?"
+  },
+  {
+    "item_id": "BC-evaluation-00110",
+    "context": [],
+    "speakers": [],
+    "message": "You joining the urban sketch walk tomorrow?"
+  },
+  {
+    "item_id": "BC-evaluation-00111",
+    "context": [
+      "Really looking forward to the tea tasting this weekend! I heard they have some rare oolongs."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Are you bringing your own cups or using theirs?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-01",
+    "context": [
+      "I am sneezing badly, staying home today.",
+      "aiyo"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you guys go arcade first, send me clips later"
+  },
+  {
+    "item_id": "AUDIT-EVAL-02",
+    "context": [
+      "I left the snacks at your door."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "saw them already?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-03",
+    "context": [
+      "Want to go for a walk by the reservoir?",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh tmr 5:15 still can right?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-04",
+    "context": [
+      "I finished sorting the playlist for our drive."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "settled the playlist?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-05",
+    "context": [
+      "I can bring my speakers for the picnic."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "ok rmb charge them first ya"
+  },
+  {
+    "item_id": "AUDIT-EVAL-06",
+    "context": [
+      "I cannot make it for supper, need sleep early."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "ps ah next time jio again"
+  },
+  {
+    "item_id": "AUDIT-EVAL-07",
+    "context": [
+      "The old power socket is spoilt.",
+      "I found a working one near the window."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can share that socket with me?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-08",
+    "context": [
+      "I left my headphones at home.",
+      "I have a spare pair."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "want use mine for the recording?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-09",
+    "context": [
+      "The backpack you lent me is in my room."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "rmb pass me my bag after dinner"
+  },
+  {
+    "item_id": "AUDIT-EVAL-10",
+    "context": [
+      "I am outside the florist.",
+      "I am at the taxi stand."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "where you at now?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-11",
+    "context": [
+      "I have to leave by 8:10pm."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "movie starts 8, two hours, steady?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-12",
+    "context": [
+      "I only have nine dollars for food.",
+      "The noodles are fourteen dollars."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "get those noodles tgt?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-13",
+    "context": [
+      "I have finished the diagram but not the explanation."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "whole thing done?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-14",
+    "context": [
+      "The coffee shop closes at nine.",
+      "I can only arrive at nine fifteen."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "meet there when you reach?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-15",
+    "context": [
+      "Hi prof, could I check when consultations start?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "I will put the booking slots up on Wednesday."
+  },
+  {
+    "item_id": "AUDIT-EVAL-16",
+    "context": [
+      "I saved your scarf, it is on my chair."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "is my scarf still with you?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-17",
+    "context": [
+      "Can you help me get a drink?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "either lemon tea or plain water"
+  },
+  {
+    "item_id": "AUDIT-EVAL-18",
+    "context": [
+      "I know the charger you left is yours."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "send me a photo to confirm?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-19",
+    "context": [
+      "The tutorial got shifted to lab L8."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "still going to L3?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-20",
+    "context": [
+      "I may have left my transit card at the bakery."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "found it already?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-21",
+    "context": [
+      "That practice presentation went so badly."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "damn demoralised now"
+  },
+  {
+    "item_id": "AUDIT-EVAL-22",
+    "context": [
+      "Are you free to help me move the chairs?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "only need help for 10 min"
+  },
+  {
+    "item_id": "AUDIT-EVAL-23",
+    "context": [
+      "The parcel in the blue box belongs to you."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "blue or brown box should i bring?"
+  },
+  {
+    "item_id": "AUDIT-EVAL-24",
+    "context": [
+      "I have not checked whether the studio is open."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "open on public holiday?"
+  },
+  {
+    "item_id": "USER-FLU-001",
+    "context": [
+      "I am down with a flu, cant come play later",
+      "aiyoo"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "yall just enjoy la, send videos to me when yall are playing"
+  },
+  {
+    "item_id": "ITEM-A-010",
+    "context": [
+      "this course is so tough.",
+      "yeah, I could really use some help too."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "peer: we very kiasu sia, first lesson already like that"
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "context": [
+      "Hey! Where are you now?",
+      "I am reaching Harbourfront MRT, how about you?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Eh i double check with you, we are meeting at 7pm right?"
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "context": [
+      "Hey have you printed the worksheet given out yesterday?",
+      "No, I will need to print it in school. Do you know how to use the printer?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i don't know how to use the printer in school."
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "context": [
+      "How long is our booking?",
+      "Oh no, our timer went off."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sian, need book somewhere else, our booking ran out"
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "context": [
+      "Hey should we grab lunch?",
+      "sure! Lets head to Koufu"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh the chicken rice stall open today anot?"
+  },
+  {
+    "item_id": "ITEM-A-035",
+    "context": [
+      "I got to go for my appointment later",
+      "Yeah I should get going too"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "don't forget to dabao your food later"
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "context": [
+      "are we still playing badminton tonight?",
+      "yeah, I think so"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i might be ten mins late leh"
+  },
+  {
+    "item_id": "ITEM-A-044",
+    "context": [
+      "have you submitted the project?",
+      "not yet, I am checking it first"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "remember ah, dont blur like sotong"
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class"
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "context": [
+      "We are going to the club later right?",
+      "Yeah, I will go back to shower first."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Aiyo, don't need la, let's go now"
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "context": [
+      "I haven't eaten breakfast",
+      "same sia, I'm hungry also"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "where you want eat?"
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "context": [
+      "I'm going library now",
+      "I'll come over after class"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "still got space?"
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?"
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "context": [
+      "I might not make it to the morning class",
+      "I can send you an update afterwards"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can tell me what I miss?"
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus"
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "context": [
+      "a few of us are going out this weekend",
+      "sounds fun"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you want come?"
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "context": [
+      "are you coming to the event?",
+      "I was planning to"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the event postpone for thirty minutes"
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?"
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven"
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "context": [
+      "my phone is almost out of battery",
+      "I brought my charger"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can I borrow your charger?"
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "context": [
+      "are you going to the library ltr?",
+      "yeah, probably after dinner"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i'll be at lks around 8, want to meet there?"
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "context": [
+      "im working on my slides now",
+      "same, im doing the results section"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "your part done alr?"
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "context": [
+      "i'll upload my section before dinner",
+      "okay, then i can merge everything tonight"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh dont forget your slide ah, we need merge later"
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?"
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "context": [
+      "im waiting at the cafe alr",
+      "coming now"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i ordered first because i was too hungry"
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "context": [
+      "ive finished drafting the conclusion",
+      "great"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can help me check if this part sounds too long?"
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later"
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?"
+  },
+  {
+    "item_id": "ITEM-C-055",
+    "context": [
+      "lets go to the exhibition at 1",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can go around 2 instead? i need lunch first"
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "context": [
+      "im heading to the court now",
+      "okay, i'll leave soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "court still occupied leh, need wait a bit"
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "context": [
+      "u wanna try the matcha at luckin?",
+      "nahh"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "then what u wanna drink later?"
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "context": [
+      "eh i struggling to do the linear algebra qn",
+      "which"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "neh the gaussian elim qn"
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "context": [
+      "hello, can i ask u some question idk how to do",
+      "uhh i see if i can help"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "uhh, u know the guassian elim qn"
+  },
+  {
+    "item_id": "ITEM-D-013",
+    "context": [
+      "hello",
+      "yes?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Can give me ans for assignment 1?"
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "context": [
+      "eh so how, you still want bid for the morning class?",
+      "yah can"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ok then rmb to bid before bidding ends"
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "context": [
+      "hello",
+      "hi",
+      "i am already at the bus stop"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "wya"
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "context": [
+      "have you reached?",
+      "wya"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "i reached, i waiting outside mac"
+  },
+  {
+    "item_id": "ITEM-D-038",
+    "context": [
+      "eh wya",
+      "i am outside mac",
+      "u eh"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "user"
+    ],
+    "message": "I am reaching soon, wait for me before going in."
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh"
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "context": [
+      "eh u ok? why u never join us for bb session yesterday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "woah sorry, i came up with a flu."
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "context": [
+      "i heard you going to cafe later to study",
+      "ya you want come? dont say i never jio"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can ah, later i join you"
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "context": [
+      "tomorrow what you want to eat",
+      "lets eat at Chinatown tomorrow"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "onz, tmr meet na li"
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "context": [
+      "later I need to lend your charger to charge my phone",
+      "ok can but I can only give you after 3"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hey can confirm i can use your charger after 3? thanks ah"
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot"
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "context": [
+      "hi class, I had a family emergency and there will not be any class tomorrow.",
+      "oh no! what about the in class quiz?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh"
+  },
+  {
+    "item_id": "ITEM-E-027",
+    "context": [
+      "eh the school got 3d printer anot how to use",
+      "have, i using it now, you need to book a slot to use",
+      "ok i book later to use"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "paiseh ah can i change my booking i want to use it later"
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi"
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao"
+  },
+  {
+    "item_id": "ITEM-E-040",
+    "context": [
+      "so much work this week wtf",
+      "ya sia"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "how ah, want meet together to do work?"
+  },
+  {
+    "item_id": "ITEM-E-046",
+    "context": [
+      "hello,what time will you release the lecture recordings?",
+      "usually around 10pm its out"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ni hao, can I releasae it at 5 instead?"
+  }
+]

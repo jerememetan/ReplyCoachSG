@@ -1,0 +1,471 @@
+[
+  {
+    "item_id": "CORRECTED-TEST-0-supported",
+    "family": "purpose",
+    "context": [
+      "I wanted to ask you about arranging the study trip.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What was it you wanted to call me about?",
+    "positive": "I wanted to discuss arranging the study trip.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "study trip"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-0-missing",
+    "family": "purpose",
+    "context": [
+      "Could we talk by phone when you are free?",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What was it you wanted to call me about?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-1-supported",
+    "family": "room",
+    "context": [
+      "I booked room R842.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Which room did you book?",
+    "positive": "I booked room R842.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "R842"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-1-missing",
+    "family": "room",
+    "context": [
+      "I am arranging the room booking.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Which room did you book?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-2-supported",
+    "family": "debt",
+    "context": [
+      "I owe you $63.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "How much did you say you owe me?",
+    "positive": "I owe you $63.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "63"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-2-missing",
+    "family": "debt",
+    "context": [
+      "We are settling the shared expenses.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "How much did you say you owe me?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-3-supported",
+    "family": "collector",
+    "context": [
+      "Noor is collecting our keys.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Who is collecting our keys?",
+    "positive": "Noor is collecting our keys.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "Noor"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-3-missing",
+    "family": "collector",
+    "context": [
+      "We are organising the key collection.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Who is collecting our keys?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-4-supported",
+    "family": "venue",
+    "context": [
+      "We agreed on the east-wing lounge.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Where did we agree to meet?",
+    "positive": "At the east-wing lounge.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "east-wing lounge"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-4-missing",
+    "family": "venue",
+    "context": [
+      "We are arranging a place to meet.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Where did we agree to meet?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-5-supported",
+    "family": "time",
+    "context": [
+      "We agreed to meet at 13:55.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What time did we agree to meet?",
+    "positive": "We agreed on 13:55.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "13:55"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-5-missing",
+    "family": "time",
+    "context": [
+      "We are arranging a meeting.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What time did we agree to meet?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-6-supported",
+    "family": "reference",
+    "context": [
+      "My reservation reference is DJ704.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What is your reservation reference?",
+    "positive": "My reference is DJ704.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "DJ704"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-6-missing",
+    "family": "reference",
+    "context": [
+      "I am looking through my reservation details.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What is your reservation reference?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-7-supported",
+    "family": "duration",
+    "context": [
+      "We agreed that the call would last 25 minutes.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "How long did we agree the call would last?",
+    "positive": "We agreed on 25 minutes.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "25"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-TEST-7-missing",
+    "family": "duration",
+    "context": [
+      "We are arranging a call.",
+      "I am busy for the next few minutes.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "How long did we agree the call would last?",
+    "positive": "Information not available.",
+    "requires_refusal": true,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "New assistant-authored paired history; not independent human benchmark."
+  },
+  {
+    "item_id": "CORRECTED-SELF-0",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like to get breakfast together this weekend?",
+    "positive": "Yes, that sounds good.",
+    "requires_refusal": false,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  },
+  {
+    "item_id": "CORRECTED-SELF-1",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "Thank you for helping me carry those chairs upstairs.",
+    "positive": "You are welcome.",
+    "requires_refusal": false,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  },
+  {
+    "item_id": "CORRECTED-SELF-2",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "What is 3 plus 4?",
+    "positive": "3 plus 4 is 7.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "7",
+        "seven"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  },
+  {
+    "item_id": "CORRECTED-SELF-3",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "Is a pear a fruit?",
+    "positive": "Yes, a pear is a fruit.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "yes"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  },
+  {
+    "item_id": "CORRECTED-SELF-4",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "The poster says the event starts at 18:45. What time does it state?",
+    "positive": "It states 18:45.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "18:45"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  },
+  {
+    "item_id": "CORRECTED-SELF-5",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "The note says the venue is A931. Which venue is listed?",
+    "positive": "The venue is A931.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "A931"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  },
+  {
+    "item_id": "CORRECTED-SELF-6",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "My budget is $15 and the ticket costs $10. Is the ticket within my budget?",
+    "positive": "Yes, it is within your budget.",
+    "requires_refusal": false,
+    "reference_values": [
+      [
+        "yes"
+      ]
+    ],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  },
+  {
+    "item_id": "CORRECTED-SELF-7",
+    "family": "self_contained",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like to borrow my spare umbrella?",
+    "positive": "Yes please, could I borrow it?",
+    "requires_refusal": false,
+    "reference_values": [],
+    "scope": "prospective_synthetic_v3",
+    "provenance": "Assistant-authored self-contained control; not unique human gold."
+  }
+]

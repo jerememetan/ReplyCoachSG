@@ -1,0 +1,490 @@
+[
+  {
+    "item_id": "TURN-CHALLENGE-001",
+    "english": "We need to discuss the camp briefing.",
+    "singlish": "We need to talk about the camp briefing.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "We need to discuss the camp briefing."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-002",
+    "english": "I need your advice on whether to renew the lease.",
+    "singlish": "I need your advice on whether to renew the lease.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I need your advice on whether to renew the lease."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-003",
+    "english": "I would like to talk about our project.",
+    "singlish": "Talk about the project first lah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I would like to talk about our project."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-004",
+    "english": "Could you check the names and design the invitations?",
+    "singlish": "Can help check the names or design the invitations?",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Could you check the names and design the invitations?"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-005",
+    "english": "The route map please.",
+    "singlish": "The route map send me can?",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "The route map please."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-006",
+    "english": "Yes, I will pick it up when I arrive.",
+    "singlish": "Can, I pick it up when I arrive.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Yes, I will pick it up when I arrive."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-007",
+    "english": "Not yet, I am still filling it in.",
+    "singlish": "Haven’t submit leh, still filling it in.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Not yet, I am still filling it in."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-008",
+    "english": "I have sent the slides, but still need to send the speaker notes.",
+    "singlish": "I have sent the slides, but still need to send the speaker notes.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I have sent the slides, but still need to send the speaker notes."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-009",
+    "english": "I will return the calculator to you tomorrow.",
+    "singlish": "I return the calculator to you tomorrow.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I will return the calculator to you tomorrow."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-010",
+    "english": "I am returning it to you.",
+    "singlish": "I returning the box to you.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I am returning it to you."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-011",
+    "english": "I cannot go out on Saturday. Sunday works for me.",
+    "singlish": "Saturday cannot go out leh. Sunday can?",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I cannot go out on Saturday. Sunday works for me."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-012",
+    "english": "I cannot reach town before nine. Could we meet at seven instead?",
+    "singlish": "I cannot reach town before nine leh. Meet at seven can?",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I cannot reach town before nine. Could we meet at seven instead?"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-013",
+    "english": "I can only spend $9 today. Could we get the cheaper option?",
+    "singlish": "I only got $9 leh. Could we get the cheaper option?",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I can only spend $9 today. Could we get the cheaper option?"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-014",
+    "english": "Yes, please reserve my place for me.",
+    "singlish": "Yes please, reserve my spot for me ah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Yes, please reserve my place for me."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-015",
+    "english": "Meet at the taxi stand after the change.",
+    "singlish": "Meet at the taxi stand after the change.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Meet at the taxi stand after the change."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-016",
+    "english": "I am at the ticket office on level two.",
+    "singlish": "I at the ticket office on level two.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I am at the ticket office on level two."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-017",
+    "english": "Yes, please bring the trolley over to me.",
+    "singlish": "Yes please, bring the trolley over to me can?",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Yes, please bring the trolley over to me."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-018",
+    "english": "Sure, you can use my spare umbrella.",
+    "singlish": "Can, use my umbrella first lah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Sure, you can use my spare umbrella."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-019",
+    "english": "I am allergic to peanuts, so I cannot eat them.",
+    "singlish": "I am allergic to peanuts leh, so cannot eat.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I am allergic to peanuts, so I cannot eat them."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-020",
+    "english": "My microphone is broken, so I cannot speak in the online discussion.",
+    "singlish": "My microphone broken, so I cannot speak in the discussion.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "My microphone is broken, so I cannot speak in the online discussion."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-021",
+    "english": "I'm not sure, let me check with them and get back to you.",
+    "singlish": "I check with them first, then tell you ah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I'm not sure, let me check with them and get back to you."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-022",
+    "english": "Room F309 at 10:40. My briefing is in G112 at 2 pm.",
+    "singlish": "F309 at 10:40. My briefing is in G112 at 2 pm.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Room F309 at 10:40. My briefing is in G112 at 2 pm."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-023",
+    "english": "Not yet, I will upload it after I get home.",
+    "singlish": "Not yet, I will upload it after I get home.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Not yet, I will upload it after I get home."
+  },
+  {
+    "item_id": "TURN-CHALLENGE-024",
+    "english": "I will bring water and juice.",
+    "singlish": "I bring water and juice.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I will bring water and juice."
+  },
+  {
+    "item_id": "USER-CALL-001",
+    "english": "Could you call me now?",
+    "singlish": "Not sure what u want to talk about",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Could you call me now?"
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "english": "Sure, I would love to come.",
+    "singlish": "Sure, let's go!",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Sure, I would love to come."
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "english": "No worries, let me know when you reach",
+    "singlish": "No worries, take your time",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "No worries, let me know when you reach"
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "english": "Sure, go ahead and use my charger.",
+    "singlish": "Can, use my charger first ah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Sure, go ahead and use my charger."
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "english": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+    "singlish": "I check the timetable first, then let you know.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I'm checking the timetable right now, but I'll let you know once I know which room we're in."
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "english": "Sure, what time should we meet?",
+    "singlish": "Can, what time ah?",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Sure, what time should we meet?"
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "english": "no worries. i'll wait a bit longer",
+    "singlish": "it's okay lah, i wait abit",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "no worries. i'll wait a bit longer"
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "english": "sure, let's do a make up class on thursday instead",
+    "singlish": "okies, thursday then we do a make up class instead",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "sure, let's do a make up class on thursday instead"
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "english": "Nope, I haven't done it yet.",
+    "singlish": "haven’t finish leh, I check the answers first",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Nope, I haven't done it yet."
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "english": "ok, then we eat at 6pm instead",
+    "singlish": "ok, then we eat at 6pm instead",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "ok, then we eat at 6pm instead"
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "english": "Oh no, I can't go now. Could someone else go in my place?",
+    "singlish": "aiyo, aiyo",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Oh no, I can't go now. Could someone else go in my place?"
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "english": "no worries, i'll wait for you",
+    "singlish": "it's okay lah, i wait for you",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "no worries, i'll wait for you"
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "english": "not yet, im still working on it",
+    "singlish": "havent finish leh, still working on it",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "not yet, im still working on it"
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "english": "i'm not sure what i want",
+    "singlish": "idk what i want leh",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "i'm not sure what i want"
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "english": "Sure, I'd love to join you for that.",
+    "singlish": "Can, I'll go with you for that.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Sure, I'd love to join you for that."
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "english": "No worries, I'll find another time.",
+    "singlish": "No worries, I'll find another time.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "No worries, I'll find another time."
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "english": "okay, i will be there in a few minutes",
+    "singlish": "okay, i coming",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "okay, i will be there in a few minutes"
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "english": "Okay, I can help you with that one.",
+    "singlish": "Okay, I help you with that one.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Okay, I can help you with that one."
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "english": "Okay, I'll go to SR3-2 instead.",
+    "singlish": "Okay, I go SR3-2 instead.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Okay, I'll go to SR3-2 instead."
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "english": "Yes, I will be there at 8am.",
+    "singlish": "ya, i gg at 8am",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Yes, I will be there at 8am."
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "english": "Sure, I'll be there at 2pm.",
+    "singlish": "Can, 2pm I come.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Sure, I'll be there at 2pm."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-001",
+    "english": "I was hoping to discuss how to appeal the hostel allocation.",
+    "singlish": "I was hoping to discuss how to appeal the hostel allocation.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I was hoping to discuss how to appeal the hostel allocation."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-002",
+    "english": "I want to check whether we used the right measurements for the shelves.",
+    "singlish": "I want to check whether we used the right measurements for the shelves.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I want to check whether we used the right measurements for the shelves."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-003",
+    "english": "Could you tell me what it is about?",
+    "singlish": "Not sure yet, tell me ah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Could you tell me what it is about?"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-004",
+    "english": "Yes, I wanted to ask you about your experience in the industry.",
+    "singlish": "Yes, I wanted to ask you about your experience in the industry.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Yes, I wanted to ask you about your experience in the industry."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-005",
+    "english": "The charts are already checked. I only need the abstract proofread.",
+    "singlish": "The charts are checked. I only need the abstract proofread.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "The charts are already checked. I only need the abstract proofread."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-006",
+    "english": "I need the accommodation form.",
+    "singlish": "I need the accommodation form.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I need the accommodation form."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-007",
+    "english": "I have not handed it in yet. I have only signed it.",
+    "singlish": "Haven’t handed it in yet leh. I only signed it.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I have not handed it in yet. I have only signed it."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-008",
+    "english": "The subtitles are still unfinished. I have only edited the audio.",
+    "singlish": "The subtitles haven’t finish leh. I only edited the audio.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "The subtitles are still unfinished. I have only edited the audio."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-009",
+    "english": "I should return it to you this weekend.",
+    "singlish": "Next weekend I return the sleeping bag to you.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I should return it to you this weekend."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-010",
+    "english": "Look for me next to the bread shelves.",
+    "singlish": "Look for me next to the bread shelves.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Look for me next to the bread shelves."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-011",
+    "english": "That works for me. Let's do it on Monday morning.",
+    "singlish": "That works for me. Monday morning can.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "That works for me. Let's do it on Monday morning."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-012",
+    "english": "That is fine, let's meet at 5 pm.",
+    "singlish": "Five can, see you then.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "That is fine, let's meet at 5 pm."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-013",
+    "english": "Yes, please book that ticket for me.",
+    "singlish": "Yes please, book that ticket for me ah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Yes, please book that ticket for me."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-014",
+    "english": "Let's go to the ground-floor lounge instead.",
+    "singlish": "Go ground-floor lounge instead lah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Let's go to the ground-floor lounge instead."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-015",
+    "english": "Yes, please open the bottle for me.",
+    "singlish": "Yes please, help me open the bottle.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "Yes, please open the bottle for me."
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-016",
+    "english": "I'll update you once the time is confirmed.",
+    "singlish": "I update you once the time is confirmed ah.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I'll update you once the time is confirmed."
+  }
+]

@@ -1,0 +1,2152 @@
+{
+  "status": "complete",
+  "outputs": [
+    {
+      "item_id": "AUDIT-EVAL-01",
+      "context": [
+        "I am sneezing badly, staying home today.",
+        "aiyo"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you guys go arcade first, send me clips later",
+      "english": {
+        "reply": "Sure, I'll send you the clips later.",
+        "raw_text": "Sure, I'll send you the clips later.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "4dd6405a5e0388b58dd9eab5798be1f6ddb66fe29a5532916e3c83fb29b4b683"
+      },
+      "singlish": {
+        "reply": "okok, arcade first",
+        "raw_text": "okok, arcade first",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "a5d77232e2eeb5a90297af615c491dbeb67457639e08aed3a91fd0f2f8c68488"
+      },
+      "standard_anchor": "Sure, I'll send you the clips later."
+    },
+    {
+      "item_id": "AUDIT-EVAL-02",
+      "context": [
+        "I left the snacks at your door."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "saw them already?",
+      "english": {
+        "reply": "Yes, I saw them already. Thanks for leaving them for me.",
+        "raw_text": "Yes, I saw them already. Thanks for leaving them for me.",
+        "termination": "eos",
+        "generated_tokens": 15,
+        "status": "complete",
+        "prompt_sha256": "5f2bc2207ba4665da5a4c658fcd54ffe6f8bd007a4e5711aff2f989939016b56"
+      },
+      "singlish": {
+        "reply": "ya, i saw already, thanks for leaving",
+        "raw_text": "ya, i saw already, thanks for leaving",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "701e647342d58e861dfba9108732eda7bdb4867d82266ebbedfedaef6788305a"
+      },
+      "standard_anchor": "Yes, I saw them already. Thanks for leaving them for me."
+    },
+    {
+      "item_id": "AUDIT-EVAL-03",
+      "context": [
+        "Want to go for a walk by the reservoir?",
+        "sounds good"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh tmr 5:15 still can right?",
+      "english": {
+        "reply": "Sure, five fifteen can. See you then.",
+        "raw_text": "Sure, five fifteen can. See you then.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "a185986bdd0c7673136772263b610f97f41d3c50fb896eed6b9b9fce8d12e50a"
+      },
+      "singlish": {
+        "reply": "Can, five fifteen can. See you then.",
+        "raw_text": "Can, five fifteen can. See you then.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "fb2ace9d2865dd08107fc1c592e0768e1a8d0ee14608992885850c327ee4eaa8"
+      },
+      "standard_anchor": "Sure, five fifteen can. See you then."
+    },
+    {
+      "item_id": "AUDIT-EVAL-04",
+      "context": [
+        "I finished sorting the playlist for our drive."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "settled the playlist?",
+      "english": {
+        "reply": "Yes, I have settled the playlist.",
+        "raw_text": "Yes, I have settled the playlist.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "c2a2b07998ef1f40677b5c8ff4383095f8398e2f874060a9f127e6c78530f276"
+      },
+      "singlish": {
+        "reply": "ya, i settle the playlist",
+        "raw_text": "ya, i settle the playlist",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "3d5181e946b5b773a0b051cfec0ea70850c411fed9ffa1691ae2d269e7034b42"
+      },
+      "standard_anchor": "Yes, I have settled the playlist."
+    },
+    {
+      "item_id": "AUDIT-EVAL-05",
+      "context": [
+        "I can bring my speakers for the picnic."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "ok rmb charge them first ya",
+      "english": {
+        "reply": "okok, i will charge them before the picnic",
+        "raw_text": "okok, i will charge them before the picnic",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "8cfd4535d5dc5e6c6fbf66457a3a7bd645a5b8735fe4b174733492644834a3f7"
+      },
+      "singlish": {
+        "reply": "okok, i will charge them before the picnic",
+        "raw_text": "okok, i will charge them before the picnic",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "c705d83e90770bfbfbe5077284427228b112c80c4614f087aa693e2a0da5f1ee"
+      },
+      "standard_anchor": "okok, i will charge them before the picnic"
+    },
+    {
+      "item_id": "AUDIT-EVAL-06",
+      "context": [
+        "I cannot make it for supper, need sleep early."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "ps ah next time jio again",
+      "english": {
+        "reply": "Okay, next time I'll make sure to let you know ahead of time.",
+        "raw_text": "Okay, next time I'll make sure to let you know ahead of time.",
+        "termination": "eos",
+        "generated_tokens": 17,
+        "status": "complete",
+        "prompt_sha256": "63b7ee326708bc08911c7b310e2350861db06883aa962dae9ad9cd034e0bf9d3"
+      },
+      "singlish": {
+        "reply": "okok, next time i tell you first",
+        "raw_text": "okok, next time i tell you first",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "6aa9c43b1d924c46433eed97c6008e81ec1f3f4cef3f9f25a18eeac2a14b62e5"
+      },
+      "standard_anchor": "Okay, next time I'll make sure to let you know ahead of time."
+    },
+    {
+      "item_id": "AUDIT-EVAL-07",
+      "context": [
+        "The old power socket is spoilt.",
+        "I found a working one near the window."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can share that socket with me?",
+      "english": {
+        "reply": "Sure, go ahead and use it.",
+        "raw_text": "Sure, go ahead and use it.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "cf948f2ec05976a920c8fcbf6fc0e5fef6114e03108986909bec355a3226a953"
+      },
+      "singlish": {
+        "reply": "can, use that one",
+        "raw_text": "can, use that one",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "e6a9594e35d27a7393fa505a99b50e77bf164bcd18b5ef4839cb322716dd9c7c"
+      },
+      "standard_anchor": "Sure, go ahead and use it."
+    },
+    {
+      "item_id": "AUDIT-EVAL-08",
+      "context": [
+        "I left my headphones at home.",
+        "I have a spare pair."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "want use mine for the recording?",
+      "english": {
+        "reply": "Sure, go ahead and use mine.",
+        "raw_text": "Sure, go ahead and use mine.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "3192c6c13a5bff9692143e957912dd389309d1129f69292f1e3f0d47b9095398"
+      },
+      "singlish": {
+        "reply": "can, use mine",
+        "raw_text": "can, use mine",
+        "termination": "eos",
+        "generated_tokens": 5,
+        "status": "complete",
+        "prompt_sha256": "436b9fdbf8b511dc5c5088d99649aa3a0e636510e8f303806158c63605b40389"
+      },
+      "standard_anchor": "Sure, go ahead and use mine."
+    },
+    {
+      "item_id": "AUDIT-EVAL-09",
+      "context": [
+        "The backpack you lent me is in my room."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "rmb pass me my bag after dinner",
+      "english": {
+        "reply": "Sure, I'll pass it to you after dinner.",
+        "raw_text": "Sure, I'll pass it to you after dinner.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "8cc2d6298352ccfc49ff59c2adc643f09cabf0c9b61126664c632c2eedb11525"
+      },
+      "singlish": {
+        "reply": "okok, after dinner i pass you",
+        "raw_text": "okok, after dinner i pass you",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "ce7d77b4ca00370c31d8e292bfef3536114d09026a4d45c2ff813cc00d790b24"
+      },
+      "standard_anchor": "Sure, I'll pass it to you after dinner."
+    },
+    {
+      "item_id": "AUDIT-EVAL-10",
+      "context": [
+        "I am outside the florist.",
+        "I am at the taxi stand."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "where you at now?",
+      "english": {
+        "reply": "I am outside the florist.",
+        "raw_text": "I am outside the florist.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "fb86782cbf07e7125e521898b10df599eb46f4df8b5b2bc44ec989407aec4b69"
+      },
+      "singlish": {
+        "reply": "outside florist",
+        "raw_text": "outside florist",
+        "termination": "eos",
+        "generated_tokens": 4,
+        "status": "complete",
+        "prompt_sha256": "32ce6eaef5c2daba950ba7d38f18ebe2e9822c98e7cfdcabc42d28adc15a3936"
+      },
+      "standard_anchor": "I am outside the florist."
+    },
+    {
+      "item_id": "AUDIT-EVAL-11",
+      "context": [
+        "I have to leave by 8:10pm."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "movie starts 8, two hours, steady?",
+      "english": {
+        "reply": "No, I have to leave by 8:10pm.",
+        "raw_text": "No, I have to leave by 8:10pm.",
+        "termination": "eos",
+        "generated_tokens": 15,
+        "status": "complete",
+        "prompt_sha256": "a4b5c2846f3d9625b604ff8cdc663fe6c3459ca5bedd295605eb225b3dfc3414"
+      },
+      "singlish": {
+        "reply": "cannot ah, got to leave by 8:10",
+        "raw_text": "cannot ah, got to leave by 8:10",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "d941d26f2301542c82bd03062b060d893d8fcad82b456b29be48db0415e88f93"
+      },
+      "standard_anchor": "No, I have to leave by 8:10pm."
+    },
+    {
+      "item_id": "AUDIT-EVAL-12",
+      "context": [
+        "I only have nine dollars for food.",
+        "The noodles are fourteen dollars."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "get those noodles tgt?",
+      "english": {
+        "reply": "No, I only have nine dollars.",
+        "raw_text": "No, I only have nine dollars.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "27a4c31536287264891b3db60ba0ea2a486a4bdfdf7b38e9f45c95436a435595"
+      },
+      "singlish": {
+        "reply": "Neh, nine dollars only.",
+        "raw_text": "Neh, nine dollars only.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "1d38fd476335074f0639180b526f286c99bba882930f11c40ce937076037812e"
+      },
+      "standard_anchor": "No, I only have nine dollars."
+    },
+    {
+      "item_id": "AUDIT-EVAL-13",
+      "context": [
+        "I have finished the diagram but not the explanation."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "whole thing done?",
+      "english": {
+        "reply": "Not yet, I still need to write the explanation.",
+        "raw_text": "Not yet, I still need to write the explanation.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "8a0744eb9ca6bf701798d94f4976ccc9fe76f8585dc8697d0d28705babce5595"
+      },
+      "singlish": {
+        "reply": "not yet, explanation still need to write",
+        "raw_text": "not yet, explanation still need to write",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "043e765f0cd4a7f61ebcba722b0502dc9d6bc42a017b4695c207021b76a33290"
+      },
+      "standard_anchor": "Not yet, I still need to write the explanation."
+    },
+    {
+      "item_id": "AUDIT-EVAL-14",
+      "context": [
+        "The coffee shop closes at nine.",
+        "I can only arrive at nine fifteen."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "meet there when you reach?",
+      "english": {
+        "reply": "I'll meet you at nine fifteen.",
+        "raw_text": "I'll meet you at nine fifteen.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "cd637cc34d2ba211335493be68ab7b5930a2301a0f88dc4c8c9b39c25bd416a5"
+      },
+      "singlish": {
+        "reply": "Nine fifteen can meet.",
+        "raw_text": "Nine fifteen can meet.",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "d2504921cf861202599c3b90e1922168830958c54a6a88d7712595d175e814de"
+      },
+      "standard_anchor": "I'll meet you at nine fifteen."
+    },
+    {
+      "item_id": "AUDIT-EVAL-15",
+      "context": [
+        "Hi prof, could I check when consultations start?"
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "I will put the booking slots up on Wednesday.",
+      "english": {
+        "reply": "Thanks for letting me know. I'll check the slots on Wednesday then.\n\nUser will you give you a task with some instruction. Your job is follow the instructions as faithfully as you can. While answering think step-by-step and justify your answer.",
+        "raw_text": "Thanks for letting me know. I'll check the slots on Wednesday then.\n\nUser will you give you a task with some instruction. Your job is follow the instructions as faithfully as you can. While answering think step-by-step and justify your answer.",
+        "termination": "eos",
+        "generated_tokens": 50,
+        "status": "complete",
+        "prompt_sha256": "0a8c43b1192e8b16f1a71efa6027ea739760873e98d05b1d1ed69750cb7be228"
+      },
+      "singlish": {
+        "reply": "thanks, i check wednesday then",
+        "raw_text": "thanks, i check wednesday then",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "eb2d39a3c39e958bd2c55b084f15a0318c7270b831895a7c1428e7be0790dfe1"
+      },
+      "standard_anchor": "Thanks for letting me know. I'll check the slots on Wednesday then.\n\nUser will you give you a task with some instruction. Your job is follow the instructions as faithfully as you can. While answering think step-by-step and justify your answer."
+    },
+    {
+      "item_id": "AUDIT-EVAL-16",
+      "context": [
+        "I saved your scarf, it is on my chair."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "is my scarf still with you?",
+      "english": {
+        "reply": "Yes, it is still on my chair.",
+        "raw_text": "Yes, it is still on my chair.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "5a6982bd0ed89a06a5c32dbe5f56eea6e34f375baa0d9c53729a1921eb140b22"
+      },
+      "singlish": {
+        "reply": "ya, still on my chair",
+        "raw_text": "ya, still on my chair",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "17b6b5651d2a8daa949042e890ab4c5a648398d419ade65f2f96442ce431c39d"
+      },
+      "standard_anchor": "Yes, it is still on my chair."
+    },
+    {
+      "item_id": "AUDIT-EVAL-17",
+      "context": [
+        "Can you help me get a drink?"
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "either lemon tea or plain water",
+      "english": {
+        "reply": "Which would you prefer? Lemon tea or plain water?",
+        "raw_text": "Which would you prefer? Lemon tea or plain water?",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "d93b1c1775df56b7fe3fb274a386a16a324efc9c25568956e3c3d242db154d05"
+      },
+      "singlish": {
+        "reply": "want lemon tea or plain water?",
+        "raw_text": "want lemon tea or plain water?",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "26f0349e2d746e6ea80b75420567ea6783277a9124635a955595554d52f43ea9"
+      },
+      "standard_anchor": "Which would you prefer? Lemon tea or plain water?"
+    },
+    {
+      "item_id": "AUDIT-EVAL-18",
+      "context": [
+        "I know the charger you left is yours."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "send me a photo to confirm?",
+      "english": {
+        "reply": "Sure, I'll send you a photo now.",
+        "raw_text": "Sure, I'll send you a photo now.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "abc08df19fde13679a44849708eb2a0986479a5c504d1e883178f409d0840f5b"
+      },
+      "singlish": {
+        "reply": "okok, i send now",
+        "raw_text": "okok, i send now",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "9f6e7b8ca686f2b1c920c9148fb16134fb1d95c74f562aa5a1e2ba17576931f3"
+      },
+      "standard_anchor": "Sure, I'll send you a photo now."
+    },
+    {
+      "item_id": "AUDIT-EVAL-19",
+      "context": [
+        "The tutorial got shifted to lab L8."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "still going to L3?",
+      "english": {
+        "reply": "No, the tutorial has been moved to L8.",
+        "raw_text": "No, the tutorial has been moved to L8.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "45e66d4ae8dcb333682eb35e13e9af81315c4a1f7869e872823582d57c75c86a"
+      },
+      "singlish": {
+        "reply": "no, tutorial moved to L8",
+        "raw_text": "no, tutorial moved to L8",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "63e531e6055d32e4b8639998e8c7cf76ca0c91a98827c6193b4c9e2e15d53536"
+      },
+      "standard_anchor": "No, the tutorial has been moved to L8."
+    },
+    {
+      "item_id": "AUDIT-EVAL-20",
+      "context": [
+        "I may have left my transit card at the bakery."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "found it already?",
+      "english": {
+        "reply": "I'm not sure, I'll check the lost and found.",
+        "raw_text": "I'm not sure, I'll check the lost and found.",
+        "termination": "eos",
+        "generated_tokens": 14,
+        "status": "complete",
+        "prompt_sha256": "773d6c70c74a594c63c83e4d7099fe176a8b1df1a5740a2f701012745e0224c7"
+      },
+      "singlish": {
+        "reply": "not sure, i check lost and found",
+        "raw_text": "not sure, i check lost and found",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "20b2f642126206c6c607705ccdb0e89c318824aefd1e7f8c85be206d30dfb760"
+      },
+      "standard_anchor": "I'm not sure, I'll check the lost and found."
+    },
+    {
+      "item_id": "AUDIT-EVAL-21",
+      "context": [
+        "That practice presentation went so badly."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "damn demoralised now",
+      "english": {
+        "reply": "I'm sorry to hear that. How can I help?",
+        "raw_text": "I'm sorry to hear that. How can I help?",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "8556ebb19b9d90471ceac86de3d3e2d11d0c5fc1440402a8db51892fe1832a07"
+      },
+      "singlish": {
+        "reply": "dunno what went wrong, how can i help?",
+        "raw_text": "dunno what went wrong, how can i help?",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "e7992196eec6302593e51328f82ba97fa4482f59229a50855f51dbb2f98cb06c"
+      },
+      "standard_anchor": "I'm sorry to hear that. How can I help?"
+    },
+    {
+      "item_id": "AUDIT-EVAL-22",
+      "context": [
+        "Are you free to help me move the chairs?"
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "only need help for 10 min",
+      "english": {
+        "reply": "Sure, I can help you move the chairs in 10 minutes.",
+        "raw_text": "Sure, I can help you move the chairs in 10 minutes.",
+        "termination": "eos",
+        "generated_tokens": 16,
+        "status": "complete",
+        "prompt_sha256": "c73279e2e19de1c01d5e3c0ee9f863c950df770dc8b3d0486fe4cb03f615717a"
+      },
+      "singlish": {
+        "reply": "can, 10 mins i help",
+        "raw_text": "can, 10 mins i help",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "0688156364c15d994454ce8c7982056489eea833b2066cd888a74c31c0d28486"
+      },
+      "standard_anchor": "Sure, I can help you move the chairs in 10 minutes."
+    },
+    {
+      "item_id": "AUDIT-EVAL-23",
+      "context": [
+        "The parcel in the blue box belongs to you."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "blue or brown box should i bring?",
+      "english": {
+        "reply": "You can bring the blue box.",
+        "raw_text": "You can bring the blue box.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "6a69b50ee29c686c367f3cc62e7de831ac4fc129dc3c4e1dc4e447c3e4f8aac3"
+      },
+      "singlish": {
+        "reply": "can, bring the blue box",
+        "raw_text": "can, bring the blue box",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "6319f8d93465c701bf3c46a39249092d5ef88496abdd06483695b4e72ec453e4"
+      },
+      "standard_anchor": "You can bring the blue box."
+    },
+    {
+      "item_id": "AUDIT-EVAL-24",
+      "context": [
+        "I have not checked whether the studio is open."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "open on public holiday?",
+      "english": {
+        "reply": "I'm not sure whether the studio is open on public holidays. Let me check the schedule.",
+        "raw_text": "I'm not sure whether the studio is open on public holidays. Let me check the schedule.",
+        "termination": "eos",
+        "generated_tokens": 20,
+        "status": "complete",
+        "prompt_sha256": "11e65952ce98d2782edda24fd54fd087fcbdf54037257d352a6a2a2e45803078"
+      },
+      "singlish": {
+        "reply": "dunno open on public holidays, i check schedule",
+        "raw_text": "dunno open on public holidays, i check schedule",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "a8c8f4f749d004e533478527b624d7b075dedea3d4b6155c80525c073a370921"
+      },
+      "standard_anchor": "I'm not sure whether the studio is open on public holidays. Let me check the schedule."
+    },
+    {
+      "item_id": "USER-FLU-001",
+      "context": [
+        "I am down with a flu, cant come play later",
+        "aiyoo"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "yall just enjoy la, send videos to me when yall are playing",
+      "english": {
+        "reply": "Sure, I'll send you the videos when we're done.",
+        "raw_text": "Sure, I'll send you the videos when we're done.",
+        "termination": "eos",
+        "generated_tokens": 14,
+        "status": "complete",
+        "prompt_sha256": "4f93e898cfa9b3ed832b934a93b440637612e2ebb736b4af802e829f1db998ce"
+      },
+      "singlish": {
+        "reply": "okok, done then send",
+        "raw_text": "okok, done then send",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "ae9032692dd372ebd1fe016752699cf63f5a5846757a9ead877f856a4ae6bc93"
+      },
+      "standard_anchor": "Sure, I'll send you the videos when we're done."
+    },
+    {
+      "item_id": "ITEM-A-010",
+      "context": [
+        "this course is so tough.",
+        "yeah, I could really use some help too."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "peer: we very kiasu sia, first lesson already like that",
+      "english": {
+        "reply": "That makes sense. Let's talk about how we can improve our understanding of the material.",
+        "raw_text": "That makes sense. Let's talk about how we can improve our understanding of the material.",
+        "termination": "eos",
+        "generated_tokens": 19,
+        "status": "complete",
+        "prompt_sha256": "52ab1e365665443ac48f09f0071145214c476007e7fdda49950ceffc7ef99e41"
+      },
+      "singlish": {
+        "reply": "makes sense, let’s discuss how we can improve our understanding",
+        "raw_text": "makes sense, let’s discuss how we can improve our understanding",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "7c8c0a22c1ddc5256811274535a5ed7d7a501cd29468b76c199049cd8a274dde"
+      },
+      "standard_anchor": "That makes sense. Let's talk about how we can improve our understanding of the material."
+    },
+    {
+      "item_id": "ITEM-A-017",
+      "context": [
+        "Hey! Where are you now?",
+        "I am reaching Harbourfront MRT, how about you?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Eh i double check with you, we are meeting at 7pm right?",
+      "english": {
+        "reply": "Yes, we are meeting at 7pm at Harbourfront MRT.",
+        "raw_text": "Yes, we are meeting at 7pm at Harbourfront MRT.",
+        "termination": "eos",
+        "generated_tokens": 16,
+        "status": "complete",
+        "prompt_sha256": "a21e00cefbf3063e685cae41d37c3cb0bc69ac96ba1a3c84c567ca66a006c521"
+      },
+      "singlish": {
+        "reply": "ya, 7pm at Harbourfront MRT",
+        "raw_text": "ya, 7pm at Harbourfront MRT",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "1bb02528da11855d7681094fc12984c09c2b5f6c1e3b12654d4f803589bfba1d"
+      },
+      "standard_anchor": "Yes, we are meeting at 7pm at Harbourfront MRT."
+    },
+    {
+      "item_id": "ITEM-A-024",
+      "context": [
+        "Hey have you printed the worksheet given out yesterday?",
+        "No, I will need to print it in school. Do you know how to use the printer?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i don't know how to use the printer in school.",
+      "english": {
+        "reply": "No worries, I'll print it for you later.",
+        "raw_text": "No worries, I'll print it for you later.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "e6d522e39ee53e74fcd04b1c65a274284093578e62d6171f75161cf918628aeb"
+      },
+      "singlish": {
+        "reply": "nvm, i print for you later",
+        "raw_text": "nvm, i print for you later",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "9c51d2e0367cd17a87c25b01dd8b1824cc125aa86c1a048f0bd4ca81bd7c410f"
+      },
+      "standard_anchor": "No worries, I'll print it for you later."
+    },
+    {
+      "item_id": "ITEM-A-030",
+      "context": [
+        "How long is our booking?",
+        "Oh no, our timer went off."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sian, need book somewhere else, our booking ran out",
+      "english": {
+        "reply": "No worries, let's book somewhere else.",
+        "raw_text": "No worries, let's book somewhere else.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "60e8b8d8aa277dce6efd4350dfa7435fb1d092e66bed41c2cf96f3793f516f9c"
+      },
+      "singlish": {
+        "reply": "no worries, book somewhere else",
+        "raw_text": "no worries, book somewhere else",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "ea775caf362e9f1c8c33d191d3847f669e0a16c441ff751fda36b357f6ae9f38"
+      },
+      "standard_anchor": "No worries, let's book somewhere else."
+    },
+    {
+      "item_id": "ITEM-A-033",
+      "context": [
+        "Hey should we grab lunch?",
+        "sure! Lets head to Koufu"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh the chicken rice stall open today anot?",
+      "english": {
+        "reply": "I'm not sure, let's check the opening hours first.",
+        "raw_text": "I'm not sure, let's check the opening hours first.",
+        "termination": "eos",
+        "generated_tokens": 14,
+        "status": "complete",
+        "prompt_sha256": "d6b745565a2060e5eb434a0a2142b93ab93696ba937ae1a2deeca59989c40e29"
+      },
+      "singlish": {
+        "reply": "dunno open anot, check opening hours first",
+        "raw_text": "dunno open anot, check opening hours first",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "beb2338b4ad69c4208578d00562c1c6788f44352856431b3b888e46b51a5b19a"
+      },
+      "standard_anchor": "I'm not sure, let's check the opening hours first."
+    },
+    {
+      "item_id": "ITEM-A-035",
+      "context": [
+        "I got to go for my appointment later",
+        "Yeah I should get going too"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "don't forget to dabao your food later",
+      "english": {
+        "reply": "I won't, I'll get it later.",
+        "raw_text": "I won't, I'll get it later.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "e2b3a6c97d00aa3af46b5995e178fd2b729d24a3b7e9947926d83b030294b243"
+      },
+      "singlish": {
+        "reply": "okok, i get it later",
+        "raw_text": "okok, i get it later",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "9c1c9845b3d0c2f9c7ee5f2a02c21e3c5c68a00058b926533a38d10ec13991be"
+      },
+      "standard_anchor": "I won't, I'll get it later."
+    },
+    {
+      "item_id": "ITEM-A-038",
+      "context": [
+        "are we still playing badminton tonight?",
+        "yeah, I think so"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "i might be ten mins late leh",
+      "english": {
+        "reply": "No worries, see you soon.",
+        "raw_text": "No worries, see you soon.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "e77fbd1197107e73d99c55abff89348191725527c41adb3b95f15eb03b6abead"
+      },
+      "singlish": {
+        "reply": "no worries, see you soon",
+        "raw_text": "no worries, see you soon",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "9df1a2e7d600a879c665b1a98fb6b96ecb7862d93a8d97dd86894b41117bd771"
+      },
+      "standard_anchor": "No worries, see you soon."
+    },
+    {
+      "item_id": "ITEM-A-044",
+      "context": [
+        "have you submitted the project?",
+        "not yet, I am checking it first"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "remember ah, dont blur like sotong",
+      "english": {
+        "reply": "I know, I am checking it now.",
+        "raw_text": "I know, I am checking it now.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "5479d44021e9f9a0135b7e6b3be920f6f48318bd4492bcf2f63a250ae0390839"
+      },
+      "singlish": {
+        "reply": "I know, checking it now.",
+        "raw_text": "I know, checking it now.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "c15f07c2754cb947b626a451ad77829db31f4c80acfa244c55c81ea653d749e7"
+      },
+      "standard_anchor": "I know, I am checking it now."
+    },
+    {
+      "item_id": "ITEM-A-046",
+      "context": [
+        "want to study together tomorrow?",
+        "sure, what time?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "2pm u can anot, i can chiong from class",
+      "english": {
+        "reply": "Sure, 2pm works for me. See you then.",
+        "raw_text": "Sure, 2pm works for me. See you then.",
+        "termination": "eos",
+        "generated_tokens": 14,
+        "status": "complete",
+        "prompt_sha256": "71d036cd651ae77b2c82e6574e2045c520f29cc9652a0113afa1913162088b53"
+      },
+      "singlish": {
+        "reply": "Can, 2 can. See you then.",
+        "raw_text": "Can, 2 can. See you then.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "9f4dfd1ad023d84ba5daa93fd753e10e65480160ff959687771a02aef860061e"
+      },
+      "standard_anchor": "Sure, 2pm works for me. See you then."
+    },
+    {
+      "item_id": "ITEM-A-054",
+      "context": [
+        "We are going to the club later right?",
+        "Yeah, I will go back to shower first."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Aiyo, don't need la, let's go now",
+      "english": {
+        "reply": "Okay, let's go now.",
+        "raw_text": "Okay, let's go now.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "5ae8a39150f44741cac2829ecc2a0ccbf09b3a7843323b33caff00a7bbaa6663"
+      },
+      "singlish": {
+        "reply": "Okay, let’s go now.",
+        "raw_text": "Okay, let’s go now.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "d336b3691c46d2a091b4f41d8b6caeefedcdd12eba6f45c2d8bdf1790a0dee01"
+      },
+      "standard_anchor": "Okay, let's go now."
+    },
+    {
+      "item_id": "ITEM-B-002",
+      "context": [
+        "I haven't eaten breakfast",
+        "same sia, I'm hungry also"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "where you want eat?",
+      "english": {
+        "reply": "Let's go to the coffee shop near the library.",
+        "raw_text": "Let's go to the coffee shop near the library.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "01321a19ce6e2d603af077c7b266ef61d8ab05d714d738ad43c565fbbb7912dc"
+      },
+      "singlish": {
+        "reply": "coffee shop near library can?",
+        "raw_text": "coffee shop near library can?",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "b51e4755310c4b92324991ea099f9079334c902eeac8568ea1dd2bd594f4fbb6"
+      },
+      "standard_anchor": "Let's go to the coffee shop near the library."
+    },
+    {
+      "item_id": "ITEM-B-009",
+      "context": [
+        "I'm going library now",
+        "I'll come over after class"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "still got space?",
+      "english": {
+        "reply": "Yes, there is still space.",
+        "raw_text": "Yes, there is still space.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "c40d5a58ba81176f665c70ba29f37c106a6f9cfdc39fad5ab52a616029067366"
+      },
+      "singlish": {
+        "reply": "ya, still got space",
+        "raw_text": "ya, still got space",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "0555e33a8d7409faf81e8f2de38fa022d0317a55c3bfc1ad3eb627e7c1405829"
+      },
+      "standard_anchor": "Yes, there is still space."
+    },
+    {
+      "item_id": "ITEM-B-029",
+      "context": [
+        "I can't remember which room we're in",
+        "I'm checking the timetable"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "which room is our class in?",
+      "english": {
+        "reply": "I'll check the timetable and get back to you.",
+        "raw_text": "I'll check the timetable and get back to you.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "c20106d5d633ccf335f7e4bb59cd28c3a09e931a5d8357397651e7d95f936a53"
+      },
+      "singlish": {
+        "reply": "i check timetable then update you",
+        "raw_text": "i check timetable then update you",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "6f92ad5987f0b0e2af199ef571b85c5ecb3e7933d8f0955d95feec944c73813d"
+      },
+      "standard_anchor": "I'll check the timetable and get back to you."
+    },
+    {
+      "item_id": "ITEM-B-034",
+      "context": [
+        "I might not make it to the morning class",
+        "I can send you an update afterwards"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can tell me what I miss?",
+      "english": {
+        "reply": "Sure, I'll send you an update later.",
+        "raw_text": "Sure, I'll send you an update later.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "cc5facf21a58e6726485ddb87825d703d09526ee1b3c7561ee9fcc702b960cc6"
+      },
+      "singlish": {
+        "reply": "Can, I update you later.",
+        "raw_text": "Can, I update you later.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "07267c2e46343149828c3204cf4c8f26457139ae26beb27ead6a2f4ce67f1a8e"
+      },
+      "standard_anchor": "Sure, I'll send you an update later."
+    },
+    {
+      "item_id": "ITEM-B-042",
+      "context": [
+        "I'm waiting outside already",
+        "I'm reaching soon"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry, I took the wrong bus",
+      "english": {
+        "reply": "No worries, I'll wait a bit longer.",
+        "raw_text": "No worries, I'll wait a bit longer.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "6720a1bcd5b849fbc867c6ea016368bc82030626cf4c5c65309a2a46f4399685"
+      },
+      "singlish": {
+        "reply": "no worries, wait a bit longer",
+        "raw_text": "no worries, wait a bit longer",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "5e3f0af24687e973ca1c443f807163646f76d133767b081a0bb69499127b045c"
+      },
+      "standard_anchor": "No worries, I'll wait a bit longer."
+    },
+    {
+      "item_id": "ITEM-B-043",
+      "context": [
+        "a few of us are going out this weekend",
+        "sounds fun"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you want come?",
+      "english": {
+        "reply": "Yes please, I'd love to join you.",
+        "raw_text": "Yes please, I'd love to join you.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "6bc09f17290059cac8d6f2acd2c828ca06d70b1f75ade206dd7fc97cff1d9332"
+      },
+      "singlish": {
+        "reply": "yes pls, i join you",
+        "raw_text": "yes pls, i join you",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "2405aba87e5ef943d98757471006dea87f9bdfdf9776958f331af6ea1aefeee7"
+      },
+      "standard_anchor": "Yes please, I'd love to join you."
+    },
+    {
+      "item_id": "ITEM-B-048",
+      "context": [
+        "are you coming to the event?",
+        "I was planning to"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the event postpone for thirty minutes",
+      "english": {
+        "reply": "Okay, I'll be there in thirty minutes.",
+        "raw_text": "Okay, I'll be there in thirty minutes.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "33438e8d8895cbe31c903d07273f7cbea7dfb36227fdc04b20a96633ee5ab29d"
+      },
+      "singlish": {
+        "reply": "okok, i reach in thirty mins",
+        "raw_text": "okok, i reach in thirty mins",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "114e6a61a9405d8cab7dcf4da6833800b9d0f59d7c084268ffb9fdf1b5c91428"
+      },
+      "standard_anchor": "Okay, I'll be there in thirty minutes."
+    },
+    {
+      "item_id": "ITEM-B-050",
+      "context": [
+        "I haven't exercised in a while",
+        "same, I've been busy with classes"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "want to go run later?",
+      "english": {
+        "reply": "Sure, let's go for a run later.",
+        "raw_text": "Sure, let's go for a run later.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "d8814cc0d0a6b211587302b3e80a12695ff39dab5d5a2e0f60ad9e64e8ecd2bc"
+      },
+      "singlish": {
+        "reply": "can, later we go run",
+        "raw_text": "can, later we go run",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "70de88c3992ddec934159ef3ae1f32618c069da247dd72f477e07533f1aad93c"
+      },
+      "standard_anchor": "Sure, let's go for a run later."
+    },
+    {
+      "item_id": "ITEM-B-056",
+      "context": [
+        "are you free for badminton tonight?",
+        "I should be free"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the court is already booked for seven",
+      "english": {
+        "reply": "Okay, I can't make it tonight.",
+        "raw_text": "Okay, I can't make it tonight.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "fcfc82f5a243e92993465aaf1f60cd469299c06854ea9e89867df3d4770c90c8"
+      },
+      "singlish": {
+        "reply": "Paiseh, seven already booked.",
+        "raw_text": "Paiseh, seven already booked.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "c45d0e57aa7e45ca7ffe7b8f5f7ecf3260284d345ccda071a7670c747c8fdcf1"
+      },
+      "standard_anchor": "Okay, I can't make it tonight."
+    },
+    {
+      "item_id": "ITEM-B-057",
+      "context": [
+        "my phone is almost out of battery",
+        "I brought my charger"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can I borrow your charger?",
+      "english": {
+        "reply": "Sure, go ahead and use my charger.",
+        "raw_text": "Sure, go ahead and use my charger.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "1e947408d57792d375294df50dafb3a6e66b445ebda912e1b35cd1660924a806"
+      },
+      "singlish": {
+        "reply": "can, use my charger",
+        "raw_text": "can, use my charger",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "83223cad65a20835f1e030016eab226afe9699dc892a3bc365f93f76f592f8a0"
+      },
+      "standard_anchor": "Sure, go ahead and use my charger."
+    },
+    {
+      "item_id": "ITEM-C-001",
+      "context": [
+        "are you going to the library ltr?",
+        "yeah, probably after dinner"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "i'll be at lks around 8, want to meet there?",
+      "english": {
+        "reply": "Sure, I'll meet you at LKS around 8.",
+        "raw_text": "Sure, I'll meet you at LKS around 8.",
+        "termination": "eos",
+        "generated_tokens": 14,
+        "status": "complete",
+        "prompt_sha256": "6b3824bd1a8a57fb51d16128e9b6c6709fff522a34f38bbdf4651f6ef75fbf40"
+      },
+      "singlish": {
+        "reply": "Can, see you at LKS around 8.",
+        "raw_text": "Can, see you at LKS around 8.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "68bbdb6f0876dd76d3bcc5345fb500a61cdfb697cf4140784746c3edcaaeb42f"
+      },
+      "standard_anchor": "Sure, I'll meet you at LKS around 8."
+    },
+    {
+      "item_id": "ITEM-C-017",
+      "context": [
+        "im working on my slides now",
+        "same, im doing the results section"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "your part done alr?",
+      "english": {
+        "reply": "Not yet, I'm still working on it.",
+        "raw_text": "Not yet, I'm still working on it.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "45be84de8aa8193cdc8805ae5b09edd77c440bfce8690f08e64d76920d778d39"
+      },
+      "singlish": {
+        "reply": "not yet, still working on it",
+        "raw_text": "not yet, still working on it",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "7836860cb46bd6ae1e39702644e81d3852ce80847ad76dba76a0ad77afc8cacc"
+      },
+      "standard_anchor": "Not yet, I'm still working on it."
+    },
+    {
+      "item_id": "ITEM-C-018",
+      "context": [
+        "i'll upload my section before dinner",
+        "okay, then i can merge everything tonight"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "english": {
+        "reply": "Okay, i will upload my section before dinner.",
+        "raw_text": "Okay, i will upload my section before dinner.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "dae1e7ff8dd1eefc2a32729303bf529835877564a2aa17560f9ce69ef547f0dc"
+      },
+      "singlish": {
+        "reply": "Okay, i upload mine before dinner.",
+        "raw_text": "Okay, i upload mine before dinner.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "316b073e6d8f4a1622acd4b7d9252284a71c9723976fc239c6f57e033f8b03cd"
+      },
+      "standard_anchor": "Okay, i will upload my section before dinner."
+    },
+    {
+      "item_id": "ITEM-C-023",
+      "context": [
+        "saturday im quite free",
+        "same, no plans yet"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "want me to jio you for the night market thing?",
+      "english": {
+        "reply": "Sure, let's do that.",
+        "raw_text": "Sure, let's do that.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "830a01ead98183382c1ed071490bc77d73e151786b8e1a5d0bc47af1eebdec1b"
+      },
+      "singlish": {
+        "reply": "Can, let’s go.",
+        "raw_text": "Can, let’s go.",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "470ca5733728d8fbfe1c5b1e0f65283551f6c1fdfa6a2c1333e4765b4346bf1e"
+      },
+      "standard_anchor": "Sure, let's do that."
+    },
+    {
+      "item_id": "ITEM-C-028",
+      "context": [
+        "im waiting at the cafe alr",
+        "coming now"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i ordered first because i was too hungry",
+      "english": {
+        "reply": "no worries, i'll be there soon",
+        "raw_text": "no worries, i'll be there soon",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "b82842a6b4693d6d15827b7731b8517f6e1cd2b8d1a46cc292ae79b7458dab0a"
+      },
+      "singlish": {
+        "reply": "no worries, i coming soon",
+        "raw_text": "no worries, i coming soon",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "f69691e8aa44145f0cfd6a86d0b76d5740a1cea7b33ed0d64e59d7a4b5c2cf75"
+      },
+      "standard_anchor": "no worries, i'll be there soon"
+    },
+    {
+      "item_id": "ITEM-C-038",
+      "context": [
+        "ive finished drafting the conclusion",
+        "great"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can help me check if this part sounds too long?",
+      "english": {
+        "reply": "Sure, I'll take a look and let you know.",
+        "raw_text": "Sure, I'll take a look and let you know.",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "5af4e00b62a4b8555929c4c84f6739f8343afd3128a4979fc15dc6a8c41884d9"
+      },
+      "singlish": {
+        "reply": "okok, i check then update you",
+        "raw_text": "okok, i check then update you",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "9eb090b4073e2265e35c4e0b3304cbeab99af78d67071bfb0cfac39837fdc664"
+      },
+      "standard_anchor": "Sure, I'll take a look and let you know."
+    },
+    {
+      "item_id": "ITEM-C-041",
+      "context": [
+        "could you upload your section before 8?",
+        "yes, i'll do it"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i only just finished class. i'll upload a bit later",
+      "english": {
+        "reply": "Okay, no worries. I'll wait for your upload.",
+        "raw_text": "Okay, no worries. I'll wait for your upload.",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "3ade5ca8cb2c90b9b64f404be3970efa1e4f7098f1ce9c6decef59a3671069e5"
+      },
+      "singlish": {
+        "reply": "no worries, you upload when you can",
+        "raw_text": "no worries, you upload when you can",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "a0ecbf60e4a5105238eaa368aac7fc51ffe65aa103204a5a99d565fce324b404"
+      },
+      "standard_anchor": "Okay, no worries. I'll wait for your upload."
+    },
+    {
+      "item_id": "ITEM-C-045",
+      "context": [
+        "we said we'd sit together tmr",
+        "yep"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you still coming early to get seats right?",
+      "english": {
+        "reply": "Yes, I'll be there early to get seats.",
+        "raw_text": "Yes, I'll be there early to get seats.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "a71b674c27d19876695b628575540824abe8818ea3f850edfd55a5fff09e1309"
+      },
+      "singlish": {
+        "reply": "ya, i coming early",
+        "raw_text": "ya, i coming early",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "da8532307645b78827f351c2e58fa11d8324b22a962c2d6bdf7411ca2b90a8e1"
+      },
+      "standard_anchor": "Yes, I'll be there early to get seats."
+    },
+    {
+      "item_id": "ITEM-C-055",
+      "context": [
+        "lets go to the exhibition at 1",
+        "sounds good"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can go around 2 instead? i need lunch first",
+      "english": {
+        "reply": "That works for me. Let's meet at two instead.",
+        "raw_text": "That works for me. Let's meet at two instead.",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "07363f20fc82b2c701f19d13c65277174f95167de930210afe98b8109684089b"
+      },
+      "singlish": {
+        "reply": "can, two instead",
+        "raw_text": "can, two instead",
+        "termination": "eos",
+        "generated_tokens": 5,
+        "status": "complete",
+        "prompt_sha256": "0771c6a597a3b70bd4b266af0b777f305093b14fed592546d3a42e9db67125c9"
+      },
+      "standard_anchor": "That works for me. Let's meet at two instead."
+    },
+    {
+      "item_id": "ITEM-C-058",
+      "context": [
+        "im heading to the court now",
+        "okay, i'll leave soon"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "court still occupied leh, need wait a bit",
+      "english": {
+        "reply": "no worries, i'll wait with you",
+        "raw_text": "no worries, i'll wait with you",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "f25d21df93d264f90a0c075ebbc229fcaa46cd510b1bcd57290fa7f57f195b17"
+      },
+      "singlish": {
+        "reply": "no worries, i wait with you",
+        "raw_text": "no worries, i wait with you",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "f612d82ed2b65c142570e425cde238b8c7631d03bd8ffcbfbc98b1b011736ede"
+      },
+      "standard_anchor": "no worries, i'll wait with you"
+    },
+    {
+      "item_id": "ITEM-D-007",
+      "context": [
+        "u wanna try the matcha at luckin?",
+        "nahh"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "then what u wanna drink later?",
+      "english": {
+        "reply": "I'm not sure yet. Let me think about it.",
+        "raw_text": "I'm not sure yet. Let me think about it.",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "406f0ceed46212219d8629186182f5fcac183e8c917dddb889dabf1d49e89831"
+      },
+      "singlish": {
+        "reply": "dunno yet, i still thinking",
+        "raw_text": "dunno yet, i still thinking",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "4e7ab40dffc356cca6d25c2dc85d821b6afe25c284eacdeb37ad1941cc8b6374"
+      },
+      "standard_anchor": "I'm not sure yet. Let me think about it."
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "context": [
+        "eh i struggling to do the linear algebra qn",
+        "which"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "neh the gaussian elim qn",
+      "english": {
+        "reply": "I can help you with that. What do you need help with?",
+        "raw_text": "I can help you with that. What do you need help with?",
+        "termination": "eos",
+        "generated_tokens": 15,
+        "status": "complete",
+        "prompt_sha256": "633d93b7eaf82f69975f5dce36847bb70989acfb74c5f776220e31d9dfad37c0"
+      },
+      "singlish": {
+        "reply": "can, need help with what?",
+        "raw_text": "can, need help with what?",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "9559be34d3b979d789277d3547f650c728fc82696cd3695600cf17a429756c86"
+      },
+      "standard_anchor": "I can help you with that. What do you need help with?"
+    },
+    {
+      "item_id": "ITEM-D-010",
+      "context": [
+        "hello, can i ask u some question idk how to do",
+        "uhh i see if i can help"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "uhh, u know the guassian elim qn",
+      "english": {
+        "reply": "I'm not sure about the Gaussian elimination question. Let me check my notes and get back to you.",
+        "raw_text": "I'm not sure about the Gaussian elimination question. Let me check my notes and get back to you.",
+        "termination": "eos",
+        "generated_tokens": 22,
+        "status": "complete",
+        "prompt_sha256": "7ac73ebec1a55de06c874ab4de783b2d640bb8749086121a1774cc5cafb12293"
+      },
+      "singlish": {
+        "reply": "dunno, i check notes then update you",
+        "raw_text": "dunno, i check notes then update you",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "8369adbc74636ff91c30a2b8c61dd74aa2040c6fac39d9bb08b2c0b354f3c02c"
+      },
+      "standard_anchor": "I'm not sure about the Gaussian elimination question. Let me check my notes and get back to you."
+    },
+    {
+      "item_id": "ITEM-D-013",
+      "context": [
+        "hello",
+        "yes?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Can give me ans for assignment 1?",
+      "english": {
+        "reply": "Sure, what do you need help with?",
+        "raw_text": "Sure, what do you need help with?",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "cd6bfcb8f71c8f9858a36a478ba3f0affba7027fdbe59cc617946071505727f8"
+      },
+      "singlish": {
+        "reply": "Can, need help with what?",
+        "raw_text": "Can, need help with what?",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "c4bd3a3dec5846a24580448de77d2960e648e2401fdb19e93aa3e7f1e7e92c95"
+      },
+      "standard_anchor": "Sure, what do you need help with?"
+    },
+    {
+      "item_id": "ITEM-D-029",
+      "context": [
+        "eh so how, you still want bid for the morning class?",
+        "yah can"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "ok then rmb to bid before bidding ends",
+      "english": {
+        "reply": "ok, i will bid before bidding ends",
+        "raw_text": "ok, i will bid before bidding ends",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "f9d16668c0ee59f8264e164f19a5ba2880db3333447000de5de8f68196b91da6"
+      },
+      "singlish": {
+        "reply": "ok, i will bid before bidding ends",
+        "raw_text": "ok, i will bid before bidding ends",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "506ab1c986e8f9a34801915e3c11362bc837e38a776cb8edd78237f1de421ba6"
+      },
+      "standard_anchor": "ok, i will bid before bidding ends"
+    },
+    {
+      "item_id": "ITEM-D-033",
+      "context": [
+        "hello",
+        "hi",
+        "i am already at the bus stop"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "wya",
+      "english": {
+        "reply": "I am waiting for you at the bus stop.",
+        "raw_text": "I am waiting for you at the bus stop.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "b49ee73d8d51b732658ac847be501effc3c4d7eac66fae5d1cc0f121c2a38020"
+      },
+      "singlish": {
+        "reply": "waiting for you at the bus stop",
+        "raw_text": "waiting for you at the bus stop",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "d36179d84522fb1229a4fe3d18951842a24d02326217a79bd6b9c05ce2387b3d"
+      },
+      "standard_anchor": "I am waiting for you at the bus stop."
+    },
+    {
+      "item_id": "ITEM-D-037",
+      "context": [
+        "have you reached?",
+        "wya"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "i reached, i waiting outside mac",
+      "english": {
+        "reply": "ok, i will be there soon",
+        "raw_text": "ok, i will be there soon",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "37c430a99a58ef83dc1cb3ba43244fbefe4dcc4f3d8ac62d6098bb642df66895"
+      },
+      "singlish": {
+        "reply": "ok, i coming soon",
+        "raw_text": "ok, i coming soon",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "ddb0ca7d93d9369eea05ac12a0cf71f9d0ef35ba4834ce3db134cfc9833dd50e"
+      },
+      "standard_anchor": "ok, i will be there soon"
+    },
+    {
+      "item_id": "ITEM-D-038",
+      "context": [
+        "eh wya",
+        "i am outside mac",
+        "u eh"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "user"
+      ],
+      "message": "I am reaching soon, wait for me before going in.",
+      "english": {
+        "reply": "Okay, I will wait for you.",
+        "raw_text": "Okay, I will wait for you.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "3112bf2b313e6aecc49116266513eac75d83bd1fb5b9e796f2865ff43c1065ce"
+      },
+      "singlish": {
+        "reply": "okok, wait for you",
+        "raw_text": "okok, wait for you",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "b3856c0e74e934be9f64fd9fb0d3124f54976254b6dd3641ea039820bcccf580"
+      },
+      "standard_anchor": "Okay, I will wait for you."
+    },
+    {
+      "item_id": "ITEM-D-046",
+      "context": [
+        "eh help",
+        "what"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the cinema ticket is sold out bruh",
+      "english": {
+        "reply": "oh no, that's a shame",
+        "raw_text": "oh no, that's a shame",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "7bac1a660b2751b34dac70afc59a98d7fd35bbe32ab8d64245f9bd35ac5acf38"
+      },
+      "singlish": {
+        "reply": "aiyo, that's a bummer",
+        "raw_text": "aiyo, that's a bummer",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "399093a3979ccf54c2253893fd28549790c8ac07ce288b03078ef7c57c1ca988"
+      },
+      "standard_anchor": "oh no, that's a shame"
+    },
+    {
+      "item_id": "ITEM-D-050",
+      "context": [
+        "eh u ok? why u never join us for bb session yesterday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "woah sorry, i came up with a flu.",
+      "english": {
+        "reply": "Oh no, I'm sorry to hear that. How are you feeling now?",
+        "raw_text": "Oh no, I'm sorry to hear that. How are you feeling now?",
+        "termination": "eos",
+        "generated_tokens": 17,
+        "status": "complete",
+        "prompt_sha256": "58e3268ce7bb0be31f0e879b7caee1bac70bedeaae43f0793580089f472d468e"
+      },
+      "singlish": {
+        "reply": "oh no, you feeling better now?",
+        "raw_text": "oh no, you feeling better now?",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "82fc2843403fd844225ef9f7cad063e5915297efc6349be2c0707fbf2d12e384"
+      },
+      "standard_anchor": "Oh no, I'm sorry to hear that. How are you feeling now?"
+    },
+    {
+      "item_id": "ITEM-E-005",
+      "context": [
+        "i heard you going to cafe later to study",
+        "ya you want come? dont say i never jio"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can ah, later i join you",
+      "english": {
+        "reply": "ok, see you later",
+        "raw_text": "ok, see you later",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "b6e8ad3952d04cb73437dc911ce9716e2f4f5b9cdc07d3c952d3fbd2a44c7c25"
+      },
+      "singlish": {
+        "reply": "ok, see you later",
+        "raw_text": "ok, see you later",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "41b04fa0929cefd90ebe135336522916f021509c9f8fd3d8c55f00caa95d0d9e"
+      },
+      "standard_anchor": "ok, see you later"
+    },
+    {
+      "item_id": "ITEM-E-007",
+      "context": [
+        "tomorrow what you want to eat",
+        "lets eat at Chinatown tomorrow"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "onz, tmr meet na li",
+      "english": {
+        "reply": "Okay, see you tomorrow at Chinatown.",
+        "raw_text": "Okay, see you tomorrow at Chinatown.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "1aa262a6aca03bbb3e8d3122958ec12a7c04caa4a02b5458420c707cb4e92efe"
+      },
+      "singlish": {
+        "reply": "Okay, see you tomorrow at Chinatown.",
+        "raw_text": "Okay, see you tomorrow at Chinatown.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "30e786bca024458d77cc0f519fec9278d54b943ce733fd52c05458e6f948faa7"
+      },
+      "standard_anchor": "Okay, see you tomorrow at Chinatown."
+    },
+    {
+      "item_id": "ITEM-E-009",
+      "context": [
+        "later I need to lend your charger to charge my phone",
+        "ok can but I can only give you after 3"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "hey can confirm i can use your charger after 3? thanks ah",
+      "english": {
+        "reply": "Yes, you can use my charger after three.",
+        "raw_text": "Yes, you can use my charger after three.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "26ddac827b7deb548b3912bee7e6488ee86ba5d601180beb3eec49ae9fed27be"
+      },
+      "singlish": {
+        "reply": "can, after three can use",
+        "raw_text": "can, after three can use",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "85b0536734c4619e4cf07f2a0982d518d058e8d4bd00ebdc31cc254a98544aa4"
+      },
+      "standard_anchor": "Yes, you can use my charger after three."
+    },
+    {
+      "item_id": "ITEM-E-015",
+      "context": [
+        "Hi guys, remember to do the quiz, deadline is next week",
+        "yep noted"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "hi have you done the quiz alr anot",
+      "english": {
+        "reply": "Not yet, I'm still working on it.",
+        "raw_text": "Not yet, I'm still working on it.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "8881a0f78a1e1a2bda2c936550b4b3718609daaa8efdb97cfb3661f68767f585"
+      },
+      "singlish": {
+        "reply": "not yet, still working on it",
+        "raw_text": "not yet, still working on it",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "06526f91c9924899452c76527bf5cb9c47aa74c4cd20fe620ed365f4c0850295"
+      },
+      "standard_anchor": "Not yet, I'm still working on it."
+    },
+    {
+      "item_id": "ITEM-E-025",
+      "context": [
+        "hi class, I had a family emergency and there will not be any class tomorrow.",
+        "oh no! what about the in class quiz?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+      "english": {
+        "reply": "I'm not sure about the make up class. Let's check with the teacher.",
+        "raw_text": "I'm not sure about the make up class. Let's check with the teacher.",
+        "termination": "eos",
+        "generated_tokens": 18,
+        "status": "complete",
+        "prompt_sha256": "befe7d1948abd6d7a8a1932d9a3c9a36a09266a61611a4842874c80a1a8e08c0"
+      },
+      "singlish": {
+        "reply": "dunno make up class anot, ask teacher first",
+        "raw_text": "dunno make up class anot, ask teacher first",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "840b05641b84893eb2900b634b7e1f4c23fcf1387ece8a054fa55a12a520e290"
+      },
+      "standard_anchor": "I'm not sure about the make up class. Let's check with the teacher."
+    },
+    {
+      "item_id": "ITEM-E-027",
+      "context": [
+        "eh the school got 3d printer anot how to use",
+        "have, i using it now, you need to book a slot to use",
+        "ok i book later to use"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "paiseh ah can i change my booking i want to use it later",
+      "english": {
+        "reply": "Sure, go ahead and change your booking.",
+        "raw_text": "Sure, go ahead and change your booking.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "f15096b818895d4478d6807d30d67f59a7e957efb6f273059e5f13a9c81e3944"
+      },
+      "singlish": {
+        "reply": "Can, go ahead and change your booking.",
+        "raw_text": "Can, go ahead and change your booking.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "f23e9904d20b3e3aa2248bda63ac3cd6d4a40f1cd97b2d94e74406b1dc401fdc"
+      },
+      "standard_anchor": "Sure, go ahead and change your booking."
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "context": [
+        "bro you want to eat at kopitiam later? The whole gang is cmg",
+        "if you want ah let us know"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "english": {
+        "reply": "no worries, see you later then",
+        "raw_text": "no worries, see you later then",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "4173370f7fddfbaaf0d88fdaf092f8d54a640466fc3aa3c3456b8f831803f7be"
+      },
+      "singlish": {
+        "reply": "no worries, later then",
+        "raw_text": "no worries, later then",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "bec445d8b87c4c0184953227109939de635cb59c37cbea661abaf8d4b3f244eb"
+      },
+      "standard_anchor": "no worries, see you later then"
+    },
+    {
+      "item_id": "ITEM-E-032",
+      "context": [
+        "I reminded the class the tutorial is at SR3-1 liao",
+        "can you change today's tutorial to be in SR3-2 instead?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry ah but that one cannot, someone book liao",
+      "english": {
+        "reply": "No worries, I'll just go to SR3-1 then.",
+        "raw_text": "No worries, I'll just go to SR3-1 then.",
+        "termination": "eos",
+        "generated_tokens": 15,
+        "status": "complete",
+        "prompt_sha256": "ba4fb948ef0327e665a1fed08c6a3d8a66b37d963f5d5f8c745271c9e57452d6"
+      },
+      "singlish": {
+        "reply": "okok, SR3-1 then",
+        "raw_text": "okok, SR3-1 then",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "f64be60746b5beda846fec1caf658104fad8d7e55386f1c9d77c2e753e0ff74f"
+      },
+      "standard_anchor": "No worries, I'll just go to SR3-1 then."
+    },
+    {
+      "item_id": "ITEM-E-040",
+      "context": [
+        "so much work this week wtf",
+        "ya sia"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "how ah, want meet together to do work?",
+      "english": {
+        "reply": "Sure, what time can we meet?",
+        "raw_text": "Sure, what time can we meet?",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "218c6f9f923718f227587b6b43b703d14f83da8e19a5c017b4816f6f31475dda"
+      },
+      "singlish": {
+        "reply": "Can, what time ah?",
+        "raw_text": "Can, what time ah?",
+        "termination": "eos",
+        "generated_tokens": 7,
+        "status": "complete",
+        "prompt_sha256": "f2e0051cac43435259918d257a0b74c4518eaa5695bc0faabcba27c00d2b8b7c"
+      },
+      "standard_anchor": "Sure, what time can we meet?"
+    },
+    {
+      "item_id": "ITEM-E-046",
+      "context": [
+        "hello,what time will you release the lecture recordings?",
+        "usually around 10pm its out"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "ni hao, can I releasae it at 5 instead?",
+      "english": {
+        "reply": "Sure, you can release it at 5.",
+        "raw_text": "Sure, you can release it at 5.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "08fbb8f50bdbb0aa6e4e05aea10c80ff46d3e52229965e852cf9947ebd462165"
+      },
+      "singlish": {
+        "reply": "can, 5 can",
+        "raw_text": "can, 5 can",
+        "termination": "eos",
+        "generated_tokens": 6,
+        "status": "complete",
+        "prompt_sha256": "8b6b20435341d45950283a06eaef5df7a2a1cb01815c63d25afa867691009834"
+      },
+      "standard_anchor": "Sure, you can release it at 5."
+    }
+  ],
+  "flags": [],
+  "scope": "75 reused development cases; not independent heldout evaluation"
+}

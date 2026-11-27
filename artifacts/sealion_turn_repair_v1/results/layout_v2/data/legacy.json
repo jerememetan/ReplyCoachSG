@@ -1,0 +1,656 @@
+[
+  {
+    "item_id": "ITEM-A-010",
+    "context": [
+      "this course is so tough.",
+      "yeah, I could really use some help too."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "peer: we very kiasu sia, first lesson already like that",
+    "positive": "haha, its okay"
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "context": [
+      "Hey! Where are you now?",
+      "I am reaching Harbourfront MRT, how about you?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Eh i double check with you, we are meeting at 7pm right?",
+    "positive": "Nope, its at 8pm"
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "context": [
+      "Hey have you printed the worksheet given out yesterday?",
+      "No, I will need to print it in school. Do you know how to use the printer?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i don't know how to use the printer in school.",
+    "positive": "It's okay, I will figure it out"
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "context": [
+      "How long is our booking?",
+      "Oh no, our timer went off."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sian, need book somewhere else, our booking ran out",
+    "positive": "okay, i will book a pod at the library"
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "context": [
+      "Hey should we grab lunch?",
+      "sure! Lets head to Koufu"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh the chicken rice stall open today anot?",
+    "positive": "I will check the opening hours first."
+  },
+  {
+    "item_id": "ITEM-A-035",
+    "context": [
+      "I got to go for my appointment later",
+      "Yeah I should get going too"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "don't forget to dabao your food later",
+    "positive": "Okay, thank you!"
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "context": [
+      "are we still playing badminton tonight?",
+      "yeah, I think so"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i might be ten mins late leh",
+    "positive": "That's okay, we can wait for you."
+  },
+  {
+    "item_id": "ITEM-A-044",
+    "context": [
+      "have you submitted the project?",
+      "not yet, I am checking it first"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "remember ah, dont blur like sotong",
+    "positive": "Don't worry, I will remember to submit"
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "positive": "You don't have to, take your time"
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "context": [
+      "We are going to the club later right?",
+      "Yeah, I will go back to shower first."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Aiyo, don't need la, let's go now",
+    "positive": "Fair point, let's go"
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "context": [
+      "I haven't eaten breakfast",
+      "same sia, I'm hungry also"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "where you want eat?",
+    "positive": "How about the food court near the library?"
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "context": [
+      "I'm going library now",
+      "I'll come over after class"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "still got space?",
+    "positive": "Yes, I found a few seats near the entrance."
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?",
+    "positive": "We're in SR3-3 today."
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "context": [
+      "I might not make it to the morning class",
+      "I can send you an update afterwards"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can tell me what I miss?",
+    "positive": "Sure, I'll let you know what was covered."
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus",
+    "positive": "No worries. Just let me know when you get here."
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "context": [
+      "a few of us are going out this weekend",
+      "sounds fun"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you want come?",
+    "positive": "Sure, I'd be happy to join you."
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "context": [
+      "are you coming to the event?",
+      "I was planning to"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the event postpone for thirty minutes",
+    "positive": "Thanks for letting me know. I'll arrive later too."
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?",
+    "positive": "Sure, what time do you want to go?"
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "positive": "Okay, seven works for me."
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "context": [
+      "my phone is almost out of battery",
+      "I brought my charger"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can I borrow your charger?",
+    "positive": "Sure, you can borrow mine."
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "context": [
+      "are you going to the library ltr?",
+      "yeah, probably after dinner"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i'll be at lks around 8, want to meet there?",
+    "positive": "sure, see you there"
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "context": [
+      "im working on my slides now",
+      "same, im doing the results section"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "your part done alr?",
+    "positive": "i just need to finish the last slide"
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "context": [
+      "i'll upload my section before dinner",
+      "okay, then i can merge everything tonight"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh dont forget your slide ah, we need merge later",
+    "positive": "thanks for the reminder. i'll upload it shortly"
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?",
+    "positive": "yes, id like to go. lmk what time you're heading thr"
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "context": [
+      "im waiting at the cafe alr",
+      "coming now"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i ordered first because i was too hungry",
+    "positive": "thats completely fine. i'll order when i arrive"
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "context": [
+      "ive finished drafting the conclusion",
+      "great"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can help me check if this part sounds too long?",
+    "positive": "sure. send it to me and i'll take a look"
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "positive": "no worries. just upload it when you're ready"
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?",
+    "positive": "yes, i'll arrive a little early"
+  },
+  {
+    "item_id": "ITEM-C-055",
+    "context": [
+      "lets go to the exhibition at 1",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can go around 2 instead? i need lunch first",
+    "positive": "sure, 2 works for me"
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "context": [
+      "im heading to the court now",
+      "okay, i'll leave soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "court still occupied leh, need wait a bit",
+    "positive": "okay, i'll come over slowly then"
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "context": [
+      "u wanna try the matcha at luckin?",
+      "nahh"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "then what u wanna drink later?",
+    "positive": "I would like to try the new cafe latte there."
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "context": [
+      "eh i struggling to do the linear algebra qn",
+      "which"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "neh the gaussian elim qn",
+    "positive": "I have done the question. Allow me to assist."
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "context": [
+      "hello, can i ask u some question idk how to do",
+      "uhh i see if i can help"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "uhh, u know the guassian elim qn",
+    "positive": "I am sorry, I can't provide much help for that question."
+  },
+  {
+    "item_id": "ITEM-D-013",
+    "context": [
+      "hello",
+      "yes?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Can give me ans for assignment 1?",
+    "positive": "Nope. You should learn to do it by yourself."
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "context": [
+      "eh so how, you still want bid for the morning class?",
+      "yah can"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ok then rmb to bid before bidding ends",
+    "positive": "Ok, I will bid later."
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "context": [
+      "hello",
+      "hi",
+      "i am already at the bus stop"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "wya",
+    "positive": "I am currently still on the way to the bus stop."
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "context": [
+      "have you reached?",
+      "wya"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "i reached, i waiting outside mac",
+    "positive": "Ok , I am heading there right now."
+  },
+  {
+    "item_id": "ITEM-D-038",
+    "context": [
+      "eh wya",
+      "i am outside mac",
+      "u eh"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "user"
+    ],
+    "message": "I am reaching soon, wait for me before going in.",
+    "positive": "Okay, hurry up."
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "positive": "Oh no, can we see if there are other timings?"
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "context": [
+      "eh u ok? why u never join us for bb session yesterday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "woah sorry, i came up with a flu.",
+    "positive": "It's ok. We shall play basketball again when you get better."
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "context": [
+      "i heard you going to cafe later to study",
+      "ya you want come? dont say i never jio"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can ah, later i join you",
+    "positive": "sweet, see you later"
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "context": [
+      "tomorrow what you want to eat",
+      "lets eat at Chinatown tomorrow"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "onz, tmr meet na li",
+    "positive": "Shall we meet at the train station?"
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "context": [
+      "later I need to lend your charger to charge my phone",
+      "ok can but I can only give you after 3"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hey can confirm i can use your charger after 3? thanks ah",
+    "positive": "yes, all good"
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "positive": "Yes, I finished it already."
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "context": [
+      "hi class, I had a family emergency and there will not be any class tomorrow.",
+      "oh no! what about the in class quiz?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+    "positive": "Yes, we are able to meet on thursday."
+  },
+  {
+    "item_id": "ITEM-E-027",
+    "context": [
+      "eh the school got 3d printer anot how to use",
+      "have, i using it now, you need to book a slot to use",
+      "ok i book later to use"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "paiseh ah can i change my booking i want to use it later",
+    "positive": "can, no problem"
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "positive": "all good man, we can meet next time"
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "positive": "alright, lets stick to the current arrangements"
+  },
+  {
+    "item_id": "ITEM-E-040",
+    "context": [
+      "so much work this week wtf",
+      "ya sia"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "how ah, want meet together to do work?",
+    "positive": "sure thing, let's do that"
+  },
+  {
+    "item_id": "ITEM-E-046",
+    "context": [
+      "hello,what time will you release the lecture recordings?",
+      "usually around 10pm its out"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ni hao, can I releasae it at 5 instead?",
+    "positive": "no sorry, I can't do that"
+  }
+]

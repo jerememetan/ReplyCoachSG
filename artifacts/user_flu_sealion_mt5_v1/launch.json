@@ -1,0 +1,18 @@
+{
+  "job_id": 358650,
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_user_flu_sealion_mt5_v1",
+  "gpu": "L40S",
+  "status": "complete",
+  "training_performed": false,
+  "default_changed": false,
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:00:29",
+  "results_downloaded": true,
+  "results_sha256": {
+    "comparison.json": "ab3b41ac5e203355ce26d910cbbe538db36f54b2d85b109993c6163269730146",
+    "comparison.csv": "cd8baae880ed31244f685451f49ccbffeb2bc310433cb948b0f73fcb7c231fd4"
+  },
+  "checked_at_utc": "2026-11-08T12:53:03.667339+00:00"
+}

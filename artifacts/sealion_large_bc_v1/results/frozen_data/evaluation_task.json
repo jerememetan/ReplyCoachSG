@@ -1,0 +1,238 @@
+[
+  {
+    "item_id": "BC-evaluation-00011",
+    "context": [
+      "I'm thinking of going to that tea tasting workshop this Saturday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "That sounds cool! Do you want to go together?",
+    "standard": "Yeah, I'd love to go with you. I'll check if there are still spots available.",
+    "local": "sure, let me check",
+    "selected_draft_index": 0,
+    "family": "tea tasting",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00017",
+    "context": [
+      "do u have any calligraphy ink left?",
+      "no, i'm completely out of it."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ah okay, do u think your brother has any spare?",
+    "standard": "I don't think he has any, but I can check.",
+    "local": "don't think he got, let me check",
+    "selected_draft_index": 1,
+    "family": "calligraphy ink",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00036",
+    "context": [
+      "I'm thinking of joining that bowling league. Want to be my teammate?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Sure! Are we going for the competitive one or just for fun?",
+    "standard": "I'm aiming for the competitive league. It's going to be quite intense!",
+    "local": "Competitive one, very intense.",
+    "selected_draft_index": 0,
+    "family": "bowling league",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00037",
+    "context": [
+      "I'm running out of black calligraphy ink for my project.",
+      "I have some leftover ink, but it's more of a dark grey."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "You want me to bring some over to your place?",
+    "standard": "That works for me. Please bring it over tomorrow.",
+    "local": "okay, bring tmr.",
+    "selected_draft_index": 0,
+    "family": "calligraphy ink",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00039",
+    "context": [
+      "Did u finish drying the rosemary?",
+      "Not yet, still a bit damp.",
+      "Need me to help move them to the rack?",
+      "No need, just a bit more time."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Actually, I think I should put them out now.",
+    "standard": "Okay, I will see you later to check on them, just let me know the time.",
+    "local": "ok, see u later, let me know time",
+    "selected_draft_index": 1,
+    "family": "herb drying",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00051",
+    "context": [
+      "Are we still on for the tea tasting this weekend?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Yeah, are we meeting at the cafe at 3pm?",
+    "standard": "That works for me, see you then.",
+    "local": "see u then",
+    "selected_draft_index": 0,
+    "family": "tea tasting",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00054",
+    "context": [
+      "Found a new geocache near the reservoir.",
+      "Really? Is it hard to find?",
+      "A bit tricky. I'm heading there this Sunday.",
+      "Wanna join?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Wanna join?",
+    "standard": "I'm going to go alone this time to finish it quickly. Maybe next time?",
+    "local": "go solo first, next time lah",
+    "selected_draft_index": 1,
+    "family": "geocache hunt",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00068",
+    "context": [
+      "u still down for the pen swap tmr?",
+      "yeah still down",
+      "meet at the library then?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "2pm still ok for u?",
+    "standard": "Yes, 2pm is perfect.",
+    "local": "yep, 2pm ok",
+    "selected_draft_index": 0,
+    "family": "fountain pen swap",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00078",
+    "context": [
+      "did u finish fixing the snow globe?",
+      "almost done with the base",
+      "how's the glitter part going?"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "u managed to get it to spin smoothly?",
+    "standard": "Not quite, it's still a bit stiff.",
+    "local": "it is still a bit stiff",
+    "selected_draft_index": 1,
+    "family": "snow globe repair",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00079",
+    "context": [
+      "Did the herbs dry out properly?",
+      "They seem mostly dry.",
+      "Should we grind them now?",
+      "I think we should wait a bit more."
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Okay, let's wait until tomorrow then.",
+    "standard": "Sure, let's do that tomorrow.",
+    "local": "ok, tmr do",
+    "selected_draft_index": 1,
+    "family": "herb drying",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00096",
+    "context": [
+      "I'm really looking forward to the bowling league this weekend."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Actually, I can't make it anymore. Something came up.",
+    "standard": "No worries. Let me know if you're free next month instead.",
+    "local": "steady, let me know next month",
+    "selected_draft_index": 1,
+    "family": "bowling league",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00101",
+    "context": [
+      "I'll bring the stargazing mat for our trip."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Is it the big one with the waterproof lining?",
+    "standard": "Yes, it's the waterproof one. I'll bring some snacks too.",
+    "local": "yes, got snacks too",
+    "selected_draft_index": 1,
+    "family": "stargazing mat",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00110",
+    "context": [],
+    "speakers": [],
+    "message": "You joining the urban sketch walk tomorrow?",
+    "standard": "Yes, count me in for that.",
+    "local": "count me in",
+    "selected_draft_index": 0,
+    "family": "urban sketch walk",
+    "scope": "new_model_authored_evaluation"
+  },
+  {
+    "item_id": "BC-evaluation-00111",
+    "context": [
+      "Really looking forward to the tea tasting this weekend! I heard they have some rare oolongs."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Are you bringing your own cups or using theirs?",
+    "standard": "I'll just use the ones they provide to keep things simple.",
+    "local": "Use theirs",
+    "selected_draft_index": 0,
+    "family": "tea tasting",
+    "scope": "new_model_authored_evaluation"
+  }
+]

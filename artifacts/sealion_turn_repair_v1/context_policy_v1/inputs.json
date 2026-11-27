@@ -1,0 +1,825 @@
+[
+  {
+    "item_id": "TURN-CHALLENGE-001",
+    "context": [
+      "There is a clash between my exam and the camp briefing.",
+      "I am boarding a train.",
+      "Can we talk when you get off?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Before that, what is this about?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-002",
+    "context": [
+      "I need your advice on the lease renewal.",
+      "In a meeting, cannot talk.",
+      "Okay, just let me know when you have a moment."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What did you need advice about?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-003",
+    "context": [
+      "Can we have a quick chat over the phone?",
+      "Sorry, I am at a family dinner.",
+      "Another time is fine."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Could you tell me the topic first?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-004",
+    "context": [
+      "Please help me check the names on the guest list.",
+      "I can do that tonight.",
+      "Thank you, that would help."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Do you need me to check the names or design the invitations?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-005",
+    "context": [
+      "I have copies of the route map and the price list.",
+      "Could you send me the route map?",
+      "Sure."
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Which one did you ask for again?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-006",
+    "context": [
+      "Has the poster been printed?",
+      "Yes, it is printed and waiting at reception.",
+      "Great, thanks."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Can you pick it up when you arrive?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-007",
+    "context": [
+      "I filled in the application, but have not pressed submit.",
+      "The deadline is tonight."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is your application submitted already?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-008",
+    "context": [
+      "I have sent the slides. I still need to send the speaker notes.",
+      "I am assembling the final folder."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you sent the speaker notes?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-009",
+    "context": [
+      "I borrowed your calculator last week.",
+      "I will need it for my quiz tomorrow."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Who should bring the calculator back?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-010",
+    "context": [
+      "The cooler box in my car is yours; you lent it to me for the picnic.",
+      "We should sort out the picnic equipment."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Am I returning that box to you or are you returning it to me?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-011",
+    "context": [
+      "I am looking after my niece on Saturday and cannot go out. Sunday is okay.",
+      "I want to visit the museum."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I book us in for Saturday?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-012",
+    "context": [
+      "My flight lands at 9 pm, so I cannot reach town before then.",
+      "I will be around town that evening."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you be there at 7 pm?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-013",
+    "context": [
+      "I have $14 left to spend today.",
+      "The two options cost $9 and $26."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which option can you afford?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-014",
+    "context": [
+      "Please keep my share under $20.",
+      "The activity will cost $35 each."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Should I reserve your place?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-015",
+    "context": [
+      "I first said the north gate, but that gate is locked.",
+      "What should we do?",
+      "Meet at the taxi stand instead."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Where are we meeting after the change?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-016",
+    "context": [
+      "I am at the ticket office.",
+      "I am waiting by the lift on level two."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Where can I find you?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-017",
+    "context": [
+      "My hands are full carrying these boxes.",
+      "I have a trolley with me."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I bring the trolley over to you?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-018",
+    "context": [
+      "I forgot my umbrella.",
+      "I have an extra one in my bag."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Could I use your spare?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-019",
+    "context": [
+      "I cannot eat peanuts because I am allergic.",
+      "I was going to bring peanut cookies."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Why do you need to avoid them?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-020",
+    "context": [
+      "My microphone is broken, so I cannot speak in the online discussion.",
+      "I can see you are connected."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Why are you only typing?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-021",
+    "context": [
+      "They have confirmed that the event is happening, but are still choosing a date.",
+      "Let me know when they decide."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "What day is it on?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-022",
+    "context": [
+      "The interview is in room F309 at 10:40. My briefing is in G112 at 2 pm.",
+      "I want to walk over with you."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room is your interview in?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-023",
+    "context": [
+      "The recording is still on my laptop. I will upload it after I get home.",
+      "I need to download it later."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is it uploaded now?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-024",
+    "context": [
+      "I can bring dessert if you bring the drinks.",
+      "Okay, I will bring the drinks."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "What am I supposed to bring?",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "USER-CALL-001",
+    "context": [
+      "Can u call me now?",
+      "Eh i not so free eh?",
+      "Ohh, then when can we call?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "scope": "user_diagnostic"
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "context": [
+      "a few of us are going out this weekend",
+      "sounds fun"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you want come?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "context": [
+      "my phone is almost out of battery",
+      "I brought my charger"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can I borrow your charger?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "context": [
+      "hi class, I had a family emergency and there will not be any class tomorrow.",
+      "oh no! what about the in class quiz?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "context": [
+      "im waiting at the cafe alr",
+      "coming now"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i ordered first because i was too hungry",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "context": [
+      "im working on my slides now",
+      "same, im doing the results section"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "your part done alr?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "context": [
+      "u wanna try the matcha at luckin?",
+      "nahh"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "then what u wanna drink later?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "context": [
+      "have you reached?",
+      "wya"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "i reached, i waiting outside mac",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "context": [
+      "eh i struggling to do the linear algebra qn",
+      "which"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "neh the gaussian elim qn",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-001",
+    "context": [
+      "I need to figure out how to appeal the hostel allocation.",
+      "Currently helping my parents, cannot answer a call.",
+      "We can talk afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Timing not confirmed yet, but what were you hoping to discuss?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-002",
+    "context": [
+      "I want to check whether we used the right measurements for the shelves.",
+      "I am cycling home.",
+      "Okay, call when you are safely home."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Sure, but what is the call regarding?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-003",
+    "context": [
+      "Hey, can we speak over the phone for a moment?",
+      "I cannot right now, my class is starting.",
+      "No rush, another time works."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Not certain when yet; can you say what it is regarding?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-004",
+    "context": [
+      "Got a moment to chat by phone?",
+      "No sorry, working at the counter.",
+      "Okay, message me when you can."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Will do. Was there something you wanted to ask me?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-005",
+    "context": [
+      "Could you proofread the abstract? The charts are already checked.",
+      "Okay, I can spare ten minutes.",
+      "Thanks for helping."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Just checking, do you need the abstract or the charts reviewed?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-006",
+    "context": [
+      "I have the accommodation form and the transport form.",
+      "Could you forward the accommodation form?",
+      "Okay, opening my files now."
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Which form was it you needed?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-007",
+    "context": [
+      "I have signed the consent sheet but it is still on my desk; I have not handed it in.",
+      "The organiser is collecting the sheets today."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Has the organiser got your signed sheet?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-008",
+    "context": [
+      "I have finished editing the audio. The subtitles are still unfinished.",
+      "I need an update for the production team."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are the subtitles finished too?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-009",
+    "context": [
+      "Your sleeping bag is still at my place; I borrowed it for the overnight hike.",
+      "I need it again next weekend."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Which of us should return the sleeping bag?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-010",
+    "context": [
+      "I am inside the bakery, next to the bread shelves.",
+      "I am across the road at the fruit stall."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Okay, where should I look for you?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-011",
+    "context": [
+      "I am taking an exam on Monday morning. Tuesday morning is clear.",
+      "We need to arrange a practice session."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we use Monday morning?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-012",
+    "context": [
+      "The repair shop will keep me until 6:30 pm, so I cannot leave before then.",
+      "I will be nearby this evening."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does meeting at 5 pm work?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-013",
+    "context": [
+      "I can spend no more than $18 for the ticket.",
+      "The only ticket left costs $41."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like me to book that ticket for you?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-014",
+    "context": [
+      "I suggested the rooftop, but it is closed for maintenance.",
+      "Do you have another place in mind?",
+      "Use the ground-floor lounge instead."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Where should I go after the change of plan?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-015",
+    "context": [
+      "I cannot open the bottle with this injured wrist.",
+      "I am sitting beside you."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like me to open it for you?",
+    "scope": "prospective_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-PROSPECTIVE-016",
+    "context": [
+      "The coach confirmed that there will be training, but has not picked the starting time.",
+      "Okay, tell me once the time is decided."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "What time should I put in my calendar?",
+    "scope": "prospective_synthetic_challenge"
+  }
+]

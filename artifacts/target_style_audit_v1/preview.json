@@ -1,0 +1,116 @@
+[
+  {
+    "item_id": "SYN-HUMAN-EXP1-011",
+    "context": [
+      {
+        "speaker": "user",
+        "text": "I downloaded the debate schedule."
+      }
+    ],
+    "message": "Can forward the schedule to me?",
+    "before": "Sure, I forward you the schedule.",
+    "proposed": "okok, will do",
+    "decision": "revise",
+    "individually_user_approved": false
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-013",
+    "context": [
+      {
+        "speaker": "user",
+        "text": "I still have the receipt for our team purchase."
+      }
+    ],
+    "message": "Could you send finance a photo of the receipt?",
+    "before": "Okay, I send finance a photo of the receipt.",
+    "proposed": "okok, i send finance",
+    "decision": "revise",
+    "individually_user_approved": false
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-019",
+    "context": [
+      {
+        "speaker": "user",
+        "text": "I sent the form to Mei but not to the rest of the committee."
+      }
+    ],
+    "message": "Has the whole committee received the form?",
+    "before": "Not everyone yet leh, I only sent it to Mei.",
+    "proposed": "not yet, only sent Mei",
+    "decision": "revise",
+    "individually_user_approved": false
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-021",
+    "context": [
+      {
+        "speaker": "user",
+        "text": "My shift ends at 6 pm and I cannot leave early."
+      }
+    ],
+    "message": "Can meet at 5.30 outside the shop?",
+    "before": "Before six cannot leave leh. Meet after my shift can?",
+    "proposed": "Before six cannot leave leh. Meet after my shift can?",
+    "decision": "keep",
+    "individually_user_approved": false
+  },
+  {
+    "item_id": "ITEM-D-047",
+    "context": [
+      {
+        "speaker": "peer",
+        "text": "eh"
+      },
+      {
+        "speaker": "user",
+        "text": "yes?"
+      }
+    ],
+    "message": "we still playing bmt tonight?",
+    "before": "Ya, later still playing badminton.",
+    "proposed": "yah, ofc",
+    "decision": "revise",
+    "individually_user_approved": false
+  },
+  {
+    "item_id": "ITEM-E-020",
+    "context": [
+      {
+        "speaker": "user",
+        "text": "hi prof I don't see the notes for this week, can i check if you are releasing any materials?"
+      },
+      {
+        "speaker": "peer",
+        "text": "for this week notes will take a while, there are some last minute changes"
+      },
+      {
+        "speaker": "user",
+        "text": "ok, roughly when will it be released?"
+      }
+    ],
+    "message": "for this week notes, can I release it by Tuesday? I would need some time to edit it, alot of changes ah",
+    "before": "Noted, thanks ah prof!",
+    "proposed": "okies thanks prof!",
+    "decision": "revise",
+    "individually_user_approved": true
+  },
+  {
+    "item_id": "ITEM-D-052",
+    "context": [
+      {
+        "speaker": "peer",
+        "text": "eh tmr got basketball right?"
+      },
+      {
+        "speaker": "user",
+        "text": "ya"
+      }
+    ],
+    "message": "ok then rmb book the court ya",
+    "before": "Okay, later I book.",
+    "proposed": "okok, will do",
+    "decision": "revise",
+    "individually_user_approved": true
+  }
+]

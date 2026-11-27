@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "arm": "control",
+  "checkpoints": [
+    25,
+    50,
+    100
+  ],
+  "cases_per_checkpoint": 32,
+  "selected_step": 0,
+  "default_changed": false
+}

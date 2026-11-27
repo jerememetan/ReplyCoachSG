@@ -1,0 +1,278 @@
+[
+  {
+    "item_id": "USER-CALL-001",
+    "scope": "custom_user_inference",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "user",
+        "Can u call me now?"
+      ],
+      [
+        "peer",
+        "Eh i not so free eh?"
+      ],
+      [
+        "user",
+        "Ohh, then when can we call?"
+      ]
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v1": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "v2": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "CALL-WITH-PURPOSE",
+    "scope": "custom_user_inference",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "user",
+        "I wanted to ask you about our assignment deadline. Can you call me now?"
+      ],
+      [
+        "peer",
+        "I am not free right now."
+      ],
+      [
+        "user",
+        "Okay, we can speak later."
+      ]
+    ],
+    "message": "What did you want to call me about?",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "I wanted to ask you about our assignment deadline.",
+        "singlish": "I wanted to ask you about our assignment deadline.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v1": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "v2": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "EMPTY-THANKS",
+    "scope": "custom_user_inference",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [],
+    "message": "Thanks for taking the time to help me today!",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "No problem, let me know if you need anything else.",
+        "singlish": "No problem, happy to help.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v1": {
+        "english": "You are welcome!",
+        "singlish": "No problem, happy to help.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v2": {
+        "english": "You are welcome!",
+        "singlish": "No problem, happy to help.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "SELF-ARITHMETIC",
+    "scope": "custom_user_inference",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [],
+    "message": "What is 2 plus 3?",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "2 plus 3 is 5.",
+        "singlish": "2 plus 3 is five.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v1": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "v2": {
+        "english": "It is 2 plus 3.",
+        "singlish": "It is 2 plus 3.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "SELF-GENERAL-KNOWLEDGE",
+    "scope": "custom_user_inference",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "user",
+        "The bicycle chain needs oiling."
+      ]
+    ],
+    "message": "Is an apple a type of fruit?",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "No, apples are a type of fruit.",
+        "singlish": "No, apples are a type of fruit.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v1": {
+        "english": "Yes, an apple is a type of fruit.",
+        "singlish": "Yes, an apple is a fruit.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v2": {
+        "english": "Yes, an apple is a type of fruit.",
+        "singlish": "Yes, an apple is a fruit.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "SELF-INCOMING-EVIDENCE",
+    "scope": "custom_user_inference",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [],
+    "message": "The invitation says the event starts at 17:30. What start time is written on it?",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "The invitation says the event starts at 17:30.",
+        "singlish": "The invitation says the event starts at 17:30.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v1": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "v2": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "SELF-INVITATION",
+    "scope": "custom_user_inference",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [],
+    "message": "Would you like to meet for lunch tomorrow?",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "Yes, let's meet for lunch tomorrow at 12:00.",
+        "singlish": "Can, lunch tomorrow at 12:00 ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v1": {
+        "english": "Yes, let's meet for lunch tomorrow.",
+        "singlish": "Can, lunch tomorrow then.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "v2": {
+        "english": "Yes, let's meet for lunch tomorrow.",
+        "singlish": "Can, lunch tomorrow then.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  }
+]

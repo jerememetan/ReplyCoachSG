@@ -1,0 +1,131 @@
+{
+  "reviewed_conversations": 24,
+  "reviewed_pairs": 48,
+  "reviewer": "assistant; extrapolates five user preferences, not user gold",
+  "rows": {
+    "train-04121": {
+      "decision": "reject",
+      "notes": "LOCAL draft 2 has unnatural duplicated idiom I owe you one one.",
+      "candidate_sha256": "a9daa6dd973fd7374de8b4c1121d1f47fc1268bf85e93eeb7a63b01917fcd93c"
+    },
+    "train-02520": {
+      "decision": "keep",
+      "notes": "Two valid future availability choices; LOCAL preserves each choice.",
+      "candidate_sha256": "40a2684708c2f409ea5d90f3da140494caba6e53285e25b0289ac2046897bc4c"
+    },
+    "train-04616": {
+      "decision": "reject",
+      "notes": "Incoming suggests cooking at a canteen; source setting is implausible/ambiguous for this dinner choice.",
+      "candidate_sha256": "8a843dc69a53d58d42afa02a403a1e1ef60b71c110f99f3b3fb996c09df4864e"
+    },
+    "train-04539": {
+      "decision": "reject",
+      "notes": "Availability changes from Saturday work to finished project without a clear connection; LOCAL draft 2 also adds now.",
+      "candidate_sha256": "f31cbfe3f4900f487090a4381bab46710fdd737a3c59ebc537bd5eea699da4dc"
+    },
+    "train-04571": {
+      "decision": "keep",
+      "notes": "Two pasta choices; colloquial LOCAL keeps each choice.",
+      "candidate_sha256": "eebaff9f4cf951f2a59764008e963695ebd4e59ddb0b273e66afc922740d73b5"
+    },
+    "train-01007": {
+      "decision": "keep",
+      "notes": "Friend owns goggles and You returns them; both drafts retain those roles.",
+      "candidate_sha256": "f9642ef82d01a315e5d816137b066162981e965412f3d9f5d6b6f0791ace9728"
+    },
+    "train-04990": {
+      "decision": "reject",
+      "notes": "LOCAL 1 changes grabbing food later to finding food elsewhere; LOCAL 2 changes planned waiting to wait liao.",
+      "candidate_sha256": "be6c50b0824756f5d1c04803956f10966ab1e1bc7b362720596e82c4fb528c81"
+    },
+    "train-01687": {
+      "decision": "keep",
+      "notes": "Two offers by You to lend a charger; no role reversal. Prior powerbank mention is compatible with having charging equipment, though source wording is loose.",
+      "candidate_sha256": "ca694da0bdff881da8413996fdd6dc37297e70584243b89f162e315b69d420e7"
+    },
+    "train-02931": {
+      "decision": "keep",
+      "notes": "Accepting with a proposed time and declining are both valid selectable drafts; LOCAL follows each.",
+      "candidate_sha256": "e5992ccff05fa49c971907bb8186de07844c8730197a90ef8992af8887f08f05"
+    },
+    "train-02181": {
+      "decision": "keep",
+      "notes": "Contingent cafe plan and checking weather are valid supportive options; LOCAL retains choices.",
+      "candidate_sha256": "a33f6ada373dbc552c29139275f2b325241ae26bcd09321ee9e7799a3a0b9dc5"
+    },
+    "train-03731": {
+      "decision": "reject",
+      "notes": "LOCAL reads like verbose literal English, including full restatement and push through tonight; fails the calibrated concise peer-texting style.",
+      "candidate_sha256": "6948f2de98a4487a0a9eb6f91cee6b9c7eeb0fe00a3f2993d5af8d889fcc2b0c"
+    },
+    "train-02004": {
+      "decision": "reject",
+      "notes": "LOCAL Can do, just let me know which cafe you want to go to is long and literal; target needs a natural context-dependent question.",
+      "candidate_sha256": "47f8af54c954f5faa3354a76e0a538e4261460e79b81db38c798289d6a50f84b"
+    },
+    "train-01109": {
+      "decision": "keep",
+      "notes": "Both time options are valid future choices; LOCAL retains 12:30-before-crowd and after-1 availability.",
+      "candidate_sha256": "9762978f82a510f3a9f9da9a228600d3038a3ab6aa6295dc19a65df07ad3173f"
+    },
+    "train-03631": {
+      "decision": "reject",
+      "notes": "LOCAL draft2 drops English try and before9; strengthens a tentative plan to definite finish-then-join.",
+      "candidate_sha256": "54171687275ba02605f0a53cf29361496a008ac5a8bc3308c5ee5288df922de0"
+    },
+    "train-04424": {
+      "decision": "keep",
+      "notes": "Both entrance and straight-in choices are valid; each LOCAL preserves its choice and rationale.",
+      "candidate_sha256": "aaeca02f7e1662874552889ca2a6ab5daa1fe4b76ab7a2561c888c23f8c346ce"
+    },
+    "train-02569": {
+      "decision": "keep",
+      "notes": "Friend owns the disc and hosts; You visits. LOCAL keeps proposed time and snack offer.",
+      "candidate_sha256": "84f422bcde194cb157319240dd5ca7f62de1f9193db4bfa2c49cfe5b2554e81d"
+    },
+    "train-02347": {
+      "decision": "reject",
+      "notes": "Friend answers their own question about which train You lost a wallet on without supporting history; LOCAL2 drops try and adds first.",
+      "candidate_sha256": "38fd48cd8eb4cd454e43641639559d9bb2b67502c517a0998c2b45eb616332f5"
+    },
+    "train-00716": {
+      "decision": "reject",
+      "notes": "LOCAL2 changes grab one there to buy one there, imposing a purchase not specified by the selected anchor.",
+      "candidate_sha256": "7ed10bc0954758ec27e513da6bb96b09ed42dcfb45c2b031a524234d8d7a9955"
+    },
+    "train-04512": {
+      "decision": "keep",
+      "notes": "Future dinner invitation and drink offer retain before/after-concert timing.",
+      "candidate_sha256": "7b8c31ca8a108b81369aa99fcea77111ffeb83b8d1287854a2757139dbc52871"
+    },
+    "train-02968": {
+      "decision": "reject",
+      "notes": "LOCAL1 awkwardly combines future finding a table with already; completion/timing becomes unclear.",
+      "candidate_sha256": "ba8f436084512375423738498245f3caa1bc739210f0267c2648c89c128c246c"
+    },
+    "train-01721": {
+      "decision": "reject",
+      "notes": "Near-repeats the earlier screen-repair gratitude situation; LOCAL2 is verbose literal English rather than calibrated peer texting.",
+      "candidate_sha256": "d6ebbeab951c26f70c2ffe0193cb25b071ccb45ee329a0de8a249c5f29a23d03"
+    },
+    "train-01077": {
+      "decision": "keep",
+      "notes": "Cookies are complete; both invitations and preparing servings are coherent and retained in LOCAL.",
+      "candidate_sha256": "c71327851626178a0552f601fce91fc39bed70f923aaf7d3bc5750e7c8de500f"
+    },
+    "train-03591": {
+      "decision": "reject",
+      "notes": "Acknowledgement targets remain expanded English restatements with a particle; replace with a naturally brief peer reply.",
+      "candidate_sha256": "42a848c24c8afa2b6e4a0c5ddc6e0f588fcc74ddc4a76c0a8a576e1a46bcd1cd"
+    },
+    "train-01427": {
+      "decision": "keep",
+      "notes": "Undecided signup remains undecided; both notification commitments and morning deadline are preserved.",
+      "candidate_sha256": "1636a94801e49cf086643c2fc47f872914c94f9165314396107226567be31f37"
+    }
+  },
+  "keep": 12,
+  "reject": 12,
+  "sample_sha256": "dae236465f637674d2185153bf3747f1ecefbc98eaf972df1c7aedf4388bed37",
+  "applies_to": "These exact initial candidates only; rejected slots may be regenerated with different content."
+}

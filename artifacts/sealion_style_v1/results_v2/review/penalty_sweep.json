@@ -1,0 +1,4160 @@
+{
+  "scope": "CPU rescoring of saved candidates; exploratory development trade-offs, not accuracy or a selected deployment policy.",
+  "sweeps": [
+    {
+      "copy_weight": 0.0,
+      "style_weight": 0.0,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 38,
+        "exact_copies": 38
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t checked the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-007",
+          "baseline": "Ya, last night I upload liao.",
+          "candidate": "I upload the form last night liao."
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Meet for dinner at five fifty instead can?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday I free."
+        },
+        {
+          "item_id": "SEADUAL-004",
+          "baseline": "Can, Monday I return your cable.",
+          "candidate": "Can, return my cable on Monday ah."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t checked the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "You can ask for help from others in the group."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that."
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "I'm sorry to hear that, I'll try my best to help."
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yes, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, just let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I'm checking the timetable right now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-018",
+          "baseline": "ya, i'll include the slide also",
+          "candidate": "ya, i make sure to include the slide"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i'm not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "I'm not sure of the answer, but I'll try to find it for you."
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i will be there in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "okok, i wait for u at the door"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, I can't go now. Could someone else go in my place?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-009",
+          "baseline": "Sure, after three then use can.",
+          "candidate": "Can, use it after 3 ah."
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-040",
+          "baseline": "Can, we meet this week.",
+          "candidate": "Sure, let's meet this week."
+        },
+        {
+          "item_id": "ITEM-E-046",
+          "baseline": "can, i release it at 5 instead",
+          "candidate": "ok lor, i release it at 5 instead"
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send a photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you the photo tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-016",
+          "baseline": "I'm sorry to hear that ah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday I cannot make it."
+        }
+      ]
+    },
+    {
+      "copy_weight": 0.0,
+      "style_weight": 0.2,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 29,
+        "exact_copies": 29
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t check the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-006",
+          "baseline": "Too expensive for me leh. Find something cheaper can?",
+          "candidate": "Too expensive lah, find something cheaper can?"
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Five fifty can anot?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday can."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "Can, I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t check the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "You can ask for help from others in the group."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that."
+        },
+        {
+          "item_id": "SEADUAL-017",
+          "baseline": "Today I cannot carry heavy crates leh. Can ask someone else to help?",
+          "candidate": "Today cannot carry heavy crates leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yes, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, just let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "baseline": "no worries, ten more mins won't make a difference",
+          "candidate": "it's okay lah, ten more mins won't make a difference"
+        },
+        {
+          "item_id": "ITEM-A-044",
+          "baseline": "ya, I will not blur like sotong",
+          "candidate": "ya, I won’t blur like sotong"
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-A-054",
+          "baseline": "Okay, let's go then.",
+          "candidate": "Okay, let's go already."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I'm checking the timetable right now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "Okay, I find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "I'm not sure of the answer, but I'll try to find it for you."
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "ok i wait for u"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-005",
+          "baseline": "ok, c u later",
+          "candidate": "can, see you later"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "baseline": "okies, thursday then we do a make up class instead",
+          "candidate": "ok, thursday then we do a make up class instead"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-040",
+          "baseline": "Can, we meet this week.",
+          "candidate": "Can, let's meet this week."
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-006",
+          "baseline": "Can, I return it before class.",
+          "candidate": "Can, I return your calculator before class."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-010",
+          "baseline": "I cannot leave before seven leh. Meet after work can?",
+          "candidate": "Paiseh, I cannot leave before seven. Meet after work can?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-015",
+          "baseline": "I haven’t checked if the cafe opens on public holidays leh.",
+          "candidate": "I haven’t check if the cafe open on public holidays leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-016",
+          "baseline": "I'm sorry to hear that ah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-019",
+          "baseline": "I know, I will bring my water bottle.",
+          "candidate": "Ya, I always bring my water bottle."
+        },
+        {
+          "item_id": "RESTORE-FRESH-021",
+          "baseline": "Can get me a bottle of water?",
+          "candidate": "Can get me a bottle of water anot?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-availability-1",
+          "baseline": "Friday I free, but Saturday I busy.",
+          "candidate": "Friday can, but Saturday I busy."
+        },
+        {
+          "item_id": "CTXDEV-availability-2",
+          "baseline": "Friday I busy, but Saturday I free.",
+          "candidate": "Friday I busy, Saturday can help ah."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-1",
+          "baseline": "Ya, I’ve uploaded it to the portal this afternoon.",
+          "candidate": "Ya, I submit the form to the portal this afternoon."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Can, send me a photo of your notes ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-1",
+          "baseline": "I cannot leave before 18:45 leh. Dinner after 19:15 can?",
+          "candidate": "I cannot leave before 18:45 leh. Dinner after 19:15 can anot?"
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday cannot leh."
+        }
+      ]
+    },
+    {
+      "copy_weight": 0.25,
+      "style_weight": 0.0,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 17,
+        "exact_copies": 17
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t checked the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-007",
+          "baseline": "Ya, last night I upload liao.",
+          "candidate": "I upload the form last night liao."
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Meet for dinner at five fifty instead can?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday I free."
+        },
+        {
+          "item_id": "SEADUAL-004",
+          "baseline": "Can, Monday I return your cable.",
+          "candidate": "Can, return my cable on Monday ah."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t checked the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "You can ask for help from the others in the group."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yes, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "No worries, I'll find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-018",
+          "baseline": "ya, i'll include the slide also",
+          "candidate": "ya, i make sure to include the slide"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find it for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "okok, i wait for u at the door"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-009",
+          "baseline": "Sure, after three then use can.",
+          "candidate": "Can, use it after 3 ah."
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-046",
+          "baseline": "can, i release it at 5 instead",
+          "candidate": "ok lor, i release it at 5 instead"
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send a photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you the photo tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday I cannot make it."
+        }
+      ]
+    },
+    {
+      "copy_weight": 0.25,
+      "style_weight": 0.2,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 17,
+        "exact_copies": 17
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t check the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-006",
+          "baseline": "Too expensive for me leh. Find something cheaper can?",
+          "candidate": "Too expensive lah, find something cheaper can?"
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Five fifty can anot?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday can."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "Can, I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t check the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "Ask group members help lah."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-017",
+          "baseline": "Today I cannot carry heavy crates leh. Can ask someone else to help?",
+          "candidate": "Today cannot carry heavy crates leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yes, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "baseline": "no worries, ten more mins won't make a difference",
+          "candidate": "it's okay lah, ten more mins won't make a difference"
+        },
+        {
+          "item_id": "ITEM-A-044",
+          "baseline": "ya, I will not blur like sotong",
+          "candidate": "ya, I won’t blur like sotong"
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-A-054",
+          "baseline": "Okay, let's go then.",
+          "candidate": "Okay, let's go already."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "Okay, I find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find the answer for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "ok i wait for u"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-005",
+          "baseline": "ok, c u later",
+          "candidate": "can, see you later"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "baseline": "okies, thursday then we do a make up class instead",
+          "candidate": "ok, thursday then we do a make up class instead"
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-040",
+          "baseline": "Can, we meet this week.",
+          "candidate": "Can, let's meet this week."
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-006",
+          "baseline": "Can, I return it before class.",
+          "candidate": "Can, I return your calculator before class."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-010",
+          "baseline": "I cannot leave before seven leh. Meet after work can?",
+          "candidate": "Paiseh, I cannot leave before seven. Meet after work can?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-015",
+          "baseline": "I haven’t checked if the cafe opens on public holidays leh.",
+          "candidate": "I haven’t check if the cafe open on public holidays leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-019",
+          "baseline": "I know, I will bring my water bottle.",
+          "candidate": "Ya, I always bring my water bottle."
+        },
+        {
+          "item_id": "RESTORE-FRESH-021",
+          "baseline": "Can get me a bottle of water?",
+          "candidate": "Can get me a bottle of water anot?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-availability-1",
+          "baseline": "Friday I free, but Saturday I busy.",
+          "candidate": "Friday can, but Saturday I busy."
+        },
+        {
+          "item_id": "CTXDEV-availability-2",
+          "baseline": "Friday I busy, but Saturday I free.",
+          "candidate": "Friday I busy, Saturday can help ah."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-1",
+          "baseline": "Ya, I’ve uploaded it to the portal this afternoon.",
+          "candidate": "Ya, I submit the form to the portal this afternoon."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Can, send me a photo of your notes ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-1",
+          "baseline": "I cannot leave before 18:45 leh. Dinner after 19:15 can?",
+          "candidate": "I cannot leave before 18:45 leh. Dinner after 19:15 can anot?"
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday cannot leh."
+        }
+      ]
+    },
+    {
+      "copy_weight": 0.5,
+      "style_weight": 0.0,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 16,
+        "exact_copies": 16
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t checked the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-007",
+          "baseline": "Ya, last night I upload liao.",
+          "candidate": "I upload the form last night liao."
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Meet for dinner at five fifty instead can?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday I free."
+        },
+        {
+          "item_id": "SEADUAL-004",
+          "baseline": "Can, Monday I return your cable.",
+          "candidate": "Can, return my cable on Monday ah."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t checked the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "You can ask for help from the others in the group."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yes, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "No worries, I'll find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-018",
+          "baseline": "ya, i'll include the slide also",
+          "candidate": "ya, i make sure to include the slide"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find it for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "okok, i wait for u at the door"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "aw, no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-009",
+          "baseline": "Sure, after three then use can.",
+          "candidate": "Can, use it after 3 ah."
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-046",
+          "baseline": "can, i release it at 5 instead",
+          "candidate": "ok lor, i release it at 5 instead"
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send a photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you the photo tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday I cannot make it."
+        }
+      ]
+    },
+    {
+      "copy_weight": 0.5,
+      "style_weight": 0.2,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 16,
+        "exact_copies": 16
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t check the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-006",
+          "baseline": "Too expensive for me leh. Find something cheaper can?",
+          "candidate": "Too expensive lah, find something cheaper can?"
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Five fifty can anot?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday can."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "Can, I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t check the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "Ask group members help lah."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-017",
+          "baseline": "Today I cannot carry heavy crates leh. Can ask someone else to help?",
+          "candidate": "Today cannot carry heavy crates leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yes, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "baseline": "no worries, ten more mins won't make a difference",
+          "candidate": "it's okay lah, ten more mins won't make a difference"
+        },
+        {
+          "item_id": "ITEM-A-044",
+          "baseline": "ya, I will not blur like sotong",
+          "candidate": "ya, I won’t blur like sotong"
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-A-054",
+          "baseline": "Okay, let's go then.",
+          "candidate": "Okay, let's go already."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "Okay, I find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find the answer for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "ok i wait for u"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "aw, no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-005",
+          "baseline": "ok, c u later",
+          "candidate": "can, see you later"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "baseline": "okies, thursday then we do a make up class instead",
+          "candidate": "ok, thursday then we do a make up class instead"
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-040",
+          "baseline": "Can, we meet this week.",
+          "candidate": "Can, let's meet this week."
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-006",
+          "baseline": "Can, I return it before class.",
+          "candidate": "Can, I return your calculator before class."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-010",
+          "baseline": "I cannot leave before seven leh. Meet after work can?",
+          "candidate": "Paiseh, I cannot leave before seven. Meet after work can?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-015",
+          "baseline": "I haven’t checked if the cafe opens on public holidays leh.",
+          "candidate": "I haven’t check if the cafe open on public holidays leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-019",
+          "baseline": "I know, I will bring my water bottle.",
+          "candidate": "Ya, I always bring my water bottle."
+        },
+        {
+          "item_id": "RESTORE-FRESH-021",
+          "baseline": "Can get me a bottle of water?",
+          "candidate": "Can get me a bottle of water anot?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-availability-1",
+          "baseline": "Friday I free, but Saturday I busy.",
+          "candidate": "Friday can, but Saturday I busy."
+        },
+        {
+          "item_id": "CTXDEV-availability-2",
+          "baseline": "Friday I busy, but Saturday I free.",
+          "candidate": "Friday I busy, Saturday can help ah."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-1",
+          "baseline": "Ya, I’ve uploaded it to the portal this afternoon.",
+          "candidate": "Ya, I submit the form to the portal this afternoon."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Can, send me a photo of your notes ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-1",
+          "baseline": "I cannot leave before 18:45 leh. Dinner after 19:15 can?",
+          "candidate": "I cannot leave before 18:45 leh. Dinner after 19:15 can anot?"
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday cannot leh."
+        }
+      ]
+    },
+    {
+      "copy_weight": 1.0,
+      "style_weight": 0.0,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 15,
+        "exact_copies": 15
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t checked the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-007",
+          "baseline": "Ya, last night I upload liao.",
+          "candidate": "I upload the form last night liao."
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Meet for dinner at five fifty instead can?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday I free."
+        },
+        {
+          "item_id": "SEADUAL-004",
+          "baseline": "Can, Monday I return your cable.",
+          "candidate": "Can, return my cable on Monday ah."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t checked the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "You can ask for help from the others in the group."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yah, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "No worries, I'll find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-018",
+          "baseline": "ya, i'll include the slide also",
+          "candidate": "ya, i make sure to include the slide"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find it for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "okok, i wait for u at the door"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "aw, no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-009",
+          "baseline": "Sure, after three then use can.",
+          "candidate": "Can, use it after 3 ah."
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-046",
+          "baseline": "can, i release it at 5 instead",
+          "candidate": "ok lor, i release it at 5 instead"
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send a photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you the photo tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday I cannot make it."
+        }
+      ]
+    },
+    {
+      "copy_weight": 1.0,
+      "style_weight": 0.2,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 15,
+        "exact_copies": 15
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t check the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-006",
+          "baseline": "Too expensive for me leh. Find something cheaper can?",
+          "candidate": "Too expensive lah, find something cheaper can?"
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Five fifty can anot?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday can."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "Can, I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t check the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "Ask group members help lah."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-017",
+          "baseline": "Today I cannot carry heavy crates leh. Can ask someone else to help?",
+          "candidate": "Today cannot carry heavy crates leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yah, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "baseline": "no worries, ten more mins won't make a difference",
+          "candidate": "it's okay lah, ten more mins won't make a difference"
+        },
+        {
+          "item_id": "ITEM-A-044",
+          "baseline": "ya, I will not blur like sotong",
+          "candidate": "ya, I won’t blur like sotong"
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-A-054",
+          "baseline": "Okay, let's go then.",
+          "candidate": "Okay, let's go already."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "Okay, I find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find the answer for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "ok i wait for u"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "aw, no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-005",
+          "baseline": "ok, c u later",
+          "candidate": "can, see you later"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "baseline": "okies, thursday then we do a make up class instead",
+          "candidate": "ok, thursday then we do a make up class instead"
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-040",
+          "baseline": "Can, we meet this week.",
+          "candidate": "Can, let's meet this week."
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-006",
+          "baseline": "Can, I return it before class.",
+          "candidate": "Can, I return your calculator before class."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-010",
+          "baseline": "I cannot leave before seven leh. Meet after work can?",
+          "candidate": "Paiseh, I cannot leave before seven. Meet after work can?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-015",
+          "baseline": "I haven’t checked if the cafe opens on public holidays leh.",
+          "candidate": "I haven’t check if the cafe open on public holidays leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-019",
+          "baseline": "I know, I will bring my water bottle.",
+          "candidate": "Ya, I always bring my water bottle."
+        },
+        {
+          "item_id": "RESTORE-FRESH-021",
+          "baseline": "Can get me a bottle of water?",
+          "candidate": "Can get me a bottle of water anot?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-availability-1",
+          "baseline": "Friday I free, but Saturday I busy.",
+          "candidate": "Friday can, but Saturday I busy."
+        },
+        {
+          "item_id": "CTXDEV-availability-2",
+          "baseline": "Friday I busy, but Saturday I free.",
+          "candidate": "Friday I busy, Saturday can help ah."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-1",
+          "baseline": "Ya, I’ve uploaded it to the portal this afternoon.",
+          "candidate": "Ya, I submit the form to the portal this afternoon."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Can, send me a photo of your notes ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-1",
+          "baseline": "I cannot leave before 18:45 leh. Dinner after 19:15 can?",
+          "candidate": "I cannot leave before 18:45 leh. Dinner after 19:15 can anot?"
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday cannot leh."
+        }
+      ]
+    },
+    {
+      "copy_weight": 2.0,
+      "style_weight": 0.0,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 15,
+        "exact_copies": 15
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t checked the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-007",
+          "baseline": "Ya, last night I upload liao.",
+          "candidate": "I upload the form last night liao."
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Meet for dinner at five fifty instead can?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday I free."
+        },
+        {
+          "item_id": "SEADUAL-004",
+          "baseline": "Can, Monday I return your cable.",
+          "candidate": "Can, return my cable on Monday ah."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t checked the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "You can ask for help from the others in the group."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yah, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "No worries, I'll find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-018",
+          "baseline": "ya, i'll include the slide also",
+          "candidate": "ya, i make sure to include the slide"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find it for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "okok, i wait for u at the door"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "aw, no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-009",
+          "baseline": "Sure, after three then use can.",
+          "candidate": "Can, use it after 3 ah."
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-046",
+          "baseline": "can, i release it at 5 instead",
+          "candidate": "ok lor, i release it at 5 instead"
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send a photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you the photo tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday I cannot make it."
+        }
+      ]
+    },
+    {
+      "copy_weight": 2.0,
+      "style_weight": 0.2,
+      "counts": {
+        "cases": 126,
+        "eligible": 125,
+        "unnecessary_copies": 15,
+        "exact_copies": 15
+      },
+      "changed": [
+        {
+          "item_id": "SEAPUBLIC-002",
+          "baseline": "Can, tomorrow afternoon return my headphones.",
+          "candidate": "Can, return my headphones by tomorrow afternoon ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-003",
+          "baseline": "I check the room closing hours first, then tell you ah.",
+          "candidate": "I haven’t check the room closing time leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-004",
+          "baseline": "Yes please, send me your briefing notes ah.",
+          "candidate": "Yes please, send me your notes ah."
+        },
+        {
+          "item_id": "SEAPUBLIC-006",
+          "baseline": "Too expensive for me leh. Find something cheaper can?",
+          "candidate": "Too expensive lah, find something cheaper can?"
+        },
+        {
+          "item_id": "SEAPUBLIC-008",
+          "baseline": "Haven’t start making the slides leh.",
+          "candidate": "I haven’t start making the slides leh."
+        },
+        {
+          "item_id": "SEAPUBLIC-009",
+          "baseline": "Wah, sorry to hear that. Study hard lah.",
+          "candidate": "I'm sorry to hear that."
+        },
+        {
+          "item_id": "SEAPUBLIC-010",
+          "baseline": "Can, Sunday afternoon I free.",
+          "candidate": "Yes please, join our picnic lah."
+        },
+        {
+          "item_id": "SEADUAL-001",
+          "baseline": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+          "candidate": "I cannot leave before six leh. Five fifty can anot?"
+        },
+        {
+          "item_id": "SEADUAL-002",
+          "baseline": "That one too expensive for me leh. Find something cheaper can?",
+          "candidate": "That's too expensive for me. Could we find something cheaper?"
+        },
+        {
+          "item_id": "SEADUAL-003",
+          "baseline": "I cannot make it on Saturday leh. Friday can?",
+          "candidate": "I cannot make it on Saturday leh, but Friday can."
+        },
+        {
+          "item_id": "SEADUAL-005",
+          "baseline": "I return your notes by nine tonight.",
+          "candidate": "Can, I return your notes before nine tonight."
+        },
+        {
+          "item_id": "SEADUAL-008",
+          "baseline": "Yes, I've already booked the room this morning.",
+          "candidate": "Ya, I’ve already booked the room this morning."
+        },
+        {
+          "item_id": "SEADUAL-009",
+          "baseline": "Haven’t start leh, still reading through the draft.",
+          "candidate": "I have not started proofreading the report."
+        },
+        {
+          "item_id": "SEADUAL-011",
+          "baseline": "My purple water bottle is purple.",
+          "candidate": "My purple water bottle purple."
+        },
+        {
+          "item_id": "SEADUAL-012",
+          "baseline": "I check the weekend hours first, then tell you ah.",
+          "candidate": "I haven’t check the weekend hours leh."
+        },
+        {
+          "item_id": "SEADUAL-015",
+          "baseline": "Can ask for help from others in the group?",
+          "candidate": "Ask group members help lah."
+        },
+        {
+          "item_id": "SEADUAL-016",
+          "baseline": "Paiseh, you didn’t get the placement leh.",
+          "candidate": "I am sorry to hear that ah."
+        },
+        {
+          "item_id": "SEADUAL-017",
+          "baseline": "Today I cannot carry heavy crates leh. Can ask someone else to help?",
+          "candidate": "Today cannot carry heavy crates leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "SEADUAL-018",
+          "baseline": "Can, I meet you after my lab.",
+          "candidate": "Can, see you after my lab."
+        },
+        {
+          "item_id": "ITEM-A-010",
+          "baseline": "aw thanks, I'll try my best to help.",
+          "candidate": "aw thanks, I'll try my best to help"
+        },
+        {
+          "item_id": "ITEM-A-017",
+          "baseline": "Ya, seven at Harbourfront MRT.",
+          "candidate": "Yah, we are meeting at 7pm."
+        },
+        {
+          "item_id": "ITEM-A-024",
+          "baseline": "No worries, ask staff lah.",
+          "candidate": "No worries, let me know when you have printed it."
+        },
+        {
+          "item_id": "ITEM-A-033",
+          "baseline": "not sure yet leh, check before we go first",
+          "candidate": "Not sure open already anot. Check before we go lah."
+        },
+        {
+          "item_id": "ITEM-A-038",
+          "baseline": "no worries, ten more mins won't make a difference",
+          "candidate": "it's okay lah, ten more mins won't make a difference"
+        },
+        {
+          "item_id": "ITEM-A-044",
+          "baseline": "ya, I will not blur like sotong",
+          "candidate": "ya, I won’t blur like sotong"
+        },
+        {
+          "item_id": "ITEM-A-046",
+          "baseline": "Can, 2pm I come.",
+          "candidate": "Can, I'll be there at 2pm."
+        },
+        {
+          "item_id": "ITEM-A-054",
+          "baseline": "Okay, let's go then.",
+          "candidate": "Okay, let's go already."
+        },
+        {
+          "item_id": "ITEM-B-002",
+          "baseline": "near the library got what?",
+          "candidate": "I'm looking for somewhere near the library"
+        },
+        {
+          "item_id": "ITEM-B-009",
+          "baseline": "Still got space, I come over after class.",
+          "candidate": "Still got space."
+        },
+        {
+          "item_id": "ITEM-B-029",
+          "baseline": "I check the timetable first, then let you know.",
+          "candidate": "I checking the timetable now, but I'll let you know once I know which room we're in."
+        },
+        {
+          "item_id": "ITEM-B-034",
+          "baseline": "You can tell me what you miss in the morning. I'll send you an update after class.",
+          "candidate": "You can tell me what you miss in the morning. I send you update later."
+        },
+        {
+          "item_id": "ITEM-B-042",
+          "baseline": "No worries, take your time",
+          "candidate": "No worries, let me know when you reach"
+        },
+        {
+          "item_id": "ITEM-B-043",
+          "baseline": "Sure, let's go!",
+          "candidate": "Sure, I would love to come."
+        },
+        {
+          "item_id": "ITEM-B-048",
+          "baseline": "Okay, I come after thirty minutes.",
+          "candidate": "That's fine, I'll come after thirty minutes."
+        },
+        {
+          "item_id": "ITEM-B-056",
+          "baseline": "No worries, I'll find another time.",
+          "candidate": "Okay, I find another time then."
+        },
+        {
+          "item_id": "ITEM-C-017",
+          "baseline": "havent finish leh, still working on it",
+          "candidate": "not yet, still working on it"
+        },
+        {
+          "item_id": "ITEM-C-023",
+          "baseline": "Can, I'll go with you for that.",
+          "candidate": "Sure, I'd love to join you for that."
+        },
+        {
+          "item_id": "ITEM-C-028",
+          "baseline": "it's okay lah, i wait for you",
+          "candidate": "it's okay lah, i'll wait for you"
+        },
+        {
+          "item_id": "ITEM-C-038",
+          "baseline": "Can, I check if it's too long first.",
+          "candidate": "I'll take a look and let you know if it's too long."
+        },
+        {
+          "item_id": "ITEM-C-041",
+          "baseline": "it's okay lah, i wait abit",
+          "candidate": "no worries, i wait a bit longer"
+        },
+        {
+          "item_id": "ITEM-C-045",
+          "baseline": "ya, i gg at 8am",
+          "candidate": "ya, i cmg at 8am"
+        },
+        {
+          "item_id": "ITEM-D-007",
+          "baseline": "idk what i want leh",
+          "candidate": "i not sure what i want"
+        },
+        {
+          "item_id": "ITEM-D-010",
+          "baseline": "eh i not sure, but i try find the answer for u",
+          "candidate": "not sure leh, but i'll try to find the answer for you"
+        },
+        {
+          "item_id": "ITEM-D-029",
+          "baseline": "okok, i bid before the bidding ends",
+          "candidate": "okok, i bid before bidding ends"
+        },
+        {
+          "item_id": "ITEM-D-037",
+          "baseline": "okay, i coming",
+          "candidate": "okay, i coming in a few minutes"
+        },
+        {
+          "item_id": "ITEM-D-038",
+          "baseline": "ok, i wait for u outside",
+          "candidate": "ok i wait for u"
+        },
+        {
+          "item_id": "ITEM-D-046",
+          "baseline": "aiyo, aiyo",
+          "candidate": "Oh no, someone else can go in your place instead?"
+        },
+        {
+          "item_id": "ITEM-D-050",
+          "baseline": "aw, no worries, get well soon!",
+          "candidate": "aw, no worries, take care"
+        },
+        {
+          "item_id": "ITEM-E-005",
+          "baseline": "ok, c u later",
+          "candidate": "can, see you later"
+        },
+        {
+          "item_id": "ITEM-E-007",
+          "baseline": "okies, c u later",
+          "candidate": "okies, see you tomorrow"
+        },
+        {
+          "item_id": "ITEM-E-015",
+          "baseline": "haven’t finish leh, I check the answers first",
+          "candidate": "Nope, I haven't done it yet."
+        },
+        {
+          "item_id": "ITEM-E-025",
+          "baseline": "okies, thursday then we do a make up class instead",
+          "candidate": "ok, thursday then we do a make up class instead"
+        },
+        {
+          "item_id": "ITEM-E-027",
+          "baseline": "no worries, you can use it later",
+          "candidate": "no worries, use later bah"
+        },
+        {
+          "item_id": "ITEM-E-028",
+          "baseline": "ok, then we eat at 6pm instead",
+          "candidate": "ok, then eat at 6pm instead"
+        },
+        {
+          "item_id": "ITEM-E-040",
+          "baseline": "Can, we meet this week.",
+          "candidate": "Can, let's meet this week."
+        },
+        {
+          "item_id": "RESTORE-FRESH-003",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Yes please, send me the photo of your notes ah."
+        },
+        {
+          "item_id": "RESTORE-FRESH-004",
+          "baseline": "Can, tonight I send you the photo.",
+          "candidate": "Can, I send you tonight."
+        },
+        {
+          "item_id": "RESTORE-FRESH-006",
+          "baseline": "Can, I return it before class.",
+          "candidate": "Can, I return your calculator before class."
+        },
+        {
+          "item_id": "RESTORE-FRESH-008",
+          "baseline": "Haven’t start packing leh.",
+          "candidate": "I haven’t start packing leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-009",
+          "baseline": "Paiseh, thirty dollars is beyond my budget.",
+          "candidate": "That is too expensive for me. Could we get something cheaper?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-010",
+          "baseline": "I cannot leave before seven leh. Meet after work can?",
+          "candidate": "Paiseh, I cannot leave before seven. Meet after work can?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-011",
+          "baseline": "Thursday morning cannot for me leh.",
+          "candidate": "Thursday morning can, but Thursday I away leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-012",
+          "baseline": "Prawns I cannot eat leh.",
+          "candidate": "No thanks lah, prawns I cannot eat."
+        },
+        {
+          "item_id": "RESTORE-FRESH-013",
+          "baseline": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "candidate": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-015",
+          "baseline": "I haven’t checked if the cafe opens on public holidays leh.",
+          "candidate": "I haven’t check if the cafe open on public holidays leh."
+        },
+        {
+          "item_id": "RESTORE-FRESH-018",
+          "baseline": "Wah, nice lah!",
+          "candidate": "Congratulations! That's great news."
+        },
+        {
+          "item_id": "RESTORE-FRESH-019",
+          "baseline": "I know, I will bring my water bottle.",
+          "candidate": "Ya, I always bring my water bottle."
+        },
+        {
+          "item_id": "RESTORE-FRESH-021",
+          "baseline": "Can get me a bottle of water?",
+          "candidate": "Can get me a bottle of water anot?"
+        },
+        {
+          "item_id": "RESTORE-FRESH-023",
+          "baseline": "No worries lah, next time then catch up.",
+          "candidate": "No worries, next time then catch up."
+        },
+        {
+          "item_id": "RESTORE-FRESH-024",
+          "baseline": "Can, go there instead lah.",
+          "candidate": "That would be fine. Let's go there instead."
+        },
+        {
+          "item_id": "CTXDEV-room-2",
+          "baseline": "I reserve room C317 for our practice session.",
+          "candidate": "I reserve C317 for our practice session."
+        },
+        {
+          "item_id": "CTXDEV-location-1",
+          "baseline": "I am beside the orange clock on level three.",
+          "candidate": "I at the orange clock on level three."
+        },
+        {
+          "item_id": "CTXDEV-location-2",
+          "baseline": "I am beside the green bench on level one.",
+          "candidate": "I at the green bench on level one."
+        },
+        {
+          "item_id": "CTXDEV-availability-1",
+          "baseline": "Friday I free, but Saturday I busy.",
+          "candidate": "Friday can, but Saturday I busy."
+        },
+        {
+          "item_id": "CTXDEV-availability-2",
+          "baseline": "Friday I busy, but Saturday I free.",
+          "candidate": "Friday I busy, Saturday can help ah."
+        },
+        {
+          "item_id": "CTXDEV-budget-1",
+          "baseline": "I only got fifteen dollars left. I cannot pay for the booking.",
+          "candidate": "I only got fifteen dollars left. I cannot pay the forty-dollar booking."
+        },
+        {
+          "item_id": "CTXDEV-submitted-1",
+          "baseline": "Ya, I’ve uploaded it to the portal this afternoon.",
+          "candidate": "Ya, I submit the form to the portal this afternoon."
+        },
+        {
+          "item_id": "CTXDEV-submitted-2",
+          "baseline": "Haven’t submit leh, haven’t even started.",
+          "candidate": "I have not submitted the consent form yet."
+        },
+        {
+          "item_id": "CTXDEV-packed-2",
+          "baseline": "Haven’t start packing the welcome packs leh.",
+          "candidate": "I haven’t start packing the welcome packs leh."
+        },
+        {
+          "item_id": "CTXDEV-ownership-1",
+          "baseline": "You need to return the cable to me.",
+          "candidate": "You return the cable to me ah."
+        },
+        {
+          "item_id": "CTXDEV-ownership-2",
+          "baseline": "I need to return the cable you lent me yesterday.",
+          "candidate": "I return the cable you lent me yesterday ah."
+        },
+        {
+          "item_id": "CTXDEV-offer_request-1",
+          "baseline": "Yes please, send me a photo of your notes ah.",
+          "candidate": "Can, send me a photo of your notes ah."
+        },
+        {
+          "item_id": "CTXDEV-schedule-1",
+          "baseline": "I cannot leave before 18:45 leh. Dinner after 19:15 can?",
+          "candidate": "I cannot leave before 18:45 leh. Dinner after 19:15 can anot?"
+        },
+        {
+          "item_id": "CTXDEV-schedule-2",
+          "baseline": "Can, dinner at 19:15.",
+          "candidate": "That works for me. Let's meet at 19:15."
+        },
+        {
+          "item_id": "CTXDEV-possession-1",
+          "baseline": "I put my umbrella in my bag before leaving home.",
+          "candidate": "I put my umbrella in my bag before leaving."
+        },
+        {
+          "item_id": "STYLE-CONTROL-004",
+          "baseline": "Haven’t pay leh.",
+          "candidate": "No."
+        },
+        {
+          "item_id": "STYLE-CONTROL-005",
+          "baseline": "Thursday I free.",
+          "candidate": "Yes."
+        },
+        {
+          "item_id": "STYLE-CONTROL-006",
+          "baseline": "Thursday I cannot make it leh.",
+          "candidate": "Thursday cannot leh."
+        }
+      ]
+    }
+  ]
+}

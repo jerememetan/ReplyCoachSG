@@ -1,0 +1,110 @@
+[
+  {
+    "study": "canonical_v1",
+    "arm": "supervised",
+    "label": "selected",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/supervised/selected",
+    "bytes": 41977608,
+    "sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "canonical_v1",
+    "arm": "supervised",
+    "label": "step_0040",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/supervised/step_0040",
+    "bytes": 41977608,
+    "sha256": "3e3535dc158f27d95fb86451ff6f2bd1a0cd3f530aa1f5826b73778cfd85fd1e",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "canonical_v1",
+    "arm": "supervised",
+    "label": "step_0080",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/supervised/step_0080",
+    "bytes": 41977608,
+    "sha256": "45d6006125824e2e636202f0be61121c7f35b6cf897271b5b40105bc6746c36d",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "canonical_v1",
+    "arm": "supervised",
+    "label": "step_0120",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/supervised/step_0120",
+    "bytes": 41977608,
+    "sha256": "49b0642ce49c710e79d07e807e6ed5d290b85732ea80da63387008b10af3ee28",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "canonical_v1",
+    "arm": "contrastive",
+    "label": "selected",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/contrastive/selected",
+    "bytes": 41977608,
+    "sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "canonical_v1",
+    "arm": "contrastive",
+    "label": "step_0040",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/contrastive/step_0040",
+    "bytes": 41977608,
+    "sha256": "c811123f730cdc1aed8f34d2e1568d661339e5e1d996b41d8540823d5b33fee9",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "canonical_v1",
+    "arm": "contrastive",
+    "label": "step_0080",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/contrastive/step_0080",
+    "bytes": 41977608,
+    "sha256": "05bf0f10bbdd26c016c5e630bc6b50a776e42dac8404fa4dad641678dfd90fc1",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "canonical_v1",
+    "arm": "contrastive",
+    "label": "step_0120",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/contrastive/step_0120",
+    "bytes": 41977608,
+    "sha256": "e6456391fdcce02258cb2bd510213e72a91ae1f288633063439f52c2cd239598",
+    "config_sha256": "3237022beb977a972dcf8188ff7c52740a245a3c811253c83d434c1af9c15ed7"
+  },
+  {
+    "study": "layout_v2/",
+    "arm": "supervised",
+    "label": "selected",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/layout_v2/outputs/supervised/selected",
+    "bytes": 41977608,
+    "sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "study": "layout_v2/",
+    "arm": "supervised",
+    "label": "step_0040",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/layout_v2/outputs/supervised/step_0040",
+    "bytes": 41977608,
+    "sha256": "cb4765ecb9cde5b93166471d92ccf6138303eecf60f217601c73b60d5f44979c",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "study": "layout_v2/",
+    "arm": "supervised",
+    "label": "step_0080",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/layout_v2/outputs/supervised/step_0080",
+    "bytes": 41977608,
+    "sha256": "d5359ae5dc2ffbda85cd25a0a1bbf6e8e0f9bba3696e34e474c463a5462ab8cd",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "study": "layout_v2/",
+    "arm": "supervised",
+    "label": "step_0120",
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/layout_v2/outputs/supervised/step_0120",
+    "bytes": 41977608,
+    "sha256": "f268e64a3e2d58d56ca4bdacb2647a973b857dcc52dde4ac13211452c472faab",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  }
+]

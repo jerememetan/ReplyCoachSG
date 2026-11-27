@@ -1,0 +1,27 @@
+{
+  "proceed": true,
+  "at_utc": "2026-11-08T16:37:08.350659+00:00",
+  "reviewer": "assistant, applying prior five user style preferences; not individually user-approved",
+  "initial_audit": {
+    "conversations": 24,
+    "pairs": 48,
+    "kept": 12,
+    "rejected": 12
+  },
+  "followup": {
+    "conversations": 6,
+    "pairs": 12,
+    "rows": {
+      "train-04121": "Both concise acknowledgements fit the thanks-for-repair context; context-supported social ellipsis is allowed.",
+      "train-04616": "Keep; correct LOCAL1 to steady,7ish so the new approximate7pm proposal is retained. LOCAL2 politely declines current help.",
+      "train-00043": "Both drafts choose Sunday morning, and both LOCALs retain that choice.",
+      "train-03474": "LOCAL1 confirms10; LOCAL2 counterproposes11 and retains sleeping-in rationale.",
+      "train-01015": "Both preserve2pm; draft2 also preserves bringing equipment.",
+      "train-03591": "Distinct timing/conditions once home versus tonight after dinner are both retained."
+    },
+    "corrections": 1
+  },
+  "sample_sha256": "984819dea46d99f6b02f84b127b5cde6958dd23cd78e4b0317b66411271d9cb5",
+  "required_overlay_sha256": "297d0121017e6b45842af30d16be1c593eccced596cee2300381b4e78c62848f",
+  "limits": "Remaining new corpus receives model review; these samples do not establish its full error rate or semantic independence."
+}

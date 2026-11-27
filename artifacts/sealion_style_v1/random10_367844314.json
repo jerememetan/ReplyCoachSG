@@ -1,0 +1,247 @@
+{
+  "seed": 367844314,
+  "sampling": "Uniform without replacement from22 previously reviewed development cases; excludes10 assistant diagnostic controls. Not locked test. No new inference.",
+  "source": "artifacts/sealion_style_v1/results_v2/review/final_combined_comparison.json",
+  "source_sha256": "8a3de4d627b6bcc15d689af11854e6eeb50eb6d88f317c62793d9ade92bfa957",
+  "pool_size": 22,
+  "methods": {
+    "original_repair25": "beam4",
+    "1_copy_penalty": "copy_penalty",
+    "2_lexicon_grammar": "lexicon_guidance",
+    "3_copy_loss100": "copy_loss_100",
+    "all_three_guard_v2": "copy100_v2_combined",
+    "control100": "control_100"
+  },
+  "cases": [
+    {
+      "item_id": "CTXDEV-ownership-2",
+      "context": [
+        [
+          "user",
+          "You lent me your power cable yesterday."
+        ],
+        [
+          "peer",
+          "Let us sort it out after the workshop."
+        ]
+      ],
+      "message": "Which one of us needs to return the power cable?",
+      "english": "I need to return the cable you lent me yesterday.",
+      "outputs": {
+        "original_repair25": "I need to return the cable you lent me yesterday.",
+        "1_copy_penalty": "I return the cable you lent me yesterday ah.",
+        "2_lexicon_grammar": "I need to return the cable you lent me yesterday.",
+        "3_copy_loss100": "You need return the cable I lent you yesterday ah.",
+        "all_three_guard_v2": "You lend me yesterday, I return you later.",
+        "control100": "You need to return the cable I lent you yesterday ah."
+      }
+    },
+    {
+      "item_id": "ITEM-B-042",
+      "context": [
+        [
+          "peer",
+          "I'm waiting outside already"
+        ],
+        [
+          "user",
+          "I'm reaching soon"
+        ]
+      ],
+      "message": "sorry, I took the wrong bus",
+      "english": "No worries, let me know when you reach",
+      "outputs": {
+        "original_repair25": "No worries, take your time",
+        "1_copy_penalty": "No worries, let me know when you reach",
+        "2_lexicon_grammar": "No worries, let me know when you reach",
+        "3_copy_loss100": "No worries, take your time",
+        "all_three_guard_v2": "No worries, let me know when you reach",
+        "control100": "No worries, take your time"
+      }
+    },
+    {
+      "item_id": "SEADUAL-015",
+      "context": [
+        [
+          "peer",
+          "I have been doing most of the group project alone."
+        ],
+        [
+          "user",
+          "Have the others been helping?"
+        ]
+      ],
+      "message": "Not really, and I am feeling overwhelmed.",
+      "english": "You can ask for help from others in the group.",
+      "outputs": {
+        "original_repair25": "Can ask for help from others in the group?",
+        "1_copy_penalty": "You can ask for help from the others in the group.",
+        "2_lexicon_grammar": "You can ask for help from others in the group.",
+        "3_copy_loss100": "Ask group members help lah.",
+        "all_three_guard_v2": "Ask group members help lah.",
+        "control100": "Ask group members help lah."
+      }
+    },
+    {
+      "item_id": "SEADUAL-002",
+      "context": [
+        [
+          "user",
+          "My lunch budget today is eleven dollars."
+        ],
+        [
+          "peer",
+          "We can find something nearby."
+        ]
+      ],
+      "message": "Want the twenty-seven-dollar lunch set?",
+      "english": "That's too expensive for me. Could we find something cheaper?",
+      "outputs": {
+        "original_repair25": "That one too expensive for me leh. Find something cheaper can?",
+        "1_copy_penalty": "That's too expensive for me. Could we find something cheaper?",
+        "2_lexicon_grammar": "That's too expensive for me. Could we find something cheaper?",
+        "3_copy_loss100": "That lunch set too expensive for me leh. Find cheaper one can?",
+        "all_three_guard_v2": "Too expensive leh. Find something cheaper can?",
+        "control100": "That lunch set too expensive for me leh. Find cheaper one can?"
+      }
+    },
+    {
+      "item_id": "SEADUAL-008",
+      "context": [
+        [
+          "user",
+          "I already booked our tutorial room this morning."
+        ],
+        [
+          "peer",
+          "Thanks for arranging that."
+        ]
+      ],
+      "message": "Have you booked the room yet?",
+      "english": "Yes, I've already booked the room this morning.",
+      "outputs": {
+        "original_repair25": "Yes, I've already booked the room this morning.",
+        "1_copy_penalty": "Ya, I’ve already booked the room this morning.",
+        "2_lexicon_grammar": "Ya, I’ve already booked the room this morning.",
+        "3_copy_loss100": "Already, this morning I book liao.",
+        "all_three_guard_v2": "Already, this morning I book liao.",
+        "control100": "I already book liao. You all coming what time ah?"
+      }
+    },
+    {
+      "item_id": "ITEM-A-017",
+      "context": [
+        [
+          "peer",
+          "Hey! Where are you now?"
+        ],
+        [
+          "user",
+          "I am reaching Harbourfront MRT, how about you?"
+        ]
+      ],
+      "message": "Eh i double check with you, we are meeting at 7pm right?",
+      "english": "Yes, we are meeting at 7pm.",
+      "outputs": {
+        "original_repair25": "Ya, seven at Harbourfront MRT.",
+        "1_copy_penalty": "Yes, we are meeting at 7pm.",
+        "2_lexicon_grammar": "Yes, we are meeting at 7pm.",
+        "3_copy_loss100": "Ya, seven at Harbourfront MRT.",
+        "all_three_guard_v2": "Yes, we are meeting at 7pm.",
+        "control100": "Ya, seven at Harbourfront MRT."
+      }
+    },
+    {
+      "item_id": "RESTORE-FRESH-009",
+      "context": [
+        [
+          "user",
+          "I have twelve dollars left for dinner."
+        ],
+        [
+          "peer",
+          "There are a few stalls downstairs."
+        ]
+      ],
+      "message": "Want to order the thirty-dollar platter?",
+      "english": "That is too expensive for me. Could we get something cheaper?",
+      "outputs": {
+        "original_repair25": "Paiseh, thirty dollars is beyond my budget.",
+        "1_copy_penalty": "That is too expensive for me. Could we get something cheaper?",
+        "2_lexicon_grammar": "That is too expensive for me. Could we get something cheaper?",
+        "3_copy_loss100": "Paiseh, thirty dollars too much for me. Can get something cheaper?",
+        "all_three_guard_v2": "Too expensive for me leh. Can get something cheaper instead?",
+        "control100": "Paiseh, thirty dollars too much for me. Could get something cheaper?"
+      }
+    },
+    {
+      "item_id": "ITEM-C-018",
+      "context": [
+        [
+          "peer",
+          "i'll upload my section before dinner"
+        ],
+        [
+          "user",
+          "okay, then i can merge everything tonight"
+        ]
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "english": "yes, i'll make sure to include the slide",
+      "outputs": {
+        "original_repair25": "ya, i'll include the slide also",
+        "1_copy_penalty": "ya, i make sure to include the slide",
+        "2_lexicon_grammar": "ya, i'll include the slide also",
+        "3_copy_loss100": "okay, i add the slide now",
+        "all_three_guard_v2": "okok, i include the slide later",
+        "control100": "okay, i'll include the slide in my part first"
+      }
+    },
+    {
+      "item_id": "SEADUAL-013",
+      "context": [
+        [
+          "user",
+          "I am still in the tutorial."
+        ],
+        [
+          "peer",
+          "I am at the coffee stall."
+        ]
+      ],
+      "message": "What drink should I get you?",
+      "english": "Could you get me a cup of coffee?",
+      "outputs": {
+        "original_repair25": "Can get me a cup of coffee?",
+        "1_copy_penalty": "Can get me a cup of coffee?",
+        "2_lexicon_grammar": "Can get me a cup of coffee?",
+        "3_copy_loss100": "Can help get me a cup of coffee?",
+        "all_three_guard_v2": "Can help get me a cup of coffee?",
+        "control100": "Can get me a cup of coffee?"
+      }
+    },
+    {
+      "item_id": "ITEM-C-045",
+      "context": [
+        [
+          "peer",
+          "we said we'd sit together tmr"
+        ],
+        [
+          "user",
+          "yep"
+        ]
+      ],
+      "message": "you still coming early to get seats right?",
+      "english": "Yes, I will be there at 8am.",
+      "outputs": {
+        "original_repair25": "ya, i gg at 8am",
+        "1_copy_penalty": "ya, i cmg at 8am",
+        "2_lexicon_grammar": "ya, i cmg at 8am",
+        "3_copy_loss100": "ya, cg i gna be there at 8am",
+        "all_three_guard_v2": "ya, i gg at 8am",
+        "control100": "yes, i cmg at 8am"
+      }
+    }
+  ]
+}

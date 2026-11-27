@@ -1,0 +1,272 @@
+[
+  {
+    "item_id": "AUDIT-VAL-01",
+    "context": [
+      "The picnic photos are in my album.",
+      "Send me the link?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Sent it on Signal already.",
+    "standard": "Thanks, I will check Signal.",
+    "local": "thanks, i check",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-02",
+    "context": [
+      "I can lend you my calculator for the lab tomorrow."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "rmb bring it tmr hor",
+    "standard": "Okay, I will bring it tomorrow.",
+    "local": "okok, will do",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-03",
+    "context": [
+      "Want to come for the board games tonight?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "sorry, too tired today, next time?",
+    "standard": "No worries, we can play another time.",
+    "local": "aw, next time bah",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-04",
+    "context": [
+      "Meet at the climbing gym at 6:40?",
+      "Okay."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "6:40 still on right?",
+    "standard": "Yes, six forty is still on.",
+    "local": "yep",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-05",
+    "context": [
+      "I am using your charging cable."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "can return after you charge finish?",
+    "standard": "Yes, I will return it after charging.",
+    "local": "can, charge finish then return",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-06",
+    "context": [
+      "I am waiting beside the medical centre."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "where you waiting ah?",
+    "standard": "I am beside the medical centre.",
+    "local": "beside medical centre",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-07",
+    "context": [
+      "Getting drinks, what you want?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "lime juice or barley?",
+    "standard": "Lime juice, please.",
+    "local": "lime juice pls",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-08",
+    "context": [
+      "I uploaded the sketch earlier."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "sketch uploaded already?",
+    "standard": "Yes, I uploaded it earlier.",
+    "local": "uploaded already",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-09",
+    "context": [
+      "I have not started editing the audio yet."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "audio edit finish anot?",
+    "standard": "Not yet, I have not started editing.",
+    "local": "haven’t started editing yet",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-10",
+    "context": [
+      "I have my umbrella with me."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "can lend me for the walk home?",
+    "standard": "Sure, you can use my umbrella.",
+    "local": "can, use mine first",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-11",
+    "context": [
+      "I forgot my umbrella.",
+      "I have a spare one."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "you want borrow mine?",
+    "standard": "Yes please, could I borrow yours?",
+    "local": "yes pls, lend me?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-12",
+    "context": [
+      "I cannot leave work until 7pm."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "meet at 6:20 can?",
+    "standard": "I cannot meet at six twenty. Could we meet after seven?",
+    "local": "6:20 cannot, after 7 can?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-13",
+    "context": [
+      "I can spend six dollars.",
+      "The meal is twelve and the snack is three."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "which one you want?",
+    "standard": "The meal is over my budget. I will take the snack instead.",
+    "local": "meal too ex, snack instead",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-14",
+    "context": [
+      "Hi prof, when will the feedback be ready?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "I can send it by Friday, is that alright?",
+    "standard": "That is fine, thank you professor.",
+    "local": "okies thanks prof!",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-15",
+    "context": [
+      "Do you know the office opening hours?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "open on Sunday anot?",
+    "standard": "I am not sure, I will check the directory.",
+    "local": "not sure, i check directory",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-16",
+    "context": [
+      "We are using room R09.",
+      "Actually it has moved to R12."
+    ],
+    "speakers": [
+      "peer",
+      "peer"
+    ],
+    "message": "see you at R12 then",
+    "standard": "Okay, I will go to R12.",
+    "local": "okok, i go R12",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-17",
+    "context": [
+      "I did not get the scholarship."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "quite upset tbh",
+    "standard": "I am sorry to hear that. Would you like to talk about it?",
+    "local": "aiyo, wanna talk about it?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-18",
+    "context": [
+      "I sent a few messages this morning."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "did you see that msg?",
+    "standard": "Which message do you mean?",
+    "local": "which msg ah?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-19",
+    "context": [
+      "I can reserve only two seats."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "can reserve three for us?",
+    "standard": "I can only reserve two. What should we do about the third?",
+    "local": "two only, third one how?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  },
+  {
+    "item_id": "AUDIT-VAL-20",
+    "context": [
+      "My coat is black, not navy."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "which coat should i bring you?",
+    "standard": "Please bring my black coat.",
+    "local": "black coat pls",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved."
+  }
+]

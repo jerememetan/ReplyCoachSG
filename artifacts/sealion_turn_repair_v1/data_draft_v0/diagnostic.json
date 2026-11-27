@@ -1,0 +1,18 @@
+[
+  {
+    "item_id": "USER-CALL-001",
+    "family": "user_failure_diagnostic",
+    "context": [
+      "Can u call me now?",
+      "Eh i not so free eh?",
+      "Ohh, then when can we call?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "criterion": "Respond as the person who initiated the call. Do not reverse roles. Purpose is unspecified, so do not treat a specific invented purpose as established fact."
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "started_at_utc": "2026-11-16T16:16:56.576847+00:00",
+  "account": "hm.teoh.2024",
+  "verified_local_backup_before_deletion": true,
+  "archive_sha256": "20f7cc06f5c3c5f83ce62beb5055aada10f5d29921d77ccdd091b704aeafb194",
+  "deleted_files": [
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_target_repair_v1/artifacts/control_s425/best/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "56de59dfb18df87f62f553d130947fb5c17769ea892bf7e0cbdf1f50151d1fd6"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_target_repair_v1/artifacts/control_s426/best/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "0a095d05e185173e259195ee973d464ff5eed2d512cbc61282eeac327458a6d5"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_target_repair_v1/artifacts/repair_s425/best/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "788637bf4102e90b6c266cbea65bfe5615f52533726329480889948e675350d9"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_target_repair_v1/artifacts/repair_s426/best/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "0d1ebb41ea2cb16b36dd75b25ad0096911cec869a6b9b27f4d32ea0f0485f502"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_structured_fit_v1/artifacts/original_objective/final/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "cb32bee58fc0533baf2efec48287ab18e82c0a66fdcdcbbb9225af17259347f3"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_structured_fit_v1/artifacts/plain_choice/final/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "0f87780bcb16e5a2e6e379c25f3171c773f441439e392dc19e3702964eac98f3"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_structured_fit_v1/artifacts/seq2seq/final/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "45b01a6de0d5ee51c2773b4c88d9e08057f5f2a07fcbbd5e983a480a2e7b8625"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v1/artifacts/auxiliary_only/best.pt",
+      "bytes": 2329796621,
+      "sha256": "3ed741ce49b7c6c3177e1599d9587818542cb706718c2ddbb53d060628370e18"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v1/artifacts/conditioned/best.pt",
+      "bytes": 2329796621,
+      "sha256": "b46ed55921748bd47b0280f95aa87b9ce6f4a842318d63ada4010c8ae75fbab5"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v1/artifacts/direct_control/best.pt",
+      "bytes": 2329796621,
+      "sha256": "03291b51b12703bc3f11c2ee1719c02b9f6ed4d1c368df6138426828e6885696"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v2/artifacts/auxiliary_control/best.pt",
+      "bytes": 2329796872,
+      "sha256": "58fac837c73f8455e596a17b0f4c2be5ca785d921ce36c759c9dd25e9077cba4"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v2/artifacts/gated_mixed/best.pt",
+      "bytes": 2329796872,
+      "sha256": "b9dea705224239721a4e587c3de3045db692e2d392f8fcb9dcbd803fb5b56931"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_reply_act_v2/artifacts/gated_predicted/best.pt",
+      "bytes": 2329796872,
+      "sha256": "a2179bd24cc7dfa77bbfa2247996884bafea98287be7c2cbf1153e54ec24ab05"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_act_follow_v1/artifacts/direct_control/best.pt",
+      "bytes": 2329796872,
+      "sha256": "eec6290161d9a5e2964cc1b0622d3120b9e80b1252e7b0452a2f0b0bceedd4f1"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_act_follow_v1/artifacts/gated_paired/best.pt",
+      "bytes": 2329796872,
+      "sha256": "8d648fdfbf048a219b938d2838d8ed90ab4025a3a3317bb89b99b6a88621bfd9"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_act_follow_v1/artifacts/text_goal_paired/best.pt",
+      "bytes": 2329796872,
+      "sha256": "8a7aef0f07f088ba6796f9895d0e3d7ef644932c403f89733e70dfe4d01ddded"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_structured_rl_v1/artifacts/rl/best/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "0a711e60e52a4d144abd0a7a99173c3b85c97e21f73ce7144899d7ee049f84cb"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_structured_rl_v1/artifacts/sft/best/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "0a711e60e52a4d144abd0a7a99173c3b85c97e21f73ce7144899d7ee049f84cb"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_fit_probe_v1/artifacts/full_lr1e4/final/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "b74943cb22d9a4681fa347a6af2dbaef57207c02eb824d6c33cebccba4dc1b33"
+    },
+    {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_fit_probe_v1/artifacts/full_lr3e4/final/model.safetensors",
+      "bytes": 2329638768,
+      "sha256": "465cfdee88478f9b51a13eae871f14bbfa477ff4b037c85d168bee8df8dbd19d"
+    }
+  ],
+  "freed_bytes": 46594197543,
+  "finished_at_utc": "2026-11-16T16:16:59.265284+00:00",
+  "retained_source_files_verified": 620,
+  "home_used_after_bytes": 127345786203,
+  "home_quota_bytes": 128849018880,
+  "home_free_after_bytes": 1503232677
+}

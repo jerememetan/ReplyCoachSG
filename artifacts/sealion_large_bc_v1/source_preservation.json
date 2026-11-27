@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-11-08T16:33:51.711029+00:00",
+  "files": {
+    "data/dev/train.jsonl": {
+      "sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+      "rows": 190,
+      "unchanged": true
+    },
+    "data/dev/validation.jsonl": {
+      "sha256": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+      "rows": 50,
+      "unchanged": true
+    }
+  },
+  "locked_test_contents_read": false
+}

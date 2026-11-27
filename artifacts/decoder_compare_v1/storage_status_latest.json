@@ -1,0 +1,76 @@
+{
+  "account": "hm.teoh.2024",
+  "at_utc": "2026-11-16T13:20:26.546855+00:00",
+  "storage": {
+    "home": {
+      "path": "/common/home/users/h/hm.teoh.2024",
+      "used_bytes": 127345786203,
+      "quota_bytes": 128849018880
+    },
+    "scratch": {
+      "path": "/common/scratch/users/h/hm.teoh.2024",
+      "used_bytes": 24192954597,
+      "quota_bytes": 536870912000
+    }
+  },
+  "queue": "             JOBID                             NAME      STATE       TIME     NODELIST(REASON)\n            367164                    dec3b-summary    PENDING       0:00         (Dependency)\n            367162                    dec3b-sealion    RUNNING      27:20                block\n            367163                       dec3b-qwen    RUNNING      27:20                block\n",
+  "comparison_bytes": 6593318043,
+  "models_bytes": 6183477786,
+  "reports": {
+    "outputs/sealion/task/training.json": {
+      "status": "training",
+      "selected_epoch": 2,
+      "optimizer_updates": 600,
+      "total_updates": 768,
+      "trainable_parameters": 10485760,
+      "error": null
+    },
+    "outputs/qwen/task/training.json": {
+      "status": "training",
+      "selected_epoch": 2,
+      "optimizer_updates": 700,
+      "total_updates": 768,
+      "trainable_parameters": 14966784,
+      "error": null
+    }
+  },
+  "ready.json": {
+    "status": "ready",
+    "checks": {
+      "sealion": {
+        "forward_backward_finite": true,
+        "strict_load": true,
+        "cached_logits_verified": true,
+        "trainable_parameters": 10485760,
+        "base_parameters": 3178255360,
+        "max_encoded_tokens": 176,
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb"
+      },
+      "qwen": {
+        "forward_backward_finite": true,
+        "strict_load": true,
+        "cached_logits_verified": true,
+        "trainable_parameters": 14966784,
+        "base_parameters": 3085938688,
+        "max_encoded_tokens": 162,
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb"
+      }
+    },
+    "torch": "2.14.1+cu130"
+  },
+  "submission.json": {
+    "status": "submitted",
+    "at_utc": "2026-11-16T12:51:41.220852+00:00",
+    "root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_decoder_compare_v1",
+    "payload_sha256": "cdb6aa0cfda2bfd8fd90248db3c2cc0e4450157d46dade95dd2d658762cf4c3b",
+    "jobs": {
+      "preflight": 367161,
+      "sealion": 367162,
+      "qwen": 367163,
+      "summary": 367164
+    },
+    "default_changed": false
+  },
+  "sealion_output_bytes": 167993756,
+  "qwen_output_bytes": 239825863
+}

@@ -1,0 +1,126 @@
+{
+  "seed": 425,
+  "sampling": "Uniform sample without replacement from all89saved evaluation conversations; no output-based filtering. Original/B/C saved raw outputs.",
+  "samples": [
+    {
+      "index": 54,
+      "item_id": "ITEM-B-042",
+      "scope": "reused_old_validation",
+      "chat": "Friend: I'm waiting outside already | You: I'm reaching soon | Friend: sorry, I took the wrong bus",
+      "original_english": "No worries. I'll wait here for you.",
+      "original_singlish": "No worries, I wait here for you.",
+      "B_english": "No worries, take the next one",
+      "B_singlish": "No worries, take the next one",
+      "C_english": "No worries, let me know when you reach.",
+      "C_singlish": "No worries, let me know when you reach."
+    },
+    {
+      "index": 12,
+      "item_id": "BC-evaluation-00101",
+      "scope": "new_model_authored_evaluation",
+      "chat": "You: I'll bring the stargazing mat for our trip. | Friend: Is it the big one with the waterproof lining?",
+      "original_english": "Yes, that's the one I'll bring.",
+      "original_singlish": "Yes, the big one with the waterproof lining.",
+      "B_english": "Yes, that's the one I'll bring.",
+      "B_singlish": "yep, big one with waterproof lining",
+      "C_english": "Yes, that's the one.",
+      "C_singlish": "Yes, that's the one."
+    },
+    {
+      "index": 22,
+      "item_id": "AUDIT-EVAL-08",
+      "scope": "fresh_assistant_evaluation",
+      "chat": "You: I left my headphones at home. | Friend: I have a spare pair. | Friend: want use mine for the recording?",
+      "original_english": "Yes please, use my spare pair for the recording.",
+      "original_singlish": "Can, use your spare pair for the recording ah.",
+      "B_english": "Sure, go ahead and use them.",
+      "B_singlish": "can, use mine first",
+      "C_english": "Yes please, I'll use yours for the recording.",
+      "C_singlish": "yes pls, use yours for recording"
+    },
+    {
+      "index": 45,
+      "item_id": "ITEM-A-035",
+      "scope": "reused_old_validation",
+      "chat": "Friend: I got to go for my appointment later | You: Yeah I should get going too | Friend: don't forget to dabao your food later",
+      "original_english": "I won't forget",
+      "original_singlish": "I won't forget",
+      "B_english": "I will. I'll get it for you later.",
+      "B_singlish": "I won't forget. I'll get it for you later.",
+      "C_english": "I will definitely do that!",
+      "C_singlish": "okok, i dabao later"
+    },
+    {
+      "index": 8,
+      "item_id": "BC-evaluation-00068",
+      "scope": "new_model_authored_evaluation",
+      "chat": "You: u still down for the pen swap tmr? | Friend: yeah still down | You: meet at the library then? | Friend: 2pm still ok for u?",
+      "original_english": "ok, 2pm works for me",
+      "original_singlish": "steady, 2pm can",
+      "B_english": "That works for me. See u then.",
+      "B_singlish": "2pm ok",
+      "C_english": "Yeah, 2pm works for me.",
+      "C_singlish": "2pm ok"
+    },
+    {
+      "index": 79,
+      "item_id": "ITEM-D-050",
+      "scope": "reused_old_validation",
+      "chat": "You: eh u ok? why u never join us for bb session yesterday. | Friend: woah sorry, i came up with a flu.",
+      "original_english": "no worries, take care of yourself.",
+      "original_singlish": "no worries, get well soon!",
+      "B_english": "no worries, hope u feel better soon!",
+      "B_singlish": "no worries, hope u feel better soon!",
+      "C_english": "no worries, hope u feel better soon.",
+      "C_singlish": "no worries, hope u feel better soon."
+    },
+    {
+      "index": 71,
+      "item_id": "ITEM-D-009",
+      "scope": "reused_old_validation",
+      "chat": "Friend: eh i struggling to do the linear algebra qn | You: which | Friend: neh the gaussian elim qn",
+      "original_english": "Okay, I'll go over it with you later.",
+      "original_singlish": "Okay, I go over it with you later.",
+      "B_english": "ok, i'll help you with that one",
+      "B_singlish": "okok, i help you with that one",
+      "C_english": "ok, i'll help you with that one",
+      "C_singlish": "ok, i help you with that one"
+    },
+    {
+      "index": 29,
+      "item_id": "AUDIT-EVAL-15",
+      "scope": "fresh_assistant_evaluation",
+      "chat": "You: Hi prof, could I check when consultations start? | Friend: I will put the booking slots up on Wednesday.",
+      "original_english": "Thanks prof, I will check the slots on Wednesday.",
+      "original_singlish": "Thanks prof, I check the slots on Wednesday.",
+      "B_english": "Thanks prof, I will check the slots then.",
+      "B_singlish": "thanks prof, i check slots then",
+      "C_english": "Thanks prof, I'll check the booking slots on Wednesday.",
+      "C_singlish": "thanks prof, i check booking slots on Wednesday"
+    },
+    {
+      "index": 78,
+      "item_id": "ITEM-D-046",
+      "scope": "reused_old_validation",
+      "chat": "Friend: eh help | You: what | Friend: the cinema ticket is sold out bruh",
+      "original_english": "Oh no, I was hoping to see a movie there.",
+      "original_singlish": "oh no, i was hoping to see a movie there",
+      "B_english": "Oh no, did they tell you that? I'm sorry to hear that. I'll check whether there are any other tickets left.",
+      "B_singlish": "aiyo, aiyo",
+      "C_english": "Oh no, did they tell you that already?",
+      "C_singlish": "oh no, did they tell you already?"
+    },
+    {
+      "index": 77,
+      "item_id": "ITEM-D-038",
+      "scope": "reused_old_validation",
+      "chat": "Friend: eh wya | You: i am outside mac | You: u eh | Friend: I am reaching soon, wait for me before going in.",
+      "original_english": "Ok, I wait for you outside.",
+      "original_singlish": "ok i wait for u outside",
+      "B_english": "Okay, I will wait for you.",
+      "B_singlish": "ok, will wait for u",
+      "C_english": "ok, i will wait for u",
+      "C_singlish": "ok, will wait for u"
+    }
+  ]
+}

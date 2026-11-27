@@ -1,0 +1,646 @@
+[
+  {
+    "item_id": "CREATIVE-challenge-unknown_call-6",
+    "family": "unknown_call",
+    "split": "challenge",
+    "context": [
+      "Could we have a quick call after the exhibition?",
+      "I am occupied at the moment.",
+      "Okay, we can talk another time."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What did you want to talk about?",
+    "alternatives": [
+      {
+        "english": "Just wanted to catch up a little. There is no rush.",
+        "singlish": "Just wanted to catch up a bit lah, no rush."
+      },
+      {
+        "english": "I wanted your opinion on something. I'll explain over text first.",
+        "singlish": "Wanted your opinion on something. I text you first can?"
+      },
+      {
+        "english": "I thought we could chat for a bit. We can message instead if that is easier.",
+        "singlish": "Thought we could chat a bit. Message also can if easier."
+      }
+    ],
+    "negative": "Why do you want to call me?",
+    "negative_reason": "speaker_reversal",
+    "criterion": "User initiated the call. A newly proposed purpose or text-first action is allowed; do not reverse who called or invent an earlier agreement.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-known_call-6",
+    "family": "known_call",
+    "split": "challenge",
+    "context": [
+      "The only thing I wanted to call you about was our travel plans.",
+      "I can talk after 8 pm."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What did you want to discuss?",
+    "alternatives": [
+      {
+        "english": "I wanted to discuss our travel plans.",
+        "singlish": "Wanted to discuss our travel plans lah."
+      },
+      {
+        "english": "It was about our travel plans. I can send the details over text first.",
+        "singlish": "About our travel plans. I text you the details first can?"
+      },
+      {
+        "english": "Just our travel plans. We can leave the call until later.",
+        "singlish": "Just our travel plans. Later then call also can."
+      }
+    ],
+    "negative": "The call was only about my gym membership.",
+    "negative_reason": "contradiction",
+    "criterion": "Preserve the explicitly stated sole call purpose: our travel plans.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-call_later-6",
+    "family": "call_later",
+    "split": "challenge",
+    "context": [
+      "I cannot talk before 8 pm.",
+      "I am heading to the exhibition."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you call me at 4 pm?",
+    "alternatives": [
+      {
+        "english": "I cannot call that early. Could we talk after 8 pm?",
+        "singlish": "That early cannot leh. After 8 pm can?"
+      },
+      {
+        "english": "I am only free after 8 pm. I can text you first.",
+        "singlish": "Only free after 8 pm leh. I text you first."
+      },
+      {
+        "english": "I cannot make 4 pm. Would tomorrow be easier?",
+        "singlish": "4 pm cannot lah. Tomorrow easier anot?"
+      }
+    ],
+    "negative": "Yes, I can call you at 4 pm.",
+    "negative_reason": "contradiction",
+    "criterion": "User cannot call before 8 pm; proposed later actions are allowed.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-open_invitation-6",
+    "family": "open_invitation",
+    "split": "challenge",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like to join us for the exhibition on Friday?",
+    "alternatives": [
+      {
+        "english": "Sure, what time on Friday?",
+        "singlish": "Can, Friday what time ah?"
+      },
+      {
+        "english": "I'll pass this time, but thanks for inviting me.",
+        "singlish": "This time I pass lah, thanks for asking."
+      },
+      {
+        "english": "Sounds interesting. Where are you meeting?",
+        "singlish": "Sounds interesting leh. Meet where ah?"
+      }
+    ],
+    "negative": "We already agreed yesterday that I would organise it.",
+    "negative_reason": "invented_shared_past",
+    "criterion": "No user preference or prior agreement is supplied. Acceptance, decline or asking details are all valid proposed drafts.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-busy_invitation-6",
+    "family": "busy_invitation",
+    "split": "challenge",
+    "context": [
+      "I have a shift on Sunday; I cannot attend anything that day. I am free on Friday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you join the exhibition on Sunday?",
+    "alternatives": [
+      {
+        "english": "I cannot make Sunday. Could we do Friday?",
+        "singlish": "Sunday cannot leh. Friday can?"
+      },
+      {
+        "english": "I have a shift on Sunday, so I will sit this one out.",
+        "singlish": "Sunday got shift, this time I pass lah."
+      },
+      {
+        "english": "I cannot attend on Sunday. Could you send me an update afterwards?",
+        "singlish": "Sunday I cannot go. Afterwards update me can?"
+      }
+    ],
+    "negative": "Yes, I am free on Sunday and will attend.",
+    "negative_reason": "contradiction",
+    "criterion": "Do not accept an event on explicitly unavailable Sunday.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-free_invitation-6",
+    "family": "free_invitation",
+    "split": "challenge",
+    "context": [
+      "I am free on Friday. I have a shift on Sunday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Would Friday work for the exhibition?",
+    "alternatives": [
+      {
+        "english": "Yes, Friday works. What time?",
+        "singlish": "Can, Friday works. What time ah?"
+      },
+      {
+        "english": "Friday is fine. Could we meet at the bookshop?",
+        "singlish": "Friday can. Meet at the bookshop can?"
+      },
+      {
+        "english": "I am available on Friday. How long will it take?",
+        "singlish": "Friday I free. How long ah?"
+      }
+    ],
+    "negative": "I have a shift on Friday and am not available.",
+    "negative_reason": "contradiction",
+    "criterion": "Friday is free; Sunday is busy. Preserve which day has the shift.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-lend_request-6",
+    "family": "lend_request",
+    "split": "challenge",
+    "context": [
+      "I left my picnic mat at home.",
+      "I have my picnic mat with me."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Could you lend me yours until tomorrow?",
+    "alternatives": [
+      {
+        "english": "Sure, I can lend you my picnic mat.",
+        "singlish": "Can, I lend you my picnic mat."
+      },
+      {
+        "english": "Could you return my picnic mat by tomorrow evening?",
+        "singlish": "My picnic mat tomorrow evening return can?"
+      },
+      {
+        "english": "Could you pick up my picnic mat at the bookshop?",
+        "singlish": "Come the bookshop collect my picnic mat can?"
+      }
+    ],
+    "negative": "Could you lend me your picnic mat instead?",
+    "negative_reason": "speaker_reversal",
+    "criterion": "Friend requests User-owned picnic mat; User is the lender, Friend the borrower.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-borrow_offer-6",
+    "family": "borrow_offer",
+    "split": "challenge",
+    "context": [
+      "I left my picnic mat at home.",
+      "I have a spare picnic mat."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to borrow mine?",
+    "alternatives": [
+      {
+        "english": "Yes please, could I borrow your picnic mat?",
+        "singlish": "Yes please, lend me your picnic mat can?"
+      },
+      {
+        "english": "Thanks, but I can manage without it today.",
+        "singlish": "Thanks ah, but today I can manage without it."
+      },
+      {
+        "english": "That would help. Where can I collect your picnic mat?",
+        "singlish": "That helps leh. Your picnic mat collect where ah?"
+      }
+    ],
+    "negative": "I will lend you my spare picnic mat.",
+    "negative_reason": "speaker_reversal",
+    "criterion": "Friend offers their spare; User may borrow, decline or arrange collection, not become lender.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-return_item-6",
+    "family": "return_item",
+    "split": "challenge",
+    "context": [
+      "I still have the picnic mat you lent me.",
+      "I would like it back tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "How should we arrange the return?",
+    "alternatives": [
+      {
+        "english": "I can bring your picnic mat to the bookshop tomorrow.",
+        "singlish": "Tomorrow I bring your picnic mat to the bookshop can?"
+      },
+      {
+        "english": "Would you like to collect your picnic mat from me tomorrow?",
+        "singlish": "Tomorrow you collect your picnic mat from me can?"
+      },
+      {
+        "english": "What time tomorrow would suit you?",
+        "singlish": "Tomorrow what time suits you ah?"
+      }
+    ],
+    "negative": "You need to return the picnic mat I lent you.",
+    "negative_reason": "speaker_reversal",
+    "criterion": "User borrowed Friend item and should return it; collection/drop-off suggestions are open.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-budget-6",
+    "family": "budget",
+    "split": "challenge",
+    "context": [
+      "My spending limit is $18.",
+      "The snack costs $13, and the meal costs $31."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which one would you like?",
+    "alternatives": [
+      {
+        "english": "I will take the $13 snack; it is within my budget.",
+        "singlish": "I take the $13 snack lah, within budget."
+      },
+      {
+        "english": "The $31 meal is over my budget. Could we find somewhere cheaper?",
+        "singlish": "$31 over my budget leh. Find cheaper place can?"
+      },
+      {
+        "english": "I will skip buying anything this time.",
+        "singlish": "This time I skip buying anything lah."
+      }
+    ],
+    "negative": "The $31 meal is within my $18 budget.",
+    "negative_reason": "contradiction",
+    "criterion": "Do not assert 31<=18; choosing the snack, declining or suggesting cheaper options are valid.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-location-6",
+    "family": "location",
+    "split": "challenge",
+    "context": [
+      "I am at the bookshop.",
+      "I am at the library entrance."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where are you now?",
+    "alternatives": [
+      {
+        "english": "I am at the bookshop.",
+        "singlish": "I at the bookshop now."
+      },
+      {
+        "english": "I am at the bookshop. Shall I wait here?",
+        "singlish": "I at the bookshop. Wait here can?"
+      },
+      {
+        "english": "I am still at the bookshop. I can come over to you.",
+        "singlish": "Still at the bookshop leh. I can come find you."
+      }
+    ],
+    "negative": "I am at the library entrance with you already.",
+    "negative_reason": "contradiction",
+    "criterion": "Current User location is the bookshop, not Friend location the library entrance; future movement may be proposed.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-completed-6",
+    "family": "completed",
+    "split": "challenge",
+    "context": [
+      "I have finished the notes for the exhibition and uploaded them.",
+      "Let me check the folder."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are your notes done?",
+    "alternatives": [
+      {
+        "english": "Yes, they are finished and uploaded.",
+        "singlish": "Done and uploaded liao."
+      },
+      {
+        "english": "Yes, they are done. Want me to send you the link?",
+        "singlish": "Done liao. Want me send you the link?"
+      },
+      {
+        "english": "They are finished. Could you check whether you can access them?",
+        "singlish": "Finished liao. You check can open anot?"
+      }
+    ],
+    "negative": "No, I have not started the notes.",
+    "negative_reason": "contradiction",
+    "criterion": "Notes are explicitly finished/uploaded; do not reverse completion.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-unfinished-6",
+    "family": "unfinished",
+    "split": "challenge",
+    "context": [
+      "I am still writing the notes for the exhibition; they are not finished."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you send the finished notes now?",
+    "alternatives": [
+      {
+        "english": "They are not finished yet. I can send them when they are ready.",
+        "singlish": "Not finished yet leh. Ready then I send."
+      },
+      {
+        "english": "I am still working on them. Would a draft help first?",
+        "singlish": "Still doing leh. Send you draft first can?"
+      },
+      {
+        "english": "They are not ready yet. Which part do you need first?",
+        "singlish": "Not ready yet leh. Which part you need first?"
+      }
+    ],
+    "negative": "I have already finished and sent all the notes.",
+    "negative_reason": "contradiction",
+    "criterion": "Unfinished notes cannot be claimed finished/sent; offering a draft or future action is allowed.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-unseen_text-6",
+    "family": "unseen_text",
+    "split": "challenge",
+    "context": [
+      "I am writing an introduction for the exhibition."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "Can you tell me whether the paragraph is too long?",
+    "alternatives": [
+      {
+        "english": "Send me the paragraph and I will take a look.",
+        "singlish": "Send me the paragraph, I take a look."
+      },
+      {
+        "english": "Sure, paste it here and we can trim it together.",
+        "singlish": "Can, paste here then we trim together."
+      },
+      {
+        "english": "Could you send it along with the word limit?",
+        "singlish": "Send the paragraph and word limit can?"
+      }
+    ],
+    "negative": "Yes, your paragraph is definitely too long.",
+    "negative_reason": "unsupported_judgment",
+    "criterion": "No paragraph is supplied. Offer a useful next action, not a claim to have assessed unseen content.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-vague_help-6",
+    "family": "vague_help",
+    "split": "challenge",
+    "context": [
+      "I am working on the exercises before the exhibition."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "I am stuck on one question. Can you help?",
+    "alternatives": [
+      {
+        "english": "Send me the question and I will try to help.",
+        "singlish": "Send the question, I try help you."
+      },
+      {
+        "english": "Which step are you stuck on?",
+        "singlish": "Which step stuck ah?"
+      },
+      {
+        "english": "Show me what you have tried and we can work through it.",
+        "singlish": "Show me what you tried, we work through together."
+      }
+    ],
+    "negative": "The answer to that question is definitely 42.",
+    "negative_reason": "invented_answer",
+    "criterion": "Question is absent; propose help or ask useful details rather than inventing its answer.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-overwhelmed-6",
+    "family": "overwhelmed",
+    "split": "challenge",
+    "context": [
+      "I have to prepare for the exhibition and I am feeling overwhelmed."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "I do not know where to start.",
+    "alternatives": [
+      {
+        "english": "Want to break it into smaller steps together?",
+        "singlish": "Want break into smaller steps together anot?"
+      },
+      {
+        "english": "Would a short break help before you start?",
+        "singlish": "Take a short break first can?"
+      },
+      {
+        "english": "Which part feels most urgent? I can help you plan.",
+        "singlish": "Which part most urgent ah? I help you plan."
+      }
+    ],
+    "negative": "You told me everything was already finished.",
+    "negative_reason": "invented_shared_past",
+    "criterion": "Respond supportively; no fabricated prior completion claim.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-postponed-6",
+    "family": "postponed",
+    "split": "challenge",
+    "context": [
+      "We are meeting for the exhibition.",
+      "Okay, see you there."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "The start has been pushed back by half an hour.",
+    "alternatives": [
+      {
+        "english": "Thanks for letting me know. I will adjust my plans.",
+        "singlish": "Thanks for telling me ah, I adjust my plans."
+      },
+      {
+        "english": "What is the updated start time?",
+        "singlish": "New start time what ah?"
+      },
+      {
+        "english": "No worries. Shall we grab a drink while we wait?",
+        "singlish": "No worries lah. While waiting get a drink can?"
+      }
+    ],
+    "negative": "Great, it now starts half an hour earlier.",
+    "negative_reason": "contradiction",
+    "criterion": "A delay is later, not earlier; original clock time is unspecified.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-thanks-6",
+    "family": "thanks",
+    "split": "challenge",
+    "context": [
+      "I was having trouble preparing for the exhibition.",
+      "I can help with the checklist."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Thanks for helping me today!",
+    "alternatives": [
+      {
+        "english": "You are welcome!",
+        "singlish": "No problem lah!"
+      },
+      {
+        "english": "Glad I could help. Anything else you want to check?",
+        "singlish": "Glad can help. Anything else want check?"
+      },
+      {
+        "english": "Happy to help. Hope it goes smoothly!",
+        "singlish": "Happy to help lah. Hope all goes smoothly!"
+      }
+    ],
+    "negative": "You promised to pay me yesterday for helping.",
+    "negative_reason": "invented_shared_past",
+    "criterion": "Acknowledge thanks or offer more help; no invented payment agreement.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-open_preference-6",
+    "family": "open_preference",
+    "split": "challenge",
+    "context": [
+      "We can get a drink after the exhibition.",
+      "I do not want matcha today."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "What would you like to drink instead?",
+    "alternatives": [
+      {
+        "english": "How about a coffee?",
+        "singlish": "Coffee can?"
+      },
+      {
+        "english": "I think I will get water.",
+        "singlish": "I think I get water lah."
+      },
+      {
+        "english": "Maybe a hot tea. What are you having?",
+        "singlish": "Maybe hot tea lah. You drinking what?"
+      }
+    ],
+    "negative": "I only want matcha today.",
+    "negative_reason": "contradiction",
+    "criterion": "User rejected matcha; other newly proposed preferences are valid.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  },
+  {
+    "item_id": "CREATIVE-challenge-earliest_time-6",
+    "family": "earliest_time",
+    "split": "challenge",
+    "context": [
+      "I can only leave the exhibition after 8 pm.",
+      "I can wait at the bookshop."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we meet at 4 pm?",
+    "alternatives": [
+      {
+        "english": "I cannot make 4 pm. Could we meet after 8 pm?",
+        "singlish": "4 pm cannot leh. After 8 pm can?"
+      },
+      {
+        "english": "I can only leave after 8 pm. Would tomorrow be easier?",
+        "singlish": "Only can leave after 8 pm leh. Tomorrow easier anot?"
+      },
+      {
+        "english": "That is too early for me. Could we message first?",
+        "singlish": "Too early for me leh. Message first can?"
+      }
+    ],
+    "negative": "Yes, I will be there at 4 pm.",
+    "negative_reason": "contradiction",
+    "criterion": "Earliest departure is after 8 pm; do not accept earlier 4 pm.",
+    "scope": "prospective_creative_challenge",
+    "provenance": "Assistant-authored supplemental examples and audit; not team-authored or independent human gold."
+  }
+]

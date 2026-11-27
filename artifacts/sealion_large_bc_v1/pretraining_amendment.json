@@ -1,0 +1,41 @@
+{
+  "phase": "before student training",
+  "changes": [
+    "Reject entire initial authoring batch after assistant found unsupported shop hours/shared participation and reversed jacket ownership that Qwen missed. Initial raw data preserved remotely under authoring_initial_v0; not included in training.",
+    "Tighten grounding/role instructions, require requested history speaker patterns, add a separate fresh Gemma semantic review in addition to the Qwen critic; limit review explanation length and CPU threads. Both reviews remain model judgments.",
+    "Correct inherited final-result paths to isolate outputs/B and outputs/C for concurrent jobs.",
+    "Checkpoint authoring after 20 hours and request requeue of the same preparation job, retaining accepted rows and training dependencies."
+  ],
+  "initial_payload_sha256": "71e491db891f9631d92a765a5e99996cb429b5f8355c08933175e69c6316b1f9",
+  "current_payload": {
+    "payload_sha256": "c6d6e0b64a06e96d8e01d3307a502dea9cdd02d22db393a76e5bff48e1f3e054",
+    "bytes": 441281,
+    "files": 126
+  },
+  "at_utc": "2026-11-08T15:45:39.319560+00:00",
+  "additional_changes": [
+    "Canonical inline Friend/You labels for every reviewer; explicit incoming_friend and you_drafts generation fields to prevent confusing the incoming message with its response.",
+    "Per-pair audits with role ledgers; calibrate both reviewers against eight known good/bad fixtures before authoring. A separate unsupported-claim boolean was misinterpreted by the initial critic and replaced with context_reply_valid.",
+    "Rotate rejected slots to prevent one difficult batch starving the whole dataset; initial assistant gate samples training only.",
+    "Initial v0/v1 authoring logs preserved and excluded from all training. Student job IDs and hyperparameters unchanged.",
+    "Review calibration caught both models accepting known bad fixtures. Failed calibration attempts are preserved under authoring_initial_v2 and no data was released.",
+    "Replace boolean-first review format with explicit facts and error fields before a final verdict; enable Gemma deliberation for semantic judging. Both reviewers must pass all calibration fixtures before authoring."
+  ],
+  "sample_feedback_changes": [
+    "Initial assistant audit reviewed all24 conversations/48 draft pairs; 12 kept,12 excluded; an extra unreviewed candidate also removed from working accepted file. All originals retained outside training.",
+    "Gemma writer now deliberates, temperature0.7, with 3 concrete style demonstrations per batch from 12 prior assistant-authored style-development cases. These are not current dev/final sets.",
+    "Restore earlier validated error-first reviewer prompt after expanded instructions regressed on an invented-hours calibration fixture. Individual Qwen misses remain documented.",
+    "Task supervision selects one matched draft pair per conversation deterministically across both indices to reduce first-draft agreement bias; rewriter uses both pairs.",
+    "Cap deliberating calls at6000tokens; allow isolated failed requests while aborting after10consecutive failures; global3500-batch cap still prevents endless partial generation.",
+    "Six new training examples require an assistant follow-up review before full authoring is released."
+  ],
+  "followup_review": {
+    "conversations": 6,
+    "pairs": 12,
+    "kept": 6,
+    "corrections": 1,
+    "correction": "steady, see u then -> steady, 7ish; retain novel approximate7pm time",
+    "binding": "data/assistant_target_overlays.json, exact English/previous LOCAL/source SHA checks; applied before final manifest verification and either arm starts"
+  },
+  "assistant_gate_released": true
+}

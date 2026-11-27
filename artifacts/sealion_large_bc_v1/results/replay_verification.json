@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-11-09T05:20:57.266885+00:00",
+  "candidates": {
+    "B": {
+      "status": "complete",
+      "strict_loading": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+      "flags": [],
+      "replay_differences": [],
+      "exact_example_pairs": 10,
+      "input_sha256": "dde6ce983388f784deafbfb25946684ab59ac2094ad186ab034fd0cfdaac01d2"
+    },
+    "C": {
+      "status": "complete",
+      "strict_loading": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+      "flags": [],
+      "replay_differences": [],
+      "exact_example_pairs": 10,
+      "input_sha256": "dde6ce983388f784deafbfb25946684ab59ac2094ad186ab034fd0cfdaac01d2"
+    }
+  },
+  "status": "passed"
+}

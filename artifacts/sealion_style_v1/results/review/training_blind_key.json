@@ -1,0 +1,184 @@
+{
+  "TRAINED-STYLE-001": {
+    "item_id": "SEADUAL-011",
+    "mapping": {
+      "A": [
+        "combined_guard_v2_copy1"
+      ],
+      "B": [
+        "beam4",
+        "control_100",
+        "copy_loss_25",
+        "copy_loss_50"
+      ],
+      "C": [
+        "copy_loss_100"
+      ]
+    }
+  },
+  "TRAINED-STYLE-002": {
+    "item_id": "SEADUAL-015",
+    "mapping": {
+      "A": [
+        "beam4"
+      ],
+      "B": [
+        "combined_guard_v2_copy1",
+        "control_100",
+        "copy_loss_25",
+        "copy_loss_50",
+        "copy_loss_100"
+      ]
+    }
+  },
+  "TRAINED-STYLE-003": {
+    "item_id": "SEADUAL-008",
+    "mapping": {
+      "A": [
+        "combined_guard_v2_copy1"
+      ],
+      "B": [
+        "copy_loss_50"
+      ],
+      "C": [
+        "control_100"
+      ],
+      "D": [
+        "copy_loss_25",
+        "copy_loss_100"
+      ],
+      "E": [
+        "beam4"
+      ]
+    }
+  },
+  "TRAINED-STYLE-004": {
+    "item_id": "SEADUAL-010",
+    "mapping": {
+      "A": [
+        "control_100"
+      ],
+      "B": [
+        "beam4",
+        "combined_guard_v2_copy1",
+        "copy_loss_25",
+        "copy_loss_50",
+        "copy_loss_100"
+      ]
+    }
+  },
+  "TRAINED-STYLE-005": {
+    "item_id": "SEADUAL-013",
+    "mapping": {
+      "A": [
+        "beam4",
+        "combined_guard_v2_copy1",
+        "control_100",
+        "copy_loss_50"
+      ],
+      "B": [
+        "copy_loss_100"
+      ],
+      "C": [
+        "copy_loss_25"
+      ]
+    }
+  },
+  "TRAINED-STYLE-006": {
+    "item_id": "ITEM-C-045",
+    "mapping": {
+      "A": [
+        "control_100"
+      ],
+      "B": [
+        "combined_guard_v2_copy1"
+      ],
+      "C": [
+        "beam4"
+      ],
+      "D": [
+        "copy_loss_50"
+      ],
+      "E": [
+        "copy_loss_25",
+        "copy_loss_100"
+      ]
+    }
+  },
+  "TRAINED-STYLE-007": {
+    "item_id": "SEADUAL-002",
+    "mapping": {
+      "A": [
+        "beam4"
+      ],
+      "B": [
+        "combined_guard_v2_copy1",
+        "copy_loss_50"
+      ],
+      "C": [
+        "copy_loss_25"
+      ],
+      "D": [
+        "control_100",
+        "copy_loss_100"
+      ]
+    }
+  },
+  "TRAINED-STYLE-008": {
+    "item_id": "CTXDEV-ownership-2",
+    "mapping": {
+      "A": [
+        "copy_loss_25",
+        "copy_loss_50",
+        "copy_loss_100"
+      ],
+      "B": [
+        "control_100"
+      ],
+      "C": [
+        "combined_guard_v2_copy1"
+      ],
+      "D": [
+        "beam4"
+      ]
+    }
+  },
+  "TRAINED-STYLE-009": {
+    "item_id": "ITEM-B-009",
+    "mapping": {
+      "A": [
+        "copy_loss_50"
+      ],
+      "B": [
+        "combined_guard_v2_copy1"
+      ],
+      "C": [
+        "beam4",
+        "control_100",
+        "copy_loss_25",
+        "copy_loss_100"
+      ]
+    }
+  },
+  "TRAINED-STYLE-010": {
+    "item_id": "ITEM-E-015",
+    "mapping": {
+      "A": [
+        "combined_guard_v2_copy1"
+      ],
+      "B": [
+        "beam4",
+        "copy_loss_25"
+      ],
+      "C": [
+        "control_100"
+      ],
+      "D": [
+        "copy_loss_100"
+      ],
+      "E": [
+        "copy_loss_50"
+      ]
+    }
+  }
+}

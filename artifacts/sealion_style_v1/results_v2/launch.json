@@ -1,0 +1,25 @@
+{
+  "account": "hm.teoh.2024",
+  "root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_style_v1",
+  "preflight_job_id": 357996,
+  "tests_passed": 11,
+  "personal_account_only": true,
+  "free_bytes_before": 7031581422,
+  "recipe_sha256": "0a02704a35213316830eef6879f2c620e11df04006096deb2c2cf4ff5c6fd948",
+  "jobs": {
+    "algorithms": {
+      "job_id": 357998,
+      "state": "submitted",
+      "gpu_requested": "L40S",
+      "memory": "32G",
+      "walltime_limit": "03:00:00"
+    },
+    "training": {
+      "job_id": 357999,
+      "state": "submitted",
+      "gpu_requested": "L40S",
+      "memory": "32G",
+      "walltime_limit": "03:00:00"
+    }
+  }
+}

@@ -1,0 +1,824 @@
+                                      Reply Coach
+                                       CS425 - G1T4
+                        By: Jereme, Hao Ming, Cody, YangTian, Tristan
+
+1. Introduction
+Overview:
+We built Reply Coach to help exchange students compose replies to casual peer messages in
+Singapore. Given the recent conversation and the latest incoming message, it suggests a
+Standard English reply and a Light Local reply. The user can choose and edit either suggestion
+before sending.
+
+
+
+
+Problem Statement:
+Singlish is used in everyday online messages in Singapore. Some international students
+interviewed by Steele (2008) reported difficulty understanding Singlish when they first arrived in
+Singapore. They would need to understand what the sender means in context and decide how
+to reply in a tone that feels natural without sounding forced. This is where ReplyCoach comes
+in, where it’s able to understand singlish conversations and recommends a local or a standard
+message for the user to send. Our goal is to suggest replies that make sense in context and
+match the user’s chosen style.
+
+In our proposal, we hypothesized that combining normalized retrieval, a lightweight text
+generator, and a contextual reranker will outperform single retrieval or generation baselines in
+human evaluation for appropriateness, style accuracy, and general utility.
+
+1.1 Related work and our project approaches
+
+Prior work such as Smart Reply shows how a system can suggest short responses for users to
+select in email (Kannan et al., 2016). Reply Coach applies that idea to mixed-language peer
+chats in Singapore. We built the application around a team-authored collection of paired
+Standard and Light Local replies. We compared word-based retrieval using BM25 (Robertson &
+Zaragoza, 2009), semantic retrieval using MiniLM, and reply generation using recurrent models
+with attention (Luong et al., 2015) and multilingual transformers. We also tested whether a
+contextual reranker could choose better replies. The final system gives users an explicit choice
+of style for the same conversation. We compared replies from the different systems to see when
+reranking helped and when a single model performed better.
+
+In our initial proposal, we planned to develop Reply Coach in stages, from a basic retrieval
+system (V0) to a reranker that could choose among replies from different models (V6). As we
+tested each stage, some results led us to revisit the original plan. We changed the transformer
+used for reply generation and added a separate step to refine the wording of Light Local replies
+(V7). Section 3 explains how each version was built, and Section 4 shows which findings led to
+these changes and how they shaped the final demo.
+Figure 1. Reply Coach architecture proposed at the start of the project
+
+
+2. Data and preprocessing
+
+2.1 Dataset Generation and Annotation
+ReplyCoachSG requires conversational examples containing both Standard English and Light
+Local (Singlish) replies. As existing public datasets did not provide the paired responses
+required for our specific task, we developed a dataset of 300 human-authored conversations,
+with each of the five team members contributing 60 examples.
+
+To ensure diversity in conversational situations, we established nine scenario categories
+covering meals and food, study sessions and spaces, course materials, assignments and group
+projects, classes and tutorials, meetups and transport, social events and outings, sports and
+exercise, and campus services and equipment. Each conversation was also assigned one of
+nine incoming-message intents, including invitations, information requests, requests for help,
+confirmations, rescheduling, refusals, updates, reminders, and apologies. These categories
+helped ensure that the dataset represented different situations and communication purposes
+commonly encountered by exchange students in Singapore.
+
+For each example, the author constructed one to three previous conversation turns and an
+incoming message, followed by two corresponding replies. The Standard English reply was
+written to be clear and easily understood by international students, while the Light Local reply
+incorporated natural, restrained Singlish expressions where appropriate. Authors also annotated
+the language mix and local terms present in each example.
+
+A common annotation guide was used to maintain consistency across authors. Light Local
+replies were required to remain predominantly English, avoid excessive Singlish particles, and
+refrain from introducing Mandarin expressions absent from the original conversation. This
+ensured that local expressions were used contextually rather than inserted artificially.
+   2.2 Data Cleaning and Quality Assurance
+   To maintain data quality, we implemented a circular peer-review process in which each member
+   independently reviewed another member's 60 examples. Member A reviewed Member B's
+   examples, Member B reviewed Member C's, and so on, with Member E reviewing Member A.
+   This ensured that every example received one independent review before being accepted.
+
+   Reviewers followed a standardized checklist covering privacy, conversational relevance,
+   grammatical correctness, and language-style consistency. Standard English replies had to be
+   natural and understandable, while Light Local replies had to use Singlish appropriately without
+   excessive slang or unnatural code-switching. Reviewers also checked that replies were
+   contextually appropriate and that previous conversation turns provided useful information for
+   determining the response. Examples that failed these criteria required correction before
+   acceptance.
+
+   Privacy was considered during data generation. Authors were instructed to avoid identifiable
+   information, including real names, telephone numbers, student identification numbers, and
+   residential details. Additionally, all original examples were human-written, with LLM-generated
+   wording prohibited during the authoring process.
+
+   Another challenge was identifying duplicate or highly similar conversations. While exact
+   duplicates could be detected through text matching, semantically similar examples were more
+   difficult to identify when expressed using different wording. Our data preparation workflow
+   therefore incorporated near-duplicate detection and grouping to reduce the risk of closely
+   related examples appearing across different dataset partitions.
+
+   2.3 Dataset Splitting
+
+   After peer review, the 300 conversations were divided into training, validation, and test sets. An
+   initial 80:20 split allocated 240 examples for development and 60 for held-out testing. The
+   development set was subsequently divided into 190 training examples and 50 validation
+   examples.
+
+
+ Dataset        Conversations                                   Purpose
+
+
+Training             190                         Model training and retrieval reply bank
+
+
+Validation            50                    Model development, comparison, and selection
+
+
+  Test                60                                Held-out final evaluation
+
+
+  Total              300
+
+
+   The training set served as the reply bank for retrieval-based approaches and provided task-
+   specific examples for generative model training. The validation set was used to compare model
+configurations and guide development decisions, while the test set was reserved for final
+evaluation to reduce the risk of data leakage.
+
+Rather than relying solely on random assignment, the splitting process considered the
+distribution of authors, scenarios, incoming-message intents, language mixing, and local-term
+usage. Near-duplicate grouping was incorporated to reduce overlap between partitions, while a
+fixed random seed of 425 supported reproducibility.
+
+2.4 Preprocessing and Supplementary Data
+Each conversation was structured to retain its recent message history, latest incoming
+message, speaker information, and paired Standard English and Light Local replies. Preserving
+speaker roles and conversational context was important because an appropriate response
+depends not only on the latest message but also on who said what previously.
+
+For retrieval, we introduced a lexicon-based normalization and query-expansion step to
+improve matching between Standard English, Singlish, and Mandarin expressions. For
+example, local terms such as "makan" and "吃饭" were mapped to "eat", while "paiseh"
+was mapped to "sorry". Original expressions were preserved alongside their English
+equivalents to retain linguistic context. Ambiguous terms were excluded from automatic
+normalization to avoid incorrect interpretations.
+
+The 190 reviewed training conversations formed the retrieval bank for BM25 and MiniLM and
+provided task-specific supervised examples for reply generation. Given the relatively small size
+of our dataset, we also used the external DailyDialog corpus to support general conversational
+learning. Additional synthetic examples were subsequently introduced for transformer
+adaptation and reranker development. These supplementary datasets served different training
+purposes and were kept separate from the original held-out test conversations.
+
+Overall, our data preparation process aimed to maintain consistent annotation quality, preserve
+conversational context, and minimize data leakage. However, the limited dataset size and
+reliance on five authors constrained the diversity of conversational styles represented. These
+limitations motivated the use of supplementary training data and highlight the importance of
+expanding the dataset and conducting evaluations with actual exchange students in future work.
+
+
+3. System development
+
+We developed the system in stages. Retrieval gave us a baseline grounded in human-written
+replies. The RNN and transformer models could generate new replies for conversations without
+a close match in the reply bank. We then tested whether a common reranker could choose the
+strongest reply across these sources. Finally, we tested whether a smaller wording change
+could make the Local output fit the requested style better.
+
+In the Streamlit demo, the incoming message and selected recent turns are sent to the
+comparison pipeline. BM25, MiniLM, the attention RNN, and SEA-LION provide suggestions for
+inspection. The final Standard reply comes directly from SEA-LION. The Light Local path starts
+with SEA-LION’s Local reply and applies V7 v2 wording refinement when three distinct variants
+are available.
+Figure 2. Final Reply Coach architecture for Standard English and Light Local reply
+suggestions.
+
+
+
+3.1 Retrieval and memory (V0–V2)
+
+We began with retrieval-based methods to establish a baseline for suggesting replies without
+generating new text. The retrievers searched our 190 reviewed training conversations, where
+each example contained an incoming message, conversation context, and paired Standard
+English and Light Local replies. We first implemented TF-IDF and BM25 (V0), which rank stored
+examples based on lexical similarity. These methods provided a fast and interpretable starting
+point, but they depended heavily on word overlap. Messages expressing similar intentions using
+different vocabulary could therefore retrieve different or unsuitable replies.
+
+To address this limitation, we introduced V1, a lexicon-based normalisation step for
+selected Singlish and Mandarin expressions. For example, “makan” and “吃饭” were
+mapped to the English term “eat”, while “paiseh” was mapped to “sorry”. Rather than
+replacing the original message entirely, the system preserved the original tokens and
+expanded the retrieval query with their canonical English equivalents. This allowed
+retrieval to consider both local expressions and their standard meanings. However, the
+lexicon could only handle recognised expressions. Ambiguous words such as “can” and
+“one” were deliberately excluded from automatic replacement to avoid introducing
+incorrect interpretations.
+
+For V2, we implemented semantic retrieval using the pretrained all-MiniLM-L6-v2 sentence
+encoder. Unlike BM25, which relies on lexical overlap, MiniLM represents messages as dense
+numerical embeddings. We encoded stored dialogue examples, including their conversation
+context, incoming message, and paired replies, into embeddings. During retrieval, the incoming
+message and selected memory were similarly encoded, and cosine similarity was used to rank
+the stored examples. The highest-ranked examples supplied existing Standard and Light Local
+reply candidates. This allowed the system to identify semantically related messages even when
+their wording differed, although semantic similarity alone did not guarantee that the retrieved
+reply matched the intended response.
+
+We also investigated conversational memory because the latest incoming message may
+depend on information mentioned earlier. We compared three configurations: M0, which uses
+no previous messages; M1, which retains the latest three previous messages; and M2, which
+uses dynamic memory. M2 always retains the latest two messages and uses BM25 to select up
+to two relevant older messages from the previous eight conversation turns. Selected messages
+are restored to chronological order before being passed downstream. This design aimed to
+preserve important earlier context without including the entire conversation history.
+
+We evaluated BM25 and MiniLM across M0, M1, and M2 using the same 50 development
+validation queries, producing 300 configuration-query results. In our local latency
+measurements, BM25 averaged approximately 4.70–5.36 milliseconds per query, compared
+with 18.57–19.96 milliseconds for MiniLM, excluding retriever initialisation. However, M1 and M2
+produced different selected replies for only one of the 50 validation queries. This suggested that
+the original validation conversations provided limited opportunities to demonstrate the benefits
+of retrieving older context.
+
+We therefore conducted 20 additional long-context diagnostic cases. In one example, a peer
+asked, “I'm here already, where are you?” M2 recovered an earlier message specifying the
+meeting location near MRT Exit B, which M1 had omitted. However, the retrieved reply still
+failed to answer the location question appropriately. This demonstrated that recovering relevant
+conversational context and selecting an appropriate response are separate challenges.
+
+The later 60-conversation evaluation reported in Section 4 showed that MiniLM achieved higher
+AI-rated appropriateness than BM25 for both reply styles. Standard English appropriateness
+increased from 2.787 to 3.037 out of 5, while Light Local appropriateness increased from 3.607
+to 3.828. These results suggest that semantic retrieval offered an advantage over lexical
+retrieval in this evaluation, although they do not isolate the contribution of memory or establish
+that MiniLM consistently performs better in every context.
+
+In the shared comparison pipeline, BM25 and MiniLM each supplied retrieved Standard and
+Light Local candidates, together with their source information and retrieval scores. The selected
+conversational memory was also passed to downstream processing and candidate ranking.
+Retrieval therefore provided grounded, human-written reply alternatives alongside the newly
+generated candidates from V4 and V5. Our experiments showed that semantic retrieval and
+dynamic memory could address some limitations of lexical matching, but they could not reliably
+resolve conversational intent, speaker roles, or earlier commitments on their own. These
+limitations motivated the later work on generation and contextual candidate selection.
+3.2 RNN reply generation and attention (V3–V4)
+
+[Lead: Yangtian. Explain the encoder–decoder baseline, what attention added, how the models
+were trained, and what the available results show. Describe how V4 contributed a candidate to
+the shared comparison.]
+
+3.3 Transformer reply generation (V5)
+Following the RNN experiments, we explored pretrained Transformers to improve contextual
+reply generation (Vaswani et al., 2017). The goal was to produce a relevant Standard English
+reply and a natural Singlish counterpart with the same meaning. We began with mT5-base, an
+approximately 582-million-parameter multilingual encoder–decoder model (Xue et al., 2021).
+3.3.1 Initial Training Plan
+Training had two main stages. First, full-model adaptation used informal text and public reply
+pairs. Reconstructing masked text spans exposed mT5 to local language, while next-reply
+training taught conversational response generation. Second, one shared LoRA adapter learned
+from 190 project conversations, with STANDARD and LOCAL input prefixes selecting the reply
+style (Hu et al., 2021).
+This transfer-learning strategy used broader data before specialising on the small project set:
+CoSEM supplied Singapore English messages, NUS SMS supplied informal text, and
+DailyDialog supplied English dialogues. Without intermediate adaptation, more task and style
+learning would depend on the 190 conversations, with a greater risk of memorisation. This was
+the rationale; we did not measure the isolated effect of removing this stage.
+Table 3.3a. Initial mT5 training phases, datasets and settings.
+
+ Training phase         Dataset used                              Main settings
+
+ Stage 1a: Language     CoSEM and NUS SMS: 96,295 text            Full-model training; 2 epochs; learning
+ adaptation             chunks for masked-span                    rate 3 × 10⁻⁴; batch 32.
+                        reconstruction.
+
+ Stage 1b:              76,052 DailyDialog reply pairs tagged     Full-model training; 5 epochs; learning
+ Conversation           STANDARD; 80,000 CoSEM pairs              rate 5 × 10⁻⁴; batch 32.
+ adaptation             tagged LOCAL.
+
+ Stage 2: Project       190 team-authored conversations:          Shared LoRA rank 16; learning rate
+ adaptation             380 English/Singlish targets plus 180     10⁻³; batch 16; early stopping.
+                        history-derived reply examples.
+
+
+We used 50 validation conversations throughout development. Checkpoints were selected by
+validation loss within each setup; generated replies were also inspected for contextual
+appropriateness, paired meaning and local style. Appropriateness required answering the latest
+message without contradicting roles or constraints. Meaning preservation required consistent
+decisions, participants and timing; local style required natural Singaporean phrasing rather than
+fluency alone.
+The initial model often missed questions, reversed speaker roles or made different decisions in
+the two styles. The small project set limited coverage, while labelling entire public corpora
+STANDARD or LOCAL did not teach equivalent expressions of the same response.
+3.3.2 Adaptations
+We aligned the paired targets using assistant-reviewed rewrites and changed to an English-first
+pipeline: generate the English reply, then rewrite that exact draft into Singlish using the same
+adapter with a different task prefix. The comparison below evaluates these changes together,
+rather than isolating generation order.
+
+
+
+
+Figure 3.3a. Independent generation and English-first rewriting.
+Table 3.3b. Early development comparison: mean pass counts out of 50.
+
+ Criterion                Original targets; independent            Aligned targets; English-first
+                          replies                                  rewriting
+
+ Contextually             33.0                                     33.3
+ appropriate reply
+
+ English–Singlish         20.3                                     46.0
+ meaning preserved
+
+ Natural,                 23.7                                     36.7
+ recognisable
+ Singlish
+
+
+Tables 3.3b–c report exploratory assistant reviews, not independent human ratings. Table 3.3b averages three
+training seeds on the same 50 conversations; uncertain judgments were not passes. Table 3.3c experiments
+used their own comparison setups.
+Paired meaning improved, but contextual errors remained. For “can I borrow your charger?”,
+one model generated English “Sure, I’ll borrow it” and Singlish “Can, I borrow my charger”.
+Rewriting preserved the incorrect borrowing direction. We therefore investigated the content
+generator as well as the style conversion.
+Table 3.3c. Further mT5 experiments and observed limitations.
+
+ Experiment               Change tested and purpose                Result and limitation
+
+ Training-data            Added 600 synthetic conversations to     English adequacy stayed at 36/50;
+ expansion                the original 190; matched optimizer      recognisable Singlish fell from 38/50 to
+                          updates between control and              25/50. Exact English–Singlish copies
+                          expanded models.                         rose from 3 to 19.
+ Experiment              Change tested and purpose                   Result and limitation
+
+ Full fine-tuning        Used 24 English examples and                Full tuning reproduced 24/24 training
+ versus LoRA             paraphrased scenarios to test               targets, but handled only 18/24
+                         whether restricted adaptation limited       paraphrases, versus 15/24 for the
+                         learning.                                   stronger tested LoRA setting.
+
+ Targeted data and       Added 80 role/timing/refusal                Targeted cases improved, but mean
+ broader LoRA            examples and extended LoRA to               English adequacy was 36.7/50 versus
+                         more attention and feed-forward             37.7/50 for the control. The combined
+                         components.                                 changes did not transfer consistently.
+
+ Alternative rewriting   Tested separate adapters and rewrite        Copying and meaning changes
+ setups                  inputs containing the draft alone,          persisted; one full-context rewrite
+                         conversation history or a style             changed “Friday afternoon works for
+                         example.                                    me” into “Friday afternoon cannot”.
+
+ Preference learning     Added 73 reviewed preference pairs          Changes were mixed across three
+                         through Direct Preference                   seeds; one acceptance of a 2 pm
+                         Optimisation alongside supervised           meeting became an unexplained 3 pm
+                         training.                                   arrival.
+
+ Reply acts and          Supplied acceptance/refusal                 Some cases improved, but supplied
+ factual supervision     information, auxiliary fact extraction or   constraints could still be ignored: a
+                         explicit context notes before               refusal-conditioned model accepted an
+                         generation.                                 $18 lunch despite an $8 budget.
+
+
+Decoding strategy
+We adopted four-beam search with repeated three-grams blocked because it produced cleaner,
+more complete replies than greedy decoding in reviewed examples. The mT5 pipeline allowed
+48 generated tokens and the later SEA-LION/Qwen pipelines 64. These decoding choices did
+not resolve the remaining role and timing errors.
+3.3.3 Larger Models
+We next explored SEA-LION-v1-3B, a larger decoder-only model with Southeast Asian
+language exposure (AI Singapore, n.d.). Public adaptation used 117,634 reply pairs: 53,691
+CoSEM and 63,943 DailyDialog examples. Project training initially used 790 conversations (190
+original plus 600 synthetic), followed by separate English-generation and Singlish-rewrite
+adapters.
+Later experiments excluded 22 source cases with unresolved concerns, leaving 768 task
+conversations. Two further pairs were excluded from rewriting, leaving 766. Qwen2.5-3B used
+the same audited data, English-first design and full public-data pass (Qwen Team, n.d.). These
+were follow-up generator experiments; Qwen’s reranking role in Section 3.4 is a separate
+component.
+Both larger models produced useful contextual replies, although neither eliminated factual or
+style errors. Table 3.3d illustrates a shared validation case; it is an example rather than an
+aggregate ranking.
+Table 3.3d. Replies to “the cinema ticket is sold out bruh” after “eh help” / “what”.
+
+ Model                   English reply                              Singlish reply
+ configuration
+
+ mT5 A baseline          Okay, I'll get it for you.                 Okay, I get it for you.
+
+ Later SEA-LION          oh no, what are you going to watch         oh no, what are you going to watch
+ teacher                 instead?                                   instead?
+
+ Later Qwen teacher      Oh no, that's a bummer.                    oh no, that's a bummer
+
+
+Dataset audit and local style
+To investigate weak Singlish differentiation, we inspected the actual training files and a stratified
+sample of 40 rewrite pairs (20 original and 20 synthetic). Some targets used clear local syntax,
+such as “i check got notes anot then update you”; others resembled generic casual English. The
+audit suggests possible limitations in style variety and inference control, rather than establishing
+one cause.
+Table 3.3e. Descriptive evidence about Singlish differentiation.
+
+ Evidence                Finding                                    Interpretation
+
+ Reference targets       591/766 rewrite pairs (77.2%) were         The data had limited native variety, but
+                         synthetic. No reference pairs were         literal duplicate reference labels cannot
+                         identical after ignoring case and          fully explain output copying.
+                         punctuation.
+
+ Teacher outputs:        SEA-LION copied English in 7/50            Learned style differences were not
+ same 50 validation      cases; Qwen in 19/50, ignoring case        reliably applied at inference. Some short
+ cases                   and punctuation.                           replies are nevertheless valid in both
+                                                                    styles.
+
+ Distillation targets:   Normalized English/Singlish copies:        Students also receive some weakly
+ common 571 cases        SEA-LION 45/571 (7.9%); Qwen               differentiated teacher targets.
+                         40/571 (7.0%).
+
+
+Singlish can be expressed through syntax and context-appropriate ellipsis; particles are neither
+compulsory nor sufficient. Public reply training also did not provide parallel style equivalents for
+every response. More varied, meaning-aligned targets are a plausible next step. Regional
+exposure cannot be isolated here: the validation inputs were mainly English-based, with 30/50
+listing local terms and only 2/50 carrying a pinyin tag.
+Generator choice
+The historical V5 SEA-LION configuration remained the deployed generator; its settings are in
+Section 3.5 and its separate 60-conversation system comparison is in Section 4. The later 768-
+case SEA-LION/Qwen configurations served as distillation teachers. Their qualitative
+observations and the 50-case student results below should not be read as scores from the
+deployed-system evaluation.
+3.3.4 Distillation
+We tested whether the larger teachers could improve mT5 A: the existing model with a
+backbone already adapted on local text and public dialogue, plus its trained shared task
+adapter. All four training arms continued that same checkpoint. Earlier fresh-adapter
+experiments are outside this comparison.
+From the 768 training conversations, we retained the common 571 cases with eligible original
+pairs and accepted English/Singlish outputs from both teachers after assistant review. For each
+teacher, one arm learned its reply text through cross-entropy; another added soft knowledge
+distillation (KD), using teacher probability information as well as text. Different vocabularies
+required learned alignment modules, so KD changed both the objective and training
+components.
+Each arm completed 12 epochs, continuing a rank-16 query/value LoRA adapter for both tasks
+while freezing the 582-million-parameter backbone. The learning rate was 3 × 10⁻⁵ with 5%
+warmup and cosine decay. Original-reference validation loss selected checkpoints; inference
+retained English-first rewriting and the mT5 decoding settings above.
+Matched judge evaluation
+The unchanged model and four selected variants received the same 50 validation conversations
+in both styles. Gemma 4 12B judged replies with model identities hidden, using the group’s
+rubric and ten simulated personas (temperature 0, seed 425). Appropriateness, naturalness and
+style fit used 1–5 scales; “would send” is the percentage judged sendable with minimal edits.
+We averaged personas within each conversation, then across conversations, yielding 5,000
+rating cells.
+Table 3.3f. Matched judge scores for adapted mT5 (English / Singlish).
+
+ mT5 variant                   Appropriateness     Naturalness /5       Style fit /5         Would send (%)
+                               /5
+
+ Unchanged mT5 A               3.52 / 3.74         4.93 / 4.60          5.00 / 4.16          55.8 / 58.4
+
+ SEA-LION text                 3.77 / 3.85         4.89 / 4.69          5.00 / 3.90          65.8 / 63.4
+
+ SEA-LION text +KD             3.44 / 3.68         4.92 / 4.69          5.00 / 3.95          54.8 / 57.2
+
+ Qwen text                     3.72 / 3.71         4.89 / 4.57          5.00 / 3.75          63.6 / 60.6
+
+ Qwen text +KD                 3.75 / 3.67         4.94 / 4.68          5.00 / 4.28          63.8 / 60.4
+
+
+Text = teacher-text cross-entropy; +KD = text plus aligned soft distillation. Selected epochs: SEA-LION text 3;
+SEA-LION +KD 1; Qwen text 2; Qwen +KD 1. Ten simulated personas are correlated judgments from one
+model, not independent human participants.
+SEA-LION text had the highest observed appropriateness and would-send means. Its paired
+appropriateness gains over unchanged mT5 were 0.25 for English and 0.12 for Singlish, but
+conversation-level 95% bootstrap intervals included zero (−0.13 to 0.66; −0.37 to 0.59). Singlish
+style fit fell from 4.16 to 3.90. Soft KD showed no consistent benefit; the text-trained variant
+remains a candidate for further study, rather than an established replacement.
+Teacher behaviour was not fully transferred. For a printer-booking change, Qwen replied “Sure,
+go ahead and change your booking”, while its text-trained student replied “sure, i’ll try to use it
+later”, changing whose action was discussed. The teachers were not judged in this run, so this
+illustrates a gap without measuring its average size.
+These repeatedly inspected validation cases do not establish untouched test performance. High
+naturalness can coexist with contextual errors, and English style-fit scores saturated at 5/5. The
+judge also assessed drafts separately: a KD model could say the quiz was finished in English
+and unfinished in Singlish without both replies being marked unsuitable. Joint meaning checks
+and blinded human style assessment remain necessary; the evidence does not yet justify
+replacing the deployed SEA-LION generator with a distilled student.
+
+3.4 Reranking, wording refinement, and integration (V6)
+
+V6 selected the highest-scoring Standard and Local replies among candidates proposed by
+BM25, MiniLM retrieval, the V4 attention RNN, and the V5 transformer. While retrieval proposed
+bank replies, the reranker evaluated these against generated options. This raised the question
+of how accurately the reranker could pick the best response.
+
+V6: From frozen MiniLM to task-specific training
+
+Initial testing used a frozen MiniLM search reranker. Though it recognized related phrasing, it
+struggled with speaker roles and answering the latest message, often confusing shared topics
+with valid responses.
+
+We fine-tuned MiniLM on 190 reviewed conversations (380 reference positives, 760 weak
+negatives). On a 50-conversation development replay, appropriateness increased from 3.060 to
+3.528 out of 5 for Standard and 3.796 to 3.878 for Local, outperforming a frozen style-aware
+control (2.970 Standard, 3.810 Local).
+
+Abbreviation augmentation (e.g., “tomorrow” → “tmr”) expanded training pairs to 2,556.
+Standard appropriateness fell slightly while Local rose slightly, though increased
+optimizer updates left the exact impact of augmentation inconclusive.
+
+Switching to Qwen3 and adapting it to dialogue
+
+Next, we evaluated base Qwen3-Reranker-0.6B using the conversation, speaker labels, style,
+and candidate reply to score how strongly it favored “yes” over “no” for reply fit. We applied
+LoRA fine-tuning across two setups: one trained solely on project pairs, and another pre-
+adapted on 12,000 DailyDialog pairs before refining on 1,160 project pairs to build broader
+dialogue judging skills.
+
+Table 1 shows mean appropriateness across the 50 development conversations (400 candidate
+replies) using existing Gemma ratings. In this replay, the V5 baseline was mT5 prior to
+SEALION.
+
+              Reply selector                 Standard / 5 Local / 5
+
+Frozen MiniLM, original input                3.060          3.796
+
+Fine-tuned MiniLM                            3.528          3.878
+Fine-tuned MiniLM with abbreviations         3.442          3.926
+
+Raw Qwen3                                    3.578          4.044
+
+Qwen3 + LoRA                                 3.640          3.946
+
+Qwen3 + DailyDialog and LoRA                 3.634          3.988
+
+Direct V5 (mT5)                              3.666          4.110
+
+Even after fine-tuning, V6 sometimes ranked a less appropriate reply above the one from V5.
+For example, it could favor a reply that mentioned the right topic but failed to answer the latest
+message. On the 50-conversation development set, V6 scored 3.634 out of 5 for Standard
+appropriateness, compared with 3.666 for the direct mT5 reply. The gap was larger on the later
+60-conversation evaluation with SEA-LION as V5. V6 scored 3.995, while direct SEA-LION
+scored 4.555. Simulated would-send also fell from 88.0% for direct SEA-LION to 71.5% with V6.
+These results led us to use SEA-LION directly for Standard replies in the final demo.
+
+V7: Local Wording Refinement
+
+V7 was created to inject local terms and boost style fit after we observed that the model
+struggled with Singlish outputs, often producing standard English duplicates.
+
+V7 v1 generated three lexicon variants from V6’s selected Local reply and used Qwen to select
+the best option. Although Gemma rated its Local style fit at 4.875/5, Qwen occasionally selected
+contextually awkward particles like "sia," suggesting Gemma might over-reward recognizable
+Singlish terms. To prioritize context appropriateness, V7 v2 was adopted for the final demo to
+apply subtler edits to SEA-LION’s Local reply.
+
+V7 v2 applies dictionary substitutions (e.g., "tomorrow" → "tmr") to SEA-LION’s Local
+reply, with each eligible phrase having a 50% replacement chance per attempt. Qwen
+ranks the options if three distinct edits are available; otherwise, the original is returned.
+The final demo uses SEA-LION directly for Standard replies and Qwen for Light Local
+wording selection, while BM25, MiniLM, and V4 replies remain in the comparison view.
+
+3.5 Key hyperparameters
+
+Table 3 gives the main settings for the reported configurations. Effective batch size includes
+gradient accumulation.
+
+        Stage                                      Key settings
+
+                       64-dimensional embeddings, 128-unit LSTM, Adam at 0.001, batch
+V4 attention RNN
+                       32, up to 60 epochs with patience 10.
+
+V5 SEA-LION task       LoRA, learning rate 1e-4, effective batch 8, maximum 8 epochs with
+                       patience 2. English checkpoint selected at epoch 2 and Local repair
+tuning
+                       at step 25.
+
+                       AdamW, learning rate 2 × 10⁻⁵, batch size 16, maximum input
+V6 MiniLM fine-
+                       length 512 tokens, seed 425. Trained for 4 epochs and selected
+tuning
+                       epoch 2 by validation loss.
+
+MiniLM
+                       35% replacement probability per eligible word, up to 3 additional
+abbreviation
+                       distinct variants per original context, seed 425.
+augmentation
+
+V6 Qwen                AdamW at 2e-5, effective batch 16, LoRA rank 8, alpha 16, dropout
+adaptation and         0.05, 512-token input limit. Selected epochs 1 and 2 for the two
+refinement             stages.
+
+                       50% replacement probability per phrase per attempt. One original
+V7 v2 wording
+                       plus three distinct edits when available. Evaluation seed 425
+refinement
+                       combined with the conversation ID.
+
+Gemma 12B              Temperature 0, seed 425, context size 4,096 and output limit 2,048
+evaluation             tokens.
+
+
+
+
+4. Evaluation and findings
+
+4.1 Evaluation protocol
+
+To evaluate candidate responses, we generated local and standard replies across 6 models
+(BM25, MiniLM, RNN, SEALION, Reranker, V7) using identical test conversations. Due to time
+and manpower constraints, we replaced blind human rating with an LLM evaluator, selecting
+Gemma 12B after testing several options.
+
+For each candidate reply, Gemma 12B received the context, incoming message, requested
+style, and reply. It rated appropriateness, naturalness, and style fit (1–5 scale), and noted if a
+simulated user would send it with minimal edits. To ensure diverse perspectives, we designed
+10 student personas (aged 20–25) with varying texting styles and Singlish familiarity.
+
+Across 60 conversations, 2 styles, 6 systems, and 10 personas, this setup yielded 7,200 rating
+cells with consistent, correlated persona judgments.
+
+4.2 System comparison and final demo choices
+
+The original hypothesis predicted that combining models would improve reply quality.
+The clearest exception was Standard English. Direct SEA-LION reached 4.555 for
+appropriateness and 88.0% simulated would-send, while V6 cross-model reranking
+reached 3.995 and 71.5%. The paired appropriateness difference for V6 was −0.560
+points, with a 95% interval from −0.903 to −0.258. It shows that it is possible that
+combining models can actually worsen the final result, especially when the reranker is
+not optimized to select the best one based on the conversation context effectively. This
+results in us foregoing the use of a reranker, instead directly taking from SEA-LION’s
+outputs directly.
+
+Table 4. Full system comparison on 60 conversations.
+
+
+                                Appropriateness / Naturalness / Style fit        Would
+      System           Style
+                                       5               5           /5            send
+
+
+BM25 (V0/V1)        Standard    2.787                4.898           5.000      38.7%
+
+BM25 (V0/V1)        Local       3.607                4.768           4.758      62.2%
+
+MiniLM (V2)         Standard    3.037                4.917           5.000      44.7%
+
+MiniLM (V2)         Local       3.828                4.845           4.795      67.5%
+
+V4 attention RNN    Standard    2.393                4.657           5.000      23.0%
+
+V4 attention RNN    Local       2.663                4.620           3.105      23.2%
+
+V5 SEA-LION         Standard    4.555                4.975           5.000      88.0%
+
+V5 SEA-LION         Local       4.552                4.898           3.790      78.3%
+
+V6 Qwen +
+                    Standard    3.995                4.940           5.000      71.5%
+DailyDialog
+
+V6 Qwen +
+                    Local       4.383                4.845           3.887      73.0%
+DailyDialog
+
+V7 v1               Standard    3.995                4.940           5.000      71.5%
+
+V7 v1               Local       4.440                4.915           4.875      85.2%
+
+
+V7 v2               Local       4.603                4.908           3.947      81.2%
+
+
+V7 v1 scored higher than v2 on Gemma-rated Local style fit (4.875 vs. 3.947), while v2 scored
+higher on appropriateness (4.603 vs. 4.440). V1 refined a reply selected across several models,
+while v2 refined the SEA-LION reply directly. Both the starting reply and the wording method
+changed, so the score difference cannot tell us how much removing particle insertion helped.
+The clearest comparison for v2 is direct SEA-LION Local because both start from the same
+reply. Against that baseline, v2 improved style fit by 0.157 and simulated would-send by 2.8
+percentage points. Appropriateness rose by 0.052 points, with a paired interval that crossed
+zero.
+
+4.3 V6 follow-up experiments
+
+Post-presentation, we fine-tuned V6 using SEA-LION candidates and 309 synthetic
+conversations evaluated by Jev and Gemma. While distillation-style fine-tuning improved V6
+performance, it still fell short of using standalone SEA-LION.
+
+       System           Style     Appropriateness /5         Naturalness /5           Style fit /5               W
+
+V6 Qwen +
+                     Standard     3.995                  4.940                     5.000               71.5%
+DailyDialog
+
+Fine tuned V6        Standard     4.135                  4.922                     5.000               75.2%
+
+Final V6 Testing     Standard     4.118                  4.922                     5.000               75.0%
+
+V5 SEA-LION          Standard     4.555                  4.975                     5.000               88.0%
+
+
+V7 follow up experiments
+
+At our presentation, V7 v2’s Light Local replies scored 3.947/5 for style fit. To fix replies
+sounding like standard English, we built V7 v3. V7 v2 returned SEA-LION’s original reply if
+under three distinct variants were found. V7 v3 expanded the dictionary (e.g., adding “can ah”,
+“can lor”), sampled edits across multiple phrases, and ranked up to six variants alongside SEA-
+LION's output using a fixed Qwen reranker whenever a variant existed.
+
+For example, for “we going to eat now, you want come mah?”, V7 v2 gave “Sure, let’s go!”,
+whereas V7 v3 selected “Can lah, let’s go!”, boosting its style-fit score across ten Gemma
+personas from 2.1 to 5.0. Overall, V7 v3 improved across all metrics, gaining most in style fit
+over SEA-LION.
+
+       System           Style       Appropriateness /5           Naturalness /5         Style fit /5           Sim
+
+SEA-LION 3B          Local        4.552                      4.898                  3.790               78.3%
+
+V7v2                 Local        4.603                      4.908                  3.947               81.2%
+
+V7v3                 Local        4.655                      4.948                  4.393               86.5%
+
+
+5. Running and reproducing ReplyCoachSG
+Run the demo. Download the repository and follow the README to set up Python 3.12 and
+install the dependencies. Download the demo checkpoint archive and extract it into the
+repository root, next to pyproject.toml. From that folder, run this command in Windows
+PowerShell.
+.\.venv\Scripts\python.exe -m streamlit run src/replycoach/demo_app.py --
+server.fileWatcherType none
+The demo automatically uses M2 memory and the reviewed development reply bank. Enter a
+recent conversation and an incoming message, then click Suggest two replies. Open Details
+to inspect the model proposals and Qwen’s Local candidate scores.
+Preprocessing and training. The repository includes the prepared splits of 190 training, 50
+validation, and 60 test conversations. The pinned research snapshot contains the reviewed
+source records, split script, RNN training code, V6 Qwen notebook, and SEA-LION adaptation
+recipe. The split script reproduces the published assignments using the frozen manifest. Exact
+retraining also requires the original training inputs and starting checkpoints.
+Testing and evaluation. Use the README’s sample conversation for a quick demo check. The
+evaluation guide gives the command and prerequisites for the historical six-system replay with
+V7 v1. The V7 v3 results in Section 4 come from a separate Light Local replay using saved
+SEA-LION outputs and the matching Gemma judge. Gemma is used for offline grading.
+
+
+6. Limitations and future work
+
+Our reviewed dataset is small for the variety of Singapore peer chats. Synthetic conversations
+helped us explore more cases, but variations of the same template can still teach a model
+narrow patterns. A higher priority is to curate more distinct situations, including rescheduling,
+refusals, ambiguous references, and changes in speaker roles. Intent labels would help us
+diagnose which kinds of replies improve.
+
+Most quality scores came from one Gemma model with different fictional personas. The ratings
+help compare candidates consistently, but the simulated would-send percentages cannot tell us
+how often exchange students would actually send a suggestion. A follow-up could ask blinded
+human reviewers to compare replies and allow both replies to be marked acceptable or
+unsuitable. Those preferences could guide later reranker training.
+
+
+7. Conclusion
+
+Building ReplyCoach taught us that a good suggested reply has to fit the conversation before it
+can sound local. The approach that worked best was to use SEA-LION to generate the reply,
+then refine its wording for Light Local. Giving the reranker several ways to express the same
+idea helped it find more natural local phrasing. Asking it to choose across different models was
+harder, since a fluent reply could still miss a detail or misunderstand what the other person was
+asking.
+
+One of our biggest challenges was collecting enough Singaporean conversations with replies
+that people would naturally send. Generating more examples helped us test more possibilities,
+but it was still difficult to judge when a Singlish expression felt right. Using a local term could
+raise the style score even when it sounded out of place in the conversation. In the end,
+ReplyCoach gave users two ways to reply while leaving the choice to them. If we continued the
+project, we would involve more Singaporean speakers in judging which replies they would
+actually send and why.
+
+
+References
+
+AI Singapore. (n.d.). SEA-LION-v1-3B [Model card]. Hugging Face.
+https://huggingface.co/aisingapore/SEA-LION-v1-3B
+
+Gonzales, W. D. W., Hiramoto, M., Leimgruber, J. R. E., & Lim, J. J. (2023). The corpus of
+Singapore English messages (CoSEM). World Englishes, 42(2), 371–388.
+https://doi.org/10.1111/weng.12534
+
+Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., & Chen, W. (2021).
+LoRA: Low-rank adaptation of large language models [Preprint]. arXiv.
+https://arxiv.org/abs/2106.09685
+
+Kannan, A., Kurach, K., Ravi, S., Kaufmann, T., Miklos, B., Corrado, G., Tomkins, A., Lukacs,
+L., Ganea, M., Young, P., & Ramavajjala, V. (2016). Smart Reply: Automated response
+suggestion for email. Proceedings of the 22nd ACM SIGKDD International Conference on
+Knowledge Discovery and Data Mining. https://arxiv.org/abs/1606.04870
+
+Luong, M.-T., Pham, H., & Manning, C. D. (2015). Effective approaches to attention-based
+neural machine translation. Proceedings of the 2015 Conference on Empirical Methods in
+Natural Language Processing, 1412–1421. https://aclanthology.org/D15-1166/
+
+Peh, J. (n.d.). Singlish–English neural machine translation [GitHub repository]. English-to-
+Singlish mappings and English cleanup mappings.
+
+Qwen Team. (n.d.). Qwen2.5-3B [Model card]. Hugging Face.
+https://huggingface.co/Qwen/Qwen2.5-3B
+
+Robertson, S., & Zaragoza, H. (2009). The probabilistic relevance framework: BM25 and
+beyond. Foundations and Trends in Information Retrieval, 3(4), 333–389.
+https://doi.org/10.1561/1500000019
+
+Steele, K. D. (2008). Perceptions of Chinese international students in Singapore: Adjustment
+issues and support [Doctoral dissertation, University of Toronto]. Library and Archives Canada.
+https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR58093.PDF Wiktionary
+contributors. (n.d.). Agak-agak, chope, lepak, and tapao. Wiktionary.
+
+
+
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., &
+Polosukhin, I. (2017). Attention is all you need [Preprint]. arXiv. https://arxiv.org/abs/1706.03762
+
+Xue, L., Constant, N., Roberts, A., Kale, M., Al-Rfou, R., Siddhant, A., Barua, A., & Raffel, C.
+(2021). mT5: A massively multilingual pre-trained text-to-text transformer [Preprint]. arXiv.
+https://arxiv.org/abs/2010.11934
+

@@ -1,0 +1,41 @@
+{
+  "input_provenance": "Six newly assistant-authored everyday conversations; topics drawn before any inference, not selected against model weaknesses.",
+  "topic_seed": 275814,
+  "topic_pool": [
+    "coffee",
+    "dinner",
+    "movie",
+    "music",
+    "weekend_walk",
+    "photos",
+    "studying",
+    "workout",
+    "cooking",
+    "birthday",
+    "new_hobby",
+    "rainy_day",
+    "games",
+    "travel_chat",
+    "shopping",
+    "finishing_work",
+    "good_news",
+    "commute"
+  ],
+  "selected_topics": [
+    "weekend_walk",
+    "finishing_work",
+    "good_news",
+    "cooking",
+    "commute",
+    "rainy_day"
+  ],
+  "models": [
+    "original_SEA-LION_repair25",
+    "exported_mT5_A_shared_intent_rewrite_s1_final784"
+  ],
+  "decoding": "Each unchanged portable checkpoint uses its stored beam4/no-repeat3 pipeline; SEAmax64, mT5max48. Singlish uses each model own generated English draft.",
+  "selection": "All six frozen cases will be shown. No target reply, reference input, manual postprocessing or output-based selection.",
+  "training_performed": false,
+  "default_changed": false,
+  "inputs_sha256": "fba132d0c069fe778b5f39a0bbb72e87cb441bad400ba913139b54d9f25875a6"
+}

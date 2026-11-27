@@ -1,27 +1,29 @@
 {
-  "observed_at_utc": "2026-11-07T19:15:21.610205+00:00",
+  "observed_at_utc": "2026-11-21T11:58:28.195439+00:00",
   "accounts_checked": [
     "CS425G9",
     "hm.teoh.2024"
   ],
+  "experiment": "mt5_distill_judge_v1",
   "running_jobs": [],
   "queued_jobs": [],
-  "latest_training": {
-    "control_job": 357650,
-    "repair_job": 357651,
-    "status": "COMPLETED",
-    "gpu": "NVIDIA L40S",
-    "control_elapsed": "00:22:56",
-    "repair_elapsed": "00:22:50",
-    "selected_english_step": 0,
-    "selected_singlish_step": 25
+  "progress": {
+    "mode": "main",
+    "run_id": "df2837ccd604ba0cfa8231b7b9680d5ce46f772127f0a6ad53b5eca3d298329e",
+    "job_id": "373729",
+    "completed_unique": 3390,
+    "expected_unique": 3390,
+    "errors": 0,
+    "elapsed_seconds": 3766.6690782932565,
+    "phase_requests_completed": 3346,
+    "phase_requests_submitted": 3346
   },
-  "latest_export_checks": {
-    "mt5_job": 357669,
-    "sealion_job": 357670,
-    "status": "COMPLETED",
-    "exact_saved_example_pairs_each": 10
-  },
-  "full126_case_quality_review": "pending",
-  "new_jobs_launched_in_this_status_check": false
+  "evidence": "experiments/mt5_distill_judge_v1_results.json",
+  "previous_completed_experiments": [
+    "distill_mt5_v2",
+    "mt5_soft_kd_v1",
+    "mt5_warm_distill_v1"
+  ],
+  "model_defaults_changed": false,
+  "status": "completed_and_verified"
 }

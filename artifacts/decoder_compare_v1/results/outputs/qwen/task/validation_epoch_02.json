@@ -1,0 +1,382 @@
+[
+  {
+    "item_id": "AUDIT-VAL-01",
+    "english": {
+      "reply": "Thanks, I'll check it now.",
+      "raw_text": "Thanks, I'll check it now.",
+      "termination": "eos",
+      "generated_tokens": 9,
+      "status": "complete",
+      "prompt_sha256": "c6752d140a6e58e021a8f2529eff5b12b4c83a8779df1923e5998aa47e6de1a3"
+    },
+    "local_direct": {
+      "reply": "thanks, i check signal now",
+      "raw_text": "thanks, i check signal now",
+      "termination": "eos",
+      "generated_tokens": 7,
+      "status": "complete",
+      "prompt_sha256": "3a740cdc476718c990168efc0a4a3df2ed245dbcac00695a13a4135ef125c99f"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-02",
+    "english": {
+      "reply": "Sure, I'll bring it tomorrow morning.",
+      "raw_text": "Sure, I'll bring it tomorrow morning.",
+      "termination": "eos",
+      "generated_tokens": 10,
+      "status": "complete",
+      "prompt_sha256": "cd1d735a39a5415605a281f47764cc4ca0de73a093b3073ff6bc45ea3b3d5778"
+    },
+    "local_direct": {
+      "reply": "okok, i bring tmr",
+      "raw_text": "okok, i bring tmr",
+      "termination": "eos",
+      "generated_tokens": 8,
+      "status": "complete",
+      "prompt_sha256": "b07f8d1cf2d26e52673125e873c032c20a64dc1e6c11bf76dbaedfcee67b2612"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-03",
+    "english": {
+      "reply": "No worries, see you next time.",
+      "raw_text": "No worries, see you next time.",
+      "termination": "eos",
+      "generated_tokens": 9,
+      "status": "complete",
+      "prompt_sha256": "3070f582fc4d84db6a0dfd1c424ae8c3977e27e96a258d09edc13c7aad2a7a42"
+    },
+    "local_direct": {
+      "reply": "okok, next time",
+      "raw_text": "okok, next time",
+      "termination": "eos",
+      "generated_tokens": 6,
+      "status": "complete",
+      "prompt_sha256": "cce684268656261dbf564161aababbbd51311ee538ecaa7a4ea9eed3a2686f99"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-04",
+    "english": {
+      "reply": "Yes, 6:40 is still on.",
+      "raw_text": "Yes, 6:40 is still on.",
+      "termination": "eos",
+      "generated_tokens": 12,
+      "status": "complete",
+      "prompt_sha256": "89b54e8c71c4835c2527cfee7dc285fb3d146535ed3dc1eaf080b1a4e2a5d811"
+    },
+    "local_direct": {
+      "reply": "Yea, 6:40 still on.",
+      "raw_text": "Yea, 6:40 still on.",
+      "termination": "eos",
+      "generated_tokens": 12,
+      "status": "complete",
+      "prompt_sha256": "7411b96552996388b8b2f571fe04c96907b0e1dbfcb4a89251e6b2c30e8760d4"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-05",
+    "english": {
+      "reply": "Yes, I will return it after I finish charging.",
+      "raw_text": "Yes, I will return it after I finish charging.",
+      "termination": "eos",
+      "generated_tokens": 12,
+      "status": "complete",
+      "prompt_sha256": "f535d540aa795df8db8345aac618caa714a70c89937674225c88f5511dff768d"
+    },
+    "local_direct": {
+      "reply": "okok, finish then return",
+      "raw_text": "okok, finish then return",
+      "termination": "eos",
+      "generated_tokens": 7,
+      "status": "complete",
+      "prompt_sha256": "b3d953cc4399f65dda2418cd203202106aa7d6d2314fc135840d07bf9c6ed33b"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-06",
+    "english": {
+      "reply": "I am waiting beside the medical centre.",
+      "raw_text": "I am waiting beside the medical centre.",
+      "termination": "eos",
+      "generated_tokens": 9,
+      "status": "complete",
+      "prompt_sha256": "0135d577e051fc26f46889e00140c837131ecc266eee34a6e85f5b8f439f29b0"
+    },
+    "local_direct": {
+      "reply": "beside medical centre",
+      "raw_text": "beside medical centre",
+      "termination": "eos",
+      "generated_tokens": 5,
+      "status": "complete",
+      "prompt_sha256": "b0b33b3084ee29520880d164022bf24497ff1d7515a2ce889c4b8fbf66b0b4f6"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-07",
+    "english": {
+      "reply": "Lime juice please.",
+      "raw_text": "Lime juice please.",
+      "termination": "eos",
+      "generated_tokens": 6,
+      "status": "complete",
+      "prompt_sha256": "44204a9a5625fa59c593e56eadb52389c7c4af58a1cd1eb26972ae356974a0fb"
+    },
+    "local_direct": {
+      "reply": "lime juice pls",
+      "raw_text": "lime juice pls",
+      "termination": "eos",
+      "generated_tokens": 4,
+      "status": "complete",
+      "prompt_sha256": "596f1ea2062ffc6ec45587b783090fbdad75c908190f53a3cb9ab8e09d807690"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-08",
+    "english": {
+      "reply": "Yes, I uploaded it earlier.",
+      "raw_text": "Yes, I uploaded it earlier.",
+      "termination": "eos",
+      "generated_tokens": 8,
+      "status": "complete",
+      "prompt_sha256": "2ff61762da6fecf817316550e70434d0122e85c2e124a217bede838500cc8cd2"
+    },
+    "local_direct": {
+      "reply": "ya, i uploaded earlier",
+      "raw_text": "ya, i uploaded earlier",
+      "termination": "eos",
+      "generated_tokens": 6,
+      "status": "complete",
+      "prompt_sha256": "7c60c2b3cf8bc64ac9503925e9a41abb481e9d61cf48938e8cda112cc44c0a2e"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-09",
+    "english": {
+      "reply": "Not yet, I am still working on it.",
+      "raw_text": "Not yet, I am still working on it.",
+      "termination": "eos",
+      "generated_tokens": 11,
+      "status": "complete",
+      "prompt_sha256": "17513a0ce425bf74eec027f754589a16069661d076005421dc21b4d6618c179d"
+    },
+    "local_direct": {
+      "reply": "not yet, i still working on the script",
+      "raw_text": "not yet, i still working on the script",
+      "termination": "eos",
+      "generated_tokens": 10,
+      "status": "complete",
+      "prompt_sha256": "8361a9ffa1c1ee558dcc18fe39c511a1c3160773e6c45c2542be3a5c512504b6"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-10",
+    "english": {
+      "reply": "Sure, I can lend you my umbrella.",
+      "raw_text": "Sure, I can lend you my umbrella.",
+      "termination": "eos",
+      "generated_tokens": 10,
+      "status": "complete",
+      "prompt_sha256": "560e71e8c12bacaae654c2125add1892fa3684c476ea0af510dc9dcf6f1d5cd4"
+    },
+    "local_direct": {
+      "reply": "Can, I lend you my umbrella.",
+      "raw_text": "Can, I lend you my umbrella.",
+      "termination": "eos",
+      "generated_tokens": 9,
+      "status": "complete",
+      "prompt_sha256": "d01d2111fe68e9cdd0ba6388a9429d2801b51ec5bebd9bf5abe5688442835ec0"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-11",
+    "english": {
+      "reply": "Yes please, could I borrow yours?",
+      "raw_text": "Yes please, could I borrow yours?",
+      "termination": "eos",
+      "generated_tokens": 9,
+      "status": "complete",
+      "prompt_sha256": "2aa5b29a6f1f446d5be78a3bd87fbc8746b306340e8482de05280d281baf515d"
+    },
+    "local_direct": {
+      "reply": "yes pls, thanks",
+      "raw_text": "yes pls, thanks",
+      "termination": "eos",
+      "generated_tokens": 5,
+      "status": "complete",
+      "prompt_sha256": "639dd39d97a192c2e7974181b5edf5c0fc716d983a5c3d40257830d45e588a57"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-12",
+    "english": {
+      "reply": "That works for me. See you at 6:20.",
+      "raw_text": "That works for me. See you at 6:20.",
+      "termination": "eos",
+      "generated_tokens": 15,
+      "status": "complete",
+      "prompt_sha256": "7c06566a2e3435c02e90924a57604be715961421d524792e880470b717aabbdd"
+    },
+    "local_direct": {
+      "reply": "6:20 can, see you then.",
+      "raw_text": "6:20 can, see you then.",
+      "termination": "eos",
+      "generated_tokens": 11,
+      "status": "complete",
+      "prompt_sha256": "815707936325d0487d622418acf47ebdc652ed6795478ace0600393d0f9c48ec"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-13",
+    "english": {
+      "reply": "I'll take the meal.",
+      "raw_text": "I'll take the meal.",
+      "termination": "eos",
+      "generated_tokens": 7,
+      "status": "complete",
+      "prompt_sha256": "48a73a5272619372949ae8afcb58fdcb9bec5c72a4faa62fd845a33e5ac69b37"
+    },
+    "local_direct": {
+      "reply": "dinner twelve, snack three",
+      "raw_text": "dinner twelve, snack three",
+      "termination": "eos",
+      "generated_tokens": 7,
+      "status": "complete",
+      "prompt_sha256": "455c1a4c23801c911fe5f42c8ffd4e3f7ad367cfd4482cd624c3a485fd792a6d"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-14",
+    "english": {
+      "reply": "Yes, Friday works for me.",
+      "raw_text": "Yes, Friday works for me.",
+      "termination": "eos",
+      "generated_tokens": 8,
+      "status": "complete",
+      "prompt_sha256": "6f9506cb50faa9fefb2d26f69d6d9308ac939341db8de3f6363a94cb25fe6e20"
+    },
+    "local_direct": {
+      "reply": "Friday can, thanks for letting me know.",
+      "raw_text": "Friday can, thanks for letting me know.",
+      "termination": "eos",
+      "generated_tokens": 10,
+      "status": "complete",
+      "prompt_sha256": "ca523f4ce0eea08b8b1cadc521b6985305100bf701b2253dd2c357f6cc86f21e"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-15",
+    "english": {
+      "reply": "I'm not sure about the office opening hours on Sunday. Let me check the schedule.",
+      "raw_text": "I'm not sure about the office opening hours on Sunday. Let me check the schedule.",
+      "termination": "eos",
+      "generated_tokens": 19,
+      "status": "complete",
+      "prompt_sha256": "5a34890e805c20d872a6b0ef760579c09a88b0196ece2dacb1de41a117a027aa"
+    },
+    "local_direct": {
+      "reply": "dunno, i check office hours then tell you",
+      "raw_text": "dunno, i check office hours then tell you",
+      "termination": "eos",
+      "generated_tokens": 12,
+      "status": "complete",
+      "prompt_sha256": "4acd849e5fde6cd16a664a35ae833d83e6603e4c223ee013bfe48cc5f0871bad"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-16",
+    "english": {
+      "reply": "Okay, I'll go to R12 now.",
+      "raw_text": "Okay, I'll go to R12 now.",
+      "termination": "eos",
+      "generated_tokens": 12,
+      "status": "complete",
+      "prompt_sha256": "130818f0cf664d0ab220c760c9f64e1bf4960e64a9da2d441a734cb3cc6efffe"
+    },
+    "local_direct": {
+      "reply": "okok, R12 see you",
+      "raw_text": "okok, R12 see you",
+      "termination": "eos",
+      "generated_tokens": 9,
+      "status": "complete",
+      "prompt_sha256": "6007eeb4a066079ae99e3ddeb1d91aa68999f417f7100fe2bb1ee269b03bc7a4"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-17",
+    "english": {
+      "reply": "I'm sorry to hear that. Would you like to talk about it?",
+      "raw_text": "I'm sorry to hear that. Would you like to talk about it?",
+      "termination": "eos",
+      "generated_tokens": 16,
+      "status": "complete",
+      "prompt_sha256": "cd77fdd3aa884913fb3babf4db2a81c235a8e62701184518a508ca45cb47cd7c"
+    },
+    "local_direct": {
+      "reply": "dun worry, you can apply again next year",
+      "raw_text": "dun worry, you can apply again next year",
+      "termination": "eos",
+      "generated_tokens": 11,
+      "status": "complete",
+      "prompt_sha256": "6bd9af3984e7d756de3bc9c3c4045c76cce5df30ed13a3fee59f5e4ca77c2ccf"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-18",
+    "english": {
+      "reply": "No, I didn't see it. Could you send it again?",
+      "raw_text": "No, I didn't see it. Could you send it again?",
+      "termination": "eos",
+      "generated_tokens": 15,
+      "status": "complete",
+      "prompt_sha256": "bb916b19bec8afd1195916b8583ad3d7bce3b48322c8f391f9f70ccceffcfd72"
+    },
+    "local_direct": {
+      "reply": "i check inbox now",
+      "raw_text": "i check inbox now",
+      "termination": "eos",
+      "generated_tokens": 5,
+      "status": "complete",
+      "prompt_sha256": "f1170322f440be07b062eaeb8b99e37546128d1b66e10117647410c56508b2be"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-19",
+    "english": {
+      "reply": "Sorry, I can only reserve two seats.",
+      "raw_text": "Sorry, I can only reserve two seats.",
+      "termination": "eos",
+      "generated_tokens": 10,
+      "status": "complete",
+      "prompt_sha256": "5413fd15d0fba5d284434ee936561e64394960f1dd307433ebc378062ae758c6"
+    },
+    "local_direct": {
+      "reply": "cannot, only two seats can reserve",
+      "raw_text": "cannot, only two seats can reserve",
+      "termination": "eos",
+      "generated_tokens": 8,
+      "status": "complete",
+      "prompt_sha256": "c346f67bac6559d92876975ea0be31477558d3fcc3f55d401a617cbe0b83fbc8"
+    }
+  },
+  {
+    "item_id": "AUDIT-VAL-20",
+    "english": {
+      "reply": "Could you bring me the black one?",
+      "raw_text": "Could you bring me the black one?",
+      "termination": "eos",
+      "generated_tokens": 9,
+      "status": "complete",
+      "prompt_sha256": "293e3ecd2b5f9cc08886c03db273f62bed4cd6311cda1ee966d8d64568e4e76c"
+    },
+    "local_direct": {
+      "reply": "black one pls",
+      "raw_text": "black one pls",
+      "termination": "eos",
+      "generated_tokens": 4,
+      "status": "complete",
+      "prompt_sha256": "c63267836874dc467334e9856d00d50bcb0f7fbc514a6d2a637b6f3a24ae2c8d"
+    }
+  }
+]

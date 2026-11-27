@@ -1,0 +1,745 @@
+[
+  {
+    "item_id": "TURN-CHALLENGE-001",
+    "family": "call_topic",
+    "context": [
+      "There is a clash between my exam and the camp briefing.",
+      "I am boarding a train.",
+      "Can we talk when you get off?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Before that, what is this about?",
+    "positive": "I wanted to discuss the clash between my exam and the camp briefing.",
+    "negative": "Can you call me right now?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-002",
+    "family": "call_topic",
+    "context": [
+      "I need your advice on the lease renewal.",
+      "In a meeting, cannot talk.",
+      "Okay, just let me know when you have a moment."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What did you need advice about?",
+    "positive": "I wanted your advice on the lease renewal.",
+    "negative": "What advice did you want from me?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-003",
+    "family": "call_unspecified",
+    "context": [
+      "Can we have a quick chat over the phone?",
+      "Sorry, I am at a family dinner.",
+      "Another time is fine."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Could you tell me the topic first?",
+    "positive": "I'll send a message explaining what I wanted to talk about first.",
+    "negative": "Why do you want to call me?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-004",
+    "family": "clarification",
+    "context": [
+      "Please help me check the names on the guest list.",
+      "I can do that tonight.",
+      "Thank you, that would help."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Do you need me to check the names or design the invitations?",
+    "positive": "Please check the names on the guest list.",
+    "negative": "Please design the invitations.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-005",
+    "family": "clarification",
+    "context": [
+      "I have copies of the route map and the price list.",
+      "Could you send me the route map?",
+      "Sure."
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Which one did you ask for again?",
+    "positive": "I asked for the route map.",
+    "negative": "I asked for the price list.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-006",
+    "family": "already_answered",
+    "context": [
+      "Has the poster been printed?",
+      "Yes, it is printed and waiting at reception.",
+      "Great, thanks."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Can you pick it up when you arrive?",
+    "positive": "Yes, I can pick up the poster from reception.",
+    "negative": "Has the poster been printed yet?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-007",
+    "family": "completion",
+    "context": [
+      "I filled in the application, but have not pressed submit.",
+      "The deadline is tonight."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is your application submitted already?",
+    "positive": "Not yet. I have filled it in but have not submitted it.",
+    "negative": "Yes, my application is submitted already.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-008",
+    "family": "completion",
+    "context": [
+      "I have sent the slides. I still need to send the speaker notes.",
+      "I am assembling the final folder."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you sent the speaker notes?",
+    "positive": "I have not sent the speaker notes yet.",
+    "negative": "Yes, I have sent the speaker notes.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-009",
+    "family": "ownership",
+    "context": [
+      "I borrowed your calculator last week.",
+      "I will need it for my quiz tomorrow."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Who should bring the calculator back?",
+    "positive": "You should bring my calculator back to me.",
+    "negative": "I should bring your calculator back to you.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-010",
+    "family": "ownership",
+    "context": [
+      "The cooler box in my car is yours; you lent it to me for the picnic.",
+      "We should sort out the picnic equipment."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Am I returning that box to you or are you returning it to me?",
+    "positive": "I am returning your cooler box to you.",
+    "negative": "You are returning my cooler box to me.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-011",
+    "family": "availability",
+    "context": [
+      "I am looking after my niece on Saturday and cannot go out. Sunday is okay.",
+      "I want to visit the museum."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I book us in for Saturday?",
+    "positive": "I cannot go on Saturday. Could we go on Sunday?",
+    "negative": "Yes, book Saturday for us.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-012",
+    "family": "availability",
+    "context": [
+      "My flight lands at 9 pm, so I cannot reach town before then.",
+      "I will be around town that evening."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you be there at 7 pm?",
+    "positive": "I cannot be there at 7 pm; my flight only lands at 9 pm.",
+    "negative": "Yes, I can be there at 7 pm.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-013",
+    "family": "amount",
+    "context": [
+      "I have $14 left to spend today.",
+      "The two options cost $9 and $26."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which option can you afford?",
+    "positive": "I can afford the $9 option.",
+    "negative": "I can afford the $26 option.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-014",
+    "family": "amount",
+    "context": [
+      "Please keep my share under $20.",
+      "The activity will cost $35 each."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Should I reserve your place?",
+    "positive": "That exceeds my $20 limit. Please do not reserve my place.",
+    "negative": "Yes, reserve my place for $35.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-015",
+    "family": "correction",
+    "context": [
+      "I first said the north gate, but that gate is locked.",
+      "What should we do?",
+      "Meet at the taxi stand instead."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Where are we meeting after the change?",
+    "positive": "We are meeting at the taxi stand.",
+    "negative": "We are meeting at the north gate.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-016",
+    "family": "location",
+    "context": [
+      "I am at the ticket office.",
+      "I am waiting by the lift on level two."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Where can I find you?",
+    "positive": "I am by the lift on level two.",
+    "negative": "I am at the ticket office.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-017",
+    "family": "request_offer",
+    "context": [
+      "My hands are full carrying these boxes.",
+      "I have a trolley with me."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I bring the trolley over to you?",
+    "positive": "Yes, please bring the trolley over to me.",
+    "negative": "Yes, I will bring the trolley over to you.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-018",
+    "family": "request_offer",
+    "context": [
+      "I forgot my umbrella.",
+      "I have an extra one in my bag."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Could I use your spare?",
+    "positive": "Sure, you can use my spare umbrella.",
+    "negative": "Could I use your umbrella?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-019",
+    "family": "reason",
+    "context": [
+      "I cannot eat peanuts because I am allergic.",
+      "I was going to bring peanut cookies."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Why do you need to avoid them?",
+    "positive": "I am allergic to peanuts.",
+    "negative": "Could you bring me peanut cookies?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-020",
+    "family": "reason",
+    "context": [
+      "My microphone is broken, so I cannot speak in the online discussion.",
+      "I can see you are connected."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Why are you only typing?",
+    "positive": "My microphone is broken.",
+    "negative": "Why are you only typing?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-021",
+    "family": "unknown",
+    "context": [
+      "They have confirmed that the event is happening, but are still choosing a date.",
+      "Let me know when they decide."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "What day is it on?",
+    "positive": "The date has not been decided yet.",
+    "negative": "It is on Friday.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-022",
+    "family": "known_detail",
+    "context": [
+      "The interview is in room F309 at 10:40. My briefing is in G112 at 2 pm.",
+      "I want to walk over with you."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room is your interview in?",
+    "positive": "My interview is in F309.",
+    "negative": "My interview is in G112.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-023",
+    "family": "future",
+    "context": [
+      "The recording is still on my laptop. I will upload it after I get home.",
+      "I need to download it later."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is it uploaded now?",
+    "positive": "Not yet. I will upload it after I get home.",
+    "negative": "Yes, I have uploaded it already.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "TURN-CHALLENGE-024",
+    "family": "speaker_plan",
+    "context": [
+      "I can bring dessert if you bring the drinks.",
+      "Okay, I will bring the drinks."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "What am I supposed to bring?",
+    "positive": "You are bringing dessert.",
+    "negative": "You are bringing the drinks.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold.",
+    "scope": "fresh_synthetic_challenge"
+  },
+  {
+    "item_id": "USER-CALL-001",
+    "family": "user_failure_diagnostic",
+    "context": [
+      "Can u call me now?",
+      "Eh i not so free eh?",
+      "Ohh, then when can we call?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "criterion": "Respond as the person who initiated the call. Do not reverse roles. Purpose is unspecified, so do not treat a specific invented purpose as established fact.",
+    "scope": "user_diagnostic"
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "context": [
+      "a few of us are going out this weekend",
+      "sounds fun"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you want come?",
+    "positive": "Sure, I'd be happy to join you.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus",
+    "positive": "No worries. Just let me know when you get here.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "context": [
+      "my phone is almost out of battery",
+      "I brought my charger"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can I borrow your charger?",
+    "positive": "Sure, you can borrow mine.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?",
+    "positive": "We're in SR3-3 today.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?",
+    "positive": "Sure, what time do you want to go?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "positive": "no worries. just upload it when you're ready",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "context": [
+      "hi class, I had a family emergency and there will not be any class tomorrow.",
+      "oh no! what about the in class quiz?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+    "positive": "Yes, we are able to meet on thursday.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "positive": "Yes, I finished it already.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "positive": "all good man, we can meet next time",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "positive": "Oh no, can we see if there are other timings?",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "context": [
+      "im waiting at the cafe alr",
+      "coming now"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i ordered first because i was too hungry",
+    "positive": "thats completely fine. i'll order when i arrive",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "context": [
+      "im working on my slides now",
+      "same, im doing the results section"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "your part done alr?",
+    "positive": "i just need to finish the last slide",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "context": [
+      "u wanna try the matcha at luckin?",
+      "nahh"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "then what u wanna drink later?",
+    "positive": "I would like to try the new cafe latte there.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?",
+    "positive": "yes, id like to go. lmk what time you're heading thr",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "positive": "Okay, seven works for me.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "context": [
+      "have you reached?",
+      "wya"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "i reached, i waiting outside mac",
+    "positive": "Ok , I am heading there right now.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "context": [
+      "eh i struggling to do the linear algebra qn",
+      "which"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "neh the gaussian elim qn",
+    "positive": "I have done the question. Allow me to assist.",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "positive": "alright, lets stick to the current arrangements",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?",
+    "positive": "yes, i'll arrive a little early",
+    "scope": "reused_development_regression"
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "positive": "You don't have to, take your time",
+    "scope": "reused_development_regression"
+  }
+]

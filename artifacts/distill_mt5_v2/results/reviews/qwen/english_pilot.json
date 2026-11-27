@@ -1,0 +1,152 @@
+{
+  "reviewer": "Assistant exploratory contextual review",
+  "blind": false,
+  "independent_human_gold": false,
+  "raw_file_sha256": "5e4a4559844af796b4ecba725b7ae1ccdee7b25774806392c87e30c568dea800",
+  "decisions": [
+    {
+      "item_id": "ITEM-B-024",
+      "raw_sha256": "6a2be073eaf2e5d337d7fd574c4e72c20ad84b4ee5c68f6f5b07ac3f07d3333d",
+      "decision": "accept",
+      "reason": "Accepts the requested discussion after class."
+    },
+    {
+      "item_id": "ITEM-B-040",
+      "raw_sha256": "4e9adefe22af2842a722209b484051ee2b919851d5ea34cf100155ca61511ac9",
+      "decision": "accept",
+      "reason": "Explicitly accepts revised six-thirty meeting time."
+    },
+    {
+      "item_id": "ITEM-C-031",
+      "raw_sha256": "fbb1ab5b9875fa92a9c7f361c9299005ba63d67bfa53f26e2b2b57b57d6ec7c4",
+      "decision": "accept",
+      "reason": "Acknowledges tired peer ending the study session; selectable closing reply."
+    },
+    {
+      "item_id": "ITEM-E-057",
+      "raw_sha256": "f12f5eb3372ee77bd75455965721b60f16aa50b76fffdc65a24465a7ebfb2661",
+      "decision": "accept",
+      "reason": "Maintains user responsibility for part2 and acknowledges peer completing part3."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-024",
+      "raw_sha256": "f4b9c6bc653ba73c3c4d7b5fb1160ac1d121f92b576a955e8a43ee3ea3f280c7",
+      "decision": "reject",
+      "reason": "Promises collecting after rehearsal at4pm even though counter closes3pm; explicit temporal contradiction."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-053",
+      "raw_sha256": "ae0553e6faf3de05eb73c42bb94779c9deb255959a6b8030c35bc775dafb610d",
+      "decision": "accept",
+      "reason": "Preserves incomplete speaker reservation rather than claiming both items settled."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-056",
+      "raw_sha256": "d55c7496b2c98db3df4cbc87136abf37e1728773d6dc4ed97ca1ed49918ec277",
+      "decision": "accept",
+      "reason": "Clearly says the reflection is unfinished because ending remains."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-023-02",
+      "raw_sha256": "c2260eb1a39399144cfbd1855e5a997249deb93a45ef7c632e96cfefe2d7e35f",
+      "decision": "accept",
+      "reason": "Accepts latest chicken-rice plan and preserves1pm meeting time."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-029-02",
+      "raw_sha256": "9e3cad3811a9efce5b24fd50039c8600e614e425f357e2fe836f0d8215b2def6",
+      "decision": "accept",
+      "reason": "Selects intro practice, compatible with messy first choreography section."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-031-02",
+      "raw_sha256": "8ec595da73ddc7012c8f2df3d4ae31be4ec4f9fbe73bffc55890873383efdcf7",
+      "decision": "accept",
+      "reason": "Proposes shared booking as a selectable response to ticket-booking responsibility."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-00",
+      "raw_sha256": "e3686a3718944ffd28c2573cfb38c3ab0c355a9c526784eeb8619d8c40958de6",
+      "decision": "accept",
+      "reason": "Accepts latest4pm reschedule; collaborative calendar wording does not contradict latest plan."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-01",
+      "raw_sha256": "631c6f0ca1b0999454a22a831cf014d7758d6f277dda5db0d704e75d8ed1b89e",
+      "decision": "accept",
+      "reason": "Compatible closing acknowledgement of meeting at the gate."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-071-03",
+      "raw_sha256": "3db998191d6b4748e4ed11b1e380eb9f92d9299e47bdea421a18818838a35746",
+      "decision": "accept",
+      "reason": "Offers practical help checking/submitting peer work; no explicit contextual contradiction."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-077-02",
+      "raw_sha256": "9b58f51f4583450a5de6e29475cb7d4af1eabeb99d0dc0f31e10d75407521d31",
+      "decision": "accept",
+      "reason": "Acknowledges notes cannot be sent now and proposes looking later."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-00",
+      "raw_sha256": "8115c42f7188d6f8622b6eb24a310caed361e5cdd070c136a1a3c61723877c11",
+      "decision": "accept",
+      "reason": "Cinema is unspecified; appropriately proposes checking rather than inventing a venue."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-01",
+      "raw_sha256": "6cec9a6924497ddef0d4a4459394f4b78e10772faa3fa002de1abd6e083bae99",
+      "decision": "reject",
+      "reason": "Says driving peer to the library rather than collecting peer at library; reverses pickup direction."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-083-03",
+      "raw_sha256": "bab76dcf74863746963179f2be7b7ab6287b91431228e61e62276db55faddf9f",
+      "decision": "accept",
+      "reason": "Tentative coverage is not confirmed; checking syllabus is contextually valid."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-096-03",
+      "raw_sha256": "59e64feecf52b1a0f8281d6fe88130885b2e973468be8a49f8a2438264bf8126",
+      "decision": "accept",
+      "reason": "Acknowledges own slides have typos and offers to correct them."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-097-02",
+      "raw_sha256": "f4a5459888fd1b56a6e30830e2c0d47c92a5bba8b747bb93b4beed55d6bf2a27",
+      "decision": "accept",
+      "reason": "Quiz format is unspecified; checking is a valid response."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-100-02",
+      "raw_sha256": "322fddc0cc4ba1f8456a0f34028c332c5e109c489c3e525f85b42956ce09b164",
+      "decision": "accept",
+      "reason": "Zoom link readiness is unspecified; reply offers checking or setting it up."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-115-02",
+      "raw_sha256": "3ed568b01e06f833dc612c4b943ef29a7b724b07e1c5369375d36521fd7bff5b",
+      "decision": "accept",
+      "reason": "Accepts peer offer to handle final summary slide."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-133-00",
+      "raw_sha256": "19fe62c0357f625249a3cf821939424e7eb6935b150de3cfc1c14e4ead8273c1",
+      "decision": "accept",
+      "reason": "Accepts cheaper chicken rice after latest budget constraint."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-134-01",
+      "raw_sha256": "084dadb491c5f0011c775dfa9b5840b2f25e80900e16faa1f2bce5087b678121",
+      "decision": "accept",
+      "reason": "Accepts latest6pm pickup reschedule."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-136-01",
+      "raw_sha256": "c1e14825de776274d7e84bcf10b7d5d8f20d098eef133617e2642e1fb1a5ad67",
+      "decision": "accept",
+      "reason": "Commits to returning borrowed projector before/by explicit5pm deadline; earlier proposed completion is selectable."
+    }
+  ]
+}

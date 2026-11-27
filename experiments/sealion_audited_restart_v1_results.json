@@ -1,0 +1,176 @@
+{
+  "status": "complete",
+  "reviewed_at_utc": "2026-11-08T14:48:48.035989+00:00",
+  "scope": "Assistant qualitative review of75paired actual pipelines and24paired fixed-reference rewrite diagnostics; not independent human gold.",
+  "jobs": {
+    "preflight": {
+      "job_id": 358725,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:01:38"
+    },
+    "task": {
+      "job_id": 358726,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:19:54"
+    },
+    "rewrite": {
+      "job_id": 358727,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:14:49"
+    },
+    "summary": {
+      "job_id": 358728,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:00:01"
+    }
+  },
+  "queue_observed_empty": true,
+  "selected_epochs": {
+    "task": 2,
+    "rewrite": 1
+  },
+  "source_adapter_sha256": {
+    "task": "c7d3d0e538c0586da95215616c37a3db7ce31147f1745155bc84e4ff0bd633fc",
+    "rewrite": "8adcabcb97e726e7b86ba21abf9306228b2e894da925226efb5696b532a34a75"
+  },
+  "schedule": {
+    "warmup": false,
+    "decay": false,
+    "task_lr": 0.0001,
+    "rewrite_lr": 3e-05,
+    "early_stopping_patience": 2
+  },
+  "verification": {
+    "status": "passed",
+    "archive_bytes": 414195,
+    "archive_sha256": "8bc0ab76fac65d6f484cf5a54c8f62f20d90cfed604e50be567951aeb66af60f",
+    "archive_files": 142,
+    "weights_included": false,
+    "payload_files_verified_from_archive": 110,
+    "payload_mismatches": [],
+    "payload_metadata_omitted_by_collector": [
+      "src/replycoach.egg-info/requires.txt",
+      "src/replycoach.egg-info/top_level.txt",
+      "src/replycoach.egg-info/dependency_links.txt",
+      "src/replycoach.egg-info/entry_points.txt",
+      "src/replycoach.egg-info/SOURCES.txt",
+      "src/replycoach.egg-info/PKG-INFO",
+      "src/replycoach/vendor/sealion_v1/LICENSE"
+    ],
+    "omitted_metadata_matches_local_frozen_stage": true,
+    "paired_output_records": 198,
+    "normal_comparison_cases": 75,
+    "fresh_assistant_cases": 24,
+    "reused_cases": 51,
+    "ordinary_stage_flags": [],
+    "diagnostic_flags": {
+      "original": [],
+      "new": []
+    },
+    "actual_english_anchors_and_prompts_verified": true,
+    "fixed_reference_diagnostics_separate": true,
+    "baseline_input_digest_verified": true,
+    "initial_checkpoint_and_stage_handoff_verified": true,
+    "local_original_source_hashes_unchanged": {
+      "data/dev/train.jsonl": true,
+      "data/dev/validation.jsonl": true,
+      "data/training_expansion/generated600_repair_v1/generated_corrected.jsonl": true,
+      "data/distillation/shared_intent_v1_reviewed.json": true
+    },
+    "remote_frozen_source_attestations": {
+      "task": {
+        "source_adapter_unchanged": true,
+        "frozen_base_parameters_unchanged": true
+      },
+      "rewrite": {
+        "source_adapter_unchanged": true,
+        "frozen_base_parameters_unchanged": true
+      }
+    },
+    "schedule": "Constant LR: task1e-4, rewrite3e-5; no warmup or decay.",
+    "limits": "Integrity verification does not establish semantic correctness or naturalness; weights were not downloaded or freshly rehashed locally. Seven package metadata/license files omitted from archive were checked against local stage; remote stage verification attests all payload files."
+  },
+  "conclusion": "Some outputs adopt shorter and more casual wording, but the exact user flu/video case is still a verbatim English copy. Serious contextual and rewrite meaning failures persist or newly appear. No reliable overall upgrade or default promotion established.",
+  "exact_user_case": {
+    "item_id": "USER-FLU-001",
+    "scope": "reused_user_diagnostic",
+    "context": [
+      "I am down with a flu, cant come play later",
+      "aiyoo"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "yall just enjoy la, send videos to me when yall are playing",
+    "original": {
+      "item_id": "USER-FLU-001",
+      "english": "ok, we will send videos to you when we are playing",
+      "singlish": "ok, we will send videos to you when we are playing",
+      "standard_anchor": "ok, we will send videos to you when we are playing",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "USER-FLU-001",
+      "scope": "reused_user_diagnostic",
+      "context": [
+        "I am down with a flu, cant come play later",
+        "aiyoo"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "yall just enjoy la, send videos to me when yall are playing",
+      "english": "okay, we will send you videos when we are playing",
+      "singlish": "okay, we will send you videos when we are playing",
+      "standard_anchor": "okay, we will send you videos when we are playing",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "4f93e898cfa9b3ed832b934a93b440637612e2ebb736b4af802e829f1db998ce",
+      "rewrite_prompt_sha256": "85989244d7d4d5d5a7bcdcb7ab3ee881f7847e14e6828d935f89bc22db2db79b"
+    }
+  },
+  "positive_examples": [
+    "AUDIT-EVAL-04 playlist status becomes Ya, I done leh.",
+    "AUDIT-EVAL-05 charge reminder becomes okok, i charge then bring.",
+    "AUDIT-EVAL-09 return-after-dinner direction improves in both English and LOCAL.",
+    "AUDIT-EVAL-18 photo promise becomes okok, i send you a photo.",
+    "ReusedITEM-B-056 now accepts known booked-seven plan instead of finding another time."
+  ],
+  "failure_examples": [
+    "Exact USER-FLU-001 remains copied English, rather than calibrated contextual acknowledgment.",
+    "AUDIT-EVAL-08 correct English borrow your headphones becomes borrow mine?, also with correct fixed reference.",
+    "AUDIT-EVAL-13 unfinished explanation becomes whole thing done.",
+    "AUDIT-EVAL-12 newly accepts unaffordable noodles; original declines.",
+    "AUDIT-EVAL-19 correct fixed L8 correction becomes agreement toL3; original fixed rewrite preserves it.",
+    "ReusedITEM-D-010 English nope i dont know becomes ya i know.",
+    "ReusedITEM-E-009 still confuses charger user/lender and LOCAL reverses after-three availability."
+  ],
+  "reused_review_notes": [
+    "Reused50cases were all read. Several English/context improvements coexist with regressions and noisy questions.",
+    "ITEM-A-038 responds appropriately to Friend lateness with no worries/come when you can.",
+    "ITEM-C-045 removes old invented8am while promising early seats; ITEM-E-025 checks class availability rather than committing for everyone.",
+    "ITEM-B-043 andITEM-C-023 change acceptance into invitation or joining us; speech-act direction is not reliably preserved.",
+    "ITEM-B-029 chosen English asks Friend for room while claiming to check timetable, but LOCAL instead promises update; contextual usefulness and exact fidelity diverge.",
+    "ITEM-D-033 misreads wya as what are you doing. ITEM-D-009 asks which question after Friend identified Gaussian elimination.",
+    "ITEM-C-028 still misassigns who is waiting/coming; original also has continuity problems.",
+    "ITEM-E-015 changes not-done into not-started/doing-now, stronger unsupported status than chosen English."
+  ],
+  "limitations": [
+    "Original and restart have different task/filtering/repair histories; changes cannot be attributed solely to the audited wording.",
+    "24new illustrative assistant inputs share everyday patterns and one is a paraphrase of user flu/video example; these are not independent human benchmarks.",
+    "50old validation and user flu case reused; lower CE and shorter strings are not quality measurements.",
+    "Only five calibration targets were directly user-rated; other targets/proposals are assistant extrapolations.",
+    "Constant learning rates used without warmup or decay. Later deterioration does not isolate schedule versus overfitting; user deferred schedule test until after reviewing this run.",
+    "No generation flags means decoding completed, not that meanings are correct."
+  ],
+  "default_changed": false,
+  "new_training_submitted": false,
+  "next_step": "Show actual cases and retain original plus all snapshots. Any later warmup/decay comparison should keep this frozen data and starting checkpoint fixed, disclose schedule explicitly, and assess both contextual correctness and LOCAL preservation. No new run was submitted for this status request."
+}

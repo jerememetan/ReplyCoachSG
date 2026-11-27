@@ -1,0 +1,390 @@
+{
+  "TURN-VALIDATION-001": {
+    "A": [
+      "untrained_layout",
+      "contrastive40"
+    ],
+    "B": [
+      "contrastive80"
+    ],
+    "C": [
+      "contrastive120"
+    ],
+    "D": [
+      "layout_supervised40"
+    ],
+    "E": [
+      "original"
+    ],
+    "F": [
+      "supervised120"
+    ],
+    "G": [
+      "supervised80"
+    ],
+    "H": [
+      "supervised40"
+    ],
+    "I": [
+      "layout_supervised120"
+    ],
+    "J": [
+      "layout_supervised80"
+    ]
+  },
+  "TURN-VALIDATION-002": {
+    "A": [
+      "untrained_layout"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "contrastive120"
+    ],
+    "D": [
+      "supervised40",
+      "supervised120",
+      "contrastive80"
+    ],
+    "E": [
+      "supervised80",
+      "layout_supervised80"
+    ],
+    "F": [
+      "contrastive40"
+    ],
+    "G": [
+      "layout_supervised40"
+    ],
+    "H": [
+      "layout_supervised120"
+    ]
+  },
+  "TURN-VALIDATION-003": {
+    "A": [
+      "layout_supervised120"
+    ],
+    "B": [
+      "untrained_layout",
+      "contrastive40",
+      "layout_supervised40"
+    ],
+    "C": [
+      "layout_supervised80"
+    ],
+    "D": [
+      "original"
+    ],
+    "E": [
+      "supervised40",
+      "supervised80",
+      "supervised120",
+      "contrastive80",
+      "contrastive120"
+    ]
+  },
+  "TURN-VALIDATION-004": {
+    "A": [
+      "layout_supervised80"
+    ],
+    "B": [
+      "untrained_layout"
+    ],
+    "C": [
+      "supervised40",
+      "supervised80",
+      "supervised120",
+      "contrastive80",
+      "contrastive120",
+      "layout_supervised120"
+    ],
+    "D": [
+      "contrastive40"
+    ],
+    "E": [
+      "original"
+    ],
+    "F": [
+      "layout_supervised40"
+    ]
+  },
+  "TURN-VALIDATION-005": {
+    "A": [
+      "original",
+      "supervised40",
+      "supervised80",
+      "supervised120",
+      "contrastive80",
+      "contrastive120",
+      "layout_supervised40",
+      "layout_supervised80",
+      "layout_supervised120"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "untrained_layout"
+    ]
+  },
+  "TURN-VALIDATION-006": {
+    "A": [
+      "supervised80"
+    ],
+    "B": [
+      "untrained_layout",
+      "supervised40",
+      "supervised120",
+      "contrastive40",
+      "contrastive120",
+      "layout_supervised40",
+      "layout_supervised80",
+      "layout_supervised120"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "contrastive80"
+    ]
+  },
+  "TURN-VALIDATION-007": {
+    "A": [
+      "contrastive40",
+      "contrastive120",
+      "layout_supervised80",
+      "layout_supervised120"
+    ],
+    "B": [
+      "supervised40"
+    ],
+    "C": [
+      "contrastive80"
+    ],
+    "D": [
+      "layout_supervised40"
+    ],
+    "E": [
+      "original"
+    ],
+    "F": [
+      "supervised120"
+    ],
+    "G": [
+      "untrained_layout"
+    ],
+    "H": [
+      "supervised80"
+    ]
+  },
+  "TURN-VALIDATION-008": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "layout_supervised80"
+    ],
+    "C": [
+      "supervised80",
+      "contrastive80"
+    ],
+    "D": [
+      "original"
+    ],
+    "E": [
+      "supervised120"
+    ],
+    "F": [
+      "contrastive120"
+    ],
+    "G": [
+      "supervised40",
+      "layout_supervised40"
+    ],
+    "H": [
+      "untrained_layout"
+    ],
+    "I": [
+      "layout_supervised120"
+    ]
+  },
+  "TURN-VALIDATION-009": {
+    "A": [
+      "untrained_layout",
+      "supervised40",
+      "contrastive120",
+      "layout_supervised40",
+      "layout_supervised120"
+    ],
+    "B": [
+      "supervised80",
+      "supervised120",
+      "layout_supervised80"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "contrastive40",
+      "contrastive80"
+    ]
+  },
+  "TURN-VALIDATION-010": {
+    "A": [
+      "untrained_layout",
+      "supervised40",
+      "supervised120",
+      "contrastive80",
+      "contrastive120",
+      "layout_supervised80"
+    ],
+    "B": [
+      "original",
+      "supervised80",
+      "contrastive40",
+      "layout_supervised40",
+      "layout_supervised120"
+    ]
+  },
+  "TURN-VALIDATION-011": {
+    "A": [
+      "supervised80",
+      "contrastive80"
+    ],
+    "B": [
+      "layout_supervised40",
+      "layout_supervised120"
+    ],
+    "C": [
+      "untrained_layout"
+    ],
+    "D": [
+      "original"
+    ],
+    "E": [
+      "supervised120"
+    ],
+    "F": [
+      "contrastive40"
+    ],
+    "G": [
+      "supervised40"
+    ],
+    "H": [
+      "contrastive120",
+      "layout_supervised80"
+    ]
+  },
+  "TURN-VALIDATION-012": {
+    "A": [
+      "layout_supervised40"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "supervised80",
+      "supervised120",
+      "contrastive40"
+    ],
+    "D": [
+      "contrastive120",
+      "layout_supervised120"
+    ],
+    "E": [
+      "untrained_layout"
+    ],
+    "F": [
+      "supervised40",
+      "layout_supervised80"
+    ],
+    "G": [
+      "contrastive80"
+    ]
+  },
+  "TURN-VALIDATION-013": {
+    "A": [
+      "original",
+      "untrained_layout",
+      "supervised40",
+      "supervised80",
+      "supervised120",
+      "contrastive40",
+      "contrastive80",
+      "contrastive120",
+      "layout_supervised40",
+      "layout_supervised80",
+      "layout_supervised120"
+    ]
+  },
+  "TURN-VALIDATION-014": {
+    "A": [
+      "layout_supervised40"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "untrained_layout"
+    ],
+    "E": [
+      "contrastive120"
+    ],
+    "F": [
+      "layout_supervised120"
+    ],
+    "G": [
+      "supervised40",
+      "supervised80",
+      "supervised120",
+      "contrastive80",
+      "layout_supervised80"
+    ]
+  },
+  "TURN-VALIDATION-015": {
+    "A": [
+      "supervised80",
+      "contrastive80",
+      "layout_supervised40",
+      "layout_supervised80",
+      "layout_supervised120"
+    ],
+    "B": [
+      "untrained_layout"
+    ],
+    "C": [
+      "supervised40"
+    ],
+    "D": [
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ],
+    "E": [
+      "original"
+    ]
+  },
+  "TURN-VALIDATION-016": {
+    "A": [
+      "supervised40",
+      "supervised80",
+      "supervised120",
+      "contrastive40",
+      "contrastive80",
+      "contrastive120",
+      "layout_supervised40",
+      "layout_supervised80",
+      "layout_supervised120"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "untrained_layout"
+    ]
+  }
+}

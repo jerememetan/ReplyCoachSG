@@ -1,0 +1,133 @@
+{
+  "seed": 425,
+  "method": "Uniform sample without replacement from75matched selected-checkpoint evaluation cases; no filtering by output quality.",
+  "scope": "Reused development evaluation, not the locked held-out test set.",
+  "source": "artifacts/qwen_full_sealion_recipe_v1/qwen_vs_sealion_C_75.csv",
+  "source_sha256": "759fb29da112dcca489154781510fe1bf51306f618ec92fe85cee4234a3c2749",
+  "models": {
+    "qwen": "Full public→audited768 task→rewrite pipeline; selected task2/rewrite2",
+    "sealion": "Audited768 C public→task→rewrite pipeline; selected task2/rewrite2"
+  },
+  "samples": [
+    {
+      "draw_order": 1,
+      "source_index": 54,
+      "item_id": "ITEM-C-055",
+      "context": "[\"lets go to the exhibition at 1\", \"sounds good\"]",
+      "speakers": "[\"peer\", \"user\"]",
+      "message": "can go around 2 instead? i need lunch first",
+      "sealion_C_english": "Sure, 2 works for me.",
+      "sealion_C_singlish": "Can, 2 can",
+      "qwen_english": "Sure, let's meet at 2 instead.",
+      "qwen_singlish": "okok, 2 then"
+    },
+    {
+      "draw_order": 2,
+      "source_index": 12,
+      "item_id": "AUDIT-EVAL-12",
+      "context": "[\"I only have nine dollars for food.\", \"The noodles are fourteen dollars.\"]",
+      "speakers": "[\"user\", \"peer\"]",
+      "message": "get those noodles tgt?",
+      "sealion_C_english": "I can't, I only have nine dollars.",
+      "sealion_C_singlish": "cannot, i only got nine dollars",
+      "qwen_english": "No, I only have nine dollars.",
+      "qwen_singlish": "cannot eh, nine dollars only"
+    },
+    {
+      "draw_order": 3,
+      "source_index": 22,
+      "item_id": "AUDIT-EVAL-22",
+      "context": "[\"Are you free to help me move the chairs?\"]",
+      "speakers": "[\"peer\"]",
+      "message": "only need help for 10 min",
+      "sealion_C_english": "Sure, I can help for 10 minutes.",
+      "sealion_C_singlish": "can, i help you for 10 mins",
+      "qwen_english": "Sure, I can help for 10 minutes.",
+      "qwen_singlish": "Can, help for 10 mins."
+    },
+    {
+      "draw_order": 4,
+      "source_index": 45,
+      "item_id": "ITEM-B-057",
+      "context": "[\"my phone is almost out of battery\", \"I brought my charger\"]",
+      "speakers": "[\"peer\", \"user\"]",
+      "message": "can I borrow your charger?",
+      "sealion_C_english": "Sure, I'll lend you my charger.",
+      "sealion_C_singlish": "can, i lend you",
+      "qwen_english": "Sure, go ahead and use my charger.",
+      "qwen_singlish": "Can, go ahead and use my charger."
+    },
+    {
+      "draw_order": 5,
+      "source_index": 8,
+      "item_id": "AUDIT-EVAL-08",
+      "context": "[\"I left my headphones at home.\", \"I have a spare pair.\"]",
+      "speakers": "[\"user\", \"peer\"]",
+      "message": "want use mine for the recording?",
+      "sealion_C_english": "Yes, please use my headphones for the recording.",
+      "sealion_C_singlish": "yes pls, use mine",
+      "qwen_english": "Yes please, could you lend me your headphones?",
+      "qwen_singlish": "yes pls, can lend me yours?"
+    },
+    {
+      "draw_order": 6,
+      "source_index": 29,
+      "item_id": "ITEM-A-030",
+      "context": "[\"How long is our booking?\", \"Oh no, our timer went off.\"]",
+      "speakers": "[\"peer\", \"user\"]",
+      "message": "sian, need book somewhere else, our booking ran out",
+      "sealion_C_english": "Okay, let's book somewhere else.",
+      "sealion_C_singlish": "okok, book somewhere else",
+      "qwen_english": "No worries, let's just book somewhere else.",
+      "qwen_singlish": "no worries, book somewhere else"
+    },
+    {
+      "draw_order": 7,
+      "source_index": 70,
+      "item_id": "ITEM-E-025",
+      "context": "[\"hi class, I had a family emergency and there will not be any class tomorrow.\", \"oh no! what about the in class quiz?\"]",
+      "speakers": "[\"peer\", \"user\"]",
+      "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+      "sealion_C_english": "I'm not sure whether everyone will be free on Thursday. Let's check with the lecturer first.",
+      "sealion_C_singlish": "not sure everyone free, check with lecturer first",
+      "qwen_english": "Yes, Thursday works for me.",
+      "qwen_singlish": "Thursday can, see you then."
+    },
+    {
+      "draw_order": 8,
+      "source_index": 47,
+      "item_id": "ITEM-C-017",
+      "context": "[\"im working on my slides now\", \"same, im doing the results section\"]",
+      "speakers": "[\"peer\", \"user\"]",
+      "message": "your part done alr?",
+      "sealion_C_english": "not yet, im still working on it",
+      "sealion_C_singlish": "not yet, still working on it",
+      "qwen_english": "Not yet, I'm still working on it.",
+      "qwen_singlish": "Not yet, I'm still working on it."
+    },
+    {
+      "draw_order": 9,
+      "source_index": 75,
+      "item_id": "ITEM-E-046",
+      "context": "[\"hello,what time will you release the lecture recordings?\", \"usually around 10pm its out\"]",
+      "speakers": "[\"peer\", \"user\"]",
+      "message": "ni hao, can I releasae it at 5 instead?",
+      "sealion_C_english": "Sure, 5 works for me.",
+      "sealion_C_singlish": "Can, 5 works for me.",
+      "qwen_english": "Sure, you can release it at 5.",
+      "qwen_singlish": "can, 5 i release"
+    },
+    {
+      "draw_order": 10,
+      "source_index": 7,
+      "item_id": "AUDIT-EVAL-07",
+      "context": "[\"The old power socket is spoilt.\", \"I found a working one near the window.\"]",
+      "speakers": "[\"peer\", \"user\"]",
+      "message": "can share that socket with me?",
+      "sealion_C_english": "Sure, I will share the socket with you.",
+      "sealion_C_singlish": "can, i share socket with you",
+      "qwen_english": "Sure, go ahead and use it.",
+      "qwen_singlish": "can, use mine"
+    }
+  ]
+}

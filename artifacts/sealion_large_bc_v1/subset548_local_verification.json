@@ -1,0 +1,20 @@
+{
+  "at_utc": "2026-11-09T03:17:15.487986+00:00",
+  "status": "passed",
+  "snapshot_sha256": "421ea94bdafcf530cb82c540a81cf2c34d42000a6710fa9268f0c136fef2d2e3",
+  "snapshot_conversations": 548,
+  "counts": {
+    "train": 1291,
+    "dev": 11,
+    "evaluation": 14
+  },
+  "train_rewrite_pairs": 1812,
+  "all_four_saved_model_reviews_passed_per_conversation": true,
+  "authoring_tests": 5,
+  "staged_boundary_schedule_tests": 12,
+  "frozen_file_hashes_verified": 7,
+  "payload_files_verified": 127,
+  "py_compile": "passed",
+  "full_corpus_assistant_review": false,
+  "note": "Local freeze before existing assistant overlay; shared GPU preflight applies the pinned 7ish correction and token checks. An unrelated broad local test discovery failed due missing Torch/pytest; scoped tests pass."
+}

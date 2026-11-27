@@ -1,0 +1,452 @@
+{
+  "status": "complete",
+  "recipe": {
+    "input_provenance": "Six newly assistant-authored everyday conversations; topics drawn before any inference, not selected against model weaknesses.",
+    "topic_seed": 275814,
+    "topic_pool": [
+      "coffee",
+      "dinner",
+      "movie",
+      "music",
+      "weekend_walk",
+      "photos",
+      "studying",
+      "workout",
+      "cooking",
+      "birthday",
+      "new_hobby",
+      "rainy_day",
+      "games",
+      "travel_chat",
+      "shopping",
+      "finishing_work",
+      "good_news",
+      "commute"
+    ],
+    "selected_topics": [
+      "weekend_walk",
+      "finishing_work",
+      "good_news",
+      "cooking",
+      "commute",
+      "rainy_day"
+    ],
+    "models": [
+      "original_SEA-LION_repair25",
+      "exported_mT5_A_shared_intent_rewrite_s1_final784"
+    ],
+    "decoding": "Each unchanged portable checkpoint uses its stored beam4/no-repeat3 pipeline; SEAmax64, mT5max48. Singlish uses each model own generated English draft.",
+    "selection": "All six frozen cases will be shown. No target reply, reference input, manual postprocessing or output-based selection.",
+    "training_performed": false,
+    "default_changed": false,
+    "inputs_sha256": "fba132d0c069fe778b5f39a0bbb72e87cb441bad400ba913139b54d9f25875a6"
+  },
+  "inputs": [
+    {
+      "item_id": "CASUAL-WALK",
+      "topic": "weekend_walk",
+      "context": [
+        "This weekend feel like going outside for a bit",
+        "Same, been sitting at home too much"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Want go walk at Botanic Gardens?"
+    },
+    {
+      "item_id": "CASUAL-WORK",
+      "topic": "finishing_work",
+      "context": [
+        "Finally submitted my report",
+        "Nice, that took you quite a while"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Ya sia, now can relax already. What you doing tonight?"
+    },
+    {
+      "item_id": "CASUAL-NEWS",
+      "topic": "good_news",
+      "context": [
+        "Eh I got the internship!",
+        "Wah congrats!"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Thanks! Wanna get dinner to celebrate?"
+    },
+    {
+      "item_id": "CASUAL-COOK",
+      "topic": "cooking",
+      "context": [
+        "Thinking of cooking pasta tonight",
+        "Sounds good, what kind?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Maybe tomato sauce. You got any ideas what to add?"
+    },
+    {
+      "item_id": "CASUAL-BUS",
+      "topic": "commute",
+      "context": [
+        "On the bus home now",
+        "Long day ah?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Ya man, can't wait to get home and rest"
+    },
+    {
+      "item_id": "CASUAL-RAIN",
+      "topic": "rainy_day",
+      "context": [
+        "Rain quite heavy outside",
+        "Ya, I can hear it from my room"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Good weather to stay in. Any movie you feel like watching?"
+    }
+  ],
+  "models": {
+    "original_sealion": {
+      "bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+      "manifest_sha256": "1cb24b55984b73c20166331d4d872895d00d9d4854b2a2b7c8f5245453db7f1a",
+      "exit_code": 0,
+      "status": "complete",
+      "kind": "sealion",
+      "device": "cuda",
+      "strict_loading": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "gpu": "NVIDIA L40S",
+      "input_sha256": "fba132d0c069fe778b5f39a0bbb72e87cb441bad400ba913139b54d9f25875a6",
+      "outputs": [
+        {
+          "item_id": "CASUAL-WALK",
+          "english": "Yes please, let's go for a walk at the botanic gardens.",
+          "singlish": "Can, let's go for a walk at the botanic gardens.",
+          "standard_anchor": "Yes please, let's go for a walk at the botanic gardens.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-WORK",
+          "english": "Nothing planned for tonight. What about going out for dinner?",
+          "singlish": "Nothing planned for tonight leh. You want go out for dinner?",
+          "standard_anchor": "Nothing planned for tonight. What about going out for dinner?",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-NEWS",
+          "english": "Sure, let's meet for dinner tonight.",
+          "singlish": "Can, dinner tonight lah.",
+          "standard_anchor": "Sure, let's meet for dinner tonight.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-COOK",
+          "english": "I'm not sure what to add to the sauce. Let's check the recipe first.",
+          "singlish": "Not sure what to add leh. Check the recipe first.",
+          "standard_anchor": "I'm not sure what to add to the sauce. Let's check the recipe first.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-BUS",
+          "english": "No worries, take care",
+          "singlish": "No worries, take care",
+          "standard_anchor": "No worries, take care",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-RAIN",
+          "english": "I'm not sure what movies are playing. Let's check the cinema's schedule.",
+          "singlish": "Not sure what movies playing leh. Check the cinema schedule first.",
+          "standard_anchor": "I'm not sure what movies are playing. Let's check the cinema's schedule.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      ],
+      "flags": []
+    },
+    "mt5_A": {
+      "bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1",
+      "manifest_sha256": "4d31e79604d8818e430c7cf288ae9c0b738ca18db18e309fbcef6e929c7c6165",
+      "exit_code": 0,
+      "status": "complete",
+      "kind": "mt5",
+      "device": "cuda",
+      "strict_loading": {
+        "missing_keys": [],
+        "unexpected_keys": [],
+        "mismatched_keys": [],
+        "error_msgs": []
+      },
+      "gpu": "NVIDIA L40S",
+      "input_sha256": "fba132d0c069fe778b5f39a0bbb72e87cb441bad400ba913139b54d9f25875a6",
+      "outputs": [
+        {
+          "item_id": "CASUAL-WALK",
+          "english": "Sure, let's go.",
+          "singlish": "Can, let's go.",
+          "standard_anchor": "Sure, let's go.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-WORK",
+          "english": "I'm going to dinner with my friends.",
+          "singlish": "I going to dinner with my friends.",
+          "standard_anchor": "I'm going to dinner with my friends.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-NEWS",
+          "english": "Sure! What time would you like to celebrate?",
+          "singlish": "Can! What time you want to celebrate?",
+          "standard_anchor": "Sure! What time would you like to celebrate?",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-COOK",
+          "english": "Yes, tomato sauce is a good idea.",
+          "singlish": "Can, tomato sauce good idea.",
+          "standard_anchor": "Yes, tomato sauce is a good idea.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-BUS",
+          "english": "Okay, let's get back to work soon.",
+          "singlish": "Can, let's get back to work soon.",
+          "standard_anchor": "Okay, let's get back to work soon.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        {
+          "item_id": "CASUAL-RAIN",
+          "english": "Yes, I'd like to watch a movie.",
+          "singlish": "Can, I watch a movie.",
+          "standard_anchor": "Yes, I'd like to watch a movie.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      ],
+      "flags": []
+    }
+  },
+  "comparison": [
+    {
+      "item_id": "CASUAL-WALK",
+      "topic": "weekend_walk",
+      "context": [
+        "This weekend feel like going outside for a bit",
+        "Same, been sitting at home too much"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Want go walk at Botanic Gardens?",
+      "outputs": {
+        "original_sealion": {
+          "item_id": "CASUAL-WALK",
+          "english": "Yes please, let's go for a walk at the botanic gardens.",
+          "singlish": "Can, let's go for a walk at the botanic gardens.",
+          "standard_anchor": "Yes please, let's go for a walk at the botanic gardens.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mt5_A": {
+          "item_id": "CASUAL-WALK",
+          "english": "Sure, let's go.",
+          "singlish": "Can, let's go.",
+          "standard_anchor": "Sure, let's go.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "CASUAL-WORK",
+      "topic": "finishing_work",
+      "context": [
+        "Finally submitted my report",
+        "Nice, that took you quite a while"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Ya sia, now can relax already. What you doing tonight?",
+      "outputs": {
+        "original_sealion": {
+          "item_id": "CASUAL-WORK",
+          "english": "Nothing planned for tonight. What about going out for dinner?",
+          "singlish": "Nothing planned for tonight leh. You want go out for dinner?",
+          "standard_anchor": "Nothing planned for tonight. What about going out for dinner?",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mt5_A": {
+          "item_id": "CASUAL-WORK",
+          "english": "I'm going to dinner with my friends.",
+          "singlish": "I going to dinner with my friends.",
+          "standard_anchor": "I'm going to dinner with my friends.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "CASUAL-NEWS",
+      "topic": "good_news",
+      "context": [
+        "Eh I got the internship!",
+        "Wah congrats!"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Thanks! Wanna get dinner to celebrate?",
+      "outputs": {
+        "original_sealion": {
+          "item_id": "CASUAL-NEWS",
+          "english": "Sure, let's meet for dinner tonight.",
+          "singlish": "Can, dinner tonight lah.",
+          "standard_anchor": "Sure, let's meet for dinner tonight.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mt5_A": {
+          "item_id": "CASUAL-NEWS",
+          "english": "Sure! What time would you like to celebrate?",
+          "singlish": "Can! What time you want to celebrate?",
+          "standard_anchor": "Sure! What time would you like to celebrate?",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "CASUAL-COOK",
+      "topic": "cooking",
+      "context": [
+        "Thinking of cooking pasta tonight",
+        "Sounds good, what kind?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Maybe tomato sauce. You got any ideas what to add?",
+      "outputs": {
+        "original_sealion": {
+          "item_id": "CASUAL-COOK",
+          "english": "I'm not sure what to add to the sauce. Let's check the recipe first.",
+          "singlish": "Not sure what to add leh. Check the recipe first.",
+          "standard_anchor": "I'm not sure what to add to the sauce. Let's check the recipe first.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mt5_A": {
+          "item_id": "CASUAL-COOK",
+          "english": "Yes, tomato sauce is a good idea.",
+          "singlish": "Can, tomato sauce good idea.",
+          "standard_anchor": "Yes, tomato sauce is a good idea.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "CASUAL-BUS",
+      "topic": "commute",
+      "context": [
+        "On the bus home now",
+        "Long day ah?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Ya man, can't wait to get home and rest",
+      "outputs": {
+        "original_sealion": {
+          "item_id": "CASUAL-BUS",
+          "english": "No worries, take care",
+          "singlish": "No worries, take care",
+          "standard_anchor": "No worries, take care",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mt5_A": {
+          "item_id": "CASUAL-BUS",
+          "english": "Okay, let's get back to work soon.",
+          "singlish": "Can, let's get back to work soon.",
+          "standard_anchor": "Okay, let's get back to work soon.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "CASUAL-RAIN",
+      "topic": "rainy_day",
+      "context": [
+        "Rain quite heavy outside",
+        "Ya, I can hear it from my room"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Good weather to stay in. Any movie you feel like watching?",
+      "outputs": {
+        "original_sealion": {
+          "item_id": "CASUAL-RAIN",
+          "english": "I'm not sure what movies are playing. Let's check the cinema's schedule.",
+          "singlish": "Not sure what movies playing leh. Check the cinema schedule first.",
+          "standard_anchor": "I'm not sure what movies are playing. Let's check the cinema's schedule.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        },
+        "mt5_A": {
+          "item_id": "CASUAL-RAIN",
+          "english": "Yes, I'd like to watch a movie.",
+          "singlish": "Can, I watch a movie.",
+          "standard_anchor": "Yes, I'd like to watch a movie.",
+          "english_status": "complete",
+          "singlish_status": "complete"
+        }
+      }
+    }
+  ],
+  "training_performed": false,
+  "default_changed": false,
+  "no_target_reply_supplied": true,
+  "note": "All six everyday scenarios are shown unchanged. Models use their original stored beam pipelines. No output-based selection or reranking; own-English Singlish anchors."
+}

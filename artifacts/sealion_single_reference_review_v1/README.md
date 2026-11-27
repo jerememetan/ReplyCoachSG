@@ -1,0 +1,15 @@
+# Single-reference checkpoint review (read-only)
+
+Job358368 submitted on personal hm.teoh.2024,L40S,student/cs701/studentqos. No training, source-checkpoint changes, selection-rule replacement or default promotion. This follows user request to investigate single-reference final300 and ensure the original SEA-LION is preserved.
+
+The original model is independently saved outside the workspace at `/home/spikeypear/ModelBackups/ReplyCoachSG/SEA-LION_original_repair25_v1/replycoach_sealion_repair25_v1.tar` (6,445,742,080bytes). Full SHA256 matches the original export: `5c74430e9fb6953955258b4aab9f9db2d4c141b43b60b821b2c9930523bee70d`. It is a separate file, not a link, with read-only files0444 and directory0555. Includes base, both original adapters, tokenizer, code, runtime, cards and examples. Server bundle also reverified against its original manifest. Preservation receipt: `artifacts/model_handoff_v1/sealion_original_preservation_v1.json`; read-only restore guide beside the outside-workspace backup. Original working archive and server bundle remain unchanged.
+
+First evidence from the completed training reports: final300 single-reference old-validation tokenCE2.2273 versus original1.9694; new three-reference meanCE2.2436 versus1.9896. So its worse selection score is not solely a difference in reference diversity; old reference likelihood also regressed. These losses still do not equal human reply quality, and final300 improved some actual drafts. Avoid assuming either that the final model is better overall or that selected0 must have the most useful outputs.
+
+The review first invokes the original portable infer.py on its10savedexample pairs and checks exact replay. It then computes per-reference mean CE, best-reference CE, old reference CE and positive-vs-bad ranking for original, single75/150/300, multi300 andcontrast300. These are post-hoc reference-coverage diagnostics, not an independent accuracy score or a new model-selection rule.
+
+It also generates English plus own-English-conditioned frozenSinglish for the existing54development inputs at single75 and150. Original/single0/single300/multi300/contrast300 outputs are already saved under the creative study. No additional stochastic generation is needed here. All cases have already been inspected, so any human/assistant choice is development selection and requires fresh later evaluation. Report/source SHA checks verify checkpoint files remain unchanged.
+
+Remote root: `/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_single_reference_review_v1`. Outputs: `report.json`, `original_export_replay.json`, `outputs/single_reference_75.json` and `outputs/single_reference_150.json`. If original replay fails, the job stops and keeps its log/report for inspection. Do not overwrite reports or original snapshots. User prefers background execution; do not wait for full review solely to end a session.
+
+Fresh original-model inference replay passed10/10exactEnglish/Singlish example pairs onL40S, no differences or generation flags. Saved `original_export_replay.json`. Remaining per-reference/intermediate-checkpoint review was still running at that observation.

@@ -1,0 +1,25 @@
+{
+  "created": "2026-11-21",
+  "reviewer": "OpenAI assistant",
+  "scope": "New retrospective non-blind descriptive review of saved paired generations on the same 50 development conversations, not fresh inference, independent human ratings or an untouched test. Model recipes/training exposure differ; this is a practical system comparison, not a causal architecture ablation.",
+  "judgments": [
+    "pass",
+    "fail",
+    "uncertain"
+  ],
+  "criteria": {
+    "english_adequacy": "A sensible fluent next reply to the latest message and speaker-labelled history. Plausible selectable personal details/choices are allowed. Explicit contradictions, reversed speaker roles, substantially missed requests/questions, repetition of the incoming message and incoherent text fail.",
+    "local_adequacy": "Same contextual rule for the actual Singlish output.",
+    "meaning_preservation": "The English and Singlish replies preserve the core speech act, polarity, participants, ownership, time constraints and commitments. Optional politeness may differ. Added or omitted substantive questions/actions, changed assertion/question or invented new decision fail; ambiguous equivalence is uncertain.",
+    "local_style": "Natural recognizable light Singlish through appropriate grammar, local wording or discourse features. Neutral standard English alone, generic texting alone and an inappropriate Can prefix are insufficient. Particles are neither required nor sufficient.",
+    "all_four": "All four criteria must pass; uncertainty is not a pass."
+  },
+  "validation_reuse": "All 50 inputs were extensively reused for model development and selection. No new final generator is selected or promoted by this review.",
+  "language_audit": "Retain original incoming-message metadata as annotation counts, not complete linguistic ground truth. Manual incoming-message audit separates regional lexical content, pragmatic markers/apologies/greetings, colloquial syntax and general English/texting; local campus abbreviations do not count as regional-language content. Do not infer a model pretraining cause from these counts.",
+  "sources": {
+    "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "data/dev/validation.jsonl": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+    "experiments/mt5_reference_pack_v1/common_validation50.json": "8454c2f6bf666bb579550a927e3feecde504b124202a17410f05e7aaae887154",
+    "artifacts/qwen_full_sealion_recipe_v1/qwen_vs_sealion_C_75.csv": "759fb29da112dcca489154781510fe1bf51306f618ec92fe85cee4234a3c2749"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "source": "artifacts/mt5_base_lora.json",
+  "source_sha256": "2a5654ac6a16ea934a9b22ab62cec8b17aac1801ed95010fc8c16372551e0610",
+  "checkpoint": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_lora/best",
+  "public_base": "artifacts/mt5_base/best",
+  "selection": "Six saved validation outputs sampled with seed425, sorted by saved index; no quality filtering.",
+  "indices": [
+    3,
+    5,
+    10,
+    22,
+    26,
+    39
+  ],
+  "outputs": [
+    {
+      "index": 3,
+      "item_id": "ITEM-A-030",
+      "context": [
+        "How long is our booking?",
+        "Oh no, our timer went off."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "incoming": "sian, need book somewhere else, our booking ran out",
+      "english": "Okay, let's book somewhere else.",
+      "singlish": "Can, we book another place near the hotel."
+    },
+    {
+      "index": 5,
+      "item_id": "ITEM-A-035",
+      "context": [
+        "I got to go for my appointment later",
+        "Yeah I should get going too"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "incoming": "don't forget to dabao your food later",
+      "english": "Thanks for letting me know.",
+      "singlish": "Okay, I'll forget to dabao my food later."
+    },
+    {
+      "index": 10,
+      "item_id": "ITEM-B-002",
+      "context": [
+        "I haven't eaten breakfast",
+        "same sia, I'm hungry also"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "incoming": "where you want eat?",
+      "english": "I'd like to eat in the dining room.",
+      "singlish": "Where are you eating?"
+    },
+    {
+      "index": 22,
+      "item_id": "ITEM-C-018",
+      "context": [
+        "i'll upload my section before dinner",
+        "okay, then i can merge everything tonight"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "incoming": "eh dont forget your slide ah, we need merge later",
+      "english": "Okay, I'll send you a slide later.",
+      "singlish": "okay, i'll send you a slide later"
+    },
+    {
+      "index": 26,
+      "item_id": "ITEM-C-041",
+      "context": [
+        "could you upload your section before 8?",
+        "yes, i'll do it"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "incoming": "paiseh, i only just finished class. i'll upload a bit later",
+      "english": "ok, i'll upload it later",
+      "singlish": "okay, i'll send you the link later"
+    },
+    {
+      "index": 39,
+      "item_id": "ITEM-D-050",
+      "context": [
+        "eh u ok? why u never join us for bb session yesterday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "incoming": "woah sorry, i came up with a flu.",
+      "english": "Okay, I'll join you later.",
+      "singlish": "okay, i'll join u later"
+    }
+  ],
+  "note": "Historical saved model outputs, not fresh inference or reference replies. Speakers recovered from original validation records for display; the historical model input had unlabelled context."
+}

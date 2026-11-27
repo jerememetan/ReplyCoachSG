@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "tests_passed": 9,
+  "encoded_targets": 2398,
+  "max_tokens": {
+    "train": 140,
+    "control": 140,
+    "validation": 73,
+    "challenge": 75,
+    "legacy": 71
+  },
+  "prompt_mask_eos_no_truncation": true,
+  "source_bundle_manifest_verified": true,
+  "gpu": "NVIDIA L40S",
+  "bf16_supported": true
+}

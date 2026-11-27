@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "unique_conversations": 50,
+  "reviewed_model_pairs": 150,
+  "expected_scores_per_model": 50,
+  "source_contexts_exactly_matched": true,
+  "source_evidence_hashes_verified": true,
+  "docx_zip_and_xml_valid": true,
+  "native_tables": 5,
+  "distillation_section_omitted": true,
+  "new_training_or_model_inference": false,
+  "project_test_opened": false,
+  "existing_report_or_teammate_sections_edited": false,
+  "report_word_count_including_tables_and_sources": 3159,
+  "pdf_pages": 8,
+  "comparison_table_kept_on_one_page": true,
+  "rendered_pages_visually_inspected": [
+    2,
+    6
+  ],
+  "artifact_sha256": {
+    "Transformer_reply_generation_V5_report.docx": "170f5bd10274d19403802c761fd466133e6d161080468e371f1f0445924a332d",
+    "Transformer_reply_generation_V5_report.pdf": "bfe5ff534bcee06ff129197113a0647c733f84a4526e52de13ab38a5e4b23ce1",
+    "matched50_review.csv": "995c0b17a46f138dcb9e048c4d25b464bd8bfe7b39ba96a7fb95717442fb1a61"
+  }
+}

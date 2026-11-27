@@ -1,0 +1,41 @@
+unittest.case.FunctionTestCase (test_guards_keep_facts_direction_negation_and_question_force)
+test_guards_keep_facts_direction_negation_and_question_force ... ok
+unittest.case.FunctionTestCase (test_legitimate_short_copies_and_cosmetic_edits_are_distinguished)
+test_legitimate_short_copies_and_cosmetic_edits_are_distinguished ... ok
+unittest.case.FunctionTestCase (test_grammar_proposals_preserve_original_slots_and_stay_optional)
+test_grammar_proposals_preserve_original_slots_and_stay_optional ... ok
+unittest.case.FunctionTestCase (test_copy_penalty_selects_available_faithful_alternative_not_wrong_fact)
+test_copy_penalty_selects_available_faithful_alternative_not_wrong_fact ... ok
+unittest.case.FunctionTestCase (test_lexicon_is_training_only_and_auxiliary_targets_are_selective)
+test_lexicon_is_training_only_and_auxiliary_targets_are_selective ... ok
+unittest.case.FunctionTestCase (test_copy_margin_has_correct_gradient_direction_and_matched_positive_term)
+test_copy_margin_has_correct_gradient_direction_and_matched_positive_term ... ok
+unittest.case.FunctionTestCase (test_nbest_matches_exhaustive_top_k_with_cache_and_length_bound)
+test_nbest_matches_exhaustive_top_k_with_cache_and_length_bound ... ok
+unittest.case.FunctionTestCase (test_wide_beam_matches_exhaustive_finished_and_length_limited_sequences)
+test_wide_beam_matches_exhaustive_finished_and_length_limited_sequences ... ok
+unittest.case.FunctionTestCase (test_cache_reorder_replicates_and_swaps_beam_parents)
+test_cache_reorder_replicates_and_swaps_beam_parents ... ok
+unittest.case.FunctionTestCase (test_no_repeat_and_boundary_termination)
+test_no_repeat_and_boundary_termination ... ok
+unittest.case.FunctionTestCase (test_reordered_actual_legacy_cache_logits_match_full_context)
+test_reordered_actual_legacy_cache_logits_match_full_context ... /common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1/src/replycoach/vendor/sealion_v1/param_init_fns.py:30: UserWarning: Using a non-tuple sequence for multidimensional indexing is deprecated and will be changed in pytorch 2.9; use x[tuple(seq)] instead of x[seq]. In pytorch 2.9 this will be interpreted as tensor index, x[torch.tensor(seq)], which will result either in an error or a different result (Triggered internally at /__w/pytorch/pytorch/torch/csrc/autograd/python_variable_indexing.cpp:356.)
+  init_fn_(module.weight[slice_indices])
+ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.374s
+
+OK
+{"status": "passed", "counts": {"train": 745, "validation": 42, "copy_train": 342, "copy_validation": 11, "evaluation": 126, "controls": 10}, "max_tokens": {"train": 179, "validation": 112, "copy_train": 174, "copy_validation": 112}, "split_overlap": false, "source_bundle_checksums_verified": true, "source_manifest_sha256": "1cb24b55984b73c20166331d4d872895d00d9d4854b2a2b7c8f5245453db7f1a", "source_weights_sha256": {"adapters/english/adapter_model.safetensors": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913", "adapters/singlish/adapter_model.safetensors": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2", "base/model.safetensors": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107"}, "training_performed": false}
+Job ID: 357996
+Cluster: crimson
+User/Group: hm.teoh.2024/hm.teoh.2024
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 4
+CPU Utilized: 00:00:13
+CPU Efficiency: 25.00% of 00:00:52 core-walltime
+Job Wall-clock time: 00:00:13
+Memory Utilized: 3.04 MB
+Memory Efficiency: 0.02% of 16.00 GB (16.00 GB/node)

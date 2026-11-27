@@ -1,0 +1,80 @@
+[
+  {
+    "item_id": "CASUAL-WALK",
+    "topic": "weekend_walk",
+    "context": [
+      "This weekend feel like going outside for a bit",
+      "Same, been sitting at home too much"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Want go walk at Botanic Gardens?"
+  },
+  {
+    "item_id": "CASUAL-WORK",
+    "topic": "finishing_work",
+    "context": [
+      "Finally submitted my report",
+      "Nice, that took you quite a while"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Ya sia, now can relax already. What you doing tonight?"
+  },
+  {
+    "item_id": "CASUAL-NEWS",
+    "topic": "good_news",
+    "context": [
+      "Eh I got the internship!",
+      "Wah congrats!"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Thanks! Wanna get dinner to celebrate?"
+  },
+  {
+    "item_id": "CASUAL-COOK",
+    "topic": "cooking",
+    "context": [
+      "Thinking of cooking pasta tonight",
+      "Sounds good, what kind?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Maybe tomato sauce. You got any ideas what to add?"
+  },
+  {
+    "item_id": "CASUAL-BUS",
+    "topic": "commute",
+    "context": [
+      "On the bus home now",
+      "Long day ah?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Ya man, can't wait to get home and rest"
+  },
+  {
+    "item_id": "CASUAL-RAIN",
+    "topic": "rainy_day",
+    "context": [
+      "Rain quite heavy outside",
+      "Ya, I can hear it from my room"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Good weather to stay in. Any movie you feel like watching?"
+  }
+]

@@ -1,0 +1,15 @@
+account,path,GiB,condition
+CS425G9,/common/home/projectgrps/CS425/CS425G9/.cache/pip,4.3246,Disposable download cache; future installs may download packages again
+hm.teoh.2024,/common/home/users/h/hm.teoh.2024/.cache/pip,4.0642,Disposable download cache; future installs may download packages again
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_cosem_full/training_state.pt,6.5092,Only if exact training resumption and this final training snapshot are no longer needed; separately saved best model remains
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_cosem_clean/training_state.pt,6.5092,Only if exact training resumption and this final training snapshot are no longer needed; separately saved best model remains
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans_spk/training_state.pt,6.5092,Only if exact training resumption and this final training snapshot are no longer needed; separately saved best model remains
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base/training_state.pt,6.5092,Only if exact training resumption and this final training snapshot are no longer needed; separately saved best model remains
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_base_after_spans/training_state.pt,6.5092,Only if exact training resumption and this final training snapshot are no longer needed; separately saved best model remains
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_v5_smoke/training_state.pt,6.5092,Only if exact training resumption and this final training snapshot are no longer needed; separately saved best model remains
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG/artifacts/mt5_v5_pretrain/training_state.pt,3.355,Only if exact training resumption and this final training snapshot are no longer needed; separately saved best model remains
+CS425G9,/common/home/projectgrps/CS425/CS425G9/.local/share/replycoach-ollama/ollama-linux-amd64.tar.zst,1.4206,Installer archive; retain installed runtime and any desired offline installer backup
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1.tar,2.1916,"Potential packaging copy; verify extracted files, backup requirements and dependencies before removing"
+CS425G9,/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_dialogue_v1/base_transfer.tar.gz,1.7905,"Potential packaging copy; verify extracted files, backup requirements and dependencies before removing"
+hm.teoh.2024,/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1.tar,6.0031,"Potential packaging copy; verify extracted files, backup requirements and dependencies before removing"
+hm.teoh.2024,/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_dialogue_v1/base_transfer.tar.gz,1.7905,"Potential packaging copy; verify extracted files, backup requirements and dependencies before removing"

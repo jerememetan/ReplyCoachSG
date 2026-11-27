@@ -1,0 +1,18 @@
+{
+  "project_conversations": 790,
+  "broad_latest_message_regex_matches": 6,
+  "matched_ids": [
+    "ITEM-A-002",
+    "ITEM-A-058",
+    "SYN-HUMAN-EXP1-025",
+    "SYN-HUMAN-EXP1-040",
+    "SYN-volume500-v1-full-051-02",
+    "SYN-volume500-v1-full-129-03"
+  ],
+  "interpretation": "Rough literal search, not proof of semantic coverage. Inspection of these six finds no direct purpose-of-call follow-up target.",
+  "prompt_speaker_mapping": "user=You, peer=Friend; latest incoming always Friend; original user failure matches this contract.",
+  "preprocessing": "No truncation; causal prompt tokens masked; EOS retained. New rows have explicit paired latest-question variants.",
+  "original_team_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+  "project_source_sha256": "b9027a2b84e6bec01f9200ac890220cd0b6e4e1382fdb71f0213a2949b6efbc6",
+  "locked_test_read": false
+}

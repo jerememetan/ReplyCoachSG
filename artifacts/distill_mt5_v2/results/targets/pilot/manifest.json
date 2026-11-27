@@ -1,0 +1,78 @@
+{
+  "scope": "pilot",
+  "source_conversations": 24,
+  "original_eligible": 24,
+  "common_conversations": 15,
+  "common_ids": [
+    "ITEM-B-024",
+    "ITEM-B-040",
+    "SYN-HUMAN-EXP1-053",
+    "SYN-volume500-v1-full-023-02",
+    "SYN-volume500-v1-full-045-01",
+    "SYN-volume500-v1-full-071-03",
+    "SYN-volume500-v1-full-081-00",
+    "SYN-volume500-v1-full-083-03",
+    "SYN-volume500-v1-full-096-03",
+    "SYN-volume500-v1-full-097-02",
+    "SYN-volume500-v1-full-100-02",
+    "SYN-volume500-v1-full-115-02",
+    "SYN-volume500-v1-full-133-00",
+    "SYN-volume500-v1-full-134-01",
+    "SYN-volume500-v1-full-136-01"
+  ],
+  "review_counts": {
+    "sealion_english": {
+      "generated": 24,
+      "accepted": 19,
+      "rejected": 5,
+      "edited": 0
+    },
+    "sealion_singlish": {
+      "generated": 19,
+      "accepted": 17,
+      "rejected": 2,
+      "edited": 0
+    },
+    "qwen_english": {
+      "generated": 24,
+      "accepted": 22,
+      "rejected": 2,
+      "edited": 0
+    },
+    "qwen_singlish": {
+      "generated": 22,
+      "accepted": 20,
+      "rejected": 2,
+      "edited": 0
+    }
+  },
+  "excluded_ids": [
+    "ITEM-C-031",
+    "ITEM-E-057",
+    "SYN-HUMAN-EXP1-024",
+    "SYN-HUMAN-EXP1-056",
+    "SYN-volume500-v1-full-029-02",
+    "SYN-volume500-v1-full-031-02",
+    "SYN-volume500-v1-full-045-00",
+    "SYN-volume500-v1-full-077-02",
+    "SYN-volume500-v1-full-081-01"
+  ],
+  "original_provenance": "Previously audited766 paired labels, mixed human/synthetic/assistant-revised; no new target edits.",
+  "independent_human_gold": false,
+  "files": {
+    "data/train_inputs.json": "70176c3fccaf7d9d3a2cf3696da025bab5ce4d3a1ea02d1ef59675b63209a326",
+    "data/train_rewrite.json": "9437e2c3bfa9a7fda289cca1868ff03f312f75a96beea02ab1cfaab2237ae446",
+    "outputs/qwen/english_pilot.json": "5e4a4559844af796b4ecba725b7ae1ccdee7b25774806392c87e30c568dea800",
+    "outputs/qwen/singlish_pilot.json": "388c4c3bf74e838a19eaf52fadcb0c2927b0f7a52c2f24874faacd8d326c8332",
+    "outputs/sealion/english_pilot.json": "71a57520d8c1bb8e73384d6cbea220c6217b2e7cd61664ad73194d5ce2f22ae4",
+    "outputs/sealion/singlish_pilot.json": "5e514a001af5642b489cf13e9a29a698dd60d6c7f0e729e5a69ef7d55fe49c74",
+    "recipe.json": "086e3f826489a1fa4cf1b2cd2656457f23a51b564d3588d1a3d32e846ae7ea02",
+    "reviews/qwen/english_pilot.json": "67913a34dae6c0672e2d0d7e01765c3476f9a07aabbcf12c91ce4c850d97374c",
+    "reviews/qwen/singlish_pilot.json": "1c51640051838c812a591a7056c5f2178ff9d96386ef85dc567704b3b81e4847",
+    "reviews/sealion/english_pilot.json": "b86c1e2da18019466e5479e970b8c45d8bc9bb6727b8533f2f9f0ef422dafc1b",
+    "reviews/sealion/singlish_pilot.json": "d38a2c154cbcdd82e4680f1bcf7289da0ae4315f361cee9b63169115f52a79bb",
+    "targets/pilot/original.json": "57815c615d33720f7536f21226b766c0eea60dec3f5ac13251a13169183165ca",
+    "targets/pilot/qwen.json": "2be0a556fb928f86d9334c78f18f20f55a3542a669d36113cf9b6662ee253d88",
+    "targets/pilot/sealion.json": "d5bdc9593c0c741ebc02e3a171c8cf184751a1def7c25d588d9198a908deefea"
+  }
+}

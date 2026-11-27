@@ -1,0 +1,2317 @@
+[
+  {
+    "item_id": "POSITION-TEST-00-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "I wanted to discuss the shift swap for the charity booth."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What did you want to talk about on the call?",
+    "reference": "I wanted to discuss the shift swap for the charity booth.",
+    "outputs": {
+      "original": {
+        "english": "I would like to discuss the shift swap for the charity booth.",
+        "singlish": "I want to discuss the shift swap for the charity booth.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "We could discuss the shift swap for the booth.",
+        "singlish": "We can talk about the shift swap for the booth.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "We could discuss the shift swap for the booth.",
+        "singlish": "We can talk about the shift swap for the booth.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "We could discuss the shift swap for the booth.",
+        "singlish": "We can talk about the shift swap for the booth.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-00-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "Could we speak by phone when you have a moment?"
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What did you want to talk about on the call?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "Let's talk about our plans for the weekend.",
+        "singlish": "Talk about our plans for the weekend lah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "I would like to discuss our project in more detail.",
+        "singlish": "I want to talk about our project in more detail.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-01-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "I need your advice on choosing a dissertation adviser."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What did you need my advice about?",
+    "reference": "I need your advice on choosing a dissertation adviser.",
+    "outputs": {
+      "original": {
+        "english": "I need your advice on choosing a dissertation adviser.",
+        "singlish": "I need your advice on choosing a dissertation adviser ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "I need your advice on choosing a dissertation adviser.",
+        "singlish": "I need your advice on choosing a dissertation adviser ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "I need your advice on choosing a dissertation adviser.",
+        "singlish": "I need your advice on choosing a dissertation adviser ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "I need your advice on choosing a dissertation adviser.",
+        "singlish": "I need your advice on choosing a dissertation adviser ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-01-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "Can we have a chat on the phone?"
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What did you need my advice about?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "Could you give me some advice about how to handle this situation?",
+        "singlish": "You need to handle this situation how ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Could you tell me how to handle this situation?",
+        "singlish": "Can tell me how to handle this situation ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Could we talk on the phone instead?",
+        "singlish": "Can, talk on the phone instead lah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-02-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "We agreed to collect the equipment at 15:50."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What time did we agree to collect the equipment?",
+    "reference": "We agreed on 15:50.",
+    "outputs": {
+      "original": {
+        "english": "We agreed to collect the equipment at 15:50.",
+        "singlish": "We agreed to collect the equipment at 15:50.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "We agreed to collect the equipment at 15:50.",
+        "singlish": "We agreed to collect the equipment at 15:50.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "We agreed to collect the equipment at 15:50.",
+        "singlish": "We agreed to collect the equipment at 15:50.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "We agreed to collect the equipment at 15:50.",
+        "singlish": "We agreed to collect the equipment at 15:50.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-02-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "We are arranging to collect the equipment."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What time did we agree to collect the equipment?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "Let's meet at 10am tomorrow morning.",
+        "singlish": "Meet at 10am tomorrow morning.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-03-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "I reserved room H673 for our practice."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Which room did you reserve?",
+    "reference": "I reserved room H673.",
+    "outputs": {
+      "original": {
+        "english": "I reserved room H673 for our practice.",
+        "singlish": "I reserved room H673 for our practice.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "I reserved room H673 for our practice.",
+        "singlish": "I reserved room H673 for our practice.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "I reserved room H673 for our practice.",
+        "singlish": "I reserved room H673 for our practice.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "I reserved room H673 for our practice.",
+        "singlish": "I reserved room H673 for our practice.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-03-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "I am sorting out the room reservation."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Which room did you reserve?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "I have reserved the second room.",
+        "singlish": "I reserve the second room.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-04-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "I owe you $47 for my share."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "How much did you say you owe me?",
+    "reference": "I owe you $47.",
+    "outputs": {
+      "original": {
+        "english": "I owe you $47 for my share.",
+        "singlish": "I owe you $47 for my share.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "I owe you $47.",
+        "singlish": "I owe you $47.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "I owe you $47 for my share.",
+        "singlish": "I owe you $47 for my share.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "I owe you $47.",
+        "singlish": "I owe you $47.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-04-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "We are settling the shared expenses."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "How much did you say you owe me?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "Let us settle the expenses at the end of the week.",
+        "singlish": "We settle the expenses at the end of the week lah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-05-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "Janelle is picking up our wristbands."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Who is picking up our wristbands?",
+    "reference": "Janelle is picking them up.",
+    "outputs": {
+      "original": {
+        "english": "Janelle is picking up our wristbands.",
+        "singlish": "Janelle is picking up our wristbands.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Janelle is picking up our wristbands.",
+        "singlish": "Janelle is picking up our wristbands.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Janelle is picking up our wristbands.",
+        "singlish": "Janelle is picking up our wristbands.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Janelle is picking up our wristbands.",
+        "singlish": "Janelle is picking up our wristbands.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-05-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "We are sorting out the wristband collection."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Who is picking up our wristbands?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "I am collecting the wristbands and will let you know when they are collected.",
+        "singlish": "I am collecting the wristbands and will let you know when they are collected.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-06-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "We agreed to meet at the greenhouse entrance."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Where did we agree to meet?",
+    "reference": "At the greenhouse entrance.",
+    "outputs": {
+      "original": {
+        "english": "We agreed to meet at the greenhouse entrance.",
+        "singlish": "We agreed to meet at the greenhouse entrance.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "We agreed to meet at the greenhouse entrance.",
+        "singlish": "We agreed to meet at the greenhouse entrance.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "We agreed to meet at the greenhouse entrance.",
+        "singlish": "We agreed to meet at the greenhouse entrance.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "We agreed to meet at the greenhouse entrance.",
+        "singlish": "We agreed to meet at the greenhouse entrance.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-06-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "We are planning to meet up."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Where did we agree to meet?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "Let's meet at 6pm at the library.",
+        "singlish": "Six at the library can?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-07-supported",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My booking reference is BV853."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What is your booking reference?",
+    "reference": "My booking reference is BV853.",
+    "outputs": {
+      "original": {
+        "english": "My booking reference is BV853.",
+        "singlish": "My booking reference is BV853.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "My booking reference is BV853.",
+        "singlish": "My booking reference is BV853.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "My booking reference is BV853.",
+        "singlish": "My booking reference is BV853.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "My booking reference is BV853.",
+        "singlish": "My booking reference is BV853.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-TEST-07-missing",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "I am looking through my booking details."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "What is your booking reference?",
+    "reference": "Information not available.",
+    "outputs": {
+      "original": {
+        "english": "I am not sure which booking reference I have. Could you check my booking details for me?",
+        "singlish": "Not sure which booking reference I got leh. I check my booking details first.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-SELF-0",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "We were discussing the weather."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "I really appreciate you staying behind to pack the equipment.",
+    "reference": "You are welcome. Happy to help.",
+    "outputs": {
+      "original": {
+        "english": "No problem, I will stay behind to pack the equipment.",
+        "singlish": "No problem, I stay behind to pack the equipment.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "You are welcome. I am glad I could help.",
+        "singlish": "Never mind lah, next time we talk about it.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "You are welcome. I am glad that I could help.",
+        "singlish": "Thanks ah, next time we talk then.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "You are welcome. I am happy to help.",
+        "singlish": "Thanks ah, next time we talk about it.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-SELF-1",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "We were discussing the weather."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Would you like me to bring you a hot drink?",
+    "reference": "Could you bring me a cup of tea?",
+    "outputs": {
+      "original": {
+        "english": "Yes please, could you bring me a cup of tea?",
+        "singlish": "Yes please, could you bring me a cup of tea?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Yes please, could you bring me a cup of tea?",
+        "singlish": "Yes please, could you bring me a cup of tea?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Yes please, could you bring me a cup of tea?",
+        "singlish": "Yes please, could you bring me a cup of tea?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Yes please, could you bring me a cup of coffee?",
+        "singlish": "Yes please, could you bring me a cup of coffee?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-SELF-2",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "We were discussing the weather."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "I finally completed the first draft of my dissertation!",
+    "reference": "Congratulations on finishing your draft!",
+    "outputs": {
+      "original": {
+        "english": "Congratulations! Let me know when you are ready to share it.",
+        "singlish": "Congratulations! Let me know when you are ready to share it ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Congratulations! I am glad to hear that.",
+        "singlish": "Congrats! Your first draft finish already anot?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Congratulations! That must have taken a lot of work.",
+        "singlish": "Congratulations! That must have taken a lot of work.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Congratulations! That is great news!",
+        "singlish": "Congrats! Your first draft finish already anot?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "POSITION-SELF-3",
+    "scope": "prospective_synthetic_v2",
+    "kind": "mixed_turns",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "We were discussing the weather."
+      ],
+      [
+        "peer",
+        "I am finishing something at the moment."
+      ],
+      [
+        "user",
+        "Okay, we can continue later."
+      ]
+    ],
+    "message": "Could you wait while I finish locking the door?",
+    "reference": "Sure, take your time.",
+    "outputs": {
+      "original": {
+        "english": "No worries, I'll wait for you to finish locking the door.",
+        "singlish": "No worries, I wait for you to lock the door finish.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Sure, I'll wait here while you lock the door.",
+        "singlish": "Can, wait for you to lock the door first ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Sure, I will wait here while you lock the door.",
+        "singlish": "Can, wait for you to lock the door first ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Sure, I'll wait here while you lock the door.",
+        "singlish": "Can, wait for you to lock the door first ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "I haven't eaten breakfast"
+      ],
+      [
+        "user",
+        "same sia, I'm hungry also"
+      ]
+    ],
+    "message": "where you want eat?",
+    "reference": "How about the food court near the library?",
+    "outputs": {
+      "original": {
+        "english": "I'm looking for somewhere near the library",
+        "singlish": "near the library got what?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Let's try the café near the library.",
+        "singlish": "Can try café near the library?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Let's find somewhere near the library.",
+        "singlish": "Near the library there got what?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Let's find a café near the library.",
+        "singlish": "Find a café near the library can?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "I reminded the class the tutorial is at SR3-1 liao"
+      ],
+      [
+        "user",
+        "can you change today's tutorial to be in SR3-2 instead?"
+      ]
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "reference": "alright, lets stick to the current arrangements",
+    "outputs": {
+      "original": {
+        "english": "Okay, I'll go to SR3-2 instead.",
+        "singlish": "Okay, I go SR3-2 instead.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Okay, I understand.",
+        "singlish": "Okay, I understand.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Okay, I understand.",
+        "singlish": "Okay, I understand.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Okay, I understand.",
+        "singlish": "Okay, I understand.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "I haven't exercised in a while"
+      ],
+      [
+        "user",
+        "same, I've been busy with classes"
+      ]
+    ],
+    "message": "want to go run later?",
+    "reference": "Sure, what time do you want to go?",
+    "outputs": {
+      "original": {
+        "english": "Sure, what time should we meet?",
+        "singlish": "Can, what time ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Sure, what time should we meet?",
+        "singlish": "Can, what time ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Sure, what time should we meet?",
+        "singlish": "Can, what time ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Sure! What time should we meet?",
+        "singlish": "Can, what time ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "Hey have you printed the worksheet given out yesterday?"
+      ],
+      [
+        "user",
+        "No, I will need to print it in school. Do you know how to use the printer?"
+      ]
+    ],
+    "message": "paiseh, i don't know how to use the printer in school.",
+    "reference": "It's okay, I will figure it out",
+    "outputs": {
+      "original": {
+        "english": "No worries, just let me know when you have printed it.",
+        "singlish": "No worries, ask staff lah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "No worries, you can ask someone in the library to print it for you.",
+        "singlish": "No worries, ask someone in the library to print for you can?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "No worries, let me know when you have printed it.",
+        "singlish": "No worries, ask staff lah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "No worries, just let me know once you have printed it.",
+        "singlish": "No worries, just let me know once you have printed it.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "we said we'd sit together tmr"
+      ],
+      [
+        "user",
+        "yep"
+      ]
+    ],
+    "message": "you still coming early to get seats right?",
+    "reference": "yes, i'll arrive a little early",
+    "outputs": {
+      "original": {
+        "english": "Yes, I will be there at 8am.",
+        "singlish": "ya, i gg at 8am",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "yes, i'll be there soon",
+        "singlish": "steady, i reaching already",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "yes, i'll be there shortly",
+        "singlish": "ya, i reaching already",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "yes, i'll be there soon",
+        "singlish": "steady, i reaching already",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "are you coming to the event?"
+      ],
+      [
+        "user",
+        "I was planning to"
+      ]
+    ],
+    "message": "the event postpone for thirty minutes",
+    "reference": "Thanks for letting me know. I'll arrive later too.",
+    "outputs": {
+      "original": {
+        "english": "That's fine, I'll come after thirty minutes.",
+        "singlish": "Okay, I come after thirty minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Thanks for letting me know.",
+        "singlish": "Thanks for letting me know ah",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Thanks for letting me know.",
+        "singlish": "Thanks for letting me know ah",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Thanks for letting me know. I'll come later.",
+        "singlish": "Thanks for letting me know ah. I come later.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "later I need to lend your charger to charge my phone"
+      ],
+      [
+        "user",
+        "ok can but I can only give you after 3"
+      ]
+    ],
+    "message": "hey can confirm i can use your charger after 3? thanks ah",
+    "reference": "yes, all good",
+    "outputs": {
+      "original": {
+        "english": "Sure, I will use it after 3.",
+        "singlish": "Sure, after three then use can.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Sure, you can use it after 3.",
+        "singlish": "Sure, after three then use can.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Sure, you can use it after 3.",
+        "singlish": "Sure, after three then use can.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Sorry, I can only use it after 3.",
+        "singlish": "Paiseh, after three then use can anot?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "user",
+        "have you reached?"
+      ],
+      [
+        "user",
+        "wya"
+      ]
+    ],
+    "message": "i reached, i waiting outside mac",
+    "reference": "Ok , I am heading there right now.",
+    "outputs": {
+      "original": {
+        "english": "okay, i will be there in a few minutes",
+        "singlish": "okay, i coming",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "okay, i will be there in a few minutes",
+        "singlish": "okay, i coming",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "okay, i will be there in a few minutes",
+        "singlish": "okay, i coming",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "okay, i will be there in a few minutes",
+        "singlish": "okay, i coming",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "hello, can i ask u some question idk how to do"
+      ],
+      [
+        "user",
+        "uhh i see if i can help"
+      ]
+    ],
+    "message": "uhh, u know the guassian elim qn",
+    "reference": "I am sorry, I can't provide much help for that question.",
+    "outputs": {
+      "original": {
+        "english": "I'm not sure of the answer, but I'll try to find it for you.",
+        "singlish": "eh i not sure, but i try find the answer for u",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "yes, i know the answer",
+        "singlish": "ya, i know the answer",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "yes, i know the answer",
+        "singlish": "ya, i know the answer",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "not sure, what is it?",
+        "singlish": "not sure, wat is it",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "Hi guys, remember to do the quiz, deadline is next week"
+      ],
+      [
+        "user",
+        "yep noted"
+      ]
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "reference": "Yes, I finished it already.",
+    "outputs": {
+      "original": {
+        "english": "Nope, I haven't done it yet.",
+        "singlish": "haven’t finish leh, I check the answers first",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Nope, I haven't started yet.",
+        "singlish": "haven’t finish leh, I only started",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Nope, I haven't started it yet.",
+        "singlish": "haven’t finish leh, I only started",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "nope, I haven't started it yet",
+        "singlish": "haven’t started leh, I only saw the first part",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "We are going to the club later right?"
+      ],
+      [
+        "user",
+        "Yeah, I will go back to shower first."
+      ]
+    ],
+    "message": "Aiyo, don't need la, let's go now",
+    "reference": "Fair point, let's go",
+    "outputs": {
+      "original": {
+        "english": "Okay, let's go now.",
+        "singlish": "Okay, let's go then.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Okay, let's go then.",
+        "singlish": "Okay, let's go then.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Okay, let's go now then.",
+        "singlish": "Okay, let's go now then.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Okay, let's go then.",
+        "singlish": "Okay, let's go then.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "Hey! Where are you now?"
+      ],
+      [
+        "user",
+        "I am reaching Harbourfront MRT, how about you?"
+      ]
+    ],
+    "message": "Eh i double check with you, we are meeting at 7pm right?",
+    "reference": "Nope, its at 8pm",
+    "outputs": {
+      "original": {
+        "english": "Yes, we are meeting at 7pm.",
+        "singlish": "Ya, seven at Harbourfront MRT.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Yes, we are meeting at 7pm.",
+        "singlish": "Ya, seven at Harbourfront MRT.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Yes, we are meeting at 7pm.",
+        "singlish": "Ya, seven at Harbourfront MRT.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Yes, I confirmed that we are meeting at 7pm.",
+        "singlish": "Ya, seven at Harbourfront MRT.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "I might not make it to the morning class"
+      ],
+      [
+        "user",
+        "I can send you an update afterwards"
+      ]
+    ],
+    "message": "can tell me what I miss?",
+    "reference": "Sure, I'll let you know what was covered.",
+    "outputs": {
+      "original": {
+        "english": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+        "singlish": "You can tell me what you miss in the morning. I'll send you an update after class.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "a few of us are going out this weekend"
+      ],
+      [
+        "user",
+        "sounds fun"
+      ]
+    ],
+    "message": "you want come?",
+    "reference": "Sure, I'd be happy to join you.",
+    "outputs": {
+      "original": {
+        "english": "Sure, I would love to come.",
+        "singlish": "Sure, let's go!",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Sure, I would love to come!",
+        "singlish": "Sure, let's go!",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Sure, I would love to come!",
+        "singlish": "Sure, let's go!",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Sorry, I can't make it this weekend.",
+        "singlish": "Paiseh, I can't make it this weekend.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "im working on my slides now"
+      ],
+      [
+        "user",
+        "same, im doing the results section"
+      ]
+    ],
+    "message": "your part done alr?",
+    "reference": "i just need to finish the last slide",
+    "outputs": {
+      "original": {
+        "english": "not yet, im still working on it",
+        "singlish": "havent finish leh, still working on it",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "not yet, im still working on it",
+        "singlish": "havent finish leh, still working on it",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "not yet, im still working on it",
+        "singlish": "havent finish leh, still working on it",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "not yet, im still working on it",
+        "singlish": "havent finish leh, still working on it",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "eh i struggling to do the linear algebra qn"
+      ],
+      [
+        "user",
+        "which"
+      ]
+    ],
+    "message": "neh the gaussian elim qn",
+    "reference": "I have done the question. Allow me to assist.",
+    "outputs": {
+      "original": {
+        "english": "Okay, I can help you with that one.",
+        "singlish": "Okay, I help you with that one.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "What is the question asking you to do?",
+        "singlish": "what is the question asking you to do",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Which questions are you stuck on?",
+        "singlish": "which questions u stuck on?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "What is the question asking you to do?",
+        "singlish": "what is the question asking you to do",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "want to study together tomorrow?"
+      ],
+      [
+        "user",
+        "sure, what time?"
+      ]
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "reference": "You don't have to, take your time",
+    "outputs": {
+      "original": {
+        "english": "Sure, I'll be there at 2pm.",
+        "singlish": "Can, 2pm I come.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Sure, see you at 2pm!",
+        "singlish": "Can, see you at 2pm!",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Sure, I can join you at 2pm.",
+        "singlish": "Can, what time ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "can, see you at 2pm",
+        "singlish": "can, see you at 2pm",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "ive finished drafting the conclusion"
+      ],
+      [
+        "user",
+        "great"
+      ]
+    ],
+    "message": "can help me check if this part sounds too long?",
+    "reference": "sure. send it to me and i'll take a look",
+    "outputs": {
+      "original": {
+        "english": "I'll take a look and let you know if it's too long.",
+        "singlish": "Can, I check if it's too long first.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "yes, it does sound a bit too long. we can cut it down a bit",
+        "singlish": "ya, a bit too long. we can cut it down abit",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "It doesn't sound too long at all.",
+        "singlish": "Never mind lah, it's fine.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "I'm not sure whether it's too long. I'll take a look and let you know.",
+        "singlish": "Not sure too long already anot. I check first, then tell you ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "u wanna try the matcha at luckin?"
+      ],
+      [
+        "user",
+        "nahh"
+      ]
+    ],
+    "message": "then what u wanna drink later?",
+    "reference": "I would like to try the new cafe latte there.",
+    "outputs": {
+      "original": {
+        "english": "i'm not sure what i want",
+        "singlish": "idk what i want leh",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "I'm not sure what I want. Could we check the menu first?",
+        "singlish": "Not sure what I want leh. Check the menu first?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "I'm not sure what I want. What would you recommend?",
+        "singlish": "I not sure what I want leh. You got any suggestions?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "i'm not sure what other drinks they have",
+        "singlish": "i not sure what other drinks got",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "scope": "legacy_validation",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "peer",
+        "eh help"
+      ],
+      [
+        "user",
+        "what"
+      ]
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "reference": "Oh no, can we see if there are other timings?",
+    "outputs": {
+      "original": {
+        "english": "Oh no, I can't go now. Could someone else go in my place?",
+        "singlish": "aiyo, aiyo",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Oh no, could someone help me find another movie to watch?",
+        "singlish": "aiyo, another movie can?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "Oh no, could you check whether there are any other tickets available?",
+        "singlish": "oh no, the ticket sold out already",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "Oh no, did they tell you that in advance?",
+        "singlish": "Oh no, then how are we going to watch the movie?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "USER-CALL-001",
+    "scope": "reused_user_diagnostic",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "user",
+        "Can u call me now?"
+      ],
+      [
+        "peer",
+        "Eh i not so free eh?"
+      ],
+      [
+        "user",
+        "Ohh, then when can we call?"
+      ]
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "CALL-WITH-PURPOSE",
+    "scope": "reused_user_diagnostic",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "user",
+        "I wanted to ask you about our assignment deadline. Can you call me now?"
+      ],
+      [
+        "peer",
+        "I am not free right now."
+      ],
+      [
+        "user",
+        "Okay, we can speak later."
+      ]
+    ],
+    "message": "What did you want to call me about?",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "I wanted to ask you about our assignment deadline.",
+        "singlish": "I wanted to ask you about our assignment deadline.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "position_v2_final280": {
+        "english": "I wanted to ask you about our assignment deadline.",
+        "singlish": "I wanted to ask you about our assignment deadline.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "EMPTY-THANKS",
+    "scope": "reused_user_diagnostic",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [],
+    "message": "Thanks for taking the time to help me today!",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "No problem, let me know if you need anything else.",
+        "singlish": "No problem, happy to help.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "abstention_v1_step140": {
+        "english": "You are welcome!",
+        "singlish": "No problem, happy to help.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_selected_step140": {
+        "english": "You are welcome!",
+        "singlish": "No problem, happy to help.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "position_v2_final280": {
+        "english": "You are welcome.",
+        "singlish": "No problem, happy to help.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  }
+]

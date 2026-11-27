@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "hashes": {
+    "dev_task.json": "e6bd472affab8d0d168c8a273716c93950cf794196114d4b7c74e7298bedc3e7",
+    "dev_rewrite.json": "e6bd472affab8d0d168c8a273716c93950cf794196114d4b7c74e7298bedc3e7",
+    "train_task.json": "4fcb5420ed35885c238f0d53d5a756893576781eaeca2a76b2da613e2b13c8d6",
+    "train_rewrite.json": "9437e2c3bfa9a7fda289cca1868ff03f312f75a96beea02ab1cfaab2237ae446",
+    "evaluation_all.json": "8e6a9000af4ba7ec15c06b84f75e2b6132646eae2987564fb038e7eca40647e9",
+    "evaluation_task.json": "ed51916b524e0182e2fb7f853c00b4b892a1bf00a2f7ee5c7f8d5428f6e5ae3b",
+    "evaluation_rewrite.json": "ed51916b524e0182e2fb7f853c00b4b892a1bf00a2f7ee5c7f8d5428f6e5ae3b"
+  },
+  "counts": {
+    "train": 768,
+    "dev": 20,
+    "evaluation": 24
+  },
+  "source_dataset_sha256": "3bc250234d579a109752cebaa5bfd85c8458ba1c893280b89ef61efb1990195f",
+  "human_gold": false,
+  "split_note": "Unchanged768old audited training,20prior assistant development cases,24prior assistant evaluation plus1user/50oldval diagnostic cases. Reused development/evaluation, not independent heldout quality."
+}

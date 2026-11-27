@@ -1,0 +1,36 @@
+{
+  "status": "complete_reviewed_exploratory",
+  "finished_at_sgt": "2026-11-17T10:47:37+08:00",
+  "jobs": {
+    "preflight": 367275,
+    "public": 367276,
+    "pipeline": 367277,
+    "summary": 367278
+  },
+  "public_examples": 117634,
+  "public_updates": 7353,
+  "task_epochs_completed": 8,
+  "rewrite_epochs_completed": 8,
+  "selected_models": {
+    "task": {
+      "selected_epoch": 2,
+      "selected_sha256": "52ab46dbeba066927b8ca35f58d45f73236498166606117cf13081af230b0dd5",
+      "selected_reference_ce": 1.7904996863311333
+    },
+    "rewrite": {
+      "selected_epoch": 2,
+      "selected_sha256": "5c46532ea0c970670a29f08244487befbaa707b812964927e46ee2924082d342",
+      "selected_reference_ce": 1.7545232298595608
+    }
+  },
+  "actual_pipeline_cases_per_policy": 75,
+  "fixed_reference_cases_per_policy": 24,
+  "generation_flags": [],
+  "quality_scored": false,
+  "quality_verdict": "Useful casual Singlish and some ownership/completion improvements; persistent contextual errors and rewrite fidelity errors. No demonstrated overall winner or automatic promotion.",
+  "verification": "artifacts/qwen_full_sealion_recipe_v1/final_verification.json",
+  "assistant_review": "artifacts/qwen_full_sealion_recipe_v1/assistant_review.json",
+  "paired_outputs": "artifacts/qwen_full_sealion_recipe_v1/qwen_vs_sealion_C_75.csv",
+  "fixed_reference_outputs": "artifacts/qwen_full_sealion_recipe_v1/fixed_english_rewrites24_comparison.csv",
+  "default_changed": false
+}

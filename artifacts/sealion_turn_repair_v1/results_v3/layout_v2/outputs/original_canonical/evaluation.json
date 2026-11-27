@@ -1,0 +1,851 @@
+{
+  "status": "complete",
+  "checkpoint": "original_canonical",
+  "outputs": [
+    {
+      "item_id": "TURN-PROSPECTIVE-001",
+      "scope": "prospective_synthetic_challenge",
+      "family": "purpose",
+      "context": [
+        "I need to figure out how to appeal the hostel allocation.",
+        "Currently helping my parents, cannot answer a call.",
+        "We can talk afterwards."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Timing not confirmed yet, but what were you hoping to discuss?",
+      "english": "I was hoping to discuss how to appeal the hostel allocation.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "I wanted to ask about appealing the hostel allocation.",
+      "negative": "Could you call me immediately?",
+      "singlish": "I was hoping to discuss how to appeal the hostel allocation.",
+      "singlish_status": "complete",
+      "standard_anchor": "I was hoping to discuss how to appeal the hostel allocation."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-002",
+      "scope": "prospective_synthetic_challenge",
+      "family": "purpose",
+      "context": [
+        "I want to check whether we used the right measurements for the shelves.",
+        "I am cycling home.",
+        "Okay, call when you are safely home."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Sure, but what is the call regarding?",
+      "english": "I want to check whether we used the right measurements for the shelves.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "It is about checking the measurements for the shelves.",
+      "negative": "What did you want to call me about?",
+      "singlish": "I want to check whether we used the right measurements for the shelves.",
+      "singlish_status": "complete",
+      "standard_anchor": "I want to check whether we used the right measurements for the shelves."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-003",
+      "scope": "prospective_synthetic_challenge",
+      "family": "purpose_unspecified",
+      "context": [
+        "Hey, can we speak over the phone for a moment?",
+        "I cannot right now, my class is starting.",
+        "No rush, another time works."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Not certain when yet; can you say what it is regarding?",
+      "english": "Could you tell me what it is about?",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "I'll send a message explaining what I wanted to discuss first.",
+      "negative": "Can you call me now?",
+      "singlish": "Not sure yet, tell me ah.",
+      "singlish_status": "complete",
+      "standard_anchor": "Could you tell me what it is about?"
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-004",
+      "scope": "prospective_synthetic_challenge",
+      "family": "purpose_unspecified",
+      "context": [
+        "Got a moment to chat by phone?",
+        "No sorry, working at the counter.",
+        "Okay, message me when you can."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Will do. Was there something you wanted to ask me?",
+      "english": "Yes, I wanted to ask you about your experience in the industry.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "I'll explain what I wanted to ask in a message first.",
+      "negative": "What did you want to ask me?",
+      "singlish": "Yes, I wanted to ask you about your experience in the industry.",
+      "singlish_status": "complete",
+      "standard_anchor": "Yes, I wanted to ask you about your experience in the industry."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-005",
+      "scope": "prospective_synthetic_challenge",
+      "family": "clarification",
+      "context": [
+        "Could you proofread the abstract? The charts are already checked.",
+        "Okay, I can spare ten minutes.",
+        "Thanks for helping."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Just checking, do you need the abstract or the charts reviewed?",
+      "english": "The charts are already checked. I only need the abstract proofread.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "Please proofread the abstract; the charts are already checked.",
+      "negative": "Please review the charts.",
+      "singlish": "The charts are checked. I only need the abstract proofread.",
+      "singlish_status": "complete",
+      "standard_anchor": "The charts are already checked. I only need the abstract proofread."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-006",
+      "scope": "prospective_synthetic_challenge",
+      "family": "clarification",
+      "context": [
+        "I have the accommodation form and the transport form.",
+        "Could you forward the accommodation form?",
+        "Okay, opening my files now."
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "Which form was it you needed?",
+      "english": "I need the accommodation form.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "I need the accommodation form.",
+      "negative": "I need the transport form.",
+      "singlish": "I need the accommodation form.",
+      "singlish_status": "complete",
+      "standard_anchor": "I need the accommodation form."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-007",
+      "scope": "prospective_synthetic_challenge",
+      "family": "status",
+      "context": [
+        "I have signed the consent sheet but it is still on my desk; I have not handed it in.",
+        "The organiser is collecting the sheets today."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Has the organiser got your signed sheet?",
+      "english": "I have not handed it in yet. I have only signed it.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "Not yet. I have signed it but have not handed it in.",
+      "negative": "Yes, the organiser has received it.",
+      "singlish": "Haven’t handed it in yet leh. I only signed it.",
+      "singlish_status": "complete",
+      "standard_anchor": "I have not handed it in yet. I have only signed it."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-008",
+      "scope": "prospective_synthetic_challenge",
+      "family": "status",
+      "context": [
+        "I have finished editing the audio. The subtitles are still unfinished.",
+        "I need an update for the production team."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Are the subtitles finished too?",
+      "english": "The subtitles are still unfinished. I have only edited the audio.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "The subtitles are not finished yet.",
+      "negative": "Yes, the subtitles are finished.",
+      "singlish": "The subtitles haven’t finish leh. I only edited the audio.",
+      "singlish_status": "complete",
+      "standard_anchor": "The subtitles are still unfinished. I have only edited the audio."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-009",
+      "scope": "prospective_synthetic_challenge",
+      "family": "return_direction",
+      "context": [
+        "Your sleeping bag is still at my place; I borrowed it for the overnight hike.",
+        "I need it again next weekend."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Which of us should return the sleeping bag?",
+      "english": "I should return it to you this weekend.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "You should return my sleeping bag to me.",
+      "negative": "I should return your sleeping bag to you.",
+      "singlish": "Next weekend I return the sleeping bag to you.",
+      "singlish_status": "complete",
+      "standard_anchor": "I should return it to you this weekend."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-010",
+      "scope": "prospective_synthetic_challenge",
+      "family": "speaker_location",
+      "context": [
+        "I am inside the bakery, next to the bread shelves.",
+        "I am across the road at the fruit stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Okay, where should I look for you?",
+      "english": "Look for me next to the bread shelves.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "I am inside the bakery next to the bread shelves.",
+      "negative": "I am at the fruit stall across the road.",
+      "singlish": "Look for me next to the bread shelves.",
+      "singlish_status": "complete",
+      "standard_anchor": "Look for me next to the bread shelves."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-011",
+      "scope": "prospective_synthetic_challenge",
+      "family": "availability",
+      "context": [
+        "I am taking an exam on Monday morning. Tuesday morning is clear.",
+        "We need to arrange a practice session."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Shall we use Monday morning?",
+      "english": "That works for me. Let's do it on Monday morning.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "I have an exam on Monday morning. Could we use Tuesday morning?",
+      "negative": "Monday morning works for me.",
+      "singlish": "That works for me. Monday morning can.",
+      "singlish_status": "complete",
+      "standard_anchor": "That works for me. Let's do it on Monday morning."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-012",
+      "scope": "prospective_synthetic_challenge",
+      "family": "time_constraint",
+      "context": [
+        "The repair shop will keep me until 6:30 pm, so I cannot leave before then.",
+        "I will be nearby this evening."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Does meeting at 5 pm work?",
+      "english": "That is fine, let's meet at 5 pm.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "I cannot meet at 5 pm; I cannot leave before 6:30 pm.",
+      "negative": "Yes, 5 pm works.",
+      "singlish": "Five can, see you then.",
+      "singlish_status": "complete",
+      "standard_anchor": "That is fine, let's meet at 5 pm."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-013",
+      "scope": "prospective_synthetic_challenge",
+      "family": "budget",
+      "context": [
+        "I can spend no more than $18 for the ticket.",
+        "The only ticket left costs $41."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Would you like me to book that ticket for you?",
+      "english": "Yes, please book that ticket for me.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "That is over my $18 budget. Please do not book it.",
+      "negative": "Yes, book the $41 ticket for me.",
+      "singlish": "Yes please, book that ticket for me ah.",
+      "singlish_status": "complete",
+      "standard_anchor": "Yes, please book that ticket for me."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-014",
+      "scope": "prospective_synthetic_challenge",
+      "family": "correction",
+      "context": [
+        "I suggested the rooftop, but it is closed for maintenance.",
+        "Do you have another place in mind?",
+        "Use the ground-floor lounge instead."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Where should I go after the change of plan?",
+      "english": "Let's go to the ground-floor lounge instead.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "Go to the ground-floor lounge.",
+      "negative": "Go to the rooftop.",
+      "singlish": "Go ground-floor lounge instead lah.",
+      "singlish_status": "complete",
+      "standard_anchor": "Let's go to the ground-floor lounge instead."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-015",
+      "scope": "prospective_synthetic_challenge",
+      "family": "request_offer",
+      "context": [
+        "I cannot open the bottle with this injured wrist.",
+        "I am sitting beside you."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Would you like me to open it for you?",
+      "english": "Yes, please open the bottle for me.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "Yes, could you open it for me?",
+      "negative": "Yes, I will open it for you.",
+      "singlish": "Yes please, help me open the bottle.",
+      "singlish_status": "complete",
+      "standard_anchor": "Yes, please open the bottle for me."
+    },
+    {
+      "item_id": "TURN-PROSPECTIVE-016",
+      "scope": "prospective_synthetic_challenge",
+      "family": "unknown",
+      "context": [
+        "The coach confirmed that there will be training, but has not picked the starting time.",
+        "Okay, tell me once the time is decided."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "What time should I put in my calendar?",
+      "english": "I'll update you once the time is confirmed.",
+      "english_status": "complete",
+      "criterion": "Address the latest incoming message; preserve explicit roles, facts and constraints. Reference is one acceptable reply.",
+      "reference": "The starting time has not been decided yet.",
+      "negative": "Put 8 am in your calendar.",
+      "singlish": "I update you once the time is confirmed ah.",
+      "singlish_status": "complete",
+      "standard_anchor": "I'll update you once the time is confirmed."
+    },
+    {
+      "item_id": "USER-CALL-001",
+      "scope": "user_diagnostic",
+      "family": "user_failure_diagnostic",
+      "context": [
+        "Can u call me now?",
+        "Eh i not so free eh?",
+        "Ohh, then when can we call?"
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "I am not sure, what do you want to call me about",
+      "english": "Could you call me now?",
+      "english_status": "complete",
+      "criterion": "Respond as the person who initiated the call. Do not reverse roles. Purpose is unspecified, so do not treat a specific invented purpose as established fact.",
+      "reference": null,
+      "negative": null,
+      "singlish": "Not sure what u want to talk about",
+      "singlish_status": "complete",
+      "standard_anchor": "Could you call me now?",
+      "assistant_anchor_diagnostic": {
+        "anchor": "I'll send you a message explaining what I wanted to discuss.",
+        "singlish": "Okay, I send you a message explaining what I wanted to discuss.",
+        "status": "complete",
+        "note": "Manually supplied appropriate English draft; not English model output."
+      }
+    },
+    {
+      "item_id": "ITEM-B-043",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "a few of us are going out this weekend",
+        "sounds fun"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you want come?",
+      "english": "Sure, I would love to come.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Sure, I'd be happy to join you.",
+      "negative": null,
+      "singlish": "Sure, let's go!",
+      "singlish_status": "complete",
+      "standard_anchor": "Sure, I would love to come."
+    },
+    {
+      "item_id": "ITEM-B-042",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "I'm waiting outside already",
+        "I'm reaching soon"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry, I took the wrong bus",
+      "english": "No worries, let me know when you reach",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "No worries. Just let me know when you get here.",
+      "negative": null,
+      "singlish": "No worries, take your time",
+      "singlish_status": "complete",
+      "standard_anchor": "No worries, let me know when you reach"
+    },
+    {
+      "item_id": "ITEM-B-057",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "my phone is almost out of battery",
+        "I brought my charger"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can I borrow your charger?",
+      "english": "Sure, go ahead and use my charger.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Sure, you can borrow mine.",
+      "negative": null,
+      "singlish": "Can, use my charger first ah.",
+      "singlish_status": "complete",
+      "standard_anchor": "Sure, go ahead and use my charger."
+    },
+    {
+      "item_id": "ITEM-B-029",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "I can't remember which room we're in",
+        "I'm checking the timetable"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "which room is our class in?",
+      "english": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "We're in SR3-3 today.",
+      "negative": null,
+      "singlish": "I check the timetable first, then let you know.",
+      "singlish_status": "complete",
+      "standard_anchor": "I'm checking the timetable right now, but I'll let you know once I know which room we're in."
+    },
+    {
+      "item_id": "ITEM-B-050",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "I haven't exercised in a while",
+        "same, I've been busy with classes"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "want to go run later?",
+      "english": "Sure, what time should we meet?",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Sure, what time do you want to go?",
+      "negative": null,
+      "singlish": "Can, what time ah?",
+      "singlish_status": "complete",
+      "standard_anchor": "Sure, what time should we meet?"
+    },
+    {
+      "item_id": "ITEM-C-041",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "could you upload your section before 8?",
+        "yes, i'll do it"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i only just finished class. i'll upload a bit later",
+      "english": "no worries. i'll wait a bit longer",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "no worries. just upload it when you're ready",
+      "negative": null,
+      "singlish": "it's okay lah, i wait abit",
+      "singlish_status": "complete",
+      "standard_anchor": "no worries. i'll wait a bit longer"
+    },
+    {
+      "item_id": "ITEM-E-025",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "hi class, I had a family emergency and there will not be any class tomorrow.",
+        "oh no! what about the in class quiz?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+      "english": "sure, let's do a make up class on thursday instead",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Yes, we are able to meet on thursday.",
+      "negative": null,
+      "singlish": "okies, thursday then we do a make up class instead",
+      "singlish_status": "complete",
+      "standard_anchor": "sure, let's do a make up class on thursday instead"
+    },
+    {
+      "item_id": "ITEM-E-015",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "Hi guys, remember to do the quiz, deadline is next week",
+        "yep noted"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "hi have you done the quiz alr anot",
+      "english": "Nope, I haven't done it yet.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Yes, I finished it already.",
+      "negative": null,
+      "singlish": "haven’t finish leh, I check the answers first",
+      "singlish_status": "complete",
+      "standard_anchor": "Nope, I haven't done it yet."
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "bro you want to eat at kopitiam later? The whole gang is cmg",
+        "if you want ah let us know"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "english": "ok, then we eat at 6pm instead",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "all good man, we can meet next time",
+      "negative": null,
+      "singlish": "ok, then we eat at 6pm instead",
+      "singlish_status": "complete",
+      "standard_anchor": "ok, then we eat at 6pm instead"
+    },
+    {
+      "item_id": "ITEM-D-046",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "eh help",
+        "what"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the cinema ticket is sold out bruh",
+      "english": "Oh no, I can't go now. Could someone else go in my place?",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Oh no, can we see if there are other timings?",
+      "negative": null,
+      "singlish": "aiyo, aiyo",
+      "singlish_status": "complete",
+      "standard_anchor": "Oh no, I can't go now. Could someone else go in my place?"
+    },
+    {
+      "item_id": "ITEM-C-028",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "im waiting at the cafe alr",
+        "coming now"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i ordered first because i was too hungry",
+      "english": "no worries, i'll wait for you",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "thats completely fine. i'll order when i arrive",
+      "negative": null,
+      "singlish": "it's okay lah, i wait for you",
+      "singlish_status": "complete",
+      "standard_anchor": "no worries, i'll wait for you"
+    },
+    {
+      "item_id": "ITEM-C-017",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "im working on my slides now",
+        "same, im doing the results section"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "your part done alr?",
+      "english": "not yet, im still working on it",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "i just need to finish the last slide",
+      "negative": null,
+      "singlish": "havent finish leh, still working on it",
+      "singlish_status": "complete",
+      "standard_anchor": "not yet, im still working on it"
+    },
+    {
+      "item_id": "ITEM-D-007",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "u wanna try the matcha at luckin?",
+        "nahh"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "then what u wanna drink later?",
+      "english": "i'm not sure what i want",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "I would like to try the new cafe latte there.",
+      "negative": null,
+      "singlish": "idk what i want leh",
+      "singlish_status": "complete",
+      "standard_anchor": "i'm not sure what i want"
+    },
+    {
+      "item_id": "ITEM-C-023",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "saturday im quite free",
+        "same, no plans yet"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "want me to jio you for the night market thing?",
+      "english": "Sure, I'd love to join you for that.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "yes, id like to go. lmk what time you're heading thr",
+      "negative": null,
+      "singlish": "Can, I'll go with you for that.",
+      "singlish_status": "complete",
+      "standard_anchor": "Sure, I'd love to join you for that."
+    },
+    {
+      "item_id": "ITEM-B-056",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "are you free for badminton tonight?",
+        "I should be free"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the court is already booked for seven",
+      "english": "No worries, I'll find another time.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Okay, seven works for me.",
+      "negative": null,
+      "singlish": "No worries, I'll find another time.",
+      "singlish_status": "complete",
+      "standard_anchor": "No worries, I'll find another time."
+    },
+    {
+      "item_id": "ITEM-D-037",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "have you reached?",
+        "wya"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "i reached, i waiting outside mac",
+      "english": "okay, i will be there in a few minutes",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "Ok , I am heading there right now.",
+      "negative": null,
+      "singlish": "okay, i coming",
+      "singlish_status": "complete",
+      "standard_anchor": "okay, i will be there in a few minutes"
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "eh i struggling to do the linear algebra qn",
+        "which"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "neh the gaussian elim qn",
+      "english": "Okay, I can help you with that one.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "I have done the question. Allow me to assist.",
+      "negative": null,
+      "singlish": "Okay, I help you with that one.",
+      "singlish_status": "complete",
+      "standard_anchor": "Okay, I can help you with that one."
+    },
+    {
+      "item_id": "ITEM-E-032",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "I reminded the class the tutorial is at SR3-1 liao",
+        "can you change today's tutorial to be in SR3-2 instead?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry ah but that one cannot, someone book liao",
+      "english": "Okay, I'll go to SR3-2 instead.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "alright, lets stick to the current arrangements",
+      "negative": null,
+      "singlish": "Okay, I go SR3-2 instead.",
+      "singlish_status": "complete",
+      "standard_anchor": "Okay, I'll go to SR3-2 instead."
+    },
+    {
+      "item_id": "ITEM-C-045",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "we said we'd sit together tmr",
+        "yep"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you still coming early to get seats right?",
+      "english": "Yes, I will be there at 8am.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "yes, i'll arrive a little early",
+      "negative": null,
+      "singlish": "ya, i gg at 8am",
+      "singlish_status": "complete",
+      "standard_anchor": "Yes, I will be there at 8am."
+    },
+    {
+      "item_id": "ITEM-A-046",
+      "scope": "reused_development_regression",
+      "family": null,
+      "context": [
+        "want to study together tomorrow?",
+        "sure, what time?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "2pm u can anot, i can chiong from class",
+      "english": "Sure, I'll be there at 2pm.",
+      "english_status": "complete",
+      "criterion": null,
+      "reference": "You don't have to, take your time",
+      "negative": null,
+      "singlish": "Can, 2pm I come.",
+      "singlish_status": "complete",
+      "standard_anchor": "Sure, I'll be there at 2pm."
+    }
+  ],
+  "scope": "16 new prospective synthetic scenarios,1 reused user diagnostic,20 reused development regressions. No human/test accuracy claim.",
+  "inference": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 64
+  },
+  "cases": 37,
+  "flags": [],
+  "source_format": "original_canonical"
+}

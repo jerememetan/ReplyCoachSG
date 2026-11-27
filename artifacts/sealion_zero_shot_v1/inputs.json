@@ -1,0 +1,62 @@
+[
+  {
+    "item_id": "SEADUAL-011",
+    "context": [
+      "I left my purple water bottle in the studio.",
+      "There are a few bottles here."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What colour is your bottle?"
+  },
+  {
+    "item_id": "SEADUAL-015",
+    "context": [
+      "I have been doing most of the group project alone.",
+      "Have the others been helping?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Not really, and I am feeling overwhelmed."
+  },
+  {
+    "item_id": "SEADUAL-008",
+    "context": [
+      "I already booked our tutorial room this morning.",
+      "Thanks for arranging that."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you booked the room yet?"
+  },
+  {
+    "item_id": "SEADUAL-010",
+    "context": [
+      "I am waiting outside seminar room 4A.",
+      "I am coming upstairs."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room are you outside?"
+  },
+  {
+    "item_id": "SEADUAL-013",
+    "context": [
+      "I am still in the tutorial.",
+      "I am at the coffee stall."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What drink should I get you?"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "item_id": "BC-dev-00005",
+    "english": {
+      "reply": "Yeah, I'll be there around 7pm.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "9e111f77b5de923ca50cce315763bc2d75fa43d60688a88ab7cf48c58c3b17e2"
+    },
+    "singlish": {
+      "reply": "steady, see u at 7pm",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "3d7615cf7ad8749affee87f8ef15b122a5a61ebf6c656b628a721a4a560a5c03"
+    }
+  },
+  {
+    "item_id": "BC-dev-00011",
+    "english": {
+      "reply": "Sure, I'll bring my own kite with me. Let's meet at the park at 2pm.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "8c63bbd0b78829aeec1559152490cf2daad5aa0edda99f7786acbf5f0f1b0935"
+    },
+    "singlish": {
+      "reply": "not yet, i bring my own",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "7623e57119c6ff0fbdda607888ce2c155de26fa394238907b4b191ee9bf2feee"
+    }
+  },
+  {
+    "item_id": "BC-dev-00013",
+    "english": {
+      "reply": "I'm free on Saturday morning. What time should we meet?",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "8ed65930006a40c8ed8e350486ac1690b4a42a27997186390544598469082408"
+    },
+    "singlish": {
+      "reply": "ok, see u there",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "249727244d928d82bc92b5adfc94dff965a9a2484717355ac32178583dcd427c"
+    }
+  },
+  {
+    "item_id": "BC-dev-00037",
+    "english": {
+      "reply": "See you there at 8pm.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "20c059bb7223a88eff4d9d6b9b7291b37b52b97174ad053874ee390846589501"
+    },
+    "singlish": {
+      "reply": "8pm can, see u there",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "57e405bae4c1000d0e878a857d6528f2c02c876bef487ab2dccfb31fc28806ed"
+    }
+  },
+  {
+    "item_id": "BC-dev-00038",
+    "english": {
+      "reply": "Let's go over so we can help.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "9f4c08c841fac1a54e86b0483cd64e5c80dfb30d43abf7dc3183dbd0fa230402"
+    },
+    "singlish": {
+      "reply": "Come over lah.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "54f173691d40d79176ebe8315c59b75f934548072b919af1c8a0dcb7a0b85f22"
+    }
+  },
+  {
+    "item_id": "BC-dev-00054",
+    "english": {
+      "reply": "Yes, I've just watched it. Thanks for sending it.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "2d1d2950eb70e0925bd1ce86151c6283584808896fe791e8e9466172a31f3ca0"
+    },
+    "singlish": {
+      "reply": "got it, thanks",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "52853e1829f5ba6cdc8e3149e2940b38726d314b39899a7bb450a72abc88e0e8"
+    }
+  },
+  {
+    "item_id": "BC-dev-00063",
+    "english": {
+      "reply": "I'll be there at 9:55am to grab a seat.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "25c5c5d17e86debea5a741a782ac36ebebc8e0bea328b35d3bd64a4ff8b6325a"
+    },
+    "singlish": {
+      "reply": "ok, i'll be there by 10am",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "1ced186167659a22731f090c4db1ee32d2bd68dea148d81c8c477385ca7d1291"
+    }
+  },
+  {
+    "item_id": "BC-dev-00070",
+    "english": {
+      "reply": "Sure, I'm down. Let's meet there at 5pm.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "f2ce8ce8e6cde9ad02dd081072eee74567a22c0a34452c2265908d60489e5a32"
+    },
+    "singlish": {
+      "reply": "steady, what time ah?",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "240af9a5565dabc004aa0ce70b331441df0e974ee64cce63d3151cf6e86c9548"
+    }
+  },
+  {
+    "item_id": "BC-dev-00074",
+    "english": {
+      "reply": "Let's meet at my place for a bit of privacy.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "42c68f23310e5dc24a73f569e6b3b363c4e97e3b3103d677723b2848772ae50b"
+    },
+    "singlish": {
+      "reply": "Library can, see you there at 2pm.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "3bc73fb242812c1ea7e4b16e0cf573b5d3ad2295f437a67d7f0705aabb5419a1"
+    }
+  },
+  {
+    "item_id": "BC-dev-00096",
+    "english": {
+      "reply": "Yes, I'd love to join you for the workshop.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "bb8cc34c949e25ded6f35accc070c34eca929aeab50daa8dcafe1bdcbb3a97e6"
+    },
+    "singlish": {
+      "reply": "can, what time ah?",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "e8cd21c19b00d4c9bfe0fc7366f0a18ebb7680787b8f094384024202501392b3"
+    }
+  },
+  {
+    "item_id": "BC-dev-00113",
+    "english": {
+      "reply": "Yes, let's go for lunch nearby.",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "7110a859434cf44fc9681e4941dfcbd2a56faf9508954f0f06c21ef1674e6b48"
+    },
+    "singlish": {
+      "reply": "can, find somewhere nearby for lunch",
+      "status": "complete",
+      "termination": "eos",
+      "prompt_sha256": "7e25517f4c9a77982bc7855b88ee2d772fb22f9cddd221a838242922b531d6ef"
+    }
+  }
+]

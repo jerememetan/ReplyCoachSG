@@ -1,0 +1,58 @@
+{
+  "train-04121": {
+    "decision": "reject",
+    "notes": "LOCAL draft 2 has unnatural duplicated idiom I owe you one one."
+  },
+  "train-02520": {
+    "decision": "keep",
+    "notes": "Two valid future availability choices; LOCAL preserves each choice."
+  },
+  "train-04616": {
+    "decision": "reject",
+    "notes": "Incoming suggests cooking at a canteen; source setting is implausible/ambiguous for this dinner choice."
+  },
+  "train-04539": {
+    "decision": "reject",
+    "notes": "Availability changes from Saturday work to finished project without a clear connection; LOCAL draft 2 also adds now."
+  },
+  "train-04571": {
+    "decision": "keep",
+    "notes": "Two pasta choices; colloquial LOCAL keeps each choice."
+  },
+  "train-01007": {
+    "decision": "keep",
+    "notes": "Friend owns goggles and You returns them; both drafts retain those roles."
+  },
+  "train-04990": {
+    "decision": "reject",
+    "notes": "LOCAL 1 changes grabbing food later to finding food elsewhere; LOCAL 2 changes planned waiting to wait liao."
+  },
+  "train-01687": {
+    "decision": "keep",
+    "notes": "Two offers by You to lend a charger; no role reversal. Prior powerbank mention is compatible with having charging equipment, though source wording is loose."
+  },
+  "train-02931": {
+    "decision": "keep",
+    "notes": "Accepting with a proposed time and declining are both valid selectable drafts; LOCAL follows each."
+  },
+  "train-02181": {
+    "decision": "keep",
+    "notes": "Contingent cafe plan and checking weather are valid supportive options; LOCAL retains choices."
+  },
+  "train-03731": {
+    "decision": "reject",
+    "notes": "LOCAL reads like verbose literal English, including full restatement and push through tonight; fails the calibrated concise peer-texting style."
+  },
+  "train-02004": {
+    "decision": "reject",
+    "notes": "LOCAL Can do, just let me know which cafe you want to go to is long and literal; target needs a natural context-dependent question."
+  },
+  "train-01109": {
+    "decision": "keep",
+    "notes": "Both time options are valid future choices; LOCAL retains 12:30-before-crowd and after-1 availability."
+  },
+  "train-03631": {
+    "decision": "reject",
+    "notes": "LOCAL draft2 drops English try and before9; strengthens a tentative plan to definite finish-then-join."
+  }
+}

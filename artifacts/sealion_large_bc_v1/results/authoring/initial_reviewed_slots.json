@@ -1,0 +1,18 @@
+{
+  "keep_slots": [
+    "train-01007",
+    "train-01077",
+    "train-01109",
+    "train-01427",
+    "train-01687",
+    "train-02181",
+    "train-02520",
+    "train-02569",
+    "train-02931",
+    "train-04424",
+    "train-04512",
+    "train-04571"
+  ],
+  "initial_review": "assistant_initial24_review.json",
+  "followup_required": 6
+}

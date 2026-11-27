@@ -1,0 +1,182 @@
+[
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-WALK-original_sealion",
+    "context": [
+      "This weekend feel like going outside for a bit",
+      "Same, been sitting at home too much"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Want go walk at Botanic Gardens?",
+    "standard_anchor": "Yes please, let's go for a walk at the botanic gardens.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved original_sealion English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-WALK-mt5_A",
+    "context": [
+      "This weekend feel like going outside for a bit",
+      "Same, been sitting at home too much"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Want go walk at Botanic Gardens?",
+    "standard_anchor": "Sure, let's go.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved mt5_A English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-WORK-original_sealion",
+    "context": [
+      "Finally submitted my report",
+      "Nice, that took you quite a while"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Ya sia, now can relax already. What you doing tonight?",
+    "standard_anchor": "Nothing planned for tonight. What about going out for dinner?",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved original_sealion English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-WORK-mt5_A",
+    "context": [
+      "Finally submitted my report",
+      "Nice, that took you quite a while"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Ya sia, now can relax already. What you doing tonight?",
+    "standard_anchor": "I'm going to dinner with my friends.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved mt5_A English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-NEWS-original_sealion",
+    "context": [
+      "Eh I got the internship!",
+      "Wah congrats!"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Thanks! Wanna get dinner to celebrate?",
+    "standard_anchor": "Sure, let's meet for dinner tonight.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved original_sealion English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-NEWS-mt5_A",
+    "context": [
+      "Eh I got the internship!",
+      "Wah congrats!"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Thanks! Wanna get dinner to celebrate?",
+    "standard_anchor": "Sure! What time would you like to celebrate?",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved mt5_A English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-COOK-original_sealion",
+    "context": [
+      "Thinking of cooking pasta tonight",
+      "Sounds good, what kind?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Maybe tomato sauce. You got any ideas what to add?",
+    "standard_anchor": "I'm not sure what to add to the sauce. Let's check the recipe first.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved original_sealion English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-COOK-mt5_A",
+    "context": [
+      "Thinking of cooking pasta tonight",
+      "Sounds good, what kind?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Maybe tomato sauce. You got any ideas what to add?",
+    "standard_anchor": "Yes, tomato sauce is a good idea.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved mt5_A English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-BUS-original_sealion",
+    "context": [
+      "On the bus home now",
+      "Long day ah?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Ya man, can't wait to get home and rest",
+    "standard_anchor": "No worries, take care",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved original_sealion English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-BUS-mt5_A",
+    "context": [
+      "On the bus home now",
+      "Long day ah?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Ya man, can't wait to get home and rest",
+    "standard_anchor": "Okay, let's get back to work soon.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved mt5_A English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-RAIN-original_sealion",
+    "context": [
+      "Rain quite heavy outside",
+      "Ya, I can hear it from my room"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Good weather to stay in. Any movie you feel like watching?",
+    "standard_anchor": "I'm not sure what movies are playing. Let's check the cinema's schedule.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved original_sealion English; may itself be contextually weak. No English repair."
+  },
+  {
+    "item_id": "REWRITE-DEMO-CASUAL-RAIN-mt5_A",
+    "context": [
+      "Rain quite heavy outside",
+      "Ya, I can hear it from my room"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Good weather to stay in. Any movie you feel like watching?",
+    "standard_anchor": "Yes, I'd like to watch a movie.",
+    "scope": "reused_casual_generated_anchor",
+    "anchor_provenance": "Actual saved mt5_A English; may itself be contextually weak. No English repair."
+  }
+]

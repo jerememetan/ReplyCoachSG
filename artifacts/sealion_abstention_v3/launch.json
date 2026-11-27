@@ -1,0 +1,11 @@
+{
+  "job_id": 358131,
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v3",
+  "gpu_requested": "L40S",
+  "partition": "student",
+  "slurm_account": "cs701",
+  "qos": "studentqos",
+  "payload_sha256": "5edd2166a6cb37420ad1a34af89f1d6c8e917d1530e6cfa988a38438ab7f0e3a",
+  "default_changed": false
+}

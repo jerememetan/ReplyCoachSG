@@ -1,0 +1,46 @@
+{
+  "status": "running",
+  "jobs": {
+    "preflight": 359569,
+    "B": 359570,
+    "C": 359571,
+    "archive": 359572
+  },
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_sealion_audited768_bc_warmup_v1",
+  "at_utc": "2026-11-09T06:37:18.409078+00:00",
+  "payload_sha256": "9926e3e2a32534a87d7e4534ed6064fd1563cc13187165783f4522028f79ad89",
+  "default_changed": false,
+  "training_conversations": 768,
+  "rewrite_pairs": 766,
+  "epochs_per_stage": 8,
+  "latest_observation": {
+    "at_utc": "2026-11-09T07:12:24.136136+00:00",
+    "elapsed": "00:32:49",
+    "preflight": "complete",
+    "B": {
+      "status": "running",
+      "stage": "task",
+      "completed_epochs": 4,
+      "optimizer_updates": 800,
+      "total_updates": 1536,
+      "selected_epoch": 2,
+      "best_selection_ce": 2.005685363585919,
+      "latest_epoch4_selection_ce": 2.2921213498534083
+    },
+    "C": {
+      "status": "running",
+      "stage": "task",
+      "completed_epochs": 4,
+      "optimizer_updates": 768,
+      "total_updates": 1536,
+      "selected_epoch": 2,
+      "best_selection_ce": 2.0685926028101775,
+      "latest_epoch4_selection_ce": 2.1715903570966715
+    },
+    "initial_selection_ce": 2.8902138231401437,
+    "warmup_complete": true,
+    "rewrite_started": false,
+    "errors_observed": false
+  }
+}

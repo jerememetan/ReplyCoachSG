@@ -1,0 +1,34 @@
+{
+  "reviewer": "assistant",
+  "human_gold": false,
+  "scope": "All75 selected actual-pipeline cases and24 fixed-reference Qwen rewrites inspected. SEA-LION C comparison inspected for named examples, not blindly scored across all75.",
+  "verdict": "Useful casual Singlish and some ownership/completion improvements; persistent contextual errors and rewrite fidelity errors. No demonstrated overall winner or automatic promotion.",
+  "positive_examples": {
+    "AUDIT-EVAL-08": "Qwen correctly asks to borrow the friend-owned headphones; inspected SEA-LION C reverses ownership.",
+    "AUDIT-EVAL-12": "Both models preserve the nine-dollar budget refusal.",
+    "AUDIT-EVAL-13": "Qwen preserves unfinished explanation status in English and Singlish.",
+    "AUDIT-EVAL-18": "Qwen preserves promise to take/send a photo.",
+    "ITEM-E-009": "Qwen preserves charger ownership and after-three availability."
+  },
+  "failures": {
+    "AUDIT-EVAL-14": "Both English and Singlish ignore coffee-shop closure before arrival.",
+    "AUDIT-EVAL-19": "Both Qwen and SEA-LION C choose L3 after a move toL8. Qwen rewrites a correct fixed English L8 draft correctly, locating the actual-pipeline error in its English stage.",
+    "USER-FLU-001": "Qwen changes requested videos during play to videos after completion; SEA-LION C preserves during-play timing.",
+    "ITEM-A-010": "Qwen echoes the incoming peer-labelled text instead of replying.",
+    "ITEM-A-044": "Qwen treats blur like sotong too literally: I will not blur it.",
+    "ITEM-E-007": "Qwen treats na li as the place name Na Li.",
+    "ITEM-E-046": "Qwen changes English permission for the friend to release a recording into You releasing it."
+  },
+  "fixed_reference_failures": {
+    "AUDIT-EVAL-04": "Yes,it is ready becomes ya,ready anot?; assertion becomes question.",
+    "AUDIT-EVAL-14": "Known closure/alternative-location request becomes uncertainty about arrival time."
+  },
+  "limits": [
+    "Reused development data including50 extensively reused validation conversations; no independent test accuracy.",
+    "One assistant qualitative review, not blinded human ratings.",
+    "Single seed and one chosen learning-rate recipe; model-package differences remain.",
+    "Fixed-reference diagnostics are separate from actual-English-anchor outputs.",
+    "All generation statuses complete is a technical completion check, not semantic accuracy."
+  ],
+  "default_changed": false
+}

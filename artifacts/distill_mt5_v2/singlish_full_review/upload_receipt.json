@@ -1,0 +1,82 @@
+{
+  "reviews/sealion/singlish_full.json": {
+    "path": "reviews/sealion/singlish_full.json",
+    "sha256": "8994e68b2c6efc1489bd23e0c130866793f3c105c4f8aa7f7b89dfc0f3f8bb40",
+    "bytes": 172259
+  },
+  "reviews/qwen/singlish_full.json": {
+    "path": "reviews/qwen/singlish_full.json",
+    "sha256": "bd20d74eae8dbc8942be00fd82e009be92d4917e585ed8ddf50c3f526cd669d7",
+    "bytes": 179780
+  },
+  "singlish_full_review/borderline_second_pass.json": {
+    "path": "singlish_full_review/borderline_second_pass.json",
+    "sha256": "56774ec44b53e3a58968418f41d1871c2b89b199399f8a887e3c292d485b8d46",
+    "bytes": 1009
+  },
+  "singlish_full_review/build_review.py": {
+    "path": "singlish_full_review/build_review.py",
+    "sha256": "2bcb49cf0347572240961ac48f8d22e2f0c72044cdf1a32cf7081ce8d0d63eb9",
+    "bytes": 10116
+  },
+  "singlish_full_review/comparison.csv": {
+    "path": "singlish_full_review/comparison.csv",
+    "sha256": "dc3dc4889ff6a84a9c08ab3f00ac0aa1b86612caf89bbcb7fcfa2a7176cbd5a9",
+    "bytes": 429999
+  },
+  "singlish_full_review/decisions.tsv": {
+    "path": "singlish_full_review/decisions.tsv",
+    "sha256": "a754b84aeb320734970f60abc44d638a0ff9417741e1c445fffeb6ccf54b89f4",
+    "bytes": 85460
+  },
+  "singlish_full_review/progress.json": {
+    "path": "singlish_full_review/progress.json",
+    "sha256": "be170b1af08fca4cf065e38e7e46f519bdf3320b5d782f32bd6c0fe62e8e801b",
+    "bytes": 681
+  },
+  "singlish_full_review/submission.json": {
+    "path": "singlish_full_review/submission.json",
+    "sha256": "97218416ef47178157bdb494d42146b88b54c83f672d9f7385f99c9e2de78996",
+    "bytes": 251
+  },
+  "singlish_full_review/summary.json": {
+    "path": "singlish_full_review/summary.json",
+    "sha256": "3bdfe97a763f8d58af6aa3b0245a33afae313554b0855c1e0e1ee645385356c0",
+    "bytes": 25827
+  },
+  "singlish_full_review/matching_fix/amendment.json": {
+    "path": "singlish_full_review/matching_fix/amendment.json",
+    "sha256": "4cab17bccc87282c836f24cdb4bac22448e36d71be5c7936f46b17e925830517",
+    "bytes": 1038
+  },
+  "scripts/freeze_distill_mt5_v2_targets_reviewed_v1.py": {
+    "path": "scripts/freeze_distill_mt5_v2_targets_reviewed_v1.py",
+    "sha256": "87b74497ac4c9ca21d75960b43cf66d3faa476661e95ca36a59d79afaea47e4e",
+    "bytes": 4174
+  },
+  "singlish_full_review/matching_fix/scripts/freeze_distill_mt5_v2_targets_reviewed_v1.py": {
+    "path": "singlish_full_review/matching_fix/scripts/freeze_distill_mt5_v2_targets_reviewed_v1.py",
+    "sha256": "87b74497ac4c9ca21d75960b43cf66d3faa476661e95ca36a59d79afaea47e4e",
+    "bytes": 4174
+  },
+  "src/replycoach/generate/distill_mt5_v2_matching.py": {
+    "path": "src/replycoach/generate/distill_mt5_v2_matching.py",
+    "sha256": "6ada05c0c734b21152f5d8fb403ea4dceab5bf679ef6dcad7c485645e1281599",
+    "bytes": 1317
+  },
+  "singlish_full_review/matching_fix/src/replycoach/generate/distill_mt5_v2_matching.py": {
+    "path": "singlish_full_review/matching_fix/src/replycoach/generate/distill_mt5_v2_matching.py",
+    "sha256": "6ada05c0c734b21152f5d8fb403ea4dceab5bf679ef6dcad7c485645e1281599",
+    "bytes": 1317
+  },
+  "tests/test_distill_mt5_v2_matching_20261121.py": {
+    "path": "tests/test_distill_mt5_v2_matching_20261121.py",
+    "sha256": "525646cccab1410df2a98e6750c6c32de701e0a9fffcde64780acdb9b7196890",
+    "bytes": 4000
+  },
+  "singlish_full_review/matching_fix/tests/test_distill_mt5_v2_matching_20261121.py": {
+    "path": "singlish_full_review/matching_fix/tests/test_distill_mt5_v2_matching_20261121.py",
+    "sha256": "525646cccab1410df2a98e6750c6c32de701e0a9fffcde64780acdb9b7196890",
+    "bytes": 4000
+  }
+}

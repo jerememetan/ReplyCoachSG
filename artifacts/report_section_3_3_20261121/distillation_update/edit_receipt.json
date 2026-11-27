@@ -1,0 +1,29 @@
+{
+  "document": "/home/spikeypear/Downloads/Copy of Final Report.docx",
+  "backup": "/home/spikeypear/Downloads/Copy of Final Report - before distillation results update.docx",
+  "original_sha256": "d8da5656ea4c558c7aa4f9facbe12e19809401724f01146257b096fa40927a26",
+  "updated_sha256": "c30b9b8638a5a8f894380a3695525b6834f2214c200a8293e4f05fcc35f5a95d",
+  "section_word_count": 2505,
+  "native_tables": 6,
+  "figure_placeholders": 2,
+  "outside_section_unchanged": true,
+  "other_package_parts_byte_identical": true,
+  "distillation_source": "experiments/mt5_warm_distill_v1_results.json",
+  "judge_source": "experiments/mt5_distill_judge_v1_results.json",
+  "dataset_audit": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/report_section_3_3_20261121/distillation_update/dataset_style_audit.json",
+  "theory_reference": "https://aclanthology.org/2021.naacl-main.41/",
+  "layout_adjustment": "Table caption specifies English/Singlish directly so the values are clear across a page break.",
+  "rendered_preview": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/report_section_3_3_20261121/distillation_update/preview/Copy of Final Report.pdf",
+  "rendered_pages": 20,
+  "visually_checked_pages": [
+    7,
+    11,
+    12
+  ],
+  "final_integrity_verification": {
+    "outside_section_unchanged": true,
+    "all_other_docx_parts_byte_identical": true,
+    "audited_dataset_source_hashes_unchanged": true
+  },
+  "dataset_review": "All-row descriptive audit plus40contextual assistant inspections, not independent human scoring"
+}

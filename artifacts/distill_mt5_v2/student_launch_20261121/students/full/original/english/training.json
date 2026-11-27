@@ -1,0 +1,42 @@
+{
+  "status": "running",
+  "stage": "english",
+  "training_examples": 571,
+  "training_rows_sha256": "7c8041ce7dc0b704661eda970c632719d20ade2ad75b0865859fc56cc2b74d78",
+  "validation_rows_sha256": "b4db6829d67b340a44725fe3800c68c6b7abc32d6e8592c24271a737bd18e40b",
+  "initial_adapter_sha256": "0d9f879e755ec3e631ced34951a1751b9f818825564e11cd565d7a2b09b9a38f",
+  "history": [
+    {
+      "epoch": 1,
+      "validation": {
+        "token_ce": 2.489417008284865,
+        "tokens": 580,
+        "examples": 50
+      },
+      "train_mean_ce": 2.5179103958418825,
+      "optimizer_updates": 72,
+      "adapter_sha256": "e81e59298e27564fad2539ad25577aa28cc60e371c44b4302334abb65961cd59"
+    },
+    {
+      "epoch": 2,
+      "validation": {
+        "token_ce": 2.299423790594627,
+        "tokens": 580,
+        "examples": 50
+      },
+      "train_mean_ce": 2.2528643012568748,
+      "optimizer_updates": 144,
+      "adapter_sha256": "351a5459edc8a53bfd9f303ee5b4ac4b84a80ee52f11663e9c8481a2506fa8f1"
+    }
+  ],
+  "initial_validation": {
+    "token_ce": 2.598812756045111,
+    "tokens": 580,
+    "examples": 50
+  },
+  "optimizer_updates": 144,
+  "base": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1/base",
+  "trainable_parameters": 1769472,
+  "selected_epoch": 2,
+  "selected_score": 2.299423790594627
+}

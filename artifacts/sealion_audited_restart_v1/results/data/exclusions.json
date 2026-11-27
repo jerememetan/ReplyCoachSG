@@ -1,0 +1,665 @@
+{
+  "source_flags": [
+    {
+      "item_id": "ITEM-A-009",
+      "variant": "original_team_reference",
+      "source_local": "siao liao, first class you better dun not late",
+      "proposed_local": "siao liao, first class you better dun not late",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL has a double negation and turns might-start-soon into near-certainty. Protected reference retained; derivative handles uncertainty better.",
+      "reviewed_by": "assistant",
+      "source_standard": "Hurry! You don't want to be late for your first class",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "Can you help me check where is the lecture later?"
+        },
+        {
+          "speaker": "user",
+          "text": "It is at LT27, I am heading there now."
+        }
+      ],
+      "message": "siao, i need to chiong there, no time already"
+    },
+    {
+      "item_id": "ITEM-A-014",
+      "variant": "original_team_reference",
+      "source_local": "I will one, dont worry",
+      "proposed_local": "I will one, dont worry",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original English uses by Sunday while incoming says before Sunday; derivative English separately corrected this boundary.",
+      "reviewed_by": "assistant",
+      "source_standard": "okay, I will do so by Sunday, dont worry.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "hello, have you done the literature review?"
+        },
+        {
+          "speaker": "user",
+          "text": "oh not yet, when is the assignment due again?"
+        }
+      ],
+      "message": "Don't blur leh, do before Sunday"
+    },
+    {
+      "item_id": "ITEM-A-045",
+      "variant": "original_team_reference",
+      "source_local": "Faster leh, professor going to start already.",
+      "proposed_local": "Faster leh, professor going to start already.",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL turns might start soon into going to start already. Derivative preserves uncertainty.",
+      "reviewed_by": "assistant",
+      "source_standard": "Hurry, the professor might start soon.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "I think I am going to be late for class"
+        },
+        {
+          "speaker": "user",
+          "text": "how late?"
+        }
+      ],
+      "message": "maybe around 30 minutes sia, siao liao"
+    },
+    {
+      "item_id": "ITEM-B-004",
+      "variant": "original_team_reference",
+      "source_local": "Sure, can get me a bottle of water?",
+      "proposed_local": "Sure, can get me a bottle of water?",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original English/LOCAL ask Friend to buy User water although incoming asks User to buy Friend a drink. Derivative reverses this correctly; keep original protected and flag it.",
+      "reviewed_by": "assistant",
+      "source_standard": "Sure, could you get me a bottle of water?",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "I going cafe"
+        },
+        {
+          "speaker": "user",
+          "text": "I still in class"
+        }
+      ],
+      "message": "Can help me buy drink?"
+    },
+    {
+      "item_id": "ITEM-B-060",
+      "variant": "original_team_reference",
+      "source_local": "Nevermind, I'll try find another one.",
+      "proposed_local": "Nevermind, I'll try find another one.",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original targets switch to User needing an adapter despite peer asking to borrow User adapter. Derivative gives a coherent found-mine response.",
+      "reviewed_by": "assistant",
+      "source_standard": "No worries, I'll find another one.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "can you lend me your adapter?"
+        },
+        {
+          "speaker": "user",
+          "text": "I was looking for it"
+        }
+      ],
+      "message": "sorry, I left the adapter at home"
+    },
+    {
+      "item_id": "ITEM-D-004",
+      "variant": "original_team_reference",
+      "source_local": "walao",
+      "proposed_local": "walao",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL walao expresses annoyance while English says that is fine. A valid friend reaction can be frustrated, but this pair is not aligned in stance.",
+      "reviewed_by": "assistant",
+      "source_standard": "That's fine.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "eh paiseh, i later cannot join u for dinner"
+        },
+        {
+          "speaker": "user",
+          "text": "whyyyyy"
+        }
+      ],
+      "message": "walao paiseh i got smth on later"
+    },
+    {
+      "item_id": "ITEM-D-011",
+      "variant": "original_team_reference",
+      "source_local": "uhh, i think still need do slides",
+      "proposed_local": "uhh, i think still need do slides",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL introduces I think uncertainty while English asserts remaining slides work.",
+      "reviewed_by": "assistant",
+      "source_standard": "There is still presentation slides to be done.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "ehh u know got assignment deal right?"
+        },
+        {
+          "speaker": "user",
+          "text": "yah"
+        }
+      ],
+      "message": "uhh, still got what else ah"
+    },
+    {
+      "item_id": "ITEM-D-014",
+      "variant": "original_team_reference",
+      "source_local": "i think we never study hard enough, we shld spend more time studying",
+      "proposed_local": "i think we never study hard enough, we shld spend more time studying",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL claims insufficient studying and more study time, while English only proposes reading topics. It adds blame and changes focus.",
+      "reviewed_by": "assistant",
+      "source_standard": "Maybe we should spend some time to read up about the topics.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "wahh the quiz was so tough"
+        },
+        {
+          "speaker": "user",
+          "text": "yah sia"
+        }
+      ],
+      "message": "wah how shld i prep for the next quiz better sia?"
+    },
+    {
+      "item_id": "ITEM-D-015",
+      "variant": "original_team_reference",
+      "source_local": "my bad. I thought it was ok",
+      "proposed_local": "my bad. I thought it was ok",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL thought it was ok is permissibility, while English thought necessary is a different rationale.",
+      "reviewed_by": "assistant",
+      "source_standard": "I am sorry. I thought it was necessary.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "ehh hello"
+        },
+        {
+          "speaker": "user",
+          "text": "what"
+        }
+      ],
+      "message": "what u doing, who ask u go add new slides"
+    },
+    {
+      "item_id": "ITEM-E-002",
+      "variant": "original_team_reference",
+      "source_local": "paiseh i got something on i cant make it already, can someone take over me",
+      "proposed_local": "paiseh i got something on i cant make it already, can someone take over me",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original English has a typo something take over me. Derivative corrects it to someone take my place.",
+      "reviewed_by": "assistant",
+      "source_standard": "sorry, i got something on and i can't make it already, can something take over me?",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "is anyone going for the workshop later?"
+        },
+        {
+          "speaker": "user",
+          "text": "I think i'm free to go"
+        },
+        {
+          "speaker": "peer",
+          "text": "ok, remember to sign up as well"
+        }
+      ],
+      "message": "bro you confirm going right"
+    },
+    {
+      "item_id": "ITEM-E-008",
+      "variant": "original_team_reference",
+      "source_local": "eh your part finish alr anot",
+      "proposed_local": "eh your part finish alr anot",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Peer explicitly has not started; original target asks whether their part is finished. Derivative replaces redundant status question with an offer to work together.",
+      "reviewed_by": "assistant",
+      "source_standard": "have you finished your part?",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "sorry whens the deadline again"
+        },
+        {
+          "speaker": "user",
+          "text": "its tomorrow"
+        }
+      ],
+      "message": "oh shoot its tomorrow? gg liao paiseh i haven't started"
+    },
+    {
+      "item_id": "ITEM-E-011",
+      "variant": "original_team_reference",
+      "source_local": "can i pay u ltr",
+      "proposed_local": "can i pay u ltr",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL asks permission to pay later, whereas English commits to paying later. Derivative preserves commitment.",
+      "reviewed_by": "assistant",
+      "source_standard": "Ok, will pay you later.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "do you need help with printing your notes? i'm in the printer room now"
+        },
+        {
+          "speaker": "user",
+          "text": "yes, please wait ah i send you my notes to print. How much isit ah"
+        }
+      ],
+      "message": "abt $0.05 per page, quite cheap remember pay me can liao"
+    },
+    {
+      "item_id": "ITEM-E-024",
+      "variant": "original_team_reference",
+      "source_local": "no u gotta for it this shit aint free",
+      "proposed_local": "no u gotta for it this shit aint free",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Original LOCAL contains a missing word and stronger profanity than the English. Source remains untouched; do not silently label exact tone equivalence.",
+      "reviewed_by": "assistant",
+      "source_standard": "no, you got to work for it. I'm not giving this out for free",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "woah is that a bot that generates notes for you?"
+        },
+        {
+          "speaker": "user",
+          "text": "yea, I made it myself and it has been a gamechanger sia"
+        }
+      ],
+      "message": "eh steng leh the auto generated notes your bot made for you, 我也要"
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-008",
+      "variant": "synthetic_training_target",
+      "source_local": "Can, you return my goggles when we meet at the pool.",
+      "proposed_local": "can, pool there return me",
+      "decision": "flag",
+      "style_action": "revise",
+      "reason": "Peer currently holds User goggles but asks Can return them ambiguously. Likely an offer to return; review wording before training.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "Yes, you can return my goggles at the pool.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "I took your swimming goggles home by mistake."
+        }
+      ],
+      "message": "Can return them when we meet at the pool?"
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-000-03",
+      "variant": "synthetic_training_target",
+      "source_local": "Next time then order together.",
+      "proposed_local": "Next time then order together.",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Peer first says they just ate and asks to skip, then says they will grab something else. Mixed continuation; target is plausible but context requires repair.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "We can order together another day.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "Wanna order some chicken rice for lunch?"
+        },
+        {
+          "speaker": "peer",
+          "text": "Sure, I'm starving!"
+        },
+        {
+          "speaker": "peer",
+          "text": "Wait, actually I just ate a big breakfast. Can we skip today?"
+        }
+      ],
+      "message": "No worries, I'll just grab something else then."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-014-02",
+      "variant": "synthetic_training_target",
+      "source_local": "Oh okay, I go locker collect then.",
+      "proposed_local": "Oh okay, I go locker collect then.",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Timeline unclear: User appears to have already dealt with collection/signature before a new locker pickup is introduced. Check whether the parcel remains uncollected.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "Oh, I see. I'll head over to the locker to get it.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "Did you see that parcel arrived at the concierge?"
+        },
+        {
+          "speaker": "peer",
+          "text": "Not yet, I've been in the lab all day."
+        },
+        {
+          "speaker": "user",
+          "text": "I'll go grab it for you later."
+        },
+        {
+          "speaker": "peer",
+          "text": "Thanks! Let me know if they asked for a signature."
+        },
+        {
+          "speaker": "user",
+          "text": "They didn't need one, just left it at the counter."
+        },
+        {
+          "speaker": "peer",
+          "text": "Perfect, thanks a lot!"
+        }
+      ],
+      "message": "Wait, I just saw the notification. It's actually at the 24h locker now."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-029-00",
+      "variant": "synthetic_training_target",
+      "source_local": "Friday can, but must finish the edits by then ah.",
+      "proposed_local": "Friday can, but must finish the edits by then ah.",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Latest message duplicates the immediately preceding peer turn verbatim. Remove duplicate in a separately reviewed context correction before reuse.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "Friday is fine, as long as we finish the edits by then.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "I'm starting the draft for our marketing slides today."
+        },
+        {
+          "speaker": "peer",
+          "text": "Great, let me know if you need any data."
+        },
+        {
+          "speaker": "user",
+          "text": "I'll probably need those figures for the final slide."
+        },
+        {
+          "speaker": "peer",
+          "text": "I'll send them over by this afternoon."
+        },
+        {
+          "speaker": "user",
+          "text": "Thanks, that helps a lot."
+        },
+        {
+          "speaker": "peer",
+          "text": "Wait, can we move the deadline to Friday instead of tomorrow?"
+        }
+      ],
+      "message": "Can we move the deadline to Friday instead of tomorrow?"
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-032-00",
+      "variant": "synthetic_training_target",
+      "source_local": "Can, seven then. See you!",
+      "proposed_local": "Can, seven then. See you!",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "Latest message duplicates the immediately preceding peer turn verbatim. Context cleanup needed.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "That works for me, see you at 7pm then.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "peer",
+          "text": "Hey, can we move the rehearsal to 7pm instead of 6pm? I have a last-minute lab session."
+        }
+      ],
+      "message": "Can we move the rehearsal to 7pm instead of 6pm? I have a last-minute lab session."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-034-02",
+      "variant": "synthetic_training_target",
+      "source_local": "Okay, after class I drop the books at the counter.",
+      "proposed_local": "Okay, after class I drop the books at the counter.",
+      "decision": "flag",
+      "style_action": "keep",
+      "reason": "User says these books are theirs to return, but peer then asks User to return them as if peer-owned. Ownership is ambiguous.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "Sure, I'll drop the books off at the counter after my lecture.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "I need to return these three books by tomorrow."
+        }
+      ],
+      "message": "Can you help me drop them off at the counter?"
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-094-01",
+      "variant": "synthetic_training_target",
+      "source_local": "Check if your sister can join our current booking first lah.",
+      "proposed_local": "check my sister can join current booking before changing?",
+      "decision": "flag",
+      "style_action": "revise",
+      "reason": "Both English and existing LOCAL call the sister yours although context establishes User sister. Proposed LOCAL uses my sister; English needs an explicit matched correction before this pair is training-ready.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "Could we check whether the current booking allows your sister to join before changing it?",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "I'm looking at the court slots for Friday."
+        },
+        {
+          "speaker": "peer",
+          "text": "Yeah, the 4pm slot is still free."
+        },
+        {
+          "speaker": "user",
+          "text": "Let's grab that one then."
+        },
+        {
+          "speaker": "peer",
+          "text": "Cool, I'll book it now."
+        },
+        {
+          "speaker": "user",
+          "text": "Wait, my sister just asked to join us."
+        }
+      ],
+      "message": "No problem, we can just book a larger court."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-094-02",
+      "variant": "synthetic_training_target",
+      "source_local": "Actually, order delivery instead can? Then no need cook.",
+      "proposed_local": "rather order delivery instead, can?",
+      "decision": "flag",
+      "style_action": "revise",
+      "reason": "Peer repeats User offer to bring spices after saying they have none; possible speaker/copy artefact. Delivery counterproposal is allowed, but context needs review.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "I'd prefer to just order delivery instead, if you're okay with that.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "Can we cook some laksa in the common kitchen tonight?"
+        },
+        {
+          "speaker": "peer",
+          "text": "I'm down, but I don't have any spices."
+        },
+        {
+          "speaker": "user",
+          "text": "I can bring some over."
+        }
+      ],
+      "message": "I can bring some over."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-118-00",
+      "variant": "synthetic_training_target",
+      "source_local": "Not sure dress code what leh. Check the event announcement first.",
+      "proposed_local": "dunno dress code, check announcement first",
+      "decision": "flag",
+      "style_action": "revise",
+      "reason": "Latest dress-code question is duplicated verbatim in immediately preceding peer turn; context cleanup before reuse.",
+      "reviewed_by": "assistant applying user five-case calibration; not individually human-approved",
+      "source_standard": "I'm not sure about the dress code. Let's check the event announcement.",
+      "standard_changed": false,
+      "human_review_scope": "five_calibration_examples_only",
+      "user_approved_this_target": false,
+      "issue_status": "unresolved_source_or_pair_issue",
+      "context": [
+        {
+          "speaker": "user",
+          "text": "Hey, are you going to the orientation ceremony tonight?"
+        },
+        {
+          "speaker": "peer",
+          "text": "Yeah, I'll be there. You joining too?"
+        },
+        {
+          "speaker": "user",
+          "text": "Definitely. I heard they're doing a big performance."
+        },
+        {
+          "speaker": "peer",
+          "text": "True. Do you know what time it starts?"
+        },
+        {
+          "speaker": "user",
+          "text": "It's at 7 PM sharp at the Great Hall."
+        },
+        {
+          "speaker": "peer",
+          "text": "Got it. Is there a dress code for it?"
+        }
+      ],
+      "message": "Is there a dress code for it?"
+    }
+  ],
+  "excluded_from_both": [
+    "ITEM-A-009",
+    "ITEM-A-014",
+    "ITEM-A-045",
+    "ITEM-B-004",
+    "ITEM-B-060",
+    "ITEM-D-004",
+    "ITEM-D-011",
+    "ITEM-D-014",
+    "ITEM-D-015",
+    "ITEM-E-002",
+    "ITEM-E-008",
+    "ITEM-E-011",
+    "ITEM-E-024",
+    "SYN-HUMAN-EXP1-008",
+    "SYN-volume500-v1-full-000-03",
+    "SYN-volume500-v1-full-014-02",
+    "SYN-volume500-v1-full-029-00",
+    "SYN-volume500-v1-full-032-00",
+    "SYN-volume500-v1-full-034-02",
+    "SYN-volume500-v1-full-094-01",
+    "SYN-volume500-v1-full-094-02",
+    "SYN-volume500-v1-full-118-00"
+  ],
+  "additional_rewrite_only": {
+    "ITEM-C-010": "LOCAL says a seat has been reserved, whereas English only says two seats were found.",
+    "ITEM-E-029": "LOCAL says a seat was reserved, whereas English only says one was found."
+  },
+  "policy": "Exclude unresolved source concerns from training copies, not source files. New audit accepts context-dependent acknowledgments; do not carry forward older literal-omission exclusions blindly."
+}

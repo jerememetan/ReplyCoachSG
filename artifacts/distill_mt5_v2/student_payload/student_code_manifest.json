@@ -1,0 +1,13 @@
+{
+  "scripts/freeze_distill_mt5_v2_targets.py": "e9910c7903cbb1cd098e142f8661fb92230ea570b44f64cc20f52718f067d63f",
+  "scripts/run_mt5_adapter_switch_v1.py": "b9e75afd0ccd7586d547fc90ba990de5bfe8c9215c726b66edaabedf537faead",
+  "scripts/train_distill_mt5_v2.py": "9c860a9bdd62f35aee20779d3776fbc966604a4f299e182241bd745805166ada",
+  "student_full_original.sbatch": "e143babf8cec42c845d092f3749e85218861634eae66e8ff1b2f882be8d88bcd",
+  "student_full_preflight.sbatch": "26e8936f64077113c5769449556d8608f7791b7075984e77718c3b2ca907f8ef",
+  "student_full_qwen.sbatch": "425e2a1fd7a09ca5cabd5592d7b44feb42e0a3b8198d182585f5eba00a920bc9",
+  "student_full_sealion.sbatch": "56442f261df646a0f9ed6d669f89448426ec70816e8e6380ccf101fc3e9b14fd",
+  "student_pilot_original.sbatch": "797a7b0b7c8b80b8f7be8aba70a47a5e174d06f93eec0cd63adb51f84ea3a928",
+  "student_pilot_preflight.sbatch": "46cf398657430701e65d58e65641138916935a8c78b883ccd79e7c4b835bb147",
+  "student_pilot_qwen.sbatch": "98ea0f0cc1cef821011c570fc2767b7956259e7f9376c6eec33959aab96b16e9",
+  "student_pilot_sealion.sbatch": "5e5069ba569befbfe6d9acb1e3bbc2155ebe125897dd55c90ebb42d338d3b0e7"
+}

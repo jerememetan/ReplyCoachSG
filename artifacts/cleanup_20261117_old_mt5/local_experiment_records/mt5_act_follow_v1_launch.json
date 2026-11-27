@@ -1,0 +1,18 @@
+{
+  "experiment": "mt5_act_follow_v1",
+  "job_id": 355573,
+  "submission": "accepted",
+  "last_verified_state": "COMPLETED",
+  "training": true,
+  "default_changed": false,
+  "remote_directory": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_act_follow_v1",
+  "local_tests_passed": 23,
+  "preflight": "Cluster tokenizer verified original 190/50 and new paired 48 train/16 validation/32 evaluation targets fit 192 conversation, 256 goal-conditioned source, 48 target token budgets without truncation.",
+  "recipe": "experiments/mt5_act_follow_v1_recipe.json",
+  "report_expected": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_act_follow_v1/artifacts/results.json",
+  "completion_waited": false,
+  "node": "aloha",
+  "exit_code": "0:0",
+  "elapsed": "00:14:02",
+  "local_report": "artifacts/mt5_act_follow_v1/results.json"
+}

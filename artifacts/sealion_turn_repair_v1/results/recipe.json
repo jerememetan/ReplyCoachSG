@@ -1,0 +1,53 @@
+{
+  "experiment": "sealion_turn_repair_v1",
+  "account": "hm.teoh.2024",
+  "source_bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+  "initial_english_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+  "frozen_singlish_sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2",
+  "data_counts": {
+    "train": 192,
+    "validation": 16,
+    "challenge": 24,
+    "ordinary": 790,
+    "legacy": 50,
+    "diagnostic": 1
+  },
+  "provenance": "192 assistant-authored targeted training dialogues;16 independently written synthetic validation cases;24 separately written challenge cases frozen before baseline/training. Skills overlap; not independent human test or project locked test.",
+  "arms": [
+    "supervised",
+    "contrastive"
+  ],
+  "seed": 8411,
+  "optimizer_steps": 120,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "clip_grad_norm": 1.0,
+  "replay_per_step": 1,
+  "targeted_per_step": 3,
+  "objective": "0.25 ordinary CE +0.25 sum3 targeted positive CEs +weight*relu(.2+positiveCE-negativeCE); weight0/.1. Same examples, initial weights and per-step dropout seed.",
+  "snapshots": [
+    0,
+    40,
+    80,
+    120
+  ],
+  "selection": "Select on16 synthetic validation positives only, subject to ordinary50 validation token CE<=1.05*initial; step0 eligible. Lower targeted positive mean CE wins. Challenge and user outputs cannot select checkpoints.",
+  "eval_policy": "Generate baseline/selected English and own-English-conditioned Singlish on24 challenge +1 user diagnostic +20 deterministic old validation regression cases. Review intended action, factual fidelity and local naturalness separately. Contrast ranking is teacher-forced, not generated accuracy.",
+  "inference": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 64,
+    "total_token_limit": 384
+  },
+  "source_weights_unchanged": true,
+  "original_team_records_unchanged": true,
+  "default_changed": false,
+  "data_sha256": {
+    "challenge.json": "c6c24c355cc601a86362384c9003142b78404dbda85265c273284758b43003ac",
+    "diagnostic.json": "ee18655f7592bc05d11aeebbd8146a2548d8a8201633dcbc3a2c7dbc7740187b",
+    "legacy.json": "4eb789e5d306b187cf8b569f76f2fe102b20e614d392438066f83c119a88679a",
+    "ordinary.json": "c5c1d185c737261cf981e6b32c3879829a60e024ca85d079580186c1714ba1d2",
+    "train.json": "9d680529ebe46de74b7cd6346ec9a8e225e0819558595b1187cc21ce0c0338b7",
+    "validation.json": "a8e63379eaef31e2c5de994d7a7ffb4cd904a0471a863cca95a227c3d08619ef"
+  }
+}

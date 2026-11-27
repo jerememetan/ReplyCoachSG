@@ -1,0 +1,14 @@
+{
+  "sealion_style_v1.py": "67551a963351c05f7a0fcc2314be0d1c6924c53fbe7c9278a1f60f72dc14e609",
+  "tests/test_sealion_style_v1.py": "af1b8c886cbf9729dd7840a997f829765af180a099b740d4644f565e39b565c3",
+  "tests/test_sealion_beam_v1.py": "d79bffea2c3be6c02b44b48ae8b35c4d6128a39abd80d8ed4196be4361b26621",
+  "check_sealion_style_v1.py": "dbcce50334efde0b3cf7ac495382f90ff2df3716562978393d8b139a1402ad9a",
+  "preflight.sbatch": "e7eed1d81b5a6ebed6983c3858e0fd992f320951522dbc18ce24a501a3e2c198",
+  "data/train.json": "a9df320dad26b57d76aac3aa5faf7c126120256033c75e33a80ef463c4e34b23",
+  "data/validation.json": "6d9d14ccac42badb0ae9cff19563fdaa4128827cf9690595b1e57581b22a425a",
+  "data/copy_train.json": "08b68489650485671eba0aa4786b7c73383afa5b76636ee89247414a1bb3d86c",
+  "data/copy_validation.json": "39c818c86041ee7db0aa2b58618f3676fa7f73ced53090f67f38c15ff8fe7246",
+  "data/evaluation.json": "580c5d82f4b85e5aee10ef7606dfa53ef9b4f0d4696633a1f40feb3af67ed1eb",
+  "data/controls.json": "83f6edc3e53c37c1e305f5aa3585696b5f1823fcb006b4f0f24905fef1985c30",
+  "data/data_manifest.json": "7ecc5798bdd7c4b7850d95ce8313ee019a17213b6641484bdadc8cc2d69a8906"
+}

@@ -1,0 +1,937 @@
+{
+  "original": {
+    "source_format": "canonical",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "I would like to check that the amounts in our account match.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "Let's just chat about your current situation.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help with the captions, not the video itself.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent it yet. I will send it now.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "I am on duty throughout Wednesday. Thursday is clear for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "No need, I'll just pay for the entry fee.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's head to the library for some quiet study.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes please, could you lend me your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join the voice meeting.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "I am not sure where it is being held. I will check with the organiser.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I can do that for both of us.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot leave before five. Could we meet at four instead?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll go check my locker now.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "I would like you to check my citations.",
+        "status": "complete"
+      }
+    ]
+  },
+  "untrained_layout": {
+    "source_format": "layout",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "I would like to discuss the discrepancy in our charity account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "I am not sure what this is about. Let me check with you and get back to you.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help editing the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not checked whether the coordinator has received it yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "I'll pass it to you.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "That's fine. I'll go and buy it for you.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's meet at the west lobby.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join by voice.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "I am not sure yet. I will check with the organiser.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I'll pick up the badges for both of us.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot make it before 5 pm. Could we meet at 4 pm instead?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "I'll check my locker later.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my references?",
+        "status": "complete"
+      }
+    ]
+  },
+  "supervised40": {
+    "source_format": "canonical",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "Could we discuss the discrepancy in our charity account?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "This is about our voice chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help with the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent it yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "Yes please, could you buy the ticket for me?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's head to the west lobby.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join by voice.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "It is being held at the library.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "Sure, I'll pick up both of our badges.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot meet before 5 pm. Could we meet at 4 pm?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I can check my locker later.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "supervised80": {
+    "source_format": "canonical",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "We can discuss the discrepancy in the account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "I'll explain it over voice chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help with the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent it yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Wednesday works. See you then.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "No, could you just pay for the ticket?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's start with the west lobby.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes, please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join the voice meeting.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "It is being held at the organiser's office.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I can pick up both of our badges.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot meet before 5 pm. Could we meet at 4 pm?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker now.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "supervised120": {
+    "source_format": "canonical",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "We can check the amounts in our account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "This is about our voice chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help with the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent it yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "No thanks, could you just pay the $28?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's start with the registration table.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes, please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join by voice.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "They haven't given us a venue yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I can pick up both of our badges.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot meet before 5 pm. Could we meet at 4 pm?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker later.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "contrastive40": {
+    "source_format": "canonical",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "I would like to discuss the discrepancy in our charity account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "This is about a voice chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help editing the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent the email yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "Please pass it to me so I can use it in my drawing.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "No thanks, could you buy it for me?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Head to the west lobby.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes, please could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join the voice meeting.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "I'm not sure yet. I'll check with the organiser.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I can pick up both of our badges.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot leave before 5 pm. Could we meet at 4 pm?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker later.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "contrastive80": {
+    "source_format": "canonical",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "We can discuss the discrepancy in our charity account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "This is about our voice chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help with the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent it yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "Thanks, could you buy that ticket for me?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's start with the west lobby.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes, please could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join by voice.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "It is being held at the organiser's office.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I can get both of our badges.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot meet before 5 pm. Could we meet at 4 pm?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker now.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "contrastive120": {
+    "source_format": "canonical",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "I would like to check the amounts in our account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "Let's talk about it over voice chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help with the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent it yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "No thanks, could you buy it for me?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's start with the bar.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join by voice.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "The organiser has not given us a venue yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I can get the badges for both of us.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot meet at 4 pm, I have an appointment at 5 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker later.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "layout_supervised40": {
+    "source_format": "layout",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "Could we check the totals in our charity account?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "This is about the conversation we had yesterday.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need help editing the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I saved a draft of the email but have not sent it.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "Yes please, could you buy that ticket for me?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's head to the west lobby.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join the voice meeting.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "The organiser has confirmed Sunday, but has not given us a venue.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "Yes, I can pick up both of our badges.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot leave earlier than 5 pm. Could we meet at 4 pm?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker now.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "layout_supervised80": {
+    "source_format": "layout",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "We can check the totals in our charity account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "I'll explain it over voice chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I need a hand editing the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not yet sent it.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "No thanks, could you buy it for me?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's head to the library.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes, please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join by voice.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "The organiser has not given us a venue yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "Sure, I'll pick up both of our badges.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot meet before 5 pm. Could we meet at 4 pm?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker now.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  },
+  "layout_supervised120": {
+    "source_format": "layout",
+    "outputs": [
+      {
+        "item_id": "TURN-VALIDATION-001",
+        "english": "Let's check the totals in our charity account.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-002",
+        "english": "Let me explain the purpose of this chat.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-003",
+        "english": "I can help with the captions, not the video.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-004",
+        "english": "I have not sent it yet.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-005",
+        "english": "You can pass it to me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-006",
+        "english": "Yes, Wednesday works for me.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-007",
+        "english": "No thanks, could you buy it for me?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-008",
+        "english": "Let's check whether the library is open.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-009",
+        "english": "Yes please, could I borrow your charger?",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-010",
+        "english": "I have lost my voice, so I cannot join the voice meeting.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-011",
+        "english": "The organiser has confirmed Sunday, but has not given us a venue.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-012",
+        "english": "I can get the badges for both of us.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-013",
+        "english": "The lab is in D214 at 3 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-014",
+        "english": "I cannot meet at 4 pm; I have an appointment at 5 pm.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-015",
+        "english": "Sure, I'll check my locker now.",
+        "status": "complete"
+      },
+      {
+        "item_id": "TURN-VALIDATION-016",
+        "english": "Could you check my bibliography?",
+        "status": "complete"
+      }
+    ]
+  }
+}

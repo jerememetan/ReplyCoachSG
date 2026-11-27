@@ -1,0 +1,312 @@
+[
+  {
+    "item_id": "SYN-HUMAN-EXP1-012",
+    "context": [
+      "I have the updated song list."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "Shall I send it to you before practice?",
+    "standard_anchor": "Yes please, send me the updated song list before practice.",
+    "response": "Yes please, send me the updated song list before practice ah.",
+    "original_provenance": "unknown",
+    "new_response": "Updated song list send me before practice, please.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-volume500-v1-full-085-01",
+    "context": [
+      "Need to print these posters for the event.",
+      "I can help with that."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you help me print 5 copies of the flyer?",
+    "standard_anchor": "I can print five copies for you this afternoon.",
+    "response": "Can, I print five copies for you this afternoon.",
+    "original_provenance": "unknown",
+    "new_response": "Five copies can, this afternoon I print for you.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-042",
+    "context": [
+      "I am beside the blue vending machine at the north gate."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Where exactly are you waiting?",
+    "standard_anchor": "I am beside the blue vending machine at the north gate.",
+    "response": "I waiting beside the blue vending machine at the north gate.",
+    "original_provenance": "unknown",
+    "new_response": "At the north gate, just beside the blue vending machine.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-volume500-v1-full-115-01",
+    "context": [
+      "Did you finish the intro slides for the marketing project?",
+      "Almost done, just need to fix the formatting.",
+      "Cool, let me know when you upload them.",
+      "Done! Just uploaded to the shared folder.",
+      "Got them. Thanks!"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Eh, the slides you sent don't have the competitor analysis page.",
+    "standard_anchor": "I'll add the competitor analysis page and send the updated slides.",
+    "response": "I add the competitor analysis page then send the updated slides ah.",
+    "original_provenance": "unknown",
+    "new_response": "I add in the competitor analysis page, then send the updated slides.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-098",
+    "context": [
+      "The bus is delayed again."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "I think I will miss the start of the briefing.",
+    "standard_anchor": "No worries, I can update you on what you miss.",
+    "response": "No worries, I update you on whatever you miss.",
+    "original_provenance": "unknown",
+    "new_response": "No worries, I can update you on whatever you miss.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-volume500-v1-full-046-00",
+    "context": [
+      "Hey, you going to the NUS open house this Sunday?",
+      "Not sure yet, still checking my schedule.",
+      "Let me know if you decide to go.",
+      "I think I'll probably head there in the afternoon.",
+      "Actually, I'm thinking of skipping it to catch up on sleep."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer",
+      "peer"
+    ],
+    "message": "So no plans to go then?",
+    "standard_anchor": "Yeah, I think I'll just stay home and rest instead.",
+    "response": "Ya, I think I stay home and rest instead.",
+    "original_provenance": "unknown",
+    "new_response": "Ya, I think stay home rest better.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-085",
+    "context": [
+      "Please send me the file when you can."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "The latest version, thanks.",
+    "standard_anchor": "Which file do you need?",
+    "response": "Which file you need ah?",
+    "original_provenance": "unknown",
+    "new_response": "Which file you need ah?",
+    "changed": false,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Already-natural target retained as a no-change control."
+  },
+  {
+    "item_id": "SYN-volume500-v1-full-044-03",
+    "context": [
+      "Is the kitchen open late tonight?",
+      "It usually closes at 11 PM.",
+      "Does that include the microwave area?",
+      "Yes, everything shuts down then.",
+      "Is there a place to store leftovers?",
+      "You can use the shared fridge."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Does the fridge have enough space for large containers?",
+    "standard_anchor": "I'm not sure how much space is left. Let's check before bringing the containers.",
+    "response": "Not sure got how much space left leh. Check first before bringing the containers.",
+    "original_provenance": "unknown",
+    "new_response": "Dunno how much space left. Before bringing the containers, check first.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-048",
+    "context": [
+      "I put the badminton nets in the equipment cage, not the office."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Where did you keep the nets?",
+    "standard_anchor": "I put them in the equipment cage.",
+    "response": "I put the nets in the equipment cage liao.",
+    "original_provenance": "unknown",
+    "new_response": "I put them in the equipment cage already.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-volume500-v1-full-137-01",
+    "context": [
+      "I'm helping with the campus concert setup next week."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "Do you need a hand with the stage decoration or the sound check?",
+    "standard_anchor": "Could you help with stage decorations? I'll handle the sound check.",
+    "response": "Can help with stage deco? I handle the sound check.",
+    "original_provenance": "unknown",
+    "new_response": "Stage deco you help? Sound check I settle.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-volume500-v1-full-076-02",
+    "context": [
+      "Where are you guys meeting at the MRT?",
+      "At the station exit.",
+      "Which exit number?",
+      "I'm not sure, I'll check the map.",
+      "Let me know once you find out.",
+      "I'm at the station now."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "I'm standing outside but I don't know which exit is yours.",
+    "standard_anchor": "Could you send the exit number or a location pin so I can find you?",
+    "response": "Can send the exit number or location pin? I come find you.",
+    "original_provenance": "unknown",
+    "new_response": "Exit number or location pin send me can? Then I can find you.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-volume500-v1-full-068-01",
+    "context": [
+      "Is Wei Ming coming to the lab today?",
+      "He said he might be late because of his other project."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "He's not here yet. Should we start without him?",
+    "standard_anchor": "Let's start the setup first and wait for him to join.",
+    "response": "Start setting up first lah, wait for him to join.",
+    "original_provenance": "unknown",
+    "new_response": "We start setting up first, wait for him to join.",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-039",
+    "context": [
+      "I do not have a driving licence."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you drive us to the field tomorrow?",
+    "standard_anchor": "I cannot drive. Could someone else drive us?",
+    "response": "I cannot drive leh. Can ask someone else drive anot?",
+    "original_provenance": "unknown",
+    "new_response": "I cannot drive. Someone else drive us can?",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-002",
+    "context": [
+      "I left my ruler in the studio."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "I have an extra ruler. You need one?",
+    "standard_anchor": "Yes please, could I borrow your extra ruler?",
+    "response": "Yes please, lend me your extra ruler can?",
+    "original_provenance": "unknown",
+    "new_response": "Yes please, your extra ruler lend me can?",
+    "changed": true,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Targeted wording alternative; old wording is not automatically judged wrong."
+  },
+  {
+    "item_id": "SYN-HUMAN-EXP1-046",
+    "context": [
+      "I am on the bus, two stops away from the campus entrance."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Reached the entrance already?",
+    "standard_anchor": "Not yet, I am still two stops away.",
+    "response": "Haven’t reach leh, still two stops away.",
+    "original_provenance": "unknown",
+    "new_response": "Haven’t reach leh, still two stops away.",
+    "changed": false,
+    "annotation": "Assistant-authored style alternative; independently human-reviewed naturalness not established.",
+    "review_criterion": "Keep the English speaker, people, facts, time, modality and decision. Moderate chatty local phrasing; no mandatory particles or Malay substitutions.",
+    "edit_note": "Already-natural target retained as a no-change control."
+  }
+]

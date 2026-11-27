@@ -1,0 +1,22 @@
+{
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_creative_v1",
+  "jobs": {
+    "preflight_original": 358181,
+    "single_reference": 358182,
+    "multiple_references": 358183,
+    "multiple_plus_contrast": 358184
+  },
+  "gpu": "L40S",
+  "partition": "student",
+  "slurm_account": "cs701",
+  "qos": "studentqos",
+  "status": "submitted_after_preflight_dependency",
+  "payload_sha256": "4ff711365cd17b5e894160952d3021c82f6f97f914cfd9442c7202ac3ba96205",
+  "default_changed": false,
+  "result_collection": "Summary script is staged; submission was not accepted. Run it on the next results check.",
+  "summary_submission_diagnostic": "** WARNING: connection is not using a post-quantum key exchange algorithm.\n** This session may be vulnerable to \"store now, decrypt later\" attacks.\n** The server may need to be upgraded. See https://openssh.com/pq.html\ntput: No value for $TERM and no -T specified\nsbatch: error: QOSMaxSubmitJobPerUserLimit\nsbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)\n",
+  "local_tests_passed": 9,
+  "gpu_preflight_status": "queued_for_L40S_resources",
+  "training_status": "dependent_on_successful_preflight_and_original_baseline"
+}

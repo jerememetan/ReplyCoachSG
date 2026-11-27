@@ -1,0 +1,1020 @@
+{
+  "status": "all_experiments_complete",
+  "account": "hm.teoh.2024",
+  "jobs": {
+    "training": 358095,
+    "presentation_probe": 358096,
+    "custom_replay": 358102
+  },
+  "root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1",
+  "recipe": {
+    "experiment": "sealion_abstention_v1",
+    "account": "hm.teoh.2024",
+    "seed": 9217,
+    "arms": [
+      "restored_context_control",
+      "selective_abstention"
+    ],
+    "refusal": "Information not available.",
+    "training_slots_per_epoch": 1120,
+    "unique_inputs": {
+      "restored_context_control": 1000,
+      "selective_abstention": 1120
+    },
+    "ordinary": 790,
+    "unanswerable": 120,
+    "supported_counterparts": 120,
+    "self_contained_controls": 90,
+    "unanswerable_fraction": 0.10714285714285714,
+    "unanswerable_kinds": {
+      "empty": 40,
+      "irrelevant": 40,
+      "adversarial": 40
+    },
+    "validation": {
+      "cases": 48,
+      "missing": 18,
+      "answerable": 30
+    },
+    "challenge": {
+      "cases": 60,
+      "missing": 24,
+      "answerable": 36
+    },
+    "optimizer_steps": 280,
+    "epochs": 2,
+    "effective_batch": 8,
+    "learning_rate": 1e-05,
+    "weight_decay": 0.01,
+    "snapshots": [
+      0,
+      70,
+      140,
+      280
+    ],
+    "matching": "Same initial English LoRA, slot shuffles, optimizer/dropout seeds,8 example-mean reply CEs per update. Control replaces each missing-context slot with its supported counterpart, never assigns an invented fact to an unsupported input. Different text lengths imply different token-level dropout streams.",
+    "selection": "Generated48-case validation only: maximize exact-standard-response answerability balanced score, require canonical over-refusal<=0.10, supported-value matches>=baseline-1 and no generation failures; step0 eligible. Teacher CE diagnostic only. Challenge/user outputs cannot select checkpoints.",
+    "source_english_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+    "frozen_singlish_sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2",
+    "source_base_parameters": 3178255360,
+    "trainable_parameters": 10485760,
+    "inference": {
+      "num_beams": 4,
+      "no_repeat_ngram_size": 3,
+      "max_new_tokens": 64,
+      "total_limit": 384
+    },
+    "policy": "The English model learns the standard refusal. Only an emitted exact refusal bypasses Singlish rewriting; no input-pattern refusal rules or context-policy layer are used in this experiment.",
+    "provenance": "New pairs and controls are assistant-authored synthetic data, frozen before baseline or training. Different validation/challenge scenarios and pressure wording; not independent human gold or project locked test.",
+    "default_changed": false,
+    "source_weights_preserved": true,
+    "research_source": "https://arxiv.org/abs/1806.03822",
+    "data_sha256": {
+      "challenge.json": "e84cadccbf952395218657cc5d8090510566d236c5ce5bdcf34de6090e4a80f5",
+      "control.json": "efccb9e9fd0fb356930b9412b4529a4be84753457e4e11dd545891ea9f0384e1",
+      "legacy.json": "cce5843fb6655027b6013ecdaf41db9c7e05c9809d8f6c910acc055cfbb60f59",
+      "train.json": "9075f744ac41a7126eddc0fe25bd0087684285b8f145294677e2c382c6351c02",
+      "validation.json": "695f7781aabfa34ebe72597e647c69ff94158608eea1eaf7dc7be1149aa62e64"
+    }
+  },
+  "audit": {
+    "ordinary_examples": 790,
+    "existing_empty_context_examples": 54,
+    "existing_exact_standard_refusals": 0,
+    "original_team_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "source_sha256": "b9027a2b84e6bec01f9200ac890220cd0b6e4e1382fdb71f0213a2949b6efbc6",
+    "locked_test_read": false,
+    "distinction": "Missing fact-dependent evidence requires abstention. Empty or irrelevant history alone does not. Prior samples already include empty context; this adds explicit abstention supervision."
+  },
+  "preflight": {
+    "status": "passed",
+    "tests_passed": 9,
+    "encoded_targets": 2398,
+    "max_tokens": {
+      "train": 140,
+      "control": 140,
+      "validation": 73,
+      "challenge": 75,
+      "legacy": 71
+    },
+    "prompt_mask_eos_no_truncation": true,
+    "source_bundle_manifest_verified": true,
+    "gpu": "NVIDIA L40S",
+    "bf16_supported": true
+  },
+  "training": {
+    "status": "complete",
+    "recipe": {
+      "experiment": "sealion_abstention_v1",
+      "account": "hm.teoh.2024",
+      "seed": 9217,
+      "arms": [
+        "restored_context_control",
+        "selective_abstention"
+      ],
+      "refusal": "Information not available.",
+      "training_slots_per_epoch": 1120,
+      "unique_inputs": {
+        "restored_context_control": 1000,
+        "selective_abstention": 1120
+      },
+      "ordinary": 790,
+      "unanswerable": 120,
+      "supported_counterparts": 120,
+      "self_contained_controls": 90,
+      "unanswerable_fraction": 0.10714285714285714,
+      "unanswerable_kinds": {
+        "empty": 40,
+        "irrelevant": 40,
+        "adversarial": 40
+      },
+      "validation": {
+        "cases": 48,
+        "missing": 18,
+        "answerable": 30
+      },
+      "challenge": {
+        "cases": 60,
+        "missing": 24,
+        "answerable": 36
+      },
+      "optimizer_steps": 280,
+      "epochs": 2,
+      "effective_batch": 8,
+      "learning_rate": 1e-05,
+      "weight_decay": 0.01,
+      "snapshots": [
+        0,
+        70,
+        140,
+        280
+      ],
+      "matching": "Same initial English LoRA, slot shuffles, optimizer/dropout seeds,8 example-mean reply CEs per update. Control replaces each missing-context slot with its supported counterpart, never assigns an invented fact to an unsupported input. Different text lengths imply different token-level dropout streams.",
+      "selection": "Generated48-case validation only: maximize exact-standard-response answerability balanced score, require canonical over-refusal<=0.10, supported-value matches>=baseline-1 and no generation failures; step0 eligible. Teacher CE diagnostic only. Challenge/user outputs cannot select checkpoints.",
+      "source_english_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+      "frozen_singlish_sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2",
+      "source_base_parameters": 3178255360,
+      "trainable_parameters": 10485760,
+      "inference": {
+        "num_beams": 4,
+        "no_repeat_ngram_size": 3,
+        "max_new_tokens": 64,
+        "total_limit": 384
+      },
+      "policy": "The English model learns the standard refusal. Only an emitted exact refusal bypasses Singlish rewriting; no input-pattern refusal rules or context-policy layer are used in this experiment.",
+      "provenance": "New pairs and controls are assistant-authored synthetic data, frozen before baseline or training. Different validation/challenge scenarios and pressure wording; not independent human gold or project locked test.",
+      "default_changed": false,
+      "source_weights_preserved": true,
+      "research_source": "https://arxiv.org/abs/1806.03822",
+      "data_sha256": {
+        "challenge.json": "e84cadccbf952395218657cc5d8090510566d236c5ce5bdcf34de6090e4a80f5",
+        "control.json": "efccb9e9fd0fb356930b9412b4529a4be84753457e4e11dd545891ea9f0384e1",
+        "legacy.json": "cce5843fb6655027b6013ecdaf41db9c7e05c9809d8f6c910acc055cfbb60f59",
+        "train.json": "9075f744ac41a7126eddc0fe25bd0087684285b8f145294677e2c382c6351c02",
+        "validation.json": "695f7781aabfa34ebe72597e647c69ff94158608eea1eaf7dc7be1149aa62e64"
+      }
+    },
+    "baseline_complete": true,
+    "arms": {
+      "restored_context_control": {
+        "status": "complete",
+        "arm": "restored_context_control",
+        "optimizer_steps": 280,
+        "selected_step": 0,
+        "initial_adapter_digest": "1641ff25c7ab16ef1d3f56835f1984f72f4d523b42de90828660004495ab503a",
+        "trainable_parameters": 10485760,
+        "schedule_sha256": "2653915321234d85a5ee40d5ad85edd79082c51cda690aa2f03a0155147282d2",
+        "initial_validation": {
+          "missing_cases": 18,
+          "answerable_cases": 30,
+          "exact_abstention_on_missing": 0,
+          "uncertainty_cue_on_missing": 5,
+          "exact_over_refusals": 0,
+          "uncertainty_cue_on_answerable": 2,
+          "exact_abstention_recall": 0.0,
+          "exact_over_refusal_rate": 0.0,
+          "answerability_balanced_score": 0.5,
+          "supported_fact_cases": 18,
+          "supported_value_matches": 16,
+          "generation_flags": [],
+          "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+        },
+        "history": [
+          {
+            "step": 0,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 5,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 2,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 16,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 1.9694326901482238
+          },
+          {
+            "step": 70,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 5,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 0,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 18,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 2.1498893323111625,
+            "eligible": true,
+            "selected": false
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 5,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 0,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 18,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 2.11495190464569,
+            "eligible": true,
+            "selected": false
+          },
+          {
+            "step": 280,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 4,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 1,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 17,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 2.2248560204116288,
+            "eligible": true,
+            "selected": false
+          }
+        ],
+        "example_exposures": 2240,
+        "refusal_exposures": 0,
+        "latest_mean_ce": 0.6798454974777997,
+        "frozen_base_unchanged": true,
+        "final_adapter_digest": "e4d6ac7b644c4b726707a3fc73ec2ff4118752e180715d4d4c214b4e30bf2190",
+        "selected_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "selected_evaluation_flags": [],
+        "final_evaluation_flags": []
+      },
+      "selective_abstention": {
+        "status": "complete",
+        "arm": "selective_abstention",
+        "optimizer_steps": 280,
+        "selected_step": 140,
+        "initial_adapter_digest": "1641ff25c7ab16ef1d3f56835f1984f72f4d523b42de90828660004495ab503a",
+        "trainable_parameters": 10485760,
+        "schedule_sha256": "2653915321234d85a5ee40d5ad85edd79082c51cda690aa2f03a0155147282d2",
+        "initial_validation": {
+          "missing_cases": 18,
+          "answerable_cases": 30,
+          "exact_abstention_on_missing": 0,
+          "uncertainty_cue_on_missing": 5,
+          "exact_over_refusals": 0,
+          "uncertainty_cue_on_answerable": 2,
+          "exact_abstention_recall": 0.0,
+          "exact_over_refusal_rate": 0.0,
+          "answerability_balanced_score": 0.5,
+          "supported_fact_cases": 18,
+          "supported_value_matches": 16,
+          "generation_flags": [],
+          "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+        },
+        "history": [
+          {
+            "step": 0,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 5,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 2,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 16,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 1.9694326901482238
+          },
+          {
+            "step": 70,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 3,
+              "uncertainty_cue_on_missing": 12,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 1,
+              "exact_abstention_recall": 0.16666666666666666,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5833333333333334,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 17,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 2.114586434591605,
+            "eligible": true,
+            "selected": true
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 9,
+              "uncertainty_cue_on_missing": 14,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 0,
+              "exact_abstention_recall": 0.5,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.75,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 17,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 2.076188351741561,
+            "eligible": true,
+            "selected": true
+          },
+          {
+            "step": 280,
+            "metrics": {
+              "missing_cases": 18,
+              "answerable_cases": 30,
+              "exact_abstention_on_missing": 7,
+              "uncertainty_cue_on_missing": 14,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 1,
+              "exact_abstention_recall": 0.3888888888888889,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.6944444444444444,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 18,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "ordinary_ce": 2.216757529788444,
+            "eligible": true,
+            "selected": false
+          }
+        ],
+        "example_exposures": 2240,
+        "refusal_exposures": 240,
+        "latest_mean_ce": 0.7037669750861824,
+        "frozen_base_unchanged": true,
+        "final_adapter_digest": "9ecd9264604b6ae23626e4d882d906b890d6348647ee95696d98772d5f0ba7ad",
+        "selected_sha256": "04b25d018eb2399af52a760204ca6f3fadd166a7a5a15e76bc5308a0d6596139",
+        "selected_evaluation_flags": [],
+        "final_evaluation_flags": []
+      }
+    },
+    "gpu": "NVIDIA L40S",
+    "seconds": 1110.3053570631891,
+    "source_adapters_unchanged": true,
+    "matched_initial_weights_and_slot_schedules": true,
+    "default_changed": false,
+    "human_review_pending": true
+  },
+  "main_metrics": {
+    "original": {
+      "missing_cases": 24,
+      "answerable_cases": 36,
+      "exact_abstention_on_missing": 0,
+      "uncertainty_cue_on_missing": 7,
+      "exact_over_refusals": 0,
+      "uncertainty_cue_on_answerable": 1,
+      "exact_abstention_recall": 0.0,
+      "exact_over_refusal_rate": 0.0,
+      "answerability_balanced_score": 0.5,
+      "supported_fact_cases": 24,
+      "supported_value_matches": 23,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    },
+    "control_selected_step0": {
+      "missing_cases": 24,
+      "answerable_cases": 36,
+      "exact_abstention_on_missing": 0,
+      "uncertainty_cue_on_missing": 7,
+      "exact_over_refusals": 0,
+      "uncertainty_cue_on_answerable": 1,
+      "exact_abstention_recall": 0.0,
+      "exact_over_refusal_rate": 0.0,
+      "answerability_balanced_score": 0.5,
+      "supported_fact_cases": 24,
+      "supported_value_matches": 23,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    },
+    "control_final280": {
+      "missing_cases": 24,
+      "answerable_cases": 36,
+      "exact_abstention_on_missing": 0,
+      "uncertainty_cue_on_missing": 7,
+      "exact_over_refusals": 0,
+      "uncertainty_cue_on_answerable": 2,
+      "exact_abstention_recall": 0.0,
+      "exact_over_refusal_rate": 0.0,
+      "answerability_balanced_score": 0.5,
+      "supported_fact_cases": 24,
+      "supported_value_matches": 23,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    },
+    "augmented_selected_step140": {
+      "missing_cases": 24,
+      "answerable_cases": 36,
+      "exact_abstention_on_missing": 13,
+      "uncertainty_cue_on_missing": 16,
+      "exact_over_refusals": 1,
+      "uncertainty_cue_on_answerable": 2,
+      "exact_abstention_recall": 0.5416666666666666,
+      "exact_over_refusal_rate": 0.027777777777777776,
+      "answerability_balanced_score": 0.7569444444444444,
+      "supported_fact_cases": 24,
+      "supported_value_matches": 22,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    },
+    "augmented_final280": {
+      "missing_cases": 24,
+      "answerable_cases": 36,
+      "exact_abstention_on_missing": 12,
+      "uncertainty_cue_on_missing": 15,
+      "exact_over_refusals": 0,
+      "uncertainty_cue_on_answerable": 2,
+      "exact_abstention_recall": 0.5,
+      "exact_over_refusal_rate": 0.0,
+      "answerability_balanced_score": 0.75,
+      "supported_fact_cases": 24,
+      "supported_value_matches": 23,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    }
+  },
+  "probe": {
+    "status": "complete",
+    "recipe": {
+      "cases": 40,
+      "missing": 16,
+      "supported": 24,
+      "training_performed": false,
+      "checkpoint_selection_allowed": false,
+      "purpose": "Probe a literal Update marker shortcut, relevant facts before unrelated final history, and missing facts in relevant context without explicit unknown/not-announced cues.",
+      "same_fact_sets_as_main_challenge": true,
+      "independent_human_test": false,
+      "timing": "Frozen before any baseline/validation/training output inspection; supplementary to the main pre-registered split.",
+      "sha256": "05d2e492f689d9671a3537cacb0fd017c68cc05486801d6cb186f4b591c43fa0"
+    },
+    "reports": {
+      "baseline": {
+        "status": "complete",
+        "metrics": {
+          "missing_cases": 16,
+          "answerable_cases": 24,
+          "exact_abstention_on_missing": 0,
+          "uncertainty_cue_on_missing": 2,
+          "exact_over_refusals": 0,
+          "uncertainty_cue_on_answerable": 0,
+          "exact_abstention_recall": 0.0,
+          "exact_over_refusal_rate": 0.0,
+          "answerability_balanced_score": 0.5,
+          "supported_fact_cases": 24,
+          "supported_value_matches": 24,
+          "generation_flags": [
+            "ABSTAIN-PROBE-appointment_code-missing_related"
+          ],
+          "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+        },
+        "flags": [
+          "ABSTAIN-PROBE-appointment_code-missing_related"
+        ],
+        "weights_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913"
+      },
+      "restored_context_control_selected": {
+        "status": "complete",
+        "metrics": {
+          "missing_cases": 16,
+          "answerable_cases": 24,
+          "exact_abstention_on_missing": 0,
+          "uncertainty_cue_on_missing": 2,
+          "exact_over_refusals": 0,
+          "uncertainty_cue_on_answerable": 0,
+          "exact_abstention_recall": 0.0,
+          "exact_over_refusal_rate": 0.0,
+          "answerability_balanced_score": 0.5,
+          "supported_fact_cases": 24,
+          "supported_value_matches": 24,
+          "generation_flags": [
+            "ABSTAIN-PROBE-appointment_code-missing_related"
+          ],
+          "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+        },
+        "flags": [
+          "ABSTAIN-PROBE-appointment_code-missing_related"
+        ],
+        "weights_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913"
+      },
+      "restored_context_control_step_0280": {
+        "status": "complete",
+        "metrics": {
+          "missing_cases": 16,
+          "answerable_cases": 24,
+          "exact_abstention_on_missing": 0,
+          "uncertainty_cue_on_missing": 3,
+          "exact_over_refusals": 0,
+          "uncertainty_cue_on_answerable": 0,
+          "exact_abstention_recall": 0.0,
+          "exact_over_refusal_rate": 0.0,
+          "answerability_balanced_score": 0.5,
+          "supported_fact_cases": 24,
+          "supported_value_matches": 24,
+          "generation_flags": [],
+          "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+        },
+        "flags": [],
+        "weights_sha256": "0306952c1b3c75b9fce10e5779769ba40987f84d40a46e2e333519adcd231280"
+      },
+      "selective_abstention_selected": {
+        "status": "complete",
+        "metrics": {
+          "missing_cases": 16,
+          "answerable_cases": 24,
+          "exact_abstention_on_missing": 11,
+          "uncertainty_cue_on_missing": 11,
+          "exact_over_refusals": 0,
+          "uncertainty_cue_on_answerable": 0,
+          "exact_abstention_recall": 0.6875,
+          "exact_over_refusal_rate": 0.0,
+          "answerability_balanced_score": 0.84375,
+          "supported_fact_cases": 24,
+          "supported_value_matches": 24,
+          "generation_flags": [],
+          "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+        },
+        "flags": [],
+        "weights_sha256": "04b25d018eb2399af52a760204ca6f3fadd166a7a5a15e76bc5308a0d6596139"
+      },
+      "selective_abstention_step_0280": {
+        "status": "complete",
+        "metrics": {
+          "missing_cases": 16,
+          "answerable_cases": 24,
+          "exact_abstention_on_missing": 11,
+          "uncertainty_cue_on_missing": 11,
+          "exact_over_refusals": 0,
+          "uncertainty_cue_on_answerable": 0,
+          "exact_abstention_recall": 0.6875,
+          "exact_over_refusal_rate": 0.0,
+          "answerability_balanced_score": 0.84375,
+          "supported_fact_cases": 24,
+          "supported_value_matches": 24,
+          "generation_flags": [],
+          "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+        },
+        "flags": [],
+        "weights_sha256": "c5a984ab141adcca59e4fda276bf9025b441a040677068bee762a61c7ed07ebf"
+      }
+    },
+    "training_performed": false,
+    "checkpoint_selection_allowed": false
+  },
+  "validation_label_amendment": {
+    "status": "complete",
+    "amendment": {
+      "created_at_utc": "2026-11-08T07:18:51.902420+00:00",
+      "changed_ids": [
+        "ABSTAIN-validation-study_topic-0-empty",
+        "ABSTAIN-validation-study_topic-0-irrelevant",
+        "ABSTAIN-validation-study_topic-0-adversarial"
+      ],
+      "reason": "Open preference question was incorrectly treated as missing-fact retrieval. Same policy as self-contained drink choice: do not force refusal when the user can choose a topic.",
+      "timing": "After baseline/control inspection, before inspecting any treatment validation outcomes.",
+      "training_changed": false,
+      "original_run_preserved": true,
+      "corrected_missing": 15,
+      "corrected_answerable": 33,
+      "corrected_supported_fact_cases": 18,
+      "selection": "Apply the original generated-validation selection rule to corrected48-case labels; retain original scores and selection as originally executed. If chosen steps differ, evaluate corrected candidates read-only before conclusions.",
+      "corrected_validation_sha256": "d08810358629063cd30f10a2eaaefec0129b68289888a928a4f2358bee14d375"
+    },
+    "training_performed": false,
+    "model_inference_performed": false,
+    "arms": {
+      "restored_context_control": {
+        "original_selected_step": 0,
+        "corrected_selected_step": 0,
+        "selected_step_changed": false,
+        "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1/adapters/english",
+        "history": [
+          {
+            "step": 0,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 5,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 2,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 16,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            }
+          },
+          {
+            "step": 70,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 4,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 1,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 18,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "eligible": true,
+            "selected": false
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 4,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 1,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 18,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "eligible": true,
+            "selected": false
+          },
+          {
+            "step": 280,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 3,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 2,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 17,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "eligible": true,
+            "selected": false
+          }
+        ]
+      },
+      "selective_abstention": {
+        "original_selected_step": 140,
+        "corrected_selected_step": 140,
+        "selected_step_changed": false,
+        "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/selective_abstention/step_0140",
+        "history": [
+          {
+            "step": 0,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 0,
+              "uncertainty_cue_on_missing": 5,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 2,
+              "exact_abstention_recall": 0.0,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.5,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 16,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            }
+          },
+          {
+            "step": 70,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 3,
+              "uncertainty_cue_on_missing": 10,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 3,
+              "exact_abstention_recall": 0.2,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.6,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 17,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "eligible": true,
+            "selected": true
+          },
+          {
+            "step": 140,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 8,
+              "uncertainty_cue_on_missing": 11,
+              "exact_over_refusals": 1,
+              "uncertainty_cue_on_answerable": 3,
+              "exact_abstention_recall": 0.5333333333333333,
+              "exact_over_refusal_rate": 0.030303030303030304,
+              "answerability_balanced_score": 0.7515151515151515,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 17,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "eligible": true,
+            "selected": true
+          },
+          {
+            "step": 280,
+            "metrics": {
+              "missing_cases": 15,
+              "answerable_cases": 33,
+              "exact_abstention_on_missing": 7,
+              "uncertainty_cue_on_missing": 12,
+              "exact_over_refusals": 0,
+              "uncertainty_cue_on_answerable": 3,
+              "exact_abstention_recall": 0.4666666666666667,
+              "exact_over_refusal_rate": 0.0,
+              "answerability_balanced_score": 0.7333333333333334,
+              "supported_fact_cases": 18,
+              "supported_value_matches": 18,
+              "generation_flags": [],
+              "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+            },
+            "eligible": true,
+            "selected": false
+          }
+        ]
+      }
+    }
+  },
+  "custom_inference": {
+    "status": "complete",
+    "outputs": [
+      {
+        "item_id": "USER-CALL-001",
+        "context": [
+          "Can u call me now?",
+          "Eh i not so free eh?",
+          "Ohh, then when can we call?"
+        ],
+        "speakers": [
+          "user",
+          "peer",
+          "user"
+        ],
+        "message": "I am not sure, what do you want to call me about",
+        "requires_refusal": null,
+        "reference_values": [],
+        "scope": "custom_user_inference",
+        "english": "Information not available.",
+        "english_status": "complete",
+        "canonical_abstention": true,
+        "uncertainty_cue": true,
+        "singlish": "Information not available.",
+        "singlish_status": "abstained",
+        "needs_more_context": true,
+        "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+        "standard_anchor": "Information not available.",
+        "abstention_state": "canonical"
+      },
+      {
+        "item_id": "CALL-WITH-PURPOSE",
+        "context": [
+          "I wanted to ask you about our assignment deadline. Can you call me now?",
+          "I am not free right now.",
+          "Okay, we can speak later."
+        ],
+        "speakers": [
+          "user",
+          "peer",
+          "user"
+        ],
+        "message": "What did you want to call me about?",
+        "requires_refusal": null,
+        "reference_values": [],
+        "scope": "custom_user_inference",
+        "english": "Information not available.",
+        "english_status": "complete",
+        "canonical_abstention": true,
+        "uncertainty_cue": true,
+        "singlish": "Information not available.",
+        "singlish_status": "abstained",
+        "needs_more_context": true,
+        "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+        "standard_anchor": "Information not available.",
+        "abstention_state": "canonical"
+      },
+      {
+        "item_id": "EMPTY-THANKS",
+        "context": [],
+        "speakers": [],
+        "message": "Thanks for taking the time to help me today!",
+        "requires_refusal": null,
+        "reference_values": [],
+        "scope": "custom_user_inference",
+        "english": "You are welcome!",
+        "english_status": "complete",
+        "canonical_abstention": false,
+        "uncertainty_cue": false,
+        "singlish": "No problem, happy to help.",
+        "singlish_status": "complete",
+        "needs_more_context": false,
+        "singlish_provenance": "Original frozen repair25 Singlish adapter",
+        "standard_anchor": "You are welcome!",
+        "abstention_state": "generated_draft"
+      }
+    ],
+    "flags": [],
+    "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/selective_abstention/step_0140",
+    "checkpoint_sha256": "04b25d018eb2399af52a760204ca6f3fadd166a7a5a15e76bc5308a0d6596139",
+    "inputs_sha256": "6ba19bf005be55e299a2b653d51d4444f9f792f8f51c9b5312822ae4d1c0f6a7",
+    "gpu": "NVIDIA L40S",
+    "training_performed": false,
+    "context_rule_layer_used": false,
+    "script_sha256": "6511bb2e4c3d8dbff1821468e7fae351b5cdb4914555b64ea260411f09b5a44f",
+    "note": "English is generated by the selected English adapter. Only an exact model-emitted refusal bypasses Singlish rewriting; other uncertainty is separately flagged. No input-based refusal rule or forced answer label."
+  },
+  "followup": "Position-balanced v2 planned after the new adapter refused a call even with its purpose supplied earlier in the history. The original augmentation usually placed supported facts last; do not claim general robustness from canonical-refusal counts alone.",
+  "selected_step0_replays": {
+    "restored_context_control": {
+      "step": 0,
+      "differences": []
+    }
+  },
+  "checkpoint_count": 8,
+  "new_trained_snapshots": 6,
+  "source_adapters_unchanged": true,
+  "default_changed": false,
+  "human_review_pending": true,
+  "locked_test_read": false,
+  "user_case": {
+    "item_id": "USER-CALL-001",
+    "scope": "reused_user_diagnostic",
+    "kind": null,
+    "requires_refusal": null,
+    "context": [
+      [
+        "user",
+        "Can u call me now?"
+      ],
+      [
+        "peer",
+        "Eh i not so free eh?"
+      ],
+      [
+        "user",
+        "Ohh, then when can we call?"
+      ]
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "reference": null,
+    "outputs": {
+      "original": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "control_selected_step0": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "control_final280": {
+        "english": "Could you call me about something?",
+        "singlish": "Can call me about what ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "augmented_selected_step140": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "augmented_final280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  "quota_bytes": {
+    "limit": 128849018880,
+    "used": 123051944389,
+    "free": 5797074491
+  },
+  "main_comparison": "review/main_comparison.csv",
+  "probe_comparison": "review/presentation_probe_comparison.csv",
+  "limits": "Exact standard-refusal decisions and lexical value checks are not semantic correctness. Baseline noncanonical uncertainty is counted separately. Synthetic validation/challenge; probe reuses the same challenge facts under changed presentation. No independent human or locked-project-test result.",
+  "archive": {
+    "archive": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/results_only_v1.tgz",
+    "bytes": 272741,
+    "sha256": "41042b7014806302d8d306bdd408df9845326b90c8750df864062a73c5508656",
+    "files": 61,
+    "weights_included": false
+  },
+  "data_authoring_issue": {
+    "discovered_at_utc": "2026-11-08T08:00:02.128530+00:00",
+    "affected_experiments": [
+      "sealion_abstention_v1",
+      "sealion_abstention_v2"
+    ],
+    "affected_synthetic_families": [
+      "meeting_room",
+      "amount_owed",
+      "item_colour",
+      "item_count",
+      "collector_name",
+      "file_name"
+    ],
+    "potentially_invalid_supported_targets": 72,
+    "question_rows_corrected_in_v3": 144,
+    "original_team_data_affected": false,
+    "original790_affected": false,
+    "previous_models_promoted": false,
+    "correction": "Change incoming Friend I/my references to you/your for User-owned facts, add13-test preflight including perspective checks, add32 context-independent factual controls, and reset to original English adapter. Old archives remain historical, not quality certification."
+  },
+  "not_promoted_due_to_data_audit": true
+}

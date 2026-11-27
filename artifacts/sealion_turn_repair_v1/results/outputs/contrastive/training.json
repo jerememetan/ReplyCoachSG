@@ -1,0 +1,85 @@
+{
+  "status": "complete",
+  "arm": "contrastive",
+  "optimizer_steps": 120,
+  "selected_step": 0,
+  "initial_adapter_digest": "1641ff25c7ab16ef1d3f56835f1984f72f4d523b42de90828660004495ab503a",
+  "initial_validation": {
+    "ordinary_token_ce": 1.9694326901482238,
+    "targeted_positive_mean_ce": 1.223725801333785,
+    "targeted_negative_mean_ce": 2.068053087219596,
+    "contrast_wins": 13,
+    "contrasts": 16,
+    "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+  },
+  "schedule_sha256": "80da31269fb3617eec5010c3e104d45f1b010ed61d256582d4ab4e1726d4673c",
+  "margin_weight": 0.1,
+  "history": [
+    {
+      "step": 0,
+      "scores": {
+        "ordinary_token_ce": 1.9694326901482238,
+        "targeted_positive_mean_ce": 1.223725801333785,
+        "targeted_negative_mean_ce": 2.068053087219596,
+        "contrast_wins": 13,
+        "contrasts": 16,
+        "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+      }
+    },
+    {
+      "step": 40,
+      "scores": {
+        "ordinary_token_ce": 2.134014251051246,
+        "targeted_positive_mean_ce": 0.9491434544324875,
+        "targeted_negative_mean_ce": 1.862566689029336,
+        "contrast_wins": 11,
+        "contrasts": 16,
+        "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+      },
+      "retention_guard_passed": false,
+      "selected": false
+    },
+    {
+      "step": 80,
+      "scores": {
+        "ordinary_token_ce": 2.3591194050785167,
+        "targeted_positive_mean_ce": 1.1166602987796068,
+        "targeted_negative_mean_ce": 2.509652459528297,
+        "contrast_wins": 12,
+        "contrasts": 16,
+        "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+      },
+      "retention_guard_passed": false,
+      "selected": false
+    },
+    {
+      "step": 120,
+      "scores": {
+        "ordinary_token_ce": 2.2217361180234976,
+        "targeted_positive_mean_ce": 1.1768093071877956,
+        "targeted_negative_mean_ce": 2.5498846489936113,
+        "contrast_wins": 12,
+        "contrasts": 16,
+        "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+      },
+      "retention_guard_passed": false,
+      "selected": false
+    }
+  ],
+  "trainable_parameters": 10485760,
+  "source_english_adapter": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+  "latest_losses": {
+    "ordinary": 0.3270799517631531,
+    "targeted": 0.02998526208102703,
+    "margin": 0.0,
+    "grad_norm": 3.442347288131714
+  },
+  "final_adapter_digest": "8186014eabc2a4ef0c19c55c52b7d4ad1abfb00d251568dc9444c4599b4fd143",
+  "frozen_base_unchanged": true,
+  "ordinary_exposures": 120,
+  "targeted_exposures": 360,
+  "negative_exposures": 120,
+  "selected_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+  "selected_evaluation_flags": [],
+  "final_evaluation_flags": []
+}

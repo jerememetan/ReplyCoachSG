@@ -1,0 +1,29 @@
+{
+  "status": "audit_complete_proposals_only",
+  "scope": {
+    "original_reference_targets": 190,
+    "synthetic_targets_to_audit": 600,
+    "mt5_A_derivative_targets_to_audit": 190,
+    "total_variants": 980,
+    "unique_training_conversations": 790
+  },
+  "source_hashes": {
+    "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "data/dev/validation.jsonl": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+    "data/training_expansion/generated600_repair_v1/generated_corrected.jsonl": "a18467ffb3d03a660677721fc8f63fcda4701b4dda4b395dc6dfb626a98c69c6",
+    "data/distillation/shared_intent_v1_reviewed.json": "da2ee4b74c6a5eedcbd0accd85895c67ec9c2a5b4e5d4b8a909e71b1e8bd5aa6"
+  },
+  "workflow": [
+    "Collect user preferences on5cases.",
+    "Review every target variant for contextual meaning, relationship/register, brevity, natural phrasing and unnecessary restatement; preserve informative explicit detail when needed.",
+    "Write per-row keep/revise/flag decisions and proposed targets into a separate derivative, preserving sources and uncertainty.",
+    "Ask only about materially different or ambiguous cases.",
+    "Recheck original source hashes and summarize coverage before any proposed training."
+  ],
+  "validation_policy": "Keep original50validation file and answers fixed; do not rewrite validation to fit preferred outputs.",
+  "training_submitted": false,
+  "default_changed": false,
+  "calibration": "User selected A for all5; see calibration.json",
+  "summary": "summary.json",
+  "source_hashes_verified_after_audit": true
+}

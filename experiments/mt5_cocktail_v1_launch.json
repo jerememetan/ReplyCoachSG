@@ -1,0 +1,56 @@
+{
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_cocktail_v1",
+  "gpu": "L40S",
+  "partition": "student",
+  "slurm_account": "cs701",
+  "qos": "studentqos",
+  "jobs": {
+    "preflight": 358157,
+    "baseline_both": 358158,
+    "facts": 358159,
+    "answerability": 358160,
+    "summary": 358161
+  },
+  "maximum_concurrent_gpu_jobs": 3,
+  "payload_sha256": "98bc0fccaea9e89e12f0b02ad98c3bf6c39266f712b0d362b9e534e99961e236",
+  "training_arms": 4,
+  "default_changed": false,
+  "initial_observation": "GPU preflight completed successfully; all three training jobs accepted and queued for L40S resources. Summary waits for all training allocations to end.",
+  "preflight": {
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:00:11",
+    "passed": true,
+    "encoded_examples": 3755,
+    "tests_passed": 8,
+    "actual_gradient_interventions_verified": true
+  },
+  "status": "training_started",
+  "latest_observation": {
+    "at_utc": "2026-11-08T08:28:11.828657+00:00",
+    "baseline": {
+      "job": 358158,
+      "status": "training",
+      "optimizer_steps": 220
+    },
+    "facts": {
+      "job": 358159,
+      "status": "training",
+      "optimizer_steps": 160
+    },
+    "answerability": {
+      "job": 358160,
+      "status": "queued",
+      "reason": "QOSMaxJobsPerUserLimit"
+    },
+    "both": {
+      "job": 358158,
+      "status": "scheduled_after_baseline_in_same_allocation"
+    },
+    "initial_adapter_digests_matched": [
+      "baseline",
+      "facts"
+    ]
+  }
+}

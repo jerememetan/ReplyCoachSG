@@ -1,0 +1,12 @@
+{
+  "arm": "C",
+  "task": {
+    "learning_rate": 5e-05,
+    "max_epochs": 4
+  },
+  "rewrite": {
+    "learning_rate": 1e-05,
+    "max_epochs": 4
+  },
+  "data_manifest_sha256": "434e6a409e4adbb39c916ab631c4c0ecef6de5ea75f8b181d4d35ca4ebf0abb0"
+}

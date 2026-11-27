@@ -1,0 +1,36 @@
+{
+  "at_utc": "2026-11-08T19:41:12.993608+00:00",
+  "transition": {
+    "previous_observed_attempt": 168,
+    "resume_after_attempt": 169,
+    "old_proposals_accounted": 507,
+    "new_max_attempt": 10162,
+    "progress": {
+      "status": "authoring",
+      "accepted": 251,
+      "requested": 5240,
+      "pending": 4989,
+      "attempts": 168,
+      "splits": {
+        "train": 238,
+        "dev": 6,
+        "evaluation": 7
+      }
+    },
+    "note": "Conservatively account for one interrupted3-case request; preserve10500total candidate proposal budget."
+  },
+  "reason": "55writer incomplete outputs and18review-phase incomplete outputs since attempt12 at the diagnosis snapshot; running at~80accepted conversations/hour.",
+  "changes": [
+    "One conversation per writer request, still two English/LOCAL draft pairs.",
+    "Resume from the highest recorded/reserved attempt, including failed writer calls, to avoid reusing seeds/IDs.",
+    "Rotate pending slots by actual batch size.",
+    "Preserve the10500candidate proposal budget using507prior accounted proposals and9993remaining single-case attempts.",
+    "Keep251accepted conversations, all raw/review logs, assistant approval and target overlay; preserve old files in authoring_before_single_case.tgz.",
+    "B/C training data counts, learning rates, scheduler, epochs, models and GPU eligibility unchanged."
+  ],
+  "payload": {
+    "payload_sha256": "2c1732748bacf5ffccbabbd2f5c0a1a928b3a4f612e009ae811c39d01a066f37",
+    "bytes": 441887,
+    "files": 126
+  }
+}

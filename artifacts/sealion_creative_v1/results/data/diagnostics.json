@@ -1,0 +1,34 @@
+[
+  {
+    "item_id": "USER-CALL-001",
+    "context": [
+      "Can u call me now?",
+      "Eh i not so free eh?",
+      "Ohh, then when can we call?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "scope": "reused_user_diagnostic",
+    "criterion": "Propose a useful next reply; preserve stated purpose if present, caller direction and Friend unavailability."
+  },
+  {
+    "item_id": "CALL-WITH-PURPOSE",
+    "context": [
+      "I wanted to ask you about our assignment deadline. Can you call me now?",
+      "I am not free right now.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What did you want to call me about?",
+    "scope": "reused_user_diagnostic",
+    "criterion": "Propose a useful next reply; preserve stated purpose if present, caller direction and Friend unavailability."
+  }
+]

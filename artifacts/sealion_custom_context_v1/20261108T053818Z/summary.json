@@ -1,0 +1,38 @@
+{
+  "account": "hm.teoh.2024",
+  "checkpoint": "replycoach_sealion_repair25_v1",
+  "inference_only": true,
+  "training_performed": false,
+  "english_then_singlish": true,
+  "inputs_sha256": "97bfb940107174348d73cc6f6399e185566c1a42f0fe38b4717031c6d5ef6953",
+  "cases": 1,
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_custom_context_v1/20261108T053818Z",
+  "job_id": 358037,
+  "partition": "student",
+  "slurm_account": "cs701",
+  "qos": "studentqos",
+  "gpu_requested": "A40",
+  "script_sha256": "5e831dbcc0f77328f9a82978d46902056db8e3833c6bb68f5c2e8de30806dd09",
+  "initial_l40s_job_id": 358036,
+  "initial_l40s_state": "cancelled while pending; node unavailable",
+  "sbatch_overrides": [
+    "--gres=gpu:a40:1",
+    "--constraint=a40"
+  ],
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:00:47",
+  "gpu": "NVIDIA A40",
+  "results_sha256": "c71467565583879de267cfb2de454ee14765912d2138b0b78ccd122de55ffc97",
+  "outputs": [
+    {
+      "item_id": "USER-CALL-001",
+      "english": "Could you call me now about something?",
+      "singlish": "Call me about what ah?",
+      "standard_anchor": "Could you call me now about something?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    }
+  ],
+  "assessment": "Original repair25 misses the incoming request for the call purpose. English repeats an immediate call request; Singlish asks the reason back. Reason was unspecified in context. One user-provided diagnostic, not aggregate accuracy."
+}

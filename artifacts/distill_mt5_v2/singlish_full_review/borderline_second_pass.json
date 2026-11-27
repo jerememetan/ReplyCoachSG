@@ -1,0 +1,21 @@
+{
+  "reason": "Contextual second pass permits ordinary local care wishes and resolves venue wording already used in the source conversation. No raw targets were edited.",
+  "revisions": [
+    {
+      "index": 88,
+      "teacher": "sealion",
+      "draft_decision": "reject",
+      "final_decision": "accept",
+      "draft_reason": "Replaces general take-care wording with a specific rest-first directive absent from the anchor.",
+      "final_reason": "Preserves the care wish in the explicitly tired-peer context; rest first is a natural local realization of take care here rather than a separate future arrangement."
+    },
+    {
+      "index": 391,
+      "teacher": "qwen",
+      "draft_decision": "reject",
+      "final_decision": "accept",
+      "draft_reason": "Changes the proposed cafe near the library into a canteen near the library.",
+      "final_reason": "Preserves the proposed coffee venue near the library; the supplied conversation already uses canteen and cafe for that outing."
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "status": "complete",
+  "mode": "training",
+  "recipe": {
+    "experiment": "sealion_style_v1",
+    "account": "hm.teoh.2024",
+    "personal_account_only": true,
+    "baseline": "Exported SEA-LION original English + repair25 Singlish",
+    "source_bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+    "source_manifest_sha256": "1cb24b55984b73c20166331d4d872895d00d9d4854b2a2b7c8f5245453db7f1a",
+    "preflight_job_id": 357996,
+    "tests_passed": 11,
+    "data": {
+      "train": 745,
+      "validation": 42,
+      "copy_train": 342,
+      "copy_validation": 11,
+      "main_evaluation": 126,
+      "controls": 10,
+      "original_team_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+      "source_sha256": "b9027a2b84e6bec01f9200ac890220cd0b6e4e1382fdb71f0213a2949b6efbc6",
+      "new_target_replies_created": 0,
+      "auxiliary_definition": "Existing LOCAL preferred; identical English draft is style-negative only for long, non-local, non-cosmetic, heuristic-compatible pairs.",
+      "provenance": "Existing approved targets and assistant pair audit; no new human gold or test-set claims.",
+      "limitations": "Surface guard is conservative and incomplete; training-only phrase scores do not establish naturalness."
+    },
+    "modes": [
+      "algorithms",
+      "training"
+    ],
+    "training": {
+      "arms": [
+        "control",
+        "copy_loss"
+      ],
+      "initial_adapter": "repair25; English adapter never trained",
+      "optimizer_steps": 100,
+      "replay_examples_per_step": 8,
+      "preferred_copy_pairs_per_step": 1,
+      "learning_rate": 1e-05,
+      "weight_decay": 0.01,
+      "positive_ce_weight": 0.1,
+      "copy_margin": 0.2,
+      "copy_margin_weights": {
+        "control": 0.0,
+        "copy_loss": 0.1
+      },
+      "snapshots": [
+        0,
+        25,
+        50,
+        100
+      ],
+      "selection": "Step0 eligible; replay tokenCE <=1.02*initial; minimize .8*replayCE+.2*preferredCE+.05*margin violation on42 existing validation targets/11 eligible copy pairs.",
+      "matched": "Identical initial adapter, data order, per-step dropout seed, preferred-CE term, steps and negative forward/backward computation; only copy-margin weight changes.",
+      "trainable_parameters": 10485760
+    },
+    "algorithms": {
+      "candidate_beams": 8,
+      "candidates_returned": 8,
+      "max_new_tokens": 64,
+      "no_repeat_ngram_size": 3,
+      "style_score": "Training-only phrase log-odds plus small grammatical cues; particles alone receive no bonus.",
+      "methods": [
+        "beam4",
+        "guarded_model",
+        "copy_penalty",
+        "lexicon_guidance",
+        "combined"
+      ],
+      "copy_penalty": 0.5,
+      "style_weight": 0.2,
+      "particle_only_penalty": 0.25,
+      "grammar_rules": [
+        "progressive_copula",
+        "completion_already",
+        "subjectless_can_request",
+        "descriptive_copula",
+        "affirmative_yah",
+        "restricted_apology"
+      ],
+      "guard": "Conservative surface checks of colours/numbers/timing/names/negation/explicit actor/recipient/question force/content coverage. Not an entailment guarantee."
+    },
+    "evaluation": {
+      "actual_english": 126,
+      "assistant_diagnostic_controls": 10,
+      "routes": "Fixed original English anchors isolate Singlish changes; English anchors may themselves be contextually wrong.",
+      "all_reused_development": true,
+      "locked_test_used": false,
+      "metrics": "Copy rate, surface checks, style heuristic, human-review packet; no automatic quality promotion."
+    },
+    "source_models_overwritten": false,
+    "original_team_data_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "default_changed": false,
+    "files_sha256": {
+      "run_sealion_style_v1.py": "16d3c19f23eb95a642bbca9bdb1bb61a63fdb7d03ea549f786c11f512b741bfa",
+      "run.sbatch": "fe8d6632140e8669916babd53781edf21585c36e3bc1364d91b0ee0c747560d4",
+      "sealion_style_v1.py": "67551a963351c05f7a0fcc2314be0d1c6924c53fbe7c9278a1f60f72dc14e609",
+      "tests/test_sealion_style_v1.py": "af1b8c886cbf9729dd7840a997f829765af180a099b740d4644f565e39b565c3",
+      "tests/test_sealion_beam_v1.py": "d79bffea2c3be6c02b44b48ae8b35c4d6128a39abd80d8ed4196be4361b26621",
+      "check_sealion_style_v1.py": "dbcce50334efde0b3cf7ac495382f90ff2df3716562978393d8b139a1402ad9a",
+      "preflight.sbatch": "e7eed1d81b5a6ebed6983c3858e0fd992f320951522dbc18ce24a501a3e2c198",
+      "data/train.json": "a9df320dad26b57d76aac3aa5faf7c126120256033c75e33a80ef463c4e34b23",
+      "data/validation.json": "6d9d14ccac42badb0ae9cff19563fdaa4128827cf9690595b1e57581b22a425a",
+      "data/copy_train.json": "08b68489650485671eba0aa4786b7c73383afa5b76636ee89247414a1bb3d86c",
+      "data/copy_validation.json": "39c818c86041ee7db0aa2b58618f3676fa7f73ced53090f67f38c15ff8fe7246",
+      "data/evaluation.json": "580c5d82f4b85e5aee10ef7606dfa53ef9b4f0d4696633a1f40feb3af67ed1eb",
+      "data/controls.json": "83f6edc3e53c37c1e305f5aa3585696b5f1823fcb006b4f0f24905fef1985c30",
+      "data/data_manifest.json": "7ecc5798bdd7c4b7850d95ce8313ee019a17213b6641484bdadc8cc2d69a8906"
+    }
+  },
+  "gpu": "NVIDIA L40S",
+  "source_model": "Exported SEA-LION repair25; English generator unchanged",
+  "data": {
+    "train": 745,
+    "validation": 42,
+    "copy_train": 342,
+    "copy_validation": 11,
+    "main_evaluation": 126,
+    "controls": 10,
+    "original_team_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "source_sha256": "b9027a2b84e6bec01f9200ac890220cd0b6e4e1382fdb71f0213a2949b6efbc6",
+    "new_target_replies_created": 0,
+    "auxiliary_definition": "Existing LOCAL preferred; identical English draft is style-negative only for long, non-local, non-cosmetic, heuristic-compatible pairs.",
+    "provenance": "Existing approved targets and assistant pair audit; no new human gold or test-set claims.",
+    "limitations": "Surface guard is conservative and incomplete; training-only phrase scores do not establish naturalness."
+  },
+  "default_changed": false,
+  "quality_review": "Pending; no human quality scores.",
+  "arms": {
+    "control": {
+      "status": "trained",
+      "arm": "control",
+      "history": [
+        {
+          "step": 0,
+          "scores": {
+            "replay_token_ce": 2.3379441994609254,
+            "preferred_example_mean_ce": 1.43641719492999,
+            "copy_example_mean_ce": 1.00312649119984,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.7059934388507496,
+            "selection_score": 2.1929384704972756,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          }
+        },
+        {
+          "step": 25,
+          "scores": {
+            "replay_token_ce": 2.4924956059817114,
+            "preferred_example_mean_ce": 1.5518387772820212,
+            "copy_example_mean_ce": 1.1694197112863713,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.6767906622453169,
+            "selection_score": 2.3382037733540395,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        },
+        {
+          "step": 50,
+          "scores": {
+            "replay_token_ce": 2.4978122736468458,
+            "preferred_example_mean_ce": 1.590509750626304,
+            "copy_example_mean_ce": 1.2838337204673074,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.6453603809530085,
+            "selection_score": 2.348619788090388,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        },
+        {
+          "step": 100,
+          "scores": {
+            "replay_token_ce": 2.513792479941339,
+            "preferred_example_mean_ce": 1.5424262176860462,
+            "copy_example_mean_ce": 1.1729714301499454,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.6851437140594829,
+            "selection_score": 2.3537764131932546,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        }
+      ],
+      "initial_adapter_digest": "6c8939b53f4befc5f7151fc7d43a58ca28c840ca2f30e68d4e681213ba7363fb",
+      "trainable_parameters": 10485760,
+      "schedule_sha256": "51532ba1a9ec3db7efce930e22dabcb863870321dbea8687b88ede797f9399ab",
+      "initial_validation": {
+        "replay_token_ce": 2.3379441994609254,
+        "preferred_example_mean_ce": 1.43641719492999,
+        "copy_example_mean_ce": 1.00312649119984,
+        "copy_ranking_win_fraction": 0.36363636363636365,
+        "margin_violation": 0.7059934388507496,
+        "selection_score": 2.1929384704972756,
+        "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+      },
+      "selected_step": 0,
+      "optimizer_steps": 100,
+      "copy_margin_active_steps": 37,
+      "loss": "mean8 replay CE +0.1 preferred CE +weight*relu(0.2+preferredCE-copyCE)",
+      "copy_margin_weight": 0.0,
+      "default_changed": false,
+      "latest_losses": {
+        "preferred": 0.26625359058380127,
+        "copy": 0.5624288320541382,
+        "grad_norm": 5.142165660858154
+      },
+      "ordinary_exposures": 800,
+      "auxiliary_pair_exposures": 100,
+      "selected_ordinary_exposures": 0,
+      "selected_auxiliary_pair_exposures": 0,
+      "frozen_base_unchanged": true,
+      "final_adapter_digest": "893593f7063ed558af122d1c8964c66f2a9dfd6e8582be7a2feb1102c2ac3318",
+      "peak_allocated_bytes": 7372251136,
+      "evaluation_metrics": {
+        "beam4": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 1,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 8,
+            "mean_style_heuristic": 0.0046815899957554944,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 10,
+            "unnecessary_copies": 10,
+            "particle_only_changes": 4,
+            "heuristic_guard_pass": 80,
+            "mean_style_heuristic": 0.10313318218955647,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "combined": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.055166567141381684,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 16,
+            "unnecessary_copies": 16,
+            "particle_only_changes": 2,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": 0.0816126779072263,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "copy_penalty": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.17687263323242441,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 16,
+            "unnecessary_copies": 16,
+            "particle_only_changes": 2,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": -0.07109732716651873,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "guarded_model": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.17687263323242441,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 38,
+            "unnecessary_copies": 38,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": -0.1349371200084292,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "lexicon_guidance": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.055166567141381684,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 29,
+            "unnecessary_copies": 29,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": 0.059178349621983914,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        }
+      }
+    },
+    "copy_loss": {
+      "status": "trained",
+      "arm": "copy_loss",
+      "history": [
+        {
+          "step": 0,
+          "scores": {
+            "replay_token_ce": 2.3379441994609254,
+            "preferred_example_mean_ce": 1.43641719492999,
+            "copy_example_mean_ce": 1.00312649119984,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.7059934388507496,
+            "selection_score": 2.1929384704972756,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          }
+        },
+        {
+          "step": 25,
+          "scores": {
+            "replay_token_ce": 2.5143024863618795,
+            "preferred_example_mean_ce": 1.5783608772537925,
+            "copy_example_mean_ce": 1.2142611254345288,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.6491329366510565,
+            "selection_score": 2.359570811372815,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        },
+        {
+          "step": 50,
+          "scores": {
+            "replay_token_ce": 2.5031498598329947,
+            "preferred_example_mean_ce": 1.5896963693878867,
+            "copy_example_mean_ce": 1.3322359702803872,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.6149379741061818,
+            "selection_score": 2.3512060604492824,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        },
+        {
+          "step": 100,
+          "scores": {
+            "replay_token_ce": 2.5352560209505484,
+            "preferred_example_mean_ce": 1.575417323545976,
+            "copy_example_mean_ce": 1.2774815180084922,
+            "copy_ranking_win_fraction": 0.36363636363636365,
+            "margin_violation": 0.6507858113809065,
+            "selection_score": 2.3758275720386792,
+            "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+          },
+          "replay_guard_passed": false,
+          "selected": false
+        }
+      ],
+      "initial_adapter_digest": "6c8939b53f4befc5f7151fc7d43a58ca28c840ca2f30e68d4e681213ba7363fb",
+      "trainable_parameters": 10485760,
+      "schedule_sha256": "51532ba1a9ec3db7efce930e22dabcb863870321dbea8687b88ede797f9399ab",
+      "initial_validation": {
+        "replay_token_ce": 2.3379441994609254,
+        "preferred_example_mean_ce": 1.43641719492999,
+        "copy_example_mean_ce": 1.00312649119984,
+        "copy_ranking_win_fraction": 0.36363636363636365,
+        "margin_violation": 0.7059934388507496,
+        "selection_score": 2.1929384704972756,
+        "scope": "Teacher-forced validation on42 existing pairs and11 copy contrasts; not generated reply accuracy."
+      },
+      "selected_step": 0,
+      "optimizer_steps": 100,
+      "copy_margin_active_steps": 34,
+      "loss": "mean8 replay CE +0.1 preferred CE +weight*relu(0.2+preferredCE-copyCE)",
+      "copy_margin_weight": 0.1,
+      "default_changed": false,
+      "latest_losses": {
+        "preferred": 0.26466190814971924,
+        "copy": 0.6604036092758179,
+        "grad_norm": 5.330867290496826
+      },
+      "ordinary_exposures": 800,
+      "auxiliary_pair_exposures": 100,
+      "selected_ordinary_exposures": 0,
+      "selected_auxiliary_pair_exposures": 0,
+      "frozen_base_unchanged": true,
+      "final_adapter_digest": "590b8ffc337d4938ff3dea81c0ce10148fb77f334fadb62ac9db9ec6b54589e1",
+      "peak_allocated_bytes": 7372251136,
+      "evaluation_metrics": {
+        "beam4": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 1,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 8,
+            "mean_style_heuristic": 0.0046815899957554944,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 10,
+            "unnecessary_copies": 10,
+            "particle_only_changes": 4,
+            "heuristic_guard_pass": 80,
+            "mean_style_heuristic": 0.10313318218955647,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "combined": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.055166567141381684,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 16,
+            "unnecessary_copies": 16,
+            "particle_only_changes": 2,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": 0.0816126779072263,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "copy_penalty": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.17687263323242441,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 16,
+            "unnecessary_copies": 16,
+            "particle_only_changes": 2,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": -0.07109732716651873,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "guarded_model": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.17687263323242441,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 38,
+            "unnecessary_copies": 38,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": -0.1349371200084292,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        },
+        "lexicon_guidance": {
+          "assistant_authored_diagnostic": {
+            "cases": 10,
+            "eligible_copy_cases": 5,
+            "exact_copies": 3,
+            "unnecessary_copies": 0,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 10,
+            "mean_style_heuristic": -0.055166567141381684,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          },
+          "reused_development": {
+            "cases": 126,
+            "eligible_copy_cases": 125,
+            "exact_copies": 29,
+            "unnecessary_copies": 29,
+            "particle_only_changes": 0,
+            "heuristic_guard_pass": 126,
+            "mean_style_heuristic": 0.059178349621983914,
+            "fallbacks": 0,
+            "failures": 0,
+            "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+          }
+        }
+      }
+    }
+  },
+  "training_performed": true,
+  "source_bundle_weights_unchanged": true,
+  "seconds": 1359.523792966269
+}

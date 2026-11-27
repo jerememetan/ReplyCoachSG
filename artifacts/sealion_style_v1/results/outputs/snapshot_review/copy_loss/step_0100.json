@@ -1,0 +1,694 @@
+{
+  "status": "complete",
+  "arm": "copy_loss",
+  "step": 100,
+  "selected_step": 0,
+  "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_style_v1/outputs/training/copy_loss/step_0100",
+  "checkpoint_sha256": "9f1088d221119c1ffdce9deef9bdc6f785eb996930ca8b077c62576bc590aa34",
+  "scope": "Exploratory32-case snapshot review, including previously inspected5. Nonselected snapshots are not approved upgrades.",
+  "default_changed": false,
+  "human_review_pending": true,
+  "outputs": [
+    {
+      "item_id": "SEADUAL-011",
+      "scope": "reused_development",
+      "standard_anchor": "My purple water bottle is purple.",
+      "context": [
+        "I left my purple water bottle in the studio.",
+        "There are a few bottles here."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What colour is your bottle?",
+      "methods": {
+        "beam4": {
+          "text": "My purple water bottle purple one.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEADUAL-015",
+      "scope": "reused_development",
+      "standard_anchor": "You can ask for help from others in the group.",
+      "context": [
+        "I have been doing most of the group project alone.",
+        "Have the others been helping?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Not really, and I am feeling overwhelmed.",
+      "methods": {
+        "beam4": {
+          "text": "Ask group members help lah.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEADUAL-008",
+      "scope": "reused_development",
+      "standard_anchor": "Yes, I've already booked the room this morning.",
+      "context": [
+        "I already booked our tutorial room this morning.",
+        "Thanks for arranging that."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Have you booked the room yet?",
+      "methods": {
+        "beam4": {
+          "text": "Already, this morning I book liao.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEADUAL-010",
+      "scope": "reused_development",
+      "standard_anchor": "I am waiting outside seminar room 4A.",
+      "context": [
+        "I am waiting outside seminar room 4A.",
+        "I am coming upstairs."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Which room are you outside?",
+      "methods": {
+        "beam4": {
+          "text": "I waiting outside seminar room 4A.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEADUAL-013",
+      "scope": "reused_development",
+      "standard_anchor": "Could you get me a cup of coffee?",
+      "context": [
+        "I am still in the tutorial.",
+        "I am at the coffee stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What drink should I get you?",
+      "methods": {
+        "beam4": {
+          "text": "Can help get me a cup of coffee?",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-B-042",
+      "scope": "reused_development",
+      "standard_anchor": "No worries, let me know when you reach",
+      "context": [
+        "I'm waiting outside already",
+        "I'm reaching soon"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry, I took the wrong bus",
+      "methods": {
+        "beam4": {
+          "text": "No worries, take your time",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-D-007",
+      "scope": "reused_development",
+      "standard_anchor": "i'm not sure what i want",
+      "context": [
+        "u wanna try the matcha at luckin?",
+        "nahh"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "then what u wanna drink later?",
+      "methods": {
+        "beam4": {
+          "text": "idk what i want leh",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-A-017",
+      "scope": "reused_development",
+      "standard_anchor": "Yes, we are meeting at 7pm.",
+      "context": [
+        "Hey! Where are you now?",
+        "I am reaching Harbourfront MRT, how about you?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Eh i double check with you, we are meeting at 7pm right?",
+      "methods": {
+        "beam4": {
+          "text": "Ya, seven at Harbourfront MRT.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "CTXDEV-ownership-2",
+      "scope": "reused_development",
+      "standard_anchor": "I need to return the cable you lent me yesterday.",
+      "context": [
+        "You lent me your power cable yesterday.",
+        "Let us sort it out after the workshop."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Which one of us needs to return the power cable?",
+      "methods": {
+        "beam4": {
+          "text": "You need return the cable I lent you yesterday ah.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-B-009",
+      "scope": "reused_development",
+      "standard_anchor": "Yes, there is still space.",
+      "context": [
+        "I'm going library now",
+        "I'll come over after class"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "still got space?",
+      "methods": {
+        "beam4": {
+          "text": "Still got space, I come over after class.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-C-018",
+      "scope": "reused_development",
+      "standard_anchor": "yes, i'll make sure to include the slide",
+      "context": [
+        "i'll upload my section before dinner",
+        "okay, then i can merge everything tonight"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "methods": {
+        "beam4": {
+          "text": "okay, i add the slide now",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-E-015",
+      "scope": "reused_development",
+      "standard_anchor": "Nope, I haven't done it yet.",
+      "context": [
+        "Hi guys, remember to do the quiz, deadline is next week",
+        "yep noted"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "hi have you done the quiz alr anot",
+      "methods": {
+        "beam4": {
+          "text": "haven’t finish leh, I only started",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEAPUBLIC-002",
+      "scope": "reused_development",
+      "standard_anchor": "Yes, please return my headphones by tomorrow afternoon.",
+      "context": [
+        "You still have my headphones.",
+        "Yes, I kept them in their case."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can I return your headphones tomorrow afternoon?",
+      "methods": {
+        "beam4": {
+          "text": "Can, tomorrow afternoon return my headphones.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "RESTORE-FRESH-021",
+      "scope": "reused_development",
+      "standard_anchor": "Could you get me a bottle of water?",
+      "context": [
+        "I am still in class.",
+        "I am queuing at the drinks stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What would you like me to get you?",
+      "methods": {
+        "beam4": {
+          "text": "Can get me a bottle of water?",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "RESTORE-FRESH-009",
+      "scope": "reused_development",
+      "standard_anchor": "That is too expensive for me. Could we get something cheaper?",
+      "context": [
+        "I have twelve dollars left for dinner.",
+        "There are a few stalls downstairs."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want to order the thirty-dollar platter?",
+      "methods": {
+        "beam4": {
+          "text": "Paiseh, thirty dollars too much for me. Can get something cheaper?",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-C-045",
+      "scope": "reused_development",
+      "standard_anchor": "Yes, I will be there at 8am.",
+      "context": [
+        "we said we'd sit together tmr",
+        "yep"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you still coming early to get seats right?",
+      "methods": {
+        "beam4": {
+          "text": "ya, cg i gna be there at 8am",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEAPUBLIC-011",
+      "scope": "reused_development",
+      "standard_anchor": "I am waiting outside room C2.",
+      "context": [
+        "I am waiting outside room C2.",
+        "I am on my way."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Which room are you outside?",
+      "methods": {
+        "beam4": {
+          "text": "I waiting outside room C2.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "CTXDEV-submitted-1",
+      "scope": "reused_development",
+      "standard_anchor": "Yes, I've uploaded it to the portal this afternoon.",
+      "context": [
+        "I uploaded the consent form to the portal this afternoon.",
+        "The deadline is tomorrow."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Have you submitted the consent form?",
+      "methods": {
+        "beam4": {
+          "text": "Ya, I submit to portal liao.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "RESTORE-FRESH-013",
+      "scope": "reused_development",
+      "standard_anchor": "I cannot lift heavy boxes. Could someone else help me?",
+      "context": [
+        "My shoulder is injured and I cannot lift heavy boxes.",
+        "Please take care of it."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Could you help move this heavy cupboard?",
+      "methods": {
+        "beam4": {
+          "text": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEADUAL-002",
+      "scope": "reused_development",
+      "standard_anchor": "That's too expensive for me. Could we find something cheaper?",
+      "context": [
+        "My lunch budget today is eleven dollars.",
+        "We can find something nearby."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Want the twenty-seven-dollar lunch set?",
+      "methods": {
+        "beam4": {
+          "text": "That lunch set too expensive for me leh. Find cheaper one can?",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "SEAPUBLIC-001",
+      "scope": "reused_development",
+      "standard_anchor": "Seven forty works for me.",
+      "context": [
+        "I cannot leave work before 8:10.",
+        "We can get dinner afterwards."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "7:40 can meet already or not?",
+      "methods": {
+        "beam4": {
+          "text": "Seven forty can, see you then.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "ITEM-C-001",
+      "scope": "reused_development",
+      "standard_anchor": "sure, let's meet there at 8",
+      "context": [
+        "are you going to the library ltr?",
+        "yeah, probably after dinner"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "i'll be at lks around 8, want to meet there?",
+      "methods": {
+        "beam4": {
+          "text": "can, see you at lks at 8",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-001",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "Okay.",
+      "context": [
+        "I can meet at the library."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Shall we meet there?",
+      "methods": {
+        "beam4": {
+          "text": "Can, library there meet.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-002",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "Purple.",
+      "context": [
+        "My bottle is purple."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "What colour is your bottle?",
+      "methods": {
+        "beam4": {
+          "text": "My bottle purple.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-003",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "Room 4A.",
+      "context": [
+        "I am outside room 4A."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Which room?",
+      "methods": {
+        "beam4": {
+          "text": "Room 4A. Outside there.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-004",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "No.",
+      "context": [
+        "I have not paid the fee yet."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Have you paid?",
+      "methods": {
+        "beam4": {
+          "text": "Haven’t pay leh. Paying now.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-005",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "Yes.",
+      "context": [
+        "I am free on Thursday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Are you free on Thursday?",
+      "methods": {
+        "beam4": {
+          "text": "Thursday I free.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-006",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "I cannot attend on Thursday.",
+      "context": [
+        "I cannot attend on Thursday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Can you attend?",
+      "methods": {
+        "beam4": {
+          "text": "Thursday I cannot make leh.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-007",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "Please send $19 to Mei before 18:25.",
+      "context": [
+        "Mei needs $19 before 18:25."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "What should I send?",
+      "methods": {
+        "beam4": {
+          "text": "Send $19 to Mei before 18:25 ah.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-008",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "You should return my cable to me.",
+      "context": [
+        "You borrowed my cable."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Who should return it?",
+      "methods": {
+        "beam4": {
+          "text": "You return my cable to me ah.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-009",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "I am waiting outside room 4A.",
+      "context": [
+        "I am outside room 4A."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Where are you waiting?",
+      "methods": {
+        "beam4": {
+          "text": "I waiting outside room 4A.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    },
+    {
+      "item_id": "STYLE-CONTROL-010",
+      "scope": "assistant_authored_diagnostic",
+      "standard_anchor": "I have not submitted the form yet.",
+      "context": [
+        "I have not submitted the form."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Have you submitted it?",
+      "methods": {
+        "beam4": {
+          "text": "Haven’t submit leh. I check the form first.",
+          "provenance": "model:beam4",
+          "status": "complete"
+        }
+      }
+    }
+  ],
+  "completed_cases": 32,
+  "metrics": {
+    "beam4": {
+      "assistant_authored_diagnostic": {
+        "cases": 10,
+        "eligible_copy_cases": 5,
+        "exact_copies": 0,
+        "unnecessary_copies": 0,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 6,
+        "mean_style_heuristic": 0.21774072462546573,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      },
+      "reused_development": {
+        "cases": 22,
+        "eligible_copy_cases": 22,
+        "exact_copies": 0,
+        "unnecessary_copies": 0,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 10,
+        "mean_style_heuristic": 0.32535831240192864,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      }
+    }
+  }
+}

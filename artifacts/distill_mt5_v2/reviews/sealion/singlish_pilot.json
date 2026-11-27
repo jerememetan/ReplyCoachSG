@@ -1,0 +1,121 @@
+{
+  "reviewer": "Assistant exploratory meaning/style review",
+  "blind": false,
+  "independent_human_gold": false,
+  "decisions": [
+    {
+      "item_id": "ITEM-B-024",
+      "raw_sha256": "0260d534bc2453d8a9eedcd5c15a37991159a470b29a6619ded5c795c6320ec2",
+      "decision": "accept",
+      "reason": "Natural short acceptance; after-class timing and discussion understood from context."
+    },
+    {
+      "item_id": "ITEM-B-040",
+      "raw_sha256": "b0b9e3bdb2cc232f7fad47290aca01b6383077807888a4b3b257deffd845e750",
+      "decision": "accept",
+      "reason": "Can expresses acceptance; preserves six-thirty time."
+    },
+    {
+      "item_id": "ITEM-C-031",
+      "raw_sha256": "0f5c1012d164d46ba077f355610f01b8252249d8f0af1c2928c17a02d589b039",
+      "decision": "reject",
+      "reason": "Adds advice/permission to rest that is absent from English Okay I understand; not a faithful rewrite."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-024",
+      "raw_sha256": "356d7eafb1e2ece1aa08201f138ca105bc4172bac7579bae0858d06302f623a4",
+      "decision": "accept",
+      "reason": "Paiseh/cannot/leh preserves refusal to collect after rehearsal."
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-053",
+      "raw_sha256": "ba605b897da74d81d9dbd2ecb4a6fdeff0fe2f15785e5f0f1d6fabeafb9e289e",
+      "decision": "accept",
+      "reason": "Preserves unfinished speaker confirmation; local-style compressed syntax."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-023-02",
+      "raw_sha256": "a1590b63731e6d2e4aa2e84dc3273b66faffd418b9e7216def2527f5bb7ba36f",
+      "decision": "accept",
+      "reason": "Preserves chicken-rice stall meeting and1pm time; acceptable conversational ellipsis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-029-02",
+      "raw_sha256": "c587c472c52d7f06c6dcc46db131c5c88d21be26f314f127ae3bb8b25c2a39fc",
+      "decision": "reject",
+      "reason": "Adds save-time rationale absent from the teacher English; reject for strict rewrite fidelity."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-031-02",
+      "raw_sha256": "f01ba1c152ce952e50a50aed9efdf57b031ea8313144a7af8ae6c20d78421147",
+      "decision": "accept",
+      "reason": "Preserves shared ticket-booking proposal."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-01",
+      "raw_sha256": "5f61732705811c995e49818288017d0f517d2fd4b9deeaf2cc824c3efb0e9274",
+      "decision": "accept",
+      "reason": "Preserves gate-meeting closing; common neutral/casual local reply."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-071-03",
+      "raw_sha256": "17f830e2cb3c2d54645083bd64d9755217d6c8dfe8b643d4f0650cfe954eff56",
+      "decision": "accept",
+      "reason": "Preserves sender/receiver roles and upload plan or checking-guidelines sequence."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-00",
+      "raw_sha256": "85ef0524604497c3b68c1392228abf2ca7c47cf41b72c223fd77e56e914cab00",
+      "decision": "accept",
+      "reason": "Preserves uncertainty/checking cinema information; compressed local wording."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-083-03",
+      "raw_sha256": "808e235cc46847cd2f61e7b27968fc10ecdfbb6a24bd3e56916fd61120eaf445",
+      "decision": "accept",
+      "reason": "Preserves uncertainty about lasttwo chapters and checking syllabus."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-096-03",
+      "raw_sha256": "a41c419818613098d01f0b6077fbcff4483617f76d556511ac4de911a0a1ee5b",
+      "decision": "accept",
+      "reason": "Preserves thanks and fixing own typos with teacher-specific timing."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-097-02",
+      "raw_sha256": "931124bb506d82e1fd727ec117b9bdfbefa9ece2573c0985eed7a3f50f701e2a",
+      "decision": "accept",
+      "reason": "Preserves quiz-format uncertainty and checking plan."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-100-02",
+      "raw_sha256": "237d9b07497021b4c6bf538b624da22a2052f8e10b2cdfd58a8564f226f78d62",
+      "decision": "accept",
+      "reason": "Preserves teacher-specific Zoom-link readiness/checking and update/send sequence."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-115-02",
+      "raw_sha256": "268b2aca287103ec17a1149cb0b54b58930c67f69d0109b93954c5e5a1541cb2",
+      "decision": "accept",
+      "reason": "Preserves acceptance of help with final summary slide; conversational ellipsis."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-133-00",
+      "raw_sha256": "87e658969e74e33f0ebb660b5bdb4589924861e5bfe30ff4469039aede954504",
+      "decision": "accept",
+      "reason": "Preserves accepting chicken rice with natural okok."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-134-01",
+      "raw_sha256": "9337f5fbd15587c9af26923555b9553555872ca39a88c53008bb28d196148a08",
+      "decision": "accept",
+      "reason": "Preserves acceptance of6pm pickup/meeting; context supplies afternoon."
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-136-01",
+      "raw_sha256": "37d94f6887dcb7fc167078de266cfe4aedc2f8bfa121f9aa4110884f026350f4",
+      "decision": "accept",
+      "reason": "Preserves teacher-specific return deadline and degree of commitment."
+    }
+  ]
+}

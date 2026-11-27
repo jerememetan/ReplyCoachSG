@@ -1,0 +1,16 @@
+{
+  "job_id": 358042,
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1",
+  "gpu_requested": "L40S",
+  "partition": "student",
+  "slurm_account": "cs701",
+  "qos": "studentqos",
+  "payload_sha256": "5c775272192e5441d3b90096a1263933fa2dc57a161058650ad5ac98d4256e30",
+  "training_arms": [
+    "supervised",
+    "contrastive"
+  ],
+  "source_checkpoint_preserved": true,
+  "default_changed": false
+}

@@ -1,0 +1,12 @@
+{
+  "job_id": 357960,
+  "account": "CS425G9",
+  "root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_sealion_zero_shot_v1_20261108",
+  "gpu_requested": "L40S",
+  "memory_requested": "32G",
+  "walltime_limit": "00:15:00",
+  "inference_only": true,
+  "training_performed": false,
+  "state": "submitted",
+  "recipe_sha256": "d581b434aeb98ff713abfbd303e611997024e6e41094dd720469cfafce27e18d"
+}

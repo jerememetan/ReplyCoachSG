@@ -1,0 +1,56 @@
+{
+  "training_completed": true,
+  "original_job": {
+    "job_id": 355552,
+    "state": "FAILED",
+    "exit_code": "1:0",
+    "elapsed": "00:06:25",
+    "failure": "Blank STANDARD in oracle validation route rejected by LOCAL_REWRITE; all three training arms and STANDARD generations had completed."
+  },
+  "recovery": {
+    "job_id": 355560,
+    "submission": "accepted",
+    "purpose": "Finish only missing rewrites; preserve blank failures and original report; no retraining",
+    "last_verified_state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:00:59",
+    "local_report": "artifacts/mt5_reply_act_v1/results_recovered.json",
+    "validation": "All route coverage and actual rewrite anchors verified; two empty oracle STANDARD outputs remain explicit failures."
+  },
+  "metrics": {
+    "direct_control": {
+      "selected_epoch": 3,
+      "validation_token_ce": 2.065364682057808,
+      "reply_act_micro_f1": null,
+      "reply_act_exact_match": null
+    },
+    "auxiliary_only": {
+      "selected_epoch": 3,
+      "validation_token_ce": 2.0658531986433886,
+      "reply_act_micro_f1": 0.43216079473495483,
+      "reply_act_exact_match": 0.03999999910593033
+    },
+    "conditioned": {
+      "selected_epoch": 3,
+      "validation_token_ce": 2.2164338442785985,
+      "reply_act_micro_f1": 0.2925170063972473,
+      "reply_act_exact_match": 0.0
+    }
+  },
+  "conclusion": "No improvement established from this conditioning implementation. Does not rule out reply-act architecture: added memory causes severe initial disruption and hard oracle inputs differ from soft training conditioning.",
+  "examples": [
+    {
+      "item_id": "COMP1-003",
+      "context": "User cannot rehearse Wednesday; Thursday free",
+      "direct": "Wednesday evening works for me.",
+      "conditioned": "Yes, Wednesday evening works for me."
+    },
+    {
+      "item_id": "COMP1-004",
+      "context": "User can attend morning only",
+      "direct": "I prefer the morning session.",
+      "conditioned": "The afternoon session works for me."
+    }
+  ],
+  "default_changed": false
+}

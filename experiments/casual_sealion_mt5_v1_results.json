@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "job_id": 358399,
+  "account": "hm.teoh.2024",
+  "gpu": {
+    "original_sealion": "NVIDIA L40S",
+    "mt5_A": "NVIDIA L40S"
+  },
+  "cases": 6,
+  "models": {
+    "original_sealion": {
+      "bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+      "manifest_sha256": "1cb24b55984b73c20166331d4d872895d00d9d4854b2a2b7c8f5245453db7f1a",
+      "flags": []
+    },
+    "mt5_A": {
+      "bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1",
+      "manifest_sha256": "4d31e79604d8818e430c7cf288ae9c0b738ca18db18e309fbcef6e929c7c6165",
+      "flags": []
+    }
+  },
+  "recipe": {
+    "input_provenance": "Six newly assistant-authored everyday conversations; topics drawn before any inference, not selected against model weaknesses.",
+    "topic_seed": 275814,
+    "topic_pool": [
+      "coffee",
+      "dinner",
+      "movie",
+      "music",
+      "weekend_walk",
+      "photos",
+      "studying",
+      "workout",
+      "cooking",
+      "birthday",
+      "new_hobby",
+      "rainy_day",
+      "games",
+      "travel_chat",
+      "shopping",
+      "finishing_work",
+      "good_news",
+      "commute"
+    ],
+    "selected_topics": [
+      "weekend_walk",
+      "finishing_work",
+      "good_news",
+      "cooking",
+      "commute",
+      "rainy_day"
+    ],
+    "models": [
+      "original_SEA-LION_repair25",
+      "exported_mT5_A_shared_intent_rewrite_s1_final784"
+    ],
+    "decoding": "Each unchanged portable checkpoint uses its stored beam4/no-repeat3 pipeline; SEAmax64, mT5max48. Singlish uses each model own generated English draft.",
+    "selection": "All six frozen cases will be shown. No target reply, reference input, manual postprocessing or output-based selection.",
+    "training_performed": false,
+    "default_changed": false,
+    "inputs_sha256": "fba132d0c069fe778b5f39a0bbb72e87cb441bad400ba913139b54d9f25875a6"
+  },
+  "training_performed": false,
+  "default_changed": false,
+  "comparison_csv": "artifacts/casual_sealion_mt5_v1/comparison.csv",
+  "scope": "Six newly authored casual conversations on randomly selected everyday topics; all outputs shown without quality-based selection. No benchmark or human accuracy claim."
+}

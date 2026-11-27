@@ -1,0 +1,218 @@
+[
+  {
+    "item_id": "AUDIT-EVAL-01",
+    "english": "Sure, I will send you clips later.",
+    "singlish": "can, we go arcade first",
+    "standard_anchor": "Sure, I will send you clips later.",
+    "status": "complete",
+    "prompt_sha256": "2bc33d61616b3786af6a5464c2fa2ca7cc0ed96cf2c725855c43a35ea397512a",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-02",
+    "english": "Yes, I saw them. Thank you!",
+    "singlish": "Yes, I saw them. Thanks ah.",
+    "standard_anchor": "Yes, I saw them. Thank you!",
+    "status": "complete",
+    "prompt_sha256": "92f5bb5d30e29f6e042dd0ffe10d49fc0c80c13adf22f92cd2e87e1111296450",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-03",
+    "english": "Yes, five fifteen still works.",
+    "singlish": "Can, five fifteen can.",
+    "standard_anchor": "Yes, five fifteen still works.",
+    "status": "complete",
+    "prompt_sha256": "8fa2b08062f9bdb048e000dc87e4c831f7239d718c1cfd5be4094ac91a789ba8",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-04",
+    "english": "Yes, it is ready.",
+    "singlish": "Ya, the playlist is ready.",
+    "standard_anchor": "Yes, it is ready.",
+    "status": "complete",
+    "prompt_sha256": "eba4ea4a7329f1087d7ca7963325e8e5692aadc380662472abb783e7065eecd9",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-05",
+    "english": "Okay, I will charge them first.",
+    "singlish": "Okay, I charge them first.",
+    "standard_anchor": "Okay, I will charge them first.",
+    "status": "complete",
+    "prompt_sha256": "5f3489533717942bd1c6832898f0e6c25671df157d7222f11d0bdd90687b7cf1",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-06",
+    "english": "No worries, I will invite you next time.",
+    "singlish": "No worries, next time then catch up.",
+    "standard_anchor": "No worries, I will invite you next time.",
+    "status": "complete",
+    "prompt_sha256": "2a711466a4176e0d447a4cb0bc7c0dc6fc892a0de44fe66785d703d7e79f0aaf",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-07",
+    "english": "Sure, you can share it with me.",
+    "singlish": "Can, I share the socket with you.",
+    "standard_anchor": "Sure, you can share it with me.",
+    "status": "complete",
+    "prompt_sha256": "70a0931ea05d36143204c5ed615991bd515788e85e250b75babc797e629f6e7d",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-08",
+    "english": "Yes please, could I use your spare pair?",
+    "singlish": "Yes please, lend me your spare pair can?",
+    "standard_anchor": "Yes please, could I use your spare pair?",
+    "status": "complete",
+    "prompt_sha256": "62426c84cfa153c601fb143173d02c7de03bc33250e769a5aea7ab6b8c6a77ec",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-09",
+    "english": "Okay, I will return your bag after dinner.",
+    "singlish": "Okay, I return your bag after dinner.",
+    "standard_anchor": "Okay, I will return your bag after dinner.",
+    "status": "complete",
+    "prompt_sha256": "e10a94bd9d75bf3a6135109f0d7e630f3b6c45552a2c13e02fd822fee492bb5c",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-10",
+    "english": "I am outside the florist.",
+    "singlish": "I am outside the florist.",
+    "standard_anchor": "I am outside the florist.",
+    "status": "complete",
+    "prompt_sha256": "32ce6eaef5c2daba950ba7d38f18ebe2e9822c98e7cfdcabc42d28adc15a3936",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-11",
+    "english": "I cannot stay for that movie. I need to leave by eight ten.",
+    "singlish": "I cannot watch that movie leh. I need to leave by eight ten.",
+    "standard_anchor": "I cannot stay for that movie. I need to leave by eight ten.",
+    "status": "complete",
+    "prompt_sha256": "8241501405bfdcd83a0a16899896a4f90fdcf67a8cdeb7cab3fea0adc4679767",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-12",
+    "english": "That is over my budget. Could we get something cheaper?",
+    "singlish": "Over my budget leh, get something cheaper instead can?",
+    "standard_anchor": "That is over my budget. Could we get something cheaper?",
+    "status": "complete",
+    "prompt_sha256": "dff4bc69840e23841aabda5b15d68afc9a6700d66aafa718b980c7e0219870aa",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-13",
+    "english": "Not yet, I still need to write the explanation.",
+    "singlish": "Not yet leh, I still need to write the explanation.",
+    "standard_anchor": "Not yet, I still need to write the explanation.",
+    "status": "complete",
+    "prompt_sha256": "043e765f0cd4a7f61ebcba722b0502dc9d6bc42a017b4695c207021b76a33290",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-14",
+    "english": "It will be closed when I arrive. Could we meet somewhere else?",
+    "singlish": "Can, find another place to meet instead.",
+    "standard_anchor": "It will be closed when I arrive. Could we meet somewhere else?",
+    "status": "complete",
+    "prompt_sha256": "8ea62a27f392e6c8edfb26a2a013cc4dee4485ca7f5f8b3f72e3c42414f674b0",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-15",
+    "english": "Thank you professor, I will check on Wednesday.",
+    "singlish": "Okay, I check on Wednesday.",
+    "standard_anchor": "Thank you professor, I will check on Wednesday.",
+    "status": "complete",
+    "prompt_sha256": "9e9036683924aaddeacb5b971b3370a85210e1d92fdb64d0d9ceff33c4f20b73",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-16",
+    "english": "Yes, it is on my chair.",
+    "singlish": "Ya, my scarf on your chair.",
+    "standard_anchor": "Yes, it is on my chair.",
+    "status": "complete",
+    "prompt_sha256": "e7240f4c9208b482a89174e88ec9be5afe46c47a3b4fecb635389cfa13c93e10",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-17",
+    "english": "Which one would you prefer?",
+    "singlish": "Which one you want? Plain water or lemon tea?",
+    "standard_anchor": "Which one would you prefer?",
+    "status": "complete",
+    "prompt_sha256": "f405ebdf644ec9e319ea617cb72835c193848b4e665633dc9905f6d7c5814573",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-18",
+    "english": "Sure, I will send you a photo.",
+    "singlish": "Sure, I send you a photo.",
+    "standard_anchor": "Sure, I will send you a photo.",
+    "status": "complete",
+    "prompt_sha256": "858f24d92417da37ed2f0d1815bd2da2b85afc3c6a3e352bd77b407b233b5d87",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-19",
+    "english": "No, I will go to L8 instead.",
+    "singlish": "No, I go L8 instead.",
+    "standard_anchor": "No, I will go to L8 instead.",
+    "status": "complete",
+    "prompt_sha256": "b94c32cea3d355c151cf4889fa7a372e74608b622030bba4f8d83ac696b3d2cf",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-20",
+    "english": "Not yet, I will check the bakery.",
+    "singlish": "Not yet leh, I check the bakery first.",
+    "standard_anchor": "Not yet, I will check the bakery.",
+    "status": "complete",
+    "prompt_sha256": "ee2c583b884aacb0cc9355ea58fcbb26730341bc9d77dee23102cc7e3e3d1857",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-21",
+    "english": "Do you want to take a break and go through it together later?",
+    "singlish": "Can, we go through it together later.",
+    "standard_anchor": "Do you want to take a break and go through it together later?",
+    "status": "complete",
+    "prompt_sha256": "0a2f89813c758eb157a512d69471883f14363c3babb52a514794b0cd7598bd7b",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-22",
+    "english": "Sure, when do you need me?",
+    "singlish": "Can help me for 10 min?",
+    "standard_anchor": "Sure, when do you need me?",
+    "status": "complete",
+    "prompt_sha256": "8e22631a03c6f76e87ec90478fb02bf39310106789185f68e1f5c048e7b94f95",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-23",
+    "english": "Please bring the blue box.",
+    "singlish": "Blue box bring lah.",
+    "standard_anchor": "Please bring the blue box.",
+    "status": "complete",
+    "prompt_sha256": "9d198ea742d5d05aa67bac8d573b53ebc330c7a71876eb2f8a7cb1fc8917fb26",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "AUDIT-EVAL-24",
+    "english": "I am not sure. I will check their announcement.",
+    "singlish": "Not sure open on public holiday anot. I check their announcement first.",
+    "standard_anchor": "I am not sure. I will check their announcement.",
+    "status": "complete",
+    "prompt_sha256": "a2f632a8849a7ed96c7f4564ebd52a5d14e7d297776716687a1614efa903d868",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  }
+]

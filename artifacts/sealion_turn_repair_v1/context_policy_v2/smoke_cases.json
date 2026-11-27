@@ -1,0 +1,139 @@
+{
+  "scope": "New assistant-authored smoke cases frozen after policy implementation, before inference. Cases target supported rules and two bypass conditions; not an independent human/generalization benchmark.",
+  "cases": [
+    {
+      "item_id": "CONTEXT-SMOKE-001",
+      "context": [
+        "Could we chat on the phone for a minute?",
+        "I am serving customers right now.",
+        "Okay, let me know when you have a break."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Not sure when. What is the call about?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-002",
+      "context": [
+        "I wanted your advice about choosing a thesis supervisor. Can we talk?",
+        "I am walking to a lecture.",
+        "We can speak afterwards."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "What did you want my advice on?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-003",
+      "context": [
+        "My budget for the activity is $24.",
+        "The remaining session costs $52."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Should I book that session for you?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-004",
+      "context": [
+        "I borrowed your flashlight for the night walk.",
+        "I need my flashlight for this weekend."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Which of us should return the flashlight?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-005",
+      "context": [
+        "I am waiting at the waterfront steps.",
+        "I am still at the bus stop."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Where can I find you?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-006",
+      "context": [
+        "I cannot leave my shift until 4:45 pm.",
+        "I would like to meet for tea."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Would meeting at 3 pm work?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-007",
+      "context": [
+        "I am on duty throughout Thursday.",
+        "We need to schedule our practice."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Would Thursday work for you?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-008",
+      "context": [
+        "Could you review the conclusion? The rest of the report has been checked.",
+        "I can help tonight."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Do you need the conclusion or the references reviewed?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-009",
+      "context": [
+        "My budget is $12.",
+        "I have a spare ticket."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "I'll pay for the $38 ticket. Want me to book it for you?",
+      "scope": "new_assistant_authored_smoke"
+    },
+    {
+      "item_id": "CONTEXT-SMOKE-010",
+      "context": [
+        "I have an exam on Wednesday morning.",
+        "I would like to meet up."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Would Wednesday afternoon work?",
+      "scope": "new_assistant_authored_smoke"
+    }
+  ]
+}

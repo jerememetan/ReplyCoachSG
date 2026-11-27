@@ -1,0 +1,533 @@
+{
+  "identity": {
+    "teacher": "qwen",
+    "stage": "english",
+    "scope": "pilot",
+    "checkpoint": {
+      "path": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_qwen_full_sealion_recipe_v1/outputs/qwen/task/selected",
+      "sha256": "52ab46dbeba066927b8ca35f58d45f73236498166606117cf13081af230b0dd5",
+      "selected_epoch": 2
+    },
+    "input_sha256": "e6ce5f0c4d940f312245c9bf3da819f00e2890c0631c5a96ea70d6b391cfed4e",
+    "anchors_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "recipe_sha256": "086e3f826489a1fa4cf1b2cd2656457f23a51b564d3588d1a3d32e846ae7ea02"
+  },
+  "status": "complete",
+  "outputs": [
+    {
+      "item_id": "ITEM-B-024",
+      "context": [
+        "I'm confused about the presentation",
+        "we can go through it together later"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "want discuss the project after class?",
+      "english": {
+        "reply": "Sure, let's discuss it after class.",
+        "raw_text": "Sure, let's discuss it after class.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "227b0e8ae79b32ed0152c603416cb68092ea43cba714fee17d9682b311916173"
+      }
+    },
+    {
+      "item_id": "ITEM-B-040",
+      "context": [
+        "we're meeting at six",
+        "okay, I'll be there"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can meet at six thirty instead?",
+      "english": {
+        "reply": "Sure, six thirty works for me.",
+        "raw_text": "Sure, six thirty works for me.",
+        "termination": "eos",
+        "generated_tokens": 9,
+        "status": "complete",
+        "prompt_sha256": "91bf492511d64d34aac8b8e437a671d60da63590e1e905457d57512523400f33"
+      }
+    },
+    {
+      "item_id": "ITEM-C-031",
+      "context": [
+        "wanna stay and study together tonight?",
+        "maybe until around 9"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "i think i cannot stay alr, too sleepy",
+      "english": {
+        "reply": "Okay, see you tomorrow then.",
+        "raw_text": "Okay, see you tomorrow then.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "7ad2f85465b1b62fe9f2775b718dd7e8251b7e2eddbdb2342a5f1fc529af5407"
+      }
+    },
+    {
+      "item_id": "ITEM-E-057",
+      "context": [
+        "we just split so each one do one part can liao",
+        "ok can i do part 2 u do part 3"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "hi i finished part 3 liao! damm shag the workload",
+      "english": {
+        "reply": "ok thanks, i'll do part 2 now",
+        "raw_text": "ok thanks, i'll do part 2 now",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "1c5d33407cf0e02289e5f60247b94844a666f9bc01c5e3dffaed4878a28d95a5"
+      }
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-024",
+      "context": [
+        "The costume counter closes at 3 pm.",
+        "My rehearsal finishes at 4 pm."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Can you collect the costumes after rehearsal?",
+      "english": {
+        "reply": "Yes, I can collect them after rehearsal.",
+        "raw_text": "Yes, I can collect them after rehearsal.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "ac4e40c4d9ed63380dc34df795f616b2f93e4bfbc8622ff6bd4f8177bb305ec8"
+      }
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-053",
+      "context": [
+        "I reserved the projector, but the speakers are still unconfirmed."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Both projector and speakers settled already?",
+      "english": {
+        "reply": "Not yet, the speakers haven't been confirmed.",
+        "raw_text": "Not yet, the speakers haven't been confirmed.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "fbf5b0acd44dda332855f11671c60a4e29894d2aaeac7eeea3697eee5705425b"
+      }
+    },
+    {
+      "item_id": "SYN-HUMAN-EXP1-056",
+      "context": [
+        "The first two paragraphs are done. I still need to write the ending."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Is your reflection complete?",
+      "english": {
+        "reply": "Not yet, I still need to write the ending.",
+        "raw_text": "Not yet, I still need to write the ending.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "903d66c5ebe4324a3254fa44f89e2101e91c0916d5ac3e2c726af1b0ab80937c"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-023-02",
+      "context": [
+        "Let's meet at the chicken rice stall at 1pm.",
+        "Can we go to the laksa place instead? I'm craving it.",
+        "Laksa is fine, but it's quite crowded on Mondays."
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "Actually, let's just stick to the chicken rice stall to save time.",
+      "english": {
+        "reply": "Okay, let's meet at the chicken rice stall at 1pm then.",
+        "raw_text": "Okay, let's meet at the chicken rice stall at 1pm then.",
+        "termination": "eos",
+        "generated_tokens": 17,
+        "status": "complete",
+        "prompt_sha256": "f8af5df137caa31b1e5dc9708408e162187b0be17021ca6947f7d0738f55da0b"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-029-02",
+      "context": [
+        "The choreography for the first part is still a bit messy.",
+        "We should practice the transitions more.",
+        "Agreed, I'll mark the spots where we struggle.",
+        "I'll bring the portable speaker tomorrow.",
+        "Perfect, that makes a huge difference."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Should we do the full set tomorrow or just the intro?",
+      "english": {
+        "reply": "Let's just focus on the intro for now.",
+        "raw_text": "Let's just focus on the intro for now.",
+        "termination": "eos",
+        "generated_tokens": 11,
+        "status": "complete",
+        "prompt_sha256": "6a78d6c80e6c747fc539512fc30903236091f9277bb61da84104b7618203ff7d"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-031-02",
+      "context": [
+        "Want to go see a movie this weekend?",
+        "Down! Which one?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Do you want to book the tickets or should I?",
+      "english": {
+        "reply": "Let's book the tickets together.",
+        "raw_text": "Let's book the tickets together.",
+        "termination": "eos",
+        "generated_tokens": 8,
+        "status": "complete",
+        "prompt_sha256": "37e9ad0ec37f82219bbec58a07dd365a2ca74044c00bcb18cfea75ce560c75c0"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-00",
+      "context": [
+        "Hey, I'm looking at the studio for our project meeting tomorrow at 2pm.",
+        "Actually, can we move it to 4pm instead? The room is booked by another club earlier."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can we do 4pm then? I'll update the calendar.",
+      "english": {
+        "reply": "Four works for me. Let's update the calendar.",
+        "raw_text": "Four works for me. Let's update the calendar.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "2ebb6a3b410431e4ad587a9665d459ac64797996098971f467147ce2a8fa5232"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-045-01",
+      "context": [
+        "Do you want to carpool to the campus event this weekend?",
+        "I think I'll just take the MRT, easier to get off near the gate."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "No problem, see you there at the gate.",
+      "english": {
+        "reply": "Got it, see you at the gate.",
+        "raw_text": "Got it, see you at the gate.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "0b399ce993e29dabcfb2022b2e9e83c407ef0deff1fd3f418268864318b46c43"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-071-03",
+      "context": [
+        "We need to submit the tutorial notes by Friday.",
+        "I've started the first section already.",
+        "Okay, so who is doing the summary part?",
+        "I think we should split it equally."
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "I finished my part already, but I don't know where to upload it.",
+      "english": {
+        "reply": "I'll check the submission guidelines and upload it for you.",
+        "raw_text": "I'll check the submission guidelines and upload it for you.",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "f4728df6d5614e012fdf748336b76d348f0d4ab4c3d15c0efd13c579d529e54d"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-077-02",
+      "context": [
+        "Do you have the notes from today's lecture?",
+        "I have them, but they are quite messy."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "I'm actually a bit busy with my project right now, so I can't send them over.",
+      "english": {
+        "reply": "No worries, I'll just take a look at them later.",
+        "raw_text": "No worries, I'll just take a look at them later.",
+        "termination": "eos",
+        "generated_tokens": 14,
+        "status": "complete",
+        "prompt_sha256": "90176af2d4b0997687bc18a3daa3a4a55654241ac9c7971c045212d7fb600ee2"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-00",
+      "context": [
+        "Hey, are we still watching that horror movie tonight?",
+        "Yeah, definitely. I'm pretty excited for it.",
+        "Me too. Do you want to grab dinner before?",
+        "Sure, maybe some spicy noodles?",
+        "Sounds good. Let's meet at the mall around 7pm.",
+        "Perfect. See you then!"
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user",
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "Wait, which cinema are we heading to?",
+      "english": {
+        "reply": "Let's check which cinema has the horror movie first.",
+        "raw_text": "Let's check which cinema has the horror movie first.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "b8d73ca564fe5210d288592037e612e60906ba99551c15b4bd286e7047e3bb42"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-081-01",
+      "context": [
+        "I'll be at the MRT station at 5pm to pick you up.",
+        "Can you pick me up at the library instead? My class is there."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Can you tell me who's driving?",
+      "english": {
+        "reply": "I'll be driving you to the library.",
+        "raw_text": "I'll be driving you to the library.",
+        "termination": "eos",
+        "generated_tokens": 10,
+        "status": "complete",
+        "prompt_sha256": "6490bc3488cb159fc77c709c3f37baea5c11cda20b8d383f7dbf0774708c4b90"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-083-03",
+      "context": [
+        "Is the quiz on Friday covering the whole module?",
+        "I think it's only the first three chapters."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Wait, so we don't need to study the last two chapters?",
+      "english": {
+        "reply": "I'm not sure about the last two chapters. Let's check the syllabus.",
+        "raw_text": "I'm not sure about the last two chapters. Let's check the syllabus.",
+        "termination": "eos",
+        "generated_tokens": 18,
+        "status": "complete",
+        "prompt_sha256": "0bc6b78b9da83b4bfbdaf47c7688ab829f54e79f04ec2c795de4352fd091b21f"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-096-03",
+      "context": [
+        "I've uploaded the first version of the slides to the shared folder."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "I noticed some typos in the slides you uploaded earlier.",
+      "english": {
+        "reply": "Thanks for pointing that out. I'll fix the typos before the presentation.",
+        "raw_text": "Thanks for pointing that out. I'll fix the typos before the presentation.",
+        "termination": "eos",
+        "generated_tokens": 17,
+        "status": "complete",
+        "prompt_sha256": "ba943fb81c991abc0fb1697817570045d0f0d1faaaa95bb4cd3ba71cc526bc2f"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-097-02",
+      "context": [
+        "Have you finished the practice problems for the quiz?",
+        "Almost done, just struggling with the last two."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Is the quiz going to be multiple choice?",
+      "english": {
+        "reply": "I'm not sure about the quiz format, let's check the syllabus.",
+        "raw_text": "I'm not sure about the quiz format, let's check the syllabus.",
+        "termination": "eos",
+        "generated_tokens": 17,
+        "status": "complete",
+        "prompt_sha256": "09850540d5dc54953622ad7ed124ae3e9a8d94db705c99d30ebeb433526a1edc"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-100-02",
+      "context": [
+        "You want to practice the intro part today?",
+        "Sure, I'm free after 5pm.",
+        "I'll head over to your place.",
+        "See you later then.",
+        "Actually, can we do it via Zoom instead?"
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "Is the Zoom link ready already?",
+      "english": {
+        "reply": "Let me check the Zoom link and get back to you.",
+        "raw_text": "Let me check the Zoom link and get back to you.",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "2325224511eed9329281a55e1c1fd284c1eb7442d7b027a1c3ab4c810edea337"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-115-02",
+      "context": [
+        "I'm starting on the conclusion slides for the group presentation.",
+        "Great, let me know if you need any data from my part."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Do you want me to handle the final summary slide too?",
+      "english": {
+        "reply": "Yes, please help me with the final summary slide.",
+        "raw_text": "Yes, please help me with the final summary slide.",
+        "termination": "eos",
+        "generated_tokens": 12,
+        "status": "complete",
+        "prompt_sha256": "797771d22266bc719a41bbfcdabfc91b249614de875b51101ca248a6e4e856f5"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-133-00",
+      "context": [
+        "I'm thinking of getting some laksa for the group study session.",
+        "Sounds good, I'm quite hungry already.",
+        "The place nearby is usually crowded around 7pm.",
+        "True. Maybe we can order delivery instead?"
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "Actually, I just realized I have a bit of a budget limit today. Can we just get the cheaper chicken rice instead?",
+      "english": {
+        "reply": "Chicken rice sounds good. Let's go ahead with that.",
+        "raw_text": "Chicken rice sounds good. Let's go ahead with that.",
+        "termination": "eos",
+        "generated_tokens": 13,
+        "status": "complete",
+        "prompt_sha256": "091cadb088969b75dcdce73b45c26f46c2913abbc7309255aba041049c1da431"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-134-01",
+      "context": [
+        "Hey, I'm picking up the costumes at 5pm.",
+        "Can you grab mine too?",
+        "I think I can, but I might be late."
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "Can we move the pickup to 6pm instead? I have a late lecture.",
+      "english": {
+        "reply": "That works for me. Let's meet at 6pm instead.",
+        "raw_text": "That works for me. Let's meet at 6pm instead.",
+        "termination": "eos",
+        "generated_tokens": 15,
+        "status": "complete",
+        "prompt_sha256": "34744121cb4d7918fc61fecba8af28f3e153813531f6c1dc00f14dbd41642e23"
+      }
+    },
+    {
+      "item_id": "SYN-volume500-v1-full-136-01",
+      "context": [
+        "When do you need the projector back?",
+        "By 5pm today, please.",
+        "I'm still using it for the final rehearsal.",
+        "Is it going to take long?",
+        "Maybe another hour."
+      ],
+      "speakers": [
+        "user",
+        "peer",
+        "user",
+        "peer",
+        "user"
+      ],
+      "message": "I need it back sharp at 5 for the next booking.",
+      "english": {
+        "reply": "I'll try to finish by 4:30 and return it by then.",
+        "raw_text": "I'll try to finish by 4:30 and return it by then.",
+        "termination": "eos",
+        "generated_tokens": 18,
+        "status": "complete",
+        "prompt_sha256": "da2c7c175f1b866802e6f3c2f1157a21240960ae01f453764886cddb2ca031ad"
+      }
+    }
+  ],
+  "completed": 24,
+  "requested": 24,
+  "seconds_this_attempt": 18.73271505255252
+}

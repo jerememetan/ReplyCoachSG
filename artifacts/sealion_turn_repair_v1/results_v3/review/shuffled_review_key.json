@@ -1,0 +1,1136 @@
+{
+  "turn-TURN-CHALLENGE-001": {
+    "A": [
+      "supervised40",
+      "contrastive40",
+      "contrastive120"
+    ],
+    "B": [
+      "supervised120"
+    ],
+    "C": [
+      "original"
+    ]
+  },
+  "turn-TURN-CHALLENGE-002": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "supervised40",
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-003": {
+    "A": [
+      "supervised120",
+      "contrastive120"
+    ],
+    "B": [
+      "supervised40",
+      "contrastive40"
+    ],
+    "C": [
+      "original"
+    ]
+  },
+  "turn-TURN-CHALLENGE-004": {
+    "A": [
+      "original",
+      "supervised120",
+      "contrastive40"
+    ],
+    "B": [
+      "contrastive120"
+    ],
+    "C": [
+      "supervised40"
+    ]
+  },
+  "turn-TURN-CHALLENGE-005": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "supervised40",
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-006": {
+    "A": [
+      "supervised40",
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ],
+    "B": [
+      "original"
+    ]
+  },
+  "turn-TURN-CHALLENGE-007": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "supervised40",
+      "supervised120"
+    ],
+    "D": [
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-008": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "contrastive120"
+    ],
+    "C": [
+      "supervised40",
+      "contrastive40"
+    ],
+    "D": [
+      "supervised120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-009": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "supervised120",
+      "contrastive120"
+    ],
+    "C": [
+      "supervised40",
+      "contrastive40"
+    ]
+  },
+  "turn-TURN-CHALLENGE-010": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "contrastive120"
+    ],
+    "C": [
+      "supervised40"
+    ],
+    "D": [
+      "supervised120"
+    ],
+    "E": [
+      "contrastive40"
+    ]
+  },
+  "turn-TURN-CHALLENGE-011": {
+    "A": [
+      "supervised120"
+    ],
+    "B": [
+      "supervised40",
+      "contrastive40",
+      "contrastive120"
+    ],
+    "C": [
+      "original"
+    ]
+  },
+  "turn-TURN-CHALLENGE-012": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "supervised40",
+      "contrastive120"
+    ],
+    "D": [
+      "supervised120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-013": {
+    "A": [
+      "supervised120"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "contrastive120"
+    ],
+    "D": [
+      "supervised40",
+      "contrastive40"
+    ]
+  },
+  "turn-TURN-CHALLENGE-014": {
+    "A": [
+      "supervised40"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-015": {
+    "A": [
+      "supervised120"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "supervised40",
+      "contrastive40",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-016": {
+    "A": [
+      "original",
+      "supervised40"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "supervised120",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-017": {
+    "A": [
+      "supervised40"
+    ],
+    "B": [
+      "supervised120",
+      "contrastive120"
+    ],
+    "C": [
+      "original",
+      "contrastive40"
+    ]
+  },
+  "turn-TURN-CHALLENGE-018": {
+    "A": [
+      "original",
+      "supervised40",
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-019": {
+    "A": [
+      "original",
+      "supervised120",
+      "contrastive40"
+    ],
+    "B": [
+      "supervised40",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-020": {
+    "A": [
+      "original",
+      "contrastive40"
+    ],
+    "B": [
+      "supervised40",
+      "supervised120",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-021": {
+    "A": [
+      "supervised120",
+      "contrastive120"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "contrastive40"
+    ],
+    "D": [
+      "supervised40"
+    ]
+  },
+  "turn-TURN-CHALLENGE-022": {
+    "A": [
+      "original",
+      "contrastive40"
+    ],
+    "B": [
+      "supervised120"
+    ],
+    "C": [
+      "supervised40",
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-023": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "supervised40"
+    ],
+    "C": [
+      "supervised120"
+    ],
+    "D": [
+      "original"
+    ],
+    "E": [
+      "contrastive120"
+    ]
+  },
+  "turn-TURN-CHALLENGE-024": {
+    "A": [
+      "supervised40",
+      "contrastive40",
+      "contrastive120"
+    ],
+    "B": [
+      "supervised120"
+    ],
+    "C": [
+      "original"
+    ]
+  },
+  "turn-USER-CALL-001": {
+    "A": [
+      "supervised120"
+    ],
+    "B": [
+      "contrastive120"
+    ],
+    "C": [
+      "original",
+      "supervised40",
+      "contrastive40"
+    ]
+  },
+  "turn-ITEM-B-043": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "supervised120"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "supervised40"
+    ],
+    "E": [
+      "contrastive120"
+    ]
+  },
+  "turn-ITEM-B-042": {
+    "A": [
+      "supervised40"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "contrastive120"
+    ],
+    "D": [
+      "original"
+    ],
+    "E": [
+      "supervised120"
+    ]
+  },
+  "turn-ITEM-B-057": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "supervised40"
+    ],
+    "D": [
+      "supervised120",
+      "contrastive120"
+    ]
+  },
+  "turn-ITEM-B-029": {
+    "A": [
+      "supervised40",
+      "supervised120",
+      "contrastive120"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "original"
+    ]
+  },
+  "turn-ITEM-B-050": {
+    "A": [
+      "original",
+      "supervised40",
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ]
+  },
+  "turn-ITEM-C-041": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "supervised40"
+    ],
+    "C": [
+      "contrastive120"
+    ],
+    "D": [
+      "supervised120"
+    ],
+    "E": [
+      "contrastive40"
+    ]
+  },
+  "turn-ITEM-E-025": {
+    "A": [
+      "supervised40",
+      "contrastive40"
+    ],
+    "B": [
+      "contrastive120"
+    ],
+    "C": [
+      "supervised120"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "turn-ITEM-E-015": {
+    "A": [
+      "supervised40"
+    ],
+    "B": [
+      "supervised120",
+      "contrastive120"
+    ],
+    "C": [
+      "contrastive40"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "turn-ITEM-E-028": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "supervised40",
+      "contrastive40"
+    ],
+    "C": [
+      "supervised120",
+      "contrastive120"
+    ]
+  },
+  "turn-ITEM-D-046": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "contrastive120"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "supervised40"
+    ],
+    "E": [
+      "supervised120"
+    ]
+  },
+  "turn-ITEM-C-028": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "supervised120"
+    ],
+    "D": [
+      "supervised40"
+    ],
+    "E": [
+      "contrastive120"
+    ]
+  },
+  "turn-ITEM-C-017": {
+    "A": [
+      "original",
+      "supervised120",
+      "contrastive120"
+    ],
+    "B": [
+      "supervised40",
+      "contrastive40"
+    ]
+  },
+  "turn-ITEM-D-007": {
+    "A": [
+      "supervised40",
+      "contrastive40"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "supervised120",
+      "contrastive120"
+    ]
+  },
+  "turn-ITEM-C-023": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "contrastive40"
+    ],
+    "C": [
+      "contrastive120"
+    ],
+    "D": [
+      "supervised40"
+    ],
+    "E": [
+      "supervised120"
+    ]
+  },
+  "turn-ITEM-B-056": {
+    "A": [
+      "supervised120"
+    ],
+    "B": [
+      "contrastive120"
+    ],
+    "C": [
+      "original",
+      "supervised40",
+      "contrastive40"
+    ]
+  },
+  "turn-ITEM-D-037": {
+    "A": [
+      "supervised120",
+      "contrastive40"
+    ],
+    "B": [
+      "original",
+      "supervised40",
+      "contrastive120"
+    ]
+  },
+  "turn-ITEM-D-009": {
+    "A": [
+      "supervised120",
+      "contrastive120"
+    ],
+    "B": [
+      "supervised40"
+    ],
+    "C": [
+      "original",
+      "contrastive40"
+    ]
+  },
+  "turn-ITEM-E-032": {
+    "A": [
+      "supervised40",
+      "supervised120",
+      "contrastive40",
+      "contrastive120"
+    ],
+    "B": [
+      "original"
+    ]
+  },
+  "turn-ITEM-C-045": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "supervised120"
+    ],
+    "D": [
+      "contrastive120"
+    ],
+    "E": [
+      "supervised40"
+    ]
+  },
+  "turn-ITEM-A-046": {
+    "A": [
+      "contrastive40"
+    ],
+    "B": [
+      "supervised120"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "supervised40"
+    ],
+    "E": [
+      "contrastive120"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-001": {
+    "A": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "C": [
+      "trained120"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-002": {
+    "A": [
+      "original",
+      "untrained_layout",
+      "trained_selected",
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "trained120"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-003": {
+    "A": [
+      "original",
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "C": [
+      "trained120"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-004": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "trained120"
+    ],
+    "D": [
+      "trained_best_target_validation_exploratory"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-005": {
+    "A": [
+      "trained_best_target_validation_exploratory",
+      "trained120"
+    ],
+    "B": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "C": [
+      "original"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-006": {
+    "A": [
+      "trained120"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-007": {
+    "A": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-008": {
+    "A": [
+      "trained_best_target_validation_exploratory",
+      "trained120"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-009": {
+    "A": [
+      "trained120"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected",
+      "trained_best_target_validation_exploratory"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-010": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-011": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory",
+      "trained120"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-012": {
+    "A": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "trained120"
+    ],
+    "D": [
+      "untrained_layout",
+      "trained_selected"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-013": {
+    "A": [
+      "original",
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "C": [
+      "trained120"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-014": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "trained120"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-015": {
+    "A": [
+      "untrained_layout",
+      "trained_selected",
+      "trained120"
+    ],
+    "B": [
+      "original",
+      "trained_best_target_validation_exploratory"
+    ]
+  },
+  "layout-TURN-PROSPECTIVE-016": {
+    "A": [
+      "trained120"
+    ],
+    "B": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-USER-CALL-001": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "original",
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "trained120"
+    ]
+  },
+  "layout-ITEM-B-043": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "original"
+    ],
+    "D": [
+      "trained_best_target_validation_exploratory"
+    ]
+  },
+  "layout-ITEM-B-042": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected",
+      "trained120"
+    ]
+  },
+  "layout-ITEM-B-057": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory",
+      "trained120"
+    ]
+  },
+  "layout-ITEM-B-029": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "D": [
+      "trained120"
+    ]
+  },
+  "layout-ITEM-B-050": {
+    "A": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "original",
+      "untrained_layout",
+      "trained_selected"
+    ]
+  },
+  "layout-ITEM-C-041": {
+    "A": [
+      "trained120"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-ITEM-E-025": {
+    "A": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "trained120"
+    ],
+    "D": [
+      "untrained_layout",
+      "trained_selected"
+    ]
+  },
+  "layout-ITEM-E-015": {
+    "A": [
+      "trained120"
+    ],
+    "B": [
+      "original",
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ]
+  },
+  "layout-ITEM-E-028": {
+    "A": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "B": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "C": [
+      "trained120"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-ITEM-D-046": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "original"
+    ],
+    "C": [
+      "trained120"
+    ],
+    "D": [
+      "trained_best_target_validation_exploratory"
+    ]
+  },
+  "layout-ITEM-C-028": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "D": [
+      "trained_best_target_validation_exploratory"
+    ]
+  },
+  "layout-ITEM-C-017": {
+    "A": [
+      "untrained_layout",
+      "trained_selected",
+      "trained120"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "original"
+    ]
+  },
+  "layout-ITEM-D-007": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "D": [
+      "untrained_layout",
+      "trained_selected"
+    ]
+  },
+  "layout-ITEM-C-023": {
+    "A": [
+      "original"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "D": [
+      "trained120"
+    ]
+  },
+  "layout-ITEM-B-056": {
+    "A": [
+      "original",
+      "trained_best_target_validation_exploratory",
+      "trained120"
+    ],
+    "B": [
+      "untrained_layout",
+      "trained_selected"
+    ]
+  },
+  "layout-ITEM-D-037": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "original",
+      "trained_best_target_validation_exploratory"
+    ]
+  },
+  "layout-ITEM-D-009": {
+    "A": [
+      "trained120"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-ITEM-E-032": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-ITEM-C-045": {
+    "A": [
+      "trained120"
+    ],
+    "B": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "C": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "D": [
+      "original"
+    ]
+  },
+  "layout-ITEM-A-046": {
+    "A": [
+      "untrained_layout",
+      "trained_selected"
+    ],
+    "B": [
+      "trained120"
+    ],
+    "C": [
+      "trained_best_target_validation_exploratory"
+    ],
+    "D": [
+      "original"
+    ]
+  }
+}

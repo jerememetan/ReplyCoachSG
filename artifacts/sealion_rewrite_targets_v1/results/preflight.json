@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "tests_passed": 9,
+  "encoded_targets": 977,
+  "max_tokens": 179,
+  "no_truncation": true,
+  "prompt_mask_eos_verified": true,
+  "gold_local_excluded_from_inference_prompt": true,
+  "team_data_unchanged": true,
+  "source_bundle_manifest_verified": true,
+  "gpu": "NVIDIA L40S"
+}

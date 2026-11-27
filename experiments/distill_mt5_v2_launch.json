@@ -1,0 +1,205 @@
+{
+  "status": "full_student_training_completed",
+  "jobs": {
+    "sealion_english_pilot": "368019",
+    "qwen_english_pilot": "368020",
+    "sealion_singlish_pilot": "368023",
+    "qwen_singlish_pilot": "368024",
+    "sealion_english_full": "368025",
+    "qwen_english_full": "368026",
+    "student_pilot_preflight": "368027",
+    "sealion_singlish_full": "373361",
+    "qwen_singlish_full": "373362",
+    "student_full_preflight": "373402",
+    "student_full_original": "373408",
+    "student_full_sealion": "373409",
+    "student_full_qwen": "373410"
+  },
+  "student_jobs_submitted": true,
+  "remote_root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_distill_mt5_v2",
+  "recipe": "experiments/distill_mt5_v2_recipe.json",
+  "pilot_common_conversations": 15,
+  "pilot_reviewed": true,
+  "pilot_edits": 0,
+  "independent_human_gold": false,
+  "tests": {
+    "passed": 9,
+    "files": [
+      "test_distill_mt5_v2.py",
+      "test_mt5_adapter_switch_v1.py",
+      "test_mt5_matched_v1.py"
+    ]
+  },
+  "full_student_jobs_submitted": true,
+  "last_checked_at_utc": "2026-11-21T05:51:12.757427+00:00",
+  "full_generation": {
+    "outputs/sealion/english_full.json": {
+      "status": "complete",
+      "completed": 768,
+      "requested": 768
+    },
+    "outputs/qwen/english_full.json": {
+      "status": "complete",
+      "completed": 768,
+      "requested": 768
+    },
+    "outputs/sealion/singlish_full.json": {
+      "status": "complete",
+      "completed": 692,
+      "requested": 692
+    },
+    "outputs/qwen/singlish_full.json": {
+      "status": "complete",
+      "completed": 736,
+      "requested": 736
+    }
+  },
+  "pilot_preflight_status": "passed",
+  "remaining": [
+    "Collect all three full student runs and preserve every epoch adapter.",
+    "Verify selected/final own-English pipeline outputs and adapter-switch replay.",
+    "Review student outputs on reused development cases; no independent test accuracy claim."
+  ],
+  "full_english_review": {
+    "completed_at_utc": "2026-11-21T04:45:44.846380+00:00",
+    "reviewed_responses": 1536,
+    "sealion": {
+      "accepted": 692,
+      "rejected": 76,
+      "edited": 0
+    },
+    "qwen": {
+      "accepted": 736,
+      "rejected": 32,
+      "edited": 0
+    },
+    "common_english_accepted": 674,
+    "common_english_with_original_eligibility": 672,
+    "summary": "artifacts/distill_mt5_v2/english_full_review/summary.json",
+    "comparison": "artifacts/distill_mt5_v2/english_full_review/comparison.csv",
+    "cluster_verification": "artifacts/distill_mt5_v2/english_full_review/cluster_verification.json",
+    "remote_reviews_verified": true,
+    "independent_human_gold": false,
+    "pilot_decision_changes": [
+      {
+        "teacher": "sealion",
+        "item_id": "SYN-volume500-v1-full-045-00",
+        "pilot_decision": "reject",
+        "full_decision": "accept",
+        "pilot_reason": "Takes calendar update responsibility despite peer just saying I will update it; avoid teaching role duplication.",
+        "full_reason": "Accepts four and makes an additional calendar-update offer.",
+        "raw_reply_same": true
+      },
+      {
+        "teacher": "sealion",
+        "item_id": "SYN-volume500-v1-full-077-02",
+        "pilot_decision": "reject",
+        "full_decision": "accept",
+        "pilot_reason": "I will keep them in mind is an incoherent response to requested lecture notes being unavailable.",
+        "full_reason": "Accepts the peer being unable to share notes now; keep them in mind is vague but does not claim access or receipt.",
+        "raw_reply_same": true
+      },
+      {
+        "teacher": "sealion",
+        "item_id": "SYN-volume500-v1-full-081-01",
+        "pilot_decision": "reject",
+        "full_decision": "accept",
+        "pilot_reason": "Defers answering who drives despite user offering pickup; insufficient response to explicit question.",
+        "full_reason": "Offers to identify the driver without inventing one.",
+        "raw_reply_same": true
+      }
+    ]
+  },
+  "singlish_generation_submitted_at_utc": "2026-11-21T04:48:32.521756+00:00",
+  "full_singlish_review": {
+    "completed_at_utc": "2026-11-21T05:05:42.386213+00:00",
+    "reviewed_rewrites": 1428,
+    "teachers": {
+      "sealion": {
+        "accepted": 618,
+        "rejected": 74,
+        "edited": 0
+      },
+      "qwen": {
+        "accepted": 696,
+        "rejected": 40,
+        "edited": 0
+      }
+    },
+    "common_paired_original_eligible": 571,
+    "summary": "artifacts/distill_mt5_v2/singlish_full_review/summary.json",
+    "completion": "artifacts/distill_mt5_v2/singlish_full_review/completion.json",
+    "comparison": "artifacts/distill_mt5_v2/singlish_full_review/comparison.csv",
+    "matched_comparison": "artifacts/distill_mt5_v2/singlish_full_review/common571_comparison.csv",
+    "remote_reviews_and_frozen_dataset_verified": true,
+    "independent_human_gold": false
+  },
+  "full_targets": {
+    "status": "frozen",
+    "common_conversations": 571,
+    "local_manifest": "artifacts/distill_mt5_v2/results/targets/full/manifest.json",
+    "remote_manifest": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_distill_mt5_v2/targets/full/manifest.json",
+    "manifest_sha256": "f854af4036c8c20d7e46fac48109aae6c949dbbcaf898ff79a28d600f49f96db",
+    "original_ineligible_ids": [
+      "ITEM-C-010",
+      "ITEM-E-029"
+    ],
+    "corrected_freeze_entrypoint": "scripts/freeze_distill_mt5_v2_targets_reviewed_v1.py",
+    "matching_fix_tests_passed": 6
+  },
+  "student_full_preflight_status": "passed",
+  "last_student_action_at_utc": "2026-11-21T05:45:11.352731+00:00",
+  "student_training_submitted_at_utc": "2026-11-21T05:48:49.934762+00:00",
+  "full_dataset_token_budget": {
+    "original": {
+      "english": {
+        "examples": 571,
+        "max_source_tokens": 128,
+        "max_target_tokens": 32,
+        "truncated": false
+      },
+      "singlish": {
+        "examples": 571,
+        "max_source_tokens": 160,
+        "max_target_tokens": 27,
+        "truncated": false
+      }
+    },
+    "sealion": {
+      "english": {
+        "examples": 571,
+        "max_source_tokens": 128,
+        "max_target_tokens": 34,
+        "truncated": false
+      },
+      "singlish": {
+        "examples": 571,
+        "max_source_tokens": 156,
+        "max_target_tokens": 26,
+        "truncated": false
+      }
+    },
+    "qwen": {
+      "english": {
+        "examples": 571,
+        "max_source_tokens": 128,
+        "max_target_tokens": 34,
+        "truncated": false
+      },
+      "singlish": {
+        "examples": 571,
+        "max_source_tokens": 157,
+        "max_target_tokens": 27,
+        "truncated": false
+      }
+    }
+  },
+  "student_launch_verification": "artifacts/distill_mt5_v2/student_launch_20261121/verification.json",
+  "student_progress": {
+    "observed_at_utc": "2026-11-21T08:01:07.740180+00:00",
+    "original": "completed",
+    "sealion": "completed",
+    "qwen": "completed",
+    "evidence": "experiments/distill_mt5_v2_results.json"
+  }
+}

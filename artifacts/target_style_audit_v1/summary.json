@@ -1,0 +1,101 @@
+{
+  "status": "audit_complete_proposals_only",
+  "completed_at_utc": "2026-11-08T13:17:01.204400+00:00",
+  "reviewed_variants": 980,
+  "unique_training_conversations": 790,
+  "calibration": "User chose A in all5cases. Only those5targets are individually user-approved.",
+  "statistics": {
+    "original_team_reference": {
+      "rows": 190,
+      "decisions": {
+        "keep": 177,
+        "flag": 13
+      },
+      "changed_local": 0,
+      "before_median_words": 6.0,
+      "after_median_words": 6.0,
+      "before_at_most_four_words": 63,
+      "after_at_most_four_words": 63,
+      "unique_before": 190,
+      "unique_after": 190
+    },
+    "synthetic_training_target": {
+      "rows": 600,
+      "decisions": {
+        "revise": 459,
+        "flag": 9,
+        "keep": 132
+      },
+      "changed_local": 463,
+      "before_median_words": 9.0,
+      "after_median_words": 6.0,
+      "before_at_most_four_words": 5,
+      "after_at_most_four_words": 106,
+      "unique_before": 597,
+      "unique_after": 596
+    },
+    "mt5_A_revised_target": {
+      "rows": 190,
+      "decisions": {
+        "revise": 169,
+        "keep": 21
+      },
+      "changed_local": 169,
+      "before_median_words": 6.0,
+      "after_median_words": 5.0,
+      "before_at_most_four_words": 37,
+      "after_at_most_four_words": 88,
+      "unique_before": 188,
+      "unique_after": 189
+    }
+  },
+  "format_only_changes_reverted": 8,
+  "unresolved_flagged_variants": 22,
+  "unresolved_unique_cases": 22,
+  "source_preservation": {
+    "data/dev/train.jsonl": {
+      "expected": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+      "actual": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+      "unchanged": true
+    },
+    "data/dev/validation.jsonl": {
+      "expected": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+      "actual": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+      "unchanged": true
+    },
+    "data/training_expansion/generated600_repair_v1/generated_corrected.jsonl": {
+      "expected": "a18467ffb3d03a660677721fc8f63fcda4701b4dda4b395dc6dfb626a98c69c6",
+      "actual": "a18467ffb3d03a660677721fc8f63fcda4701b4dda4b395dc6dfb626a98c69c6",
+      "unchanged": true
+    },
+    "data/distillation/shared_intent_v1_reviewed.json": {
+      "expected": "da2ee4b74c6a5eedcbd0accd85895c67ec9c2a5b4e5d4b8a909e71b1e8bd5aa6",
+      "actual": "da2ee4b74c6a5eedcbd0accd85895c67ec9c2a5b4e5d4b8a909e71b1e8bd5aa6",
+      "unchanged": true
+    }
+  },
+  "split_manifest_unchanged": true,
+  "original190_unchanged_in_proposed_SEA_copy": true,
+  "validation_targets_changed": false,
+  "English_targets_changed": false,
+  "training_submitted": false,
+  "defaults_changed": false,
+  "trained_model_outputs_generated": false,
+  "source_model_files_changed": false,
+  "review_method": "Assistant read every original/synthetic/edited target with its full conversation and English anchor; made per-row keep/revise/flag decisions, then reread proposed synthetic wording for contextual meaning and unsupported details. Automated checks cover integrity/coverage only, not naturalness or correctness.",
+  "limitations": [
+    "Five user-rated examples define a style preference, not human approval of the remaining proposals.",
+    "Shortness is descriptive, not a naturalness or quality score. Some replies need detail or politeness.",
+    "Context-dependent ellipsis is allowed; unexpressed shared details are not automatically semantic errors.",
+    "Unresolved source issues and existing original-data concerns are in flagged_rows.json. The full proposed combined copy includes flagged rows and is not cleared for automatic training.",
+    "This audit covers original190,600synthetic and190mT5Aedited targets. It does not relabel public CoSEM/DailyDialog data, validation, or every later experimental corpus.",
+    "No experiment was run to establish that proposed target changes improve model outputs."
+  ],
+  "files": {
+    "audit_results.jsonl": "5e0ebf23f47786690297490f9fa56812a25819c600077fd9a96a8e205db5fc92",
+    "review.csv": "54f78dcd40bf496037205ab9aba010f6ea90198367ef1aa10267e32376094d69",
+    "combined_train_PROPOSED.jsonl": "e4e3c484448f67f50f3a1a547d75e0a21ecf44b7a30bf34a720d0a3d4392ceba",
+    "mt5_A_target_proposals.json": "4932460ab1ccbbcb12d383c11abbc274559bad7c023deae56b6ddd755e2c4a2e",
+    "flagged_rows.json": "dbb24f7f78607639b032700ab241158272937a0f8f9d2449ada102a41c21a871"
+  }
+}

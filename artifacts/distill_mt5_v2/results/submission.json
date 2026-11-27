@@ -1,0 +1,14 @@
+{
+  "status": "paired_pilot_frozen_student_preflight_submitted",
+  "jobs": {
+    "sealion_english_pilot": "368019",
+    "qwen_english_pilot": "368020",
+    "sealion_singlish_pilot": "368023",
+    "qwen_singlish_pilot": "368024",
+    "sealion_english_full": "368025",
+    "qwen_english_full": "368026",
+    "student_pilot_preflight": "368027"
+  },
+  "student_jobs_submitted": false,
+  "remote_root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_distill_mt5_v2"
+}

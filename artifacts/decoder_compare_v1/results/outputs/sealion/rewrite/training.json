@@ -1,0 +1,129 @@
+{
+  "status": "complete",
+  "arm": "sealion",
+  "stage": "rewrite",
+  "history": [
+    {
+      "epoch": 0,
+      "validation": {
+        "groups": {
+          "old_rewrite": {
+            "token_ce": 2.857109438650536,
+            "examples": 42,
+            "tokens": 330
+          },
+          "development_rewrite": {
+            "token_ce": 2.245733187675476,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 2.551421313163006
+      },
+      "adapter_sha256": "9907718294c037f9ac9e9475bee3ffe74026d0c211c3c50de1fafb3354f30cce"
+    },
+    {
+      "epoch": 1,
+      "validation": {
+        "groups": {
+          "old_rewrite": {
+            "token_ce": 2.4061982812303486,
+            "examples": 42,
+            "tokens": 330
+          },
+          "development_rewrite": {
+            "token_ce": 1.635140896320343,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 2.0206695887753456
+      },
+      "adapter_sha256": "dc5bb18fec7343877c0ec60cc0223118d0c388f5553eb7ebbf48104759c27f5d"
+    },
+    {
+      "epoch": 2,
+      "validation": {
+        "groups": {
+          "old_rewrite": {
+            "token_ce": 2.348429653861306,
+            "examples": 42,
+            "tokens": 330
+          },
+          "development_rewrite": {
+            "token_ce": 1.5320111229419708,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 1.9402203884016385
+      },
+      "adapter_sha256": "63c485277458833c18a1e5a87a005bf13072721d3d857441752936ffc8bebded"
+    },
+    {
+      "epoch": 3,
+      "validation": {
+        "groups": {
+          "old_rewrite": {
+            "token_ce": 2.401726344408411,
+            "examples": 42,
+            "tokens": 330
+          },
+          "development_rewrite": {
+            "token_ce": 1.5497506713867188,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 1.975738507897565
+      },
+      "adapter_sha256": "2b2342244f2c01337a8735615a18ae4990adb2458f4e37ff415b0065b9b255a9"
+    },
+    {
+      "epoch": 4,
+      "validation": {
+        "groups": {
+          "old_rewrite": {
+            "token_ce": 2.3681573034235925,
+            "examples": 42,
+            "tokens": 330
+          },
+          "development_rewrite": {
+            "token_ce": 1.5638860940933228,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 1.9660216987584578
+      },
+      "adapter_sha256": "a8aaf47d45837e7b5bb6b3d4400d6fb0e243ff8a15ba07a11175a235a4c4cb27"
+    }
+  ],
+  "optimizer_updates": 384,
+  "total_updates": 384,
+  "warmup_updates": 20,
+  "initial": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_decoder_compare_v1/outputs/sealion/task/selected",
+  "trainable_parameters": 10485760,
+  "checkpoint_selection": "Provisional within-model reference CE; not a cross-model quality score.",
+  "fixed_budget_checkpoint": "epoch_04",
+  "training_loss_history": [
+    {
+      "epoch": 1,
+      "example_mean_ce": 1.3015576674853386
+    },
+    {
+      "epoch": 2,
+      "example_mean_ce": 1.0461764044223192
+    },
+    {
+      "epoch": 3,
+      "example_mean_ce": 0.9178869656138803
+    },
+    {
+      "epoch": 4,
+      "example_mean_ce": 0.8575912169752249
+    }
+  ],
+  "selected_epoch": 2,
+  "frozen_base_parameters_unchanged": true
+}

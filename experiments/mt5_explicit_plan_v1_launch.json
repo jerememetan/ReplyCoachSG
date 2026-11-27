@@ -1,0 +1,33 @@
+{
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_explicit_plan_v1",
+  "jobs": {
+    "planner": 358286,
+    "no_notes_control": 358287,
+    "explicit_notes": 358288,
+    "summarize": 358289
+  },
+  "gpu": "L40S",
+  "partition": "student",
+  "slurm_account": "cs701",
+  "qos": "studentqos",
+  "status": "complete_reviewed",
+  "pipeline": "learned context notes -> explicit note-conditioned English -> fixed own-English Singlish",
+  "local_tests_passed": 8,
+  "payload_sha256": "0c60a86a8928096f8ae7d6f45ae66ad03765c3f66d95dd7de5dcd1952c284d3e",
+  "default_changed": false,
+  "latest_observation": {
+    "at_utc": "2026-11-08T12:35:47.579532+00:00",
+    "all_jobs_completed_exit0": true,
+    "queue_observed_empty": true,
+    "selected_steps": {
+      "planner": 450,
+      "no_notes_control": 300,
+      "explicit_notes": 300
+    },
+    "results_downloaded_and_verified": true,
+    "assistant_review_complete": true,
+    "overall_upgrade_established": false,
+    "default_changed": false
+  }
+}

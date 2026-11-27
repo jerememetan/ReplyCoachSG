@@ -1,0 +1,48 @@
+{
+  "at_utc": "2026-11-09T03:15:20.747806+00:00",
+  "reason": "User: ok wait nvm just train on the 548 first?",
+  "selected_prefix": 548,
+  "all_554_accepted_preserved_in": "before_548_snapshot.tgz",
+  "previous_target": {
+    "train": 5000,
+    "dev": 120,
+    "evaluation": 120
+  },
+  "training_settings_unchanged": true,
+  "data": {
+    "new_conversations": 523,
+    "retained_audited_conversations": 768,
+    "total_task_conversations": 1291,
+    "task_targets": 2582,
+    "new_rewrite_pairs": 1046,
+    "retained_rewrite_pairs": 766,
+    "total_rewrite_pairs": 1812,
+    "new_dev_conversations": 11,
+    "new_final_conversations": 14,
+    "accepted_snapshot": {
+      "path": "authoring/accepted_first548.jsonl",
+      "sha256": "421ea94bdafcf530cb82c540a81cf2c34d42000a6710fa9268f0c136fef2d2e3",
+      "conversations": 548,
+      "splits": {
+        "train": 523,
+        "dev": 11,
+        "evaluation": 14
+      }
+    }
+  },
+  "validation": {
+    "old": 50,
+    "old_rewrite": 42,
+    "new": 11,
+    "new_rewrite": 22,
+    "topic_scope": "Topic partition applies to new model-authored examples only; historical and public overlap possible"
+  },
+  "evaluation": {
+    "new": 14,
+    "reused": 75,
+    "total": 89,
+    "uses_final_for_selection": false,
+    "new_fixed_reference_rewrites": 14
+  },
+  "before_snapshot_sha256": "0ea3e001f000cbc9cf028816c0cedbc7401e42ffaaa9eef88c35def4aed3ccb8"
+}

@@ -1,0 +1,37 @@
+{
+  "experiment": "sealion_zero_shot_v2",
+  "job_id": 357962,
+  "job_state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:00:26",
+  "gpu": "NVIDIA L40S",
+  "inference_only": true,
+  "training_performed": false,
+  "original_base_sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107",
+  "cases": 5,
+  "conditions": [
+    "base_matched_prompt",
+    "base_explicit_instruction",
+    "repair25_shared_stop",
+    "repair25"
+  ],
+  "flags": [],
+  "repair25_exact_replay_pairs": 5,
+  "repair25_stop_rule_differences": 0,
+  "model_parameters_unchanged": true,
+  "original_team_data_unchanged": true,
+  "results_sha256": "9db8e68228de6bf58ac4df78771191a653cd9598c42cfa6728c9cdacc48c54a6",
+  "comparison_csv": "artifacts/sealion_zero_shot_v2/comparison.csv",
+  "raw_results": "artifacts/sealion_zero_shot_v2/results.json",
+  "scope": "Five previously inspected development cases. Prompt variants are diagnostics; no human accuracy score or final-model change.",
+  "notes": [
+    "Both base variants are zero-shot with all LoRA layers disabled for both English and rewriting.",
+    "Same beam4, no-repeat3 and shared transcript-boundary stop rules across matched comparison.",
+    "Explicit instructions are one fixed exploratory prompt variant; no claim about all possible prompts.",
+    "Shared stop rules recognize Friend/Other style tags; the shipped repair25 output is unchanged on all five pairs.",
+    "Raw base already produces useful English in some cases; instruction following and Singlish rendering remain inconsistent.",
+    "Current repair25 retains purple, morning booking, outside-room facts; bottle and booking LOCAL replies exactly copy English.",
+    "No independent human accuracy rating or default-model promotion."
+  ],
+  "remote_root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_sealion_zero_shot_v2_20261108"
+}

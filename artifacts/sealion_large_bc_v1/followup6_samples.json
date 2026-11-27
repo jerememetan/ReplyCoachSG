@@ -1,0 +1,761 @@
+[
+  {
+    "context": [
+      "Let me know if you need help with your phone screen."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Thanks for helping me fix my phone earlier!",
+    "drafts": [
+      {
+        "standard": "No worries, glad it's working now!",
+        "local": "no prob"
+      },
+      {
+        "standard": "You're welcome! Hope it stays fixed.",
+        "local": "any time"
+      }
+    ],
+    "item_id": "BC-train-04121",
+    "slot": "train-04121",
+    "split": "train",
+    "topic": "phone repair",
+    "kind": "thank",
+    "input_register": "casual_english",
+    "history_turns": 1,
+    "history_pattern": [
+      "user"
+    ],
+    "draft_relation": "same grounded answer with different wording or a grounded additional clause",
+    "reviews": [
+      {
+        "attempt": 12,
+        "slot": "train-04121",
+        "draft": 0,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 497,
+          "total_duration": 454809399,
+          "eval_duration": 413134000,
+          "prompt_eval_duration": 37807000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 12,
+        "slot": "train-04121",
+        "draft": 0,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You helped Friend fix their phone earlier. Friend is thanking You for the help.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 394,
+          "prompt_eval_count": 514,
+          "total_duration": 3566131065,
+          "eval_duration": 3242422000,
+          "prompt_eval_duration": 233607000
+        },
+        "independent_of_author": false
+      },
+      {
+        "attempt": 12,
+        "slot": "train-04121",
+        "draft": 1,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 497,
+          "total_duration": 446771360,
+          "eval_duration": 412772000,
+          "prompt_eval_duration": 30588000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 12,
+        "slot": "train-04121",
+        "draft": 1,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You helped Friend fix their phone earlier. Friend is thanking You for the help.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 396,
+          "prompt_eval_count": 514,
+          "total_duration": 3481604516,
+          "eval_duration": 3241620000,
+          "prompt_eval_duration": 234750000
+        },
+        "independent_of_author": false
+      }
+    ],
+    "provenance": "Gemma4:12b authored; Qwen3:4b separate critic and a fresh Gemma semantic pass; not human-approved"
+  },
+  {
+    "context": [
+      "I'm thinking of making some noodles in the dorm kitchen tonight."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Want me to join you and help prep?",
+    "drafts": [
+      {
+        "standard": "Sure, come over around 7pm!",
+        "local": "steady, see u then"
+      },
+      {
+        "standard": "I'm good for now, thanks though!",
+        "local": "thanks ah, next time"
+      }
+    ],
+    "item_id": "BC-train-04616",
+    "slot": "train-04616",
+    "split": "train",
+    "topic": "dorm kitchen",
+    "kind": "choose",
+    "input_register": "casual_english",
+    "history_turns": 1,
+    "history_pattern": [
+      "user"
+    ],
+    "draft_relation": "different valid choice, commitment or reply act if constraints allow",
+    "reviews": [
+      {
+        "attempt": 12,
+        "slot": "train-04616",
+        "draft": 0,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 501,
+          "total_duration": 501924406,
+          "eval_duration": 426750000,
+          "prompt_eval_duration": 70580000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 12,
+        "slot": "train-04616",
+        "draft": 0,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You is making noodles in the dorm kitchen. Friend offered to help prep. You is inviting Friend to come over.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 441,
+          "prompt_eval_count": 518,
+          "total_duration": 3967452924,
+          "eval_duration": 3708378000,
+          "prompt_eval_duration": 253570000
+        },
+        "independent_of_author": false
+      },
+      {
+        "attempt": 12,
+        "slot": "train-04616",
+        "draft": 1,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "You: I'm thinking of making some noodles in the dorm kitchen tonight. Friend: Want me to join you and help prep? You: I'm good for now, thanks though! Singlish: thanks ah, next time",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 94,
+          "prompt_eval_count": 501,
+          "total_duration": 798062633,
+          "eval_duration": 763890000,
+          "prompt_eval_duration": 30816000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 12,
+        "slot": "train-04616",
+        "draft": 1,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You is planning to make noodles in the dorm kitchen tonight. Friend offered to join and help prep. You is declining the offer.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 460,
+          "prompt_eval_count": 519,
+          "total_duration": 4001813033,
+          "eval_duration": 3742601000,
+          "prompt_eval_duration": 253700000
+        },
+        "independent_of_author": false
+      }
+    ],
+    "provenance": "Gemma4:12b authored; Qwen3:4b separate critic and a fresh Gemma semantic pass; not human-approved"
+  },
+  {
+    "context": [
+      "Should we go for a walk at East Coast Park this weekend?",
+      "I heard the scenery is nice this time of year.",
+      "Sounds good, which day u prefer?"
+    ],
+    "speakers": [
+      "user",
+      "user",
+      "peer"
+    ],
+    "message": "Sunday morning or Saturday afternoon?",
+    "drafts": [
+      {
+        "standard": "Sun morning works best.",
+        "local": "sun morning ok"
+      },
+      {
+        "standard": "Let's do sun morning.",
+        "local": "sun morning steady"
+      }
+    ],
+    "item_id": "BC-train-00043",
+    "slot": "train-00043",
+    "split": "train",
+    "topic": "weekend walk",
+    "kind": "choose",
+    "input_register": "short_text_english",
+    "history_turns": 3,
+    "history_pattern": [
+      "user",
+      "user",
+      "peer"
+    ],
+    "draft_relation": "same grounded answer with different wording or a grounded additional clause",
+    "reviews": [
+      {
+        "attempt": 12,
+        "slot": "train-00043",
+        "draft": 0,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 515,
+          "total_duration": 487385582,
+          "eval_duration": 413938000,
+          "prompt_eval_duration": 69446000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 12,
+        "slot": "train-00043",
+        "draft": 0,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You and Friend are planning a walk at East Coast Park. Friend offered two options: Sunday morning or Saturday afternoon.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 431,
+          "prompt_eval_count": 533,
+          "total_duration": 3711366033,
+          "eval_duration": 3410074000,
+          "prompt_eval_duration": 255752000
+        },
+        "independent_of_author": false
+      },
+      {
+        "attempt": 12,
+        "slot": "train-00043",
+        "draft": 1,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 516,
+          "total_duration": 448635115,
+          "eval_duration": 414285000,
+          "prompt_eval_duration": 30899000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 12,
+        "slot": "train-00043",
+        "draft": 1,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You and Friend are planning a walk at East Coast Park. Friend offered two options: Sunday morning or Saturday afternoon.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 422,
+          "prompt_eval_count": 535,
+          "total_duration": 3756572177,
+          "eval_duration": 3495942000,
+          "prompt_eval_duration": 255317000
+        },
+        "independent_of_author": false
+      }
+    ],
+    "provenance": "Gemma4:12b authored; Qwen3:4b separate critic and a fresh Gemma semantic pass; not human-approved"
+  },
+  {
+    "context": [
+      "We need to clean the kitchen this weekend.",
+      "Can we do it on Saturday morning?",
+      "Saturday is good for me.",
+      "I'll bring the vacuum and mops."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Then see you at 10am?",
+    "drafts": [
+      {
+        "standard": "Okay, see you at 10am then.",
+        "local": "ok, see u at 10am"
+      },
+      {
+        "standard": "Actually can we start at 11am instead? I need to sleep in.",
+        "local": "can start 11am? want to sleep in"
+      }
+    ],
+    "item_id": "BC-train-03474",
+    "slot": "train-03474",
+    "split": "train",
+    "topic": "house cleaning",
+    "kind": "confirm",
+    "input_register": "light_singlish",
+    "history_turns": 4,
+    "history_pattern": [
+      "user",
+      "peer",
+      "user",
+      "peer"
+    ],
+    "draft_relation": "different valid choice, commitment or reply act if constraints allow",
+    "reviews": [
+      {
+        "attempt": 13,
+        "slot": "train-03474",
+        "draft": 0,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 532,
+          "total_duration": 458879174,
+          "eval_duration": 413411000,
+          "prompt_eval_duration": 42027000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 13,
+        "slot": "train-03474",
+        "draft": 0,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You and Friend are cleaning the kitchen this weekend. Friend is bringing the vacuum and mops. They agreed on Saturday at 10am.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 418,
+          "prompt_eval_count": 552,
+          "total_duration": 3614253819,
+          "eval_duration": 3267187000,
+          "prompt_eval_duration": 256913000
+        },
+        "independent_of_author": false
+      },
+      {
+        "attempt": 13,
+        "slot": "train-03474",
+        "draft": 1,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 540,
+          "total_duration": 479107482,
+          "eval_duration": 401308000,
+          "prompt_eval_duration": 73930000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 13,
+        "slot": "train-03474",
+        "draft": 1,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You and Friend are planning to clean the kitchen this weekend. Friend is bringing the vacuum and mops. Friend proposed meeting at 10am on Saturday.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 490,
+          "prompt_eval_count": 560,
+          "total_duration": 4141262492,
+          "eval_duration": 3876760000,
+          "prompt_eval_duration": 258257999
+        },
+        "independent_of_author": false
+      }
+    ],
+    "provenance": "Gemma4:12b authored; Qwen3:4b separate critic and a fresh Gemma semantic pass; not human-approved"
+  },
+  {
+    "context": [],
+    "speakers": [],
+    "message": "u want to meet at the lab tmr for the experiment?",
+    "drafts": [
+      {
+        "standard": "Yeah, let's meet there at 2pm.",
+        "local": "yeah, meet there 2pm"
+      },
+      {
+        "standard": "Sure, I'll be there at 2pm. I'll bring the equipment.",
+        "local": "sure, 2pm steady. i bring the gear"
+      }
+    ],
+    "item_id": "BC-train-01015",
+    "slot": "train-01015",
+    "split": "train",
+    "topic": "lab partner",
+    "kind": "coordinate",
+    "input_register": "short_text_english",
+    "history_turns": 0,
+    "history_pattern": [],
+    "draft_relation": "same grounded answer with different wording or a grounded additional clause",
+    "reviews": [
+      {
+        "attempt": 13,
+        "slot": "train-01015",
+        "draft": 0,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 494,
+          "total_duration": 443170720,
+          "eval_duration": 403977000,
+          "prompt_eval_duration": 35814000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 13,
+        "slot": "train-01015",
+        "draft": 0,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "Friend asks to meet at the lab tomorrow for the experiment. You propose meeting at 2pm.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 371,
+          "prompt_eval_count": 510,
+          "total_duration": 3311735089,
+          "eval_duration": 3033890000,
+          "prompt_eval_duration": 232815000
+        },
+        "independent_of_author": false
+      },
+      {
+        "attempt": 13,
+        "slot": "train-01015",
+        "draft": 1,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 504,
+          "total_duration": 441327345,
+          "eval_duration": 405117000,
+          "prompt_eval_duration": 32811999
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 13,
+        "slot": "train-01015",
+        "draft": 1,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "Friend asks to meet at the lab tomorrow for an experiment. You agree to meet at 2pm and will bring the equipment.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 539,
+          "prompt_eval_count": 521,
+          "total_duration": 4717609298,
+          "eval_duration": 4458706000,
+          "prompt_eval_duration": 253802000
+        },
+        "independent_of_author": false
+      }
+    ],
+    "provenance": "Gemma4:12b authored; Qwen3:4b separate critic and a fresh Gemma semantic pass; not human-approved"
+  },
+  {
+    "context": [
+      "Hey, I'll send you the notes from today's lecture later."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Thanks! Just let me know when you've sent them.",
+    "drafts": [
+      {
+        "standard": "I'll send them over as soon as I'm home.",
+        "local": "will send once home"
+      },
+      {
+        "standard": "I'll send them tonight after I finish dinner.",
+        "local": "will send tonight after dinner"
+      }
+    ],
+    "item_id": "BC-train-03591",
+    "slot": "train-03591",
+    "split": "train",
+    "topic": "study notes",
+    "kind": "acknowledge",
+    "input_register": "casual_english",
+    "history_turns": 1,
+    "history_pattern": [
+      "user"
+    ],
+    "draft_relation": "same grounded answer with different wording or a grounded additional clause",
+    "reviews": [
+      {
+        "attempt": 13,
+        "slot": "train-03591",
+        "draft": 0,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 507,
+          "total_duration": 496300861,
+          "eval_duration": 414426000,
+          "prompt_eval_duration": 77978000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 13,
+        "slot": "train-03591",
+        "draft": 0,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You owns the notes and will send them to Friend. Friend is the recipient.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 490,
+          "prompt_eval_count": 528,
+          "total_duration": 4398544563,
+          "eval_duration": 4088225000,
+          "prompt_eval_duration": 254620000
+        },
+        "independent_of_author": false
+      },
+      {
+        "attempt": 13,
+        "slot": "train-03591",
+        "draft": 1,
+        "reviewer": "qwen3:4b-instruct-2507-q4_K_M",
+        "response": {
+          "a_chat_facts": "none",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "qwen3:4b-instruct-2507-q4_K_M",
+          "done_reason": "stop",
+          "eval_count": 50,
+          "prompt_eval_count": 506,
+          "total_duration": 439029587,
+          "eval_duration": 404876000,
+          "prompt_eval_duration": 30744000
+        },
+        "independent_of_author": true
+      },
+      {
+        "attempt": 13,
+        "slot": "train-03591",
+        "draft": 1,
+        "reviewer": "gemma4:12b",
+        "response": {
+          "a_chat_facts": "You owns the notes and will send them to Friend. Friend is the recipient.",
+          "b_english_errors": "none",
+          "c_rewrite_errors": "none",
+          "d_style_errors": "none",
+          "z_verdict": "accept"
+        },
+        "stats": {
+          "model": "gemma4:12b",
+          "done_reason": "stop",
+          "eval_count": 477,
+          "prompt_eval_count": 526,
+          "total_duration": 4474561453,
+          "eval_duration": 4175084000,
+          "prompt_eval_duration": 254413000
+        },
+        "independent_of_author": false
+      }
+    ],
+    "provenance": "Gemma4:12b authored; Qwen3:4b separate critic and a fresh Gemma semantic pass; not human-approved"
+  }
+]

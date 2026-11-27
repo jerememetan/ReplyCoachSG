@@ -1,0 +1,2148 @@
+[
+  {
+    "item_id": "SEAPUBLIC-001",
+    "context": [
+      "I cannot leave work before 8:10.",
+      "We can get dinner afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "7:40 can meet already or not?",
+    "standard_anchor": "Seven forty works for me.",
+    "baseline_local": "Seven forty can.",
+    "diagnostic_anchor": "I cannot leave work before 8:10. Could we meet after my shift?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-002",
+    "context": [
+      "You still have my headphones.",
+      "Yes, I kept them in their case."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your headphones tomorrow afternoon?",
+    "standard_anchor": "Yes, please return my headphones by tomorrow afternoon.",
+    "baseline_local": "Can, tomorrow afternoon return my headphones.",
+    "diagnostic_anchor": "Yes please, return my headphones tomorrow afternoon.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-003",
+    "context": [
+      "I have not checked the community room closing hours.",
+      "They may change during holidays."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does the room close at ten tonight?",
+    "standard_anchor": "I have not checked the room closing hours yet.",
+    "baseline_local": "I check the room closing hours first, then tell you ah.",
+    "diagnostic_anchor": "I haven't checked the closing hours. I'll check before confirming.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-004",
+    "context": [
+      "I could not attend the briefing.",
+      "I took down the instructions."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want me to send you my briefing notes?",
+    "standard_anchor": "Yes, please send me your briefing notes.",
+    "baseline_local": "Yes please, send me your briefing notes ah.",
+    "diagnostic_anchor": "Yes please, send me your briefing notes.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-005",
+    "context": [
+      "I have the event photos saved on my laptop.",
+      "I missed the event."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you send me the photos later?",
+    "standard_anchor": "Sure, I'll send you the photos later.",
+    "baseline_local": "Can, I send you the photos later.",
+    "diagnostic_anchor": "Sure, I'll send you the photos later.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-006",
+    "context": [
+      "I only have six dollars for a snack today.",
+      "There are stalls near the station."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to get the fifteen-dollar pastry set?",
+    "standard_anchor": "That would be too expensive for me. Could we find something cheaper?",
+    "baseline_local": "Too expensive for me leh. Find something cheaper can?",
+    "diagnostic_anchor": "Fifteen dollars is over my six-dollar budget. Could we choose something cheaper?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-007",
+    "context": [
+      "I uploaded the signed form last night.",
+      "I will check the folder."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you uploaded the form yet?",
+    "standard_anchor": "Yes, I uploaded the form last night.",
+    "baseline_local": "Ya, last night I upload liao.",
+    "diagnostic_anchor": "Yes, I uploaded the signed form last night.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-008",
+    "context": [
+      "I have not started making the slides.",
+      "The meeting is later this week."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Your slides ready already?",
+    "standard_anchor": "I have not started making the slides yet.",
+    "baseline_local": "Haven’t start making the slides leh.",
+    "diagnostic_anchor": "Not yet, I haven't started making the slides.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-009",
+    "context": [
+      "I failed the assessment.",
+      "Oh no, how are you feeling?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Quite disappointed, I studied hard for it.",
+    "standard_anchor": "I'm sorry to hear that.",
+    "baseline_local": "Wah, sorry to hear that. Study hard lah.",
+    "diagnostic_anchor": "I'm sorry to hear that. Do you want to talk about it?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-010",
+    "context": [
+      "I am free on Sunday afternoon.",
+      "We are planning a small picnic."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to join our picnic?",
+    "standard_anchor": "Yes, I would love to join your picnic.",
+    "baseline_local": "Can, Sunday afternoon I free.",
+    "diagnostic_anchor": "Yes, I'd like to join the picnic on Sunday afternoon.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-011",
+    "context": [
+      "I am waiting outside room C2.",
+      "I am on my way."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room are you outside?",
+    "standard_anchor": "I am waiting outside room C2.",
+    "baseline_local": "I waiting outside room C2.",
+    "diagnostic_anchor": "I'm waiting outside room C2.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEAPUBLIC-012",
+    "context": [
+      "I do not eat meat.",
+      "We can choose something nearby."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I order the chicken rice for you?",
+    "standard_anchor": "No thanks, could you order something without meat for me?",
+    "baseline_local": "No need lah, you order without meat can?",
+    "diagnostic_anchor": "No thanks, I don't eat meat. Could we choose something without meat?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-001",
+    "context": [
+      "My shift ends at 6:35 and I cannot leave early.",
+      "We could have dinner afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we meet for dinner at 5:55?",
+    "standard_anchor": "I cannot leave before six. Could we meet for dinner at five fifty instead?",
+    "baseline_local": "Six cannot leave leh. Meet for dinner at five fifty instead can?",
+    "diagnostic_anchor": "I cannot leave work before 6:35. Could we meet for dinner after my shift?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-002",
+    "context": [
+      "My lunch budget today is eleven dollars.",
+      "We can find something nearby."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want the twenty-seven-dollar lunch set?",
+    "standard_anchor": "That's too expensive for me. Could we find something cheaper?",
+    "baseline_local": "That one too expensive for me leh. Find something cheaper can?",
+    "diagnostic_anchor": "Twenty-seven dollars is over my eleven-dollar budget. Could we find something cheaper?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-003",
+    "context": [
+      "I am free on Friday, but Saturday is unavailable.",
+      "I will check the schedule."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you attend the rehearsal on Saturday?",
+    "standard_anchor": "I cannot make it on Saturday, but I am free on Friday.",
+    "baseline_local": "I cannot make it on Saturday leh. Friday can?",
+    "diagnostic_anchor": "I can't attend on Saturday, but I am free on Friday.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-004",
+    "context": [
+      "You still have my USB cable.",
+      "Yes, it is in my bag."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I return your cable on Monday?",
+    "standard_anchor": "Yes, please return my cable on Monday.",
+    "baseline_local": "Can, Monday I return your cable.",
+    "diagnostic_anchor": "Yes please, return my cable on Monday.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-005",
+    "context": [
+      "I still have your hard-copy revision notes.",
+      "I need them for class."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you return my notes before nine?",
+    "standard_anchor": "I will return your notes before nine tonight.",
+    "baseline_local": "I return your notes by nine tonight.",
+    "diagnostic_anchor": "Sure, I'll return your notes before nine.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-006",
+    "context": [
+      "I saved the practice clip on my laptop.",
+      "I missed that practice."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Would you like me to share the clip with you?",
+    "standard_anchor": "Yes please, share the practice clip with me.",
+    "baseline_local": "Yes please, send me the practice clip ah.",
+    "diagnostic_anchor": "Yes please, send me the practice clip.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-007",
+    "context": [
+      "I have the interview notes on my tablet.",
+      "I missed the interview."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send me those notes tonight?",
+    "standard_anchor": "Sure, I'll send them to you tonight.",
+    "baseline_local": "Can, I send you the notes tonight.",
+    "diagnostic_anchor": "Sure, I'll send you the interview notes tonight.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-008",
+    "context": [
+      "I already booked our tutorial room this morning.",
+      "Thanks for arranging that."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you booked the room yet?",
+    "standard_anchor": "Yes, I've already booked the room this morning.",
+    "baseline_local": "Yes, I've already booked the room this morning.",
+    "diagnostic_anchor": "Yes, I booked the tutorial room this morning.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-009",
+    "context": [
+      "I have not started proofreading the report.",
+      "We still have until Friday."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Is the proofread report ready?",
+    "standard_anchor": "I have not started proofreading the report.",
+    "baseline_local": "Haven’t start leh, still reading through the draft.",
+    "diagnostic_anchor": "Not yet, I haven't started proofreading the report.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-010",
+    "context": [
+      "I am waiting outside seminar room 4A.",
+      "I am coming upstairs."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room are you outside?",
+    "standard_anchor": "I am waiting outside seminar room 4A.",
+    "baseline_local": "I waiting outside seminar room 4A.",
+    "diagnostic_anchor": "I'm waiting outside seminar room 4A.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-011",
+    "context": [
+      "I left my purple water bottle in the studio.",
+      "There are a few bottles here."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What colour is your bottle?",
+    "standard_anchor": "My purple water bottle is purple.",
+    "baseline_local": "My purple water bottle is purple.",
+    "diagnostic_anchor": "My bottle is purple.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-012",
+    "context": [
+      "I have not checked the cafeteria weekend hours.",
+      "Holiday hours might be different."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Does it close at seven?",
+    "standard_anchor": "I have not checked the weekend hours yet.",
+    "baseline_local": "I check the weekend hours first, then tell you ah.",
+    "diagnostic_anchor": "I haven't checked the weekend hours. Let me check before confirming.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-013",
+    "context": [
+      "I am still in the tutorial.",
+      "I am at the coffee stall."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What drink should I get you?",
+    "standard_anchor": "Could you get me a cup of coffee?",
+    "baseline_local": "Can get me a cup of coffee?",
+    "diagnostic_anchor": "A hot chocolate, please. Thank you for getting it for me.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-014",
+    "context": [
+      "I am free after class.",
+      "There is a theatre show tonight."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to join us?",
+    "standard_anchor": "Yes, I would love to join you for the show tonight.",
+    "baseline_local": "Can, I join you for the show tonight.",
+    "diagnostic_anchor": "Yes, I'd like to join you for the show tonight.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-015",
+    "context": [
+      "I have been doing most of the group project alone.",
+      "Have the others been helping?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Not really, and I am feeling overwhelmed.",
+    "standard_anchor": "You can ask for help from others in the group.",
+    "baseline_local": "Can ask for help from others in the group?",
+    "diagnostic_anchor": "That sounds overwhelming. Would it help if we asked the others to share the work?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-016",
+    "context": [
+      "My interview results came out today.",
+      "How did it go?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "I did not get the placement.",
+    "standard_anchor": "I am sorry to hear that.",
+    "baseline_local": "Paiseh, you didn’t get the placement leh.",
+    "diagnostic_anchor": "I'm sorry you didn't get the placement. Do you want to talk about it?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-017",
+    "context": [
+      "My wrist is injured, so I cannot carry heavy things.",
+      "Hope it gets better."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you help carry these heavy crates?",
+    "standard_anchor": "I cannot carry heavy crates today. Could someone else help carry them?",
+    "baseline_local": "Today I cannot carry heavy crates leh. Can ask someone else to help?",
+    "diagnostic_anchor": "Sorry, I can't carry heavy crates with my injured wrist.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-018",
+    "context": [
+      "I can meet after my lab.",
+      "We could work on the poster."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Meet me there when you finish.",
+    "standard_anchor": "That works for me. I'll see you after my lab.",
+    "baseline_local": "Can, I meet you after my lab.",
+    "diagnostic_anchor": "Where should I meet you after my lab?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-019",
+    "context": [
+      "I am studying in the library but it is noisy here.",
+      "We could find somewhere quieter."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you prefer to move somewhere else?",
+    "standard_anchor": "Yes, let's find a quiet study area near the library.",
+    "baseline_local": "Can, find a quiet study area near the library.",
+    "diagnostic_anchor": "Yes, I'd prefer to move somewhere quieter.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "SEADUAL-020",
+    "context": [
+      "I submitted the poster file yesterday.",
+      "I spotted the wrong date in it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "I corrected it and sent you the updated file.",
+    "standard_anchor": "Thanks for spotting that, I'll check the updated file now.",
+    "baseline_local": "Thanks ah, I check the updated file now.",
+    "diagnostic_anchor": "Thanks for correcting the date and sending the updated file. I'll check it.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-010",
+    "context": [
+      "this course is so tough.",
+      "yeah, I could really use some help too."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "peer: we very kiasu sia, first lesson already like that",
+    "standard_anchor": "I'm sorry to hear that, I'll try my best to help.",
+    "baseline_local": "aw thanks, I'll try my best to help.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "context": [
+      "Hey! Where are you now?",
+      "I am reaching Harbourfront MRT, how about you?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Eh i double check with you, we are meeting at 7pm right?",
+    "standard_anchor": "Yes, we are meeting at 7pm.",
+    "baseline_local": "Ya, seven at Harbourfront MRT.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "context": [
+      "Hey have you printed the worksheet given out yesterday?",
+      "No, I will need to print it in school. Do you know how to use the printer?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i don't know how to use the printer in school.",
+    "standard_anchor": "No worries, just let me know when you have printed it.",
+    "baseline_local": "No worries, ask staff lah.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "context": [
+      "How long is our booking?",
+      "Oh no, our timer went off."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sian, need book somewhere else, our booking ran out",
+    "standard_anchor": "Okay, let's look for another place.",
+    "baseline_local": "Okay, find another place lah.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "context": [
+      "Hey should we grab lunch?",
+      "sure! Lets head to Koufu"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh the chicken rice stall open today anot?",
+    "standard_anchor": "I'm not sure, let's check before we go.",
+    "baseline_local": "not sure yet leh, check before we go first",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-035",
+    "context": [
+      "I got to go for my appointment later",
+      "Yeah I should get going too"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "don't forget to dabao your food later",
+    "standard_anchor": "Yes, I will",
+    "baseline_local": "Okay, I dabao later",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "context": [
+      "are we still playing badminton tonight?",
+      "yeah, I think so"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i might be ten mins late leh",
+    "standard_anchor": "no worries, ten more minutes won't make a difference",
+    "baseline_local": "no worries, ten more mins won't make a difference",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-044",
+    "context": [
+      "have you submitted the project?",
+      "not yet, I am checking it first"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "remember ah, dont blur like sotong",
+    "standard_anchor": "yes, I will not blur like sotong",
+    "baseline_local": "ya, I will not blur like sotong",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "standard_anchor": "Sure, I'll be there at 2pm.",
+    "baseline_local": "Can, 2pm I come.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "context": [
+      "We are going to the club later right?",
+      "Yeah, I will go back to shower first."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Aiyo, don't need la, let's go now",
+    "standard_anchor": "Okay, let's go now.",
+    "baseline_local": "Okay, let's go then.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "context": [
+      "I haven't eaten breakfast",
+      "same sia, I'm hungry also"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "where you want eat?",
+    "standard_anchor": "I'm looking for somewhere near the library",
+    "baseline_local": "near the library got what?",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "context": [
+      "I'm going library now",
+      "I'll come over after class"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "still got space?",
+    "standard_anchor": "Yes, there is still space.",
+    "baseline_local": "Still got space, I come over after class.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?",
+    "standard_anchor": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+    "baseline_local": "I check the timetable first, then let you know.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "context": [
+      "I might not make it to the morning class",
+      "I can send you an update afterwards"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can tell me what I miss?",
+    "standard_anchor": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+    "baseline_local": "You can tell me what you miss in the morning. I'll send you an update after class.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus",
+    "standard_anchor": "No worries, let me know when you reach",
+    "baseline_local": "No worries, take your time",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "context": [
+      "a few of us are going out this weekend",
+      "sounds fun"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you want come?",
+    "standard_anchor": "Sure, I would love to come.",
+    "baseline_local": "Sure, let's go!",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "context": [
+      "are you coming to the event?",
+      "I was planning to"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the event postpone for thirty minutes",
+    "standard_anchor": "That's fine, I'll come after thirty minutes.",
+    "baseline_local": "Okay, I come after thirty minutes.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?",
+    "standard_anchor": "Sure, what time should we meet?",
+    "baseline_local": "Can, what time ah?",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "standard_anchor": "No worries, I'll find another time.",
+    "baseline_local": "No worries, I'll find another time.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "context": [
+      "my phone is almost out of battery",
+      "I brought my charger"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can I borrow your charger?",
+    "standard_anchor": "Sure, go ahead and use my charger.",
+    "baseline_local": "Can, use my charger first ah.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "context": [
+      "are you going to the library ltr?",
+      "yeah, probably after dinner"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i'll be at lks around 8, want to meet there?",
+    "standard_anchor": "sure, let's meet there at 8",
+    "baseline_local": "steady, i meet you at lks at 8",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "context": [
+      "im working on my slides now",
+      "same, im doing the results section"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "your part done alr?",
+    "standard_anchor": "not yet, im still working on it",
+    "baseline_local": "havent finish leh, still working on it",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "context": [
+      "i'll upload my section before dinner",
+      "okay, then i can merge everything tonight"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh dont forget your slide ah, we need merge later",
+    "standard_anchor": "yes, i'll make sure to include the slide",
+    "baseline_local": "ya, i'll include the slide also",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?",
+    "standard_anchor": "Sure, I'd love to join you for that.",
+    "baseline_local": "Can, I'll go with you for that.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "context": [
+      "im waiting at the cafe alr",
+      "coming now"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i ordered first because i was too hungry",
+    "standard_anchor": "no worries, i'll wait for you",
+    "baseline_local": "it's okay lah, i wait for you",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "context": [
+      "ive finished drafting the conclusion",
+      "great"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can help me check if this part sounds too long?",
+    "standard_anchor": "I'll take a look and let you know if it's too long.",
+    "baseline_local": "Can, I check if it's too long first.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "standard_anchor": "no worries. i'll wait a bit longer",
+    "baseline_local": "it's okay lah, i wait abit",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?",
+    "standard_anchor": "Yes, I will be there at 8am.",
+    "baseline_local": "ya, i gg at 8am",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-055",
+    "context": [
+      "lets go to the exhibition at 1",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can go around 2 instead? i need lunch first",
+    "standard_anchor": "ok, i'll meet you at 2 instead",
+    "baseline_local": "can, i meet you at 2 instead",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "context": [
+      "im heading to the court now",
+      "okay, i'll leave soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "court still occupied leh, need wait a bit",
+    "standard_anchor": "okay, i'll wait a bit longer",
+    "baseline_local": "okay, i wait a bit longer",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "context": [
+      "u wanna try the matcha at luckin?",
+      "nahh"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "then what u wanna drink later?",
+    "standard_anchor": "i'm not sure what i want",
+    "baseline_local": "idk what i want leh",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "context": [
+      "eh i struggling to do the linear algebra qn",
+      "which"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "neh the gaussian elim qn",
+    "standard_anchor": "Okay, I can help you with that one.",
+    "baseline_local": "Okay, I help you with that one.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "context": [
+      "hello, can i ask u some question idk how to do",
+      "uhh i see if i can help"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "uhh, u know the guassian elim qn",
+    "standard_anchor": "I'm not sure of the answer, but I'll try to find it for you.",
+    "baseline_local": "eh i not sure, but i try find the answer for u",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-013",
+    "context": [
+      "hello",
+      "yes?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Can give me ans for assignment 1?",
+    "standard_anchor": "Sure, I'll send you an answer in a few minutes.",
+    "baseline_local": "Okay, I send you the answer in a few minutes.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "context": [
+      "eh so how, you still want bid for the morning class?",
+      "yah can"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ok then rmb to bid before bidding ends",
+    "standard_anchor": "Ok, I will bid before bidding ends.",
+    "baseline_local": "okok, i bid before the bidding ends",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "context": [
+      "hello",
+      "hi",
+      "i am already at the bus stop"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "wya",
+    "standard_anchor": "okay, I'll meet you at the bus stop",
+    "baseline_local": "steady, I meet you at the bus stop",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "context": [
+      "have you reached?",
+      "wya"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "i reached, i waiting outside mac",
+    "standard_anchor": "okay, i will be there in a few minutes",
+    "baseline_local": "okay, i coming",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-038",
+    "context": [
+      "eh wya",
+      "i am outside mac",
+      "u eh"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "user"
+    ],
+    "message": "I am reaching soon, wait for me before going in.",
+    "standard_anchor": "ok, i will wait for u",
+    "baseline_local": "ok, i wait for u outside",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "standard_anchor": "Oh no, I can't go now. Could someone else go in my place?",
+    "baseline_local": "aiyo, aiyo",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "context": [
+      "eh u ok? why u never join us for bb session yesterday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "woah sorry, i came up with a flu.",
+    "standard_anchor": "no worries, take care",
+    "baseline_local": "aw, no worries, get well soon!",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "context": [
+      "i heard you going to cafe later to study",
+      "ya you want come? dont say i never jio"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can ah, later i join you",
+    "standard_anchor": "ok, see you later",
+    "baseline_local": "ok, c u later",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "context": [
+      "tomorrow what you want to eat",
+      "lets eat at Chinatown tomorrow"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "onz, tmr meet na li",
+    "standard_anchor": "okay, see you tomorrow",
+    "baseline_local": "okies, c u later",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "context": [
+      "later I need to lend your charger to charge my phone",
+      "ok can but I can only give you after 3"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hey can confirm i can use your charger after 3? thanks ah",
+    "standard_anchor": "Sure, I will use it after 3.",
+    "baseline_local": "Sure, after three then use can.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "standard_anchor": "Nope, I haven't done it yet.",
+    "baseline_local": "haven’t finish leh, I check the answers first",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "context": [
+      "hi class, I had a family emergency and there will not be any class tomorrow.",
+      "oh no! what about the in class quiz?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+    "standard_anchor": "sure, let's do a make up class on thursday instead",
+    "baseline_local": "okies, thursday then we do a make up class instead",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-027",
+    "context": [
+      "eh the school got 3d printer anot how to use",
+      "have, i using it now, you need to book a slot to use",
+      "ok i book later to use"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "paiseh ah can i change my booking i want to use it later",
+    "standard_anchor": "no worries, you can use it later",
+    "baseline_local": "no worries, you can use it later",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "standard_anchor": "ok, then we eat at 6pm instead",
+    "baseline_local": "ok, then we eat at 6pm instead",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "standard_anchor": "Okay, I'll go to SR3-2 instead.",
+    "baseline_local": "Okay, I go SR3-2 instead.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-040",
+    "context": [
+      "so much work this week wtf",
+      "ya sia"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "how ah, want meet together to do work?",
+    "standard_anchor": "Sure, let's meet this week.",
+    "baseline_local": "Can, we meet this week.",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "ITEM-E-046",
+    "context": [
+      "hello,what time will you release the lecture recordings?",
+      "usually around 10pm its out"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ni hao, can I releasae it at 5 instead?",
+    "standard_anchor": "ok, i will release it at 5 instead",
+    "baseline_local": "can, i release it at 5 instead",
+    "diagnostic_anchor": null,
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-001",
+    "context": [
+      "I am free after dinner.",
+      "We are going for a walk around the park."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to join us at eight?",
+    "standard_anchor": "Yes, I would like to join you at eight.",
+    "baseline_local": "Can, I join you at eight.",
+    "diagnostic_anchor": "Yes, I would like to join you at eight.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-002",
+    "context": [
+      "I am at the entrance beside the ticket machine.",
+      "My bus is reaching in two minutes."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you wait there for me?",
+    "standard_anchor": "Sure, I will wait here for you in two minutes.",
+    "baseline_local": "Can, I wait here for you in two minutes.",
+    "diagnostic_anchor": "Sure, I will wait here for you.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-003",
+    "context": [
+      "I missed the last part of the briefing.",
+      "I wrote down the key points."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want me to send you a photo of my notes?",
+    "standard_anchor": "Yes please, send me a photo of your notes.",
+    "baseline_local": "Yes please, send me a photo of your notes ah.",
+    "diagnostic_anchor": "Yes please, send me a photo of your notes.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-004",
+    "context": [
+      "I saved the group photo on my phone.",
+      "I forgot to take a photo."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you send it to me tonight?",
+    "standard_anchor": "Sure, I'll send it to you tonight.",
+    "baseline_local": "Can, tonight I send you the photo.",
+    "diagnostic_anchor": "Sure, I will send you the group photo tonight.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-005",
+    "context": [
+      "You borrowed my umbrella yesterday.",
+      "It is still in my locker."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can I give it back to you on Tuesday?",
+    "standard_anchor": "That works for me. I will return your umbrella on Tuesday.",
+    "baseline_local": "Can, Tuesday I return your umbrella.",
+    "diagnostic_anchor": "Yes please, return my umbrella on Tuesday.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-006",
+    "context": [
+      "I still have your calculator.",
+      "I need it for my quiz tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you return it before class?",
+    "standard_anchor": "Sure, I'll return it before class.",
+    "baseline_local": "Can, I return it before class.",
+    "diagnostic_anchor": "Sure, I will return your calculator before class.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-007",
+    "context": [
+      "I submitted the registration form this morning.",
+      "Thanks for reminding me."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted your form yet?",
+    "standard_anchor": "I submitted it this morning.",
+    "baseline_local": "This morning I submit liao.",
+    "diagnostic_anchor": "Yes, I submitted it this morning.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-008",
+    "context": [
+      "I have not started packing the welcome kits.",
+      "We can finish them tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are the kits packed already?",
+    "standard_anchor": "I have not started packing them yet.",
+    "baseline_local": "Haven’t start packing leh.",
+    "diagnostic_anchor": "Not yet, I have not started packing them.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-009",
+    "context": [
+      "I have twelve dollars left for dinner.",
+      "There are a few stalls downstairs."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to order the thirty-dollar platter?",
+    "standard_anchor": "That is too expensive for me. Could we get something cheaper?",
+    "baseline_local": "Paiseh, thirty dollars is beyond my budget.",
+    "diagnostic_anchor": "That is over my budget. Could we get something cheaper?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-010",
+    "context": [
+      "I am working until 7:25 and cannot leave early.",
+      "We can meet after work."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we meet at 6:50?",
+    "standard_anchor": "I cannot leave before seven. Could we meet after work?",
+    "baseline_local": "I cannot leave before seven leh. Meet after work can?",
+    "diagnostic_anchor": "I cannot meet at 6:50. Could we meet after 7:25?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-011",
+    "context": [
+      "I can help on Wednesday but I am away on Thursday.",
+      "I will check which day we need help."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you come on Thursday morning?",
+    "standard_anchor": "I can come on Thursday morning, but I am away on Thursday.",
+    "baseline_local": "Thursday morning cannot for me leh.",
+    "diagnostic_anchor": "I cannot come on Thursday, but I can help on Wednesday.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-012",
+    "context": [
+      "I do not eat seafood.",
+      "We can choose something else."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I get you the prawn noodles?",
+    "standard_anchor": "No thanks, I cannot eat seafood.",
+    "baseline_local": "Prawns I cannot eat leh.",
+    "diagnostic_anchor": "No thanks, I do not eat seafood. Could I have something without seafood?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-013",
+    "context": [
+      "My shoulder is injured and I cannot lift heavy boxes.",
+      "Please take care of it."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you help move this heavy cupboard?",
+    "standard_anchor": "I cannot lift heavy boxes. Could someone else help me?",
+    "baseline_local": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+    "diagnostic_anchor": "Sorry, I cannot lift heavy things with my injured shoulder.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-014",
+    "context": [
+      "I am waiting beside the blue vending machine on level two.",
+      "I just entered the building."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where should I find you?",
+    "standard_anchor": "I am waiting beside the blue vending machine on level two.",
+    "baseline_local": "I waiting beside the blue vending machine on level two.",
+    "diagnostic_anchor": "I am beside the blue vending machine on level two.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-015",
+    "context": [
+      "I have not checked whether the cafe opens on public holidays.",
+      "Their hours sometimes change."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Will it be open tomorrow morning?",
+    "standard_anchor": "I have not checked whether the cafe is open on public holidays.",
+    "baseline_local": "I haven’t checked if the cafe opens on public holidays leh.",
+    "diagnostic_anchor": "I have not checked yet. Let me check before confirming.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-016",
+    "context": [
+      "My application results came out.",
+      "How did it go?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "I did not get selected and I feel quite upset.",
+    "standard_anchor": "I'm sorry to hear that.",
+    "baseline_local": "I'm sorry to hear that ah.",
+    "diagnostic_anchor": "I am sorry to hear that. Do you want to talk about it?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-017",
+    "context": [
+      "I have been handling almost all the presentation slides.",
+      "Have the others taken any sections?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Not really. I am exhausted trying to do everything.",
+    "standard_anchor": "No worries. You can take over the slides for one section.",
+    "baseline_local": "No worries, take over one section first lah.",
+    "diagnostic_anchor": "That sounds exhausting. Could we ask the others to share the work?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-018",
+    "context": [
+      "I finally finished my driving test.",
+      "How did it go?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "I passed on my first try!",
+    "standard_anchor": "Congratulations! That's great news.",
+    "baseline_local": "Wah, nice lah!",
+    "diagnostic_anchor": "Congratulations! I am happy for you.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-019",
+    "context": [
+      "I am leaving for the library soon.",
+      "I am heading out too."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Remember to bring your water bottle.",
+    "standard_anchor": "Yes, I will remember to bring my water bottle.",
+    "baseline_local": "I know, I will bring my water bottle.",
+    "diagnostic_anchor": "Thanks for reminding me. I will bring it.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-020",
+    "context": [
+      "I sent you the event poster.",
+      "I noticed the venue was wrong."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "I fixed the venue and sent you the updated version.",
+    "standard_anchor": "Thanks, I'll check the updated poster now.",
+    "baseline_local": "Thanks ah, I check the updated poster now.",
+    "diagnostic_anchor": "Thanks for fixing it and sending the updated version. I will check it.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-021",
+    "context": [
+      "I am still in class.",
+      "I am queuing at the drinks stall."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What would you like me to get you?",
+    "standard_anchor": "Could you get me a bottle of water?",
+    "baseline_local": "Can get me a bottle of water?",
+    "diagnostic_anchor": "A cup of tea, please. Thank you for getting it for me.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-022",
+    "context": [
+      "We could meet near the station.",
+      "There are two exits."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Meet me there after your lesson.",
+    "standard_anchor": "I'll meet you there after my lesson.",
+    "baseline_local": "Okay, I meet you after my lesson.",
+    "diagnostic_anchor": "Which exit should I meet you at after my lesson?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-023",
+    "context": [
+      "We are meeting for supper tonight.",
+      "Let me know if you can come."
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "Sorry, I have too much work and cannot join tonight.",
+    "standard_anchor": "No worries. I understand.",
+    "baseline_local": "No worries lah, next time then catch up.",
+    "diagnostic_anchor": "No worries, we can meet another time.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "RESTORE-FRESH-024",
+    "context": [
+      "We planned to study at the cafe.",
+      "It is getting noisy here."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to move to the reading room instead?",
+    "standard_anchor": "That would be fine. Let's go there instead.",
+    "baseline_local": "Can, go there instead lah.",
+    "diagnostic_anchor": "Yes, I would prefer somewhere quieter. Let us try the reading room.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-room-1",
+    "context": [
+      "I reserved room C314 for our practice session.",
+      "Thanks, I will come after lunch."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room should I come to?",
+    "standard_anchor": "I reserved room C314 for our practice session.",
+    "baseline_local": "I reserve C314 for our practice session.",
+    "diagnostic_anchor": "Come to room C314.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-room-2",
+    "context": [
+      "I reserved room C317 for our practice session.",
+      "Thanks, I will come after lunch."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room should I come to?",
+    "standard_anchor": "I reserved room C317 for our practice session.",
+    "baseline_local": "I reserve room C317 for our practice session.",
+    "diagnostic_anchor": "Come to room C317.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-location-1",
+    "context": [
+      "I am beside the orange clock on level three.",
+      "I just came through the main door."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where will I find you?",
+    "standard_anchor": "I am beside the orange clock on level three.",
+    "baseline_local": "I am beside the orange clock on level three.",
+    "diagnostic_anchor": "I am beside the orange clock on level three.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-location-2",
+    "context": [
+      "I am beside the green bench on level one.",
+      "I just came through the main door."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where will I find you?",
+    "standard_anchor": "I am beside the green bench on level one.",
+    "baseline_local": "I am beside the green bench on level one.",
+    "diagnostic_anchor": "I am beside the green bench on level one.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-availability-1",
+    "context": [
+      "I can help on Friday, but I am busy on Saturday.",
+      "We only need one helper."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are you available on Friday?",
+    "standard_anchor": "I am free on Friday, but I am busy on Saturday.",
+    "baseline_local": "Friday I free, but Saturday I busy.",
+    "diagnostic_anchor": "Yes, I can help on Friday.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-availability-2",
+    "context": [
+      "I am busy on Friday, but I can help on Saturday.",
+      "We only need one helper."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are you available on Friday?",
+    "standard_anchor": "I am busy on Friday, but I can help on Saturday.",
+    "baseline_local": "Friday I busy, but Saturday I free.",
+    "diagnostic_anchor": "I cannot help on Friday, but I can help on Saturday.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-budget-1",
+    "context": [
+      "I have fifteen dollars left for the outing.",
+      "The booking costs forty dollars per person."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you afford the forty-dollar booking?",
+    "standard_anchor": "I only have fifteen dollars left. I can't afford the forty-dollar booking.",
+    "baseline_local": "I only got fifteen dollars left. I cannot pay for the booking.",
+    "diagnostic_anchor": "That is more than I have. Could we choose something cheaper?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-budget-2",
+    "context": [
+      "I have seventy-five dollars left for the outing.",
+      "The booking costs forty dollars per person."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you afford the forty-dollar booking?",
+    "standard_anchor": "I can't afford the forty-dollar booking. I only have seventy-five dollars.",
+    "baseline_local": "I cannot pay forty dollars leh. I only got seventy-five dollars.",
+    "diagnostic_anchor": "Yes, I have enough for the forty-dollar booking.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-submitted-1",
+    "context": [
+      "I uploaded the consent form to the portal this afternoon.",
+      "The deadline is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted the consent form?",
+    "standard_anchor": "Yes, I've uploaded it to the portal this afternoon.",
+    "baseline_local": "Ya, I’ve uploaded it to the portal this afternoon.",
+    "diagnostic_anchor": "Yes, I uploaded it this afternoon.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-submitted-2",
+    "context": [
+      "I have not uploaded the consent form to the portal yet.",
+      "The deadline is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Have you submitted the consent form?",
+    "standard_anchor": "I have not submitted the consent form yet.",
+    "baseline_local": "Haven’t submit leh, haven’t even started.",
+    "diagnostic_anchor": "Not yet, I still need to upload it.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-packed-1",
+    "context": [
+      "I finished packing all the welcome packs into boxes.",
+      "The collection is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are the welcome packs packed yet?",
+    "standard_anchor": "I have packed all the welcome packs into boxes.",
+    "baseline_local": "I packed all the welcome packs into boxes.",
+    "diagnostic_anchor": "Yes, they are all packed into boxes.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-packed-2",
+    "context": [
+      "I have not started packing the welcome packs into boxes.",
+      "The collection is tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are the welcome packs packed yet?",
+    "standard_anchor": "I have not started packing the welcome packs into boxes.",
+    "baseline_local": "Haven’t start packing the welcome packs leh.",
+    "diagnostic_anchor": "Not yet, I have not started packing them.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-ownership-1",
+    "context": [
+      "I lent you my power cable yesterday.",
+      "Let us sort it out after the workshop."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which one of us needs to return the power cable?",
+    "standard_anchor": "You need to return the cable to me.",
+    "baseline_local": "You need to return the cable to me.",
+    "diagnostic_anchor": "You need to return my power cable to me.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-ownership-2",
+    "context": [
+      "You lent me your power cable yesterday.",
+      "Let us sort it out after the workshop."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which one of us needs to return the power cable?",
+    "standard_anchor": "I need to return the cable you lent me yesterday.",
+    "baseline_local": "I need to return the cable you lent me yesterday.",
+    "diagnostic_anchor": "I need to return your power cable to you.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-offer_request-1",
+    "context": [
+      "I missed the last part of the workshop.",
+      "I wrote down the key points."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I send you a photo of my notes?",
+    "standard_anchor": "Yes please, send me a photo of your notes.",
+    "baseline_local": "Yes please, send me a photo of your notes ah.",
+    "diagnostic_anchor": "Yes please, send me a photo of your notes.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-offer_request-2",
+    "context": [
+      "I wrote down the key points of the workshop.",
+      "I missed the last part."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send me a photo of your notes?",
+    "standard_anchor": "Sure, I will send you a photo of my notes.",
+    "baseline_local": "Can, I send you a photo of my notes.",
+    "diagnostic_anchor": "Sure, I will send you a photo of my notes.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-schedule-1",
+    "context": [
+      "I cannot leave the lab before 18:45.",
+      "We could get dinner afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would 19:15 work for dinner?",
+    "standard_anchor": "I cannot leave before 18:45. Could we get dinner after 19:15?",
+    "baseline_local": "I cannot leave before 18:45 leh. Dinner after 19:15 can?",
+    "diagnostic_anchor": "Yes, I can meet at 19:15 after leaving the lab.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-schedule-2",
+    "context": [
+      "I cannot leave the lab before 20:45.",
+      "We could get dinner afterwards."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would 19:15 work for dinner?",
+    "standard_anchor": "That works for me. Let's meet at 19:15.",
+    "baseline_local": "Can, dinner at 19:15.",
+    "diagnostic_anchor": "I cannot meet at 19:15. Could we meet after 20:45?",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-possession-1",
+    "context": [
+      "I put my umbrella in my bag before leaving home.",
+      "It is pouring outside now."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Did you bring your umbrella?",
+    "standard_anchor": "I put my umbrella in my bag before leaving home.",
+    "baseline_local": "I put my umbrella in my bag before leaving home.",
+    "diagnostic_anchor": "Yes, my umbrella is in my bag.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  },
+  {
+    "item_id": "CTXDEV-possession-2",
+    "context": [
+      "I left my umbrella at home before heading out.",
+      "It is pouring outside now."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Did you bring your umbrella?",
+    "standard_anchor": "I left my umbrella at home before heading out.",
+    "baseline_local": "I left my umbrella at home before leaving.",
+    "diagnostic_anchor": "No, I left it at home.",
+    "scope": "reused_development",
+    "anchor_provenance": "Frozen repair25 English generator; may itself be contextually incorrect."
+  }
+]

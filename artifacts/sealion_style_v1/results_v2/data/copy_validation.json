@@ -1,0 +1,167 @@
+[
+  {
+    "item_id": "ITEM-A-024",
+    "context": [
+      "Hey have you printed the worksheet given out yesterday?",
+      "No, I will need to print it in school. Do you know how to use the printer?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i don't know how to use the printer in school.",
+    "standard_anchor": "It's okay, I will figure it out",
+    "response": "It's okay, I will find out how to use it one",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "context": [
+      "How long is our booking?",
+      "Oh no, our timer went off."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sian, need book somewhere else, our booking ran out",
+    "standard_anchor": "okay, i will book a pod at the library",
+    "response": "okay i will chope a pod at the library",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "context": [
+      "Hey should we grab lunch?",
+      "sure! Lets head to Koufu"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh the chicken rice stall open today anot?",
+    "standard_anchor": "I will check the opening hours first.",
+    "response": "I check whether open anot first.",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "standard_anchor": "You don't have to, take your time",
+    "response": "Don't need la,  take your time.",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?",
+    "standard_anchor": "Sure, what time do you want to go?",
+    "response": "Can, what time you want run?",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "standard_anchor": "Okay, seven works for me.",
+    "response": "Ok, seven can.",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "context": [
+      "are you going to the library ltr?",
+      "yeah, probably after dinner"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i'll be at lks around 8, want to meet there?",
+    "standard_anchor": "sure, see you there",
+    "response": "can, see you there",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "context": [
+      "eh so how, you still want bid for the morning class?",
+      "yah can"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ok then rmb to bid before bidding ends",
+    "standard_anchor": "Ok, I will bid later.",
+    "response": "ok i bid later",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "context": [
+      "i heard you going to cafe later to study",
+      "ya you want come? dont say i never jio"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can ah, later i join you",
+    "standard_anchor": "sweet, see you later",
+    "response": "ok swee see you later",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "standard_anchor": "all good man, we can meet next time",
+    "response": "all good, we meet next time bah",
+    "original_provenance": "team"
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "standard_anchor": "alright, lets stick to the current arrangements",
+    "response": "ok lor, we stick to the current arrangements",
+    "original_provenance": "team"
+  }
+]

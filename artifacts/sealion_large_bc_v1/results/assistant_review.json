@@ -1,0 +1,473 @@
+{
+  "at_utc": "2026-11-09T05:19:55.075838+00:00",
+  "reviewer": "assistant",
+  "human_gold": false,
+  "scope": "All89matched actual-pipeline cases read across original/B/C, plus all14fixed-reference pairs per new arm and11dev direct pairs per arm. Qualitative development review, not independent human accuracy. Final outputs did not change selected epochs.",
+  "verdict": "Training complete; some useful shorter texting and specific context fixes, persistent contextual and rewrite-meaning errors. No demonstrated overall quality winner or default promotion.",
+  "case_notes": [
+    {
+      "index": 1,
+      "item_id": "BC-evaluation-00011",
+      "note": "B proposes a new future meeting time and retains it; C keeps a valid brief acceptance."
+    },
+    {
+      "index": 2,
+      "item_id": "BC-evaluation-00017",
+      "note": "Both rewrites turn the English commitment to ask into a question; agency/commitment becomes less clear."
+    },
+    {
+      "index": 3,
+      "item_id": "BC-evaluation-00036",
+      "note": "C drops the question asking Friend preference; B preserves selected competitive choice."
+    },
+    {
+      "index": 4,
+      "item_id": "BC-evaluation-00037",
+      "note": "Both provide usable terse acceptance of bringing ink."
+    },
+    {
+      "index": 5,
+      "item_id": "BC-evaluation-00039",
+      "note": "All propose You putting herbs out after Friend said they should do it; could be a new offer, so do not automatically label role reversal."
+    },
+    {
+      "index": 6,
+      "item_id": "BC-evaluation-00051",
+      "note": "Both preserve the contextual 3pm cafe confirmation; C uses context-supported ellipsis."
+    },
+    {
+      "index": 7,
+      "item_id": "BC-evaluation-00054",
+      "note": "Repeated incoming invitation in model-authored source is awkward; C busy-weekend refusal conflicts with the earlier Sunday plan."
+    },
+    {
+      "index": 8,
+      "item_id": "BC-evaluation-00068",
+      "note": "Both preserve the contextual 2pm confirmation."
+    },
+    {
+      "index": 9,
+      "item_id": "BC-evaluation-00078",
+      "note": "B drops English claim about smooth spinning. O/C assert success not established by the source; source only asks about it."
+    },
+    {
+      "index": 10,
+      "item_id": "BC-evaluation-00079",
+      "note": "Both give usable confirmation; C retains tomorrow explicitly."
+    },
+    {
+      "index": 11,
+      "item_id": "BC-evaluation-00096",
+      "note": "B uses more casual wording; C copies the longer English reply."
+    },
+    {
+      "index": 12,
+      "item_id": "BC-evaluation-00101",
+      "note": "B makes the contextual waterproof description explicit; C unchanged English remains usable short confirmation."
+    },
+    {
+      "index": 13,
+      "item_id": "BC-evaluation-00110",
+      "note": "Both provide concise declines; C adds busy in English, with no conflicting availability established."
+    },
+    {
+      "index": 14,
+      "item_id": "BC-evaluation-00111",
+      "note": "Both preserve the selected own-cups decision with casual syntax."
+    },
+    {
+      "index": 15,
+      "item_id": "AUDIT-EVAL-01",
+      "note": "Both address clips unlike old reply. C later is broader than English after we are done; incoming later allows this."
+    },
+    {
+      "index": 16,
+      "item_id": "AUDIT-EVAL-02",
+      "note": "B/C choose saw-already; supplied chat does not establish whether You has seen snacks. Do not report the new completion as verified fact."
+    },
+    {
+      "index": 17,
+      "item_id": "AUDIT-EVAL-03",
+      "note": "Both preserve the 5:15 confirmation."
+    },
+    {
+      "index": 18,
+      "item_id": "AUDIT-EVAL-04",
+      "note": "Both shorten to done already; completion is established in history."
+    },
+    {
+      "index": 19,
+      "item_id": "AUDIT-EVAL-05",
+      "note": "Both retain the charging commitment."
+    },
+    {
+      "index": 20,
+      "item_id": "AUDIT-EVAL-06",
+      "note": "Both give natural next-time acknowledgment."
+    },
+    {
+      "index": 21,
+      "item_id": "AUDIT-EVAL-07",
+      "note": "Both preserve sharing the socket; original LOCAL changes permission into You using it."
+    },
+    {
+      "index": 22,
+      "item_id": "AUDIT-EVAL-08",
+      "note": "B reverses borrower/lender in English and says use mine. C correctly accepts Friend-owned headphones."
+    },
+    {
+      "index": 23,
+      "item_id": "AUDIT-EVAL-09",
+      "note": "B preserves return after dinner; C adds a new destination proposal and retains it."
+    },
+    {
+      "index": 24,
+      "item_id": "AUDIT-EVAL-10",
+      "note": "Both shorten the correct florist location."
+    },
+    {
+      "index": 25,
+      "item_id": "AUDIT-EVAL-11",
+      "note": "Both accept a two-hour movie despite You having to leave ten minutes after its start. Original also fails."
+    },
+    {
+      "index": 26,
+      "item_id": "AUDIT-EVAL-12",
+      "note": "B accepts $14 noodles with $9 budget. C preserves budget refusal/constraint; original LOCAL also loses refusal."
+    },
+    {
+      "index": 27,
+      "item_id": "AUDIT-EVAL-13",
+      "note": "English starts Yes despite incomplete whole task; both rewrites retain incomplete explanation, but C starts Done. Ambiguous opening remains."
+    },
+    {
+      "index": 28,
+      "item_id": "AUDIT-EVAL-14",
+      "note": "Both English replies ignore closing at nine before arrival9:15. C additionally changes9:15 to9:55 in LOCAL."
+    },
+    {
+      "index": 29,
+      "item_id": "AUDIT-EVAL-15",
+      "note": "Both preserve consultation booking follow-up with appropriate professor acknowledgment."
+    },
+    {
+      "index": 30,
+      "item_id": "AUDIT-EVAL-16",
+      "note": "Both retain scarf on Your chair; original LOCAL reverses ownership/location."
+    },
+    {
+      "index": 31,
+      "item_id": "AUDIT-EVAL-17",
+      "note": "B asks a redundant preference question; C chooses a valid offered drink and preserves it."
+    },
+    {
+      "index": 32,
+      "item_id": "AUDIT-EVAL-18",
+      "note": "Both correctly commit to send a photo; original asks Friend to send one."
+    },
+    {
+      "index": 33,
+      "item_id": "AUDIT-EVAL-19",
+      "note": "Both continue going to L3 despite explicit move to L8. Original also fails."
+    },
+    {
+      "index": 34,
+      "item_id": "AUDIT-EVAL-20",
+      "note": "Both retain not-found status; C adds a future trip and retains it."
+    },
+    {
+      "index": 35,
+      "item_id": "AUDIT-EVAL-21",
+      "note": "Both casualize support with aiyo but remain fairly generic."
+    },
+    {
+      "index": 36,
+      "item_id": "AUDIT-EVAL-22",
+      "note": "Both preserve offer to help for ten minutes."
+    },
+    {
+      "index": 37,
+      "item_id": "AUDIT-EVAL-23",
+      "note": "B requests correct blue box; C English/LOCAL incorrectly says blue parcel belongs to Friend."
+    },
+    {
+      "index": 38,
+      "item_id": "AUDIT-EVAL-24",
+      "note": "Both acknowledge uncertainty; added promise to check goes beyond English, though useful and unconstrained."
+    },
+    {
+      "index": 39,
+      "item_id": "USER-FLU-001",
+      "note": "Exact user flu/video case: B English and LOCAL both ok, will do. Valid terse identical styles. C retains videos but changes requested during-play timing to when done."
+    },
+    {
+      "index": 40,
+      "item_id": "ITEM-A-010",
+      "note": "Both respond to kiasu comment; B drops English encouragement to do our best."
+    },
+    {
+      "index": 41,
+      "item_id": "ITEM-A-017",
+      "note": "Both retain contextual7pm confirmation."
+    },
+    {
+      "index": 42,
+      "item_id": "ITEM-A-024",
+      "note": "Neither answers how to resolve the printer knowledge gap; B offers to print for Friend although You needs printing. C generic help offer."
+    },
+    {
+      "index": 43,
+      "item_id": "ITEM-A-030",
+      "note": "Both handle expired booking; C uses brief casual wording."
+    },
+    {
+      "index": 44,
+      "item_id": "ITEM-A-033",
+      "note": "B asserts unsupported opening. C English speculates closed, then LOCAL shifts to unknown; faithfulness issue."
+    },
+    {
+      "index": 45,
+      "item_id": "ITEM-A-035",
+      "note": "B changes own dabao reminder into getting food for Friend; C keeps own dabao commitment."
+    },
+    {
+      "index": 46,
+      "item_id": "ITEM-A-038",
+      "note": "B concise wait reassurance; C copies neutral English. Both contextually plausible."
+    },
+    {
+      "index": 47,
+      "item_id": "ITEM-A-044",
+      "note": "Both echo blur like sotong rather than substantively confirming project reminder; no contradictory completion claim."
+    },
+    {
+      "index": 48,
+      "item_id": "ITEM-A-046",
+      "note": "Both retain2pm via context-supported see-you-then."
+    },
+    {
+      "index": 49,
+      "item_id": "ITEM-A-054",
+      "note": "Both valid go-now acceptance; C casualizes wording."
+    },
+    {
+      "index": 50,
+      "item_id": "ITEM-B-002",
+      "note": "Both offer plausible new eating destinations."
+    },
+    {
+      "index": 51,
+      "item_id": "ITEM-B-009",
+      "note": "Both claim library space despite You not yet there; unsupported current external fact."
+    },
+    {
+      "index": 52,
+      "item_id": "ITEM-B-029",
+      "note": "Both correctly commit to check timetable instead of inventing a room."
+    },
+    {
+      "index": 53,
+      "item_id": "ITEM-B-034",
+      "note": "Both retain offer to update after class; C later uses context-supported ellipsis."
+    },
+    {
+      "index": 54,
+      "item_id": "ITEM-B-042",
+      "note": "History Friend waiting outside versus latest wrong bus is ambiguous. B suggests next bus; C asks arrival update."
+    },
+    {
+      "index": 55,
+      "item_id": "ITEM-B-043",
+      "note": "Both decline, but LOCAL adds busy reason absent from selected English."
+    },
+    {
+      "index": 56,
+      "item_id": "ITEM-B-048",
+      "note": "B converts event delayed30min into arrival in30min, not necessarily same timing. C simply acknowledges delay."
+    },
+    {
+      "index": 57,
+      "item_id": "ITEM-B-050",
+      "note": "B proposes6pm/track and retains it; C proposes afterclass and retains it."
+    },
+    {
+      "index": 58,
+      "item_id": "ITEM-B-056",
+      "note": "Both switch to gym without explaining existing badminton booking; likely misread booked as unavailable. Booking ownership is not explicit."
+    },
+    {
+      "index": 59,
+      "item_id": "ITEM-B-057",
+      "note": "Both accept borrowing charger; B casualizes and C retains neutral English."
+    },
+    {
+      "index": 60,
+      "item_id": "ITEM-C-001",
+      "note": "B LOCAL drops newly proposed8pm time because context already supplies8; C by8 earlier versus at8 distinction remains minor."
+    },
+    {
+      "index": 61,
+      "item_id": "ITEM-C-017",
+      "note": "B preserves unfinished work. C asserts finished despite ongoing results work, then English contradicts itself with as soon as done."
+    },
+    {
+      "index": 62,
+      "item_id": "ITEM-C-018",
+      "note": "Both retain their own future slide commitment."
+    },
+    {
+      "index": 63,
+      "item_id": "ITEM-C-023",
+      "note": "Both provide usable short acceptance."
+    },
+    {
+      "index": 64,
+      "item_id": "ITEM-C-028",
+      "note": "B uses casual no-worries wording; C unchanged English is conversational."
+    },
+    {
+      "index": 65,
+      "item_id": "ITEM-C-038",
+      "note": "B reverses who should check conclusion in English and changes too long to long enough in LOCAL. C offers to check and uses contextual ellipsis."
+    },
+    {
+      "index": 66,
+      "item_id": "ITEM-C-041",
+      "note": "Both reassure about late upload; no new hard deadline omitted from selected English."
+    },
+    {
+      "index": 67,
+      "item_id": "ITEM-C-045",
+      "note": "Both invent exact evening arrival for early seats tomorrow. B additionally changes at6:30 to by6:30 in LOCAL."
+    },
+    {
+      "index": 68,
+      "item_id": "ITEM-C-055",
+      "note": "B imports Friend lunch need into You English and produces ambiguous eating-time rewrite. C preserves2pm reschedule."
+    },
+    {
+      "index": 69,
+      "item_id": "ITEM-C-058",
+      "note": "Both acknowledge occupied court; C casualizes."
+    },
+    {
+      "index": 70,
+      "item_id": "ITEM-D-007",
+      "note": "Luckin: both preserve uncertainty/menu-check; no invented wine/beer. Original also usable."
+    },
+    {
+      "index": 71,
+      "item_id": "ITEM-D-009",
+      "note": "Both keep offer to help with Gaussian elimination."
+    },
+    {
+      "index": 72,
+      "item_id": "ITEM-D-010",
+      "note": "B admits uncertainty and offers notes check; C asserts knowing answer, a selectable unknown personal state rather than verified fact."
+    },
+    {
+      "index": 73,
+      "item_id": "ITEM-D-013",
+      "note": "Both offer assignment answers; no blanket judgment added about this unconstrained task."
+    },
+    {
+      "index": 74,
+      "item_id": "ITEM-D-029",
+      "note": "Both preserve bid-before-deadline reminder."
+    },
+    {
+      "index": 75,
+      "item_id": "ITEM-D-033",
+      "note": "Both fail to answer wya directly; C asks which busstop and B proposes meeting there."
+    },
+    {
+      "index": 76,
+      "item_id": "ITEM-D-037",
+      "note": "Both retain future arrival, though B coming is less specific than English fewminutes."
+    },
+    {
+      "index": 77,
+      "item_id": "ITEM-D-038",
+      "note": "Both keep waiting-for-Friend commitment; identical short English/LOCAL is acceptable here."
+    },
+    {
+      "index": 78,
+      "item_id": "ITEM-D-046",
+      "note": "B LOCAL aiyo, aiyo drops the English commitment to check other tickets. C only echoes a question rather than helping."
+    },
+    {
+      "index": 79,
+      "item_id": "ITEM-D-050",
+      "note": "Both retain get-well message; unchanged English can still be normal texting."
+    },
+    {
+      "index": 80,
+      "item_id": "ITEM-E-005",
+      "note": "Both provide suitable see-you-later acknowledgment."
+    },
+    {
+      "index": 81,
+      "item_id": "ITEM-E-007",
+      "note": "Both fail to answer the requested meeting location."
+    },
+    {
+      "index": 82,
+      "item_id": "ITEM-E-009",
+      "note": "B preserves lender giving charger after3. C English correct but LOCAL changes lending into returning."
+    },
+    {
+      "index": 83,
+      "item_id": "ITEM-E-015",
+      "note": "Both preserve not-done quiz status; B retains future tonight commitment."
+    },
+    {
+      "index": 84,
+      "item_id": "ITEM-E-025",
+      "note": "Both accept Thursday makeupclass. C okok is more casual than expected professor relationship, preference uncertain."
+    },
+    {
+      "index": 85,
+      "item_id": "ITEM-E-027",
+      "note": "B invents offer/authority to book for Friend. C asks timing but neither establishes whether booking changes are permitted."
+    },
+    {
+      "index": 86,
+      "item_id": "ITEM-E-028",
+      "note": "B offers another meal time; C generic sympathy is less responsive."
+    },
+    {
+      "index": 87,
+      "item_id": "ITEM-E-032",
+      "note": "C says go SR3-2 although room unavailable. B seeks another time, shifting tutorial-arrangement meaning."
+    },
+    {
+      "index": 88,
+      "item_id": "ITEM-E-040",
+      "note": "B preserves proposedThursdayevening. C changes English thisafternoon to tomorrow in LOCAL."
+    },
+    {
+      "index": 89,
+      "item_id": "ITEM-E-046",
+      "note": "C invents10pmonly constraint and5am alternative. B accepts Friend releasingat5, plausible given latestrequest despite confusing source roles."
+    }
+  ],
+  "fixed_reference_concerns": {
+    "both": [
+      "case1 drops commitment to check available spots",
+      "case2 strengthens I do not think to categorical no; B also drops checking",
+      "case5 drops checking/asking time",
+      "case7 drops goal/alone content to varying degrees",
+      "case11 changes follow-up actor or drops nextmonth",
+      "case12 drops newly offered snacks"
+    ],
+    "B": [
+      "case11 let me know becomes I ask you"
+    ],
+    "C": [
+      "case5 drops check and request to tell time",
+      "case7 loses explicit goingalone"
+    ]
+  },
+  "direct_generation_dev": "Saved direct STANDARD and LOCAL outputs show opposite decisions on same input (e.g Bdev00005 cannot tonight versus see u tomorrow; Cdev00005 English attending versus LOCAL cannot work). They are separately selected replies; this is not a reliable matched-meaning substitute. No fresh direct-generation evaluation performed.",
+  "selection": "C has lower pinned validation CE, but this is not proof of better naturalness or fidelity. Retain both candidates and original."
+}

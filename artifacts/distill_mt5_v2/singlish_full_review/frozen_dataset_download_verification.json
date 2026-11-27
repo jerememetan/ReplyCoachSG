@@ -1,0 +1,42 @@
+{
+  "targets/full/manifest.json": {
+    "sha256": "f854af4036c8c20d7e46fac48109aae6c949dbbcaf898ff79a28d600f49f96db",
+    "bytes": 26080
+  },
+  "targets/full/original.json": {
+    "sha256": "afd8f59f4c5c3829c27fab1f3ef69c09670eb1051ad8b21d0036b2b56b8f4865",
+    "bytes": 251737
+  },
+  "targets/full/sealion.json": {
+    "sha256": "4bb836bcd4f2dc50038b0ef4a6fdafc2f44db3786f9337b574ad901515a518f2",
+    "bytes": 248771
+  },
+  "targets/full/qwen.json": {
+    "sha256": "466a766cb33a4586a3224a6421fabba93f6fbb4eec42119bb0cc894112dc53a6",
+    "bytes": 250309
+  },
+  "singlish_full_review/frozen_dataset_verification.json": {
+    "sha256": "b825c666a19e1906965c526d64696a6fd40e02479615878504004e12a2c83a4e",
+    "bytes": 877
+  },
+  "singlish_full_review/freeze_full.log": {
+    "sha256": "f854af4036c8c20d7e46fac48109aae6c949dbbcaf898ff79a28d600f49f96db",
+    "bytes": 26080
+  },
+  "singlish_full_submission_20261121.json": {
+    "sha256": "97218416ef47178157bdb494d42146b88b54c83f672d9f7385f99c9e2de78996",
+    "bytes": 251
+  },
+  "student_code_manifest.json": {
+    "sha256": "77fa08f1fc764a3f080592d2efa91e81baddcff0992b3ea07f94c53c7e4e4693",
+    "bytes": 1144
+  },
+  "slurm-distill-sealion_singlish_full-373361.out": {
+    "sha256": "cdf40ce9299bccc4724d4611a663ede5d7dbd717f38c5cd6b411b123290a43f5",
+    "bytes": 47260
+  },
+  "slurm-distill-qwen_singlish_full-373362.out": {
+    "sha256": "39f2a30bd424959912209d527b17d60c7011cf8746266de079ef722202f8da65",
+    "bytes": 47259
+  }
+}

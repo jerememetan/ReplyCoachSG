@@ -1,0 +1,1352 @@
+[
+  {
+    "item_id": "ITEM-A-010",
+    "rationale": "mT5 responds to an unspecified object; SEA acknowledges the difficult lesson; Qwen echoes the incoming speaker-labelled message.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "rationale": "All confirm seven; mT5 remains Standard English. Qwen adds a plausible meeting location.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "rationale": "mT5 asks the explicitly uninformed peer for printer instructions. The larger models offer to print; no explicit inability to print is established for the user.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "rationale": "All propose another booking and retain the decision.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "rationale": "All answer the opening-hours question. mT5 supplies a selectable factual draft; unknown personal facts alone are not an error under the project policy.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-035",
+    "rationale": "All acknowledge the reminder. SEA uses dabao; the other LOCAL replies remain standard.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "rationale": "mT5 gives a plausible own-arrival update. SEA LOCAL says ten more minutes rather than explicitly promising to wait, so equivalence is uncertain. Qwen preserves waiting but remains standard.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "uncertain",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-044",
+    "rationale": "mT5 apologizes for an unspecified missed event. SEA uses blur in a local sense; Qwen uses transitive blur it, which does not sensibly answer the caution.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "rationale": "All can function as acceptance of the proposed meeting; mT5 is vague about time but does not explicitly contradict two.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "rationale": "mT5 can plausibly defer going home while accepting going now. SEA and Qwen explicitly agree to go now; Qwen LOCAL stays standard.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "rationale": "All provide a plausible preference or next step. Qwen changes a suggestion to a confirmation question without changing the proposed venue.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "rationale": "mT5 answers yes and gives a possible waiting plan; no explicit current location forbids it. SEA answers space directly; Qwen offers to check.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "rationale": "mT5 gives an awkward floor answer and malformed LOCAL; their equivalence is uncertain. Both larger models sensibly check the timetable.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "uncertain",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "rationale": "mT5 substitutes a free-time request for a class update. SEA reverses who should provide the update. Qwen offers the requested summary.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "rationale": "mT5 gives an unrelated apology. SEA changes asking the peer to report arrival into its own arrival update. Qwen preserves its own previously stated arrival.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "rationale": "mT5 asks the organizer what time they want to come, leaving direction ambiguous. SEA accepts in generic texting; Qwen makes a permissible refusal.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "rationale": "All acknowledge the postponement. Arriving earlier is not explicitly prohibited. SEA and Qwen LOCAL remain standard.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "rationale": "All accept a run; shared activity remains implied in the short LOCAL replies.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "rationale": "mT5 acknowledges availability and SEA confirms seven. Qwen English can be a valid refusal, but LOCAL adds a booking-as-obstacle interpretation and an extra reason.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "rationale": "mT5 reverses lending into borrowing and then changes ownership. Both larger models correctly lend the user-owned charger.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "rationale": "All accept the LKS meeting. mT5 merges the place and time typographically, but the intended meeting remains recoverable.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "rationale": "mT5 English can supply a newly completed status, but LOCAL introduces a relative future completion plan and sounds repetitive. Both larger models retain unfinished status.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "fail",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "rationale": "mT5 repeats the merge plan without clearly addressing its own slide reminder. SEA offers to add it; Qwen offers to upload its section after dinner, which is not prohibited for the user.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "rationale": "All give plausible invitation responses. Uncertainty about attending is allowed despite previously having no plans. SEA LOCAL is neutral English.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "rationale": "mT5 offers to take the peer to the cafe they already occupy. SEA waits for a peer who is already there. Qwen offers more food after the peer ordered, which is contextually uncertain.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "rationale": "All offer to check the passage, preserving the request.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "rationale": "All acknowledge a delayed upload. Generic nvm or omitted punctuation alone is insufficient evidence of recognizable Singlish.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "rationale": "mT5 does not clearly confirm arriving early and repeats for the seats in LOCAL. Both larger models confirm the plan.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-055",
+    "rationale": "All accept the two oclock rescheduling.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "rationale": "mT5 waits for the peer rather than clearly for court availability, leaving relevance uncertain. SEA and Qwen wait; Qwen wording is standard.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "rationale": "mT5 wine is a permissible selectable preference despite being unusual. SEA defers choosing in neutral English. Qwen green tea latte may repeat the declined matcha choice, so adequacy is uncertain.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "rationale": "mT5 offers to do the identified question later; the larger models offer help. These are plausible next replies.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "rationale": "All respond to knowing the question or offer to check notes; mT5 LOCAL stays standard.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-013",
+    "rationale": "mT5 reverses who supplies material. Both larger models offer help and ask for the specific difficulty.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "rationale": "mT5 gives an unrelated see-you-later response. Both larger models acknowledge the bidding reminder.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "rationale": "mT5 and Qwen give location/arrival information. SEA asks what the peer is doing instead of answering where it is.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "rationale": "mT5 offers to take the already-arrived peer there, then changes the action again in LOCAL. Both larger models give plausible own-arrival updates.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-038",
+    "rationale": "mT5 and SEA preserve waiting for the peer. Qwen LOCAL reverses the instruction into wait for me.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "fail",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "rationale": "mT5 promises the sold-out ticket without acknowledging unavailability. SEA asks about an alternative and Qwen sympathizes; both LOCAL replies remain neutral English.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "rationale": "All appropriately respond to illness. SEA and Qwen LOCAL remain standard.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "rationale": "mT5 changes which person joins the other, though both are heading to the same cafe, so adequacy is uncertain. SEA and Qwen acknowledge the peer joining.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "rationale": "All miss the where-to-meet question in na li. Qwen additionally interprets it as the location name Na Li.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "rationale": "mT5 misses the charger confirmation. SEA LOCAL can sound like asking for confirmation rather than giving it; English supplies availability. Qwen preserves ownership and after-three timing.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "rationale": "All give possible quiz status. SEA changes not completed into not started, a stronger claim absent from its English; Qwen copies neutral English.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "rationale": "mT5 and Qwen give their own Thursday availability. SEA tells the apparent lecturer to check with the lecturer rather than answering the availability request.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-027",
+    "rationale": "mT5 and Qwen permit a change. SEA promises an availability update without clearly answering whether the booking can change; adequacy is uncertain.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "rationale": "mT5 accepts after an explicit cannot-make-it refusal. SEA treats busyness as illness. Qwen correctly accepts the refusal in neutral English.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "fail",
+        "local_adequacy": "fail",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "rationale": "mT5 can acknowledge refusal then ask when class starts; a new question is allowed. SEA accepts refusal; Qwen retains the original venue. Latter two remain neutral English.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-040",
+    "rationale": "mT5 English offers a meeting but LOCAL repeats library. SEA substitutes lunch without clearly linking it to work. Qwen makes a permissible refusal with an offer to help.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "fail",
+        "all_four": false
+      },
+      "sealion": {
+        "english_adequacy": "uncertain",
+        "local_adequacy": "uncertain",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": false
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-046",
+    "rationale": "mT5 and SEA approve five. Qwen English permits the peer to release it, but LOCAL makes the user the releaser.",
+    "models": {
+      "mt5": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "sealion": {
+        "english_adequacy": "pass",
+        "local_adequacy": "pass",
+        "meaning_preservation": "pass",
+        "local_style": "pass",
+        "all_four": true
+      },
+      "qwen": {
+        "english_adequacy": "pass",
+        "local_adequacy": "fail",
+        "meaning_preservation": "fail",
+        "local_style": "pass",
+        "all_four": false
+      }
+    }
+  }
+]

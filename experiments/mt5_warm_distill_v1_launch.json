@@ -1,0 +1,92 @@
+{
+  "experiment": "mt5_warm_distill_v1",
+  "status": "all_four_completed",
+  "remote_root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_mt5_warm_distill_v1",
+  "recipe": "experiments/mt5_warm_distill_v1_recipe.json",
+  "user_request": "Continue best preserved trained base plus existing task LoRA, compare unchanged baseline and matched teacher CE / CE+KL continuation.",
+  "gate_job": "373520",
+  "gate_status": "passed",
+  "training_jobs": {
+    "sealion_ce": "373521",
+    "sealion_kd": "373522",
+    "qwen_ce": "373523",
+    "qwen_kd": "373524"
+  },
+  "unchanged_baseline_available": true,
+  "source_adapter": {
+    "path": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_mt5_warm_distill_v1/initial_adapter",
+    "source_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1/adapters/shared",
+    "checkpoint": "mT5 A shared_intent rewrite_s1 seed1 final784",
+    "files_sha256": {
+      "adapter_model.safetensors": "d2bb5ea90233de5534f07c9ab7ab6cbf23bf0196388ff6727e3a1bc15673adb9",
+      "adapter_config.json": "fcd0308d1786cf0bb4f57c63e08d5a2b6549995d77e0dbd655aada5241e8ec13"
+    },
+    "tensor_sha256": "8d3f55901a0e006d5dfc7678302f6cc472c293ccdf530dde7ddb3579b4755972"
+  },
+  "baseline_reference_validation": {
+    "english": {
+      "token_ce": 2.1749064077591074,
+      "tokens": 580,
+      "examples": 50
+    },
+    "singlish": {
+      "token_ce": 3.5744948104721783,
+      "tokens": 363,
+      "examples": 42
+    },
+    "selection_score": 2.874700609115643
+  },
+  "portable_reference_replay_pairs": 10,
+  "cpu_tests_passed": 3,
+  "full_data_gate_arms_passed": 4,
+  "payload_sha256": "7217f70f0dcb8c172aadf8712be14281c83f69ede7c4f5c767400495515e3abc",
+  "latest_snapshot": "artifacts/mt5_warm_distill_v1/status_snapshots/20261121T100804Z",
+  "source_adapter_preserved": true,
+  "current_model_defaults_changed": false,
+  "quality_improvement_established": false,
+  "epoch0_eligible": true,
+  "first_full_reports": {
+    "sealion_ce": {
+      "status": "running",
+      "epochs_saved": 1,
+      "updates": 143,
+      "selected_epoch": 1,
+      "selected_score": 2.399428726859844,
+      "latest_validation": {
+        "english": {
+          "token_ce": 2.140548565778239,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 2.6583088879414496,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.399428726859844
+      }
+    },
+    "sealion_kd": {
+      "status": "running",
+      "epochs_saved": 1,
+      "updates": 143,
+      "selected_epoch": 1,
+      "selected_score": 2.684562766933949,
+      "latest_validation": {
+        "english": {
+          "token_ce": 2.2591257530553586,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 3.1099997808125392,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.684562766933949
+      }
+    }
+  },
+  "observed_at_utc": "2026-11-21T10:08:04.052740+00:00",
+  "results": "experiments/mt5_warm_distill_v1_results.json"
+}

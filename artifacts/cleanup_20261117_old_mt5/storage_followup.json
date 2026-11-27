@@ -1,0 +1,44 @@
+{
+  "observed_at_utc": "2026-11-16T16:17:44.584820+00:00",
+  "deleted_weights_absent": true,
+  "folders": [
+    {
+      "name": "ReplyCoachSG_fit_probe_v1",
+      "actual_remaining_bytes": 33139906,
+      "recursive_counter_bytes": 33139816
+    },
+    {
+      "name": "ReplyCoachSG_mt5_act_follow_v1",
+      "actual_remaining_bytes": 1329883,
+      "recursive_counter_bytes": 1329772
+    },
+    {
+      "name": "ReplyCoachSG_mt5_reply_act_v1",
+      "actual_remaining_bytes": 1663370,
+      "recursive_counter_bytes": 1663268
+    },
+    {
+      "name": "ReplyCoachSG_mt5_reply_act_v2",
+      "actual_remaining_bytes": 1607926,
+      "recursive_counter_bytes": 1607820
+    },
+    {
+      "name": "ReplyCoachSG_mt5_target_repair_v1",
+      "actual_remaining_bytes": 66454158,
+      "recursive_counter_bytes": 66454023
+    },
+    {
+      "name": "ReplyCoachSG_structured_fit_v1",
+      "actual_remaining_bytes": 49882150,
+      "recursive_counter_bytes": 49882043
+    },
+    {
+      "name": "ReplyCoachSG_structured_rl_v1",
+      "actual_remaining_bytes": 33299989,
+      "recursive_counter_bytes": 33299891
+    }
+  ],
+  "home_used_bytes": 80751588660,
+  "home_quota_bytes": 128849018880,
+  "home_free_bytes": 48097430220
+}

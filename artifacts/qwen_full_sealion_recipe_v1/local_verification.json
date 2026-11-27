@@ -1,0 +1,43 @@
+{
+  "verified_at_utc": "2026-11-16T16:37:25.895135+00:00",
+  "status": "passed",
+  "tests": {
+    "data_boundary_and_schedule": 3,
+    "actual_tiny_Qwen_exact_resume_and_frozen_base": 1
+  },
+  "task_data_hashes_unchanged": true,
+  "public_source_hashes_verified_remotely": true,
+  "public_training_rows": 117634,
+  "public_validation_rows": 400,
+  "public_max_native_tokens": 592,
+  "public_budget": 640,
+  "task_rewrite_budget": 384,
+  "payload_files_verified": 120,
+  "sbatch_syntax_checked": 4,
+  "hardware_preflight": "passed",
+  "hardware_checks": {
+    "status": "ready",
+    "checks": {
+      "qwen": {
+        "forward_backward_finite": true,
+        "strict_load": true,
+        "cached_logits_verified": true,
+        "trainable_parameters": 14966784,
+        "base_parameters": 3085938688,
+        "max_encoded_tokens": 162,
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb"
+      }
+    },
+    "torch": "2.14.1+cu130",
+    "public_data": {
+      "train_rows": 117634,
+      "validation_rows": 400,
+      "max_tokens": 592,
+      "no_truncation": true,
+      "source_hashes_verified": true,
+      "group_disjoint": true,
+      "longest_forward_backward_finite": true,
+      "peak_allocated_bytes": 7650549248
+    }
+  }
+}

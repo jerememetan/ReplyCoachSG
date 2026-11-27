@@ -1,0 +1,170 @@
+{
+  "beam4": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 3,
+      "revised_surface_check_passes": 14,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 1,
+      "revised_surface_check_passes": 9,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "guarded_model": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 10,
+      "revised_surface_check_passes": 22,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 3,
+      "revised_surface_check_passes": 10,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "copy_penalty": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 5,
+      "revised_surface_check_passes": 22,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 3,
+      "revised_surface_check_passes": 10,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "lexicon_guidance": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 8,
+      "revised_surface_check_passes": 22,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 3,
+      "revised_surface_check_passes": 10,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "combined": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 5,
+      "revised_surface_check_passes": 22,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 3,
+      "revised_surface_check_passes": 10,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "combined_guard_v2_copy1": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 3,
+      "revised_surface_check_passes": 22,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 2,
+      "revised_surface_check_passes": 10,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "control_25": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 1,
+      "revised_surface_check_passes": 11,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 0,
+      "revised_surface_check_passes": 8,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "control_50": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 2,
+      "revised_surface_check_passes": 14,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 0,
+      "revised_surface_check_passes": 7,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "control_100": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 2,
+      "revised_surface_check_passes": 12,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 0,
+      "revised_surface_check_passes": 8,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "copy_loss_25": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 1,
+      "revised_surface_check_passes": 10,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 0,
+      "revised_surface_check_passes": 8,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "copy_loss_50": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 1,
+      "revised_surface_check_passes": 11,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 0,
+      "revised_surface_check_passes": 7,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  },
+  "copy_loss_100": {
+    "reused_development": {
+      "cases": 22,
+      "exact_copies": 0,
+      "revised_surface_check_passes": 11,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    },
+    "assistant_authored_diagnostic": {
+      "cases": 10,
+      "exact_copies": 0,
+      "revised_surface_check_passes": 7,
+      "note": "Same small review subset. Surface checks are incomplete; these are not human quality scores."
+    }
+  }
+}

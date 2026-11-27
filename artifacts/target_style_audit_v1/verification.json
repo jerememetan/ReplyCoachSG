@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "reviewed_variants": 980,
+  "full_source_context_coverage": true,
+  "no_missing_or_duplicate_variant": true,
+  "exact_calibration_preferences": 5,
+  "proposed_SEA_rows": 790,
+  "original190_unchanged": true,
+  "only_synthetic_local_fields_differ_in_SEA_proposal": true,
+  "all_original_source_hashes_still_match": true,
+  "review_artifact_hashes_verified": true,
+  "scope": "Integrity and coverage, not an automatic semantic or naturalness test."
+}

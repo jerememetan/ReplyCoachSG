@@ -1,0 +1,2154 @@
+[
+  {
+    "item_id": "CREATIVE-challenge-unknown_call-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "Could we have a quick call after the exhibition?",
+      "I am occupied at the moment.",
+      "Okay, we can talk another time."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What did you want to talk about?",
+    "criterion": "User initiated the call. A newly proposed purpose or text-first action is allowed; do not reverse who called or invent an earlier agreement.",
+    "outputs": {
+      "original": {
+        "english": "Could we have a quick call after the exhibition?",
+        "singlish": "After the exhibition, can talk about it?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Just wanted to catch up a little. There is no rush.",
+        "singlish": "Just wanted to catch up a little. No rush lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I wanted to catch up a little before our planned call.",
+        "singlish": "I wanted to catch up a little before our planned call.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I wanted to catch up a little before our planned call.",
+        "singlish": "I wanted to catch up a little before our planned call.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-known_call-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "The only thing I wanted to call you about was our travel plans.",
+      "I can talk after 8 pm."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What did you want to discuss?",
+    "criterion": "Preserve the explicitly stated sole call purpose: our travel plans.",
+    "outputs": {
+      "original": {
+        "english": "We need to discuss our travel plans.",
+        "singlish": "We need to talk about our travel plans.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Our travel plans. Could we talk after 8 pm?",
+        "singlish": "Your travel plans what time ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I wanted to discuss our travel plans.",
+        "singlish": "I wanted to talk about our travel plans.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I wanted to discuss our travel plans.",
+        "singlish": "I wanted to talk about our travel plans.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-call_later-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I cannot talk before 8 pm.",
+      "I am heading to the exhibition."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you call me at 4 pm?",
+    "criterion": "User cannot call before 8 pm; proposed later actions are allowed.",
+    "outputs": {
+      "original": {
+        "english": "I cannot call you before 8 pm.",
+        "singlish": "I cannot call before eight tonight leh.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I cannot call that early. Could we talk after 8 pm?",
+        "singlish": "I cannot call before eight. After eight then call can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I cannot make 4 pm. Could we talk after 8 pm?",
+        "singlish": "I cannot call before eight. After eight then call can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I cannot make 4 pm. Could we talk after 8 pm?",
+        "singlish": "I cannot call before eight. After eight then call can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-open_invitation-6",
+    "scope": "prospective_creative_challenge",
+    "context": [],
+    "speakers": [],
+    "message": "Would you like to join us for the exhibition on Friday?",
+    "criterion": "No user preference or prior agreement is supplied. Acceptance, decline or asking details are all valid proposed drafts.",
+    "outputs": {
+      "original": {
+        "english": "I'd love to, but I'll be on a business trip on Friday.",
+        "singlish": "Paiseh, Friday I on business trip leh.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Sure, what time on Friday?",
+        "singlish": "Friday what time ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I'll pass this time, but thanks for inviting me.",
+        "singlish": "Friday cannot, but thanks for inviting me ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I'll pass this time, but thanks for inviting me.",
+        "singlish": "Friday cannot, but thanks for inviting me ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-busy_invitation-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I have a shift on Sunday; I cannot attend anything that day. I am free on Friday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you join the exhibition on Sunday?",
+    "criterion": "Do not accept an event on explicitly unavailable Sunday.",
+    "outputs": {
+      "original": {
+        "english": "I cannot make it on Sunday, but I am free on Friday.",
+        "singlish": "Sunday I cannot make it leh. Friday can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I cannot make Sunday. Could we do Friday?",
+        "singlish": "Sunday cannot, Friday can anot?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I will be on shift on Sunday. Could we do Friday?",
+        "singlish": "Sunday I on shift leh. Friday can anot?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I cannot attend on Sunday. Could we do Friday?",
+        "singlish": "Sunday cannot, Friday can anot?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-free_invitation-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I am free on Friday. I have a shift on Sunday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Would Friday work for the exhibition?",
+    "criterion": "Friday is free; Sunday is busy. Preserve which day has the shift.",
+    "outputs": {
+      "original": {
+        "english": "Yes, Friday works for me.",
+        "singlish": "Can, Friday works for me.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes, Friday works. What time?",
+        "singlish": "Friday can, what time ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Friday is fine. Where are you planning to meet?",
+        "singlish": "Friday can. Meet where ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Friday is fine. What time on Friday?",
+        "singlish": "Friday can, what time ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-lend_request-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I left my picnic mat at home.",
+      "I have my picnic mat with me."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Could you lend me yours until tomorrow?",
+    "criterion": "Friend requests User-owned picnic mat; User is the lender, Friend the borrower.",
+    "outputs": {
+      "original": {
+        "english": "Sure, I'll lend you mine until tomorrow.",
+        "singlish": "Can, tomorrow I lend you mine.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Sure, I can lend you my picnic mat.",
+        "singlish": "Can, tomorrow I lend you mine.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Could you pick up my picnic mat at the station exit?",
+        "singlish": "Can, I go collect your mat at the exit.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Could you pick up my picnic mat at the station exit?",
+        "singlish": "Can, I go collect your mat at the exit.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-borrow_offer-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I left my picnic mat at home.",
+      "I have a spare picnic mat."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would you like to borrow mine?",
+    "criterion": "Friend offers their spare; User may borrow, decline or arrange collection, not become lender.",
+    "outputs": {
+      "original": {
+        "english": "Yes please, could I borrow your picnic mat?",
+        "singlish": "Yes please, lend me your picnic mat can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes please, could I borrow your picnic mat?",
+        "singlish": "Yes please, lend me your picnic mat can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Thanks, but I can manage without it today.",
+        "singlish": "Thanks ah, borrow can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Yes please, could I borrow your picnic mat?",
+        "singlish": "Yes please, lend me your picnic mat can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-return_item-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I still have the picnic mat you lent me.",
+      "I would like it back tomorrow."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "How should we arrange the return?",
+    "criterion": "User borrowed Friend item and should return it; collection/drop-off suggestions are open.",
+    "outputs": {
+      "original": {
+        "english": "I can drop it off at your place tomorrow.",
+        "singlish": "Can, tomorrow I drop it at your place.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I can bring your picnic mat to the café counter tomorrow.",
+        "singlish": "Can, tomorrow I bring your mat to the café counter.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "What time tomorrow would suit you?",
+        "singlish": "Tomorrow what time ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "What time tomorrow would suit you?",
+        "singlish": "Tomorrow what time ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-budget-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "My spending limit is $18.",
+      "The snack costs $13, and the meal costs $31."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which one would you like?",
+    "criterion": "Do not assert 31<=18; choosing the snack, declining or suggesting cheaper options are valid.",
+    "outputs": {
+      "original": {
+        "english": "Let's go for the snack then.",
+        "singlish": "Go for the snack lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I will take the $13 snack; it is within my budget.",
+        "singlish": "I take the snack lah, it is within my budget.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "The $31 meal is over my budget. Could we find somewhere cheaper?",
+        "singlish": "The $31 meal is over my budget. Could we find somewhere cheaper?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I will skip buying anything this time.",
+        "singlish": "Next time then buy lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-location-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I am at the bookshop.",
+      "I am at the library entrance."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Where are you now?",
+    "criterion": "Current User location is the bookshop, not Friend location the library entrance; future movement may be proposed.",
+    "outputs": {
+      "original": {
+        "english": "I am at the bookshop entrance.",
+        "singlish": "I am at the bookshop entrance.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I am at the bookshop.",
+        "singlish": "I am at the bookshop.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I am still at the bookshop. I can come over to you.",
+        "singlish": "I still at the bookshop. You come over can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I am still at the bookshop. Shall I wait here?",
+        "singlish": "Still at the bookshop. You wait here first?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-completed-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I have finished the notes for the exhibition and uploaded them.",
+      "Let me check the folder."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Are your notes done?",
+    "criterion": "Notes are explicitly finished/uploaded; do not reverse completion.",
+    "outputs": {
+      "original": {
+        "english": "I have finished the notes for the exhibition and uploaded them.",
+        "singlish": "I have finished the notes for the exhibition and uploaded them.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes, they are finished and uploaded.",
+        "singlish": "Ya, the notes are done and uploaded.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Yes, they are finished and uploaded.",
+        "singlish": "Ya, the notes are done and uploaded.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "They are finished. Could you check whether you can access them?",
+        "singlish": "Ya, my notes are in the folder.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-unfinished-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I am still writing the notes for the exhibition; they are not finished."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "Can you send the finished notes now?",
+    "criterion": "Unfinished notes cannot be claimed finished/sent; offering a draft or future action is allowed.",
+    "outputs": {
+      "original": {
+        "english": "I am still working on the notes for the exhibition. I will send them once they are finished.",
+        "singlish": "I still working on the notes for the exhibition. Once done, I send you ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "They are not finished yet. I can send them when they are ready.",
+        "singlish": "Not finished leh, I send them when they are ready.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I am still working on them. Would a draft help first?",
+        "singlish": "Paiseh, I still working on the notes. Can send a draft first?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I am still working on them. Would a draft help first?",
+        "singlish": "Paiseh, I still working on the notes. Can send a draft first?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-unseen_text-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I am writing an introduction for the exhibition."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "Can you tell me whether the paragraph is too long?",
+    "criterion": "No paragraph is supplied. Offer a useful next action, not a claim to have assessed unseen content.",
+    "outputs": {
+      "original": {
+        "english": "I am not sure whether the paragraph is too long.",
+        "singlish": "Not sure the paragraph long enough anot. Check the word count first.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Send me the paragraph and I will take a look.",
+        "singlish": "Send me the paragraph first, I check if too long anot.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Could you send it along with the word limit?",
+        "singlish": "Send me the paragraph first, then I check the word limit.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Could you send it along with the word limit?",
+        "singlish": "Send me the paragraph first, then I check the word limit.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-vague_help-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I am working on the exercises before the exhibition."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "I am stuck on one question. Can you help?",
+    "criterion": "Question is absent; propose help or ask useful details rather than inventing its answer.",
+    "outputs": {
+      "original": {
+        "english": "Let me check the question and get back to you.",
+        "singlish": "I check the question first, then reply you ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Send me the question and I will try to help.",
+        "singlish": "Send me the question ah, I try help.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Which step are you stuck on?",
+        "singlish": "Which step you stuck at?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Which step are you stuck on?",
+        "singlish": "Which step you stuck at?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-overwhelmed-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I have to prepare for the exhibition and I am feeling overwhelmed."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "I do not know where to start.",
+    "criterion": "Respond supportively; no fabricated prior completion claim.",
+    "outputs": {
+      "original": {
+        "english": "Could you take a look at the exhibition materials first?",
+        "singlish": "Can check the exhibition materials first?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Want to break it into smaller steps together?",
+        "singlish": "Start with what you need to do first lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Would a short break help before you start?",
+        "singlish": "Before you start, take a short break first lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Want to break it into smaller steps together?",
+        "singlish": "Start with what you need to do first lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-postponed-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "We are meeting for the exhibition.",
+      "Okay, see you there."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "The start has been pushed back by half an hour.",
+    "criterion": "A delay is later, not earlier; original clock time is unspecified.",
+    "outputs": {
+      "original": {
+        "english": "That's fine. I'll meet you half an hour later.",
+        "singlish": "Okay, I meet you half an hour later.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Thanks for letting me know. I will adjust my plans.",
+        "singlish": "Okay, I adjust my plans accordingly.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "No worries. Shall we grab a drink while we wait?",
+        "singlish": "No worries, I wait for you there.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Thanks for letting me know. I will adjust my plans.",
+        "singlish": "Okay, I adjust my plans accordingly.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-thanks-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I was having trouble preparing for the exhibition.",
+      "I can help with the checklist."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Thanks for helping me today!",
+    "criterion": "Acknowledge thanks or offer more help; no invented payment agreement.",
+    "outputs": {
+      "original": {
+        "english": "No problem, let me know if you need anything else.",
+        "singlish": "No problem, help with the checklist first ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "You are welcome!",
+        "singlish": "No problem, happy to help.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Happy to help. Hope it goes smoothly!",
+        "singlish": "No problem, happy to help.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Happy to help. Hope it goes smoothly!",
+        "singlish": "No problem, happy to help.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-open_preference-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "We can get a drink after the exhibition.",
+      "I do not want matcha today."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "What would you like to drink instead?",
+    "criterion": "User rejected matcha; other newly proposed preferences are valid.",
+    "outputs": {
+      "original": {
+        "english": "Water would be fine.",
+        "singlish": "Water can.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "How about a coffee?",
+        "singlish": "Coffee instead can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I think I will get water.",
+        "singlish": "Water instead can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I think I will get water.",
+        "singlish": "Water instead can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CREATIVE-challenge-earliest_time-6",
+    "scope": "prospective_creative_challenge",
+    "context": [
+      "I can only leave the exhibition after 8 pm.",
+      "I can wait at the bookshop."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can we meet at 4 pm?",
+    "criterion": "Earliest departure is after 8 pm; do not accept earlier 4 pm.",
+    "outputs": {
+      "original": {
+        "english": "I can only leave the exhibition after 8 pm. Could we meet at 4 pm instead?",
+        "singlish": "Can, four at the bookshop instead.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I cannot make 4 pm. Could we meet after 8 pm?",
+        "singlish": "After eight cannot leh. Meet after eight can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I can only leave after 8 pm. Would tomorrow be easier?",
+        "singlish": "Tomorrow cannot leh. Eight already.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I can only leave after 8 pm. Would tomorrow be easier?",
+        "singlish": "Tomorrow cannot leh. Eight already.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-01",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I cannot do Monday; Wednesday is my free day.",
+      "Let me check the group schedule."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we rehearse on Monday at six?",
+    "criterion": "Do not accept unavailable Monday; Wednesday may be proposed.",
+    "outputs": {
+      "original": {
+        "english": "That works for me. Let's rehearse on Monday at six.",
+        "singlish": "Six can, Monday rehearse then.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "That works for me. See you on Monday at six.",
+        "singlish": "Can, Monday at six.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Six on Monday is fine with me.",
+        "singlish": "Six on Monday can.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Six on Monday is fine. Where shall we rehearse?",
+        "singlish": "Six on Monday can. Rehearsal where ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-02",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "Wednesday is packed for me, but Monday is free.",
+      "Let me check the group schedule."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall we rehearse on Monday at six?",
+    "criterion": "Monday is available; do not claim it is the busy day.",
+    "outputs": {
+      "original": {
+        "english": "That works for me. Let's meet at six on Monday.",
+        "singlish": "Six can, Monday that time meet lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes, six on Monday works for me.",
+        "singlish": "Six on Monday can.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "That works for me. Let's book Monday at six.",
+        "singlish": "Can, Monday at six rehearse.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Six on Monday works for me.",
+        "singlish": "Six on Monday can.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-03",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "My laptop charger has stopped working.",
+      "Mine is in my bag."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Could I borrow yours until tomorrow?",
+    "criterion": "Friend asks to borrow User charger; reply must preserve lending direction.",
+    "outputs": {
+      "original": {
+        "english": "Sure, you can borrow mine until tomorrow evening.",
+        "singlish": "Can, tomorrow evening I return your charger.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Sure, go ahead and use my charger.",
+        "singlish": "Can, go ahead and use my charger.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Sure, go ahead and use my charger until tomorrow.",
+        "singlish": "Can, go ahead and use my charger until tomorrow ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Could you return my charger by tomorrow evening?",
+        "singlish": "Tomorrow evening return to me ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-04",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "My laptop charger has stopped working.",
+      "Mine is in my bag."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to borrow it until tomorrow?",
+    "criterion": "Friend offers their charger; User would be borrowing, not lending.",
+    "outputs": {
+      "original": {
+        "english": "Yes please, could I borrow your charger until tomorrow?",
+        "singlish": "Can, borrow until tomorrow then return me ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes please, could I borrow your charger until tomorrow?",
+        "singlish": "Can, borrow until tomorrow then return me ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Yes please, could I borrow your charger until tomorrow?",
+        "singlish": "Can, borrow until tomorrow then return me ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Thanks, but tomorrow is too soon for me.",
+        "singlish": "Tomorrow too soon for me leh.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-05",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I have eight dollars left for lunch.",
+      "The vegetarian bowl here costs sixteen dollars."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to get that bowl together?",
+    "criterion": "Do not claim sixteen-dollar bowl fits eight-dollar budget.",
+    "outputs": {
+      "original": {
+        "english": "Let's get the bowl together. I only have sixteen dollars.",
+        "singlish": "Can, let's get the bowl together. I only got sixteen bucks.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "That is too expensive. Could we get something cheaper?",
+        "singlish": "Too expensive lah, get something cheaper instead can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "That is too expensive. Could we find somewhere cheaper?",
+        "singlish": "That one too expensive for us. Find another cheaper option can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "That is too expensive for me. Could we find somewhere cheaper?",
+        "singlish": "That one too expensive for me. Find another cheaper option can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-06",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I have twenty dollars left for lunch.",
+      "The vegetarian bowl here costs sixteen dollars."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to get that bowl together?",
+    "criterion": "Sixteen-dollar bowl is within twenty-dollar budget; preferences remain open.",
+    "outputs": {
+      "original": {
+        "english": "Yes, let's get that bowl together.",
+        "singlish": "Yes, let's get that bowl together.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes, let's get the vegetarian bowl together.",
+        "singlish": "Yes, let's get the vegetarian bowl together.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "That is too expensive. Could we find a cheaper option?",
+        "singlish": "That one too expensive lah. Find another cheaper option can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "That is too expensive for me. Could we find somewhere cheaper?",
+        "singlish": "That one too expensive for me leh. Find another cheaper option can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-07",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I emailed you the completed slides this morning.",
+      "I cannot find them in my inbox."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send the slides again now?",
+    "criterion": "A resend or checking address is appropriate; do not claim slides were never completed.",
+    "outputs": {
+      "original": {
+        "english": "Yes, I'll send them again now.",
+        "singlish": "Yes, I'll send them again now.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I just sent them this morning. I'll send them again now.",
+        "singlish": "I just sent them this morning. I send them again now.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I'll send them this time.",
+        "singlish": "I send them again now.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I'll send them again now.",
+        "singlish": "I send them again now.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-08",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I have not finished making the slides yet.",
+      "The presentation is tomorrow morning."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could you send the completed slides now?",
+    "criterion": "Do not falsely claim completed slides are ready or already sent.",
+    "outputs": {
+      "original": {
+        "english": "I have not finished making the slides yet.",
+        "singlish": "I haven’t finish making the slides leh.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I have not finished making the slides yet.",
+        "singlish": "I haven’t finish making the slides leh.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I am still working on them. Would a draft help first?",
+        "singlish": "Paiseh, I still working on the slides. Can send a draft first?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I am still working on them. Would a draft help first?",
+        "singlish": "Paiseh, I still working on the slides. Can send a draft first?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-09",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I wanted to talk about fixing the brake cable on my bicycle.",
+      "I am in a tutorial right now.",
+      "No rush, we can talk after class."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What was the call going to be about?",
+    "criterion": "Purpose is bicycle brake cable repair; preserve that topic.",
+    "outputs": {
+      "original": {
+        "english": "Fixing the brake cable on my bicycle.",
+        "singlish": "About fixing the brake cable on my bicycle.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "It was going to be about fixing my bicycle's brake cable.",
+        "singlish": "It was going to be about fixing my bicycle’s brake cable.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I wanted to talk about fixing the brake cable on my bicycle.",
+        "singlish": "I wanted to talk about fixing the brake cable on my bicycle.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I wanted to talk about fixing the brake cable on my bicycle.",
+        "singlish": "I wanted to talk about fixing the brake cable on my bicycle.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-10",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "Do you have a moment for a call?",
+      "I am in a tutorial right now.",
+      "No rush, we can talk after class."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What was the call going to be about?",
+    "criterion": "User initiated the call. A newly proposed purpose or text-first action is allowed. Preserve speaker direction and do not invent a prior shared agreement.",
+    "outputs": {
+      "original": {
+        "english": "It was going to be about your research proposal.",
+        "singlish": "It was about your research proposal.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Just wanted to catch up a little. There is no rush.",
+        "singlish": "No rush lah, we catch up after class.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I wanted to catch up about something. I can explain over text first.",
+        "singlish": "I wanted to catch up about something. Text first can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I wanted to catch up about something. I can explain over text first.",
+        "singlish": "I wanted to catch up about something. Text first can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-11",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I can only leave the lab after four.",
+      "The cafe closes at six."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could we meet at half past three?",
+    "criterion": "Do not accept 15:30 given earliest availability after16:00.",
+    "outputs": {
+      "original": {
+        "english": "That works for me. Let's meet at three thirty.",
+        "singlish": "Can, three thirty then.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I cannot make that time. Could we meet after four?",
+        "singlish": "I cannot make that time leh. Meet after four can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I can only leave the lab after four. Would tomorrow be easier?",
+        "singlish": "Tomorrow cannot leh. Afternoon can anot?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "That is too early for me. Could we meet after four?",
+        "singlish": "Too early for me leh. Meet after four can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "COCKTAIL-NATURAL-12",
+    "scope": "reused_mt5_natural_diagnostic",
+    "context": [
+      "I can leave the lab after three.",
+      "The cafe closes at six."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Could we meet at half past three?",
+    "criterion": "15:30 is compatible with after15:00; do not claim it is too early.",
+    "outputs": {
+      "original": {
+        "english": "That works for me. Let's meet at three thirty.",
+        "singlish": "Can, three thirty then meet.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I can't make that time. Could we meet after three?",
+        "singlish": "I cannot make that time leh. Meet after three can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "That is too early for me. Could we meet after three?",
+        "singlish": "Too early for me leh. Meet after three can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "That is too early for me. Could we meet after three?",
+        "singlish": "Too early for me leh. Meet after three can?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "USER-CALL-001",
+    "scope": "reused_user_diagnostic",
+    "context": [
+      "Can u call me now?",
+      "Eh i not so free eh?",
+      "Ohh, then when can we call?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "criterion": "Propose a useful next reply; preserve stated purpose if present, caller direction and Friend unavailability.",
+    "outputs": {
+      "original": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Could you call me about something?",
+        "singlish": "Can call me about what ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Could you call me about something?",
+        "singlish": "Can call me about what ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Could you call me about something?",
+        "singlish": "Can call me about what ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "CALL-WITH-PURPOSE",
+    "scope": "reused_user_diagnostic",
+    "context": [
+      "I wanted to ask you about our assignment deadline. Can you call me now?",
+      "I am not free right now.",
+      "Okay, we can speak later."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What did you want to call me about?",
+    "criterion": "Propose a useful next reply; preserve stated purpose if present, caller direction and Friend unavailability.",
+    "outputs": {
+      "original": {
+        "english": "I wanted to ask you about our assignment deadline.",
+        "singlish": "I wanted to ask you about our assignment deadline.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I wanted to ask you about our assignment deadline.",
+        "singlish": "I wanted to ask you about our assignment deadline.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I wanted to ask you about our assignment deadline. Could you call me now?",
+        "singlish": "I wanted to ask you about our assignment deadline. Could you call me now ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I wanted to ask you about our assignment deadline.",
+        "singlish": "I wanted to ask you about our assignment deadline.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "scope": "reused_old_validation",
+    "context": [
+      "I'm going library now",
+      "I'll come over after class"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "still got space?",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "Yes, there is still space.",
+        "singlish": "Still got space, I come over after class.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes, there is still space.",
+        "singlish": "Still got space, I come over after class.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Yes, there is still space.",
+        "singlish": "Still got space, I come over after class.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Yes, there is still space.",
+        "singlish": "Still got space, I come over after class.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "scope": "reused_old_validation",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "Sure, I'd love to join you for that.",
+        "singlish": "Can, I'll go with you for that.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Sure, let me know when you are free!",
+        "singlish": "Can, thanks ah",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Thanks, but I'm not sure what you mean by 'jio'. Could you explain?",
+        "singlish": "Thanks ah, but I not sure what you mean by 'jio'.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Thanks for asking, but I'll pass this time.",
+        "singlish": "Thanks ah, next time bah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "scope": "reused_old_validation",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "Nope, I haven't done it yet.",
+        "singlish": "haven’t finish leh, I check the answers first",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Nope, I haven't started it yet.",
+        "singlish": "haven’t finish leh, I only started",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Nope, I haven't started it yet.",
+        "singlish": "haven’t finish leh, I only started",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Nope, I haven't started it yet.",
+        "singlish": "haven’t finish leh, I only started",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "scope": "reused_old_validation",
+    "context": [
+      "later I need to lend your charger to charge my phone",
+      "ok can but I can only give you after 3"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hey can confirm i can use your charger after 3? thanks ah",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "Sure, I will use it after 3.",
+        "singlish": "Sure, after three then use can.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes, I can only use it after 3.",
+        "singlish": "Can, after three only ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Sorry, I can only use it after 3.",
+        "singlish": "Paiseh, after three then use can anot?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Sorry, I can only use it after 3.",
+        "singlish": "Paiseh, after three then use can anot?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "scope": "reused_old_validation",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+        "singlish": "I check the timetable first, then let you know.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Let me check the timetable and get back to you.",
+        "singlish": "I check the timetable first, then reply you ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Let me check the timetable. I'll get back to you.",
+        "singlish": "I check the timetable first, then tell you ah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I'm not sure which room our class is in. Let's check the timetable.",
+        "singlish": "Not sure which room leh. I check the timetable first.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh u ok? why u never join us for bb session yesterday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "woah sorry, i came up with a flu.",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "no worries, take care",
+        "singlish": "aw, no worries, get well soon!",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "No worries. Take care of yourself.",
+        "singlish": "no worries, get well soon!",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "No worries, take care of yourself.",
+        "singlish": "no worries, get well soon!",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "no worries. take care!",
+        "singlish": "no worries, take care!",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "scope": "reused_old_validation",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "No worries, I'll find another time.",
+        "singlish": "No worries, I'll find another time.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "No worries, I'll find another time.",
+        "singlish": "No worries, I'll find another time.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "No worries. I'll look for another time.",
+        "singlish": "No worries, I'll find another time then.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "No worries. I'll look for another time.",
+        "singlish": "No worries, I'll find another time then.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "scope": "reused_old_validation",
+    "context": [
+      "tomorrow what you want to eat",
+      "lets eat at Chinatown tomorrow"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "onz, tmr meet na li",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "okay, see you tomorrow",
+        "singlish": "okies, c u later",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Sure, see you tomorrow.",
+        "singlish": "onz, tmr cfm",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Okay, see you tomorrow then.",
+        "singlish": "okies, c u later",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Okay, see you tomorrow then.",
+        "singlish": "okies, c u later",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "scope": "reused_old_validation",
+    "context": [
+      "hello",
+      "hi",
+      "i am already at the bus stop"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "wya",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "okay, I'll meet you at the bus stop",
+        "singlish": "steady, I meet you at the bus stop",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I'll catch you there when I get off my bus",
+        "singlish": "steady, i will catch you when i get off my bus",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "what are you waiting for?",
+        "singlish": "steady, i come over",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "what are you waiting for?",
+        "singlish": "steady, i come over",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "scope": "reused_old_validation",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "Okay, I'll go to SR3-2 instead.",
+        "singlish": "Okay, I go SR3-2 instead.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Okay, I understand.",
+        "singlish": "Okay, I understand.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Okay, I understand.",
+        "singlish": "Okay, I understand.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Okay, I understand.",
+        "singlish": "Okay, I understand.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "scope": "reused_old_validation",
+    "context": [
+      "i heard you going to cafe later to study",
+      "ya you want come? dont say i never jio"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can ah, later i join you",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "ok, see you later",
+        "singlish": "ok, c u later",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Sure, see you later!",
+        "singlish": "steady, c u later",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Sure, I will join you later.",
+        "singlish": "steady, c u later",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Sure, I will join you later.",
+        "singlish": "steady, c u later",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "scope": "reused_old_validation",
+    "context": [
+      "im heading to the court now",
+      "okay, i'll leave soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "court still occupied leh, need wait a bit",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "okay, i'll wait a bit longer",
+        "singlish": "okay, i wait a bit longer",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "thanks for letting me know. i'll wait a little longer",
+        "singlish": "okay, i wait a bit longer",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "okay, i'll wait a bit longer",
+        "singlish": "okay, i wait a bit longer",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "okay, i'll wait a bit longer",
+        "singlish": "okay, i wait a bit longer",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "scope": "reused_old_validation",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "No worries, let me know when you reach",
+        "singlish": "No worries, take your time",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "No worries, take the next one then.",
+        "singlish": "No worries, take the next one then.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "No worries. Just let me know next time.",
+        "singlish": "No worries, next time next time.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "No worries, take the next one then.",
+        "singlish": "No worries, take the next one then.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "Oh no, I can't go now. Could someone else go in my place?",
+        "singlish": "aiyo, aiyo",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Oh no, did they offer any other tickets?",
+        "singlish": "oh no, got any other tickets?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Oh no, how were you able to get a ticket?",
+        "singlish": "aiyo, aiyo",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "oh no, how were you planning to find a ticket anyway?",
+        "singlish": "aiyo, aiyo",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "scope": "reused_old_validation",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "Yes, I will be there at 8am.",
+        "singlish": "ya, i gg at 8am",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Yes, I will be there soon.",
+        "singlish": "ya, I reaching already",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "yes, i'll be there soon",
+        "singlish": "steady, i reaching already",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "yes, i'll be there soon",
+        "singlish": "steady, i reaching already",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "scope": "reused_old_validation",
+    "context": [
+      "I might not make it to the morning class",
+      "I can send you an update afterwards"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can tell me what I miss?",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+        "singlish": "You can tell me what you miss in the morning. I'll send you an update after class.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "Please let me know what topics you would have missed.",
+        "singlish": "I check the slides first, then let you know what you missed.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "Sure, I'll send you an update afterwards.",
+        "singlish": "Sure, I'll send you an update after class.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "Could you send me updates of what you miss?",
+        "singlish": "Can send me updates of what you miss?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "scope": "reused_old_validation",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "ok, then we eat at 6pm instead",
+        "singlish": "ok, then we eat at 6pm instead",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "oh well, next time then",
+        "singlish": "aw, next time bah",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "oh well, next time then",
+        "singlish": "aw, next time bah",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "oh well, next time then",
+        "singlish": "aw, next time bah",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "scope": "reused_old_validation",
+    "context": [
+      "i'll upload my section before dinner",
+      "okay, then i can merge everything tonight"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh dont forget your slide ah, we need merge later",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "yes, i'll make sure to include the slide",
+        "singlish": "ya, i'll include the slide also",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "yes, i'll add it now",
+        "singlish": "okok, i add it now",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "yes, i'll add it now",
+        "singlish": "okok, i add it now",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "yes, i'll add it now",
+        "singlish": "okok, i add it now",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "scope": "reused_old_validation",
+    "context": [
+      "Hey should we grab lunch?",
+      "sure! Lets head to Koufu"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh the chicken rice stall open today anot?",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "I'm not sure, let's check before we go.",
+        "singlish": "not sure yet leh, check before we go first",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "I'm not sure whether the stall is open today. Let's check before going.",
+        "singlish": "Not sure if the stall open today anot. Check before going first lah.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "I'm not sure. Let's check before going.",
+        "singlish": "not sure yet leh, check before going first",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "I'm not sure. Let's check before going.",
+        "singlish": "not sure yet leh, check before going first",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "scope": "reused_old_validation",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "criterion": null,
+    "outputs": {
+      "original": {
+        "english": "no worries. i'll wait a bit longer",
+        "singlish": "it's okay lah, i wait abit",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "single_reference": {
+        "english": "no worries, i'll wait for you to finish",
+        "singlish": "no worries, i'll wait for you to finish",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_references": {
+        "english": "no worries, take your time",
+        "singlish": "no worries, take your time",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "multiple_plus_contrast": {
+        "english": "no worries. i'll wait a bit longer",
+        "singlish": "it's okay lah, i wait abit",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  }
+]

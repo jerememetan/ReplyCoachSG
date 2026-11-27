@@ -1,0 +1,376 @@
+[
+  {
+    "item_id": "AUDIT-EVAL-01",
+    "context": [
+      "I am sneezing badly, staying home today.",
+      "aiyo"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you guys go arcade first, send me clips later",
+    "standard": "Sure, I will send you clips later.",
+    "local": "okok, will do",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-02",
+    "context": [
+      "I left the snacks at your door."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "saw them already?",
+    "standard": "Yes, I saw them. Thank you!",
+    "local": "saw already, thanks!",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-03",
+    "context": [
+      "Want to go for a walk by the reservoir?",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh tmr 5:15 still can right?",
+    "standard": "Yes, five fifteen still works.",
+    "local": "yep",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-04",
+    "context": [
+      "I finished sorting the playlist for our drive."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "settled the playlist?",
+    "standard": "Yes, it is ready.",
+    "local": "settled liao",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-05",
+    "context": [
+      "I can bring my speakers for the picnic."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "ok rmb charge them first ya",
+    "standard": "Okay, I will charge them first.",
+    "local": "okok, will do",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-06",
+    "context": [
+      "I cannot make it for supper, need sleep early."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "ps ah next time jio again",
+    "standard": "No worries, I will invite you next time.",
+    "local": "no worries, next time jio",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-07",
+    "context": [
+      "The old power socket is spoilt.",
+      "I found a working one near the window."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can share that socket with me?",
+    "standard": "Sure, you can share it with me.",
+    "local": "can ah",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-08",
+    "context": [
+      "I left my headphones at home.",
+      "I have a spare pair."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "want use mine for the recording?",
+    "standard": "Yes please, could I use your spare pair?",
+    "local": "yes pls, thanks",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-09",
+    "context": [
+      "The backpack you lent me is in my room."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "rmb pass me my bag after dinner",
+    "standard": "Okay, I will return your bag after dinner.",
+    "local": "okok, dinner finish pass you",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-10",
+    "context": [
+      "I am outside the florist.",
+      "I am at the taxi stand."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "where you at now?",
+    "standard": "I am outside the florist.",
+    "local": "outside florist",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-11",
+    "context": [
+      "I have to leave by 8:10pm."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "movie starts 8, two hours, steady?",
+    "standard": "I cannot stay for that movie. I need to leave by eight ten.",
+    "local": "cannot eh, 8:10 need leave",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-12",
+    "context": [
+      "I only have nine dollars for food.",
+      "The noodles are fourteen dollars."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "get those noodles tgt?",
+    "standard": "That is over my budget. Could we get something cheaper?",
+    "local": "over budget, cheaper one can?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-13",
+    "context": [
+      "I have finished the diagram but not the explanation."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "whole thing done?",
+    "standard": "Not yet, I still need to write the explanation.",
+    "local": "not yet, explanation haven’t done",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-14",
+    "context": [
+      "The coffee shop closes at nine.",
+      "I can only arrive at nine fifteen."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "meet there when you reach?",
+    "standard": "It will be closed when I arrive. Could we meet somewhere else?",
+    "local": "by then close already, somewhere else can?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-15",
+    "context": [
+      "Hi prof, could I check when consultations start?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "I will put the booking slots up on Wednesday.",
+    "standard": "Thank you professor, I will check on Wednesday.",
+    "local": "thanks prof, Wed i check",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-16",
+    "context": [
+      "I saved your scarf, it is on my chair."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "is my scarf still with you?",
+    "standard": "Yes, it is on my chair.",
+    "local": "ya, on my chair",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-17",
+    "context": [
+      "Can you help me get a drink?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "either lemon tea or plain water",
+    "standard": "Which one would you prefer?",
+    "local": "which one you want?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-18",
+    "context": [
+      "I know the charger you left is yours."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "send me a photo to confirm?",
+    "standard": "Sure, I will send you a photo.",
+    "local": "okok, i send",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-19",
+    "context": [
+      "The tutorial got shifted to lab L8."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "still going to L3?",
+    "standard": "No, I will go to L8 instead.",
+    "local": "no, L8 now",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-20",
+    "context": [
+      "I may have left my transit card at the bakery."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "found it already?",
+    "standard": "Not yet, I will check the bakery.",
+    "local": "not yet, i check bakery",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-21",
+    "context": [
+      "That practice presentation went so badly."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "damn demoralised now",
+    "standard": "Do you want to take a break and go through it together later?",
+    "local": "take a break first? later go through tgt",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-22",
+    "context": [
+      "Are you free to help me move the chairs?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "only need help for 10 min",
+    "standard": "Sure, when do you need me?",
+    "local": "can, when ah?",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-23",
+    "context": [
+      "The parcel in the blue box belongs to you."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "blue or brown box should i bring?",
+    "standard": "Please bring the blue box.",
+    "local": "blue one pls",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  },
+  {
+    "item_id": "AUDIT-EVAL-24",
+    "context": [
+      "I have not checked whether the studio is open."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "open on public holiday?",
+    "standard": "I am not sure. I will check their announcement.",
+    "local": "dunno, i check announcement",
+    "reference_provenance": "Assistant-authored following five user style preferences, not individually human-approved.",
+    "scope": "reused_assistant_evaluation",
+    "previous_scope": "fresh_assistant_evaluation"
+  }
+]

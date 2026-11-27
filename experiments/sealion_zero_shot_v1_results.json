@@ -1,0 +1,25 @@
+{
+  "experiment": "sealion_zero_shot_v1",
+  "job_id": 357960,
+  "job_state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:00:36",
+  "gpu": "NVIDIA L40S",
+  "inference_only": true,
+  "training_performed": false,
+  "original_base_sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107",
+  "cases": 5,
+  "conditions": [
+    "base_matched_prompt",
+    "base_explicit_instruction",
+    "repair25"
+  ],
+  "flags": [],
+  "repair25_replay_differences": 0,
+  "model_parameters_unchanged": true,
+  "results_sha256": "1655213abc04aea8a5c75538c5bcc536acb4ffab18d79d7ff3d1dd6abe0af0e9",
+  "scope": "Five previously inspected development cases. Prompt variants are diagnostics; no human accuracy score or final-model change.",
+  "followup": "Second inference-only run uses shared stopping rules that recognize Friend/Other style tags, avoiding a formatting confound. First run preserved as historical evidence.",
+  "remote_root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_sealion_zero_shot_v1_20261108",
+  "base_identity": "aisingapore/SEA-LION-v1-3B,3178255360base +2x10485760adapter parameters"
+}

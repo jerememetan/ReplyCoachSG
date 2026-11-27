@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "payload_files_verified": 132,
+  "training_conversations": 768,
+  "rewrite_pairs": 766,
+  "dev_conversations": 20,
+  "evaluation_conversations": 75,
+  "boundary_schedule_tests": 12,
+  "split_checks": true,
+  "sbatch_syntax_checks": 4,
+  "py_compile": true,
+  "task_updates": 1536,
+  "task_warmup_updates": 77,
+  "rewrite_updates": 768,
+  "rewrite_warmup_updates": 39,
+  "epochs_per_stage": 8,
+  "early_stopping": false,
+  "source_datasets_unchanged": true
+}

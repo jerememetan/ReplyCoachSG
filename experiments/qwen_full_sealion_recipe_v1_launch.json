@@ -1,0 +1,32 @@
+{
+  "status": "complete_reviewed_exploratory",
+  "at_utc": "2026-11-16T16:35:24.959113+00:00",
+  "root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_qwen_full_sealion_recipe_v1",
+  "payload_sha256": "4de6ba75bbc7fba5b02284afee518473319b25184eec1c89fcb50d01bee4e28d",
+  "jobs": {
+    "preflight": 367275,
+    "public": 367276,
+    "pipeline": 367277,
+    "summary": 367278
+  },
+  "default_changed": false,
+  "preserved_completed_comparison": "decoder_compare_v1",
+  "amendment": "One592token public example requires640token public limit; all source bytes retained; task/rewrite remain384.",
+  "initial_failed_preflight": 367271,
+  "initial_pending_jobs_cancelled": [
+    367272,
+    367273,
+    367274
+  ],
+  "latest_observation": {
+    "observed_at_utc": "2026-11-17T07:10:14.513028+00:00",
+    "all_jobs": "COMPLETED exit0",
+    "selected_task_epoch": 2,
+    "selected_rewrite_epoch": 2,
+    "pipeline_cases_per_policy": 75,
+    "fixed_reference_cases_per_policy": 24,
+    "local_evidence_files_verified": 229,
+    "quality_scored": false,
+    "default_changed": false
+  }
+}

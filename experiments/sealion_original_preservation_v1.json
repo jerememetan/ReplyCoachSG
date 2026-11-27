@@ -1,0 +1,37 @@
+{
+  "status": "verified_full_backup",
+  "verified_at_utc": "2026-11-08T10:02:56.290724+00:00",
+  "source_archive": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/model_handoff_v1/replycoach_sealion_repair25_v1.tar",
+  "backup_archive": "/home/spikeypear/ModelBackups/ReplyCoachSG/SEA-LION_original_repair25_v1/replycoach_sealion_repair25_v1.tar",
+  "bytes": 6445742080,
+  "sha256": "5c74430e9fb6953955258b4aab9f9db2d4c141b43b60b821b2c9930523bee70d",
+  "manifest_sha256": "1cb24b55984b73c20166331d4d872895d00d9d4854b2a2b7c8f5245453db7f1a",
+  "independent_file_copy": true,
+  "outside_git_workspace": true,
+  "original_personal_bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+  "original_personal_manifest_reverified": true,
+  "components": {
+    "base/model.safetensors": {
+      "bytes": 6356554480,
+      "sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107"
+    },
+    "adapters/english/adapter_model.safetensors": {
+      "bytes": 41977608,
+      "sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913"
+    },
+    "adapters/singlish/adapter_model.safetensors": {
+      "bytes": 41977608,
+      "sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2"
+    }
+  },
+  "trained_models_overwritten": false,
+  "production_default_changed": false,
+  "fresh_original_inference_verification": {
+    "job_id": 358368,
+    "gpu": "NVIDIA L40S",
+    "exact_example_pairs": 10,
+    "replay_differences": [],
+    "generation_flags": [],
+    "report": "artifacts/sealion_single_reference_review_v1/original_export_replay.json"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1",
+  "gpu": "L40S",
+  "partition": "student",
+  "slurm_account": "cs701",
+  "qos": "studentqos",
+  "jobs": {
+    "preflight": 358483,
+    "old_targets_control": 358484,
+    "revised_targets": 358485,
+    "summarize": 358486
+  },
+  "stage_sha256": "eaec8f0727a79988074282c7039357e24497e1c2204d719eca34c554d2f466e0",
+  "payload_sha256": "d80c1c06a676b0181c98f6656489473fab15c92557d7c3d99a8da88ae2204205",
+  "local_tests_passed": 9,
+  "default_changed": false,
+  "status": "complete",
+  "gpu_preflight_status": "passed",
+  "training_status": "both arms completed240updates; results fetched and verified",
+  "summary_job_status": "COMPLETED"
+}

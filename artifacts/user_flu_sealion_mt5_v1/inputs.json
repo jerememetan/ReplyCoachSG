@@ -1,0 +1,15 @@
+[
+  {
+    "item_id": "USER-FLU-001",
+    "topic": "friend_unwell_video_request",
+    "context": [
+      "I am down with a flu, cant come play later",
+      "aiyoo"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "yall just enjoy la, send videos to me when yall are playing"
+  }
+]

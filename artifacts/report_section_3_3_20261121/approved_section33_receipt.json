@@ -1,0 +1,29 @@
+{
+  "document": "/home/spikeypear/Downloads/Copy of Final Report.docx",
+  "backup": "/home/spikeypear/Downloads/Copy of Final Report - before approved revision.docx",
+  "original_sha256": "b0120eb6aabe05b31cb440eb79a4ab4a56ca5651fa1e9993e560fb5ed9a41fe0",
+  "updated_sha256": "d8da5656ea4c558c7aa4f9facbe12e19809401724f01146257b096fa40927a26",
+  "section_word_count": 1634,
+  "native_tables": 4,
+  "figure_placeholders": 2,
+  "outside_section_unchanged": true,
+  "other_package_parts_byte_identical": true,
+  "google_document_id": "1TLPDJWHtaHo8UtL7ZkTaive5Y2gE3o_dGGBrO5Sn8og",
+  "google_access": "403 PERMISSION_DENIED; no Google document changed",
+  "accepted_revisions": [
+    "datasets and settings by training phase",
+    "early evaluation and possible causes of limitations",
+    "three-seed paired-style results with assistant-review caveat",
+    "expanded experiment descriptions, values and examples",
+    "adopted beam4 decoding; mT5 48 / SEA-LION 64 output tokens",
+    "larger models, regional-language coverage and common-judge evaluation",
+    "two figure placeholders; no distillation section"
+  ],
+  "rendered_preview": "/home/spikeypear/Projects/ReplyCoachSG/artifacts/report_section_3_3_20261121/approved_preview/Copy of Final Report.pdf",
+  "rendered_pages": 18,
+  "visually_checked_pages": [
+    9,
+    10
+  ],
+  "requested_destination_clarified": "User confirmed the downloaded Copy of Final Report.docx is the intended file."
+}

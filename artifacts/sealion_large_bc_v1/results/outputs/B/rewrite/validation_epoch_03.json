@@ -1,0 +1,101 @@
+[
+  {
+    "item_id": "BC-dev-00005",
+    "english": "Sorry, I can't make it because of work.",
+    "singlish": "cannot eh, work",
+    "standard_anchor": "Sorry, I can't make it because of work.",
+    "status": "complete",
+    "prompt_sha256": "e14a94113f7c1757bc673aa111d270d03ad298296557ef5c8fe5f818d298ab0a",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00011",
+    "english": "I have a spare one, I'll bring it for you. Do you want to bring yours too?",
+    "singlish": "have one, bring yours also",
+    "standard_anchor": "I have a spare one, I'll bring it for you. Do you want to bring yours too?",
+    "status": "complete",
+    "prompt_sha256": "6b3ce1935a26e42ef1476c756ecfb6c45121f81f28c8e6809fd192909df5adef",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00013",
+    "english": "Yes, let's meet up there.",
+    "singlish": "ok, see u there",
+    "standard_anchor": "Yes, let's meet up there.",
+    "status": "complete",
+    "prompt_sha256": "92be91f866385f3522e842793a673c27faf2888dbc50304f3c8a9982ba90539a",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00037",
+    "english": "See you at 8pm.",
+    "singlish": "See you at 8pm.",
+    "standard_anchor": "See you at 8pm.",
+    "status": "complete",
+    "prompt_sha256": "ec4a2f34568f05daac913f689ca3fb63e9f72f948f7ce10ac413fb42a4207ac6",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00038",
+    "english": "I'll head over to your place instead.",
+    "singlish": "Come over lah.",
+    "standard_anchor": "I'll head over to your place instead.",
+    "status": "complete",
+    "prompt_sha256": "dc3c242a0f7e288fadb378a712595910c05d812c16bcba807199738eeafcecc1",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00054",
+    "english": "I haven't seen it yet, can you send again?",
+    "singlish": "haven’t seen, send again pls",
+    "standard_anchor": "I haven't seen it yet, can you send again?",
+    "status": "complete",
+    "prompt_sha256": "a77f98ec21e8982d2de8c7b6454ed8dc685df9935c53f35d0c3a312e85498ef1",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00063",
+    "english": "I'll head there early to get a good spot.",
+    "singlish": "ok, will be there at 9am",
+    "standard_anchor": "I'll head there early to get a good spot.",
+    "status": "complete",
+    "prompt_sha256": "ee43a5915959933dcff40bad3ca7831d3990d8ea4c81233bf595879ab41ffad4",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00070",
+    "english": "down, see u there",
+    "singlish": "steady, see u there",
+    "standard_anchor": "down, see u there",
+    "status": "complete",
+    "prompt_sha256": "da873c63459884c56f7a3c7147fb676344b65a8153f6012e7f5edc4e782a1c43",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00074",
+    "english": "The library would be better because it's much quieter.",
+    "singlish": "Library better, quiet.",
+    "standard_anchor": "The library would be better because it's much quieter.",
+    "status": "complete",
+    "prompt_sha256": "8a46ddb0f64a2f214bb5b5e79d35ff819759981a357229bcd5e28d153eed0335",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00096",
+    "english": "Sorry, I can't make it this time. Maybe next time?",
+    "singlish": "Sorry, cannot join this time. Next time?",
+    "standard_anchor": "Sorry, I can't make it this time. Maybe next time?",
+    "status": "complete",
+    "prompt_sha256": "4028b1158e37ddfc7d6ae7f32f64050cac4772cc0c0f32e10b63c16ecc52e686",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  },
+  {
+    "item_id": "BC-dev-00113",
+    "english": "Sure, let's find a place nearby.",
+    "singlish": "ok, find somewhere nearby",
+    "standard_anchor": "Sure, let's find a place nearby.",
+    "status": "complete",
+    "prompt_sha256": "aa33b911f7c85441594a42576ae0f0ebf7ed1e8888f19aa0fc685e0968318202",
+    "anchor_provenance": "Assistant-authored diagnostic reference; not the English generator output"
+  }
+]

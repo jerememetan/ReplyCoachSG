@@ -1,0 +1,15 @@
+[
+  {
+    "item_id": "USER-MEET-TIME-001",
+    "context": [
+      "What time meet ah later",
+      "Idk eh see how"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Wahlao, just give me a timing",
+    "scope": "new_user_supplied_inference"
+  }
+]

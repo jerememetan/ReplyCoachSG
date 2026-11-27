@@ -1,0 +1,142 @@
+{
+  "scope": "Retrospective non-blind assistant review on 50 reused development conversations; descriptive pass counts, not human accuracy. This compares saved system recipes, not isolated model architectures. Uncertain is not a pass. No new training or inference.",
+  "protocol_sha256": "21b8234a79375ceb4d968139e8a393d1a9161010e2b6079344f9b732c625782c",
+  "packet_sha256": "b689d6b7d02c35c3c1263847f0a494c1138b1499a66a75a0f279b82b19f907f9",
+  "models": {
+    "mt5": {
+      "english_adequacy": {
+        "fail": 15,
+        "pass": 30,
+        "uncertain": 5
+      },
+      "local_adequacy": {
+        "fail": 16,
+        "pass": 28,
+        "uncertain": 6
+      },
+      "meaning_preservation": {
+        "pass": 46,
+        "uncertain": 1,
+        "fail": 3
+      },
+      "local_style": {
+        "fail": 10,
+        "pass": 40
+      },
+      "all_four_pass": 23,
+      "both_styles_adequate": 28,
+      "regional_lexical_content": {
+        "n": 8,
+        "english_adequacy_pass": 4,
+        "both_styles_adequate": 4
+      },
+      "other_incoming": {
+        "n": 42,
+        "english_adequacy_pass": 26,
+        "both_styles_adequate": 24
+      }
+    },
+    "sealion": {
+      "english_adequacy": {
+        "pass": 42,
+        "fail": 6,
+        "uncertain": 2
+      },
+      "local_adequacy": {
+        "pass": 41,
+        "fail": 6,
+        "uncertain": 3
+      },
+      "meaning_preservation": {
+        "pass": 46,
+        "uncertain": 1,
+        "fail": 3
+      },
+      "local_style": {
+        "pass": 38,
+        "fail": 12
+      },
+      "all_four_pass": 30,
+      "both_styles_adequate": 41,
+      "regional_lexical_content": {
+        "n": 8,
+        "english_adequacy_pass": 6,
+        "both_styles_adequate": 6
+      },
+      "other_incoming": {
+        "n": 42,
+        "english_adequacy_pass": 36,
+        "both_styles_adequate": 35
+      }
+    },
+    "qwen": {
+      "english_adequacy": {
+        "fail": 3,
+        "pass": 45,
+        "uncertain": 2
+      },
+      "local_adequacy": {
+        "fail": 5,
+        "pass": 42,
+        "uncertain": 3
+      },
+      "meaning_preservation": {
+        "pass": 47,
+        "fail": 3
+      },
+      "local_style": {
+        "fail": 20,
+        "pass": 30
+      },
+      "all_four_pass": 27,
+      "both_styles_adequate": 42,
+      "regional_lexical_content": {
+        "n": 8,
+        "english_adequacy_pass": 5,
+        "both_styles_adequate": 5
+      },
+      "other_incoming": {
+        "n": 42,
+        "english_adequacy_pass": 40,
+        "both_styles_adequate": 37
+      }
+    }
+  },
+  "language_metadata": {
+    "train": {
+      "n": 190,
+      "local_terms_nonempty": 112,
+      "singlish_tag": 113,
+      "pinyin_tag": 6,
+      "zh_tag": 5,
+      "pinyin_or_zh_tag": 11,
+      "english_only_tag": 74,
+      "history_turn_counts": {
+        "2": 176,
+        "1": 6,
+        "3": 8
+      }
+    },
+    "validation": {
+      "n": 50,
+      "local_terms_nonempty": 30,
+      "singlish_tag": 31,
+      "pinyin_tag": 2,
+      "zh_tag": 0,
+      "pinyin_or_zh_tag": 2,
+      "english_only_tag": 19,
+      "history_turn_counts": {
+        "2": 46,
+        "3": 3,
+        "1": 1
+      }
+    }
+  },
+  "manual_incoming_language_categories": {
+    "regional_lexical_content": 8,
+    "regional_pragmatic_marker": 15,
+    "colloquial_syntax": 8,
+    "general_english_or_texting": 19
+  },
+  "manual_language_limitations": "Categories are assistant judgments about incoming messages, not a validated regional-language benchmark or a causal measure of model understanding. History and outputs can contain additional regional features. Pragmatic markers and colloquial syntax still require local competence."
+}

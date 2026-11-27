@@ -1,0 +1,67 @@
+{
+  "experiment": "mt5_warm_distill_v1",
+  "created_at_utc": "2026-11-21T08:19:48.346701+00:00",
+  "seed": 425,
+  "user_request": "Improve trained mT5 by continuing its saved task LoRA; compare unchanged model, teacher-text CE continuation and CE+aligned KL continuation.",
+  "initial_adapter": {
+    "path": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_mt5_warm_distill_v1/initial_adapter",
+    "source_path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1/adapters/shared",
+    "checkpoint": "mT5 A shared_intent rewrite_s1 seed1 final784",
+    "files_sha256": {
+      "adapter_model.safetensors": "d2bb5ea90233de5534f07c9ab7ab6cbf23bf0196388ff6727e3a1bc15673adb9",
+      "adapter_config.json": "fcd0308d1786cf0bb4f57c63e08d5a2b6549995d77e0dbd655aada5241e8ec13"
+    },
+    "tensor_sha256": "8d3f55901a0e006d5dfc7678302f6cc472c293ccdf530dde7ddb3579b4755972"
+  },
+  "architecture": "One shared trained rank16 q/v adapter for English and English-conditioned Singlish; jointly continued, never reset, no adapter switching.",
+  "student": {
+    "base": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1/base",
+    "epochs": 12,
+    "learning_rate": 3e-05,
+    "pairs_per_update": 4,
+    "microbatch": 1,
+    "effective_batch": 8,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "warmup_fraction": 0.05,
+    "schedule": "Cosine to zero after5percent warmup",
+    "source_limit": 192,
+    "target_limit": 48,
+    "generation_new_tokens": 48
+  },
+  "kd": {
+    "temperature": 2.0,
+    "alpha": 0.5,
+    "projector_seed": 1425,
+    "projector_learning_rate": 0.0003
+  },
+  "pilot_updates": 24,
+  "teacher_cache_root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_mt5_soft_kd_v1_headfix_v1",
+  "teacher_cache_payload_sha256": "20729425b97746707c88d58bd563ee100f464781684f020cc7acb0faa9736d3a",
+  "target_manifest_sha256": "f854af4036c8c20d7e46fac48109aae6c949dbbcaf898ff79a28d600f49f96db",
+  "target_and_teacher_identity": "Same frozen571 teacher-specific reviewed English/Singlish pairs and verified native teacher caches as prior run; no regeneration, label edits or refreeze.",
+  "arms": [
+    "unchanged",
+    "sealion_ce",
+    "sealion_kd",
+    "qwen_ce",
+    "qwen_kd"
+  ],
+  "training_arms": [
+    "sealion_ce",
+    "sealion_kd",
+    "qwen_ce",
+    "qwen_kd"
+  ],
+  "selection": "One shared checkpoint minimizing0.5EnglishCE+0.5reference-English-conditionedSinglishCE on common original-label development rows; unchanged epoch0 eligible; save all12epochs and fixed final.",
+  "paired_updates_per_epoch": 143,
+  "total_paired_updates": 1716,
+  "task_exposures_per_epoch": {
+    "english": 571,
+    "singlish": 571
+  },
+  "inference": "Preserve original trained adapter input and decoding contract: speaker labels,STANDARD then own-English LOCAL_REWRITE,source192,generation48,beam4,no-repeat3,batch50.",
+  "preservation": "Original base, task adapter, earlier experiments and application defaults stay unchanged. All updates saved under isolated new experiment.",
+  "comparison_limits": "This directly tests continuation of the preserved shared adapter. It changes initialization, shared-versus-separate architecture, continuation LR and original decoding budgets relative to old fresh-adapter experiments; compare warm CE/KD arms to each other and unchanged matched baseline.",
+  "evidence_limits": "Reused development conversations; no independent human-gold quality or locked-test accuracy. Stronger starting point does not guarantee improvement."
+}

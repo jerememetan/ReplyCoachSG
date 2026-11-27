@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "recipe": {
+    "cases": 40,
+    "missing": 16,
+    "supported": 24,
+    "training_performed": false,
+    "checkpoint_selection_allowed": false,
+    "purpose": "Probe a literal Update marker shortcut, relevant facts before unrelated final history, and missing facts in relevant context without explicit unknown/not-announced cues.",
+    "same_fact_sets_as_main_challenge": true,
+    "independent_human_test": false,
+    "timing": "Frozen before any baseline/validation/training output inspection; supplementary to the main pre-registered split.",
+    "sha256": "05d2e492f689d9671a3537cacb0fd017c68cc05486801d6cb186f4b591c43fa0"
+  },
+  "reports": {
+    "baseline": {
+      "status": "complete",
+      "metrics": {
+        "missing_cases": 16,
+        "answerable_cases": 24,
+        "exact_abstention_on_missing": 0,
+        "uncertainty_cue_on_missing": 2,
+        "exact_over_refusals": 0,
+        "uncertainty_cue_on_answerable": 0,
+        "exact_abstention_recall": 0.0,
+        "exact_over_refusal_rate": 0.0,
+        "answerability_balanced_score": 0.5,
+        "supported_fact_cases": 24,
+        "supported_value_matches": 24,
+        "generation_flags": [
+          "ABSTAIN-PROBE-appointment_code-missing_related"
+        ],
+        "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+      },
+      "flags": [
+        "ABSTAIN-PROBE-appointment_code-missing_related"
+      ],
+      "weights_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913"
+    },
+    "restored_context_control_selected": {
+      "status": "complete",
+      "metrics": {
+        "missing_cases": 16,
+        "answerable_cases": 24,
+        "exact_abstention_on_missing": 0,
+        "uncertainty_cue_on_missing": 2,
+        "exact_over_refusals": 0,
+        "uncertainty_cue_on_answerable": 0,
+        "exact_abstention_recall": 0.0,
+        "exact_over_refusal_rate": 0.0,
+        "answerability_balanced_score": 0.5,
+        "supported_fact_cases": 24,
+        "supported_value_matches": 24,
+        "generation_flags": [
+          "ABSTAIN-PROBE-appointment_code-missing_related"
+        ],
+        "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+      },
+      "flags": [
+        "ABSTAIN-PROBE-appointment_code-missing_related"
+      ],
+      "weights_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913"
+    },
+    "restored_context_control_step_0280": {
+      "status": "complete",
+      "metrics": {
+        "missing_cases": 16,
+        "answerable_cases": 24,
+        "exact_abstention_on_missing": 0,
+        "uncertainty_cue_on_missing": 3,
+        "exact_over_refusals": 0,
+        "uncertainty_cue_on_answerable": 0,
+        "exact_abstention_recall": 0.0,
+        "exact_over_refusal_rate": 0.0,
+        "answerability_balanced_score": 0.5,
+        "supported_fact_cases": 24,
+        "supported_value_matches": 24,
+        "generation_flags": [],
+        "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+      },
+      "flags": [],
+      "weights_sha256": "0306952c1b3c75b9fce10e5779769ba40987f84d40a46e2e333519adcd231280"
+    },
+    "selective_abstention_selected": {
+      "status": "complete",
+      "metrics": {
+        "missing_cases": 16,
+        "answerable_cases": 24,
+        "exact_abstention_on_missing": 11,
+        "uncertainty_cue_on_missing": 11,
+        "exact_over_refusals": 0,
+        "uncertainty_cue_on_answerable": 0,
+        "exact_abstention_recall": 0.6875,
+        "exact_over_refusal_rate": 0.0,
+        "answerability_balanced_score": 0.84375,
+        "supported_fact_cases": 24,
+        "supported_value_matches": 24,
+        "generation_flags": [],
+        "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+      },
+      "flags": [],
+      "weights_sha256": "04b25d018eb2399af52a760204ca6f3fadd166a7a5a15e76bc5308a0d6596139"
+    },
+    "selective_abstention_step_0280": {
+      "status": "complete",
+      "metrics": {
+        "missing_cases": 16,
+        "answerable_cases": 24,
+        "exact_abstention_on_missing": 11,
+        "uncertainty_cue_on_missing": 11,
+        "exact_over_refusals": 0,
+        "uncertainty_cue_on_answerable": 0,
+        "exact_abstention_recall": 0.6875,
+        "exact_over_refusal_rate": 0.0,
+        "answerability_balanced_score": 0.84375,
+        "supported_fact_cases": 24,
+        "supported_value_matches": 24,
+        "generation_flags": [],
+        "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+      },
+      "flags": [],
+      "weights_sha256": "c5a984ab141adcca59e4fda276bf9025b441a040677068bee762a61c7ed07ebf"
+    }
+  },
+  "training_performed": false,
+  "checkpoint_selection_allowed": false
+}

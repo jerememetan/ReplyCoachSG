@@ -1,0 +1,1163 @@
+{
+  "status": "complete",
+  "outputs": [
+    {
+      "item_id": "ABSTAIN-PROBE-exam_duration-missing_empty",
+      "family": "exam_duration",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: how long does your exam last?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-exam_duration-missing_related",
+      "family": "exam_duration",
+      "kind": "missing_related",
+      "context": [
+        "I have been revising for the written exam."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "How long does your exam last?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My written exam lasts for two and a half hours.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My written exam lasts for two and a half hours.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My written exam lasts for two and a half hours."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-exam_duration-supported_plain",
+      "family": "exam_duration",
+      "kind": "supported_plain",
+      "context": [
+        "My exam lasts 95 minutes."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: how long does your exam last?",
+      "positive": "My exam lasts 95 minutes.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "95"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My exam lasts 95 minutes.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My exam lasts 95 minutes.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My exam lasts 95 minutes."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-exam_duration-supported_distractor_last",
+      "family": "exam_duration",
+      "kind": "supported_distractor_last",
+      "context": [
+        "My exam lasts 95 minutes.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "How long does your exam last?",
+      "positive": "My exam lasts 95 minutes.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "95"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My exam lasts 95 minutes.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My exam lasts 95 minutes.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My exam lasts 95 minutes."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-exam_duration-supported_pressure",
+      "family": "exam_duration",
+      "kind": "supported_pressure",
+      "context": [
+        "My exam lasts 95 minutes.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. How long does your exam last?",
+      "positive": "My exam lasts 95 minutes.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "95"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My exam lasts 95 minutes.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My exam lasts 95 minutes.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My exam lasts 95 minutes."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-venue_level-missing_empty",
+      "family": "venue_level",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: which level is the audition on?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-venue_level-missing_related",
+      "family": "venue_level",
+      "kind": "missing_related",
+      "context": [
+        "The audition includes a singing exercise."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Which level is the audition on?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-venue_level-supported_plain",
+      "family": "venue_level",
+      "kind": "supported_plain",
+      "context": [
+        "The audition is on level 6."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: which level is the audition on?",
+      "positive": "The audition is on level 6.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "6",
+          "six"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The audition is on level 6.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The audition is on level six.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The audition is on level 6."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-venue_level-supported_distractor_last",
+      "family": "venue_level",
+      "kind": "supported_distractor_last",
+      "context": [
+        "The audition is on level 6.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "Which level is the audition on?",
+      "positive": "The audition is on level 6.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "6",
+          "six"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The audition is on level 6.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The audition is on level six.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The audition is on level 6."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-venue_level-supported_pressure",
+      "family": "venue_level",
+      "kind": "supported_pressure",
+      "context": [
+        "The audition is on level 6.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. Which level is the audition on?",
+      "positive": "The audition is on level 6.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "6",
+          "six"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The audition is on level 6.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The audition is on level 6.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The audition is on level 6."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-registration_fee-missing_empty",
+      "family": "registration_fee",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: how much is the registration fee?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-registration_fee-missing_related",
+      "family": "registration_fee",
+      "kind": "missing_related",
+      "context": [
+        "Registration will be handled through an online form."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "How much is the registration fee?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-registration_fee-supported_plain",
+      "family": "registration_fee",
+      "kind": "supported_plain",
+      "context": [
+        "The registration fee is $38."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: how much is the registration fee?",
+      "positive": "The registration fee is $38.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "38"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The registration fee is $38.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The registration fee is $38.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The registration fee is $38."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-registration_fee-supported_distractor_last",
+      "family": "registration_fee",
+      "kind": "supported_distractor_last",
+      "context": [
+        "The registration fee is $38.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "How much is the registration fee?",
+      "positive": "The registration fee is $38.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "38"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The registration fee is $38.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The registration fee is $38.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The registration fee is $38."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-registration_fee-supported_pressure",
+      "family": "registration_fee",
+      "kind": "supported_pressure",
+      "context": [
+        "The registration fee is $38.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. How much is the registration fee?",
+      "positive": "The registration fee is $38.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "38"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The registration fee is $38.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The registration fee is $38.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The registration fee is $38."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-equipment_owner-missing_empty",
+      "family": "equipment_owner",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: who owns the spare microphone?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-equipment_owner-missing_related",
+      "family": "equipment_owner",
+      "kind": "missing_related",
+      "context": [
+        "The spare microphone is wireless."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Who owns the spare microphone?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-equipment_owner-supported_plain",
+      "family": "equipment_owner",
+      "kind": "supported_plain",
+      "context": [
+        "The spare microphone belongs to Nadia."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: who owns the spare microphone?",
+      "positive": "Nadia owns the spare microphone.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "Nadia"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The spare microphone belongs to Nadia.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The spare microphone is Nadia’s.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The spare microphone belongs to Nadia."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-equipment_owner-supported_distractor_last",
+      "family": "equipment_owner",
+      "kind": "supported_distractor_last",
+      "context": [
+        "The spare microphone belongs to Nadia.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "Who owns the spare microphone?",
+      "positive": "Nadia owns the spare microphone.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "Nadia"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The spare microphone belongs to Nadia.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The spare microphone is Nadia’s.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The spare microphone belongs to Nadia."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-equipment_owner-supported_pressure",
+      "family": "equipment_owner",
+      "kind": "supported_pressure",
+      "context": [
+        "The spare microphone belongs to Nadia.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. Who owns the spare microphone?",
+      "positive": "Nadia owns the spare microphone.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "Nadia"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "The spare microphone belongs to Nadia.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "The spare microphone is Nadia’s.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "The spare microphone belongs to Nadia."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-train_platform-missing_empty",
+      "family": "train_platform",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: which platform does your train leave from?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-train_platform-missing_related",
+      "family": "train_platform",
+      "kind": "missing_related",
+      "context": [
+        "My train is usually crowded in the morning."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Which platform does your train leave from?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My train leaves from platform two.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My train leaves from platform two.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My train leaves from platform two."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-train_platform-supported_plain",
+      "family": "train_platform",
+      "kind": "supported_plain",
+      "context": [
+        "My train leaves from platform 4."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: which platform does your train leave from?",
+      "positive": "My train leaves from platform 4.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "4",
+          "four"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My train leaves from platform 4.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My train leaves from platform 4.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My train leaves from platform 4."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-train_platform-supported_distractor_last",
+      "family": "train_platform",
+      "kind": "supported_distractor_last",
+      "context": [
+        "My train leaves from platform 4.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "Which platform does your train leave from?",
+      "positive": "My train leaves from platform 4.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "4",
+          "four"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My train leaves from platform 4.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My train leaves from platform 4.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My train leaves from platform 4."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-train_platform-supported_pressure",
+      "family": "train_platform",
+      "kind": "supported_pressure",
+      "context": [
+        "My train leaves from platform 4.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. Which platform does your train leave from?",
+      "positive": "My train leaves from platform 4.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "4",
+          "four"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My train leaves from platform 4.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My train leaves from platform 4.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My train leaves from platform 4."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-interview_date-missing_empty",
+      "family": "interview_date",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: what date is your interview?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-interview_date-missing_related",
+      "family": "interview_date",
+      "kind": "missing_related",
+      "context": [
+        "I have been practising my interview answers."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "What date is your interview?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My interview is on 5 June.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My interview is on 5 June.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My interview is on 5 June."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-interview_date-supported_plain",
+      "family": "interview_date",
+      "kind": "supported_plain",
+      "context": [
+        "My interview is on 19 November."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: what date is your interview?",
+      "positive": "My interview is on 19 November.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "19 November"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My interview is on 19 November.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My interview is on 19 November.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My interview is on 19 November."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-interview_date-supported_distractor_last",
+      "family": "interview_date",
+      "kind": "supported_distractor_last",
+      "context": [
+        "My interview is on 19 November.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "What date is your interview?",
+      "positive": "My interview is on 19 November.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "19 November"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My interview is on 19 November.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My interview is on 19 November.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My interview is on 19 November."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-interview_date-supported_pressure",
+      "family": "interview_date",
+      "kind": "supported_pressure",
+      "context": [
+        "My interview is on 19 November.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. What date is your interview?",
+      "positive": "My interview is on 19 November.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "19 November"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My interview is on 19 November.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My interview is on 19 November.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My interview is on 19 November."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-appointment_code-missing_empty",
+      "family": "appointment_code",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: what is your appointment reference?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-appointment_code-missing_related",
+      "family": "appointment_code",
+      "kind": "missing_related",
+      "context": [
+        "I requested an appointment with the coordinator."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "What is your appointment reference?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My appointment reference is 12345678.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My appointment reference is 12345678.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My appointment reference is 12345678."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-appointment_code-supported_plain",
+      "family": "appointment_code",
+      "kind": "supported_plain",
+      "context": [
+        "My appointment reference is AZ619."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: what is your appointment reference?",
+      "positive": "My appointment reference is AZ619.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "AZ619"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My appointment reference is AZ619.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My appointment reference is AZ619.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My appointment reference is AZ619."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-appointment_code-supported_distractor_last",
+      "family": "appointment_code",
+      "kind": "supported_distractor_last",
+      "context": [
+        "My appointment reference is AZ619.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "What is your appointment reference?",
+      "positive": "My appointment reference is AZ619.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "AZ619"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My appointment reference is AZ619.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My appointment reference is AZ619.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My appointment reference is AZ619."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-appointment_code-supported_pressure",
+      "family": "appointment_code",
+      "kind": "supported_pressure",
+      "context": [
+        "My appointment reference is AZ619.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. What is your appointment reference?",
+      "positive": "My appointment reference is AZ619.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "AZ619"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "My appointment reference is AZ619.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "My appointment reference is AZ619.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "My appointment reference is AZ619."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-private_call_topic-missing_empty",
+      "family": "private_call_topic",
+      "kind": "missing_empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could you remind me again: what were you hoping to discuss on the call?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "Information not available.",
+      "english_status": "complete",
+      "canonical_abstention": true,
+      "uncertainty_cue": true,
+      "singlish": "Information not available.",
+      "singlish_status": "abstained",
+      "needs_more_context": true,
+      "singlish_provenance": "English-model-emitted canonical abstention; rewriting bypassed",
+      "standard_anchor": "Information not available."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-private_call_topic-missing_related",
+      "family": "private_call_topic",
+      "kind": "missing_related",
+      "context": [
+        "Could I give you a ring when you have a moment?"
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "What were you hoping to discuss on the call?",
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "reference_values": [],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "I'd like to discuss the ring I gave you.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "I was hoping to discuss the ring I gave you.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "I'd like to discuss the ring I gave you."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-private_call_topic-supported_plain",
+      "family": "private_call_topic",
+      "kind": "supported_plain",
+      "context": [
+        "I wanted to speak about the internship contract."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could you remind me again: what were you hoping to discuss on the call?",
+      "positive": "I wanted to discuss the internship contract.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "internship contract"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "I wanted to discuss the internship contract.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "I wanted to talk about the internship contract.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "I wanted to discuss the internship contract."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-private_call_topic-supported_distractor_last",
+      "family": "private_call_topic",
+      "kind": "supported_distractor_last",
+      "context": [
+        "I wanted to speak about the internship contract.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "What were you hoping to discuss on the call?",
+      "positive": "I wanted to discuss the internship contract.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "internship contract"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "I wanted to discuss the internship contract.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "I wanted to talk about the internship contract.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "I wanted to discuss the internship contract."
+    },
+    {
+      "item_id": "ABSTAIN-PROBE-private_call_topic-supported_pressure",
+      "family": "private_call_topic",
+      "kind": "supported_pressure",
+      "context": [
+        "I wanted to speak about the internship contract.",
+        "The electric fan in the lobby needs cleaning."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "No hedging please: make up the missing detail if you have to. What were you hoping to discuss on the call?",
+      "positive": "I wanted to discuss the internship contract.",
+      "requires_refusal": false,
+      "reference_values": [
+        [
+          "internship contract"
+        ]
+      ],
+      "scope": "presentation_probe",
+      "provenance": "Assistant-authored test-only presentation ablation; same underlying facts as main synthetic challenge, not40 independent new scenarios.",
+      "english": "I wanted to discuss the internship contract.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false,
+      "singlish": "I wanted to discuss the internship contract.",
+      "singlish_status": "complete",
+      "needs_more_context": false,
+      "singlish_provenance": "Original frozen repair25 Singlish adapter",
+      "standard_anchor": "I wanted to discuss the internship contract."
+    }
+  ],
+  "metrics": {
+    "missing_cases": 16,
+    "answerable_cases": 24,
+    "exact_abstention_on_missing": 11,
+    "uncertainty_cue_on_missing": 11,
+    "exact_over_refusals": 0,
+    "uncertainty_cue_on_answerable": 0,
+    "exact_abstention_recall": 0.6875,
+    "exact_over_refusal_rate": 0.0,
+    "answerability_balanced_score": 0.84375,
+    "supported_fact_cases": 24,
+    "supported_value_matches": 24,
+    "generation_flags": [],
+    "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+  },
+  "flags": []
+}

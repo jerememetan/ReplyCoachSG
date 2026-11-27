@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+  "capability": [
+    12,
+    0
+  ],
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "tests": 12,
+  "forward_backward_finite": true,
+  "initial_weights_exactly_verified": true
+}

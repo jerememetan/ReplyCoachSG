@@ -1,0 +1,728 @@
+{
+  "status": "complete",
+  "kind": "sealion",
+  "device": "cuda",
+  "strict_loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+  "input_sha256": "e6747423af337c269ace9c4a662cc2825d272d4dc558c1d3fac2285dcd320d39",
+  "outputs": [
+    {
+      "item_id": "BC-evaluation-00011",
+      "english": "Yes, let's go together.",
+      "singlish": "Can, Saturday go together lah.",
+      "standard_anchor": "Yes, let's go together.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00017",
+      "english": "I'm not sure. I'll check with him and let you know.",
+      "singlish": "I check with my brother first, then tell you ah.",
+      "standard_anchor": "I'm not sure. I'll check with him and let you know.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00036",
+      "english": "Let's go for the competitive league.",
+      "singlish": "Go for the competitive league lah.",
+      "standard_anchor": "Let's go for the competitive league.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00037",
+      "english": "Yes please, bring some ink over to my place.",
+      "singlish": "Yes please, bring some ink over to my place.",
+      "standard_anchor": "Yes please, bring some ink over to my place.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00039",
+      "english": "Okay, I will put them out now.",
+      "singlish": "Okay, I put them out then.",
+      "standard_anchor": "Okay, I will put them out now.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00051",
+      "english": "Yes, let's meet at 3pm at the cafe.",
+      "singlish": "Yea, three at the café.",
+      "standard_anchor": "Yes, let's meet at 3pm at the cafe.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00054",
+      "english": "Sure, I'd love to check it out with you.",
+      "singlish": "Can, Sunday I join you.",
+      "standard_anchor": "Sure, I'd love to check it out with you.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00068",
+      "english": "ok, 2pm works for me",
+      "singlish": "steady, 2pm can",
+      "standard_anchor": "ok, 2pm works for me",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00078",
+      "english": "yes, i managed to get it to spin smoothly",
+      "singlish": "ya, i got it to spin smoothly",
+      "standard_anchor": "yes, i managed to get it to spin smoothly",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00079",
+      "english": "Tomorrow works for me.",
+      "singlish": "Tomorrow can, grind then.",
+      "standard_anchor": "Tomorrow works for me.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00096",
+      "english": "That's a shame. I was really looking forward to bowling with you.",
+      "singlish": "That's a shame. I really wanted to bowl with you.",
+      "standard_anchor": "That's a shame. I was really looking forward to bowling with you.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00101",
+      "english": "Yes, that's the one I'll bring.",
+      "singlish": "Yes, the big one with the waterproof lining.",
+      "standard_anchor": "Yes, that's the one I'll bring.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00110",
+      "english": "Yes, I'll be there with my sketchbook.",
+      "singlish": "Yes, I'll be there with my sketchbook.",
+      "standard_anchor": "Yes, I'll be there with my sketchbook.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "BC-evaluation-00111",
+      "english": "I will bring my own cups.",
+      "singlish": "I bringing my own cups.",
+      "standard_anchor": "I will bring my own cups.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-01",
+      "english": "okay, we will go arcade later",
+      "singlish": "okies, arcade later",
+      "standard_anchor": "okay, we will go arcade later",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-02",
+      "english": "No, I haven't seen them yet.",
+      "singlish": "Haven’t see leh.",
+      "standard_anchor": "No, I haven't seen them yet.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-03",
+      "english": "Yes, I can meet you at 5:15 tomorrow.",
+      "singlish": "Can, five fifteen I meet you there.",
+      "standard_anchor": "Yes, I can meet you at 5:15 tomorrow.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-04",
+      "english": "Yes, I've finished sorting the playlist.",
+      "singlish": "Ya, I finish sorting the playlist liao.",
+      "standard_anchor": "Yes, I've finished sorting the playlist.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-05",
+      "english": "Ok, I will charge them before the picnic.",
+      "singlish": "Ok, I charge them first before the picnic.",
+      "standard_anchor": "Ok, I will charge them before the picnic.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-06",
+      "english": "Ok, next time we meet for supper.",
+      "singlish": "Ok, next time then supper.",
+      "standard_anchor": "Ok, next time we meet for supper.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-07",
+      "english": "Sure, you can use the socket near the window.",
+      "singlish": "Can, I use the socket near the window.",
+      "standard_anchor": "Sure, you can use the socket near the window.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-08",
+      "english": "Yes please, use my spare pair for the recording.",
+      "singlish": "Can, use your spare pair for the recording ah.",
+      "standard_anchor": "Yes please, use my spare pair for the recording.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-09",
+      "english": "Okay, I will return your bag after dinner.",
+      "singlish": "Okay, I return your bag after dinner.",
+      "standard_anchor": "Okay, I will return your bag after dinner.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-10",
+      "english": "I am outside the florist.",
+      "singlish": "I am outside the florist.",
+      "standard_anchor": "I am outside the florist.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-11",
+      "english": "Yes, I'll be there by 8:10pm.",
+      "singlish": "Ya, two hours steady.",
+      "standard_anchor": "Yes, I'll be there by 8:10pm.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-12",
+      "english": "I can't afford that right now. Could I get a salad instead?",
+      "singlish": "Can, get the salad instead lah.",
+      "standard_anchor": "I can't afford that right now. Could I get a salad instead?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-13",
+      "english": "Yes, I have finished the diagram but not the explanation.",
+      "singlish": "Ya, I finish the diagram liao, but not the explanation.",
+      "standard_anchor": "Yes, I have finished the diagram but not the explanation.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-14",
+      "english": "Yes, I'll meet you at nine fifteen.",
+      "singlish": "Can, nine fifteen I reach.",
+      "standard_anchor": "Yes, I'll meet you at nine fifteen.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-15",
+      "english": "Thanks prof, I will check the slots on Wednesday.",
+      "singlish": "Thanks prof, I check the slots on Wednesday.",
+      "standard_anchor": "Thanks prof, I will check the slots on Wednesday.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-16",
+      "english": "Yes, your scarf is on my chair.",
+      "singlish": "Yea, my scarf is on your chair.",
+      "standard_anchor": "Yes, your scarf is on my chair.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-17",
+      "english": "I'll get you a glass of water.",
+      "singlish": "Can, I get you a glass of water.",
+      "standard_anchor": "I'll get you a glass of water.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-18",
+      "english": "Sure, send me a photo of the charger.",
+      "singlish": "Sure, send me a photo of the charger ah.",
+      "standard_anchor": "Sure, send me a photo of the charger.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-19",
+      "english": "Yes, still going to L3.",
+      "singlish": "Ya, still at L3.",
+      "standard_anchor": "Yes, still going to L3.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-20",
+      "english": "I haven't found it yet, but I'll check the bakery now.",
+      "singlish": "Haven’t find leh, I check the bakery first.",
+      "standard_anchor": "I haven't found it yet, but I'll check the bakery now.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-21",
+      "english": "I'm sorry to hear that. What went wrong?",
+      "singlish": "I'm sorry to hear that. What happened ah?",
+      "standard_anchor": "I'm sorry to hear that. What went wrong?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-22",
+      "english": "I can help you for ten minutes.",
+      "singlish": "Can, I help you for ten minutes.",
+      "standard_anchor": "I can help you for ten minutes.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-23",
+      "english": "The blue box contains your parcel.",
+      "singlish": "The blue box contains your parcel.",
+      "standard_anchor": "The blue box contains your parcel.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "AUDIT-EVAL-24",
+      "english": "I have not checked whether it is open on public holidays.",
+      "singlish": "Not sure open on public holiday anot. I check first.",
+      "standard_anchor": "I have not checked whether it is open on public holidays.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "USER-FLU-001",
+      "english": "okay, we'll send you videos when we're playing",
+      "singlish": "okies, we'll send you videos when we're playing",
+      "standard_anchor": "okay, we'll send you videos when we're playing",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-010",
+      "english": "I understand, I'll try my best to help.",
+      "singlish": "ya, we very kiasu sia, first lesson already like that",
+      "standard_anchor": "I understand, I'll try my best to help.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-017",
+      "english": "Yes, we are meeting at 7pm at Harbourfront MRT.",
+      "singlish": "Ya, seven at Harbourfront MRT.",
+      "standard_anchor": "Yes, we are meeting at 7pm at Harbourfront MRT.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-024",
+      "english": "No worries, let me know when you have printed it.",
+      "singlish": "No worries, tell me when you have printed it ah.",
+      "standard_anchor": "No worries, let me know when you have printed it.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-030",
+      "english": "Okay, let's look for another place.",
+      "singlish": "Okay, find another place lah.",
+      "standard_anchor": "Okay, let's look for another place.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-033",
+      "english": "I'm not sure. Let's check before we go.",
+      "singlish": "not sure leh, check before we go first",
+      "standard_anchor": "I'm not sure. Let's check before we go.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-035",
+      "english": "I won't forget",
+      "singlish": "I won't forget",
+      "standard_anchor": "I won't forget",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-038",
+      "english": "No worries, I'll wait for you.",
+      "singlish": "No worries, I wait for you.",
+      "standard_anchor": "No worries, I'll wait for you.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-044",
+      "english": "yes, I will not blur like sotong",
+      "singlish": "ya, I will not blur like sotong",
+      "standard_anchor": "yes, I will not blur like sotong",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-046",
+      "english": "Ok, see you at 2pm.",
+      "singlish": "Can, see you at 2pm.",
+      "standard_anchor": "Ok, see you at 2pm.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-054",
+      "english": "Okay, let's go now.",
+      "singlish": "Okay, let's go then.",
+      "standard_anchor": "Okay, let's go now.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-002",
+      "english": "I'd like to eat at the café near the library.",
+      "singlish": "Near the library café can?",
+      "standard_anchor": "I'd like to eat at the café near the library.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-009",
+      "english": "Yes, there is still space.",
+      "singlish": "Still got space, I come over after class.",
+      "standard_anchor": "Yes, there is still space.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-029",
+      "english": "I'm not sure which room our class is in. Let's check the timetable.",
+      "singlish": "Not sure which room leh. Check the timetable first.",
+      "standard_anchor": "I'm not sure which room our class is in. Let's check the timetable.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-034",
+      "english": "I can tell you what you missed in the morning class.",
+      "singlish": "Morning class what you miss?",
+      "standard_anchor": "I can tell you what you missed in the morning class.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-042",
+      "english": "No worries. I'll wait here for you.",
+      "singlish": "No worries, I wait here for you.",
+      "standard_anchor": "No worries. I'll wait here for you.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-043",
+      "english": "yes, I'd love to come",
+      "singlish": "can, let's go!",
+      "standard_anchor": "yes, I'd love to come",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-048",
+      "english": "Okay, thirty minutes works for me.",
+      "singlish": "Okay, thirty minutes can.",
+      "standard_anchor": "Okay, thirty minutes works for me.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-050",
+      "english": "Sure, what time should we meet?",
+      "singlish": "Can, what time ah?",
+      "standard_anchor": "Sure, what time should we meet?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-056",
+      "english": "Okay, I'll just watch from the sidelines instead.",
+      "singlish": "Okay lah, I watch from the sidelines instead.",
+      "standard_anchor": "Okay, I'll just watch from the sidelines instead.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-057",
+      "english": "Sure, go ahead and use my charger.",
+      "singlish": "Can, use my charger first ah.",
+      "standard_anchor": "Sure, go ahead and use my charger.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-001",
+      "english": "Sure, see you at 8 at LKS.",
+      "singlish": "Sure, see you at 8 at LKS.",
+      "standard_anchor": "Sure, see you at 8 at LKS.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-017",
+      "english": "not yet, im still working on it",
+      "singlish": "havent finish leh, still working on it",
+      "standard_anchor": "not yet, im still working on it",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-018",
+      "english": "got it, i'll add it now",
+      "singlish": "ya, i add it now",
+      "standard_anchor": "got it, i'll add it now",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-023",
+      "english": "Yes please, let me know when you're free.",
+      "singlish": "Can, thanks ah.",
+      "standard_anchor": "Yes please, let me know when you're free.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-028",
+      "english": "No worries, I'll wait for you.",
+      "singlish": "No worries, I wait for you.",
+      "standard_anchor": "No worries, I'll wait for you.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-038",
+      "english": "I'm not sure how long it is. I'll take a look at it and let you know.",
+      "singlish": "I check the length first, then let you know ah.",
+      "standard_anchor": "I'm not sure how long it is. I'll take a look at it and let you know.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-041",
+      "english": "no worries, i'll wait a bit",
+      "singlish": "no worries, i'll wait a bit",
+      "standard_anchor": "no worries, i'll wait a bit",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-045",
+      "english": "yes, i'll be there at 8",
+      "singlish": "steady, i coming at 8",
+      "standard_anchor": "yes, i'll be there at 8",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-055",
+      "english": "okay, i'll meet you at 2 instead",
+      "singlish": "can, i meet you at 2 instead",
+      "standard_anchor": "okay, i'll meet you at 2 instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-058",
+      "english": "okay, i'll wait a bit",
+      "singlish": "okay, i wait a bit",
+      "standard_anchor": "okay, i'll wait a bit",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-007",
+      "english": "I'm not sure what I want, could you recommend something?",
+      "singlish": "Not sure what I want leh. You got any suggestions?",
+      "standard_anchor": "I'm not sure what I want, could you recommend something?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-009",
+      "english": "Okay, I'll go over it with you later.",
+      "singlish": "Okay, I go over it with you later.",
+      "standard_anchor": "Okay, I'll go over it with you later.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-010",
+      "english": "yes, i know the answer",
+      "singlish": "ya i know",
+      "standard_anchor": "yes, i know the answer",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-013",
+      "english": "Sure, I'll send you the answer as soon as I'm done.",
+      "singlish": "Okay, I send you the answer as soon as I'm done.",
+      "standard_anchor": "Sure, I'll send you the answer as soon as I'm done.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-029",
+      "english": "Ok, I will bid before bidding ends",
+      "singlish": "okok, i bid before the bid ends",
+      "standard_anchor": "Ok, I will bid before bidding ends",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-033",
+      "english": "Sure, I'll meet you at the bus stop.",
+      "singlish": "steady, i meet you at the bus stop",
+      "standard_anchor": "Sure, I'll meet you at the bus stop.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-037",
+      "english": "okay, i will be there in a few minutes",
+      "singlish": "okok, i come liao",
+      "standard_anchor": "okay, i will be there in a few minutes",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-038",
+      "english": "Ok, I wait for you outside.",
+      "singlish": "ok i wait for u outside",
+      "standard_anchor": "Ok, I wait for you outside.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-046",
+      "english": "Oh no, I was hoping to see a movie there.",
+      "singlish": "oh no, i was hoping to see a movie there",
+      "standard_anchor": "Oh no, I was hoping to see a movie there.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-050",
+      "english": "no worries, take care of yourself.",
+      "singlish": "no worries, get well soon!",
+      "standard_anchor": "no worries, take care of yourself.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-005",
+      "english": "ok, see you later",
+      "singlish": "ok, c u later",
+      "standard_anchor": "ok, see you later",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-007",
+      "english": "ok, see you tomorrow",
+      "singlish": "ok, see you tomorrow",
+      "standard_anchor": "ok, see you tomorrow",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-009",
+      "english": "Yes, I can use it after 3.",
+      "singlish": "Can, after three I return to you.",
+      "standard_anchor": "Yes, I can use it after 3.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-015",
+      "english": "Nope, I haven't done it yet",
+      "singlish": "haven’t finish leh, I check the answers first",
+      "standard_anchor": "Nope, I haven't done it yet",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-025",
+      "english": "sure, let's do a make up class on thursday instead",
+      "singlish": "okies, thursday then we do a make up class instead",
+      "standard_anchor": "sure, let's do a make up class on thursday instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-027",
+      "english": "no worries, you can use it later",
+      "singlish": "no worries, you can use it later",
+      "standard_anchor": "no worries, you can use it later",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-028",
+      "english": "no worries, we can go another time",
+      "singlish": "kk, next time bah",
+      "standard_anchor": "no worries, we can go another time",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-032",
+      "english": "no worries, i'll go to SR3-2 instead",
+      "singlish": "no worries, i go SR3-2 instead",
+      "standard_anchor": "no worries, i'll go to SR3-2 instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-040",
+      "english": "Yes please, let's meet and work together.",
+      "singlish": "Can, what time ah?",
+      "standard_anchor": "Yes please, let's meet and work together.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-046",
+      "english": "ok, i will release it at 5 instead",
+      "singlish": "ok, i release it at 5 instead",
+      "standard_anchor": "ok, i will release it at 5 instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    }
+  ],
+  "flags": []
+}

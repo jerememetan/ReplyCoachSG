@@ -1,0 +1,142 @@
+{
+  "algorithm_status": "complete",
+  "cases": 136,
+  "metrics": {
+    "beam4": {
+      "assistant_authored_diagnostic": {
+        "cases": 10,
+        "eligible_copy_cases": 5,
+        "exact_copies": 1,
+        "unnecessary_copies": 0,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 8,
+        "mean_style_heuristic": 0.0046815899957554944,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      },
+      "reused_development": {
+        "cases": 126,
+        "eligible_copy_cases": 125,
+        "exact_copies": 10,
+        "unnecessary_copies": 10,
+        "particle_only_changes": 4,
+        "heuristic_guard_pass": 80,
+        "mean_style_heuristic": 0.10313318218955647,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      }
+    },
+    "combined": {
+      "assistant_authored_diagnostic": {
+        "cases": 10,
+        "eligible_copy_cases": 5,
+        "exact_copies": 3,
+        "unnecessary_copies": 0,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 10,
+        "mean_style_heuristic": -0.055166567141381684,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      },
+      "reused_development": {
+        "cases": 126,
+        "eligible_copy_cases": 125,
+        "exact_copies": 16,
+        "unnecessary_copies": 16,
+        "particle_only_changes": 2,
+        "heuristic_guard_pass": 126,
+        "mean_style_heuristic": 0.0816126779072263,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      }
+    },
+    "copy_penalty": {
+      "assistant_authored_diagnostic": {
+        "cases": 10,
+        "eligible_copy_cases": 5,
+        "exact_copies": 3,
+        "unnecessary_copies": 0,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 10,
+        "mean_style_heuristic": -0.17687263323242441,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      },
+      "reused_development": {
+        "cases": 126,
+        "eligible_copy_cases": 125,
+        "exact_copies": 16,
+        "unnecessary_copies": 16,
+        "particle_only_changes": 2,
+        "heuristic_guard_pass": 126,
+        "mean_style_heuristic": -0.07109732716651873,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      }
+    },
+    "guarded_model": {
+      "assistant_authored_diagnostic": {
+        "cases": 10,
+        "eligible_copy_cases": 5,
+        "exact_copies": 3,
+        "unnecessary_copies": 0,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 10,
+        "mean_style_heuristic": -0.17687263323242441,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      },
+      "reused_development": {
+        "cases": 126,
+        "eligible_copy_cases": 125,
+        "exact_copies": 38,
+        "unnecessary_copies": 38,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 126,
+        "mean_style_heuristic": -0.1349371200084292,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      }
+    },
+    "lexicon_guidance": {
+      "assistant_authored_diagnostic": {
+        "cases": 10,
+        "eligible_copy_cases": 5,
+        "exact_copies": 3,
+        "unnecessary_copies": 0,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 10,
+        "mean_style_heuristic": -0.055166567141381684,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      },
+      "reused_development": {
+        "cases": 126,
+        "eligible_copy_cases": 125,
+        "exact_copies": 29,
+        "unnecessary_copies": 29,
+        "particle_only_changes": 0,
+        "heuristic_guard_pass": 126,
+        "mean_style_heuristic": 0.059178349621983914,
+        "fallbacks": 0,
+        "failures": 0,
+        "warning": "Guard passage and style score are heuristics, not human quality or correctness scores."
+      }
+    }
+  },
+  "replay_differences": [],
+  "source_bundle_weights_unchanged": true,
+  "no_automatic_promotion": true,
+  "human_review_pending": true,
+  "review_cases": 15,
+  "analysis_script_sha256": "64000027264b4a2eec345c3c95b7328b0556b8907c0b79dfcca75187ebf9a5ce"
+}

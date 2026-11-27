@@ -1,0 +1,282 @@
+[
+  {
+    "item_id": "TURN-VALIDATION-001",
+    "family": "purpose",
+    "context": [
+      "I noticed the totals in our charity account do not match.",
+      "I am cooking now.",
+      "Could we speak once you finish?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What would you like to go through?",
+    "positive": "I wanted to go through the mismatched totals in our charity account.",
+    "negative": "Could you call me this instant?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-002",
+    "family": "purpose_unknown",
+    "context": [
+      "Hey, got a moment for a voice chat?",
+      "I am tied up.",
+      "No problem, we can speak another time."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "Can you first tell me what this is regarding?",
+    "positive": "I'll explain what I wanted to discuss in a message first.",
+    "negative": "What did you want to call me about?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-003",
+    "family": "clarification",
+    "context": [
+      "I need a hand editing the captions, not the video.",
+      "Sure, I can help after dinner."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "What exactly should I edit?",
+    "positive": "Please edit the captions.",
+    "negative": "Please edit the video.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-004",
+    "family": "status",
+    "context": [
+      "I saved a draft of the email but have not sent it.",
+      "The coordinator is waiting."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Has the coordinator received your email?",
+    "positive": "I have only saved a draft; I have not sent it yet.",
+    "negative": "Yes, I already sent the email.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-005",
+    "family": "return",
+    "context": [
+      "I still have the ruler you lent me.",
+      "I need it back for my drawing."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Should you pass it to me or should I pass it to you?",
+    "positive": "You should pass my ruler back to me.",
+    "negative": "I should pass your ruler back to you.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-006",
+    "family": "available",
+    "context": [
+      "I am on duty throughout Wednesday. Thursday is clear.",
+      "I want to meet up this week."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Would Wednesday work for you?",
+    "positive": "I am on duty on Wednesday. Could we meet on Thursday?",
+    "negative": "Wednesday works for me.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-007",
+    "family": "budget",
+    "context": [
+      "I can spend at most $16 on this outing.",
+      "The ticket alone is $28."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Shall I buy that ticket for you?",
+    "positive": "That ticket is over my $16 budget. Please do not buy it for me.",
+    "negative": "Yes, buy the $28 ticket for me.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-008",
+    "family": "correction",
+    "context": [
+      "Shall we gather at the fountain?",
+      "The fountain area is fenced off; use the west lobby instead.",
+      "Okay, west lobby it is."
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "Where should I head to now?",
+    "positive": "Head to the west lobby.",
+    "negative": "Head to the fountain.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-009",
+    "family": "offer",
+    "context": [
+      "My laptop battery is almost flat.",
+      "I have a compatible charger with me."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Want to borrow my charger?",
+    "positive": "Yes, could I borrow your charger?",
+    "negative": "Yes, you can borrow my charger.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-010",
+    "family": "explanation",
+    "context": [
+      "I have lost my voice, so I cannot join the voice meeting.",
+      "Are you feeling unwell?"
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Why can you not join by voice?",
+    "positive": "I have lost my voice.",
+    "negative": "Can you join the voice meeting?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-011",
+    "family": "unknown",
+    "context": [
+      "The organiser has confirmed Sunday, but has not given us a venue.",
+      "Okay, I will wait for the details."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Where is it being held?",
+    "positive": "The venue has not been confirmed yet.",
+    "negative": "It is being held in the main hall.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-012",
+    "family": "recipient",
+    "context": [
+      "I can pick up the badges for both of us.",
+      "That would save me a trip."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you get mine as well?",
+    "positive": "Yes, I can pick up your badge too.",
+    "negative": "Can you pick up my badge too?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-013",
+    "family": "focus",
+    "context": [
+      "The tutorial is online at 11 am. The lab is in D214 at 3 pm.",
+      "I mixed up the two sessions."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Which room is the lab in?",
+    "positive": "The lab is in D214.",
+    "negative": "The tutorial is online at 11 am.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-014",
+    "family": "timing",
+    "context": [
+      "I finish my medical appointment at 5 pm and cannot leave earlier.",
+      "I would like some company for dinner."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you meet at 4 pm?",
+    "positive": "I cannot meet at 4 pm; my appointment finishes at 5 pm.",
+    "negative": "Yes, I can meet at 4 pm.",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-015",
+    "family": "acknowledge",
+    "context": [
+      "Please tell me when the parcel arrives.",
+      "It has arrived and I put it in your locker."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "Can you check your locker later?",
+    "positive": "Yes, I will check my locker. Thanks for putting it there.",
+    "negative": "Has the parcel arrived yet?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  },
+  {
+    "item_id": "TURN-VALIDATION-016",
+    "family": "request_detail",
+    "context": [
+      "Could you review my bibliography?",
+      "Yes, send it over.",
+      "I will share the document."
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "What do you want me to check in it?",
+    "positive": "Could you check the bibliography?",
+    "negative": "What do you want me to send you?",
+    "criterion": "Answer the latest incoming message while preserving explicit actors, facts and constraints; reference is one acceptable reply.",
+    "provenance": "Assistant-authored diagnostic/training target; not human gold."
+  }
+]

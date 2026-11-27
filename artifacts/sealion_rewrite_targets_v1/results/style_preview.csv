@@ -1,0 +1,16 @@
+item_id,english,old_target,new_target,changed
+SYN-HUMAN-EXP1-012,"Yes please, send me the updated song list before practice.","Yes please, send me the updated song list before practice ah.","Updated song list send me before practice, please.",True
+SYN-volume500-v1-full-085-01,I can print five copies for you this afternoon.,"Can, I print five copies for you this afternoon.","Five copies can, this afternoon I print for you.",True
+SYN-HUMAN-EXP1-042,I am beside the blue vending machine at the north gate.,I waiting beside the blue vending machine at the north gate.,"At the north gate, just beside the blue vending machine.",True
+SYN-volume500-v1-full-115-01,I'll add the competitor analysis page and send the updated slides.,I add the competitor analysis page then send the updated slides ah.,"I add in the competitor analysis page, then send the updated slides.",True
+SYN-HUMAN-EXP1-098,"No worries, I can update you on what you miss.","No worries, I update you on whatever you miss.","No worries, I can update you on whatever you miss.",True
+SYN-volume500-v1-full-046-00,"Yeah, I think I'll just stay home and rest instead.","Ya, I think I stay home and rest instead.","Ya, I think stay home rest better.",True
+SYN-HUMAN-EXP1-085,Which file do you need?,Which file you need ah?,Which file you need ah?,False
+SYN-volume500-v1-full-044-03,I'm not sure how much space is left. Let's check before bringing the containers.,Not sure got how much space left leh. Check first before bringing the containers.,"Dunno how much space left. Before bringing the containers, check first.",True
+SYN-HUMAN-EXP1-048,I put them in the equipment cage.,I put the nets in the equipment cage liao.,I put them in the equipment cage already.,True
+SYN-volume500-v1-full-137-01,Could you help with stage decorations? I'll handle the sound check.,Can help with stage deco? I handle the sound check.,Stage deco you help? Sound check I settle.,True
+SYN-volume500-v1-full-076-02,Could you send the exit number or a location pin so I can find you?,Can send the exit number or location pin? I come find you.,Exit number or location pin send me can? Then I can find you.,True
+SYN-volume500-v1-full-068-01,Let's start the setup first and wait for him to join.,"Start setting up first lah, wait for him to join.","We start setting up first, wait for him to join.",True
+SYN-HUMAN-EXP1-039,I cannot drive. Could someone else drive us?,I cannot drive leh. Can ask someone else drive anot?,I cannot drive. Someone else drive us can?,True
+SYN-HUMAN-EXP1-002,"Yes please, could I borrow your extra ruler?","Yes please, lend me your extra ruler can?","Yes please, your extra ruler lend me can?",True
+SYN-HUMAN-EXP1-046,"Not yet, I am still two stops away.","Haven’t reach leh, still two stops away.","Haven’t reach leh, still two stops away.",False

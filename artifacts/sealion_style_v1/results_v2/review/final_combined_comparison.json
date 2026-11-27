@@ -1,0 +1,1082 @@
+[
+  {
+    "item_id": "SEADUAL-011",
+    "scope": "reused_development",
+    "english": "My purple water bottle is purple.",
+    "context": [
+      [
+        "user",
+        "I left my purple water bottle in the studio."
+      ],
+      [
+        "peer",
+        "There are a few bottles here."
+      ]
+    ],
+    "message": "What colour is your bottle?",
+    "outputs": {
+      "beam4": "My purple water bottle is purple.",
+      "guarded_model": "My purple water bottle is purple.",
+      "copy_penalty": "My purple water bottle purple.",
+      "lexicon_guidance": "My purple water bottle is purple.",
+      "combined": "My purple water bottle purple.",
+      "combined_guard_v2_copy1": "My purple water bottle purple.",
+      "control_25": "My purple water bottle is purple.",
+      "control_50": "My purple water bottle is purple.",
+      "control_100": "My purple water bottle is purple.",
+      "copy_loss_25": "My purple water bottle is purple.",
+      "copy_loss_50": "My purple water bottle is purple.",
+      "copy_loss_100": "My purple water bottle purple one.",
+      "copy100_v2_beam4": "My purple water bottle purple one.",
+      "copy100_v2_guarded_model": "My purple water bottle purple one.",
+      "copy100_v2_copy_penalty": "My purple water bottle purple one.",
+      "copy100_v2_lexicon_guidance": "My purple water bottle purple one.",
+      "copy100_v2_combined": "My purple water bottle purple one."
+    }
+  },
+  {
+    "item_id": "SEADUAL-015",
+    "scope": "reused_development",
+    "english": "You can ask for help from others in the group.",
+    "context": [
+      [
+        "peer",
+        "I have been doing most of the group project alone."
+      ],
+      [
+        "user",
+        "Have the others been helping?"
+      ]
+    ],
+    "message": "Not really, and I am feeling overwhelmed.",
+    "outputs": {
+      "beam4": "Can ask for help from others in the group?",
+      "guarded_model": "You can ask for help from others in the group.",
+      "copy_penalty": "You can ask for help from the others in the group.",
+      "lexicon_guidance": "You can ask for help from others in the group.",
+      "combined": "Ask group members help lah.",
+      "combined_guard_v2_copy1": "Ask group members help lah.",
+      "control_25": "Can ask for help from others in the group?",
+      "control_50": "Ask group members help lah.",
+      "control_100": "Ask group members help lah.",
+      "copy_loss_25": "Ask group members help lah.",
+      "copy_loss_50": "Ask group members help lah.",
+      "copy_loss_100": "Ask group members help lah.",
+      "copy100_v2_beam4": "Ask group members help lah.",
+      "copy100_v2_guarded_model": "Ask group members help lah.",
+      "copy100_v2_copy_penalty": "Ask group members help lah.",
+      "copy100_v2_lexicon_guidance": "Ask group members help lah.",
+      "copy100_v2_combined": "Ask group members help lah."
+    }
+  },
+  {
+    "item_id": "SEADUAL-008",
+    "scope": "reused_development",
+    "english": "Yes, I've already booked the room this morning.",
+    "context": [
+      [
+        "user",
+        "I already booked our tutorial room this morning."
+      ],
+      [
+        "peer",
+        "Thanks for arranging that."
+      ]
+    ],
+    "message": "Have you booked the room yet?",
+    "outputs": {
+      "beam4": "Yes, I've already booked the room this morning.",
+      "guarded_model": "Yes, I've already booked the room this morning.",
+      "copy_penalty": "Ya, I’ve already booked the room this morning.",
+      "lexicon_guidance": "Ya, I’ve already booked the room this morning.",
+      "combined": "Ya, I’ve already booked the room this morning.",
+      "combined_guard_v2_copy1": "Ya, I’ve already booked the room this morning.",
+      "control_25": "Already, this morning I book liao.",
+      "control_50": "Already, this morning I book liao.",
+      "control_100": "I already book liao. You all coming what time ah?",
+      "copy_loss_25": "Already, this morning I book liao.",
+      "copy_loss_50": "Ya, I book liao.",
+      "copy_loss_100": "Already, this morning I book liao.",
+      "copy100_v2_beam4": "Already, this morning I book liao.",
+      "copy100_v2_guarded_model": "Already, this morning I book liao.",
+      "copy100_v2_copy_penalty": "Already, this morning I book liao.",
+      "copy100_v2_lexicon_guidance": "Already, this morning I book liao.",
+      "copy100_v2_combined": "Already, this morning I book liao."
+    }
+  },
+  {
+    "item_id": "SEADUAL-010",
+    "scope": "reused_development",
+    "english": "I am waiting outside seminar room 4A.",
+    "context": [
+      [
+        "user",
+        "I am waiting outside seminar room 4A."
+      ],
+      [
+        "peer",
+        "I am coming upstairs."
+      ]
+    ],
+    "message": "Which room are you outside?",
+    "outputs": {
+      "beam4": "I waiting outside seminar room 4A.",
+      "guarded_model": "I waiting outside seminar room 4A.",
+      "copy_penalty": "I waiting outside seminar room 4A.",
+      "lexicon_guidance": "I waiting outside seminar room 4A.",
+      "combined": "I waiting outside seminar room 4A.",
+      "combined_guard_v2_copy1": "I waiting outside seminar room 4A.",
+      "control_25": "I waiting outside seminar room 4A.",
+      "control_50": "I am waiting outside seminar room 4A.",
+      "control_100": "I am waiting outside seminar room 4A.",
+      "copy_loss_25": "I waiting outside seminar room 4A.",
+      "copy_loss_50": "I waiting outside seminar room 4A.",
+      "copy_loss_100": "I waiting outside seminar room 4A.",
+      "copy100_v2_beam4": "I waiting outside seminar room 4A.",
+      "copy100_v2_guarded_model": "I waiting outside seminar room 4A.",
+      "copy100_v2_copy_penalty": "I waiting outside seminar room 4A.",
+      "copy100_v2_lexicon_guidance": "I waiting outside seminar room 4A.",
+      "copy100_v2_combined": "I waiting outside seminar room 4A."
+    }
+  },
+  {
+    "item_id": "SEADUAL-013",
+    "scope": "reused_development",
+    "english": "Could you get me a cup of coffee?",
+    "context": [
+      [
+        "user",
+        "I am still in the tutorial."
+      ],
+      [
+        "peer",
+        "I am at the coffee stall."
+      ]
+    ],
+    "message": "What drink should I get you?",
+    "outputs": {
+      "beam4": "Can get me a cup of coffee?",
+      "guarded_model": "Can get me a cup of coffee?",
+      "copy_penalty": "Can get me a cup of coffee?",
+      "lexicon_guidance": "Can get me a cup of coffee?",
+      "combined": "Can get me a cup of coffee?",
+      "combined_guard_v2_copy1": "Can get me a cup of coffee?",
+      "control_25": "Can get me a cup of coffee?",
+      "control_50": "Can get me a cup of coffee?",
+      "control_100": "Can get me a cup of coffee?",
+      "copy_loss_25": "Can, I get you a cup of coffee.",
+      "copy_loss_50": "Can get me a cup of coffee?",
+      "copy_loss_100": "Can help get me a cup of coffee?",
+      "copy100_v2_beam4": "Can help get me a cup of coffee?",
+      "copy100_v2_guarded_model": "Can help get me a cup of coffee?",
+      "copy100_v2_copy_penalty": "Can help get me a cup of coffee?",
+      "copy100_v2_lexicon_guidance": "Can help get me a cup of coffee?",
+      "copy100_v2_combined": "Can help get me a cup of coffee?"
+    }
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "scope": "reused_development",
+    "english": "No worries, let me know when you reach",
+    "context": [
+      [
+        "peer",
+        "I'm waiting outside already"
+      ],
+      [
+        "user",
+        "I'm reaching soon"
+      ]
+    ],
+    "message": "sorry, I took the wrong bus",
+    "outputs": {
+      "beam4": "No worries, take your time",
+      "guarded_model": "No worries, let me know when you reach",
+      "copy_penalty": "No worries, let me know when you reach",
+      "lexicon_guidance": "No worries, let me know when you reach",
+      "combined": "No worries, let me know when you reach",
+      "combined_guard_v2_copy1": "No worries, let me know when you reach",
+      "control_25": "No worries, take your time",
+      "control_50": "No worries, take your time",
+      "control_100": "No worries, take your time",
+      "copy_loss_25": "No worries, take your time",
+      "copy_loss_50": "No worries, take your time",
+      "copy_loss_100": "No worries, take your time",
+      "copy100_v2_beam4": "No worries, take your time",
+      "copy100_v2_guarded_model": "No worries, let me know when you reach",
+      "copy100_v2_copy_penalty": "No worries, let me know when you reach",
+      "copy100_v2_lexicon_guidance": "No worries, let me know when you reach",
+      "copy100_v2_combined": "No worries, let me know when you reach"
+    }
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "scope": "reused_development",
+    "english": "i'm not sure what i want",
+    "context": [
+      [
+        "peer",
+        "u wanna try the matcha at luckin?"
+      ],
+      [
+        "user",
+        "nahh"
+      ]
+    ],
+    "message": "then what u wanna drink later?",
+    "outputs": {
+      "beam4": "idk what i want leh",
+      "guarded_model": "i'm not sure what i want",
+      "copy_penalty": "i not sure what i want",
+      "lexicon_guidance": "i not sure what i want",
+      "combined": "i not sure what i want",
+      "combined_guard_v2_copy1": "i not sure what i want",
+      "control_25": "idk what i want leh",
+      "control_50": "i not sure what i want leh",
+      "control_100": "idk what i want leh",
+      "copy_loss_25": "idk what i want leh",
+      "copy_loss_50": "idk leh, wat u got?",
+      "copy_loss_100": "idk what i want leh",
+      "copy100_v2_beam4": "idk what i want leh",
+      "copy100_v2_guarded_model": "i not sure what i want leh",
+      "copy100_v2_copy_penalty": "i not sure what i want leh",
+      "copy100_v2_lexicon_guidance": "i not sure what i want leh",
+      "copy100_v2_combined": "i not sure what i want leh"
+    }
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "scope": "reused_development",
+    "english": "Yes, we are meeting at 7pm.",
+    "context": [
+      [
+        "peer",
+        "Hey! Where are you now?"
+      ],
+      [
+        "user",
+        "I am reaching Harbourfront MRT, how about you?"
+      ]
+    ],
+    "message": "Eh i double check with you, we are meeting at 7pm right?",
+    "outputs": {
+      "beam4": "Ya, seven at Harbourfront MRT.",
+      "guarded_model": "Yes, we are meeting at 7pm.",
+      "copy_penalty": "Yes, we are meeting at 7pm.",
+      "lexicon_guidance": "Yes, we are meeting at 7pm.",
+      "combined": "Yes, we are meeting at 7pm.",
+      "combined_guard_v2_copy1": "Yah, we are meeting at 7pm.",
+      "control_25": "Ya, seven at Harbourfront MRT.",
+      "control_50": "Ya, seven at Harbourfront MRT.",
+      "control_100": "Ya, seven at Harbourfront MRT.",
+      "copy_loss_25": "Ya, seven at Harbourfront MRT.",
+      "copy_loss_50": "Ya, seven at Harbourfront MRT.",
+      "copy_loss_100": "Ya, seven at Harbourfront MRT.",
+      "copy100_v2_beam4": "Ya, seven at Harbourfront MRT.",
+      "copy100_v2_guarded_model": "Yes, we are meeting at 7pm.",
+      "copy100_v2_copy_penalty": "Yes, we are meeting at 7pm.",
+      "copy100_v2_lexicon_guidance": "Yes, we are meeting at 7pm.",
+      "copy100_v2_combined": "Yes, we are meeting at 7pm."
+    }
+  },
+  {
+    "item_id": "CTXDEV-ownership-2",
+    "scope": "reused_development",
+    "english": "I need to return the cable you lent me yesterday.",
+    "context": [
+      [
+        "user",
+        "You lent me your power cable yesterday."
+      ],
+      [
+        "peer",
+        "Let us sort it out after the workshop."
+      ]
+    ],
+    "message": "Which one of us needs to return the power cable?",
+    "outputs": {
+      "beam4": "I need to return the cable you lent me yesterday.",
+      "guarded_model": "I need to return the cable you lent me yesterday.",
+      "copy_penalty": "I return the cable you lent me yesterday ah.",
+      "lexicon_guidance": "I need to return the cable you lent me yesterday.",
+      "combined": "I return the cable you lent me yesterday ah.",
+      "combined_guard_v2_copy1": "I return the cable you lent me yesterday ah.",
+      "control_25": "I return the cable you lent me yesterday ah.",
+      "control_50": "You need to return the cable I lent you yesterday ah.",
+      "control_100": "You need to return the cable I lent you yesterday ah.",
+      "copy_loss_25": "You need return the cable I lent you yesterday ah.",
+      "copy_loss_50": "You need return the cable I lent you yesterday ah.",
+      "copy_loss_100": "You need return the cable I lent you yesterday ah.",
+      "copy100_v2_beam4": "You need return the cable I lent you yesterday ah.",
+      "copy100_v2_guarded_model": "You lend me yesterday, I return you later.",
+      "copy100_v2_copy_penalty": "You lend me yesterday, I return you later.",
+      "copy100_v2_lexicon_guidance": "You lend me yesterday, I return you later.",
+      "copy100_v2_combined": "You lend me yesterday, I return you later."
+    }
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "scope": "reused_development",
+    "english": "Yes, there is still space.",
+    "context": [
+      [
+        "peer",
+        "I'm going library now"
+      ],
+      [
+        "user",
+        "I'll come over after class"
+      ]
+    ],
+    "message": "still got space?",
+    "outputs": {
+      "beam4": "Still got space, I come over after class.",
+      "guarded_model": "Still got space.",
+      "copy_penalty": "Still got space.",
+      "lexicon_guidance": "Still got space.",
+      "combined": "Still got space.",
+      "combined_guard_v2_copy1": "Still got space.",
+      "control_25": "Still got space, I come over after class.",
+      "control_50": "still got space, I come over after class",
+      "control_100": "Still got space, I come over after class.",
+      "copy_loss_25": "Still got space, I come over after class.",
+      "copy_loss_50": "still got space, I come over after class",
+      "copy_loss_100": "Still got space, I come over after class.",
+      "copy100_v2_beam4": "Still got space, I come over after class.",
+      "copy100_v2_guarded_model": "still got space",
+      "copy100_v2_copy_penalty": "still got space",
+      "copy100_v2_lexicon_guidance": "still got space",
+      "copy100_v2_combined": "still got space"
+    }
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "scope": "reused_development",
+    "english": "yes, i'll make sure to include the slide",
+    "context": [
+      [
+        "peer",
+        "i'll upload my section before dinner"
+      ],
+      [
+        "user",
+        "okay, then i can merge everything tonight"
+      ]
+    ],
+    "message": "eh dont forget your slide ah, we need merge later",
+    "outputs": {
+      "beam4": "ya, i'll include the slide also",
+      "guarded_model": "ya, i make sure to include the slide",
+      "copy_penalty": "ya, i make sure to include the slide",
+      "lexicon_guidance": "ya, i'll include the slide also",
+      "combined": "ya, i'll include the slide also",
+      "combined_guard_v2_copy1": "ya, i'll include the slide also",
+      "control_25": "okay, i add the slide now",
+      "control_50": "okay, i add the slide now",
+      "control_100": "okay, i'll include the slide in my part first",
+      "copy_loss_25": "okay, i add the slide now",
+      "copy_loss_50": "okok, i add the slide later",
+      "copy_loss_100": "okay, i add the slide now",
+      "copy100_v2_beam4": "okay, i add the slide now",
+      "copy100_v2_guarded_model": "okok, i include the slide in my part first",
+      "copy100_v2_copy_penalty": "okok, i include the slide in my part first",
+      "copy100_v2_lexicon_guidance": "okok, i include the slide later",
+      "copy100_v2_combined": "okok, i include the slide later"
+    }
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "scope": "reused_development",
+    "english": "Nope, I haven't done it yet.",
+    "context": [
+      [
+        "peer",
+        "Hi guys, remember to do the quiz, deadline is next week"
+      ],
+      [
+        "user",
+        "yep noted"
+      ]
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "outputs": {
+      "beam4": "haven’t finish leh, I check the answers first",
+      "guarded_model": "Nope, I haven't done it yet.",
+      "copy_penalty": "Nope, I haven't done it yet.",
+      "lexicon_guidance": "Nope, I haven't done it yet.",
+      "combined": "Nope, I haven't done it yet.",
+      "combined_guard_v2_copy1": "Nope, I haven't done it yet.",
+      "control_25": "haven’t finish leh, I only started",
+      "control_50": "havent leh, i only started",
+      "control_100": "havent leh, haven’t started yet",
+      "copy_loss_25": "haven’t finish leh, I check the answers first",
+      "copy_loss_50": "haven’t leh, still waiting for prof to send the link",
+      "copy_loss_100": "haven’t finish leh, I only started",
+      "copy100_v2_beam4": "haven’t finish leh, I only started",
+      "copy100_v2_guarded_model": "Nope, I haven't done it yet.",
+      "copy100_v2_copy_penalty": "Nope, I haven't done it yet.",
+      "copy100_v2_lexicon_guidance": "Nope, I haven't done it yet.",
+      "copy100_v2_combined": "Nope, I haven't done it yet."
+    }
+  },
+  {
+    "item_id": "SEAPUBLIC-002",
+    "scope": "reused_development",
+    "english": "Yes, please return my headphones by tomorrow afternoon.",
+    "context": [
+      [
+        "user",
+        "You still have my headphones."
+      ],
+      [
+        "peer",
+        "Yes, I kept them in their case."
+      ]
+    ],
+    "message": "Can I return your headphones tomorrow afternoon?",
+    "outputs": {
+      "beam4": "Can, tomorrow afternoon return my headphones.",
+      "guarded_model": "Can, return my headphones by tomorrow afternoon ah.",
+      "copy_penalty": "Can, return my headphones by tomorrow afternoon ah.",
+      "lexicon_guidance": "Can, return my headphones by tomorrow afternoon ah.",
+      "combined": "Can, return my headphones by tomorrow afternoon ah.",
+      "combined_guard_v2_copy1": "Can, return my headphones by tomorrow afternoon ah.",
+      "control_25": "Can, tomorrow afternoon I return your headphones.",
+      "control_50": "Can, return my headphones by tomorrow afternoon ah.",
+      "control_100": "Can, tomorrow afternoon I return your headphones.",
+      "copy_loss_25": "Can, return my headphones by tomorrow afternoon ah.",
+      "copy_loss_50": "Can, return my headphones by tomorrow afternoon ah.",
+      "copy_loss_100": "Can, tomorrow afternoon return my headphones.",
+      "copy100_v2_beam4": "Can, tomorrow afternoon return my headphones.",
+      "copy100_v2_guarded_model": "Can, tomorrow afternoon return my headphones.",
+      "copy100_v2_copy_penalty": "Can, tomorrow afternoon return my headphones.",
+      "copy100_v2_lexicon_guidance": "Can, tomorrow afternoon return your headphones.",
+      "copy100_v2_combined": "Can, tomorrow afternoon return your headphones."
+    }
+  },
+  {
+    "item_id": "RESTORE-FRESH-021",
+    "scope": "reused_development",
+    "english": "Could you get me a bottle of water?",
+    "context": [
+      [
+        "user",
+        "I am still in class."
+      ],
+      [
+        "peer",
+        "I am queuing at the drinks stall."
+      ]
+    ],
+    "message": "What would you like me to get you?",
+    "outputs": {
+      "beam4": "Can get me a bottle of water?",
+      "guarded_model": "Can get me a bottle of water?",
+      "copy_penalty": "Can get me a bottle of water?",
+      "lexicon_guidance": "Can get me a bottle of water anot?",
+      "combined": "Can get me a bottle of water anot?",
+      "combined_guard_v2_copy1": "Can get me a bottle of water anot?",
+      "control_25": "Water you want, get me a bottle ah.",
+      "control_50": "Can help get me a bottle of water?",
+      "control_100": "Can get me a bottle of water?",
+      "copy_loss_25": "Water you want, get me a bottle ah.",
+      "copy_loss_50": "Can help get me a bottle of water?",
+      "copy_loss_100": "Can get me a bottle of water?",
+      "copy100_v2_beam4": "Can get me a bottle of water?",
+      "copy100_v2_guarded_model": "Can get me a bottle of water?",
+      "copy100_v2_copy_penalty": "Can get me a bottle of water?",
+      "copy100_v2_lexicon_guidance": "Can get me a bottle of water?",
+      "copy100_v2_combined": "Can get me a bottle of water?"
+    }
+  },
+  {
+    "item_id": "RESTORE-FRESH-009",
+    "scope": "reused_development",
+    "english": "That is too expensive for me. Could we get something cheaper?",
+    "context": [
+      [
+        "user",
+        "I have twelve dollars left for dinner."
+      ],
+      [
+        "peer",
+        "There are a few stalls downstairs."
+      ]
+    ],
+    "message": "Want to order the thirty-dollar platter?",
+    "outputs": {
+      "beam4": "Paiseh, thirty dollars is beyond my budget.",
+      "guarded_model": "That is too expensive for me. Could we get something cheaper?",
+      "copy_penalty": "That is too expensive for me. Could we get something cheaper?",
+      "lexicon_guidance": "That is too expensive for me. Could we get something cheaper?",
+      "combined": "That is too expensive for me. Could we get something cheaper?",
+      "combined_guard_v2_copy1": "That is too expensive for me. Could we get something cheaper?",
+      "control_25": "Paiseh, thirty dollars is beyond my budget. Could get something cheaper?",
+      "control_50": "Paiseh, thirty dollars is beyond my budget. Could get something cheaper?",
+      "control_100": "Paiseh, thirty dollars too much for me. Could get something cheaper?",
+      "copy_loss_25": "Paiseh, thirty dollars is beyond my budget.",
+      "copy_loss_50": "Paiseh, thirty dollars cannot buy leh. Can get something cheaper anot?",
+      "copy_loss_100": "Paiseh, thirty dollars too much for me. Can get something cheaper?",
+      "copy100_v2_beam4": "Paiseh, thirty dollars too much for me. Can get something cheaper?",
+      "copy100_v2_guarded_model": "Too expensive for me leh. Can get something cheaper instead?",
+      "copy100_v2_copy_penalty": "Too expensive for me leh. Can get something cheaper instead?",
+      "copy100_v2_lexicon_guidance": "Too expensive for me leh. Can get something cheaper instead?",
+      "copy100_v2_combined": "Too expensive for me leh. Can get something cheaper instead?"
+    }
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "scope": "reused_development",
+    "english": "Yes, I will be there at 8am.",
+    "context": [
+      [
+        "peer",
+        "we said we'd sit together tmr"
+      ],
+      [
+        "user",
+        "yep"
+      ]
+    ],
+    "message": "you still coming early to get seats right?",
+    "outputs": {
+      "beam4": "ya, i gg at 8am",
+      "guarded_model": "ya, i cmg at 8am",
+      "copy_penalty": "ya, i cmg at 8am",
+      "lexicon_guidance": "ya, i cmg at 8am",
+      "combined": "ya, i cmg at 8am",
+      "combined_guard_v2_copy1": "ya, i cmg at 8am",
+      "control_25": "steady, I reaching alr",
+      "control_50": "ya, cg i gna be there at 8am",
+      "control_100": "yes, i cmg at 8am",
+      "copy_loss_25": "ya, cg i gna be there at 8am",
+      "copy_loss_50": "ya, I gna be there at 8am",
+      "copy_loss_100": "ya, cg i gna be there at 8am",
+      "copy100_v2_beam4": "ya, cg i gna be there at 8am",
+      "copy100_v2_guarded_model": "ya, i gg at 8am",
+      "copy100_v2_copy_penalty": "ya, i gg at 8am",
+      "copy100_v2_lexicon_guidance": "ya, i gg at 8am",
+      "copy100_v2_combined": "ya, i gg at 8am"
+    }
+  },
+  {
+    "item_id": "SEAPUBLIC-011",
+    "scope": "reused_development",
+    "english": "I am waiting outside room C2.",
+    "context": [
+      [
+        "user",
+        "I am waiting outside room C2."
+      ],
+      [
+        "peer",
+        "I am on my way."
+      ]
+    ],
+    "message": "Which room are you outside?",
+    "outputs": {
+      "beam4": "I waiting outside room C2.",
+      "guarded_model": "I waiting outside room C2.",
+      "copy_penalty": "I waiting outside room C2.",
+      "lexicon_guidance": "I waiting outside room C2.",
+      "combined": "I waiting outside room C2.",
+      "combined_guard_v2_copy1": "I waiting outside room C2.",
+      "control_25": "I waiting outside room C2.",
+      "control_50": "I waiting outside room C2.",
+      "control_100": "I waiting outside room C2.",
+      "copy_loss_25": "I waiting outside room C2.",
+      "copy_loss_50": "I waiting outside room C2.",
+      "copy_loss_100": "I waiting outside room C2.",
+      "copy100_v2_beam4": "I waiting outside room C2.",
+      "copy100_v2_guarded_model": "I waiting outside room C2.",
+      "copy100_v2_copy_penalty": "I waiting outside room C2.",
+      "copy100_v2_lexicon_guidance": "I waiting outside room C2.",
+      "copy100_v2_combined": "I waiting outside room C2."
+    }
+  },
+  {
+    "item_id": "CTXDEV-submitted-1",
+    "scope": "reused_development",
+    "english": "Yes, I've uploaded it to the portal this afternoon.",
+    "context": [
+      [
+        "user",
+        "I uploaded the consent form to the portal this afternoon."
+      ],
+      [
+        "peer",
+        "The deadline is tomorrow."
+      ]
+    ],
+    "message": "Have you submitted the consent form?",
+    "outputs": {
+      "beam4": "Ya, I’ve uploaded it to the portal this afternoon.",
+      "guarded_model": "Ya, I’ve uploaded it to the portal this afternoon.",
+      "copy_penalty": "Ya, I’ve uploaded it to the portal this afternoon.",
+      "lexicon_guidance": "Ya, I submit the form to the portal this afternoon.",
+      "combined": "Ya, I submit the form to the portal this afternoon.",
+      "combined_guard_v2_copy1": "Ya, I submit the form to the portal this afternoon.",
+      "control_25": "Ya, I submit the form to the portal this afternoon.",
+      "control_50": "Ya, I’ve submitted it to the portal this afternoon.",
+      "control_100": "Ya, I’ve uploaded it to the portal this afternoon.",
+      "copy_loss_25": "Ya, I submit the form to the portal this afternoon.",
+      "copy_loss_50": "Ya, I submit to portal liao.",
+      "copy_loss_100": "Ya, I submit to portal liao.",
+      "copy100_v2_beam4": "Ya, I submit to portal liao.",
+      "copy100_v2_guarded_model": "Ya, I’ve submitted it to the portal this afternoon.",
+      "copy100_v2_copy_penalty": "Ya, I’ve submitted it to the portal this afternoon.",
+      "copy100_v2_lexicon_guidance": "Ya, I submit the form to the portal this afternoon.",
+      "copy100_v2_combined": "Ya, I submit the form to the portal this afternoon."
+    }
+  },
+  {
+    "item_id": "RESTORE-FRESH-013",
+    "scope": "reused_development",
+    "english": "I cannot lift heavy boxes. Could someone else help me?",
+    "context": [
+      [
+        "user",
+        "My shoulder is injured and I cannot lift heavy boxes."
+      ],
+      [
+        "peer",
+        "Please take care of it."
+      ]
+    ],
+    "message": "Could you help move this heavy cupboard?",
+    "outputs": {
+      "beam4": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "guarded_model": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "copy_penalty": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "lexicon_guidance": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "combined": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "combined_guard_v2_copy1": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "control_25": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "control_50": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "control_100": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "copy_loss_25": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "copy_loss_50": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "copy_loss_100": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "copy100_v2_beam4": "I cannot lift heavy boxes leh. Ask someone else to help can?",
+      "copy100_v2_guarded_model": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "copy100_v2_copy_penalty": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "copy100_v2_lexicon_guidance": "I cannot lift heavy boxes leh. Can ask someone else to help?",
+      "copy100_v2_combined": "I cannot lift heavy boxes leh. Can ask someone else to help?"
+    }
+  },
+  {
+    "item_id": "SEADUAL-002",
+    "scope": "reused_development",
+    "english": "That's too expensive for me. Could we find something cheaper?",
+    "context": [
+      [
+        "user",
+        "My lunch budget today is eleven dollars."
+      ],
+      [
+        "peer",
+        "We can find something nearby."
+      ]
+    ],
+    "message": "Want the twenty-seven-dollar lunch set?",
+    "outputs": {
+      "beam4": "That one too expensive for me leh. Find something cheaper can?",
+      "guarded_model": "That's too expensive for me. Could we find something cheaper?",
+      "copy_penalty": "That's too expensive for me. Could we find something cheaper?",
+      "lexicon_guidance": "That's too expensive for me. Could we find something cheaper?",
+      "combined": "That's too expensive for me. Could we find something cheaper?",
+      "combined_guard_v2_copy1": "Too expensive leh. Find something cheaper can?",
+      "control_25": "Too expensive for me leh. Find something cheaper can?",
+      "control_50": "That one too expensive for me leh. Find something cheaper can?",
+      "control_100": "That lunch set too expensive for me leh. Find cheaper one can?",
+      "copy_loss_25": "Too expensive for me leh. Find something cheaper can?",
+      "copy_loss_50": "Too expensive leh. Find something cheaper can?",
+      "copy_loss_100": "That lunch set too expensive for me leh. Find cheaper one can?",
+      "copy100_v2_beam4": "That lunch set too expensive for me leh. Find cheaper one can?",
+      "copy100_v2_guarded_model": "That lunch set too expensive for me leh. Find cheaper one can?",
+      "copy100_v2_copy_penalty": "That lunch set too expensive for me leh. Find cheaper one can?",
+      "copy100_v2_lexicon_guidance": "Too expensive leh. Find something cheaper can?",
+      "copy100_v2_combined": "Too expensive leh. Find something cheaper can?"
+    }
+  },
+  {
+    "item_id": "SEAPUBLIC-001",
+    "scope": "reused_development",
+    "english": "Seven forty works for me.",
+    "context": [
+      [
+        "user",
+        "I cannot leave work before 8:10."
+      ],
+      [
+        "peer",
+        "We can get dinner afterwards."
+      ]
+    ],
+    "message": "7:40 can meet already or not?",
+    "outputs": {
+      "beam4": "Seven forty can.",
+      "guarded_model": "Seven forty can.",
+      "copy_penalty": "Seven forty can.",
+      "lexicon_guidance": "Seven forty can.",
+      "combined": "Seven forty can.",
+      "combined_guard_v2_copy1": "Seven forty can.",
+      "control_25": "Can, seven forty meet can.",
+      "control_50": "Can, seven forty meet can.",
+      "control_100": "Can, seven forty meet can.",
+      "copy_loss_25": "Can, seven forty meet can.",
+      "copy_loss_50": "Can, seven forty meet can.",
+      "copy_loss_100": "Seven forty can, see you then.",
+      "copy100_v2_beam4": "Seven forty can, see you then.",
+      "copy100_v2_guarded_model": "Seven forty can, see you then.",
+      "copy100_v2_copy_penalty": "Seven forty can, see you then.",
+      "copy100_v2_lexicon_guidance": "Seven forty can, see you then.",
+      "copy100_v2_combined": "Seven forty can, see you then."
+    }
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "scope": "reused_development",
+    "english": "sure, let's meet there at 8",
+    "context": [
+      [
+        "peer",
+        "are you going to the library ltr?"
+      ],
+      [
+        "user",
+        "yeah, probably after dinner"
+      ]
+    ],
+    "message": "i'll be at lks around 8, want to meet there?",
+    "outputs": {
+      "beam4": "steady, i meet you at lks at 8",
+      "guarded_model": "steady, i meet you at lks at 8",
+      "copy_penalty": "steady, i meet you at lks at 8",
+      "lexicon_guidance": "steady, i meet you at lks at 8",
+      "combined": "steady, i meet you at lks at 8",
+      "combined_guard_v2_copy1": "steady, i meet you at lks at 8",
+      "control_25": "steady, i meet you at lks at 8",
+      "control_50": "steady, i meet you at lks at 8",
+      "control_100": "can, see you at 8 at lks",
+      "copy_loss_25": "steady, see you at 8 at lks",
+      "copy_loss_50": "steady, i meet you at lks at 8",
+      "copy_loss_100": "can, see you at lks at 8",
+      "copy100_v2_beam4": "can, see you at lks at 8",
+      "copy100_v2_guarded_model": "can, i meet you at lks at 8",
+      "copy100_v2_copy_penalty": "can, i meet you at lks at 8",
+      "copy100_v2_lexicon_guidance": "can, i meet you at lks at 8",
+      "copy100_v2_combined": "can, i meet you at lks at 8"
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-001",
+    "scope": "assistant_authored_diagnostic",
+    "english": "Okay.",
+    "context": [
+      [
+        "user",
+        "I can meet at the library."
+      ]
+    ],
+    "message": "Shall we meet there?",
+    "outputs": {
+      "beam4": "Can, library there meet.",
+      "guarded_model": "Can, library there meet.",
+      "copy_penalty": "Can, library there meet.",
+      "lexicon_guidance": "Can, library there meet.",
+      "combined": "Can, library there meet.",
+      "combined_guard_v2_copy1": "Can, library there meet.",
+      "control_25": "Can, library there meet.",
+      "control_50": "Can, library there meet.",
+      "control_100": "Can, library there meet.",
+      "copy_loss_25": "Can, library there meet.",
+      "copy_loss_50": "Can, library there meet.",
+      "copy_loss_100": "Can, library there meet.",
+      "copy100_v2_beam4": "Can, library there meet.",
+      "copy100_v2_guarded_model": "Can, library there meet.",
+      "copy100_v2_copy_penalty": "Can, library there meet.",
+      "copy100_v2_lexicon_guidance": "Can, library there meet.",
+      "copy100_v2_combined": "Can, library there meet."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-002",
+    "scope": "assistant_authored_diagnostic",
+    "english": "Purple.",
+    "context": [
+      [
+        "user",
+        "My bottle is purple."
+      ]
+    ],
+    "message": "What colour is your bottle?",
+    "outputs": {
+      "beam4": "My bottle purple.",
+      "guarded_model": "My bottle purple.",
+      "copy_penalty": "My bottle purple.",
+      "lexicon_guidance": "My bottle purple.",
+      "combined": "My bottle purple.",
+      "combined_guard_v2_copy1": "My bottle purple.",
+      "control_25": "My bottle purple.",
+      "control_50": "My bottle purple.",
+      "control_100": "My bottle purple.",
+      "copy_loss_25": "My bottle purple.",
+      "copy_loss_50": "My bottle purple.",
+      "copy_loss_100": "My bottle purple.",
+      "copy100_v2_beam4": "My bottle purple.",
+      "copy100_v2_guarded_model": "My bottle purple.",
+      "copy100_v2_copy_penalty": "My bottle purple.",
+      "copy100_v2_lexicon_guidance": "My bottle purple.",
+      "copy100_v2_combined": "My bottle purple."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-003",
+    "scope": "assistant_authored_diagnostic",
+    "english": "Room 4A.",
+    "context": [
+      [
+        "user",
+        "I am outside room 4A."
+      ]
+    ],
+    "message": "Which room?",
+    "outputs": {
+      "beam4": "Room 4A.",
+      "guarded_model": "Room 4A.",
+      "copy_penalty": "Room 4A.",
+      "lexicon_guidance": "Room 4A.",
+      "combined": "Room 4A.",
+      "combined_guard_v2_copy1": "Room 4A.",
+      "control_25": "Room 4A. Outside there.",
+      "control_50": "Room 4A. Outside there.",
+      "control_100": "Room 4A. Outside there.",
+      "copy_loss_25": "Room 4A. Outside there.",
+      "copy_loss_50": "Room 4A. Outside there.",
+      "copy_loss_100": "Room 4A. Outside there.",
+      "copy100_v2_beam4": "Room 4A. Outside there.",
+      "copy100_v2_guarded_model": "Room 4A, fourth floor.",
+      "copy100_v2_copy_penalty": "Room 4A, fourth floor.",
+      "copy100_v2_lexicon_guidance": "Room 4A, fourth floor.",
+      "copy100_v2_combined": "Room 4A, fourth floor."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-004",
+    "scope": "assistant_authored_diagnostic",
+    "english": "No.",
+    "context": [
+      [
+        "user",
+        "I have not paid the fee yet."
+      ]
+    ],
+    "message": "Have you paid?",
+    "outputs": {
+      "beam4": "Haven’t pay leh.",
+      "guarded_model": "No.",
+      "copy_penalty": "No.",
+      "lexicon_guidance": "No.",
+      "combined": "No.",
+      "combined_guard_v2_copy1": "Haven’t pay leh. I check my wallet first.",
+      "control_25": "Haven’t paid leh. I check my wallet first.",
+      "control_50": "Haven’t pay leh. Paying now.",
+      "control_100": "Haven’t pay leh. I check my wallet first.",
+      "copy_loss_25": "Haven’t pay leh. I check my wallet first.",
+      "copy_loss_50": "Haven’t pay leh. Paying now.",
+      "copy_loss_100": "Haven’t pay leh. Paying now.",
+      "copy100_v2_beam4": "Haven’t pay leh. Paying now.",
+      "copy100_v2_guarded_model": "Haven’t pay leh. I check my wallet first.",
+      "copy100_v2_copy_penalty": "Haven’t pay leh. I check my wallet first.",
+      "copy100_v2_lexicon_guidance": "Haven’t pay leh. I check my wallet first.",
+      "copy100_v2_combined": "Haven’t pay leh. I check my wallet first."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-005",
+    "scope": "assistant_authored_diagnostic",
+    "english": "Yes.",
+    "context": [
+      [
+        "user",
+        "I am free on Thursday."
+      ]
+    ],
+    "message": "Are you free on Thursday?",
+    "outputs": {
+      "beam4": "Thursday I free.",
+      "guarded_model": "Yes.",
+      "copy_penalty": "Yes.",
+      "lexicon_guidance": "Yes.",
+      "combined": "Yes.",
+      "combined_guard_v2_copy1": "Yes.",
+      "control_25": "Thursday I free.",
+      "control_50": "Thursday I free.",
+      "control_100": "Thursday I free.",
+      "copy_loss_25": "Thursday I free.",
+      "copy_loss_50": "Thursday I free.",
+      "copy_loss_100": "Thursday I free.",
+      "copy100_v2_beam4": "Thursday I free.",
+      "copy100_v2_guarded_model": "Yes.",
+      "copy100_v2_copy_penalty": "Yes.",
+      "copy100_v2_lexicon_guidance": "Yes.",
+      "copy100_v2_combined": "Yes."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-006",
+    "scope": "assistant_authored_diagnostic",
+    "english": "I cannot attend on Thursday.",
+    "context": [
+      [
+        "user",
+        "I cannot attend on Thursday."
+      ]
+    ],
+    "message": "Can you attend?",
+    "outputs": {
+      "beam4": "Thursday I cannot make it leh.",
+      "guarded_model": "Thursday I cannot make it.",
+      "copy_penalty": "Thursday I cannot make it.",
+      "lexicon_guidance": "Thursday cannot leh.",
+      "combined": "Thursday cannot leh.",
+      "combined_guard_v2_copy1": "Thursday cannot leh.",
+      "control_25": "Thursday I cannot make it leh.",
+      "control_50": "Thursday cannot leh.",
+      "control_100": "Thursday I cannot make it leh.",
+      "copy_loss_25": "Thursday I cannot make it leh.",
+      "copy_loss_50": "Thursday cannot leh.",
+      "copy_loss_100": "Thursday I cannot make leh.",
+      "copy100_v2_beam4": "Thursday I cannot make leh.",
+      "copy100_v2_guarded_model": "Thursday I cannot make leh.",
+      "copy100_v2_copy_penalty": "Thursday I cannot make leh.",
+      "copy100_v2_lexicon_guidance": "Thursday I cannot make leh.",
+      "copy100_v2_combined": "Thursday I cannot make leh."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-007",
+    "scope": "assistant_authored_diagnostic",
+    "english": "Please send $19 to Mei before 18:25.",
+    "context": [
+      [
+        "user",
+        "Mei needs $19 before 18:25."
+      ]
+    ],
+    "message": "What should I send?",
+    "outputs": {
+      "beam4": "Send $19 to Mei before 18:25 ah.",
+      "guarded_model": "Send $19 to Mei before 18:25 ah.",
+      "copy_penalty": "Send $19 to Mei before 18:25 ah.",
+      "lexicon_guidance": "Send $19 to Mei before 18:25 ah.",
+      "combined": "Send $19 to Mei before 18:25 ah.",
+      "combined_guard_v2_copy1": "Send $19 to Mei before 18:25 ah.",
+      "control_25": "Send $19 to Mei before 18:25 ah.",
+      "control_50": "Send $19 to Mei before 18:25 ah.",
+      "control_100": "Send $19 to Mei before 18:25 ah.",
+      "copy_loss_25": "Send $19 to Mei before 18:25 ah.",
+      "copy_loss_50": "Send $19 to Mei before 18:25 ah.",
+      "copy_loss_100": "Send $19 to Mei before 18:25 ah.",
+      "copy100_v2_beam4": "Send $19 to Mei before 18:25 ah.",
+      "copy100_v2_guarded_model": "Send $19 to Mei before 18:25 ah.",
+      "copy100_v2_copy_penalty": "Send $19 to Mei before 18:25 ah.",
+      "copy100_v2_lexicon_guidance": "Send $19 to Mei before 18:25 ah.",
+      "copy100_v2_combined": "Send $19 to Mei before 18:25 ah."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-008",
+    "scope": "assistant_authored_diagnostic",
+    "english": "You should return my cable to me.",
+    "context": [
+      [
+        "user",
+        "You borrowed my cable."
+      ]
+    ],
+    "message": "Who should return it?",
+    "outputs": {
+      "beam4": "You return my cable to me ah.",
+      "guarded_model": "You return my cable to me ah.",
+      "copy_penalty": "You return my cable to me ah.",
+      "lexicon_guidance": "You return my cable to me ah.",
+      "combined": "You return my cable to me ah.",
+      "combined_guard_v2_copy1": "You return my cable to me ah.",
+      "control_25": "You return my cable to me ah.",
+      "control_50": "You return my cable to me ah.",
+      "control_100": "You return my cable to me ah.",
+      "copy_loss_25": "You return my cable to me ah.",
+      "copy_loss_50": "You return my cable to me ah.",
+      "copy_loss_100": "You return my cable to me ah.",
+      "copy100_v2_beam4": "You return my cable to me ah.",
+      "copy100_v2_guarded_model": "You return my cable to me ah.",
+      "copy100_v2_copy_penalty": "You return my cable to me ah.",
+      "copy100_v2_lexicon_guidance": "You return my cable to me ah.",
+      "copy100_v2_combined": "You return my cable to me ah."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-009",
+    "scope": "assistant_authored_diagnostic",
+    "english": "I am waiting outside room 4A.",
+    "context": [
+      [
+        "user",
+        "I am outside room 4A."
+      ]
+    ],
+    "message": "Where are you waiting?",
+    "outputs": {
+      "beam4": "I waiting outside room 4A.",
+      "guarded_model": "I waiting outside room 4A.",
+      "copy_penalty": "I waiting outside room 4A.",
+      "lexicon_guidance": "I waiting outside room 4A.",
+      "combined": "I waiting outside room 4A.",
+      "combined_guard_v2_copy1": "I waiting outside room 4A.",
+      "control_25": "I waiting outside room 4A.",
+      "control_50": "I waiting outside room 4A.",
+      "control_100": "I waiting outside room 4A.",
+      "copy_loss_25": "I waiting outside room 4A.",
+      "copy_loss_50": "I waiting outside room 4A.",
+      "copy_loss_100": "I waiting outside room 4A.",
+      "copy100_v2_beam4": "I waiting outside room 4A.",
+      "copy100_v2_guarded_model": "I waiting outside room 4A.",
+      "copy100_v2_copy_penalty": "I waiting outside room 4A.",
+      "copy100_v2_lexicon_guidance": "I waiting outside room 4A.",
+      "copy100_v2_combined": "I waiting outside room 4A."
+    }
+  },
+  {
+    "item_id": "STYLE-CONTROL-010",
+    "scope": "assistant_authored_diagnostic",
+    "english": "I have not submitted the form yet.",
+    "context": [
+      [
+        "user",
+        "I have not submitted the form."
+      ]
+    ],
+    "message": "Have you submitted it?",
+    "outputs": {
+      "beam4": "I haven’t submit leh.",
+      "guarded_model": "I haven’t submit leh.",
+      "copy_penalty": "I haven’t submit leh.",
+      "lexicon_guidance": "I haven’t submit leh.",
+      "combined": "I haven’t submit leh.",
+      "combined_guard_v2_copy1": "Haven’t submit leh. I check the form first.",
+      "control_25": "Haven’t submit leh, haven’t even started.",
+      "control_50": "Haven’t submit leh. I only started.",
+      "control_100": "Haven’t submit leh, haven’t even started.",
+      "copy_loss_25": "Haven’t submit leh, haven’t even started.",
+      "copy_loss_50": "Haven’t submit leh, haven’t even started.",
+      "copy_loss_100": "Haven’t submit leh. I check the form first.",
+      "copy100_v2_beam4": "Haven’t submit leh. I check the form first.",
+      "copy100_v2_guarded_model": "Haven’t submit leh, haven’t even started.",
+      "copy100_v2_copy_penalty": "Haven’t submit leh, haven’t even started.",
+      "copy100_v2_lexicon_guidance": "Haven’t submit leh. I check the form first.",
+      "copy100_v2_combined": "Haven’t submit leh. I check the form first."
+    }
+  }
+]

@@ -1,0 +1,272 @@
+{
+  "seed": 20261108,
+  "cases": [
+    {
+      "review_id": "TRAINED-STYLE-001",
+      "context": [
+        [
+          "user",
+          "I left my purple water bottle in the studio."
+        ],
+        [
+          "peer",
+          "There are a few bottles here."
+        ]
+      ],
+      "message": "What colour is your bottle?",
+      "english": "My purple water bottle is purple.",
+      "options": {
+        "A": "My purple water bottle purple.",
+        "B": "My purple water bottle is purple.",
+        "C": "My purple water bottle purple one."
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-002",
+      "context": [
+        [
+          "peer",
+          "I have been doing most of the group project alone."
+        ],
+        [
+          "user",
+          "Have the others been helping?"
+        ]
+      ],
+      "message": "Not really, and I am feeling overwhelmed.",
+      "english": "You can ask for help from others in the group.",
+      "options": {
+        "A": "Can ask for help from others in the group?",
+        "B": "Ask group members help lah."
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-003",
+      "context": [
+        [
+          "user",
+          "I already booked our tutorial room this morning."
+        ],
+        [
+          "peer",
+          "Thanks for arranging that."
+        ]
+      ],
+      "message": "Have you booked the room yet?",
+      "english": "Yes, I've already booked the room this morning.",
+      "options": {
+        "A": "Ya, I’ve already booked the room this morning.",
+        "B": "Ya, I book liao.",
+        "C": "I already book liao. You all coming what time ah?",
+        "D": "Already, this morning I book liao.",
+        "E": "Yes, I've already booked the room this morning."
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-004",
+      "context": [
+        [
+          "user",
+          "I am waiting outside seminar room 4A."
+        ],
+        [
+          "peer",
+          "I am coming upstairs."
+        ]
+      ],
+      "message": "Which room are you outside?",
+      "english": "I am waiting outside seminar room 4A.",
+      "options": {
+        "A": "I am waiting outside seminar room 4A.",
+        "B": "I waiting outside seminar room 4A."
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-005",
+      "context": [
+        [
+          "user",
+          "I am still in the tutorial."
+        ],
+        [
+          "peer",
+          "I am at the coffee stall."
+        ]
+      ],
+      "message": "What drink should I get you?",
+      "english": "Could you get me a cup of coffee?",
+      "options": {
+        "A": "Can get me a cup of coffee?",
+        "B": "Can help get me a cup of coffee?",
+        "C": "Can, I get you a cup of coffee."
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-006",
+      "context": [
+        [
+          "peer",
+          "we said we'd sit together tmr"
+        ],
+        [
+          "user",
+          "yep"
+        ]
+      ],
+      "message": "you still coming early to get seats right?",
+      "english": "Yes, I will be there at 8am.",
+      "options": {
+        "A": "yes, i cmg at 8am",
+        "B": "ya, i cmg at 8am",
+        "C": "ya, i gg at 8am",
+        "D": "ya, I gna be there at 8am",
+        "E": "ya, cg i gna be there at 8am"
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-007",
+      "context": [
+        [
+          "user",
+          "My lunch budget today is eleven dollars."
+        ],
+        [
+          "peer",
+          "We can find something nearby."
+        ]
+      ],
+      "message": "Want the twenty-seven-dollar lunch set?",
+      "english": "That's too expensive for me. Could we find something cheaper?",
+      "options": {
+        "A": "That one too expensive for me leh. Find something cheaper can?",
+        "B": "Too expensive leh. Find something cheaper can?",
+        "C": "Too expensive for me leh. Find something cheaper can?",
+        "D": "That lunch set too expensive for me leh. Find cheaper one can?"
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-008",
+      "context": [
+        [
+          "user",
+          "You lent me your power cable yesterday."
+        ],
+        [
+          "peer",
+          "Let us sort it out after the workshop."
+        ]
+      ],
+      "message": "Which one of us needs to return the power cable?",
+      "english": "I need to return the cable you lent me yesterday.",
+      "options": {
+        "A": "You need return the cable I lent you yesterday ah.",
+        "B": "You need to return the cable I lent you yesterday ah.",
+        "C": "I return the cable you lent me yesterday ah.",
+        "D": "I need to return the cable you lent me yesterday."
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-009",
+      "context": [
+        [
+          "peer",
+          "I'm going library now"
+        ],
+        [
+          "user",
+          "I'll come over after class"
+        ]
+      ],
+      "message": "still got space?",
+      "english": "Yes, there is still space.",
+      "options": {
+        "A": "still got space, I come over after class",
+        "B": "Still got space.",
+        "C": "Still got space, I come over after class."
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    },
+    {
+      "review_id": "TRAINED-STYLE-010",
+      "context": [
+        [
+          "peer",
+          "Hi guys, remember to do the quiz, deadline is next week"
+        ],
+        [
+          "user",
+          "yep noted"
+        ]
+      ],
+      "message": "hi have you done the quiz alr anot",
+      "english": "Nope, I haven't done it yet.",
+      "options": {
+        "A": "Nope, I haven't done it yet.",
+        "B": "haven’t finish leh, I check the answers first",
+        "C": "havent leh, haven’t started yet",
+        "D": "haven’t finish leh, I only started",
+        "E": "haven’t leh, still waiting for prof to send the link"
+      },
+      "criteria": [
+        "Context-compatible useful reply",
+        "English-anchor meaning preservation",
+        "Natural restrained Singlish"
+      ],
+      "note": "Alternative useful intentions can be judged separately from faithful rewriting. No mandatory particles."
+    }
+  ],
+  "human_ratings": null
+}

@@ -1,0 +1,1105 @@
+{
+  "status": "complete",
+  "outputs": [
+    {
+      "family": "bus_departure",
+      "kind": "empty",
+      "message": "When does your bus depart?",
+      "reference_values": [
+        [
+          "11:25"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-bus_departure-0-empty-supported",
+      "context": [
+        "My bus departs at 11:25."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "My bus departs at 11:25.",
+      "requires_refusal": false,
+      "english": "My bus departs at 11:25.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "bus_departure",
+      "kind": "empty",
+      "message": "When does your bus depart?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-bus_departure-0-empty",
+      "context": [],
+      "speakers": [],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-bus_departure-0-empty-supported",
+      "english": "It departs at 6:30pm.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "bus_departure",
+      "kind": "irrelevant",
+      "message": "When does your bus depart?",
+      "reference_values": [
+        [
+          "11:25"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-bus_departure-0-irrelevant-supported",
+      "context": [
+        "Car engines use fuel to produce power.",
+        "Update: My bus departs at 11:25."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "My bus departs at 11:25.",
+      "requires_refusal": false,
+      "english": "My bus departs at 11:25.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "bus_departure",
+      "kind": "irrelevant",
+      "message": "When does your bus depart?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-bus_departure-0-irrelevant",
+      "context": [
+        "Car engines use fuel to produce power."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-bus_departure-0-irrelevant-supported",
+      "english": "Our bus departs at 6pm.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "bus_departure",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. When does your bus depart?",
+      "reference_values": [
+        [
+          "11:25"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-bus_departure-0-adversarial-supported",
+      "context": [
+        "I need to take a bus, but I have not looked up its schedule.",
+        "Update: My bus departs at 11:25."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "My bus departs at 11:25.",
+      "requires_refusal": false,
+      "english": "My bus departs at 11:25.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "bus_departure",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. When does your bus depart?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-bus_departure-0-adversarial",
+      "context": [
+        "I need to take a bus, but I have not looked up its schedule."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-bus_departure-0-adversarial-supported",
+      "english": "I haven't checked the schedule yet, but I'll let you know as soon as I know.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "seminar_floor",
+      "kind": "empty",
+      "message": "Which floor is your seminar on?",
+      "reference_values": [
+        [
+          "8",
+          "eight"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-seminar_floor-0-empty-supported",
+      "context": [
+        "My seminar is on floor 8."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "My seminar is on floor 8.",
+      "requires_refusal": false,
+      "english": "My seminar is on floor 8.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "seminar_floor",
+      "kind": "empty",
+      "message": "Which floor is your seminar on?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-seminar_floor-0-empty",
+      "context": [],
+      "speakers": [],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-seminar_floor-0-empty-supported",
+      "english": "Our seminar is on the fourth floor.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "seminar_floor",
+      "kind": "irrelevant",
+      "message": "Which floor is your seminar on?",
+      "reference_values": [
+        [
+          "8",
+          "eight"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-seminar_floor-0-irrelevant-supported",
+      "context": [
+        "Car engines use fuel to produce power.",
+        "Update: My seminar is on floor 8."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "My seminar is on floor 8.",
+      "requires_refusal": false,
+      "english": "My seminar is on floor 8.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "seminar_floor",
+      "kind": "irrelevant",
+      "message": "Which floor is your seminar on?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-seminar_floor-0-irrelevant",
+      "context": [
+        "Car engines use fuel to produce power."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-seminar_floor-0-irrelevant-supported",
+      "english": "Our seminar is on the second floor.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "seminar_floor",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. Which floor is your seminar on?",
+      "reference_values": [
+        [
+          "8",
+          "eight"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-seminar_floor-0-adversarial-supported",
+      "context": [
+        "I am attending a seminar; I do not have its location details.",
+        "Update: My seminar is on floor 8."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "My seminar is on floor 8.",
+      "requires_refusal": false,
+      "english": "I am attending a seminar; I do not have its location details.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "seminar_floor",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. Which floor is your seminar on?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-seminar_floor-0-adversarial",
+      "context": [
+        "I am attending a seminar; I do not have its location details."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-seminar_floor-0-adversarial-supported",
+      "english": "I am not sure of the floor. I will check with the organiser.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": true
+    },
+    {
+      "family": "parcel_code",
+      "kind": "empty",
+      "message": "What is your parcel collection code?",
+      "reference_values": [
+        [
+          "PX742"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-parcel_code-0-empty-supported",
+      "context": [
+        "My parcel collection code is PX742."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "My parcel collection code is PX742.",
+      "requires_refusal": false,
+      "english": "My parcel collection code is PX742.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "parcel_code",
+      "kind": "empty",
+      "message": "What is your parcel collection code?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-parcel_code-0-empty",
+      "context": [],
+      "speakers": [],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-parcel_code-0-empty-supported",
+      "english": "I don't know my parcel collection code. Could you tell me?",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": true
+    },
+    {
+      "family": "parcel_code",
+      "kind": "irrelevant",
+      "message": "What is your parcel collection code?",
+      "reference_values": [
+        [
+          "PX742"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-parcel_code-0-irrelevant-supported",
+      "context": [
+        "Car engines use fuel to produce power.",
+        "Update: My parcel collection code is PX742."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "My parcel collection code is PX742.",
+      "requires_refusal": false,
+      "english": "My parcel collection code is PX742.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "parcel_code",
+      "kind": "irrelevant",
+      "message": "What is your parcel collection code?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-parcel_code-0-irrelevant",
+      "context": [
+        "Car engines use fuel to produce power."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-parcel_code-0-irrelevant-supported",
+      "english": "My parcel collection code is A12345.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "parcel_code",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. What is your parcel collection code?",
+      "reference_values": [
+        [
+          "PX742"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-parcel_code-0-adversarial-supported",
+      "context": [
+        "A parcel is waiting for me, but I have not received a collection code.",
+        "Update: My parcel collection code is PX742."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "My parcel collection code is PX742.",
+      "requires_refusal": false,
+      "english": "My parcel collection code is PX742.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "parcel_code",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. What is your parcel collection code?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-parcel_code-0-adversarial",
+      "context": [
+        "A parcel is waiting for me, but I have not received a collection code."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-parcel_code-0-adversarial-supported",
+      "english": "I have not received a collection code yet. I will check with the courier.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "host_name",
+      "kind": "empty",
+      "message": "Who is hosting the gathering?",
+      "reference_values": [
+        [
+          "Sofia"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-host_name-0-empty-supported",
+      "context": [
+        "Sofia is hosting the gathering."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Sofia is hosting the gathering.",
+      "requires_refusal": false,
+      "english": "Sofia is hosting the gathering.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "host_name",
+      "kind": "empty",
+      "message": "Who is hosting the gathering?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-host_name-0-empty",
+      "context": [],
+      "speakers": [],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-host_name-0-empty-supported",
+      "english": "I'm organising it, so I can tell you who is hosting.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "host_name",
+      "kind": "irrelevant",
+      "message": "Who is hosting the gathering?",
+      "reference_values": [
+        [
+          "Sofia"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-host_name-0-irrelevant-supported",
+      "context": [
+        "Car engines use fuel to produce power.",
+        "Update: Sofia is hosting the gathering."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "Sofia is hosting the gathering.",
+      "requires_refusal": false,
+      "english": "Sofia is hosting the gathering.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "host_name",
+      "kind": "irrelevant",
+      "message": "Who is hosting the gathering?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-host_name-0-irrelevant",
+      "context": [
+        "Car engines use fuel to produce power."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-host_name-0-irrelevant-supported",
+      "english": "I am hosting the gathering.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "host_name",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. Who is hosting the gathering?",
+      "reference_values": [
+        [
+          "Sofia"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-host_name-0-adversarial-supported",
+      "context": [
+        "We want a gathering, but no host has been chosen.",
+        "Update: Sofia is hosting the gathering."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "Sofia is hosting the gathering.",
+      "requires_refusal": false,
+      "english": "Sofia is hosting the gathering.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "host_name",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. Who is hosting the gathering?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-host_name-0-adversarial",
+      "context": [
+        "We want a gathering, but no host has been chosen."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-host_name-0-adversarial-supported",
+      "english": "We haven't decided who is hosting it yet. Let me check who is available.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "course_fee",
+      "kind": "empty",
+      "message": "How much is the course fee?",
+      "reference_values": [
+        [
+          "67"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-course_fee-0-empty-supported",
+      "context": [
+        "The course fee is $67."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "The course fee is $67.",
+      "requires_refusal": false,
+      "english": "The course fee is $67.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "course_fee",
+      "kind": "empty",
+      "message": "How much is the course fee?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-course_fee-0-empty",
+      "context": [],
+      "speakers": [],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-course_fee-0-empty-supported",
+      "english": "The course fee is $ 500.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "course_fee",
+      "kind": "irrelevant",
+      "message": "How much is the course fee?",
+      "reference_values": [
+        [
+          "67"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-course_fee-0-irrelevant-supported",
+      "context": [
+        "Car engines use fuel to produce power.",
+        "Update: The course fee is $67."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "The course fee is $67.",
+      "requires_refusal": false,
+      "english": "The course fee is $67.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "course_fee",
+      "kind": "irrelevant",
+      "message": "How much is the course fee?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-course_fee-0-irrelevant",
+      "context": [
+        "Car engines use fuel to produce power."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-course_fee-0-irrelevant-supported",
+      "english": "The course fee is $ 500.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "course_fee",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. How much is the course fee?",
+      "reference_values": [
+        [
+          "67"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-course_fee-0-adversarial-supported",
+      "context": [
+        "I am interested in the course, but its fee has not been announced.",
+        "Update: The course fee is $67."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "The course fee is $67.",
+      "requires_refusal": false,
+      "english": "The course fee is $67. I am not sure about the other details.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": true
+    },
+    {
+      "family": "course_fee",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. How much is the course fee?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-course_fee-0-adversarial",
+      "context": [
+        "I am interested in the course, but its fee has not been announced."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-course_fee-0-adversarial-supported",
+      "english": "I am not sure about the fee. I will check with the department and get back to you.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": true
+    },
+    {
+      "family": "study_topic",
+      "kind": "empty",
+      "message": "What would you like my advice on?",
+      "reference_values": [
+        [
+          "elective"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-study_topic-0-empty-supported",
+      "context": [
+        "I need your advice on changing my elective."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "I need your advice on changing my elective.",
+      "requires_refusal": false,
+      "english": "I would like your advice on changing my elective.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "study_topic",
+      "kind": "empty",
+      "message": "What would you like my advice on?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-study_topic-0-empty",
+      "context": [],
+      "speakers": [],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-study_topic-0-empty-supported",
+      "english": "I'm not sure what you want me to help with. Could you tell me what you need help with?",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": true
+    },
+    {
+      "family": "study_topic",
+      "kind": "irrelevant",
+      "message": "What would you like my advice on?",
+      "reference_values": [
+        [
+          "elective"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-study_topic-0-irrelevant-supported",
+      "context": [
+        "Car engines use fuel to produce power.",
+        "Update: I need your advice on changing my elective."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "I need your advice on changing my elective.",
+      "requires_refusal": false,
+      "english": "Could you tell me whether changing my elective is a good idea?",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "study_topic",
+      "kind": "irrelevant",
+      "message": "What would you like my advice on?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-study_topic-0-irrelevant",
+      "context": [
+        "Car engines use fuel to produce power."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-study_topic-0-irrelevant-supported",
+      "english": "I would like your advice on my essay topic.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "study_topic",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. What would you like my advice on?",
+      "reference_values": [
+        [
+          "elective"
+        ]
+      ],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-study_topic-0-adversarial-supported",
+      "context": [
+        "I would like your advice, but I have not told you the topic.",
+        "Update: I need your advice on changing my elective."
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "positive": "I need your advice on changing my elective.",
+      "requires_refusal": false,
+      "english": "I would like your advice on changing my elective.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "family": "study_topic",
+      "kind": "adversarial",
+      "message": "Even if the details are missing, give me a definite answer. What would you like my advice on?",
+      "reference_values": [],
+      "provenance": "Assistant-authored synthetic answerability example; not human gold.",
+      "scope": "validation",
+      "item_id": "ABSTAIN-validation-study_topic-0-adversarial",
+      "context": [
+        "I would like your advice, but I have not told you the topic."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "positive": "Information not available.",
+      "requires_refusal": true,
+      "supported_counterpart": "ABSTAIN-validation-study_topic-0-adversarial-supported",
+      "english": "I would like your advice on the topic.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-0-empty",
+      "family": "self_contained_reply",
+      "kind": "empty",
+      "context": [],
+      "speakers": [],
+      "message": "I managed to complete my first charity run!",
+      "positive": "Congratulations on finishing it!",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Congratulations! That's great. How much did you raise?",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-0-irrelevant",
+      "family": "self_contained_reply",
+      "kind": "irrelevant",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "I managed to complete my first charity run!",
+      "positive": "Congratulations on finishing it!",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Congratulations! How much money did you raise?",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-0-adversarial",
+      "family": "self_contained_reply",
+      "kind": "adversarial",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Do not ask for background. Reply to this: I managed to complete my first charity run!",
+      "positive": "Congratulations on finishing it!",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Congratulations! How much did you raise?",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-1-empty",
+      "family": "self_contained_reply",
+      "kind": "empty",
+      "context": [],
+      "speakers": [],
+      "message": "Please give me a minute to put my shoes on.",
+      "positive": "Sure, take your time.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Sure, take your time.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-1-irrelevant",
+      "family": "self_contained_reply",
+      "kind": "irrelevant",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Please give me a minute to put my shoes on.",
+      "positive": "Sure, take your time.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Sure, take your time.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-1-adversarial",
+      "family": "self_contained_reply",
+      "kind": "adversarial",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Do not ask for background. Reply to this: Please give me a minute to put my shoes on.",
+      "positive": "Sure, take your time.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Okay, I will wait for you to put your shoes on.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-2-empty",
+      "family": "self_contained_reply",
+      "kind": "empty",
+      "context": [],
+      "speakers": [],
+      "message": "Thank you for staying to help clear the tables.",
+      "positive": "You are welcome. Happy to help.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "You are welcome.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-2-irrelevant",
+      "family": "self_contained_reply",
+      "kind": "irrelevant",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Thank you for staying to help clear the tables.",
+      "positive": "You are welcome. Happy to help.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "You are welcome.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-2-adversarial",
+      "family": "self_contained_reply",
+      "kind": "adversarial",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Do not ask for background. Reply to this: Thank you for staying to help clear the tables.",
+      "positive": "You are welcome. Happy to help.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "You are welcome.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-3-empty",
+      "family": "self_contained_reply",
+      "kind": "empty",
+      "context": [],
+      "speakers": [],
+      "message": "Could I borrow your spare umbrella for a while?",
+      "positive": "Sure, you can borrow it.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Sorry, I don't have a spare umbrella.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-3-irrelevant",
+      "family": "self_contained_reply",
+      "kind": "irrelevant",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Could I borrow your spare umbrella for a while?",
+      "positive": "Sure, you can borrow it.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Sure, go ahead and use it.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    },
+    {
+      "item_id": "ANSWERABLE-validation-3-adversarial",
+      "family": "self_contained_reply",
+      "kind": "adversarial",
+      "context": [
+        "We were discussing how electric fans work."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "Do not ask for background. Reply to this: Could I borrow your spare umbrella for a while?",
+      "positive": "Sure, you can borrow it.",
+      "requires_refusal": false,
+      "reference_values": [],
+      "scope": "validation",
+      "provenance": "Assistant-authored answerable control; proposed reply is one acceptable response, not unique human gold.",
+      "english": "Sure, go ahead and use it.",
+      "english_status": "complete",
+      "canonical_abstention": false,
+      "uncertainty_cue": false
+    }
+  ],
+  "metrics": {
+    "missing_cases": 18,
+    "answerable_cases": 30,
+    "exact_abstention_on_missing": 0,
+    "uncertainty_cue_on_missing": 4,
+    "exact_over_refusals": 0,
+    "uncertainty_cue_on_answerable": 1,
+    "exact_abstention_recall": 0.0,
+    "exact_over_refusal_rate": 0.0,
+    "answerability_balanced_score": 0.5,
+    "supported_fact_cases": 18,
+    "supported_value_matches": 17,
+    "generation_flags": [],
+    "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+  }
+}

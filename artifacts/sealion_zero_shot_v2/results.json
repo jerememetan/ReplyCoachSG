@@ -1,0 +1,1128 @@
+{
+  "status": "complete",
+  "experiment": "sealion_zero_shot_v2",
+  "inference_only": true,
+  "training_performed": false,
+  "base_identity": "aisingapore/SEA-LION-v1-3B,3178255360base +2x10485760adapter parameters",
+  "bundle": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+  "gpu": "NVIDIA L40S",
+  "torch_version": "2.14.1+cu130",
+  "inputs_sha256": "406ac4f9d7b9eb58f78bbf3f92daee4bd4340ef3bd2b3a70bb2b460d6e09ecca",
+  "script_sha256": "380d263ef9d33e6e7ec19abde920eb1c471a5621d5d21f3075a6a9d7a3f552b7",
+  "decoding": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 64,
+    "length_penalty": 1.0
+  },
+  "cases": [
+    {
+      "item_id": "SEADUAL-011",
+      "context": [
+        "I left my purple water bottle in the studio.",
+        "There are a few bottles here."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What colour is your bottle?"
+    },
+    {
+      "item_id": "SEADUAL-015",
+      "context": [
+        "I have been doing most of the group project alone.",
+        "Have the others been helping?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Not really, and I am feeling overwhelmed."
+    },
+    {
+      "item_id": "SEADUAL-008",
+      "context": [
+        "I already booked our tutorial room this morning.",
+        "Thanks for arranging that."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Have you booked the room yet?"
+    },
+    {
+      "item_id": "SEADUAL-010",
+      "context": [
+        "I am waiting outside seminar room 4A.",
+        "I am coming upstairs."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "Which room are you outside?"
+    },
+    {
+      "item_id": "SEADUAL-013",
+      "context": [
+        "I am still in the tutorial.",
+        "I am at the coffee stall."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "What drink should I get you?"
+    }
+  ],
+  "conditions": {
+    "base_matched_prompt": [
+      {
+        "item_id": "SEADUAL-011",
+        "english": "It’s purple.",
+        "singlish": "I left my purple water bottle in the studio.",
+        "standard_anchor": "It’s purple.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "It’s purple.",
+          "raw_text": "It’s purple.\nFriend:",
+          "termination": "turn_boundary",
+          "generated_tokens": 8,
+          "token_ids": [
+            691,
+            249871,
+            249821,
+            17120,
+            249835,
+            4,
+            33205,
+            249853
+          ],
+          "cumulative_log_probability": -4.5053606033325195,
+          "normalized_score": -0.5631700754165649,
+          "forward_calls": 34,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I left my purple water bottle in the studio.",
+          "raw_text": "I left my purple water bottle in the studio.\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 18,
+          "token_ids": [
+            357,
+            2084,
+            575,
+            17120,
+            1514,
+            9623,
+            337,
+            311,
+            8417,
+            249835,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -6.266191005706787,
+          "normalized_score": -0.34812172253926593,
+          "forward_calls": 44,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "english": "I would be happy to help.",
+        "singlish": "I am happy to rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nLocal rewrite: I have been doing most of the group project alone.",
+        "standard_anchor": "I would be happy to help.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I would be happy to help.",
+          "raw_text": "I would be happy to help.\nFriend (STANDARD):",
+          "termination": "turn_boundary",
+          "generated_tokens": 12,
+          "token_ids": [
+            357,
+            732,
+            381,
+            3143,
+            332,
+            792,
+            249835,
+            4,
+            33205,
+            432,
+            233966,
+            1439
+          ],
+          "cumulative_log_probability": -10.390286445617676,
+          "normalized_score": -0.865857203801473,
+          "forward_calls": 57,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I am happy to rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nLocal rewrite: I have been doing most of the group project alone.",
+          "raw_text": "I am happy to rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nLocal rewrite: I have been doing most of the group project alone.\nYou (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 46,
+          "token_ids": [
+            357,
+            725,
+            3143,
+            332,
+            57545,
+            311,
+            3839,
+            9071,
+            337,
+            3292,
+            4399,
+            1857,
+            249835,
+            60571,
+            772,
+            794,
+            249832,
+            9853,
+            249832,
+            17518,
+            336,
+            3860,
+            249835,
+            4,
+            17211,
+            57545,
+            249853,
+            357,
+            479,
+            706,
+            2237,
+            853,
+            339,
+            311,
+            1586,
+            1436,
+            5413,
+            249835,
+            4,
+            1657,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -18.89779281616211,
+          "normalized_score": -0.41082158296004584,
+          "forward_calls": 55,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "english": "No.",
+        "singlish": "No, I haven’t booked the room yet.",
+        "standard_anchor": "No.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "No.",
+          "raw_text": "No.\nFriend:",
+          "termination": "turn_boundary",
+          "generated_tokens": 5,
+          "token_ids": [
+            1813,
+            249835,
+            4,
+            33205,
+            249853
+          ],
+          "cumulative_log_probability": -2.752065658569336,
+          "normalized_score": -0.5504131317138672,
+          "forward_calls": 39,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "No, I haven’t booked the room yet.",
+          "raw_text": "No, I haven’t booked the room yet.\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 19,
+          "token_ids": [
+            1813,
+            249832,
+            357,
+            5365,
+            249871,
+            249815,
+            19144,
+            311,
+            1679,
+            2310,
+            249835,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -9.589597702026367,
+          "normalized_score": -0.5047156685277036,
+          "forward_calls": 39,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "english": "I am waiting outside seminar room 4A.",
+        "singlish": "I am waiting outside seminar room 4A.",
+        "standard_anchor": "I am waiting outside seminar room 4A.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I am waiting outside seminar room 4A.",
+          "raw_text": "I am waiting outside seminar room 4A.\nFriend (STANDARD):",
+          "termination": "turn_boundary",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            3387,
+            24493,
+            1679,
+            249813,
+            249877,
+            249843,
+            249835,
+            4,
+            33205,
+            432,
+            233966,
+            1439
+          ],
+          "cumulative_log_probability": -4.679999828338623,
+          "normalized_score": -0.3119999885559082,
+          "forward_calls": 34,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I am waiting outside seminar room 4A.",
+          "raw_text": "I am waiting outside seminar room 4A.\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 18,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            3387,
+            24493,
+            1679,
+            249813,
+            249877,
+            249843,
+            249835,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -4.433584213256836,
+          "normalized_score": -0.24631023406982422,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "english": "I don’t drink coffee.",
+        "singlish": "I don’t drink coffee.",
+        "standard_anchor": "I don’t drink coffee.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I don’t drink coffee.",
+          "raw_text": "I don’t drink coffee.\nFriend:",
+          "termination": "turn_boundary",
+          "generated_tokens": 10,
+          "token_ids": [
+            357,
+            986,
+            249871,
+            249815,
+            4953,
+            5465,
+            249835,
+            4,
+            33205,
+            249853
+          ],
+          "cumulative_log_probability": -6.385189056396484,
+          "normalized_score": -0.6385189056396484,
+          "forward_calls": 45,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I don’t drink coffee.",
+          "raw_text": "I don’t drink coffee.\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            986,
+            249871,
+            249815,
+            4953,
+            5465,
+            249835,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -5.07424783706665,
+          "normalized_score": -0.3382831891377767,
+          "forward_calls": 29,
+          "status": "complete"
+        }
+      }
+    ],
+    "base_explicit_instruction": [
+      {
+        "item_id": "SEADUAL-011",
+        "english": "I left my purple water bottle in the studio.",
+        "singlish": "There are a few bottles here. What colour is your bottle?",
+        "standard_anchor": "I left my purple water bottle in the studio.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I left my purple water bottle in the studio.",
+          "raw_text": "I left my purple water bottle in the studio.\nFriend (STANDARD):",
+          "termination": "turn_boundary",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            2084,
+            575,
+            17120,
+            1514,
+            9623,
+            337,
+            311,
+            8417,
+            249835,
+            4,
+            33205,
+            432,
+            233966,
+            1439
+          ],
+          "cumulative_log_probability": -4.959569454193115,
+          "normalized_score": -0.33063796361287434,
+          "forward_calls": 26,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "There are a few bottles here. What colour is your bottle?",
+          "raw_text": "There are a few bottles here. What colour is your bottle?\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 21,
+          "token_ids": [
+            1512,
+            426,
+            303,
+            1330,
+            16055,
+            1027,
+            249835,
+            1917,
+            6979,
+            370,
+            462,
+            9623,
+            249905,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -4.276640892028809,
+          "normalized_score": -0.20364956628708614,
+          "forward_calls": 37,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "english": "How are you feeling?",
+        "singlish": "How are you feeling?",
+        "standard_anchor": "How are you feeling?",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "How are you feeling?",
+          "raw_text": "How are you feeling?\nFriend (STANDARD):",
+          "termination": "turn_boundary",
+          "generated_tokens": 10,
+          "token_ids": [
+            1445,
+            426,
+            364,
+            4603,
+            249905,
+            4,
+            33205,
+            432,
+            233966,
+            1439
+          ],
+          "cumulative_log_probability": -5.774106979370117,
+          "normalized_score": -0.5774106979370117,
+          "forward_calls": 48,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "How are you feeling?",
+          "raw_text": "How are you feeling?\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 13,
+          "token_ids": [
+            1445,
+            426,
+            364,
+            4603,
+            249905,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -5.309433460235596,
+          "normalized_score": -0.4084179584796612,
+          "forward_calls": 31,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "english": "I already booked our tutorial room this morning.",
+        "singlish": "I already booked our tutorial room this morning.",
+        "standard_anchor": "I already booked our tutorial room this morning.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I already booked our tutorial room this morning.",
+          "raw_text": "I already booked our tutorial room this morning.\nFriend (STANDARD):",
+          "termination": "turn_boundary",
+          "generated_tokens": 14,
+          "token_ids": [
+            357,
+            2138,
+            19144,
+            607,
+            14699,
+            1679,
+            477,
+            3538,
+            249835,
+            4,
+            33205,
+            432,
+            233966,
+            1439
+          ],
+          "cumulative_log_probability": -5.590989589691162,
+          "normalized_score": -0.39935639926365446,
+          "forward_calls": 38,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I already booked our tutorial room this morning.",
+          "raw_text": "I already booked our tutorial room this morning.\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 17,
+          "token_ids": [
+            357,
+            2138,
+            19144,
+            607,
+            14699,
+            1679,
+            477,
+            3538,
+            249835,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -3.981658697128296,
+          "normalized_score": -0.23421521747813506,
+          "forward_calls": 32,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "english": "I am waiting outside seminar room 4A.",
+        "singlish": "I am waiting outside seminar room 4A.",
+        "standard_anchor": "I am waiting outside seminar room 4A.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I am waiting outside seminar room 4A.",
+          "raw_text": "I am waiting outside seminar room 4A.\nFriend:",
+          "termination": "turn_boundary",
+          "generated_tokens": 13,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            3387,
+            24493,
+            1679,
+            249813,
+            249877,
+            249843,
+            249835,
+            4,
+            33205,
+            249853
+          ],
+          "cumulative_log_probability": -2.1496453285217285,
+          "normalized_score": -0.1653573329632099,
+          "forward_calls": 21,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I am waiting outside seminar room 4A.",
+          "raw_text": "I am waiting outside seminar room 4A.\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 18,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            3387,
+            24493,
+            1679,
+            249813,
+            249877,
+            249843,
+            249835,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -3.4425106048583984,
+          "normalized_score": -0.19125058915879992,
+          "forward_calls": 24,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "english": "I am still in the tutorial.",
+        "singlish": "I am at the coffee stall.",
+        "standard_anchor": "I am still in the tutorial.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I am still in the tutorial.",
+          "raw_text": "I am still in the tutorial.\nFriend (STANDARD):",
+          "termination": "turn_boundary",
+          "generated_tokens": 12,
+          "token_ids": [
+            357,
+            725,
+            1280,
+            337,
+            311,
+            14699,
+            249835,
+            4,
+            33205,
+            432,
+            233966,
+            1439
+          ],
+          "cumulative_log_probability": -4.5665507316589355,
+          "normalized_score": -0.3805458943049113,
+          "forward_calls": 37,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I am at the coffee stall.",
+          "raw_text": "I am at the coffee stall.\nFriend (LOCAL_REWRITE):",
+          "termination": "turn_boundary",
+          "generated_tokens": 15,
+          "token_ids": [
+            357,
+            725,
+            435,
+            311,
+            5465,
+            32782,
+            249835,
+            4,
+            33205,
+            432,
+            85156,
+            249888,
+            1545,
+            158618,
+            1439
+          ],
+          "cumulative_log_probability": -1.9532896280288696,
+          "normalized_score": -0.13021930853525798,
+          "forward_calls": 16,
+          "status": "complete"
+        }
+      }
+    ],
+    "repair25_shared_stop": [
+      {
+        "item_id": "SEADUAL-011",
+        "english": "My purple water bottle is purple.",
+        "singlish": "My purple water bottle is purple.",
+        "standard_anchor": "My purple water bottle is purple.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "My purple water bottle is purple.",
+          "raw_text": "My purple water bottle is purple.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "token_ids": [
+            1910,
+            17120,
+            1514,
+            9623,
+            370,
+            17120,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.3218235969543457,
+          "normalized_score": -0.4152279496192932,
+          "forward_calls": 26,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "My purple water bottle is purple.",
+          "raw_text": "My purple water bottle is purple.",
+          "termination": "eos",
+          "generated_tokens": 8,
+          "token_ids": [
+            1910,
+            17120,
+            1514,
+            9623,
+            370,
+            17120,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -0.6840508580207825,
+          "normalized_score": -0.08550635725259781,
+          "forward_calls": 9,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "english": "You can ask for help from others in the group.",
+        "singlish": "Can ask for help from others in the group?",
+        "standard_anchor": "You can ask for help from others in the group.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "You can ask for help from others in the group.",
+          "raw_text": "You can ask for help from others in the group.",
+          "termination": "eos",
+          "generated_tokens": 12,
+          "token_ids": [
+            885,
+            491,
+            1696,
+            371,
+            792,
+            481,
+            2288,
+            337,
+            311,
+            1586,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -7.216122150421143,
+          "normalized_score": -0.6013435125350952,
+          "forward_calls": 34,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "Can ask for help from others in the group?",
+          "raw_text": "Can ask for help from others in the group?",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            1898,
+            1696,
+            371,
+            792,
+            481,
+            2288,
+            337,
+            311,
+            1586,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -3.0100207328796387,
+          "normalized_score": -0.2736382484436035,
+          "forward_calls": 18,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "english": "Yes, I've already booked the room this morning.",
+        "singlish": "Yes, I've already booked the room this morning.",
+        "standard_anchor": "Yes, I've already booked the room this morning.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "Yes, I've already booked the room this morning.",
+          "raw_text": "Yes, I've already booked the room this morning.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            249866,
+            363,
+            2138,
+            19144,
+            311,
+            1679,
+            477,
+            3538,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.2538211345672607,
+          "normalized_score": -0.25029393342825085,
+          "forward_calls": 24,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "Yes, I've already booked the room this morning.",
+          "raw_text": "Yes, I've already booked the room this morning.",
+          "termination": "eos",
+          "generated_tokens": 13,
+          "token_ids": [
+            6351,
+            249832,
+            357,
+            249866,
+            363,
+            2138,
+            19144,
+            311,
+            1679,
+            477,
+            3538,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -3.730959892272949,
+          "normalized_score": -0.2869969147902269,
+          "forward_calls": 25,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "english": "I am waiting outside seminar room 4A.",
+        "singlish": "I waiting outside seminar room 4A.",
+        "standard_anchor": "I am waiting outside seminar room 4A.",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "I am waiting outside seminar room 4A.",
+          "raw_text": "I am waiting outside seminar room 4A.",
+          "termination": "eos",
+          "generated_tokens": 11,
+          "token_ids": [
+            357,
+            725,
+            5979,
+            3387,
+            24493,
+            1679,
+            249813,
+            249877,
+            249843,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -2.0918729305267334,
+          "normalized_score": -0.1901702664115212,
+          "forward_calls": 15,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "I waiting outside seminar room 4A.",
+          "raw_text": "I waiting outside seminar room 4A.",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            357,
+            5979,
+            3387,
+            24493,
+            1679,
+            249813,
+            249877,
+            249843,
+            249835,
+            1
+          ],
+          "cumulative_log_probability": -0.9558984637260437,
+          "normalized_score": -0.09558984637260437,
+          "forward_calls": 11,
+          "status": "complete"
+        }
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "english": "Could you get me a cup of coffee?",
+        "singlish": "Can get me a cup of coffee?",
+        "standard_anchor": "Could you get me a cup of coffee?",
+        "english_status": "complete",
+        "singlish_status": "complete",
+        "english_details": {
+          "reply": "Could you get me a cup of coffee?",
+          "raw_text": "Could you get me a cup of coffee?",
+          "termination": "eos",
+          "generated_tokens": 10,
+          "token_ids": [
+            16452,
+            364,
+            651,
+            548,
+            303,
+            3708,
+            339,
+            5465,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -4.144961357116699,
+          "normalized_score": -0.41449613571166993,
+          "forward_calls": 29,
+          "status": "complete"
+        },
+        "singlish_details": {
+          "reply": "Can get me a cup of coffee?",
+          "raw_text": "Can get me a cup of coffee?",
+          "termination": "eos",
+          "generated_tokens": 9,
+          "token_ids": [
+            1898,
+            651,
+            548,
+            303,
+            3708,
+            339,
+            5465,
+            249905,
+            1
+          ],
+          "cumulative_log_probability": -1.6582577228546143,
+          "normalized_score": -0.18425085809495714,
+          "forward_calls": 12,
+          "status": "complete"
+        }
+      }
+    ],
+    "repair25": [
+      {
+        "item_id": "SEADUAL-011",
+        "english": "My purple water bottle is purple.",
+        "singlish": "My purple water bottle is purple.",
+        "standard_anchor": "My purple water bottle is purple.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "english": "You can ask for help from others in the group.",
+        "singlish": "Can ask for help from others in the group?",
+        "standard_anchor": "You can ask for help from others in the group.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "english": "Yes, I've already booked the room this morning.",
+        "singlish": "Yes, I've already booked the room this morning.",
+        "standard_anchor": "Yes, I've already booked the room this morning.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "english": "I am waiting outside seminar room 4A.",
+        "singlish": "I waiting outside seminar room 4A.",
+        "standard_anchor": "I am waiting outside seminar room 4A.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "english": "Could you get me a cup of coffee?",
+        "singlish": "Can get me a cup of coffee?",
+        "standard_anchor": "Could you get me a cup of coffee?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    ]
+  },
+  "prompts": {
+    "base_matched_prompt": [
+      {
+        "item_id": "SEADUAL-011",
+        "english": "You: I left my purple water bottle in the studio.\nFriend: There are a few bottles here.\nFriend: What colour is your bottle?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I left my purple water bottle in the studio.\nFriend: There are a few bottles here.\nFriend: What colour is your bottle?\nEnglish draft: It’s purple.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "english": "Friend: I have been doing most of the group project alone.\nYou: Have the others been helping?\nFriend: Not really, and I am feeling overwhelmed.\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nFriend: I have been doing most of the group project alone.\nYou: Have the others been helping?\nFriend: Not really, and I am feeling overwhelmed.\nEnglish draft: I would be happy to help.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "english": "You: I already booked our tutorial room this morning.\nFriend: Thanks for arranging that.\nFriend: Have you booked the room yet?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I already booked our tutorial room this morning.\nFriend: Thanks for arranging that.\nFriend: Have you booked the room yet?\nEnglish draft: No.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "english": "You: I am waiting outside seminar room 4A.\nFriend: I am coming upstairs.\nFriend: Which room are you outside?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I am waiting outside seminar room 4A.\nFriend: I am coming upstairs.\nFriend: Which room are you outside?\nEnglish draft: I am waiting outside seminar room 4A.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "english": "You: I am still in the tutorial.\nFriend: I am at the coffee stall.\nFriend: What drink should I get you?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I am still in the tutorial.\nFriend: I am at the coffee stall.\nFriend: What drink should I get you?\nEnglish draft: I don’t drink coffee.\nYou (LOCAL_REWRITE):"
+      }
+    ],
+    "base_explicit_instruction": [
+      {
+        "item_id": "SEADUAL-011",
+        "english": "Write one short reply to the incoming message as You.\nSpeak from You's perspective using the conversation below.\nKeep known facts, people, locations and times consistent.\nAnswer the incoming message directly. Do not invent extra conversation turns.\nUse standard English. Output only the reply.\n\nConversation so far:\nYou: I left my purple water bottle in the studio.\nFriend: There are a few bottles here.\nFriend: What colour is your bottle?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft as one short, natural Singlish message from You.\nPreserve the same people, facts, time, location and decision.\nOutput only the rewritten reply. Do not add dialogue turns.\n\nConversation so far:\nYou: I left my purple water bottle in the studio.\nFriend: There are a few bottles here.\nFriend: What colour is your bottle?\nEnglish draft: I left my purple water bottle in the studio.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "english": "Write one short reply to the incoming message as You.\nSpeak from You's perspective using the conversation below.\nKeep known facts, people, locations and times consistent.\nAnswer the incoming message directly. Do not invent extra conversation turns.\nUse standard English. Output only the reply.\n\nConversation so far:\nFriend: I have been doing most of the group project alone.\nYou: Have the others been helping?\nFriend: Not really, and I am feeling overwhelmed.\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft as one short, natural Singlish message from You.\nPreserve the same people, facts, time, location and decision.\nOutput only the rewritten reply. Do not add dialogue turns.\n\nConversation so far:\nFriend: I have been doing most of the group project alone.\nYou: Have the others been helping?\nFriend: Not really, and I am feeling overwhelmed.\nEnglish draft: How are you feeling?\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "english": "Write one short reply to the incoming message as You.\nSpeak from You's perspective using the conversation below.\nKeep known facts, people, locations and times consistent.\nAnswer the incoming message directly. Do not invent extra conversation turns.\nUse standard English. Output only the reply.\n\nConversation so far:\nYou: I already booked our tutorial room this morning.\nFriend: Thanks for arranging that.\nFriend: Have you booked the room yet?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft as one short, natural Singlish message from You.\nPreserve the same people, facts, time, location and decision.\nOutput only the rewritten reply. Do not add dialogue turns.\n\nConversation so far:\nYou: I already booked our tutorial room this morning.\nFriend: Thanks for arranging that.\nFriend: Have you booked the room yet?\nEnglish draft: I already booked our tutorial room this morning.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "english": "Write one short reply to the incoming message as You.\nSpeak from You's perspective using the conversation below.\nKeep known facts, people, locations and times consistent.\nAnswer the incoming message directly. Do not invent extra conversation turns.\nUse standard English. Output only the reply.\n\nConversation so far:\nYou: I am waiting outside seminar room 4A.\nFriend: I am coming upstairs.\nFriend: Which room are you outside?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft as one short, natural Singlish message from You.\nPreserve the same people, facts, time, location and decision.\nOutput only the rewritten reply. Do not add dialogue turns.\n\nConversation so far:\nYou: I am waiting outside seminar room 4A.\nFriend: I am coming upstairs.\nFriend: Which room are you outside?\nEnglish draft: I am waiting outside seminar room 4A.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "english": "Write one short reply to the incoming message as You.\nSpeak from You's perspective using the conversation below.\nKeep known facts, people, locations and times consistent.\nAnswer the incoming message directly. Do not invent extra conversation turns.\nUse standard English. Output only the reply.\n\nConversation so far:\nYou: I am still in the tutorial.\nFriend: I am at the coffee stall.\nFriend: What drink should I get you?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft as one short, natural Singlish message from You.\nPreserve the same people, facts, time, location and decision.\nOutput only the rewritten reply. Do not add dialogue turns.\n\nConversation so far:\nYou: I am still in the tutorial.\nFriend: I am at the coffee stall.\nFriend: What drink should I get you?\nEnglish draft: I am still in the tutorial.\nYou (LOCAL_REWRITE):"
+      }
+    ],
+    "repair25_shared_stop": [
+      {
+        "item_id": "SEADUAL-011",
+        "english": "You: I left my purple water bottle in the studio.\nFriend: There are a few bottles here.\nFriend: What colour is your bottle?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I left my purple water bottle in the studio.\nFriend: There are a few bottles here.\nFriend: What colour is your bottle?\nEnglish draft: My purple water bottle is purple.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-015",
+        "english": "Friend: I have been doing most of the group project alone.\nYou: Have the others been helping?\nFriend: Not really, and I am feeling overwhelmed.\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nFriend: I have been doing most of the group project alone.\nYou: Have the others been helping?\nFriend: Not really, and I am feeling overwhelmed.\nEnglish draft: You can ask for help from others in the group.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-008",
+        "english": "You: I already booked our tutorial room this morning.\nFriend: Thanks for arranging that.\nFriend: Have you booked the room yet?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I already booked our tutorial room this morning.\nFriend: Thanks for arranging that.\nFriend: Have you booked the room yet?\nEnglish draft: Yes, I've already booked the room this morning.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-010",
+        "english": "You: I am waiting outside seminar room 4A.\nFriend: I am coming upstairs.\nFriend: Which room are you outside?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I am waiting outside seminar room 4A.\nFriend: I am coming upstairs.\nFriend: Which room are you outside?\nEnglish draft: I am waiting outside seminar room 4A.\nYou (LOCAL_REWRITE):"
+      },
+      {
+        "item_id": "SEADUAL-013",
+        "english": "You: I am still in the tutorial.\nFriend: I am at the coffee stall.\nFriend: What drink should I get you?\nYou (STANDARD):",
+        "singlish": "Rewrite the English draft in natural Singlish. Preserve its people, facts, timing and decision.\nYou: I am still in the tutorial.\nFriend: I am at the coffee stall.\nFriend: What drink should I get you?\nEnglish draft: Could you get me a cup of coffee?\nYou (LOCAL_REWRITE):"
+      }
+    ]
+  },
+  "scope": "Five previously inspected development cases. Prompt variants are diagnostics; no human accuracy score or final-model change.",
+  "stop_rule": "shared",
+  "english_boundary": "\\n(?:Friend|Other|You)(?: \\([A-Z_]+\\))?:",
+  "rewrite_boundary": "\\n(?:(?:Friend|Other|You)(?: \\([A-Z_]+\\))?|English draft):",
+  "note": "Base arms use the exact packaged pretrained base with every LoRA layer disabled. Both stages use no adapters. Instruction arm has no labelled demonstrations.",
+  "strict_loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "repair25_replay_differences": [],
+  "repair25_stop_rule_differences": [],
+  "model_parameters_unchanged": true,
+  "seconds": 15.656343100592494,
+  "flags": []
+}

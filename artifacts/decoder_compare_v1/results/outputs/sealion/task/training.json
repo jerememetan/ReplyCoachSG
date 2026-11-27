@@ -1,0 +1,179 @@
+{
+  "status": "complete",
+  "arm": "sealion",
+  "stage": "task",
+  "history": [
+    {
+      "epoch": 0,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 2.9670104931764567,
+            "examples": 50,
+            "tokens": 514
+          },
+          "old_LOCAL": {
+            "token_ce": 4.7835491964782495,
+            "examples": 50,
+            "tokens": 414
+          },
+          "development_STANDARD": {
+            "token_ce": 2.294573491752738,
+            "examples": 20,
+            "tokens": 202
+          },
+          "development_LOCAL": {
+            "token_ce": 4.892242908477783,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 3.7343440224713067
+      },
+      "adapter_sha256": "faa03a3ad1421ab6ece1ea759c5476737dd41fbff79826401a54574f177f10b7"
+    },
+    {
+      "epoch": 1,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 2.082768757519555,
+            "examples": 50,
+            "tokens": 514
+          },
+          "old_LOCAL": {
+            "token_ce": 3.5498119071485914,
+            "examples": 50,
+            "tokens": 414
+          },
+          "development_STANDARD": {
+            "token_ce": 1.2591906762359166,
+            "examples": 20,
+            "tokens": 202
+          },
+          "development_LOCAL": {
+            "token_ce": 2.1271632628440855,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 2.254733650937037
+      },
+      "adapter_sha256": "0320af67eeafbd70be87a242d1bfdbbc05fb31e94421330c2fff47ba564b5dc7"
+    },
+    {
+      "epoch": 2,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 2.042167136641328,
+            "examples": 50,
+            "tokens": 514
+          },
+          "old_LOCAL": {
+            "token_ce": 3.531272914386602,
+            "examples": 50,
+            "tokens": 414
+          },
+          "development_STANDARD": {
+            "token_ce": 1.0656981757371733,
+            "examples": 20,
+            "tokens": 202
+          },
+          "development_LOCAL": {
+            "token_ce": 1.9852043571472169,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 2.15608564597808
+      },
+      "adapter_sha256": "9907718294c037f9ac9e9475bee3ffe74026d0c211c3c50de1fafb3354f30cce"
+    },
+    {
+      "epoch": 3,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 2.097688427463116,
+            "examples": 50,
+            "tokens": 514
+          },
+          "old_LOCAL": {
+            "token_ce": 3.499063816047521,
+            "examples": 50,
+            "tokens": 414
+          },
+          "development_STANDARD": {
+            "token_ce": 1.078161968010487,
+            "examples": 20,
+            "tokens": 202
+          },
+          "development_LOCAL": {
+            "token_ce": 2.0460883893966675,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 2.180250650229448
+      },
+      "adapter_sha256": "193198328a1716f8e7a9c922dcf872696d5291acbf446d6b7ffcf3ca8793c651"
+    },
+    {
+      "epoch": 4,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 2.1333899981548816,
+            "examples": 50,
+            "tokens": 514
+          },
+          "old_LOCAL": {
+            "token_ce": 3.5709952886265834,
+            "examples": 50,
+            "tokens": 414
+          },
+          "development_STANDARD": {
+            "token_ce": 1.0933302260271394,
+            "examples": 20,
+            "tokens": 202
+          },
+          "development_LOCAL": {
+            "token_ce": 2.139882074356079,
+            "examples": 20,
+            "tokens": 125
+          }
+        },
+        "selection_score": 2.234399396791171
+      },
+      "adapter_sha256": "48dfdc971bf7878caf25453d8eac9882003daa1fa7b9b09afed23f756f8a40dd"
+    }
+  ],
+  "optimizer_updates": 768,
+  "total_updates": 768,
+  "warmup_updates": 39,
+  "initial": "fresh_base_zero_initialized_LoRA",
+  "trainable_parameters": 10485760,
+  "checkpoint_selection": "Provisional within-model reference CE; not a cross-model quality score.",
+  "fixed_budget_checkpoint": "epoch_04",
+  "training_loss_history": [
+    {
+      "epoch": 1,
+      "example_mean_ce": 2.6079522027575877
+    },
+    {
+      "epoch": 2,
+      "example_mean_ce": 1.7614841595156274
+    },
+    {
+      "epoch": 3,
+      "example_mean_ce": 1.283889654291367
+    },
+    {
+      "epoch": 4,
+      "example_mean_ce": 0.9928364163873388
+    }
+  ],
+  "selected_epoch": 2,
+  "frozen_base_parameters_unchanged": true
+}

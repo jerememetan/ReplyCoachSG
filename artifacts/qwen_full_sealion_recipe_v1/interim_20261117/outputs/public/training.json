@@ -1,0 +1,217 @@
+{
+  "status": "complete",
+  "recipe_sha256": "059c4f3d451e85d9a9d45f823ba6af6c109f6b9d508712f493dbdc9bf69c64d0",
+  "examples_seen": 117634,
+  "optimizer_updates": 7353,
+  "total_examples": 117634,
+  "total_updates": 7353,
+  "trainable_parameters": 14966784,
+  "source_exposures": {
+    "dailydialog": 63943,
+    "cosem": 53691
+  },
+  "loss_sum": 353774.3509195298,
+  "history": [
+    {
+      "examples_seen": 0,
+      "validation": {
+        "cosem": {
+          "token_ce": 5.478756910893784,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 2.715159759610086,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 10000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.542794418163369,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 2.0018942640641253,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 20000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.471460523151579,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9870670938008541,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 30000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.448432777367416,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9717426791485098,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 40000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.4316857324414896,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9706183936446906,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 50000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.423859766891888,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9575494526809938,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 60000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.419945943169668,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9583877533170821,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 70000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.388891416280472,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9585296927875764,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 80000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.384868352139582,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.960672451585934,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 90000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.3820123469433945,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.954682022927178,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 100000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.378231565459449,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9517311601723368,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 110000,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.381262482285071,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9515291307020832,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    },
+    {
+      "examples_seen": 117634,
+      "validation": {
+        "cosem": {
+          "token_ce": 4.368759726105285,
+          "examples": 200,
+          "tokens": 2501
+        },
+        "dailydialog": {
+          "token_ce": 1.9462148330904343,
+          "examples": 200,
+          "tokens": 2960
+        }
+      }
+    }
+  ],
+  "selection": "Final full public pass; validation monitors only",
+  "schedule": "Constant5e-5, matching historical SEA-LION public adaptation; warmup/cosine applies to later task/rewrite stages only",
+  "elapsed_seconds": 30363.3833720237,
+  "final_adapter_sha256": "a9c58c14c2b32e9937f0bc27c78630b4bdae4dd5768774d9487ba50bff483a94",
+  "frozen_base_parameters_unchanged": true,
+  "completed_full_pass": true
+}

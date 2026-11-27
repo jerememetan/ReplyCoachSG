@@ -1,0 +1,24 @@
+{
+  "status": "complete_unscored",
+  "at_utc": "2026-11-16T12:51:41.220852+00:00",
+  "root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_decoder_compare_v1",
+  "payload_sha256": "cdb6aa0cfda2bfd8fd90248db3c2cc0e4450157d46dade95dd2d658762cf4c3b",
+  "jobs": {
+    "preflight": 367161,
+    "sealion": 367162,
+    "qwen": 367163,
+    "summary": 367164
+  },
+  "default_changed": false,
+  "latest_observation": {
+    "observed_at_utc": "2026-11-16T16:21:41.819332+00:00",
+    "all_jobs": "COMPLETED exit0",
+    "quality_scored": false,
+    "integrity": {
+      "payload_verified": true,
+      "epoch_adapters_verified": 20,
+      "actual_english_anchors_verified": true,
+      "all_update_budgets_complete": true
+    }
+  }
+}

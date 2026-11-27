@@ -1,0 +1,179 @@
+{
+  "status": "complete",
+  "arm": "qwen",
+  "stage": "task",
+  "history": [
+    {
+      "epoch": 0,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 3.1600156006110143,
+            "examples": 50,
+            "tokens": 502
+          },
+          "old_LOCAL": {
+            "token_ce": 5.210165101945686,
+            "examples": 50,
+            "tokens": 418
+          },
+          "development_STANDARD": {
+            "token_ce": 2.3942270472719165,
+            "examples": 20,
+            "tokens": 203
+          },
+          "development_LOCAL": {
+            "token_ce": 5.1413403018828365,
+            "examples": 20,
+            "tokens": 124
+          }
+        },
+        "selection_score": 3.9764370129278634
+      },
+      "adapter_sha256": "b69818fff49c8bf9fccc399a6c295c978d47ed63c3fb35208aabd66b8e8b750f"
+    },
+    {
+      "epoch": 1,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 2.0142200893139934,
+            "examples": 50,
+            "tokens": 502
+          },
+          "old_LOCAL": {
+            "token_ce": 3.2011157465323308,
+            "examples": 50,
+            "tokens": 418
+          },
+          "development_STANDARD": {
+            "token_ce": 0.9282471828272777,
+            "examples": 20,
+            "tokens": 203
+          },
+          "development_LOCAL": {
+            "token_ce": 1.988898749553388,
+            "examples": 20,
+            "tokens": 124
+          }
+        },
+        "selection_score": 2.0331204420567475
+      },
+      "adapter_sha256": "ac45289c39f41278434dd4aca902ebc723f5e049c5f114810685f6fefca4c95e"
+    },
+    {
+      "epoch": 2,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 1.929683531423014,
+            "examples": 50,
+            "tokens": 502
+          },
+          "old_LOCAL": {
+            "token_ce": 3.079063736080553,
+            "examples": 50,
+            "tokens": 418
+          },
+          "development_STANDARD": {
+            "token_ce": 0.77069049148724,
+            "examples": 20,
+            "tokens": 203
+          },
+          "development_LOCAL": {
+            "token_ce": 1.7549640324807936,
+            "examples": 20,
+            "tokens": 124
+          }
+        },
+        "selection_score": 1.8836004478679003
+      },
+      "adapter_sha256": "227378ba19eb7f88db36b27a597bf0ed851dadff4675a29581025c2c6c777ad6"
+    },
+    {
+      "epoch": 3,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 1.9778748737625866,
+            "examples": 50,
+            "tokens": 502
+          },
+          "old_LOCAL": {
+            "token_ce": 3.1837125848354906,
+            "examples": 50,
+            "tokens": 418
+          },
+          "development_STANDARD": {
+            "token_ce": 0.7550970875277307,
+            "examples": 20,
+            "tokens": 203
+          },
+          "development_LOCAL": {
+            "token_ce": 1.7106526682694112,
+            "examples": 20,
+            "tokens": 124
+          }
+        },
+        "selection_score": 1.906834303598805
+      },
+      "adapter_sha256": "4eea83998ccac93d23915a6c80045880970d437a353fe4a59b40c8fb7edc2295"
+    },
+    {
+      "epoch": 4,
+      "validation": {
+        "groups": {
+          "old_STANDARD": {
+            "token_ce": 2.0064195748344362,
+            "examples": 50,
+            "tokens": 502
+          },
+          "old_LOCAL": {
+            "token_ce": 3.2849406480218803,
+            "examples": 50,
+            "tokens": 418
+          },
+          "development_STANDARD": {
+            "token_ce": 0.7633150905517522,
+            "examples": 20,
+            "tokens": 203
+          },
+          "development_LOCAL": {
+            "token_ce": 1.7968554079772965,
+            "examples": 20,
+            "tokens": 124
+          }
+        },
+        "selection_score": 1.9628826803463413
+      },
+      "adapter_sha256": "e162261bbc379b57794a76456442c3b0830dd494a93f0c8b81882ee43b23dfda"
+    }
+  ],
+  "optimizer_updates": 768,
+  "total_updates": 768,
+  "warmup_updates": 39,
+  "initial": "fresh_base_zero_initialized_LoRA",
+  "trainable_parameters": 14966784,
+  "checkpoint_selection": "Provisional within-model reference CE; not a cross-model quality score.",
+  "fixed_budget_checkpoint": "epoch_04",
+  "training_loss_history": [
+    {
+      "epoch": 1,
+      "example_mean_ce": 2.451499132080547
+    },
+    {
+      "epoch": 2,
+      "example_mean_ce": 1.6178928619531991
+    },
+    {
+      "epoch": 3,
+      "example_mean_ce": 1.2353804404556286
+    },
+    {
+      "epoch": 4,
+      "example_mean_ce": 1.019795530903745
+    }
+  ],
+  "selected_epoch": 2,
+  "frozen_base_parameters_unchanged": true
+}

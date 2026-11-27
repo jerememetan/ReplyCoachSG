@@ -1,0 +1,138 @@
+{
+  "status": "complete",
+  "reviewed_at_utc": "2026-11-08T12:35:47.579532+00:00",
+  "scope": "mT5 learned context notes -> conditioned English -> fixed own-English Singlish",
+  "jobs": {
+    "planner": {
+      "job_id": 358286,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:07:24"
+    },
+    "no_notes_control": {
+      "job_id": 358287,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:03:32"
+    },
+    "explicit_notes": {
+      "job_id": 358288,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:03:41"
+    },
+    "summarize": {
+      "job_id": 358289,
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:00:01"
+    }
+  },
+  "queue_observed_empty": true,
+  "selected_steps": {
+    "planner": 450,
+    "no_notes_control": 300,
+    "explicit_notes": 300
+  },
+  "verification": {
+    "status": "passed",
+    "archive_sha256": "72e778f71e1176b7b8b8f82868b2aebda943ede02b4e21eee8f76f73c6f21bde",
+    "archive_bytes": 611407,
+    "payload_manifest_files": 110,
+    "payload_manifest_mismatches": [],
+    "cases": 84,
+    "unique_cases": 84,
+    "paired_route_records": 370,
+    "planner_cache_cases": 994,
+    "planner_cache_sha256_verified": true,
+    "planner_inputs_verified": true,
+    "actual_reply_input_digests_verified": true,
+    "actual_predicted_notes_and_oracle_route_separation_verified": true,
+    "exact_english_rewrite_anchors_verified": true,
+    "all_stage_statuses_complete": true,
+    "selected_equals_final": true,
+    "format_echo_ids": {
+      "unchanged_baseline": [],
+      "continued_control": [
+        "CREATIVE-challenge-known_call-6"
+      ],
+      "predicted_notes": [],
+      "same_model_no_notes": [
+        "CREATIVE-challenge-budget-6",
+        "CREATIVE-challenge-overwhelmed-6",
+        "COCKTAIL-NATURAL-10",
+        "CALL-WITH-PURPOSE",
+        "ITEM-B-034",
+        "ITEM-D-009",
+        "ITEM-D-033"
+      ],
+      "oracle_notes_DIAGNOSTIC": []
+    },
+    "source_preservation_flags": {
+      "planner": {
+        "frozen_base_unchanged": true
+      },
+      "no_notes_control": {
+        "frozen_base_unchanged": true,
+        "source_base_and_initial_adapter_unchanged": true
+      },
+      "explicit_notes": {
+        "frozen_base_unchanged": true,
+        "source_base_and_initial_adapter_unchanged": true
+      }
+    },
+    "verification_method": "Recomputed serialization hashes using shipped pure functions; no model inference. Runtime dependencies unavailable locally; no training rerun."
+  },
+  "reference_loss": {
+    "planner": {
+      "step": 450,
+      "validation": {
+        "creative": 0.5459861511064886,
+        "factual": 0.1906668976501873,
+        "macro_ce": 0.36832652437833796
+      },
+      "sha256": "7b56069fd8c5887808cba1c816433a4416ed4a062059ff4eb4b7880af98018b6"
+    },
+    "no_notes_control": {
+      "step": 300,
+      "old_token_ce": 2.2527096625032095,
+      "new_mean_reference_ce": 2.2095560004313786,
+      "selection_score": 2.231132831467294,
+      "sha256": "f009bb16a635b495e5a5251729c2fad6b4c77d64949087fc220da15710014d07"
+    },
+    "explicit_notes": {
+      "step": 300,
+      "old_token_ce": 2.296283124849714,
+      "new_mean_reference_ce": 2.1869567424058913,
+      "selection_score": 2.2416199336278027,
+      "sha256": "c8ddefe1bdcb0f4a924fe9e7198b8ac86e91237006807ae9a15efbde6d8cffaa"
+    }
+  },
+  "notes_changed_english": 66,
+  "total_cases": 84,
+  "assessment_method": "Assistant read all84 matched cases across four ordinary/ablation routes and34 oracle diagnostic rows, plus source-only notes and supervision/serialization code. Per-case notes for34 annotated diagnostics. Qualitative review, no independent human accuracy or numerical semantic score.",
+  "conclusion": "The planner learned annotation format and changes reply behavior, but this pilot does not establish reliable contextual improvement. Planner facts/roles are often wrong; correct notes and source-only oracle notes are also sometimes ignored by reply decoder. Singlish meaning changes persist separately.",
+  "positive_findings": [
+    "COCKTAIL-NATURAL-04 predicted route preserves borrow until tomorrow rather than borrow tomorrow.",
+    "USER-CALL-001 reply keeps caller direction and defers, but control also does this and purpose remains unanswered.",
+    "ITEM-E-009 proposed send after three respects supplied timing and is closer to request than control charger ownership question."
+  ],
+  "failure_categories": [
+    "Planner corrupts amounts, time/day values, ownership and negation, and emits unrelated call/text rules.",
+    "Correct predicted notes do not enforce after-eight restriction or User bookshop location.",
+    "Gold-note diagnostics still fail timing, budget, location and purpose; planner alone is not the sole observed limitation.",
+    "Instruction-field echo in continued control1/84 and same-model no-notes7/84; zero in actual predicted-note English. Removing notes is distribution-shifted for explicit responder and is not a clean measure of helpfulness.",
+    "Frozen Singlish rewriting can reverse a correct English refusal, reverse lender/borrower, or alter uncertainty/question meaning."
+  ],
+  "limits": [
+    "One seed; assistant-authored training notes and new targets, with related scenario families across splits.",
+    "All84 conversations are development material; 50old validation and14natural/user cases have been reused. No locked test read or independent human review.",
+    "Notes changed66English strings; sensitivity is not correctness. Lower annotation/reference CE is not contextual accuracy.",
+    "Explicit responder was trained with supplied notes; empty-note ablation is distribution-shifted. Oracle strings differ from learned predictions and are not guaranteed upper bounds.",
+    "Selected and final reply checkpoints are the same step300; final is not an independent replication.",
+    "Source/base preservation comes from completed-run attestations and frozen manifests; large model weights were not downloaded or freshly rehashed locally."
+  ],
+  "default_changed": false,
+  "new_training_submitted": false,
+  "next_recommendation": "Retain baseline and all snapshots. If another experiment is requested, first isolate source-fact extraction from reply use on a new frozen evaluation, with roles/times/amounts checked separately; compare additional training against a matched no-note control. No automatic retraining or promotion from this review."
+}

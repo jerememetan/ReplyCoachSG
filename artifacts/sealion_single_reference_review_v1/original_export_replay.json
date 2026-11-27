@@ -1,0 +1,98 @@
+{
+  "status": "complete",
+  "kind": "sealion",
+  "device": "cuda",
+  "strict_loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "gpu": "NVIDIA L40S",
+  "input_sha256": "c532b19675c785ac24270555a4462ccc69924b2501cd01038def3269b2e51b05",
+  "outputs": [
+    {
+      "item_id": "ITEM-E-007",
+      "english": "okay, see you tomorrow",
+      "singlish": "okies, c u later",
+      "standard_anchor": "okay, see you tomorrow",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-046",
+      "english": "Oh no, I can't go now. Could someone else go in my place?",
+      "singlish": "aiyo, aiyo",
+      "standard_anchor": "Oh no, I can't go now. Could someone else go in my place?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-034",
+      "english": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+      "singlish": "You can tell me what you miss in the morning. I'll send you an update after class.",
+      "standard_anchor": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-038",
+      "english": "no worries, ten more minutes won't make a difference",
+      "singlish": "no worries, ten more mins won't make a difference",
+      "standard_anchor": "no worries, ten more minutes won't make a difference",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-A-033",
+      "english": "I'm not sure, let's check before we go.",
+      "singlish": "not sure yet leh, check before we go first",
+      "standard_anchor": "I'm not sure, let's check before we go.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-B-009",
+      "english": "Yes, there is still space.",
+      "singlish": "Still got space, I come over after class.",
+      "standard_anchor": "Yes, there is still space.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-D-029",
+      "english": "Ok, I will bid before bidding ends.",
+      "singlish": "okok, i bid before the bidding ends",
+      "standard_anchor": "Ok, I will bid before bidding ends.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-E-025",
+      "english": "sure, let's do a make up class on thursday instead",
+      "singlish": "okies, thursday then we do a make up class instead",
+      "standard_anchor": "sure, let's do a make up class on thursday instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-038",
+      "english": "I'll take a look and let you know if it's too long.",
+      "singlish": "Can, I check if it's too long first.",
+      "standard_anchor": "I'll take a look and let you know if it's too long.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    {
+      "item_id": "ITEM-C-017",
+      "english": "not yet, im still working on it",
+      "singlish": "havent finish leh, still working on it",
+      "standard_anchor": "not yet, im still working on it",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    }
+  ],
+  "flags": [],
+  "replay_differences": [],
+  "exact_example_pairs": 10
+}

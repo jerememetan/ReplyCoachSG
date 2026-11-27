@@ -1,0 +1,202 @@
+{
+  "experiment": "mt5_distill_judge_v1",
+  "status": "main_submitted",
+  "submission": {
+    "status": "main_submitted",
+    "main_job_id": "373729",
+    "pilot_job_id": "373725",
+    "config_sha256": "82a0ccf76d93e84580ccfa830b21a650c7661f0520c9f782070da19588a907bb",
+    "remote_root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_distill_judge_v1",
+    "unique_requests": 3390,
+    "expanded_ratings": 5000,
+    "models": 5,
+    "validation_conversations": 50,
+    "personas": 10,
+    "styles": 2,
+    "judge_model": "gemma4:12b",
+    "expected_model_digest": "6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b"
+  },
+  "config": {
+    "experiment": "mt5_distill_judge_v1",
+    "remote_root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_distill_judge_v1",
+    "models": [
+      "unchanged",
+      "sealion_ce",
+      "sealion_kd",
+      "qwen_ce",
+      "qwen_kd"
+    ],
+    "scope": "50 reused development validation conversations; selected checkpoints only; unchanged trained adapter plus four warm-start distillation variants. No final-test inputs.",
+    "judge_model": "gemma4:12b",
+    "expected_model_digest": "6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b",
+    "options": {
+      "temperature": 0,
+      "seed": 425,
+      "num_predict": 2048,
+      "num_ctx": 4096
+    },
+    "think": false,
+    "personas": [
+      {
+        "id": "P01",
+        "description": "You are Alex, 22, a third-year computing student three weeks into an exchange semester in Singapore. You mostly message project teammates and new friends about assignments, lunch and meeting locations. With friends you type lowercase messages of about 5-12 words, use 'u', 'rn' and 'cfm', and sometimes add 'haha' to soften an awkward request. You rarely use full stops and occasionally send 😭 about deadlines. You understand a few common Singlish expressions but little Mandarin. You prefer friendly direct replies with clear plans. These are your habits, not requirements: do not penalise natural replies simply for missing your abbreviations or laughter."
+      },
+      {
+        "id": "P02",
+        "description": "You are Sam, 21, a second-year engineering student in Singapore who commutes to campus and often coordinates food stops with classmates after labs. You send short lowercase bursts, sometimes several messages in a row. You use 'otw', 'alr' and 'can', occasionally add 'lah' or 'sia' with close friends, and type 'HAHA' when genuinely amused. You rarely use emoji except 👍 to confirm plans. You are familiar with everyday Singlish but not fluent in Mandarin. You dislike slang stacked into every sentence or replies that sound like customer service. Judge STANDARD and LOCAL against their labels, not against your own usual typing style."
+      },
+      {
+        "id": "P03",
+        "description": "You are Jamie, 23, a communications student five months into an exchange in Singapore. You have a small group of local and exchange friends and usually text about tutorials, cafe lunches and weekend meetups. Your messages are roughly one short sentence, usually lowercase, with 'haha', 'omg' or 😅 when teasing or correcting a misunderstanding. You use question marks but seldom a final full stop with friends. You understand familiar terms such as 'makan', 'chope' and 'paiseh' but cannot confidently judge longer Mandarin passages. You like relaxed warmth without exaggerated enthusiasm. A reply can sound natural without copying your laughter, emoji or abbreviations."
+      },
+      {
+        "id": "P04",
+        "description": "You are Taylor, 24, a postgraduate analytics student who arrived in Singapore two months ago. English is an additional language you use comfortably for university work. Most messages are with classmates you do not yet know closely, usually about notes, room locations and study sessions. You write one or two complete sentences with capital letters, ordinary punctuation and an occasional 'Thanks!'. You use 'OK' but rarely abbreviations such as 'cfm' or 'idk', and almost never use emoji. You prefer explicit times and places over hints. You are still learning Singlish and do not read Mandarin; disclose uncertainty rather than assuming an unfamiliar expression is wrong."
+      },
+      {
+        "id": "P05",
+        "description": "You are Morgan, 23, a third-year business student coordinating a four-person group project alongside a part-time job. Your chats mix deadline reminders, file requests and quick updates about who is available. You usually write a short sentence beginning with 'hey', use 'pls' or 'thanks', and include a specific time when one matters. You use punctuation to separate tasks, avoid repeated question marks, and almost never add laughter to a serious reminder. You understand everyday Singlish but normally write neutral English in project groups. You prefer an actionable answer over cheerful filler. Brief or playful replies can still score well when the conversation calls for them."
+      },
+      {
+        "id": "P06",
+        "description": "You are Casey, 21, a second-year social-science student who helps organise a campus club and frequently invites friends to lunch after events. With close friends you type several brief messages, stretch words such as 'yesss', laugh with 'HAHAHA', and occasionally use 😂 or 😭. You write more plainly when confirming a booking or messaging a new member. You understand common Singlish, including 'jio' and 'can', but do not confidently read Mandarin. You enjoy upbeat replies that move a plan forward, not enthusiastic reactions that dodge the question. Your expressive habits should mainly inform willingness to send; do not require emoji or extra slang for high scores."
+      },
+      {
+        "id": "P07",
+        "description": "You are Riley, 22, a third-year psychology student in Singapore who commutes home after classes and prefers arranging study sessions with two or three familiar classmates. You usually send a lowercase sentence rather than multiple bubbles. You soften requests with 'if u free', 'no rush' or an occasional 'haha', use 😅 sparingly, and avoid strings of exclamation marks. You understand common local English but little Mandarin. You prefer considerate requests and declines that do not guilt someone into agreeing. You can appreciate a straightforward answer without an apology; do not mistake another person's more direct texting style for poor naturalness."
+      },
+      {
+        "id": "P08",
+        "description": "You are Jordan, 23, a fourth-year computing student in Singapore who messages English-Mandarin bilingual friends, project teammates and classmates with different language backgrounds. In casual chats you type mostly lowercase English, use 'u', 'tmr' and 'haha', and sometimes use familiar Mandarin phrases such as '没问题' or '谢谢' when everyone understands them. You use fewer abbreviations and no unnecessary language switching with new classmates. You understand everyday Singlish and notice awkward mixed-language phrases. You prefer a clear reply that fits the recipient over decorative code-switching. Apply the requested style label fairly: fluent standard English can earn full marks without sounding like your own messages."
+      },
+      {
+        "id": "P09",
+        "description": "You are Avery, 25, a final-year design student in a second exchange semester in Singapore. You juggle studio sessions, occasional evening shifts and a small circle of friends, so your chats often involve changing meeting times or finding somewhere to eat. You type short lowercase sentences, use 'tmr', 'mins' and 'otw', occasionally stretch 'nicee' to show enthusiasm, and usually skip emoji. You understand familiar Singlish after several months locally but little Mandarin. You appreciate quick acknowledgement followed by any practical detail needed, especially when plans change. Shortness is your preference, not a scoring rule; a longer explanation can be appropriate when the situation needs it."
+      },
+      {
+        "id": "P10",
+        "description": "You are Quinn, 21, a third-year science student who grew up in Singapore and often coordinates lab work and shared notes with classmates you are not especially close to. You normally use capital letters, complete short sentences and conventional spelling, even in casual chats. You sometimes send a standalone 'Okay' or 👍 to confirm something, rarely write 'haha', and do not usually use 'u' or 'cfm'. You understand Singlish well and recognise when light local phrasing is natural despite seldom using it yourself. You prefer calm, friendly replies without excessive formality. Lowercase spelling, abbreviations or local particles are not automatically errors; judge the requested style and context."
+      }
+    ],
+    "rubric_sha256": "74e8395f5ff93be7d2d30f09a7966a7dd725ed13b23afbc32001787e672df750",
+    "groupmate_judge_script_sha256": "d8244313f87203681598d8c5bc405c35807f54ffffaaea0be10580c4c9358dc0",
+    "comparison_sha256": "8939df24cf8f6ce2f3becd2f4b4724462cfd4e5c964564dc24caf63844b6c62d",
+    "validation_sha256": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+    "selected_checkpoint_sources": {
+      "sealion_ce": {
+        "status": "complete",
+        "selected_epoch": 3,
+        "selected_sha256": "39fb9d692f67d42afca77de27dac6eae665ee358ceb3780b26be73916143889a",
+        "final_sha256": "38a50f71226c6b55b07a5218f23d2724c3f4d49bc4901b8e45990da966d181fc",
+        "epoch_hashes_verified": 13,
+        "initialization_exact": true,
+        "training_rows_sha256": "4f4b0426cc8329ba4262d73e736d89fe62c787c778c80850ca6debe0e6e1a2b4"
+      },
+      "sealion_kd": {
+        "status": "complete",
+        "selected_epoch": 1,
+        "selected_sha256": "c8840f2a8638bb27ec49d4b914f0e525f1ff7f968e5bb87c96b4432f018fd680",
+        "final_sha256": "ca0ecfc9254d4e8a81fa37d858d7077fb1284288e40e5e13e8ff9f85622cbbdf",
+        "epoch_hashes_verified": 13,
+        "initialization_exact": true,
+        "training_rows_sha256": "4f4b0426cc8329ba4262d73e736d89fe62c787c778c80850ca6debe0e6e1a2b4"
+      },
+      "qwen_ce": {
+        "status": "complete",
+        "selected_epoch": 2,
+        "selected_sha256": "8282e3bcd36883c82799f2fb2a49a9d3748673b92b33507c9fbfe13407d0b2df",
+        "final_sha256": "ec480e86bc734481c808f3ed06f63da4bcad9782442cae6422a85349ac4ed30e",
+        "epoch_hashes_verified": 13,
+        "initialization_exact": true,
+        "training_rows_sha256": "fb60f9e2045808533f813452618c39f47fc10475151d51e9d714cb23e330885a"
+      },
+      "qwen_kd": {
+        "status": "complete",
+        "selected_epoch": 1,
+        "selected_sha256": "40cba92da27d86b215bf78083646bc286c3fc212f5def7e1158187e17f432212",
+        "final_sha256": "25db5cf5fbfdf76a3ae85e6922f65d86175c5b509f6ec431c1082bbe0805a7e8",
+        "epoch_hashes_verified": 13,
+        "initialization_exact": true,
+        "training_rows_sha256": "fb60f9e2045808533f813452618c39f47fc10475151d51e9d714cb23e330885a"
+      }
+    },
+    "unique_candidates": 339,
+    "personas_count": 10,
+    "system_style_cells": 500,
+    "expanded_ratings": 5000,
+    "unique_requests": 3390,
+    "workers": 4,
+    "shuffle_seed": 425,
+    "pilot_candidate_ids": [
+      "C000001",
+      "C000003",
+      "C000020",
+      "C000022",
+      "C000026",
+      "C000051",
+      "C000052",
+      "C000053",
+      "C000066",
+      "C000072",
+      "C000080",
+      "C000086",
+      "C000094",
+      "C000115",
+      "C000118",
+      "C000124",
+      "C000136",
+      "C000158",
+      "C000163",
+      "C000165",
+      "C000169",
+      "C000176",
+      "C000186",
+      "C000198",
+      "C000221",
+      "C000231",
+      "C000233",
+      "C000239",
+      "C000240",
+      "C000251",
+      "C000259",
+      "C000261",
+      "C000264",
+      "C000270",
+      "C000278",
+      "C000280",
+      "C000286",
+      "C000299",
+      "C000300",
+      "C000305",
+      "C000306",
+      "C000314",
+      "C000318",
+      "C000329"
+    ],
+    "pilot_conversations": [
+      "Q000019",
+      "Q000030",
+      "Q000009",
+      "Q000003",
+      "Q000001"
+    ],
+    "pilot_persona_ids": [
+      "P01"
+    ],
+    "pilot_unique_requests": 44,
+    "retry_attempts": 2,
+    "deduplication": "Only exact reply text within the same conversation and requested style, separately for every persona; retain mapping to all original systems.",
+    "engine_difference": "Four concurrent fresh-context requests instead of the prior sequential runner, with unchanged judge_one implementation/model/options/personas/rubric. Hardware/runtime differences limit cross-run numerical comparisons; all five systems are judged together in this new run.",
+    "aggregation": "Average ten persona ratings within each conversation/system/style, then average 50 conversations. Paired bootstrap resamples whole conversations; correlated personas are not independent human raters.",
+    "pilot_gate": "Exact model identity and protocol; all requested structured responses valid and complete; GPU execution confirmed. Inspect pilot before main launch; no score-based selection or prompt tuning.",
+    "paired_meaning": "Single-draft team schema cannot measure English/Singlish consistency; keep existing paired qualitative review separate.",
+    "no_training": true,
+    "default_changed": false
+  },
+  "groupmate_reference": "artifacts/mt5_distill_judge_v1/groupmate_reference",
+  "pilot_review": "artifacts/mt5_distill_judge_v1/pilot_review_approved.json",
+  "local_tests_passed": 6,
+  "reports": "Appropriateness/naturalness/style fit by system and style; simulated would-send; missingness and uncertainty; paired conversation-bootstrap differences versus unchanged mT5.",
+  "no_test_set_used": true,
+  "no_training_or_model_default_changes": true
+}

@@ -1,0 +1,140 @@
+{
+  "status": "full_soft_training_completed_results_collected",
+  "created_at_utc": "2026-11-21T05:50:00.025510+00:00",
+  "user_request": "Preserve the planned hard-target run and add a separate soft-target/KL version; identify the exact mT5 being used.",
+  "independent_experiment": true,
+  "proposed_remote_root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_mt5_soft_kd_v1_headfix_v1",
+  "student_backbone": {
+    "family": "google/mt5-base with preserved project span/public-reply adaptation",
+    "base_parameters": 582401280,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1/base",
+    "model_weight_sha256": "20b20e1ac9382c2ca83b6e0b2c665ec4fb1104f853c0e2489d9b0ad205f871ac",
+    "precision": "FP32",
+    "loader": "OriginalMT5: preserve independent output head despite legacy tie_word_embeddings metadata",
+    "tokenizer_sha256": "b23d6ee13c7b975febb7876a6f5c2d02470a309fbf8497e06ccef9c5ace30742"
+  },
+  "initialization_choice": {
+    "status": "user_confirmed",
+    "recommended": "same_public_adapted_base_with_fresh_independent_English_and_Singlish_adapters",
+    "alternative": "continue_existing_mt5_A_shared_task_adapter_final784",
+    "fairness": "A warm-start KL student compared only with fresh-adapter CE students would confound initialization and distillation. Continuing the existing task adapter requires a matched warm-start CE control as well.",
+    "verified_existing_adapter": {
+      "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1/adapters/shared/adapter_model.safetensors",
+      "sha256": "d2bb5ea90233de5534f07c9ab7ab6cbf23bf0196388ff6727e3a1bc15673adb9",
+      "checkpoint": "shared_intent rewrite_s1 seed1 final784"
+    },
+    "selected": "same_public_adapted_base_with_fresh_independent_English_and_Singlish_adapters",
+    "user_message": "same base with fresh adapters, wait actually why we not using the previous mt5 that has the adapters? already?"
+  },
+  "planned_hard_target_controls": {
+    "experiment": "distill_mt5_v2",
+    "preflight_job": "373402",
+    "training_jobs": {
+      "original": "373408",
+      "sealion": "373409",
+      "qwen": "373410"
+    },
+    "same_frozen_conversations": 571,
+    "target_manifest_sha256": "f854af4036c8c20d7e46fac48109aae6c949dbbcaf898ff79a28d600f49f96db"
+  },
+  "proposed_soft_targets": {
+    "teachers": {
+      "sealion": {
+        "english": {
+          "path": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_sealion_audited768_bc_warmup_v1/outputs/C/task/selected",
+          "sha256": "423be0f0f9abdfa44554614af44773b0a490a3dd45279cfc9d132c841d5f6bd5",
+          "selected_epoch": 2
+        },
+        "singlish": {
+          "path": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_sealion_audited768_bc_warmup_v1/outputs/C/rewrite/selected",
+          "sha256": "ce7244111fb1873db9940230c34dad4e2ab1d21d8f97c2ef4d96abeebb81156d",
+          "selected_epoch": 2
+        }
+      },
+      "qwen": {
+        "english": {
+          "path": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_qwen_full_sealion_recipe_v1/outputs/qwen/task/selected",
+          "sha256": "52ab46dbeba066927b8ca35f58d45f73236498166606117cf13081af230b0dd5",
+          "selected_epoch": 2
+        },
+        "singlish": {
+          "path": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_qwen_full_sealion_recipe_v1/outputs/qwen/rewrite/selected",
+          "sha256": "5c46532ea0c970670a29f08244487befbaa707b812964927e46ee2924082d342",
+          "selected_epoch": 2
+        }
+      }
+    },
+    "teacher_models_stay_frozen": true,
+    "arms": "Separate SEA-LION-KD and Qwen-KD configurations, matching their respective CE controls; exact arm count can be narrowed by the user.",
+    "no_raw_token_id_KL": true,
+    "alignment": "DSKD-CMA adapted to mT5 decoder and causal teacher response positions",
+    "objective": "0.5*hard_CE+0.5*(alignment_CE+t2s_forward_KL+s2t_forward_KL)",
+    "trainable": "Student LoRA plus training-only alignment projectors; base and teacher weights frozen.",
+    "comparison_limit": "Alignment adds trainable modules and computation. This compares the complete soft-target method with text-only training, rather than claiming KL is the sole changed implementation detail.",
+    "inference": "Deploy student base and task adapters; teacher and training-only alignment projectors are unnecessary at inference."
+  },
+  "required_checks_before_soft_training": [
+    "Resolved: user chose fresh adapters on same adapted base; old task adapter preserved.",
+    "Implement response-position alignment for mT5 decoder versus causal teacher without treating encoder positions as decoder steps.",
+    "Verify teacher output-head replay and retain original mT5 output-head scaling.",
+    "Test masking/EOS, cross-tokenizer sequence lengths, temperature, KL orientation, finite nonzero student gradients, and zero teacher/base gradients.",
+    "Run actual-checkpoint GPU pilot before full KL fitting; record failures rather than calling text CE or confidence sorting KL.",
+    "Keep dataset, updates, selection, and evaluation comparable and record alignment-specific costs."
+  ],
+  "sources": {
+    "paper": "https://aclanthology.org/2024.emnlp-main.1010/",
+    "official_code": "https://github.com/songmzhang/DSKD",
+    "inspected_commit": "9962b495eb248d5b9d519cf471e7d0e8d7e9b206"
+  },
+  "soft_training_submitted": true,
+  "no_current_model_or_defaults_overwritten": true,
+  "repository_demo_default": "artifacts/spk1_ul025_s425/best unless V5_CHECKPOINT overrides it",
+  "existing_reference_checkpoint": "mT5 A: shared_intent rewrite_s1 seed1 final784",
+  "reference_vs_demo_note": "The verified mT5 A reference is distinct from the older source-code demo default. Do not assume a deployment override or silently substitute either task adapter for the fresh-adapter planned run.",
+  "gate_job": "373425",
+  "gpu_pilot_passed": true,
+  "protocol": "artifacts/mt5_soft_kd_v1/soft_recipe.json",
+  "payload_manifest_sha256": "20729425b97746707c88d58bd563ee100f464781684f020cc7acb0faa9736d3a",
+  "cpu_tensor_tests": 5,
+  "failed_attempts": [
+    {
+      "root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_mt5_soft_kd_v1",
+      "job": "373424",
+      "state": "FAILED",
+      "reason": "Student native head replay caught added scale from legacy tie metadata.",
+      "fix": "Pinned MT5 forward projects decoder output directly. Removed inferred scale, added actual MT5 regression test, preserved failed root, reused only hash-verified exact teacher cache."
+    }
+  ],
+  "soft_training_jobs": {
+    "sealion": "373433",
+    "qwen": "373434"
+  },
+  "full_submission_evidence": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T061741Z/soft/full_submission.json",
+  "gate_evidence": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T061741Z/soft/pilot/gate.json",
+  "gpu_status_observed_at_utc": "2026-11-21T06:19:36+00:00",
+  "passed_checks": {
+    "cpu_tensor_tests": 5,
+    "actual_checkpoint_teacher_stage_pilots": 4,
+    "teacher_head_exact_replay": true,
+    "student_head_replay": true,
+    "student_projector_gradients_nonzero_finite": true,
+    "base_teacher_frozen": true,
+    "all_pilot_objectives_decreased": true,
+    "initial_adapter_matches_ce": true
+  },
+  "latest_evidence": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T080108Z/verification.json",
+  "first_full_kd_check": {
+    "arm": "sealion",
+    "stage": "english",
+    "epochs_saved": 2,
+    "optimizer_updates": 144,
+    "initial_adapter_matches_ce": true,
+    "finite_loss_metrics": true,
+    "source": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T061936Z/soft/students/full/sealion/english/training.json"
+  },
+  "all_full_training_complete": true,
+  "result_source": "experiments/mt5_soft_kd_v1_results.json",
+  "selected_pipeline_qualitative_inspection_complete": true,
+  "numerical_quality_scores_assigned": false,
+  "previous_model_or_default_promoted": false
+}

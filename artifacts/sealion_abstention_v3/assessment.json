@@ -1,0 +1,69 @@
+{
+  "conclusion": "Improved standard abstention on constructed missing-fact tasks, but over-refusal and grounding/role failures remain. No overall conversational upgrade or automatic replacement established.",
+  "selected_step": 288,
+  "new_synthetic_metrics": {
+    "original": {
+      "missing_cases": 8,
+      "answerable_cases": 16,
+      "exact_abstention_on_missing": 0,
+      "uncertainty_cue_on_missing": 1,
+      "exact_over_refusals": 0,
+      "uncertainty_cue_on_answerable": 3,
+      "exact_abstention_recall": 0.0,
+      "exact_over_refusal_rate": 0.0,
+      "answerability_balanced_score": 0.5,
+      "supported_fact_cases": 13,
+      "supported_value_matches": 9,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    },
+    "corrected_selected_step288": {
+      "missing_cases": 8,
+      "answerable_cases": 16,
+      "exact_abstention_on_missing": 7,
+      "uncertainty_cue_on_missing": 7,
+      "exact_over_refusals": 0,
+      "uncertainty_cue_on_answerable": 0,
+      "exact_abstention_recall": 0.875,
+      "exact_over_refusal_rate": 0.0,
+      "answerability_balanced_score": 0.9375,
+      "supported_fact_cases": 13,
+      "supported_value_matches": 12,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    },
+    "corrected_final288": {
+      "missing_cases": 8,
+      "answerable_cases": 16,
+      "exact_abstention_on_missing": 7,
+      "uncertainty_cue_on_missing": 7,
+      "exact_over_refusals": 0,
+      "uncertainty_cue_on_answerable": 0,
+      "exact_abstention_recall": 0.875,
+      "exact_over_refusal_rate": 0.0,
+      "answerability_balanced_score": 0.9375,
+      "supported_fact_cases": 13,
+      "supported_value_matches": 12,
+      "generation_flags": [],
+      "note": "Exact standard-response classification and lexical value checks, not conversational or semantic accuracy. Noncanonical uncertainty is reported separately."
+    }
+  },
+  "known_purpose_regression": "Given User explicitly wanted to ask about the assignment deadline, original answers the topic but corrected selected288 says Information not available.",
+  "remaining_missing_fact_hallucination": "CORRECTED-TEST-3-missing: selected288 says I am collecting the keys. No collector is established.",
+  "other_unresolved_cases": [
+    "CORRECTED-SELF-6: budget15 and ticket10 yields a deferral instead of answering yes.",
+    "ITEM-E-009: charger borrowing/lending roles remain confused.",
+    "ITEM-C-038: English judges unseen conclusion too long; Singlish instead promises to check, changing meaning.",
+    "ITEM-C-045: tomorrow seats reminder becomes arriving soon/already, a timing error."
+  ],
+  "positive_examples": [
+    "Missing meeting time: original invents6PM; corrected model abstains.",
+    "Time18:45 supplied in message: original says not sure; corrected model repeats18:45.",
+    "Empty history2plus3: corrected model answersfive.",
+    "Lunch invitation: corrected model avoids original unsupported12:00 proposal."
+  ],
+  "metric_limits": "Main counts cover24 assistant-authored synthetic rows:8paired factual scenarios and8self-contained controls. No independent human score. Exact canonical refusal0/8 for original does not mean zero uncertainty; original has one noncanonical uncertainty cue. Value matching is lexical, not semantic entailment.",
+  "default_changed": false,
+  "human_review_pending": true,
+  "user_goal_correction": "User wants plausible creative continuation with no contradiction of available context, not canonical refusal when a private fact is missing. The abstention study targeted the wrong product behaviour and is not a solution to this clarified goal."
+}

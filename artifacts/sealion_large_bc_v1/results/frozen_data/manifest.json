@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "hashes": {
+    "dev_rewrite.json": "a7e1302ca981d16fdb7c5e45f19bec2d00257c8bf051631de2a3a6b07d78a177",
+    "evaluation_task.json": "c0646164538764455a3fbbbcfd146de8f71eec331a90943b595d3fc0a0982c05",
+    "dev_task.json": "fd4c552e74a24baebf44864712987d03319b61e2766be34b6b17f6f617afd4ec",
+    "evaluation_all.json": "8dbb47ac640f8fb64366cf8d027f7af12f88f7bb0b44f4bfe94cbf7723860329",
+    "train_task.json": "00a26892500b2db98fe0c976c1835e10b9df5a60eb62c5c7c66c67c6bfc547bf",
+    "train_rewrite.json": "1ca3a55fe3c949cc62726bfc2e1df7ad79666a6e74e9e3d0a37503a67af62a8b",
+    "evaluation_rewrite.json": "7adcd8b68551fe9c1ea870ea24efc42109fa037b51aea1c469c18187f3c832fc"
+  },
+  "counts": {
+    "train": 1291,
+    "dev": 11,
+    "evaluation": 14
+  },
+  "authoring_model_review": true,
+  "human_gold": false,
+  "split_note": "New authoring topics held out; historical/public topic overlap is possible. Final evaluation never selects checkpoints.",
+  "accepted_snapshot": {
+    "path": "authoring/accepted_first548.jsonl",
+    "sha256": "421ea94bdafcf530cb82c540a81cf2c34d42000a6710fa9268f0c136fef2d2e3",
+    "conversations": 548,
+    "splits": {
+      "train": 523,
+      "dev": 11,
+      "evaluation": 14
+    }
+  },
+  "scope_amendment": "User requested first 548 accepted cases instead of waiting for 5240. Original split assignments retained.",
+  "pre_overlay_hashes": {
+    "dev_rewrite.json": "a7e1302ca981d16fdb7c5e45f19bec2d00257c8bf051631de2a3a6b07d78a177",
+    "evaluation_task.json": "c0646164538764455a3fbbbcfd146de8f71eec331a90943b595d3fc0a0982c05",
+    "dev_task.json": "fd4c552e74a24baebf44864712987d03319b61e2766be34b6b17f6f617afd4ec",
+    "evaluation_all.json": "8dbb47ac640f8fb64366cf8d027f7af12f88f7bb0b44f4bfe94cbf7723860329",
+    "train_task.json": "00a26892500b2db98fe0c976c1835e10b9df5a60eb62c5c7c66c67c6bfc547bf",
+    "train_rewrite.json": "ec737fa6e501fe30a2921d192d02bf694566fe7350a235fdc945135200e79fcc",
+    "evaluation_rewrite.json": "7adcd8b68551fe9c1ea870ea24efc42109fa037b51aea1c469c18187f3c832fc"
+  },
+  "assistant_overlay_sha256": "297d0121017e6b45842af30d16be1c593eccced596cee2300381b4e78c62848f",
+  "assistant_corrections": [
+    {
+      "file": "train_rewrite.json",
+      "item_id": "BC-train-04616-D1",
+      "note": "Assistant follow-up audit: retain the new approximate7pm time from the selected English anchor. Source datasets unchanged."
+    }
+  ]
+}

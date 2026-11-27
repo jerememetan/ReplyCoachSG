@@ -1,0 +1,59 @@
+{
+  "status": "training",
+  "arm": "qwen",
+  "stage": "rewrite",
+  "history": [
+    {
+      "epoch": 0,
+      "validation": {
+        "groups": {
+          "old_rewrite": {
+            "token_ce": 2.3725078023836286,
+            "examples": 42,
+            "tokens": 334
+          },
+          "development_rewrite": {
+            "token_ce": 1.7471112911739657,
+            "examples": 20,
+            "tokens": 124
+          }
+        },
+        "selection_score": 2.059809546778797
+      },
+      "adapter_sha256": "52ab46dbeba066927b8ca35f58d45f73236498166606117cf13081af230b0dd5"
+    },
+    {
+      "epoch": 1,
+      "validation": {
+        "groups": {
+          "old_rewrite": {
+            "token_ce": 2.2047454259709682,
+            "examples": 42,
+            "tokens": 334
+          },
+          "development_rewrite": {
+            "token_ce": 1.4011118277426688,
+            "examples": 20,
+            "tokens": 124
+          }
+        },
+        "selection_score": 1.8029286268568185
+      },
+      "adapter_sha256": "0758e6f328ad1abf840da4f40bcabf25fa6b73920fdd66f83ebf5432cea88ede"
+    }
+  ],
+  "optimizer_updates": 150,
+  "total_updates": 768,
+  "warmup_updates": 39,
+  "initial": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_qwen_full_sealion_recipe_v1/outputs/qwen/task/selected",
+  "trainable_parameters": 14966784,
+  "checkpoint_selection": "Provisional within-model reference CE; not a cross-model quality score.",
+  "fixed_budget_checkpoint": "epoch_08",
+  "training_loss_history": [
+    {
+      "epoch": 1,
+      "example_mean_ce": 1.206644899685996
+    }
+  ],
+  "selected_epoch": 1
+}

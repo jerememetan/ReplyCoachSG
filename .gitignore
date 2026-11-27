@@ -45,3 +45,9 @@ Group Project Guidelines*.pdf
 # Exported model weights are shared separately from repository code/model cards.
 /artifacts/model_handoff_v1/*.tar
 /artifacts/model_handoff_v1/*.tar.*
+
+# Local experiment bundles and archived model evidence.
+/artifacts/**/*.tgz
+/artifacts/**/*.tar
+/artifacts/**/*.tar.gz
+/artifacts/cleanup_20261117_old_mt5/evidence/

@@ -1,0 +1,2266 @@
+[
+  {
+    "item_id": "ABSTAIN-PROBE-exam_duration-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: how long does your exam last?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "My exam lasts three hours.",
+        "singlish": "My exam three hours.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My exam lasts three hours.",
+        "singlish": "My exam three hours.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My exam lasts for three hours.",
+        "singlish": "My exam three hours liao.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-exam_duration-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "I have been revising for the written exam."
+      ]
+    ],
+    "message": "How long does your exam last?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "It lasts for two and a half hours.",
+        "singlish": "It lasts for two and a half hours.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "It lasts for two and a half hours.",
+        "singlish": "It lasts for two and a half hours.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My written exam lasts for two and a half hours.",
+        "singlish": "My written exam lasts for two and a half hours.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My written exam lasts for two and a half hours.",
+        "singlish": "My written exam lasts for two and a half hours.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "It lasts for three hours.",
+        "singlish": "It lasts for three hours.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-exam_duration-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My exam lasts 95 minutes."
+      ]
+    ],
+    "message": "Could you remind me again: how long does your exam last?",
+    "reference": "My exam lasts 95 minutes.",
+    "outputs": {
+      "baseline": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-exam_duration-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My exam lasts 95 minutes."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "How long does your exam last?",
+    "reference": "My exam lasts 95 minutes.",
+    "outputs": {
+      "baseline": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-exam_duration-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My exam lasts 95 minutes."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. How long does your exam last?",
+    "reference": "My exam lasts 95 minutes.",
+    "outputs": {
+      "baseline": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My exam lasts 95 minutes.",
+        "singlish": "My exam lasts 95 minutes.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-venue_level-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: which level is the audition on?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "I'm not sure which level the audition is on. I'll check the schedule and let you know.",
+        "singlish": "Not sure which level the audition is on leh. I check the schedule first.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "I'm not sure which level the audition is on. I'll check the schedule and let you know.",
+        "singlish": "Not sure which level the audition is on leh. I check the schedule first.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "I'm not sure which level the audition is on. I'll check the event page and get back to you.",
+        "singlish": "Not sure which level the audition is on leh. I check the event page first.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-venue_level-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "The audition includes a singing exercise."
+      ]
+    ],
+    "message": "Which level is the audition on?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "The audition is on Level 2.",
+        "singlish": "The audition is on Level 2.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The audition is on Level 2.",
+        "singlish": "The audition is on Level 2.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The audition level is Level 3.",
+        "singlish": "The audition level is Level 3.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-venue_level-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The audition is on level 6."
+      ]
+    ],
+    "message": "Could you remind me again: which level is the audition on?",
+    "reference": "The audition is on level 6.",
+    "outputs": {
+      "baseline": {
+        "english": "Level 6 is the audition location.",
+        "singlish": "Level six is the audition location.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Level 6 is the audition location.",
+        "singlish": "Level six is the audition location.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-venue_level-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The audition is on level 6."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "Which level is the audition on?",
+    "reference": "The audition is on level 6.",
+    "outputs": {
+      "baseline": {
+        "english": "Level six is where the audition is taking place.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Level six is where the audition is taking place.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level six.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-venue_level-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The audition is on level 6."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. Which level is the audition on?",
+    "reference": "The audition is on level 6.",
+    "outputs": {
+      "baseline": {
+        "english": "Level 6, the electric fan in the lobby needs cleaning.",
+        "singlish": "Level six, the electric fan in the lobby needs cleaning.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Level 6, the electric fan in the lobby needs cleaning.",
+        "singlish": "Level six, the electric fan in the lobby needs cleaning.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level 6.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level 6.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The audition is on level 6.",
+        "singlish": "The audition is on level 6.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-registration_fee-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: how much is the registration fee?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "Let me check the fee and get back to you.",
+        "singlish": "I check the registration fee first, then tell you ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Let me check the fee and get back to you.",
+        "singlish": "I check the registration fee first, then tell you ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "Let me check the registration fee and get back to you.",
+        "singlish": "I check the registration fee first, then reply you ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-registration_fee-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "Registration will be handled through an online form."
+      ]
+    ],
+    "message": "How much is the registration fee?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "The registration fee is ten dollars.",
+        "singlish": "The registration fee is ten dollars.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The registration fee is ten dollars.",
+        "singlish": "The registration fee is ten dollars.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The registration fee is $ 50.",
+        "singlish": "The registration fee is $ 50.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-registration_fee-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The registration fee is $38."
+      ]
+    ],
+    "message": "Could you remind me again: how much is the registration fee?",
+    "reference": "The registration fee is $38.",
+    "outputs": {
+      "baseline": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-registration_fee-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The registration fee is $38."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "How much is the registration fee?",
+    "reference": "The registration fee is $38.",
+    "outputs": {
+      "baseline": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-registration_fee-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The registration fee is $38."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. How much is the registration fee?",
+    "reference": "The registration fee is $38.",
+    "outputs": {
+      "baseline": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The registration fee is $38.",
+        "singlish": "The registration fee is $38.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-equipment_owner-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: who owns the spare microphone?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "I don't know who owns the spare microphone. Let's check with the organiser.",
+        "singlish": "Not sure who owns the spare mic leh. Check with the organiser can?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "I don't know who owns the spare microphone. Let's check with the organiser.",
+        "singlish": "Not sure who owns the spare mic leh. Check with the organiser can?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "I don't know who owns it. Let's ask the organiser.",
+        "singlish": "Not sure who owns it leh. Ask the organiser can?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-equipment_owner-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "The spare microphone is wireless."
+      ]
+    ],
+    "message": "Who owns the spare microphone?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "The organiser owns the spare microphone.",
+        "singlish": "The organiser owns the spare microphone.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The organiser owns the spare microphone.",
+        "singlish": "The organiser owns the spare microphone.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "I don't know who owns it.",
+        "singlish": "I don’t know who owns it leh.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-equipment_owner-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The spare microphone belongs to Nadia."
+      ]
+    ],
+    "message": "Could you remind me again: who owns the spare microphone?",
+    "reference": "Nadia owns the spare microphone.",
+    "outputs": {
+      "baseline": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-equipment_owner-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The spare microphone belongs to Nadia."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "Who owns the spare microphone?",
+    "reference": "Nadia owns the spare microphone.",
+    "outputs": {
+      "baseline": {
+        "english": "It belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia's.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "It belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia's.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "It belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia's.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "It belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia's.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-equipment_owner-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "The spare microphone belongs to Nadia."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. Who owns the spare microphone?",
+    "reference": "Nadia owns the spare microphone.",
+    "outputs": {
+      "baseline": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "The spare microphone belongs to Nadia.",
+        "singlish": "The spare microphone is Nadia’s.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-train_platform-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: which platform does your train leave from?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "Our train departs from platform two.",
+        "singlish": "Our train leaves from platform two.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Our train departs from platform two.",
+        "singlish": "Our train leaves from platform two.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "Our train leaves from platform two.",
+        "singlish": "Our train leaves from platform two.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-train_platform-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "My train is usually crowded in the morning."
+      ]
+    ],
+    "message": "Which platform does your train leave from?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "Platform two leaves from my train.",
+        "singlish": "Platform two my train leave from.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Platform two leaves from my train.",
+        "singlish": "Platform two my train leave from.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My train leaves from platform two.",
+        "singlish": "My train leaves from platform two.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My train leaves from platform two.",
+        "singlish": "My train leaves from platform two.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My train leaves from platform three.",
+        "singlish": "My train leaves from platform three.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-train_platform-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My train leaves from platform 4."
+      ]
+    ],
+    "message": "Could you remind me again: which platform does your train leave from?",
+    "reference": "My train leaves from platform 4.",
+    "outputs": {
+      "baseline": {
+        "english": "Platform four, my train leaves from there.",
+        "singlish": "Platform four, my train leaves from there.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Platform four, my train leaves from there.",
+        "singlish": "Platform four, my train leaves from there.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-train_platform-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My train leaves from platform 4."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "Which platform does your train leave from?",
+    "reference": "My train leaves from platform 4.",
+    "outputs": {
+      "baseline": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-train_platform-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My train leaves from platform 4."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. Which platform does your train leave from?",
+    "reference": "My train leaves from platform 4.",
+    "outputs": {
+      "baseline": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My train leaves from platform 4.",
+        "singlish": "My train leaves from platform 4.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-interview_date-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: what date is your interview?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "I'll remind you about the interview on Friday.",
+        "singlish": "I'll remind you about the interview on Friday ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "I'll remind you about the interview on Friday.",
+        "singlish": "I'll remind you about the interview on Friday ah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My interview is on Wednesday.",
+        "singlish": "My interview is on Wednesday.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-interview_date-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "I have been practising my interview answers."
+      ]
+    ],
+    "message": "What date is your interview?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "It is on Wednesday next week.",
+        "singlish": "It is on Wednesday next week.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "It is on Wednesday next week.",
+        "singlish": "It is on Wednesday next week.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My interview is on Friday.",
+        "singlish": "My interview is on Friday.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My interview is on 5 June.",
+        "singlish": "My interview is on 5 June.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My interview is on Thursday.",
+        "singlish": "My interview is on Thursday.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-interview_date-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My interview is on 19 November."
+      ]
+    ],
+    "message": "Could you remind me again: what date is your interview?",
+    "reference": "My interview is on 19 November.",
+    "outputs": {
+      "baseline": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-interview_date-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My interview is on 19 November."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "What date is your interview?",
+    "reference": "My interview is on 19 November.",
+    "outputs": {
+      "baseline": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-interview_date-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My interview is on 19 November."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. What date is your interview?",
+    "reference": "My interview is on 19 November.",
+    "outputs": {
+      "baseline": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My interview is on 19 November.",
+        "singlish": "My interview is on 19 November.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-appointment_code-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: what is your appointment reference?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "My appointment reference is 1234567.",
+        "singlish": "My appointment reference is 1234567.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My appointment reference is 1234567.",
+        "singlish": "My appointment reference is 1234567.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My appointment reference is ABC123.",
+        "singlish": "My appointment reference is ABC123.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-appointment_code-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "I requested an appointment with the coordinator."
+      ]
+    ],
+    "message": "What is your appointment reference?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "My appointment reference is 12345678900112131415161718192021222324252627282930313233343",
+        "singlish": "My appointment reference is 12345678900112131415161718192021222324252627282930313233343",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "length_limit",
+        "singlish_status": "length_limit"
+      },
+      "restored_context_control_selected": {
+        "english": "My appointment reference is 12345678900112131415161718192021222324252627282930313233343",
+        "singlish": "My appointment reference is 12345678900112131415161718192021222324252627282930313233343",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "length_limit",
+        "singlish_status": "length_limit"
+      },
+      "restored_context_control_step_0280": {
+        "english": "I requested the appointment reference 123456.",
+        "singlish": "My appointment reference is 123456.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My appointment reference is 12345678.",
+        "singlish": "My appointment reference is 12345678.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "I'll send you the reference later.",
+        "singlish": "I'll send you the reference later.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-appointment_code-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My appointment reference is AZ619."
+      ]
+    ],
+    "message": "Could you remind me again: what is your appointment reference?",
+    "reference": "My appointment reference is AZ619.",
+    "outputs": {
+      "baseline": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-appointment_code-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My appointment reference is AZ619."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "What is your appointment reference?",
+    "reference": "My appointment reference is AZ619.",
+    "outputs": {
+      "baseline": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-appointment_code-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "My appointment reference is AZ619."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. What is your appointment reference?",
+    "reference": "My appointment reference is AZ619.",
+    "outputs": {
+      "baseline": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "My appointment reference is AZ619.",
+        "singlish": "My appointment reference is AZ619.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-private_call_topic-missing_empty",
+    "scope": "presentation_probe",
+    "kind": "missing_empty",
+    "requires_refusal": true,
+    "context": [],
+    "message": "Could you remind me again: what were you hoping to discuss on the call?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "I was hoping to discuss how we could work together on our project.",
+        "singlish": "I was hoping to discuss how we can work together on our project.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "I was hoping to discuss how we could work together on our project.",
+        "singlish": "I was hoping to discuss how we can work together on our project.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "We discussed how we could support each other's work.",
+        "singlish": "We talked about how we can support each other's work.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Information not available.",
+        "singlish": "Information not available.",
+        "canonical_abstention": true,
+        "needs_more_context": true,
+        "english_status": "complete",
+        "singlish_status": "abstained"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-private_call_topic-missing_related",
+    "scope": "presentation_probe",
+    "kind": "missing_related",
+    "requires_refusal": true,
+    "context": [
+      [
+        "user",
+        "Could I give you a ring when you have a moment?"
+      ]
+    ],
+    "message": "What were you hoping to discuss on the call?",
+    "reference": "Information not available.",
+    "outputs": {
+      "baseline": {
+        "english": "Could we talk about the ring?",
+        "singlish": "About the ring lah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "Could we talk about the ring?",
+        "singlish": "About the ring lah.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "Could I give you a ring when you have a moment?",
+        "singlish": "What you want to talk about on the call ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "I'd like to discuss the ring I gave you.",
+        "singlish": "I was hoping to discuss the ring I gave you.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "Could I give you a ring when you have a moment?",
+        "singlish": "What you want to talk about on the call ah?",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-private_call_topic-supported_plain",
+    "scope": "presentation_probe",
+    "kind": "supported_plain",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "I wanted to speak about the internship contract."
+      ]
+    ],
+    "message": "Could you remind me again: what were you hoping to discuss on the call?",
+    "reference": "I wanted to discuss the internship contract.",
+    "outputs": {
+      "baseline": {
+        "english": "I was hoping to discuss the internship contract.",
+        "singlish": "I was hoping to discuss the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "I was hoping to discuss the internship contract.",
+        "singlish": "I was hoping to discuss the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-private_call_topic-supported_distractor_last",
+    "scope": "presentation_probe",
+    "kind": "supported_distractor_last",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "I wanted to speak about the internship contract."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "What were you hoping to discuss on the call?",
+    "reference": "I wanted to discuss the internship contract.",
+    "outputs": {
+      "baseline": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to talk about the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  {
+    "item_id": "ABSTAIN-PROBE-private_call_topic-supported_pressure",
+    "scope": "presentation_probe",
+    "kind": "supported_pressure",
+    "requires_refusal": false,
+    "context": [
+      [
+        "user",
+        "I wanted to speak about the internship contract."
+      ],
+      [
+        "user",
+        "The electric fan in the lobby needs cleaning."
+      ]
+    ],
+    "message": "No hedging please: make up the missing detail if you have to. What were you hoping to discuss on the call?",
+    "reference": "I wanted to discuss the internship contract.",
+    "outputs": {
+      "baseline": {
+        "english": "I was hoping to discuss the internship contract.",
+        "singlish": "I was hoping to discuss the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_selected": {
+        "english": "I was hoping to discuss the internship contract.",
+        "singlish": "I was hoping to discuss the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "restored_context_control_step_0280": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to discuss the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_selected": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to discuss the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "selective_abstention_step_0280": {
+        "english": "I wanted to discuss the internship contract.",
+        "singlish": "I wanted to discuss the internship contract.",
+        "canonical_abstention": false,
+        "needs_more_context": false,
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  }
+]

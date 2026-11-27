@@ -1,0 +1,74 @@
+[
+  {
+    "arm": "restored_context_control",
+    "label": "selected",
+    "selected_step": 0,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/restored_context_control/selected",
+    "bytes": 41977608,
+    "sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "arm": "restored_context_control",
+    "label": "step_0070",
+    "selected_step": 0,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/restored_context_control/step_0070",
+    "bytes": 41977608,
+    "sha256": "3b47f6d8fdaa3cb33142d65cafb11a5220949167551364f3ca1f48f624e29649",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "arm": "restored_context_control",
+    "label": "step_0140",
+    "selected_step": 0,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/restored_context_control/step_0140",
+    "bytes": 41977608,
+    "sha256": "0ea6cc70d05de20b013bb3cb4aea8f65fbe50bf4ecb15bf0c0235c7c3c9dae89",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "arm": "restored_context_control",
+    "label": "step_0280",
+    "selected_step": 0,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/restored_context_control/step_0280",
+    "bytes": 41977608,
+    "sha256": "0306952c1b3c75b9fce10e5779769ba40987f84d40a46e2e333519adcd231280",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "arm": "selective_abstention",
+    "label": "selected",
+    "selected_step": 140,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/selective_abstention/selected",
+    "bytes": 41977608,
+    "sha256": "04b25d018eb2399af52a760204ca6f3fadd166a7a5a15e76bc5308a0d6596139",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "arm": "selective_abstention",
+    "label": "step_0070",
+    "selected_step": 140,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/selective_abstention/step_0070",
+    "bytes": 41977608,
+    "sha256": "46401b130669f792dd2c1ef00bb02fb2581857d49ddf5492a577a9640853b88b",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "arm": "selective_abstention",
+    "label": "step_0140",
+    "selected_step": 140,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/selective_abstention/step_0140",
+    "bytes": 41977608,
+    "sha256": "04b25d018eb2399af52a760204ca6f3fadd166a7a5a15e76bc5308a0d6596139",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  },
+  {
+    "arm": "selective_abstention",
+    "label": "step_0280",
+    "selected_step": 140,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_abstention_v1/outputs/selective_abstention/step_0280",
+    "bytes": 41977608,
+    "sha256": "c5a984ab141adcca59e4fda276bf9025b441a040677068bee762a61c7ed07ebf",
+    "config_sha256": "2f2fcb85355e65a8ca9d354646af3f14ce53f4b9eabfe63407495d8f66459347"
+  }
+]

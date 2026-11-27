@@ -1,0 +1,15 @@
+{
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_audited_restart_v1",
+  "status": "submitted",
+  "jobs": {
+    "preflight": 358725,
+    "task": 358726,
+    "rewrite": 358727,
+    "summary": 358728
+  },
+  "gpu": "L40S",
+  "payload_sha256": "76dd6b80678fcaf29e7146e9dd70fb3780f9752afeeda8963ca8c41feed835d4",
+  "training_performed": false,
+  "default_changed": false
+}

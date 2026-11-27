@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests_passed": 9,
+  "encoded_targets": {
+    "task_train": 1536,
+    "task_old_validation": 100,
+    "task_style_validation": 40,
+    "rewrite_train": 766,
+    "rewrite_old_validation": 42,
+    "rewrite_style_validation": 20
+  },
+  "max_tokens": 176,
+  "no_truncation": true,
+  "prompt_mask_eos_verified": true,
+  "reference_reply_exclusion_verified": true,
+  "source_files_and_weights_verified": true,
+  "gpu": "NVIDIA L40S"
+}

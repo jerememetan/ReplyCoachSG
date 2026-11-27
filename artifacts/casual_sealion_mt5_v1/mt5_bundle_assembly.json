@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_mt5_A_v1",
+  "files": 30,
+  "created": true,
+  "base_weights_sha256": "20b20e1ac9382c2ca83b6e0b2c665ec4fb1104f853c0e2489d9b0ad205f871ac",
+  "manifest_sha256": "4d31e79604d8818e430c7cf288ae9c0b738ca18db18e309fbcef6e929c7c6165",
+  "base_tensor_storage_shared_by_hardlink": true,
+  "source_base_modified": false,
+  "note": "Exact exported model/config/tokenizer/loader bytes. The already present identical base tensor file is hard-linked to avoid a second2.3GB storage allocation; this is an inference installation, not an independent backup."
+}

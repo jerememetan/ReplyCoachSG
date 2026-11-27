@@ -1,0 +1,54 @@
+{
+  "status": "complete_unscored",
+  "quality_scored": false,
+  "default_changed": false,
+  "stages": {
+    "sealion_task": {
+      "status": "complete",
+      "selected_epoch": 2,
+      "optimizer_updates": 768,
+      "trainable_parameters": 10485760,
+      "frozen_base_parameters_unchanged": true
+    },
+    "sealion_rewrite": {
+      "status": "complete",
+      "selected_epoch": 2,
+      "optimizer_updates": 384,
+      "trainable_parameters": 10485760,
+      "frozen_base_parameters_unchanged": true
+    },
+    "qwen_task": {
+      "status": "complete",
+      "selected_epoch": 2,
+      "optimizer_updates": 768,
+      "trainable_parameters": 14966784,
+      "frozen_base_parameters_unchanged": true
+    },
+    "qwen_rewrite": {
+      "status": "complete",
+      "selected_epoch": 3,
+      "optimizer_updates": 384,
+      "trainable_parameters": 14966784,
+      "frozen_base_parameters_unchanged": true
+    }
+  },
+  "files": {},
+  "selected_flags": {
+    "sealion": [],
+    "qwen": []
+  },
+  "epoch_04_flags": {
+    "sealion": [],
+    "qwen": []
+  },
+  "scope": "Reused development cases; raw generations and review packet, no independent human ratings",
+  "accounting": "367161|dec3b-preflight|COMPLETED|0:0|00:01:25|2026-11-16T20:51:41|2026-11-16T20:53:06\n367161.batch|batch|COMPLETED|0:0|00:01:25|2026-11-16T20:51:41|2026-11-16T20:53:06\n367161.extern|extern|COMPLETED|0:0|00:01:25|2026-11-16T20:51:41|2026-11-16T20:53:06\n367162|dec3b-sealion|COMPLETED|0:0|01:05:17|2026-11-16T20:53:06|2026-11-16T21:58:23\n367162.batch|batch|COMPLETED|0:0|01:05:17|2026-11-16T20:53:06|2026-11-16T21:58:23\n367162.extern|extern|COMPLETED|0:0|01:05:17|2026-11-16T20:53:06|2026-11-16T21:58:23\n367163|dec3b-qwen|COMPLETED|0:0|00:55:58|2026-11-16T20:53:06|2026-11-16T21:49:04\n367163.batch|batch|COMPLETED|0:0|00:55:58|2026-11-16T20:53:06|2026-11-16T21:49:04\n367163.extern|extern|COMPLETED|0:0|00:55:58|2026-11-16T20:53:06|2026-11-16T21:49:04\n367164|dec3b-summary|COMPLETED|0:0|00:00:00|2026-11-16T21:58:23|2026-11-16T21:58:23\n367164.batch|batch|COMPLETED|0:0|00:00:00|2026-11-16T21:58:23|2026-11-16T21:58:23\n367164.extern|extern|COMPLETED|0:0|00:00:00|2026-11-16T21:58:23|2026-11-16T21:58:23\n",
+  "integrity": {
+    "payload_verified": true,
+    "epoch_adapters_verified": 20,
+    "actual_english_anchors_verified": true,
+    "all_update_budgets_complete": true
+  },
+  "results_directory": "artifacts/decoder_compare_v1/results",
+  "verified_collection": "artifacts/decoder_compare_v1/results_verification.json"
+}

@@ -1,0 +1,11 @@
+{
+  "verified_at_utc": "2026-11-16T16:16:22.299798+00:00",
+  "archive_sha256": "20f7cc06f5c3c5f83ce62beb5055aada10f5d29921d77ccdd091b704aeafb194",
+  "archive_bytes": 43141725,
+  "retained_files_verified": 620,
+  "weight_files_in_archive": 0,
+  "weight_files_authorized_for_deletion": 20,
+  "weight_bytes": 46594197543,
+  "manifest_sha256": "a9278b25b0fbd95aea82ebdf09c7ff1e0273e6924d1e446bcf2f13798cd094b9",
+  "status": "passed_before_deletion"
+}

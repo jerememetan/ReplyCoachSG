@@ -1,0 +1,794 @@
+{
+  "status": "all_runs_complete",
+  "account": "hm.teoh.2024",
+  "root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1",
+  "jobs": {
+    "turn_training": 358042,
+    "loader_audit": 358044,
+    "snapshot_review": 358047,
+    "layout_training": 358056,
+    "layout_snapshot_review": 358059,
+    "generated_validation": 358060,
+    "context_policy_prototype": 358061,
+    "context_policy_v2_failed_launch": 358068,
+    "context_policy_v2": 358074,
+    "context_policy_v3": 358077
+  },
+  "source_adapters_unchanged": true,
+  "default_changed": false,
+  "human_review_pending": true,
+  "original_team_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+  "locked_test_read": false,
+  "preflight": {
+    "status": "passed",
+    "encoded_targets_checked": 1304,
+    "max_tokens": {
+      "train": 83,
+      "validation": 65,
+      "challenge": 68,
+      "ordinary": 140,
+      "legacy": 71,
+      "diagnostic": 0
+    },
+    "paired_latest_question_groups": 96,
+    "prompt_mask_eos_checks": true,
+    "margin_gradient_direction": true,
+    "source_bundle_manifest_verified": true,
+    "source_adapter_checksums_verified": true,
+    "device": "NVIDIA L40S",
+    "bf16_supported": true
+  },
+  "layout_preflight": {
+    "status": "passed",
+    "encoded_targets_checked": 1288,
+    "max_tokens": {
+      "train": 92,
+      "validation": 74,
+      "challenge": 82,
+      "ordinary": 149,
+      "legacy": 80,
+      "diagnostic": 0
+    },
+    "paired_latest_question_groups": 96,
+    "prompt_mask_eos_checks": true,
+    "margin_gradient_direction": true,
+    "source_bundle_manifest_verified": true,
+    "source_adapter_checksums_verified": true,
+    "device": "NVIDIA L40S",
+    "bf16_supported": true
+  },
+  "canonical_training": {
+    "status": "complete",
+    "recipe": {
+      "experiment": "sealion_turn_repair_v1",
+      "account": "hm.teoh.2024",
+      "source_bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+      "initial_english_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+      "frozen_singlish_sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2",
+      "data_counts": {
+        "train": 192,
+        "validation": 16,
+        "challenge": 24,
+        "ordinary": 790,
+        "legacy": 50,
+        "diagnostic": 1
+      },
+      "provenance": "192 assistant-authored targeted training dialogues;16 independently written synthetic validation cases;24 separately written challenge cases frozen before baseline/training. Skills overlap; not independent human test or project locked test.",
+      "arms": [
+        "supervised",
+        "contrastive"
+      ],
+      "seed": 8411,
+      "optimizer_steps": 120,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "clip_grad_norm": 1.0,
+      "replay_per_step": 1,
+      "targeted_per_step": 3,
+      "objective": "0.25 ordinary CE +0.25 sum3 targeted positive CEs +weight*relu(.2+positiveCE-negativeCE); weight0/.1. Same examples, initial weights and per-step dropout seed.",
+      "snapshots": [
+        0,
+        40,
+        80,
+        120
+      ],
+      "selection": "Select on16 synthetic validation positives only, subject to ordinary50 validation token CE<=1.05*initial; step0 eligible. Lower targeted positive mean CE wins. Challenge and user outputs cannot select checkpoints.",
+      "eval_policy": "Generate baseline/selected English and own-English-conditioned Singlish on24 challenge +1 user diagnostic +20 deterministic old validation regression cases. Review intended action, factual fidelity and local naturalness separately. Contrast ranking is teacher-forced, not generated accuracy.",
+      "inference": {
+        "num_beams": 4,
+        "no_repeat_ngram_size": 3,
+        "max_new_tokens": 64,
+        "total_token_limit": 384
+      },
+      "source_weights_unchanged": true,
+      "original_team_records_unchanged": true,
+      "default_changed": false,
+      "data_sha256": {
+        "challenge.json": "c6c24c355cc601a86362384c9003142b78404dbda85265c273284758b43003ac",
+        "diagnostic.json": "ee18655f7592bc05d11aeebbd8146a2548d8a8201633dcbc3a2c7dbc7740187b",
+        "legacy.json": "4eb789e5d306b187cf8b569f76f2fe102b20e614d392438066f83c119a88679a",
+        "ordinary.json": "c5c1d185c737261cf981e6b32c3879829a60e024ca85d079580186c1714ba1d2",
+        "train.json": "9d680529ebe46de74b7cd6346ec9a8e225e0819558595b1187cc21ce0c0338b7",
+        "validation.json": "a8e63379eaef31e2c5de994d7a7ffb4cd904a0471a863cca95a227c3d08619ef"
+      }
+    },
+    "baseline_complete": true,
+    "arms": {
+      "supervised": {
+        "status": "complete",
+        "arm": "supervised",
+        "optimizer_steps": 120,
+        "selected_step": 0,
+        "initial_adapter_digest": "1641ff25c7ab16ef1d3f56835f1984f72f4d523b42de90828660004495ab503a",
+        "initial_validation": {
+          "ordinary_token_ce": 1.9694326901482238,
+          "targeted_positive_mean_ce": 1.223725801333785,
+          "targeted_negative_mean_ce": 2.068053087219596,
+          "contrast_wins": 13,
+          "contrasts": 16,
+          "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+        },
+        "schedule_sha256": "80da31269fb3617eec5010c3e104d45f1b010ed61d256582d4ab4e1726d4673c",
+        "margin_weight": 0.0,
+        "history": [
+          {
+            "step": 0,
+            "scores": {
+              "ordinary_token_ce": 1.9694326901482238,
+              "targeted_positive_mean_ce": 1.223725801333785,
+              "targeted_negative_mean_ce": 2.068053087219596,
+              "contrast_wins": 13,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            }
+          },
+          {
+            "step": 40,
+            "scores": {
+              "ordinary_token_ce": 2.1292584162741783,
+              "targeted_positive_mean_ce": 0.9721072427928448,
+              "targeted_negative_mean_ce": 1.899257767945528,
+              "contrast_wins": 11,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          },
+          {
+            "step": 80,
+            "scores": {
+              "ordinary_token_ce": 2.366116792195502,
+              "targeted_positive_mean_ce": 1.1194551829248667,
+              "targeted_negative_mean_ce": 2.4879298135638237,
+              "contrast_wins": 12,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          },
+          {
+            "step": 120,
+            "scores": {
+              "ordinary_token_ce": 2.240702331877868,
+              "targeted_positive_mean_ce": 1.1900691837072372,
+              "targeted_negative_mean_ce": 2.5402847100049257,
+              "contrast_wins": 12,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          }
+        ],
+        "trainable_parameters": 10485760,
+        "source_english_adapter": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "latest_losses": {
+          "ordinary": 0.267789363861084,
+          "targeted": 0.03292122110724449,
+          "margin": 0.0,
+          "grad_norm": 2.9646146297454834
+        },
+        "final_adapter_digest": "88d79d1407e9b1dfd4585f29713ef58309e85e39771a81dfda97940f285f433e",
+        "frozen_base_unchanged": true,
+        "ordinary_exposures": 120,
+        "targeted_exposures": 360,
+        "negative_exposures": 120,
+        "selected_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "selected_evaluation_flags": [],
+        "final_evaluation_flags": []
+      },
+      "contrastive": {
+        "status": "complete",
+        "arm": "contrastive",
+        "optimizer_steps": 120,
+        "selected_step": 0,
+        "initial_adapter_digest": "1641ff25c7ab16ef1d3f56835f1984f72f4d523b42de90828660004495ab503a",
+        "initial_validation": {
+          "ordinary_token_ce": 1.9694326901482238,
+          "targeted_positive_mean_ce": 1.223725801333785,
+          "targeted_negative_mean_ce": 2.068053087219596,
+          "contrast_wins": 13,
+          "contrasts": 16,
+          "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+        },
+        "schedule_sha256": "80da31269fb3617eec5010c3e104d45f1b010ed61d256582d4ab4e1726d4673c",
+        "margin_weight": 0.1,
+        "history": [
+          {
+            "step": 0,
+            "scores": {
+              "ordinary_token_ce": 1.9694326901482238,
+              "targeted_positive_mean_ce": 1.223725801333785,
+              "targeted_negative_mean_ce": 2.068053087219596,
+              "contrast_wins": 13,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            }
+          },
+          {
+            "step": 40,
+            "scores": {
+              "ordinary_token_ce": 2.134014251051246,
+              "targeted_positive_mean_ce": 0.9491434544324875,
+              "targeted_negative_mean_ce": 1.862566689029336,
+              "contrast_wins": 11,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          },
+          {
+            "step": 80,
+            "scores": {
+              "ordinary_token_ce": 2.3591194050785167,
+              "targeted_positive_mean_ce": 1.1166602987796068,
+              "targeted_negative_mean_ce": 2.509652459528297,
+              "contrast_wins": 12,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          },
+          {
+            "step": 120,
+            "scores": {
+              "ordinary_token_ce": 2.2217361180234976,
+              "targeted_positive_mean_ce": 1.1768093071877956,
+              "targeted_negative_mean_ce": 2.5498846489936113,
+              "contrast_wins": 12,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          }
+        ],
+        "trainable_parameters": 10485760,
+        "source_english_adapter": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "latest_losses": {
+          "ordinary": 0.3270799517631531,
+          "targeted": 0.02998526208102703,
+          "margin": 0.0,
+          "grad_norm": 3.442347288131714
+        },
+        "final_adapter_digest": "8186014eabc2a4ef0c19c55c52b7d4ad1abfb00d251568dc9444c4599b4fd143",
+        "frozen_base_unchanged": true,
+        "ordinary_exposures": 120,
+        "targeted_exposures": 360,
+        "negative_exposures": 120,
+        "selected_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "selected_evaluation_flags": [],
+        "final_evaluation_flags": []
+      }
+    },
+    "gpu": "NVIDIA L40S",
+    "seconds": 343.2995144315064,
+    "source_adapters_unchanged": true,
+    "matched_initial_weights_and_schedules": true,
+    "default_changed": false,
+    "human_review_pending": true
+  },
+  "layout_training": {
+    "status": "complete",
+    "recipe": {
+      "experiment": "sealion_turn_layout_v2",
+      "account": "hm.teoh.2024",
+      "source_bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+      "initial_english_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+      "frozen_singlish_sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2",
+      "data_counts": {
+        "train": 192,
+        "validation": 16,
+        "challenge": 16,
+        "ordinary": 790,
+        "legacy": 50,
+        "diagnostic": 1
+      },
+      "provenance": "Same192 targeted synthetic training and16 validation.16 new separately written prospective challenges frozen before layout-v2 baseline/training. Prior24 challenges are now development diagnostics, not fresh-test claims.",
+      "arms": [
+        "supervised"
+      ],
+      "seed": 8411,
+      "optimizer_steps": 120,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "clip_grad_norm": 1.0,
+      "replay_per_step": 1,
+      "targeted_per_step": 3,
+      "objective": "Same supervised loss/data/schedule as v1 supervised, with explicit history/latest-incoming/reply-speaker serialization; no margin term.",
+      "snapshots": [
+        0,
+        40,
+        80,
+        120
+      ],
+      "selection": "Select on16 synthetic validation positives only, subject to ordinary50 validation token CE<=1.05*initial; step0 eligible. Lower targeted positive mean CE wins. Challenge and user outputs cannot select checkpoints.",
+      "eval_policy": "16 prospective synthetic challenge +1 reused user diagnostic +20 reused legacy validation. Base/old Singlish frozen. Select by same16 validation and ordinary50 retention rule; no challenge-based selection.",
+      "inference": {
+        "num_beams": 4,
+        "no_repeat_ngram_size": 3,
+        "max_new_tokens": 64,
+        "total_token_limit": 384
+      },
+      "source_weights_unchanged": true,
+      "original_team_records_unchanged": true,
+      "default_changed": false,
+      "data_sha256": {
+        "challenge.json": "8c289efa5924cd9bef60b080696e8740693352b711bd803cc736703d2b7e6087",
+        "diagnostic.json": "ee18655f7592bc05d11aeebbd8146a2548d8a8201633dcbc3a2c7dbc7740187b",
+        "legacy.json": "4eb789e5d306b187cf8b569f76f2fe102b20e614d392438066f83c119a88679a",
+        "ordinary.json": "c5c1d185c737261cf981e6b32c3879829a60e024ca85d079580186c1714ba1d2",
+        "train.json": "9d680529ebe46de74b7cd6346ec9a8e225e0819558595b1187cc21ce0c0338b7",
+        "validation.json": "a8e63379eaef31e2c5de994d7a7ffb4cd904a0471a863cca95a227c3d08619ef"
+      },
+      "source_format": "Earlier conversation: Me/Friend labels; separate Latest incoming message from Friend; Me (STANDARD) response boundary.",
+      "scope": "A change in serialization jointly with training, not a decoder-architecture change or proof of independent human generalization."
+    },
+    "original_baseline_complete": true,
+    "untrained_layout_complete": true,
+    "arms": {
+      "supervised": {
+        "status": "complete",
+        "arm": "supervised",
+        "optimizer_steps": 120,
+        "selected_step": 0,
+        "initial_adapter_digest": "1641ff25c7ab16ef1d3f56835f1984f72f4d523b42de90828660004495ab503a",
+        "initial_validation": {
+          "ordinary_token_ce": 2.0352125310480362,
+          "targeted_positive_mean_ce": 1.1647892221808434,
+          "targeted_negative_mean_ce": 1.8756905160844326,
+          "contrast_wins": 13,
+          "contrasts": 16,
+          "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+        },
+        "schedule_sha256": "80da31269fb3617eec5010c3e104d45f1b010ed61d256582d4ab4e1726d4673c",
+        "margin_weight": 0.0,
+        "history": [
+          {
+            "step": 0,
+            "scores": {
+              "ordinary_token_ce": 2.0352125310480362,
+              "targeted_positive_mean_ce": 1.1647892221808434,
+              "targeted_negative_mean_ce": 1.8756905160844326,
+              "contrast_wins": 13,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            }
+          },
+          {
+            "step": 40,
+            "scores": {
+              "ordinary_token_ce": 2.1445119830884822,
+              "targeted_positive_mean_ce": 0.9559145551174879,
+              "targeted_negative_mean_ce": 1.7678845152258873,
+              "contrast_wins": 13,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          },
+          {
+            "step": 80,
+            "scores": {
+              "ordinary_token_ce": 2.3695044374883407,
+              "targeted_positive_mean_ce": 1.114163788035512,
+              "targeted_negative_mean_ce": 2.372013977728784,
+              "contrast_wins": 14,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          },
+          {
+            "step": 120,
+            "scores": {
+              "ordinary_token_ce": 2.286244876421843,
+              "targeted_positive_mean_ce": 1.1377723217010498,
+              "targeted_negative_mean_ce": 2.443780556321144,
+              "contrast_wins": 14,
+              "contrasts": 16,
+              "note": "Teacher-forced diagnostics, not generated-reply accuracy."
+            },
+            "retention_guard_passed": false,
+            "selected": false
+          }
+        ],
+        "trainable_parameters": 10485760,
+        "source_english_adapter": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "latest_losses": {
+          "ordinary": 0.47783219814300537,
+          "targeted": 0.020488720387220383,
+          "margin": 0.0,
+          "grad_norm": 4.560466289520264
+        },
+        "final_adapter_digest": "947e6edcf91c77739e7a03d2e68ecff63bda07d1971e398d238ae5df325de2bd",
+        "frozen_base_unchanged": true,
+        "ordinary_exposures": 120,
+        "targeted_exposures": 360,
+        "negative_exposures": 120,
+        "selected_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+        "selected_evaluation_flags": [],
+        "final_evaluation_flags": []
+      }
+    },
+    "gpu": "NVIDIA L40S",
+    "seconds": 177.67499038763344,
+    "source_adapters_unchanged": true,
+    "default_changed": false,
+    "human_review_pending": true
+  },
+  "snapshot_review": {
+    "status": "complete",
+    "reviews": {
+      "supervised": {
+        "step": 40,
+        "selected_by_retention_guard": false,
+        "rationale": "Lowest synthetic target validation positive CE among trained snapshots, irrespective of old-reference CE retention guard. No challenge/user output used for this choice.",
+        "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/supervised/step_0040",
+        "sha256": "3e3535dc158f27d95fb86451ff6f2bd1a0cd3f530aa1f5826b73778cfd85fd1e",
+        "flags": []
+      },
+      "contrastive": {
+        "step": 40,
+        "selected_by_retention_guard": false,
+        "rationale": "Lowest synthetic target validation positive CE among trained snapshots, irrespective of old-reference CE retention guard. No challenge/user output used for this choice.",
+        "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/contrastive/step_0040",
+        "sha256": "c811123f730cdc1aed8f34d2e1568d661339e5e1d996b41d8540823d5b33fee9",
+        "flags": []
+      }
+    },
+    "scope": "Exploratory generation review. Original validation guard remains unchanged. Formatting variants are diagnostics, not eight unseen independent cases.",
+    "default_changed": false,
+    "training_performed": false
+  },
+  "layout_snapshot_review": {
+    "status": "complete",
+    "step": 40,
+    "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/layout_v2/outputs/supervised/step_0040",
+    "sha256": "cb4765ecb9cde5b93166471d92ccf6138303eecf60f217601c73b60d5f44979c",
+    "retention_guard_passed": false,
+    "default_changed": false,
+    "rationale": "Lowest16-case synthetic target validation positive CE among trained snapshots. Challenge/user outputs not used to choose snapshot.",
+    "flags": [],
+    "training_performed": false
+  },
+  "loader_audit": {
+    "status": "complete",
+    "gpu": "NVIDIA A40",
+    "adapter_tensors_identical": true,
+    "prompt_tokens_identical": true,
+    "official": [
+      {
+        "item_id": "USER-CALL-001",
+        "english": "Could you call me now about something?",
+        "singlish": "Call me about what ah?",
+        "standard_anchor": "Could you call me now about something?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    ],
+    "study": [
+      {
+        "item_id": "USER-CALL-001",
+        "scope": "user_diagnostic",
+        "family": "user_failure_diagnostic",
+        "context": [
+          "Can u call me now?",
+          "Eh i not so free eh?",
+          "Ohh, then when can we call?"
+        ],
+        "speakers": [
+          "user",
+          "peer",
+          "user"
+        ],
+        "message": "I am not sure, what do you want to call me about",
+        "english": "Could you call me now about something?",
+        "english_status": "complete",
+        "criterion": "Respond as the person who initiated the call. Do not reverse roles. Purpose is unspecified, so do not treat a specific invented purpose as established fact.",
+        "reference": null,
+        "negative": null,
+        "singlish": "Call me about what ah?",
+        "singlish_status": "complete",
+        "standard_anchor": "Could you call me now about something?",
+        "assistant_anchor_diagnostic": {
+          "anchor": "I'll send you a message explaining what I wanted to discuss.",
+          "singlish": "Okay, I send you a message explaining what I wanted to discuss.",
+          "status": "complete",
+          "note": "Manually supplied appropriate English draft; not English model output."
+        }
+      }
+    ],
+    "differences": [],
+    "note": "Same GPU original export vs new study loader. Training study uses one L40S for all arms; original one-case demo used A40."
+  },
+  "generated_validation_review": {
+    "scope": "Generated validation English only; no challenge/user output used to rate or choose a checkpoint.",
+    "reviewer": "Assistant; also author of synthetic targets, not independent human evaluation.",
+    "scores": {
+      "untrained_layout": {
+        "pass": 10,
+        "fail": 6
+      },
+      "contrastive40": {
+        "pass": 12,
+        "fail": 4
+      },
+      "contrastive80": {
+        "pass": 11,
+        "fail": 5
+      },
+      "contrastive120": {
+        "pass": 11,
+        "fail": 5
+      },
+      "layout_supervised40": {
+        "pass": 12,
+        "fail": 4
+      },
+      "original": {
+        "pass": 12,
+        "uncertain": 1,
+        "fail": 3
+      },
+      "supervised120": {
+        "pass": 11,
+        "fail": 4,
+        "uncertain": 1
+      },
+      "supervised80": {
+        "pass": 11,
+        "fail": 4,
+        "uncertain": 1
+      },
+      "supervised40": {
+        "pass": 11,
+        "fail": 5
+      },
+      "layout_supervised120": {
+        "pass": 10,
+        "uncertain": 1,
+        "fail": 5
+      },
+      "layout_supervised80": {
+        "pass": 11,
+        "fail": 5
+      }
+    }
+  },
+  "generated_validation_decision": {
+    "selected_model": "original_repair25",
+    "default_changed": false,
+    "reason": "Original has12 pass/1 uncertain/3 fail on16 assistant-reviewed validation cases. No trained snapshot has more than12 passes; the tied snapshots each have4 fails. No clear gain; keep original neural checkpoint.",
+    "scope": "Assistant-authored validation and assistant judgments; not independent human accuracy. Assessment completed before fetching model-name key.",
+    "new_training_promoted": false
+  },
+  "context_policy": {
+    "status": "complete",
+    "account": "hm.teoh.2024",
+    "gpu": "NVIDIA L40S",
+    "tests_passed": 31,
+    "cases": 71,
+    "inputs_sha256": "eeeb6c85956b88be29a3ae92142a1a5729d731df87474de3fc041f02a0c15660",
+    "policy_source_sha256": "d9ce6a01f03820a8d1efbf88711e2655ee07645215c9ff33e3c5f3c1357753ea",
+    "source_bundle": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1",
+    "cached_original_cases": 61,
+    "new_original_cases": 10,
+    "training_performed": false,
+    "default_changed": false,
+    "scope": "Experimental hybrid: original trained SEA-LION plus explicit-context rules.71 development/diagnostic inputs, including10 assistant-authored smoke cases now inspected during policy development; no independent human accuracy claim. Rule English is labelled separately; Singlish is neural or labelled English fallback.",
+    "rule_counts": {
+      "keep_model": 49,
+      "explicit_requested_object": 1,
+      "explicit_borrowing_direction": 3,
+      "explicit_busy_day": 3,
+      "explicit_earliest_time": 3,
+      "explicit_affordable_option": 1,
+      "explicit_budget_limit": 3,
+      "explicit_own_location": 3,
+      "unstated_call_purpose_text_first": 3,
+      "stated_call_purpose": 2
+    },
+    "english_changed": 20,
+    "singlish_english_fallbacks": 11,
+    "seconds": 21.546093200333416,
+    "source_adapters_unchanged": true,
+    "policy_revision": "v4_additional_past_conversation_check",
+    "model_inference_performed": false,
+    "postprocessing_performed": true,
+    "source_inference_job": 358077,
+    "source_results_sha256": "3d9978fc95838c3ba383a3ab2b5893657a0f740a3d92b6dc3972a5ee6fcd6d55",
+    "additional_english_fallback_ids": [
+      "CONTEXT-SMOKE-001"
+    ],
+    "final_pipeline_source_sha256": "a43d48b62830dd24dbdd33427d23e3652d4e4e2398a6f0be7a8643e935f92a3f"
+  },
+  "user_case_context_policy": {
+    "item_id": "USER-CALL-001",
+    "english": "I'll send you a message explaining what I wanted to discuss.",
+    "singlish": "Okay, I send you a message explaining what I wanted to discuss.",
+    "english_status": "complete",
+    "singlish_status": "complete",
+    "standard_anchor": "I'll send you a message explaining what I wanted to discuss.",
+    "original_english": "Could you call me now?",
+    "original_singlish": "Not sure what u want to talk about",
+    "context_policy": {
+      "english": "I'll send you a message explaining what I wanted to discuss.",
+      "action": "grounded_rule",
+      "rule": "unstated_call_purpose_text_first",
+      "evidence": [
+        "Can u call me now?",
+        "Ohh, then when can we call?"
+      ],
+      "provenance": "Deterministic context rule, not neural English generation.",
+      "limitation": "Limited explicit patterns; not a general entailment verifier."
+    },
+    "english_provenance": "context_rule:unstated_call_purpose_text_first",
+    "singlish_provenance": "neural_rewrite_of_rule_anchor",
+    "raw_repaired_singlish": "Okay, I send you a message explaining what I wanted to discuss.",
+    "rewrite_guard": {
+      "passed": true,
+      "reasons": [],
+      "content_recall": 1.0,
+      "normalization": "contractions_v2"
+    },
+    "context": [
+      "Can u call me now?",
+      "Eh i not so free eh?",
+      "Ohh, then when can we call?"
+    ],
+    "speakers": [
+      "user",
+      "peer",
+      "user"
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "scope": "user_diagnostic"
+  },
+  "context_policy_prototype_note": "First prototype unnecessarily rewrote an already-correct route-map answer and introduced a wh-question. Fixed preservation and rewrite-act check. Ten new smoke cases exposed generic chat-word overlap supporting an invented topic; excluded communication words from topic support. A subsequent CPU-only check rejects a rewrite introducing an unprovided past conversation; one additional English fallback, no new inference/training. All revisions/results/payloads retained. Smoke cases are development, not fresh independent test.",
+  "inference_variation_note": "Official/study loaders exactly match on A40; exact original user reply differs across A40/L40S. All training arm comparisons use one L40S. This is not a source checkpoint update.",
+  "checkpoints": 12,
+  "new_trained_snapshots": 9,
+  "comparisons": [
+    "review/turn_repair_comparison.csv",
+    "review/layout_comparison.csv",
+    "review/context_policy_comparison.csv"
+  ],
+  "user_case_canonical": {
+    "item_id": "USER-CALL-001",
+    "scope": "user_diagnostic",
+    "context": [
+      [
+        "user",
+        "Can u call me now?"
+      ],
+      [
+        "peer",
+        "Eh i not so free eh?"
+      ],
+      [
+        "user",
+        "Ohh, then when can we call?"
+      ]
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "reference": null,
+    "methods": {
+      "original": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "supervised40": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "supervised120": {
+        "english": "Could you call me about this?",
+        "singlish": "You want to talk about what ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "contrastive40": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "contrastive120": {
+        "english": "Could you call me now about this?",
+        "singlish": "You free what time ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  "user_case_layout": {
+    "item_id": "USER-CALL-001",
+    "scope": "user_diagnostic",
+    "context": [
+      [
+        "user",
+        "Can u call me now?"
+      ],
+      [
+        "peer",
+        "Eh i not so free eh?"
+      ],
+      [
+        "user",
+        "Ohh, then when can we call?"
+      ]
+    ],
+    "message": "I am not sure, what do you want to call me about",
+    "reference": null,
+    "methods": {
+      "original": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "untrained_layout": {
+        "english": "I would like to talk about our previous conversation.",
+        "singlish": "I want to talk about our previous conversation.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "trained_selected": {
+        "english": "I would like to talk about our previous conversation.",
+        "singlish": "I want to talk about our previous conversation.",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "trained_best_target_validation_exploratory": {
+        "english": "Could you call me now?",
+        "singlish": "Not sure what u want to talk about",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      },
+      "trained120": {
+        "english": "Could you call me about this?",
+        "singlish": "You want to talk about what ah?",
+        "english_status": "complete",
+        "singlish_status": "complete"
+      }
+    }
+  },
+  "quota_bytes": {
+    "limit": 128849018880,
+    "used": 122668986087,
+    "free": 6180032793
+  },
+  "conclusion": "No reliable neural upgrade: all three training arms retainedstep0 by loss guard; generated validation review also found no clear gain over original. Optional context policy supplies labelled deterministic English anchors plus original neural Singlish rewriting or labelled English fallback. Limited rule coverage; not proof the standalone model generalizes.",
+  "note": "Validation loss and contrast preference are not generated accuracy. New scenarios are assistant authored; previous challenge became development after inspection. No independent human or locked-test claim."
+}

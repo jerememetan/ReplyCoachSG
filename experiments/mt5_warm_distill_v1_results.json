@@ -1,0 +1,203 @@
+{
+  "experiment": "mt5_warm_distill_v1",
+  "status": "all_four_completed",
+  "snapshot": "artifacts/mt5_warm_distill_v1/status_snapshots/20261121T100804Z",
+  "accounting": "JobID|State|ExitCode|Elapsed\n373520|COMPLETED|0:0|00:00:56\n373521|COMPLETED|0:0|00:18:55\n373522|COMPLETED|0:0|00:21:35\n373523|COMPLETED|0:0|00:18:53\n373524|COMPLETED|0:0|00:20:22\n",
+  "queue_at_snapshot": "",
+  "observed_at_utc": "2026-11-21T10:08:04.052740+00:00",
+  "starting_point": "Existing trained mT5 A shared task LoRA, seed1 final update784; no fresh adapter initialization.",
+  "training_conversations_per_arm": 571,
+  "epochs_per_arm": 12,
+  "joint_optimizer_updates_per_arm": 1716,
+  "shared_adapter_for_both_styles": true,
+  "source_model_preserved": true,
+  "models": {
+    "unchanged": {
+      "selected_epoch": 0,
+      "validation": {
+        "english": {
+          "token_ce": 2.1749064077591074,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 3.5744948104721783,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.874700609115643
+      }
+    },
+    "sealion_ce": {
+      "selected_epoch": 3,
+      "validation": {
+        "english": {
+          "token_ce": 2.158476557711075,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 2.5998717397040902,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.3791741487075826
+      },
+      "final_validation": {
+        "english": {
+          "token_ce": 2.1973973567115848,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 2.692159285394285,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.444778321052935
+      },
+      "initial_adapter_tensor_sha256": "8d3f55901a0e006d5dfc7678302f6cc472c293ccdf530dde7ddb3579b4755972",
+      "training_rows_sha256": "4f4b0426cc8329ba4262d73e736d89fe62c787c778c80850ca6debe0e6e1a2b4",
+      "student_trainable_parameters": 1769472,
+      "training_only_projector_parameters": 0,
+      "optimizer_updates": 1716,
+      "training_seconds": 1114.4389302227646
+    },
+    "sealion_kd": {
+      "selected_epoch": 1,
+      "validation": {
+        "english": {
+          "token_ce": 2.2591257530553586,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 3.1099997808125392,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.684562766933949
+      },
+      "final_validation": {
+        "english": {
+          "token_ce": 2.5603951247601673,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 3.4791320371890526,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 3.01976358097461
+      },
+      "initial_adapter_tensor_sha256": "8d3f55901a0e006d5dfc7678302f6cc472c293ccdf530dde7ddb3579b4755972",
+      "training_rows_sha256": "4f4b0426cc8329ba4262d73e736d89fe62c787c778c80850ca6debe0e6e1a2b4",
+      "student_trainable_parameters": 1769472,
+      "training_only_projector_parameters": 23592960,
+      "optimizer_updates": 1716,
+      "training_seconds": 1271.1136127337813
+    },
+    "qwen_ce": {
+      "selected_epoch": 2,
+      "validation": {
+        "english": {
+          "token_ce": 2.144733607563479,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 2.6083313541964066,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.376532480879943
+      },
+      "final_validation": {
+        "english": {
+          "token_ce": 2.1974918048443466,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 2.6754400395164804,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.4364659221804135
+      },
+      "initial_adapter_tensor_sha256": "8d3f55901a0e006d5dfc7678302f6cc472c293ccdf530dde7ddb3579b4755972",
+      "training_rows_sha256": "fb60f9e2045808533f813452618c39f47fc10475151d51e9d714cb23e330885a",
+      "student_trainable_parameters": 1769472,
+      "training_only_projector_parameters": 0,
+      "optimizer_updates": 1716,
+      "training_seconds": 1112.0616492126137
+    },
+    "qwen_kd": {
+      "selected_epoch": 1,
+      "validation": {
+        "english": {
+          "token_ce": 2.2544169168020116,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 3.214365335207012,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 2.7343911260045117
+      },
+      "final_validation": {
+        "english": {
+          "token_ce": 2.666430268102679,
+          "tokens": 580,
+          "examples": 50
+        },
+        "singlish": {
+          "token_ce": 3.5771093181342133,
+          "tokens": 363,
+          "examples": 42
+        },
+        "selection_score": 3.121769793118446
+      },
+      "initial_adapter_tensor_sha256": "8d3f55901a0e006d5dfc7678302f6cc472c293ccdf530dde7ddb3579b4755972",
+      "training_rows_sha256": "fb60f9e2045808533f813452618c39f47fc10475151d51e9d714cb23e330885a",
+      "student_trainable_parameters": 1769472,
+      "training_only_projector_parameters": 18874368,
+      "optimizer_updates": 1716,
+      "training_seconds": 1200.1928749633953
+    }
+  },
+  "scope": "Completed warm-start continuation training on reused development data; matched automated Gemma judge evaluation completed separately. No independent human or final-test evaluation.",
+  "quality_improvement_established": false,
+  "default_changed": false,
+  "loss_interpretation": "Same-student-tokenizer original-reference token CE: checkpoint/likelihood diagnostic, not reply accuracy. Singlish validation is conditioned on reference English.",
+  "comparison_limits": [
+    "CE versus aligned KD shares teacher-specific rows and starting adapter, but KD adds training-only projectors and alignment objectives; not a pure KL-only ablation.",
+    "Comparing continuation with unchanged baseline does not isolate teacher-label quality from additional training.",
+    "Earlier fresh-adapter runs used a different topology, learning rate and decoding budget, so their losses/outputs are not a single-factor initialization comparison."
+  ],
+  "verification": {
+    "pipeline_records_verified": 675,
+    "fixed_reference_records_verified": 216,
+    "all_statuses_complete": true,
+    "all_own_english_anchors_exact": true,
+    "all_fixed_reference_anchors_exact": true,
+    "all_shared_adapter_inference_flags_passed": true
+  },
+  "qualitative_findings": "artifacts/mt5_warm_distill_v1/full_results_20261121/qualitative_findings.json",
+  "selected_comparison": "artifacts/mt5_warm_distill_v1/full_results_20261121/selected_comparison.csv",
+  "matched_judge_evaluation": {
+    "status": "complete",
+    "results": "experiments/mt5_distill_judge_v1_results.json",
+    "conversations": 50,
+    "unique_requests": 3390,
+    "expanded_ratings": 5000,
+    "conclusion": "SEA-LION text CE has the highest observed appropriateness/send means; paired gains over unchanged mT5 remain uncertain. Added aligned soft KD gives no consistent advantage.",
+    "teacher_scores_included": false
+  },
+  "dataset_style_audit": "artifacts/report_section_3_3_20261121/distillation_update/dataset_style_audit.json",
+  "report_update": "artifacts/report_section_3_3_20261121/distillation_update/edit_receipt.json",
+  "latest_report_revision": "artifacts/report_section_3_3_20261121/editorial_review/revision_receipt.json"
+}

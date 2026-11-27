@@ -1,0 +1,10 @@
+{
+  "account": "hm.teoh.2024",
+  "checkpoint": "replycoach_sealion_repair25_v1",
+  "inference_only": true,
+  "training_performed": false,
+  "english_then_singlish": true,
+  "inputs_sha256": "97bfb940107174348d73cc6f6399e185566c1a42f0fe38b4717031c6d5ef6953",
+  "cases": 1,
+  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_custom_context_v1/20261108T053818Z"
+}

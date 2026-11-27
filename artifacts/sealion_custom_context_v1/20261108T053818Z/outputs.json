@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "kind": "sealion",
+  "device": "cuda",
+  "strict_loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "gpu": "NVIDIA A40",
+  "input_sha256": "97bfb940107174348d73cc6f6399e185566c1a42f0fe38b4717031c6d5ef6953",
+  "outputs": [
+    {
+      "item_id": "USER-CALL-001",
+      "english": "Could you call me now about something?",
+      "singlish": "Call me about what ah?",
+      "standard_anchor": "Could you call me now about something?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    }
+  ],
+  "flags": []
+}

@@ -1,0 +1,383 @@
+[
+  {
+    "type": "paragraph",
+    "text": "Although Luong Attention improved the RNN’s reply generation, contextual errors remained. We therefore explored pretrained Transformer models, beginning with mT5-base (Vaswani et al., 2017; Xue et al., 2021). Our aim was to generate a relevant Standard English reply and a natural Singlish counterpart that expressed the same meaning."
+  },
+  {
+    "type": "heading",
+    "text": "3.3.1 Initial Training Plan"
+  },
+  {
+    "type": "paragraph",
+    "text": "We initially planned to adapt mT5-base through two main stages: language and conversation adaptation, followed by project-specific reply training. In the first stage, the full model learned from public data to become more familiar with informal language and conversational replies. This included span-corruption training, followed by next-reply training. The span phase was recorded separately as Stage 0 in the implementation."
+  },
+  {
+    "type": "paragraph",
+    "text": "This was a transfer-learning strategy for a low-data task. mT5 already supplied multilingual representations (Xue et al., 2021); CoSEM and NUS SMS adaptation exposed it to informal local text, while CoSEM/DailyDialog reply training taught conversational response generation before learning from only 190 project conversations. Skipping this intermediate adaptation would leave the small project set to teach both the reply task and local style, increasing the risk of memorisation and weak generalisation. This is the design rationale: we did not isolate removal of this stage in a controlled ablation, so failure without it is not established."
+  },
+  {
+    "type": "paragraph",
+    "text": "In the second stage, we adapted the model using our 190 training conversations, each containing Standard English and Singlish reference replies. We used LoRA to update a small proportion of the model’s parameters (Hu et al., 2021). One shared adapter learned both styles, with the input prefix determining which style to generate."
+  },
+  {
+    "type": "table",
+    "caption": "Table 3.3a. Datasets and settings for the initial mT5 training phases.",
+    "headers": [
+      "Training phase",
+      "Dataset used",
+      "Main settings"
+    ],
+    "rows": [
+      [
+        "Stage 1a: Language adaptation",
+        "CoSEM and NUS SMS Corpus: 96,295 text chunks for span-corruption training.",
+        "2 epochs; learning rate 3 × 10⁻⁴; batch size 32."
+      ],
+      [
+        "Stage 1b: Conversation adaptation",
+        "DailyDialog: 76,052 reply pairs tagged STANDARD; CoSEM: 80,000 reply pairs tagged LOCAL.",
+        "Full-model fine-tuning; 5 epochs; learning rate 5 × 10⁻⁴; batch size 32."
+      ],
+      [
+        "Stage 2: Project-specific adaptation",
+        "Our team-authored dataset: 190 conversations, providing 380 English/Singlish reply targets and 180 additional reply examples extracted from their histories.",
+        "LoRA rank 16; learning rate 10⁻³; batch size 16; early stopping."
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "text": "Stages 1a and 1b together formed the language and conversation adaptation stage."
+  },
+  {
+    "type": "label",
+    "text": "Evaluation and observed limitations"
+  },
+  {
+    "type": "paragraph",
+    "text": "We evaluated development checkpoints using the same 50 validation conversations. Validation loss helped select checkpoints within each training setup, while inspection of generated replies assessed whether they answered the incoming message, sounded natural, and preserved meaning between English and Singlish. Loss alone was insufficient: a model could better predict the reference wording while still generating an unsuitable reply."
+  },
+  {
+    "type": "paragraph",
+    "text": "The initial model produced fluent short responses, but its contextual understanding and style consistency were weaker than expected. Some replies missed the latest question or confused speaker roles, such as who should lend or borrow an item. Independently generating the English and Singlish replies also allowed them to express different decisions."
+  },
+  {
+    "type": "paragraph",
+    "text": "Several factors may have contributed to these limitations. First, the 190 project conversations provided limited coverage of different situations and conversational constraints. Second, the public-dialogue supervision was imperfect: assigning STANDARD and LOCAL labels according to dataset source did not teach the model to express the same response in both styles. A small audit also found that 13 of 40 sampled CoSEM pairs did not directly answer their associated messages, indicating noise in the training material."
+  },
+  {
+    "type": "paragraph",
+    "text": "These observations motivated a change from independently generating both styles to generating an English reply first and then rewriting that reply into Singlish."
+  },
+  {
+    "type": "heading",
+    "text": "3.3.2 Adaptations"
+  },
+  {
+    "type": "paragraph",
+    "text": "To reduce differences in meaning between the two styles, we changed the generation process. Instead of generating English and Singlish replies independently, the model first produced an English reply, then rewrote that exact draft into Singlish. Both tasks used the same mT5 adapter with different task prefixes. We also aligned the paired training targets using assistant-reviewed rewrites."
+  },
+  {
+    "type": "figure_placeholder",
+    "text": "Figure 3.3a placeholder — Independent English/Singlish generation compared with the revised English-first pipeline."
+  },
+  {
+    "type": "paragraph",
+    "text": "The revised approach improved meaning consistency in development checks. Across three training seeds, the average number of meaning-consistent pairs increased from 20.3 to 46.0 out of 50, while contextual appropriateness remained approximately unchanged."
+  },
+  {
+    "type": "table",
+    "caption": "Table 3.3b. Development comparison of independent generation and English-first rewriting.",
+    "headers": [
+      "Criterion",
+      "Independent generation",
+      "English-first rewriting"
+    ],
+    "rows": [
+      [
+        "Contextually appropriate reply",
+        "33.0/50",
+        "33.3/50"
+      ],
+      [
+        "English–Singlish meaning preserved",
+        "20.3/50",
+        "46.0/50"
+      ],
+      [
+        "Natural, recognizable Singlish",
+        "23.7/50",
+        "36.7/50"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "text": "Values are mean pass counts across three seeds on the same 50 validation conversations. They come from exploratory assistant reviews, not independent human ratings or the later judge evaluation."
+  },
+  {
+    "type": "paragraph",
+    "text": "These results showed that preserving meaning did not necessarily produce a correct response. For example, when the peer asked “can I borrow your charger?”, one English-first model generated:"
+  },
+  {
+    "type": "example",
+    "text": "English: “Sure, I’ll borrow it.”"
+  },
+  {
+    "type": "example",
+    "text": "Singlish: “Can, I borrow my charger.”"
+  },
+  {
+    "type": "paragraph",
+    "text": "Both replies retained the borrowing error instead of offering to lend the charger. We therefore explored further changes to improve contextual understanding."
+  },
+  {
+    "type": "table",
+    "caption": "Table 3.3c. Further mT5 experiments: design, results and examples.",
+    "headers": [
+      "Experiment",
+      "What we tested and why",
+      "Results and examples"
+    ],
+    "rows": [
+      [
+        "Training-data expansion",
+        "Expanded 190 to 790 conversations with 600 synthetic additions to cover more situations. Control and expanded models received the same number of optimizer updates.",
+        "English adequacy remained 36/50, while recognizable Singlish fell from 38/50 to 25/50. Exact English–Singlish copies increased from 3 to 19 pairs, suggesting weaker style differentiation."
+      ],
+      [
+        "Full fine-tuning versus LoRA",
+        "Trained on 24 English examples to check whether restricted adaptation prevented the model from learning the task. We then tested reworded versions of the same scenarios.",
+        "Full fine-tuning reproduced 24/24 training targets and produced adequate replies for 18/24 paraphrases, compared with 15/24 for the stronger tested LoRA setting. Greater capacity helped, but transfer remained imperfect."
+      ],
+      [
+        "Targeted examples and broader LoRA coverage",
+        "Added 80 conversations targeting ownership, refusals and timing. We also extended LoRA beyond query/value attention projections to more attention and feed-forward components.",
+        "The combined intervention improved targeted diagnostics, but average English adequacy on the original validation set was 36.7/50, compared with 37.7/50 for the control. Improvements did not transfer consistently across cases."
+      ],
+      [
+        "Alternative rewriting setups",
+        "Tested separate English/Singlish adapters and different rewrite inputs: the English draft alone, the draft with conversation history, and an additional style example. The aim was to separate content generation from style conversion.",
+        "Copying and meaning changes remained. One full-context rewrite changed “Friday afternoon works for me” into “Friday afternoon cannot.” Providing more context did not guarantee faithful rewriting."
+      ],
+      [
+        "Preference learning",
+        "Added 73 reviewed preference pairs through Direct Preference Optimisation (DPO), encouraging suitable replies over unsuitable alternatives while retaining supervised training.",
+        "Reply-quality changes were mixed across three seeds. In one case, a reply accepting a proposed 2 pm meeting changed into an unframed 3 pm arrival, illustrating that preference training could also introduce errors."
+      ],
+      [
+        "Reply-act conditioning and factual supervision",
+        "Tested acceptance/refusal conditioning, auxiliary fact extraction, and explicit context notes before reply generation. These aimed to make the intended action and relevant constraints clearer.",
+        "Some targeted cases improved, but constraints could still be ignored. Even with a supplied refusal act, the model could accept an $18 lunch despite an $8 budget. Incorrect extracted facts could also affect the final reply."
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "text": "Quality counts are from recorded exploratory assistant reviews. Each experiment used its own comparison setup; these are not the later Gemma judge scores or a ranking across table rows."
+  },
+  {
+    "type": "label",
+    "text": "Decoding strategy"
+  },
+  {
+    "type": "paragraph",
+    "text": "We also compared greedy decoding with beam search. Greedy decoding follows the highest-probability token at each step, while beam search retains several possible continuations before selecting a completed reply. Beam search produced cleaner and more complete replies in reviewed examples, so we adopted four-beam decoding with repeated three-grams blocked. The mT5 reference allowed up to 48 generated tokens, while the later SEA-LION pipeline allowed 64."
+  },
+  {
+    "type": "paragraph",
+    "text": "This improved the decoding configuration, but speaker-role and timing errors still occurred. Those errors required better contextual understanding as well as better selection of output sequences."
+  },
+  {
+    "type": "heading",
+    "text": "3.3.3 Larger Models"
+  },
+  {
+    "type": "paragraph",
+    "text": "As the mT5 adaptations did not consistently resolve contextual errors, we explored larger pretrained models. We first investigated SEA-LION-v1-3B, a decoder-only model pretrained on languages used in Southeast Asia (AI Singapore, n.d.). Its regional-language exposure made it a relevant candidate for Singaporean conversations."
+  },
+  {
+    "type": "paragraph",
+    "text": "SEA-LION underwent public-dialogue adaptation using 117,634 reply pairs, comprising 53,691 CoSEM and 63,943 DailyDialog examples. Project-specific training then used 790 conversations, including the original 190 and 600 corrected synthetic additions. We retained the English-first pipeline, with separate adapters for English generation and Singlish rewriting. The selected configuration used the four-beam decoding strategy described above; further training settings are summarized in Section 3.5."
+  },
+  {
+    "type": "paragraph",
+    "text": "SEA-LION produced more coherent and contextually useful replies in the examples reviewed. However, fluent wording did not eliminate errors involving ownership, availability or exact times, and some local replies remained close to Standard English."
+  },
+  {
+    "type": "paragraph",
+    "text": "We subsequently explored Qwen2.5-3B as a similarly sized alternative (Qwen Team, n.d.). Later SEA-LION and Qwen experiments used the same audited 768 task conversations and 766 eligible English–Singlish rewrite pairs. Qwen also received the full public-dialogue pass. This brought the recipes closer, although differences between the pretrained models remained."
+  },
+  {
+    "type": "table",
+    "caption": "Table 3.3d. Qualitative development observations for the three model backbones.",
+    "headers": [
+      "Model",
+      "Reason for testing",
+      "Development observations"
+    ],
+    "rows": [
+      [
+        "mT5-base",
+        "Smaller multilingual encoder–decoder baseline, approximately 582 million parameters.",
+        "English-first rewriting improved paired meaning, but contextual and speaker-role errors remained."
+      ],
+      [
+        "SEA-LION-v1-3B",
+        "Larger model with Southeast Asian language exposure.",
+        "More coherent replies in reviewed examples and useful local phrasing, although factual and rewriting errors persisted."
+      ],
+      [
+        "Qwen2.5-3B",
+        "Similarly sized alternative to examine whether another multilingual backbone could handle the task.",
+        "Produced coherent English and some faithful rewrites, but local outputs sometimes remained Standard English or changed the intended meaning."
+      ]
+    ]
+  },
+  {
+    "type": "figure_placeholder",
+    "text": "Figure 3.3b placeholder — The same conversation with mT5, SEA-LION and Qwen outputs side by side. Highlight a specific difference in relevance, speaker roles or meaning preservation."
+  },
+  {
+    "type": "label",
+    "text": "Dataset audit and weak Singlish differentiation"
+  },
+  {
+    "type": "paragraph",
+    "text": "We audited the actual training files, reviewed 40 sampled rewrite pairs, and checked both teachers on the same 50 validation conversations. The targets contained useful local syntax, such as “i check got notes anot then update you”, but also generic casual English. The issue was therefore uneven style supervision and unreliable rewriting, rather than a complete absence of Singlish."
+  },
+  {
+    "type": "table",
+    "caption": "Table 3.3e. Evidence relevant to weak Singlish style.",
+    "headers": [
+      "Evidence",
+      "Finding",
+      "Implication"
+    ],
+    "rows": [
+      [
+        "Project rewrite targets",
+        "591/766 pairs (77.2%) were synthetic. The sampled targets often used short acknowledgements, ellipsis and article omission.",
+        "Limited native style variety may encourage narrow patterns. These forms can be natural Singlish; particles are not compulsory."
+      ],
+      [
+        "Teacher outputs on the same 50 cases",
+        "SEA-LION copied its English wording in 7/50 cases; Qwen in 19/50, ignoring case and punctuation. None of the 766 reference pairs were normalized copies.",
+        "The models sometimes failed to apply the learned style distinction at inference. Copying cannot be explained solely by duplicate reference labels."
+      ],
+      [
+        "Retained distillation targets",
+        "English/LOCAL normalized copies occurred in 45/571 SEA-LION pairs (7.9%) and 40/571 Qwen pairs (7.0%).",
+        "Students inherit some weakly differentiated teacher targets; distillation does not automatically strengthen local style."
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "text": "Copying is a style diagnostic, not a semantic-error rate: some short replies work in both registers. The 40-pair review was an assistant inspection, not a human benchmark. Surface particle counts cannot capture all Singlish syntax."
+  },
+  {
+    "type": "paragraph",
+    "text": "Public reply training provided broader conversation exposure but did not supply equivalent English–Singlish versions of every reply. Regional pretraining alone therefore did not guarantee controlled rewriting. More varied, meaning-aligned local targets and explicit style checks are plausible improvements, but this audit does not prove a single cause. The validation inputs also offered limited code-switching coverage: 30/50 listed local terms, while only 2/50 carried a pinyin tag."
+  },
+  {
+    "type": "label",
+    "text": "Evaluation and generator choice"
+  },
+  {
+    "type": "paragraph",
+    "text": "Validation loss selected checkpoints within a training setup; it was not used to rank model families. SEA-LION and Qwen were compared qualitatively on matched conversations, assessing relevance, naturalness, local style and paired meaning. The numerical judge results in Section 3.3.4 concern mT5 distillation variants only; the teachers were not scored in that run."
+  },
+  {
+    "type": "paragraph",
+    "text": "SEA-LION was retained as the V5 generator for its useful balance of contextual coherence and local phrasing, while the smaller-model experiments continued. This was an engineering choice rather than a demonstrated win on every criterion. The shared-system evaluation is reported in Section 4; Qwen’s separate reranking role is described in Section 3.4."
+  },
+  {
+    "type": "heading",
+    "text": "3.3.4 Distillation"
+  },
+  {
+    "type": "paragraph",
+    "text": "We next tested whether the larger teachers could improve the smaller generator. The reported run continued the existing mT5 A model: its backbone had already undergone Singlish span adaptation and public-dialogue training, and its trained shared task adapter was retained. All four arms started from that same checkpoint; earlier fresh-adapter experiments are excluded from this comparison."
+  },
+  {
+    "type": "paragraph",
+    "text": "The teachers supplied English replies and Singlish rewrites on the training inputs. After assistant review and matching the accepted cases, 571 paired conversations remained. For each teacher, we compared cross-entropy training on its text with the same text objective plus aligned soft distillation (KD), which transferred additional teacher-distribution information across different vocabularies. KD also introduced training-only projection/alignment components, so this was not a pure KL-only ablation."
+  },
+  {
+    "type": "paragraph",
+    "text": "Each arm completed 12 epochs (1,716 updates), continuing one rank-16 query/value LoRA adapter for both tasks while freezing the 582-million-parameter backbone. The learning rate was 3 × 10⁻⁵ with 5% warmup and cosine decay. Checkpoints were selected using original-reference validation loss. Inference retained English-first rewriting, four beams, repeated-three-gram blocking and a 48-token output limit."
+  },
+  {
+    "type": "label",
+    "text": "Matched judge evaluation"
+  },
+  {
+    "type": "paragraph",
+    "text": "We assessed the unchanged model and four selected variants on the same 50 validation conversations, in both styles, using the group’s Gemma 4 12B judge, unchanged rubric and ten simulated personas (temperature 0, seed 425). Model identities were hidden. Identical replies within the same conversation/style shared ratings, giving 3,390 unique requests mapped to 5,000 ratings. All requests completed successfully. Persona ratings were averaged within each conversation before averaging across conversations."
+  },
+  {
+    "type": "table",
+    "caption": "Table 3.3f. Matched judge scores for adapted mT5 (English / Singlish).",
+    "headers": [
+      "mT5 variant",
+      "Appropriateness /5",
+      "Naturalness /5",
+      "Style fit /5",
+      "Would send (%)"
+    ],
+    "rows": [
+      [
+        "Unchanged mT5 A",
+        "3.52 / 3.74",
+        "4.93 / 4.60",
+        "5.00 / 4.16",
+        "55.8 / 58.4"
+      ],
+      [
+        "SEA-LION text",
+        "3.77 / 3.85",
+        "4.89 / 4.69",
+        "5.00 / 3.90",
+        "65.8 / 63.4"
+      ],
+      [
+        "SEA-LION text +KD",
+        "3.44 / 3.68",
+        "4.92 / 4.69",
+        "5.00 / 3.95",
+        "54.8 / 57.2"
+      ],
+      [
+        "Qwen text",
+        "3.72 / 3.71",
+        "4.89 / 4.57",
+        "5.00 / 3.75",
+        "63.6 / 60.6"
+      ],
+      [
+        "Qwen text +KD",
+        "3.75 / 3.67",
+        "4.94 / 4.68",
+        "5.00 / 4.28",
+        "63.8 / 60.4"
+      ]
+    ]
+  },
+  {
+    "type": "note",
+    "text": "Each cell reports English / Singlish. Text = teacher-text cross-entropy; +KD = text plus aligned soft distillation. Selected epochs: SEA-LION text 3, SEA-LION +KD 1, Qwen text 2, Qwen +KD 1. Personas are simulated by one judge, not ten independent human participants."
+  },
+  {
+    "type": "paragraph",
+    "text": "SEA-LION text training had the highest observed appropriateness and willingness-to-send means. Relative to unchanged mT5, appropriateness increased by 0.25 for English and 0.12 for Singlish. However, conversation-level paired 95% bootstrap intervals included zero (−0.13 to 0.66 and −0.37 to 0.59). Singlish style fit fell from 4.16 to 3.90. Adding soft KD showed no consistent advantage, so the results support further investigation of teacher-text training rather than a conclusive replacement."
+  },
+  {
+    "type": "paragraph",
+    "text": "Sampled teacher–student comparisons exposed remaining gaps. When asked to change a printer booking, Qwen replied “Sure, go ahead and change your booking”, while its text-trained student replied “sure, i’ll try to use it later”, changing whose action was discussed. The students handled simple time confirmations better, but role reversals and missed requests persisted. These examples are qualitative; they do not quantify the teacher–student performance gap."
+  },
+  {
+    "type": "paragraph",
+    "text": "These are repeatedly used validation cases, not untouched test results. The judge scored each draft separately and therefore could miss English–Singlish reversals; for example, a KD model’s English reply said the quiz was finished while its Singlish reply said it was not. English style-fit scores also saturated at 5/5. A separate meaning-consistency check and human style review remain necessary."
+  }
+]

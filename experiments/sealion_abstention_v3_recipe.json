@@ -1,0 +1,72 @@
+{
+  "experiment": "sealion_abstention_v3_role_corrected",
+  "account": "hm.teoh.2024",
+  "seed": 9217,
+  "arms": [
+    "selective_abstention"
+  ],
+  "refusal": "Information not available.",
+  "training_slots_per_epoch": 1152,
+  "unique_inputs": {
+    "restored_context_control": 1032,
+    "selective_abstention": 1152
+  },
+  "ordinary": 790,
+  "unanswerable": 120,
+  "supported_counterparts": 120,
+  "self_contained_controls": 122,
+  "unanswerable_fraction": 0.10416666666666667,
+  "unanswerable_kinds": {
+    "empty": 40,
+    "irrelevant": 40,
+    "adversarial": 40
+  },
+  "validation": {
+    "cases": 128,
+    "underlying_prior_conversations": 48,
+    "history_layouts": 2,
+    "new_self_contained_factual_cases": 32
+  },
+  "challenge": {
+    "cases": 24,
+    "missing": 8,
+    "answerable": 16
+  },
+  "optimizer_steps": 288,
+  "epochs": 2,
+  "effective_batch": 8,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.01,
+  "snapshots": [
+    0,
+    72,
+    144,
+    288
+  ],
+  "matching": "Correction run; same rank8 original source and LR1e-5,2epochs,batch8,seed9217.1152 slots instead of1120 due32 additional self-contained factual controls. No matched restored-context control rerun.",
+  "selection": "Maximize worst balanced score over the two mixed answerability history layouts. Require over-refusal<=10%, lexical value matches>=own baseline-1 and no generation failures for EACH layout, including32 answerable-only factual controls. Answerable-only controls gate selection but do not enter the minimum balanced score.",
+  "source_english_sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+  "frozen_singlish_sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2",
+  "source_base_parameters": 3178255360,
+  "trainable_parameters": 10485760,
+  "inference": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 64,
+    "total_limit": 384
+  },
+  "policy": "The English model learns the standard refusal. Only an emitted exact refusal bypasses Singlish rewriting; no input-pattern refusal rules or context-policy layer are used in this experiment.",
+  "provenance": "Earlier V1/V2 training had ambiguous/wrong first-person questions in six synthetic families, affecting72 supported rows; those models are diagnostic only, not promoted. Correct144 questions across supported/missing variants, add speaker-perspective tests, preserve all790 source records. Fresh24-case synthetic challenge frozen before this run; prior tests are development. No independent human or locked-test result.",
+  "default_changed": false,
+  "source_weights_preserved": true,
+  "research_source": "https://arxiv.org/abs/1806.03822",
+  "data_sha256": {
+    "challenge.json": "283edbe3263b739f7c1c25f70af74bf058da2d189a1dcbc44bce8c82739ad159",
+    "control.json": "c4da74f44b7dcffff19b79191e5f1248bdcb9f93794b06036421c87b39d6f7e7",
+    "legacy.json": "cce5843fb6655027b6013ecdaf41db9c7e05c9809d8f6c910acc055cfbb60f59",
+    "train.json": "2624c1853bb2e6634e5ba430f5565822b3fe51f6eae759c30813ea3509c85fc7",
+    "validation.json": "ce16683988486139cfd4e7e7eadf23097c1b93e1269b35db139d743caeedbb06"
+  },
+  "hypothesis": "Correct speaker-relative questions and teach abstention only when required facts are absent from BOTH history and the latest message; protect context-independent arithmetic/common knowledge.",
+  "initialization": "Reset to untouched original English adapter; do not continue the V1/V2 adapters trained with erroneous speaker references."
+}

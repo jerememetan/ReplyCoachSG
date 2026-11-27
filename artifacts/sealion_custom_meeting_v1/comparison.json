@@ -1,0 +1,526 @@
+{
+  "status": "complete",
+  "inputs": [
+    {
+      "item_id": "USER-MEET-TIME-001",
+      "context": [
+        "What time meet ah later",
+        "Idk eh see how"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Wahlao, just give me a timing",
+      "scope": "new_user_supplied_inference"
+    }
+  ],
+  "inputs_sha256": "1ce5773c7fd3464074a5ba5c83d79869f5253ccbb4bf1699f0aae48c0ef005c7",
+  "outputs": {
+    "original_repair25": {
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_checkpoint_handoff_v1/replycoach_sealion_repair25_v1/adapters/english",
+      "sha256": "55a7f02626c08894bfdc4b44f68dacf86e8f4edafb7aa6bd78aead9162698913",
+      "status": "complete",
+      "outputs": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "scope": "new_user_supplied_inference",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "english": "What time works for you?",
+          "english_status": "complete",
+          "reference_used_for_generation": false,
+          "refusal_gate_used": false,
+          "singlish": "Not sure what time ah",
+          "singlish_status": "complete",
+          "standard_anchor": "What time works for you?"
+        }
+      ],
+      "sampled": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "candidates": [
+            {
+              "reply": "Okay, I'll meet you at six",
+              "raw_text": "Okay, I'll meet you at six",
+              "token_ids": [
+                30265,
+                249832,
+                357,
+                249866,
+                642,
+                1701,
+                364,
+                435,
+                3092,
+                1
+              ],
+              "seed": 1048559004,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Okay, I meet you at six",
+              "singlish_status": "complete",
+              "standard_anchor": "Okay, I'll meet you at six"
+            },
+            {
+              "reply": "No worries, I'll update you later",
+              "raw_text": "No worries, I'll update you later",
+              "token_ids": [
+                1813,
+                23871,
+                249832,
+                357,
+                249866,
+                642,
+                4970,
+                364,
+                2663,
+                1
+              ],
+              "seed": 1048559005,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Okay, I update you later",
+              "singlish_status": "complete",
+              "standard_anchor": "No worries, I'll update you later"
+            },
+            {
+              "reply": "Ok, I'll meet you at 7",
+              "raw_text": "Ok, I'll meet you at 7",
+              "token_ids": [
+                8180,
+                249832,
+                357,
+                249866,
+                642,
+                1701,
+                364,
+                435,
+                249813,
+                249884,
+                1
+              ],
+              "seed": 1048559006,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Okay, I meet you at 7",
+              "singlish_status": "complete",
+              "standard_anchor": "Ok, I'll meet you at 7"
+            }
+          ],
+          "unique_english": 3,
+          "note": "Three unranked stochastic drafts, not three verified answers. No gold target or reference-based selection."
+        }
+      ],
+      "flags": [],
+      "sampled_status_counts": {
+        "complete": 3,
+        "length_limit": 0,
+        "failed_empty": 0
+      },
+      "no_rule_layer": true,
+      "no_refusal_gate": true,
+      "frozen_original_singlish": true,
+      "quality_note": "Review usefulness, contradictions/roles, creative alternatives and cross-style meaning. No independent human accuracy or automatic reranking."
+    },
+    "single_reference_final300": {
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_creative_v1/outputs/single_reference/step_0300",
+      "sha256": "9fa6055effa7b8068f57a29314b9f1277d4ec8af0e3385c66c9e4170389bbef7",
+      "status": "complete",
+      "outputs": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "scope": "new_user_supplied_inference",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "english": "What time works for you?",
+          "english_status": "complete",
+          "reference_used_for_generation": false,
+          "refusal_gate_used": false,
+          "singlish": "Not sure what time ah",
+          "singlish_status": "complete",
+          "standard_anchor": "What time works for you?"
+        }
+      ],
+      "sampled": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "candidates": [
+            {
+              "reply": "I cannot decide yet. Let me check my schedule.",
+              "raw_text": "I cannot decide yet. Let me check my schedule.",
+              "token_ids": [
+                357,
+                3830,
+                6690,
+                2310,
+                249835,
+                4644,
+                548,
+                1792,
+                575,
+                6032,
+                249835,
+                1
+              ],
+              "seed": 1048559004,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Paiseh, I cannot decide yet. I check my schedule first.",
+              "singlish_status": "complete",
+              "standard_anchor": "I cannot decide yet. Let me check my schedule."
+            },
+            {
+              "reply": "I cannot tell you now",
+              "raw_text": "I cannot tell you now",
+              "token_ids": [
+                357,
+                3830,
+                2179,
+                364,
+                924,
+                1
+              ],
+              "seed": 1048559005,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "I cannot tell you now",
+              "singlish_status": "complete",
+              "standard_anchor": "I cannot tell you now"
+            },
+            {
+              "reply": "I cannot tell you now. How about tomorrow evening?",
+              "raw_text": "I cannot tell you now. How about tomorrow evening?",
+              "token_ids": [
+                357,
+                3830,
+                2179,
+                364,
+                924,
+                249835,
+                1445,
+                614,
+                8700,
+                5876,
+                249905,
+                1
+              ],
+              "seed": 1048559006,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "I cannot tell you now. Tomorrow evening can?",
+              "singlish_status": "complete",
+              "standard_anchor": "I cannot tell you now. How about tomorrow evening?"
+            }
+          ],
+          "unique_english": 3,
+          "note": "Three unranked stochastic drafts, not three verified answers. No gold target or reference-based selection."
+        }
+      ],
+      "flags": [],
+      "sampled_status_counts": {
+        "complete": 3,
+        "length_limit": 0,
+        "failed_empty": 0
+      },
+      "no_rule_layer": true,
+      "no_refusal_gate": true,
+      "frozen_original_singlish": true,
+      "quality_note": "Review usefulness, contradictions/roles, creative alternatives and cross-style meaning. No independent human accuracy or automatic reranking."
+    },
+    "multiple_references_final300": {
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_creative_v1/outputs/multiple_references/step_0300",
+      "sha256": "1979df0be4175778b8bcdfb6da7a018ef36d809c7e4a0ce6d75a26f60170016d",
+      "status": "complete",
+      "outputs": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "scope": "new_user_supplied_inference",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "english": "What time works for you?",
+          "english_status": "complete",
+          "reference_used_for_generation": false,
+          "refusal_gate_used": false,
+          "singlish": "Not sure what time ah",
+          "singlish_status": "complete",
+          "standard_anchor": "What time works for you?"
+        }
+      ],
+      "sampled": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "candidates": [
+            {
+              "reply": "What time tomorrow works for you?",
+              "raw_text": "What time tomorrow works for you?",
+              "token_ids": [
+                1917,
+                666,
+                8700,
+                2191,
+                371,
+                364,
+                249905,
+                1
+              ],
+              "seed": 1048559004,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Tomorrow what time ah?",
+              "singlish_status": "complete",
+              "standard_anchor": "What time tomorrow works for you?"
+            },
+            {
+              "reply": "What time works for you?",
+              "raw_text": "What time works for you?",
+              "token_ids": [
+                1917,
+                666,
+                2191,
+                371,
+                364,
+                249905,
+                1
+              ],
+              "seed": 1048559005,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Not sure what time ah",
+              "singlish_status": "complete",
+              "standard_anchor": "What time works for you?"
+            },
+            {
+              "reply": "What time suits you?",
+              "raw_text": "What time suits you?",
+              "token_ids": [
+                1917,
+                666,
+                16971,
+                364,
+                249905,
+                1
+              ],
+              "seed": 1048559006,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Not sure what time ah",
+              "singlish_status": "complete",
+              "standard_anchor": "What time suits you?"
+            }
+          ],
+          "unique_english": 3,
+          "note": "Three unranked stochastic drafts, not three verified answers. No gold target or reference-based selection."
+        }
+      ],
+      "flags": [],
+      "sampled_status_counts": {
+        "complete": 3,
+        "length_limit": 0,
+        "failed_empty": 0
+      },
+      "no_rule_layer": true,
+      "no_refusal_gate": true,
+      "frozen_original_singlish": true,
+      "quality_note": "Review usefulness, contradictions/roles, creative alternatives and cross-style meaning. No independent human accuracy or automatic reranking."
+    },
+    "multiple_plus_contrast_final300": {
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_creative_v1/outputs/multiple_plus_contrast/step_0300",
+      "sha256": "6dc5f37552193bbe5a2fb15e1712f6fa7fe71316190a7c62c1b049f91a695f28",
+      "status": "complete",
+      "outputs": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "scope": "new_user_supplied_inference",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "english": "What time works for you?",
+          "english_status": "complete",
+          "reference_used_for_generation": false,
+          "refusal_gate_used": false,
+          "singlish": "Not sure what time ah",
+          "singlish_status": "complete",
+          "standard_anchor": "What time works for you?"
+        }
+      ],
+      "sampled": [
+        {
+          "item_id": "USER-MEET-TIME-001",
+          "context": [
+            "What time meet ah later",
+            "Idk eh see how"
+          ],
+          "speakers": [
+            "peer",
+            "user"
+          ],
+          "message": "Wahlao, just give me a timing",
+          "criterion": null,
+          "candidates": [
+            {
+              "reply": "What time on what day?",
+              "raw_text": "What time on what day?",
+              "token_ids": [
+                1917,
+                666,
+                372,
+                727,
+                997,
+                249905,
+                1
+              ],
+              "seed": 1048559004,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Not sure what time leh. Meet what time?",
+              "singlish_status": "complete",
+              "standard_anchor": "What time on what day?"
+            },
+            {
+              "reply": "What time works for you?",
+              "raw_text": "What time works for you?",
+              "token_ids": [
+                1917,
+                666,
+                2191,
+                371,
+                364,
+                249905,
+                1
+              ],
+              "seed": 1048559005,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Not sure what time ah",
+              "singlish_status": "complete",
+              "standard_anchor": "What time works for you?"
+            },
+            {
+              "reply": "What time suits you?",
+              "raw_text": "What time suits you?",
+              "token_ids": [
+                1917,
+                666,
+                16971,
+                364,
+                249905,
+                1
+              ],
+              "seed": 1048559006,
+              "termination": "eos",
+              "status": "complete",
+              "temperature": 0.8,
+              "top_p": 0.9,
+              "singlish": "Not sure what time ah",
+              "singlish_status": "complete",
+              "standard_anchor": "What time suits you?"
+            }
+          ],
+          "unique_english": 3,
+          "note": "Three unranked stochastic drafts, not three verified answers. No gold target or reference-based selection."
+        }
+      ],
+      "flags": [],
+      "sampled_status_counts": {
+        "complete": 3,
+        "length_limit": 0,
+        "failed_empty": 0
+      },
+      "no_rule_layer": true,
+      "no_refusal_gate": true,
+      "frozen_original_singlish": true,
+      "quality_note": "Review usefulness, contradictions/roles, creative alternatives and cross-style meaning. No independent human accuracy or automatic reranking."
+    }
+  },
+  "gpu": "NVIDIA L40S",
+  "training_performed": false,
+  "source_weights_unchanged": true,
+  "default_changed": false,
+  "original_backup_modified": false,
+  "decoding": "Primary beam4/no-repeat3/max64; supplemental3seeded nucleus samples attemperature0.8/top_p0.9, unranked. Frozen original Singlish rewrites each exact generated English draft.",
+  "note": "Exact user text/roles; no manually supplied timing, target reply, oracle context, refusal gate, rule layer or reranker."
+}

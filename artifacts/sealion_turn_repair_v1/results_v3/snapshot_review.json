@@ -1,0 +1,24 @@
+{
+  "status": "complete",
+  "reviews": {
+    "supervised": {
+      "step": 40,
+      "selected_by_retention_guard": false,
+      "rationale": "Lowest synthetic target validation positive CE among trained snapshots, irrespective of old-reference CE retention guard. No challenge/user output used for this choice.",
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/supervised/step_0040",
+      "sha256": "3e3535dc158f27d95fb86451ff6f2bd1a0cd3f530aa1f5826b73778cfd85fd1e",
+      "flags": []
+    },
+    "contrastive": {
+      "step": 40,
+      "selected_by_retention_guard": false,
+      "rationale": "Lowest synthetic target validation positive CE among trained snapshots, irrespective of old-reference CE retention guard. No challenge/user output used for this choice.",
+      "checkpoint": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_turn_repair_v1/outputs/contrastive/step_0040",
+      "sha256": "c811123f730cdc1aed8f34d2e1568d661339e5e1d996b41d8540823d5b33fee9",
+      "flags": []
+    }
+  },
+  "scope": "Exploratory generation review. Original validation guard remains unchanged. Formatting variants are diagnostics, not eight unseen independent cases.",
+  "default_changed": false,
+  "training_performed": false
+}

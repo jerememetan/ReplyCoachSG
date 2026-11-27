@@ -1,0 +1,203 @@
+{
+  "status": "complete_reviewed_export_verified",
+  "jobs": {
+    "data": 358870,
+    "B": 358799,
+    "C": 358800,
+    "archive": 358842
+  },
+  "account": "hm.teoh.2024",
+  "remote_root": "/common/scratch/users/h/hm.teoh.2024/ReplyCoachSG_sealion_large_bc_v1",
+  "submitted_at_utc": "2026-11-08T15:37:55.136927+00:00",
+  "gpu_constraint": "l40s|rtx_pro_6000_blackwell_max",
+  "shared_dependency": "afterok:358870",
+  "payload": {
+    "payload_sha256": "10dc8bef359ff13ad8e7d9e307a028407ca7eaa96f7e54bf886ce1e454871156",
+    "bytes": 570998,
+    "files": 128,
+    "path": "artifacts/sealion_large_bc_v1/payload_subset548.tgz"
+  },
+  "default_changed": false,
+  "original_sources_unchanged": true,
+  "latest_observation": {
+    "status": "complete_reviewed_export_verified",
+    "finished_at_sgt": {
+      "B": "2026-11-09T13:07:46+08:00",
+      "C": "2026-11-09T13:04:53+08:00",
+      "archive": "2026-11-09T13:08:07+08:00"
+    },
+    "training_jobs": {
+      "B": 358799,
+      "C": 358800,
+      "archive": 358842
+    },
+    "inference_only_export_replay_job": 359505,
+    "models": {
+      "B": {
+        "task": {
+          "selected_epoch": 2,
+          "selection_ce": 2.1552509580033927,
+          "old_ce": 2.7194258305030483,
+          "new_ce": 1.5910760855037371,
+          "updates": 1292
+        },
+        "rewrite": {
+          "selected_epoch": 2,
+          "selection_ce": 1.831034281300475,
+          "old_ce": 2.375630560246381,
+          "new_ce": 1.286438002354569,
+          "updates": 908
+        }
+      },
+      "C": {
+        "task": {
+          "selected_epoch": 2,
+          "selection_ce": 2.133969271134948,
+          "old_ce": 2.703080092173402,
+          "new_ce": 1.564858450096493,
+          "updates": 1292
+        },
+        "rewrite": {
+          "selected_epoch": 3,
+          "selection_ce": 1.7945335038570744,
+          "old_ce": 2.354061588012811,
+          "new_ce": 1.2350054197013378,
+          "updates": 908
+        }
+      }
+    },
+    "candidate_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_bc548_candidates_v1",
+    "candidate_manifest_sha256": {
+      "B": "1a57915c398e6d4885dee3b6b188ec3641431bce35b21b4308a594be387fba30",
+      "C": "ac7c3a7116949f7b660b4bb112e799e5e9c1d323fa26b6fb4c3e93d06af997c2"
+    },
+    "archive": {
+      "archive": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_large_bc_v1_results/experiment.tgz",
+      "bytes": 783265829,
+      "sha256": "230a1b777c634f0aeac683e6f48572272716ad40fc8cc15086995cbf08a63fd7",
+      "all_saved_adapter_epochs_included": true,
+      "optimizer_states_excluded": true,
+      "summary": {
+        "at_utc": "2026-11-09T05:07:46.481882+00:00",
+        "stages": {
+          "B_task": {
+            "status": "complete",
+            "selected_epoch": 2,
+            "selected_sha256": "dcfb57dcd7fa96f9292e6cf52155b319164ff7fbbb6021fa0e47a743359404a8",
+            "optimizer_updates": 1292,
+            "total_updates": 1292,
+            "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+            "source_adapter_unchanged": true,
+            "frozen_base_parameters_unchanged": true
+          },
+          "B_rewrite": {
+            "status": "complete",
+            "selected_epoch": 2,
+            "selected_sha256": "afc33b1407c99eb7b8f02fdcde5db35e69d446e289abf880af1bfac90deaa8b3",
+            "optimizer_updates": 908,
+            "total_updates": 908,
+            "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+            "source_adapter_unchanged": true,
+            "frozen_base_parameters_unchanged": true
+          },
+          "C_task": {
+            "status": "complete",
+            "selected_epoch": 2,
+            "selected_sha256": "8a237bd9caba1013cd40f7a74420f49be32d479e3cea69ccf6a146e139e09ca5",
+            "optimizer_updates": 1292,
+            "total_updates": 1292,
+            "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+            "source_adapter_unchanged": true,
+            "frozen_base_parameters_unchanged": true
+          },
+          "C_rewrite": {
+            "status": "complete",
+            "selected_epoch": 3,
+            "selected_sha256": "bd45cd6048163248c438fe48a24f6ada3c4f413e69eb03fb7a1e9c997e855885",
+            "optimizer_updates": 908,
+            "total_updates": 908,
+            "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+            "source_adapter_unchanged": true,
+            "frozen_base_parameters_unchanged": true
+          }
+        },
+        "default_changed": false
+      }
+    },
+    "verification": "results/verification.json",
+    "paired_outputs": "results/comparison.csv",
+    "assistant_review": "results/assistant_review.json",
+    "default_changed": false,
+    "dictionary_training_added": false,
+    "quality_verdict": "Some natural concise replies and context fixes; unresolved meaning/context errors, no established overall winner.",
+    "export_replay": {
+      "status": "passed",
+      "job": 359505,
+      "elapsed_seconds": 52,
+      "exact_example_pairs": {
+        "B": 10,
+        "C": 10
+      },
+      "loading_problems": false,
+      "decoder_flags": [],
+      "source_sha256": "fda159f9c2bc9ac92c5abb8c27d71a1a38fcbb2f9d8545f803bfd70e7a2460a1",
+      "note": "Replay reproducibility, not quality accuracy."
+    },
+    "original_train190_validation50_sha256_verified_unchanged": true
+  },
+  "superseded_data_jobs": [
+    358798,
+    358834
+  ],
+  "archive_script_sha256": "2df1c9534a9e69233e72ac98c9d29e023f8204ea09c1c5c697671f72da0310be",
+  "archive_dependency": "afterany:358799:358800",
+  "task_draft_selection": "SHA256(slot) mod2; matched English and LOCAL are selected together; both drafts used for rewrite",
+  "scope_amendment": {
+    "at_utc": "2026-11-09T03:15:20.747806+00:00",
+    "reason": "User: ok wait nvm just train on the 548 first?",
+    "selected_prefix": 548,
+    "all_554_accepted_preserved_in": "before_548_snapshot.tgz",
+    "previous_target": {
+      "train": 5000,
+      "dev": 120,
+      "evaluation": 120
+    },
+    "training_settings_unchanged": true,
+    "data": {
+      "new_conversations": 523,
+      "retained_audited_conversations": 768,
+      "total_task_conversations": 1291,
+      "task_targets": 2582,
+      "new_rewrite_pairs": 1046,
+      "retained_rewrite_pairs": 766,
+      "total_rewrite_pairs": 1812,
+      "new_dev_conversations": 11,
+      "new_final_conversations": 14,
+      "accepted_snapshot": {
+        "path": "authoring/accepted_first548.jsonl",
+        "sha256": "421ea94bdafcf530cb82c540a81cf2c34d42000a6710fa9268f0c136fef2d2e3",
+        "conversations": 548,
+        "splits": {
+          "train": 523,
+          "dev": 11,
+          "evaluation": 14
+        }
+      }
+    },
+    "validation": {
+      "old": 50,
+      "old_rewrite": 42,
+      "new": 11,
+      "new_rewrite": 22,
+      "topic_scope": "Topic partition applies to new model-authored examples only; historical and public overlap possible"
+    },
+    "evaluation": {
+      "new": 14,
+      "reused": 75,
+      "total": 89,
+      "uses_final_for_selection": false,
+      "new_fixed_reference_rewrites": 14
+    },
+    "before_snapshot_sha256": "0ea3e001f000cbc9cf028816c0cedbc7401e42ffaaa9eef88c35def4aed3ccb8"
+  }
+}

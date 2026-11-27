@@ -1,0 +1,118 @@
+{
+  "status": "all_three_completed",
+  "observed_at_utc": "2026-11-21T08:01:07.740180+00:00",
+  "snapshot": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T080108Z",
+  "training_conversations": 571,
+  "epochs_per_stage": 12,
+  "updates_per_stage": 864,
+  "independent_test": false,
+  "quality_accuracy_estimated": false,
+  "validation": "Original-label development token cross-entropy; Singlish validation uses reference English anchors. Lower is closer to reference labels, not conversational accuracy. Original-label control is trained on the same label source; valid teacher paraphrases can have higher loss.",
+  "models": {
+    "original_ce": {
+      "stages": {
+        "english": {
+          "selected_epoch": 10,
+          "selected_validation_ce": 2.195046311514131,
+          "final_validation_ce": 2.196604861678748,
+          "final_minus_selected_ce": 0.0015585501646171451,
+          "training_seconds": 568.4780211700127,
+          "training_rows_sha256": "7c8041ce7dc0b704661eda970c632719d20ade2ad75b0865859fc56cc2b74d78",
+          "validation_rows_sha256": "b4db6829d67b340a44725fe3800c68c6b7abc32d6e8592c24271a737bd18e40b",
+          "adapter_parameters": 1769472,
+          "training_only_projector_parameters": 0
+        },
+        "singlish": {
+          "selected_epoch": 8,
+          "selected_validation_ce": 2.37154549015455,
+          "final_validation_ce": 2.3778554214262106,
+          "final_minus_selected_ce": 0.006309931271660574,
+          "training_seconds": 550.638994153589,
+          "training_rows_sha256": "7c8041ce7dc0b704661eda970c632719d20ade2ad75b0865859fc56cc2b74d78",
+          "validation_rows_sha256": "27f9941f07f0d0a9bca0685856933a8846586507909e8bbe6680add507e83248",
+          "adapter_parameters": 1769472,
+          "training_only_projector_parameters": 0
+        }
+      },
+      "completion_source": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T080108Z/ce/students/full/original/complete.json"
+    },
+    "sealion_ce": {
+      "stages": {
+        "english": {
+          "selected_epoch": 2,
+          "selected_validation_ce": 2.38548309011706,
+          "final_validation_ce": 2.502157229904471,
+          "final_minus_selected_ce": 0.11667413978741115,
+          "training_seconds": 558.2083982853219,
+          "training_rows_sha256": "4f4b0426cc8329ba4262d73e736d89fe62c787c778c80850ca6debe0e6e1a2b4",
+          "validation_rows_sha256": "b4db6829d67b340a44725fe3800c68c6b7abc32d6e8592c24271a737bd18e40b",
+          "adapter_parameters": 1769472,
+          "training_only_projector_parameters": 0
+        },
+        "singlish": {
+          "selected_epoch": 1,
+          "selected_validation_ce": 2.647377531718945,
+          "final_validation_ce": 2.9695342258645154,
+          "final_minus_selected_ce": 0.32215669414557047,
+          "training_seconds": 538.6827330216765,
+          "training_rows_sha256": "4f4b0426cc8329ba4262d73e736d89fe62c787c778c80850ca6debe0e6e1a2b4",
+          "validation_rows_sha256": "27f9941f07f0d0a9bca0685856933a8846586507909e8bbe6680add507e83248",
+          "adapter_parameters": 1769472,
+          "training_only_projector_parameters": 0
+        }
+      },
+      "completion_source": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T080108Z/ce/students/full/sealion/complete.json"
+    },
+    "qwen_ce": {
+      "stages": {
+        "english": {
+          "selected_epoch": 2,
+          "selected_validation_ce": 2.435281807595286,
+          "final_validation_ce": 2.576771914856187,
+          "final_minus_selected_ce": 0.14149010726090117,
+          "training_seconds": 549.2970528528094,
+          "training_rows_sha256": "fb60f9e2045808533f813452618c39f47fc10475151d51e9d714cb23e330885a",
+          "validation_rows_sha256": "b4db6829d67b340a44725fe3800c68c6b7abc32d6e8592c24271a737bd18e40b",
+          "adapter_parameters": 1769472,
+          "training_only_projector_parameters": 0
+        },
+        "singlish": {
+          "selected_epoch": 2,
+          "selected_validation_ce": 2.6239290941845286,
+          "final_validation_ce": 2.8755479977150595,
+          "final_minus_selected_ce": 0.25161890353053096,
+          "training_seconds": 535.430656593293,
+          "training_rows_sha256": "fb60f9e2045808533f813452618c39f47fc10475151d51e9d714cb23e330885a",
+          "validation_rows_sha256": "27f9941f07f0d0a9bca0685856933a8846586507909e8bbe6680add507e83248",
+          "adapter_parameters": 1769472,
+          "training_only_projector_parameters": 0
+        }
+      },
+      "completion_source": "artifacts/mt5_soft_kd_v1/status_snapshots/20261121T080108Z/ce/students/full/qwen/complete.json"
+    }
+  },
+  "checks": {
+    "all_training_complete": true,
+    "all_initial_adapter_weights_match": true,
+    "validation_rows_identical_per_stage": true,
+    "ce_kd_training_rows_identical_within_teacher": true,
+    "all_base_paths_match": true,
+    "all_shared_bases_unchanged": true,
+    "selected_final_pipeline_outputs": 450,
+    "english_outputs": 450,
+    "singlish_pipeline_outputs": 450,
+    "fixed_reference_rewrites": 144,
+    "all_eos_complete": true,
+    "own_english_and_fixed_reference_anchors_verified": true,
+    "checkpoint_file_verification": "checkpoint_verification.json",
+    "all_six_adapter_switch_checks_passed": true
+  },
+  "conclusion": {
+    "validation": "Original-label CE control has lower selected validation CE in both stages than either teacher-text CE arm.",
+    "quality": "Assistant inspected all375selected English/Singlish pairs on75reused development conversations without numeric ratings. Context/role errors and rewrite meaning changes remain; no validated upgrade or overall reply-quality winner established.",
+    "scope": "No independent human/gold review, no blind-review claim, locked test unread; previous task-trained adapter not a matched arm in this five-run comparison.",
+    "action": "Preserve previous model/default; do not promote these students based on fitting success or reference CE alone."
+  },
+  "experiment": "distill_mt5_v2",
+  "related_five_arm_result": "experiments/mt5_soft_kd_v1_results.json"
+}

@@ -1,0 +1,3017 @@
+[
+  {
+    "item_id": "AUDIT-EVAL-01",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I am sneezing badly, staying home today.",
+      "aiyo"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you guys go arcade first, send me clips later",
+    "original": {
+      "item_id": "AUDIT-EVAL-01",
+      "english": "Okay, we will go arcade later.",
+      "singlish": "Okay, arcade then.",
+      "standard_anchor": "Okay, we will go arcade later.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-01",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I am sneezing badly, staying home today.",
+        "aiyo"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you guys go arcade first, send me clips later",
+      "english": "Sure, I'll send you some clips later.",
+      "singlish": "can, we go arcade first",
+      "standard_anchor": "Sure, I'll send you some clips later.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "4dd6405a5e0388b58dd9eab5798be1f6ddb66fe29a5532916e3c83fb29b4b683",
+      "rewrite_prompt_sha256": "cdbaae03f35156a880575dcf3b99c8f01c921bcac1cc4351743349ac046e1c7d"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-02",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I left the snacks at your door."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "saw them already?",
+    "original": {
+      "item_id": "AUDIT-EVAL-02",
+      "english": "No, I haven’t seen them yet.",
+      "singlish": "Haven’t see leh, haven’t come yet.",
+      "standard_anchor": "No, I haven’t seen them yet.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-02",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I left the snacks at your door."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "saw them already?",
+      "english": "Yes, I have them at my door.",
+      "singlish": "Ya, I have them at my door.",
+      "standard_anchor": "Yes, I have them at my door.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "5f2bc2207ba4665da5a4c658fcd54ffe6f8bd007a4e5711aff2f989939016b56",
+      "rewrite_prompt_sha256": "38f0ff82b39d2ba983a2265c27d06ad297f5447a65005ed07838eb05364f6dee"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-03",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "Want to go for a walk by the reservoir?",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh tmr 5:15 still can right?",
+    "original": {
+      "item_id": "AUDIT-EVAL-03",
+      "english": "Yes, I can meet you at 5:15 tomorrow.",
+      "singlish": "Can, five fifteen I meet you at the reservoir.",
+      "standard_anchor": "Yes, I can meet you at 5:15 tomorrow.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-03",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "Want to go for a walk by the reservoir?",
+        "sounds good"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh tmr 5:15 still can right?",
+      "english": "Yes, 5:15 is fine.",
+      "singlish": "Can, 5:15 can.",
+      "standard_anchor": "Yes, 5:15 is fine.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "a185986bdd0c7673136772263b610f97f41d3c50fb896eed6b9b9fce8d12e50a",
+      "rewrite_prompt_sha256": "ab997e109664e348e01c078cd889edbaa0069b72c06ceac3fa6c2e3a2279843b"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-04",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I finished sorting the playlist for our drive."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "settled the playlist?",
+    "original": {
+      "item_id": "AUDIT-EVAL-04",
+      "english": "yes, I finished sorting the playlist",
+      "singlish": "yes, I finished sorting the playlist",
+      "standard_anchor": "yes, I finished sorting the playlist",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-04",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I finished sorting the playlist for our drive."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "settled the playlist?",
+      "english": "Yes, I finished sorting the playlist.",
+      "singlish": "Ya, I done leh.",
+      "standard_anchor": "Yes, I finished sorting the playlist.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "c2a2b07998ef1f40677b5c8ff4383095f8398e2f874060a9f127e6c78530f276",
+      "rewrite_prompt_sha256": "85a8fa14e0dc012aacc2527e0e6bb2ff45149e978a0b7a477c11b8048b9bc5ec"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-05",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I can bring my speakers for the picnic."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "ok rmb charge them first ya",
+    "original": {
+      "item_id": "AUDIT-EVAL-05",
+      "english": "Ok I charge them now.",
+      "singlish": "Ok I charge them now.",
+      "standard_anchor": "Ok I charge them now.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-05",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I can bring my speakers for the picnic."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "ok rmb charge them first ya",
+      "english": "Yes, I will charge them before bringing them to the picnic.",
+      "singlish": "okok, i charge then bring",
+      "standard_anchor": "Yes, I will charge them before bringing them to the picnic.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "8cfd4535d5dc5e6c6fbf66457a3a7bd645a5b8735fe4b174733492644834a3f7",
+      "rewrite_prompt_sha256": "3b58ae6bdf0c95dfe31f5866d57ce30cb846064e7487e6b6802d2ecf176f3879"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-06",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I cannot make it for supper, need sleep early."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "ps ah next time jio again",
+    "original": {
+      "item_id": "AUDIT-EVAL-06",
+      "english": "ok, see you next time",
+      "singlish": "ok, see you next time",
+      "standard_anchor": "ok, see you next time",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-06",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I cannot make it for supper, need sleep early."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "ps ah next time jio again",
+      "english": "No worries. See you next time.",
+      "singlish": "okok, next time dinner",
+      "standard_anchor": "No worries. See you next time.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "63b7ee326708bc08911c7b310e2350861db06883aa962dae9ad9cd034e0bf9d3",
+      "rewrite_prompt_sha256": "bee285fb3788470d8e57066cc531baa4a92b4681ef26c0c709340ac8ba6d1957"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-07",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "The old power socket is spoilt.",
+      "I found a working one near the window."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can share that socket with me?",
+    "original": {
+      "item_id": "AUDIT-EVAL-07",
+      "english": "Sure, I'll use the socket near the window for you.",
+      "singlish": "Can, I use the socket near the window for you.",
+      "standard_anchor": "Sure, I'll use the socket near the window for you.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-07",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "The old power socket is spoilt.",
+        "I found a working one near the window."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can share that socket with me?",
+      "english": "Sure, you can use the socket near the window.",
+      "singlish": "can, use socket near window",
+      "standard_anchor": "Sure, you can use the socket near the window.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "cf948f2ec05976a920c8fcbf6fc0e5fef6114e03108986909bec355a3226a953",
+      "rewrite_prompt_sha256": "0fb34713efe1699c85b393ff87759990b8da3410a779a24d972710ac4daa0af7"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-08",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I left my headphones at home.",
+      "I have a spare pair."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "want use mine for the recording?",
+    "original": {
+      "item_id": "AUDIT-EVAL-08",
+      "english": "Yes, please use my spare pair for the recording.",
+      "singlish": "Can, use your spare pair for the recording ah.",
+      "standard_anchor": "Yes, please use my spare pair for the recording.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-08",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I left my headphones at home.",
+        "I have a spare pair."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "want use mine for the recording?",
+      "english": "Yes please, could I borrow your headphones?",
+      "singlish": "yes pls, borrow mine?",
+      "standard_anchor": "Yes please, could I borrow your headphones?",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "3192c6c13a5bff9692143e957912dd389309d1129f69292f1e3f0d47b9095398",
+      "rewrite_prompt_sha256": "ad6b342d2c1f44540907910c7474c1477dd5100f69228561cf63aa9bae24c848"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-09",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "The backpack you lent me is in my room."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "rmb pass me my bag after dinner",
+    "original": {
+      "item_id": "AUDIT-EVAL-09",
+      "english": "Okay, I'll pick it up after dinner.",
+      "singlish": "Okay, tonight after dinner I collect your bag.",
+      "standard_anchor": "Okay, I'll pick it up after dinner.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-09",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "The backpack you lent me is in my room."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "rmb pass me my bag after dinner",
+      "english": "Yes, I'll pass it to you after dinner.",
+      "singlish": "ya, i pass you after dinner",
+      "standard_anchor": "Yes, I'll pass it to you after dinner.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "8cc2d6298352ccfc49ff59c2adc643f09cabf0c9b61126664c632c2eedb11525",
+      "rewrite_prompt_sha256": "5fb7b72cdfe9215f79fabe659c84f512a32e18cbf6979abb28415975177a1439"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-10",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I am outside the florist.",
+      "I am at the taxi stand."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "where you at now?",
+    "original": {
+      "item_id": "AUDIT-EVAL-10",
+      "english": "I am outside the florist.",
+      "singlish": "I am outside the florist.",
+      "standard_anchor": "I am outside the florist.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-10",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I am outside the florist.",
+        "I am at the taxi stand."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "where you at now?",
+      "english": "I am outside the florist.",
+      "singlish": "outside florist, waiting for you",
+      "standard_anchor": "I am outside the florist.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "fb86782cbf07e7125e521898b10df599eb46f4df8b5b2bc44ec989407aec4b69",
+      "rewrite_prompt_sha256": "32ce6eaef5c2daba950ba7d38f18ebe2e9822c98e7cfdcabc42d28adc15a3936"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-11",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I have to leave by 8:10pm."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "movie starts 8, two hours, steady?",
+    "original": {
+      "item_id": "AUDIT-EVAL-11",
+      "english": "Yes, two hours is fine.",
+      "singlish": "Ya, two hours steady.",
+      "standard_anchor": "Yes, two hours is fine.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-11",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I have to leave by 8:10pm."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "movie starts 8, two hours, steady?",
+      "english": "Yes, it should be two hours.",
+      "singlish": "ya steady, two hours",
+      "standard_anchor": "Yes, it should be two hours.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "a4b5c2846f3d9625b604ff8cdc663fe6c3459ca5bedd295605eb225b3dfc3414",
+      "rewrite_prompt_sha256": "c23844b51ca297be34d2b74d0cf7f7f65b6dbdd97b5228a3298ac01a32ef6e2a"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-12",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I only have nine dollars for food.",
+      "The noodles are fourteen dollars."
+    ],
+    "speakers": [
+      "user",
+      "peer"
+    ],
+    "message": "get those noodles tgt?",
+    "original": {
+      "item_id": "AUDIT-EVAL-12",
+      "english": "I can't afford that tonight. Could we get something cheaper?",
+      "singlish": "Tonight cannot lah, get something cheaper instead.",
+      "standard_anchor": "I can't afford that tonight. Could we get something cheaper?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-12",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I only have nine dollars for food.",
+        "The noodles are fourteen dollars."
+      ],
+      "speakers": [
+        "user",
+        "peer"
+      ],
+      "message": "get those noodles tgt?",
+      "english": "Yes, let's get those noodles together.",
+      "singlish": "okok, noodles tgt",
+      "standard_anchor": "Yes, let's get those noodles together.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "27a4c31536287264891b3db60ba0ea2a486a4bdfdf7b38e9f45c95436a435595",
+      "rewrite_prompt_sha256": "935247b64a50296e10215d487bf1ab050d587b97672849363e03a01dca02efe5"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-13",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I have finished the diagram but not the explanation."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "whole thing done?",
+    "original": {
+      "item_id": "AUDIT-EVAL-13",
+      "english": "Yes, I have finished the diagram but not the explanation.",
+      "singlish": "Ya, I finish the diagram, but not the explanation.",
+      "standard_anchor": "Yes, I have finished the diagram but not the explanation.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-13",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I have finished the diagram but not the explanation."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "whole thing done?",
+      "english": "Yes, I have finished the diagram but not the explanation.",
+      "singlish": "Ya, whole thing done leh.",
+      "standard_anchor": "Yes, I have finished the diagram but not the explanation.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "8a0744eb9ca6bf701798d94f4976ccc9fe76f8585dc8697d0d28705babce5595",
+      "rewrite_prompt_sha256": "f3f56eeece793484e60abc4696f6c20dcd22052c9f1ddf6a392aef5c07932f1b"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-14",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "The coffee shop closes at nine.",
+      "I can only arrive at nine fifteen."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "meet there when you reach?",
+    "original": {
+      "item_id": "AUDIT-EVAL-14",
+      "english": "I'll meet you there at nine fifteen.",
+      "singlish": "I meet you there at nine fifteen ah.",
+      "standard_anchor": "I'll meet you there at nine fifteen.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-14",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "The coffee shop closes at nine.",
+        "I can only arrive at nine fifteen."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "meet there when you reach?",
+      "english": "I'll meet you at nine fifteen.",
+      "singlish": "Can, nine fifteen meet there.",
+      "standard_anchor": "I'll meet you at nine fifteen.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "cd637cc34d2ba211335493be68ab7b5930a2301a0f88dc4c8c9b39c25bd416a5",
+      "rewrite_prompt_sha256": "d2504921cf861202599c3b90e1922168830958c54a6a88d7712595d175e814de"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-15",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "Hi prof, could I check when consultations start?"
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "I will put the booking slots up on Wednesday.",
+    "original": {
+      "item_id": "AUDIT-EVAL-15",
+      "english": "Okay, I will check the slots on Wednesday.",
+      "singlish": "Okay, I check the slots on Wednesday.",
+      "standard_anchor": "Okay, I will check the slots on Wednesday.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-15",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "Hi prof, could I check when consultations start?"
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "I will put the booking slots up on Wednesday.",
+      "english": "Thanks, I'll check the slots on Wednesday.",
+      "singlish": "thanks, i check on Wednesday",
+      "standard_anchor": "Thanks, I'll check the slots on Wednesday.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "0a8c43b1192e8b16f1a71efa6027ea739760873e98d05b1d1ed69750cb7be228",
+      "rewrite_prompt_sha256": "8cddb34d464e49ee44fb21f397d827cc6bb19b0d512b0bef727a435ae844d8f2"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-16",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I saved your scarf, it is on my chair."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "is my scarf still with you?",
+    "original": {
+      "item_id": "AUDIT-EVAL-16",
+      "english": "Yes, your scarf is on my chair.",
+      "singlish": "Yea, my scarf is on your chair.",
+      "standard_anchor": "Yes, your scarf is on my chair.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-16",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I saved your scarf, it is on my chair."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "is my scarf still with you?",
+      "english": "Yes, it is on my chair.",
+      "singlish": "still with you, on my chair",
+      "standard_anchor": "Yes, it is on my chair.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "5a6982bd0ed89a06a5c32dbe5f56eea6e34f375baa0d9c53729a1921eb140b22",
+      "rewrite_prompt_sha256": "e7240f4c9208b482a89174e88ec9be5afe46c47a3b4fecb635389cfa13c93e10"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-17",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "Can you help me get a drink?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "either lemon tea or plain water",
+    "original": {
+      "item_id": "AUDIT-EVAL-17",
+      "english": "I can get you a glass of water.",
+      "singlish": "Can, I get you a glass of water.",
+      "standard_anchor": "I can get you a glass of water.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-17",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "Can you help me get a drink?"
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "either lemon tea or plain water",
+      "english": "Which drink would you prefer?",
+      "singlish": "wat u want? plain water or lemon tea?",
+      "standard_anchor": "Which drink would you prefer?",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "d93b1c1775df56b7fe3fb274a386a16a324efc9c25568956e3c3d242db154d05",
+      "rewrite_prompt_sha256": "1c74d30b2c8779c457c6fe2c9228567d80ad5d8e9a21ff617d94f93eaced0c19"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-18",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I know the charger you left is yours."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "send me a photo to confirm?",
+    "original": {
+      "item_id": "AUDIT-EVAL-18",
+      "english": "Sure, I'll send you a photo of the charger.",
+      "singlish": "Sure, I send you a photo of the charger.",
+      "standard_anchor": "Sure, I'll send you a photo of the charger.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-18",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I know the charger you left is yours."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "send me a photo to confirm?",
+      "english": "Sure, I will send you a photo of the charger.",
+      "singlish": "okok, i send you a photo",
+      "standard_anchor": "Sure, I will send you a photo of the charger.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "abc08df19fde13679a44849708eb2a0986479a5c504d1e883178f409d0840f5b",
+      "rewrite_prompt_sha256": "c1dc2fe30e665063ce842364ae215f59886db867ab7e10d318928220bfa5599b"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-19",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "The tutorial got shifted to lab L8."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "still going to L3?",
+    "original": {
+      "item_id": "AUDIT-EVAL-19",
+      "english": "Yes, still going to L3.",
+      "singlish": "Ya, still at L3.",
+      "standard_anchor": "Yes, still going to L3.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-19",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "The tutorial got shifted to lab L8."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "still going to L3?",
+      "english": "Yes, still going to L3.",
+      "singlish": "ya, still going to L3",
+      "standard_anchor": "Yes, still going to L3.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "45e66d4ae8dcb333682eb35e13e9af81315c4a1f7869e872823582d57c75c86a",
+      "rewrite_prompt_sha256": "93a3befc11f92fa9cddc9340ba48fc9662517bd048e1d7ea9078ba752ca2a697"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-20",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I may have left my transit card at the bakery."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "found it already?",
+    "original": {
+      "item_id": "AUDIT-EVAL-20",
+      "english": "No, I haven’t found it yet.",
+      "singlish": "Haven’t find leh, still looking.",
+      "standard_anchor": "No, I haven’t found it yet.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-20",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I may have left my transit card at the bakery."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "found it already?",
+      "english": "Not yet, I haven't found it yet.",
+      "singlish": "not yet leh, haven’t found leh",
+      "standard_anchor": "Not yet, I haven't found it yet.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "773d6c70c74a594c63c83e4d7099fe176a8b1df1a5740a2f701012745e0224c7",
+      "rewrite_prompt_sha256": "62588ab3fa9a089bf3011bb8d359a8376e95db8b08f1871e15a4095c18d5805e"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-21",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "That practice presentation went so badly."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "damn demoralised now",
+    "original": {
+      "item_id": "AUDIT-EVAL-21",
+      "english": "I'm sorry to hear that. What went wrong?",
+      "singlish": "I'm sorry to hear that. What happened ah?",
+      "standard_anchor": "I'm sorry to hear that. What went wrong?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-21",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "That practice presentation went so badly."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "damn demoralised now",
+      "english": "I'm sorry to hear that. How did the presentation go?",
+      "singlish": "oh no, sorry to hear that. how was the presentation?",
+      "standard_anchor": "I'm sorry to hear that. How did the presentation go?",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "8556ebb19b9d90471ceac86de3d3e2d11d0c5fc1440402a8db51892fe1832a07",
+      "rewrite_prompt_sha256": "ed4e4d635597cd16742f6664ec26536e8e254271f07c706bc887f4c9d5eb11b7"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-22",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "Are you free to help me move the chairs?"
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "only need help for 10 min",
+    "original": {
+      "item_id": "AUDIT-EVAL-22",
+      "english": "Sure, I can help you for 10 minutes.",
+      "singlish": "Can, I help you for ten minutes.",
+      "standard_anchor": "Sure, I can help you for 10 minutes.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-22",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "Are you free to help me move the chairs?"
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "only need help for 10 min",
+      "english": "Sure, I can help you for ten minutes.",
+      "singlish": "Can, I help you for ten minutes.",
+      "standard_anchor": "Sure, I can help you for ten minutes.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "c73279e2e19de1c01d5e3c0ee9f863c950df770dc8b3d0486fe4cb03f615717a",
+      "rewrite_prompt_sha256": "69be7b55d14161f60fb722384843287eedd29f304fa3edf4bd6a955bac199ed9"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-23",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "The parcel in the blue box belongs to you."
+    ],
+    "speakers": [
+      "peer"
+    ],
+    "message": "blue or brown box should i bring?",
+    "original": {
+      "item_id": "AUDIT-EVAL-23",
+      "english": "Please bring the blue box.",
+      "singlish": "Blue box bring lah.",
+      "standard_anchor": "Please bring the blue box.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-23",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "The parcel in the blue box belongs to you."
+      ],
+      "speakers": [
+        "peer"
+      ],
+      "message": "blue or brown box should i bring?",
+      "english": "The blue box is for you.",
+      "singlish": "The blue box is for you.",
+      "standard_anchor": "The blue box is for you.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "6a69b50ee29c686c367f3cc62e7de831ac4fc129dc3c4e1dc4e447c3e4f8aac3",
+      "rewrite_prompt_sha256": "c74690885440a5b5213eff07ad43246a112b924d0769b72a9fb967a5e9a7385e"
+    }
+  },
+  {
+    "item_id": "AUDIT-EVAL-24",
+    "scope": "fresh_assistant_evaluation",
+    "context": [
+      "I have not checked whether the studio is open."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "open on public holiday?",
+    "original": {
+      "item_id": "AUDIT-EVAL-24",
+      "english": "I have not checked whether it is open on public holidays.",
+      "singlish": "I haven’t checked if the studio is open on public holidays leh.",
+      "standard_anchor": "I have not checked whether it is open on public holidays.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "AUDIT-EVAL-24",
+      "scope": "fresh_assistant_evaluation",
+      "context": [
+        "I have not checked whether the studio is open."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "open on public holiday?",
+      "english": "I am not sure whether the studio is open on public holidays.",
+      "singlish": "dunno open anot, check first",
+      "standard_anchor": "I am not sure whether the studio is open on public holidays.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "11e65952ce98d2782edda24fd54fd087fcbdf54037257d352a6a2a2e45803078",
+      "rewrite_prompt_sha256": "520e1f707b4c742e5ebb7b4bcb1629aa7a02c43af42dbd761a73a3adfaa1a621"
+    }
+  },
+  {
+    "item_id": "USER-FLU-001",
+    "scope": "reused_user_diagnostic",
+    "context": [
+      "I am down with a flu, cant come play later",
+      "aiyoo"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "yall just enjoy la, send videos to me when yall are playing",
+    "original": {
+      "item_id": "USER-FLU-001",
+      "english": "ok, we will send videos to you when we are playing",
+      "singlish": "ok, we will send videos to you when we are playing",
+      "standard_anchor": "ok, we will send videos to you when we are playing",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "USER-FLU-001",
+      "scope": "reused_user_diagnostic",
+      "context": [
+        "I am down with a flu, cant come play later",
+        "aiyoo"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "yall just enjoy la, send videos to me when yall are playing",
+      "english": "okay, we will send you videos when we are playing",
+      "singlish": "okay, we will send you videos when we are playing",
+      "standard_anchor": "okay, we will send you videos when we are playing",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "4f93e898cfa9b3ed832b934a93b440637612e2ebb736b4af802e829f1db998ce",
+      "rewrite_prompt_sha256": "85989244d7d4d5d5a7bcdcb7ab3ee881f7847e14e6828d935f89bc22db2db79b"
+    }
+  },
+  {
+    "item_id": "ITEM-A-010",
+    "scope": "reused_old_validation",
+    "context": [
+      "this course is so tough.",
+      "yeah, I could really use some help too."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "peer: we very kiasu sia, first lesson already like that",
+    "original": {
+      "item_id": "ITEM-A-010",
+      "english": "I'm sorry to hear that, I'll try my best to help.",
+      "singlish": "aw thanks, I'll try my best to help.",
+      "standard_anchor": "I'm sorry to hear that, I'll try my best to help.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-010",
+      "scope": "reused_old_validation",
+      "context": [
+        "this course is so tough.",
+        "yeah, I could really use some help too."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "peer: we very kiasu sia, first lesson already like that",
+      "english": "ya, we are very kiasu",
+      "singlish": "ya lor, first lesson already like that",
+      "standard_anchor": "ya, we are very kiasu",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "52ab1e365665443ac48f09f0071145214c476007e7fdda49950ceffc7ef99e41",
+      "rewrite_prompt_sha256": "d15cdc0f9fca2f9d5d4c2d3c02d0448e73cc5fe8a7ccac5fd7227cceee895c19"
+    }
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "scope": "reused_old_validation",
+    "context": [
+      "Hey! Where are you now?",
+      "I am reaching Harbourfront MRT, how about you?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Eh i double check with you, we are meeting at 7pm right?",
+    "original": {
+      "item_id": "ITEM-A-017",
+      "english": "Yes, we are meeting at 7pm.",
+      "singlish": "Ya, seven at Harbourfront MRT.",
+      "standard_anchor": "Yes, we are meeting at 7pm.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-017",
+      "scope": "reused_old_validation",
+      "context": [
+        "Hey! Where are you now?",
+        "I am reaching Harbourfront MRT, how about you?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Eh i double check with you, we are meeting at 7pm right?",
+      "english": "Yes, we are meeting at 7pm at Harbourfront MRT.",
+      "singlish": "ya, 7pm at Harbourfront MRT",
+      "standard_anchor": "Yes, we are meeting at 7pm at Harbourfront MRT.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "a21e00cefbf3063e685cae41d37c3cb0bc69ac96ba1a3c84c567ca66a006c521",
+      "rewrite_prompt_sha256": "1bb02528da11855d7681094fc12984c09c2b5f6c1e3b12654d4f803589bfba1d"
+    }
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "scope": "reused_old_validation",
+    "context": [
+      "Hey have you printed the worksheet given out yesterday?",
+      "No, I will need to print it in school. Do you know how to use the printer?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i don't know how to use the printer in school.",
+    "original": {
+      "item_id": "ITEM-A-024",
+      "english": "No worries, just let me know when you have printed it.",
+      "singlish": "No worries, ask staff lah.",
+      "standard_anchor": "No worries, just let me know when you have printed it.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-024",
+      "scope": "reused_old_validation",
+      "context": [
+        "Hey have you printed the worksheet given out yesterday?",
+        "No, I will need to print it in school. Do you know how to use the printer?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i don't know how to use the printer in school.",
+      "english": "No worries, let us figure it out together.",
+      "singlish": "No worries, we can figure it out together.",
+      "standard_anchor": "No worries, let us figure it out together.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "e6d522e39ee53e74fcd04b1c65a274284093578e62d6171f75161cf918628aeb",
+      "rewrite_prompt_sha256": "b76de099bcdc1f1d11e5ed20cbf9071a17b0d498f2f38f6db02bbeeb614379ae"
+    }
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "scope": "reused_old_validation",
+    "context": [
+      "How long is our booking?",
+      "Oh no, our timer went off."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sian, need book somewhere else, our booking ran out",
+    "original": {
+      "item_id": "ITEM-A-030",
+      "english": "Okay, let's look for another place.",
+      "singlish": "Okay, find another place lah.",
+      "standard_anchor": "Okay, let's look for another place.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-030",
+      "scope": "reused_old_validation",
+      "context": [
+        "How long is our booking?",
+        "Oh no, our timer went off."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sian, need book somewhere else, our booking ran out",
+      "english": "No worries, let's just book somewhere else.",
+      "singlish": "okok, book somewhere else",
+      "standard_anchor": "No worries, let's just book somewhere else.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "60e8b8d8aa277dce6efd4350dfa7435fb1d092e66bed41c2cf96f3793f516f9c",
+      "rewrite_prompt_sha256": "acdf33aa01005eb77b8762dc4aee073d78cecd5d48167fd0be42bfe6d81a4103"
+    }
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "scope": "reused_old_validation",
+    "context": [
+      "Hey should we grab lunch?",
+      "sure! Lets head to Koufu"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh the chicken rice stall open today anot?",
+    "original": {
+      "item_id": "ITEM-A-033",
+      "english": "I'm not sure, let's check before we go.",
+      "singlish": "not sure yet leh, check before we go first",
+      "standard_anchor": "I'm not sure, let's check before we go.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-033",
+      "scope": "reused_old_validation",
+      "context": [
+        "Hey should we grab lunch?",
+        "sure! Lets head to Koufu"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh the chicken rice stall open today anot?",
+      "english": "I'm not sure about today's opening hours. Let's check before going.",
+      "singlish": "dunno today open anot, check before going",
+      "standard_anchor": "I'm not sure about today's opening hours. Let's check before going.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "d6b745565a2060e5eb434a0a2142b93ab93696ba937ae1a2deeca59989c40e29",
+      "rewrite_prompt_sha256": "6b2c7f1f67af7ede94d593cf6f791b53c15a73cbfe61fca6e8a1533b84883703"
+    }
+  },
+  {
+    "item_id": "ITEM-A-035",
+    "scope": "reused_old_validation",
+    "context": [
+      "I got to go for my appointment later",
+      "Yeah I should get going too"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "don't forget to dabao your food later",
+    "original": {
+      "item_id": "ITEM-A-035",
+      "english": "Yes, I will",
+      "singlish": "Okay, I dabao later",
+      "standard_anchor": "Yes, I will",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-035",
+      "scope": "reused_old_validation",
+      "context": [
+        "I got to go for my appointment later",
+        "Yeah I should get going too"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "don't forget to dabao your food later",
+      "english": "Yes, I will.",
+      "singlish": "okok, i dabao later",
+      "standard_anchor": "Yes, I will.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "e2b3a6c97d00aa3af46b5995e178fd2b729d24a3b7e9947926d83b030294b243",
+      "rewrite_prompt_sha256": "5d2997240b69a6f36360bd107310fcf18deb632dd5aa5262cc8241184d383fda"
+    }
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "scope": "reused_old_validation",
+    "context": [
+      "are we still playing badminton tonight?",
+      "yeah, I think so"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i might be ten mins late leh",
+    "original": {
+      "item_id": "ITEM-A-038",
+      "english": "no worries, ten more minutes won't make a difference",
+      "singlish": "no worries, ten more mins won't make a difference",
+      "standard_anchor": "no worries, ten more minutes won't make a difference",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-038",
+      "scope": "reused_old_validation",
+      "context": [
+        "are we still playing badminton tonight?",
+        "yeah, I think so"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "i might be ten mins late leh",
+      "english": "No worries, just come when you can.",
+      "singlish": "no worries, come when you can",
+      "standard_anchor": "No worries, just come when you can.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "e77fbd1197107e73d99c55abff89348191725527c41adb3b95f15eb03b6abead",
+      "rewrite_prompt_sha256": "b0536b40936e8f35a887c7c77ba83a9fb14579c4da026bd5fb39ab4e59eace3e"
+    }
+  },
+  {
+    "item_id": "ITEM-A-044",
+    "scope": "reused_old_validation",
+    "context": [
+      "have you submitted the project?",
+      "not yet, I am checking it first"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "remember ah, dont blur like sotong",
+    "original": {
+      "item_id": "ITEM-A-044",
+      "english": "yes, I will not blur like sotong",
+      "singlish": "ya, I will not blur like sotong",
+      "standard_anchor": "yes, I will not blur like sotong",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-044",
+      "scope": "reused_old_validation",
+      "context": [
+        "have you submitted the project?",
+        "not yet, I am checking it first"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "remember ah, dont blur like sotong",
+      "english": "yes, I know",
+      "singlish": "ya, I know",
+      "standard_anchor": "yes, I know",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "5479d44021e9f9a0135b7e6b3be920f6f48318bd4492bcf2f63a250ae0390839",
+      "rewrite_prompt_sha256": "2c4674ff9c879ec36d004df05fc48340c77ba0c23e23e29488434e140bb3af92"
+    }
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "scope": "reused_old_validation",
+    "context": [
+      "want to study together tomorrow?",
+      "sure, what time?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "2pm u can anot, i can chiong from class",
+    "original": {
+      "item_id": "ITEM-A-046",
+      "english": "Sure, I'll be there at 2pm.",
+      "singlish": "Can, 2pm I come.",
+      "standard_anchor": "Sure, I'll be there at 2pm.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-046",
+      "scope": "reused_old_validation",
+      "context": [
+        "want to study together tomorrow?",
+        "sure, what time?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "2pm u can anot, i can chiong from class",
+      "english": "Sure, 2pm works for me.",
+      "singlish": "can, 2pm meet",
+      "standard_anchor": "Sure, 2pm works for me.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "71d036cd651ae77b2c82e6574e2045c520f29cc9652a0113afa1913162088b53",
+      "rewrite_prompt_sha256": "ed5a39a4dbd1346947b3e69b9cdd0997df01cd9b0b7c42d581e548c6d51fb514"
+    }
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "scope": "reused_old_validation",
+    "context": [
+      "We are going to the club later right?",
+      "Yeah, I will go back to shower first."
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Aiyo, don't need la, let's go now",
+    "original": {
+      "item_id": "ITEM-A-054",
+      "english": "Okay, let's go now.",
+      "singlish": "Okay, let's go then.",
+      "standard_anchor": "Okay, let's go now.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-A-054",
+      "scope": "reused_old_validation",
+      "context": [
+        "We are going to the club later right?",
+        "Yeah, I will go back to shower first."
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Aiyo, don't need la, let's go now",
+      "english": "Okay, let's go now.",
+      "singlish": "okok, go now",
+      "standard_anchor": "Okay, let's go now.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "5ae8a39150f44741cac2829ecc2a0ccbf09b3a7843323b33caff00a7bbaa6663",
+      "rewrite_prompt_sha256": "d336b3691c46d2a091b4f41d8b6caeefedcdd12eba6f45c2d8bdf1790a0dee01"
+    }
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "scope": "reused_old_validation",
+    "context": [
+      "I haven't eaten breakfast",
+      "same sia, I'm hungry also"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "where you want eat?",
+    "original": {
+      "item_id": "ITEM-B-002",
+      "english": "I'm looking for somewhere near the library",
+      "singlish": "near the library got what?",
+      "standard_anchor": "I'm looking for somewhere near the library",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-002",
+      "scope": "reused_old_validation",
+      "context": [
+        "I haven't eaten breakfast",
+        "same sia, I'm hungry also"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "where you want eat?",
+      "english": "I'm not sure, let's check the café near us",
+      "singlish": "dunno anywhere, check café near us?",
+      "standard_anchor": "I'm not sure, let's check the café near us",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "01321a19ce6e2d603af077c7b266ef61d8ab05d714d738ad43c565fbbb7912dc",
+      "rewrite_prompt_sha256": "36ae96692a52de59a49c2b294108eb7b096e7d94e8161652cec0789e0d95310a"
+    }
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "scope": "reused_old_validation",
+    "context": [
+      "I'm going library now",
+      "I'll come over after class"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "still got space?",
+    "original": {
+      "item_id": "ITEM-B-009",
+      "english": "Yes, there is still space.",
+      "singlish": "Still got space, I come over after class.",
+      "standard_anchor": "Yes, there is still space.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-009",
+      "scope": "reused_old_validation",
+      "context": [
+        "I'm going library now",
+        "I'll come over after class"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "still got space?",
+      "english": "Yes, there is still space.",
+      "singlish": "still got space, come over liao",
+      "standard_anchor": "Yes, there is still space.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "c40d5a58ba81176f665c70ba29f37c106a6f9cfdc39fad5ab52a616029067366",
+      "rewrite_prompt_sha256": "0555e33a8d7409faf81e8f2de38fa022d0317a55c3bfc1ad3eb627e7c1405829"
+    }
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "scope": "reused_old_validation",
+    "context": [
+      "I can't remember which room we're in",
+      "I'm checking the timetable"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "which room is our class in?",
+    "original": {
+      "item_id": "ITEM-B-029",
+      "english": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+      "singlish": "I check the timetable first, then let you know.",
+      "standard_anchor": "I'm checking the timetable right now, but I'll let you know once I know which room we're in.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-029",
+      "scope": "reused_old_validation",
+      "context": [
+        "I can't remember which room we're in",
+        "I'm checking the timetable"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "which room is our class in?",
+      "english": "I'm checking the timetable. Let me know which room we're in.",
+      "singlish": "i check room then update you",
+      "standard_anchor": "I'm checking the timetable. Let me know which room we're in.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "c20106d5d633ccf335f7e4bb59cd28c3a09e931a5d8357397651e7d95f936a53",
+      "rewrite_prompt_sha256": "c65e5d75272e66205ab9e5ea0d26359e2008d51d217b35810b07faca1b98fb12"
+    }
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "scope": "reused_old_validation",
+    "context": [
+      "I might not make it to the morning class",
+      "I can send you an update afterwards"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can tell me what I miss?",
+    "original": {
+      "item_id": "ITEM-B-034",
+      "english": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+      "singlish": "You can tell me what you miss in the morning. I'll send you an update after class.",
+      "standard_anchor": "You can tell me what you miss in the morning. I can send you an update afterwards.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-034",
+      "scope": "reused_old_validation",
+      "context": [
+        "I might not make it to the morning class",
+        "I can send you an update afterwards"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can tell me what I miss?",
+      "english": "I can't tell you what you'll miss, but I'll update you after class.",
+      "singlish": "dunno what you miss, i update you after class",
+      "standard_anchor": "I can't tell you what you'll miss, but I'll update you after class.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "cc5facf21a58e6726485ddb87825d703d09526ee1b3c7561ee9fcc702b960cc6",
+      "rewrite_prompt_sha256": "923a86987b09e3a9c1ee3e15bd70675950d4286beedc19750f251af4ebc22ad3"
+    }
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "scope": "reused_old_validation",
+    "context": [
+      "I'm waiting outside already",
+      "I'm reaching soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry, I took the wrong bus",
+    "original": {
+      "item_id": "ITEM-B-042",
+      "english": "No worries, let me know when you reach",
+      "singlish": "No worries, take your time",
+      "standard_anchor": "No worries, let me know when you reach",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-042",
+      "scope": "reused_old_validation",
+      "context": [
+        "I'm waiting outside already",
+        "I'm reaching soon"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry, I took the wrong bus",
+      "english": "No worries, take the right one next time",
+      "singlish": "nvm, next time take the right one",
+      "standard_anchor": "No worries, take the right one next time",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "6720a1bcd5b849fbc867c6ea016368bc82030626cf4c5c65309a2a46f4399685",
+      "rewrite_prompt_sha256": "0373881b6f1987be7d8d3556b0992b474c25564cfaff965899916d3f93d9ef63"
+    }
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "scope": "reused_old_validation",
+    "context": [
+      "a few of us are going out this weekend",
+      "sounds fun"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you want come?",
+    "original": {
+      "item_id": "ITEM-B-043",
+      "english": "Sure, I would love to come.",
+      "singlish": "Sure, let's go!",
+      "standard_anchor": "Sure, I would love to come.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-043",
+      "scope": "reused_old_validation",
+      "context": [
+        "a few of us are going out this weekend",
+        "sounds fun"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you want come?",
+      "english": "Yes, I'd love to come.",
+      "singlish": "ya pls, wanna come?",
+      "standard_anchor": "Yes, I'd love to come.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "6bc09f17290059cac8d6f2acd2c828ca06d70b1f75ade206dd7fc97cff1d9332",
+      "rewrite_prompt_sha256": "8827c5f2237e9ef09029d442bdd114d8b0fafb52f026a225377d096748636eca"
+    }
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "scope": "reused_old_validation",
+    "context": [
+      "are you coming to the event?",
+      "I was planning to"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the event postpone for thirty minutes",
+    "original": {
+      "item_id": "ITEM-B-048",
+      "english": "That's fine, I'll come after thirty minutes.",
+      "singlish": "Okay, I come after thirty minutes.",
+      "standard_anchor": "That's fine, I'll come after thirty minutes.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-048",
+      "scope": "reused_old_validation",
+      "context": [
+        "are you coming to the event?",
+        "I was planning to"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the event postpone for thirty minutes",
+      "english": "No worries, I'll come at the right time.",
+      "singlish": "no worries, i come at the right time",
+      "standard_anchor": "No worries, I'll come at the right time.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "33438e8d8895cbe31c903d07273f7cbea7dfb36227fdc04b20a96633ee5ab29d",
+      "rewrite_prompt_sha256": "2932922e9ec468c7f3c8b728db748f3aa663f2601c4d1daa7e83d987edf232e7"
+    }
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "scope": "reused_old_validation",
+    "context": [
+      "I haven't exercised in a while",
+      "same, I've been busy with classes"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want to go run later?",
+    "original": {
+      "item_id": "ITEM-B-050",
+      "english": "Sure, what time should we meet?",
+      "singlish": "Can, what time ah?",
+      "standard_anchor": "Sure, what time should we meet?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-050",
+      "scope": "reused_old_validation",
+      "context": [
+        "I haven't exercised in a while",
+        "same, I've been busy with classes"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "want to go run later?",
+      "english": "Sure, what time should we meet?",
+      "singlish": "Can, what time meet ah?",
+      "standard_anchor": "Sure, what time should we meet?",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "d8814cc0d0a6b211587302b3e80a12695ff39dab5d5a2e0f60ad9e64e8ecd2bc",
+      "rewrite_prompt_sha256": "7936e4bf0d3e6624205e611b1eabe1cd119def441318048cf69a8460e0885bd4"
+    }
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "scope": "reused_old_validation",
+    "context": [
+      "are you free for badminton tonight?",
+      "I should be free"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the court is already booked for seven",
+    "original": {
+      "item_id": "ITEM-B-056",
+      "english": "No worries, I'll find another time.",
+      "singlish": "No worries, I'll find another time.",
+      "standard_anchor": "No worries, I'll find another time.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-056",
+      "scope": "reused_old_validation",
+      "context": [
+        "are you free for badminton tonight?",
+        "I should be free"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the court is already booked for seven",
+      "english": "No worries, seven works for me.",
+      "singlish": "Okay, seven can.",
+      "standard_anchor": "No worries, seven works for me.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "fcfc82f5a243e92993465aaf1f60cd469299c06854ea9e89867df3d4770c90c8",
+      "rewrite_prompt_sha256": "04d850d597515b41f608dcebd50d232121dcbff78cb3fded48b8ee9d22141c5a"
+    }
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "scope": "reused_old_validation",
+    "context": [
+      "my phone is almost out of battery",
+      "I brought my charger"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can I borrow your charger?",
+    "original": {
+      "item_id": "ITEM-B-057",
+      "english": "Sure, go ahead and use my charger.",
+      "singlish": "Can, use my charger first ah.",
+      "standard_anchor": "Sure, go ahead and use my charger.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-B-057",
+      "scope": "reused_old_validation",
+      "context": [
+        "my phone is almost out of battery",
+        "I brought my charger"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can I borrow your charger?",
+      "english": "Sure, I'll lend you my charger.",
+      "singlish": "Can, I lend you mine.",
+      "standard_anchor": "Sure, I'll lend you my charger.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "1e947408d57792d375294df50dafb3a6e66b445ebda912e1b35cd1660924a806",
+      "rewrite_prompt_sha256": "1537d95bfa1e2730d37103c66cbb797ca57ddf592cf3a6626b9c483dd490c1d0"
+    }
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "scope": "reused_old_validation",
+    "context": [
+      "are you going to the library ltr?",
+      "yeah, probably after dinner"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "i'll be at lks around 8, want to meet there?",
+    "original": {
+      "item_id": "ITEM-C-001",
+      "english": "sure, let's meet there at 8",
+      "singlish": "steady, i meet you at lks at 8",
+      "standard_anchor": "sure, let's meet there at 8",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-001",
+      "scope": "reused_old_validation",
+      "context": [
+        "are you going to the library ltr?",
+        "yeah, probably after dinner"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "i'll be at lks around 8, want to meet there?",
+      "english": "Sure, I'll meet you there.",
+      "singlish": "Can, see you at lks.",
+      "standard_anchor": "Sure, I'll meet you there.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "6b3824bd1a8a57fb51d16128e9b6c6709fff522a34f38bbdf4651f6ef75fbf40",
+      "rewrite_prompt_sha256": "c50a6f8d84ca59cb3c198cb445725853cc8b31788829bcaecd2d23f75c510c52"
+    }
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "scope": "reused_old_validation",
+    "context": [
+      "im working on my slides now",
+      "same, im doing the results section"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "your part done alr?",
+    "original": {
+      "item_id": "ITEM-C-017",
+      "english": "not yet, im still working on it",
+      "singlish": "havent finish leh, still working on it",
+      "standard_anchor": "not yet, im still working on it",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-017",
+      "scope": "reused_old_validation",
+      "context": [
+        "im working on my slides now",
+        "same, im doing the results section"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "your part done alr?",
+      "english": "not yet, im still working on it",
+      "singlish": "havent finish leh, still working on it",
+      "standard_anchor": "not yet, im still working on it",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "45be84de8aa8193cdc8805ae5b09edd77c440bfce8690f08e64d76920d778d39",
+      "rewrite_prompt_sha256": "0acace67902aff51df910280146e0ba82050253113582b059d62f74027877fa6"
+    }
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "scope": "reused_old_validation",
+    "context": [
+      "i'll upload my section before dinner",
+      "okay, then i can merge everything tonight"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "eh dont forget your slide ah, we need merge later",
+    "original": {
+      "item_id": "ITEM-C-018",
+      "english": "yes, i'll make sure to include the slide",
+      "singlish": "ya, i'll include the slide also",
+      "standard_anchor": "yes, i'll make sure to include the slide",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-018",
+      "scope": "reused_old_validation",
+      "context": [
+        "i'll upload my section before dinner",
+        "okay, then i can merge everything tonight"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "eh dont forget your slide ah, we need merge later",
+      "english": "ok, i'll make sure to include it in my merge",
+      "singlish": "okok, i include now",
+      "standard_anchor": "ok, i'll make sure to include it in my merge",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "dae1e7ff8dd1eefc2a32729303bf529835877564a2aa17560f9ce69ef547f0dc",
+      "rewrite_prompt_sha256": "1941f009d34e746cc8433b24c2f80765cfce5aa222d56dfc235f74a11e89207f"
+    }
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "scope": "reused_old_validation",
+    "context": [
+      "saturday im quite free",
+      "same, no plans yet"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "want me to jio you for the night market thing?",
+    "original": {
+      "item_id": "ITEM-C-023",
+      "english": "Sure, I'd love to join you for that.",
+      "singlish": "Can, I'll go with you for that.",
+      "standard_anchor": "Sure, I'd love to join you for that.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-023",
+      "scope": "reused_old_validation",
+      "context": [
+        "saturday im quite free",
+        "same, no plans yet"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "want me to jio you for the night market thing?",
+      "english": "Sure, I'd love to join you for that!",
+      "singlish": "ya pls, join us for the night market",
+      "standard_anchor": "Sure, I'd love to join you for that!",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "830a01ead98183382c1ed071490bc77d73e151786b8e1a5d0bc47af1eebdec1b",
+      "rewrite_prompt_sha256": "ca5279f89a25389a4198c7a1d2dc82b8a54fc27bef2c21e4d91095a7661b04f4"
+    }
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "scope": "reused_old_validation",
+    "context": [
+      "im waiting at the cafe alr",
+      "coming now"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i ordered first because i was too hungry",
+    "original": {
+      "item_id": "ITEM-C-028",
+      "english": "no worries, i'll wait for you",
+      "singlish": "it's okay lah, i wait for you",
+      "standard_anchor": "no worries, i'll wait for you",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-028",
+      "scope": "reused_old_validation",
+      "context": [
+        "im waiting at the cafe alr",
+        "coming now"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i ordered first because i was too hungry",
+      "english": "no worries, i'll wait here for you",
+      "singlish": "it's okay la, i'll come over when you're done",
+      "standard_anchor": "no worries, i'll wait here for you",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "b82842a6b4693d6d15827b7731b8517f6e1cd2b8d1a46cc292ae79b7458dab0a",
+      "rewrite_prompt_sha256": "d4fcb1dcc6fd3636b2f1eb592d70b305e0d83ac040e0f09369454e39d1f4e028"
+    }
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "scope": "reused_old_validation",
+    "context": [
+      "ive finished drafting the conclusion",
+      "great"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can help me check if this part sounds too long?",
+    "original": {
+      "item_id": "ITEM-C-038",
+      "english": "I'll take a look and let you know if it's too long.",
+      "singlish": "Can, I check if it's too long first.",
+      "standard_anchor": "I'll take a look and let you know if it's too long.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-038",
+      "scope": "reused_old_validation",
+      "context": [
+        "ive finished drafting the conclusion",
+        "great"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can help me check if this part sounds too long?",
+      "english": "Sure, I'll take a look at it and let you know.",
+      "singlish": "can, i check then update you",
+      "standard_anchor": "Sure, I'll take a look at it and let you know.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "5af4e00b62a4b8555929c4c84f6739f8343afd3128a4979fc15dc6a8c41884d9",
+      "rewrite_prompt_sha256": "acf47533f3fa824acb36402bb990242fc9a54c3860699f300b218d0cf28b6de7"
+    }
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "scope": "reused_old_validation",
+    "context": [
+      "could you upload your section before 8?",
+      "yes, i'll do it"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "original": {
+      "item_id": "ITEM-C-041",
+      "english": "no worries. i'll wait a bit longer",
+      "singlish": "it's okay lah, i wait abit",
+      "standard_anchor": "no worries. i'll wait a bit longer",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-041",
+      "scope": "reused_old_validation",
+      "context": [
+        "could you upload your section before 8?",
+        "yes, i'll do it"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "paiseh, i only just finished class. i'll upload a bit later",
+      "english": "No worries, take your time.",
+      "singlish": "no worries, take your time",
+      "standard_anchor": "No worries, take your time.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "3ade5ca8cb2c90b9b64f404be3970efa1e4f7098f1ce9c6decef59a3671069e5",
+      "rewrite_prompt_sha256": "299b010b2494303a807ac3d7f0c9bcedc6ce6c9a8f6951d31225bef5e6c16cbf"
+    }
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "scope": "reused_old_validation",
+    "context": [
+      "we said we'd sit together tmr",
+      "yep"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "you still coming early to get seats right?",
+    "original": {
+      "item_id": "ITEM-C-045",
+      "english": "Yes, I will be there at 8am.",
+      "singlish": "ya, i gg at 8am",
+      "standard_anchor": "Yes, I will be there at 8am.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-045",
+      "scope": "reused_old_validation",
+      "context": [
+        "we said we'd sit together tmr",
+        "yep"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "you still coming early to get seats right?",
+      "english": "Yes, I will be coming early to get seats.",
+      "singlish": "ya, still coming early to get seats",
+      "standard_anchor": "Yes, I will be coming early to get seats.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "a71b674c27d19876695b628575540824abe8818ea3f850edfd55a5fff09e1309",
+      "rewrite_prompt_sha256": "60c0deadd91c9f8775f77fd6d4564be9646f0da4488697bfb68f080d206572dd"
+    }
+  },
+  {
+    "item_id": "ITEM-C-055",
+    "scope": "reused_old_validation",
+    "context": [
+      "lets go to the exhibition at 1",
+      "sounds good"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can go around 2 instead? i need lunch first",
+    "original": {
+      "item_id": "ITEM-C-055",
+      "english": "ok, i'll meet you at 2 instead",
+      "singlish": "can, i meet you at 2 instead",
+      "standard_anchor": "ok, i'll meet you at 2 instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-055",
+      "scope": "reused_old_validation",
+      "context": [
+        "lets go to the exhibition at 1",
+        "sounds good"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can go around 2 instead? i need lunch first",
+      "english": "Sure, 2 works for me.",
+      "singlish": "Can, 2 can.",
+      "standard_anchor": "Sure, 2 works for me.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "07363f20fc82b2c701f19d13c65277174f95167de930210afe98b8109684089b",
+      "rewrite_prompt_sha256": "8491102c7fb65ad8a8f8e07ee631154b650079c91c90652421c34125da8575d4"
+    }
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "scope": "reused_old_validation",
+    "context": [
+      "im heading to the court now",
+      "okay, i'll leave soon"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "court still occupied leh, need wait a bit",
+    "original": {
+      "item_id": "ITEM-C-058",
+      "english": "okay, i'll wait a bit longer",
+      "singlish": "okay, i wait a bit longer",
+      "standard_anchor": "okay, i'll wait a bit longer",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-C-058",
+      "scope": "reused_old_validation",
+      "context": [
+        "im heading to the court now",
+        "okay, i'll leave soon"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "court still occupied leh, need wait a bit",
+      "english": "Okay, I will wait a bit.",
+      "singlish": "okok, i wait a bit",
+      "standard_anchor": "Okay, I will wait a bit.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "f25d21df93d264f90a0c075ebbc229fcaa46cd510b1bcd57290fa7f57f195b17",
+      "rewrite_prompt_sha256": "771912bca343f32ffed8aa738d6d77087411e4dfa53fe2653bdf071eee59eff9"
+    }
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "scope": "reused_old_validation",
+    "context": [
+      "u wanna try the matcha at luckin?",
+      "nahh"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "then what u wanna drink later?",
+    "original": {
+      "item_id": "ITEM-D-007",
+      "english": "i'm not sure what i want",
+      "singlish": "idk what i want leh",
+      "standard_anchor": "i'm not sure what i want",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-007",
+      "scope": "reused_old_validation",
+      "context": [
+        "u wanna try the matcha at luckin?",
+        "nahh"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "then what u wanna drink later?",
+      "english": "I'm not sure what I want to drink",
+      "singlish": "dunno what i want, wat u want?",
+      "standard_anchor": "I'm not sure what I want to drink",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "406f0ceed46212219d8629186182f5fcac183e8c917dddb889dabf1d49e89831",
+      "rewrite_prompt_sha256": "01bca617f8c2dcd13e4f28740b5e1caf119c5e5f6f606341bae0505920c7ce08"
+    }
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh i struggling to do the linear algebra qn",
+      "which"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "neh the gaussian elim qn",
+    "original": {
+      "item_id": "ITEM-D-009",
+      "english": "Okay, I can help you with that one.",
+      "singlish": "Okay, I help you with that one.",
+      "standard_anchor": "Okay, I can help you with that one.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-009",
+      "scope": "reused_old_validation",
+      "context": [
+        "eh i struggling to do the linear algebra qn",
+        "which"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "neh the gaussian elim qn",
+      "english": "Which question do you need help with?",
+      "singlish": "which question ah?",
+      "standard_anchor": "Which question do you need help with?",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "633d93b7eaf82f69975f5dce36847bb70989acfb74c5f776220e31d9dfad37c0",
+      "rewrite_prompt_sha256": "c689fc75c07d3e1db26ecb174cb86c97aae6ef3ca1d65d376ba63fbfcc461bd3"
+    }
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "scope": "reused_old_validation",
+    "context": [
+      "hello, can i ask u some question idk how to do",
+      "uhh i see if i can help"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "uhh, u know the guassian elim qn",
+    "original": {
+      "item_id": "ITEM-D-010",
+      "english": "I'm not sure of the answer, but I'll try to find it for you.",
+      "singlish": "eh i not sure, but i try find the answer for u",
+      "standard_anchor": "I'm not sure of the answer, but I'll try to find it for you.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-010",
+      "scope": "reused_old_validation",
+      "context": [
+        "hello, can i ask u some question idk how to do",
+        "uhh i see if i can help"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "uhh, u know the guassian elim qn",
+      "english": "nope, i dont know that one",
+      "singlish": "ya i know",
+      "standard_anchor": "nope, i dont know that one",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "7ac73ebec1a55de06c874ab4de783b2d640bb8749086121a1774cc5cafb12293",
+      "rewrite_prompt_sha256": "782002d5b71d4d91b763a56eb2ac6a8d3040df12a89c83ba29e626c49c76fdcb"
+    }
+  },
+  {
+    "item_id": "ITEM-D-013",
+    "scope": "reused_old_validation",
+    "context": [
+      "hello",
+      "yes?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "Can give me ans for assignment 1?",
+    "original": {
+      "item_id": "ITEM-D-013",
+      "english": "Sure, I'll send you an answer in a few minutes.",
+      "singlish": "Okay, I send you the answer in a few minutes.",
+      "standard_anchor": "Sure, I'll send you an answer in a few minutes.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-013",
+      "scope": "reused_old_validation",
+      "context": [
+        "hello",
+        "yes?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "Can give me ans for assignment 1?",
+      "english": "Sure, what do you need help with?",
+      "singlish": "Can help with which part ah?",
+      "standard_anchor": "Sure, what do you need help with?",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "cd6bfcb8f71c8f9858a36a478ba3f0affba7027fdbe59cc617946071505727f8",
+      "rewrite_prompt_sha256": "c4bd3a3dec5846a24580448de77d2960e648e2401fdb19e93aa3e7f1e7e92c95"
+    }
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh so how, you still want bid for the morning class?",
+      "yah can"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ok then rmb to bid before bidding ends",
+    "original": {
+      "item_id": "ITEM-D-029",
+      "english": "Ok, I will bid before bidding ends.",
+      "singlish": "okok, i bid before the bidding ends",
+      "standard_anchor": "Ok, I will bid before bidding ends.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-029",
+      "scope": "reused_old_validation",
+      "context": [
+        "eh so how, you still want bid for the morning class?",
+        "yah can"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "ok then rmb to bid before bidding ends",
+      "english": "yah i will bid before bidding ends",
+      "singlish": "okok, i bid before bidding ends",
+      "standard_anchor": "yah i will bid before bidding ends",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "f9d16668c0ee59f8264e164f19a5ba2880db3333447000de5de8f68196b91da6",
+      "rewrite_prompt_sha256": "363c135af207daa58e5376ade7172aa41aad4b3ad78c21435aaae3db5686077d"
+    }
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "scope": "reused_old_validation",
+    "context": [
+      "hello",
+      "hi",
+      "i am already at the bus stop"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "wya",
+    "original": {
+      "item_id": "ITEM-D-033",
+      "english": "okay, I'll meet you at the bus stop",
+      "singlish": "steady, I meet you at the bus stop",
+      "standard_anchor": "okay, I'll meet you at the bus stop",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-033",
+      "scope": "reused_old_validation",
+      "context": [
+        "hello",
+        "hi",
+        "i am already at the bus stop"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "wya",
+      "english": "What are you doing?",
+      "singlish": "wat u doing",
+      "standard_anchor": "What are you doing?",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "b49ee73d8d51b732658ac847be501effc3c4d7eac66fae5d1cc0f121c2a38020",
+      "rewrite_prompt_sha256": "7fd9cfe3a62a616a85ada31a31db2329c2e33d22e20ffdd2090ae4d877206c1a"
+    }
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "scope": "reused_old_validation",
+    "context": [
+      "have you reached?",
+      "wya"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "i reached, i waiting outside mac",
+    "original": {
+      "item_id": "ITEM-D-037",
+      "english": "okay, i will be there in a few minutes",
+      "singlish": "okay, i coming",
+      "standard_anchor": "okay, i will be there in a few minutes",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-037",
+      "scope": "reused_old_validation",
+      "context": [
+        "have you reached?",
+        "wya"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "i reached, i waiting outside mac",
+      "english": "Okay, I'll come over soon.",
+      "singlish": "okok, i come over soon",
+      "standard_anchor": "Okay, I'll come over soon.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "37c430a99a58ef83dc1cb3ba43244fbefe4dcc4f3d8ac62d6098bb642df66895",
+      "rewrite_prompt_sha256": "1bfc2c89d35c417a75efb89ac7794d547c154126f35a7917516f959624fb19a5"
+    }
+  },
+  {
+    "item_id": "ITEM-D-038",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh wya",
+      "i am outside mac",
+      "u eh"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "user"
+    ],
+    "message": "I am reaching soon, wait for me before going in.",
+    "original": {
+      "item_id": "ITEM-D-038",
+      "english": "ok, i will wait for u",
+      "singlish": "ok, i wait for u outside",
+      "standard_anchor": "ok, i will wait for u",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-038",
+      "scope": "reused_old_validation",
+      "context": [
+        "eh wya",
+        "i am outside mac",
+        "u eh"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "user"
+      ],
+      "message": "I am reaching soon, wait for me before going in.",
+      "english": "No worries, I will wait for you at the entrance.",
+      "singlish": "okok, i wait at the entrance",
+      "standard_anchor": "No worries, I will wait for you at the entrance.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "3112bf2b313e6aecc49116266513eac75d83bd1fb5b9e796f2865ff43c1065ce",
+      "rewrite_prompt_sha256": "d47a237e2e7885149529423287227fd2456cda71aa751a2104b81188ef23d60a"
+    }
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh help",
+      "what"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "the cinema ticket is sold out bruh",
+    "original": {
+      "item_id": "ITEM-D-046",
+      "english": "Oh no, I can't go now. Could someone else go in my place?",
+      "singlish": "aiyo, aiyo",
+      "standard_anchor": "Oh no, I can't go now. Could someone else go in my place?",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-046",
+      "scope": "reused_old_validation",
+      "context": [
+        "eh help",
+        "what"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "the cinema ticket is sold out bruh",
+      "english": "Oh no, I didn't know that.",
+      "singlish": "aiyo, aiyo",
+      "standard_anchor": "Oh no, I didn't know that.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "7bac1a660b2751b34dac70afc59a98d7fd35bbe32ab8d64245f9bd35ac5acf38",
+      "rewrite_prompt_sha256": "387c3717882ad9735ca26daefd320c10381c8959eb24abe3837f9b05c3236766"
+    }
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh u ok? why u never join us for bb session yesterday."
+    ],
+    "speakers": [
+      "user"
+    ],
+    "message": "woah sorry, i came up with a flu.",
+    "original": {
+      "item_id": "ITEM-D-050",
+      "english": "no worries, take care",
+      "singlish": "aw, no worries, get well soon!",
+      "standard_anchor": "no worries, take care",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-D-050",
+      "scope": "reused_old_validation",
+      "context": [
+        "eh u ok? why u never join us for bb session yesterday."
+      ],
+      "speakers": [
+        "user"
+      ],
+      "message": "woah sorry, i came up with a flu.",
+      "english": "no worries, take care!",
+      "singlish": "no worries, get well soon!",
+      "standard_anchor": "no worries, take care!",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "58e3268ce7bb0be31f0e879b7caee1bac70bedeaae43f0793580089f472d468e",
+      "rewrite_prompt_sha256": "d09936e990c211ead4c4051a1f463cbe2fa9ede370b2fbbb67190567584b9120"
+    }
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "scope": "reused_old_validation",
+    "context": [
+      "i heard you going to cafe later to study",
+      "ya you want come? dont say i never jio"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "can ah, later i join you",
+    "original": {
+      "item_id": "ITEM-E-005",
+      "english": "ok, see you later",
+      "singlish": "ok, c u later",
+      "standard_anchor": "ok, see you later",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-005",
+      "scope": "reused_old_validation",
+      "context": [
+        "i heard you going to cafe later to study",
+        "ya you want come? dont say i never jio"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "can ah, later i join you",
+      "english": "Sure, see you later.",
+      "singlish": "Can ah, see you later.",
+      "standard_anchor": "Sure, see you later.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "b6e8ad3952d04cb73437dc911ce9716e2f4f5b9cdc07d3c952d3fbd2a44c7c25",
+      "rewrite_prompt_sha256": "38f0ffef9616de551cb399817ca07b21cc8b8a6b121a0ddb36fa6c24034fe214"
+    }
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "scope": "reused_old_validation",
+    "context": [
+      "tomorrow what you want to eat",
+      "lets eat at Chinatown tomorrow"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "onz, tmr meet na li",
+    "original": {
+      "item_id": "ITEM-E-007",
+      "english": "okay, see you tomorrow",
+      "singlish": "okies, c u later",
+      "standard_anchor": "okay, see you tomorrow",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-007",
+      "scope": "reused_old_validation",
+      "context": [
+        "tomorrow what you want to eat",
+        "lets eat at Chinatown tomorrow"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "onz, tmr meet na li",
+      "english": "Sure, see you tomorrow.",
+      "singlish": "okok, see you tmr",
+      "standard_anchor": "Sure, see you tomorrow.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "1aa262a6aca03bbb3e8d3122958ec12a7c04caa4a02b5458420c707cb4e92efe",
+      "rewrite_prompt_sha256": "831f84c342316025b30c6d0d695d782d09c742a06fe0c6c8258d72e690834d5d"
+    }
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "scope": "reused_old_validation",
+    "context": [
+      "later I need to lend your charger to charge my phone",
+      "ok can but I can only give you after 3"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hey can confirm i can use your charger after 3? thanks ah",
+    "original": {
+      "item_id": "ITEM-E-009",
+      "english": "Sure, I will use it after 3.",
+      "singlish": "Sure, after three then use can.",
+      "standard_anchor": "Sure, I will use it after 3.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-009",
+      "scope": "reused_old_validation",
+      "context": [
+        "later I need to lend your charger to charge my phone",
+        "ok can but I can only give you after 3"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "hey can confirm i can use your charger after 3? thanks ah",
+      "english": "Sorry, I can only use it after three.",
+      "singlish": "Paiseh, after three cannot use leh.",
+      "standard_anchor": "Sorry, I can only use it after three.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "26ddac827b7deb548b3912bee7e6488ee86ba5d601180beb3eec49ae9fed27be",
+      "rewrite_prompt_sha256": "959f45534fae24ba7ba5ec842402cbe14a6e41fb890abc40042e51415f65682c"
+    }
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "scope": "reused_old_validation",
+    "context": [
+      "Hi guys, remember to do the quiz, deadline is next week",
+      "yep noted"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "hi have you done the quiz alr anot",
+    "original": {
+      "item_id": "ITEM-E-015",
+      "english": "Nope, I haven't done it yet.",
+      "singlish": "haven’t finish leh, I check the answers first",
+      "standard_anchor": "Nope, I haven't done it yet.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-015",
+      "scope": "reused_old_validation",
+      "context": [
+        "Hi guys, remember to do the quiz, deadline is next week",
+        "yep noted"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "hi have you done the quiz alr anot",
+      "english": "Nope, I haven't done it yet.",
+      "singlish": "haven’t started leh, doing now",
+      "standard_anchor": "Nope, I haven't done it yet.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "8881a0f78a1e1a2bda2c936550b4b3718609daaa8efdb97cfb3661f68767f585",
+      "rewrite_prompt_sha256": "340871980385789a1a7eddea73ddb249c5280a7354bfebc5e45dadf18921d5ef"
+    }
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "scope": "reused_old_validation",
+    "context": [
+      "hi class, I had a family emergency and there will not be any class tomorrow.",
+      "oh no! what about the in class quiz?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+    "original": {
+      "item_id": "ITEM-E-025",
+      "english": "sure, let's do a make up class on thursday instead",
+      "singlish": "okies, thursday then we do a make up class instead",
+      "standard_anchor": "sure, let's do a make up class on thursday instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-025",
+      "scope": "reused_old_validation",
+      "context": [
+        "hi class, I had a family emergency and there will not be any class tomorrow.",
+        "oh no! what about the in class quiz?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+      "english": "I'm not sure whether everyone will be free on Thursday. Let's check with the class.",
+      "singlish": "not sure everyone free, check with class first",
+      "standard_anchor": "I'm not sure whether everyone will be free on Thursday. Let's check with the class.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "befe7d1948abd6d7a8a1932d9a3c9a36a09266a61611a4842874c80a1a8e08c0",
+      "rewrite_prompt_sha256": "01f5e16293649a857799a9e86b9d653b07a8bffea69dcf02bca4d31acb455323"
+    }
+  },
+  {
+    "item_id": "ITEM-E-027",
+    "scope": "reused_old_validation",
+    "context": [
+      "eh the school got 3d printer anot how to use",
+      "have, i using it now, you need to book a slot to use",
+      "ok i book later to use"
+    ],
+    "speakers": [
+      "peer",
+      "user",
+      "peer"
+    ],
+    "message": "paiseh ah can i change my booking i want to use it later",
+    "original": {
+      "item_id": "ITEM-E-027",
+      "english": "no worries, you can use it later",
+      "singlish": "no worries, you can use it later",
+      "standard_anchor": "no worries, you can use it later",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-027",
+      "scope": "reused_old_validation",
+      "context": [
+        "eh the school got 3d printer anot how to use",
+        "have, i using it now, you need to book a slot to use",
+        "ok i book later to use"
+      ],
+      "speakers": [
+        "peer",
+        "user",
+        "peer"
+      ],
+      "message": "paiseh ah can i change my booking i want to use it later",
+      "english": "no worries, just let me know when you want to use it",
+      "singlish": "no worries, just let me know when you want to use it",
+      "standard_anchor": "no worries, just let me know when you want to use it",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "f15096b818895d4478d6807d30d67f59a7e957efb6f273059e5f13a9c81e3944",
+      "rewrite_prompt_sha256": "803258ba4af250914870e1a01061b55f70f660b942869c6f683726903fc45f54"
+    }
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "scope": "reused_old_validation",
+    "context": [
+      "bro you want to eat at kopitiam later? The whole gang is cmg",
+      "if you want ah let us know"
+    ],
+    "speakers": [
+      "user",
+      "user"
+    ],
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "original": {
+      "item_id": "ITEM-E-028",
+      "english": "ok, then we eat at 6pm instead",
+      "singlish": "ok, then we eat at 6pm instead",
+      "standard_anchor": "ok, then we eat at 6pm instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-028",
+      "scope": "reused_old_validation",
+      "context": [
+        "bro you want to eat at kopitiam later? The whole gang is cmg",
+        "if you want ah let us know"
+      ],
+      "speakers": [
+        "user",
+        "user"
+      ],
+      "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+      "english": "oh no, sorry to hear that",
+      "singlish": "aiya, next time bah",
+      "standard_anchor": "oh no, sorry to hear that",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "4173370f7fddfbaaf0d88fdaf092f8d54a640466fc3aa3c3456b8f831803f7be",
+      "rewrite_prompt_sha256": "27b7f3f6d27d1b3fdf88f767044c9bc005f7505d6b48641722c1ff9632bbd90b"
+    }
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "scope": "reused_old_validation",
+    "context": [
+      "I reminded the class the tutorial is at SR3-1 liao",
+      "can you change today's tutorial to be in SR3-2 instead?"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "sorry ah but that one cannot, someone book liao",
+    "original": {
+      "item_id": "ITEM-E-032",
+      "english": "Okay, I'll go to SR3-2 instead.",
+      "singlish": "Okay, I go SR3-2 instead.",
+      "standard_anchor": "Okay, I'll go to SR3-2 instead.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-032",
+      "scope": "reused_old_validation",
+      "context": [
+        "I reminded the class the tutorial is at SR3-1 liao",
+        "can you change today's tutorial to be in SR3-2 instead?"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "sorry ah but that one cannot, someone book liao",
+      "english": "no worries, i'll find another one",
+      "singlish": "nvm, find another one",
+      "standard_anchor": "no worries, i'll find another one",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "ba4fb948ef0327e665a1fed08c6a3d8a66b37d963f5d5f8c745271c9e57452d6",
+      "rewrite_prompt_sha256": "1d7026b284b3df4381860e18e3e0c7e0e6c61cc1a7c119e076bb395f114a27df"
+    }
+  },
+  {
+    "item_id": "ITEM-E-040",
+    "scope": "reused_old_validation",
+    "context": [
+      "so much work this week wtf",
+      "ya sia"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "how ah, want meet together to do work?",
+    "original": {
+      "item_id": "ITEM-E-040",
+      "english": "Sure, let's meet this week.",
+      "singlish": "Can, we meet this week.",
+      "standard_anchor": "Sure, let's meet this week.",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-040",
+      "scope": "reused_old_validation",
+      "context": [
+        "so much work this week wtf",
+        "ya sia"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "how ah, want meet together to do work?",
+      "english": "Sure, let's meet after class and work together.",
+      "singlish": "can, after class meet",
+      "standard_anchor": "Sure, let's meet after class and work together.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "218c6f9f923718f227587b6b43b703d14f83da8e19a5c017b4816f6f31475dda",
+      "rewrite_prompt_sha256": "c1c56e210bc288163616f41a6f505c4370470cba50b12cc305072d63e9818745"
+    }
+  },
+  {
+    "item_id": "ITEM-E-046",
+    "scope": "reused_old_validation",
+    "context": [
+      "hello,what time will you release the lecture recordings?",
+      "usually around 10pm its out"
+    ],
+    "speakers": [
+      "peer",
+      "user"
+    ],
+    "message": "ni hao, can I releasae it at 5 instead?",
+    "original": {
+      "item_id": "ITEM-E-046",
+      "english": "ok, i will release it at 5 instead",
+      "singlish": "can, i release it at 5 instead",
+      "standard_anchor": "ok, i will release it at 5 instead",
+      "english_status": "complete",
+      "singlish_status": "complete"
+    },
+    "audited_restart": {
+      "item_id": "ITEM-E-046",
+      "scope": "reused_old_validation",
+      "context": [
+        "hello,what time will you release the lecture recordings?",
+        "usually around 10pm its out"
+      ],
+      "speakers": [
+        "peer",
+        "user"
+      ],
+      "message": "ni hao, can I releasae it at 5 instead?",
+      "english": "Sure, I'll release it at five instead.",
+      "singlish": "okok, five then",
+      "standard_anchor": "Sure, I'll release it at five instead.",
+      "english_status": "complete",
+      "singlish_status": "complete",
+      "english_prompt_sha256": "08fbb8f50bdbb0aa6e4e05aea10c80ff46d3e52229965e852cf9947ebd462165",
+      "rewrite_prompt_sha256": "bc780184786af390c16c1896fef9eb9f8695a4e429b50613b1ff049892a7a242"
+    }
+  }
+]

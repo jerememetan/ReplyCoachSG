@@ -1,0 +1,30 @@
+{
+  "observed_at_utc": "2026-11-21T04:47:03.636063+00:00",
+  "verified": {
+    "sealion": {
+      "reviewed": 768,
+      "accepted": 692,
+      "rejected": 76,
+      "review_sha256": "97784b33077b5b93431cb58b7b47a4f26cc41e2a82c0c18155c8fac72b03d2dc",
+      "all_raw_row_digests_valid": true,
+      "edits": 0
+    },
+    "qwen": {
+      "reviewed": 768,
+      "accepted": 736,
+      "rejected": 32,
+      "review_sha256": "0bfa287f04079eb23bc7f40aec731903f5180c5fc77812c16a6eb2a0996b4ea5",
+      "all_raw_row_digests_valid": true,
+      "edits": 0
+    }
+  },
+  "singlish_full_exists": {
+    "sealion": false,
+    "qwen": false
+  },
+  "student_files": [
+    "students/preflight_pilot.json"
+  ],
+  "current_jobs": [],
+  "no_jobs_submitted_by_this_review": true
+}

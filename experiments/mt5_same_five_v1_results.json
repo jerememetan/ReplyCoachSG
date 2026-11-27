@@ -1,0 +1,42 @@
+{
+  "experiment": "mt5_same_five_v1",
+  "job_id": 357969,
+  "job_state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "00:00:10",
+  "gpu": "NVIDIA L40S",
+  "model": "Exported mT5 A: shared_intent/rewrite_s1 seed1 final784",
+  "inference_only": true,
+  "training_performed": false,
+  "bundle_manifest_matches_export": true,
+  "input_sha256": "406ac4f9d7b9eb58f78bbf3f92daee4bd4340ef3bd2b3a70bb2b460d6e09ecca",
+  "same_inputs_as_sealion_job": 357962,
+  "cases": 5,
+  "flags": [],
+  "strict_loading": {
+    "missing_keys": [],
+    "unexpected_keys": [],
+    "mismatched_keys": [],
+    "error_msgs": []
+  },
+  "all_singlish_anchors_are_own_english": true,
+  "decoding": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 48,
+    "max_source_tokens": 192,
+    "do_sample": false
+  },
+  "results_sha256": "6bbbbf802a1b078879884e81a5f94362cc23e51c76fbbfbe92de93fff702ed2f",
+  "comparison_csv": "artifacts/mt5_same_five_v1/mt5_vs_sealion.csv",
+  "scope": "Same five previously inspected development cases; no independent human accuracy score.",
+  "assistant_observations": [
+    "Bottle colour is blue despite purple context; English error carried into rewrite.",
+    "Overwhelmed-friend reply is confused and LOCAL asks the friend to help the user.",
+    "Existing room booking is retained.",
+    "Outside room reply omits identifier4A.",
+    "Drink reply introduces red wine at a coffee-stall conversation."
+  ],
+  "default_changed": false,
+  "remote_root": "/common/home/projectgrps/CS425/CS425G9/ReplyCoachSG_mt5_same_five_v1_20261108"
+}

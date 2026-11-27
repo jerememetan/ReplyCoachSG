@@ -1,0 +1,34 @@
+{
+  "repo_id": "aisingapore/SEA-LION-v1-3B",
+  "revision": "836890428766e94322a4b7de27fb081a604703a9",
+  "license": "MIT; included alongside unchanged source",
+  "review": "Inspected upstream Python imports and file/network/process operations. Tokenizer save writes vocabulary; no model startup shell/network execution found. Reviewed custom learned-position architecture retained, not replaced with native ALiBi MPT.",
+  "files_sha256": {
+    "param_init_fns.py": "1729529fc244149083265e65a3f2c9de4ff9f198881dd1d689fc5469e128d070",
+    "ffn.py": "a225fc3369fd033a3871f27fec02c8c21dc72f0f9938a14c187ebd89b02f9c4a",
+    "tokenization_SEA_BPE.py": "863f4d0c146de276a8b42ec8423fea80e59c4ee65d18afcda03ac8abc7c68842",
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "adapt_tokenizer.py": "d68a8c8151448e949ed5ee6ffa5bd326ba76a264ea30b94908af4f5e7beb9583",
+    "norm.py": "c2aa062d2d89993399d9ce14d04a8b2e30aacf46ac303ebafed3dc45bf6f15bc",
+    "flash_attn_triton.py": "3f548a86236f026bab28555954ae13afd7b4bc70b6ef81059570ea74d267e63c",
+    "configuration_mpt.py": "b117d206aaaee72be88c368c12a1af9ff4d205268b4bcd6e0743cc9d7df9d36b",
+    "blocks.py": "b1d019c0a9cc73f27e4d6dca931abb92b9201dd68d4176fe9f89065830e60800",
+    "modeling_mpt.py": "d8190714a28dca31eb68a25a11568fb3b71f22b77a500efc9c7d8055e2b5fc5d",
+    "fc.py": "a2b575feebcd1891e75d2dd4263ee274dbe1aa73670b8d702bf1ef180723cd7f",
+    "custom_embedding.py": "5959001270bc3dbc76d3ebc54dba0f81ef625a0574d11930bd35ad20c5b1cba5",
+    "meta_init_context.py": "8a053984416246791aed29a809df55625c46de8e3643ec16d44fbb16edd93a09",
+    "LICENSE": "151a54770b52e7f511ddfb7aae6f29ae6f0aef8ee119be5474270bed28e0c502",
+    "attention.py": "96844cae928f44fd82f113f5d6f416efb2c787747ba893931f4877078166e6c4",
+    "hf_prefixlm_converter.py": "f55bda3248b703c6a9d065dc5e70a8d222a8adb11ce1579f70a5c148c8b24b28"
+  },
+  "weights": {
+    "rfilename": "model.safetensors",
+    "blobId": "0b96b48694cce3f14293f3c2aa5ea8f2984b525b",
+    "size": 6356554480,
+    "lfs": {
+      "sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107",
+      "size": 6356554480,
+      "pointerSize": 135
+    }
+  }
+}

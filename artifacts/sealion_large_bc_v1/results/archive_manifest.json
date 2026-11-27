@@ -1,0 +1,53 @@
+{
+  "archive": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_large_bc_v1_results/experiment.tgz",
+  "bytes": 783265829,
+  "sha256": "230a1b777c634f0aeac683e6f48572272716ad40fc8cc15086995cbf08a63fd7",
+  "all_saved_adapter_epochs_included": true,
+  "optimizer_states_excluded": true,
+  "summary": {
+    "at_utc": "2026-11-09T05:07:46.481882+00:00",
+    "stages": {
+      "B_task": {
+        "status": "complete",
+        "selected_epoch": 2,
+        "selected_sha256": "dcfb57dcd7fa96f9292e6cf52155b319164ff7fbbb6021fa0e47a743359404a8",
+        "optimizer_updates": 1292,
+        "total_updates": 1292,
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+        "source_adapter_unchanged": true,
+        "frozen_base_parameters_unchanged": true
+      },
+      "B_rewrite": {
+        "status": "complete",
+        "selected_epoch": 2,
+        "selected_sha256": "afc33b1407c99eb7b8f02fdcde5db35e69d446e289abf880af1bfac90deaa8b3",
+        "optimizer_updates": 908,
+        "total_updates": 908,
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+        "source_adapter_unchanged": true,
+        "frozen_base_parameters_unchanged": true
+      },
+      "C_task": {
+        "status": "complete",
+        "selected_epoch": 2,
+        "selected_sha256": "8a237bd9caba1013cd40f7a74420f49be32d479e3cea69ccf6a146e139e09ca5",
+        "optimizer_updates": 1292,
+        "total_updates": 1292,
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+        "source_adapter_unchanged": true,
+        "frozen_base_parameters_unchanged": true
+      },
+      "C_rewrite": {
+        "status": "complete",
+        "selected_epoch": 3,
+        "selected_sha256": "bd45cd6048163248c438fe48a24f6ada3c4f413e69eb03fb7a1e9c997e855885",
+        "optimizer_updates": 908,
+        "total_updates": 908,
+        "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
+        "source_adapter_unchanged": true,
+        "frozen_base_parameters_unchanged": true
+      }
+    },
+    "default_changed": false
+  }
+}

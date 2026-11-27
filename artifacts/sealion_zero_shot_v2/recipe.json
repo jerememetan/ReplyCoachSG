@@ -1,0 +1,33 @@
+{
+  "experiment": "sealion_zero_shot_v2",
+  "purpose": "Matched base-versus-repair25 and clearer zero-shot prompt diagnostic on exact five previously shown conversations",
+  "inference_only": true,
+  "training_performed": false,
+  "conditions": [
+    "base_matched_prompt",
+    "base_explicit_instruction",
+    "repair25_shared_stop",
+    "repair25"
+  ],
+  "cases": 5,
+  "new_training_targets": 0,
+  "decoding": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "max_new_tokens": 64,
+    "length_penalty": 1
+  },
+  "base_disabled_adapter_layers_verified": true,
+  "original_base_sha256": "acba6d6560f61ac72cc95feca5c89f6aabbbf1e9e89c18440237331fcb5ae107",
+  "input_sha256": "406ac4f9d7b9eb58f78bbf3f92daee4bd4340ef3bd2b3a70bb2b460d6e09ecca",
+  "files_sha256": {
+    "run_sealion_zero_shot_v1.py": "380d263ef9d33e6e7ec19abde920eb1c471a5621d5d21f3075a6a9d7a3f552b7",
+    "inputs.json": "406ac4f9d7b9eb58f78bbf3f92daee4bd4340ef3bd2b3a70bb2b460d6e09ecca",
+    "expected_repair25.json": "09af46e48243ac19d47fb700d0be33d04576bb70aacaf0e894635616705fb71f",
+    "run.sbatch": "f4b6de1ebc498016cefbaa25e354a3bacfc07e09496d8a1131eac082276402ad"
+  },
+  "scope": "Five reused development cases; exploratory output comparison, not a human accuracy estimate or a final zero-shot model proposal.",
+  "reason": "Shared stopping rules also recognize style-tagged Friend/Other turns; first comparison exposed this avoidable formatting confound.",
+  "previous_job_id": 357960,
+  "export_replay_checked": true
+}

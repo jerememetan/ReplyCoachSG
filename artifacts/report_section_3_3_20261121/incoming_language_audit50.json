@@ -1,0 +1,659 @@
+[
+  {
+    "item_id": "ITEM-A-010",
+    "message": "peer: we very kiasu sia, first lesson already like that",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "kiasu",
+    "annotated_local_terms": [
+      "kiasu",
+      "sia"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-017",
+    "message": "Eh i double check with you, we are meeting at 7pm right?",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "eh",
+      "double check"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-024",
+    "message": "paiseh, i don't know how to use the printer in school.",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "paiseh"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-030",
+    "message": "sian, need book somewhere else, our booking ran out",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "sian",
+    "annotated_local_terms": [
+      "sian"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-033",
+    "message": "eh the chicken rice stall open today anot?",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "eh",
+      "anot"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-035",
+    "message": "don't forget to dabao your food later",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "dabao",
+    "annotated_local_terms": [
+      "dabao"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-038",
+    "message": "i might be ten mins late leh",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "leh"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-044",
+    "message": "remember ah, dont blur like sotong",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "blur like sotong",
+    "annotated_local_terms": [
+      "ah",
+      "blur like sotong"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-046",
+    "message": "2pm u can anot, i can chiong from class",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "chiong",
+    "annotated_local_terms": [
+      "anot",
+      "chiong"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-A-054",
+    "message": "Aiyo, don't need la, let's go now",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "aiyo",
+      "la"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-002",
+    "message": "where you want eat?",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-009",
+    "message": "still got space?",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-029",
+    "message": "which room is our class in?",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-034",
+    "message": "can tell me what I miss?",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-042",
+    "message": "sorry, I took the wrong bus",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-043",
+    "message": "you want come?",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-048",
+    "message": "the event postpone for thirty minutes",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-050",
+    "message": "want to go run later?",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-056",
+    "message": "the court is already booked for seven",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-B-057",
+    "message": "can I borrow your charger?",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-001",
+    "message": "i'll be at lks around 8, want to meet there?",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "lks"
+    ],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": true
+  },
+  {
+    "item_id": "ITEM-C-017",
+    "message": "your part done alr?",
+    "category": "colloquial_syntax",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "alr"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-018",
+    "message": "eh dont forget your slide ah, we need merge later",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "eh",
+      "ah"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-023",
+    "message": "want me to jio you for the night market thing?",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "jio",
+    "annotated_local_terms": [
+      "jio"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-028",
+    "message": "paiseh, i ordered first because i was too hungry",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "paiseh"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-038",
+    "message": "can help me check if this part sounds too long?",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-041",
+    "message": "paiseh, i only just finished class. i'll upload a bit later",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "paiseh"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-045",
+    "message": "you still coming early to get seats right?",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-055",
+    "message": "can go around 2 instead? i need lunch first",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-C-058",
+    "message": "court still occupied leh, need wait a bit",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "leh"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-007",
+    "message": "then what u wanna drink later?",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "wanna"
+    ],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-009",
+    "message": "neh the gaussian elim qn",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "neh"
+    ],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-010",
+    "message": "uhh, u know the guassian elim qn",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "uhh"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-013",
+    "message": "Can give me ans for assignment 1?",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-029",
+    "message": "ok then rmb to bid before bidding ends",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-033",
+    "message": "wya",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-037",
+    "message": "i reached, i waiting outside mac",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-038",
+    "message": "I am reaching soon, wait for me before going in.",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-046",
+    "message": "the cinema ticket is sold out bruh",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-D-050",
+    "message": "woah sorry, i came up with a flu.",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-005",
+    "message": "can ah, later i join you",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "can ah"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-007",
+    "message": "onz, tmr meet na li",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "onz; na li",
+    "annotated_local_terms": [
+      "onz",
+      "ah",
+      "na li"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish",
+      "pinyin"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-009",
+    "message": "hey can confirm i can use your charger after 3? thanks ah",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "ah"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-015",
+    "message": "hi have you done the quiz alr anot",
+    "category": "general_english_or_texting",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "anot"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-025",
+    "message": "will everyone be free on thursday instead for a make up class instead? paiseh",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "paiseh"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-027",
+    "message": "paiseh ah can i change my booking i want to use it later",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "paiseh",
+      "ah"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-028",
+    "message": "shag I damm busy sia, i cmi leh, dui bu qi",
+    "category": "regional_lexical_content",
+    "regional_content_expression": "shag; cmi; dui bu qi",
+    "annotated_local_terms": [
+      "shag",
+      "sia",
+      "cmi",
+      "dui bu qi"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish",
+      "pinyin"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-032",
+    "message": "sorry ah but that one cannot, someone book liao",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "ah",
+      "liao"
+    ],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-040",
+    "message": "how ah, want meet together to do work?",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "ah"
+    ],
+    "annotated_language_mix": [
+      "en",
+      "singlish"
+    ],
+    "campus_abbreviation": false
+  },
+  {
+    "item_id": "ITEM-E-046",
+    "message": "ni hao, can I releasae it at 5 instead?",
+    "category": "regional_pragmatic_marker",
+    "regional_content_expression": "",
+    "annotated_local_terms": [
+      "ni hao"
+    ],
+    "annotated_language_mix": [
+      "en"
+    ],
+    "campus_abbreviation": false
+  }
+]

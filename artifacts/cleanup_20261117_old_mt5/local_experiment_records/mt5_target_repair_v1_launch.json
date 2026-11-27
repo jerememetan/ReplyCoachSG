@@ -1,0 +1,30 @@
+{
+  "experiment": "mt5_target_repair_v1",
+  "job_id": 355659,
+  "submission": "accepted",
+  "last_verified_state": "FAILED",
+  "training": true,
+  "default_changed": false,
+  "remote_directory": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_target_repair_v1",
+  "local_tests_passed": 3,
+  "preflight": "Cluster verified both238-row arms,50 original validation and16 paired validation targets fit source192/target48; all12 new evaluation inputs fit source192.",
+  "seeds": [
+    425,
+    426
+  ],
+  "arms": [
+    "control",
+    "repair"
+  ],
+  "recipe": "experiments/mt5_target_repair_v1_recipe.json",
+  "report_expected": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_target_repair_v1/artifacts/results.json",
+  "completion_waited": false,
+  "node": "voodoo",
+  "progress": "Seed425 control and repair finished English outputs; seed426 control last saved epoch5; repair426 and shared LOCAL processing still pending at report snapshot.",
+  "partial_report": "artifacts/mt5_target_repair_v1/progress.json",
+  "exit_code": "1:0",
+  "training_completed": true,
+  "english_outputs_completed": true,
+  "recovery_job_id": 355751,
+  "failure": "KeyError response in shared LOCAL encoding; no training/English generation failure."
+}

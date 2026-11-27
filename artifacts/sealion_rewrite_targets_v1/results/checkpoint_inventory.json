@@ -1,0 +1,50 @@
+[
+  {
+    "arm": "old_targets_control",
+    "step": 0,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/old_targets_control/step_0000/adapter_model.safetensors",
+    "sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2"
+  },
+  {
+    "arm": "old_targets_control",
+    "step": 60,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/old_targets_control/step_0060/adapter_model.safetensors",
+    "sha256": "a9260933419c58e334262354d529906dd393c64cefbe87bc5a907dfca7873fe1"
+  },
+  {
+    "arm": "old_targets_control",
+    "step": 120,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/old_targets_control/step_0120/adapter_model.safetensors",
+    "sha256": "d8ba1b70f707b215e86b3b3fae9b5d61acb077daa701e320a031f27ec51b4bcd"
+  },
+  {
+    "arm": "old_targets_control",
+    "step": 240,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/old_targets_control/step_0240/adapter_model.safetensors",
+    "sha256": "d8bd487e549d1cc971d7e21e38fd890cea3302f0f46ddc2ece528764ecbddcc1"
+  },
+  {
+    "arm": "revised_targets",
+    "step": 0,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/revised_targets/step_0000/adapter_model.safetensors",
+    "sha256": "6ea7066deda4f4e9e5f4a9e070d46427536a0dac05d5a416864e97c2dc3f5db2"
+  },
+  {
+    "arm": "revised_targets",
+    "step": 60,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/revised_targets/step_0060/adapter_model.safetensors",
+    "sha256": "aa6836528c8ae7ff6b98275fa3e5d4a96f0e8c07e8588978b00decb336930a99"
+  },
+  {
+    "arm": "revised_targets",
+    "step": 120,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/revised_targets/step_0120/adapter_model.safetensors",
+    "sha256": "d3ab8c96f9f375148a680a0ffe70ea2b1f230095a2fdd0e9721beb53352008f3"
+  },
+  {
+    "arm": "revised_targets",
+    "step": 240,
+    "path": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_rewrite_targets_v1/outputs/revised_targets/step_0240/adapter_model.safetensors",
+    "sha256": "fa260e76f8e4221c6381a874642ae73ffdb6494b9fa9d76975a6afca2444ded4"
+  }
+]

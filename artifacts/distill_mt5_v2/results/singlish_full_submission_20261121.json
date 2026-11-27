@@ -1,0 +1,13 @@
+{
+  "submitted_at_utc": "2026-11-21T04:48:32.521756+00:00",
+  "accepted_english_counts": {
+    "sealion": 692,
+    "qwen": 736
+  },
+  "jobs": {
+    "sealion": "373361",
+    "qwen": "373362"
+  },
+  "status": "submitted",
+  "review_targets_edited": 0
+}

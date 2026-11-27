@@ -1,0 +1,245 @@
+{
+  "experiment": "mt5_cocktail_v1",
+  "account": "hm.teoh.2024",
+  "seed": 1,
+  "research_source": "https://arxiv.org/html/2410.01109v1",
+  "hypothesis": "Auxiliary speaker/fact extraction and answerability supervision improve contextual English replies while preserving Singlish meaning.",
+  "topology": "Same fresh shared rank16q/v LoRA(alpha32,dropout0.1) on the preserved582401280parameter publicly adapted mT5-base;1769472trainable parameters.",
+  "source_base_personal": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_mt5_mlp_generation_v1/model",
+  "arms": {
+    "baseline": {
+      "facts_weight": 0.0,
+      "answerability_weight": 0.0
+    },
+    "facts": {
+      "facts_weight": 0.16666666666666666,
+      "answerability_weight": 0.0
+    },
+    "answerability": {
+      "facts_weight": 0.0,
+      "answerability_weight": 0.16666666666666666
+    },
+    "both": {
+      "facts_weight": 0.16666666666666666,
+      "answerability_weight": 0.16666666666666666
+    }
+  },
+  "main_pool": {
+    "english": 790,
+    "rewrite": 745,
+    "unique_conversations": 790
+  },
+  "auxiliary_pool": {
+    "train_conversations": 800,
+    "validation_conversations": 160,
+    "challenge_conversations": 104,
+    "tasks": [
+      "FACTS",
+      "ANSWERABILITY"
+    ],
+    "provenance": "Deterministic assistant-authored templates with an audited speaker/evidence ledger; not human gold or API output."
+  },
+  "schedule": {
+    "optimizer_steps": 784,
+    "primary_per_step": 12,
+    "facts_per_step": 2,
+    "answerability_per_step": 2,
+    "primary_exposures": 9408,
+    "facts_forward_exposures": 1568,
+    "answerability_forward_exposures": 1568
+  },
+  "objective": "Token-mean primary CE + facts_weight*token-mean fact CE + answerability_weight*token-mean answerability CE. All arms forward/backpropagate the same auxiliary batches, with zero coefficients for inactive tasks.",
+  "optimizer": {
+    "name": "AdamW",
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "clip_norm": 1.0,
+    "precision": "FP32"
+  },
+  "snapshots": [
+    0,
+    128,
+    256,
+    512,
+    784
+  ],
+  "selection": "Minimum mean English/rewrite project-validation token CE including step0; ties retain earlier. Aux accuracy and all challenge/user outputs excluded from selection. Final784 also reported.",
+  "inference": {
+    "num_beams": 4,
+    "no_repeat_ngram_size": 3,
+    "do_sample": false,
+    "max_new_tokens": 48,
+    "max_source": 192,
+    "primary": "Generate English then rewrite that exact generated anchor with the SAME shared adapter. Aux task predictions reported separately, never used as oracle facts or forced reply gates."
+  },
+  "matching": "Identical initialization, primary and auxiliary schedules, shapes, per-step dropout seeds, optimizer and update count. Active task coefficients differ. Extra nonzero auxiliary gradients are the intervention. Equal forwards do not imply identical wall time or equal useful supervised tokens.",
+  "paper_deviations": "A focused four-arm LoRA pilot on mT5 rather than full fine-tuning of instruction-tuned decoder models; weighted fixed-composition batches rather than a uniform concatenation. No general-instruction/math dataset sweep. One seed only.",
+  "evaluation": {
+    "project_validation_reused": 50,
+    "fresh_synthetic": 104,
+    "fresh_underlying_fact_groups": 32,
+    "self_contained_controls": 8,
+    "fresh_natural_challenge": 12,
+    "natural_contrast_pairs": 6,
+    "reused_user_diagnostics": 2,
+    "note": "104synthetic rows comprise32 groups with supported/other-owner/irrelevant variants plus8controls. Aux exact match is not reply accuracy. Review roles, grounded facts, meaning preservation and naturalness separately; no independent human/locked test score."
+  },
+  "budgets": {
+    "primary": {
+      "count": 1535,
+      "max_source": 161,
+      "max_target": 32
+    },
+    "project_validation": {
+      "count": 92,
+      "max_source": 92,
+      "max_target": 22
+    },
+    "train_FACTS": {
+      "count": 800,
+      "max_source": 102,
+      "max_target": 14
+    },
+    "train_ANSWERABILITY": {
+      "count": 800,
+      "max_source": 101,
+      "max_target": 5
+    },
+    "validation_FACTS": {
+      "count": 160,
+      "max_source": 105,
+      "max_target": 12
+    },
+    "validation_ANSWERABILITY": {
+      "count": 160,
+      "max_source": 104,
+      "max_target": 5
+    },
+    "challenge_FACTS": {
+      "count": 104,
+      "max_source": 100,
+      "max_target": 11
+    },
+    "challenge_ANSWERABILITY": {
+      "count": 104,
+      "max_source": 99,
+      "max_target": 5
+    }
+  },
+  "team_original_sha256": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+  "original790_unchanged": true,
+  "locked_test_read": false,
+  "default_changed": false,
+  "files_sha256": {
+    "data/primary.json": "f32ab25dbfc6d4a1b8d7c7aa235fb79584eb901050c101c115e16ba2d65ad936",
+    "data/project_validation.json": "4d0926edf76a18f18b27ed798e2703ea71a4665c413d42b1aabb7ddc1882bf94",
+    "data/legacy.json": "d2c3c2dc2c643665abfbb0fef7e74ead3fa23000ba806c6c18deafcb432c6e77",
+    "data/diagnostics.json": "9a2dafe553b7d35f0f4d2fcc15d50dc197e3307e4a61042add5c95afcc9f0375",
+    "data/natural_challenge.json": "a180a18dc498d43d4ccc61b1685cfa8c15b89b6ab987abac69404e31a49c8b1b",
+    "schedule.json": "34a2cd4ba8ce58eb9f60fac0405170d6d29bfbeb9e5d6f55fe51e8575146c0f4",
+    "source_manifest.json": "5aa62602c2cc670cb5656615b83bb6b11a05548d3f28483db02a52653b215976",
+    "data/train.json": "9f8211ee0465a9cc714c5752340e34d71a3e53e49b11ece92c39682d13bb39e3",
+    "data/validation.json": "13eb312b9950349d3d2087b6abe83ae800618a8a4e4d53a53275799df2c851ab",
+    "data/challenge.json": "bcbe314af1eafef75518b28aa7b228679845880077a1f5dd87c2843f98cb2153",
+    "src/replycoach/demo_app.py": "8af6be8f6c9130b469019d3feca06f5224c2b271935a3a43c1f8054d8485c11f",
+    "src/replycoach/pipeline.py": "b4404c523f279694928f71b4d317a99e1853343d694d7dc4b8232114e891c192",
+    "src/replycoach/authoring.py": "bdc640a8d8f8bce4c4030fc2ba0898acc1b7d4d49a9d35aea5bd0d812b1ae613",
+    "src/replycoach/io.py": "a354cb802b9ed725c8c1201c3c54efd3e03da5c9c5f2d2c9026da0688a4b3683",
+    "src/replycoach/__init__.py": "de57ddf5ad70d22e23053d975dbe60028cca42f825fbe994648409a2c8552587",
+    "src/replycoach/judging.py": "f8c885ba5c20a7c5304765525c201dd9a6090f825cea066ae982df7d48bbc52a",
+    "src/replycoach/fallback.py": "17e66580f8b1ea8c8c54c9708640ee02b2c2d1a61a8db49c51c2fbac08fb2887",
+    "src/replycoach/review_app.py": "133b79ccf47738bf0212aecab3ddab85751de81f5c2855fb9be5e6c9d997cf24",
+    "src/replycoach/reply_bank.py": "6ac807be9e743f7fa2d8650da9d95d4ea3d50a1b635ad6224c1e9ea2b88ffe63",
+    "src/replycoach/rerank.py": "9e9d4d62db879e5a9360e3e995b7117131b006fcb0b37acd0c8a1e818bad07be",
+    "src/replycoach/tokenize.py": "61fb7a81cc81ee6b61e3bc3056bd2d43aa49baa51460ffd89405d11f2f483e4f",
+    "src/replycoach/demo_resources.py": "6694b21e5ef07e734c3017a3632128338ed5beafea2fe9a9a9ffbd7b408ac5ad",
+    "src/replycoach/taxonomy.py": "d76f9984df4c268f5f03421608fcfa8a8fc6262202a4fc6c616b3bfe9f3c0893",
+    "src/replycoach/logging_utils.py": "da6758cd019248c7d26bfa8ac6c64dec721a484c231bd489a44782ef796079de",
+    "src/replycoach/memory.py": "bcdc318c4cbdd5c571bbb5cfe4eddf958342cedc8de97b3d8c2067d088f2861b",
+    "src/replycoach/demo_cli.py": "77b23675e50a49b0c974f1c3aa21a9bc915c96c802635ce37dfb536b5d1a3d4c",
+    "src/replycoach/team_review_app.py": "77c4a7a369a8fc5b40ba8d24d6cf33791974181ba134938896269f956303583a",
+    "src/replycoach/evaluation.py": "b4d17649ef9a39e6e3a48aec7b2fea79383c7202be6b5ba1e311feca24311848",
+    "src/replycoach/team_review.py": "0f4826a306b5b38a23870fa86aff322fd5e04f5f7ae87d2ea3fe06edd8056b14",
+    "src/replycoach/author_app.py": "9f720f8535a9016e5b66a241de8b944f87bb230cc33f8be96344ebd540729ce8",
+    "src/replycoach/review.py": "600ebb377daba91a1a942d3a409bf04d17523629b9a271b625b8be923b201299",
+    "src/replycoach/schema.py": "0424f5742901350fca0e4799df6702b61ec9dc540b9363bf1e2448e8f15abdfe",
+    "src/replycoach/systems.py": "e915007d5e6766b90577a2a763996cf99f1c7e248555c37a6987fca41ac59442",
+    "src/replycoach/lexicon.py": "94cb358ea37e0d4663a6c52c4e18ac83bb6466e2fdbb525fc7fd2724ccb559bc",
+    "src/replycoach/vendor/__init__.py": "71f1ca1538d579fd3a304a95d7d2f792cca8abf9dca16f38ade9ce3e1da0dbbb",
+    "src/replycoach/retrieval/v2.py": "8463a6075911559b4b78fae9d2ef4a4f32be0f627bb3fbe1a60cbe25163765bb",
+    "src/replycoach/retrieval/__init__.py": "2e64f70b06878c54078be4a5ddc5c4eeec5ebfedbe726700418435527783aef4",
+    "src/replycoach/retrieval/v1.py": "bcf1f4e8b99eb6afbff5be7503fd6a8d5da0e73a273059f477cf84544ffd429c",
+    "src/replycoach/retrieval/v0.py": "6a0b80347da88d034f6507523d1d594c6580926f47b29032474a6a202ec74e61",
+    "src/replycoach/generate/sealion_full_rewrite_v1.py": "bc54cc04596e86ab8755e52be4282ebfc19c611928adcd4a1f1f2a8e42e9bdb5",
+    "src/replycoach/generate/rewrite_v5.py": "30adce9d8f016f2e0e20760879950ebb44a5a1aebc3dbca2d039f4d823268c3f",
+    "src/replycoach/generate/style_control.py": "a3a2cb41a8b28325a103475b80eaeb9e396caf4d10b5470fb9d6bfc542500259",
+    "src/replycoach/generate/sealion_context_guard_v1.py": "d9ce6a01f03820a8d1efbf88711e2655ee07645215c9ff33e3c5f3c1357753ea",
+    "src/replycoach/generate/seq2seq.py": "a1021004d6a96679ce37c52fda39c266b626bcbc4eae02399f55a4798fc08c94",
+    "src/replycoach/generate/native_rewrite_v2.py": "df7e7d566f49cfe0a8b44d533f4068bc8f60be885c929fa892259a561c103ee6",
+    "src/replycoach/generate/linear_probe_v1.py": "95651e022bd642cd5771ce643929b1de9207cf1e0cadfaad8a71a3ab9b0e6b97",
+    "src/replycoach/generate/__init__.py": "2b2e903371712f88daa7d9ce457eaa5f49677a5f30f4bffef3ffb42e6ec46b7b",
+    "src/replycoach/generate/finetune_v5.py": "88804d5cbab46846339b43b0f9c5a27e0d94cacf7fc2682e50611257137f5e9b",
+    "src/replycoach/generate/native_rewrite_train_v2.py": "ec309b63d979b18fda4db9026fa65312a6e55619e5f83ba095ae5ad5bca06f77",
+    "src/replycoach/generate/sealion_style_guard_v2.py": "836e308b86a3751d9431b23cbeb5baae624ac6067b36535334b72cf823061386",
+    "src/replycoach/generate/teacher_v5.py": "2fd43859254e741829932253baa290769cf83b4d2c4275fba6b1260a0e4b4d01",
+    "src/replycoach/generate/train_v5.py": "d6f05e726973003f4ebbb0c0d8978fe9610c286a797c7a56b3519bcc19ee07a3",
+    "src/replycoach/generate/sealion_style_v1.py": "67551a963351c05f7a0fcc2314be0d1c6924c53fbe7c9278a1f60f72dc14e609",
+    "src/replycoach/generate/mt5_cocktail_v1.py": "872b2ce4b006747ad3d587100501416dfde3b1185c0e91986fef3a1b765be58a",
+    "src/replycoach/generate/clean_v5.py": "3fbed38114b124d696f384e05733bed2b837171eb7f76a4039f33644de17d68a",
+    "src/replycoach/generate/mt5_adapter_switch_v1.py": "fb0de81a8b0a9d0a732597241af2f69a87bc935cfe577d05a8d0030dd43132ab",
+    "src/replycoach/generate/sealion_contrast_v1.py": "bd78e37303afb411df3603161628f597ce5c9405bad07323cf24c693fb55593e",
+    "src/replycoach/generate/synthetic_v5.py": "ffbff7e76176158e480ee8b8343ce0b655e8cbaa7faa32118a8ea590a9a29779",
+    "src/replycoach/generate/act_follow_v1.py": "ea31f803815411cce10f5b2e5bcdb72e59298319dc48a0023d9be65224b6329b",
+    "src/replycoach/generate/context_pair_ablation_v1.py": "1f90282b4579b1dbb7687a9290a57ed24bdcfb36250e6860a3fdaed71a77358e",
+    "src/replycoach/generate/compare_v5.py": "5b97cca24c6dba90d57f94e02dd1927ff169243f75843b456be6885f70e14578",
+    "src/replycoach/generate/sealion_public_v1.py": "e7ca6626004a922c443825636dd274607e36085ee679d172d976afd06864660a",
+    "src/replycoach/generate/v5_provider.py": "6ba54db8c4ddb6d115a8c55201e145a9cc087cb730f89a8367732d2aa8f166d6",
+    "src/replycoach/generate/rerank_v5.py": "079e88fce5a31d4c764517509fb671a84000d6bb67a4c6e003c0e879654cf352",
+    "src/replycoach/generate/early_stopping.py": "5f60d66e058fa91b6983e914f1c1884e907e0f158129b5ec852ffd2401a82c9f",
+    "src/replycoach/generate/spans_v5.py": "c05f39bbfcb1704ed86163ee7942665ab2d6ec24c4a7dccbfe21f83736ad21e3",
+    "src/replycoach/generate/providers.py": "6b2847dfb37facd44826885a9fe918122f1c9bb5e14dee0355c3c7433114be60",
+    "src/replycoach/generate/sealion_data.py": "7c3e5a7ddfee21501a67b59d119e6b502a713670dffaddee489c450d6d53a15b",
+    "src/replycoach/generate/structured_rl_train_v1.py": "6b5167ad3ab81f11e7caa04e8c1c6d4b0037647f7ecc37ef5ddc343a0fb666a1",
+    "src/replycoach/generate/structured_rl_v1.py": "de848f7bf3ba65e537211ea049f62c084ef2a255c55bb0865a4fbac87c4fe625",
+    "src/replycoach/generate/structured_fit_v1.py": "4418eba5a4d301f230f05b9b646b2ed6d0ae82f17239caedc8aebd8be14ff991",
+    "src/replycoach/generate/sealion_rewrite_v1.py": "1ad4c4c8b0515348e19af0de8997f90173c0d47de695a4f97939573f4578f056",
+    "src/replycoach/generate/human_dpo_v1.py": "46b53e7e6d89c7031f9c20cce01ea3ff677e8cfed946ebe3f22f1ace49434fac",
+    "src/replycoach/generate/sealion_beam_v1.py": "80b7542b2e560523fbcea8e90ce99f7f89273ed34d1db1cba2ba21390b64b795",
+    "src/replycoach/generate/hybrid_v5.py": "f92734c40a28eba9be9bf29814ed3c791e3fd0c5717a9341609bd0f45983a222",
+    "src/replycoach/generate/fit_probe_v1.py": "ea8bd34b0afe61899a11334acdaad00e9eb421da2c888283dba850268e059b41",
+    "src/replycoach/generate/decode_v5.py": "df77f7115ef3d745aa22c379d042336fb5bd207270610fafc440de17c7ca5326",
+    "src/replycoach/generate/sealion_dual_v1.py": "831b0be9d86ed5431ba730c861e8401f93449a2adf7fa0e101ae0aa7cc6f5e25",
+    "src/replycoach/generate/sealion_abstention_v1.py": "1148eaf6e762a026b8ab6ba14f62ab600533cb5be97419f949ff7c041fbbd173",
+    "src/replycoach/generate/reply_act_v2.py": "09fceefb3403f8c676d84db73fd6e7e33716441ff72ce1350698b78699aca2d4",
+    "src/replycoach/generate/mt5_output_heads_v1.py": "ac2cbc7b51b3e3bd7a5ce26cbae54ef07ff7bf42d05abcc7c8351c471ebfd41c",
+    "src/replycoach/generate/sealion_context_pipeline_v1.py": "a43d48b62830dd24dbdd33427d23e3652d4e4e2398a6f0be7a8643e935f92a3f",
+    "src/replycoach/generate/train_v3.py": "709e61fa632d4e08c1e41a5a886db40d3b8877a515277fd8a0c7d5e340f2ed47",
+    "src/replycoach/generate/reply_act_v1.py": "f97fa03ab0845f4c4e92272902fe526e23ae73c9eb970c8fbd092fe4f983a893",
+    "src/replycoach/generate/mt5_pretrained_compat.py": "29e1e6fcf20e2dad336e3bd2104ddec565ae97d3317d08aefc5fb2d984e127f9",
+    "src/replycoach/generate/mt5_matched_v1.py": "2b33ef72c08c800e012ef38f9eca75510423c7576d1732ff177da0fd9c49568e",
+    "src/replycoach/generate/sealion_v1.py": "97a4f7e126fe77008dc725ee7af0cbf3085286790535d882d48feb0b29bdfc56",
+    "src/replycoach/vendor/sealion_v1/param_init_fns.py": "1729529fc244149083265e65a3f2c9de4ff9f198881dd1d689fc5469e128d070",
+    "src/replycoach/vendor/sealion_v1/ffn.py": "a225fc3369fd033a3871f27fec02c8c21dc72f0f9938a14c187ebd89b02f9c4a",
+    "src/replycoach/vendor/sealion_v1/tokenization_SEA_BPE.py": "863f4d0c146de276a8b42ec8423fea80e59c4ee65d18afcda03ac8abc7c68842",
+    "src/replycoach/vendor/sealion_v1/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/replycoach/vendor/sealion_v1/adapt_tokenizer.py": "d68a8c8151448e949ed5ee6ffa5bd326ba76a264ea30b94908af4f5e7beb9583",
+    "src/replycoach/vendor/sealion_v1/norm.py": "c2aa062d2d89993399d9ce14d04a8b2e30aacf46ac303ebafed3dc45bf6f15bc",
+    "src/replycoach/vendor/sealion_v1/flash_attn_triton.py": "3f548a86236f026bab28555954ae13afd7b4bc70b6ef81059570ea74d267e63c",
+    "src/replycoach/vendor/sealion_v1/configuration_mpt.py": "b117d206aaaee72be88c368c12a1af9ff4d205268b4bcd6e0743cc9d7df9d36b",
+    "src/replycoach/vendor/sealion_v1/blocks.py": "b1d019c0a9cc73f27e4d6dca931abb92b9201dd68d4176fe9f89065830e60800",
+    "src/replycoach/vendor/sealion_v1/modeling_mpt.py": "d8190714a28dca31eb68a25a11568fb3b71f22b77a500efc9c7d8055e2b5fc5d",
+    "src/replycoach/vendor/sealion_v1/fc.py": "a2b575feebcd1891e75d2dd4263ee274dbe1aa73670b8d702bf1ef180723cd7f",
+    "src/replycoach/vendor/sealion_v1/custom_embedding.py": "5959001270bc3dbc76d3ebc54dba0f81ef625a0574d11930bd35ad20c5b1cba5",
+    "src/replycoach/vendor/sealion_v1/meta_init_context.py": "8a053984416246791aed29a809df55625c46de8e3643ec16d44fbb16edd93a09",
+    "src/replycoach/vendor/sealion_v1/attention.py": "96844cae928f44fd82f113f5d6f416efb2c787747ba893931f4877078166e6c4",
+    "src/replycoach/vendor/sealion_v1/hf_prefixlm_converter.py": "f55bda3248b703c6a9d065dc5e70a8d222a8adb11ce1579f70a5c148c8b24b28",
+    "scripts/run_mt5_cocktail_v1.py": "7410034c2305363c183dae3a24f32747ed17d37d495fb2c1a93eb771c62570bc",
+    "scripts/prepare_mt5_cocktail_v1.py": "2b154f989f264d233ac4752b2d5950e8fdde6570570852ec212f46a4feced7c1",
+    "scripts/run_mt5_adapter_switch_v1.py": "b9e75afd0ccd7586d547fc90ba990de5bfe8c9215c726b66edaabedf537faead",
+    "tests/test_mt5_cocktail_v1.py": "8d43d5a8b24255065e78bb159f1d0e5a7bfaa948e6f044873d8c523f8b397cb1",
+    "data/dev/train.jsonl": "03485c7d6b510711fbdee5f3eac0044e334d9d7a25bf3c5c86665b0646e8eee7",
+    "data/training_expansion/generated600_repair_v1/combined_train.jsonl": "b9027a2b84e6bec01f9200ac890220cd0b6e4e1382fdb71f0213a2949b6efbc6",
+    "data/dev/validation.jsonl": "68ab3fcfd283bddd37b8f4ac93a79edcc20a45b1ab9d12ce9732e26f74b20a52",
+    "data/training_expansion/sealion_rewrite_v1/pair_audit.json": "582c506b844fd52ee3e27b267eb27f991de8c3b2cd9e7d8e014f6f3ef951fecb"
+  }
+}
