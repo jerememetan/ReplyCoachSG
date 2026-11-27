@@ -1,0 +1,538 @@
+{
+  "experiment": "mt5_distill_judge_v1",
+  "status": "complete",
+  "snapshot": "artifacts/mt5_distill_judge_v1/status_snapshots/20261121T115855Z",
+  "results_directory": "artifacts/mt5_distill_judge_v1/final_results_20261121",
+  "observed_at_utc": "2026-11-21T11:58:33.113998+00:00",
+  "accounting": "JobID|State|ExitCode|Elapsed\n373725|COMPLETED|0:0|00:00:58\n373729|COMPLETED|0:0|01:02:55\n",
+  "run_id": "df2837ccd604ba0cfa8231b7b9680d5ce46f772127f0a6ad53b5eca3d298329e",
+  "judge_model": "gemma4:12b",
+  "model_digest": "6114515d63c17436a7c0417d82820ac65ad643e2806c5a3c89cb62846436ed0b",
+  "protocol": "Unchanged groupmate judge_one, rubric, ten personas, temperature 0, seed 425, think false; four concurrent fresh-context requests.",
+  "scope": "50 reused development validation conversations; selected checkpoints only; unchanged trained adapter plus four warm-start distillation variants. No final-test inputs.",
+  "unique_requests": 3390,
+  "expanded_ratings": 5000,
+  "coverage": "5 systems × 2 styles × 50 same conversations × 10 personas; complete.",
+  "failed_latest_ratings": 0,
+  "requests_with_retry": 0,
+  "max_prompt_tokens": 1405,
+  "all_ratings_schema_valid": true,
+  "gpu_runtime_verified": true,
+  "collection_sha256_verified": true,
+  "aggregation_independently_recomputed": true,
+  "aggregation": "Average ten persona ratings within each conversation/system/style, then average 50 conversations. Paired bootstrap resamples whole conversations; correlated personas are not independent human raters.",
+  "deduplication": "Only exact reply text within the same conversation and requested style, separately for every persona; retain mapping to all original systems.",
+  "summary": [
+    {
+      "model": "unchanged",
+      "style": "STANDARD",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.52,
+      "naturalness": 4.926,
+      "style_fit": 5.0,
+      "would_send_pct": 55.8,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "unchanged",
+      "style": "LOCAL",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.736,
+      "naturalness": 4.596,
+      "style_fit": 4.156,
+      "would_send_pct": 58.4,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "sealion_ce",
+      "style": "STANDARD",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.77,
+      "naturalness": 4.892,
+      "style_fit": 5.0,
+      "would_send_pct": 65.8,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "sealion_ce",
+      "style": "LOCAL",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.852,
+      "naturalness": 4.686,
+      "style_fit": 3.898,
+      "would_send_pct": 63.4,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "sealion_kd",
+      "style": "STANDARD",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.44,
+      "naturalness": 4.918,
+      "style_fit": 5.0,
+      "would_send_pct": 54.8,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "sealion_kd",
+      "style": "LOCAL",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.676,
+      "naturalness": 4.69,
+      "style_fit": 3.946,
+      "would_send_pct": 57.2,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "qwen_ce",
+      "style": "STANDARD",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.724,
+      "naturalness": 4.888,
+      "style_fit": 5.0,
+      "would_send_pct": 63.6,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "qwen_ce",
+      "style": "LOCAL",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.708,
+      "naturalness": 4.57,
+      "style_fit": 3.754,
+      "would_send_pct": 60.6,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "qwen_kd",
+      "style": "STANDARD",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.754,
+      "naturalness": 4.938,
+      "style_fit": 5.0,
+      "would_send_pct": 63.8,
+      "uncertain_pct": 0
+    },
+    {
+      "model": "qwen_kd",
+      "style": "LOCAL",
+      "conversations": 50,
+      "persona_ratings": 500,
+      "appropriateness": 3.672,
+      "naturalness": 4.68,
+      "style_fit": 4.278,
+      "would_send_pct": 60.4,
+      "uncertain_pct": 0
+    }
+  ],
+  "paired_differences": [
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "appropriateness",
+      "paired_mean_difference": 0.25000000000000006,
+      "ci95_low": -0.134,
+      "ci95_high": 0.658,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "naturalness",
+      "paired_mean_difference": -0.034,
+      "ci95_low": -0.096,
+      "ci95_high": 0.015999999999999997,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "style_fit",
+      "paired_mean_difference": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "would_send_pct",
+      "paired_mean_difference": 10.0,
+      "ci95_low": -2.2,
+      "ci95_high": 22.6,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "appropriateness",
+      "paired_mean_difference": 0.11600000000000002,
+      "ci95_low": -0.37,
+      "ci95_high": 0.59,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "naturalness",
+      "paired_mean_difference": 0.08999999999999998,
+      "ci95_low": -0.12000000000000006,
+      "ci95_high": 0.306,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "style_fit",
+      "paired_mean_difference": -0.258,
+      "ci95_low": -0.6260000000000001,
+      "ci95_high": 0.09399999999999993,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "would_send_pct",
+      "paired_mean_difference": 5.0,
+      "ci95_low": -10.8,
+      "ci95_high": 21.2,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "appropriateness",
+      "paired_mean_difference": -0.07999999999999999,
+      "ci95_low": -0.462,
+      "ci95_high": 0.302,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "naturalness",
+      "paired_mean_difference": -0.00799999999999999,
+      "ci95_low": -0.06799999999999999,
+      "ci95_high": 0.05000000000000002,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "style_fit",
+      "paired_mean_difference": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "would_send_pct",
+      "paired_mean_difference": -1.0,
+      "ci95_low": -12.6,
+      "ci95_high": 10.4,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "appropriateness",
+      "paired_mean_difference": -0.06000000000000001,
+      "ci95_low": -0.484,
+      "ci95_high": 0.346,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "naturalness",
+      "paired_mean_difference": 0.09399999999999999,
+      "ci95_low": -0.068,
+      "ci95_high": 0.286,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "style_fit",
+      "paired_mean_difference": -0.21,
+      "ci95_low": -0.538,
+      "ci95_high": 0.11400000000000002,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "sealion_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "would_send_pct",
+      "paired_mean_difference": -1.2,
+      "ci95_low": -15.4,
+      "ci95_high": 12.4,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "appropriateness",
+      "paired_mean_difference": 0.20400000000000001,
+      "ci95_low": -0.152,
+      "ci95_high": 0.552,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "naturalness",
+      "paired_mean_difference": -0.038,
+      "ci95_low": -0.13999999999999999,
+      "ci95_high": 0.04800000000000001,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "style_fit",
+      "paired_mean_difference": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "would_send_pct",
+      "paired_mean_difference": 7.8,
+      "ci95_low": -3.8,
+      "ci95_high": 19.4,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "appropriateness",
+      "paired_mean_difference": -0.028000000000000014,
+      "ci95_low": -0.47200000000000003,
+      "ci95_high": 0.44599999999999995,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "naturalness",
+      "paired_mean_difference": -0.026000000000000006,
+      "ci95_low": -0.256,
+      "ci95_high": 0.2,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "style_fit",
+      "paired_mean_difference": -0.402,
+      "ci95_low": -0.744,
+      "ci95_high": -0.08800000000000005,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_ce",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "would_send_pct",
+      "paired_mean_difference": 2.2,
+      "ci95_low": -13.0,
+      "ci95_high": 17.4,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "appropriateness",
+      "paired_mean_difference": 0.23399999999999999,
+      "ci95_low": -0.13800000000000004,
+      "ci95_high": 0.606,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "naturalness",
+      "paired_mean_difference": 0.01200000000000001,
+      "ci95_low": -0.025999999999999995,
+      "ci95_high": 0.066,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "style_fit",
+      "paired_mean_difference": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "STANDARD",
+      "metric": "would_send_pct",
+      "paired_mean_difference": 8.0,
+      "ci95_low": -3.4,
+      "ci95_high": 19.6,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "appropriateness",
+      "paired_mean_difference": -0.06399999999999999,
+      "ci95_low": -0.486,
+      "ci95_high": 0.374,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "naturalness",
+      "paired_mean_difference": 0.08400000000000005,
+      "ci95_low": -0.10799999999999992,
+      "ci95_high": 0.30400000000000005,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "style_fit",
+      "paired_mean_difference": 0.12199999999999994,
+      "ci95_low": -0.15600000000000006,
+      "ci95_high": 0.3999999999999999,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    },
+    {
+      "model": "qwen_kd",
+      "baseline": "unchanged",
+      "style": "LOCAL",
+      "metric": "would_send_pct",
+      "paired_mean_difference": 2.0,
+      "ci95_low": -11.6,
+      "ci95_high": 15.8,
+      "bootstrap_unit": "conversation; all persona/system ratings kept together",
+      "conversations": 50
+    }
+  ],
+  "limitations": [
+    "Reused development validation cases; these are not untouched test results.",
+    "Ten personas are simulated by one judge, not independent human participants.",
+    "Judge assesses each draft separately and does not score English/Singlish meaning consistency.",
+    "LLM judgments can miss role/timing contradictions and overrate generic replies.",
+    "Bootstrap intervals reflect conversation variation, not all judge/model uncertainty.",
+    "Checkpoint selection used validation loss before this run; comparison concerns selected checkpoints only.",
+    "Historical judge aggregate scores should not be mixed into this matched run."
+  ],
+  "report_document_modified": false,
+  "source_models_modified": false,
+  "interpretation": {
+    "conclusion": "SEA-LION teacher-text CE has the highest observed contextual appropriateness and simulated would-send rates in both styles. Its paired improvements over unchanged mT5 remain uncertain on 50 reused validation conversations. Added aligned soft KD shows no consistent benefit. No automatic model promotion is justified.",
+    "key_differences": {
+      "sealion_ce_vs_unchanged": {
+        "STANDARD_appropriateness_gain": 0.25,
+        "STANDARD_appropriateness_ci95": [
+          -0.134,
+          0.658
+        ],
+        "LOCAL_appropriateness_gain": 0.116,
+        "LOCAL_appropriateness_ci95": [
+          -0.37,
+          0.59
+        ],
+        "STANDARD_would_send_percentage_point_gain": 10,
+        "LOCAL_would_send_percentage_point_gain": 5
+      }
+    },
+    "important_tradeoff": "SEA-LION text CE improves contextual appropriateness means but LOCAL style_fit decreases from 4.156 to 3.898; that difference also has a paired confidence interval including zero.",
+    "judge_limitations_observed": [
+      "All STANDARD style-fit scores are 5/5, including replies containing alr. This metric has a ceiling and weak sensitivity in this run.",
+      "All 3390 judgments report uncertain=false. This is judge output, not proof of certainty or correctness.",
+      "ITEM-A-046: judge accepts SEA KD LOCAL \"Can, three also can\" as an alternative but penalises its STANDARD three-o-clock response to a two-o-clock proposal. Interpretation depends on wording.",
+      "ITEM-C-045: judge rates \"waiting for seats\" as confirming arrival early tomorrow; it does not reliably distinguish the temporal mismatch.",
+      "ITEM-E-015: SEA KD English finished vs LOCAL not done each receive appropriateness 5 separately; the unchanged single-draft schema cannot detect cross-style meaning reversals.",
+      "ITEM-D-038: Qwen CE \"Wait for me, I wait for you\" still averages appropriateness 3.9 and 7/10 would-send despite confused roles.",
+      "The problem field often says none even when explanations identify contradictions; do not interpret none as semantically correct."
+    ],
+    "positive_spotcheck": "ITEM-C-045: teacher-text CE replies explicitly confirm coming early to get seats; LOCAL appropriateness is 5.0 versus unchanged 2.0.",
+    "persisting_spotchecks": [
+      "ITEM-B-057: every model reverses charger borrowing roles; judged appropriateness 1.0–1.4.",
+      "ITEM-E-028: every model ignores a declined invitation; judged appropriateness 1.0–2.0."
+    ],
+    "coverage_statement": "3,390 valid first-attempt unique judgments map to 5,000 system/style/persona ratings: same 50 validation conversations, five mT5 variants, two styles, ten simulated personas. Exact reply deduplication only within conversation/style. No errors or retries.",
+    "report_paragraph": "The five mT5 variants were evaluated on the same 50 validation conversations using the group’s Gemma-based judge, rubric and ten simulated personas. SEA-LION teacher-text training achieved the highest mean appropriateness scores: 3.77/5 for English and 3.85/5 for Singlish, compared with 3.52 and 3.74 for unchanged mT5. Simulated willingness to send increased from 55.8% to 65.8% for English and from 58.4% to 63.4% for Singlish. However, paired confidence intervals for these improvements included zero, Singlish style fit did not improve, and adding aligned soft distillation produced no consistent gain. The results therefore suggest a promising teacher-text approach rather than a conclusive replacement. These are reused validation results from an automated judge; they do not establish human preference or English–Singlish meaning consistency."
+  }
+}
