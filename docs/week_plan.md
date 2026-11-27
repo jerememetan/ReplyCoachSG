@@ -313,8 +313,11 @@ The original schedule below is historical. The current priorities and evaluation
 method supersede its outdated data targets and manual-rating workload.
 
 The 300-item reviewed split is published: 190 train/reply-bank items, 50 shared
-validation queries and 60 untouched test items. Generator providers and real hybrid
-quality results remain pending. E's local judging runner exists; main ratings and
+validation queries and 60 untouched test items. Role C's task-trained V4 provider
+and verified development exports are available as of 20 October; see
+[C's handoff](../roles/C_rnn_attention/HANDOFF.md) for quality limitations.
+Role D's V5 provider and final hybrid quality results remain pending.
+E's local judging runner exists; main ratings and
 independent pilot quality checks remain work, not completed results.
 
 ## Current evaluation decision

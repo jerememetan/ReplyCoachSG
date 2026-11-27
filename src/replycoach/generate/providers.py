@@ -1,6 +1,8 @@
 """Local generator handoff points. No smoke models or synthetic providers."""
 
 from typing import Protocol
+import os
+from pathlib import Path
 
 from replycoach.schema import Candidate
 
@@ -18,13 +20,22 @@ class ReplyGenerator(Protocol):
 
 
 def load_v4() -> ReplyGenerator:
-    # ##TODO: FOR ROLE C — return your trained V4 ReplyGenerator here.
-    # Load the task-trained checkpoint + its vocabulary once, not a smoke model.
-    # See docs/role_handoffs.md for the exact generate()/Candidate contract.
-    raise GeneratorUnavailable(
-        "Role C: trained V4 generator is not connected. Complete load_v4() in "
-        "src/replycoach/generate/providers.py; see docs/role_handoffs.md."
-    )
+    from replycoach.generate.rnn_provider import RNNGenerator
+    from replycoach.io import ROOT
+
+    path = Path(os.environ.get("REPLYCOACH_V4_CHECKPOINT", str(ROOT / "artifacts/rnn_v4_task.pt")))
+    if not path.is_file():
+        raise GeneratorUnavailable(
+            f"Role C: trained V4 checkpoint missing: {path}. Supply the task checkpoint "
+            "or set REPLYCOACH_V4_CHECKPOINT; see roles/C_rnn_attention/HANDOFF.md."
+        )
+    try:
+        generator = RNNGenerator(path)
+    except (KeyError, ValueError) as exc:
+        raise GeneratorUnavailable(f"Role C: invalid task-trained V4 checkpoint: {exc}") from exc
+    if generator.source != "V4":
+        raise GeneratorUnavailable("Role C: V4 provider requires attention weights, not V3 weights")
+    return generator
 
 
 def load_v5() -> ReplyGenerator:

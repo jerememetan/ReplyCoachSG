@@ -12,7 +12,10 @@ source-preserving fallbacks, mode controls, retry, demo JSON downloads and guard
 development exports. The original BM25/MiniLM comparison stays the default.
 
 **Published:** A's 190-item train/reply bank, 50 validation queries and 60 locked
-test items. **Pending:** C/D's trained-model providers; B's empirical
+test items. **Role C update, 20 October:** task-trained V4 provider and verified
+50-query three-mode exports are available; see
+[C's handoff](../roles/C_rnn_attention/HANDOFF.md). Model quality remains limited;
+weights are shared privately, not in Git. **Pending:** D's trained-model provider; B's empirical
 retrieval/memory/score calibration; the real 20-conversation hybrid proof and
 persona-based LLM evaluation. Neither smoke weights nor test doubles are used by the
 production provider registry. Missing models are explicitly unavailable.
@@ -85,7 +88,12 @@ calls or ratings. E's separate `scripts/judge_replies.py` runs the persona panel
 and prints averages/send percentages; see section 8 of the protocol. Its local
 judge must pass pilot sanity checks before main evaluation.
 
-## TODO: FOR ROLE C — connect the trained V4 generator
+## Role C — connected task-trained V4 generator
+
+`load_v4()` now loads a verified-format task checkpoint; missing artifacts still
+raise a clear Role C error. The interface below remains the shared contract.
+See [HANDOFF.md](../roles/C_rnn_attention/HANDOFF.md) for exact artifact locations,
+decoding/score definitions, reproduction and measured limitations.
 
 Insertion point: **`load_v4()` in `src/replycoach/generate/providers.py`**.
 
