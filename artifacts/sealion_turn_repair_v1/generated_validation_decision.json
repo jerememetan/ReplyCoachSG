@@ -1,7 +1,0 @@
-{
-  "selected_model": "original_repair25",
-  "default_changed": false,
-  "reason": "Original has12 pass/1 uncertain/3 fail on16 assistant-reviewed validation cases. No trained snapshot has more than12 passes; the tied snapshots each have4 fails. No clear gain; keep original neural checkpoint.",
-  "scope": "Assistant-authored validation and assistant judgments; not independent human accuracy. Assessment completed before fetching model-name key.",
-  "new_training_promoted": false
-}

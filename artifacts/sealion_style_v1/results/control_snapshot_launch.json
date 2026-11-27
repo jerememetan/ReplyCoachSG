@@ -1,8 +1,0 @@
-{
-  "job_id": 358014,
-  "account": "hm.teoh.2024",
-  "purpose": "Read-only review of trained control25/50/100 despite selectedstep0",
-  "cases_per_checkpoint": 32,
-  "source_training_job": 357999,
-  "training_performed": false
-}

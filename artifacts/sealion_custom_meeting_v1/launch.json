@@ -1,8 +1,0 @@
-{
-  "job_id": 358383,
-  "account": "hm.teoh.2024",
-  "remote_root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_custom_meeting_v1",
-  "gpu": "L40S",
-  "training_performed": false,
-  "default_changed": false
-}

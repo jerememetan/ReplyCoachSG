@@ -1,5 +1,0 @@
-[
- {"item_id":"USER-001","style":"STANDARD","context":["hi, how are you doing","ok ah?"],"speakers":["peer","user"],"message":"You wanna grab food at koufu later?","response":"unused"},
- {"item_id":"USER-002","style":"STANDARD","context":["I gna doctor appt later...","oh what appt?"],"speakers":["peer","user"],"message":"It's some stye infection","response":"unused"},
- {"item_id":"USER-003","style":"STANDARD","context":["I am so hungry","lets get smth to eat ah"],"speakers":["peer","user"],"message":"Sure, where we going to get food","response":"unused"}
-]

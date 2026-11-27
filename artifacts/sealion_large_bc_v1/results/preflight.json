@@ -1,8 +1,0 @@
-{
-  "status": "passed",
-  "encoded_targets": 4438,
-  "max_tokens": 176,
-  "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition MIG 1g.24gb",
-  "data_manifest_sha256": "434e6a409e4adbb39c916ab631c4c0ecef6de5ea75f8b181d4d35ca4ebf0abb0",
-  "no_truncation": true
-}

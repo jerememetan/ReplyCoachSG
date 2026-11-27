@@ -1,4 +1,0 @@
-tput: No value for $TERM and no -T specified
-Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Fetching 11 files:   9%|▉         | 1/11 [00:00<00:02,  4.20it/s]Fetching 11 files:  27%|██▋       | 3/11 [00:00<00:01,  6.60it/s]Fetching 11 files:  45%|████▌     | 5/11 [00:00<00:00,  7.04it/s]Fetching 11 files:  55%|█████▍    | 6/11 [00:08<00:11,  2.26s/it]Fetching 11 files:  64%|██████▎   | 7/11 [00:09<00:06,  1.70s/it]Fetching 11 files:  73%|███████▎  | 8/11 [00:09<00:03,  1.30s/it]Fetching 11 files:  82%|████████▏ | 9/11 [00:09<00:01,  1.01it/s]Fetching 11 files:  91%|█████████ | 10/11 [00:09<00:00,  1.28it/s]Fetching 11 files: 100%|██████████| 11/11 [00:13<00:00,  1.70s/it]Fetching 11 files: 100%|██████████| 11/11 [00:13<00:00,  1.25s/it]
-DOWNLOAD_VERIFIED 18

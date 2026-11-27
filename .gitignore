@@ -53,3 +53,6 @@ Group Project Guidelines*.pdf
 /artifacts/**/*.tar
 /artifacts/**/*.tar.gz
 /artifacts/cleanup_20261117_old_mt5/evidence/
+
+# Generated artifacts stay local and are not versioned.
+/artifacts/

@@ -1,3 +1,0 @@
-{"attempt": 8, "error": "RemoteDisconnected('Remote end closed connection without response')"}
-{"attempt": 9, "error": "URLError(ConnectionRefusedError(111, 'Connection refused'))"}
-{"attempt": 10, "error": "URLError(ConnectionRefusedError(111, 'Connection refused'))"}

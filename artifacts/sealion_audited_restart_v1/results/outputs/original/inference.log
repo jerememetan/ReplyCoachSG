@@ -1,15 +1,0 @@
-Loading weights:   0%|          | 0/388 [00:00<?, ?it/s]Loading weights:  10%|▉         | 37/388 [00:00<00:01, 345.95it/s]Loading weights:  19%|█▊        | 72/388 [00:00<00:00, 347.95it/s]Loading weights:  28%|██▊       | 107/388 [00:00<00:00, 335.12it/s]Loading weights:  36%|███▋      | 141/388 [00:00<00:00, 324.84it/s]Loading weights:  45%|████▌     | 176/388 [00:00<00:00, 322.94it/s]Loading weights:  55%|█████▍    | 212/388 [00:00<00:00, 324.45it/s]Loading weights:  64%|██████▎   | 247/388 [00:00<00:00, 322.57it/s]Loading weights:  73%|███████▎  | 284/388 [00:00<00:00, 327.02it/s]Loading weights:  82%|████████▏ | 320/388 [00:00<00:00, 327.84it/s]Loading weights:  91%|█████████ | 354/388 [00:01<00:00, 322.63it/s]Loading weights: 100%|██████████| 388/388 [00:01<00:00, 182.21it/s]Loading weights: 100%|██████████| 388/388 [00:01<00:00, 265.44it/s]
-{
-  "status": "complete",
-  "kind": "sealion",
-  "device": "cuda",
-  "strict_loading": {
-    "missing_keys": [],
-    "unexpected_keys": [],
-    "mismatched_keys": [],
-    "error_msgs": []
-  },
-  "gpu": "NVIDIA L40S",
-  "input_sha256": "aa5dd080cf60a62838ecc82fadbbcd15c3f1d95fdb39e355931d3f5732d832bf",
-  "flags": []
-}

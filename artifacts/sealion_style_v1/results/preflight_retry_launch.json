@@ -1,8 +1,0 @@
-{
-  "job_id": 357993,
-  "previous_job_id": 357989,
-  "root": "/common/home/users/h/hm.teoh.2024/ReplyCoachSG_sealion_style_v1",
-  "account": "hm.teoh.2024",
-  "purpose": "Built-in unittest runner and tokenizer/source preflight",
-  "training_performed": false
-}
